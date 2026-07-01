@@ -1,0 +1,45 @@
+### FIXED
+
+- Don't add page break before first h1 when printing
+- CSS not being monitored
+- Recursion level limit for included files
+- Allow HTML comments around "Marked Style:" meta to prevent showing up on Github
+- BBEdit compatibility for Markup->Preview ("open location")
+- Only reload preview on preference save/close instead of every time you change an option
+- Don't interpret colons in the first line as metadata, even when there's a line break
+- `...` Terminator for removing YAML headers
+- Don't download files to check headers when validating links
+- UI feedback for custom processor script usability
+- Vastly improved processing time on fenced code blocks
+- Ignore "Process as HTML" pref when using custom processor
+- Spitting out base-header-level and quote-style when using custom processor
+- brighten links in Upstanding inverse mode
+- Handle DOS newlines
+
+### New
+
+- Proofreading mode, stops updates, allows annotation
+	- Spell checking
+	- Guess panel/grammar checking
+	- Highlights/Annotations, exportable
+- Keyword highlighting
+	- Live highlight common/overused phrases
+	- regex/wildcard search for key phrase highlighting
+	- Keyword drawer to easily add temporary keywords for highlighting while previewing
+- Advanced text stats with reading time
+- Option to quit after last window closes
+- Discount parser option
+- HTML preview improvements
+	- Detect images in Markdown and HTML and watch for changes
+	- Detect php include('file')s and watch for changes
+	- Detect JS and CSS in HTML files and add them to the watch list
+- More 3rd-Party app support
+	- MarsEdit
+	- VoodooPad preview current page
+	- Preview clipboard
+	- Watch any folder and preview the most recently changed file in that folder
+- Field to add additional arguments to custom processor
+- Export palette/Export additional file types
+	- export DOCX or ODT
+	- Improved RTF/RTFD export
+	- Paginated PDF export option
