@@ -2,6 +2,8 @@
 
 This folder contains the **English source** for Marked's in-app and web help. Translations live in **locale subdirectories** (see layout below). Each locale has its own `config.yaml`, `SYNTAX.md`, and `GLOSSARY.md`.
 
+**Translator repository:** This tree is maintained in the separate **`marked-docs`** Git repository for localization work. It mirrors `HelpDocs/content/` in the main Marked project; merged translations are pulled into Marked before help is built and shipped with the app.
+
 The build pipeline converts Markdown to HTML using **Liquid-style tags** and **double-brace shortcuts**. Most tags stay **unchanged** in translated source; the build resolves localized labels from app string tables where applicable.
 
 ---
@@ -49,6 +51,29 @@ English **`images/`** at the content root is the default for all locales. When y
 4. **Starter files** — Each locale directory already contains `config.yaml`, `SYNTAX.md`, and `GLOSSARY.md`. Customize the latter two before bulk translation; localize `config.yaml` as you go (see below).
 5. **Pull requests** — Open a PR when a section or milestone is ready. Note any resolved `{% note %}` blocks or glossary additions.
 6. **Review** — Spot-check `{% appmenu %}` paths against the localized app and verify `wiki_keywords` do not collide across pages.
+
+---
+
+## Machine translation first
+
+Most locales start from a **machine-translated draft**, not a blank page. Maintainers generate initial `.md` copies in each locale folder from the English source; your job is to **review and correct**, not translate from scratch.
+
+**Leave alone (even in MT output):**
+
+- All `{% ... %}` tag syntax — especially `{% prefspane General %}` pane IDs
+- `{% kbd %}`, `{{cmd}}`, and other shortcut tokens
+- Link targets (`Page.html`, `#anchors`, URLs)
+- Image paths (`images/...`)
+- Page `file` keys in `config.yaml`
+
+**Fix carefully after MT:**
+
+- **`{% appmenu %}` paths** — replace with exact menu strings from the localized app (`MainMenu.strings`, etc.)
+- **Settings and UI terminology** — align with `Settings.strings`, `KBShortcuts.strings`, and your locale's `GLOSSARY.md`
+- **`config.yaml`** — section titles, `folder` slugs, `keywords`, and `wiki_keywords` (rebuild keyword lists for your language; do not copy English phrases blindly)
+- **Prose quality** — tone, idioms, and product-name conventions from your locale's `SYNTAX.md`
+
+Treat MT as a **starting point**. A good first pass is: fix menus and Settings wording, then polish one section at a time.
 
 ---
 
@@ -398,9 +423,9 @@ Open an issue or contact the Marked documentation maintainer if:
 
 ## Automation (maintainers)
 
-English source uses **English pane IDs** in `{% prefspane %}`. The build pipeline resolves visible labels from `en.lproj` / locale `Settings.strings` while keeping stable `x-marked-3://pref/...` links. Translators should not duplicate that logic in Markdown.
+English source uses **English pane IDs** in `{% prefspane %}`. The build pipeline will resolve visible labels from `en.lproj` / locale `Settings.strings` while keeping stable `x-marked-3://pref/...` links. Translators should not duplicate that logic in Markdown.
 
-Future locale builds may machine-translate body text and resolve `{% appmenu %}` from localized string tables; human review remains required for menu paths and Settings terminology.
+Locale help builds may also resolve `{% appmenu %}` from localized string tables in the future; until then, translators update menu paths by hand (see **Machine translation first** above).
 
 To (re)create locale scaffolding:
 
