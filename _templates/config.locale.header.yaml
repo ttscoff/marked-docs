@@ -1,0 +1,11 @@
+# Marked Help — locale config ({{LOCALE_CODE}})
+#
+# TRANSLATE in this file:
+#   Title, MetaDescriptions, section title, folder, page title, sidebar_title,
+#   description, keywords, wiki_keywords
+#
+# DO NOT CHANGE:
+#   file (page source basename — must match English .md filename)
+#   MDIndex, build paths (TargetProject, WebHelpBaseURL, …), Dependencies, Version
+#
+# See README.md in the content root for wiki_keywords rules.
