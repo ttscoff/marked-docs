@@ -28,6 +28,11 @@ content/
 
   es/  fr/  it/  ja/  nl/  pt-BR/  zh-Hans/  zh-Hant/  hu/
     …                    ← same structure per locale
+
+  ui-strings/            ← localized app UI strings (menus, settings, etc.)
+    de-ui-review.marked-l10n
+    es-ui-review.marked-l10n
+    …                    ← one file per locale
 ```
 
 Example localized screenshot path (mirrors English):
@@ -74,6 +79,31 @@ Most locales start from a **machine-translated draft**, not a blank page. Mainta
 - **Prose quality** — tone, idioms, and product-name conventions from your locale's `SYNTAX.md`
 
 Treat MT as a **starting point**. A good first pass is: fix menus and Settings wording, then polish one section at a time.
+
+---
+
+## UI strings (`ui-strings/`)
+
+The **`ui-strings/`** directory holds **`.marked-l10n`** files with the localized strings used throughout Marked's UI — menus, Settings, popups, keyboard shortcut references, statistics labels, tips, and related interface text.
+
+| File pattern | Purpose |
+|--------------|---------|
+| `<locale>-ui-review.marked-l10n` | Review and edit existing translations for that locale |
+
+These files are the **authoritative handoff** for UI wording. Help documentation should align with the terms in your locale's file (and your `GLOSSARY.md`).
+
+### Changing UI strings
+
+If you need to fix or update text that appears **in the app** (not just in help pages):
+
+1. Edit the appropriate **`<locale>-ui-review.marked-l10n`** file in your locale branch.
+2. Change only the **values** on each line (`"key" = "your translation";`). Keep keys unchanged.
+3. Preserve placeholders (`%@`, `%ld`, `%1$@`, `\n`) and keyboard symbols.
+4. Open a **pull request** with your edits for review.
+
+**Brett** ([@ttscoff](https://github.com/ttscoff)), the Marked developer, merges approved changes into the app's **`.lproj`** string tables for each locale. Translators do not edit `.lproj` files directly in this repository.
+
+When you submit a PR that touches `ui-strings/`, **mention @ttscoff** in the PR description or a comment so the changes can be incorporated into the app build.
 
 ---
 
