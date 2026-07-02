@@ -25,9 +25,9 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `File, Save Dingus As...` | `Ablage, Dingus speichern unter…` |
 | `File, Open Dingus in Marked` | `Ablage, Dingus in Marked öffnen` |
 | `File, Open in Dingus...` | `Ablage, In Dingus öffnen…` |
-| `File, Open Dictionary...` | ⚠ `Ablage, Wörterbuch öffnen…` (prüfen) |
-| `File, Export` | ⚠ `Ablage, Exportieren…` (Menüstruktur prüfen) |
-| `File, Export, Paginated PDF` | ⚠ `Ablage, Exportieren…, PDF (paginiert)` (prüfen) |
+| `File, Export` | `Ablage, Exportieren…` |
+| `File, Export, Paginated PDF` | ⚠ `Ablage, Exportieren als, Seitenweises PDF` (Submenü prüfen) |
+| `File, Open Dictionary...` | ⚠ nicht in den App-Strings — in der App prüfen (evtl. AppleScript-Wörterbuch) |
 
 ## Preview → Vorschau
 
@@ -36,7 +36,7 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `Preview, Dark Mode ({{opt}}{{cmd}}I)` | `Vorschau, Dunkelmodus ({{opt}}{{cmd}}I)` |
 | `Preview, Dark Mode` | `Vorschau, Dunkelmodus` |
 | `Preview, Refresh` | `Vorschau, Aktualisieren` |
-| `Preview, Show Status Bar ({{ctrl}}/)` | ⚠ `Vorschau, Statusleiste anzeigen ({{ctrl}}/)` (prüfen) |
+| `Preview, Show Status Bar ({{ctrl}}/)` | `Vorschau, Statusleiste anzeigen ({{ctrl}}/)` |
 
 ## Style → Stil
 
@@ -54,15 +54,15 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `Help, Markdown Reference` | `Hilfe, Markdown-Referenz` |
 | `Help, Report an Issue` | `Hilfe, Problem melden` |
 | `Help, Show Custom Rules Log` | `Hilfe, Protokoll eigener Regeln anzeigen` |
-| `Help, Markdown Dingus` | ⚠ `Hilfe, Markdown-Dingus öffnen` (prüfen) |
+| `Help, Markdown Dingus` | `Hilfe, Markdown-Dingus öffnen` |
 
 ## Gear menu → `{{gear}}` (token stays, submenu text translated)
 
 | English | German |
 |---|---|
-| `{{gear}}, Highlight Keywords` | ⚠ `{{gear}}, Schlüsselwörter hervorheben` (prüfen) |
-| `{{gear}}, Proofing, Show Comments` | ⚠ `{{gear}}, Korrekturlesen, Kommentare anzeigen` (prüfen) |
-| `{{gear}}, Proofing, Highlight All Spelling Errors` | ⚠ `{{gear}}, Korrekturlesen, Alle Rechtschreibfehler hervorheben` (prüfen) |
+| `{{gear}}, Highlight Keywords` | `{{gear}}, Schlüsselwörter hervorheben` |
+| `{{gear}}, Proofing, Show Comments` | `{{gear}}, Korrekturlesen, Kommentare anzeigen` |
+| `{{gear}}, Proofing, Highlight All Spelling Errors` | ⚠ `{{gear}}, Korrekturlesen, Rechtschreibfehler anzeigen` (exakter Menüpunkt prüfen) |
 
 ## Notes
 
