@@ -34,6 +34,7 @@ Recurring things to watch when post-editing the machine-translated drafts:
 
 This is where the German UI localization was weakest; keep the docs on the corrected style:
 
+- **Quote the corrected string, not the shipped one.** When the prose cites a menu or option label, use the fixed wording from `ui-strings/de-ui-review.marked-l10n`, not the (still wrong) string in the currently installed app. Docs and the UI fixes ship together, so the docs follow the target wording (e.g. „Neue Dateien automatisch bearbeiten", not „Bearbeiten Sie neue Dateien automatisch").
 - **Control labels → infinitive**, not a Sie-imperative. `Enable Leanpub support` → „Leanpub-Unterstützung aktivieren" (nicht „Aktivieren Sie …").
 - **Descriptive tooltips → third person present**, matching the app. `Prints a horizontal line …` → „Druckt eine horizontale Linie …" (nicht „Drucken Sie …").
 - **Genuine user instructions stay in Sie.** „Klicken Sie auf das Feld …", „Ziehen Sie ein Bild …" — where the reader really is told to act.
