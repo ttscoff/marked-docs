@@ -28,7 +28,7 @@ Marked can open **`.pdf`** files the same way: conversion runs in the background
 
 ## From the Clipboard
 
-If you have compatible (e.g. Markdown) text in your clipboard, you can open an instant preview by selecting {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}. If you copied a selection from a web browser or other app that put HTML or RTF on the clipboard, Marked converts it to Markdown for preview. When you paste RTF from an app like TextEdit or Pages, larger font sizes are roughly converted to heading levels (e.g. very large text becomes a level 1 heading, smaller large text becomes level 2, and so on). You can have multiple clipboard previews open at once, and you can save them to a new file by choosing {% appmenu File, Save Clipboard Preview %}.
+If you have compatible (e.g. Markdown) text in your clipboard, you can open an instant preview by selecting {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}. If you copied a selection from a web browser or other app that put HTML or RTF on the clipboard, Marked converts it to Markdown for preview. When you paste RTF from an app like TextEdit or Pages, larger font sizes are roughly converted to heading levels (e.g. very large text becomes a level 1 heading, smaller large text becomes level 2, and so on). You can have multiple clipboard previews open at once, and you can save them to a new file by choosing {% appmenu File, Save Transient Preview %}.
 
 ## Creating a New Document
 

@@ -45,7 +45,7 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |  **{{opt}}{{cmd}}{{right}}** | Expand all sections                |
 |        **{{shift}}{{cmd}}V** | Preview Clipboard                  |
 |                 **{{cmd}}K** | Extract from URL                   |
-|         **{{ctrl}}{{cmd}}S** | Save Clipboard Preview             |
+|         **{{ctrl}}{{cmd}}S** | Save Transient Preview             |
 |     **{{cmd}}\ (Backslash)** | Toggle Fountain/Scrivener Comments |
 |         **{{ctrl}}{{cmd}}C** | Toggle Comment Sidebar             |
 |          **{{opt}}{{cmd}}F** | Filter Scrivener Documents         |

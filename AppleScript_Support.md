@@ -6,7 +6,7 @@ For URL-based automation (shell scripts, `open` commands, and callbacks), see th
 
 ## Viewing the dictionary
 
-In **Script Editor**, choose {% appmenu File, Open Dictionary... %} and select Marked. The dictionary lists commands on the **application**, **document**, and **window** objects, plus export commands in the Marked suite.
+In **Script Editor**, choose **File → Open Dictionary…** and select Marked. The dictionary lists commands on the **application**, **document**, and **window** objects, plus export commands in the Marked suite.
 
 On macOS you can browse scripting definitions with **Script Editor**.
 
@@ -269,7 +269,7 @@ Export commands are available on the **application**, **document**, and **window
 
 **Notes**
 
-- Paginated PDF uses the same HTML-to-PDF pipeline as {% appmenu File, Export, Paginated PDF %}. It is not available for raw HTML preview documents.
+- Paginated PDF uses the same HTML-to-PDF pipeline as {% appmenu File, Export As, Save PDF (Paginated) %}. It is not available for raw HTML preview documents.
 - HTML export uses the **rendered preview** (what you see in the WebView), not the raw Markdown source file.
 - Continuous PDF captures the current preview WebView layout.
 

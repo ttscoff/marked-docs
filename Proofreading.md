@@ -22,7 +22,7 @@ Notes are **only** exported when saving to HTML. Highlights remain in most expor
 
 ## Spellcheck
 
-While in proofreading mode, you can access the system-wide spell checker from the gear menu: {% appmenu {{gear}}, Proofing, Highlight All Spelling Errors %}. This will be slow on large documents, and a warning will be displayed notifying you if the process will take over 30 seconds or so. Because the spell checker doesn't function in Marked's web preview, a "hack" is implemented to make this work, and it's not a speedy one.
+While in proofreading mode, you can access the system-wide spell checker from the gear menu: {% appmenu {{gear}}, Proofing, Show Spelling Errors %}. This will be slow on large documents, and a warning will be displayed notifying you if the process will take over 30 seconds or so. Because the spell checker doesn't function in Marked's web preview, a "hack" is implemented to make this work, and it's not a speedy one.
 
 Once spell check has run, you can open the Spelling Guesses panel to turn on Grammar Checking as well as see the suggestions for fixing errors. Marked *cannot* edit these in place, you have to go back to your original document to make use of the results.
 

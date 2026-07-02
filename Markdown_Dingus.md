@@ -51,7 +51,7 @@ immediately see how different processors interpret it.
 ## Accessing the Dingus
 
 The Markdown Dingus can be accessed from
-[{% appmenu Help, Markdown Dingus %}][2]. It's particularly
+[{% appmenu Help, Open Markdown Dingus %}][2]. It's particularly
 useful when you're:
 
 * Learning new Markdown syntax

@@ -55,7 +55,7 @@ Export actions share the same core options:
 
 **Notes**
 
-- **Paginated PDF** uses the same print-layout pipeline as {% appmenu File, Export, Paginated PDF %}. It is not available for raw HTML preview documents.
+- **Paginated PDF** uses the same print-layout pipeline as {% appmenu File, Export As, Save PDF (Paginated) %}. It is not available for raw HTML preview documents.
 - **HTML** export uses the rendered preview (what you see in the WebView), not the raw Markdown source file.
 - **Continuous PDF** captures the current preview WebView layout.
 - **Font Size** enables the same custom export/print font size option from {% prefspane Export %}. It does not affect Fountain documents.
