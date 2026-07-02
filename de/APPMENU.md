@@ -27,7 +27,7 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `File, Open in Dingus...` | `Ablage, In Dingus öffnen…` |
 | `File, Export` | `Ablage, Exportieren…` |
 | `File, Export, Paginated PDF` | `Ablage, Exportieren als, PDF speichern (paginiert)` (EN-Tag „Export" = Menü „Exportieren als") |
-| `File, Open Dictionary...` | — Menüpunkt existiert nicht (in der App bestätigt); EN-Tag veraltet, an Maintainer melden |
+| `File, Open Dictionary...` | — Menüpunkt existiert nicht (in der App bestätigt); EN-Tag veraltet, bereits gemeldet |
 
 ## Preview → Vorschau
 
