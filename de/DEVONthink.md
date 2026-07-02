@@ -4,60 +4,60 @@
 
 ## Ausgewähltes Markdown in Marked öffnen
 
-Verwenden Sie dieses Skript in DEVONthink, um die aktuelle Auswahl an Marked zu senden. Es überprüft, ob Sie etwas ausgewählt haben, bestätigt, dass es Markdown ist, und öffnet es dann mit `x-marked-3://` mit einem URL-codierten Dateipfad.
+Verwenden Sie dieses Skript in DEVONthink, um die aktuelle Auswahl an Marked zu senden. Es prüft, ob etwas ausgewählt ist, bestätigt, dass es sich um Markdown handelt, und öffnet die Datei dann über `x-marked-3://` mit URL-codiertem Dateipfad.
 
-„Applescript
-– Öffnen Sie die ausgewählte DEVONthink-Datei Markdown in Marked 3
+```applescript
+-- Open selected DEVONthink Markdown file in Marked 3
 
-Teilen Sie der Anwendungs-ID „DNtp“ mit.
-	aktivieren
+tell application id "DNtp"
+	activate
 	
-	sel auf Auswahl setzen
-	wenn sel {} ist, dann
-		Warnmeldung „Keine Auswahl“ anzeigen „Wählen Sie zuerst ein Markdown-Dokument in DEVONthink aus.“
-		Rückkehr
-	Ende wenn
+	set sel to selection
+	if sel is {} then
+		display alert "No selection" message "Select a Markdown document in DEVONthink first."
+		return
+	end if
 	
-	setze theRecord auf Punkt 1 von sel
+	set theRecord to item 1 of sel
 	
-	– Muss ein dateigestütztes Element sein
-	setze p auf den Pfad des Datensatzes
-	Wenn p ein fehlender Wert ist oder p „“ ist, dann
-		Warnmeldung „Keine Datei“ anzeigen: „Das ausgewählte Element hat keinen Dateipfad.“
-		Rückkehr
-	Ende wenn
+	-- Must be a file-backed item
+	set p to path of theRecord
+	if p is missing value or p is "" then
+		display alert "Not a file" message "The selected item does not have a file path."
+		return
+	end if
 	
-	-- Überprüfen Sie Markdown anhand der Erweiterung
-	setze ext auf meine Kleinbuchstaben-Erweiterung(p)
-	setze mdExts auf {"md", "markdown", "mdown", "mkd", "mkdn", "mdtxt"}
-	Wenn mdExts ext nicht enthält, dann
-		Warnmeldung „Nicht Markdown“ anzeigen: „Ausgewähltes Element ist kein Markdown-Dokument.“
-		Rückkehr
-	Ende wenn
-Ende erzählen
+	-- Check Markdown by extension
+	set ext to my lowercaseExtension(p)
+	set mdExts to {"md", "markdown", "mdown", "mkd", "mkdn", "mdtxt"}
+	if mdExts does not contain ext then
+		display alert "Not Markdown" message "Selected item is not a Markdown document."
+		return
+	end if
+end tell
 
-setze encodedPath auf meinen urlEncode(p)
-Setzen Sie markierteURL auf „x-marked-3://“ und encodedPath
-Öffnen Sie den Standort markierteURL
+set encodedPath to my urlEncode(p)
+set markedURL to "x-marked-3://" & encodedPath
+open location markedURL
 
 
-auf KleinbuchstabenExtension(posixPath)
-	Setzen Sie oldTIDs auf die Textelementtrennzeichen von AppleScript
-	Setzen Sie die Textelementtrennzeichen von AppleScript auf „.“
-	Teile auf Textelemente von posixPath setzen
-	Setzen Sie die Textelementtrennzeichen von AppleScript auf oldTIDs
+on lowercaseExtension(posixPath)
+	set oldTIDs to AppleScript's text item delimiters
+	set AppleScript's text item delimiters to "."
+	set parts to text items of posixPath
+	set AppleScript's text item delimiters to oldTIDs
 	
-	Wenn (Anzahl der Teile) < 2, dann gib „“ zurück
-	setze ext auf Element -1 der Teile
-	return do Shell script „printf %s „ & Anführungszeichen von ext & „ | tr ‚[:upper:]‘ ‚[:lower:]‘“
-Ende der Kleinbuchstaben-Erweiterung
+	if (count of parts) < 2 then return ""
+	set ext to item -1 of parts
+	return do shell script "printf %s " & quoted form of ext & " | tr '[:upper:]' '[:lower:]'"
+end lowercaseExtension
 
-auf URLEncode(s)
-	-- URL-Pfad sicher für x-marked-3:// kodieren
-	setze py auf „import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1], safe='/'))“
-	Rückkehr zum Shell-Skript „/usr/bin/python3 -c“ & Anführungszeichen von py & „ „ & Anführungszeichen von s
-Ende URLEncode
-„
+on urlEncode(s)
+	-- URL-encode path safely for x-marked-3://
+	set py to "import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1], safe='/'))"
+	return do shell script "/usr/bin/python3 -c " & quoted form of py & " " & quoted form of s
+end urlEncode
+```
 
 ## Im DEVONthink-Skriptmenü installieren
 
@@ -67,4 +67,4 @@ Ende URLEncode
 4. Verschieben Sie `Open in Marked.scpt` in den Ordner `Contextual Menu`.
 5. Klicken Sie in DEVONthink mit der rechten Maustaste auf eine Datei und wählen Sie **Skripte -> In Marked.scpt öffnen**.
 
-I> Marked kann auch `hook://` Assets auflösen, wenn es in {% prefspane Apps %} aktiviert ist; siehe [Hookmark](Hookmark.html).
+I> Marked kann auch `hook://`-Assets auflösen, wenn dies in {% prefspane Apps %} aktiviert ist; siehe [Hookmark](Hookmark.html).

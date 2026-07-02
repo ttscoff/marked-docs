@@ -2,5 +2,36 @@
     "debug.javascript.defaultRuntimeExecutable": {
         "pwa-node": "/Users/ttscoff/.local/share/mise/shims/node"
     },
-    "python.defaultInterpreterPath": "/Users/ttscoff/.local/share/mise/installs/python/3.13.1/bin/python"
+    "python.defaultInterpreterPath": "/Users/ttscoff/.local/share/mise/installs/python/3.13.1/bin/python",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000",
+        "editorPane.background": "#1a1b2600",
+        "editorGroupHeader.tabsBackground": "#1a1b2600",
+        "editorGroupHeader.noTabsBackground": "#1a1b2600",
+        "breadcrumb.background": "#1a1b2600",
+        "editorGutter.background": "#1a1b2600",
+        "panel.background": "#1a1b2600",
+        "panelStickyScroll.background": "#1a1b2600",
+        "tab.activeBackground": "#1a1b2600",
+        "tab.unfocusedActiveBackground": "#1a1b2600",
+        "sideBar.background": "#1a1b2633",
+        "sideBarTitle.background": "#1a1b2633",
+        "sideBarStickyScroll.background": "#1a1b2633",
+        "activityBar.background": "#1a1b2633",
+        "editor.background": "#1a1b2633",
+        "editorStickyScroll.background": "#1a1b2633",
+        "editorStickyScrollGutter.background": "#1a1b2633",
+        "tab.inactiveBackground": "#1a1b2633",
+        "tab.unfocusedInactiveBackground": "#1a1b2633",
+        "inlineChat.background": "#1a1b26e6",
+        "editorWidget.background": "#1a1b26e6",
+        "editorHoverWidget.background": "#1a1b26e6",
+        "editorSuggestWidget.background": "#1a1b26e6",
+        "notifications.background": "#1a1b26e6",
+        "notificationCenterHeader.background": "#1a1b26e6",
+        "menu.background": "#1a1b26e6",
+        "quickInput.background": "#1a1b26e6",
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    }
 }

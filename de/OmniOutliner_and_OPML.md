@@ -1,8 +1,8 @@
 # <%= @title %>
 
-Alle OPML-Gliederungs-[OmniOutliner][oo]-Exporte können genau wie Markdown in Marked gezogen werden. Marked konvertiert die Gliederung in lesbare Markdown-Überschriften und verschachtelte Listen basierend auf der OmniOutliner-Struktur (oder der generischen OPML-Struktur).
+Alle OPML-Gliederungsexporte aus [OmniOutliner][oo] können genau wie Markdown in Marked gezogen werden. Marked konvertiert die Gliederung auf Basis der OmniOutliner-Struktur (oder der generischen OPML-Struktur) in lesbare Markdown-Überschriften und verschachtelte Listen.
 
-In {% prefspane Preview %} steuern separate Schalter die **Einbettung von OPML-Umrissen** und **OmniOutliner (.ooutline)-Paketen** als **Mermaid-Mindmaps** im Vergleich zu einer gerade verschachtelten Markdown-Liste, wenn Sie die Diagrammansicht bevorzugen.
+In {% prefspane Preview %} steuern separate Schalter, ob **OPML-Gliederungen** und **OmniOutliner-(`.ooutline`)-Pakete** als **Mermaid-Mindmaps** statt als einfache verschachtelte Markdown-Liste eingebettet werden, wenn Sie die Diagrammansicht bevorzugen.
 
 Unabhängig von OmniOutliner verhalten sich generische `.opml`-Dateien von Tools wie Fargo, OutlineEdit, iThoughts (OPML-Export) oder Mind-Map-Apps auf die gleiche Weise.
 

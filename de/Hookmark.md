@@ -1,6 +1,6 @@
 # <%= @title %>
 
-[Hookmark](https://hookproductivity.com/)-Links können auf Dateien und Assets verweisen, auf die Ihr Markdown verweist, einschließlich Bilder.
+[Hookmark](https://hookproductivity.com/)-Links können auf Dateien und Assets verweisen, die Ihr Markdown nutzt, einschließlich Bildern.
 
 ## Hookmark-URL-Auflösung
 
