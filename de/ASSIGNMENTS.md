@@ -15,9 +15,30 @@ Who is working on which section, so contributors don't translate the same files 
 | About_Markdown | — | open |
 | Credits | — | open |
 
+## Which files belong to a section?
+
+Two ways to see it:
+
+- **Rendered:** the published help at <https://markedapp.com/help/Overview> shows every section in the sidebar. The pages grouped under "Supported Apps" there are exactly your files.
+- **Source of truth:** `config.yaml` defines each section's pages via the `file:` entries under its `folder`. A `file:` value is the English basename, so `file: Bear` means `Bear.md` at the content root, and its German translation lives at `de/Bear.md` (same filename). Note that a section's `folder` slug and its display title can differ (e.g. `folder: Special_Features` shows as "Advanced Features").
+
+### Supported_Apps (24 files)
+
+```
+Additional_Application_Support.md   Highland.md                 OmniOutliner_and_OPML.md
+Bear.md                             Hookmark.md                 Scrivener_Support.md
+Curio.md                            iA_Writer.md                The_Archive.md
+DEVONthink.md                       iThoughtsX.md               Ulysses.md
+DocC_Support.md                     MarsEdit.md                 Vim.md
+Drafts.md                           MindNode.md                 VoodooPad.md
+Folder_Watching.md                  MultiMarkdown_Composer.md   VS_Code.md
+                                    nvUltra.md                  Xcode_Playgrounds.md
+                                    Obsidian.md
+```
+
 ## Notes
 
-- **Supported_Apps** is a good starting block: many small, independent app-integration pages (Bear, Curio, DEVONthink, Drafts, Highland, Hookmark, iA Writer, iThoughtsX, MarsEdit, MindNode, MultiMarkdown Composer, nvUltra, Obsidian, OmniOutliner, Scrivener, The Archive, Ulysses, Vim, VoodooPad, VS Code, Xcode Playgrounds). Low cross-file terminology overlap, easy to parallelize.
-- Open a PR per section or per small batch (10–20 files), not one giant PR.
+- Each file already contains a machine-translated draft: review and correct, don't translate from scratch.
+- Start with a small first PR to align on terminology and style, then batch the rest however suits you. Avoid one giant PR.
 - Keep `{% … %}` tags, `.md`/`.html` filenames, and `#anchors` unchanged (see `SYNTAX.md`).
 - Ping the lead to claim an open section before starting.
