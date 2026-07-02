@@ -1,0 +1,4956 @@
+# Marked Localization Review
+# Locale: zh-Hant (Traditional Chinese)
+# Generated: 2026-07-02
+# Source: Marked/zh-Hant.lproj (values pre-filled from existing translations)
+#
+# HOW TO REVIEW
+# -------------
+# Each entry is pre-filled with the current translation from the locale .lproj.
+# Edit the value in place where terminology or wording should change.
+# # EN lines show English when it differs from the current value.
+#
+# Keep keys unchanged. Preserve %@, %ld, %1$@, \n, and keyboard symbols.
+# Do not translate product names (Marked, CriticMarkup, etc.) unless
+# your locale normally localizes them.
+#
+# Focus on consistency: Preview, Source, Export, Settings, Proofing,
+# Statistics, Search, Table of Contents.
+# See docs/LocalizationReviewGuide-short.md for priorities.
+#
+# Return this file with your edits (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   MainMenu.strings: 173
+#   MarkdownDocument.strings: 322
+#   QuickPanels.strings: 53
+#   DocumentIntelligence.strings: 59
+#   Preferences.strings: 8
+#   Preferences.xib.strings: 583
+#   PreviewContextMenu.strings: 25
+#   Statistics.strings: 35
+#   Tips.strings: 24
+#   KBShortcuts.strings: 199
+#   MainMenuMAS.strings: 166
+#   MainMenuSetapp.strings: 156
+#   Settings.strings (gaps): 89
+
+=== BEGIN MainMenu.strings ===
+# Strings in this section: 173
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"124.title" = "最近打開";
+# EN: Open Recent
+
+"125.title" = "最近打開";
+# EN: Open Recent
+
+"126.title" = "清除菜單";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "服務";
+# EN: Services
+
+"131.title" = "服務";
+# EN: Services
+
+"134.title" = "隱藏 Marked";
+# EN: Hide Marked
+
+"136.title" = "退出Marked";
+# EN: Quit Marked
+
+"145.title" = "隱藏其他人";
+# EN: Hide Others
+
+"150.title" = "顯示全部";
+# EN: Show All
+
+"19.title" = "視窗";
+# EN: Window
+
+"195.title" = "停止說話";
+# EN: Stop Speaking
+
+"196.title" = "開始說話";
+# EN: Start Speaking
+
+"197.title" = "拷貝";
+# EN: Copy
+
+"198.title" = "選擇全部";
+# EN: Select All
+
+"199.title" = "剪下";
+# EN: Cut
+
+"1P0-XX-a8Q.title" = "詳細統計";
+# EN: Detailed Statistics
+
+"1sQ-Wu-ydd.title" = "樣式";
+# EN: Style
+
+"1ty-3j-Uao.title" = "關閉";
+# EN: Close
+
+"203.title" = "貼上";
+# EN: Paste
+
+"205.title" = "編輯";
+# EN: Edit
+
+"207.title" = "還原";
+# EN: Undo
+
+"211.title" = "演講";
+# EN: Speech
+
+"212.title" = "演講";
+# EN: Speech
+
+"215.title" = "重做";
+# EN: Redo
+
+"217.title" = "編輯";
+# EN: Edit
+
+"23.title" = "縮到最小";
+# EN: Minimize
+
+"239.title" = "縮放視窗";
+# EN: Zoom Window
+
+"24.title" = "視窗";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "預覽";
+# EN: Preview
+
+"296.title" = "預覽";
+# EN: Preview
+
+"298.title" = "重新整理";
+# EN: Refresh
+
+"2b4-iW-Kkq.title" = "驗證外部連結";
+# EN: Validate External Links
+
+"3JZ-gc-2WZ.title" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"3va-8G-noL.title" = "在編輯器中開啟";
+# EN: Open in Editor
+
+"47i-id-uZs.title" = "串流媒體預覽";
+# EN: Streaming Preview
+
+"491.title" = "輔助說明";
+# EN: Help
+
+"492.title" = "輔助說明";
+# EN: Help
+
+"493.title" = "Marked 輔助說明";
+# EN: Marked Help
+
+"5.title" = "將所有內容放在前面";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "關於 Marked";
+# EN: About Marked
+
+"5kY-OB-B1R.title" = "新的";
+# EN: New
+
+"610.title" = "重新開啟最後一個文件";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "將 HTML 來源複製到剪貼簿";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "複製 HTML 來源";
+# EN: Copy HTML Source
+
+"636.title" = "縮放";
+# EN: Zoom
+
+"637.title" = "縮放";
+# EN: Zoom
+
+"638.title" = "縮放重置";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "放大";
+# EN: Zoom In
+
+"647.title" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked 網站";
+# EN: Marked Website
+
+"653.title" = "報告問題";
+# EN: Report an Issue
+
+"664.title" = "快速概覽";
+# EN: Quick Overview
+
+"672.title" = "全螢幕";
+# EN: Full Screen
+
+"705.title" = "檢查更新...";
+# EN: Check for Updates…
+
+"72.title" = "打開…";
+# EN: Open…
+
+"720.title" = "深色模式";
+# EN: Dark Mode
+
+"73.title" = "關閉";
+# EN: Close
+
+"738.ibShadowedToolTip" = "將 RTF 資料複製到剪貼簿";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "複製富文本";
+# EN: Copy Rich Text
+
+"748.title" = "鍵盤快速鍵";
+# EN: Keyboard Shortcuts
+
+"752.title" = "__學期_0__ 參考";
+# EN: Markdown Reference
+
+"78.title" = "列印…";
+# EN: Print…
+
+"800.title" = "頁面設定...";
+# EN: Page Setup…
+
+"804.title" = "折疊所有部分";
+# EN: Collapse All Sections
+
+"809.title" = "展開所有部分";
+# EN: Expand All Sections
+
+"81.title" = "檔案";
+# EN: File
+
+"83.title" = "檔案";
+# EN: File
+
+"83f-Dd-1dW.title" = "歷史項目";
+# EN: History Items
+
+"860.title" = "導出為";
+# EN: Export As
+
+"861.title" = "搜尋";
+# EN: Search
+
+"862.title" = "搜尋";
+# EN: Search
+
+"863.title" = "在預覽中查找";
+# EN: Find in Preview
+
+"864.title" = "尋找上一個";
+# EN: Find Previous
+
+"865.title" = "尋找下一個";
+# EN: Find Next
+
+"866.title" = "導出為";
+# EN: Export As
+
+"874.title" = "保存 HTML";
+# EN: Save HTML
+
+"875.title" = "保存 PDF";
+# EN: Save PDF
+
+"876.title" = "儲存 PDF（分頁）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "保存 DOCX";
+# EN: Save DOCX
+
+"880.title" = "保存 ODT";
+# EN: Save ODT
+
+"891.title" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"895.title" = "切換來源視圖";
+# EN: Toggle Source View
+
+"927.title" = "登記";
+# EN: Registration
+
+"936.title" = "立即購買";
+# EN: Buy Now
+
+"AqK-WG-cNa.title" = "出口…";
+# EN: Export…
+
+"BXl-6w-6Wq.title" = "統計數據";
+# EN: Statistics
+
+"CIg-C0-cyi.title" = "儲存瞬態預覽";
+# EN: Save Transient Preview
+
+"CN7-Sb-D7R.title" = "歷史";
+# EN: History
+
+"DIf-TG-OVh.title" = "上一個選項卡";
+# EN: Previous Tab
+
+"DJl-cP-TQ7.title" = "頭條ID";
+# EN: IDs on Headlines
+
+"ETD-cp-9aR.title" = "__學期_0__ 風格畫廊";
+# EN: Custom Style Gallery
+
+"GM7-yN-MML.title" = "保存 OPML";
+# EN: Save OPML
+
+"H7d-wy-m4y.title" = "分享 Custom 風格";
+# EN: Share a Custom Style
+
+"IrK-Ww-b88.title" = "向前";
+# EN: Forward
+
+"J8T-vp-R4V.title" = "剪貼簿預覽";
+# EN: Clipboard Preview
+
+"KEL-uP-OUf.title" = "返回";
+# EN: Back
+
+"KSt-Nd-YfH.title" = "滾動到編輯";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "快速切換";
+# EN: Quick Toggles
+
+"LQM-ZA-NNG.title" = "快速開啟";
+# EN: Quick Open
+
+"MkF-AI-Ask-Doc.title" = "詢問文件…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter.title" = "過濾 Scrivener 文檔";
+# EN: Filter Scrivener Documents
+
+"MkP-ddl-reset.title" = "重置槳購買狀態";
+# EN: Reset Paddle Purchase State
+
+"MkQA-Direct-File.title" = "快速行動...";
+# EN: Quick Actions…
+
+"MkSR-Pvw-Main.title" = "速讀";
+# EN: Speed Read
+
+"Mwq-QT-Bmh.title" = "UNREGISTERED";
+
+"NDL-kl-PNM.title" = "基礎統計";
+# EN: Basic Statistics
+
+"OL2-Ac-Bn0.title" = "Marked 支援";
+# EN: Marked Support
+
+"PeV-43-fB3.title" = "偵錯等級";
+# EN: Debug Level
+
+"Pix-Cz-p0c.title" = "校稿";
+# EN: Proofing
+
+"QRD-Ua-2p5.title" = "編輯關鍵字";
+# EN: Edit Keywords
+
+"Qu4-zo-UZD.title" = "__學期_0__ 始終";
+# EN: CriticMarkup Always
+
+"RNo-hM-GDD.title" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"RQz-jL-0su.title" = "統計數據";
+# EN: Statistics
+
+"U1Z-Qd-4vA.title" = "管理樣式";
+# EN: Manage Styles
+
+"UZu-Dm-vBa.title" = "重置試用";
+# EN: Reset Trial
+
+"UaE-ot-pay.title" = "編輯 Custom 規則";
+# EN: Edit Custom Rules
+
+"UyV-DY-t88.title" = "保存 RTF";
+# EN: Save RTF
+
+"W6E-8x-C5a.title" = "瀏覽器擴充";
+# EN: Browser Extensions
+
+"Wvp-Ur-n4w.title" = "Markdown化 URL";
+# EN: Markdownify URL
+
+"XFm-VF-DYu.title" = "使用選擇進行查找";
+# EN: Use Selection for Find
+
+"XFp-PM-jld.title" = "偵錯等級";
+# EN: Debug Level
+
+"YH9-Y0-j4I.title" = "離開";
+# EN: Off
+
+"YaF-0Z-jJf.title" = "剝離YAML";
+# EN: Strip YAML
+
+"Z7o-lz-0ji.title" = "智慧排版";
+# EN: Smart Typography
+
+"aAF-xy-JDM.title" = "顯示差異標記";
+# EN: Show Diff Markers
+
+"agK-GD-zld.title" = "保存 TextBundle";
+# EN: Save TextBundle
+
+"bCP-12-gmy.title" = "校稿";
+# EN: Proofing
+
+"cIb-71-34e.title" = "安裝命令列工具";
+# EN: Install Command Line Tool
+
+"dingus-bold-menu-item.title" = "大膽的";
+# EN: Bold
+
+"dingus-italic-menu-item.title" = "斜體";
+# EN: Italic
+
+"dingus-load-menu-item.title" = "在 Dingus 中開啟…";
+# EN: Open in Dingus…
+
+"dingus-menu.title" = "開啟 Markdown Dingus";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item.title" = "在 Marked 中開啟 Dingus";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item.title" = "在 Dingus 中開啟";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item.title" = "將 Dingus 另存為...";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item.title" = "保存 Dingus";
+# EN: Save Dingus
+
+"dir-copy-uuid-menu.title" = "複製 UUID";
+# EN: Copy UUID
+
+"gXF-cd-1p4.title" = "樣式";
+# EN: Style
+
+"gfe-v6-IFX.title" = "保存 Markdown";
+# EN: Save Markdown
+
+"hGc-gR-14i.title" = "購買Marked";
+# EN: Purchase Marked
+
+"hUe-f3-nB2.title" = "保留換行符";
+# EN: Retain Line Breaks
+
+"hca-gd-V9H.title" = "可讀性統計";
+# EN: Readability Statistics
+
+"hrH-FZ-MTp.title" = "顯示評論和腳註";
+# EN: Show Comments and Footnotes
+
+"jI6-wd-hfF.title" = "全部";
+# EN: All
+
+"jjj-3j-jUJ.title" = "剝離 MMD 元數據";
+# EN: Strip MMD Metadata
+
+"jv3-4R-YOE.title" = "下一個選項卡";
+# EN: Next Tab
+
+"kB9-oI-spA.title" = "開啟調試日誌";
+# EN: Open Debug Log
+
+"kFq-f8-ekM.title" = "HTML 內部流程";
+# EN: Process Inside HTML
+
+"lWh-w8-GrU.title" = "歷史項目";
+# EN: History Items
+
+"lxk-ec-TjD.title" = "檢查公告";
+# EN: Check for Announcements
+
+"mr4-ef-aIa.title" = "顯示標題列";
+# EN: Show Title Bars
+
+"n87-en-SY7.title" = "試用期到期";
+# EN: Expire Trial
+
+"nv5-HG-J2p.title" = "快速切換";
+# EN: Quick Toggles
+
+"oBb-8s-bX0.title" = "僅錯誤";
+# EN: Errors Only
+
+"oD0-8T-u89.title" = "浮動統計";
+# EN: Floating Statistics
+
+"sOc-94-QWP.title" = "__學期_0__ 預覽";
+# EN: MarsEdit Preview
+
+"sVD-Bj-a6R.title" = "保存 EPUB";
+# EN: Save EPUB
+
+"tdq-3e-Ms3.title" = "歷史";
+# EN: History
+
+"tjV-qJ-Brk.title" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"u12-AJ-wpP.title" = "新的";
+# EN: New
+
+"vaQ-aQ-WkJ.title" = "顯示 Custom 規則日誌";
+# EN: Show Custom Rules Log
+
+"vbr-U8-Zji.title" = "關閉全部";
+# EN: Close All
+
+"w61-Cx-E11.title" = "新 Markdown 文件";
+# EN: New Markdown File
+
+"wXd-3T-JfY.title" = "顯示狀態列";
+# EN: Show Status Bars
+
+"wg9-ft-A8i.title" = "風格竊取者";
+# EN: Style Stealer
+
+"wia-bV-1X2.title" = "產生 Custom 樣式";
+# EN: Generate a Custom Style
+
+"xGZ-Bs-Msb.title" = "錯誤和警告";
+# EN: Errors and Warnings
+
+"xKs-gY-d0h.title" = "可視化單字重複";
+# EN: Visualize Word Repetition
+
+
+=== END MainMenu.strings ===
+
+
+=== BEGIN MarkdownDocument.strings ===
+# Strings in this section: 322
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0Bh-Jn-V4B.title" = "人物：";
+# EN: Characters:
+
+"0ML-KK-awS.title" = "內聯連結";
+# EN: Inline links
+
+"0TO-ti-aKy.title" = "10000000";
+
+"0dl-5E-EfZ.ibShadowedToolTip" = "將 TextBundle 輸出壓縮到 TextPack 文件";
+# EN: Compress the TextBundle output to a TextPack file
+
+"0fH-I7-rrv.ibShadowedToolTip" = "Flesch-Kincaid 閱讀輕鬆度分數。這個數字越高，文字就越容易閱讀。";
+# EN: The Flesch Reading Ease score. The higher that number is, the easier the text is to read.
+
+"100021.title" = "Marked";
+
+"100023.ibShadowedToolTip" = "變更預覽樣式 (⌘⌥/)";
+# EN: Change Preview Style (⌘⌥/)
+
+"100024.ibShadowedToolTip" = "點選：文件統計⌥-點選：可讀性⌥⌘-點選：詳細統計";
+# EN: Click: Document statistics ⌥-Click: Readability ⌥⌘-Click: Detailed statistics
+
+"100025.ibShadowedToolTip" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"100026.ibShadowedToolTip" = "附加功能(⌘/)";
+# EN: Additional functions (⌘/)
+
+"100031.label" = "原始碼";
+# EN: Source
+
+"100032.label" = "預覽";
+# EN: Preview
+
+"100042.title" = "OtherViews";
+
+"100043.title" = "縮放";
+# EN: Zoom
+
+"100045.title" = "關閉視窗";
+# EN: Close Window
+
+"100046.title" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"100049.title" = "Extras";
+
+"100050.title" = "縮放";
+# EN: Zoom
+
+"100051.title" = "縮放重置";
+# EN: Zoom Reset
+
+"100052.title" = "縮小";
+# EN: Zoom Out
+
+"100053.title" = "放大";
+# EN: Zoom In
+
+"100057.title" = "OtherViews";
+
+"100058.title" = "Custom";
+
+"100059.title" = "GitHub";
+
+"100060.title" = "Antique";
+
+"100061.title" = "多欄";
+# EN: Multi-column
+
+"100062.title" = "Swiss";
+
+"100115.title" = "已複製 HTML";
+# EN: Copied HTML
+
+"100129.title" = "切換來源視圖";
+# EN: Toggle Source View
+
+"100176.title" = "搜尋";
+# EN: Search
+
+"100177.title" = "搜尋";
+# EN: Search
+
+"100178.title" = "尋找下一個";
+# EN: Find Next
+
+"100179.title" = "在預覽中查找";
+# EN: Find in Preview
+
+"100182.title" = "尋找上一個";
+# EN: Find Previous
+
+"100238.title" = "使用 Custom 處理器";
+# EN: Use Custom Processor
+
+"100301.ibExternalAccessibilityDescription" = "目錄";
+# EN: Table of Contents
+
+"100301.ibExternalAccessibilityHelp" = "開啟此文件的目錄";
+# EN: Open the table of contents for this document
+
+"100301.ibShadowedToolTip" = "目錄 (⌘T)";
+# EN: Table of Contents (⌘T)
+
+"100327.title" = "校稿";
+# EN: Proofing
+
+"100328.title" = "校稿";
+# EN: Proofing
+
+"100330.title" = "轉到下一個錯誤";
+# EN: Go to Next Error
+
+"100335.title" = "校對（鎖定文件）";
+# EN: Proofread (Lock Document)
+
+"100354.title" = "儲存 PDF（分頁）";
+# EN: Save PDF (Paginated)
+
+"100366.title" = "保存 DOCX";
+# EN: Save DOCX
+
+"100368.title" = "保存 ODT";
+# EN: Save ODT
+
+"100370.title" = "導出為";
+# EN: Export As
+
+"100371.title" = "導出為";
+# EN: Export As
+
+"100373.title" = "保存 PDF";
+# EN: Save PDF
+
+"100394.ibExternalAccessibilityDescription" = "Export";
+
+"100394.ibShadowedToolTip" = "導出抽屜 (⌘⇧E)";
+# EN: Export Drawer (⌘⇧E)
+
+"100513.ibShadowedToolTip" = "編輯臨時關鍵字以突出顯示。使用“/表達式/”作為正規表示式。";
+# EN: Edit temporary keywords for highlighting. Use "/expression/" for regex.
+
+"100520.ibShadowedToolTip" = "透過臨時關鍵字更改更新亮點。打字時使用 ⌘↩ 突出顯示。";
+# EN: Update highlights with temporary keyword changes. Use ⌘↩ to highlight while typing.
+
+"100524.ibShadowedToolTip" = "清除暫存關鍵字(⌘⇧⌫)";
+# EN: Clear temporary keywords (⌘⇧⌫)
+
+"100553.ibShadowedToolTip" = "匹配的臨時關鍵字數量";
+# EN: Number of temporary keywords matched
+
+"100554.title" = "241";
+
+"100571.ibShadowedToolTip" = "Toggle 避免單字突出顯示";
+# EN: Toggle Avoid Word Highlights
+
+"100573.ibShadowedToolTip" = "切換替代單字突出顯示";
+# EN: Toggle Alternate Word Highlights
+
+"100575.ibShadowedToolTip" = "切換 Custom 單字反白顯示";
+# EN: Toggle Custom Word Highlights
+
+"100577.ibShadowedToolTip" = "切換臨時單字突出顯示";
+# EN: Toggle Temporary Word Highlights
+
+"100587.ibShadowedToolTip" = "切換所有亮點";
+# EN: Toggle All Highlights
+
+"100598.ibExternalAccessibilityDescription" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"100598.ibExternalAccessibilityHelp" = "打開關鍵字抽屜";
+# EN: Open the keyword drawer
+
+"100598.ibShadowedToolTip" = "關鍵字突出顯示抽屜 (⌘⇧K)";
+# EN: Keyword Highlight Drawer (⌘⇧K)
+
+"100619.title" = "詳細統計";
+# EN: Detailed Statistics
+
+"100628.title" = "僅預覽 HTML 文件";
+# EN: Preview HTML Files Only
+
+"100703.ibShadowedToolTip" = "包括嵌入式語法突出顯示 Javascript";
+# EN: Include embedded Syntax Highlighting Javascript
+
+"100704.title" = "包括語法突出顯示 JavaScript";
+# EN: Include Syntax Highlighting JavaScript
+
+"100720.ibShadowedToolTip" = "如果選中，本機圖像將使用 base64 編碼並嵌入到 HTML 檔案中。這可能會導致文件很大，但它們可以在任何託管服務上輕鬆共享。";
+# EN: If chekced, local images will be encoded with base64 and embedded in the HTML file. This can result in large files, but they are easily shareable on any hosting service.
+
+"100721.title" = "嵌入獨立 HTML 的本機影像";
+# EN: Embed local images for standalone HTML
+
+"100736.title" = "折疊所有部分";
+# EN: Collapse All Sections
+
+"100737.title" = "展開所有部分";
+# EN: Expand All Sections
+
+"100778.ibShadowedToolTip" = "在輸出檔案中包含 MathJax CDN 安裝的連結。";
+# EN: Include a link to the MathJax CDN install in the output file.
+
+"100779.title" = "包含 MathJax CDN 鏈接";
+# EN: Include MathJax CDN link
+
+"100798.title" = "使用 Custom 預處理器";
+# EN: Use Custom Preprocessor
+
+"100807.alternateTitle" = "BUY NOW";
+
+"100807.title" = "UNREGISTERED";
+
+"15N-ja-7ha.title" = "100000000";
+
+"2AF-gp-I4u.title" = "APA";
+
+"2Nm-cD-p8G.title" = "保存 HTML";
+# EN: Save HTML
+
+"2Nn-ZW-OER.ibShadowedToolTip" = "返回本文檔";
+# EN: Return to this document
+
+"2vD-gD-ne9.title" = "Box";
+
+"2yc-2N-W2y.title" = "可讀性統計";
+# EN: Readability Stats
+
+"3Ge-xR-6VR.title" = "包括頁首和頁尾";
+# EN: Include Headers and Footers
+
+"3LC-Fl-BlY.title" = "字詞：";
+# EN: Words:
+
+"3P0-If-w9z.title" = "Original";
+
+"449-Uj-t8Q.ibShadowedToolTip" = "在指定列處將 Markdown 段落換行以提高可讀性。";
+# EN: Wrap Markdown paragraphs at the specified column for readability.
+
+"5RB-rA-kQ1.title" = "切換小地圖";
+# EN: Toggle Mini Map
+
+"5Uo-Zq-AO9.title" = "100.00%";
+
+"5au-rU-NsY.ibShadowedToolTip" = "Gunning-Fog 指數是衡量文字可讀性的指標。它代表了理解所需的大概年齡。";
+# EN: The Gunning-Fog index is a measure of text readability. It represents the approximate age required for comprehension.
+
+"6YJ-o3-W4K.ibExternalAccessibilityDescription" = "找到下一個臨時關鍵字";
+# EN: Locate the next temporary keyword
+
+"6YJ-o3-W4K.ibShadowedToolTip" = "尋找下一個（按住 Shift 鍵可找上一個）";
+# EN: Locate next (Hold Shift for previous)
+
+"7Ep-0B-vM3.title" = "顯示包含檔案的邊界";
+# EN: Show Boundaries of Included Files
+
+"7VY-TX-zJj.title" = "計算單字複雜度";
+# EN: Calculating word complexity
+
+"7dn-D4-dfz.title" = "120.55";
+
+"7g8-dw-mfo.title" = "PDF 寬度：";
+# EN: PDF Width:
+
+"7m7-JV-Ka1.title" = "100.00";
+
+"8EJ-gf-2Ao.ibShadowedToolTip" = "最終 PDF 的像素寬度。內容將進行調整以適應。";
+# EN: The pixel width of the final PDF. Content will be adjusted to fit.
+
+"8a9-2A-6kM.title" = "1000000000";
+
+"94e-Ua-AAZ.title" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"9J9-p8-aYO.title" = "輪廓模式";
+# EN: Outline Mode
+
+"9vZ-9u-CeH.title" = "CriticMarkup:";
+
+"A2T-i5-9NY.title" = "作者：";
+# EN: Author:
+
+"A7G-cn-jiu.title" = "100.00%";
+
+"ACj-ef-aPG.title" = "Expand";
+
+"AG4-xD-Xom.ibShadowedToolTip" = "選擇在輸出中包含預覽範本時要使用的樣式";
+# EN: Select the style to use if including preview template in output
+
+"AG8-ZJ-lXS.ibShadowedToolTip" = "將封面圖像拖曳到孔中，或按一下它以從磁碟中選擇圖像。";
+# EN: Drag a cover image to the well, or click it to select an image from disk.
+
+"ARV-No-qWH.title" = "臨時關鍵字，每行 1 個";
+# EN: Temporary keywords, 1 per line
+
+"AsP-Al-dyL.ibShadowedIsNilPlaceholder" = "...";
+
+"BE2-vK-SxS.title" = "保存 Markdown";
+# EN: Save Markdown
+
+"COR-Zc-NfU.ibShadowedIsNilPlaceholder" = "...";
+
+"D1Q-1o-6zS.ibShadowedToolTip" = "等級等級是一個數字，對應於一個人需要達到的等級才能理解它。";
+# EN: Grade Level is a number that corresponds to the grade a person will need to have reached to understand it.
+
+"D1X-dq-wgT.title" = "120.55";
+
+"DBW-CS-wNl.ibShadowedToolTip" = "切換 Custom 預處理器";
+# EN: Toggle Custom Preprocessor
+
+"DFb-Py-eXF.title" = "100000000000";
+
+"DJP-n1-t0P.title" = "驗證 XHTML";
+# EN: Validate XHTML
+
+"DKQ-NR-XF4.title" = "平均。音節/單字：";
+# EN: Avg. Syllables/Word:
+
+"DNQ-SQ-rhF.ibExternalAccessibilityDescription" = "匯出 OpenDocument 文件";
+# EN: Export OpenDocument file
+
+"DNQ-SQ-rhF.ibShadowedToolTip" = "匯出 OpenDocument 文件";
+# EN: Export OpenDocument file
+
+"DeW-XT-AMo.title" = "100000000";
+
+"DgW-EK-nAF.title" = "OtherViews";
+
+"Efg-fM-xjz.ibShadowedIsNilPlaceholder" = "...";
+
+"Ekg-Bm-Z1d.ibShadowedIsNilPlaceholder" = "...";
+
+"ElF-sr-IsI.title" = "閱讀時間：";
+# EN: Reading Time:
+
+"Eun-Sx-rAU.title" = "音節/單字：";
+# EN: Syllables/Word:
+
+"FAU-0H-4va.title" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"Fju-Kp-sJh.ibExternalAccessibilityDescription" = "匯出 RTF 文件";
+# EN: Export RTF file
+
+"Fju-Kp-sJh.ibShadowedToolTip" = "匯出 RTF 文件";
+# EN: Export RTF file
+
+"Gfg-25-iR7.ibShadowedToolTip" = "閱讀時間是根據平均閱讀速度每分鐘200字。在設定->校對中調整";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"HNo-Sq-xd9.title" = "保存 RTF";
+# EN: Save RTF
+
+"HRY-K2-zUX.title" = "Markup";
+
+"Him-Lg-7fz.title" = "複雜詞：";
+# EN: Complex Words:
+
+"Io0-AI-ebS.title" = "年級程度：";
+# EN: Grade Level:
+
+"J3Q-dQ-NLw.ibShadowedIsNilPlaceholder" = "...";
+
+"JzZ-Tx-3qf.title" = "120.55";
+
+"K7I-cp-X6z.title" = "顯示評論和腳註";
+# EN: Show Comments and Footnotes
+
+"KHc-p8-5br.ibShadowedToolTip" = "Flesch-Kincaid 閱讀輕鬆度分數。這個數字越高，文字就越容易閱讀。";
+# EN: The Flesch Reading Ease score. The higher that number is, the easier the text is to read.
+
+"KMQ-y4-mBB.ibShadowedToolTip" = "列印列印首選項中定義的頁首和頁尾";
+# EN: Print headers and footers defined in Print Preferences
+
+"KZg-aK-H06.title" = "流程如噴泉";
+# EN: Process as Fountain
+
+"Kad-dr-VgH.title" = "單字/句子：";
+# EN: Words/Sentence:
+
+"Khq-Ep-7bF.ibShadowedToolTip" = "Flesch-Kincaid 閱讀輕鬆度分數。這個數字越高，文字就越容易閱讀。";
+# EN: The Flesch-Kincaid Reading Ease score. The higher that number is, the easier the text is to read.
+
+"LUC-kY-WNE.title" = "沒有文件開啟時顯示開啟對話框";
+# EN: Show open dialog when no files are open
+
+"LXH-bi-oUD.ibShadowedToolTip" = "如果選中，這將在輸出中包括目前預覽模板和樣式。";
+# EN: If checked, this will include the current preview template and styles in the output.
+
+"Lang-Binding-Code.ibShadowedIsNilPlaceholder" = "--";
+
+"Lang-Cell-Value.title" = "EN";
+
+"Lang-Label-2.ibShadowedToolTip" = "用於可讀性計算的偵測到或後備語言。";
+# EN: Detected or fallback language used for readability calculations.
+
+"Lni-gb-2Ry.ibShadowedIsNilPlaceholder" = "...";
+
+"LqR-mv-WeJ.title" = "拷貝";
+# EN: Copy
+
+"MAN-1l-7wq.title" = "Box";
+
+"MJM-gk-9IQ.ibShadowedToolTip" = "嘗試自動修復產生的 XHTML 中的任何錯誤";
+# EN: Attempt to fix any errors in the generated XHTML automatically
+
+"NeX-ZS-Byd.title" = "多欄";
+# EN: Multi-column
+
+"ONC-aU-oH8.title" = "保存 TextBundle";
+# EN: Save TextBundle
+
+"OfE-7M-maR.title" = "封面圖片：";
+# EN: Cover Image:
+
+"Oz2-Fg-0wZ.title" = "120.55";
+
+"PK1-qr-vFd.title" = "統計數據";
+# EN: Statistics
+
+"Pdg-PG-FjB.title" = "將 Markdown 包裹在寬度處：";
+# EN: Wrap Markdown at width:
+
+"PhN-NU-uBW.title" = "Box";
+
+"PtD-m4-vGO.title" = "保存 OPML";
+# EN: Save OPML
+
+"Pw1-80-b4C.title" = "統計數據";
+# EN: Statistics
+
+"QeI-12-7pN.ibShadowedToolTip" = "在指定列處將 Markdown 段落換行以提高可讀性。";
+# EN: Wrap Markdown paragraphs at the specified column for readability.
+
+"QgI-3G-QpD.title" = "標題：";
+# EN: Title:
+
+"QzI-5H-8Hn.title" = "GitHub";
+
+"ReS-iL-lMC.ibShadowedToolTip" = "Gunning-Fog 指數是衡量文字可讀性的指標。它代表了理解所需的大概年齡。";
+# EN: Gunning fog index: measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading
+
+"RsF-Ts-opS.ibShadowedIsNilPlaceholder" = "...";
+
+"Rzc-wD-mJY.title" = "Edited";
+
+"S4h-4d-RQw.title" = "顯示拼字錯誤";
+# EN: Show Spelling Errors
+
+"SPR-o7-rEL.ibShadowedIsNilPlaceholder" = "...";
+
+"SR4-qe-TGs.title" = "暗淡連結";
+# EN: Dim Links
+
+"T4C-QS-lVr.ibShadowedToolTip" = "將代碼區塊視為詩歌";
+# EN: View code blocks as poetry
+
+"T4C-QS-lVr.title" = "Code is Poetry";
+
+"T8N-PV-OjM.title" = "過濾 Scrivener 文檔";
+# EN: Filter Scrivener Documents
+
+"TTB-If-1rr.title" = "儲存剪貼簿預覽";
+# EN: Save Clipboard Preview
+
+"TXt-8Q-xvo.ibShadowedToolTip" = "匯出 EPUB 時檢查產生的 XHTML 的有效性。";
+# EN: Check the validity of the generated XHTML when exporting an EPUB.
+
+"UNB-CO-mdT.title" = "1000000000";
+
+"UvW-CN-tsa.ibShadowedToolTip" = "切換被動語態突出顯示";
+# EN: Toggle Passive Voice Highlights
+
+"V1r-3q-kdG.ibShadowedToolTip" = "如果文件中使用 CriticMarkup，您可以選擇要匯出的視圖。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"VEq-Ux-2uJ.title" = "100m";
+
+"VMg-Xe-Yxs.ibShadowedToolTip" = "最終 PDF 的像素寬度。內容將進行調整以適應。";
+# EN: The pixel width of the final PDF. Content will be adjusted to fit.
+
+"VPx-Ei-Qh9.title" = "十進位";
+# EN: Decimal
+
+"VYl-fm-uKG.ibShadowedToolTip" = "在輸出檔案中包含 KaTeX CDN 安裝的連結。";
+# EN: Include a link to the KaTeX CDN install in the output file.
+
+"W0d-0E-dj0.ibShadowedIsNilPlaceholder" = "...";
+
+"WQz-kW-hnP.title" = "轉到上一個錯誤";
+# EN: Go to Previous Error
+
+"WSS-hA-Vi9.title" = "複製 HTML";
+# EN: Copy HTML
+
+"XGv-4J-tjb.ibShadowedToolTip" = "在輸出檔案中包含 KaTeX CDN 安裝的連結。";
+# EN: Include a link to the KaTeX CDN install in the output file.
+
+"XwI-JW-MXm.ibShadowedToolTip" = "將封面圖像拖至此處，或按一下以從磁碟中選擇圖像。";
+# EN: Drag a cover image here, or click to select an image from disk.
+
+"Y6t-h1-Qpz.ibExternalAccessibilityDescription" = "匯出 Markdown 文件";
+# EN: Export Markdown file
+
+"Y6t-h1-Qpz.ibShadowedToolTip" = "匯出 Markdown 文件";
+# EN: Export Markdown file
+
+"YIN-WH-tGB.title" = "句子：";
+# EN: Sentences:
+
+"YRO-9d-DSe.ibShadowedIsNilPlaceholder" = "...";
+
+"YUp-VM-f2Q.ibShadowedIsNilPlaceholder" = "...";
+
+"Yq4-uT-Cxe.title" = "Box";
+
+"ZJm-Jh-o6F.title" = "字詞";
+# EN: Words
+
+"Zak-3k-Htw.ibExternalAccessibilityDescription" = "找出下一個被動語態";
+# EN: Locate the next passive voice
+
+"Zak-3k-Htw.ibShadowedToolTip" = "尋找下一個（按住 Shift 鍵可找上一個）";
+# EN: Locate next (Hold Shift for previous)
+
+"ZjP-IW-Ftq.title" = "複製富文本";
+# EN: Copy Rich Text
+
+"aIp-FM-sUR.title" = "可視化單字重複";
+# EN: Visualize Word Repetition
+
+"aZf-qA-8lD.ibShadowedToolTip" = "等級等級是一個數字，對應於一個人需要達到的等級才能理解它。";
+# EN: Grade Level is a number that corresponds to the grade a person will need to have reached to understand it.
+
+"aiN-s6-4Vf.title" = "段落";
+# EN: Paragraphs
+
+"apP-pN-1Qk.title" = "始終使用此選擇";
+# EN: Always use this choice
+
+"bDB-0N-ZKm.title" = "詳細統計數據";
+# EN: Detailed Stats
+
+"bMV-SF-Jk8.title" = "Custom";
+
+"bYA-1b-mDV.ibShadowedIsNilPlaceholder" = "...";
+
+"bea-Td-p5h.title" = "100000000000";
+
+"bzA-wp-nuO.title" = "12.55";
+
+"cWb-ww-mBS.ibExternalAccessibilityDescription" = "匯出HTML";
+# EN: Export HTML
+
+"cWb-ww-mBS.ibShadowedToolTip" = "匯出 HTML 文件";
+# EN: Export HTML File
+
+"chm-yQ-eUe.title" = "日期：";
+# EN: Date:
+
+"csg-tQ-4Sl.ibShadowedLabels[0]" = "Document";
+
+"csg-tQ-4Sl.ibShadowedLabels[1]" = "Paragraph";
+
+"csg-tQ-4Sl.ibShadowedLabels[2]" = "Sentence";
+
+"csg-tQ-4Sl.ibShadowedToolTips[0]" = "文件中任意位置重複的單字";
+# EN: Words repeated anywhere in the document
+
+"csg-tQ-4Sl.ibShadowedToolTips[1]" = "同一段落內重複的單字";
+# EN: Words repeated within the same paragraph
+
+"csg-tQ-4Sl.ibShadowedToolTips[2]" = "同一句子中重複出現的單字";
+# EN: Words repeated within the same sentence
+
+"cxg-iB-jjm.title" = "平均。單字/句子：";
+# EN: Avg. Words/Sentence:
+
+"dBz-0V-Bos.ibExternalAccessibilityDescription" = "匯出分頁 PDF";
+# EN: Export Paginated PDF
+
+"dBz-0V-Bos.ibShadowedToolTip" = "匯出分頁 PDF";
+# EN: Export Paginated PDF
+
+"dcT-xo-yiE.title" = "100%";
+
+"dmw-4H-NNc.ibExternalAccessibilityDescription" = "匯出 EPUB 文檔";
+# EN: Export EPUB document
+
+"dmw-4H-NNc.ibShadowedToolTip" = "匯出 EPUB 文檔";
+# EN: Export EPUB document
+
+"dpf-0Y-KHM.title" = "閱讀輕鬆度：";
+# EN: Reading Ease:
+
+"eGo-9u-atE.ibShadowedToolTip" = "使用預覽的目前寬度來決定 PDF 的寬度";
+# EN: Use the current width of the Preview to determine the width of the PDF
+
+"eMt-Zz-avB.ibExternalAccessibilityDescription" = "尋找下一個首選替代方案";
+# EN: Locate the next prefer alternate
+
+"eMt-Zz-avB.ibShadowedToolTip" = "尋找下一個（按住 Shift 鍵可找上一個）";
+# EN: Locate next (Hold Shift for previous)
+
+"ehg-F8-fqB.ibShadowedToolTip" = "儲存完成後在 Finder 中顯示匯出的文件";
+# EN: Reveal the exported file in Finder after the save completes
+
+"etQ-EA-55l.ibShadowedToolTip" = "閱讀時間是根據平均閱讀速度每分鐘200字。在設定->校對中調整";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"f5d-TZ-5hQ.ibShadowedIsNilPlaceholder" = "...";
+
+"f8w-Xu-QyJ.ibShadowedIsNilPlaceholder" = "...";
+
+"fE8-DD-wb5.title" = "Box";
+
+"fF1-K9-Cob.title" = "10000000";
+
+"fbb-hR-9IM.ibShadowedToolTip" = "切換 Custom 處理器";
+# EN: Toggle Custom Processor
+
+"fbk-I5-dxu.ibShadowedToolTip" = "閱讀時間是根據平均閱讀速度每分鐘200字。在設定->校對中調整";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"fi2-Ay-Out.ibShadowedToolTip" = "如果選中，本機圖像將使用 base64 編碼並嵌入到 HTML 檔案中。這可能會導致文件很大，但它們可以在任何託管服務上輕鬆共享。";
+# EN: If chekced, local images will be encoded with base64 and embedded in the HTML file. This can result in large files, but they are easily shareable on any hosting service.
+
+"g5O-Xa-5B8.ibShadowedIsNilPlaceholder" = "...";
+
+"gAW-1t-xG4.title" = "800";
+
+"gDB-Dz-IEz.title" = "閱讀時間於";
+# EN: Reading Time at 
+
+"gFw-Tm-9Mr.ibShadowedToolTip" = "電子書的標題。這將套用於保存的 EPUB 中的元資料。";
+# EN: Title of the ebook. This will apply to the metadata in the saved EPUB.
+
+"geV-98-h0f.title" = "包含 KaTeX CDN 鏈接";
+# EN: Include KaTeX CDN link
+
+"glM-Vj-sKd.title" = "編輯關鍵字";
+# EN: Edit Keywords
+
+"hUZ-EC-7TC.ibShadowedIsNilPlaceholder" = "...";
+
+"hwd-bD-yKQ.ibShadowedIsNilPlaceholder" = "...";
+
+"i53-H7-GHs.title" = "速讀";
+# EN: Speed Read
+
+"iCb-CE-PaS.title" = "100.00";
+
+"iFi-O3-nFV.title" = "統計數據";
+# EN: Statistics
+
+"iG6-Do-TdC.title" = "無";
+# EN: None
+
+"iiQ-M5-hqn.title" = "輪廓模式";
+# EN: Outline Mode
+
+"iox-Tw-e9h.title" = "使用目前視窗寬度";
+# EN: Use Current Window Width
+
+"izv-tT-h2Y.ibShadowedToolTip" = "如果文件中使用 CriticMarkup，您可以選擇要匯出的視圖。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"izy-xs-ibL.title" = "出口…";
+# EN: Export…
+
+"j0C-5y-JL8.ibShadowedIsNilPlaceholder" = "...";
+
+"jkd-jA-P7q.title" = "基本統計數據";
+# EN: Basic Stats
+
+"k1S-Vk-fdY.ibShadowedIsNilPlaceholder" = "...";
+
+"k6q-9b-7gF.ibShadowedIsNilPlaceholder" = "...";
+
+"kZ1-cM-l7u.title" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"kii-1q-HIj.ibExternalAccessibilityDescription" = "匯出 DOCX 文件";
+# EN: Export DOCX file
+
+"kii-1q-HIj.ibShadowedToolTip" = "匯出 DOCX 文件";
+# EN: Export DOCX file
+
+"kjn-RB-75w.ibShadowedToolTip" = "寫作目標的進展";
+# EN: Progress toward writing target
+
+"klg-Q8-rrG.ibShadowedIsNilPlaceholder" = "...";
+
+"kp8-lt-Cl9.ibExternalAccessibilityDescription" = "詢問文件";
+# EN: Ask About Document
+
+"kp8-lt-Cl9.ibExternalAccessibilityHelp" = "使用 Apple Intelligence 查詢該文檔";
+# EN: Use Apple Intelligence to query this document
+
+"kp8-lt-Cl9.ibShadowedToolTip" = "使用 Apple Intelligence 查詢該文檔";
+# EN: Use Apple Intelligence to query this document
+
+"kp8-lt-Cl9.title" = "詢問文件";
+# EN: Ask About Document
+
+"kxZ-ks-bdx.ibExternalAccessibilityDescription" = "匯出連續 PDF";
+# EN: Export Continuous PDF
+
+"kxZ-ks-bdx.ibShadowedToolTip" = "匯出連續 PDF";
+# EN: Export Continuous PDF
+
+"l3i-mR-eEE.ibExternalAccessibilityDescription" = "找出下一個避免詞";
+# EN: Locate the next avoid word
+
+"l3i-mR-eEE.ibShadowedToolTip" = "尋找下一個（按住 Shift 鍵可找上一個）";
+# EN: Locate next (Hold Shift for previous)
+
+"lBn-SG-GPg.title" = "600";
+
+"lL4-kq-NOn.ibExternalAccessibilityDescription" = "匯出 TextBundle 文檔";
+# EN: Export TextBundle document
+
+"lL4-kq-NOn.ibShadowedToolTip" = "匯出 TextBundle 文檔";
+# EN: Export TextBundle document
+
+"mCb-MW-eOa.ibExternalAccessibilityDescription" = "匯出 OPML 文件";
+# EN: Export OPML file
+
+"mCb-MW-eOa.ibShadowedToolTip" = "匯出 OPML 文件";
+# EN: Export OPML file
+
+"mjE-Ng-jka.ibShadowedIsNilPlaceholder" = "...";
+
+"n3a-IG-Ogh.ibShadowedIsNilPlaceholder" = "...";
+
+"nXd-tx-wGr.title" = "100m";
+
+"o0q-Kh-GnZ.title" = "12.55";
+
+"o3w-bo-bB3.ibShadowedToolTip" = "與一個人需要達到的等級相對應的數字才能理解它。";
+# EN: A number that corresponds to the grade a person will need to have reached to understand it.
+
+"oAk-Lm-2v5.ibShadowedIsNilPlaceholder" = "...";
+
+"oMN-eL-kXX.ibShadowedIsNilPlaceholder" = "...";
+
+"pAV-yu-UqF.title" = "__學期_0__ 風格：";
+# EN: DOCX Style:
+
+"pFP-vP-qg0.title" = "儲存後在 Finder 中顯示";
+# EN: Reveal in Finder after saving
+
+"q15-Qw-MTD.title" = "在輸出中包含樣式：";
+# EN: Include style in output:
+
+"q8E-Zh-uWx.title" = "60";
+
+"qKm-qj-Msf.title" = "霧指數：";
+# EN: Fog Index:
+
+"qY5-ol-5HF.title" = "保存 EPUB";
+# EN: Save EPUB
+
+"qjI-4e-t9Y.ibShadowedToolTip" = "Gunning-Fog 指數是衡量文字可讀性的指標。它代表了理解所需的大概年齡。";
+# EN: Gunning fog index: measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading
+
+"qsm-Yj-h2V.title" = "複雜詞：";
+# EN: Complex Words:
+
+"ras-bZ-9rC.ibShadowedIsNilPlaceholder" = "...";
+
+"sAu-d0-lne.title" = "Box";
+
+"sFO-88-gJe.title" = "浮動統計數據";
+# EN: Floating Stats
+
+"sXS-g2-Vpx.ibShadowedIsNilPlaceholder" = "...";
+
+"sYi-U4-B9y.title" = "進程 CriticMarkup";
+# EN: Process CriticMarkup
+
+"sfw-LR-MtU.title" = "霧指數：";
+# EN: Fog Index:
+
+"swg-pX-tDk.title" = "段落：";
+# EN: Paragraphs:
+
+"sxc-7y-sC5.ibShadowedToolTip" = "閱讀時間是根據平均閱讀速度每分鐘200字。在設定->校對中調整";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"syW-Ae-1VZ.title" = "壓縮到 TextPack";
+# EN: Compress to TextPack
+
+"tAL-6K-05I.ibExternalAccessibilityDescription" = "找到下一個自訂關鍵字";
+# EN: Locate the next custom keyword
+
+"tAL-6K-05I.ibShadowedToolTip" = "尋找下一個（按住 Shift 鍵可找上一個）";
+# EN: Locate next (Hold Shift for previous)
+
+"tAa-Rc-y4V.ibShadowedIsNilPlaceholder" = "...";
+
+"tFZ-qU-DCH.title" = "人物：";
+# EN: Characters:
+
+"tcZ-ep-Y5v.title" = "100.00";
+
+"uT1-1q-r4O.title" = "句子：";
+# EN: Sentences:
+
+"uuB-6Q-nna.title" = "驗證外部連結";
+# EN: Validate External Links
+
+"v2x-0Z-4oB.ibShadowedIsNilPlaceholder" = "...";
+
+"vjO-6G-TB6.ibShadowedIsNilPlaceholder" = "...";
+
+"vol-VL-X0q.title" = "Antique";
+
+"w8s-fM-AP2.title" = "100.00";
+
+"wRM-hU-2Pt.title" = "文件標題";
+# EN: Document Title
+
+"wcA-w9-0Fc.title" = "閱讀輕鬆度：";
+# EN: Reading Ease:
+
+"wer-k2-CyG.title" = "下載遠端資源";
+# EN: Download remote assets
+
+"wpx-15-POL.title" = "WPM:";
+
+"wxP-dZ-F6g.title" = "Swiss";
+
+"wz0-zR-ole.ibShadowedIsNilPlaceholder" = "...";
+
+"xOk-oW-6tS.ibShadowedIsNilPlaceholder" = "...";
+
+"xTt-Sh-e1z.ibShadowedIsNilPlaceholder" = "...";
+
+"yww-A1-kx0.ibShadowedIsNilPlaceholder" = "...";
+
+"yzZ-G8-1mv.title" = "顯示語法和拼寫";
+# EN: Show Grammar with Spelling
+
+"z47-eD-ash.ibShadowedToolTip" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"zCR-9D-qeF.ibShadowedToolTip" = "如果文件中使用 CriticMarkup，您可以選擇要匯出的視圖。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"zGr-y2-xJ0.ibShadowedIsNilPlaceholder" = "...";
+
+"zXm-Yb-Fhb.title" = "年級程度：";
+# EN: Grade Level:
+
+"zgO-ix-2Gx.title" = "Box";
+
+"zhD-gi-tTB.title" = "顯示狀態列";
+# EN: Show Status Bar
+
+"zls-1N-o9P.title" = "關閉";
+# EN: Close
+
+"zul-qv-D5i.title" = "自動修復錯誤";
+# EN: Fix errors automatically
+
+
+=== END MarkdownDocument.strings ===
+
+
+=== BEGIN QuickPanels.strings ===
+# Strings in this section: 53
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"Add Bookmark" = "新增書籤";
+# EN: Add Bookmark
+
+"Autoscroll" = "自動捲動";
+# EN: Autoscroll
+
+"Bookmarking" = "書籤";
+# EN: Bookmarking
+
+"Clear All Bookmarks" = "清除所有書籤";
+# EN: Clear All Bookmarks
+
+"Clear Focused Bookmark" = "清除焦點書籤";
+# EN: Clear Focused Bookmark
+
+"Display Current Included Filename" = "顯示目前包含的檔案名稱";
+# EN: Display Current Included Filename
+
+"Display Mini Map" = "顯示小地圖";
+# EN: Display Mini Map
+
+"Focus Visible Section" = "焦點可見部分";
+# EN: Focus Visible Section
+
+"Jump to Bottom" = "跳至底部";
+# EN: Jump to Bottom
+
+"Jump to Top" = "跳至頂部";
+# EN: Jump to Top
+
+"Navigation" = "導覽";
+# EN: Navigation
+
+"Next Bookmark (Numeric)" = "下一個書籤（數字）";
+# EN: Next Bookmark (Numeric)
+
+"Next Bookmark (Page Order)" = "下一個書籤（頁面順序）";
+# EN: Next Bookmark (Page Order)
+
+"Next CriticMarkup Change" = "下一個 CriticMarkup 更改";
+# EN: Next CriticMarkup Change
+
+"Next Edit Marker" = "下一個編輯標記";
+# EN: Next Edit Marker
+
+"Next H1/H2 Header" = "下一個 H1/H2 標題";
+# EN: Next H1/H2 Header
+
+"Next Header" = "下一個標題";
+# EN: Next Header
+
+"Next Highlight (All Types)" = "下一個亮點（所有類型）";
+# EN: Next Highlight (All Types)
+
+"Next Highlight Target" = "下一個突出顯示目標";
+# EN: Next Highlight Target
+
+"Open Fast Switcher" = "開啟快速切換器";
+# EN: Open Fast Switcher
+
+"Open Other…" = "打開其他...";
+# EN: Open Other…
+
+"Open a file or folder" = "打開文件或資料夾";
+# EN: Open a file or folder
+
+"Play/Pause Autoscroll" = "播放/暫停自動滾動";
+# EN: Play/Pause Autoscroll
+
+"Preview" = "預覽";
+# EN: Preview
+
+"Preview › %@" = "預覽 › %@";
+# EN: Preview › %@
+
+"Previous Bookmark (Numeric)" = "上一個書籤（數字）";
+# EN: Previous Bookmark (Numeric)
+
+"Previous Bookmark (Page Order)" = "上一個書籤（頁面順序）";
+# EN: Previous Bookmark (Page Order)
+
+"Previous CriticMarkup Change" = "上一個 CriticMarkup 更改";
+# EN: Previous CriticMarkup Change
+
+"Previous Edit Marker" = "上一個編輯標記";
+# EN: Previous Edit Marker
+
+"Previous H1/H2 Header" = "上一個 H1/H2 標題";
+# EN: Previous H1/H2 Header
+
+"Previous Header" = "上一個標題";
+# EN: Previous Header
+
+"Previous Highlight (All Types)" = "上一個亮點（所有類型）";
+# EN: Previous Highlight (All Types)
+
+"Previous Highlight Target" = "上一個突出顯示目標";
+# EN: Previous Highlight Target
+
+"Recent" = "最近的";
+# EN: Recent
+
+"Recent Documents" = "最近的文件";
+# EN: Recent Documents
+
+"Reverse Autoscroll" = "反向自動捲動";
+# EN: Reverse Autoscroll
+
+"Scroll Down" = "向下捲動";
+# EN: Scroll Down
+
+"Scroll Down Faster" = "更快地向下滾動";
+# EN: Scroll Down Faster
+
+"Scroll Up" = "向上捲動";
+# EN: Scroll Up
+
+"Scroll Up Faster" = "更快地向上捲動";
+# EN: Scroll Up Faster
+
+"Search" = "搜尋";
+# EN: Search
+
+"Search actions…" = "搜尋操作...";
+# EN: Search actions…
+
+"Search in Preview" = "在預覽中搜尋";
+# EN: Search in Preview
+
+"Search open documents…" = "搜尋開啟的文件...";
+# EN: Search open documents…
+
+"Show/Hide Help HUD" = "顯示/隱藏幫助 HUD";
+# EN: Show/Hide Help HUD
+
+"Slow Down Autoscroll" = "減慢自動滾動速度";
+# EN: Slow Down Autoscroll
+
+"Speed Up Autoscroll" = "加快自動滾動速度";
+# EN: Speed Up Autoscroll
+
+"Table of Contents" = "目錄";
+# EN: Table of Contents
+
+"Toggle Pagination" = "切換分頁";
+# EN: Toggle Pagination
+
+"Toggle Zoom Overview" = "切換縮放概覽";
+# EN: Toggle Zoom Overview
+
+"Untitled" = "無題";
+# EN: Untitled
+
+"Window" = "視窗";
+# EN: Window
+
+"Window with %lu tabs" = "帶有 %lu 選項卡的視窗";
+# EN: Window with %lu tabs
+
+
+=== END QuickPanels.strings ===
+
+
+=== BEGIN DocumentIntelligence.strings ===
+# Strings in this section: 59
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"%@ section %ld of %ld…" = "%1$@ 第 %2$ld 節，共 %3$ld…";
+# EN: %1$@ section %2$ld of %3$ld…
+
+"Analyzing" = "分析中";
+# EN: Analyzing
+
+"Apple Intelligence could not complete this request." = "Apple Intelligence 無法完成此請求。";
+# EN: Apple Intelligence could not complete this request.
+
+"Apple Intelligence is not available on this Mac." = "Apple Intelligence 在此 Mac 上不可用。";
+# EN: Apple Intelligence is not available on this Mac.
+
+"Apple Intelligence is not available right now." = "Apple Intelligence 目前不可用。";
+# EN: Apple Intelligence is not available right now.
+
+"Apple Intelligence is still preparing on this Mac. Try again shortly." = "Apple Intelligence 仍在這台 Mac 上進行準備。稍後再試。";
+# EN: Apple Intelligence is still preparing on this Mac. Try again shortly.
+
+"Apple Intelligence requires macOS Tahoe or later." = "Apple Intelligence 需要 macOS Tahoe 或更高版本。";
+# EN: Apple Intelligence requires macOS Tahoe or later.
+
+"Ask" = "問";
+# EN: Ask
+
+"Ask About Document" = "詢問文件";
+# EN: Ask About Document
+
+"Building outline…" = "建築輪廓…";
+# EN: Building outline…
+
+"Cancel" = "取消";
+# EN: Cancel
+
+"Cancelled." = "取消。";
+# EN: Cancelled.
+
+"Copied Markdown." = "已複製Markdown。";
+# EN: Copied Markdown.
+
+"Copied RTF." = "已複製RTF。";
+# EN: Copied RTF.
+
+"Copied response." = "複製回覆。";
+# EN: Copied response.
+
+"Copy" = "拷貝";
+# EN: Copy
+
+"Copy response" = "複製回覆";
+# EN: Copy response
+
+"Copy response as Markdown" = "將回應複製為 Markdown";
+# EN: Copy response as Markdown
+
+"Copy response as RTF" = "將回應複製為 RTF";
+# EN: Copy response as RTF
+
+"Could not complete the request. %@" = "無法完成請求。 %@";
+# EN: Could not complete the request. %@
+
+"Create a concise reference summary of the document for answering questions." = "建立文件的簡明參考摘要以回答問題。";
+# EN: Create a concise reference summary of the document for answering questions.
+
+"Document text:
+---
+%1$@
+---
+
+Question: %2$@
+
+Answer the question using only the document text above.
+Respond in the same language as the Question." = "Document text:\\n---\\n%1$@\\n---\\n\\nQuestion: %2$@\\n\\nAnswer the question using only the document text above.\\nRespond in the same language as the Question.";
+# EN: Document text:\n---\n%1$@\n---\n\nQuestion: %2$@\n\nAnswer the question using only the document text above.\nRespond in the same language as the Question.
+
+"Done." = "完畢。";
+# EN: Done.
+
+"Enter a question first." = "首先輸入一個問題。";
+# EN: Enter a question first.
+
+"Extracting key points…" = "提取關鍵點...";
+# EN: Extracting key points…
+
+"Finishing…" = "精加工…";
+# EN: Finishing…
+
+"Formatted" = "格式化";
+# EN: Formatted
+
+"Key Points" = "重點";
+# EN: Key Points
+
+"List the five to eight most important points from the document as a Markdown bullet list." = "將文件中最重要的五到八點列為 Markdown 項目符號清單。";
+# EN: List the five to eight most important points from the document as a Markdown bullet list.
+
+"Markdown" = "Markdown";
+
+"No document text to analyze." = "沒有要分析的文件文字。";
+# EN: No document text to analyze.
+
+"Outline" = "大綱";
+# EN: Outline
+
+"Outlining" = "提綱";
+# EN: Outlining
+
+"Preparing" = "準備中";
+# EN: Preparing
+
+"Produce a hierarchical outline of the document using Markdown headings and bullet points." = "使用 Markdown 標題和項目符號產生文件的層次結構大綱。";
+# EN: Produce a hierarchical outline of the document using Markdown headings and bullet points.
+
+"Question: %@
+
+Document text:
+
+" = "Question: %@\\n\\nDocument text:\\n\\n";
+# EN: Question: %@\n\nDocument text:\n\n
+
+"Section %ld: %@" = "第 %ld 節：%@";
+# EN: Section %ld: %@
+
+"Section summaries:
+
+%@" = "Section summaries:\\n\\n%@";
+# EN: Section summaries:\n\n%@
+
+"Select text in the preview first, or use Summarize Document." = "首先在預覽中選擇文本，或使用摘要文件。";
+# EN: Select text in the preview first, or use Summarize Document.
+
+"Select text in the preview first." = "首先在預覽中選擇文字。";
+# EN: Select text in the preview first.
+
+"Starting…" = "開始…";
+# EN: Starting…
+
+"Summaries and answers appear here, just above your question." = "摘要和答案出現在此處，就在您的問題上方。";
+# EN: Summaries and answers appear here, just above your question.
+
+"Summarize Document" = "總結文件";
+# EN: Summarize Document
+
+"Summarize Selection" = "總結選擇";
+# EN: Summarize Selection
+
+"Summarize the following excerpt in three to five sentences." = "用三到五句話概括下面的摘錄。";
+# EN: Summarize the following excerpt in three to five sentences.
+
+"Summarize this section in two or three sentences." = "用兩到三句話總結本節。";
+# EN: Summarize this section in two or three sentences.
+
+"Summarizing" = "總結";
+# EN: Summarizing
+
+"Summarizing document…" = "總結文件...";
+# EN: Summarizing document…
+
+"Summarizing selection…" = "總結選擇...";
+# EN: Summarizing selection…
+
+"Thinking…" = "思維…";
+# EN: Thinking…
+
+"This Mac does not support Apple Intelligence." = "此 Mac 不支援 Apple Intelligence。";
+# EN: This Mac does not support Apple Intelligence.
+
+"This document has no text to analyze." = "本文檔沒有可供分析的文字。";
+# EN: This document has no text to analyze.
+
+"This document is too large for a single request. Try selecting a smaller passage or ask a narrower question." = "該文件對於單一請求來說太大。嘗試選擇較小的段落或提出較小的問題。";
+# EN: This document is too large for a single request. Try selecting a smaller passage or ask a narrower question.
+
+"Turn on Apple Intelligence in System Settings to use Ask About Document." = "在系統設定中開啟 Apple Intelligence 以使用詢問文件。";
+# EN: Turn on Apple Intelligence in System Settings to use Ask About Document.
+
+"Turn on Apple Intelligence in System Settings to use this feature." = "在系統設定中開啟 Apple Intelligence 以使用此功能。";
+# EN: Turn on Apple Intelligence in System Settings to use this feature.
+
+"Uses on-device Apple Intelligence." = "使用設備上的 Apple Intelligence。";
+# EN: Uses on-device Apple Intelligence.
+
+"What's on your mind?" = "你在想什麼？";
+# EN: What's on your mind?
+
+"Write a cohesive summary of the full document in four to eight sentences." = "用四到八句話寫出完整文檔的連貫摘要。";
+# EN: Write a cohesive summary of the full document in four to eight sentences.
+
+"You help someone review a document open in Marked, a Markdown preview app.
+Use only the document text provided in the prompt. Be accurate and concise.
+If the text does not contain enough information, say so briefly.
+Write all responses in %@." = "You help someone review a document open in Marked, a Markdown preview app.\\nUse only the document text provided in the prompt. Be accurate and concise.\\nIf the text does not contain enough information, say so briefly.\\nWrite all responses in %@.";
+# EN: You help someone review a document open in Marked, a Markdown preview app.\nUse only the document text provided in the prompt. Be accurate and concise.\nIf the text does not contain enough information, say so briefly.\nWrite all responses in %@.
+
+
+=== END DocumentIntelligence.strings ===
+
+
+=== BEGIN Preferences.strings ===
+# Strings in this section: 8
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"Advanced" = "進階";
+# EN: Advanced
+
+"Apps" = "應用程式";
+# EN: Applications
+
+"Export" = "匯出";
+# EN: Export
+
+"General" = "通用";
+# EN: General
+
+"Preview" = "預覽";
+# EN: Preview
+
+"Processor" = "處理器";
+# EN: Processor
+
+"Proofing" = "校稿";
+# EN: Proofing
+
+"Style" = "樣式";
+# EN: Style
+
+
+=== END Preferences.strings ===
+
+
+=== BEGIN Preferences.xib.strings ===
+# Strings in this section: 583
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0G8-G2-H51.title" = "Done";
+
+"0KC-Ac-0Sw.title" = "Discount";
+
+"0TU-06-h83.ibShadowedToolTip" = "編輯 Custom 規則";
+# EN: Edit Custom Rules
+
+"0aN-Jh-IRH.title" = "Font:";
+
+"0ay-mp-wPl.title" = "12";
+
+"0do-zT-NUL.ibShadowedToolTip" = "Add equation numbering on the left or right side or the equation";
+
+"0rd-5d-52X.title" = "重新整理";
+# EN: Refresh
+
+"1010.label" = "Use Alternate";
+
+"1012.label" = "Highlight";
+
+"1017.title" = "Restore Default Phrases";
+
+"1018.title" = "Use the field below to create a list of words or phrases—one per line—where you could have used an alternative. This is commonly used to catch outdated terms. Only complete (case insensitive) matches will be highlighted.";
+
+"1028.title" = "Use the field below to create a list of words or phrases—one per line—that you'd like to highlight for any other reason. Only complete (case insensitive) matches will be highlighted. Surround with / for regex.";
+
+"1119.title" = "Process Markdown with:";
+
+"1172.title" = "重新整理";
+# EN: Refresh
+
+"1193.title" = "See Help→Markdown Reference for information on syntax differences.";
+
+"1197.ibShadowedToolTip" = "When a change is detected, the window for that document will rise above other windows on your Desktop without activating Marked. Does not apply when \"Bring updated document to front\" handles visibility alone; both can be used together.";
+
+"1198.title" = "Raise window on update";
+
+"1214.placeholderString" = "70";
+
+"1216.placeholderString" = "30";
+
+"1218.placeholderString" = "30";
+
+"1220.placeholderString" = "70";
+
+"1223.ibShadowedToolTip" = "Define print margins (specified in points)";
+
+"1223.title" = "Margins";
+
+"1376.title" = "目錄";
+# EN: Table of Contents
+
+"1377.ibShadowedToolTip" = "Use the dropdowns to set the list item marker for each level of indentation in a table of contents";
+
+"1378.title" = "Table of contents level markers";
+
+"1380.ibShadowedToolTip" = "Choose the type of bullet for root indentation level.";
+
+"1382.title" = "OtherViews";
+
+"1383.title" = "I.";
+
+"1384.title" = "i.";
+
+"1385.title" = "1.";
+
+"1416.title" = "01.";
+
+"1417.title" = "A.";
+
+"1418.title" = "a.";
+
+"1419.title" = "α.";
+
+"1420.title" = "•";
+
+"1421.title" = "○";
+
+"1422.title" = "■";
+
+"1423.ibShadowedToolTip" = "Choose the type of bullet for first indentation level.";
+
+"1425.title" = "OtherViews";
+
+"1426.title" = "■";
+
+"1427.title" = "○";
+
+"1428.title" = "•";
+
+"1429.title" = "α.";
+
+"1430.title" = "a.";
+
+"1431.title" = "A.";
+
+"1432.title" = "01.";
+
+"1433.title" = "1.";
+
+"1434.title" = "i.";
+
+"1435.title" = "I.";
+
+"1436.ibShadowedToolTip" = "Choose the type of bullet for second indentation level.";
+
+"1438.title" = "OtherViews";
+
+"1439.title" = "■";
+
+"1440.title" = "○";
+
+"1441.title" = "•";
+
+"1442.title" = "α.";
+
+"1443.title" = "a.";
+
+"1444.title" = "A.";
+
+"1445.title" = "01.";
+
+"1446.title" = "1.";
+
+"1447.title" = "i.";
+
+"1448.title" = "I.";
+
+"1449.ibShadowedToolTip" = "Choose the type of bullet for third indentation level.";
+
+"1451.title" = "OtherViews";
+
+"1452.title" = "■";
+
+"1453.title" = "○";
+
+"1454.title" = "•";
+
+"1455.title" = "α.";
+
+"1456.title" = "a.";
+
+"1457.title" = "A.";
+
+"1458.title" = "01.";
+
+"1459.title" = "1.";
+
+"1460.title" = "i.";
+
+"1461.title" = "I.";
+
+"1462.ibShadowedToolTip" = "Choose the type of bullet for fourth indentation level.";
+
+"1464.title" = "OtherViews";
+
+"1465.title" = "■";
+
+"1466.title" = "○";
+
+"1467.title" = "•";
+
+"1468.title" = "α.";
+
+"1469.title" = "a.";
+
+"1470.title" = "A.";
+
+"1471.title" = "01.";
+
+"1472.title" = "1.";
+
+"1473.title" = "i.";
+
+"1474.title" = "I.";
+
+"1475.ibShadowedToolTip" = "Choose the type of bullet for fifth indentation level. Additional indentation levels will default to this setting.";
+
+"1477.title" = "OtherViews";
+
+"1478.title" = "■";
+
+"1479.title" = "○";
+
+"1480.title" = "•";
+
+"1481.title" = "α.";
+
+"1482.title" = "a.";
+
+"1483.title" = "A.";
+
+"1484.title" = "01.";
+
+"1485.title" = "1.";
+
+"1486.title" = "i.";
+
+"1487.title" = "I.";
+
+"1512.title" = "無";
+# EN: None
+
+"1513.title" = "無";
+# EN: None
+
+"1514.title" = "無";
+# EN: None
+
+"1515.title" = "無";
+# EN: None
+
+"1516.title" = "無";
+# EN: None
+
+"1517.title" = "無";
+# EN: None
+
+"199-YT-EsR.title" = "Top Left";
+
+"1Gh-xv-5H5.title" = "a new Marked window";
+
+"1Lu-iY-qzQ.ibShadowedToolTip" = "Print a horizontal line below the header and/or above the footer";
+
+"1SM-eh-7o2.ibShadowedToolTip" = "If no title metadata is provided, use the first H1 header as the print/save title on transient previews.";
+
+"1eU-OY-EjJ.ibShadowedToolTip" = "Enable CriticMarkup processing automatically when appropriate syntax is detected.";
+
+"1hb-Ih-LRV.title" = "CommonMark (GFM)";
+
+"1lQ-6n-ZAi.title" = "Export Profile:";
+
+"1om-K7-Ro2.title" = "新的";
+# EN: New
+
+"1tt-Ka-Puc.ibShadowedToolTip" = "Force Dark Mode in all windows";
+
+"1zn-0P-IC1.ibExternalAccessibilityHelp" = "Show small gutter markers to highlight detected edit locations.";
+
+"1zn-0P-IC1.ibShadowedToolTip" = "Show small gutter markers to highlight detected edit locations.";
+
+"21s-Tu-UhY.title" = "Time Format";
+
+"27J-dC-nHz.ibExternalAccessibilityDescription" = "Convert Wiki Links";
+
+"27J-dC-nHz.ibExternalAccessibilityHelp" = "Convert [[wiki link]] style links. Only links that match existing filenames will be converted.";
+
+"27J-dC-nHz.ibShadowedToolTip" = "Convert [[wiki link]] style links. Only links that match existing filenames will be converted.";
+
+"2NR-Pg-rVO.ibShadowedToolTip" = "Render - [ ] and - [x] for creating checkboxes. Checkboxes are rendered for preview but not functional within Marked.";
+
+"2Sb-Zo-zN8.ibShadowedToolTip" = "Use APA style outlines instead of the default Decimal format";
+
+"2UY-1L-378.title" = "Grant";
+
+"2Wz-uH-Rha.title" = "Edit new files automatically";
+
+"2bS-qi-EZL.title" = "Disable links/highlights for PDF/Print";
+
+"2xe-JO-xwk.title" = "Image editor:";
+
+"2yD-dI-tT9.ibShadowedToolTip" = "If the option for header and/or footer are unchecked, the first page will not print the specified type.";
+
+"3Bp-76-Wma.ibShadowedToolTip" = "If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.";
+
+"3T3-Yr-oY8.title" = "Blockquotes";
+
+"3e5-za-8Nz.title" = "Date Format";
+
+"3kz-yn-eUL.title" = "4";
+
+"44F-fD-bAO.ibShadowedToolTip" = "YAML front matter can be ignored, converted to MMD metadata for processing, or stripped completely.";
+
+"46.title" = "Status bar:";
+
+"49.title" = "Window:";
+
+"4Jc-c6-qDm.title" = "Automatically validate URLs on update";
+
+"4NB-os-uNa.ibShadowedToolTip" = "Font to use for header and footer.";
+
+"4Pc-3D-WI1.label" = "Ignore Repeats";
+
+"4Tq-ex-j8N.title" = "Text editor:";
+
+"4ZA-zY-xwY.ibShadowedToolTip" = "Use SmartyPants for smart quotes, ellipses conversion, and other typography features.";
+
+"4bM-vg-xuR.ibShadowedToolTip" = "Use level 2 headers as section dividers, always starting them on a new page.";
+
+"4g5-9T-SlB.ibShadowedToolTip" = "Removes MultiMarkdown metadata from the top of the document. This is useful if you're not using MultiMarkdown, but want to make use of header metadata without it appearing in your document.Metadata is read in before this happens, so you can still use Marked-specific metadata instructions and other variables are availble.";
+
+"4tm-Oq-PB1.ibShadowedToolTip" = "When opening a folder, Marked will look for the most recently changed document, defaulting to the extensions \"md,\" \"mmd,\" and \"html.\" Settings here override the default.";
+
+"59s-N5-pBb.ibShadowedToolTip" = "Formatting for the right side of the header.";
+
+"5DG-gr-YHR.ibShadowedToolTip" = "Remove the header logo";
+
+"5Tg-ch-D2N.title" = "Show Style picker";
+
+"5dI-aN-lDE.title" = "5";
+
+"5dR-ru-CgB.ibShadowedToolTip" = "CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles. Note that you can also use Custom Rules in Processor Settings to apply custom CSS based on rule matches.";
+
+"5kr-qf-ruU.ibShadowedToolTip" = "Time format using strftime formatting.";
+
+"5xX-bk-GW2.ibShadowedToolTip" = "Turn on logging";
+
+"5zt-WW-4HK.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for switching to Marked from any application";
+
+"684.ibShadowedToolTip" = "Automatically set new windows to \"float\" above other applications.";
+
+"687.title" = "Keep new windows on top";
+
+"699.ibShadowedToolTip" = "Include automatic table of contents in print/pdf.";
+
+"6BY-fF-uhl.ibShadowedToolTip" = "Select a logo image from disk";
+
+"6Bg-EV-ybL.title" = "Debug mode";
+
+"6CB-xj-2CC.title" = "Right Side";
+
+"6DH-bD-fSO.ibShadowedToolTip" = "Show a popup menu when external links are clicked and held before releasing.";
+
+"6Jn-ZY-hjQ.ibShadowedToolTip" = "If checked, use the default MultiMarkdown formatting for footnote markers ([1]). Uncheck to strip square brackets.";
+
+"6Tu-DY-ZuH.title" = "Mind maps";
+
+"6UV-QY-m2l.title" = "Before H2s";
+
+"6Wi-LR-aSB.ibExternalAccessibilityDescription" = "Show most recent edit marker";
+
+"6Wi-LR-aSB.ibExternalAccessibilityHelp" = "Show a marker at the most recnt edit point (first of last diff, depending on \"Reverse diff order\" setting).";
+
+"6Wi-LR-aSB.ibShadowedToolTip" = "Show a marker at the most recnt edit point (first of last diff, depending on \"Reverse diff order\" setting).";
+
+"6cZ-wJ-eUc.ibShadowedToolTip" = "Detect langauge per element in document and style Right To Left accordingly";
+
+"6iu-Hv-rnF.title" = "Disable memory-intensive features on large documents";
+
+"6jZ-PG-IiX.title" = "Render GitHub checkboxes";
+
+"6zx-Ta-74D.ibShadowedToolTip" = "Open the Style Manager";
+
+"700.title" = "Print table of contents";
+
+"771.title" = "Include scripts:";
+
+"77z-6i-hcu.title" = "Application-specific settings:";
+
+"7HE-R3-mYR.ibShadowedToolTip" = "When opening a folder, Marked will look for the most recently changed document, defaulting to the extensions \"md,\" \"mmd,\" and \"html.\" Settings here override the default.";
+
+"7Jg-MC-eJc.title" = "Bike outlines";
+
+"7Q4-GR-OcM.ibShadowedToolTip" = "If set, all text will be scaled based on the point setting selected. Defaults to a base of 10 points.";
+
+"7UG-xf-faf.title" = "Highlight Markdown syntax errors";
+
+"7mf-mC-cc1.title" = "3";
+
+"7yZ-lB-6aI.title" = "Include URL as text annotation";
+
+"8RH-UB-6WZ.title" = "Embed as Mermaid mind maps:";
+
+"8af-LK-6C0.ibShadowedToolTip" = "Embed Bike (.bike) outlines as Mermaid mind maps. If disabled, included Bike files will be rendered as Markdown lists (no document title).";
+
+"8eu-5U-k7Q.ibShadowedToolTip" = "Reading speed for reading time calculation (words per minute)";
+
+"8jU-97-dbv.ibShadowedToolTip" = "The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \"Marked Style: Grump\")";
+
+"8t8-km-W9F.title" = "Pan and zoom diagrams";
+
+"8yt-gU-k63.ibShadowedToolTip" = "Allow words to break with hyphenation automatically.";
+
+"981.title" = "Use the field below to create a list of words or phrases—one per line—that you'd like to avoid in your writing. This is most commonly used to catch overused terms. Only complete (case insensitive) matches will be highlighted.";
+
+"985.label" = "Avoid";
+
+"990.title" = "Restore Default Phrases";
+
+"9Cx-rV-3Ib.title" = "Scroll to edit:";
+
+"9Yl-2p-W4T.title" = "Convert to MultiMarkdown Metadata";
+
+"9ny-nM-7Ku.ibShadowedToolTip" = "Render ==text== as a <mark> tag. Also renders ~~strikethrough~~ and ~underline~.";
+
+"9sl-AY-z4F.placeholderString" = "900";
+
+"9sl-AY-z4F.title" = "900";
+
+"A1f-j4-BDw.title" = "OtherViews";
+
+"AEI-oa-8kh.ibShadowedToolTip" = "Add JSON-formatted configuration options";
+
+"AWu-BS-7M8.ibShadowedToolTip" = "Use the title of the selected post as a Markdown header.";
+
+"Ae8-Hs-Xgr.ibShadowedToolTip" = "If disabled, ⌘E will open the default Editor. If this is enabled, ⌘E will invoke \"Find with Selection\" and begin a search and ⌘⌥E will open the editor.";
+
+"Afs-Wz-5DI.ibShadowedToolTip" = "Explore the Stlye Gallery, where you can download or install Custom Styles";
+
+"AgC-KM-ZS1.title" = "Convert [[Wiki Links]]";
+
+"Agf-Nf-uzQ.title" = "Print background colors and images";
+
+"ApR-bQ-bzl.ibShadowedToolTip" = "The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \"Marked Style: Grump\")";
+
+"Ark-2L-TuI.title" = "(MultiMarkdown)";
+
+"B0V-OS-ffz.title" = "Retain line breaks in paragraphs";
+
+"BKc-0V-UHA.ibShadowedToolTip" = "CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles. Note that you can also use Custom Rules in Processor Settings to apply custom CSS based on rule matches.";
+
+"BNz-Av-4gu.title" = "Reverse diff order";
+
+"BcD-Yq-kf9.title" = "Additional CSS";
+
+"Bmr-cH-bWd.ibShadowedToolTip" = "Respect system setting for opening new documents";
+
+"Bmr-cH-bWd.title" = "automatic";
+
+"BoV-EI-c7B.ibShadowedToolTip" = "Automatically break to a new page after an inserted Table of Contents";
+
+"BqM-Ck-d9z.title" = "Additional CSS:";
+
+"C0w-j3-n7E.ibShadowedToolTip" = "Create a new Export Profile. Changes to the current profile are automatically saved when settings change.";
+
+"C16-Vu-yVf.title" = "Export Profile";
+
+"CHF-fL-i3f.title" = "Track CSS changes";
+
+"D2D-Cz-EdL.title" = "Item 3";
+
+"DCs-BY-jED.ibExternalAccessibilityDescription" = "Collapsible Headlines";
+
+"DCs-BY-jED.ibExternalAccessibilityHelp" = "Clicking a headline element collapses the section between it and the next headline.";
+
+"DCs-BY-jED.ibShadowedToolTip" = "Clicking a headline element collapses the section between it and the next headline.";
+
+"DN1-tH-Aj0.title" = "Wiki Linking:";
+
+"Ds3-B9-viR.ibShadowedToolTip" = "Place footnotes at the bottom of the page they appear on, rather than at the end of the document.";
+
+"E2M-6o-oms.title" = "OtherViews";
+
+"E4H-pN-SH5.title" = "重新整理";
+# EN: Refresh
+
+"E5N-05-NLH.ibShadowedToolTip" = "Automatically enable Custom Preprocessor for new windows/tabs";
+
+"E87-Bs-laZ.title" = "Scrivener:";
+
+"EKT-Mz-0qd.title" = "Helvetica";
+
+"EKa-2z-nmh.title" = "Export Settings";
+
+"Ed2-GZ-CNO.title" = "Use the field below to create a list of words—one per line—that you'd like universally ignore when using \"Visualize Word Repetition.\"";
+
+"EiQ-Gt-GvH.title" = "#Text is tag";
+
+"Ejq-px-WuN.ibShadowedToolTip" = "By default, hosted images are not cached to allow changes to show up. If using a static host where the images will never change, enabling caching will help speed up page refreshes.";
+
+"Esj-1Y-RPS.title" = "Replace horizontal rules with page breaks";
+
+"Ey6-97-BZ4.ibShadowedIsNilPlaceholder" = "Choose Application";
+
+"FH9-Kd-LRS.ibExternalAccessibilityDescription" = "Enable mini map";
+
+"FH9-Kd-LRS.ibExternalAccessibilityHelp" = "Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when rendering large documents.";
+
+"FH9-Kd-LRS.ibShadowedToolTip" = "Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when rendering large documents.";
+
+"Fat-NX-b5p.title" = "Item 2";
+
+"Ffw-Od-r8t.ibShadowedToolTip" = "Generate header IDs based on contents of h1-h6 tag.";
+
+"FiV-I8-zx2.ibShadowedIsNilPlaceholder" = "Choose Application";
+
+"Fk3-QS-gxA.title" = "MathJax Config";
+
+"FpN-Rk-Lmh.title" = "Choose App";
+
+"GD3-4P-38f.title" = "MathJax";
+
+"GIa-J7-BXT.title" = "Always wrap code";
+
+"GxK-mf-f1J.title" = "Help > Open Debug Log to view activity
+
+";
+
+"H0h-si-KPK.title" = "reveal in Finder";
+
+"H5g-RT-nrc.ibShadowedToolTip" = "By default, Marked loads the last search text used in any other application. Uncheck this to ignore that text.";
+
+"H7Y-VM-OwA.ibShadowedToolTip" = "Add an image to the header. Drop an image in this well to define the logo. This is what will be used if %logo appears in the format strings below.";
+
+"HFr-db-GQM.ibExternalAccessibilityDescription" = "Require Command Key";
+
+"HFr-db-GQM.ibExternalAccessibilityHelp" = "Require that the command key be held when clicking a headline to collapse/expand";
+
+"HFr-db-GQM.ibShadowedToolTip" = "If this is checked, headlines will only collapse/expand when clicked with the Command key held.";
+
+"Hbd-2g-ruY.ibShadowedToolTip" = "Select an application to open when a local image is right clicked and \"Edit image\" is selected.";
+
+"HqO-s8-yX7.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for opening the actions palette";
+
+"I30-g4-XjK.ibShadowedToolTip" = "Ignore block quoted text in word count";
+
+"I4p-yl-edz.title" = "Preview behavior:";
+
+"I5o-BY-DxZ.ibShadowedToolTip" = "Display metadata like keywords and categories as a table at the top of the preview";
+
+"IJn-41-e8h.title" = "their default application";
+
+"IQ8-Fj-4UY.ibShadowedToolTip" = "Embed iThoughts X, Freemind, and MindManager maps added with file inclusion syntax as Mermaid diagrams. If false, use Quick Look Preview when available, otherwise a Markdown outline.";
+
+"ITh-gm-46F.title" = "Use random footnote IDs";
+
+"IVH-Jr-IkW.title" = "Use strftime format";
+
+"IZg-ti-hnv.title" = "Before H1s";
+
+"IhI-cQ-v2U.title" = "Prevent widows in headlines and paragraphs";
+
+"JGR-Av-Wfn.ibShadowedToolTip" = "When a Scrivener document is opened in Marked, automatically open it in Scrivener as well.";
+
+"JLp-l0-ioD.ibShadowedToolTip" = "If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.";
+
+"JQY-Hw-HJ6.title" = "Indented code blocks";
+
+"JZz-jb-ngW.title" = "Top Right";
+
+"JcE-oV-hOM.title" = "Require ⌘-click";
+
+"Jol-Hz-xqH.title" = "Restore Default Formats";
+
+"K8M-5m-vyf.ibShadowedToolTip" = "Define how new documents open (in windows, tabs, or automatic — respecting macOS global settings)";
+
+"KH1-JN-s5N.title" = "New documents open in:";
+
+"KZ9-X7-6t5.ibShadowedToolTip" = "Convert change tracking in Word to CriticMarkup in the imported Markdown document, and convert CriticMarkup to Word change tracking when exporting DOCX";
+
+"KdO-n7-O3H.ibShadowedToolTip" = "If checked, code blocks will always be forced to wrap (instead of scrolling or overflowing) regardless of theme settings.";
+
+"Kh0-Vf-5CX.title" = "the current window";
+
+"KuU-LW-ujd.title" = "Surround footnote markers with square brackets";
+
+"KuV-0Q-4Pv.title" = "Style verbatim (code) blocks as poetry";
+
+"L0D-Jd-N9X.title" = "Choose App";
+
+"LEm-ar-mkL.ibShadowedToolTip" = "Fade the window when it's not focused. Use the slider to set the opacity.";
+
+"LUe-ZW-HZi.ibShadowedToolTip" = "Font to use for header and footer.";
+
+"Lkd-UC-px0.ibShadowedToolTip" = "Ignore footnote text in word count";
+
+"LuR-pP-xeu.title" = "14";
+
+"M7o-ma-vSC.ibShadowedToolTip" = "Render :name: syntax as GitHub emoji";
+
+"MDL-6U-a9Z.title" = "Header";
+
+"MIS-0g-3Yg.ibShadowedToolTip" = "Define the level of logging to display. If using logging to submit for support, set this to All.";
+
+"MK1-clr-ann.ibShadowedToolTip" = "Clear the selected annotation editor and show the app picker when annotating images.";
+
+"MK1-clr-img.ibShadowedToolTip" = "Clear the selected image editor and show the app picker when editing images.";
+
+"MK1-clr-txt.ibShadowedToolTip" = "Clear the selected text editor and show the app picker when editing.";
+
+"MKC-t1-NID.ibShadowedToolTip" = "Select an Export Profile to load presests. The current Profile is what is updated when settings change.";
+
+"MKc-Ft-Ctr.ibShadowedToolTip" = "Formatting for the center of the footer.";
+
+"MKc-Ft-LblC.title" = "Bottom Center";
+
+"MKc-Hd-Ctr.ibShadowedToolTip" = "Formatting for the center of the header.";
+
+"MKc-Hd-LblC.title" = "Top Center";
+
+"MdN-sr-Pc8.ibShadowedToolTip" = "Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].";
+
+"MeS-Nh-evV.title" = "Remove before rendering";
+
+"Mf6-wk-Yq2.title" = "Default style:";
+
+"MhT-dx-CLj.title" = "Always open new documents in proofing mode";
+
+"Mlj-LN-4UN.title" = "Show character count instead";
+
+"Mp7-hK-lJh.title" = "9";
+
+"NjU-jW-Kzx.title" = "Footnotes/Citations";
+
+"Njg-0h-h1v.title" = "Scrivener, Fountain, Word, and CriticMarkup documents";
+
+"Nm6-SK-AuG.ibShadowedToolTip" = "When this is enabled, Marked will watch the current CSS file for disk changes, aiding in custom style editing and web development.";
+
+"NrG-bn-91R.title" = "Border:";
+
+"NsQ-wV-kdZ.title" = "Footer";
+
+"O5N-R0-dHn.ibShadowedToolTip" = "Tags receive special styling, and are hidden when \"Show Comments\" is disabled.";
+
+"O8o-5s-Qjg.title" = "MarsEdit:";
+
+"Oi5-Z5-rJa.title" = "Enable CriticMarkup automatically";
+
+"Omh-HV-uOd.ibShadowedToolTip" = "Set the opacity of a translucent background window";
+
+"OsX-xc-G6C.title" = "Open Action Palette:";
+
+"OuF-Ny-wbW.title" = "Errors and warnings";
+
+"OxR-5f-L0P.title" = "Syntax highlighting";
+
+"P68-Ab-P9o.ibShadowedToolTip" = "Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.";
+
+"PCa-hl-R5C.title" = "Number equations on";
+
+"PJB-9U-ID9.title" = "Ignore";
+
+"PLZ-vq-5jG.placeholderString" = "itmz, mm, opml";
+
+"PO1-MV-JTk.title" = "processor";
+
+"PSf-q5-RfW.title" = "Import Settings";
+
+"Phg-rJ-VPT.title" = "管理樣式";
+# EN: Manage Styles
+
+"Ppc-Il-MIm.title" = "Edit CSS";
+
+"Q5F-mw-2vJ.title" = "Limit text width in Preview to:";
+
+"Q60-Vq-7a6.title" = "Page numbering offset:";
+
+"QbK-bc-clJ.title" = "Only preview these extensions:";
+
+"Qc9-WE-2sr.ibShadowedToolTip" = "Include MathJax from local bundle (v3)";
+
+"Qc9-WE-2sr.title" = "Local";
+
+"Qi0-3X-zug.ibShadowedToolTip" = "If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.";
+
+"QmQ-of-AsC.ibShadowedToolTip" = "Ignore the first level-one headline in the document when using H1s as page breaks.";
+
+"Qz7-4r-MXY.ibShadowedToolTip" = "Ignore block quoted text in word count";
+
+"RGW-BJ-5Zj.title" = "Generate typographically correct quotes and punctuation";
+
+"RL3-oF-r0C.title" = "Leanpub/GitBook:";
+
+"RTI-D2-a9q.ibShadowedToolTip" = "Include MathJax from Content Distribution Network (v3) (requires intenret connection)";
+
+"RTI-D2-a9q.title" = "CDN";
+
+"RTW-vf-ycw.ibShadowedToolTip" = "Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.";
+
+"RVc-RV-blW.title" = "Image annotation/markup editor:";
+
+"RYg-nX-enl.title" = "Bottom Left";
+
+"RdT-wT-vMQ.ibShadowedToolTip" = "Formatting for the right side of the footer.";
+
+"Red-oc-ijw.title" = "Appearance:";
+
+"RfL-hf-bmX.title" = "Reading speed (wpm):";
+
+"Rgj-wK-JAZ.title" = "Below Header";
+
+"S9C-5F-fjM.ibShadowedToolTip" = "This option prevents headlines for the next section from appearing at the bottom of a page without succeeding content";
+
+"S9S-ig-vSU.title" = "Show all diff markers";
+
+"S9e-pQ-ucC.title" = "深色模式";
+# EN: Dark Mode
+
+"SFF-15-E3P.ibShadowedToolTip" = "Select an application to open when a local image is right clicked and \"Edit image\" is selected.";
+
+"SGK-88-OvM.title" = "Mind Maps and Outlines:";
+
+"SMh-60-p6C.title" = "Include post title as H1 Headline";
+
+"SWA-N0-eSk.ibShadowedToolTip" = "Manage Export Profile presets";
+
+"Scr-Cm-Md1.ibShadowedToolTip" = "When no metadata document is present, prepend Title and Author from the Scrivener project's compile settings.";
+
+"Scr-Cm-Md2.title" = "Add compile metadata (title, author) when missing";
+
+"Sdx-KR-dGL.ibShadowedToolTip" = "Show word count (and statistics button) in the bottom bar of the preview window.";
+
+"SiX-cw-FAe.title" = "Detect and style RTL text";
+
+"Sre-H2-Wzk.title" = "Item 3";
+
+"T9h-aY-5E3.title" = "Enable Outline for extensions:";
+
+"TNs-O2-x5B.title" = "Enable link popovers";
+
+"TPp-Ke-U9k.title" = "Use APA Style";
+
+"TcW-Xs-Ysi.ibExternalAccessibilityDescription" = "Scroll to edit";
+
+"TcW-Xs-Ysi.ibExternalAccessibilityHelp" = "When updating the preview, Marked can determine where the document changed and automatically scroll to it. Use the radio buttons to choose whether the first or last edit is targeted.";
+
+"TcW-Xs-Ysi.ibShadowedToolTip" = "When updating the preview, Marked can determine where the document changed and automatically scroll to it. Use the radio buttons to choose whether the first or last edit is targeted.";
+
+"Tmj-K9-Wme.ibShadowedToolTip" = "Put footnotes (if any) on their own page at the end of the printed document.";
+
+"Tqt-fq-FsL.title" = "Include document titles as headlines";
+
+"U3r-q6-mHL.title" = "Minimum occurrences to consider a repeat:";
+
+"U7q-wI-xVS.title" = "Analyze readability statistics";
+
+"U8g-ad-L13.title" = "Select Logo";
+
+"UFU-6X-tIJ.title" = "New documents use custom:";
+
+"UKR-2T-kb6.ibShadowedToolTip" = "By default Marked will print/export with a white background. If you want to include background colors and images from custom themes, enable this option.";
+
+"UN9-2r-shh.title" = "Use ⌥⌘E to open default editor.";
+
+"URP-XW-mRF.title" = "Done";
+
+"UYJ-VZ-ZTS.title" = "Page Breaks:";
+
+"Ucy-tz-SJn.title" = "Styles:";
+
+"UnC-df-7Tf.title" = "Open documents must be closed and reopened for App changes to take effect";
+
+"VXI-JI-yLT.title" = "200";
+
+"Vgw-RR-opt.title" = "Variables available:";
+
+"Vpb-AA-dA9.title" = "Clear";
+
+"Vvh-pv-YEe.title" = "Enable Leanpub support";
+
+"Vxy-KJ-QGj.title" = "Only if language specified";
+
+"W8i-Kd-FGD.title" = "Sync preview and source scroll";
+
+"WMu-Ng-C1G.ibShadowedToolTip" = "Respect line breaks in paragraph text, replacing with hard breaks instead of concatenating with the previous line.";
+
+"WOj-Fg-hnd.ibShadowedToolTip" = "Embed OmniOutliner (.ooutline) files as Mermaid diagrams. If disabled, OmniOutlineir files included with include syntax will be rendered as Markdown lists/checklists.";
+
+"Wcb-ed-SyD.title" = "Render ~text~ as underscore";
+
+"Wif-YO-AUc.title" = "Headlines collapse sections";
+
+"Wkh-0o-sjb.title" = "Print/PDF:";
+
+"WpI-FN-1um.title" = "Render GitHub :emoji:";
+
+"WtW-MJ-k53.ibShadowedToolTip" = "Select an application to open when a local image is right clicked and \"Edit image\" is selected.";
+
+"X4i-G8-Z34.ibShadowedToolTip" = "If unchecked, the first page will not print a header.";
+
+"X9J-Tv-1N2.title" = "Above Footer";
+
+"XeI-Ez-OJE.ibShadowedToolTip" = "Disable readability analysis (Gunning Fog index, reading time, etc.). If your documents are large enough to cause extended \"spinning wheels\" on load, this is likely the cause.";
+
+"XzC-mD-IIK.ibShadowedToolTip" = "Offset applied to page numbering: 0 to number the first page \"1\". 1 to start page numbering at 2, -1 to make the second page page 1.";
+
+"Xzn-6O-vFG.ibShadowedToolTip" = "Embed OPML files as Mermaid diagrams. If disabled, OPML files included with include syntax will be rendered as Markdown lists.";
+
+"Y6m-B7-bA2.title" = "Custom Rules";
+
+"YKB-Zl-d5d.ibShadowedToolTip" = "Select a text editor to receive the current document when you type ⌘⌥E.";
+
+"YQ3-UW-R5s.ibShadowedToolTip" = "Interpret files named SUMMARY.md as index files for GitBook documentation.";
+
+"YWC-gr-yeu.ibShadowedToolTip" = "If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing code blocks will extend off the screen. If unchecked, horizontal overflow will always scroll.";
+
+"YXS-n3-wSV.title" = "Rendering:";
+
+"Ymy-c6-Yb7.title" = "OPML files";
+
+"Yrs-be-jLg.title" = "Embed images when copying HTML";
+
+"Z6J-1d-jGy.title" = "Shortcuts:";
+
+"Z9r-Qa-Pnl.ibShadowedToolTip" = "Font to use for header and footer.";
+
+"Zol-ww-fJ4.ibShadowedToolTip" = "Tags receive special styling, and are hidden when \"Show Comments\" is disabled.";
+
+"a2v-00-Rwj.ibShadowedToolTip" = "Date format using strftime formatting.";
+
+"aEa-mI-GYx.ibShadowedToolTip" = "Add panning (drag) and zooming (⌘-scroll)";
+
+"aMd-UD-exr.ibShadowedToolTip" = "When enabled, copying HTML to the clipboard will scan for local images and Base64 encode them to include as data urls in the source code";
+
+"aQJ-xH-0Q0.title" = "Show most recent edit marker";
+
+"aUB-nd-9T9.ibShadowedToolTip" = "By default, Markdown inside of HTML tags is usually ignored. This option forces Marked to continue processing within block elements. Note that some markup may cause issues.";
+
+"agx-YP-Lfh.title" = "Match System Setting";
+
+"azh-dp-9Z9.ibExternalAccessibilityDescription" = "Reverse diff order";
+
+"azh-dp-9Z9.ibExternalAccessibilityHelp" = "Order diffs in reverse, with the last diff in the document assumed to be most recent. Affects navigation order.";
+
+"azh-dp-9Z9.ibShadowedToolTip" = "Order diffs in reverse, with the last diff in the document assumed to be most recent. Affects navigation order.";
+
+"b4z-LX-6L3.title" = "Hookmark:";
+
+"b5Z-cq-2g6.title" = "Show comments sidebar by default";
+
+"bPX-B3-Hwf.ibShadowedToolTip" = "Print a horizontal line above the footer.";
+
+"bSF-dU-MU5.title" = "Item 1";
+
+"bTp-nT-ERY.title" = "Kramdown";
+
+"bVP-wP-y5z.title" = "Table of Contents tracks scroll position";
+
+"cEO-06-mT0.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for raising the frontmost (last active) Marked preview window to the foreground without leaving the current application";
+
+"cHT-ml-WaG.ibShadowedToolTip" = "Table of Contents highlights current section.";
+
+"cd9-6s-kDn.title" = "Image captions";
+
+"cjl-sj-QnR.title" = "重新整理";
+# EN: Refresh
+
+"cpR-Pw-boZ.title" = "Headers and Footers:";
+
+"d9X-aD-3y3.title" = "px";
+
+"dCL-aL-acF.ibShadowedToolTip" = "Print a horizontal line below the header.";
+
+"dCX-j9-zi7.title" = "Render as CriticMarkup";
+
+"dSO-yT-31X.title" = "Custom font size for export/print";
+
+"dZZ-wP-dmM.title" = "Use system-wide Find pasteboard";
+
+"dfR-ic-D1A.title" = "Sync Speed Reading with scroll position";
+
+"docc-pref-label-cell.title" = "DocC:";
+
+"docc-resolve-cb.ibShadowedToolTip" = "Inside a .docc documentation catalog, resolve ![](ImageName) to images in the catalog Resources folder (including ~dark and @2x variants).";
+
+"docc-resolve-cell.title" = "Resolve DocC image references";
+
+"don-vW-hSy.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for switching to Marked from any application";
+
+"dxe-xB-aG6.title" = "YAML and Pandoc Metadata:";
+
+"e0R-rb-ZL3.ibShadowedToolTip" = "Automatically enable Custom Processor for new windows/tabs";
+
+"e8N-xm-3WU.title" = "11";
+
+"eIP-HK-bSZ.title" = "Strip MultiMarkdown Metadata headers";
+
+"eLh-lb-5Lp.title" = "Allow themes to wrap text inside code blocks";
+
+"eMJ-jD-zMf.title" = "ask me each time";
+
+"eOT-Vx-WiJ.ibShadowedToolTip" = "Removes formatting (underline and color) from links when printing.";
+
+"eb7-VC-fLy.title" = "Exclude first H1";
+
+"ek1-Jb-Chl.title" = "Advanced Configuration";
+
+"epj-b5-z4d.placeholderString" = "md";
+
+"erp-3U-Dg4.title" = "Show word count";
+
+"ewh-zn-Iix.ibShadowedToolTip" = "Interpret hook:// links as paths to the file they refer to in Hookmark.app. Only functions on file links, other types ignored.";
+
+"f4d-fF-jqH.ibShadowedToolTip" = "When printing or exporting PDF, the URL for a link will appear after the linked text.";
+
+"fBQ-Bn-JSp.ibShadowedToolTip" = "Interpret files named Book.txt as index files and handle special Leanpub syntax.";
+
+"fJZ-eg-9pc.title" = "Links to text files should open in:";
+
+"fMi-KN-YJF.ibShadowedToolTip" = "If unchecked, the first page will not print a footer.";
+
+"fPz-q9-hqF.title" = "Item 2";
+
+"fWL-nw-WbV.ibShadowedToolTip" = "Determine Marked's behavior when a link clicked in a preview window leads to a local text file.";
+
+"faH-CX-nOt.ibShadowedToolTip" = "Restore the default date/time formatting.";
+
+"fhr-uI-z1k.title" = "Activate Marked:";
+
+"fl8-n5-SyT.title" = "Folders:";
+
+"fya-Q4-cDZ.ibShadowedToolTip" = "Determine how to handle YAML frontmatter. Ignore will leave it in place for the processor to handle, or you an convert it to MMD metadata or remove it entirely.";
+
+"gMl-tR-Hdh.title" = "Generate IDs on headlines";
+
+"ga6-Ze-7r4.ibShadowedToolTip" = "Forces a non-breaking space between the last two words of headlines and paragraphs to prevent single words from wrapping to a new line.";
+
+"gq4-eK-xLl.ibShadowedToolTip" = "Select the default processor to use for rendering Markdown. This setting is overridden if there's a matching Custom Rule for a file.";
+
+"h1N-69-8ia.title" = "Use first H1 as fallback title";
+
+"hZR-Bj-3ZW.placeholderString" = "md, mmd, html";
+
+"heh-wu-x9x.ibExternalAccessibilityDescription" = "Enable mini map";
+
+"heh-wu-x9x.ibExternalAccessibilityHelp" = "Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when rendering large documents.";
+
+"heh-wu-x9x.ibShadowedToolTip" = "Sync the source code view scroll position with the Preview scroll";
+
+"hh4-dx-rF5.title" = "Footnotes at page bottom";
+
+"huc-20-R8u.title" = "HTML:";
+
+"i0L-3g-y5o.title" = "Process Markdown inside of HTML";
+
+"iCM-VI-bND.title" = "Full Disk Access:";
+
+"iDT-BO-bY1.ibShadowedToolTip" = "Parse the title of pages and nested pages to create hierarchical Markdown headers.";
+
+"iX2-FA-n0U.ibShadowedToolTip" = "Always open new documents in new windows";
+
+"iX2-FA-n0U.title" = "windows";
+
+"iaV-oc-Xdw.title" = "9pt";
+
+"img-variant-resolve-cb.ibShadowedToolTip" = "For local images with a file extension, detect ~dark and @2x companion files and emit responsive picture markup. Works outside of DocC bundles.";
+
+"img-variant-resolve-cell.title" = "Resolve dark and @2x image variants";
+
+"ixM-VJ-sV6.title" = "Translucent in background";
+
+"j8n-js-3Kh.title" = "16";
+
+"jrg-V3-Eul.title" = "Indicate page breaks in preview";
+
+"jvs-JQ-gVi.title" = "Left Side";
+
+"jw4-RG-W3m.ibShadowedToolTip" = "Use level 1/2 headers as section dividers, always starting them on a new page";
+
+"jw8-mG-8ba.title" = "Page break after";
+
+"kFS-GG-tRX.title" = "Enable GitBook support";
+
+"kFv-kc-l3z.title" = "my text editor";
+
+"kLP-gZ-m5G.ibShadowedToolTip" = "Shows the style picker in the bottom bar of the preview window.";
+
+"kT6-ea-4Q4.title" = "Mermaid:";
+
+"kZl-d1-5M3.title" = "重新整理";
+# EN: Refresh
+
+"kbn-do-TaT.title" = "Render ==highlight== and ~~delete~~";
+
+"khL-0a-Mvw.title" = "Bottom Right";
+
+"klo-aL-Ktm.ibExternalAccessibilityDescription" = "Open new files in editor";
+
+"klo-aL-Ktm.ibExternalAccessibilityHelp" = "Open newly created files in the selected external editor";
+
+"klo-aL-Ktm.ibShadowedToolTip" = "When using the \"New File\" command, this option will automatically open the created file in your chosen external editor.";
+
+"kr7-y4-QmU.ibShadowedToolTip" = "Set a maximum width for the body of the preview.";
+
+"kts-6l-T4g.ibExternalAccessibilityDescription" = "Wiki Link Extension";
+
+"kts-6l-T4g.ibExternalAccessibilityHelp" = "Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].";
+
+"kts-6l-T4g.ibShadowedToolTip" = "Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].";
+
+"kyX-ST-sbt.title" = "Math:";
+
+"lAg-Gu-92X.ibShadowedToolTip" = "Add additional MathJax packages like Physics and Chemistry";
+
+"lBl-gz-aUc.ibShadowedToolTip" = "Formatting for the left side of the footer.";
+
+"lDk-9B-iIN.ibShadowedToolTip" = "Set a maximum width for the body of the preview.";
+
+"lHA-eS-GQd.title" = "全部";
+# EN: All
+
+"lMe-yt-yjQ.ibShadowedToolTip" = "Include and load MathJax for displaying LaTeX/MathML equations.";
+
+"leK-yx-9dP.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for raising the frontmost (last active) Marked preview window to the foreground without leaving the current application";
+
+"lg7-A2-UfB.ibShadowedToolTip" = "Select \"tabs\", \"windows\", or \"automatic\" (respects system setting)";
+
+"llt-8c-Uhu.ibShadowedToolTip" = "Apply styling only to fenced code blocks with a language specified, e.g. ```js";
+
+"lnJ-Dg-7Yd.ibShadowedToolTip" = "Turn horizontal rules in document into page breaks (this will additionally force footnotes onto a new page).";
+
+"m3u-3a-mEr.title" = "Keyword Highlighting:";
+
+"mRY-2S-7NF.ibShadowedToolTip" = "Show a light dashed line where breaks are inserted with <!--BREAK--> syntax or by checking auto-break options in Export settings.";
+
+"mcb-pU-l1D.title" = "10";
+
+"mdifier-inline-pref-cb.ibShadowedToolTip" = "After converting a web page to Markdown, convert reference-style links to inline [text](url) format.";
+
+"mdifier-inline-pref-cell.title" = "Use inline links";
+
+"mdifier-pref-label-cell.title" = "Markdownifier:";
+
+"n6M-g3-8qL.ibShadowedToolTip" = "More info";
+
+"n9f-sf-kcj.title" = "Scroll to edit";
+
+"nFn-GQ-2Jj.title" = "Logo:";
+
+"nPd-8B-GbS.ibShadowedToolTip" = "Render ~text~ as underscore instead of subscript (MultiMarkdown)";
+
+"newBringToFrontCheckbox.ibShadowedToolTip" = "When a file change is detected, select this document's tab or order its window to the front within Marked only. If another app is frontmost, Marked stays in the background. Use \"Raise window on update\" to pop above other applications.";
+
+"newBringToFrontCheckboxCell.title" = "Bring updated document to front";
+
+"ntv-d4-tOz.ibShadowedToolTip" = "Validate URLs on document load and refresh. Only displays results if there are errors.";
+
+"o5w-Sg-lZb.ibShadowedToolTip" = "Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.";
+
+"oCe-0U-oKy.ibShadowedToolTip" = "Show the full path to the current file instead of just its filename.";
+
+"oIO-H7-gle.title" = "Auto-hyphenate in paragraphs";
+
+"oiA-xW-UVz.ibShadowedToolTip" = "Select a text editor to receive the current document when you type ⌘E.";
+
+"okK-cA-IJX.ibShadowedToolTip" = "Include MathJax from local bundle or CDN";
+
+"p2Q-RV-dNJ.title" = "8";
+
+"p46-yr-3Uf.title" = "OmniOutliner outlines";
+
+"p92-2y-6zh.title" = "OtherViews";
+
+"pJw-Tc-bLD.ibShadowedToolTip" = "Formatting for the left side of the header.";
+
+"pNR-yv-TFX.title" = "OtherViews";
+
+"pRD-SP-kIN.title" = "Enable Mini Map navigation";
+
+"pXN-Ub-Ood.title" = "Use ⌘E for Find With Selection";
+
+"pZg-9z-YEa.title" = "Include footnotes in comment sidebar";
+
+"pbl-03-803.ibShadowedToolTip" = "Fenced code blocks are always ignored";
+
+"pf3-ef-8Zs.title" = "Additional Packages";
+
+"pnr-kp-kGo.ibExternalAccessibilityDescription" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"pnr-kp-kGo.ibExternalAccessibilityHelp" = "Highlight broken Markdown links and other markup that may have converted improperly.";
+
+"pnr-kp-kGo.ibShadowedToolTip" = "Highlight broken Markdown links and other markup that may have converted improperly.";
+
+"qLr-xl-R8A.title" = "100";
+
+"qel-yf-jHo.ibShadowedToolTip" = "Export all prefeerences as a JSON file that can be imported later.";
+
+"qhd-i1-jMC.title" = "Before Footnotes";
+
+"qnH-cj-k1j.ibShadowedIsNilPlaceholder" = "Choose Application";
+
+"qos-qB-P0Q.title" = "AMS only";
+
+"qpM-y7-hSc.ibShadowedToolTip" = "Follow the system Dark Mode setting.";
+
+"rFP-2c-xKa.title" = "Additional features:";
+
+"rIg-O3-BDH.ibShadowedToolTip" = "Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.";
+
+"rbv-px-urQ.title" = "Default Extension:";
+
+"returnFocusOnUpdateCheckbox.ibShadowedToolTip" = "When enabled, if Marked takes foreground focus during a raise/bring-on-update, return keyboard focus to the app that was frontmost before the update. Has no effect when this option is off, or when Marked stays in the background.";
+
+"returnFocusOnUpdateCheckboxCell.title" = "Return focus to previous app";
+
+"rjR-WB-Rw1.ibShadowedToolTip" = "If checked, tab-indented, fenced or included code is displayed as poetry instead of a code block. (No syntax highlighting, and special styling depending on the theme.)";
+
+"rob-zI-FHX.ibShadowedToolTip" = "New documents will default to showing keyword highlights";
+
+"rtc-jX-V7o.title" = "Show metadata as table";
+
+"sN3-Y8-LbN.ibShadowedToolTip" = "Set a maximum width for the body of the preview.";
+
+"t1j-c5-Onm.title" = "Show full path in window title";
+
+"t7n-mT-E6V.ibShadowedToolTip" = "Disable some processor-intensive features such as collapsible headlines when documents are over 100k.";
+
+"tG0-rU-aLw.title" = "Cache hosted images";
+
+"tQ4-9b-B6e.ibShadowedToolTip" = "Restore alerts that have been set to \"Never show again\" or \"Remember my choice.\"";
+
+"tTB-p7-P4g.ibShadowedToolTip" = "Use level 1 headers as section dividers, always starting them on a new page.";
+
+"tWa-A7-If6.title" = "Word count excludes:";
+
+"tY7-C4-5py.ibShadowedToolTip" = "Only number AMS equations";
+
+"tfb-VY-Tqp.ibShadowedToolTip" = "Click the shortcut field to record a hotkey for opening the actions palette";
+
+"tfi-st-aSZ.ibShadowedToolTip" = "The theme used for syntax highlighted code blocks.";
+
+"tpi-5S-1mf.ibShadowedToolTip" = "The counter in the status bar shows characters instead of words.";
+
+"tyM-gC-XBb.ibShadowedToolTip" = "Always open new documents in tabs";
+
+"tyM-gC-XBb.title" = "tabs";
+
+"u0o-bq-IQb.title" = "重新整理";
+# EN: Refresh
+
+"uBk-yg-ER4.title" = "Show comments and annotations by default";
+
+"uIc-gm-aQz.title" = "Open .scriv files in Scrivener when opened in Marked";
+
+"uJ6-Mq-rcV.title" = "Convert change tracking <-> CriticMarkup";
+
+"ueP-7h-rCf.title" = "Include on first page:";
+
+"ug7-rp-qmA.ibShadowedToolTip" = "A single hash with no space is a hashtag, not a headline. Always true when previewing Bear notes.";
+
+"ujD-ZF-ytu.ibShadowedToolTip" = "Generate random footnote IDs to avoid conflicts when multiple documents are displayed on the web.";
+
+"ung-Uh-qLP.ibShadowedToolTip" = "Select an application to open when a local image is right clicked and \"Edit image\" is selected.";
+
+"v4s-Gx-SpR.ibExternalAccessibilityDescription" = "Sync Speed Reading with scroll position";
+
+"v4s-Gx-SpR.ibExternalAccessibilityHelp" = "Start Speed Read from the current viewport and scroll the preview as playback advances.";
+
+"v4s-Gx-SpR.ibShadowedToolTip" = "Start Speed Read from the current viewport and scroll the preview as playback advances.";
+
+"v64-XC-XzK.title" = "2";
+
+"vGN-QS-Vh3.ibShadowedToolTip" = "Offset applied to page numbering: 0 to number the first page \"1\". 1 to start page numbering at 2, -1 to make the second page page 1.";
+
+"vOV-jm-UBU.title" = "OtherViews";
+
+"vSr-qn-WW8.ibShadowedToolTip" = "Show a word count popup for the selected text whenever a selection is made.";
+
+"vcK-UV-o4U.ibShadowedToolTip" = "Determine Marked's behavior when a link clicked in a preview window leads to a local text file.";
+
+"vda-v3-Xx6.title" = "重新整理";
+# EN: Refresh
+
+"vo9-JH-ze6.title" = "Popup stats for text selection";
+
+"voM-LV-KIa.title" = "Word:";
+
+"wSC-Yu-2MP.title" = "Style tags";
+
+"x61-dn-VlC.title" = "Item 1";
+
+"x6M-HE-xmK.title" = "重新整理";
+# EN: Refresh
+
+"x7a-1t-d1y.ibShadowedToolTip" = "Turn on Outline view mode for files with listed extensions.";
+
+"x7j-MM-FWA.title" = "Reset Alerts";
+
+"x8A-em-R2B.title" = "Choose App";
+
+"xC2-nA-NrV.title" = "Raise first window:";
+
+"xOz-LD-8sy.title" = "KaTeX";
+
+"xUP-DD-fxh.title" = "Prevent orphaned headlines";
+
+"y3G-eL-BMV.title" = "MultiMarkdown";
+
+"yE8-wi-t88.title" = "Resolve hook:// urls in images/links";
+
+"yEj-Gr-Evm.ibShadowedToolTip" = "Highlight code blocks with highlight.js.";
+
+"yaf-cg-saC.title" = "More Themes";
+
+"yoG-j6-vbx.ibShadowedToolTip" = "Import a .markedprefs file to update preferences";
+
+"z2V-nL-4sl.title" = "Layout and typography:";
+
+"zFI-uC-4c5.title" = "Manage";
+
+"zJe-dt-F3x.title" = "Errors only";
+
+"zga-hN-HSv.title" = "preprocessor";
+
+"zky-Tf-Zjn.ibShadowedToolTip" = "Render ==highlight== and ~~delete~~ as CriticMarkup";
+
+"zm8-V2-fa1.ibShadowedToolTip" = "Reading speed for reading time calculation (words per minute)";
+
+
+=== END Preferences.xib.strings ===
+
+
+=== BEGIN PreviewContextMenu.strings ===
+# Strings in this section: 25
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"menu.annotateWithApp" = "使用 %@ 批註";
+# EN: Annotate with %@
+
+"menu.copyHTML" = "複製 HTML";
+# EN: Copy HTML
+
+"menu.copyRichText" = "複製富文本";
+# EN: Copy Rich Text
+
+"menu.copyURL" = "複製 URL";
+# EN: Copy URL
+
+"menu.dimLinks" = "淡化連結";
+# EN: Dim Links
+
+"menu.editWithApp" = "使用 %@ 編輯";
+# EN: Edit with %@
+
+"menu.highlightKeywords" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"menu.ignoreWord" = "忽略 %@";
+# EN: Ignore %@
+
+"menu.ignoreWordPermanently" = "永久忽略詞語";
+# EN: Ignore word permanently
+
+"menu.ignoreWordTemporarily" = "暫時忽略詞語";
+# EN: Ignore word temporarily
+
+"menu.learnWord" = "學習 %@";
+# EN: Learn %@
+
+"menu.markdownifyURL" = "將 URL 轉為 Markdown";
+# EN: Markdownify URL
+
+"menu.openInApp" = "在 %@ 中開啟";
+# EN: Open in %@
+
+"menu.openInBrowser" = "在瀏覽器中開啟";
+# EN: Open In Browser
+
+"menu.openInBrowserNamed" = "在 %@ 中開啟";
+# EN: Open In %@
+
+"menu.refresh" = "重新整理";
+# EN: Refresh
+
+"menu.revealInFinder" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+
+"menu.selectAnnotationEditor" = "選擇批註編輯器";
+# EN: Select Annotation Editor
+
+"menu.selectImageEditor" = "選擇影像編輯器";
+# EN: Select Image Editor
+
+"menu.showComments" = "顯示評論";
+# EN: Show Comments
+
+"menu.showIncludeBoundaries" = "顯示包含檔案的邊界";
+# EN: Show Boundaries of Included Files
+
+"menu.toggleMiniMap" = "切換迷你地圖";
+# EN: Toggle Mini Map
+
+"menu.unignoreWord" = "取消忽略 %@";
+# EN: Unignore %@
+
+"menu.unlearnSpelling" = "取消學習拼字";
+# EN: Unlearn spelling
+
+"menu.validateAllLinks" = "驗證所有連結";
+# EN: Validate All Links
+
+
+=== END PreviewContextMenu.strings ===
+
+
+=== BEGIN Statistics.strings ===
+# Strings in this section: 35
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"stats.char.plural" = "字元";
+# EN: chars
+
+"stats.char.singular" = "字元";
+# EN: char
+
+"stats.countWithNumber" = "%@ %@";
+
+"stats.drawer.gulpeaseAppend" = "    Gulpease: %@";
+
+"stats.drawer.placeholder" = "字數:    行數:    字元數:";
+# EN: Words:    Lines:    Characters:
+
+"stats.drawer.readability" = "閱讀難度: %@    年級水準: %@    迷霧指數: %@";
+# EN: Reading Ease: %@    Grade Level: %@    Fog Index: %@
+
+"stats.drawer.summary" = "段落: %@     句子: %@    字元: %@";
+# EN: Paragraphs: %@     Sentences: %@    Characters: %@
+
+"stats.label.gradeLevel" = "年級水準:";
+# EN: Grade Level:
+
+"stats.label.gulpease" = "Gulpease:";
+
+"stats.label.gulpeaseBand" = "Gulpease 等級:";
+# EN: Gulpease band:
+
+"stats.label.readingEase" = "閱讀難度:";
+# EN: Reading Ease:
+
+"stats.selection.char" = "字元:";
+# EN: Char:
+
+"stats.selection.sent" = "句:";
+# EN: Sent:
+
+"stats.selection.word" = "字:";
+# EN: Word:
+
+"stats.status.calculatingBasicStats" = "正在計算基本統計";
+# EN: Calculating basic stats
+
+"stats.status.calculatingWordComplexity" = "正在計算詞彙複雜度";
+# EN: Calculating word complexity
+
+"stats.status.countingParagraphs" = "正在統計段落數";
+# EN: Counting paragraphs
+
+"stats.status.countingSentences" = "正在統計句數";
+# EN: Counting sentences
+
+"stats.status.countingSyllables" = "正在統計音節";
+# EN: Counting syllables
+
+"stats.status.countingWords" = "正在統計字數";
+# EN: Counting words
+
+"stats.targetProgress" = "目標 %.0f 字的 %2.1f%%";
+# EN: %2.1f%% of %.0f word target
+
+"stats.tooltip.fleschEnglish" = "Flesch-Kincaid 閱讀難度（英語）。數值越高越易讀。";
+# EN: Flesch-Kincaid Reading Ease (English). The higher that number is, the easier the text is to read.
+
+"stats.tooltip.fleschFrench" = "Flesch 閱讀難度（法語版）。數值越高越易讀。";
+# EN: Flesch Reading Ease (French adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschGerman" = "Flesch 閱讀難度（德語 Amstad 版）。數值越高越易讀。";
+# EN: Flesch Reading Ease (German/Amstad adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschPortuguese" = "Flesch 閱讀難度（葡萄牙語版）。數值越高越易讀。";
+# EN: Flesch Reading Ease (Portuguese adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschSpanish" = "Flesch 閱讀難度（西班牙語 Fernández-Huerta 版）。數值越高越易讀。";
+# EN: Flesch Reading Ease (Spanish/Fernández-Huerta adaptation). Higher is easier to read.
+
+"stats.tooltip.gradeLevel" = "表示理解該文字所需達到的年級水準。";
+# EN: A number that corresponds to the grade a person will need to have reached to understand it.
+
+"stats.tooltip.gulpeaseBand.1" = "0–39：困難（即使對有經驗的讀者）";
+# EN: 0–39: Difficult (even for experienced readers)
+
+"stats.tooltip.gulpeaseBand.2" = "40–59：較難（高中）";
+# EN: 40–59: Fairly difficult (upper secondary)
+
+"stats.tooltip.gulpeaseBand.3" = "60–79：中等難度（國中）";
+# EN: 60–79: Medium difficulty (lower secondary)
+
+"stats.tooltip.gulpeaseBand.4" = "80–100：非常容易（小學）";
+# EN: 80–100: Very easy (primary school)
+
+"stats.tooltip.gulpeaseBandDefault" = "Gulpease 等級（1–4），由 Gulpease 分數得出。";
+# EN: Gulpease band (1–4), derived from the Gulpease score.
+
+"stats.tooltip.gulpeasePrimary" = "使用 Gulpease 指數（義大利語可讀性）。數值越高越易讀。";
+# EN: Using the Gulpease index (Italian readability). Higher is easier to read.
+
+"stats.word.plural" = "字";
+# EN: words
+
+"stats.word.singular" = "字";
+# EN: word
+
+
+=== END Statistics.strings ===
+
+
+=== BEGIN Tips.strings ===
+# Strings in this section: 24
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"tip.bookmarkNumber" = "書籤 %@";
+# EN: Bookmark %@
+
+"tip.commentMarker" = "評論 %1$@ / %2$@。使用 C/⇧C 導覽。";
+# EN: Comment %1$@ of %2$@. Navigate with C/⇧C.
+
+"tip.commentsHidden" = "評論已隱藏";
+# EN: Comments hidden
+
+"tip.compiling" = "正在編譯";
+# EN: Compiling
+
+"tip.converting" = "正在轉換";
+# EN: Converting
+
+"tip.enableMiniMapInSettings" = "在設定 > 預覽中啟用迷你地圖";
+# EN: Enable Mini Map in Settings > Preview pane
+
+"tip.focused" = "已聚焦";
+# EN: Focused
+
+"tip.includeMarkersPending" = "找到 include 標記但邊界尚未渲染；請重新整理預覽";
+# EN: Include markers found but boundaries are not rendered yet; refresh preview
+
+"tip.invalidBookmarkNumber" = "無效的書籤編號：%@";
+# EN: Invalid bookmark number: %@
+
+"tip.linksDimmed" = "連結已淡化";
+# EN: Links dimmed
+
+"tip.mathJaxConfigError" = "解析附加 MathJax 設定時發生錯誤";
+# EN: Error parsing additional MathJax configuration
+
+"tip.miniMapDisabled" = "迷你地圖已停用";
+# EN: MiniMap disabled
+
+"tip.miniMapDisabledLargeDoc" = "大型文件處理模式下已停用迷你地圖";
+# EN: Mini Map disabled for large document processing mode
+
+"tip.miniMapDisabledShortDoc" = "短文件已停用迷你地圖";
+# EN: MiniMap disabled on short documents
+
+"tip.minimapCreateError" = "建立迷你地圖時發生錯誤";
+# EN: Error creating minimap
+
+"tip.noBookmark" = "無書籤";
+# EN: No bookmark
+
+"tip.noBookmarkSpots" = "無可用書籤位置";
+# EN: No bookmark spots available
+
+"tip.noBookmarksOrMinimap" = "無可用書籤或迷你地圖";
+# EN: No bookmarks or minimap available
+
+"tip.noCommentMarkers" = "無可用評論";
+# EN: No comments available
+
+"tip.noEditMarkers" = "無可用編輯標記";
+# EN: No edit markers available
+
+"tip.noIncludeBoundaries" = "此文件中未找到包含檔案的邊界";
+# EN: No included-file boundaries found in this document
+
+"tip.recentEditMarker" = "最近編輯標記 %1$@ / %2$@。使用 E/⇧E 導覽。";
+# EN: Recent edit marker %1$@ of %2$@. Navigate with E/⇧E.
+
+"tip.syntaxHighlightDisabledSize" = "因檔案大小已停用語法突顯";
+# EN: Syntax highlighting disabled due to file size
+
+"tip.zoomedOut" = "已縮小";
+# EN: Zoomed out
+
+
+=== END Tips.strings ===
+
+
+=== BEGIN KBShortcuts.strings ===
+# Strings in this section: 199
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"kbs.action.clipboardPreview" = "剪貼簿預覽";
+# EN: Clipboard Preview
+
+"kbs.action.close" = "關閉";
+# EN: Close
+
+"kbs.action.closeAll" = "關閉全部";
+# EN: Close All
+
+"kbs.action.collapseAllSections" = "折疊所有部分";
+# EN: Collapse all sections
+
+"kbs.action.copy" = "拷貝";
+# EN: Copy
+
+"kbs.action.copyHTMLSource" = "複製 HTML 來源";
+# EN: Copy HTML Source
+
+"kbs.action.copyRichText" = "複製富文本";
+# EN: Copy Rich Text
+
+"kbs.action.cut" = "剪下";
+# EN: Cut
+
+"kbs.action.darkMode" = "深色模式";
+# EN: Dark Mode
+
+"kbs.action.decreaseTextSize" = "Decrease Text Size";
+
+"kbs.action.detailedStatistics" = "詳細統計";
+# EN: Detailed Statistics
+
+"kbs.action.dingus.bold" = "Bold: wrap selection in ** or insert with cursor between";
+
+"kbs.action.dingus.contractSelection" = "Contract selection";
+
+"kbs.action.dingus.cycleListMarker" = "Cycle list marker (unordered ↔ ordered)";
+
+"kbs.action.dingus.expandSelection" = "Expand selection (word → delimiters → sentence → paragraph → block → document)";
+
+"kbs.action.dingus.findNext" = "Find next (when find bar is visible)";
+
+"kbs.action.dingus.findPrevious" = "Find previous (when find bar is visible)";
+
+"kbs.action.dingus.indent" = "Indent line or list item";
+
+"kbs.action.dingus.indentTab" = "Indent line or list item (same as Tab)";
+
+"kbs.action.dingus.insertLink" = "Insert or wrap Markdown link";
+
+"kbs.action.dingus.italic" = "Italic: wrap selection in _ or insert with cursor between";
+
+"kbs.action.dingus.moveParagraphDown" = "Move paragraph down";
+
+"kbs.action.dingus.moveParagraphUp" = "Move paragraph up";
+
+"kbs.action.dingus.open" = "在 Dingus 中開啟";
+# EN: Open in Dingus
+
+"kbs.action.dingus.openInMarked" = "在 Marked 中開啟 Dingus";
+# EN: Open Dingus in Marked
+
+"kbs.action.dingus.outdent" = "Outdent line or list item";
+
+"kbs.action.dingus.outdentShiftTab" = "Outdent line or list item (same as Shift+Tab)";
+
+"kbs.action.dingus.save" = "保存 Dingus";
+# EN: Save Dingus
+
+"kbs.action.dingus.saveAs" = "將 Dingus 另存為...";
+# EN: Save Dingus As…
+
+"kbs.action.dingus.showFindBar" = "Show or hide find bar in Markdown Input pane";
+
+"kbs.action.dingus.toggleOutputPane" = "Toggle output pane (Source/Preview)";
+
+"kbs.action.documentStatistics" = "Document Statistics";
+
+"kbs.action.expandAllSections" = "展開所有部分";
+# EN: Expand all sections
+
+"kbs.action.export" = "導出為";
+# EN: Export
+
+"kbs.action.extractFromURL" = "Extract from URL";
+
+"kbs.action.filterScrivenerDocuments" = "過濾 Scrivener 文檔";
+# EN: Filter Scrivener Documents
+
+"kbs.action.findInPreview" = "在預覽中查找";
+# EN: Find in Preview
+
+"kbs.action.findNext" = "尋找下一個";
+# EN: Find Next
+
+"kbs.action.findPrevious" = "尋找上一個";
+# EN: Find Previous
+
+"kbs.action.floatingStatistics" = "浮動統計";
+# EN: Floating Statistics
+
+"kbs.action.fullScreen" = "全螢幕";
+# EN: Full Screen
+
+"kbs.action.gearMenu" = "Gear Menu";
+
+"kbs.action.highlightKeywords" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"kbs.action.highlightMarkupErrors" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"kbs.action.historyBack" = "History Back";
+
+"kbs.action.historyForward" = "History Forward";
+
+"kbs.action.increaseTextSize" = "Increase Text Size";
+
+"kbs.action.keepOnTop" = "保持視窗在最前面";
+# EN: Keep on Top
+
+"kbs.action.keywordDrawer" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"kbs.action.manageStyles" = "管理樣式";
+# EN: Manage Styles
+
+"kbs.action.minimize" = "縮到最小";
+# EN: Minimize
+
+"kbs.action.newFile" = "New File";
+
+"kbs.action.nextTab" = "下一個選項卡";
+# EN: Next Tab
+
+"kbs.action.open" = "打開…";
+# EN: Open
+
+"kbs.action.openInEditor" = "在編輯器中開啟";
+# EN: Open in Editor
+
+"kbs.action.paste" = "貼上";
+# EN: Paste
+
+"kbs.action.previewClipboard" = "Preview Clipboard";
+
+"kbs.action.previewNav.addNextBookmark" = "新增書籤";
+# EN: Add next bookmark
+
+"kbs.action.previewNav.autoscroll" = "自動捲動";
+# EN: Auto-scroll
+
+"kbs.action.previewNav.bookmarkNearestHeadline" = "Bookmark nearest headline";
+
+"kbs.action.previewNav.bookmarkScrollPosition" = "Bookmark scroll position";
+
+"kbs.action.previewNav.closeOverlayDeselect" = "Close overlay/Deselect text";
+
+"kbs.action.previewNav.criticMarkupNextPrev" = "CriticMarkup next/prev";
+
+"kbs.action.previewNav.cycleCommentsFootnotes" = "Cycle comments and footnotes";
+
+"kbs.action.previewNav.cycleEditMarkers" = "下一個編輯標記";
+# EN: Cycle edit markers and CriticMarkup changes
+
+"kbs.action.previewNav.displayIncludedFilename" = "Display current included filename";
+
+"kbs.action.previewNav.displayMiniMap" = "顯示小地圖";
+# EN: Display Mini Map
+
+"kbs.action.previewNav.focusVisibleSection" = "Focus visible section";
+
+"kbs.action.previewNav.historyBackForward" = "History back/forward";
+
+"kbs.action.previewNav.jumpToBottom" = "跳至底部";
+# EN: Jump to Bottom
+
+"kbs.action.previewNav.jumpToTop" = "跳至頂部";
+# EN: Jump to Top
+
+"kbs.action.previewNav.navigateAllHeaders" = "下一個標題";
+# EN: Navigate all headers
+
+"kbs.action.previewNav.navigateAllHighlights" = "Navigate all highlights";
+
+"kbs.action.previewNav.navigateH1H2Headers" = "下一個 H1/H2 標題";
+# EN: Navigate H1/H2 headers
+
+"kbs.action.previewNav.navigateTargetHighlights" = "Navigate target highlights";
+
+"kbs.action.previewNav.nextPrevBookmarkNumeric" = "下一個書籤（數字）";
+# EN: Next/Prev bookmark (numeric)
+
+"kbs.action.previewNav.nextPrevBookmarkPageOrder" = "下一個書籤（頁面順序）";
+# EN: Next/Prev bookmark (page order)
+
+"kbs.action.previewNav.openFastSwitcher" = "開啟快速切換器";
+# EN: Open fast switcher
+
+"kbs.action.previewNav.reverseAutoscroll" = "反向自動捲動";
+# EN: Reverse auto-scroll
+
+"kbs.action.previewNav.scrollDownUp" = "向下捲動";
+# EN: Scroll down/up
+
+"kbs.action.previewNav.scrollFaster" = "Scroll faster";
+
+"kbs.action.previewNav.scrollToBookmark" = "Scroll to bookmark";
+
+"kbs.action.previewNav.showHideHelpHUD" = "顯示/隱藏幫助 HUD";
+# EN: Show/Hide Help HUD
+
+"kbs.action.previewNav.slowSpeedAutoscroll" = "Slow down/Speed up auto-scroll";
+
+"kbs.action.previewNav.zoomOverviewToggle" = "Zoom overview toggle";
+
+"kbs.action.previousTab" = "上一個選項卡";
+# EN: Previous Tab
+
+"kbs.action.print" = "列印…";
+# EN: Print
+
+"kbs.action.quickOpen" = "快速開啟";
+# EN: Quick Open
+
+"kbs.action.quickToggles.criticMarkupAlways" = "__學期_0__ 始終";
+# EN: CriticMarkup Always
+
+"kbs.action.quickToggles.idsOnHeadlines" = "頭條ID";
+# EN: IDs on Headlines
+
+"kbs.action.quickToggles.processInsideHTML" = "HTML 內部流程";
+# EN: Process Inside HTML
+
+"kbs.action.quickToggles.retainLineBreaks" = "保留換行符";
+# EN: Retain Line Breaks
+
+"kbs.action.quickToggles.scrollToFirstEdit" = "Scroll to First Edit";
+
+"kbs.action.quickToggles.showDiffMarkers" = "顯示差異標記";
+# EN: Show Diff Markers
+
+"kbs.action.quickToggles.smartTypography" = "智慧排版";
+# EN: Smart Typography
+
+"kbs.action.quickToggles.stripMMDMetadata" = "剝離 MMD 元數據";
+# EN: Strip MMD Metadata
+
+"kbs.action.quickToggles.stripYAML" = "剝離YAML";
+# EN: Strip YAML
+
+"kbs.action.readabilityStatistics" = "可讀性統計";
+# EN: Readability Statistics
+
+"kbs.action.redo" = "重做";
+# EN: Redo
+
+"kbs.action.reloadPreview" = "重新整理";
+# EN: Reload Preview
+
+"kbs.action.reopenLast" = "Re-open Last";
+
+"kbs.action.resetTextSize" = "Reset Text Size";
+
+"kbs.action.revealInFinder" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+
+"kbs.action.saveClipboardPreview" = "Save Clipboard Preview";
+
+"kbs.action.saveDOCX" = "保存 DOCX";
+# EN: Save DOCX
+
+"kbs.action.saveHTML" = "保存 HTML";
+# EN: Save HTML
+
+"kbs.action.savePDF" = "保存 PDF";
+# EN: Save PDF
+
+"kbs.action.savePDFPaginated" = "儲存 PDF（分頁）";
+# EN: Save PDF (Paginated)
+
+"kbs.action.saveRTF" = "保存 RTF";
+# EN: Save RTF
+
+"kbs.action.selectAll" = "選擇全部";
+# EN: Select All
+
+"kbs.action.selectBuiltinStyle" = "Select Built-in Style";
+
+"kbs.action.selectCustomStyle" = "Select Custom Style";
+
+"kbs.action.settings" = "設定…";
+# EN: Settings
+
+"kbs.action.showCommentsAndFootnotes" = "顯示評論和腳註";
+# EN: Show Comments and Footnotes
+
+"kbs.action.showIncludedFileBoundaries" = "Show Boundaries of Included Files";
+
+"kbs.action.showKeyboardShortcuts" = "Show Keyboard Shortcuts";
+
+"kbs.action.showMarkdownReference" = "Show Markdown Reference";
+
+"kbs.action.showStatusBars" = "顯示狀態列";
+# EN: Show Status Bars
+
+"kbs.action.showTitleBars" = "顯示標題列";
+# EN: Show Title Bars
+
+"kbs.action.styleStealer" = "風格竊取者";
+# EN: Style Stealer
+
+"kbs.action.tocNav.clearSearchDismissTOC" = "Clear search/Dismiss TOC";
+
+"kbs.action.tocNav.openTOC" = "Open TOC";
+
+"kbs.action.tocNav.openTOCQuickSearch" = "Open TOC quick-search";
+
+"kbs.action.tocNav.openTOCSearchFocused" = "Open TOC with search focused";
+
+"kbs.action.tocNav.scrollToSelection" = "Scroll to selection";
+
+"kbs.action.tocNav.selectFirstNextItem" = "Select first/next item";
+
+"kbs.action.tocNav.selectFirstSearchResult" = "Select first search result";
+
+"kbs.action.tocNav.selectPreviousItem" = "Select previous item";
+
+"kbs.action.toggleCustomProcessor" = "Toggle Custom Processor";
+
+"kbs.action.toggleFountainScrivenerComments" = "Toggle Fountain/Scrivener Comments";
+
+"kbs.action.toggleSourceView" = "切換來源視圖";
+# EN: Toggle Source View
+
+"kbs.action.toggleTOC" = "Toggle Table of Contents";
+
+"kbs.action.undo" = "還原";
+# EN: Undo
+
+"kbs.action.useSelectionForFind" = "使用選擇進行查找";
+# EN: Use Selection for Find
+
+"kbs.action.validateURLs" = "Validate URLs";
+
+"kbs.action.visualizeWordRepetition" = "可視化單字重複";
+# EN: Visualize Word Repetition
+
+"kbs.caption.autoscroll" = "自動捲動";
+# EN: Autoscroll
+
+"kbs.caption.bookmarking" = "書籤";
+# EN: Bookmarking
+
+"kbs.caption.misc" = "Misc";
+
+"kbs.caption.navigation" = "導覽";
+# EN: Navigation
+
+"kbs.caption.proofreading" = "Proofreading";
+
+"kbs.caption.search" = "搜尋";
+# EN: Search
+
+"kbs.caption.tableOfContents" = "目錄";
+# EN: Table of Contents
+
+"kbs.header.function" = "Function";
+
+"kbs.header.shortcut" = "Shortcut";
+
+"kbs.hud.addBookmark" = "新增書籤";
+# EN: Add Bookmark
+
+"kbs.hud.addNumberedBookmark" = "Add Numbered Bookmark";
+
+"kbs.hud.advancedStatisticsFloating" = "Advanced Statistics Floating Panel";
+
+"kbs.hud.advancedStatisticsOverlay" = "Advanced Statistics Overlay";
+
+"kbs.hud.autoscroll" = "自動捲動";
+# EN: Autoscroll
+
+"kbs.hud.basicStatisticsDrawer" = "Basic Statistics (Drawer)";
+
+"kbs.hud.bookmarkNearestHeadline" = "Bookmark Nearest Headline";
+
+"kbs.hud.clearAllBookmarks" = "清除所有書籤";
+# EN: Clear All Bookmarks
+
+"kbs.hud.clearFocusedBookmark" = "清除焦點書籤";
+# EN: Clear Focused Bookmark
+
+"kbs.hud.closeOverlayDeselect" = "Close Overlay/Deselect Text";
+
+"kbs.hud.cssElementSearch" = "Search For CSS Element";
+
+"kbs.hud.cycleEditMarkers" = "Cycle Edit Markers Forward/Backward";
+
+"kbs.hud.editCurrentFile" = "Edit Current File";
+
+"kbs.hud.editVisibleIncludedFile" = "Edit Visible Included File";
+
+"kbs.hud.goToNextError" = "Go to Next Error";
+
+"kbs.hud.goToPreviousError" = "Go to Previous Error";
+
+"kbs.hud.navigateAllHeaders" = "Navigate All Headers";
+
+"kbs.hud.navigateAllHighlights" = "Navigate all highlights";
+
+"kbs.hud.navigateH1H2Headers" = "Navigate H1/H2 Headers";
+
+"kbs.hud.navigateTargetHighlights" = "Navigate target highlights";
+
+"kbs.hud.nextPrevBookmarkNumeric" = "Next/Prev Bookmark Numerically";
+
+"kbs.hud.nextPrevBookmarkPageOrder" = "Next/Prev Bookmark in Page Order";
+
+"kbs.hud.openFastSwitcher" = "Open \"Fast Switcher\"";
+
+"kbs.hud.openGearMenu" = "Open Gear Menu";
+
+"kbs.hud.playPauseAutoscroll" = "播放/暫停自動滾動";
+# EN: Play/Pause Autoscroll
+
+"kbs.hud.quickActionsPalette" = "Quick Actions Palette";
+
+"kbs.hud.readabilityStatisticsDrawer" = "Readability Statistics (Drawer)";
+
+"kbs.hud.regexSearch" = "Regular Expression Search";
+
+"kbs.hud.revealCurrentFile" = "Reveal Current File in Finder";
+
+"kbs.hud.reverseAutoscroll" = "反向自動捲動";
+# EN: Reverse Autoscroll
+
+"kbs.hud.scrollDownUp" = "Scroll Up/Down";
+
+"kbs.hud.scrollFaster" = "Scroll Up/Down Faster";
+
+"kbs.hud.search" = "搜尋";
+# EN: Search
+
+"kbs.hud.searchNextPrevious" = "Next/Previous Search Result";
+
+"kbs.hud.showCommentsSidebar" = "Show Comments Sidebar";
+
+"kbs.hud.showGrammarWithSpelling" = "Show Grammar with Spelling";
+
+"kbs.hud.showHideComments" = "Show/Hide Comments";
+
+"kbs.hud.showSpellingErrors" = "Show Spelling Errors";
+
+"kbs.hud.showStyleManager" = "Show Style Manager";
+
+"kbs.hud.showStyleStealer" = "Show Style Stealer";
+
+"kbs.hud.slowSpeedAutoscroll" = "Speed up/Slow Down Autoscroll";
+
+"kbs.hud.tocOpenQuickSearch" = "Open TOC Quick-search";
+
+"kbs.hud.tocScrollToSelection" = "Scroll To Selection";
+
+"kbs.hud.tocSelectFirstNext" = "Select First/next Item";
+
+"kbs.hud.tocSelectFirstSearch" = "Select First Search Result";
+
+"kbs.hud.toggleDiffMarkers" = "Toggle Diff Markers";
+
+"kbs.hud.toggleSpeedRead" = "Toggle Speed Read";
+
+"kbs.hud.validateExternalLinks" = "驗證外部連結";
+# EN: Validate External Links
+
+"kbs.nav.application" = "Application";
+
+"kbs.nav.dingusEditor" = "Dingus Editor";
+
+"kbs.nav.previewNav" = "Preview Nav";
+
+"kbs.nav.quickToggles" = "快速切換";
+# EN: Quick Toggles
+
+"kbs.nav.tocNav" = "TOC Nav";
+
+"kbs.panelTitle" = "鍵盤快速鍵";
+# EN: Keyboard Shortcuts
+
+
+=== END KBShortcuts.strings ===
+
+
+=== BEGIN MainMenuMAS.strings ===
+# Strings in this section: 166
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0iO-Jd-3vX.title" = "管理樣式";
+# EN: Manage Styles
+
+"124.title" = "最近打開";
+# EN: Open Recent
+
+"125.title" = "最近打開";
+# EN: Open Recent
+
+"126.title" = "清除菜單";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "服務";
+# EN: Services
+
+"131.title" = "服務";
+# EN: Services
+
+"134.title" = "隱藏 Marked";
+# EN: Hide Marked
+
+"136.title" = "退出Marked";
+# EN: Quit Marked
+
+"145.title" = "隱藏其他人";
+# EN: Hide Others
+
+"150.title" = "顯示全部";
+# EN: Show All
+
+"19.title" = "視窗";
+# EN: Window
+
+"195.title" = "停止說話";
+# EN: Stop Speaking
+
+"196.title" = "開始說話";
+# EN: Start Speaking
+
+"197.title" = "拷貝";
+# EN: Copy
+
+"198.title" = "選擇全部";
+# EN: Select All
+
+"199.title" = "剪下";
+# EN: Cut
+
+"1L3-bl-pki.title" = "顯示標題列";
+# EN: Show Title Bars
+
+"1rJ-o9-D4P.title" = "編輯 Custom 規則";
+# EN: Edit Custom Rules
+
+"203.title" = "貼上";
+# EN: Paste
+
+"205.title" = "編輯";
+# EN: Edit
+
+"207.title" = "還原";
+# EN: Undo
+
+"20V-is-JeR.title" = "下一個選項卡";
+# EN: Next Tab
+
+"211.title" = "演講";
+# EN: Speech
+
+"212.title" = "演講";
+# EN: Speech
+
+"215.title" = "重做";
+# EN: Redo
+
+"217.title" = "編輯";
+# EN: Edit
+
+"239.title" = "縮放視窗";
+# EN: Zoom Window
+
+"24.title" = "視窗";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "預覽";
+# EN: Preview
+
+"296.title" = "預覽";
+# EN: Preview
+
+"298.title" = "重新整理";
+# EN: Refresh
+
+"3t8-eH-dUy.title" = "快速開啟";
+# EN: Quick Open
+
+"491.title" = "輔助說明";
+# EN: Help
+
+"492.title" = "輔助說明";
+# EN: Help
+
+"493.title" = "Marked 輔助說明";
+# EN: Marked Help
+
+"5.title" = "將所有內容放在前面";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "關於 Marked";
+# EN: About Marked
+
+"5TI-U8-WHR.title" = "__學期_0__ 風格畫廊";
+# EN: Custom Style Gallery
+
+"5VQ-XV-9lF.title" = "串流媒體預覽";
+# EN: Streaming Preview
+
+"610.title" = "重新開啟最後一個文件";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "將 HTML 來源複製到剪貼簿";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "複製 HTML 來源";
+# EN: Copy HTML Source
+
+"636.title" = "縮放";
+# EN: Zoom
+
+"637.title" = "縮放";
+# EN: Zoom
+
+"638.title" = "縮放重置";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "放大";
+# EN: Zoom In
+
+"647.title" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked 網站";
+# EN: Marked Website
+
+"653.title" = "報告問題";
+# EN: Report an Issue
+
+"655.title" = "在編輯器中開啟";
+# EN: Open in Editor
+
+"664.title" = "快速概覽";
+# EN: Quick Overview
+
+"672.title" = "全螢幕";
+# EN: Full Screen
+
+"72.title" = "打開…";
+# EN: Open…
+
+"720.title" = "深色模式";
+# EN: Dark Mode
+
+"73.title" = "關閉";
+# EN: Close
+
+"738.ibShadowedToolTip" = "將 RTF 資料複製到剪貼簿";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "複製富文本";
+# EN: Copy Rich Text
+
+"748.title" = "鍵盤快速鍵";
+# EN: Keyboard Shortcuts
+
+"752.title" = "__學期_0__ 參考";
+# EN: Markdown Reference
+
+"78.title" = "列印…";
+# EN: Print…
+
+"800.title" = "頁面設定...";
+# EN: Page Setup…
+
+"804.title" = "折疊所有部分";
+# EN: Collapse All Sections
+
+"809.title" = "展開所有部分";
+# EN: Expand All Sections
+
+"81.title" = "檔案";
+# EN: File
+
+"83.title" = "檔案";
+# EN: File
+
+"860.title" = "導出為";
+# EN: Export As
+
+"861.title" = "搜尋";
+# EN: Search
+
+"862.title" = "搜尋";
+# EN: Search
+
+"863.title" = "在預覽中查找";
+# EN: Find in Preview
+
+"864.title" = "尋找上一個";
+# EN: Find Previous
+
+"865.title" = "尋找下一個";
+# EN: Find Next
+
+"866.title" = "導出為";
+# EN: Export As
+
+"874.title" = "保存 HTML";
+# EN: Save HTML
+
+"875.title" = "保存 PDF";
+# EN: Save PDF
+
+"876.title" = "儲存 PDF（分頁）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "保存 DOCX";
+# EN: Save DOCX
+
+"880.title" = "保存 ODT";
+# EN: Save ODT
+
+"891.title" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"895.title" = "切換來源視圖";
+# EN: Toggle Source View
+
+"8I4-lW-Kgn.title" = "歷史項目";
+# EN: History Items
+
+"9Jf-cv-ReI.title" = "詳細統計";
+# EN: Detailed Statistics
+
+"CIg-C0-cyi.ibShadowedToolTip" = "Save a clipboard or content extractor preview as a Markdown file";
+
+"CIg-C0-cyi.title" = "儲存瞬態預覽";
+# EN: Save Transient Preview
+
+"DJl-cP-TQ7.title" = "頭條ID";
+# EN: IDs on Headlines
+
+"DNB-2m-lXI.title" = "歷史";
+# EN: History
+
+"Epb-cz-6CZ.title" = "顯示 Custom 規則日誌";
+# EN: Show Custom Rules Log
+
+"F2g-OQ-AX1.title" = "Process Markdown inside of HTML";
+
+"Flf-Pm-yT3.title" = "保存 OPML";
+# EN: Save OPML
+
+"Flv-tc-5Fd.title" = "樣式";
+# EN: Style
+
+"GHS-Br-7vX.title" = "統計數據";
+# EN: Statistics
+
+"JZK-Ml-vtI.title" = "向前";
+# EN: Forward
+
+"KSt-Nd-YfH.title" = "滾動到編輯";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "快速切換";
+# EN: Quick Toggles
+
+"L4k-JR-PBl.title" = "可視化單字重複";
+# EN: Visualize Word Repetition
+
+"LB1-ov-Lpp.title" = "新的";
+# EN: New
+
+"M6W-jT-4iT.title" = "保存 TextBundle";
+# EN: Save TextBundle
+
+"MAS-browser-extensions-menu.title" = "瀏覽器擴充";
+# EN: Browser Extensions
+
+"MAS-expire-trial.title" = "試用期到期";
+# EN: Expire Trial
+
+"MAS-reset-review-prompt.title" = "Reset Review Prompt";
+
+"MAS-reset-trial.title" = "Restart Trial";
+
+"MAS-show-review-prompt.title" = "Show Review Prompt Now";
+
+"MkF-AI-Ask-MAS.title" = "詢問文件…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter-MAS.title" = "過濾 Scrivener 文檔";
+# EN: Filter Scrivener Documents
+
+"MkQA-MAS-File.title" = "快速行動...";
+# EN: Quick Actions…
+
+"MkSR-Pvw-MAS.title" = "速讀";
+# EN: Speed Read
+
+"NMN-Qd-rWR.title" = "__學期_0__ 預覽";
+# EN: MarsEdit Preview
+
+"OF5-3M-soB.title" = "關閉全部";
+# EN: Close All
+
+"OH7-8B-tV7.title" = "縮到最小";
+# EN: Minimize
+
+"Pat-MN-4Mv.title" = "顯示狀態列";
+# EN: Show Status Bars
+
+"Pht-ls-sph.title" = "出口…";
+# EN: Export…
+
+"Prs-jS-AkN.title" = "Marked 支援";
+# EN: Marked Support
+
+"Qu4-zo-UZD.title" = "__學期_0__ 始終";
+# EN: CriticMarkup Always
+
+"UOd-D2-aXd.title" = "校稿";
+# EN: Proofing
+
+"UyV-DY-t88.title" = "保存 RTF";
+# EN: Save RTF
+
+"Uye-NQ-7E2.title" = "基礎統計";
+# EN: Basic Statistics
+
+"Wr7-nm-W7z.title" = "風格竊取者";
+# EN: Style Stealer
+
+"Xas-RR-kHk.title" = "返回";
+# EN: Back
+
+"XoP-n3-kF7.title" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"YP4-qu-5WE.title" = "Markdown化 URL";
+# EN: Markdownify URL
+
+"YaF-0Z-jJf.title" = "剝離YAML";
+# EN: Strip YAML
+
+"Yiv-ef-LJF.title" = "產生 Custom 樣式";
+# EN: Generate a Custom Style
+
+"Z7o-lz-0ji.title" = "智慧排版";
+# EN: Smart Typography
+
+"aIN-4X-d3H.title" = "分享 Custom 風格";
+# EN: Share a Custom Style
+
+"blG-O8-4HT.title" = "安裝命令列工具";
+# EN: Install Command Line Tool
+
+"copy-uuid-menu.title" = "複製 UUID";
+# EN: Copy UUID
+
+"dEj-Z6-FrQ.title" = "樣式";
+# EN: Style
+
+"dJD-Xn-WQv.title" = "上一個選項卡";
+# EN: Previous Tab
+
+"deL-6h-ucY.title" = "校稿";
+# EN: Proofing
+
+"did-pK-b6r.title" = "剪貼簿預覽";
+# EN: Clipboard Preview
+
+"dingus-load-menu-item-mas.title" = "在 Dingus 中開啟…";
+# EN: Open in Dingus…
+
+"dingus-menu-mas.title" = "開啟 Markdown Dingus";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item-mas.title" = "在 Marked 中開啟 Dingus";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item-mas.title" = "在 Dingus 中開啟";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item-mas.title" = "將 Dingus 另存為...";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item-mas.title" = "保存 Dingus";
+# EN: Save Dingus
+
+"f5U-Si-SjO.title" = "使用選擇進行查找";
+# EN: Use Selection for Find
+
+"hUe-f3-nB2.title" = "保留換行符";
+# EN: Retain Line Breaks
+
+"i7k-4X-HtN.title" = "顯示差異標記";
+# EN: Show Diff Markers
+
+"jCt-nW-lX6.title" = "顯示評論和腳註";
+# EN: Show Comments and Footnotes
+
+"jjj-3j-jUJ.title" = "剝離 MMD 元數據";
+# EN: Strip MMD Metadata
+
+"jtI-Qw-PKI.title" = "檢查公告";
+# EN: Check for Announcements
+
+"kAQ-wr-phn.title" = "驗證外部連結";
+# EN: Validate External Links
+
+"kFq-f8-ekM.title" = "HTML 內部流程";
+# EN: Process Inside HTML
+
+"kWm-bU-qOg.title" = "編輯關鍵字";
+# EN: Edit Keywords
+
+"l0p-f0-KCw.title" = "歷史項目";
+# EN: History Items
+
+"lSX-4a-rct.title" = "Review Marked";
+
+"lh4-s4-1r0.title" = "Crossgrade";
+
+"mvT-hU-P08.title" = "Generate IDs on Headlines";
+
+"n5s-cy-b48.title" = "購買Marked";
+# EN: Purchase Marked
+
+"naw-b7-sD3.title" = "新的";
+# EN: New
+
+"nv5-HG-J2p.title" = "快速切換";
+# EN: Quick Toggles
+
+"o9g-Z2-SNy.title" = "歷史";
+# EN: History
+
+"ohY-fz-OyI.title" = "新 Markdown 文件";
+# EN: New Markdown File
+
+"pUH-zx-RNv.title" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"rsp-tT-uRg.title" = "浮動統計";
+# EN: Floating Statistics
+
+"tf3-Iw-aUI.title" = "保存 Markdown";
+# EN: Save Markdown
+
+"vMZ-hP-GSW.title" = "可讀性統計";
+# EN: Readability Statistics
+
+"vve-nL-dqe.title" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"wHZ-BK-cam.title" = "開啟調試日誌";
+# EN: Open Debug Log
+
+"yDa-5G-k44.title" = "保存 EPUB";
+# EN: Save EPUB
+
+"zow-nN-nLf.title" = "統計數據";
+# EN: Statistics
+
+
+=== END MainMenuMAS.strings ===
+
+
+=== BEGIN MainMenuSetapp.strings ===
+# Strings in this section: 156
+# Pre-filled from Marked/zh-Hant.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0KX-4L-z6e.title" = "歷史項目";
+# EN: History Items
+
+"124.title" = "最近打開";
+# EN: Open Recent
+
+"125.title" = "最近打開";
+# EN: Open Recent
+
+"126.title" = "清除菜單";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "服務";
+# EN: Services
+
+"131.title" = "服務";
+# EN: Services
+
+"134.title" = "隱藏 Marked";
+# EN: Hide Marked
+
+"136.title" = "退出Marked";
+# EN: Quit Marked
+
+"145.title" = "隱藏其他人";
+# EN: Hide Others
+
+"150.title" = "顯示全部";
+# EN: Show All
+
+"19.title" = "視窗";
+# EN: Window
+
+"195.title" = "停止說話";
+# EN: Stop Speaking
+
+"196.title" = "開始說話";
+# EN: Start Speaking
+
+"197.title" = "拷貝";
+# EN: Copy
+
+"198.title" = "選擇全部";
+# EN: Select All
+
+"199.title" = "剪下";
+# EN: Cut
+
+"203.title" = "貼上";
+# EN: Paste
+
+"205.title" = "編輯";
+# EN: Edit
+
+"207.title" = "還原";
+# EN: Undo
+
+"211.title" = "演講";
+# EN: Speech
+
+"212.title" = "演講";
+# EN: Speech
+
+"215.title" = "重做";
+# EN: Redo
+
+"217.title" = "編輯";
+# EN: Edit
+
+"23.title" = "縮到最小";
+# EN: Minimize
+
+"239.title" = "縮放視窗";
+# EN: Zoom Window
+
+"24.title" = "視窗";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "預覽";
+# EN: Preview
+
+"296.title" = "預覽";
+# EN: Preview
+
+"298.title" = "重新整理";
+# EN: Refresh
+
+"3Re-LO-HTZ.title" = "返回";
+# EN: Back
+
+"3va-8G-noL.title" = "在編輯器中開啟";
+# EN: Open in Editor
+
+"491.title" = "輔助說明";
+# EN: Help
+
+"492.title" = "輔助說明";
+# EN: Help
+
+"493.title" = "Marked 輔助說明";
+# EN: Marked Help
+
+"4cN-Ef-M7q.title" = "新的";
+# EN: New
+
+"5.title" = "將所有內容放在前面";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "關於 Marked";
+# EN: About Marked
+
+"610.title" = "重新開啟最後一個文件";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "將 HTML 來源複製到剪貼簿";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "複製 HTML 來源";
+# EN: Copy HTML Source
+
+"636.title" = "縮放";
+# EN: Zoom
+
+"637.title" = "縮放";
+# EN: Zoom
+
+"638.title" = "縮放重置";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "放大";
+# EN: Zoom In
+
+"647.title" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked 網站";
+# EN: Marked Website
+
+"653.title" = "報告問題";
+# EN: Report an Issue
+
+"664.title" = "快速概覽";
+# EN: Quick Overview
+
+"672.title" = "全螢幕";
+# EN: Full Screen
+
+"6Qj-Ma-gTl.title" = "檢查公告";
+# EN: Check for Announcements
+
+"6TE-1X-Beu.title" = "安裝命令列工具";
+# EN: Install Command Line Tool
+
+"72.title" = "打開…";
+# EN: Open…
+
+"720.title" = "深色模式";
+# EN: Dark Mode
+
+"73.title" = "關閉";
+# EN: Close
+
+"738.ibShadowedToolTip" = "將 RTF 資料複製到剪貼簿";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "複製富文本";
+# EN: Copy Rich Text
+
+"748.title" = "鍵盤快速鍵";
+# EN: Keyboard Shortcuts
+
+"752.title" = "__學期_0__ 參考";
+# EN: Markdown Reference
+
+"78.title" = "列印…";
+# EN: Print…
+
+"800.title" = "頁面設定...";
+# EN: Page Setup…
+
+"804.title" = "折疊所有部分";
+# EN: Collapse All Sections
+
+"809.title" = "展開所有部分";
+# EN: Expand All Sections
+
+"81.title" = "檔案";
+# EN: File
+
+"83.title" = "檔案";
+# EN: File
+
+"860.title" = "導出為";
+# EN: Export As
+
+"861.title" = "搜尋";
+# EN: Search
+
+"862.title" = "搜尋";
+# EN: Search
+
+"863.title" = "在預覽中查找";
+# EN: Find in Preview
+
+"864.title" = "尋找上一個";
+# EN: Find Previous
+
+"865.title" = "尋找下一個";
+# EN: Find Next
+
+"866.title" = "導出為";
+# EN: Export As
+
+"874.title" = "保存 HTML";
+# EN: Save HTML
+
+"875.title" = "保存 PDF";
+# EN: Save PDF
+
+"876.title" = "儲存 PDF（分頁）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "保存 DOCX";
+# EN: Save DOCX
+
+"880.title" = "保存 ODT";
+# EN: Save ODT
+
+"891.title" = "保持視窗在最前面";
+# EN: Keep Window on Top
+
+"895.title" = "切換來源視圖";
+# EN: Toggle Source View
+
+"AXd-Ii-niP.title" = "突出顯示標記錯誤";
+# EN: Highlight Markup Errors
+
+"AqK-WG-cNa.title" = "出口…";
+# EN: Export…
+
+"CIg-C0-cyi.title" = "儲存瞬態預覽";
+# EN: Save Transient Preview
+
+"Cn0-Bw-QJL.title" = "快速開啟";
+# EN: Quick Open
+
+"DJl-cP-TQ7.title" = "頭條ID";
+# EN: IDs on Headlines
+
+"DYj-2k-Sye.title" = "詳細統計";
+# EN: Detailed Statistics
+
+"E34-rK-hez.title" = "__學期_0__ 風格畫廊";
+# EN: Custom Style Gallery
+
+"GM7-yN-MML.title" = "保存 OPML";
+# EN: Save OPML
+
+"Hsd-4d-hnG.title" = "顯示差異標記";
+# EN: Show Diff Markers
+
+"IZT-Cp-EH0.title" = "樣式";
+# EN: Style
+
+"KMF-gA-n9I.title" = "分享 Custom 風格";
+# EN: Share a Custom Style
+
+"KSt-Nd-YfH.title" = "滾動到編輯";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "快速切換";
+# EN: Quick Toggles
+
+"MkF-AI-Ask-Setapp.title" = "詢問文件…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter-Setapp.title" = "過濾 Scrivener 文檔";
+# EN: Filter Scrivener Documents
+
+"MkQA-Setapp-File.title" = "快速行動...";
+# EN: Quick Actions…
+
+"MkSR-Pvw-Set.title" = "速讀";
+# EN: Speed Read
+
+"N0p-Q6-UEB.title" = "顯示狀態列";
+# EN: Show Status Bars
+
+"N3F-M4-ubG.title" = "校稿";
+# EN: Proofing
+
+"Nv6-pe-hL2.title" = "歷史項目";
+# EN: History Items
+
+"OL2-Ac-Bn0.title" = "Marked 支援";
+# EN: Marked Support
+
+"Pxr-7G-lpI.title" = "浮動統計";
+# EN: Floating Statistics
+
+"QHB-Gq-RDg.title" = "下一個選項卡";
+# EN: Next Tab
+
+"QdZ-hc-zCC.title" = "Show Release Notes";
+
+"Qu4-zo-UZD.title" = "__學期_0__ 始終";
+# EN: CriticMarkup Always
+
+"RVy-6r-EcY.title" = "編輯關鍵字";
+# EN: Edit Keywords
+
+"SET-browser-extensions-menu.title" = "瀏覽器擴充";
+# EN: Browser Extensions
+
+"U3u-Hv-G60.title" = "統計數據";
+# EN: Statistics
+
+"Ulo-Rz-mJo.title" = "編輯 Custom 規則";
+# EN: Edit Custom Rules
+
+"UyV-DY-t88.title" = "保存 RTF";
+# EN: Save RTF
+
+"V1c-QF-8zU.title" = "保存 TextBundle";
+# EN: Save TextBundle
+
+"WEB-nV-sC8.title" = "新的";
+# EN: New
+
+"XFm-VF-DYu.title" = "使用選擇進行查找";
+# EN: Use Selection for Find
+
+"XIm-9A-I0A.title" = "__學期_0__ 預覽";
+# EN: MarsEdit Preview
+
+"Xte-Pb-2gT.title" = "產生 Custom 樣式";
+# EN: Generate a Custom Style
+
+"XuF-Aa-LOa.title" = "突顯關鍵字";
+# EN: Highlight Keywords
+
+"YaF-0Z-jJf.title" = "剝離YAML";
+# EN: Strip YAML
+
+"Z7o-lz-0ji.title" = "智慧排版";
+# EN: Smart Typography
+
+"Z9W-4b-2Zh.title" = "風格竊取者";
+# EN: Style Stealer
+
+"bHz-de-bPE.title" = "可讀性統計";
+# EN: Readability Statistics
+
+"bIf-Vt-nGj.title" = "關鍵字抽屜";
+# EN: Keyword Drawer
+
+"bQe-fm-O0c.title" = "管理樣式";
+# EN: Manage Styles
+
+"bjt-xe-JHw.title" = "統計數據";
+# EN: Statistics
+
+"c3N-Fk-pCg.title" = "基礎統計";
+# EN: Basic Statistics
+
+"dingus-load-menu-item-setapp.title" = "在 Dingus 中開啟…";
+# EN: Open in Dingus…
+
+"dingus-menu-setapp.title" = "開啟 Markdown Dingus";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item-setapp.title" = "在 Marked 中開啟 Dingus";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item-setapp.title" = "在 Dingus 中開啟";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item-setapp.title" = "將 Dingus 另存為...";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item-setapp.title" = "保存 Dingus";
+# EN: Save Dingus
+
+"duo-g5-cHJ.title" = "剪貼簿預覽";
+# EN: Clipboard Preview
+
+"gfe-v6-IFX.title" = "保存 Markdown";
+# EN: Save Markdown
+
+"hRA-Fs-2fE.title" = "驗證外部連結";
+# EN: Validate External Links
+
+"hUe-f3-nB2.title" = "保留換行符";
+# EN: Retain Line Breaks
+
+"jjj-3j-jUJ.title" = "剝離 MMD 元數據";
+# EN: Strip MMD Metadata
+
+"kB9-oI-spA.title" = "開啟調試日誌";
+# EN: Open Debug Log
+
+"kFq-f8-ekM.title" = "HTML 內部流程";
+# EN: Process Inside HTML
+
+"ktI-Uv-CKg.title" = "顯示評論和腳註";
+# EN: Show Comments and Footnotes
+
+"mwo-tR-O7Z.title" = "顯示標題列";
+# EN: Show Title Bars
+
+"nv5-HG-J2p.title" = "快速切換";
+# EN: Quick Toggles
+
+"oWJ-Vb-y1f.title" = "校稿";
+# EN: Proofing
+
+"ona-9t-SQG.title" = "樣式";
+# EN: Style
+
+"rIc-Cp-XEF.title" = "新 Markdown 文件";
+# EN: New Markdown File
+
+"rlb-Ms-WcB.title" = "歷史";
+# EN: History
+
+"usc-No-WBQ.title" = "保存 EPUB";
+# EN: Save EPUB
+
+"vOL-4b-0Qf.title" = "串流媒體預覽";
+# EN: Streaming Preview
+
+"vaQ-aQ-WkJ.title" = "顯示 Custom 規則日誌";
+# EN: Show Custom Rules Log
+
+"vbr-U8-Zji.title" = "關閉全部";
+# EN: Close All
+
+"wPb-ZE-BKP.title" = "歷史";
+# EN: History
+
+"yDp-Rg-IuT.title" = "可視化單字重複";
+# EN: Visualize Word Repetition
+
+"yIt-dA-sXK.title" = "上一個選項卡";
+# EN: Previous Tab
+
+"yff-uw-J2O.title" = "Markdown化 URL";
+# EN: Markdownify URL
+
+"zpz-Nh-jcm.title" = "向前";
+# EN: Forward
+
+
+=== END MainMenuSetapp.strings ===
+
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 89
+# Pre-filled from Marked/zh-Hant.lproj/Settings.strings. These keys are still English in the app — translate in place.
+
+"search.placeholder" = "Search";
+
+"search.result.section" = "Section";
+
+"setting.additionalMathJaxConfig" = "Advanced MathJax configuration (JSON)";
+
+"setting.alphaLevel" = "Window opacity";
+
+"setting.appsEditorNote" = "App picker";
+
+"setting.appsEditorNote.body" = "Use Choose App buttons in legacy Apps preferences (⌥⌘,) to select external editors.";
+
+"setting.bottomPrintMargin" = "Bottom margin";
+
+"setting.customRules.tooltip" = "Edit Custom Rules to configure processors, preprocessors, and conditional CSS.";
+
+"setting.fullDiskAccess.tooltip" = "Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions.";
+
+"setting.convertTrackChanges" = "Convert change tracking ↔ CriticMarkup";
+
+"setting.customMarkdownProcessor" = "Custom processor path";
+
+"setting.customPreprocessor" = "Custom preprocessor path";
+
+"setting.customPreprocessor.placeholder" = "Path to script";
+
+"setting.customPreprocessorDefault" = "Use custom preprocessor for new documents";
+
+"setting.customProcessor.placeholder" = "Path to script";
+
+"setting.customProcessorDefault" = "Use custom processor for new documents";
+
+"setting.debugHint.body" = "Help > Open Debug Log to view activity.";
+
+"setting.debugLevel" = "Debug output level";
+
+"setting.defaultPreviewStyle.tooltip" = "The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\\\\"Marked Style: Grump\\\\\").";
+# EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\"Marked Style: Grump\\").
+
+"setting.moreThemes.tooltip" = "Explore the Style Gallery, where you can download or install Custom Styles";
+
+"setting.documentTabbingMode.automatic" = "Follow system";
+
+"setting.documentTabbingMode.tabs" = "Tab in current window";
+
+"setting.documentTabbingMode.windows" = "Separate windows";
+
+"setting.embediThoughtsAsMermaid" = "Mind maps (iThoughts)";
+
+"help.button.tooltip" = "Show help for this setting";
+
+"setting.exportProfile" = "Export profile";
+
+"tooltip.exportProfile" = "Select an Export Profile to load presets. The current profile is updated when settings change.";
+
+"setting.folderPreviewExtensions" = "Folder preview extensions";
+
+"setting.headerFooterFontSize" = "Header/footer font size";
+
+"setting.leftPrintMargin" = "Left margin";
+
+"setting.limitTextWidthPixels" = "Maximum text width (pixels)";
+
+"setting.mathJaxSource" = "MathJax source";
+
+"setting.mathNumberEquations" = "Number equations";
+
+"setting.mathNumberEquationsSide.left" = "Left";
+
+"setting.mathNumberEquationsSide.right" = "Right";
+
+"setting.printBorderAboveFooter" = "Border above footer";
+
+"setting.printBorderBelowHeader" = "Border below header";
+
+"setting.printFooterFirstPage" = "Footer on first page";
+
+"setting.printHeaderBottomCenter" = "Header bottom center";
+
+"setting.printHeaderBottomLeft" = "Header bottom left";
+
+"setting.printHeaderBottomRight" = "Header bottom right";
+
+"setting.printHeaderFirstPage" = "Header on first page";
+
+"setting.printHeaderTopCenter" = "Header top center";
+
+"setting.printHeaderTopLeft" = "Header top left";
+
+"setting.printHeaderTopRight" = "Header top right";
+
+"setting.resetAlerts.button" = "Reset";
+
+"setting.rightPrintMargin" = "Right margin";
+
+"setting.scrivenerCompileMetadata" = "Add compile metadata when missing";
+
+"setting.settingsBackup" = "Import and export";
+
+"tooltip.settingsBackup" = "Back up or restore Marked preferences as a .markedprefs file.";
+
+"tooltip.settingsBackup.export" = "Export all preferences as a JSON file that can be imported later.";
+
+"setting.showPageBreaksInPreview" = "Show page breaks in preview";
+
+"setting.swapCommandEHint" = "Editor shortcut";
+
+"setting.defaultSyntaxStyle" = "Syntax theme";
+
+"setting.toctype1" = "TOC level H1 marker";
+
+"setting.toctype2" = "TOC level H2 marker";
+
+"setting.toctype3" = "TOC level H3 marker";
+
+"setting.toctype4" = "TOC level H4 marker";
+
+"setting.toctype5" = "TOC level H5 marker";
+
+"setting.toctype6" = "TOC level H6 marker";
+
+"setting.topPrintMargin" = "Top margin";
+
+"subsection.backup" = "Settings Backup";
+
+"subsection.debug" = "Debug";
+
+"subsection.editors" = "External Editors";
+
+"subsection.exportProfiles" = "Export Profiles";
+
+"subsection.metadata" = "YAML and Metadata";
+
+"subsection.options" = "Proofing Options";
+
+"subsection.print" = "Print and PDF";
+
+"subsection.scripts" = "Math and Code";
+
+"tooltip.yamlHandling" = "Determine how to handle YAML front matter. Ignore will leave it in place for the processor to handle, or you can convert it to MMD metadata or remove it entirely.";
+
+"window.title" = "Settings";
+
+"tooltip.additionalMathJaxConfig" = "Advanced MathJax configuration as JSON (for expert users).";
+
+"tooltip.bottomPrintMargin" = "Bottom print margin (specified in points).";
+
+"tooltip.codeCanWrap" = "If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing text will scroll horizontally.";
+
+"tooltip.defaultPrintFontSize" = "Point size used when Custom font size for export/print is enabled.";
+
+"tooltip.globalActionPaletteKey" = "Click the shortcut field to record a hotkey for opening the Quick Action palette when Marked is the active application.";
+
+"tooltip.headerFooterFontSize" = "Font size for print headers and footers.";
+
+"tooltip.leftPrintMargin" = "Left print margin (specified in points).";
+
+"tooltip.mathJaxSource" = "Choose whether to load MathJax from the CDN or from a local copy bundled with Marked.";
+
+"tooltip.mathNumberEquationsSide" = "Choose which side equation numbers appear on.";
+
+"tooltip.minimumRepeats" = "Minimum number of consecutive repeated words before highlighting.";
+
+"tooltip.noLabels" = "Generate header IDs based on contents of h1-h6 tags.";
+
+"tooltip.noSmartyPants" = "Disable SmartyPants-style punctuation transforms when using MultiMarkdown.";
+
+"tooltip.outlineModeExtensions" = "File extensions that trigger outline mode (comma-separated).";
+
+"tooltip.panZoomMermaid" = "Add panning (drag) and zooming (⌘-scroll) to Mermaid diagrams.";
+
+"tooltip.requireCmdToCollapse" = "Require that the command key be held when clicking a headline to collapse/expand.";
+
+"tooltip.rightPrintMargin" = "Right print margin (specified in points).";
+
+"tooltip.showEditMarker" = "Show a marker at the most recent edit point (first or last diff, depending on \"Reverse diff order\" setting).";
+
+"tooltip.topPrintMargin" = "Define print margins (specified in points).";
+
+
+=== END Settings.strings (gaps) ===

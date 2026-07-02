@@ -1,0 +1,5648 @@
+# Marked Localization Review
+# Locale: ja (Japanese)
+# Generated: 2026-07-02
+# Source: Marked/ja.lproj (values pre-filled from existing translations)
+#
+# HOW TO REVIEW
+# -------------
+# Each entry is pre-filled with the current translation from the locale .lproj.
+# Edit the value in place where terminology or wording should change.
+# # EN lines show English when it differs from the current value.
+#
+# Keep keys unchanged. Preserve %@, %ld, %1$@, \n, and keyboard symbols.
+# Do not translate product names (Marked, CriticMarkup, etc.) unless
+# your locale normally localizes them.
+#
+# Focus on consistency: Preview, Source, Export, Settings, Proofing,
+# Statistics, Search, Table of Contents.
+# See docs/LocalizationReviewGuide-short.md for priorities.
+#
+# Return this file with your edits (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   MainMenu.strings: 173
+#   MarkdownDocument.strings: 322
+#   QuickPanels.strings: 53
+#   DocumentIntelligence.strings: 59
+#   Preferences.strings: 8
+#   Preferences.xib.strings: 583
+#   PreviewContextMenu.strings: 25
+#   Statistics.strings: 35
+#   Tips.strings: 24
+#   KBShortcuts.strings: 199
+#   MainMenuMAS.strings: 166
+#   MainMenuSetapp.strings: 156
+#   Settings.strings (gaps): 95
+
+=== BEGIN MainMenu.strings ===
+# Strings in this section: 173
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"124.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"125.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"126.title" = "メニューを消去";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "サービス";
+# EN: Services
+
+"131.title" = "サービス";
+# EN: Services
+
+"134.title" = "Marked を隠す";
+# EN: Hide Marked
+
+"136.title" = "Marked を終了";
+# EN: Quit Marked
+
+"145.title" = "ほかを隠す";
+# EN: Hide Others
+
+"150.title" = "すべてを表示";
+# EN: Show All
+
+"19.title" = "ウインドウ";
+# EN: Window
+
+"195.title" = "読み上げを停止";
+# EN: Stop Speaking
+
+"196.title" = "読み上げを開始";
+# EN: Start Speaking
+
+"197.title" = "コピー";
+# EN: Copy
+
+"198.title" = "すべてを選択";
+# EN: Select All
+
+"199.title" = "カット";
+# EN: Cut
+
+"1P0-XX-a8Q.title" = "詳細な統計";
+# EN: Detailed Statistics
+
+"1sQ-Wu-ydd.title" = "スタイル";
+# EN: Style
+
+"1ty-3j-Uao.title" = "閉じる";
+# EN: Close
+
+"203.title" = "ペースト";
+# EN: Paste
+
+"205.title" = "編集";
+# EN: Edit
+
+"207.title" = "取り消す";
+# EN: Undo
+
+"211.title" = "スピーチ";
+# EN: Speech
+
+"212.title" = "スピーチ";
+# EN: Speech
+
+"215.title" = "やり直す";
+# EN: Redo
+
+"217.title" = "編集";
+# EN: Edit
+
+"23.title" = "しまう";
+# EN: Minimize
+
+"239.title" = "ウインドウをズーム";
+# EN: Zoom Window
+
+"24.title" = "ウインドウ";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "プレビュー";
+# EN: Preview
+
+"296.title" = "プレビュー";
+# EN: Preview
+
+"298.title" = "更新";
+# EN: Refresh
+
+"2b4-iW-Kkq.title" = "外部リンクの検証";
+# EN: Validate External Links
+
+"3JZ-gc-2WZ.title" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"3va-8G-noL.title" = "エディタで開く";
+# EN: Open in Editor
+
+"47i-id-uZs.title" = "ストリーミングプレビュー";
+# EN: Streaming Preview
+
+"491.title" = "ヘルプ";
+# EN: Help
+
+"492.title" = "ヘルプ";
+# EN: Help
+
+"493.title" = "Marked ヘルプ";
+# EN: Marked Help
+
+"5.title" = "すべてを前面に移動";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "Marked について";
+# EN: About Marked
+
+"5kY-OB-B1R.title" = "新規";
+# EN: New
+
+"610.title" = "最後のファイルを開き直す";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "HTML ソースをコピー";
+# EN: Copy HTML Source
+
+"636.title" = "ズーム";
+# EN: Zoom
+
+"637.title" = "ズーム";
+# EN: Zoom
+
+"638.title" = "ズームをリセット";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "拡大";
+# EN: Zoom In
+
+"647.title" = "Finder に表示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked のウェブサイト";
+# EN: Marked Website
+
+"653.title" = "問題を報告";
+# EN: Report an Issue
+
+"664.title" = "クイック概要";
+# EN: Quick Overview
+
+"672.title" = "フルスクリーン";
+# EN: Full Screen
+
+"705.title" = "アップデートを確認…";
+# EN: Check for Updates…
+
+"72.title" = "開く…";
+# EN: Open…
+
+"720.title" = "ダークモード";
+# EN: Dark Mode
+
+"73.title" = "閉じる";
+# EN: Close
+
+"738.ibShadowedToolTip" = "リッチテキストをクリップボードにコピーします。";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "リッチテキストをコピー";
+# EN: Copy Rich Text
+
+"748.title" = "キーボードショートカット";
+# EN: Keyboard Shortcuts
+
+"752.title" = "Markdown リファレンス";
+# EN: Markdown Reference
+
+"78.title" = "プリント…";
+# EN: Print…
+
+"800.title" = "ページ設定…";
+# EN: Page Setup…
+
+"804.title" = "すべてのセクションを折りたたむ";
+# EN: Collapse All Sections
+
+"809.title" = "すべてのセクションを展開";
+# EN: Expand All Sections
+
+"81.title" = "ファイル";
+# EN: File
+
+"83.title" = "ファイル";
+# EN: File
+
+"83f-Dd-1dW.title" = "履歴項目";
+# EN: History Items
+
+"860.title" = "書き出す";
+# EN: Export As
+
+"861.title" = "検索";
+# EN: Search
+
+"862.title" = "検索";
+# EN: Search
+
+"863.title" = "プレビューで検索";
+# EN: Find in Preview
+
+"864.title" = "前を検索";
+# EN: Find Previous
+
+"865.title" = "次を検索";
+# EN: Find Next
+
+"866.title" = "書き出す";
+# EN: Export As
+
+"874.title" = "HTML を保存";
+# EN: Save HTML
+
+"875.title" = "PDF を保存";
+# EN: Save PDF
+
+"876.title" = "PDF を保存（ページ分割）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "DOCX を保存";
+# EN: Save DOCX
+
+"880.title" = "ODT を保存";
+# EN: Save ODT
+
+"891.title" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"895.title" = "ソースビューの切り替え";
+# EN: Toggle Source View
+
+"927.title" = "登録";
+# EN: Registration
+
+"936.title" = "今すぐ購入";
+# EN: Buy Now
+
+"AqK-WG-cNa.title" = "書き出す…";
+# EN: Export…
+
+"BXl-6w-6Wq.title" = "統計";
+# EN: Statistics
+
+"CIg-C0-cyi.title" = "一時プレビューを保存";
+# EN: Save Transient Preview
+
+"CN7-Sb-D7R.title" = "履歴";
+# EN: History
+
+"DIf-TG-OVh.title" = "前のタブ";
+# EN: Previous Tab
+
+"DJl-cP-TQ7.title" = "見出しの ID";
+# EN: IDs on Headlines
+
+"ETD-cp-9aR.title" = "カスタムスタイルギャラリー";
+# EN: Custom Style Gallery
+
+"GM7-yN-MML.title" = "OPML を保存";
+# EN: Save OPML
+
+"H7d-wy-m4y.title" = "カスタムスタイルを共有";
+# EN: Share a Custom Style
+
+"IrK-Ww-b88.title" = "進む";
+# EN: Forward
+
+"J8T-vp-R4V.title" = "クリップボードのプレビュー";
+# EN: Clipboard Preview
+
+"KEL-uP-OUf.title" = "戻る";
+# EN: Back
+
+"KSt-Nd-YfH.title" = "編集位置にスクロール";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"LQM-ZA-NNG.title" = "クイックオープン";
+# EN: Quick Open
+
+"MkF-AI-Ask-Doc.title" = "ドキュメントについて質問…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter.title" = "Scrivener ドキュメントをフィルタ";
+# EN: Filter Scrivener Documents
+
+"MkP-ddl-reset.title" = "Paddle の購入状態をリセット";
+# EN: Reset Paddle Purchase State
+
+"MkQA-Direct-File.title" = "クイックアクション…";
+# EN: Quick Actions…
+
+"MkSR-Pvw-Main.title" = "スピードリード";
+# EN: Speed Read
+
+"Mwq-QT-Bmh.title" = "未登録";
+# EN: UNREGISTERED
+
+"NDL-kl-PNM.title" = "基本統計";
+# EN: Basic Statistics
+
+"OL2-Ac-Bn0.title" = "Marked サポート";
+# EN: Marked Support
+
+"PeV-43-fB3.title" = "デバッグレベル";
+# EN: Debug Level
+
+"Pix-Cz-p0c.title" = "校正";
+# EN: Proofing
+
+"QRD-Ua-2p5.title" = "キーワードを編集";
+# EN: Edit Keywords
+
+"Qu4-zo-UZD.title" = "CriticMarkup を常に表示";
+# EN: CriticMarkup Always
+
+"RNo-hM-GDD.title" = "キーワードをハイライト";
+# EN: Highlight Keywords
+
+"RQz-jL-0su.title" = "統計";
+# EN: Statistics
+
+"U1Z-Qd-4vA.title" = "スタイルを管理";
+# EN: Manage Styles
+
+"UZu-Dm-vBa.title" = "トライアルをリセット";
+# EN: Reset Trial
+
+"UaE-ot-pay.title" = "カスタムルールを編集";
+# EN: Edit Custom Rules
+
+"UyV-DY-t88.title" = "RTF を保存";
+# EN: Save RTF
+
+"W6E-8x-C5a.title" = "ブラウザ拡張機能";
+# EN: Browser Extensions
+
+"Wvp-Ur-n4w.title" = "URL を Markdown 化";
+# EN: Markdownify URL
+
+"XFm-VF-DYu.title" = "選択部分を検索に使用";
+# EN: Use Selection for Find
+
+"XFp-PM-jld.title" = "デバッグレベル";
+# EN: Debug Level
+
+"YH9-Y0-j4I.title" = "オフ";
+# EN: Off
+
+"YaF-0Z-jJf.title" = "YAML を除去";
+# EN: Strip YAML
+
+"Z7o-lz-0ji.title" = "スマートタイポグラフィ";
+# EN: Smart Typography
+
+"aAF-xy-JDM.title" = "差分マーカーを表示";
+# EN: Show Diff Markers
+
+"agK-GD-zld.title" = "TextBundle を保存";
+# EN: Save TextBundle
+
+"bCP-12-gmy.title" = "校正";
+# EN: Proofing
+
+"cIb-71-34e.title" = "コマンドラインツールをインストール";
+# EN: Install Command Line Tool
+
+"dingus-bold-menu-item.title" = "太字";
+# EN: Bold
+
+"dingus-italic-menu-item.title" = "イタリック";
+# EN: Italic
+
+"dingus-load-menu-item.title" = "Dingus で開く…";
+# EN: Open in Dingus…
+
+"dingus-menu.title" = "Markdown Dingus を開く";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item.title" = "Marked で Dingus を開く";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item.title" = "Dingus で開く";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item.title" = "Dingus を別名で保存…";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item.title" = "Dingus を保存";
+# EN: Save Dingus
+
+"dir-copy-uuid-menu.title" = "UUID をコピー";
+# EN: Copy UUID
+
+"gXF-cd-1p4.title" = "スタイル";
+# EN: Style
+
+"gfe-v6-IFX.title" = "Markdown を保存";
+# EN: Save Markdown
+
+"hGc-gR-14i.title" = "Marked を購入";
+# EN: Purchase Marked
+
+"hUe-f3-nB2.title" = "改行を保持";
+# EN: Retain Line Breaks
+
+"hca-gd-V9H.title" = "可読性統計";
+# EN: Readability Statistics
+
+"hrH-FZ-MTp.title" = "コメントと脚注を表示";
+# EN: Show Comments and Footnotes
+
+"jI6-wd-hfF.title" = "すべて";
+# EN: All
+
+"jjj-3j-jUJ.title" = "MMD メタデータを除去";
+# EN: Strip MMD Metadata
+
+"jv3-4R-YOE.title" = "次のタブ";
+# EN: Next Tab
+
+"kB9-oI-spA.title" = "デバッグログを開く";
+# EN: Open Debug Log
+
+"kFq-f8-ekM.title" = "HTML 内も処理";
+# EN: Process Inside HTML
+
+"lWh-w8-GrU.title" = "履歴項目";
+# EN: History Items
+
+"lxk-ec-TjD.title" = "お知らせを確認";
+# EN: Check for Announcements
+
+"mr4-ef-aIa.title" = "タイトルバーを表示";
+# EN: Show Title Bars
+
+"n87-en-SY7.title" = "トライアルを期限切れにする";
+# EN: Expire Trial
+
+"nv5-HG-J2p.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"oBb-8s-bX0.title" = "エラーのみ";
+# EN: Errors Only
+
+"oD0-8T-u89.title" = "統計（フローティングウインドウ）";
+# EN: Floating Statistics
+
+"sOc-94-QWP.title" = "MarsEdit プレビュー";
+# EN: MarsEdit Preview
+
+"sVD-Bj-a6R.title" = "EPUB を保存";
+# EN: Save EPUB
+
+"tdq-3e-Ms3.title" = "履歴";
+# EN: History
+
+"tjV-qJ-Brk.title" = "マークアップエラーをハイライト";
+# EN: Highlight Markup Errors
+
+"u12-AJ-wpP.title" = "新規";
+# EN: New
+
+"vaQ-aQ-WkJ.title" = "カスタムルールログを表示";
+# EN: Show Custom Rules Log
+
+"vbr-U8-Zji.title" = "すべてを閉じる";
+# EN: Close All
+
+"w61-Cx-E11.title" = "新規 Markdown ファイル";
+# EN: New Markdown File
+
+"wXd-3T-JfY.title" = "ステータスバーを表示";
+# EN: Show Status Bars
+
+"wg9-ft-A8i.title" = "スタイルスティーラー";
+# EN: Style Stealer
+
+"wia-bV-1X2.title" = "カスタムスタイルを生成";
+# EN: Generate a Custom Style
+
+"xGZ-Bs-Msb.title" = "エラーと警告";
+# EN: Errors and Warnings
+
+"xKs-gY-d0h.title" = "単語の繰り返しを可視化";
+# EN: Visualize Word Repetition
+
+
+=== END MainMenu.strings ===
+
+
+=== BEGIN MarkdownDocument.strings ===
+# Strings in this section: 322
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0Bh-Jn-V4B.title" = "文字数:";
+# EN: Characters:
+
+"0ML-KK-awS.title" = "インラインリンク";
+# EN: Inline links
+
+"0TO-ti-aKy.title" = "10000000";
+
+"0dl-5E-EfZ.ibShadowedToolTip" = "TextBundle 出力を TextPack ファイルに圧縮します。";
+# EN: Compress the TextBundle output to a TextPack file
+
+"0fH-I7-rrv.ibShadowedToolTip" = "Flesch-Kincaid 読みやすさ指数。数値が大きいほど読みやすくなります。";
+# EN: The Flesch Reading Ease score. The higher that number is, the easier the text is to read.
+
+"100021.title" = "Marked";
+
+"100023.ibShadowedToolTip" = "プレビュースタイルの変更 (⌘⌥/)";
+# EN: Change Preview Style (⌘⌥/)
+
+"100024.ibShadowedToolTip" = "クリック: ドキュメントの統計 ⌥-クリック: 可読性 ⌥⌘-クリック: 詳細な統計";
+# EN: Click: Document statistics ⌥-Click: Readability ⌥⌘-Click: Detailed statistics
+
+"100025.ibShadowedToolTip" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"100026.ibShadowedToolTip" = "追加機能（⌘/）";
+# EN: Additional functions (⌘/)
+
+"100031.label" = "ソース";
+# EN: Source
+
+"100032.label" = "プレビュー";
+# EN: Preview
+
+"100042.title" = "OtherViews";
+
+"100043.title" = "ズーム";
+# EN: Zoom
+
+"100045.title" = "ウインドウを閉じる";
+# EN: Close Window
+
+"100046.title" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"100049.title" = "その他";
+# EN: Extras
+
+"100050.title" = "ズーム";
+# EN: Zoom
+
+"100051.title" = "ズームリセット";
+# EN: Zoom Reset
+
+"100052.title" = "縮小";
+# EN: Zoom Out
+
+"100053.title" = "拡大";
+# EN: Zoom In
+
+"100057.title" = "OtherViews";
+
+"100058.title" = "カスタム";
+# EN: Custom
+
+"100059.title" = "GitHub";
+
+"100060.title" = "Antique";
+
+"100061.title" = "Multi-column";
+
+"100062.title" = "Swiss";
+
+"100115.title" = "HTML をコピーしました";
+# EN: Copied HTML
+
+"100129.title" = "ソースビューの切り替え";
+# EN: Toggle Source View
+
+"100176.title" = "検索";
+# EN: Search
+
+"100177.title" = "検索";
+# EN: Search
+
+"100178.title" = "次を検索";
+# EN: Find Next
+
+"100179.title" = "プレビューで検索";
+# EN: Find in Preview
+
+"100182.title" = "前を検索";
+# EN: Find Previous
+
+"100238.title" = "カスタムプロセッサを使用";
+# EN: Use Custom Processor
+
+"100301.ibExternalAccessibilityDescription" = "目次";
+# EN: Table of Contents
+
+"100301.ibExternalAccessibilityHelp" = "このドキュメントの目次を開きます。";
+# EN: Open the table of contents for this document
+
+"100301.ibShadowedToolTip" = "目次 (⌘T)";
+# EN: Table of Contents (⌘T)
+
+"100327.title" = "校正";
+# EN: Proofing
+
+"100328.title" = "校正";
+# EN: Proofing
+
+"100330.title" = "次のエラーへ移動";
+# EN: Go to Next Error
+
+"100335.title" = "校正（ドキュメントをロック）";
+# EN: Proofread (Lock Document)
+
+"100354.title" = "PDF を保存（ページ分割）";
+# EN: Save PDF (Paginated)
+
+"100366.title" = "DOCX を保存";
+# EN: Save DOCX
+
+"100368.title" = "ODT を保存";
+# EN: Save ODT
+
+"100370.title" = "書き出す";
+# EN: Export As
+
+"100371.title" = "書き出す";
+# EN: Export As
+
+"100373.title" = "PDF を保存";
+# EN: Save PDF
+
+"100394.ibExternalAccessibilityDescription" = "Export";
+
+"100394.ibShadowedToolTip" = "エクスポートドロワー (⌘⇧E)";
+# EN: Export Drawer (⌘⇧E)
+
+"100513.ibShadowedToolTip" = "ハイライト用の一時キーワードを編集します。正規表現には「/expression/」を使用します。";
+# EN: Edit temporary keywords for highlighting. Use "/expression/" for regex.
+
+"100520.ibShadowedToolTip" = "キーワードを一時的に変更してハイライトを更新します。入力中に ⌘↩ を使用して強調表示します。";
+# EN: Update highlights with temporary keyword changes. Use ⌘↩ to highlight while typing.
+
+"100524.ibShadowedToolTip" = "一時的なキーワードをクリア (⌘⇧⌫)";
+# EN: Clear temporary keywords (⌘⇧⌫)
+
+"100553.ibShadowedToolTip" = "一致した一時キーワードの数";
+# EN: Number of temporary keywords matched
+
+"100554.title" = "241";
+
+"100571.ibShadowedToolTip" = "避けたい単語のハイライトを切り替え";
+# EN: Toggle Avoid Word Highlights
+
+"100573.ibShadowedToolTip" = "代替単語のハイライトを切り替え";
+# EN: Toggle Alternate Word Highlights
+
+"100575.ibShadowedToolTip" = "カスタム単語のハイライトを切り替え";
+# EN: Toggle Custom Word Highlights
+
+"100577.ibShadowedToolTip" = "一時単語のハイライトを切り替え";
+# EN: Toggle Temporary Word Highlights
+
+"100587.ibShadowedToolTip" = "すべてのハイライトを切り替え";
+# EN: Toggle All Highlights
+
+"100598.ibExternalAccessibilityDescription" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"100598.ibExternalAccessibilityHelp" = "キーワードドロワーを開きます。";
+# EN: Open the keyword drawer
+
+"100598.ibShadowedToolTip" = "キーワードハイライトドロワー (⌘⇧K)";
+# EN: Keyword Highlight Drawer (⌘⇧K)
+
+"100619.title" = "詳細な統計";
+# EN: Detailed Statistics
+
+"100628.title" = "HTML ファイルのみをプレビュー";
+# EN: Preview HTML Files Only
+
+"100703.ibShadowedToolTip" = "埋め込み構文強調表示 Javascript を含める";
+# EN: Include embedded Syntax Highlighting Javascript
+
+"100704.title" = "構文強調表示 JavaScript を含める";
+# EN: Include Syntax Highlighting JavaScript
+
+"100720.ibShadowedToolTip" = "チェックすると、ローカル画像がbase64でエンコードされ、HTMLファイルに埋め込まれます。これによりファイルが大きくなる可能性がありますが、どのホスティングサービスでも簡単に共有できます。";
+# EN: If chekced, local images will be encoded with base64 and embedded in the HTML file. This can result in large files, but they are easily shareable on any hosting service.
+
+"100721.title" = "スタンドアロン HTML のローカルイメージを埋め込む";
+# EN: Embed local images for standalone HTML
+
+"100736.title" = "すべてのセクションを折りたたむ";
+# EN: Collapse All Sections
+
+"100737.title" = "すべてのセクションを展開";
+# EN: Expand All Sections
+
+"100778.ibShadowedToolTip" = "出力ファイルに MathJax CDN インストールへのリンクを含めます。";
+# EN: Include a link to the MathJax CDN install in the output file.
+
+"100779.title" = "MathJax CDN リンクを含める";
+# EN: Include MathJax CDN link
+
+"100798.title" = "カスタムプリプロセッサを使用";
+# EN: Use Custom Preprocessor
+
+"100807.alternateTitle" = "今すぐ購入";
+# EN: BUY NOW
+
+"100807.title" = "未登録";
+# EN: UNREGISTERED
+
+"15N-ja-7ha.title" = "100000000";
+
+"2AF-gp-I4u.title" = "APA";
+
+"2Nm-cD-p8G.title" = "HTML を保存";
+# EN: Save HTML
+
+"2Nn-ZW-OER.ibShadowedToolTip" = "このドキュメントに戻ります。";
+# EN: Return to this document
+
+"2vD-gD-ne9.title" = "Box";
+
+"2yc-2N-W2y.title" = "可読性統計";
+# EN: Readability Stats
+
+"3Ge-xR-6VR.title" = "ヘッダーとフッターを含める";
+# EN: Include Headers and Footers
+
+"3LC-Fl-BlY.title" = "単語数:";
+# EN: Words:
+
+"3P0-If-w9z.title" = "原文";
+# EN: Original
+
+"449-Uj-t8Q.ibShadowedToolTip" = "読みやすくするために、指定された列で Markdown 段落を折り返します。";
+# EN: Wrap Markdown paragraphs at the specified column for readability.
+
+"5RB-rA-kQ1.title" = "ミニマップの切り替え";
+# EN: Toggle Mini Map
+
+"5Uo-Zq-AO9.title" = "100.00%";
+
+"5au-rU-NsY.ibShadowedToolTip" = "Gunning-Fog 指数は、テキストの読みやすさの尺度です。理解に必要なおおよその年齢を表しています。";
+# EN: The Gunning-Fog index is a measure of text readability. It represents the approximate age required for comprehension.
+
+"6YJ-o3-W4K.ibExternalAccessibilityDescription" = "次の一時キーワードを検索";
+# EN: Locate the next temporary keyword
+
+"6YJ-o3-W4K.ibShadowedToolTip" = "次を検索 (Shift キーを押したまま前に移動)";
+# EN: Locate next (Hold Shift for previous)
+
+"7Ep-0B-vM3.title" = "インクルードしたファイルの範囲を表示";
+# EN: Show Boundaries of Included Files
+
+"7VY-TX-zJj.title" = "単語の複雑さを計算中";
+# EN: Calculating word complexity
+
+"7dn-D4-dfz.title" = "120.55";
+
+"7g8-dw-mfo.title" = "PDF 幅:";
+# EN: PDF Width:
+
+"7m7-JV-Ka1.title" = "100.00";
+
+"8EJ-gf-2Ao.ibShadowedToolTip" = "最終的な PDF のピクセル幅。内容は収まるように調整されます。";
+# EN: The pixel width of the final PDF. Content will be adjusted to fit.
+
+"8a9-2A-6kM.title" = "1000000000";
+
+"94e-Ua-AAZ.title" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"9J9-p8-aYO.title" = "アウトラインモード";
+# EN: Outline Mode
+
+"9vZ-9u-CeH.title" = "CriticMarkup:";
+
+"A2T-i5-9NY.title" = "著者：";
+# EN: Author:
+
+"A7G-cn-jiu.title" = "100.00%";
+
+"ACj-ef-aPG.title" = "展開";
+# EN: Expand
+
+"AG4-xD-Xom.ibShadowedToolTip" = "出力にプレビューテンプレートを含める場合に使用するスタイルを選択します。";
+# EN: Select the style to use if including preview template in output
+
+"AG8-ZJ-lXS.ibShadowedToolTip" = "カバー画像をこの枠にドラッグするか、クリックしてディスクから画像を選択します。";
+# EN: Drag a cover image to the well, or click it to select an image from disk.
+
+"ARV-No-qWH.title" = "一時キーワード、1 行に 1 つ";
+# EN: Temporary keywords, 1 per line
+
+"AsP-Al-dyL.ibShadowedIsNilPlaceholder" = "...";
+
+"BE2-vK-SxS.title" = "Markdown を保存";
+# EN: Save Markdown
+
+"COR-Zc-NfU.ibShadowedIsNilPlaceholder" = "...";
+
+"D1Q-1o-6zS.ibShadowedToolTip" = "グレードレベルは、テキストを理解するのに必要な英語圏の学年（grade）に対応する数値です。";
+# EN: Grade Level is a number that corresponds to the grade a person will need to have reached to understand it.
+
+"D1X-dq-wgT.title" = "120.55";
+
+"DBW-CS-wNl.ibShadowedToolTip" = "カスタムプリプロセッサを切り替え";
+# EN: Toggle Custom Preprocessor
+
+"DFb-Py-eXF.title" = "100000000000";
+
+"DJP-n1-t0P.title" = "XHTML を検証";
+# EN: Validate XHTML
+
+"DKQ-NR-XF4.title" = "平均音節/単語:";
+# EN: Avg. Syllables/Word:
+
+"DNQ-SQ-rhF.ibExternalAccessibilityDescription" = "OpenDocument ファイルをエクスポートする";
+# EN: Export OpenDocument file
+
+"DNQ-SQ-rhF.ibShadowedToolTip" = "OpenDocument ファイルをエクスポートします。";
+# EN: Export OpenDocument file
+
+"DeW-XT-AMo.title" = "100000000";
+
+"DgW-EK-nAF.title" = "OtherViews";
+
+"Efg-fM-xjz.ibShadowedIsNilPlaceholder" = "...";
+
+"Ekg-Bm-Z1d.ibShadowedIsNilPlaceholder" = "...";
+
+"ElF-sr-IsI.title" = "読了時間:";
+# EN: Reading Time:
+
+"Eun-Sx-rAU.title" = "音節/単語:";
+# EN: Syllables/Word:
+
+"FAU-0H-4va.title" = "マークアップエラーをハイライト";
+# EN: Highlight Markup Errors
+
+"Fju-Kp-sJh.ibExternalAccessibilityDescription" = "RTF ファイルをエクスポートする";
+# EN: Export RTF file
+
+"Fju-Kp-sJh.ibShadowedToolTip" = "RTF ファイルをエクスポートします。";
+# EN: Export RTF file
+
+"Gfg-25-iR7.ibShadowedToolTip" = "読了時間は、1 分あたり 200 語の平均読書速度に基づいて算出されます。「設定」→「校正」で調整できます。";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"HNo-Sq-xd9.title" = "RTF を保存";
+# EN: Save RTF
+
+"HRY-K2-zUX.title" = "マークアップ";
+# EN: Markup
+
+"Him-Lg-7fz.title" = "複雑な単語:";
+# EN: Complex Words:
+
+"Io0-AI-ebS.title" = "グレードレベル:";
+# EN: Grade Level:
+
+"J3Q-dQ-NLw.ibShadowedIsNilPlaceholder" = "...";
+
+"JzZ-Tx-3qf.title" = "120.55";
+
+"K7I-cp-X6z.title" = "コメントと脚注を表示";
+# EN: Show Comments and Footnotes
+
+"KHc-p8-5br.ibShadowedToolTip" = "Flesch-Kincaid 読みやすさ指数。数値が大きいほど読みやすくなります。";
+# EN: The Flesch Reading Ease score. The higher that number is, the easier the text is to read.
+
+"KMQ-y4-mBB.ibShadowedToolTip" = "印刷設定で定義された印刷ヘッダーとフッター";
+# EN: Print headers and footers defined in Print Preferences
+
+"KZg-aK-H06.title" = "Fountain として処理";
+# EN: Process as Fountain
+
+"Kad-dr-VgH.title" = "単語/文:";
+# EN: Words/Sentence:
+
+"Khq-Ep-7bF.ibShadowedToolTip" = "Flesch-Kincaid 読みやすさ指数。数値が大きいほど読みやすくなります。";
+# EN: The Flesch-Kincaid Reading Ease score. The higher that number is, the easier the text is to read.
+
+"LUC-kY-WNE.title" = "ファイルが開いていないときに「開く」ダイアログを表示";
+# EN: Show open dialog when no files are open
+
+"LXH-bi-oUD.ibShadowedToolTip" = "チェックすると、現在のプレビューテンプレートとスタイルが出力に含まれます。";
+# EN: If checked, this will include the current preview template and styles in the output.
+
+"Lang-Binding-Code.ibShadowedIsNilPlaceholder" = "--";
+
+"Lang-Cell-Value.title" = "EN";
+
+"Lang-Label-2.ibShadowedToolTip" = "可読性の計算に使用される、検出された言語またはフォールバック言語。";
+# EN: Detected or fallback language used for readability calculations.
+
+"Lni-gb-2Ry.ibShadowedIsNilPlaceholder" = "...";
+
+"LqR-mv-WeJ.title" = "コピー";
+# EN: Copy
+
+"MAN-1l-7wq.title" = "Box";
+
+"MJM-gk-9IQ.ibShadowedToolTip" = "生成された XHTML 内のエラーの自動修正を試みます。";
+# EN: Attempt to fix any errors in the generated XHTML automatically
+
+"NeX-ZS-Byd.title" = "Multi-column";
+
+"ONC-aU-oH8.title" = "TextBundle を保存";
+# EN: Save TextBundle
+
+"OfE-7M-maR.title" = "カバー画像:";
+# EN: Cover Image:
+
+"Oz2-Fg-0wZ.title" = "120.55";
+
+"PK1-qr-vFd.title" = "統計";
+# EN: Statistics
+
+"Pdg-PG-FjB.title" = "Markdown を折り返す幅:";
+# EN: Wrap Markdown at width:
+
+"PhN-NU-uBW.title" = "Box";
+
+"PtD-m4-vGO.title" = "OPML を保存";
+# EN: Save OPML
+
+"Pw1-80-b4C.title" = "統計";
+# EN: Statistics
+
+"QeI-12-7pN.ibShadowedToolTip" = "読みやすくするために、指定された列で Markdown 段落を折り返します。";
+# EN: Wrap Markdown paragraphs at the specified column for readability.
+
+"QgI-3G-QpD.title" = "タイトル：";
+# EN: Title:
+
+"QzI-5H-8Hn.title" = "GitHub";
+
+"ReS-iL-lMC.ibShadowedToolTip" = "Gunning-Fog 指数は、テキストの読みやすさの尺度です。理解に必要なおおよその年齢を表しています。";
+# EN: Gunning fog index: measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading
+
+"RsF-Ts-opS.ibShadowedIsNilPlaceholder" = "...";
+
+"Rzc-wD-mJY.title" = "編集後";
+# EN: Edited
+
+"S4h-4d-RQw.title" = "スペルミスを表示";
+# EN: Show Spelling Errors
+
+"SPR-o7-rEL.ibShadowedIsNilPlaceholder" = "...";
+
+"SR4-qe-TGs.title" = "リンクを薄く表示";
+# EN: Dim Links
+
+"T4C-QS-lVr.ibShadowedToolTip" = "コードブロックを詩のように書式設定します。";
+# EN: View code blocks as poetry
+
+"T4C-QS-lVr.title" = "Code is Poetry";
+
+"T8N-PV-OjM.title" = "Scrivener ドキュメントをフィルタ";
+# EN: Filter Scrivener Documents
+
+"TTB-If-1rr.title" = "クリップボードのプレビューを保存";
+# EN: Save Clipboard Preview
+
+"TXt-8Q-xvo.ibShadowedToolTip" = "EPUB をエクスポートするときに、生成された XHTML の有効性を確認します。";
+# EN: Check the validity of the generated XHTML when exporting an EPUB.
+
+"UNB-CO-mdT.title" = "1000000000";
+
+"UvW-CN-tsa.ibShadowedToolTip" = "受動態ハイライトを切り替え";
+# EN: Toggle Passive Voice Highlights
+
+"V1r-3q-kdG.ibShadowedToolTip" = "ドキュメントで CriticMarkup が使用されている場合は、ドキュメントのどのビューをエクスポートするかを選択できます。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"VEq-Ux-2uJ.title" = "100m";
+
+"VMg-Xe-Yxs.ibShadowedToolTip" = "最終的な PDF のピクセル幅。内容は収まるように調整されます。";
+# EN: The pixel width of the final PDF. Content will be adjusted to fit.
+
+"VPx-Ei-Qh9.title" = "小数";
+# EN: Decimal
+
+"VYl-fm-uKG.ibShadowedToolTip" = "出力ファイルに KaTeX CDN インストールへのリンクを含めます。";
+# EN: Include a link to the KaTeX CDN install in the output file.
+
+"W0d-0E-dj0.ibShadowedIsNilPlaceholder" = "...";
+
+"WQz-kW-hnP.title" = "前のエラーへ移動";
+# EN: Go to Previous Error
+
+"WSS-hA-Vi9.title" = "HTML をコピー";
+# EN: Copy HTML
+
+"XGv-4J-tjb.ibShadowedToolTip" = "出力ファイルに KaTeX CDN インストールへのリンクを含めます。";
+# EN: Include a link to the KaTeX CDN install in the output file.
+
+"XwI-JW-MXm.ibShadowedToolTip" = "カバー画像をここにドラッグするか、クリックしてディスクから画像を選択します。";
+# EN: Drag a cover image here, or click to select an image from disk.
+
+"Y6t-h1-Qpz.ibExternalAccessibilityDescription" = "Markdown ファイルをエクスポートする";
+# EN: Export Markdown file
+
+"Y6t-h1-Qpz.ibShadowedToolTip" = "Markdown ファイルをエクスポートします。";
+# EN: Export Markdown file
+
+"YIN-WH-tGB.title" = "文数:";
+# EN: Sentences:
+
+"YRO-9d-DSe.ibShadowedIsNilPlaceholder" = "...";
+
+"YUp-VM-f2Q.ibShadowedIsNilPlaceholder" = "...";
+
+"Yq4-uT-Cxe.title" = "Box";
+
+"ZJm-Jh-o6F.title" = "単語数";
+# EN: Words
+
+"Zak-3k-Htw.ibExternalAccessibilityDescription" = "次の受動態を検索";
+# EN: Locate the next passive voice
+
+"Zak-3k-Htw.ibShadowedToolTip" = "次を検索 (Shift キーを押したまま前に移動)";
+# EN: Locate next (Hold Shift for previous)
+
+"ZjP-IW-Ftq.title" = "リッチテキストをコピー";
+# EN: Copy Rich Text
+
+"aIp-FM-sUR.title" = "単語の繰り返しを可視化";
+# EN: Visualize Word Repetition
+
+"aZf-qA-8lD.ibShadowedToolTip" = "グレードレベルは、テキストを理解するのに必要な英語圏の学年（grade）に対応する数値です。";
+# EN: Grade Level is a number that corresponds to the grade a person will need to have reached to understand it.
+
+"aiN-s6-4Vf.title" = "段落";
+# EN: Paragraphs
+
+"apP-pN-1Qk.title" = "常にこの選択を使用";
+# EN: Always use this choice
+
+"bDB-0N-ZKm.title" = "詳細な統計";
+# EN: Detailed Stats
+
+"bMV-SF-Jk8.title" = "カスタム";
+# EN: Custom
+
+"bYA-1b-mDV.ibShadowedIsNilPlaceholder" = "...";
+
+"bea-Td-p5h.title" = "100000000000";
+
+"bzA-wp-nuO.title" = "12.55";
+
+"cWb-ww-mBS.ibExternalAccessibilityDescription" = "HTML をエクスポート";
+# EN: Export HTML
+
+"cWb-ww-mBS.ibShadowedToolTip" = "HTML ファイルをエクスポート";
+# EN: Export HTML File
+
+"chm-yQ-eUe.title" = "日付：";
+# EN: Date:
+
+"csg-tQ-4Sl.ibShadowedLabels[0]" = "ドキュメント";
+# EN: Document
+
+"csg-tQ-4Sl.ibShadowedLabels[1]" = "段落";
+# EN: Paragraph
+
+"csg-tQ-4Sl.ibShadowedLabels[2]" = "文";
+# EN: Sentence
+
+"csg-tQ-4Sl.ibShadowedToolTips[0]" = "ドキュメント内の任意の場所で繰り返される単語";
+# EN: Words repeated anywhere in the document
+
+"csg-tQ-4Sl.ibShadowedToolTips[1]" = "同じ段落内で繰り返される単語";
+# EN: Words repeated within the same paragraph
+
+"csg-tQ-4Sl.ibShadowedToolTips[2]" = "同じ文内で繰り返される単語";
+# EN: Words repeated within the same sentence
+
+"cxg-iB-jjm.title" = "平均単語/文:";
+# EN: Avg. Words/Sentence:
+
+"dBz-0V-Bos.ibExternalAccessibilityDescription" = "ページ分割された PDF をエクスポート";
+# EN: Export Paginated PDF
+
+"dBz-0V-Bos.ibShadowedToolTip" = "ページ分割された PDF をエクスポート";
+# EN: Export Paginated PDF
+
+"dcT-xo-yiE.title" = "100%";
+
+"dmw-4H-NNc.ibExternalAccessibilityDescription" = "EPUB ドキュメントをエクスポート";
+# EN: Export EPUB document
+
+"dmw-4H-NNc.ibShadowedToolTip" = "EPUB ドキュメントをエクスポート";
+# EN: Export EPUB document
+
+"dpf-0Y-KHM.title" = "読みやすさ:";
+# EN: Reading Ease:
+
+"eGo-9u-atE.ibShadowedToolTip" = "プレビューの現在の幅を使用して、PDF の幅を決定します。";
+# EN: Use the current width of the Preview to determine the width of the PDF
+
+"eMt-Zz-avB.ibExternalAccessibilityDescription" = "次の推奨代替語を検索";
+# EN: Locate the next prefer alternate
+
+"eMt-Zz-avB.ibShadowedToolTip" = "次を検索 (Shift キーを押したまま前に移動)";
+# EN: Locate next (Hold Shift for previous)
+
+"ehg-F8-fqB.ibShadowedToolTip" = "保存が完了したら、エクスポートされたファイルを Finder で表示します。";
+# EN: Reveal the exported file in Finder after the save completes
+
+"etQ-EA-55l.ibShadowedToolTip" = "読了時間は、1 分あたり 200 語の平均読書速度に基づいて算出されます。「設定」→「校正」で調整できます。";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"f5d-TZ-5hQ.ibShadowedIsNilPlaceholder" = "...";
+
+"f8w-Xu-QyJ.ibShadowedIsNilPlaceholder" = "...";
+
+"fE8-DD-wb5.title" = "Box";
+
+"fF1-K9-Cob.title" = "10000000";
+
+"fbb-hR-9IM.ibShadowedToolTip" = "カスタムプロセッサを切り替え";
+# EN: Toggle Custom Processor
+
+"fbk-I5-dxu.ibShadowedToolTip" = "読了時間は、1 分あたり 200 語の平均読書速度に基づいて算出されます。「設定」→「校正」で調整できます。";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"fi2-Ay-Out.ibShadowedToolTip" = "チェックすると、ローカル画像がbase64でエンコードされ、HTMLファイルに埋め込まれます。これによりファイルが大きくなる可能性がありますが、どのホスティングサービスでも簡単に共有できます。";
+# EN: If chekced, local images will be encoded with base64 and embedded in the HTML file. This can result in large files, but they are easily shareable on any hosting service.
+
+"g5O-Xa-5B8.ibShadowedIsNilPlaceholder" = "...";
+
+"gAW-1t-xG4.title" = "800";
+
+"gDB-Dz-IEz.title" = "読了時間";
+# EN: Reading Time at 
+
+"gFw-Tm-9Mr.ibShadowedToolTip" = "電子書籍のタイトル。これは、保存された EPUB 内のメタデータに適用されます。";
+# EN: Title of the ebook. This will apply to the metadata in the saved EPUB.
+
+"geV-98-h0f.title" = "KaTeX CDN リンクを含める";
+# EN: Include KaTeX CDN link
+
+"glM-Vj-sKd.title" = "キーワードを編集";
+# EN: Edit Keywords
+
+"hUZ-EC-7TC.ibShadowedIsNilPlaceholder" = "...";
+
+"hwd-bD-yKQ.ibShadowedIsNilPlaceholder" = "...";
+
+"i53-H7-GHs.title" = "スピードリード";
+# EN: Speed Read
+
+"iCb-CE-PaS.title" = "100.00";
+
+"iFi-O3-nFV.title" = "統計";
+# EN: Statistics
+
+"iG6-Do-TdC.title" = "なし";
+# EN: None
+
+"iiQ-M5-hqn.title" = "アウトラインモード";
+# EN: Outline Mode
+
+"iox-Tw-e9h.title" = "現在のウインドウ幅を使用";
+# EN: Use Current Window Width
+
+"izv-tT-h2Y.ibShadowedToolTip" = "ドキュメントで CriticMarkup が使用されている場合は、ドキュメントのどのビューをエクスポートするかを選択できます。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"izy-xs-ibL.title" = "書き出す…";
+# EN: Export…
+
+"j0C-5y-JL8.ibShadowedIsNilPlaceholder" = "...";
+
+"jkd-jA-P7q.title" = "基本統計";
+# EN: Basic Stats
+
+"k1S-Vk-fdY.ibShadowedIsNilPlaceholder" = "...";
+
+"k6q-9b-7gF.ibShadowedIsNilPlaceholder" = "...";
+
+"kZ1-cM-l7u.title" = "キーワードをハイライト";
+# EN: Highlight Keywords
+
+"kii-1q-HIj.ibExternalAccessibilityDescription" = "DOCX ファイルをエクスポートする";
+# EN: Export DOCX file
+
+"kii-1q-HIj.ibShadowedToolTip" = "DOCX ファイルをエクスポートします。";
+# EN: Export DOCX file
+
+"kjn-RB-75w.ibShadowedToolTip" = "執筆目標に向けた進捗状況";
+# EN: Progress toward writing target
+
+"klg-Q8-rrG.ibShadowedIsNilPlaceholder" = "...";
+
+"kp8-lt-Cl9.ibExternalAccessibilityDescription" = "ドキュメントについて質問";
+# EN: Ask About Document
+
+"kp8-lt-Cl9.ibExternalAccessibilityHelp" = "Apple Intelligence でこのドキュメントについて質問します。";
+# EN: Use Apple Intelligence to query this document
+
+"kp8-lt-Cl9.ibShadowedToolTip" = "Apple Intelligence でこのドキュメントについて質問します。";
+# EN: Use Apple Intelligence to query this document
+
+"kp8-lt-Cl9.title" = "ドキュメントについて質問";
+# EN: Ask About Document
+
+"kxZ-ks-bdx.ibExternalAccessibilityDescription" = "連続 PDF をエクスポート";
+# EN: Export Continuous PDF
+
+"kxZ-ks-bdx.ibShadowedToolTip" = "連続 PDF をエクスポート";
+# EN: Export Continuous PDF
+
+"l3i-mR-eEE.ibExternalAccessibilityDescription" = "次の避けたい単語を検索";
+# EN: Locate the next avoid word
+
+"l3i-mR-eEE.ibShadowedToolTip" = "次を検索 (Shift キーを押したまま前に移動)";
+# EN: Locate next (Hold Shift for previous)
+
+"lBn-SG-GPg.title" = "600";
+
+"lL4-kq-NOn.ibExternalAccessibilityDescription" = "TextBundle ドキュメントをエクスポート";
+# EN: Export TextBundle document
+
+"lL4-kq-NOn.ibShadowedToolTip" = "TextBundle ドキュメントをエクスポート";
+# EN: Export TextBundle document
+
+"mCb-MW-eOa.ibExternalAccessibilityDescription" = "OPML ファイルをエクスポートする";
+# EN: Export OPML file
+
+"mCb-MW-eOa.ibShadowedToolTip" = "OPML ファイルをエクスポートします。";
+# EN: Export OPML file
+
+"mjE-Ng-jka.ibShadowedIsNilPlaceholder" = "...";
+
+"n3a-IG-Ogh.ibShadowedIsNilPlaceholder" = "...";
+
+"nXd-tx-wGr.title" = "100m";
+
+"o0q-Kh-GnZ.title" = "12.55";
+
+"o3w-bo-bB3.ibShadowedToolTip" = "テキストを理解するのに必要な、英語圏の学年（grade）に相当する数値です。";
+# EN: A number that corresponds to the grade a person will need to have reached to understand it.
+
+"oAk-Lm-2v5.ibShadowedIsNilPlaceholder" = "...";
+
+"oMN-eL-kXX.ibShadowedIsNilPlaceholder" = "...";
+
+"pAV-yu-UqF.title" = "DOCX スタイル:";
+# EN: DOCX Style:
+
+"pFP-vP-qg0.title" = "保存後に Finder で表示";
+# EN: Reveal in Finder after saving
+
+"q15-Qw-MTD.title" = "出力にスタイルを含める:";
+# EN: Include style in output:
+
+"q8E-Zh-uWx.title" = "60";
+
+"qKm-qj-Msf.title" = "Fog 指数:";
+# EN: Fog Index:
+
+"qY5-ol-5HF.title" = "EPUB を保存";
+# EN: Save EPUB
+
+"qjI-4e-t9Y.ibShadowedToolTip" = "Gunning-Fog 指数は、テキストの読みやすさの尺度です。理解に必要なおおよその年齢を表しています。";
+# EN: Gunning fog index: measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading
+
+"qsm-Yj-h2V.title" = "複雑な単語:";
+# EN: Complex Words:
+
+"ras-bZ-9rC.ibShadowedIsNilPlaceholder" = "...";
+
+"sAu-d0-lne.title" = "Box";
+
+"sFO-88-gJe.title" = "統計（フローティングウインドウ）";
+# EN: Floating Stats
+
+"sXS-g2-Vpx.ibShadowedIsNilPlaceholder" = "...";
+
+"sYi-U4-B9y.title" = "CriticMarkup を処理";
+# EN: Process CriticMarkup
+
+"sfw-LR-MtU.title" = "Fog 指数:";
+# EN: Fog Index:
+
+"swg-pX-tDk.title" = "段落:";
+# EN: Paragraphs:
+
+"sxc-7y-sC5.ibShadowedToolTip" = "読了時間は、1 分あたり 200 語の平均読書速度に基づいて算出されます。「設定」→「校正」で調整できます。";
+# EN: Reading time based on an average reading speed of 200 words per minute. Adjust in Settings->Proofreading
+
+"syW-Ae-1VZ.title" = "TextPack に圧縮";
+# EN: Compress to TextPack
+
+"tAL-6K-05I.ibExternalAccessibilityDescription" = "次のカスタムキーワードを検索";
+# EN: Locate the next custom keyword
+
+"tAL-6K-05I.ibShadowedToolTip" = "次を検索 (Shift キーを押したまま前に移動)";
+# EN: Locate next (Hold Shift for previous)
+
+"tAa-Rc-y4V.ibShadowedIsNilPlaceholder" = "...";
+
+"tFZ-qU-DCH.title" = "文字数:";
+# EN: Characters:
+
+"tcZ-ep-Y5v.title" = "100.00";
+
+"uT1-1q-r4O.title" = "文数:";
+# EN: Sentences:
+
+"uuB-6Q-nna.title" = "外部リンクの検証";
+# EN: Validate External Links
+
+"v2x-0Z-4oB.ibShadowedIsNilPlaceholder" = "...";
+
+"vjO-6G-TB6.ibShadowedIsNilPlaceholder" = "...";
+
+"vol-VL-X0q.title" = "Antique";
+
+"w8s-fM-AP2.title" = "100.00";
+
+"wRM-hU-2Pt.title" = "ドキュメントのタイトル";
+# EN: Document Title
+
+"wcA-w9-0Fc.title" = "読みやすさ:";
+# EN: Reading Ease:
+
+"wer-k2-CyG.title" = "リモートアセットをダウンロード";
+# EN: Download remote assets
+
+"wpx-15-POL.title" = "WPM:";
+
+"wxP-dZ-F6g.title" = "Swiss";
+
+"wz0-zR-ole.ibShadowedIsNilPlaceholder" = "...";
+
+"xOk-oW-6tS.ibShadowedIsNilPlaceholder" = "...";
+
+"xTt-Sh-e1z.ibShadowedIsNilPlaceholder" = "...";
+
+"yww-A1-kx0.ibShadowedIsNilPlaceholder" = "...";
+
+"yzZ-G8-1mv.title" = "スペルチェックと文法を表示";
+# EN: Show Grammar with Spelling
+
+"z47-eD-ash.ibShadowedToolTip" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"zCR-9D-qeF.ibShadowedToolTip" = "ドキュメントで CriticMarkup が使用されている場合は、ドキュメントのどのビューをエクスポートするかを選択できます。";
+# EN: If CriticMarkup is used in the document, you can select which view of it to export.
+
+"zGr-y2-xJ0.ibShadowedIsNilPlaceholder" = "...";
+
+"zXm-Yb-Fhb.title" = "グレードレベル:";
+# EN: Grade Level:
+
+"zgO-ix-2Gx.title" = "Box";
+
+"zhD-gi-tTB.title" = "ステータスバーを表示";
+# EN: Show Status Bar
+
+"zls-1N-o9P.title" = "閉じる";
+# EN: Close
+
+"zul-qv-D5i.title" = "エラーを自動的に修正";
+# EN: Fix errors automatically
+
+
+=== END MarkdownDocument.strings ===
+
+
+=== BEGIN QuickPanels.strings ===
+# Strings in this section: 53
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"Add Bookmark" = "ブックマークを追加";
+# EN: Add Bookmark
+
+"Autoscroll" = "自動スクロール";
+# EN: Autoscroll
+
+"Bookmarking" = "ブックマーク";
+# EN: Bookmarking
+
+"Clear All Bookmarks" = "すべてのブックマークを消去";
+# EN: Clear All Bookmarks
+
+"Clear Focused Bookmark" = "フォーカス中のブックマークを消去";
+# EN: Clear Focused Bookmark
+
+"Display Current Included Filename" = "現在インクルードしているファイル名を表示";
+# EN: Display Current Included Filename
+
+"Display Mini Map" = "ミニマップを表示";
+# EN: Display Mini Map
+
+"Focus Visible Section" = "表示中のセクションにフォーカス";
+# EN: Focus Visible Section
+
+"Jump to Bottom" = "最下部へジャンプ";
+# EN: Jump to Bottom
+
+"Jump to Top" = "最上部へジャンプ";
+# EN: Jump to Top
+
+"Navigation" = "ナビゲーション";
+# EN: Navigation
+
+"Next Bookmark (Numeric)" = "次のブックマーク（番号順）";
+# EN: Next Bookmark (Numeric)
+
+"Next Bookmark (Page Order)" = "次のブックマーク（ページ順）";
+# EN: Next Bookmark (Page Order)
+
+"Next CriticMarkup Change" = "次の CriticMarkup 変更";
+# EN: Next CriticMarkup Change
+
+"Next Edit Marker" = "次の編集マーカー";
+# EN: Next Edit Marker
+
+"Next H1/H2 Header" = "次の H1/H2 見出し";
+# EN: Next H1/H2 Header
+
+"Next Header" = "次の見出し";
+# EN: Next Header
+
+"Next Highlight (All Types)" = "次のハイライト（すべてのタイプ）";
+# EN: Next Highlight (All Types)
+
+"Next Highlight Target" = "次のハイライト（対象のみ）";
+# EN: Next Highlight Target
+
+"Open Fast Switcher" = "高速スイッチャーを開く";
+# EN: Open Fast Switcher
+
+"Open Other…" = "その他を開く…";
+# EN: Open Other…
+
+"Open a file or folder" = "ファイルまたはフォルダーを開く";
+# EN: Open a file or folder
+
+"Play/Pause Autoscroll" = "自動スクロールの再生／一時停止";
+# EN: Play/Pause Autoscroll
+
+"Preview" = "プレビュー";
+# EN: Preview
+
+"Preview › %@" = "プレビュー › %@";
+# EN: Preview › %@
+
+"Previous Bookmark (Numeric)" = "前のブックマーク（番号順）";
+# EN: Previous Bookmark (Numeric)
+
+"Previous Bookmark (Page Order)" = "前のブックマーク（ページ順）";
+# EN: Previous Bookmark (Page Order)
+
+"Previous CriticMarkup Change" = "前の CriticMarkup の変更";
+# EN: Previous CriticMarkup Change
+
+"Previous Edit Marker" = "前の編集マーカー";
+# EN: Previous Edit Marker
+
+"Previous H1/H2 Header" = "前の H1/H2 見出し";
+# EN: Previous H1/H2 Header
+
+"Previous Header" = "前の見出し";
+# EN: Previous Header
+
+"Previous Highlight (All Types)" = "前のハイライト（すべてのタイプ）";
+# EN: Previous Highlight (All Types)
+
+"Previous Highlight Target" = "前のハイライト（対象のみ）";
+# EN: Previous Highlight Target
+
+"Recent" = "最近の項目";
+# EN: Recent
+
+"Recent Documents" = "最近使ったドキュメント";
+# EN: Recent Documents
+
+"Reverse Autoscroll" = "自動スクロールを反転";
+# EN: Reverse Autoscroll
+
+"Scroll Down" = "下へスクロール";
+# EN: Scroll Down
+
+"Scroll Down Faster" = "下へ速くスクロール";
+# EN: Scroll Down Faster
+
+"Scroll Up" = "上へスクロール";
+# EN: Scroll Up
+
+"Scroll Up Faster" = "上へ速くスクロール";
+# EN: Scroll Up Faster
+
+"Search" = "検索";
+# EN: Search
+
+"Search actions…" = "アクションを検索…";
+# EN: Search actions…
+
+"Search in Preview" = "プレビュー内を検索";
+# EN: Search in Preview
+
+"Search open documents…" = "開いているドキュメントを検索…";
+# EN: Search open documents…
+
+"Show/Hide Help HUD" = "ヘルプ HUD の表示／非表示";
+# EN: Show/Hide Help HUD
+
+"Slow Down Autoscroll" = "自動スクロールを遅く";
+# EN: Slow Down Autoscroll
+
+"Speed Up Autoscroll" = "自動スクロールを速く";
+# EN: Speed Up Autoscroll
+
+"Table of Contents" = "目次";
+# EN: Table of Contents
+
+"Toggle Pagination" = "ページ分割の切り替え";
+# EN: Toggle Pagination
+
+"Toggle Zoom Overview" = "概観表示の切り替え";
+# EN: Toggle Zoom Overview
+
+"Untitled" = "無題";
+# EN: Untitled
+
+"Window" = "ウインドウ";
+# EN: Window
+
+"Window with %lu tabs" = "%lu 個のタブがあるウインドウ";
+# EN: Window with %lu tabs
+
+
+=== END QuickPanels.strings ===
+
+
+=== BEGIN DocumentIntelligence.strings ===
+# Strings in this section: 59
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"%@ section %ld of %ld…" = "%1$@ セクション %2$ld/%3$ld…";
+# EN: %1$@ section %2$ld of %3$ld…
+
+"Analyzing" = "分析中";
+# EN: Analyzing
+
+"Apple Intelligence could not complete this request." = "Apple Intelligence はこのリクエストを完了できませんでした。";
+# EN: Apple Intelligence could not complete this request.
+
+"Apple Intelligence is not available on this Mac." = "Apple Intelligence はこの Mac では使用できません。";
+# EN: Apple Intelligence is not available on this Mac.
+
+"Apple Intelligence is not available right now." = "Apple Intelligence は現在利用できません。";
+# EN: Apple Intelligence is not available right now.
+
+"Apple Intelligence is still preparing on this Mac. Try again shortly." = "Apple Intelligence はこの Mac 上でまだ準備中です。しばらくしてからもう一度お試しください。";
+# EN: Apple Intelligence is still preparing on this Mac. Try again shortly.
+
+"Apple Intelligence requires macOS Tahoe or later." = "Apple Intelligence を使用するには、macOS Tahoe 以降が必要です。";
+# EN: Apple Intelligence requires macOS Tahoe or later.
+
+"Ask" = "質問";
+# EN: Ask
+
+"Ask About Document" = "ドキュメントについて質問";
+# EN: Ask About Document
+
+"Building outline…" = "アウトラインを作成しています…";
+# EN: Building outline…
+
+"Cancel" = "キャンセル";
+# EN: Cancel
+
+"Cancelled." = "キャンセルしました。";
+# EN: Cancelled.
+
+"Copied Markdown." = "Markdown をコピーしました。";
+# EN: Copied Markdown.
+
+"Copied RTF." = "RTF をコピーしました。";
+# EN: Copied RTF.
+
+"Copied response." = "回答をコピーしました。";
+# EN: Copied response.
+
+"Copy" = "コピー";
+# EN: Copy
+
+"Copy response" = "回答をコピー";
+# EN: Copy response
+
+"Copy response as Markdown" = "回答を Markdown としてコピー";
+# EN: Copy response as Markdown
+
+"Copy response as RTF" = "回答を RTF としてコピー";
+# EN: Copy response as RTF
+
+"Could not complete the request. %@" = "リクエストを完了できませんでした。%@";
+# EN: Could not complete the request. %@
+
+"Create a concise reference summary of the document for answering questions." = "質問に答えるための、ドキュメントの簡潔な参照用要約を作成してください。";
+# EN: Create a concise reference summary of the document for answering questions.
+
+"Document text:
+---
+%1$@
+---
+
+Question: %2$@
+
+Answer the question using only the document text above.
+Respond in the same language as the Question." = "ドキュメントのテキスト:
+---
+%1$@
+---
+
+質問: %2$@
+
+上のドキュメントのテキストのみを使って質問に答えてください。
+質問と同じ言語で回答してください。";
+# EN: Document text:\n---\n%1$@\n---\n\nQuestion: %2$@\n\nAnswer the question using only the document text above.\nRespond in the same language as the Question.
+
+"Done." = "完了しました。";
+# EN: Done.
+
+"Enter a question first." = "まず質問を入力してください。";
+# EN: Enter a question first.
+
+"Extracting key points…" = "要点を抽出中…";
+# EN: Extracting key points…
+
+"Finishing…" = "仕上げ中…";
+# EN: Finishing…
+
+"Formatted" = "フォーマット済み";
+# EN: Formatted
+
+"Key Points" = "要点";
+# EN: Key Points
+
+"List the five to eight most important points from the document as a Markdown bullet list." = "ドキュメントの最も重要な 5 ～ 8 個のポイントを、Markdown の箇条書きリストで挙げてください。";
+# EN: List the five to eight most important points from the document as a Markdown bullet list.
+
+"Markdown" = "Markdown";
+
+"No document text to analyze." = "分析するドキュメントのテキストがありません。";
+# EN: No document text to analyze.
+
+"Outline" = "アウトライン";
+# EN: Outline
+
+"Outlining" = "アウトライン作成中";
+# EN: Outlining
+
+"Preparing" = "準備中";
+# EN: Preparing
+
+"Produce a hierarchical outline of the document using Markdown headings and bullet points." = "Markdown の見出しと箇条書きを使って、ドキュメントの階層的なアウトラインを作成してください。";
+# EN: Produce a hierarchical outline of the document using Markdown headings and bullet points.
+
+"Question: %@
+
+Document text:
+
+" = "質問: %@
+
+ドキュメントのテキスト:
+
+";
+# EN: Question: %@\n\nDocument text:\n\n
+
+"Section %ld: %@" = "セクション %ld: %@";
+# EN: Section %ld: %@
+
+"Section summaries:
+
+%@" = "セクションの要約:
+
+%@";
+# EN: Section summaries:\n\n%@
+
+"Select text in the preview first, or use Summarize Document." = "まずプレビューでテキストを選択するか、「ドキュメントの要約」を使用してください。";
+# EN: Select text in the preview first, or use Summarize Document.
+
+"Select text in the preview first." = "まずプレビューでテキストを選択してください。";
+# EN: Select text in the preview first.
+
+"Starting…" = "開始しています…";
+# EN: Starting…
+
+"Summaries and answers appear here, just above your question." = "要約と回答は、質問のすぐ上に表示されます。";
+# EN: Summaries and answers appear here, just above your question.
+
+"Summarize Document" = "ドキュメントの要約";
+# EN: Summarize Document
+
+"Summarize Selection" = "選択内容の要約";
+# EN: Summarize Selection
+
+"Summarize the following excerpt in three to five sentences." = "次の抜粋を 3 ～ 5 文で要約してください。";
+# EN: Summarize the following excerpt in three to five sentences.
+
+"Summarize this section in two or three sentences." = "このセクションを 2 ～ 3 文で要約してください。";
+# EN: Summarize this section in two or three sentences.
+
+"Summarizing" = "要約中";
+# EN: Summarizing
+
+"Summarizing document…" = "ドキュメントを要約しています…";
+# EN: Summarizing document…
+
+"Summarizing selection…" = "選択範囲を要約しています…";
+# EN: Summarizing selection…
+
+"Thinking…" = "考えています…";
+# EN: Thinking…
+
+"This Mac does not support Apple Intelligence." = "この Mac は Apple Intelligence をサポートしていません。";
+# EN: This Mac does not support Apple Intelligence.
+
+"This document has no text to analyze." = "このドキュメントには分析するテキストがありません。";
+# EN: This document has no text to analyze.
+
+"This document is too large for a single request. Try selecting a smaller passage or ask a narrower question." = "このドキュメントは 1 回のリクエストには大きすぎます。短い範囲を選択するか、絞り込んだ質問をしてください。";
+# EN: This document is too large for a single request. Try selecting a smaller passage or ask a narrower question.
+
+"Turn on Apple Intelligence in System Settings to use Ask About Document." = "「ドキュメントについて質問」を使用するには、システム設定で Apple Intelligence をオンにしてください。";
+# EN: Turn on Apple Intelligence in System Settings to use Ask About Document.
+
+"Turn on Apple Intelligence in System Settings to use this feature." = "この機能を使用するには、システム設定で Apple Intelligence をオンにしてください。";
+# EN: Turn on Apple Intelligence in System Settings to use this feature.
+
+"Uses on-device Apple Intelligence." = "デバイス上の Apple Intelligence を使用します。";
+# EN: Uses on-device Apple Intelligence.
+
+"What's on your mind?" = "何について知りたいですか？";
+# EN: What's on your mind?
+
+"Write a cohesive summary of the full document in four to eight sentences." = "ドキュメント全体の一貫した要約を 4 ～ 8 文で書いてください。";
+# EN: Write a cohesive summary of the full document in four to eight sentences.
+
+"You help someone review a document open in Marked, a Markdown preview app.
+Use only the document text provided in the prompt. Be accurate and concise.
+If the text does not contain enough information, say so briefly.
+Write all responses in %@." = "あなたは、Markdown プレビューアプリ Marked で開いているドキュメントのレビューを手伝います。
+プロンプトで与えられたドキュメントのテキストのみを使用してください。正確かつ簡潔に答えてください。
+テキストに十分な情報が含まれていない場合は、その旨を簡潔に伝えてください。
+すべての回答を %@ で記述してください。";
+# EN: You help someone review a document open in Marked, a Markdown preview app.\nUse only the document text provided in the prompt. Be accurate and concise.\nIf the text does not contain enough information, say so briefly.\nWrite all responses in %@.
+
+
+=== END DocumentIntelligence.strings ===
+
+
+=== BEGIN Preferences.strings ===
+# Strings in this section: 8
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"Advanced" = "詳細";
+# EN: Advanced
+
+"Apps" = "アプリ";
+# EN: Applications
+
+"Export" = "書き出し";
+# EN: Export
+
+"General" = "一般";
+# EN: General
+
+"Preview" = "プレビュー";
+# EN: Preview
+
+"Processor" = "プロセッサ";
+# EN: Processor
+
+"Proofing" = "校正";
+# EN: Proofing
+
+"Style" = "スタイル";
+# EN: Style
+
+
+=== END Preferences.strings ===
+
+
+=== BEGIN Preferences.xib.strings ===
+# Strings in this section: 583
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0G8-G2-H51.title" = "完了";
+# EN: Done
+
+"0KC-Ac-0Sw.title" = "割引";
+# EN: Discount
+
+"0TU-06-h83.ibShadowedToolTip" = "カスタムルールを編集します。";
+# EN: Edit Custom Rules
+
+"0aN-Jh-IRH.title" = "フォント：";
+# EN: Font:
+
+"0ay-mp-wPl.title" = "12";
+
+"0do-zT-NUL.ibShadowedToolTip" = "数式の左側または右側に番号を追加します。";
+# EN: Add equation numbering on the left or right side or the equation
+
+"0rd-5d-52X.title" = "更新";
+# EN: Refresh
+
+"1010.label" = "代替を使用する";
+# EN: Use Alternate
+
+"1012.label" = "ハイライト";
+# EN: Highlight
+
+"1017.title" = "デフォルトのフレーズを復元する";
+# EN: Restore Default Phrases
+
+"1018.title" = "以下のフィールドを使用して、別の単語やフレーズを 1 行に 1 つずつ入力します。旧来の語句を見つけるためによく使用されます。完全に一致する（大文字と小文字を区別しない）ものだけが強調表示されます。";
+# EN: Use the field below to create a list of words or phrases—one per line—where you could have used an alternative. This is commonly used to catch outdated terms. Only complete (case insensitive) matches will be highlighted.
+
+"1028.title" = "下のフィールドを使用して、他の理由で強調表示したい単語またはフレーズのリストを 1 行に 1 つずつ作成します。完全に一致する (大文字と小文字を区別しない) ものだけが強調表示されます。正規表現の場合は / で囲みます。";
+# EN: Use the field below to create a list of words or phrases—one per line—that you'd like to highlight for any other reason. Only complete (case insensitive) matches will be highlighted. Surround with / for regex.
+
+"1119.title" = "Markdown の処理方法:";
+# EN: Process Markdown with:
+
+"1172.title" = "更新";
+# EN: Refresh
+
+"1193.title" = "構文の違いについては、「ヘルプ」→「Markdown リファレンス」を参照してください。";
+# EN: See Help→Markdown Reference for information on syntax differences.
+
+"1197.ibShadowedToolTip" = "変更が検出されると、Marked をアクティブにすることなく、そのドキュメントのウインドウがデスクトップ上の他のウインドウの上に表示されます。「更新されたドキュメントを前面に表示」が表示のみを処理する場合には適用されません。両機能は併用できます。";
+# EN: When a change is detected, the window for that document will rise above other windows on your Desktop without activating Marked. Does not apply when "Bring updated document to front" handles visibility alone; both can be used together.
+
+"1198.title" = "更新時にウインドウを前面に表示";
+# EN: Raise window on update
+
+"1214.placeholderString" = "70";
+
+"1216.placeholderString" = "30";
+
+"1218.placeholderString" = "30";
+
+"1220.placeholderString" = "70";
+
+"1223.ibShadowedToolTip" = "印刷マージンを定義します (ポイント単位で指定)。";
+# EN: Define print margins (specified in points)
+
+"1223.title" = "余白";
+# EN: Margins
+
+"1376.title" = "目次";
+# EN: Table of Contents
+
+"1377.ibShadowedToolTip" = "ドロップダウンを使用して、目次のインデントのレベルごとにリスト項目マーカーを設定します。";
+# EN: Use the dropdowns to set the list item marker for each level of indentation in a table of contents
+
+"1378.title" = "目次レベルマーカー";
+# EN: Table of contents level markers
+
+"1380.ibShadowedToolTip" = "ルートインデントレベルの箇条書きのタイプを選択します。";
+# EN: Choose the type of bullet for root indentation level.
+
+"1382.title" = "OtherViews";
+
+"1383.title" = "I.";
+
+"1384.title" = "i.";
+
+"1385.title" = "1.";
+
+"1416.title" = "01.";
+
+"1417.title" = "A.";
+
+"1418.title" = "a.";
+
+"1419.title" = "α.";
+
+"1420.title" = "•";
+
+"1421.title" = "○";
+
+"1422.title" = "■";
+
+"1423.ibShadowedToolTip" = "最初のインデントレベルの箇条書きの種類を選択します。";
+# EN: Choose the type of bullet for first indentation level.
+
+"1425.title" = "OtherViews";
+
+"1426.title" = "■";
+
+"1427.title" = "○";
+
+"1428.title" = "•";
+
+"1429.title" = "α.";
+
+"1430.title" = "a.";
+
+"1431.title" = "A.";
+
+"1432.title" = "01.";
+
+"1433.title" = "1.";
+
+"1434.title" = "i.";
+
+"1435.title" = "I.";
+
+"1436.ibShadowedToolTip" = "2 番目のインデントレベルの箇条書きの種類を選択します。";
+# EN: Choose the type of bullet for second indentation level.
+
+"1438.title" = "OtherViews";
+
+"1439.title" = "■";
+
+"1440.title" = "○";
+
+"1441.title" = "•";
+
+"1442.title" = "α.";
+
+"1443.title" = "a.";
+
+"1444.title" = "A.";
+
+"1445.title" = "01.";
+
+"1446.title" = "1.";
+
+"1447.title" = "i.";
+
+"1448.title" = "I.";
+
+"1449.ibShadowedToolTip" = "3 番目のインデントレベルの箇条書きの種類を選択します。";
+# EN: Choose the type of bullet for third indentation level.
+
+"1451.title" = "OtherViews";
+
+"1452.title" = "■";
+
+"1453.title" = "○";
+
+"1454.title" = "•";
+
+"1455.title" = "α.";
+
+"1456.title" = "a.";
+
+"1457.title" = "A.";
+
+"1458.title" = "01.";
+
+"1459.title" = "1.";
+
+"1460.title" = "i.";
+
+"1461.title" = "I.";
+
+"1462.ibShadowedToolTip" = "4 番目のインデントレベルの箇条書きの種類を選択します。";
+# EN: Choose the type of bullet for fourth indentation level.
+
+"1464.title" = "OtherViews";
+
+"1465.title" = "■";
+
+"1466.title" = "○";
+
+"1467.title" = "•";
+
+"1468.title" = "α.";
+
+"1469.title" = "a.";
+
+"1470.title" = "A.";
+
+"1471.title" = "01.";
+
+"1472.title" = "1.";
+
+"1473.title" = "i.";
+
+"1474.title" = "I.";
+
+"1475.ibShadowedToolTip" = "5 番目のインデントレベルの箇条書きの種類を選択します。追加のインデントレベルはデフォルトでこの設定になります。";
+# EN: Choose the type of bullet for fifth indentation level. Additional indentation levels will default to this setting.
+
+"1477.title" = "OtherViews";
+
+"1478.title" = "■";
+
+"1479.title" = "○";
+
+"1480.title" = "•";
+
+"1481.title" = "α.";
+
+"1482.title" = "a.";
+
+"1483.title" = "A.";
+
+"1484.title" = "01.";
+
+"1485.title" = "1.";
+
+"1486.title" = "i.";
+
+"1487.title" = "I.";
+
+"1512.title" = "なし";
+# EN: None
+
+"1513.title" = "なし";
+# EN: None
+
+"1514.title" = "なし";
+# EN: None
+
+"1515.title" = "なし";
+# EN: None
+
+"1516.title" = "なし";
+# EN: None
+
+"1517.title" = "なし";
+# EN: None
+
+"199-YT-EsR.title" = "左上";
+# EN: Top Left
+
+"1Gh-xv-5H5.title" = "新しい Marked ウインドウ";
+# EN: a new Marked window
+
+"1Lu-iY-qzQ.ibShadowedToolTip" = "ヘッダーの下および/またはフッターの上に水平線を印刷します。";
+# EN: Print a horizontal line below the header and/or above the footer
+
+"1SM-eh-7o2.ibShadowedToolTip" = "タイトルのメタデータが提供されていない場合は、一時的なプレビューで最初の H1 ヘッダーを印刷/保存のタイトルとして使用します。";
+# EN: If no title metadata is provided, use the first H1 header as the print/save title on transient previews.
+
+"1eU-OY-EjJ.ibShadowedToolTip" = "適切な構文が検出された場合、CriticMarkup 処理を自動的に有効にします。";
+# EN: Enable CriticMarkup processing automatically when appropriate syntax is detected.
+
+"1hb-Ih-LRV.title" = "CommonMark (GFM)";
+
+"1lQ-6n-ZAi.title" = "エクスポートプロファイル:";
+# EN: Export Profile:
+
+"1om-K7-Ro2.title" = "新規";
+# EN: New
+
+"1tt-Ka-Puc.ibShadowedToolTip" = "すべてのウインドウにダークモードを強制適用します。";
+# EN: Force Dark Mode in all windows
+
+"1zn-0P-IC1.ibExternalAccessibilityHelp" = "小さな余白マーカーを表示して、検出された編集位置を強調表示します。";
+# EN: Show small gutter markers to highlight detected edit locations.
+
+"1zn-0P-IC1.ibShadowedToolTip" = "小さな余白マーカーを表示して、検出された編集位置を強調表示します。";
+# EN: Show small gutter markers to highlight detected edit locations.
+
+"21s-Tu-UhY.title" = "時刻の形式";
+# EN: Time Format
+
+"27J-dC-nHz.ibExternalAccessibilityDescription" = "Wiki リンクの変換";
+# EN: Convert Wiki Links
+
+"27J-dC-nHz.ibExternalAccessibilityHelp" = "[[wiki link]] スタイルのリンクを変換します。既存のファイル名に一致するリンクのみが変換されます。";
+# EN: Convert [[wiki link]] style links. Only links that match existing filenames will be converted.
+
+"27J-dC-nHz.ibShadowedToolTip" = "[[wiki link]] スタイルのリンクを変換します。既存のファイル名に一致するリンクのみが変換されます。";
+# EN: Convert [[wiki link]] style links. Only links that match existing filenames will be converted.
+
+"2NR-Pg-rVO.ibShadowedToolTip" = "チェックボックスを作成するには、- [ ] と - [x] をレンダリングします。チェックボックスはプレビュー用に表示されますが、Marked 内では機能しません。";
+# EN: Render - [ ] and - [x] for creating checkboxes. Checkboxes are rendered for preview but not functional within Marked.
+
+"2Sb-Zo-zN8.ibShadowedToolTip" = "デフォルトの Decimal 形式の代わりに APA スタイルのアウトラインを使用します。";
+# EN: Use APA style outlines instead of the default Decimal format
+
+"2UY-1L-378.title" = "付与";
+# EN: Grant
+
+"2Wz-uH-Rha.title" = "新しいファイルを自動的に編集する";
+# EN: Edit new files automatically
+
+"2bS-qi-EZL.title" = "PDF/Print のリンク/ハイライトを無効にする";
+# EN: Disable links/highlights for PDF/Print
+
+"2xe-JO-xwk.title" = "画像エディタ:";
+# EN: Image editor:
+
+"2yD-dI-tT9.ibShadowedToolTip" = "ヘッダーやフッターのオプションがオフの場合、最初のページは指定されたタイプで印刷されません。";
+# EN: If the option for header and/or footer are unchecked, the first page will not print the specified type.
+
+"3Bp-76-Wma.ibShadowedToolTip" = "チェックすると、Scrivener ドキュメントに作成された注釈がプレビューで強調表示されます。完全に非表示にするにはチェックを外します。";
+# EN: If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.
+
+"3T3-Yr-oY8.title" = "ブロック引用符";
+# EN: Blockquotes
+
+"3e5-za-8Nz.title" = "日付形式";
+# EN: Date Format
+
+"3kz-yn-eUL.title" = "4";
+
+"44F-fD-bAO.ibShadowedToolTip" = "YAML フロントマターは無視することも、処理のために MMD メタデータに変換することも、完全に削除することもできます。";
+# EN: YAML front matter can be ignored, converted to MMD metadata for processing, or stripped completely.
+
+"46.title" = "ステータスバー:";
+# EN: Status bar:
+
+"49.title" = "ウインドウ:";
+# EN: Window:
+
+"4Jc-c6-qDm.title" = "更新時に URL を自動的に検証する";
+# EN: Automatically validate URLs on update
+
+"4NB-os-uNa.ibShadowedToolTip" = "ヘッダーとフッターに使用するフォント";
+# EN: Font to use for header and footer.
+
+"4Pc-3D-WI1.label" = "繰り返しを無視する";
+# EN: Ignore Repeats
+
+"4Tq-ex-j8N.title" = "テキストエディタ:";
+# EN: Text editor:
+
+"4ZA-zY-xwY.ibShadowedToolTip" = "SmartyPants を使用して、スマート引用符、省略記号変換、その他のタイポグラフィー機能を使用します。";
+# EN: Use SmartyPants for smart quotes, ellipses conversion, and other typography features.
+
+"4bM-vg-xuR.ibShadowedToolTip" = "レベル 2 ヘッダーをセクション区切りとして使用し、常に新しいページで開始します。";
+# EN: Use level 2 headers as section dividers, always starting them on a new page.
+
+"4g5-9T-SlB.ibShadowedToolTip" = "ドキュメントの先頭から MultiMarkdown メタデータを削除します。これは、MultiMarkdown を使用していないが、ヘッダーメタデータをドキュメントに表示せずに利用したい場合に便利です。メタデータはこれが起こる前に読み込まれるため、引き続き Marked 固有のメタデータ命令を使用でき、他の変数も利用できます。";
+# EN: Removes MultiMarkdown metadata from the top of the document. This is useful if you're not using MultiMarkdown, but want to make use of header metadata without it appearing in your document.Metadata is read in before this happens, so you can still use Marked-specific metadata instructions and other variables are availble.
+
+"4tm-Oq-PB1.ibShadowedToolTip" = "フォルダーを開くと、Marked は、デフォルトの拡張子「md」、「mm​​d」、および「html」を使用して、最後に変更されたドキュメントを検索します。ここでの設定はデフォルトをオーバーライドします。";
+# EN: When opening a folder, Marked will look for the most recently changed document, defaulting to the extensions "md," "mmd," and "html." Settings here override the default.
+
+"59s-N5-pBb.ibShadowedToolTip" = "ヘッダーの右側の書式設定";
+# EN: Formatting for the right side of the header.
+
+"5DG-gr-YHR.ibShadowedToolTip" = "ヘッダーのロゴを削除します。";
+# EN: Remove the header logo
+
+"5Tg-ch-D2N.title" = "スタイルピッカーを表示";
+# EN: Show Style picker
+
+"5dI-aN-lDE.title" = "5";
+
+"5dR-ru-CgB.ibShadowedToolTip" = "ここで追加した CSS は、すべてのテーマの通常のスタイルシートの後に組み込まれます。とりわけ、これを使用すると、内部スタイルを編集せずに設定全体をオーバーライドできます。プロセッサ設定の カスタムルールを使用して、ルールの一致に基づいてカスタム CSS を適用することもできます。";
+# EN: CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles. Note that you can also use Custom Rules in Processor Settings to apply custom CSS based on rule matches.
+
+"5kr-qf-ruU.ibShadowedToolTip" = "strftime 形式を使用した時刻形式";
+# EN: Time format using strftime formatting.
+
+"5xX-bk-GW2.ibShadowedToolTip" = "ログをオンにします。";
+# EN: Turn on logging
+
+"5zt-WW-4HK.ibShadowedToolTip" = "ショートカットフィールドをクリックして、任意のアプリケーションから Marked に切り替えるためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for switching to Marked from any application
+
+"684.ibShadowedToolTip" = "新しいウインドウが他のアプリケーションの上に「フロート」するように自動的に設定されます。";
+# EN: Automatically set new windows to "float" above other applications.
+
+"687.title" = "新しいウインドウを常に最前面に表示";
+# EN: Keep new windows on top
+
+"699.ibShadowedToolTip" = "印刷物/PDF に自動目次を含めます。";
+# EN: Include automatic table of contents in print/pdf.
+
+"6BY-fF-uhl.ibShadowedToolTip" = "ディスクからロゴ画像を選択します。";
+# EN: Select a logo image from disk
+
+"6Bg-EV-ybL.title" = "デバッグモード";
+# EN: Debug mode
+
+"6CB-xj-2CC.title" = "右側";
+# EN: Right Side
+
+"6DH-bD-fSO.ibShadowedToolTip" = "外部リンクをクリックして放す前に長押しすると、ポップアップメニューが表示されます。";
+# EN: Show a popup menu when external links are clicked and held before releasing.
+
+"6Jn-ZY-hjQ.ibShadowedToolTip" = "チェックすると、脚注マーカーにデフォルトの MultiMarkdown 書式設定が使用されます ([1])。角括弧を削除するにはチェックを外します。";
+# EN: If checked, use the default MultiMarkdown formatting for footnote markers ([1]). Uncheck to strip square brackets.
+
+"6Tu-DY-ZuH.title" = "マインドマップ";
+# EN: Mind maps
+
+"6UV-QY-m2l.title" = "H2 より前";
+# EN: Before H2s
+
+"6Wi-LR-aSB.ibExternalAccessibilityDescription" = "最新の編集マーカーを表示";
+# EN: Show most recent edit marker
+
+"6Wi-LR-aSB.ibExternalAccessibilityHelp" = "最新の編集ポイントにマーカーを表示します (「差分順序を逆にする」設定に応じて、最後の差分の最初から最後まで)。";
+# EN: Show a marker at the most recnt edit point (first of last diff, depending on "Reverse diff order" setting).
+
+"6Wi-LR-aSB.ibShadowedToolTip" = "最新の編集ポイントにマーカーを表示します (「差分順序を逆にする」設定に応じて、最後の差分の最初から最後まで)。";
+# EN: Show a marker at the most recnt edit point (first of last diff, depending on "Reverse diff order" setting).
+
+"6cZ-wJ-eUc.ibShadowedToolTip" = "ドキュメント内の要素ごとに言語を検出し、それに応じて右から左にスタイルを設定します。";
+# EN: Detect langauge per element in document and style Right To Left accordingly
+
+"6iu-Hv-rnF.title" = "サイズの大きいドキュメントではメモリを大量に消費する機能を無効にする";
+# EN: Disable memory-intensive features on large documents
+
+"6jZ-PG-IiX.title" = "GitHub チェックボックスをレンダリングする";
+# EN: Render GitHub checkboxes
+
+"6zx-Ta-74D.ibShadowedToolTip" = "スタイルマネージャーを開きます。";
+# EN: Open the Style Manager
+
+"700.title" = "目次を印刷する";
+# EN: Print table of contents
+
+"771.title" = "スクリプトを含める";
+# EN: Include scripts:
+
+"77z-6i-hcu.title" = "アプリケーション固有の設定:";
+# EN: Application-specific settings:
+
+"7HE-R3-mYR.ibShadowedToolTip" = "フォルダーを開くと、Marked は、デフォルトの拡張子「md」、「mm​​d」、および「html」を使用して、最後に変更されたドキュメントを検索します。ここでの設定はデフォルトをオーバーライドします。";
+# EN: When opening a folder, Marked will look for the most recently changed document, defaulting to the extensions "md," "mmd," and "html." Settings here override the default.
+
+"7Jg-MC-eJc.title" = "Bike アウトライン";
+# EN: Bike outlines
+
+"7Q4-GR-OcM.ibShadowedToolTip" = "設定すると、選択したポイント設定に基づいてすべてのテキストが拡大縮小されます。デフォルトは 10 ポイントを基準とします。";
+# EN: If set, all text will be scaled based on the point setting selected. Defaults to a base of 10 points.
+
+"7UG-xf-faf.title" = "Markdown 構文エラーを強調表示する";
+# EN: Highlight Markdown syntax errors
+
+"7mf-mC-cc1.title" = "3";
+
+"7yZ-lB-6aI.title" = "URLをテキスト注釈として含める";
+# EN: Include URL as text annotation
+
+"8RH-UB-6WZ.title" = "Mermaid マインドマップの埋め込み:";
+# EN: Embed as Mermaid mind maps:
+
+"8af-LK-6C0.ibShadowedToolTip" = "Bike (.bike) のアウトラインをマーメイドマインドマップとして埋め込みます。無効にすると、含まれる Bike ファイルは Markdown リスト (ドキュメントタイトルなし) としてレンダリングされます。";
+# EN: Embed Bike (.bike) outlines as Mermaid mind maps. If disabled, included Bike files will be rendered as Markdown lists (no document title).
+
+"8eu-5U-k7Q.ibShadowedToolTip" = "読了時間を計算するための読書速度（1 分あたりの語数）";
+# EN: Reading speed for reading time calculation (words per minute)
+
+"8jU-97-dbv.ibShadowedToolTip" = "ここで選択したスタイルは、メタデータでドキュメント固有のスタイルが指定されていない限り（例: \"Marked スタイル: Grump\"）、すべての新しいウインドウに読み込まれます。";
+# EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. "Marked Style: Grump")
+
+"8t8-km-W9F.title" = "図のパンとズーム";
+# EN: Pan and zoom diagrams
+
+"8yt-gU-k63.ibShadowedToolTip" = "単語が自動的にハイフンで区切られるようにします。";
+# EN: Allow words to break with hyphenation automatically.
+
+"981.title" = "以下のフィールドを使用して、文章中で避けたい単語やフレーズのリストを 1 行に 1 つずつ作成します。これは、使いすぎた用語を見つけるために最も一般的に使用されます。完全に一致する (大文字と小文字を区別しない) ものだけが強調表示されます。";
+# EN: Use the field below to create a list of words or phrases—one per line—that you'd like to avoid in your writing. This is most commonly used to catch overused terms. Only complete (case insensitive) matches will be highlighted.
+
+"985.label" = "避けたい単語";
+# EN: Avoid
+
+"990.title" = "デフォルトのフレーズを復元する";
+# EN: Restore Default Phrases
+
+"9Cx-rV-3Ib.title" = "編集箇所にスクロール:";
+# EN: Scroll to edit:
+
+"9Yl-2p-W4T.title" = "MultiMarkdown メタデータへの変換";
+# EN: Convert to MultiMarkdown Metadata
+
+"9ny-nM-7Ku.ibShadowedToolTip" = "==text== を <mark> タグとしてレンダリングします。 ~~取り消し線~~と~下線~もレンダリングします。";
+# EN: Render ==text== as a <mark> tag. Also renders ~~strikethrough~~ and ~underline~.
+
+"9sl-AY-z4F.placeholderString" = "900";
+
+"9sl-AY-z4F.title" = "900";
+
+"A1f-j4-BDw.title" = "OtherViews";
+
+"AEI-oa-8kh.ibShadowedToolTip" = "JSON 形式の構成オプションを追加します。";
+# EN: Add JSON-formatted configuration options
+
+"AWu-BS-7M8.ibShadowedToolTip" = "選択した投稿のタイトルを Markdown ヘッダーとして使用します。";
+# EN: Use the title of the selected post as a Markdown header.
+
+"Ae8-Hs-Xgr.ibShadowedToolTip" = "無効にすると、⌘E でデフォルトのエディターが開きます。これが有効な場合、⌘E で「選択範囲で検索」を呼び出して検索を開始し、⌘⌥E でエディターを開きます。";
+# EN: If disabled, ⌘E will open the default Editor. If this is enabled, ⌘E will invoke "Find with Selection" and begin a search and ⌘⌥E will open the editor.
+
+"Afs-Wz-5DI.ibShadowedToolTip" = "Style ギャラリーを探索して、カスタムスタイルをダウンロードまたはインストールできます。";
+# EN: Explore the Stlye Gallery, where you can download or install Custom Styles
+
+"AgC-KM-ZS1.title" = "[[Wiki リンク]] を変換する";
+# EN: Convert [[Wiki Links]]
+
+"Agf-Nf-uzQ.title" = "背景色と画像を印刷する";
+# EN: Print background colors and images
+
+"ApR-bQ-bzl.ibShadowedToolTip" = "ここで選択したスタイルは、メタデータでドキュメント固有のスタイルが指定されていない限り（例: \\\"Marked スタイル: Grump\\\"）、すべての新しいウインドウに読み込まれます。";
+# EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. "Marked Style: Grump")
+
+"Ark-2L-TuI.title" = "(MultiMarkdown)";
+
+"B0V-OS-ffz.title" = "段落内の改行を保持する";
+# EN: Retain line breaks in paragraphs
+
+"BKc-0V-UHA.ibShadowedToolTip" = "ここで追加した CSS は、すべてのテーマの通常のスタイルシートの後に組み込まれます。とりわけ、これを使用すると、内部スタイルを編集せずに設定全体をオーバーライドできます。プロセッサ設定の カスタムルールを使用して、ルールの一致に基づいてカスタム CSS を適用することもできます。";
+# EN: CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles. Note that you can also use Custom Rules in Processor Settings to apply custom CSS based on rule matches.
+
+"BNz-Av-4gu.title" = "差分順序を逆にする";
+# EN: Reverse diff order
+
+"BcD-Yq-kf9.title" = "追加のCSS";
+# EN: Additional CSS
+
+"Bmr-cH-bWd.ibShadowedToolTip" = "新しいドキュメントを開く際のシステム設定に従います。";
+# EN: Respect system setting for opening new documents
+
+"Bmr-cH-bWd.title" = "自動";
+# EN: automatic
+
+"BoV-EI-c7B.ibShadowedToolTip" = "目次を挿入した後、自動的に新しいページに移動します。";
+# EN: Automatically break to a new page after an inserted Table of Contents
+
+"BqM-Ck-d9z.title" = "追加の CSS:";
+# EN: Additional CSS:
+
+"C0w-j3-n7E.ibShadowedToolTip" = "新しいエクスポートプロファイルを作成します。現在のプロファイルへの変更は、設定が変更されると自動的に保存されます。";
+# EN: Create a new Export Profile. Changes to the current profile are automatically saved when settings change.
+
+"C16-Vu-yVf.title" = "エクスポートプロファイル";
+# EN: Export Profile
+
+"CHF-fL-i3f.title" = "CSS の変更を追跡する";
+# EN: Track CSS changes
+
+"D2D-Cz-EdL.title" = "項目 3";
+# EN: Item 3
+
+"DCs-BY-jED.ibExternalAccessibilityDescription" = "折りたたみ可能な見出し";
+# EN: Collapsible Headlines
+
+"DCs-BY-jED.ibExternalAccessibilityHelp" = "見出し要素をクリックすると、その要素と次の見出しの間のセクションが折りたたまれます。";
+# EN: Clicking a headline element collapses the section between it and the next headline.
+
+"DCs-BY-jED.ibShadowedToolTip" = "見出し要素をクリックすると、その要素と次の見出しの間のセクションが折りたたまれます。";
+# EN: Clicking a headline element collapses the section between it and the next headline.
+
+"DN1-tH-Aj0.title" = "Wiki へのリンク:";
+# EN: Wiki Linking:
+
+"Ds3-B9-viR.ibShadowedToolTip" = "脚注は、ドキュメントの最後ではなく、脚注が表示されるページの下部に配置します。";
+# EN: Place footnotes at the bottom of the page they appear on, rather than at the end of the document.
+
+"E2M-6o-oms.title" = "OtherViews";
+
+"E4H-pN-SH5.title" = "更新";
+# EN: Refresh
+
+"E5N-05-NLH.ibShadowedToolTip" = "新しいウインドウ/タブに対してカスタムプリプロセッサを自動的に有効にします。";
+# EN: Automatically enable Custom Preprocessor for new windows/tabs
+
+"E87-Bs-laZ.title" = "Scrivener:";
+
+"EKT-Mz-0qd.title" = "Helvetica";
+
+"EKa-2z-nmh.title" = "設定のエクスポート";
+# EN: Export Settings
+
+"Ed2-GZ-CNO.title" = "以下のフィールドを使用して、「単語の繰り返しの視覚化」を使用するときに完全に無視する単語のリストを 1 行に 1 つずつ作成します。";
+# EN: Use the field below to create a list of words—one per line—that you'd like universally ignore when using "Visualize Word Repetition."
+
+"EiQ-Gt-GvH.title" = "#テキストをタグとして扱う";
+# EN: #Text is tag
+
+"Ejq-px-WuN.ibShadowedToolTip" = "デフォルトでは、ホストされた画像は変更を反映できるようにキャッシュされません。画像が変更されない静的ホストを使用している場合、キャッシュを有効にするとページの更新が高速化されます。";
+# EN: By default, hosted images are not cached to allow changes to show up. If using a static host where the images will never change, enabling caching will help speed up page refreshes.
+
+"Esj-1Y-RPS.title" = "横罫線を改ページに置き換える";
+# EN: Replace horizontal rules with page breaks
+
+"Ey6-97-BZ4.ibShadowedIsNilPlaceholder" = "アプリケーションの選択";
+# EN: Choose Application
+
+"FH9-Kd-LRS.ibExternalAccessibilityDescription" = "ミニマップを有効にする";
+# EN: Enable mini map
+
+"FH9-Kd-LRS.ibExternalAccessibilityHelp" = "「0」を押すと表示されるドキュメントのビジュアルマップを生成します。サイズの大きいドキュメントをレンダリングするときに短時間の遅延が発生する可能性があります。";
+# EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
+
+"FH9-Kd-LRS.ibShadowedToolTip" = "「0」を押すと表示されるドキュメントのビジュアルマップを生成します。サイズの大きいドキュメントをレンダリングするときに短時間の遅延が発生する可能性があります。";
+# EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
+
+"Fat-NX-b5p.title" = "項目 2";
+# EN: Item 2
+
+"Ffw-Od-r8t.ibShadowedToolTip" = "h1～h6タグの内容に基づいてヘッダIDを生成します。";
+# EN: Generate header IDs based on contents of h1-h6 tag.
+
+"FiV-I8-zx2.ibShadowedIsNilPlaceholder" = "アプリケーションの選択";
+# EN: Choose Application
+
+"Fk3-QS-gxA.title" = "MathJax 設定";
+# EN: MathJax Config
+
+"FpN-Rk-Lmh.title" = "アプリを選択";
+# EN: Choose App
+
+"GD3-4P-38f.title" = "MathJax";
+
+"GIa-J7-BXT.title" = "コードを常にラップする";
+# EN: Always wrap code
+
+"GxK-mf-f1J.title" = "「ヘルプ」>「デバッグログ」を開いてアクティビティを表示します";
+# EN: Help > Open Debug Log to view activity\n\n
+
+"H0h-si-KPK.title" = "Finder に表示";
+# EN: reveal in Finder
+
+"H5g-RT-nrc.ibShadowedToolTip" = "デフォルトでは、Marked は他のアプリケーションで使用された最後の検索テキストを読み込みます。そのテキストを無視するには、これをオフにします。";
+# EN: By default, Marked loads the last search text used in any other application. Uncheck this to ignore that text.
+
+"H7Y-VM-OwA.ibShadowedToolTip" = "ヘッダーに画像を追加します。この枠に画像をドロップしてロゴを設定します。下のフォーマット文字列に %logo が含まれる場合、この画像が使用されます。";
+# EN: Add an image to the header. Drop an image in this well to define the logo. This is what will be used if %logo appears in the format strings below.
+
+"HFr-db-GQM.ibExternalAccessibilityDescription" = "Command キーが必要";
+# EN: Require Command Key
+
+"HFr-db-GQM.ibExternalAccessibilityHelp" = "Command キーを押しながら見出しをクリックすると、セクションを折りたたみ／展開できます。";
+# EN: Require that the command key be held when clicking a headline to collapse/expand
+
+"HFr-db-GQM.ibShadowedToolTip" = "これをチェックすると、Command キーを押しながらクリックした場合にのみ見出しが折りたたまれたり展開されたりします。";
+# EN: If this is checked, headlines will only collapse/expand when clicked with the Command key held.
+
+"Hbd-2g-ruY.ibShadowedToolTip" = "ローカル画像を右クリックして「画像の編集」を選択したときに開くアプリケーションを選択します。";
+# EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
+
+"HqO-s8-yX7.ibShadowedToolTip" = "ショートカットフィールドをクリックして、アクションパレットを開くためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for opening the actions palette
+
+"I30-g4-XjK.ibShadowedToolTip" = "単語数でブロック引用されたテキストを無視します。";
+# EN: Ignore block quoted text in word count
+
+"I4p-yl-edz.title" = "プレビュー動作:";
+# EN: Preview behavior:
+
+"I5o-BY-DxZ.ibShadowedToolTip" = "キーワードやカテゴリなどのメタデータをプレビューの上部に表として表示します。";
+# EN: Display metadata like keywords and categories as a table at the top of the preview
+
+"IJn-41-e8h.title" = "デフォルトのアプリケーション";
+# EN: their default application
+
+"IQ8-Fj-4UY.ibShadowedToolTip" = "ファイルインクルード構文を使用して追加された iThoughts X、Freemind、MindManager マップを Mermaid ダイアグラムとして埋め込みます。false の場合、利用可能であればクイックルックプレビューを使用し、利用できない場合は Markdown アウトラインを使用します。";
+# EN: Embed iThoughts X, Freemind, and MindManager maps added with file inclusion syntax as Mermaid diagrams. If false, use Quick Look Preview when available, otherwise a Markdown outline.
+
+"ITh-gm-46F.title" = "ランダムな脚注 ID を使用する";
+# EN: Use random footnote IDs
+
+"IVH-Jr-IkW.title" = "strftime 形式を使用する";
+# EN: Use strftime format
+
+"IZg-ti-hnv.title" = "H1 より前";
+# EN: Before H1s
+
+"IhI-cQ-v2U.title" = "見出しと段落のウィドウ（孤立行）を防ぐ";
+# EN: Prevent widows in headlines and paragraphs
+
+"JGR-Av-Wfn.ibShadowedToolTip" = "Scrivener ドキュメントを Marked で開くと、自動的に Scrivener でも開きます。";
+# EN: When a Scrivener document is opened in Marked, automatically open it in Scrivener as well.
+
+"JLp-l0-ioD.ibShadowedToolTip" = "チェックすると、Scrivener ドキュメントに作成された注釈がプレビューで強調表示されます。完全に非表示にするにはチェックを外します。";
+# EN: If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.
+
+"JQY-Hw-HJ6.title" = "インデントされたコードブロック";
+# EN: Indented code blocks
+
+"JZz-jb-ngW.title" = "右上";
+# EN: Top Right
+
+"JcE-oV-hOM.title" = "⌘クリックが必要";
+# EN: Require ⌘-click
+
+"Jol-Hz-xqH.title" = "デフォルトのフォーマットを復元する";
+# EN: Restore Default Formats
+
+"K8M-5m-vyf.ibShadowedToolTip" = "新しいドキュメントを開く方法を定義します（ウインドウ、タブ、または自動 - macOS のグローバル設定に応じて）。";
+# EN: Define how new documents open (in windows, tabs, or automatic — respecting macOS global settings)
+
+"KH1-JN-s5N.title" = "新しいドキュメントは次の場所で開きます:";
+# EN: New documents open in:
+
+"KZ9-X7-6t5.ibShadowedToolTip" = "Word の変更追跡をインポートされた Markdown ドキュメントの CriticMarkup に変換し、DOCX をエクスポートするときに CriticMarkup を Word の変更追跡に変換します。";
+# EN: Convert change tracking in Word to CriticMarkup in the imported Markdown document, and convert CriticMarkup to Word change tracking when exporting DOCX
+
+"KdO-n7-O3H.ibShadowedToolTip" = "チェックすると、テーマの設定に関係なく、コードブロックは常に (スクロールやオーバーフローではなく) 強制的に折り返されます。";
+# EN: If checked, code blocks will always be forced to wrap (instead of scrolling or overflowing) regardless of theme settings.
+
+"Kh0-Vf-5CX.title" = "現在のウインドウ";
+# EN: the current window
+
+"KuU-LW-ujd.title" = "脚注マーカーを角括弧で囲みます";
+# EN: Surround footnote markers with square brackets
+
+"KuV-0Q-4Pv.title" = "逐語的（コード）ブロックを詩のスタイルで表示";
+# EN: Style verbatim (code) blocks as poetry
+
+"L0D-Jd-N9X.title" = "アプリを選択";
+# EN: Choose App
+
+"LEm-ar-mkL.ibShadowedToolTip" = "ウインドウにフォーカスが当たっていないときは、ウインドウをフェードアウトします。スライダーを使用して不透明度を設定します。";
+# EN: Fade the window when it's not focused. Use the slider to set the opacity.
+
+"LUe-ZW-HZi.ibShadowedToolTip" = "ヘッダーとフッターに使用するフォント。";
+# EN: Font to use for header and footer.
+
+"Lkd-UC-px0.ibShadowedToolTip" = "脚注テキストの単語数を無視します。";
+# EN: Ignore footnote text in word count
+
+"LuR-pP-xeu.title" = "14";
+
+"M7o-ma-vSC.ibShadowedToolTip" = ":name: 構文を GitHub 絵文字としてレンダリングします。";
+# EN: Render :name: syntax as GitHub emoji
+
+"MDL-6U-a9Z.title" = "ヘッダ";
+# EN: Header
+
+"MIS-0g-3Yg.ibShadowedToolTip" = "表示するログのレベルを定義します。ログ記録を使用してサポートに送信する場合は、これを「すべて」に設定します。";
+# EN: Define the level of logging to display. If using logging to submit for support, set this to All.
+
+"MK1-clr-ann.ibShadowedToolTip" = "選択した注釈エディターをクリアし、画像に注釈を付けるときにアプリピッカーを表示します。";
+# EN: Clear the selected annotation editor and show the app picker when annotating images.
+
+"MK1-clr-img.ibShadowedToolTip" = "選択した画像エディターをクリアし、画像を編集するときにアプリピッカーを表示します。";
+# EN: Clear the selected image editor and show the app picker when editing images.
+
+"MK1-clr-txt.ibShadowedToolTip" = "選択したテキストエディターをクリアし、編集時にアプリピッカーを表示します。";
+# EN: Clear the selected text editor and show the app picker when editing.
+
+"MKC-t1-NID.ibShadowedToolTip" = "エクスポートプロファイルを選択してプリセットを読み込みます。現在のプロファイルは、設定が変更されたときに更新されるものです。";
+# EN: Select an Export Profile to load presests. The current Profile is what is updated when settings change.
+
+"MKc-Ft-Ctr.ibShadowedToolTip" = "フッターの中央の書式設定";
+# EN: Formatting for the center of the footer.
+
+"MKc-Ft-LblC.title" = "中央下";
+# EN: Bottom Center
+
+"MKc-Hd-Ctr.ibShadowedToolTip" = "ヘッダーの中央の書式設定";
+# EN: Formatting for the center of the header.
+
+"MKc-Hd-LblC.title" = "中央上部";
+# EN: Top Center
+
+"MdN-sr-Pc8.ibShadowedToolTip" = "Wiki にリンクされたファイルのデフォルトの拡張子。これを設定すると、[[wiki リンク]] から拡張子を省略できます。";
+# EN: Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].
+
+"MeS-Nh-evV.title" = "レンダリング前に削除する";
+# EN: Remove before rendering
+
+"Mf6-wk-Yq2.title" = "デフォルトのスタイル:";
+# EN: Default style:
+
+"MhT-dx-CLj.title" = "新しいドキュメントは常に校正モードで開きます";
+# EN: Always open new documents in proofing mode
+
+"Mlj-LN-4UN.title" = "代わりに文字数を表示";
+# EN: Show character count instead
+
+"Mp7-hK-lJh.title" = "9";
+
+"NjU-jW-Kzx.title" = "脚注/引用";
+# EN: Footnotes/Citations
+
+"Njg-0h-h1v.title" = "Scrivener、Fountain、Word、および CriticMarkup ドキュメント";
+# EN: Scrivener, Fountain, Word, and CriticMarkup documents
+
+"Nm6-SK-AuG.ibShadowedToolTip" = "これを有効にすると、Marked は現在の CSS ファイルを監視してディスクの変更を確認し、カスタムスタイルの編集や Web 開発を支援します。";
+# EN: When this is enabled, Marked will watch the current CSS file for disk changes, aiding in custom style editing and web development.
+
+"NrG-bn-91R.title" = "境界線:";
+# EN: Border:
+
+"NsQ-wV-kdZ.title" = "フッター";
+# EN: Footer
+
+"O5N-R0-dHn.ibShadowedToolTip" = "タグには特別なスタイルが適用され、「コメントの表示」が無効になっている場合は非表示になります。";
+# EN: Tags receive special styling, and are hidden when "Show Comments" is disabled.
+
+"O8o-5s-Qjg.title" = "MarsEdit:";
+
+"Oi5-Z5-rJa.title" = "CriticMarkup を自動的に有効にする";
+# EN: Enable CriticMarkup automatically
+
+"Omh-HV-uOd.ibShadowedToolTip" = "半透明の背景ウインドウの不透明度を設定します。";
+# EN: Set the opacity of a translucent background window
+
+"OsX-xc-G6C.title" = "アクションパレットを開く:";
+# EN: Open Action Palette:
+
+"OuF-Ny-wbW.title" = "エラーと警告";
+# EN: Errors and warnings
+
+"OxR-5f-L0P.title" = "構文の強調表示";
+# EN: Syntax highlighting
+
+"P68-Ab-P9o.ibShadowedToolTip" = "LaTeX/MathML 数式を表示するために KaTeX を読み込みます。MathJax よりも高速ですが、機能は少なくなっています。";
+# EN: Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.
+
+"PCa-hl-R5C.title" = "数式に番号を付ける";
+# EN: Number equations on
+
+"PJB-9U-ID9.title" = "無視する";
+# EN: Ignore
+
+"PLZ-vq-5jG.placeholderString" = "itmz、mm、opml";
+# EN: itmz, mm, opml
+
+"PO1-MV-JTk.title" = "プロセッサ";
+# EN: processor
+
+"PSf-q5-RfW.title" = "設定のインポート";
+# EN: Import Settings
+
+"Phg-rJ-VPT.title" = "スタイルを管理";
+# EN: Manage Styles
+
+"Ppc-Il-MIm.title" = "CSSの編集";
+# EN: Edit CSS
+
+"Q5F-mw-2vJ.title" = "プレビューのテキスト幅の上限:";
+# EN: Limit text width in Preview to:
+
+"Q60-Vq-7a6.title" = "ページ番号のオフセット:";
+# EN: Page numbering offset:
+
+"QbK-bc-clJ.title" = "これらの拡張子のみをプレビュー:";
+# EN: Only preview these extensions:
+
+"Qc9-WE-2sr.ibShadowedToolTip" = "ローカルバンドルから MathJax を含めます（v3）。";
+# EN: Include MathJax from local bundle (v3)
+
+"Qc9-WE-2sr.title" = "ローカル";
+# EN: Local
+
+"Qi0-3X-zug.ibShadowedToolTip" = "チェックすると、Scrivener ドキュメントに作成された注釈がプレビューで強調表示されます。完全に非表示にするにはチェックを外します。";
+# EN: If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.
+
+"QmQ-of-AsC.ibShadowedToolTip" = "H1 を改ページとして使用する場合、ドキュメント内の最初のレベル 1 の見出しを無視します。";
+# EN: Ignore the first level-one headline in the document when using H1s as page breaks.
+
+"Qz7-4r-MXY.ibShadowedToolTip" = "単語数でブロック引用されたテキストを無視します。";
+# EN: Ignore block quoted text in word count
+
+"RGW-BJ-5Zj.title" = "体裁の整った引用符と句読点を生成";
+# EN: Generate typographically correct quotes and punctuation
+
+"RL3-oF-r0C.title" = "Leanpub/GitBook:";
+
+"RTI-D2-a9q.ibShadowedToolTip" = "Content Distribution Network (v3) から MathJax を含めます (インターネット接続が必要です)。";
+# EN: Include MathJax from Content Distribution Network (v3) (requires intenret connection)
+
+"RTI-D2-a9q.title" = "CDN";
+
+"RTW-vf-ycw.ibShadowedToolTip" = "Marked へのフルディスクアクセスを許可します。これは、カスタムプロセッサの実行に役立ち、許可を要求せずに Wiki リンクと画像の読み込みを機能させることができます。このボタンを押すと、「システム設定」>「プライバシーとセキュリティ」>「フルディスクアクセス」にアクセスするための手順が表示されます。";
+# EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.
+
+"RVc-RV-blW.title" = "画像注釈/マークアップエディタ:";
+# EN: Image annotation/markup editor:
+
+"RYg-nX-enl.title" = "左下";
+# EN: Bottom Left
+
+"RdT-wT-vMQ.ibShadowedToolTip" = "フッターの右側の書式設定";
+# EN: Formatting for the right side of the footer.
+
+"Red-oc-ijw.title" = "外観:";
+# EN: Appearance:
+
+"RfL-hf-bmX.title" = "読書速度 (wpm):";
+# EN: Reading speed (wpm):
+
+"Rgj-wK-JAZ.title" = "ヘッダーの下";
+# EN: Below Header
+
+"S9C-5F-fjM.ibShadowedToolTip" = "このオプションを使用すると、次のセクションの見出しが、後続のコンテンツなしでページの下部に表示されなくなります。";
+# EN: This option prevents headlines for the next section from appearing at the bottom of a page without succeeding content
+
+"S9S-ig-vSU.title" = "すべての差分マーカーを表示";
+# EN: Show all diff markers
+
+"S9e-pQ-ucC.title" = "ダークモード";
+# EN: Dark Mode
+
+"SFF-15-E3P.ibShadowedToolTip" = "ローカル画像を右クリックして「画像の編集」を選択したときに開くアプリケーションを選択します。";
+# EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
+
+"SGK-88-OvM.title" = "マインドマップとアウトライン:";
+# EN: Mind Maps and Outlines:
+
+"SMh-60-p6C.title" = "投稿タイトルを H1 見出しとして含める";
+# EN: Include post title as H1 Headline
+
+"SWA-N0-eSk.ibShadowedToolTip" = "エクスポートプロファイルのプリセットを管理します。";
+# EN: Manage Export Profile presets
+
+"Scr-Cm-Md1.ibShadowedToolTip" = "メタデータドキュメントが存在しない場合は、Scrivener プロジェクトのコンパイル設定のタイトルと作成者を先頭に追加します。";
+# EN: When no metadata document is present, prepend Title and Author from the Scrivener project's compile settings.
+
+"Scr-Cm-Md2.title" = "コンパイルメタデータ（タイトル、作成者）が欠落している場合は追加する";
+# EN: Add compile metadata (title, author) when missing
+
+"Sdx-KR-dGL.ibShadowedToolTip" = "プレビューウインドウの下部バーに単語数 (および統計ボタン) を表示します。";
+# EN: Show word count (and statistics button) in the bottom bar of the preview window.
+
+"SiX-cw-FAe.title" = "RTL テキストの検出とスタイル設定";
+# EN: Detect and style RTL text
+
+"Sre-H2-Wzk.title" = "項目 3";
+# EN: Item 3
+
+"T9h-aY-5E3.title" = "次の拡張子でアウトラインを有効化:";
+# EN: Enable Outline for extensions:
+
+"TNs-O2-x5B.title" = "リンクポップオーバーを有効にする";
+# EN: Enable link popovers
+
+"TPp-Ke-U9k.title" = "APA スタイルを使用する";
+# EN: Use APA Style
+
+"TcW-Xs-Ysi.ibExternalAccessibilityDescription" = "スクロールして編集します";
+# EN: Scroll to edit
+
+"TcW-Xs-Ysi.ibExternalAccessibilityHelp" = "プレビューを更新するとき、Marked はドキュメントが変更された場所を特定し、そこまで自動的にスクロールします。ラジオボタンを使用して、最初の編集を対象とするか最後の編集を対象とするかを選択します。";
+# EN: When updating the preview, Marked can determine where the document changed and automatically scroll to it. Use the radio buttons to choose whether the first or last edit is targeted.
+
+"TcW-Xs-Ysi.ibShadowedToolTip" = "プレビューを更新するとき、Marked はドキュメントが変更された場所を特定し、そこまで自動的にスクロールします。ラジオボタンを使用して、最初の編集を対象とするか最後の編集を対象とするかを選択します。";
+# EN: When updating the preview, Marked can determine where the document changed and automatically scroll to it. Use the radio buttons to choose whether the first or last edit is targeted.
+
+"Tmj-K9-Wme.ibShadowedToolTip" = "脚注がある場合、脚注を印刷ドキュメントの末尾の独自のページに配置します。";
+# EN: Put footnotes (if any) on their own page at the end of the printed document.
+
+"Tqt-fq-FsL.title" = "ドキュメントのタイトルを見出しとして含める";
+# EN: Include document titles as headlines
+
+"U3r-q6-mHL.title" = "繰り返しとみなす最小出現回数:";
+# EN: Minimum occurrences to consider a repeat:
+
+"U7q-wI-xVS.title" = "可読性の統計を分析する";
+# EN: Analyze readability statistics
+
+"U8g-ad-L13.title" = "ロゴの選択";
+# EN: Select Logo
+
+"UFU-6X-tIJ.title" = "新しいドキュメントではカスタムを使用する";
+# EN: New documents use custom:
+
+"UKR-2T-kb6.ibShadowedToolTip" = "デフォルトでは、Marked は白い背景で印刷/エクスポートします。カスタムテーマの背景色と画像を含める場合は、このオプションを有効にします。";
+# EN: By default Marked will print/export with a white background. If you want to include background colors and images from custom themes, enable this option.
+
+"UN9-2r-shh.title" = "⌥⌘E でデフォルトエディターを開く";
+# EN: Use ⌥⌘E to open default editor.
+
+"URP-XW-mRF.title" = "完了";
+# EN: Done
+
+"UYJ-VZ-ZTS.title" = "改ページ:";
+# EN: Page Breaks:
+
+"Ucy-tz-SJn.title" = "スタイル:";
+# EN: Styles:
+
+"UnC-df-7Tf.title" = "アプリの変更を有効にするには、開いているドキュメントを閉じて再度開く必要があります";
+# EN: Open documents must be closed and reopened for App changes to take effect
+
+"VXI-JI-yLT.title" = "200";
+
+"Vgw-RR-opt.title" = "利用可能な変数:";
+# EN: Variables available:
+
+"Vpb-AA-dA9.title" = "クリア";
+# EN: Clear
+
+"Vvh-pv-YEe.title" = "Leanpub サポートを有効にする";
+# EN: Enable Leanpub support
+
+"Vxy-KJ-QGj.title" = "言語が指定されている場合のみ";
+# EN: Only if language specified
+
+"W8i-Kd-FGD.title" = "同期プレビューとソーススクロール";
+# EN: Sync preview and source scroll
+
+"WMu-Ng-C1G.ibShadowedToolTip" = "段落テキスト内の改行を尊重し、前の行と連結するのではなくハード改行に置き換えます。";
+# EN: Respect line breaks in paragraph text, replacing with hard breaks instead of concatenating with the previous line.
+
+"WOj-Fg-hnd.ibShadowedToolTip" = "OmniOutliner (.ooutline) ファイルを Mermaid 図として埋め込みます。無効にすると、インクルード構文で取り込まれた OmniOutliner ファイルは Markdown のリスト／チェックリストとしてレンダリングされます。";
+# EN: Embed OmniOutliner (.ooutline) files as Mermaid diagrams. If disabled, OmniOutlineir files included with include syntax will be rendered as Markdown lists/checklists.
+
+"Wcb-ed-SyD.title" = "~text~ をアンダースコアとしてレンダリング";
+# EN: Render ~text~ as underscore
+
+"Wif-YO-AUc.title" = "見出しでセクションを折りたたむ";
+# EN: Headlines collapse sections
+
+"Wkh-0o-sjb.title" = "印刷/PDF:";
+# EN: Print/PDF:
+
+"WpI-FN-1um.title" = "GitHub の :emoji: をレンダリング";
+# EN: Render GitHub :emoji:
+
+"WtW-MJ-k53.ibShadowedToolTip" = "ローカル画像を右クリックして「画像の編集」を選択したときに開くアプリケーションを選択します。";
+# EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
+
+"X4i-G8-Z34.ibShadowedToolTip" = "チェックを外した場合、最初のページにはヘッダーが印刷されません。";
+# EN: If unchecked, the first page will not print a header.
+
+"X9J-Tv-1N2.title" = "フッターの上";
+# EN: Above Footer
+
+"XeI-Ez-OJE.ibShadowedToolTip" = "可読性分析 (Gunning-Fog 指数、読み取り時間など) を無効にします。ドキュメントが大きいため、負荷がかかり「ホイールの回転」が長くなる場合は、これが原因である可能性があります。";
+# EN: Disable readability analysis (Gunning Fog index, reading time, etc.). If your documents are large enough to cause extended "spinning wheels" on load, this is likely the cause.
+
+"XzC-mD-IIK.ibShadowedToolTip" = "ページ番号付けに適用されるオフセット: 0 から最初のページの番号「1」。 1 を指定するとページ番号を 2 から開始し、-1 を指定すると 2 番目のページをページ 1 にします。";
+# EN: Offset applied to page numbering: 0 to number the first page "1". 1 to start page numbering at 2, -1 to make the second page page 1.
+
+"Xzn-6O-vFG.ibShadowedToolTip" = "OPML ファイルを Mermaid 図として埋め込みます。無効にすると、インクルード構文で取り込まれた OPML ファイルは Markdown のリストとしてレンダリングされます。";
+# EN: Embed OPML files as Mermaid diagrams. If disabled, OPML files included with include syntax will be rendered as Markdown lists.
+
+"Y6m-B7-bA2.title" = "カスタムルール";
+# EN: Custom Rules
+
+"YKB-Zl-d5d.ibShadowedToolTip" = "⌘⌥E と入力すると、現在のドキュメントを受け取るテキストエディターを選択します。";
+# EN: Select a text editor to receive the current document when you type ⌘⌥E.
+
+"YQ3-UW-R5s.ibShadowedToolTip" = "SUMMARY.md という名前のファイルを GitBook ドキュメントのインデックスファイルとして解釈します。";
+# EN: Interpret files named SUMMARY.md as index files for GitBook documentation.
+
+"YWC-gr-yeu.ibShadowedToolTip" = "チェックすると、テーマで pre>code ブロック内での折り返しが許可されます。テーマでラッピングが提供されていない場合、オーバーフローしたコードブロックが画面からはみ出してしまいます。チェックを外した場合、水平オーバーフローは常にスクロールします。";
+# EN: If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing code blocks will extend off the screen. If unchecked, horizontal overflow will always scroll.
+
+"YXS-n3-wSV.title" = "レンダリング：";
+# EN: Rendering:
+
+"Ymy-c6-Yb7.title" = "OPML ファイル";
+# EN: OPML files
+
+"Yrs-be-jLg.title" = "HTML をコピーするときに画像を埋め込む";
+# EN: Embed images when copying HTML
+
+"Z6J-1d-jGy.title" = "ショートカット:";
+# EN: Shortcuts:
+
+"Z9r-Qa-Pnl.ibShadowedToolTip" = "ヘッダーとフッターに使用するフォント。";
+# EN: Font to use for header and footer.
+
+"Zol-ww-fJ4.ibShadowedToolTip" = "タグには特別なスタイルが適用され、「コメントの表示」が無効になっている場合は非表示になります。";
+# EN: Tags receive special styling, and are hidden when "Show Comments" is disabled.
+
+"a2v-00-Rwj.ibShadowedToolTip" = "strftime 形式を使用した日付形式";
+# EN: Date format using strftime formatting.
+
+"aEa-mI-GYx.ibShadowedToolTip" = "パン (ドラッグ) とズーム (⌘-スクロール) を追加します。";
+# EN: Add panning (drag) and zooming (⌘-scroll)
+
+"aMd-UD-exr.ibShadowedToolTip" = "有効にすると、HTML をクリップボードにコピーすると、ローカル画像がスキャンされ、Base64 エンコードされてソースコードにデータ URL として含められます。";
+# EN: When enabled, copying HTML to the clipboard will scan for local images and Base64 encode them to include as data urls in the source code
+
+"aQJ-xH-0Q0.title" = "最新の編集マーカーを表示";
+# EN: Show most recent edit marker
+
+"aUB-nd-9T9.ibShadowedToolTip" = "デフォルトでは、HTML タグ内の Markdown は通常無視されます。このオプションは、Marked にブロック要素内での処理を強制的に継続させます。マークアップによっては問題が発生する可能性があることに注意してください。";
+# EN: By default, Markdown inside of HTML tags is usually ignored. This option forces Marked to continue processing within block elements. Note that some markup may cause issues.
+
+"agx-YP-Lfh.title" = "システム設定の一致";
+# EN: Match System Setting
+
+"azh-dp-9Z9.ibExternalAccessibilityDescription" = "差分順序を逆にする";
+# EN: Reverse diff order
+
+"azh-dp-9Z9.ibExternalAccessibilityHelp" = "ドキュメント内の最後の差分が最新であると想定され、差分を逆に並べます。ナビゲーションの順序に影響します。";
+# EN: Order diffs in reverse, with the last diff in the document assumed to be most recent. Affects navigation order.
+
+"azh-dp-9Z9.ibShadowedToolTip" = "ドキュメント内の最後の差分が最新であると想定され、差分を逆に並べます。ナビゲーションの順序に影響します。";
+# EN: Order diffs in reverse, with the last diff in the document assumed to be most recent. Affects navigation order.
+
+"b4z-LX-6L3.title" = "フックマーク:";
+# EN: Hookmark:
+
+"b5Z-cq-2g6.title" = "デフォルトでコメントサイドバーを表示する";
+# EN: Show comments sidebar by default
+
+"bPX-B3-Hwf.ibShadowedToolTip" = "フッターの上に水平線を印刷します。";
+# EN: Print a horizontal line above the footer.
+
+"bSF-dU-MU5.title" = "項目 1";
+# EN: Item 1
+
+"bTp-nT-ERY.title" = "Kramdown";
+
+"bVP-wP-y5z.title" = "目次はスクロール位置を追跡します";
+# EN: Table of Contents tracks scroll position
+
+"cEO-06-mT0.ibShadowedToolTip" = "ショートカットフィールドをクリックして、現在のアプリケーションを離れることなく、最前面 (最後にアクティブな) Marked プレビューウインドウを最前面に上げるためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for raising the frontmost (last active) Marked preview window to the foreground without leaving the current application
+
+"cHT-ml-WaG.ibShadowedToolTip" = "目次では、現在のセクションが強調表示されます。";
+# EN: Table of Contents highlights current section.
+
+"cd9-6s-kDn.title" = "画像のキャプション";
+# EN: Image captions
+
+"cjl-sj-QnR.title" = "更新";
+# EN: Refresh
+
+"cpR-Pw-boZ.title" = "ヘッダーとフッター:";
+# EN: Headers and Footers:
+
+"d9X-aD-3y3.title" = "ピクセル";
+# EN: px
+
+"dCL-aL-acF.ibShadowedToolTip" = "ヘッダーの下に水平線を印刷します。";
+# EN: Print a horizontal line below the header.
+
+"dCX-j9-zi7.title" = "CriticMarkup としてレンダリング";
+# EN: Render as CriticMarkup
+
+"dSO-yT-31X.title" = "カスタムエクスポート/印刷用のフォントサイズ";
+# EN: Custom font size for export/print
+
+"dZZ-wP-dmM.title" = "システム全体の検索ペーストボードを使用する";
+# EN: Use system-wide Find pasteboard
+
+"dfR-ic-D1A.title" = "スクロール位置とスピードリードを同期する";
+# EN: Sync Speed Reading with scroll position
+
+"docc-pref-label-cell.title" = "DocC:";
+
+"docc-resolve-cb.ibShadowedToolTip" = ".docc ドキュメントカタログ内で、![](ImageName) をカタログの Resources フォルダー内の画像に解決します (~dark および @2x バリアントを含む)。";
+# EN: Inside a .docc documentation catalog, resolve ![](ImageName) to images in the catalog Resources folder (including ~dark and @2x variants).
+
+"docc-resolve-cell.title" = "DocC の画像参照を解決";
+# EN: Resolve DocC image references
+
+"don-vW-hSy.ibShadowedToolTip" = "ショートカットフィールドをクリックして、任意のアプリケーションから Marked に切り替えるためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for switching to Marked from any application
+
+"dxe-xB-aG6.title" = "YAML と Pandoc メタデータ:";
+# EN: YAML and Pandoc Metadata:
+
+"e0R-rb-ZL3.ibShadowedToolTip" = "新しいウインドウ/タブに対してカスタムプロセッサを自動的に有効にします。";
+# EN: Automatically enable Custom Processor for new windows/tabs
+
+"e8N-xm-3WU.title" = "11";
+
+"eIP-HK-bSZ.title" = "MultiMarkdown メタデータヘッダーを削除する";
+# EN: Strip MultiMarkdown Metadata headers
+
+"eLh-lb-5Lp.title" = "テーマがコードブロック内でテキストを折り返すことを許可する";
+# EN: Allow themes to wrap text inside code blocks
+
+"eMJ-jD-zMf.title" = "毎回聞いてください";
+# EN: ask me each time
+
+"eOT-Vx-WiJ.ibShadowedToolTip" = "印刷時にリンクから書式設定 (下線と色) を削除します。";
+# EN: Removes formatting (underline and color) from links when printing.
+
+"eb7-VC-fLy.title" = "最初の H1 を除外";
+# EN: Exclude first H1
+
+"ek1-Jb-Chl.title" = "高度な設定";
+# EN: Advanced Configuration
+
+"epj-b5-z4d.placeholderString" = "MD";
+# EN: md
+
+"erp-3U-Dg4.title" = "単語数を表示";
+# EN: Show word count
+
+"ewh-zn-Iix.ibShadowedToolTip" = "Hook:// リンクを、Hookmark.app 内で参照するファイルへのパスとして解釈します。ファイルリンク上でのみ機能し、他のタイプは無視されます。";
+# EN: Interpret hook:// links as paths to the file they refer to in Hookmark.app. Only functions on file links, other types ignored.
+
+"f4d-fF-jqH.ibShadowedToolTip" = "PDF を印刷またはエクスポートする場合、リンクの URL はリンクされたテキストの後に表示されます。";
+# EN: When printing or exporting PDF, the URL for a link will appear after the linked text.
+
+"fBQ-Bn-JSp.ibShadowedToolTip" = "Book.txt という名前のファイルをインデックスファイルとして解釈し、特殊な Leanpub 構文を処理します。";
+# EN: Interpret files named Book.txt as index files and handle special Leanpub syntax.
+
+"fJZ-eg-9pc.title" = "テキストファイルへのリンクを開く場所:";
+# EN: Links to text files should open in:
+
+"fMi-KN-YJF.ibShadowedToolTip" = "チェックを外した場合、最初のページにはフッターが印刷されません。";
+# EN: If unchecked, the first page will not print a footer.
+
+"fPz-q9-hqF.title" = "項目 2";
+# EN: Item 2
+
+"fWL-nw-WbV.ibShadowedToolTip" = "プレビューウインドウでリンクをクリックしてローカルテキストファイルにアクセスしたときの Marked の動作を決定します。";
+# EN: Determine Marked's behavior when a link clicked in a preview window leads to a local text file.
+
+"faH-CX-nOt.ibShadowedToolTip" = "デフォルトの日付/時刻形式を復元します。";
+# EN: Restore the default date/time formatting.
+
+"fhr-uI-z1k.title" = "Marked をアクティブ化:";
+# EN: Activate Marked:
+
+"fl8-n5-SyT.title" = "フォルダー:";
+# EN: Folders:
+
+"fya-Q4-cDZ.ibShadowedToolTip" = "YAML フロントマターの処理方法を決定します。「無視」を選択すると、プロセッサが処理できるようにそのデータがそのまま残されるか、MMD メタデータに変換されるか、完全に削除されます。";
+# EN: Determine how to handle YAML frontmatter. Ignore will leave it in place for the processor to handle, or you an convert it to MMD metadata or remove it entirely.
+
+"gMl-tR-Hdh.title" = "見出しに ID を生成する";
+# EN: Generate IDs on headlines
+
+"ga6-Ze-7r4.ibShadowedToolTip" = "単一の単語が新しい行に折り返されるのを防ぐために、見出しと段落の最後の 2 つの単語の間に非改行スペースを強制します。";
+# EN: Forces a non-breaking space between the last two words of headlines and paragraphs to prevent single words from wrapping to a new line.
+
+"gq4-eK-xLl.ibShadowedToolTip" = "Markdown のレンダリングに使用するデフォルトのプロセッサを選択します。ファイルに一致するカスタムルールがある場合、この設定は上書きされます。";
+# EN: Select the default processor to use for rendering Markdown. This setting is overridden if there's a matching Custom Rule for a file.
+
+"h1N-69-8ia.title" = "最初の H1 をフォールバックタイトルとして使用する";
+# EN: Use first H1 as fallback title
+
+"hZR-Bj-3ZW.placeholderString" = "MD、MMD、HTML";
+# EN: md, mmd, html
+
+"heh-wu-x9x.ibExternalAccessibilityDescription" = "ミニマップを有効にする";
+# EN: Enable mini map
+
+"heh-wu-x9x.ibExternalAccessibilityHelp" = "「0」を押すと表示されるドキュメントのビジュアルマップを生成します。サイズの大きいドキュメントをレンダリングするときに短時間の遅延が発生する可能性があります。";
+# EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
+
+"heh-wu-x9x.ibShadowedToolTip" = "ソースコードビューのスクロール位置をプレビュースクロールと同期します。";
+# EN: Sync the source code view scroll position with the Preview scroll
+
+"hh4-dx-rF5.title" = "ページ下部の脚注";
+# EN: Footnotes at page bottom
+
+"huc-20-R8u.title" = "HTML:";
+
+"i0L-3g-y5o.title" = "HTML 内で Markdown を処理します";
+# EN: Process Markdown inside of HTML
+
+"iCM-VI-bND.title" = "フルディスクアクセス:";
+# EN: Full Disk Access:
+
+"iDT-BO-bY1.ibShadowedToolTip" = "ページとネストされたページのタイトルを解析して、階層的な Markdown ヘッダーを作成します。";
+# EN: Parse the title of pages and nested pages to create hierarchical Markdown headers.
+
+"iX2-FA-n0U.ibShadowedToolTip" = "新しいドキュメントを常に新しいウインドウで開きます。";
+# EN: Always open new documents in new windows
+
+"iX2-FA-n0U.title" = "ウインドウ";
+# EN: windows
+
+"iaV-oc-Xdw.title" = "9pt";
+
+"img-variant-resolve-cb.ibShadowedToolTip" = "ファイル拡張子が付いたローカル画像の場合、~dark および @2x コンパニオンファイルを検出し、応答性の高い画像マークアップを出力します。 DocC バンドルの外部で動作します。";
+# EN: For local images with a file extension, detect ~dark and @2x companion files and emit responsive picture markup. Works outside of DocC bundles.
+
+"img-variant-resolve-cell.title" = "~dark と @2x の画像バリアントを解決";
+# EN: Resolve dark and @2x image variants
+
+"ixM-VJ-sV6.title" = "背景が半透明";
+# EN: Translucent in background
+
+"j8n-js-3Kh.title" = "16";
+
+"jrg-V3-Eul.title" = "プレビューで改ページを示す";
+# EN: Indicate page breaks in preview
+
+"jvs-JQ-gVi.title" = "左側";
+# EN: Left Side
+
+"jw4-RG-W3m.ibShadowedToolTip" = "レベル 1/2 ヘッダーをセクション区切りとして使用し、常に新しいページで開始します。";
+# EN: Use level 1/2 headers as section dividers, always starting them on a new page
+
+"jw8-mG-8ba.title" = "改ページ後";
+# EN: Page break after
+
+"kFS-GG-tRX.title" = "GitBook サポートを有効にする";
+# EN: Enable GitBook support
+
+"kFv-kc-l3z.title" = "指定のテキストエディタ";
+# EN: my text editor
+
+"kLP-gZ-m5G.ibShadowedToolTip" = "プレビューウインドウの下部バーにスタイルピッカーを表示します。";
+# EN: Shows the style picker in the bottom bar of the preview window.
+
+"kT6-ea-4Q4.title" = "Mermaid:";
+
+"kZl-d1-5M3.title" = "更新";
+# EN: Refresh
+
+"kbn-do-TaT.title" = "==highlight== と ~~delete~~ をレンダリング";
+# EN: Render ==highlight== and ~~delete~~
+
+"khL-0a-Mvw.title" = "右下";
+# EN: Bottom Right
+
+"klo-aL-Ktm.ibExternalAccessibilityDescription" = "エディタで新しいファイルを開く";
+# EN: Open new files in editor
+
+"klo-aL-Ktm.ibExternalAccessibilityHelp" = "新しく作成したファイルを選択した外部エディタで開きます。";
+# EN: Open newly created files in the selected external editor
+
+"klo-aL-Ktm.ibShadowedToolTip" = "「新規ファイル」コマンドを使用する場合、このオプションにより、選択した外部エディタで作成されたファイルが自動的に開きます。";
+# EN: When using the "New File" command, this option will automatically open the created file in your chosen external editor.
+
+"kr7-y4-QmU.ibShadowedToolTip" = "プレビュー本文の最大幅を設定します。";
+# EN: Set a maximum width for the body of the preview.
+
+"kts-6l-T4g.ibExternalAccessibilityDescription" = "Wiki リンクの拡張子";
+# EN: Wiki Link Extension
+
+"kts-6l-T4g.ibExternalAccessibilityHelp" = "Wiki にリンクされたファイルのデフォルトの拡張子。これを設定すると、[[wiki リンク]] から拡張子を省略できます。";
+# EN: Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].
+
+"kts-6l-T4g.ibShadowedToolTip" = "Wiki にリンクされたファイルのデフォルトの拡張子。これを設定すると、[[wiki リンク]] から拡張子を省略できます。";
+# EN: Default extension for wiki-linked files. If this is set, you can omit the extension from a [[wiki link]].
+
+"kyX-ST-sbt.title" = "数式:";
+# EN: Math:
+
+"lAg-Gu-92X.ibShadowedToolTip" = "物理学や化学などの MathJax パッケージを追加します。";
+# EN: Add additional MathJax packages like Physics and Chemistry
+
+"lBl-gz-aUc.ibShadowedToolTip" = "フッターの左側の書式設定。";
+# EN: Formatting for the left side of the footer.
+
+"lDk-9B-iIN.ibShadowedToolTip" = "プレビュー本文の最大幅を設定します。";
+# EN: Set a maximum width for the body of the preview.
+
+"lHA-eS-GQd.title" = "すべて";
+# EN: All
+
+"lMe-yt-yjQ.ibShadowedToolTip" = "LaTeX/MathML 数式を表示するために MathJax を読み込みます。";
+# EN: Include and load MathJax for displaying LaTeX/MathML equations.
+
+"leK-yx-9dP.ibShadowedToolTip" = "ショートカットフィールドをクリックして、現在のアプリケーションを離れることなく、最前面 (最後にアクティブな) Marked プレビューウインドウを最前面に上げるためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for raising the frontmost (last active) Marked preview window to the foreground without leaving the current application
+
+"lg7-A2-UfB.ibShadowedToolTip" = "「タブ」、「ウインドウ」、または「自動」を選択します (システム設定に従う)。";
+# EN: Select "tabs", "windows", or "automatic" (respects system setting)
+
+"llt-8c-Uhu.ibShadowedToolTip" = "言語が指定されたフェンスで囲まれたコードブロックにのみスタイルを適用します。 ```js";
+# EN: Apply styling only to fenced code blocks with a language specified, e.g. ```js
+
+"lnJ-Dg-7Yd.ibShadowedToolTip" = "ドキュメント内の水平罫線を改ページに変更します (これにより、脚注も新しいページに強制的に追加されます)。";
+# EN: Turn horizontal rules in document into page breaks (this will additionally force footnotes onto a new page).
+
+"m3u-3a-mEr.title" = "キーワードのハイライト:";
+# EN: Keyword Highlighting:
+
+"mRY-2S-7NF.ibShadowedToolTip" = "<!--BREAK--> 構文を使用するか、エクスポート設定の自動ブレークオプションをチェックすることによって、ブレークが挿入された場所に薄い破線を表示します。";
+# EN: Show a light dashed line where breaks are inserted with <!--BREAK--> syntax or by checking auto-break options in Export settings.
+
+"mcb-pU-l1D.title" = "10";
+
+"mdifier-inline-pref-cb.ibShadowedToolTip" = "Web ページを Markdown に変換した後、参照形式のリンクをインライン [テキスト](url) 形式に変換します。";
+# EN: After converting a web page to Markdown, convert reference-style links to inline [text](url) format.
+
+"mdifier-inline-pref-cell.title" = "インラインリンクを使用する";
+# EN: Use inline links
+
+"mdifier-pref-label-cell.title" = "Markdownifier:";
+
+"n6M-g3-8qL.ibShadowedToolTip" = "詳細情報";
+# EN: More info
+
+"n9f-sf-kcj.title" = "編集箇所にスクロール";
+# EN: Scroll to edit
+
+"nFn-GQ-2Jj.title" = "ロゴ：";
+# EN: Logo:
+
+"nPd-8B-GbS.ibShadowedToolTip" = "~text~ を下付き文字ではなくアンダースコアとしてレンダリングします (MultiMarkdown)。";
+# EN: Render ~text~ as underscore instead of subscript (MultiMarkdown)
+
+"newBringToFrontCheckbox.ibShadowedToolTip" = "ファイルの変更が検出された場合は、Marked 内でのみ、このドキュメントのタブを選択するか、そのウインドウを最前面に配置します。別のアプリが最前面にある場合、Marked はバックグラウンドに残ります。 「更新時にウインドウを開く」を使用して、他のアプリケーションの上にポップアップします。";
+# EN: When a file change is detected, select this document's tab or order its window to the front within Marked only. If another app is frontmost, Marked stays in the background. Use "Raise window on update" to pop above other applications.
+
+"newBringToFrontCheckboxCell.title" = "更新されたドキュメントを前面に表示";
+# EN: Bring updated document to front
+
+"ntv-d4-tOz.ibShadowedToolTip" = "ドキュメントの読み込みおよび更新時に URL を検証します。エラーがある場合のみ結果を表示します。";
+# EN: Validate URLs on document load and refresh. Only displays results if there are errors.
+
+"o5w-Sg-lZb.ibShadowedToolTip" = "LaTeX/MathML 数式を表示するために KaTeX を読み込みます。MathJax よりも高速ですが、機能は少なくなっています。";
+# EN: Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.
+
+"oCe-0U-oKy.ibShadowedToolTip" = "ファイル名だけではなく、現在のファイルへのフルパスを表示します。";
+# EN: Show the full path to the current file instead of just its filename.
+
+"oIO-H7-gle.title" = "段落内の自動ハイフネーション";
+# EN: Auto-hyphenate in paragraphs
+
+"oiA-xW-UVz.ibShadowedToolTip" = "⌘E と入力すると、現在のドキュメントを受け取るテキストエディターを選択します。";
+# EN: Select a text editor to receive the current document when you type ⌘E.
+
+"okK-cA-IJX.ibShadowedToolTip" = "ローカルバンドルまたは CDN からの MathJax を含めます。";
+# EN: Include MathJax from local bundle or CDN
+
+"p2Q-RV-dNJ.title" = "8";
+
+"p46-yr-3Uf.title" = "OmniOutliner アウトライン";
+# EN: OmniOutliner outlines
+
+"p92-2y-6zh.title" = "OtherViews";
+
+"pJw-Tc-bLD.ibShadowedToolTip" = "ヘッダーの左側の書式設定";
+# EN: Formatting for the left side of the header.
+
+"pNR-yv-TFX.title" = "OtherViews";
+
+"pRD-SP-kIN.title" = "ミニマップナビゲーションを有効にする";
+# EN: Enable Mini Map navigation
+
+"pXN-Ub-Ood.title" = "選択範囲で検索するには ⌘E を使用します";
+# EN: Use ⌘E for Find With Selection
+
+"pZg-9z-YEa.title" = "コメントサイドバーに脚注を含める";
+# EN: Include footnotes in comment sidebar
+
+"pbl-03-803.ibShadowedToolTip" = "フェンスで囲まれたコードブロックは常に無視されます。";
+# EN: Fenced code blocks are always ignored
+
+"pf3-ef-8Zs.title" = "追加パッケージ";
+# EN: Additional Packages
+
+"pnr-kp-kGo.ibExternalAccessibilityDescription" = "マークアップエラーを強調表示";
+# EN: Highlight Markup Errors
+
+"pnr-kp-kGo.ibExternalAccessibilityHelp" = "壊れた Markdown リンクや、不適切に変換された可能性のあるその他のマークアップを強調表示します。";
+# EN: Highlight broken Markdown links and other markup that may have converted improperly.
+
+"pnr-kp-kGo.ibShadowedToolTip" = "壊れた Markdown リンクや、不適切に変換された可能性のあるその他のマークアップを強調表示します。";
+# EN: Highlight broken Markdown links and other markup that may have converted improperly.
+
+"qLr-xl-R8A.title" = "100";
+
+"qel-yf-jHo.ibShadowedToolTip" = "すべての設定を JSON ファイルとしてエクスポートし、後でインポートできるようにします。";
+# EN: Export all prefeerences as a JSON file that can be imported later.
+
+"qhd-i1-jMC.title" = "脚注の前";
+# EN: Before Footnotes
+
+"qnH-cj-k1j.ibShadowedIsNilPlaceholder" = "アプリケーションの選択";
+# EN: Choose Application
+
+"qos-qB-P0Q.title" = "AMSのみ";
+# EN: AMS only
+
+"qpM-y7-hSc.ibShadowedToolTip" = "システムのダークモード設定に従ってください。";
+# EN: Follow the system Dark Mode setting.
+
+"rFP-2c-xKa.title" = "追加機能:";
+# EN: Additional features:
+
+"rIg-O3-BDH.ibShadowedToolTip" = "Marked へのフルディスクアクセスを許可します。これは、カスタムプロセッサの実行に役立ち、許可を要求せずに Wiki リンクと画像の読み込みを機能させることができます。このボタンを押すと、「システム設定」>「プライバシーとセキュリティ」>「フルディスクアクセス」にアクセスするための手順が表示されます。";
+# EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.
+
+"rbv-px-urQ.title" = "デフォルトの拡張子:";
+# EN: Default Extension:
+
+"returnFocusOnUpdateCheckbox.ibShadowedToolTip" = "有効にすると、更新/更新の実行中に Marked がフォアグラウンドフォーカスを取得した場合、キーボードフォーカスが更新前に最前面にあったアプリに戻ります。このオプションがオフの場合、または Marked がバックグラウンドにある場合は効果がありません。";
+# EN: When enabled, if Marked takes foreground focus during a raise/bring-on-update, return keyboard focus to the app that was frontmost before the update. Has no effect when this option is off, or when Marked stays in the background.
+
+"returnFocusOnUpdateCheckboxCell.title" = "フォーカスを前のアプリに戻す";
+# EN: Return focus to previous app
+
+"rjR-WB-Rw1.ibShadowedToolTip" = "チェックすると、タブでインデントされたコード、フェンスで囲まれたコード、またはインクルードされたコードが、コードブロックではなく詩として表示されます。 (構文の強調表示はなく、テーマに応じた特別なスタイルが適用されます。)";
+# EN: If checked, tab-indented, fenced or included code is displayed as poetry instead of a code block. (No syntax highlighting, and special styling depending on the theme.)
+
+"rob-zI-FHX.ibShadowedToolTip" = "新しいドキュメントではデフォルトでキーワードのハイライトが表示されます。";
+# EN: New documents will default to showing keyword highlights
+
+"rtc-jX-V7o.title" = "メタデータをテーブルとして表示する";
+# EN: Show metadata as table
+
+"sN3-Y8-LbN.ibShadowedToolTip" = "プレビュー本文の最大幅を設定します。";
+# EN: Set a maximum width for the body of the preview.
+
+"t1j-c5-Onm.title" = "ウインドウタイトルにフルパスを表示";
+# EN: Show full path in window title
+
+"t7n-mT-E6V.ibShadowedToolTip" = "ドキュメントが 100k を超える場合は、折りたたみ可能な見出しなどのプロセッサを大量に使用する機能を無効にします。";
+# EN: Disable some processor-intensive features such as collapsible headlines when documents are over 100k.
+
+"tG0-rU-aLw.title" = "ホストされている画像をキャッシュする";
+# EN: Cache hosted images
+
+"tQ4-9b-B6e.ibShadowedToolTip" = "「今後表示しない」または「選択を記憶する」に設定されているアラートを復元します。";
+# EN: Restore alerts that have been set to "Never show again" or "Remember my choice."
+
+"tTB-p7-P4g.ibShadowedToolTip" = "レベル 1 ヘッダーをセクション区切りとして使用し、常に新しいページで開始します。";
+# EN: Use level 1 headers as section dividers, always starting them on a new page.
+
+"tWa-A7-If6.title" = "単語数に含めないもの:";
+# EN: Word count excludes:
+
+"tY7-C4-5py.ibShadowedToolTip" = "AMS 方程式に番号のみを付けます。";
+# EN: Only number AMS equations
+
+"tfb-VY-Tqp.ibShadowedToolTip" = "ショートカットフィールドをクリックして、アクションパレットを開くためのホットキーを記録します。";
+# EN: Click the shortcut field to record a hotkey for opening the actions palette
+
+"tfi-st-aSZ.ibShadowedToolTip" = "構文強調表示されたコードブロックに使用されるテーマ。";
+# EN: The theme used for syntax highlighted code blocks.
+
+"tpi-5S-1mf.ibShadowedToolTip" = "ステータスバーのカウンターには、単語の代わりに文字が表示されます。";
+# EN: The counter in the status bar shows characters instead of words.
+
+"tyM-gC-XBb.ibShadowedToolTip" = "新しいドキュメントを常にタブで開きます。";
+# EN: Always open new documents in tabs
+
+"tyM-gC-XBb.title" = "タブ";
+# EN: tabs
+
+"u0o-bq-IQb.title" = "更新";
+# EN: Refresh
+
+"uBk-yg-ER4.title" = "デフォルトでコメントと注釈を表示する";
+# EN: Show comments and annotations by default
+
+"uIc-gm-aQz.title" = ".scriv ファイルを Marked で開くと Scrivener で開く";
+# EN: Open .scriv files in Scrivener when opened in Marked
+
+"uJ6-Mq-rcV.title" = "変更追跡 ↔ CriticMarkup を相互変換";
+# EN: Convert change tracking <-> CriticMarkup
+
+"ueP-7h-rCf.title" = "最初のページに含める:";
+# EN: Include on first page:
+
+"ug7-rp-qmA.ibShadowedToolTip" = "スペースのない単一のハッシュはハッシュタグであり、見出しではありません。 Bear ノートをプレビューするときは常に true。";
+# EN: A single hash with no space is a hashtag, not a headline. Always true when previewing Bear notes.
+
+"ujD-ZF-ytu.ibShadowedToolTip" = "複数のドキュメントが Web 上に表示される場合の競合を避けるために、ランダムな脚注 ID を生成します。";
+# EN: Generate random footnote IDs to avoid conflicts when multiple documents are displayed on the web.
+
+"ung-Uh-qLP.ibShadowedToolTip" = "ローカル画像を右クリックして「画像の編集」を選択したときに開くアプリケーションを選択します。";
+# EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
+
+"v4s-Gx-SpR.ibExternalAccessibilityDescription" = "スクロール位置とスピードリードを同期する";
+# EN: Sync Speed Reading with scroll position
+
+"v4s-Gx-SpR.ibExternalAccessibilityHelp" = "現在のビューポートからスピードリードを開始し、再生が進むにつれてプレビューをスクロールします。";
+# EN: Start Speed Read from the current viewport and scroll the preview as playback advances.
+
+"v4s-Gx-SpR.ibShadowedToolTip" = "現在のビューポートからスピードリードを開始し、再生が進むにつれてプレビューをスクロールします。";
+# EN: Start Speed Read from the current viewport and scroll the preview as playback advances.
+
+"v64-XC-XzK.title" = "2";
+
+"vGN-QS-Vh3.ibShadowedToolTip" = "ページ番号付けに適用されるオフセット: 0 から最初のページの番号「1」。 1 を指定するとページ番号を 2 から開始し、-1 を指定すると 2 番目のページをページ 1 にします。";
+# EN: Offset applied to page numbering: 0 to number the first page "1". 1 to start page numbering at 2, -1 to make the second page page 1.
+
+"vOV-jm-UBU.title" = "OtherViews";
+
+"vSr-qn-WW8.ibShadowedToolTip" = "選択が行われるたびに、選択したテキストの単語カウントポップアップを表示します。";
+# EN: Show a word count popup for the selected text whenever a selection is made.
+
+"vcK-UV-o4U.ibShadowedToolTip" = "プレビューウインドウでリンクをクリックしてローカルテキストファイルにアクセスしたときの Marked の動作を決定します。";
+# EN: Determine Marked's behavior when a link clicked in a preview window leads to a local text file.
+
+"vda-v3-Xx6.title" = "更新";
+# EN: Refresh
+
+"vo9-JH-ze6.title" = "テキスト選択のポップアップ統計";
+# EN: Popup stats for text selection
+
+"voM-LV-KIa.title" = "単語:";
+# EN: Word:
+
+"wSC-Yu-2MP.title" = "スタイルタグ";
+# EN: Style tags
+
+"x61-dn-VlC.title" = "項目 1";
+# EN: Item 1
+
+"x6M-HE-xmK.title" = "更新";
+# EN: Refresh
+
+"x7a-1t-d1y.ibShadowedToolTip" = "リストされた拡張子を持つファイルのアウトライン表示モードをオンにします。";
+# EN: Turn on Outline view mode for files with listed extensions.
+
+"x7j-MM-FWA.title" = "アラートのリセット";
+# EN: Reset Alerts
+
+"x8A-em-R2B.title" = "アプリを選択";
+# EN: Choose App
+
+"xC2-nA-NrV.title" = "最初のウインドウを前面に:";
+# EN: Raise first window:
+
+"xOz-LD-8sy.title" = "KaTeX";
+
+"xUP-DD-fxh.title" = "孤立した見出しを防ぐ";
+# EN: Prevent orphaned headlines
+
+"y3G-eL-BMV.title" = "MultiMarkdown";
+
+"yE8-wi-t88.title" = "画像/リンク内のhook:// URLを解決する";
+# EN: Resolve hook:// urls in images/links
+
+"yEj-Gr-Evm.ibShadowedToolTip" = "ハイライト.js を使用してコードブロックを強調表示します。";
+# EN: Highlight code blocks with highlight.js.
+
+"yaf-cg-saC.title" = "その他のテーマ";
+# EN: More Themes
+
+"yoG-j6-vbx.ibShadowedToolTip" = ".markedprefs ファイルをインポートして設定を更新します。";
+# EN: Import a .markedprefs file to update preferences
+
+"z2V-nL-4sl.title" = "レイアウトとタイポグラフィー:";
+# EN: Layout and typography:
+
+"zFI-uC-4c5.title" = "管理";
+# EN: Manage
+
+"zJe-dt-F3x.title" = "エラーのみ";
+# EN: Errors only
+
+"zga-hN-HSv.title" = "プリプロセッサ";
+# EN: preprocessor
+
+"zky-Tf-Zjn.ibShadowedToolTip" = "==highlight== と ~~delete~~ を CriticMarkup としてレンダリングします。";
+# EN: Render ==highlight== and ~~delete~~ as CriticMarkup
+
+"zm8-V2-fa1.ibShadowedToolTip" = "読了時間を計算するための読書速度（1 分あたりの語数）";
+# EN: Reading speed for reading time calculation (words per minute)
+
+
+=== END Preferences.xib.strings ===
+
+
+=== BEGIN PreviewContextMenu.strings ===
+# Strings in this section: 25
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"menu.annotateWithApp" = "%@ で注釈";
+# EN: Annotate with %@
+
+"menu.copyHTML" = "HTML をコピー";
+# EN: Copy HTML
+
+"menu.copyRichText" = "リッチテキストをコピー";
+# EN: Copy Rich Text
+
+"menu.copyURL" = "URL をコピー";
+# EN: Copy URL
+
+"menu.dimLinks" = "リンクを薄く表示";
+# EN: Dim Links
+
+"menu.editWithApp" = "%@ で編集";
+# EN: Edit with %@
+
+"menu.highlightKeywords" = "キーワードをハイライト";
+# EN: Highlight Keywords
+
+"menu.ignoreWord" = "%@ を無視";
+# EN: Ignore %@
+
+"menu.ignoreWordPermanently" = "単語を常に無視";
+# EN: Ignore word permanently
+
+"menu.ignoreWordTemporarily" = "単語を一時的に無視";
+# EN: Ignore word temporarily
+
+"menu.learnWord" = "%@ を学習";
+# EN: Learn %@
+
+"menu.markdownifyURL" = "URL を Markdown に変換";
+# EN: Markdownify URL
+
+"menu.openInApp" = "%@ で開く";
+# EN: Open in %@
+
+"menu.openInBrowser" = "ブラウザで開く";
+# EN: Open In Browser
+
+"menu.openInBrowserNamed" = "%@ で開く";
+# EN: Open In %@
+
+"menu.refresh" = "更新";
+# EN: Refresh
+
+"menu.revealInFinder" = "Finder に表示";
+# EN: Reveal in Finder
+
+"menu.selectAnnotationEditor" = "注釈エディタを選択";
+# EN: Select Annotation Editor
+
+"menu.selectImageEditor" = "画像エディタを選択";
+# EN: Select Image Editor
+
+"menu.showComments" = "コメントを表示";
+# EN: Show Comments
+
+"menu.showIncludeBoundaries" = "インクルードしたファイルの範囲を表示";
+# EN: Show Boundaries of Included Files
+
+"menu.toggleMiniMap" = "ミニマップを切り替え";
+# EN: Toggle Mini Map
+
+"menu.unignoreWord" = "%@ の無視を解除";
+# EN: Unignore %@
+
+"menu.unlearnSpelling" = "スペルの学習を取り消す";
+# EN: Unlearn spelling
+
+"menu.validateAllLinks" = "すべてのリンクを検証";
+# EN: Validate All Links
+
+
+=== END PreviewContextMenu.strings ===
+
+
+=== BEGIN Statistics.strings ===
+# Strings in this section: 35
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"stats.char.plural" = "文字";
+# EN: chars
+
+"stats.char.singular" = "文字";
+# EN: char
+
+"stats.countWithNumber" = "%@ %@";
+
+"stats.drawer.gulpeaseAppend" = "    Gulpease 指数: %@";
+# EN:     Gulpease: %@
+
+"stats.drawer.placeholder" = "単語:    行:    文字:";
+# EN: Words:    Lines:    Characters:
+
+"stats.drawer.readability" = "読みやすさ: %@    グレードレベル: %@    Fog 指数: %@";
+# EN: Reading Ease: %@    Grade Level: %@    Fog Index: %@
+
+"stats.drawer.summary" = "段落: %@     文: %@    文字: %@";
+# EN: Paragraphs: %@     Sentences: %@    Characters: %@
+
+"stats.label.gradeLevel" = "グレードレベル:";
+# EN: Grade Level:
+
+"stats.label.gulpease" = "Gulpease 指数:";
+# EN: Gulpease:
+
+"stats.label.gulpeaseBand" = "Gulpease バンド:";
+# EN: Gulpease band:
+
+"stats.label.readingEase" = "読みやすさ:";
+# EN: Reading Ease:
+
+"stats.selection.char" = "文字:";
+# EN: Char:
+
+"stats.selection.sent" = "文:";
+# EN: Sent:
+
+"stats.selection.word" = "単語:";
+# EN: Word:
+
+"stats.status.calculatingBasicStats" = "基本統計を計算中";
+# EN: Calculating basic stats
+
+"stats.status.calculatingWordComplexity" = "単語の複雑さを計算中";
+# EN: Calculating word complexity
+
+"stats.status.countingParagraphs" = "段落数をカウント中";
+# EN: Counting paragraphs
+
+"stats.status.countingSentences" = "文数をカウント中";
+# EN: Counting sentences
+
+"stats.status.countingSyllables" = "音節数をカウント中";
+# EN: Counting syllables
+
+"stats.status.countingWords" = "単語数をカウント中";
+# EN: Counting words
+
+"stats.targetProgress" = "目標 %.0f 単語の %2.1f%%";
+# EN: %2.1f%% of %.0f word target
+
+"stats.tooltip.fleschEnglish" = "Flesch-Kincaid 読みやすさ指数（英語）。数値が大きいほど読みやすくなります。";
+# EN: Flesch-Kincaid Reading Ease (English). The higher that number is, the easier the text is to read.
+
+"stats.tooltip.fleschFrench" = "Flesch 読みやすさ指数（フランス語版）。数値が大きいほど読みやすくなります。";
+# EN: Flesch Reading Ease (French adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschGerman" = "Flesch 読みやすさ指数（ドイツ語 Amstad 版）。数値が大きいほど読みやすくなります。";
+# EN: Flesch Reading Ease (German/Amstad adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschPortuguese" = "Flesch 読みやすさ指数（ポルトガル語版）。数値が大きいほど読みやすくなります。";
+# EN: Flesch Reading Ease (Portuguese adaptation). Higher is easier to read.
+
+"stats.tooltip.fleschSpanish" = "Flesch 読みやすさ指数（スペイン語 Fernández-Huerta 版）。数値が大きいほど読みやすくなります。";
+# EN: Flesch Reading Ease (Spanish/Fernández-Huerta adaptation). Higher is easier to read.
+
+"stats.tooltip.gradeLevel" = "テキストを理解するのに必要な、英語圏の学年（grade）に相当する数値です。";
+# EN: A number that corresponds to the grade a person will need to have reached to understand it.
+
+"stats.tooltip.gulpeaseBand.1" = "0–39: 難しい（大学レベル）";
+# EN: 0–39: Difficult (even for experienced readers)
+
+"stats.tooltip.gulpeaseBand.2" = "40–59: やや難しい（高校レベル）";
+# EN: 40–59: Fairly difficult (upper secondary)
+
+"stats.tooltip.gulpeaseBand.3" = "60–79: 中程度（中学レベル）";
+# EN: 60–79: Medium difficulty (lower secondary)
+
+"stats.tooltip.gulpeaseBand.4" = "80–100: とても読みやすい（小学校レベル）";
+# EN: 80–100: Very easy (primary school)
+
+"stats.tooltip.gulpeaseBandDefault" = "Gulpease バンド（1–4）。Gulpease 指数から算出されます。";
+# EN: Gulpease band (1–4), derived from the Gulpease score.
+
+"stats.tooltip.gulpeasePrimary" = "Gulpease 指数（イタリア語版）を使用します。数値が大きいほど読みやすくなります。";
+# EN: Using the Gulpease index (Italian readability). Higher is easier to read.
+
+"stats.word.plural" = "単語";
+# EN: words
+
+"stats.word.singular" = "単語";
+# EN: word
+
+
+=== END Statistics.strings ===
+
+
+=== BEGIN Tips.strings ===
+# Strings in this section: 24
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"tip.bookmarkNumber" = "ブックマーク %@";
+# EN: Bookmark %@
+
+"tip.commentMarker" = "コメント %1$@ / %2$@。C/⇧C で移動。";
+# EN: Comment %1$@ of %2$@. Navigate with C/⇧C.
+
+"tip.commentsHidden" = "コメントを非表示";
+# EN: Comments hidden
+
+"tip.compiling" = "コンパイル中";
+# EN: Compiling
+
+"tip.converting" = "変換中";
+# EN: Converting
+
+"tip.enableMiniMapInSettings" = "設定 > プレビューでミニマップを有効にしてください";
+# EN: Enable Mini Map in Settings > Preview pane
+
+"tip.focused" = "フォーカス中";
+# EN: Focused
+
+"tip.includeMarkersPending" = "インクルードマーカーは見つかりましたが、範囲はまだ描画されていません。プレビューを更新してください";
+# EN: Include markers found but boundaries are not rendered yet; refresh preview
+
+"tip.invalidBookmarkNumber" = "無効なブックマーク番号: %@";
+# EN: Invalid bookmark number: %@
+
+"tip.linksDimmed" = "リンクを薄く表示";
+# EN: Links dimmed
+
+"tip.mathJaxConfigError" = "追加の MathJax 設定の解析エラー";
+# EN: Error parsing additional MathJax configuration
+
+"tip.miniMapDisabled" = "ミニマップを無効化";
+# EN: MiniMap disabled
+
+"tip.miniMapDisabledLargeDoc" = "サイズの大きいドキュメントの処理モードのためミニマップを無効化";
+# EN: Mini Map disabled for large document processing mode
+
+"tip.miniMapDisabledShortDoc" = "短いドキュメントのためミニマップを無効化";
+# EN: MiniMap disabled on short documents
+
+"tip.minimapCreateError" = "ミニマップの作成エラー";
+# EN: Error creating minimap
+
+"tip.noBookmark" = "ブックマークなし";
+# EN: No bookmark
+
+"tip.noBookmarkSpots" = "空きのブックマーク枠がありません";
+# EN: No bookmark spots available
+
+"tip.noBookmarksOrMinimap" = "ブックマークまたはミニマップがありません";
+# EN: No bookmarks or minimap available
+
+"tip.noCommentMarkers" = "コメントがありません";
+# EN: No comments available
+
+"tip.noEditMarkers" = "編集マーカーがありません";
+# EN: No edit markers available
+
+"tip.noIncludeBoundaries" = "このドキュメントにインクルードしたファイルの範囲が見つかりません";
+# EN: No included-file boundaries found in this document
+
+"tip.recentEditMarker" = "最近の編集マーカー %1$@ / %2$@。E/⇧E で移動します。";
+# EN: Recent edit marker %1$@ of %2$@. Navigate with E/⇧E.
+
+"tip.syntaxHighlightDisabledSize" = "ファイルサイズのため構文強調表示を無効化";
+# EN: Syntax highlighting disabled due to file size
+
+"tip.zoomedOut" = "縮小表示";
+# EN: Zoomed out
+
+
+=== END Tips.strings ===
+
+
+=== BEGIN KBShortcuts.strings ===
+# Strings in this section: 199
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"kbs.action.clipboardPreview" = "クリップボードのプレビュー";
+# EN: Clipboard Preview
+
+"kbs.action.close" = "閉じる";
+# EN: Close
+
+"kbs.action.closeAll" = "すべてを閉じる";
+# EN: Close All
+
+"kbs.action.collapseAllSections" = "すべてのセクションを折りたたむ";
+# EN: Collapse all sections
+
+"kbs.action.copy" = "コピー";
+# EN: Copy
+
+"kbs.action.copyHTMLSource" = "HTML ソースをコピー";
+# EN: Copy HTML Source
+
+"kbs.action.copyRichText" = "リッチテキストのコピー";
+# EN: Copy Rich Text
+
+"kbs.action.cut" = "切り取り";
+# EN: Cut
+
+"kbs.action.darkMode" = "ダークモード";
+# EN: Dark Mode
+
+"kbs.action.decreaseTextSize" = "テキストサイズを縮小";
+# EN: Decrease Text Size
+
+"kbs.action.detailedStatistics" = "詳細な統計";
+# EN: Detailed Statistics
+
+"kbs.action.dingus.bold" = "太字: 選択範囲を ** で囲む、または ** の間にカーソルを置いて挿入";
+# EN: Bold: wrap selection in ** or insert with cursor between
+
+"kbs.action.dingus.contractSelection" = "選択範囲を縮小";
+# EN: Contract selection
+
+"kbs.action.dingus.cycleListMarker" = "リストマーカーを切り替え（順序なし ↔ 順序あり）";
+# EN: Cycle list marker (unordered ↔ ordered)
+
+"kbs.action.dingus.expandSelection" = "選択範囲を拡張（単語 → 区切り記号 → 文 → 段落 → ブロック → ドキュメント）";
+# EN: Expand selection (word → delimiters → sentence → paragraph → block → document)
+
+"kbs.action.dingus.findNext" = "次を検索（検索バーが表示されている場合）";
+# EN: Find next (when find bar is visible)
+
+"kbs.action.dingus.findPrevious" = "前を検索（検索バーが表示されている場合）";
+# EN: Find previous (when find bar is visible)
+
+"kbs.action.dingus.indent" = "行またはリスト項目をインデント";
+# EN: Indent line or list item
+
+"kbs.action.dingus.indentTab" = "行またはリスト項目をインデント（Tab キー相当）";
+# EN: Indent line or list item (same as Tab)
+
+"kbs.action.dingus.insertLink" = "Markdown リンクを挿入または囲む";
+# EN: Insert or wrap Markdown link
+
+"kbs.action.dingus.italic" = "斜体: 選択範囲を _ で囲む、または _ の間にカーソルを置いて挿入";
+# EN: Italic: wrap selection in _ or insert with cursor between
+
+"kbs.action.dingus.moveParagraphDown" = "段落を下に移動";
+# EN: Move paragraph down
+
+"kbs.action.dingus.moveParagraphUp" = "段落を上に移動";
+# EN: Move paragraph up
+
+"kbs.action.dingus.open" = "Dingusで開く";
+# EN: Open in Dingus
+
+"kbs.action.dingus.openInMarked" = "Marked で Dingus を開きます";
+# EN: Open Dingus in Marked
+
+"kbs.action.dingus.outdent" = "行またはリスト項目のインデントを解除";
+# EN: Outdent line or list item
+
+"kbs.action.dingus.outdentShiftTab" = "行またはリスト項目のインデントを解除（Shift+Tab キー相当）";
+# EN: Outdent line or list item (same as Shift+Tab)
+
+"kbs.action.dingus.save" = "Dingus を保存";
+# EN: Save Dingus
+
+"kbs.action.dingus.saveAs" = "Dingus として保存…";
+# EN: Save Dingus As…
+
+"kbs.action.dingus.showFindBar" = "Markdown 入力ペインの検索バーを表示／非表示";
+# EN: Show or hide find bar in Markdown Input pane
+
+"kbs.action.dingus.toggleOutputPane" = "出力ペインを切り替え（ソース／プレビュー）";
+# EN: Toggle output pane (Source/Preview)
+
+"kbs.action.documentStatistics" = "ドキュメント統計";
+# EN: Document Statistics
+
+"kbs.action.expandAllSections" = "すべてのセクションを展開";
+# EN: Expand all sections
+
+"kbs.action.export" = "名前を付けてエクスポート";
+# EN: Export
+
+"kbs.action.extractFromURL" = "URL から抽出";
+# EN: Extract from URL
+
+"kbs.action.filterScrivenerDocuments" = "Scrivener ドキュメントをフィルタリングする";
+# EN: Filter Scrivener Documents
+
+"kbs.action.findInPreview" = "プレビューで検索";
+# EN: Find in Preview
+
+"kbs.action.findNext" = "次を検索";
+# EN: Find Next
+
+"kbs.action.findPrevious" = "前を検索";
+# EN: Find Previous
+
+"kbs.action.floatingStatistics" = "変動統計";
+# EN: Floating Statistics
+
+"kbs.action.fullScreen" = "全画面表示";
+# EN: Full Screen
+
+"kbs.action.gearMenu" = "ギアメニュー";
+# EN: Gear Menu
+
+"kbs.action.highlightKeywords" = "ハイライトキーワード";
+# EN: Highlight Keywords
+
+"kbs.action.highlightMarkupErrors" = "マークアップエラーを強調表示";
+# EN: Highlight Markup Errors
+
+"kbs.action.historyBack" = "履歴を戻る";
+# EN: History Back
+
+"kbs.action.historyForward" = "履歴を進む";
+# EN: History Forward
+
+"kbs.action.increaseTextSize" = "テキストサイズを拡大";
+# EN: Increase Text Size
+
+"kbs.action.keepOnTop" = "ウインドウを前面に固定";
+# EN: Keep on Top
+
+"kbs.action.keywordDrawer" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"kbs.action.manageStyles" = "スタイルの管理";
+# EN: Manage Styles
+
+"kbs.action.minimize" = "最小化";
+# EN: Minimize
+
+"kbs.action.newFile" = "新規ファイル";
+# EN: New File
+
+"kbs.action.nextTab" = "次のタブ";
+# EN: Next Tab
+
+"kbs.action.open" = "開ける…";
+# EN: Open
+
+"kbs.action.openInEditor" = "エディタで開く";
+# EN: Open in Editor
+
+"kbs.action.paste" = "ペースト";
+# EN: Paste
+
+"kbs.action.previewClipboard" = "クリップボードをプレビュー";
+# EN: Preview Clipboard
+
+"kbs.action.previewNav.addNextBookmark" = "ブックマークを追加";
+# EN: Add next bookmark
+
+"kbs.action.previewNav.autoscroll" = "自動スクロール";
+# EN: Auto-scroll
+
+"kbs.action.previewNav.bookmarkNearestHeadline" = "最寄りの見出しをブックマーク";
+# EN: Bookmark nearest headline
+
+"kbs.action.previewNav.bookmarkScrollPosition" = "スクロール位置をブックマーク";
+# EN: Bookmark scroll position
+
+"kbs.action.previewNav.closeOverlayDeselect" = "オーバーレイを閉じる／テキストの選択を解除";
+# EN: Close overlay/Deselect text
+
+"kbs.action.previewNav.criticMarkupNextPrev" = "CriticMarkup の次／前";
+# EN: CriticMarkup next/prev
+
+"kbs.action.previewNav.cycleCommentsFootnotes" = "コメントと脚注を順に切り替え";
+# EN: Cycle comments and footnotes
+
+"kbs.action.previewNav.cycleEditMarkers" = "次の編集マーカー";
+# EN: Cycle edit markers and CriticMarkup changes
+
+"kbs.action.previewNav.displayIncludedFilename" = "現在インクルードしているファイル名を表示";
+# EN: Display current included filename
+
+"kbs.action.previewNav.displayMiniMap" = "ミニマップを表示する";
+# EN: Display Mini Map
+
+"kbs.action.previewNav.focusVisibleSection" = "表示中のセクションにフォーカス";
+# EN: Focus visible section
+
+"kbs.action.previewNav.historyBackForward" = "履歴を戻る／進む";
+# EN: History back/forward
+
+"kbs.action.previewNav.jumpToBottom" = "最下位にジャンプ";
+# EN: Jump to Bottom
+
+"kbs.action.previewNav.jumpToTop" = "トップにジャンプ";
+# EN: Jump to Top
+
+"kbs.action.previewNav.navigateAllHeaders" = "次のヘッダー";
+# EN: Navigate all headers
+
+"kbs.action.previewNav.navigateAllHighlights" = "すべてのハイライト間を移動";
+# EN: Navigate all highlights
+
+"kbs.action.previewNav.navigateH1H2Headers" = "次の H1/H2 ヘッダー";
+# EN: Navigate H1/H2 headers
+
+"kbs.action.previewNav.navigateTargetHighlights" = "対象のハイライト間を移動";
+# EN: Navigate target highlights
+
+"kbs.action.previewNav.nextPrevBookmarkNumeric" = "次のブックマーク (数値)";
+# EN: Next/Prev bookmark (numeric)
+
+"kbs.action.previewNav.nextPrevBookmarkPageOrder" = "次のブックマーク (ページ順)";
+# EN: Next/Prev bookmark (page order)
+
+"kbs.action.previewNav.openFastSwitcher" = "高速スイッチャーを開く";
+# EN: Open fast switcher
+
+"kbs.action.previewNav.reverseAutoscroll" = "逆自動スクロール";
+# EN: Reverse auto-scroll
+
+"kbs.action.previewNav.scrollDownUp" = "下にスクロール";
+# EN: Scroll down/up
+
+"kbs.action.previewNav.scrollFaster" = "高速スクロール";
+# EN: Scroll faster
+
+"kbs.action.previewNav.scrollToBookmark" = "ブックマーク位置にスクロール";
+# EN: Scroll to bookmark
+
+"kbs.action.previewNav.showHideHelpHUD" = "ヘルプ HUD の表示/非表示";
+# EN: Show/Hide Help HUD
+
+"kbs.action.previewNav.slowSpeedAutoscroll" = "自動スクロールを減速／加速";
+# EN: Slow down/Speed up auto-scroll
+
+"kbs.action.previewNav.zoomOverviewToggle" = "概観表示の切り替え";
+# EN: Zoom overview toggle
+
+"kbs.action.previousTab" = "前のタブ";
+# EN: Previous Tab
+
+"kbs.action.print" = "プリント…";
+# EN: Print
+
+"kbs.action.quickOpen" = "クイックオープン";
+# EN: Quick Open
+
+"kbs.action.quickToggles.criticMarkupAlways" = "CriticMarkup 常に";
+# EN: CriticMarkup Always
+
+"kbs.action.quickToggles.idsOnHeadlines" = "見出しの ID";
+# EN: IDs on Headlines
+
+"kbs.action.quickToggles.processInsideHTML" = "HTML 内のプロセス";
+# EN: Process Inside HTML
+
+"kbs.action.quickToggles.retainLineBreaks" = "改行を保持する";
+# EN: Retain Line Breaks
+
+"kbs.action.quickToggles.scrollToFirstEdit" = "最初の編集箇所にスクロール";
+# EN: Scroll to First Edit
+
+"kbs.action.quickToggles.showDiffMarkers" = "差分マーカーを表示";
+# EN: Show Diff Markers
+
+"kbs.action.quickToggles.smartTypography" = "スマートなタイポグラフィー";
+# EN: Smart Typography
+
+"kbs.action.quickToggles.stripMMDMetadata" = "MMD メタデータを削除する";
+# EN: Strip MMD Metadata
+
+"kbs.action.quickToggles.stripYAML" = "YAML を削除します";
+# EN: Strip YAML
+
+"kbs.action.readabilityStatistics" = "可読性の統計";
+# EN: Readability Statistics
+
+"kbs.action.redo" = "やり直す";
+# EN: Redo
+
+"kbs.action.reloadPreview" = "リフレッシュ";
+# EN: Reload Preview
+
+"kbs.action.reopenLast" = "最後のファイルを再度開く";
+# EN: Re-open Last
+
+"kbs.action.resetTextSize" = "テキストサイズをリセット";
+# EN: Reset Text Size
+
+"kbs.action.revealInFinder" = "ファインダーで表示";
+# EN: Reveal in Finder
+
+"kbs.action.saveClipboardPreview" = "クリップボードのプレビューを保存";
+# EN: Save Clipboard Preview
+
+"kbs.action.saveDOCX" = "DOCX を保存";
+# EN: Save DOCX
+
+"kbs.action.saveHTML" = "HTML を保存";
+# EN: Save HTML
+
+"kbs.action.savePDF" = "PDF を保存";
+# EN: Save PDF
+
+"kbs.action.savePDFPaginated" = "PDF を保存 (ページ分割)";
+# EN: Save PDF (Paginated)
+
+"kbs.action.saveRTF" = "RTF を保存";
+# EN: Save RTF
+
+"kbs.action.selectAll" = "すべてを選択";
+# EN: Select All
+
+"kbs.action.selectBuiltinStyle" = "組み込みスタイルを選択";
+# EN: Select Built-in Style
+
+"kbs.action.selectCustomStyle" = "カスタムスタイルを選択";
+# EN: Select Custom Style
+
+"kbs.action.settings" = "設定…";
+# EN: Settings
+
+"kbs.action.showCommentsAndFootnotes" = "コメントと脚注を表示";
+# EN: Show Comments and Footnotes
+
+"kbs.action.showIncludedFileBoundaries" = "インクルードしたファイルの範囲を表示";
+# EN: Show Boundaries of Included Files
+
+"kbs.action.showKeyboardShortcuts" = "キーボードショートカットを表示";
+# EN: Show Keyboard Shortcuts
+
+"kbs.action.showMarkdownReference" = "Markdown リファレンスを表示";
+# EN: Show Markdown Reference
+
+"kbs.action.showStatusBars" = "ステータスバーを表示する";
+# EN: Show Status Bars
+
+"kbs.action.showTitleBars" = "タイトルバーを表示する";
+# EN: Show Title Bars
+
+"kbs.action.styleStealer" = "スタイルスティーラー";
+# EN: Style Stealer
+
+"kbs.action.tocNav.clearSearchDismissTOC" = "検索をクリア／目次を閉じる";
+# EN: Clear search/Dismiss TOC
+
+"kbs.action.tocNav.openTOC" = "目次を開く";
+# EN: Open TOC
+
+"kbs.action.tocNav.openTOCQuickSearch" = "目次のクイック検索を開く";
+# EN: Open TOC quick-search
+
+"kbs.action.tocNav.openTOCSearchFocused" = "検索にフォーカスして目次を開く";
+# EN: Open TOC with search focused
+
+"kbs.action.tocNav.scrollToSelection" = "選択箇所にスクロール";
+# EN: Scroll to selection
+
+"kbs.action.tocNav.selectFirstNextItem" = "最初／次の項目を選択";
+# EN: Select first/next item
+
+"kbs.action.tocNav.selectFirstSearchResult" = "最初の検索結果を選択";
+# EN: Select first search result
+
+"kbs.action.tocNav.selectPreviousItem" = "前の項目を選択";
+# EN: Select previous item
+
+"kbs.action.toggleCustomProcessor" = "カスタムプロセッサーの切り替え";
+# EN: Toggle Custom Processor
+
+"kbs.action.toggleFountainScrivenerComments" = "Fountain/Scrivener コメントの切り替え";
+# EN: Toggle Fountain/Scrivener Comments
+
+"kbs.action.toggleSourceView" = "ソースビューの切り替え";
+# EN: Toggle Source View
+
+"kbs.action.toggleTOC" = "目次の切り替え";
+# EN: Toggle Table of Contents
+
+"kbs.action.undo" = "取り消す";
+# EN: Undo
+
+"kbs.action.useSelectionForFind" = "選択範囲を使用して検索する";
+# EN: Use Selection for Find
+
+"kbs.action.validateURLs" = "URL を検証";
+# EN: Validate URLs
+
+"kbs.action.visualizeWordRepetition" = "単語の繰り返しを視覚化する";
+# EN: Visualize Word Repetition
+
+"kbs.caption.autoscroll" = "自動スクロール";
+# EN: Autoscroll
+
+"kbs.caption.bookmarking" = "ブックマーク";
+# EN: Bookmarking
+
+"kbs.caption.misc" = "その他";
+# EN: Misc
+
+"kbs.caption.navigation" = "ナビゲーション";
+# EN: Navigation
+
+"kbs.caption.proofreading" = "校正";
+# EN: Proofreading
+
+"kbs.caption.search" = "検索";
+# EN: Search
+
+"kbs.caption.tableOfContents" = "目次";
+# EN: Table of Contents
+
+"kbs.header.function" = "機能";
+# EN: Function
+
+"kbs.header.shortcut" = "ショートカット";
+# EN: Shortcut
+
+"kbs.hud.addBookmark" = "ブックマークを追加";
+# EN: Add Bookmark
+
+"kbs.hud.addNumberedBookmark" = "番号付きブックマークを追加";
+# EN: Add Numbered Bookmark
+
+"kbs.hud.advancedStatisticsFloating" = "詳細な統計（フローティングウインドウ）";
+# EN: Advanced Statistics Floating Panel
+
+"kbs.hud.advancedStatisticsOverlay" = "詳細な統計（オーバーレイ）";
+# EN: Advanced Statistics Overlay
+
+"kbs.hud.autoscroll" = "自動スクロール";
+# EN: Autoscroll
+
+"kbs.hud.basicStatisticsDrawer" = "基本統計（ドロワー）";
+# EN: Basic Statistics (Drawer)
+
+"kbs.hud.bookmarkNearestHeadline" = "最寄りの見出しをブックマーク";
+# EN: Bookmark Nearest Headline
+
+"kbs.hud.clearAllBookmarks" = "すべてのブックマークをクリア";
+# EN: Clear All Bookmarks
+
+"kbs.hud.clearFocusedBookmark" = "フォーカスされたブックマークをクリア";
+# EN: Clear Focused Bookmark
+
+"kbs.hud.closeOverlayDeselect" = "オーバーレイを閉じる／テキストの選択を解除";
+# EN: Close Overlay/Deselect Text
+
+"kbs.hud.cssElementSearch" = "CSS 要素を検索";
+# EN: Search For CSS Element
+
+"kbs.hud.cycleEditMarkers" = "編集マーカーを前方／後方に順に移動";
+# EN: Cycle Edit Markers Forward/Backward
+
+"kbs.hud.editCurrentFile" = "現在のファイルを編集";
+# EN: Edit Current File
+
+"kbs.hud.editVisibleIncludedFile" = "表示中のインクルードファイルを編集";
+# EN: Edit Visible Included File
+
+"kbs.hud.goToNextError" = "次のエラーに移動";
+# EN: Go to Next Error
+
+"kbs.hud.goToPreviousError" = "前のエラーに移動";
+# EN: Go to Previous Error
+
+"kbs.hud.navigateAllHeaders" = "すべてのヘッダー間を移動";
+# EN: Navigate All Headers
+
+"kbs.hud.navigateAllHighlights" = "すべてのハイライト間を移動";
+# EN: Navigate all highlights
+
+"kbs.hud.navigateH1H2Headers" = "H1/H2 ヘッダー間を移動";
+# EN: Navigate H1/H2 Headers
+
+"kbs.hud.navigateTargetHighlights" = "対象のハイライト間を移動";
+# EN: Navigate target highlights
+
+"kbs.hud.nextPrevBookmarkNumeric" = "番号順で次／前のブックマークへ";
+# EN: Next/Prev Bookmark Numerically
+
+"kbs.hud.nextPrevBookmarkPageOrder" = "ページ順で次／前のブックマークへ";
+# EN: Next/Prev Bookmark in Page Order
+
+"kbs.hud.openFastSwitcher" = "「高速スイッチャー」を開く";
+# EN: Open "Fast Switcher"
+
+"kbs.hud.openGearMenu" = "ギアメニューを開く";
+# EN: Open Gear Menu
+
+"kbs.hud.playPauseAutoscroll" = "自動スクロールの再生/一時停止";
+# EN: Play/Pause Autoscroll
+
+"kbs.hud.quickActionsPalette" = "クイックアクションパレット";
+# EN: Quick Actions Palette
+
+"kbs.hud.readabilityStatisticsDrawer" = "可読性統計（ドロワー）";
+# EN: Readability Statistics (Drawer)
+
+"kbs.hud.regexSearch" = "正規表現検索";
+# EN: Regular Expression Search
+
+"kbs.hud.revealCurrentFile" = "現在のファイルを Finder に表示";
+# EN: Reveal Current File in Finder
+
+"kbs.hud.reverseAutoscroll" = "逆自動スクロール";
+# EN: Reverse Autoscroll
+
+"kbs.hud.scrollDownUp" = "下／上にスクロール";
+# EN: Scroll Up/Down
+
+"kbs.hud.scrollFaster" = "上下に高速スクロール";
+# EN: Scroll Up/Down Faster
+
+"kbs.hud.search" = "検索";
+# EN: Search
+
+"kbs.hud.searchNextPrevious" = "次／前の検索結果";
+# EN: Next/Previous Search Result
+
+"kbs.hud.showCommentsSidebar" = "コメントサイドバーを表示";
+# EN: Show Comments Sidebar
+
+"kbs.hud.showGrammarWithSpelling" = "スペルとともに文法を表示";
+# EN: Show Grammar with Spelling
+
+"kbs.hud.showHideComments" = "コメントを表示／非表示";
+# EN: Show/Hide Comments
+
+"kbs.hud.showSpellingErrors" = "スペルミスを表示";
+# EN: Show Spelling Errors
+
+"kbs.hud.showStyleManager" = "スタイルマネージャーを表示";
+# EN: Show Style Manager
+
+"kbs.hud.showStyleStealer" = "スタイルスティーラーを表示";
+# EN: Show Style Stealer
+
+"kbs.hud.slowSpeedAutoscroll" = "自動スクロールを加速／減速";
+# EN: Speed up/Slow Down Autoscroll
+
+"kbs.hud.tocOpenQuickSearch" = "目次のクイック検索を開く";
+# EN: Open TOC Quick-search
+
+"kbs.hud.tocScrollToSelection" = "選択箇所にスクロール";
+# EN: Scroll To Selection
+
+"kbs.hud.tocSelectFirstNext" = "最初／次の項目を選択";
+# EN: Select First/next Item
+
+"kbs.hud.tocSelectFirstSearch" = "最初の検索結果を選択";
+# EN: Select First Search Result
+
+"kbs.hud.toggleDiffMarkers" = "差分マーカーの切り替え";
+# EN: Toggle Diff Markers
+
+"kbs.hud.toggleSpeedRead" = "スピードリードの切り替え";
+# EN: Toggle Speed Read
+
+"kbs.hud.validateExternalLinks" = "外部リンクの検証";
+# EN: Validate External Links
+
+"kbs.nav.application" = "アプリケーション";
+# EN: Application
+
+"kbs.nav.dingusEditor" = "Dingus エディタ";
+# EN: Dingus Editor
+
+"kbs.nav.previewNav" = "プレビューナビゲーション";
+# EN: Preview Nav
+
+"kbs.nav.quickToggles" = "クイックトグル";
+# EN: Quick Toggles
+
+"kbs.nav.tocNav" = "目次ナビ";
+# EN: TOC Nav
+
+"kbs.panelTitle" = "キーボードショートカット";
+# EN: Keyboard Shortcuts
+
+
+=== END KBShortcuts.strings ===
+
+
+=== BEGIN MainMenuMAS.strings ===
+# Strings in this section: 166
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0iO-Jd-3vX.title" = "スタイルを管理";
+# EN: Manage Styles
+
+"124.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"125.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"126.title" = "メニューを消去";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "サービス";
+# EN: Services
+
+"131.title" = "サービス";
+# EN: Services
+
+"134.title" = "Marked を隠す";
+# EN: Hide Marked
+
+"136.title" = "Marked を終了";
+# EN: Quit Marked
+
+"145.title" = "ほかを隠す";
+# EN: Hide Others
+
+"150.title" = "すべてを表示";
+# EN: Show All
+
+"19.title" = "ウインドウ";
+# EN: Window
+
+"195.title" = "読み上げを停止";
+# EN: Stop Speaking
+
+"196.title" = "読み上げを開始";
+# EN: Start Speaking
+
+"197.title" = "コピー";
+# EN: Copy
+
+"198.title" = "すべてを選択";
+# EN: Select All
+
+"199.title" = "カット";
+# EN: Cut
+
+"1L3-bl-pki.title" = "タイトルバーを表示";
+# EN: Show Title Bars
+
+"1rJ-o9-D4P.title" = "カスタムルールを編集";
+# EN: Edit Custom Rules
+
+"203.title" = "ペースト";
+# EN: Paste
+
+"205.title" = "編集";
+# EN: Edit
+
+"207.title" = "取り消す";
+# EN: Undo
+
+"20V-is-JeR.title" = "次のタブ";
+# EN: Next Tab
+
+"211.title" = "スピーチ";
+# EN: Speech
+
+"212.title" = "スピーチ";
+# EN: Speech
+
+"215.title" = "やり直す";
+# EN: Redo
+
+"217.title" = "編集";
+# EN: Edit
+
+"239.title" = "ウインドウをズーム";
+# EN: Zoom Window
+
+"24.title" = "ウインドウ";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "プレビュー";
+# EN: Preview
+
+"296.title" = "プレビュー";
+# EN: Preview
+
+"298.title" = "更新";
+# EN: Refresh
+
+"3t8-eH-dUy.title" = "クイックオープン";
+# EN: Quick Open
+
+"491.title" = "ヘルプ";
+# EN: Help
+
+"492.title" = "ヘルプ";
+# EN: Help
+
+"493.title" = "Marked ヘルプ";
+# EN: Marked Help
+
+"5.title" = "すべてを前面に移動";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "Marked について";
+# EN: About Marked
+
+"5TI-U8-WHR.title" = "カスタムスタイルギャラリー";
+# EN: Custom Style Gallery
+
+"5VQ-XV-9lF.title" = "ストリーミングプレビュー";
+# EN: Streaming Preview
+
+"610.title" = "最後のファイルを開き直す";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "HTML ソースをコピー";
+# EN: Copy HTML Source
+
+"636.title" = "ズーム";
+# EN: Zoom
+
+"637.title" = "ズーム";
+# EN: Zoom
+
+"638.title" = "ズームをリセット";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "拡大";
+# EN: Zoom In
+
+"647.title" = "Finder に表示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked のウェブサイト";
+# EN: Marked Website
+
+"653.title" = "問題を報告";
+# EN: Report an Issue
+
+"655.title" = "エディタで開く";
+# EN: Open in Editor
+
+"664.title" = "クイック概要";
+# EN: Quick Overview
+
+"672.title" = "フルスクリーン";
+# EN: Full Screen
+
+"72.title" = "開く…";
+# EN: Open…
+
+"720.title" = "ダークモード";
+# EN: Dark Mode
+
+"73.title" = "閉じる";
+# EN: Close
+
+"738.ibShadowedToolTip" = "リッチテキストをクリップボードにコピーします。";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "リッチテキストをコピー";
+# EN: Copy Rich Text
+
+"748.title" = "キーボードショートカット";
+# EN: Keyboard Shortcuts
+
+"752.title" = "Markdown リファレンス";
+# EN: Markdown Reference
+
+"78.title" = "プリント…";
+# EN: Print…
+
+"800.title" = "ページ設定…";
+# EN: Page Setup…
+
+"804.title" = "すべてのセクションを折りたたむ";
+# EN: Collapse All Sections
+
+"809.title" = "すべてのセクションを展開";
+# EN: Expand All Sections
+
+"81.title" = "ファイル";
+# EN: File
+
+"83.title" = "ファイル";
+# EN: File
+
+"860.title" = "書き出す";
+# EN: Export As
+
+"861.title" = "検索";
+# EN: Search
+
+"862.title" = "検索";
+# EN: Search
+
+"863.title" = "プレビューで検索";
+# EN: Find in Preview
+
+"864.title" = "前を検索";
+# EN: Find Previous
+
+"865.title" = "次を検索";
+# EN: Find Next
+
+"866.title" = "書き出す";
+# EN: Export As
+
+"874.title" = "HTML を保存";
+# EN: Save HTML
+
+"875.title" = "PDF を保存";
+# EN: Save PDF
+
+"876.title" = "PDF を保存（ページ分割）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "DOCX を保存";
+# EN: Save DOCX
+
+"880.title" = "ODT を保存";
+# EN: Save ODT
+
+"891.title" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"895.title" = "ソースビューの切り替え";
+# EN: Toggle Source View
+
+"8I4-lW-Kgn.title" = "履歴項目";
+# EN: History Items
+
+"9Jf-cv-ReI.title" = "詳細な統計";
+# EN: Detailed Statistics
+
+"CIg-C0-cyi.ibShadowedToolTip" = "Save a clipboard or content extractor preview as a Markdown file";
+
+"CIg-C0-cyi.title" = "一時プレビューを保存";
+# EN: Save Transient Preview
+
+"DJl-cP-TQ7.title" = "見出しの ID";
+# EN: IDs on Headlines
+
+"DNB-2m-lXI.title" = "履歴";
+# EN: History
+
+"Epb-cz-6CZ.title" = "カスタムルールログを表示";
+# EN: Show Custom Rules Log
+
+"F2g-OQ-AX1.title" = "Process Markdown inside of HTML";
+
+"Flf-Pm-yT3.title" = "OPML を保存";
+# EN: Save OPML
+
+"Flv-tc-5Fd.title" = "スタイル";
+# EN: Style
+
+"GHS-Br-7vX.title" = "統計";
+# EN: Statistics
+
+"JZK-Ml-vtI.title" = "進む";
+# EN: Forward
+
+"KSt-Nd-YfH.title" = "編集位置にスクロール";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"L4k-JR-PBl.title" = "単語の繰り返しを可視化";
+# EN: Visualize Word Repetition
+
+"LB1-ov-Lpp.title" = "新規";
+# EN: New
+
+"M6W-jT-4iT.title" = "TextBundle を保存";
+# EN: Save TextBundle
+
+"MAS-browser-extensions-menu.title" = "ブラウザ拡張機能";
+# EN: Browser Extensions
+
+"MAS-expire-trial.title" = "トライアルを期限切れにする";
+# EN: Expire Trial
+
+"MAS-reset-review-prompt.title" = "Reset Review Prompt";
+
+"MAS-reset-trial.title" = "Restart Trial";
+
+"MAS-show-review-prompt.title" = "Show Review Prompt Now";
+
+"MkF-AI-Ask-MAS.title" = "ドキュメントについて質問…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter-MAS.title" = "Scrivener ドキュメントをフィルタ";
+# EN: Filter Scrivener Documents
+
+"MkQA-MAS-File.title" = "クイックアクション…";
+# EN: Quick Actions…
+
+"MkSR-Pvw-MAS.title" = "スピードリード";
+# EN: Speed Read
+
+"NMN-Qd-rWR.title" = "MarsEdit プレビュー";
+# EN: MarsEdit Preview
+
+"OF5-3M-soB.title" = "すべてを閉じる";
+# EN: Close All
+
+"OH7-8B-tV7.title" = "しまう";
+# EN: Minimize
+
+"Pat-MN-4Mv.title" = "ステータスバーを表示";
+# EN: Show Status Bars
+
+"Pht-ls-sph.title" = "書き出す…";
+# EN: Export…
+
+"Prs-jS-AkN.title" = "Marked サポート";
+# EN: Marked Support
+
+"Qu4-zo-UZD.title" = "CriticMarkup を常に表示";
+# EN: CriticMarkup Always
+
+"UOd-D2-aXd.title" = "校正";
+# EN: Proofing
+
+"UyV-DY-t88.title" = "RTF を保存";
+# EN: Save RTF
+
+"Uye-NQ-7E2.title" = "基本統計";
+# EN: Basic Statistics
+
+"Wr7-nm-W7z.title" = "スタイルスティーラー";
+# EN: Style Stealer
+
+"Xas-RR-kHk.title" = "戻る";
+# EN: Back
+
+"XoP-n3-kF7.title" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"YP4-qu-5WE.title" = "URL を Markdown 化";
+# EN: Markdownify URL
+
+"YaF-0Z-jJf.title" = "YAML を除去";
+# EN: Strip YAML
+
+"Yiv-ef-LJF.title" = "カスタムスタイルを生成";
+# EN: Generate a Custom Style
+
+"Z7o-lz-0ji.title" = "スマートタイポグラフィ";
+# EN: Smart Typography
+
+"aIN-4X-d3H.title" = "カスタムスタイルを共有";
+# EN: Share a Custom Style
+
+"blG-O8-4HT.title" = "コマンドラインツールをインストール";
+# EN: Install Command Line Tool
+
+"copy-uuid-menu.title" = "UUID をコピー";
+# EN: Copy UUID
+
+"dEj-Z6-FrQ.title" = "スタイル";
+# EN: Style
+
+"dJD-Xn-WQv.title" = "前のタブ";
+# EN: Previous Tab
+
+"deL-6h-ucY.title" = "校正";
+# EN: Proofing
+
+"did-pK-b6r.title" = "クリップボードのプレビュー";
+# EN: Clipboard Preview
+
+"dingus-load-menu-item-mas.title" = "Dingus で開く…";
+# EN: Open in Dingus…
+
+"dingus-menu-mas.title" = "Markdown Dingus を開く";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item-mas.title" = "Marked で Dingus を開く";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item-mas.title" = "Dingus で開く";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item-mas.title" = "Dingus を別名で保存…";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item-mas.title" = "Dingus を保存";
+# EN: Save Dingus
+
+"f5U-Si-SjO.title" = "選択部分を検索に使用";
+# EN: Use Selection for Find
+
+"hUe-f3-nB2.title" = "改行を保持";
+# EN: Retain Line Breaks
+
+"i7k-4X-HtN.title" = "差分マーカーを表示";
+# EN: Show Diff Markers
+
+"jCt-nW-lX6.title" = "コメントと脚注を表示";
+# EN: Show Comments and Footnotes
+
+"jjj-3j-jUJ.title" = "MMD メタデータを除去";
+# EN: Strip MMD Metadata
+
+"jtI-Qw-PKI.title" = "お知らせを確認";
+# EN: Check for Announcements
+
+"kAQ-wr-phn.title" = "外部リンクの検証";
+# EN: Validate External Links
+
+"kFq-f8-ekM.title" = "HTML 内も処理";
+# EN: Process Inside HTML
+
+"kWm-bU-qOg.title" = "キーワードを編集";
+# EN: Edit Keywords
+
+"l0p-f0-KCw.title" = "履歴項目";
+# EN: History Items
+
+"lSX-4a-rct.title" = "Review Marked";
+
+"lh4-s4-1r0.title" = "Crossgrade";
+
+"mvT-hU-P08.title" = "Generate IDs on Headlines";
+
+"n5s-cy-b48.title" = "Marked を購入";
+# EN: Purchase Marked
+
+"naw-b7-sD3.title" = "新規";
+# EN: New
+
+"nv5-HG-J2p.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"o9g-Z2-SNy.title" = "履歴";
+# EN: History
+
+"ohY-fz-OyI.title" = "新規 Markdown ファイル";
+# EN: New Markdown File
+
+"pUH-zx-RNv.title" = "キーワードをハイライト";
+# EN: Highlight Keywords
+
+"rsp-tT-uRg.title" = "統計（フローティングウインドウ）";
+# EN: Floating Statistics
+
+"tf3-Iw-aUI.title" = "Markdown を保存";
+# EN: Save Markdown
+
+"vMZ-hP-GSW.title" = "可読性統計";
+# EN: Readability Statistics
+
+"vve-nL-dqe.title" = "マークアップエラーをハイライト";
+# EN: Highlight Markup Errors
+
+"wHZ-BK-cam.title" = "デバッグログを開く";
+# EN: Open Debug Log
+
+"yDa-5G-k44.title" = "EPUB を保存";
+# EN: Save EPUB
+
+"zow-nN-nLf.title" = "統計";
+# EN: Statistics
+
+
+=== END MainMenuMAS.strings ===
+
+
+=== BEGIN MainMenuSetapp.strings ===
+# Strings in this section: 156
+# Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
+
+"0KX-4L-z6e.title" = "履歴項目";
+# EN: History Items
+
+"124.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"125.title" = "最近使った項目を開く";
+# EN: Open Recent
+
+"126.title" = "メニューを消去";
+# EN: Clear Menu
+
+"129.title" = "設定…";
+# EN: Settings…
+
+"130.title" = "サービス";
+# EN: Services
+
+"131.title" = "サービス";
+# EN: Services
+
+"134.title" = "Marked を隠す";
+# EN: Hide Marked
+
+"136.title" = "Marked を終了";
+# EN: Quit Marked
+
+"145.title" = "ほかを隠す";
+# EN: Hide Others
+
+"150.title" = "すべてを表示";
+# EN: Show All
+
+"19.title" = "ウインドウ";
+# EN: Window
+
+"195.title" = "読み上げを停止";
+# EN: Stop Speaking
+
+"196.title" = "読み上げを開始";
+# EN: Start Speaking
+
+"197.title" = "コピー";
+# EN: Copy
+
+"198.title" = "すべてを選択";
+# EN: Select All
+
+"199.title" = "カット";
+# EN: Cut
+
+"203.title" = "ペースト";
+# EN: Paste
+
+"205.title" = "編集";
+# EN: Edit
+
+"207.title" = "取り消す";
+# EN: Undo
+
+"211.title" = "スピーチ";
+# EN: Speech
+
+"212.title" = "スピーチ";
+# EN: Speech
+
+"215.title" = "やり直す";
+# EN: Redo
+
+"217.title" = "編集";
+# EN: Edit
+
+"23.title" = "しまう";
+# EN: Minimize
+
+"239.title" = "ウインドウをズーム";
+# EN: Zoom Window
+
+"24.title" = "ウインドウ";
+# EN: Window
+
+"29.title" = "AMainMenu";
+
+"295.title" = "プレビュー";
+# EN: Preview
+
+"296.title" = "プレビュー";
+# EN: Preview
+
+"298.title" = "更新";
+# EN: Refresh
+
+"3Re-LO-HTZ.title" = "戻る";
+# EN: Back
+
+"3va-8G-noL.title" = "エディタで開く";
+# EN: Open in Editor
+
+"491.title" = "ヘルプ";
+# EN: Help
+
+"492.title" = "ヘルプ";
+# EN: Help
+
+"493.title" = "Marked ヘルプ";
+# EN: Marked Help
+
+"4cN-Ef-M7q.title" = "新規";
+# EN: New
+
+"5.title" = "すべてを前面に移動";
+# EN: Bring All to Front
+
+"56.title" = "Marked";
+
+"57.title" = "Marked";
+
+"58.title" = "Marked について";
+# EN: About Marked
+
+"610.title" = "最後のファイルを開き直す";
+# EN: Reopen Last File
+
+"625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
+# EN: Copy HTML source to the clipboard
+
+"625.title" = "HTML ソースをコピー";
+# EN: Copy HTML Source
+
+"636.title" = "ズーム";
+# EN: Zoom
+
+"637.title" = "ズーム";
+# EN: Zoom
+
+"638.title" = "ズームをリセット";
+# EN: Zoom Reset
+
+"639.title" = "縮小";
+# EN: Zoom Out
+
+"640.title" = "拡大";
+# EN: Zoom In
+
+"647.title" = "Finder に表示";
+# EN: Reveal in Finder
+
+"650.title" = "Marked のウェブサイト";
+# EN: Marked Website
+
+"653.title" = "問題を報告";
+# EN: Report an Issue
+
+"664.title" = "クイック概要";
+# EN: Quick Overview
+
+"672.title" = "フルスクリーン";
+# EN: Full Screen
+
+"6Qj-Ma-gTl.title" = "お知らせを確認";
+# EN: Check for Announcements
+
+"6TE-1X-Beu.title" = "コマンドラインツールをインストール";
+# EN: Install Command Line Tool
+
+"72.title" = "開く…";
+# EN: Open…
+
+"720.title" = "ダークモード";
+# EN: Dark Mode
+
+"73.title" = "閉じる";
+# EN: Close
+
+"738.ibShadowedToolTip" = "リッチテキストをクリップボードにコピーします。";
+# EN: Copy RTF data to the clipboard
+
+"738.title" = "リッチテキストをコピー";
+# EN: Copy Rich Text
+
+"748.title" = "キーボードショートカット";
+# EN: Keyboard Shortcuts
+
+"752.title" = "Markdown リファレンス";
+# EN: Markdown Reference
+
+"78.title" = "プリント…";
+# EN: Print…
+
+"800.title" = "ページ設定…";
+# EN: Page Setup…
+
+"804.title" = "すべてのセクションを折りたたむ";
+# EN: Collapse All Sections
+
+"809.title" = "すべてのセクションを展開";
+# EN: Expand All Sections
+
+"81.title" = "ファイル";
+# EN: File
+
+"83.title" = "ファイル";
+# EN: File
+
+"860.title" = "書き出す";
+# EN: Export As
+
+"861.title" = "検索";
+# EN: Search
+
+"862.title" = "検索";
+# EN: Search
+
+"863.title" = "プレビューで検索";
+# EN: Find in Preview
+
+"864.title" = "前を検索";
+# EN: Find Previous
+
+"865.title" = "次を検索";
+# EN: Find Next
+
+"866.title" = "書き出す";
+# EN: Export As
+
+"874.title" = "HTML を保存";
+# EN: Save HTML
+
+"875.title" = "PDF を保存";
+# EN: Save PDF
+
+"876.title" = "PDF を保存（ページ分割）";
+# EN: Save PDF (Paginated)
+
+"879.title" = "DOCX を保存";
+# EN: Save DOCX
+
+"880.title" = "ODT を保存";
+# EN: Save ODT
+
+"891.title" = "ウインドウを前面に固定";
+# EN: Keep Window on Top
+
+"895.title" = "ソースビューの切り替え";
+# EN: Toggle Source View
+
+"AXd-Ii-niP.title" = "マークアップエラーをハイライト";
+# EN: Highlight Markup Errors
+
+"AqK-WG-cNa.title" = "書き出す…";
+# EN: Export…
+
+"CIg-C0-cyi.title" = "一時プレビューを保存";
+# EN: Save Transient Preview
+
+"Cn0-Bw-QJL.title" = "クイックオープン";
+# EN: Quick Open
+
+"DJl-cP-TQ7.title" = "見出しの ID";
+# EN: IDs on Headlines
+
+"DYj-2k-Sye.title" = "詳細な統計";
+# EN: Detailed Statistics
+
+"E34-rK-hez.title" = "カスタムスタイルギャラリー";
+# EN: Custom Style Gallery
+
+"GM7-yN-MML.title" = "OPML を保存";
+# EN: Save OPML
+
+"Hsd-4d-hnG.title" = "差分マーカーを表示";
+# EN: Show Diff Markers
+
+"IZT-Cp-EH0.title" = "スタイル";
+# EN: Style
+
+"KMF-gA-n9I.title" = "カスタムスタイルを共有";
+# EN: Share a Custom Style
+
+"KSt-Nd-YfH.title" = "編集位置にスクロール";
+# EN: Scroll to Edit
+
+"KSx-g2-ZbD.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"MkF-AI-Ask-Setapp.title" = "ドキュメントについて質問…";
+# EN: Ask About Document…
+
+"MkF-Scriv-Filter-Setapp.title" = "Scrivener ドキュメントをフィルタ";
+# EN: Filter Scrivener Documents
+
+"MkQA-Setapp-File.title" = "クイックアクション…";
+# EN: Quick Actions…
+
+"MkSR-Pvw-Set.title" = "スピードリード";
+# EN: Speed Read
+
+"N0p-Q6-UEB.title" = "ステータスバーを表示";
+# EN: Show Status Bars
+
+"N3F-M4-ubG.title" = "校正";
+# EN: Proofing
+
+"Nv6-pe-hL2.title" = "履歴項目";
+# EN: History Items
+
+"OL2-Ac-Bn0.title" = "Marked サポート";
+# EN: Marked Support
+
+"Pxr-7G-lpI.title" = "統計（フローティングウインドウ）";
+# EN: Floating Statistics
+
+"QHB-Gq-RDg.title" = "次のタブ";
+# EN: Next Tab
+
+"QdZ-hc-zCC.title" = "Show Release Notes";
+
+"Qu4-zo-UZD.title" = "CriticMarkup を常に表示";
+# EN: CriticMarkup Always
+
+"RVy-6r-EcY.title" = "キーワードを編集";
+# EN: Edit Keywords
+
+"SET-browser-extensions-menu.title" = "ブラウザ拡張機能";
+# EN: Browser Extensions
+
+"U3u-Hv-G60.title" = "統計";
+# EN: Statistics
+
+"Ulo-Rz-mJo.title" = "カスタムルールを編集";
+# EN: Edit Custom Rules
+
+"UyV-DY-t88.title" = "RTF を保存";
+# EN: Save RTF
+
+"V1c-QF-8zU.title" = "TextBundle を保存";
+# EN: Save TextBundle
+
+"WEB-nV-sC8.title" = "新規";
+# EN: New
+
+"XFm-VF-DYu.title" = "選択部分を検索に使用";
+# EN: Use Selection for Find
+
+"XIm-9A-I0A.title" = "MarsEdit プレビュー";
+# EN: MarsEdit Preview
+
+"Xte-Pb-2gT.title" = "カスタムスタイルを生成";
+# EN: Generate a Custom Style
+
+"XuF-Aa-LOa.title" = "キーワードをハイライト";
+# EN: Highlight Keywords
+
+"YaF-0Z-jJf.title" = "YAML を除去";
+# EN: Strip YAML
+
+"Z7o-lz-0ji.title" = "スマートタイポグラフィ";
+# EN: Smart Typography
+
+"Z9W-4b-2Zh.title" = "スタイルスティーラー";
+# EN: Style Stealer
+
+"bHz-de-bPE.title" = "可読性統計";
+# EN: Readability Statistics
+
+"bIf-Vt-nGj.title" = "キーワードドロワー";
+# EN: Keyword Drawer
+
+"bQe-fm-O0c.title" = "スタイルを管理";
+# EN: Manage Styles
+
+"bjt-xe-JHw.title" = "統計";
+# EN: Statistics
+
+"c3N-Fk-pCg.title" = "基本統計";
+# EN: Basic Statistics
+
+"dingus-load-menu-item-setapp.title" = "Dingus で開く…";
+# EN: Open in Dingus…
+
+"dingus-menu-setapp.title" = "Markdown Dingus を開く";
+# EN: Open Markdown Dingus
+
+"dingus-open-marked-menu-item-setapp.title" = "Marked で Dingus を開く";
+# EN: Open Dingus in Marked
+
+"dingus-open-preview-item-setapp.title" = "Dingus で開く";
+# EN: Open in Dingus
+
+"dingus-save-as-menu-item-setapp.title" = "Dingus を別名で保存…";
+# EN: Save Dingus As…
+
+"dingus-save-menu-item-setapp.title" = "Dingus を保存";
+# EN: Save Dingus
+
+"duo-g5-cHJ.title" = "クリップボードのプレビュー";
+# EN: Clipboard Preview
+
+"gfe-v6-IFX.title" = "Markdown を保存";
+# EN: Save Markdown
+
+"hRA-Fs-2fE.title" = "外部リンクの検証";
+# EN: Validate External Links
+
+"hUe-f3-nB2.title" = "改行を保持";
+# EN: Retain Line Breaks
+
+"jjj-3j-jUJ.title" = "MMD メタデータを除去";
+# EN: Strip MMD Metadata
+
+"kB9-oI-spA.title" = "デバッグログを開く";
+# EN: Open Debug Log
+
+"kFq-f8-ekM.title" = "HTML 内も処理";
+# EN: Process Inside HTML
+
+"ktI-Uv-CKg.title" = "コメントと脚注を表示";
+# EN: Show Comments and Footnotes
+
+"mwo-tR-O7Z.title" = "タイトルバーを表示";
+# EN: Show Title Bars
+
+"nv5-HG-J2p.title" = "クイックトグル";
+# EN: Quick Toggles
+
+"oWJ-Vb-y1f.title" = "校正";
+# EN: Proofing
+
+"ona-9t-SQG.title" = "スタイル";
+# EN: Style
+
+"rIc-Cp-XEF.title" = "新規 Markdown ファイル";
+# EN: New Markdown File
+
+"rlb-Ms-WcB.title" = "履歴";
+# EN: History
+
+"usc-No-WBQ.title" = "EPUB を保存";
+# EN: Save EPUB
+
+"vOL-4b-0Qf.title" = "ストリーミングプレビュー";
+# EN: Streaming Preview
+
+"vaQ-aQ-WkJ.title" = "カスタムルールログを表示";
+# EN: Show Custom Rules Log
+
+"vbr-U8-Zji.title" = "すべてを閉じる";
+# EN: Close All
+
+"wPb-ZE-BKP.title" = "履歴";
+# EN: History
+
+"yDp-Rg-IuT.title" = "単語の繰り返しを可視化";
+# EN: Visualize Word Repetition
+
+"yIt-dA-sXK.title" = "前のタブ";
+# EN: Previous Tab
+
+"yff-uw-J2O.title" = "URL を Markdown 化";
+# EN: Markdownify URL
+
+"zpz-Nh-jcm.title" = "進む";
+# EN: Forward
+
+
+=== END MainMenuSetapp.strings ===
+
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 95
+# Pre-filled from Marked/ja.lproj/Settings.strings. These keys are still English in the app — translate in place.
+
+"search.placeholder" = "検索";
+# EN: Search
+
+"search.result.section" = "セクション";
+# EN: Section
+
+"section.apps" = "Applications";
+
+"setting.additionalMathJaxConfig" = "MathJax 詳細設定（JSON）";
+# EN: Advanced MathJax configuration (JSON)
+
+"setting.alphaLevel" = "ウインドウの不透明度";
+# EN: Window opacity
+
+"setting.appsEditorNote" = "アプリピッカー";
+# EN: App picker
+
+"setting.appsEditorNote.body" = "外部エディタを選択するには、従来の「アプリ」環境設定（⌥⌘,）の「アプリを選択」ボタンを使用してください。";
+# EN: Use Choose App buttons in legacy Apps preferences (⌥⌘,) to select external editors.
+
+"setting.bottomPrintMargin" = "下余白";
+# EN: Bottom margin
+
+"setting.customRules.tooltip" = "カスタムルールを編集して、プロセッサ、プリプロセッサ、条件付き CSS を設定します。";
+# EN: Edit Custom Rules to configure processors, preprocessors, and conditional CSS.
+
+"setting.fullDiskAccess.tooltip" = "Marked にフルディスクアクセスを許可します。カスタムプロセッサの実行に役立ち、権限を要求せずに Wiki リンクや画像の読み込みを機能させることができます。";
+# EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions.
+
+"setting.convertTrackChanges" = "変更追跡 ↔ CriticMarkup を相互変換";
+# EN: Convert change tracking ↔ CriticMarkup
+
+"setting.customMarkdownProcessor" = "カスタムプロセッサのパス";
+# EN: Custom processor path
+
+"setting.customPreprocessor" = "カスタムプリプロセッサのパス";
+# EN: Custom preprocessor path
+
+"setting.customPreprocessor.placeholder" = "スクリプトへのパス";
+# EN: Path to script
+
+"setting.customPreprocessorDefault" = "新しいドキュメントでカスタムプリプロセッサを使用";
+# EN: Use custom preprocessor for new documents
+
+"setting.customProcessor.placeholder" = "スクリプトへのパス";
+# EN: Path to script
+
+"setting.customProcessorDefault" = "新しいドキュメントでカスタムプロセッサを使用";
+# EN: Use custom processor for new documents
+
+"setting.debugHint.body" = "「ヘルプ」>「デバッグログを開く」でアクティビティを表示できます。";
+# EN: Help > Open Debug Log to view activity.
+
+"setting.debugLevel" = "デバッグ出力レベル";
+# EN: Debug output level
+
+"setting.defaultPreviewStyle.tooltip" = "ここで選択したスタイルは、メタデータでドキュメント固有のスタイルが指定されていない限り（例: \\\"Marked Style: Grump\\\"）、すべての新しいウインドウに読み込まれます。";
+# EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\"Marked Style: Grump\\").
+
+"setting.manageStyles.menu" = "Manage Styles…";
+
+"setting.moreThemes.tooltip" = "カスタムスタイルをダウンロードまたはインストールできるスタイルギャラリーを開きます。";
+# EN: Explore the Style Gallery, where you can download or install Custom Styles
+
+"setting.openLinksInBackground" = "Always open links in the background";
+
+"setting.openLinksInBackgroundHint.body" = "Command-click to open in background.";
+
+"setting.documentTabbingMode.automatic" = "システムに従う";
+# EN: Follow system
+
+"setting.documentTabbingMode.tabs" = "現在のウインドウのタブ";
+# EN: Tab in current window
+
+"setting.documentTabbingMode.windows" = "個別のウインドウ";
+# EN: Separate windows
+
+"setting.embediThoughtsAsMermaid" = "マインドマップ（iThoughts）";
+# EN: Mind maps (iThoughts)
+
+"help.button.tooltip" = "この設定のヘルプを表示";
+# EN: Show help for this setting
+
+"setting.exportProfile" = "エクスポートプロファイル";
+# EN: Export profile
+
+"tooltip.exportProfile" = "エクスポートプロファイルを選択してプリセットを読み込みます。設定を変更すると、現在のプロファイルが更新されます。";
+# EN: Select an Export Profile to load presets. The current profile is updated when settings change.
+
+"setting.folderPreviewExtensions" = "フォルダープレビューの拡張子";
+# EN: Folder preview extensions
+
+"setting.headerFooterFontSize" = "ヘッダー/フッターのフォントサイズ";
+# EN: Header/footer font size
+
+"setting.leftPrintMargin" = "左余白";
+# EN: Left margin
+
+"setting.limitTextWidthPixels" = "最大テキスト幅（ピクセル）";
+# EN: Maximum text width (pixels)
+
+"setting.mathJaxSource" = "MathJax ソース";
+# EN: MathJax source
+
+"setting.mathNumberEquations" = "数式に番号を付ける";
+# EN: Number equations
+
+"setting.mathNumberEquationsSide.left" = "左";
+# EN: Left
+
+"setting.mathNumberEquationsSide.right" = "右";
+# EN: Right
+
+"setting.printBorderAboveFooter" = "フッターの上の境界線";
+# EN: Border above footer
+
+"setting.printBorderBelowHeader" = "ヘッダーの下の境界線";
+# EN: Border below header
+
+"setting.printFooterFirstPage" = "最初のページにフッター";
+# EN: Footer on first page
+
+"setting.printHeaderBottomCenter" = "ヘッダー下中央";
+# EN: Header bottom center
+
+"setting.printHeaderBottomLeft" = "ヘッダー左下";
+# EN: Header bottom left
+
+"setting.printHeaderBottomRight" = "ヘッダー右下";
+# EN: Header bottom right
+
+"setting.printHeaderFirstPage" = "最初のページにヘッダー";
+# EN: Header on first page
+
+"setting.printHeaderTopCenter" = "ヘッダー上中央";
+# EN: Header top center
+
+"setting.printHeaderTopLeft" = "ヘッダー左上";
+# EN: Header top left
+
+"setting.printHeaderTopRight" = "ヘッダー右上";
+# EN: Header top right
+
+"setting.resetAlerts.button" = "リセット";
+# EN: Reset
+
+"setting.rightPrintMargin" = "右余白";
+# EN: Right margin
+
+"setting.scrivenerCompileMetadata" = "コンパイルメタデータが無い場合は追加";
+# EN: Add compile metadata when missing
+
+"setting.settingsBackup" = "読み込みと書き出し";
+# EN: Import and export
+
+"tooltip.settingsBackup" = "Marked の設定を .markedprefs ファイルとしてバックアップまたは復元します。";
+# EN: Back up or restore Marked preferences as a .markedprefs file.
+
+"tooltip.settingsBackup.export" = "すべての設定を JSON ファイルとして書き出し、後で読み込めるようにします。";
+# EN: Export all preferences as a JSON file that can be imported later.
+
+"setting.showPageBreaksInPreview" = "プレビューで改ページを表示";
+# EN: Show page breaks in preview
+
+"setting.swapCommandEHint" = "エディタのショートカット";
+# EN: Editor shortcut
+
+"setting.defaultSyntaxStyle" = "構文ハイライトのテーマ";
+# EN: Syntax theme
+
+"setting.toctype1" = "目次レベル H1 マーカー";
+# EN: TOC level H1 marker
+
+"setting.toctype2" = "目次レベル H2 マーカー";
+# EN: TOC level H2 marker
+
+"setting.toctype3" = "目次レベル H3 マーカー";
+# EN: TOC level H3 marker
+
+"setting.toctype4" = "目次レベル H4 マーカー";
+# EN: TOC level H4 marker
+
+"setting.toctype5" = "目次レベル H5 マーカー";
+# EN: TOC level H5 marker
+
+"setting.toctype6" = "目次レベル H6 マーカー";
+# EN: TOC level H6 marker
+
+"setting.topPrintMargin" = "上余白";
+# EN: Top margin
+
+"subsection.backup" = "設定のバックアップ";
+# EN: Settings Backup
+
+"subsection.debug" = "デバッグ";
+# EN: Debug
+
+"subsection.editors" = "外部エディタ";
+# EN: External Editors
+
+"subsection.exportProfiles" = "エクスポートプロファイル";
+# EN: Export Profiles
+
+"subsection.metadata" = "YAML とメタデータ";
+# EN: YAML and Metadata
+
+"subsection.options" = "校正オプション";
+# EN: Proofing Options
+
+"subsection.print" = "印刷と PDF";
+# EN: Print and PDF
+
+"subsection.scripts" = "数式とコード";
+# EN: Math and Code
+
+"tooltip.yamlHandling" = "YAML フロントマターの処理方法を指定します。「無視」を選択するとプロセッサが処理できるようそのまま残します。MMD メタデータに変換することも、完全に削除することもできます。";
+# EN: Determine how to handle YAML front matter. Ignore will leave it in place for the processor to handle, or you can convert it to MMD metadata or remove it entirely.
+
+"window.title" = "設定";
+# EN: Settings
+
+"tooltip.additionalMathJaxConfig" = "JSON 形式の MathJax 詳細設定（上級者向け）。";
+# EN: Advanced MathJax configuration as JSON (for expert users).
+
+"tooltip.bottomPrintMargin" = "下の印刷余白（ポイント単位で指定）。";
+# EN: Bottom print margin (specified in points).
+
+"tooltip.codeCanWrap" = "チェックすると、テーマが pre>code ブロック内での折り返しを行えるようになります。テーマが折り返しに対応していない場合、はみ出したテキストは横方向にスクロールします。";
+# EN: If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing text will scroll horizontally.
+
+"tooltip.defaultPrintFontSize" = "「エクスポート/印刷用のカスタムフォントサイズ」が有効な場合に使用されるポイントサイズ。";
+# EN: Point size used when Custom font size for export/print is enabled.
+
+"tooltip.openLinksInBackground" = "Open web links in your default browser without switching away from Marked.";
+
+"tooltip.globalActionPaletteKey" = "ショートカットフィールドをクリックして、Marked がアクティブなときにクイックアクションパレットを開くホットキーを登録します。";
+# EN: Click the shortcut field to record a hotkey for opening the Quick Action palette when Marked is the active application.
+
+"tooltip.headerFooterFontSize" = "印刷ヘッダーとフッターのフォントサイズ。";
+# EN: Font size for print headers and footers.
+
+"tooltip.leftPrintMargin" = "左の印刷余白（ポイント単位で指定）。";
+# EN: Left print margin (specified in points).
+
+"tooltip.mathJaxSource" = "MathJax を CDN から読み込むか、Marked に同梱されたローカルコピーから読み込むかを選択します。";
+# EN: Choose whether to load MathJax from the CDN or from a local copy bundled with Marked.
+
+"tooltip.mathNumberEquationsSide" = "数式番号を表示する側を選択します。";
+# EN: Choose which side equation numbers appear on.
+
+"tooltip.minimumRepeats" = "ハイライトするまでに連続して繰り返される単語の最小数。";
+# EN: Minimum number of consecutive repeated words before highlighting.
+
+"tooltip.noLabels" = "h1〜h6 タグの内容に基づいて見出し ID を生成します。";
+# EN: Generate header IDs based on contents of h1-h6 tags.
+
+"tooltip.noSmartyPants" = "MultiMarkdown を使用する際に、SmartyPants 形式の句読点変換を無効にします。";
+# EN: Disable SmartyPants-style punctuation transforms when using MultiMarkdown.
+
+"tooltip.outlineModeExtensions" = "アウトラインモードを有効にするファイル拡張子（カンマ区切り）。";
+# EN: File extensions that trigger outline mode (comma-separated).
+
+"tooltip.panZoomMermaid" = "Mermaid 図にパン（ドラッグ）とズーム（⌘+スクロール）を追加します。";
+# EN: Add panning (drag) and zooming (⌘-scroll) to Mermaid diagrams.
+
+"tooltip.requireCmdToCollapse" = "見出しをクリックして折りたたみ/展開する際に、Command キーを押したままにする必要があります。";
+# EN: Require that the command key be held when clicking a headline to collapse/expand.
+
+"tooltip.rightPrintMargin" = "右の印刷余白（ポイント単位で指定）。";
+# EN: Right print margin (specified in points).
+
+"tooltip.showEditMarker" = "最新の編集ポイント（「差分順序を逆にする」設定に応じて最初または最後の差分）にマーカーを表示します。";
+# EN: Show a marker at the most recent edit point (first or last diff, depending on "Reverse diff order" setting).
+
+"tooltip.styleHashTags" = "Tags receive special capsule styling in the preview.";
+
+"tooltip.topPrintMargin" = "印刷余白を指定します（ポイント単位）。";
+# EN: Define print margins (specified in points).
+
+
+=== END Settings.strings (gaps) ===
