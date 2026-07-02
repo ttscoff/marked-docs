@@ -1861,7 +1861,7 @@ Schreibe alle Antworten auf %@.";
 "0KC-Ac-0Sw.title" = "Rabatt";
 # EN: Discount
 
-"0TU-06-h83.ibShadowedToolTip" = "Bearbeiten Sie die benutzerdefinierten Regeln";
+"0TU-06-h83.ibShadowedToolTip" = "Benutzerdefinierte Regeln bearbeiten";
 # EN: Edit Custom Rules
 
 "0aN-Jh-IRH.title" = "Schriftart:";
@@ -1869,13 +1869,13 @@ Schreibe alle Antworten auf %@.";
 
 "0ay-mp-wPl.title" = "12";
 
-"0do-zT-NUL.ibShadowedToolTip" = "Fügen Sie die Gleichungsnummerierung auf der linken oder rechten Seite der Gleichung hinzu";
+"0do-zT-NUL.ibShadowedToolTip" = "Fügt die Gleichungsnummerierung auf der linken oder rechten Seite der Gleichung hinzu";
 # EN: Add equation numbering on the left or right side or the equation
 
 "0rd-5d-52X.title" = "Aktualisieren";
 # EN: Refresh
 
-"1010.label" = "Verwenden Sie die Alternative";
+"1010.label" = "Alternative verwenden";
 # EN: Use Alternate
 
 "1012.label" = "Hervorheben";
@@ -1890,7 +1890,7 @@ Schreibe alle Antworten auf %@.";
 "1028.title" = "Verwenden Sie das Feld unten, um eine Liste mit Wörtern oder Phrasen zu erstellen – (eines pro Zeile), die Sie aus einem anderen Grund hervorheben möchten. Nur vollständige Übereinstimmungen (ohne Berücksichtigung der Groß- und Kleinschreibung) werden hervorgehoben. Umgeben mit / für Regex.";
 # EN: Use the field below to create a list of words or phrases—one per line—that you'd like to highlight for any other reason. Only complete (case insensitive) matches will be highlighted. Surround with / for regex.
 
-"1119.title" = "Verarbeiten Sie Markdown mit:";
+"1119.title" = "Markdown verarbeiten mit:";
 # EN: Process Markdown with:
 
 "1172.title" = "Aktualisieren";
@@ -1956,7 +1956,7 @@ Schreibe alle Antworten auf %@.";
 
 "1422.title" = "■";
 
-"1423.ibShadowedToolTip" = "Wählen Sie den Aufzählungstyp für die erste Einrückungsebene.";
+"1423.ibShadowedToolTip" = "Aufzählungstyp für die erste Einrückungsebene wählen.";
 # EN: Choose the type of bullet for first indentation level.
 
 "1425.title" = "OtherViews";
@@ -1984,7 +1984,7 @@ Schreibe alle Antworten auf %@.";
 "1435.title" = "ICH.";
 # EN: I.
 
-"1436.ibShadowedToolTip" = "Wählen Sie den Aufzählungstyp für die zweite Einrückungsebene.";
+"1436.ibShadowedToolTip" = "Aufzählungstyp für die zweite Einrückungsebene wählen.";
 # EN: Choose the type of bullet for second indentation level.
 
 "1438.title" = "OtherViews";
@@ -2012,7 +2012,7 @@ Schreibe alle Antworten auf %@.";
 "1448.title" = "ICH.";
 # EN: I.
 
-"1449.ibShadowedToolTip" = "Wählen Sie den Aufzählungstyp für die dritte Einrückungsebene.";
+"1449.ibShadowedToolTip" = "Aufzählungstyp für die dritte Einrückungsebene wählen.";
 # EN: Choose the type of bullet for third indentation level.
 
 "1451.title" = "OtherViews";
@@ -2040,7 +2040,7 @@ Schreibe alle Antworten auf %@.";
 "1461.title" = "ICH.";
 # EN: I.
 
-"1462.ibShadowedToolTip" = "Wählen Sie den Aufzählungstyp für die vierte Einrückungsebene.";
+"1462.ibShadowedToolTip" = "Aufzählungstyp für die vierte Einrückungsebene wählen.";
 # EN: Choose the type of bullet for fourth indentation level.
 
 "1464.title" = "OtherViews";
@@ -2068,7 +2068,7 @@ Schreibe alle Antworten auf %@.";
 "1474.title" = "ICH.";
 # EN: I.
 
-"1475.ibShadowedToolTip" = "Wählen Sie den Aufzählungstyp für die fünfte Einrückungsebene. Für zusätzliche Einrückungsebenen wird standardmäßig diese Einstellung verwendet.";
+"1475.ibShadowedToolTip" = "Aufzählungstyp für die fünfte Einrückungsebene wählen. Für zusätzliche Einrückungsebenen wird standardmäßig diese Einstellung verwendet.";
 # EN: Choose the type of bullet for fifth indentation level. Additional indentation levels will default to this setting.
 
 "1477.title" = "OtherViews";
@@ -2120,13 +2120,13 @@ Schreibe alle Antworten auf %@.";
 "1Gh-xv-5H5.title" = "ein neues Marked-Fenster";
 # EN: a new Marked window
 
-"1Lu-iY-qzQ.ibShadowedToolTip" = "Drucken Sie eine horizontale Linie unter der Kopfzeile und/oder über der Fußzeile";
+"1Lu-iY-qzQ.ibShadowedToolTip" = "Druckt eine horizontale Linie unter der Kopfzeile und/oder über der Fußzeile";
 # EN: Print a horizontal line below the header and/or above the footer
 
 "1SM-eh-7o2.ibShadowedToolTip" = "Wenn keine Titelmetadaten bereitgestellt werden, verwenden Sie den ersten H1-Header als Druck-/Speichertitel für vorübergehende Vorschauen.";
 # EN: If no title metadata is provided, use the first H1 header as the print/save title on transient previews.
 
-"1eU-OY-EjJ.ibShadowedToolTip" = "Aktivieren Sie die automatische Verarbeitung von CriticMarkup, wenn die entsprechende Syntax erkannt wird.";
+"1eU-OY-EjJ.ibShadowedToolTip" = "Aktiviert die automatische Verarbeitung von CriticMarkup, wenn die entsprechende Syntax erkannt wird.";
 # EN: Enable CriticMarkup processing automatically when appropriate syntax is detected.
 
 "1hb-Ih-LRV.title" = "CommonMark (GFM)";
@@ -2140,37 +2140,37 @@ Schreibe alle Antworten auf %@.";
 "1tt-Ka-Puc.ibShadowedToolTip" = "Dunkelmodus in allen Fenstern erzwingen";
 # EN: Force Dark Mode in all windows
 
-"1zn-0P-IC1.ibExternalAccessibilityHelp" = "Zeigen Sie kleine Randmarkierungen an, um erkannte Bearbeitungsorte hervorzuheben.";
+"1zn-0P-IC1.ibExternalAccessibilityHelp" = "Zeigt kleine Randmarkierungen an, um erkannte Bearbeitungsorte hervorzuheben.";
 # EN: Show small gutter markers to highlight detected edit locations.
 
-"1zn-0P-IC1.ibShadowedToolTip" = "Zeigen Sie kleine Randmarkierungen an, um erkannte Bearbeitungsorte hervorzuheben.";
+"1zn-0P-IC1.ibShadowedToolTip" = "Zeigt kleine Randmarkierungen an, um erkannte Bearbeitungsorte hervorzuheben.";
 # EN: Show small gutter markers to highlight detected edit locations.
 
 "21s-Tu-UhY.title" = "Zeitformat";
 # EN: Time Format
 
-"27J-dC-nHz.ibExternalAccessibilityDescription" = "Konvertieren Sie Wiki-Links";
+"27J-dC-nHz.ibExternalAccessibilityDescription" = "Wiki-Links konvertieren";
 # EN: Convert Wiki Links
 
-"27J-dC-nHz.ibExternalAccessibilityHelp" = "Konvertieren Sie Links im [[Wiki-Link]]-Stil. Es werden nur Links konvertiert, die mit vorhandenen Dateinamen übereinstimmen.";
+"27J-dC-nHz.ibExternalAccessibilityHelp" = "Konvertiert Links im [[Wiki-Link]]-Stil. Es werden nur Links konvertiert, die mit vorhandenen Dateinamen übereinstimmen.";
 # EN: Convert [[wiki link]] style links. Only links that match existing filenames will be converted.
 
-"27J-dC-nHz.ibShadowedToolTip" = "Konvertieren Sie Links im [[Wiki-Link]]-Stil. Es werden nur Links konvertiert, die mit vorhandenen Dateinamen übereinstimmen.";
+"27J-dC-nHz.ibShadowedToolTip" = "Konvertiert Links im [[Wiki-Link]]-Stil. Es werden nur Links konvertiert, die mit vorhandenen Dateinamen übereinstimmen.";
 # EN: Convert [[wiki link]] style links. Only links that match existing filenames will be converted.
 
 "2NR-Pg-rVO.ibShadowedToolTip" = "Rendern Sie - [ ] und - [x] zum Erstellen von Kontrollkästchen. Sie werden zur Vorschau gerendert, sind jedoch innerhalb von Marked nicht funktionsfähig.";
 # EN: Render - [ ] and - [x] for creating checkboxes. Checkboxes are rendered for preview but not functional within Marked.
 
-"2Sb-Zo-zN8.ibShadowedToolTip" = "Verwenden Sie Umrisse im APA-Stil anstelle des standardmäßigen Dezimalformats";
+"2Sb-Zo-zN8.ibShadowedToolTip" = "Verwendet Umrisse im APA-Stil anstelle des standardmäßigen Dezimalformats";
 # EN: Use APA style outlines instead of the default Decimal format
 
 "2UY-1L-378.title" = "Gewähren";
 # EN: Grant
 
-"2Wz-uH-Rha.title" = "Bearbeiten Sie neue Dateien automatisch";
+"2Wz-uH-Rha.title" = "Neue Dateien automatisch bearbeiten";
 # EN: Edit new files automatically
 
-"2bS-qi-EZL.title" = "Deaktivieren Sie Links/Hervorhebungen für PDF/Print";
+"2bS-qi-EZL.title" = "Links/Hervorhebungen für PDF/Print deaktivieren";
 # EN: Disable links/highlights for PDF/Print
 
 "2xe-JO-xwk.title" = "Bildbearbeiter:";
@@ -2211,10 +2211,10 @@ Schreibe alle Antworten auf %@.";
 "4Tq-ex-j8N.title" = "Texteditor:";
 # EN: Text editor:
 
-"4ZA-zY-xwY.ibShadowedToolTip" = "Verwenden Sie SmartyPants für intelligente Anführungszeichen, die Konvertierung von Ellipsen und andere Typografiefunktionen.";
+"4ZA-zY-xwY.ibShadowedToolTip" = "Verwendet SmartyPants für intelligente Anführungszeichen, die Konvertierung von Ellipsen und andere Typografiefunktionen.";
 # EN: Use SmartyPants for smart quotes, ellipses conversion, and other typography features.
 
-"4bM-vg-xuR.ibShadowedToolTip" = "Verwenden Sie Überschriften der Ebene 2 als Abschnittstrenner und beginnen Sie immer auf einer neuen Seite.";
+"4bM-vg-xuR.ibShadowedToolTip" = "Verwendet Überschriften der Ebene 2 als Abschnittstrenner und beginnt sie immer auf einer neuen Seite.";
 # EN: Use level 2 headers as section dividers, always starting them on a new page.
 
 "4g5-9T-SlB.ibShadowedToolTip" = "Entfernt MultiMarkdown-Metadaten vom oberen Rand des Dokuments. Dies ist nützlich, wenn Sie MultiMarkdown nicht verwenden, aber Header-Metadaten verwenden möchten, ohne dass diese in Ihrem Dokument erscheinen. Metadaten werden eingelesen, bevor dies geschieht, sodass Sie weiterhin Marked-spezifische Metadatenanweisungen verwenden können und andere Variablen verfügbar sind.";
@@ -2226,7 +2226,7 @@ Schreibe alle Antworten auf %@.";
 "59s-N5-pBb.ibShadowedToolTip" = "Formatierung für die rechte Seite der Kopfzeile.";
 # EN: Formatting for the right side of the header.
 
-"5DG-gr-YHR.ibShadowedToolTip" = "Entfernen Sie das Header-Logo";
+"5DG-gr-YHR.ibShadowedToolTip" = "Header-Logo entfernen";
 # EN: Remove the header logo
 
 "5Tg-ch-D2N.title" = "Stilauswahl anzeigen";
@@ -2240,22 +2240,22 @@ Schreibe alle Antworten auf %@.";
 "5kr-qf-ruU.ibShadowedToolTip" = "Zeitformat mit strftime-Formatierung.";
 # EN: Time format using strftime formatting.
 
-"5xX-bk-GW2.ibShadowedToolTip" = "Aktivieren Sie die Protokollierung";
+"5xX-bk-GW2.ibShadowedToolTip" = "Aktiviert die Protokollierung.";
 # EN: Turn on logging
 
 "5zt-WW-4HK.ibShadowedToolTip" = "Klicken Sie auf das Verknüpfungsfeld, um einen Hotkey zum Wechseln zu Marked aus einer beliebigen Anwendung aufzuzeichnen";
 # EN: Click the shortcut field to record a hotkey for switching to Marked from any application
 
-"684.ibShadowedToolTip" = "Stellen Sie neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.";
+"684.ibShadowedToolTip" = "Stellt neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.";
 # EN: Automatically set new windows to "float" above other applications.
 
 "687.title" = "Neue Fenster im Vordergrund halten";
 # EN: Keep new windows on top
 
-"699.ibShadowedToolTip" = "Fügen Sie automatisches Inhaltsverzeichnis in Druck/PDF ein.";
+"699.ibShadowedToolTip" = "Fügt ein automatisches Inhaltsverzeichnis in Druck/PDF ein.";
 # EN: Include automatic table of contents in print/pdf.
 
-"6BY-fF-uhl.ibShadowedToolTip" = "Wählen Sie ein Logobild von der Festplatte aus";
+"6BY-fF-uhl.ibShadowedToolTip" = "Ein Logobild von der Festplatte auswählen";
 # EN: Select a logo image from disk
 
 "6Bg-EV-ybL.title" = "Debug-Modus";
@@ -2285,16 +2285,16 @@ Schreibe alle Antworten auf %@.";
 "6Wi-LR-aSB.ibShadowedToolTip" = "Zeigt eine Markierung am aktuellsten Bearbeitungspunkt an (erster oder letzter Diff, abhängig von der Einstellung „Diff-Reihenfolge umkehren“).";
 # EN: Show a marker at the most recnt edit point (first of last diff, depending on "Reverse diff order" setting).
 
-"6cZ-wJ-eUc.ibShadowedToolTip" = "Erkennen Sie die Sprache pro Element im Dokument und formatieren Sie „Rechts nach links“ entsprechend";
+"6cZ-wJ-eUc.ibShadowedToolTip" = "Erkennt die Sprache pro Element im Dokument und formatiert „Rechts nach links“ entsprechend";
 # EN: Detect langauge per element in document and style Right To Left accordingly
 
-"6iu-Hv-rnF.title" = "Deaktivieren Sie speicherintensive Funktionen für große Dokumente";
+"6iu-Hv-rnF.title" = "Speicherintensive Funktionen bei großen Dokumenten deaktivieren";
 # EN: Disable memory-intensive features on large documents
 
 "6jZ-PG-IiX.title" = "Rendern Sie GitHub-Kontrollkästchen";
 # EN: Render GitHub checkboxes
 
-"6zx-Ta-74D.ibShadowedToolTip" = "Öffnen Sie den Stil-Manager";
+"6zx-Ta-74D.ibShadowedToolTip" = "Stil-Manager öffnen";
 # EN: Open the Style Manager
 
 "700.title" = "Inhaltsverzeichnis ausdrucken";
@@ -2320,13 +2320,13 @@ Schreibe alle Antworten auf %@.";
 
 "7mf-mC-cc1.title" = "3";
 
-"7yZ-lB-6aI.title" = "Fügen Sie die URL als Textanmerkung ein";
+"7yZ-lB-6aI.title" = "URL als Textanmerkung einfügen";
 # EN: Include URL as text annotation
 
 "8RH-UB-6WZ.title" = "Als Mermaid-Mindmaps einbetten:";
 # EN: Embed as Mermaid mind maps:
 
-"8af-LK-6C0.ibShadowedToolTip" = "Betten Sie Bike Dateien (.bike) als Mermaid-Mindmaps ein. Wenn diese Option deaktiviert ist, werden die enthaltenen Bike-Dateien als Markdown-Listen (ohne Dokumenttitel) gerendert.";
+"8af-LK-6C0.ibShadowedToolTip" = "Bettet Bike-Dateien (.bike) als Mermaid-Mindmaps ein. Wenn diese Option deaktiviert ist, werden die enthaltenen Bike-Dateien als Markdown-Listen (ohne Dokumenttitel) gerendert.";
 # EN: Embed Bike (.bike) outlines as Mermaid mind maps. If disabled, included Bike files will be rendered as Markdown lists (no document title).
 
 "8eu-5U-k7Q.ibShadowedToolTip" = "Lesegeschwindigkeit zur Berechnung der Lesezeit (Wörter pro Minute)";
@@ -2338,7 +2338,7 @@ Schreibe alle Antworten auf %@.";
 "8t8-km-W9F.title" = "Schwenk- und Zoom-Diagramme";
 # EN: Pan and zoom diagrams
 
-"8yt-gU-k63.ibShadowedToolTip" = "Lassen Sie zu, dass Wörter automatisch durch Silbentrennung getrennt werden.";
+"8yt-gU-k63.ibShadowedToolTip" = "Lässt zu, dass Wörter automatisch durch Silbentrennung getrennt werden.";
 # EN: Allow words to break with hyphenation automatically.
 
 "981.title" = "Verwenden Sie das Feld unten, um eine Liste mit Wörtern oder Phrasen zu erstellen (eines pro Zeile), die Sie in Ihrem Schreiben vermeiden möchten. Dies wird am häufigsten verwendet, um überstrapazierte Begriffe abzufangen. Nur vollständige Übereinstimmungen (ohne Berücksichtigung der Groß- und Kleinschreibung) werden hervorgehoben.";
@@ -2350,7 +2350,7 @@ Schreibe alle Antworten auf %@.";
 "990.title" = "Standard Ausdrücke wiederherstellen";
 # EN: Restore Default Phrases
 
-"9Cx-rV-3Ib.title" = "Scrollen Sie zum Bearbeiten:";
+"9Cx-rV-3Ib.title" = "Zum Bearbeiten scrollen:";
 # EN: Scroll to edit:
 
 "9Yl-2p-W4T.title" = "In MultiMarkdown-Metadaten konvertieren";
@@ -2365,10 +2365,10 @@ Schreibe alle Antworten auf %@.";
 
 "A1f-j4-BDw.title" = "OtherViews";
 
-"AEI-oa-8kh.ibShadowedToolTip" = "Fügen Sie JSON-formatierte Konfigurationsoptionen hinzu";
+"AEI-oa-8kh.ibShadowedToolTip" = "JSON-formatierte Konfigurationsoptionen hinzufügen";
 # EN: Add JSON-formatted configuration options
 
-"AWu-BS-7M8.ibShadowedToolTip" = "Verwenden Sie den Titel des ausgewählten Beitrags als Markdown-Header.";
+"AWu-BS-7M8.ibShadowedToolTip" = "Verwendet den Titel des ausgewählten Beitrags als Markdown-Header.";
 # EN: Use the title of the selected post as a Markdown header.
 
 "Ae8-Hs-Xgr.ibShadowedToolTip" = "Wenn deaktiviert, öffnet ⌘E den Standardeditor. Wenn dies aktiviert ist, ruft ⌘E „Mit Auswahl suchen“ auf und startet eine Suche und ⌘⌥E öffnet den Editor.";
@@ -2377,7 +2377,7 @@ Schreibe alle Antworten auf %@.";
 "Afs-Wz-5DI.ibShadowedToolTip" = "Stlye-Galerie erkunden, wo Sie benutzerdefinierte Styles herunterladen oder installieren können";
 # EN: Explore the Stlye Gallery, where you can download or install Custom Styles
 
-"AgC-KM-ZS1.title" = "Konvertieren Sie [[Wiki-Links]]";
+"AgC-KM-ZS1.title" = "[[Wiki-Links]] konvertieren";
 # EN: Convert [[Wiki Links]]
 
 "Agf-Nf-uzQ.title" = "Hintergrundfarben und Bilder drucken";
@@ -2388,7 +2388,7 @@ Schreibe alle Antworten auf %@.";
 
 "Ark-2L-TuI.title" = "(MultiMarkdown)";
 
-"B0V-OS-ffz.title" = "Behalten Sie Zeilenumbrüche in Absätzen bei";
+"B0V-OS-ffz.title" = "Zeilenumbrüche in Absätzen beibehalten";
 # EN: Retain line breaks in paragraphs
 
 "BKc-0V-UHA.ibShadowedToolTip" = "Das hier hinzugefügte CSS wird nach dem normalen Stylesheet in alle Themes eingefügt. Unter anderem können Sie damit Einstellungen flächendeckend überschreiben, ohne interne Stile zu bearbeiten. Beachten Sie, dass Sie auch Custom-Regeln in den Prozessoreinstellungen verwenden können, um benutzerdefiniertes CSS basierend auf Regelübereinstimmungen anzuwenden.";
@@ -2400,7 +2400,7 @@ Schreibe alle Antworten auf %@.";
 "BcD-Yq-kf9.title" = "Zusätzliches CSS";
 # EN: Additional CSS
 
-"Bmr-cH-bWd.ibShadowedToolTip" = "Beachten Sie die Systemeinstellungen zum Öffnen neuer Dokumente";
+"Bmr-cH-bWd.ibShadowedToolTip" = "Beachtet die Systemeinstellung zum Öffnen neuer Dokumente";
 # EN: Respect system setting for opening new documents
 
 "Bmr-cH-bWd.title" = "automatisch";
@@ -2412,19 +2412,19 @@ Schreibe alle Antworten auf %@.";
 "BqM-Ck-d9z.title" = "Zusätzliches CSS:";
 # EN: Additional CSS:
 
-"C0w-j3-n7E.ibShadowedToolTip" = "Erstellen Sie ein neues Exportprofil. Änderungen am aktuellen Profil werden automatisch gespeichert, wenn sich Einstellungen ändern.";
+"C0w-j3-n7E.ibShadowedToolTip" = "Ein neues Exportprofil erstellen. Änderungen am aktuellen Profil werden automatisch gespeichert, wenn sich Einstellungen ändern.";
 # EN: Create a new Export Profile. Changes to the current profile are automatically saved when settings change.
 
 "C16-Vu-yVf.title" = "Profil exportieren";
 # EN: Export Profile
 
-"CHF-fL-i3f.title" = "Verfolgen Sie CSS-Änderungen";
+"CHF-fL-i3f.title" = "CSS-Änderungen verfolgen";
 # EN: Track CSS changes
 
 "D2D-Cz-EdL.title" = "Punkt 3";
 # EN: Item 3
 
-"DCs-BY-jED.ibExternalAccessibilityDescription" = "Zusammenklappbare Schlagzeilen";
+"DCs-BY-jED.ibExternalAccessibilityDescription" = "Zusammenklappbare Überschriften";
 # EN: Collapsible Headlines
 
 "DCs-BY-jED.ibExternalAccessibilityHelp" = "Wenn Sie auf ein Überschriftenelement klicken, wird der Abschnitt zwischen diesem und der nächsten Überschrift ausgeblendet.";
@@ -2436,7 +2436,7 @@ Schreibe alle Antworten auf %@.";
 "DN1-tH-Aj0.title" = "Wiki-Verlinkung:";
 # EN: Wiki Linking:
 
-"Ds3-B9-viR.ibShadowedToolTip" = "Platzieren Sie Fußnoten am Ende der Seite, auf der sie erscheinen, und nicht am Ende des Dokuments.";
+"Ds3-B9-viR.ibShadowedToolTip" = "Platziert Fußnoten am Ende der Seite, auf der sie erscheinen, und nicht am Ende des Dokuments.";
 # EN: Place footnotes at the bottom of the page they appear on, rather than at the end of the document.
 
 "E2M-6o-oms.title" = "OtherViews";
@@ -2444,7 +2444,7 @@ Schreibe alle Antworten auf %@.";
 "E4H-pN-SH5.title" = "Aktualisieren";
 # EN: Refresh
 
-"E5N-05-NLH.ibShadowedToolTip" = "Aktivieren Sie den benutzerdefinierten Präprozessor automatisch für neue Fenster/Registerkarten";
+"E5N-05-NLH.ibShadowedToolTip" = "Aktiviert den benutzerdefinierten Präprozessor automatisch für neue Fenster/Registerkarten";
 # EN: Automatically enable Custom Preprocessor for new windows/tabs
 
 "E87-Bs-laZ.title" = "Scrivener:";
@@ -2463,28 +2463,28 @@ Schreibe alle Antworten auf %@.";
 "Ejq-px-WuN.ibShadowedToolTip" = "Standardmäßig werden gehostete Bilder nicht zwischengespeichert, damit Änderungen angezeigt werden können. Wenn Sie einen statischen Host verwenden, auf dem sich die Bilder nie ändern, hilft die Aktivierung des Caching dabei, die Seitenaktualisierungen zu beschleunigen.";
 # EN: By default, hosted images are not cached to allow changes to show up. If using a static host where the images will never change, enabling caching will help speed up page refreshes.
 
-"Esj-1Y-RPS.title" = "Ersetzen Sie horizontale Linien durch Seitenumbrüche";
+"Esj-1Y-RPS.title" = "Horizontale Linien durch Seitenumbrüche ersetzen";
 # EN: Replace horizontal rules with page breaks
 
-"Ey6-97-BZ4.ibShadowedIsNilPlaceholder" = "Wählen Sie Anwendung";
+"Ey6-97-BZ4.ibShadowedIsNilPlaceholder" = "Anwendung auswählen";
 # EN: Choose Application
 
 "FH9-Kd-LRS.ibExternalAccessibilityDescription" = "Mini-Übersicht aktivieren";
 # EN: Enable mini map
 
-"FH9-Kd-LRS.ibExternalAccessibilityHelp" = "Erzeugen Sie eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
+"FH9-Kd-LRS.ibExternalAccessibilityHelp" = "Erzeugt eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
 # EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
 
-"FH9-Kd-LRS.ibShadowedToolTip" = "Erzeugen Sie eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
+"FH9-Kd-LRS.ibShadowedToolTip" = "Erzeugt eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
 # EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
 
 "Fat-NX-b5p.title" = "Punkt 2";
 # EN: Item 2
 
-"Ffw-Od-r8t.ibShadowedToolTip" = "Generieren Sie Header-IDs basierend auf dem Inhalt des h1-h6-Tags.";
+"Ffw-Od-r8t.ibShadowedToolTip" = "Generiert Header-IDs basierend auf dem Inhalt des h1-h6-Tags.";
 # EN: Generate header IDs based on contents of h1-h6 tag.
 
-"FiV-I8-zx2.ibShadowedIsNilPlaceholder" = "Wählen Sie Anwendung";
+"FiV-I8-zx2.ibShadowedIsNilPlaceholder" = "Anwendung auswählen";
 # EN: Choose Application
 
 "Fk3-QS-gxA.title" = "MathJax Konfig";
@@ -2519,7 +2519,7 @@ Schreibe alle Antworten auf %@.";
 "HFr-db-GQM.ibShadowedToolTip" = "Wenn diese Option aktiviert ist, werden Überschriften nur dann minimiert/erweitert, wenn bei gedrückter Befehlstaste darauf geklickt wird.";
 # EN: If this is checked, headlines will only collapse/expand when clicked with the Command key held.
 
-"Hbd-2g-ruY.ibShadowedToolTip" = "Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
+"Hbd-2g-ruY.ibShadowedToolTip" = "Anwendung auswählen, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
 # EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
 
 "HqO-s8-yX7.ibShadowedToolTip" = "Tastenkürzelfeld anklicken um Hotkey zum Öffnen der Aktionspalette aufzuzeichnen";
@@ -2531,19 +2531,19 @@ Schreibe alle Antworten auf %@.";
 "I4p-yl-edz.title" = "Vorschauverhalten:";
 # EN: Preview behavior:
 
-"I5o-BY-DxZ.ibShadowedToolTip" = "Zeigen Sie Metadaten wie Schlüsselwörter und Kategorien als Tabelle oben in der Vorschau an";
+"I5o-BY-DxZ.ibShadowedToolTip" = "Zeigt Metadaten wie Schlüsselwörter und Kategorien als Tabelle oben in der Vorschau an";
 # EN: Display metadata like keywords and categories as a table at the top of the preview
 
 "IJn-41-e8h.title" = "ihre Standardanwendung";
 # EN: their default application
 
-"IQ8-Fj-4UY.ibShadowedToolTip" = "Betten Sie mit Dateieinschlusssyntax hinzugefügte iThoughts/Freemind/MindManager Dateien. Wenn „false“, verwenden Sie die Schnellvorschau, sofern verfügbar, andernfalls eine Markdown-Gliederung.";
+"IQ8-Fj-4UY.ibShadowedToolTip" = "Bettet per Dateieinschluss-Syntax hinzugefügte iThoughts-, Freemind- und MindManager-Karten als Mermaid-Diagramme ein. Wenn deaktiviert, wird die Schnellvorschau verwendet, sofern verfügbar, andernfalls eine Markdown-Gliederung.";
 # EN: Embed iThoughts X, Freemind, and MindManager maps added with file inclusion syntax as Mermaid diagrams. If false, use Quick Look Preview when available, otherwise a Markdown outline.
 
-"ITh-gm-46F.title" = "Verwenden Sie zufällige Fußnoten-IDs";
+"ITh-gm-46F.title" = "Zufällige Fußnoten-IDs verwenden";
 # EN: Use random footnote IDs
 
-"IVH-Jr-IkW.title" = "Verwenden Sie das strftime-Format";
+"IVH-Jr-IkW.title" = "strftime-Format verwenden";
 # EN: Use strftime format
 
 "IZg-ti-hnv.title" = "Vor H1s";
@@ -2570,13 +2570,13 @@ Schreibe alle Antworten auf %@.";
 "Jol-Hz-xqH.title" = "Standardformate wiederherstellen";
 # EN: Restore Default Formats
 
-"K8M-5m-vyf.ibShadowedToolTip" = "Definieren Sie, wie neue Dokumente geöffnet werden (in Fenstern, Tabs oder automatisch – unter Berücksichtigung der globalen macOS Einstellungen).";
+"K8M-5m-vyf.ibShadowedToolTip" = "Legt fest, wie neue Dokumente geöffnet werden (in Fenstern, Tabs oder automatisch – unter Berücksichtigung der globalen macOS-Einstellungen).";
 # EN: Define how new documents open (in windows, tabs, or automatic — respecting macOS global settings)
 
 "KH1-JN-s5N.title" = "Neue Dokumente geöffnet in:";
 # EN: New documents open in:
 
-"KZ9-X7-6t5.ibShadowedToolTip" = "Konvertieren Sie die Änderungsverfolgung in Word in CriticMarkup im importierten Markdown-Dokument und konvertieren Sie CriticMarkup in Word-Änderungsverfolgung beim Exportieren von DOCX";
+"KZ9-X7-6t5.ibShadowedToolTip" = "Konvertiert die Änderungsverfolgung in Word in CriticMarkup im importierten Markdown-Dokument und konvertiert CriticMarkup beim Exportieren von DOCX in Word-Änderungsverfolgung";
 # EN: Convert change tracking in Word to CriticMarkup in the imported Markdown document, and convert CriticMarkup to Word change tracking when exporting DOCX
 
 "KdO-n7-O3H.ibShadowedToolTip" = "Wenn diese Option aktiviert ist, werden Codeblöcke unabhängig von den Designeinstellungen immer zum Umbruch gezwungen (anstatt zu scrollen oder überzulaufen).";
@@ -2585,16 +2585,16 @@ Schreibe alle Antworten auf %@.";
 "Kh0-Vf-5CX.title" = "das aktuelle Fenster";
 # EN: the current window
 
-"KuU-LW-ujd.title" = "Umgeben Sie Fußnotenmarkierungen mit eckigen Klammern";
+"KuU-LW-ujd.title" = "Fußnotenmarkierungen mit eckigen Klammern umgeben";
 # EN: Surround footnote markers with square brackets
 
-"KuV-0Q-4Pv.title" = "Stilisieren Sie wörtliche (Code-)Blöcke als Poesie";
+"KuV-0Q-4Pv.title" = "Wörtliche (Code-)Blöcke als Poesie stilisieren";
 # EN: Style verbatim (code) blocks as poetry
 
-"L0D-Jd-N9X.title" = "Wählen Sie App";
+"L0D-Jd-N9X.title" = "App auswählen";
 # EN: Choose App
 
-"LEm-ar-mkL.ibShadowedToolTip" = "Blenden Sie das Fenster aus, wenn es nicht fokussiert ist. Verwenden Sie den Schieberegler, um die Deckkraft einzustellen.";
+"LEm-ar-mkL.ibShadowedToolTip" = "Blendet das Fenster aus, wenn es nicht fokussiert ist. Verwenden Sie den Schieberegler, um die Deckkraft einzustellen.";
 # EN: Fade the window when it's not focused. Use the slider to set the opacity.
 
 "LUe-ZW-HZi.ibShadowedToolTip" = "Schriftart für Kopf- und Fußzeile.";
@@ -2611,19 +2611,19 @@ Schreibe alle Antworten auf %@.";
 "MDL-6U-a9Z.title" = "Kopfzeile";
 # EN: Header
 
-"MIS-0g-3Yg.ibShadowedToolTip" = "Definieren Sie die anzuzeigende Protokollierungsebene. Wenn Sie die Protokollierung zum Senden an den Support verwenden, legen Sie dies auf „Alle“ fest.";
+"MIS-0g-3Yg.ibShadowedToolTip" = "Legt die anzuzeigende Protokollierungsebene fest. Wenn Sie die Protokollierung zum Senden an den Support verwenden, stellen Sie dies auf „Alle“.";
 # EN: Define the level of logging to display. If using logging to submit for support, set this to All.
 
-"MK1-clr-ann.ibShadowedToolTip" = "Löschen Sie den ausgewählten Anmerkungseditor und zeigen Sie die App-Auswahl an, wenn Sie Bilder mit Anmerkungen versehen.";
+"MK1-clr-ann.ibShadowedToolTip" = "Den ausgewählten Anmerkungseditor löschen und die App-Auswahl anzeigen, wenn Bilder mit Anmerkungen versehen werden.";
 # EN: Clear the selected annotation editor and show the app picker when annotating images.
 
-"MK1-clr-img.ibShadowedToolTip" = "Löschen Sie den ausgewählten Bildeditor und zeigen Sie beim Bearbeiten von Bildern die App-Auswahl an.";
+"MK1-clr-img.ibShadowedToolTip" = "Den ausgewählten Bildeditor löschen und beim Bearbeiten von Bildern die App-Auswahl anzeigen.";
 # EN: Clear the selected image editor and show the app picker when editing images.
 
-"MK1-clr-txt.ibShadowedToolTip" = "Löschen Sie den ausgewählten Texteditor und zeigen Sie beim Bearbeiten die App-Auswahl an.";
+"MK1-clr-txt.ibShadowedToolTip" = "Den ausgewählten Texteditor löschen und beim Bearbeiten die App-Auswahl anzeigen.";
 # EN: Clear the selected text editor and show the app picker when editing.
 
-"MKC-t1-NID.ibShadowedToolTip" = "Wählen Sie ein Exportprofil aus, um Voreinstellungen zu laden. Das aktuelle Profil wird aktualisiert, wenn sich Einstellungen ändern.";
+"MKC-t1-NID.ibShadowedToolTip" = "Exportprofil auswählen, um Voreinstellungen zu laden. Das aktuelle Profil wird aktualisiert, wenn sich Einstellungen ändern.";
 # EN: Select an Export Profile to load presests. The current Profile is what is updated when settings change.
 
 "MKc-Ft-Ctr.ibShadowedToolTip" = "Formatierung für die Mitte der Fußzeile.";
@@ -2647,7 +2647,7 @@ Schreibe alle Antworten auf %@.";
 "Mf6-wk-Yq2.title" = "Standardstil:";
 # EN: Default style:
 
-"MhT-dx-CLj.title" = "Öffnen Sie neue Dokumente immer im Korrekturmodus";
+"MhT-dx-CLj.title" = "Neue Dokumente immer im Korrekturmodus öffnen";
 # EN: Always open new documents in proofing mode
 
 "Mlj-LN-4UN.title" = "Stattdessen Zeichenanzahl anzeigen";
@@ -2676,10 +2676,10 @@ Schreibe alle Antworten auf %@.";
 "O8o-5s-Qjg.title" = "MarsBearbeiten:";
 # EN: MarsEdit:
 
-"Oi5-Z5-rJa.title" = "Aktivieren Sie CriticMarkup automatisch";
+"Oi5-Z5-rJa.title" = "CriticMarkup automatisch aktivieren";
 # EN: Enable CriticMarkup automatically
 
-"Omh-HV-uOd.ibShadowedToolTip" = "Legen Sie die Deckkraft eines durchscheinenden Hintergrundfensters fest";
+"Omh-HV-uOd.ibShadowedToolTip" = "Legt die Deckkraft eines durchscheinenden Hintergrundfensters fest";
 # EN: Set the opacity of a translucent background window
 
 "OsX-xc-G6C.title" = "Aktionspalette öffnen:";
@@ -2691,7 +2691,7 @@ Schreibe alle Antworten auf %@.";
 "OxR-5f-L0P.title" = "Syntaxhervorhebung";
 # EN: Syntax highlighting
 
-"P68-Ab-P9o.ibShadowedToolTip" = "Fügen Sie KaTeX ein und laden Sie es, um LaTeX/MathML-Gleichungen anzuzeigen. Schneller als MathJax, aber mit weniger Funktionen.";
+"P68-Ab-P9o.ibShadowedToolTip" = "Bindet KaTeX zum Anzeigen von LaTeX/MathML-Gleichungen ein und lädt es. Schneller als MathJax, aber mit weniger Funktionen.";
 # EN: Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.
 
 "PCa-hl-R5C.title" = "Zahlengleichungen auf";
@@ -2714,13 +2714,13 @@ Schreibe alle Antworten auf %@.";
 "Ppc-Il-MIm.title" = "CSS bearbeiten";
 # EN: Edit CSS
 
-"Q5F-mw-2vJ.title" = "Begrenzen Sie die Textbreite in der Vorschau auf:";
+"Q5F-mw-2vJ.title" = "Textbreite in der Vorschau begrenzen auf:";
 # EN: Limit text width in Preview to:
 
 "Q60-Vq-7a6.title" = "Versatz der Seitennummerierung:";
 # EN: Page numbering offset:
 
-"QbK-bc-clJ.title" = "Sehen Sie sich nur diese Erweiterungen in der Vorschau an:";
+"QbK-bc-clJ.title" = "Nur diese Erweiterungen in der Vorschau anzeigen:";
 # EN: Only preview these extensions:
 
 "Qc9-WE-2sr.ibShadowedToolTip" = "MathJax aus lokalem Bundle einschließen (v3)";
@@ -2732,13 +2732,13 @@ Schreibe alle Antworten auf %@.";
 "Qi0-3X-zug.ibShadowedToolTip" = "Wenn diese Option aktiviert ist, werden in Scrivener-Dokumenten erstellte Anmerkungen in der Vorschau hervorgehoben angezeigt. Deaktivieren Sie das Kontrollkästchen, um es vollständig auszublenden.";
 # EN: If checked, annotations made in Scrivener documents will show up highlighted in the preview. Uncheck to hide completely.
 
-"QmQ-of-AsC.ibShadowedToolTip" = "Ignorieren Sie die erste Überschrift der ersten Ebene im Dokument, wenn Sie H1-Zeichen als Seitenumbrüche verwenden.";
+"QmQ-of-AsC.ibShadowedToolTip" = "Ignoriert die erste Überschrift der ersten Ebene im Dokument, wenn H1 als Seitenumbrüche verwendet werden.";
 # EN: Ignore the first level-one headline in the document when using H1s as page breaks.
 
 "Qz7-4r-MXY.ibShadowedToolTip" = "In Blöcken zitierter Text wird bei der Wortzählung ignoriert";
 # EN: Ignore block quoted text in word count
 
-"RGW-BJ-5Zj.title" = "Generieren Sie typografisch korrekte Anführungszeichen und Zeichensetzung";
+"RGW-BJ-5Zj.title" = "Typografisch korrekte Anführungszeichen und Zeichensetzung generieren";
 # EN: Generate typographically correct quotes and punctuation
 
 "RL3-oF-r0C.title" = "Leanpub/GitBook:";
@@ -2748,7 +2748,7 @@ Schreibe alle Antworten auf %@.";
 
 "RTI-D2-a9q.title" = "CDN";
 
-"RTW-vf-ycw.ibShadowedToolTip" = "Gewähren Sie vollen Festplattenzugriff auf Marked. Dies kann bei der Ausführung benutzerdefinierter Prozessoren hilfreich sein und das Funktionieren von Wiki-Links und das Laden von Bildern ermöglichen, ohne dass Berechtigungen angefordert werden müssen. Über diese Schaltfläche werden Anweisungen zum Zugriff auf Systemeinstellungen -> Datenschutz und Sicherheit -> Vollständiger Festplattenzugriff angezeigt.";
+"RTW-vf-ycw.ibShadowedToolTip" = "Marked vollen Festplattenzugriff gewähren. Dies kann bei der Ausführung benutzerdefinierter Prozessoren hilfreich sein und das Funktionieren von Wiki-Links und das Laden von Bildern ermöglichen, ohne dass Berechtigungen angefordert werden müssen. Über diese Schaltfläche werden Anweisungen zum Zugriff auf Systemeinstellungen -> Datenschutz und Sicherheit -> Vollständiger Festplattenzugriff angezeigt.";
 # EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.
 
 "RVc-RV-blW.title" = "Bildanmerkungs-/Markup-Editor:";
@@ -2769,7 +2769,7 @@ Schreibe alle Antworten auf %@.";
 "Rgj-wK-JAZ.title" = "Unterhalb der Kopfzeile";
 # EN: Below Header
 
-"S9C-5F-fjM.ibShadowedToolTip" = "Diese Option verhindert, dass Schlagzeilen für den nächsten Abschnitt am Ende einer Seite ohne nachfolgenden Inhalt angezeigt werden";
+"S9C-5F-fjM.ibShadowedToolTip" = "Diese Option verhindert, dass Überschriften für den nächsten Abschnitt am Ende einer Seite ohne nachfolgenden Inhalt angezeigt werden";
 # EN: This option prevents headlines for the next section from appearing at the bottom of a page without succeeding content
 
 "S9S-ig-vSU.title" = "Alle Diff-Marker anzeigen";
@@ -2778,13 +2778,13 @@ Schreibe alle Antworten auf %@.";
 "S9e-pQ-ucC.title" = "Dunkler Modus";
 # EN: Dark Mode
 
-"SFF-15-E3P.ibShadowedToolTip" = "Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
+"SFF-15-E3P.ibShadowedToolTip" = "Anwendung auswählen, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
 # EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
 
 "SGK-88-OvM.title" = "Mind Maps und Outlines:";
 # EN: Mind Maps and Outlines:
 
-"SMh-60-p6C.title" = "Fügen Sie den Titel des Beitrags als H1-Überschrift ein";
+"SMh-60-p6C.title" = "Titel des Beitrags als H1-Überschrift einfügen";
 # EN: Include post title as H1 Headline
 
 "SWA-N0-eSk.ibShadowedToolTip" = "Exportprofilvoreinstellungen verwalten";
@@ -2793,7 +2793,7 @@ Schreibe alle Antworten auf %@.";
 "Scr-Cm-Md1.ibShadowedToolTip" = "Wenn kein Metadatendokument vorhanden ist, stellen Sie Titel und Autor aus den Kompilierungseinstellungen des Scrivener-Projekts voran.";
 # EN: When no metadata document is present, prepend Title and Author from the Scrivener project's compile settings.
 
-"Scr-Cm-Md2.title" = "Fügen Sie Kompilierungsmetadaten (Titel, Autor) hinzu, wenn diese fehlen";
+"Scr-Cm-Md2.title" = "Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen";
 # EN: Add compile metadata (title, author) when missing
 
 "Sdx-KR-dGL.ibShadowedToolTip" = "Wortanzahl (und Statistikschaltfläche) in der unteren Leiste des Vorschaufensters anzeigen.";
@@ -2811,10 +2811,10 @@ Schreibe alle Antworten auf %@.";
 "TNs-O2-x5B.title" = "Link-Popover aktivieren";
 # EN: Enable link popovers
 
-"TPp-Ke-U9k.title" = "Verwenden Sie den APA-Stil";
+"TPp-Ke-U9k.title" = "APA-Stil verwenden";
 # EN: Use APA Style
 
-"TcW-Xs-Ysi.ibExternalAccessibilityDescription" = "Scrollen Sie zum Bearbeiten";
+"TcW-Xs-Ysi.ibExternalAccessibilityDescription" = "Zum Bearbeiten scrollen";
 # EN: Scroll to edit
 
 "TcW-Xs-Ysi.ibExternalAccessibilityHelp" = "Beim Aktualisieren der Vorschau kann Marked feststellen, wo sich das Dokument geändert hat, und automatisch dorthin scrollen. Verwenden Sie die Optionsfelder, um auszuwählen, ob die erste oder letzte Bearbeitung als Ziel ausgewählt werden soll.";
@@ -2823,19 +2823,19 @@ Schreibe alle Antworten auf %@.";
 "TcW-Xs-Ysi.ibShadowedToolTip" = "Beim Aktualisieren der Vorschau kann Marked feststellen, wo sich das Dokument geändert hat, und automatisch dorthin scrollen. Verwenden Sie die Optionsfelder, um auszuwählen, ob die erste oder letzte Bearbeitung als Ziel ausgewählt werden soll.";
 # EN: When updating the preview, Marked can determine where the document changed and automatically scroll to it. Use the radio buttons to choose whether the first or last edit is targeted.
 
-"Tmj-K9-Wme.ibShadowedToolTip" = "Fügen Sie Fußnoten (falls vorhanden) auf einer eigenen Seite am Ende des gedruckten Dokuments ein.";
+"Tmj-K9-Wme.ibShadowedToolTip" = "Setzt Fußnoten (falls vorhanden) auf eine eigene Seite am Ende des gedruckten Dokuments.";
 # EN: Put footnotes (if any) on their own page at the end of the printed document.
 
-"Tqt-fq-FsL.title" = "Fügen Sie Dokumenttitel als Überschriften ein";
+"Tqt-fq-FsL.title" = "Dokumenttitel als Überschriften einfügen";
 # EN: Include document titles as headlines
 
 "U3r-q6-mHL.title" = "Mindestvorkommen, um eine Wiederholung zu berücksichtigen:";
 # EN: Minimum occurrences to consider a repeat:
 
-"U7q-wI-xVS.title" = "Analysieren Sie Lesbarkeitsstatistiken";
+"U7q-wI-xVS.title" = "Lesbarkeitsstatistik analysieren";
 # EN: Analyze readability statistics
 
-"U8g-ad-L13.title" = "Wählen Sie Logo";
+"U8g-ad-L13.title" = "Logo auswählen";
 # EN: Select Logo
 
 "UFU-6X-tIJ.title" = "Neue Dokumente verwenden benutzerdefiniertes:";
@@ -2844,7 +2844,7 @@ Schreibe alle Antworten auf %@.";
 "UKR-2T-kb6.ibShadowedToolTip" = "Standardmäßig wird Marked mit einem weißen Hintergrund gedruckt/exportiert. Wenn Sie Hintergrundfarben und Bilder aus benutzerdefinierten Designs einbinden möchten, aktivieren Sie diese Option.";
 # EN: By default Marked will print/export with a white background. If you want to include background colors and images from custom themes, enable this option.
 
-"UN9-2r-shh.title" = "Verwenden Sie ⌥⌘E, um den Standardeditor zu öffnen.";
+"UN9-2r-shh.title" = "⌥⌘E zum Öffnen des Standardeditors verwenden.";
 # EN: Use ⌥⌘E to open default editor.
 
 "URP-XW-mRF.title" = "Erledigt";
@@ -2867,19 +2867,19 @@ Schreibe alle Antworten auf %@.";
 "Vpb-AA-dA9.title" = "Klar";
 # EN: Clear
 
-"Vvh-pv-YEe.title" = "Aktivieren Sie die Leanpub-Unterstützung";
+"Vvh-pv-YEe.title" = "Leanpub-Unterstützung aktivieren";
 # EN: Enable Leanpub support
 
 "Vxy-KJ-QGj.title" = "Nur wenn Sprache angegeben ist";
 # EN: Only if language specified
 
-"W8i-Kd-FGD.title" = "Synchronisieren Sie Vorschau und Quelltext-Scrollen";
+"W8i-Kd-FGD.title" = "Vorschau- und Quelltext-Scrollen synchronisieren";
 # EN: Sync preview and source scroll
 
-"WMu-Ng-C1G.ibShadowedToolTip" = "Beachten Sie Zeilenumbrüche im Absatztext und ersetzen Sie sie durch harte Umbrüche, anstatt sie mit der vorherigen Zeile zu verketten.";
+"WMu-Ng-C1G.ibShadowedToolTip" = "Beachtet Zeilenumbrüche im Absatztext und ersetzt sie durch harte Umbrüche, anstatt sie mit der vorherigen Zeile zu verketten.";
 # EN: Respect line breaks in paragraph text, replacing with hard breaks instead of concatenating with the previous line.
 
-"WOj-Fg-hnd.ibShadowedToolTip" = "Betten Sie OmniOutliner-Dateien (.ooutline) als Mermaid-Diagramme ein. Wenn diese Option deaktiviert ist, werden OmniOutlineir-Dateien, die mit der Include-Syntax eingebunden sind, als Markdown-Listen/Checklisten gerendert.";
+"WOj-Fg-hnd.ibShadowedToolTip" = "Bettet OmniOutliner-Dateien (.ooutline) als Mermaid-Diagramme ein. Wenn diese Option deaktiviert ist, werden OmniOutliner-Dateien, die mit der Include-Syntax eingebunden sind, als Markdown-Listen/Checklisten gerendert.";
 # EN: Embed OmniOutliner (.ooutline) files as Mermaid diagrams. If disabled, OmniOutlineir files included with include syntax will be rendered as Markdown lists/checklists.
 
 "Wcb-ed-SyD.title" = "Rendern Sie ~text~ als Unterstrich";
@@ -2894,7 +2894,7 @@ Schreibe alle Antworten auf %@.";
 "WpI-FN-1um.title" = "Rendern GitHub :emoji:";
 # EN: Render GitHub :emoji:
 
-"WtW-MJ-k53.ibShadowedToolTip" = "Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
+"WtW-MJ-k53.ibShadowedToolTip" = "Anwendung auswählen, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
 # EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
 
 "X4i-G8-Z34.ibShadowedToolTip" = "Wenn diese Option deaktiviert ist, wird auf der ersten Seite keine Kopfzeile gedruckt.";
@@ -2903,22 +2903,22 @@ Schreibe alle Antworten auf %@.";
 "X9J-Tv-1N2.title" = "Über der Fußzeile";
 # EN: Above Footer
 
-"XeI-Ez-OJE.ibShadowedToolTip" = "Deaktivieren Sie die Lesbarkeitsanalyse (Gunning Fog-Index, Lesezeit usw.). Wenn Ihre Dokumente so groß sind, dass sie beim Laden zu ausgedehnten „durchdrehenden Rädern“ führen, ist dies wahrscheinlich die Ursache.";
+"XeI-Ez-OJE.ibShadowedToolTip" = "Deaktiviert die Lesbarkeitsanalyse (Gunning-Fog-Index, Lesezeit usw.). Wenn Ihre Dokumente so groß sind, dass sie beim Laden zu ausgedehnten „durchdrehenden Rädern“ führen, ist dies wahrscheinlich die Ursache.";
 # EN: Disable readability analysis (Gunning Fog index, reading time, etc.). If your documents are large enough to cause extended "spinning wheels" on load, this is likely the cause.
 
 "XzC-mD-IIK.ibShadowedToolTip" = "Auf die Seitennummerierung angewendeter Versatz: 0, um die erste Seite mit „1“ zu nummerieren. 1, um die Seitennummerierung bei 2 zu beginnen, -1, um die zweite Seite auf Seite 1 zu machen.";
 # EN: Offset applied to page numbering: 0 to number the first page "1". 1 to start page numbering at 2, -1 to make the second page page 1.
 
-"Xzn-6O-vFG.ibShadowedToolTip" = "Betten Sie OPML-Dateien als Mermaid-Diagramme ein. Wenn diese Option deaktiviert ist, werden OPML-Dateien, die in der Include-Syntax enthalten sind, als Markdown-Listen gerendert.";
+"Xzn-6O-vFG.ibShadowedToolTip" = "Bettet OPML-Dateien als Mermaid-Diagramme ein. Wenn diese Option deaktiviert ist, werden OPML-Dateien, die mit der Include-Syntax eingebunden sind, als Markdown-Listen gerendert.";
 # EN: Embed OPML files as Mermaid diagrams. If disabled, OPML files included with include syntax will be rendered as Markdown lists.
 
 "Y6m-B7-bA2.title" = "Benutzerdefinierte Regeln";
 # EN: Custom Rules
 
-"YKB-Zl-d5d.ibShadowedToolTip" = "Wählen Sie einen Texteditor aus, um das aktuelle Dokument zu erhalten, wenn Sie ⌘⌥E eingeben.";
+"YKB-Zl-d5d.ibShadowedToolTip" = "Texteditor auswählen, der das aktuelle Dokument öffnet, wenn ⌘⌥E gedrückt wird.";
 # EN: Select a text editor to receive the current document when you type ⌘⌥E.
 
-"YQ3-UW-R5s.ibShadowedToolTip" = "Interpretieren Sie Dateien mit dem Namen SUMMARY.md als Indexdateien für die GitBook-Dokumentation.";
+"YQ3-UW-R5s.ibShadowedToolTip" = "Interpretiert Dateien mit dem Namen SUMMARY.md als Indexdateien für die GitBook-Dokumentation.";
 # EN: Interpret files named SUMMARY.md as index files for GitBook documentation.
 
 "YWC-gr-yeu.ibShadowedToolTip" = "Wenn diese Option aktiviert ist, dürfen Themen einen Umbruch innerhalb von Pre-Code-Blöcken verursachen. Wenn ein Theme keinen Zeilenumbruch bietet, werden überlaufende Codeblöcke über den Bildschirm hinausragen. Wenn diese Option deaktiviert ist, wird beim horizontalen Überlauf immer gescrollt.";
@@ -2974,7 +2974,7 @@ Schreibe alle Antworten auf %@.";
 "b5Z-cq-2g6.title" = "Kommentar-Seitenleiste standardmäßig anzeigen";
 # EN: Show comments sidebar by default
 
-"bPX-B3-Hwf.ibShadowedToolTip" = "Drucken Sie eine horizontale Linie über der Fußzeile.";
+"bPX-B3-Hwf.ibShadowedToolTip" = "Druckt eine horizontale Linie über der Fußzeile.";
 # EN: Print a horizontal line above the footer.
 
 "bSF-dU-MU5.title" = "Punkt 1";
@@ -3002,7 +3002,7 @@ Schreibe alle Antworten auf %@.";
 
 "d9X-aD-3y3.title" = "px";
 
-"dCL-aL-acF.ibShadowedToolTip" = "Drucken Sie eine horizontale Linie unter der Kopfzeile.";
+"dCL-aL-acF.ibShadowedToolTip" = "Druckt eine horizontale Linie unter der Kopfzeile.";
 # EN: Print a horizontal line below the header.
 
 "dCX-j9-zi7.title" = "Rendern als CriticMarkup";
@@ -3020,7 +3020,7 @@ Schreibe alle Antworten auf %@.";
 "docc-pref-label-cell.title" = "DokC:";
 # EN: DocC:
 
-"docc-resolve-cb.ibShadowedToolTip" = "Lösen Sie in einem .docc-Dokumentationskatalog ![](ImageName) in Bilder im Ressourcenordner des Katalogs auf (einschließlich ~dark- und @2x-Varianten).";
+"docc-resolve-cb.ibShadowedToolTip" = "Löst in einem .docc-Dokumentationskatalog ![](ImageName) in Bilder im Ressourcenordner des Katalogs auf (einschließlich ~dark- und @2x-Varianten).";
 # EN: Inside a .docc documentation catalog, resolve ![](ImageName) to images in the catalog Resources folder (including ~dark and @2x variants).
 
 "docc-resolve-cell.title" = "DocC-Bildverweise auflösen";
@@ -3037,10 +3037,10 @@ Schreibe alle Antworten auf %@.";
 
 "e8N-xm-3WU.title" = "11";
 
-"eIP-HK-bSZ.title" = "Entfernen Sie MultiMarkdown-Metadaten-Header";
+"eIP-HK-bSZ.title" = "MultiMarkdown-Metadaten-Header entfernen";
 # EN: Strip MultiMarkdown Metadata headers
 
-"eLh-lb-5Lp.title" = "Erlauben Sie Stilen, Text innerhalb von Codeblöcken einzuschließen";
+"eLh-lb-5Lp.title" = "Stilen erlauben, Text innerhalb von Codeblöcken einzuschließen";
 # EN: Allow themes to wrap text inside code blocks
 
 "eMJ-jD-zMf.title" = "jedes Mal fragen";
@@ -3060,13 +3060,13 @@ Schreibe alle Antworten auf %@.";
 "erp-3U-Dg4.title" = "Wortanzahl anzeigen";
 # EN: Show word count
 
-"ewh-zn-Iix.ibShadowedToolTip" = "Interpretieren Sie Hook://-Links als Pfade zu der Datei, auf die sie in Hookmark.app verweisen. Funktioniert nur bei Dateiverknüpfungen, andere Typen werden ignoriert.";
+"ewh-zn-Iix.ibShadowedToolTip" = "Interpretiert hook://-Links als Pfade zu der Datei, auf die sie in Hookmark.app verweisen. Funktioniert nur bei Dateiverknüpfungen, andere Typen werden ignoriert.";
 # EN: Interpret hook:// links as paths to the file they refer to in Hookmark.app. Only functions on file links, other types ignored.
 
 "f4d-fF-jqH.ibShadowedToolTip" = "Beim Drucken oder Exportieren von PDF erscheint die URL für einen Link nach dem verlinkten Text.";
 # EN: When printing or exporting PDF, the URL for a link will appear after the linked text.
 
-"fBQ-Bn-JSp.ibShadowedToolTip" = "Interpretieren Sie Dateien mit dem Namen Book.txt als Indexdateien und verarbeiten Sie die spezielle Leanpub-Syntax.";
+"fBQ-Bn-JSp.ibShadowedToolTip" = "Interpretiert Dateien mit dem Namen Book.txt als Indexdateien und verarbeitet die spezielle Leanpub-Syntax.";
 # EN: Interpret files named Book.txt as index files and handle special Leanpub syntax.
 
 "fJZ-eg-9pc.title" = "Links zu Textdateien sollten geöffnet werden in:";
@@ -3078,31 +3078,31 @@ Schreibe alle Antworten auf %@.";
 "fPz-q9-hqF.title" = "Punkt 2";
 # EN: Item 2
 
-"fWL-nw-WbV.ibShadowedToolTip" = "Bestimmen Sie das Verhalten von Marked, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.";
+"fWL-nw-WbV.ibShadowedToolTip" = "Bestimmt das Verhalten von Marked, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.";
 # EN: Determine Marked's behavior when a link clicked in a preview window leads to a local text file.
 
-"faH-CX-nOt.ibShadowedToolTip" = "Stellen Sie die Standardformatierung von Datum und Uhrzeit wieder her.";
+"faH-CX-nOt.ibShadowedToolTip" = "Standardformatierung von Datum und Uhrzeit wiederherstellen.";
 # EN: Restore the default date/time formatting.
 
-"fhr-uI-z1k.title" = "Aktivieren Sie Marked:";
+"fhr-uI-z1k.title" = "Marked aktivieren:";
 # EN: Activate Marked:
 
 "fl8-n5-SyT.title" = "Ordner:";
 # EN: Folders:
 
-"fya-Q4-cDZ.ibShadowedToolTip" = "Bestimmen Sie, wie mit YAML Frontmatter umgegangen wird. Wenn Sie es ignorieren, bleibt es für die Verarbeitung durch den Prozessor bestehen, oder Sie konvertieren es in MMD-Metadaten oder entfernen es vollständig.";
+"fya-Q4-cDZ.ibShadowedToolTip" = "Legt fest, wie mit YAML-Frontmatter umgegangen wird. „Ignorieren“ belässt es für die Verarbeitung durch den Prozessor; alternativ kann es in MMD-Metadaten konvertiert oder vollständig entfernt werden.";
 # EN: Determine how to handle YAML frontmatter. Ignore will leave it in place for the processor to handle, or you an convert it to MMD metadata or remove it entirely.
 
-"gMl-tR-Hdh.title" = "Generieren Sie IDs für Schlagzeilen";
+"gMl-tR-Hdh.title" = "IDs für Überschriften generieren";
 # EN: Generate IDs on headlines
 
 "ga6-Ze-7r4.ibShadowedToolTip" = "Erzwingt ein geschütztes Leerzeichen zwischen den letzten beiden Wörtern von Überschriften und Absätzen, um zu verhindern, dass einzelne Wörter in eine neue Zeile umgebrochen werden.";
 # EN: Forces a non-breaking space between the last two words of headlines and paragraphs to prevent single words from wrapping to a new line.
 
-"gq4-eK-xLl.ibShadowedToolTip" = "Wählen Sie den Standardprozessor aus, der zum Rendern von Markdown verwendet werden soll. Diese Einstellung wird überschrieben, wenn es eine passende benutzerdenfinierte Regel für eine Datei gibt.";
+"gq4-eK-xLl.ibShadowedToolTip" = "Wählt den Standardprozessor zum Rendern von Markdown aus. Diese Einstellung wird überschrieben, wenn es eine passende benutzerdefinierte Regel für eine Datei gibt.";
 # EN: Select the default processor to use for rendering Markdown. This setting is overridden if there's a matching Custom Rule for a file.
 
-"h1N-69-8ia.title" = "Verwenden Sie die erste H1 als Ersatztitel";
+"h1N-69-8ia.title" = "Erste H1 als Ersatztitel verwenden";
 # EN: Use first H1 as fallback title
 
 "hZR-Bj-3ZW.placeholderString" = "md, mmd, html";
@@ -3110,7 +3110,7 @@ Schreibe alle Antworten auf %@.";
 "heh-wu-x9x.ibExternalAccessibilityDescription" = "Mini-Übersicht aktivieren";
 # EN: Enable mini map
 
-"heh-wu-x9x.ibExternalAccessibilityHelp" = "Erzeugen Sie eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
+"heh-wu-x9x.ibExternalAccessibilityHelp" = "Erzeugt eine visuelle Übersicht des Dokuments, die angezeigt wird, wenn „0“ gedrückt wird. Beim Rendern großer Dokumente kann es zu kurzen Verzögerungen kommen.";
 # EN: Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when rendering large documents.
 
 "heh-wu-x9x.ibShadowedToolTip" = "Scrollposition der Quellcodeansicht mit der Vorschau synchronisieren";
@@ -3121,16 +3121,16 @@ Schreibe alle Antworten auf %@.";
 
 "huc-20-R8u.title" = "HTML:";
 
-"i0L-3g-y5o.title" = "Verarbeiten Sie Markdown innerhalb von HTML";
+"i0L-3g-y5o.title" = "Markdown innerhalb von HTML verarbeiten";
 # EN: Process Markdown inside of HTML
 
 "iCM-VI-bND.title" = "Vollständiger Festplattenzugriff:";
 # EN: Full Disk Access:
 
-"iDT-BO-bY1.ibShadowedToolTip" = "Analysieren Sie den Titel von Seiten und verschachtelten Seiten, um hierarchische Markdown-Header zu erstellen.";
+"iDT-BO-bY1.ibShadowedToolTip" = "Analysiert den Titel von Seiten und verschachtelten Seiten, um hierarchische Markdown-Header zu erstellen.";
 # EN: Parse the title of pages and nested pages to create hierarchical Markdown headers.
 
-"iX2-FA-n0U.ibShadowedToolTip" = "Öffnen Sie neue Dokumente immer in neuen Fenstern";
+"iX2-FA-n0U.ibShadowedToolTip" = "Öffnet neue Dokumente immer in neuen Fenstern";
 # EN: Always open new documents in new windows
 
 "iX2-FA-n0U.title" = "Fenster";
@@ -3138,10 +3138,10 @@ Schreibe alle Antworten auf %@.";
 
 "iaV-oc-Xdw.title" = "9pt";
 
-"img-variant-resolve-cb.ibShadowedToolTip" = "Erkennen Sie bei lokalen Bildern mit einer Dateierweiterung ~dark- und @2x-Begleitdateien und geben Sie reaktionsfähiges Bild-Markup aus. Funktioniert außerhalb von DocC-Bundles.";
+"img-variant-resolve-cb.ibShadowedToolTip" = "Erkennt bei lokalen Bildern mit einer Dateierweiterung ~dark- und @2x-Begleitdateien und gibt reaktionsfähiges Bild-Markup aus. Funktioniert außerhalb von DocC-Bundles.";
 # EN: For local images with a file extension, detect ~dark and @2x companion files and emit responsive picture markup. Works outside of DocC bundles.
 
-"img-variant-resolve-cell.title" = "Lösen Sie dunkle und @2x-Bildvarianten auf";
+"img-variant-resolve-cell.title" = "Dunkle und @2x-Bildvarianten auflösen";
 # EN: Resolve dark and @2x image variants
 
 "ixM-VJ-sV6.title" = "Im Hintergrund durchscheinend";
@@ -3155,13 +3155,13 @@ Schreibe alle Antworten auf %@.";
 "jvs-JQ-gVi.title" = "Linke Seite";
 # EN: Left Side
 
-"jw4-RG-W3m.ibShadowedToolTip" = "Verwenden Sie Überschriften der Ebenen 1 oder 2 als Abschnittstrenner und beginnen Sie immer auf einer neuen Seite";
+"jw4-RG-W3m.ibShadowedToolTip" = "Verwendet Überschriften der Ebenen 1 oder 2 als Abschnittstrenner und beginnt sie immer auf einer neuen Seite";
 # EN: Use level 1/2 headers as section dividers, always starting them on a new page
 
 "jw8-mG-8ba.title" = "Seitenumbruch danach";
 # EN: Page break after
 
-"kFS-GG-tRX.title" = "Aktivieren Sie GitBook-Unterstützung";
+"kFS-GG-tRX.title" = "GitBook-Unterstützung aktivieren";
 # EN: Enable GitBook support
 
 "kFv-kc-l3z.title" = "mein Texteditor";
@@ -3182,16 +3182,16 @@ Schreibe alle Antworten auf %@.";
 "khL-0a-Mvw.title" = "Unten rechts";
 # EN: Bottom Right
 
-"klo-aL-Ktm.ibExternalAccessibilityDescription" = "Öffnen Sie neue Dateien im Editor";
+"klo-aL-Ktm.ibExternalAccessibilityDescription" = "Neue Dateien im Editor öffnen";
 # EN: Open new files in editor
 
-"klo-aL-Ktm.ibExternalAccessibilityHelp" = "Öffnen Sie neu erstellte Dateien im ausgewählten externen Editor";
+"klo-aL-Ktm.ibExternalAccessibilityHelp" = "Neu erstellte Dateien im ausgewählten externen Editor öffnen";
 # EN: Open newly created files in the selected external editor
 
 "klo-aL-Ktm.ibShadowedToolTip" = "Wenn Sie den Befehl „Neue Datei“ verwenden, öffnet diese Option automatisch die erstellte Datei in dem von Ihnen gewählten externen Editor.";
 # EN: When using the "New File" command, this option will automatically open the created file in your chosen external editor.
 
-"kr7-y4-QmU.ibShadowedToolTip" = "Legen Sie eine maximale Breite für den Hauptteil der Vorschau fest.";
+"kr7-y4-QmU.ibShadowedToolTip" = "Legt eine maximale Breite für den Hauptteil der Vorschau fest.";
 # EN: Set a maximum width for the body of the preview.
 
 "kts-6l-T4g.ibExternalAccessibilityDescription" = "Wiki-Link-Erweiterung";
@@ -3206,28 +3206,28 @@ Schreibe alle Antworten auf %@.";
 "kyX-ST-sbt.title" = "Mathe:";
 # EN: Math:
 
-"lAg-Gu-92X.ibShadowedToolTip" = "Fügen Sie zusätzliche MathJax-Pakete wie Physik und Chemie hinzu";
+"lAg-Gu-92X.ibShadowedToolTip" = "Fügt zusätzliche MathJax-Pakete wie Physik und Chemie hinzu";
 # EN: Add additional MathJax packages like Physics and Chemistry
 
 "lBl-gz-aUc.ibShadowedToolTip" = "Formatierung für die linke Seite der Fußzeile.";
 # EN: Formatting for the left side of the footer.
 
-"lDk-9B-iIN.ibShadowedToolTip" = "Legen Sie eine maximale Breite für den Hauptteil der Vorschau fest.";
+"lDk-9B-iIN.ibShadowedToolTip" = "Legt eine maximale Breite für den Hauptteil der Vorschau fest.";
 # EN: Set a maximum width for the body of the preview.
 
 "lHA-eS-GQd.title" = "Alle";
 # EN: All
 
-"lMe-yt-yjQ.ibShadowedToolTip" = "Fügen Sie MathJax ein und laden Sie es, um LaTeX/MathML-Gleichungen anzuzeigen.";
+"lMe-yt-yjQ.ibShadowedToolTip" = "Bindet MathJax zum Anzeigen von LaTeX/MathML-Gleichungen ein und lädt es.";
 # EN: Include and load MathJax for displaying LaTeX/MathML equations.
 
 "leK-yx-9dP.ibShadowedToolTip" = "Klicken Sie auf das Verknüpfungsfeld, um einen Hotkey aufzuzeichnen, mit dem Sie das vorderste (d.h. letzte aktive) Marked-Vorschaufenster in den Vordergrund holen können, ohne die aktuelle Anwendung zu verlassen";
 # EN: Click the shortcut field to record a hotkey for raising the frontmost (last active) Marked preview window to the foreground without leaving the current application
 
-"lg7-A2-UfB.ibShadowedToolTip" = "Wählen Sie „Registerkarten“, „Fenster“ oder „Automatisch“ (berücksichtigt die Systemeinstellung).";
+"lg7-A2-UfB.ibShadowedToolTip" = "„Registerkarten“, „Fenster“ oder „Automatisch“ auswählen (berücksichtigt die Systemeinstellung).";
 # EN: Select "tabs", "windows", or "automatic" (respects system setting)
 
-"llt-8c-Uhu.ibShadowedToolTip" = "Wenden Sie das Styling nur auf umzäunte Codeblöcke mit einer angegebenen Sprache an, z. B. „js";
+"llt-8c-Uhu.ibShadowedToolTip" = "Wendet das Styling nur auf umzäunte Codeblöcke mit einer angegebenen Sprache an, z. B. „js“";
 # EN: Apply styling only to fenced code blocks with a language specified, e.g. ```js
 
 "lnJ-Dg-7Yd.ibShadowedToolTip" = "Wandeln Sie horizontale Linien im Dokument in Seitenumbrüche um (dadurch werden Fußnoten zusätzlich auf eine neue Seite gezwungen).";
@@ -3236,15 +3236,15 @@ Schreibe alle Antworten auf %@.";
 "m3u-3a-mEr.title" = "Keyword-Hervorhebung:";
 # EN: Keyword Highlighting:
 
-"mRY-2S-7NF.ibShadowedToolTip" = "Zeigen Sie eine helle unterbrochene Linie an den Stellen an, an denen Pausen mit der Syntax <!--BREAK--> eingefügt werden, oder indem Sie die Optionen für automatische Pausen in den Exporteinstellungen aktivieren.";
+"mRY-2S-7NF.ibShadowedToolTip" = "Zeigt eine helle gestrichelte Linie an den Stellen an, an denen Umbrüche mit der Syntax <!--BREAK--> eingefügt oder die Optionen für automatische Umbrüche in den Exporteinstellungen aktiviert werden.";
 # EN: Show a light dashed line where breaks are inserted with <!--BREAK--> syntax or by checking auto-break options in Export settings.
 
 "mcb-pU-l1D.title" = "10";
 
-"mdifier-inline-pref-cb.ibShadowedToolTip" = "Konvertieren Sie nach der Konvertierung einer Webseite in Markdown Links im Referenzstil in das Inline-[Text](URL)-Format.";
+"mdifier-inline-pref-cb.ibShadowedToolTip" = "Konvertiert nach der Umwandlung einer Webseite in Markdown Links im Referenzstil in das Inline-[Text](URL)-Format.";
 # EN: After converting a web page to Markdown, convert reference-style links to inline [text](url) format.
 
-"mdifier-inline-pref-cell.title" = "Verwenden Sie Inline-Links";
+"mdifier-inline-pref-cell.title" = "Inline-Links verwenden";
 # EN: Use inline links
 
 "mdifier-pref-label-cell.title" = "Markdownifier:";
@@ -3252,7 +3252,7 @@ Schreibe alle Antworten auf %@.";
 "n6M-g3-8qL.ibShadowedToolTip" = "Weitere Informationen";
 # EN: More info
 
-"n9f-sf-kcj.title" = "Scrollen Sie zum Bearbeiten";
+"n9f-sf-kcj.title" = "Zum Bearbeiten scrollen";
 # EN: Scroll to edit
 
 "nFn-GQ-2Jj.title" = "Logo:";
@@ -3263,13 +3263,13 @@ Schreibe alle Antworten auf %@.";
 "newBringToFrontCheckbox.ibShadowedToolTip" = "Wenn eine Dateiänderung erkannt wird, wählen Sie die Registerkarte dieses Dokuments aus oder ordnen Sie sein Fenster nur innerhalb von Marked nach vorne. Wenn eine andere App ganz vorne steht, bleibt Marked im Hintergrund. Verwenden Sie „Fenster bei Aktualisierung öffnen“, um andere Anwendungen hervorzuheben.";
 # EN: When a file change is detected, select this document's tab or order its window to the front within Marked only. If another app is frontmost, Marked stays in the background. Use "Raise window on update" to pop above other applications.
 
-"newBringToFrontCheckboxCell.title" = "Bringen Sie das aktualisierte Dokument nach vorne";
+"newBringToFrontCheckboxCell.title" = "Aktualisiertes Dokument nach vorne bringen";
 # EN: Bring updated document to front
 
-"ntv-d4-tOz.ibShadowedToolTip" = "Validieren Sie URLs beim Laden und Aktualisieren des Dokuments. Zeigt Ergebnisse nur an, wenn Fehler vorliegen.";
+"ntv-d4-tOz.ibShadowedToolTip" = "Validiert URLs beim Laden und Aktualisieren des Dokuments. Zeigt Ergebnisse nur an, wenn Fehler vorliegen.";
 # EN: Validate URLs on document load and refresh. Only displays results if there are errors.
 
-"o5w-Sg-lZb.ibShadowedToolTip" = "Fügen Sie KaTeX ein und laden Sie es, um LaTeX/MathML-Gleichungen anzuzeigen. Schneller als MathJax, aber mit weniger Funktionen.";
+"o5w-Sg-lZb.ibShadowedToolTip" = "Bindet KaTeX zum Anzeigen von LaTeX/MathML-Gleichungen ein und lädt es. Schneller als MathJax, aber mit weniger Funktionen.";
 # EN: Include and load KaTeX for displaying LaTeX/MathML equations. Faster than MathJax but with fewer features.
 
 "oCe-0U-oKy.ibShadowedToolTip" = "Zeigt den vollständigen Pfad zur aktuellen Datei an, anstatt nur ihren Dateinamen.";
@@ -3278,10 +3278,10 @@ Schreibe alle Antworten auf %@.";
 "oIO-H7-gle.title" = "Automatische Silbentrennung in Absätzen";
 # EN: Auto-hyphenate in paragraphs
 
-"oiA-xW-UVz.ibShadowedToolTip" = "Wählen Sie einen Texteditor aus, um das aktuelle Dokument zu erhalten, wenn Sie ⌘E eingeben.";
+"oiA-xW-UVz.ibShadowedToolTip" = "Texteditor auswählen, der das aktuelle Dokument öffnet, wenn ⌘E gedrückt wird.";
 # EN: Select a text editor to receive the current document when you type ⌘E.
 
-"okK-cA-IJX.ibShadowedToolTip" = "Schließen Sie MathJax aus dem lokalen Bundle oder CDN ein";
+"okK-cA-IJX.ibShadowedToolTip" = "Bindet MathJax aus dem lokalen Bundle oder CDN ein";
 # EN: Include MathJax from local bundle or CDN
 
 "p2Q-RV-dNJ.title" = "8";
@@ -3296,13 +3296,13 @@ Schreibe alle Antworten auf %@.";
 
 "pNR-yv-TFX.title" = "OtherViews";
 
-"pRD-SP-kIN.title" = "Aktivieren Sie die Navigation für die Mini-Übersicht";
+"pRD-SP-kIN.title" = "Navigation für die Mini-Übersicht aktivieren";
 # EN: Enable Mini Map navigation
 
-"pXN-Ub-Ood.title" = "Verwenden Sie ⌘E für „Mit Auswahl suchen“.";
+"pXN-Ub-Ood.title" = "⌘E für „Mit Auswahl suchen“ verwenden.";
 # EN: Use ⌘E for Find With Selection
 
-"pZg-9z-YEa.title" = "Fügen Sie Fußnoten in die Kommentarseitenleiste ein";
+"pZg-9z-YEa.title" = "Fußnoten in der Kommentarseitenleiste einfügen";
 # EN: Include footnotes in comment sidebar
 
 "pbl-03-803.ibShadowedToolTip" = "Umzäunte Codeblöcke werden immer ignoriert";
@@ -3314,33 +3314,33 @@ Schreibe alle Antworten auf %@.";
 "pnr-kp-kGo.ibExternalAccessibilityDescription" = "Markup-Fehler hervorheben";
 # EN: Highlight Markup Errors
 
-"pnr-kp-kGo.ibExternalAccessibilityHelp" = "Heben Sie defekte Markdown-Links und andere Markups hervor, die möglicherweise nicht ordnungsgemäß konvertiert wurden.";
+"pnr-kp-kGo.ibExternalAccessibilityHelp" = "Hebt defekte Markdown-Links und andere Markups hervor, die möglicherweise nicht ordnungsgemäß konvertiert wurden.";
 # EN: Highlight broken Markdown links and other markup that may have converted improperly.
 
-"pnr-kp-kGo.ibShadowedToolTip" = "Heben Sie defekte Markdown-Links und andere Markups hervor, die möglicherweise nicht ordnungsgemäß konvertiert wurden.";
+"pnr-kp-kGo.ibShadowedToolTip" = "Hebt defekte Markdown-Links und andere Markups hervor, die möglicherweise nicht ordnungsgemäß konvertiert wurden.";
 # EN: Highlight broken Markdown links and other markup that may have converted improperly.
 
 "qLr-xl-R8A.title" = "100";
 
-"qel-yf-jHo.ibShadowedToolTip" = "Exportieren Sie alle Einstellungen als JSON-Datei, die später importiert werden kann.";
+"qel-yf-jHo.ibShadowedToolTip" = "Alle Einstellungen als JSON-Datei exportieren, die später importiert werden kann.";
 # EN: Export all prefeerences as a JSON file that can be imported later.
 
 "qhd-i1-jMC.title" = "Vor Fußnoten";
 # EN: Before Footnotes
 
-"qnH-cj-k1j.ibShadowedIsNilPlaceholder" = "Wählen Sie Anwendung";
+"qnH-cj-k1j.ibShadowedIsNilPlaceholder" = "Anwendung auswählen";
 # EN: Choose Application
 
 "qos-qB-P0Q.title" = "Nur AMS";
 # EN: AMS only
 
-"qpM-y7-hSc.ibShadowedToolTip" = "Befolgen Sie die Systemeinstellung für den Dunkelmodus.";
+"qpM-y7-hSc.ibShadowedToolTip" = "Folgt der Systemeinstellung für den Dunkelmodus.";
 # EN: Follow the system Dark Mode setting.
 
 "rFP-2c-xKa.title" = "Zusätzliche Funktionen:";
 # EN: Additional features:
 
-"rIg-O3-BDH.ibShadowedToolTip" = "Gewähren Sie vollen Festplattenzugriff auf Marked. Dies kann bei der Ausführung benutzerdefinierter Prozessoren hilfreich sein und das Funktionieren von Wiki-Links und das Laden von Bildern ermöglichen, ohne dass Berechtigungen angefordert werden müssen. Über diese Schaltfläche werden Anweisungen zum Zugriff auf Systemeinstellungen -> Datenschutz und Sicherheit -> Vollständiger Festplattenzugriff angezeigt.";
+"rIg-O3-BDH.ibShadowedToolTip" = "Marked vollen Festplattenzugriff gewähren. Dies kann bei der Ausführung benutzerdefinierter Prozessoren hilfreich sein und das Funktionieren von Wiki-Links und das Laden von Bildern ermöglichen, ohne dass Berechtigungen angefordert werden müssen. Über diese Schaltfläche werden Anweisungen zum Zugriff auf Systemeinstellungen -> Datenschutz und Sicherheit -> Vollständiger Festplattenzugriff angezeigt.";
 # EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions. This button will display instructions for accessing System Settings->Privacy & Security->Full Disk Access.
 
 "rbv-px-urQ.title" = "Standarderweiterung:";
@@ -3361,28 +3361,28 @@ Schreibe alle Antworten auf %@.";
 "rtc-jX-V7o.title" = "Metadaten als Tabelle anzeigen";
 # EN: Show metadata as table
 
-"sN3-Y8-LbN.ibShadowedToolTip" = "Legen Sie eine maximale Breite für den Hauptteil der Vorschau fest.";
+"sN3-Y8-LbN.ibShadowedToolTip" = "Legt eine maximale Breite für den Hauptteil der Vorschau fest.";
 # EN: Set a maximum width for the body of the preview.
 
 "t1j-c5-Onm.title" = "Vollständigen Pfad im Fenstertitel anzeigen";
 # EN: Show full path in window title
 
-"t7n-mT-E6V.ibShadowedToolTip" = "Deaktivieren Sie einige prozessorintensive Funktionen, wie z. B. ausblendbare Überschriften, wenn Dokumente mehr als 100.000 umfassen.";
+"t7n-mT-E6V.ibShadowedToolTip" = "Deaktiviert einige prozessorintensive Funktionen wie ausblendbare Überschriften, wenn Dokumente mehr als 100.000 Zeichen umfassen.";
 # EN: Disable some processor-intensive features such as collapsible headlines when documents are over 100k.
 
 "tG0-rU-aLw.title" = "Gehostete Bilder zwischenspeichern";
 # EN: Cache hosted images
 
-"tQ4-9b-B6e.ibShadowedToolTip" = "Stellen Sie Benachrichtigungen wieder her, die auf „Nie wieder anzeigen“ oder „Meine Auswahl speichern“ eingestellt sind.";
+"tQ4-9b-B6e.ibShadowedToolTip" = "Benachrichtigungen wiederherstellen, die auf „Nie wieder anzeigen“ oder „Meine Auswahl speichern“ eingestellt sind.";
 # EN: Restore alerts that have been set to "Never show again" or "Remember my choice."
 
-"tTB-p7-P4g.ibShadowedToolTip" = "Verwenden Sie Überschriften der Ebene 1 als Abschnittstrenner und beginnen Sie immer auf einer neuen Seite.";
+"tTB-p7-P4g.ibShadowedToolTip" = "Verwendet Überschriften der Ebene 1 als Abschnittstrenner und beginnt sie immer auf einer neuen Seite.";
 # EN: Use level 1 headers as section dividers, always starting them on a new page.
 
 "tWa-A7-If6.title" = "Die Anzahl der Wörter schließt Folgendes aus:";
 # EN: Word count excludes:
 
-"tY7-C4-5py.ibShadowedToolTip" = "Zahlen Sie nur AMS-Gleichungen";
+"tY7-C4-5py.ibShadowedToolTip" = "Nummeriert nur AMS-Gleichungen";
 # EN: Only number AMS equations
 
 "tfb-VY-Tqp.ibShadowedToolTip" = "Klicken Sie auf das Verknüpfungsfeld, um einen Hotkey zum Öffnen der Aktionspalette aufzuzeichnen";
@@ -3394,7 +3394,7 @@ Schreibe alle Antworten auf %@.";
 "tpi-5S-1mf.ibShadowedToolTip" = "Der Zähler in der Statusleiste zeigt Zeichen anstelle von Wörtern an.";
 # EN: The counter in the status bar shows characters instead of words.
 
-"tyM-gC-XBb.ibShadowedToolTip" = "Öffnen Sie neue Dokumente immer in Tabs";
+"tyM-gC-XBb.ibShadowedToolTip" = "Öffnet neue Dokumente immer in Tabs";
 # EN: Always open new documents in tabs
 
 "tyM-gC-XBb.title" = "Registerkarten";
@@ -3412,25 +3412,25 @@ Schreibe alle Antworten auf %@.";
 "uJ6-Mq-rcV.title" = "Änderungsverfolgung konvertieren <-> CriticMarkup";
 # EN: Convert change tracking <-> CriticMarkup
 
-"ueP-7h-rCf.title" = "Fügen Sie auf der ersten Seite Folgendes ein:";
+"ueP-7h-rCf.title" = "Auf der ersten Seite einfügen:";
 # EN: Include on first page:
 
 "ug7-rp-qmA.ibShadowedToolTip" = "Ein einzelner Hash ohne Leerzeichen ist ein Hashtag, keine Überschrift. Bei der Vorschau von Bear-Notizen ist dies immer der Fall.";
 # EN: A single hash with no space is a hashtag, not a headline. Always true when previewing Bear notes.
 
-"ujD-ZF-ytu.ibShadowedToolTip" = "Generieren Sie zufällige Fußnoten-IDs, um Konflikte zu vermeiden, wenn mehrere Dokumente im Web angezeigt werden.";
+"ujD-ZF-ytu.ibShadowedToolTip" = "Generiert zufällige Fußnoten-IDs, um Konflikte zu vermeiden, wenn mehrere Dokumente im Web angezeigt werden.";
 # EN: Generate random footnote IDs to avoid conflicts when multiple documents are displayed on the web.
 
-"ung-Uh-qLP.ibShadowedToolTip" = "Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
+"ung-Uh-qLP.ibShadowedToolTip" = "Anwendung auswählen, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
 # EN: Select an application to open when a local image is right clicked and "Edit image" is selected.
 
 "v4s-Gx-SpR.ibExternalAccessibilityDescription" = "Geschwindigkeitsablesung mit Bildlaufposition synchronisieren";
 # EN: Sync Speed Reading with scroll position
 
-"v4s-Gx-SpR.ibExternalAccessibilityHelp" = "Starten Sie Speed ​​Read im aktuellen Ansichtsfenster und scrollen Sie durch die Vorschau, während die Wiedergabe fortschreitet.";
+"v4s-Gx-SpR.ibExternalAccessibilityHelp" = "Startet Speed Read im aktuellen Ansichtsfenster und scrollt die Vorschau, während die Wiedergabe fortschreitet.";
 # EN: Start Speed Read from the current viewport and scroll the preview as playback advances.
 
-"v4s-Gx-SpR.ibShadowedToolTip" = "Starten Sie Speed ​​Read im aktuellen Ansichtsfenster und scrollen Sie durch die Vorschau, während die Wiedergabe fortschreitet.";
+"v4s-Gx-SpR.ibShadowedToolTip" = "Startet Speed Read im aktuellen Ansichtsfenster und scrollt die Vorschau, während die Wiedergabe fortschreitet.";
 # EN: Start Speed Read from the current viewport and scroll the preview as playback advances.
 
 "v64-XC-XzK.title" = "2";
@@ -3443,7 +3443,7 @@ Schreibe alle Antworten auf %@.";
 "vSr-qn-WW8.ibShadowedToolTip" = "Zeigt bei jeder Auswahl ein Popup-Fenster zur Wortanzahl für den ausgewählten Text an.";
 # EN: Show a word count popup for the selected text whenever a selection is made.
 
-"vcK-UV-o4U.ibShadowedToolTip" = "Bestimmen Sie das Verhalten von Marked, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.";
+"vcK-UV-o4U.ibShadowedToolTip" = "Bestimmt das Verhalten von Marked, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.";
 # EN: Determine Marked's behavior when a link clicked in a preview window leads to a local text file.
 
 "vda-v3-Xx6.title" = "Aktualisieren";
@@ -3464,13 +3464,13 @@ Schreibe alle Antworten auf %@.";
 "x6M-HE-xmK.title" = "Aktualisieren";
 # EN: Refresh
 
-"x7a-1t-d1y.ibShadowedToolTip" = "Aktivieren Sie den Modus für die Gliederungsansicht für Dateien mit aufgelisteten Erweiterungen.";
+"x7a-1t-d1y.ibShadowedToolTip" = "Aktiviert den Gliederungsansichtsmodus für Dateien mit aufgelisteten Erweiterungen.";
 # EN: Turn on Outline view mode for files with listed extensions.
 
 "x7j-MM-FWA.title" = "Warnungen zurücksetzen";
 # EN: Reset Alerts
 
-"x8A-em-R2B.title" = "Wählen Sie App";
+"x8A-em-R2B.title" = "App auswählen";
 # EN: Choose App
 
 "xC2-nA-NrV.title" = "Erstes Fenster öffnen:";
@@ -3478,7 +3478,7 @@ Schreibe alle Antworten auf %@.";
 
 "xOz-LD-8sy.title" = "KaTeX";
 
-"xUP-DD-fxh.title" = "Vermeiden Sie verwaiste Schlagzeilen";
+"xUP-DD-fxh.title" = "Verwaiste Überschriften vermeiden";
 # EN: Prevent orphaned headlines
 
 "y3G-eL-BMV.title" = "MultiMarkdown";
@@ -3486,13 +3486,13 @@ Schreibe alle Antworten auf %@.";
 "yE8-wi-t88.title" = "Hook://-URLs in Bildern/Links auflösen";
 # EN: Resolve hook:// urls in images/links
 
-"yEj-Gr-Evm.ibShadowedToolTip" = "Markieren Sie Codeblöcke mit highlight.js.";
+"yEj-Gr-Evm.ibShadowedToolTip" = "Hebt Codeblöcke mit highlight.js hervor.";
 # EN: Highlight code blocks with highlight.js.
 
 "yaf-cg-saC.title" = "Weitere Themen";
 # EN: More Themes
 
-"yoG-j6-vbx.ibShadowedToolTip" = "Importieren Sie eine .markedprefs-Datei, um die Einstellungen zu aktualisieren";
+"yoG-j6-vbx.ibShadowedToolTip" = "Eine .markedprefs-Datei importieren, um die Einstellungen zu aktualisieren";
 # EN: Import a .markedprefs file to update preferences
 
 "z2V-nL-4sl.title" = "Layout und Typografie:";
