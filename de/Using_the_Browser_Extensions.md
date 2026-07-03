@@ -7,12 +7,12 @@ Marked enthält Browsererweiterungen, mit denen Sie Seiten-URLs oder ausgewählt
 Von [https://markedapp.com/extensions](https://markedapp.com/extensions) herunterladen und installieren:
 
 - Firefox / Zen
-- Chrom / Brave / Edge
-- Safari (im Paket enthalten)
+- Chrome / Brave / Edge
+- Safari (mitgeliefert)
 
 ## So funktioniert die Erweiterung
 
-Wenn Sie auf eine Erweiterungsschaltfläche klicken, wird eine benutzerdefinierte URL geöffnet, die von Marked 3 unter Verwendung des Schemas `x-marked-3://markdownify` verarbeitet wird.
+Wenn Sie auf eine Erweiterungsschaltfläche klicken, wird eine benutzerdefinierte URL geöffnet, die Marked 3 über das Schema `x-marked-3://markdownify` verarbeitet.
 
 ### `Markdownify URL`
 
@@ -20,30 +20,30 @@ Klicken Sie im Erweiterungs-Popup auf **`Markdownify URL`**, um die aktuelle Sei
 
 ### `Markdownify Selection`
 
-Klicken Sie im Erweiterungs-Popup auf **`Markdownify Selection`**, wenn Sie eine Auswahl auf der Seite haben.
+Klicken Sie im Erweiterungs-Popup auf **`Markdownify Selection`**, wenn Sie auf der Seite etwas ausgewählt haben.
 
-Marked empfängt den HTML für die aktuelle Auswahl und wandelt ihn in Markdown um.
+Marked empfängt das HTML der aktuellen Auswahl und wandelt es in Markdown um.
 
-### Abschnitt auswählen (Blockauswahlmodus)
+### Select Section (Blockauswahlmodus)
 
 ![][1]
 
 [1]: images/marked-3-chrome-1.jpg width=1280px height=800px class=center
 
-Klicken Sie auf **Abschnitt auswählen**, um in den „Abschnittsauswahlmodus“ zu gelangen:
+Klicken Sie auf **Select Section**, um in den „Abschnittsauswahlmodus“ zu gelangen:
 
 - Bewegen Sie den Mauszeiger über die Seite, um Blockelemente hervorzuheben, die Sie auswählen können.
 - Klicken Sie auf einen Block, um ihn sofort an Marked zu senden (einmaliges Senden).
-- Klicken Sie bei gedrückter Befehlstaste auf Blöcke, um mehrere Blöcke auszuwählen (klicken Sie bei gedrückter Befehlstaste erneut, um einen Block zu entfernen).
+- Klicken Sie bei gedrückter Befehlstaste auf Blöcke, um mehrere Blöcke auszuwählen (erneut bei gedrückter Befehlstaste klicken, um einen Block wieder zu entfernen).
 - Drücken Sie die Eingabetaste, um die aktuell ausgewählten Blöcke zu senden.
 - Drücken Sie Esc, um den Abschnittsauswahlmodus abzubrechen.
 
-Während der Auswahl bietet das Popup auch Zoomsteuerungen, die Ihnen beim Klicken auf kleine oder dichte Abschnitte helfen:
+Während der Auswahl bietet das Popup außerdem eine Zoom-Steuerung, die Ihnen das Klicken auf kleine oder dichte Abschnitte erleichtert:
 
 ![][2]
 
 [2]: images/marked-3-chrome-2.jpg width=1280px height=800px class=center
 
-- `-` zoomt heraus
-- **An Höhe anpassen** zoomt so, dass die Seite der Höhe des Ansichtsfensters entspricht
-- `+` zoomt hinein
+- `-` verkleinert
+- **Fit Height** zoomt so, dass die Seite in die Höhe des Ansichtsfensters passt
+- `+` vergrößert
