@@ -11,13 +11,13 @@ Recurring things to watch when post-editing the machine-translated drafts:
 3. **Dash:** the German parenthetical dash is `–` (en dash with spaces), not `---` or `—`.
 4. **Block tags** (`{% apponly div %}`, `{% endapponly %}`, …) on their own line, no trailing spaces.
 5. **Localize syntax example words, consistently:** `*kursiv*`, `**fett**` (not `*italics*` / `**bold**`).
-6. **UI and technical terms → match the app and Apple:** e.g. „AppleScript-Wörterbuch" (not „-Verzeichnis"); menu paths exactly from the German app.
-7. **Keep verb forms parallel:** „… ausgeben oder … kopieren", not „ausgegeben … kopieren".
-8. **Basics:** Sie throughout; product names stay English (Marked, Markdown, MultiMarkdown, CommonMark …); German quotes „…"; ellipsis `…`.
+6. **UI and technical terms → match the app and Apple:** e.g. „AppleScript-Wörterbuch“ (not „-Verzeichnis“); menu paths exactly from the German app.
+7. **Keep verb forms parallel:** „… ausgeben oder … kopieren“, not „ausgegeben … kopieren“.
+8. **Basics:** Sie throughout; product names stay English (Marked, Markdown, MultiMarkdown, CommonMark …); German quotes „…“; ellipsis `…`.
 
 ## Tone and audience
 
-- **Formality: Sie.** The German app UI uses formal address throughout; keep the docs consistent with it. Never switch to „du".
+- **Formality: Sie.** The German app UI uses formal address throughout; keep the docs consistent with it. Never switch to „du“.
 - **Audience:** Mac users who write in Markdown; assume familiarity with menus and keyboard shortcuts.
 - **Voice:** Follow macOS German (Apple style). Avoid literal translations of English idioms; rephrase for natural German.
 
@@ -34,12 +34,13 @@ Recurring things to watch when post-editing the machine-translated drafts:
 
 This is where the German UI localization was weakest; keep the docs on the corrected style:
 
-- **Quote the corrected string, not the shipped one.** When the prose cites a menu or option label, use the fixed wording from `ui-strings/de-ui-review.marked-l10n`, not the (still wrong) string in the currently installed app. Docs and the UI fixes ship together, so the docs follow the target wording (e.g. „Neue Dateien automatisch bearbeiten", not „Bearbeiten Sie neue Dateien automatisch").
-- **Control labels → infinitive**, not a Sie-imperative. `Enable Leanpub support` → „Leanpub-Unterstützung aktivieren" (nicht „Aktivieren Sie …").
-- **Descriptive tooltips → third person present**, matching the app. `Prints a horizontal line …` → „Druckt eine horizontale Linie …" (nicht „Drucken Sie …").
-- **Genuine user instructions stay in Sie.** „Klicken Sie auf das Feld …", „Ziehen Sie ein Bild …" — where the reader really is told to act.
+- **Quote the corrected string, not the shipped one.** When the prose cites a menu or option label, use the fixed wording from `ui-strings/de-ui-review.marked-l10n`, not the (still wrong) string in the currently installed app. Docs and the UI fixes ship together, so the docs follow the target wording (e.g. „Neue Dateien automatisch bearbeiten“, not „Bearbeiten Sie neue Dateien automatisch“).
+- **Control labels → infinitive**, not a Sie-imperative. `Enable Leanpub support` → „Leanpub-Unterstützung aktivieren“ (nicht „Aktivieren Sie …“).
+- **Descriptive tooltips → third person present**, matching the app. `Prints a horizontal line …` → „Druckt eine horizontale Linie …“ (nicht „Drucken Sie …“).
+- **Genuine user instructions stay in Sie.** „Klicken Sie auf das Feld …“, „Ziehen Sie ein Bild …“ — where the reader really is told to act.
 - **`{% appmenu %}` segments** must match the localized app menus exactly: `Ablage`, `Bearbeiten`, `Darstellung`, `Fenster`, `Hilfe`, `Einstellungen…`, `Exportieren…`, `Im Finder anzeigen`, … (verify against `MainMenu.strings`, incl. the ellipsis `…`).
 - **`{% prefspane %}` / `{% kbd %}` / `{{cmd}}`:** leave tags unchanged (see root `README.md`).
+- **Preposition before `{% prefspane %}`:** at build time the tag renders as a breadcrumb link (e.g. „Marked → Einstellungen → Stil“), so it cannot fuse with „im/in dem“. Write „unter {% prefspane X %}“, not „im {% prefspane X %}“ — the English „in the … pane“ does not carry over.
 - **Settings pane names in prose:** use the same wording as localized `Settings.strings`.
 
 ## Punctuation and typography
@@ -63,7 +64,7 @@ Per root `README.md`: translate section `title`, `folder` slugs, page `title`/`s
 
 - [ ] `{% appmenu %}` paths verified against the localized app
 - [ ] Control labels in infinitive, descriptive tooltips in third person
-- [ ] „Überschrift" used for headings (never „Schlagzeile")
-- [ ] Sie used consistently, German quotes „…" and ellipsis `…`
+- [ ] „Überschrift“ used for headings (never „Schlagzeile“)
+- [ ] Sie used consistently, German quotes „…“ and ellipsis `…`
 - [ ] `.md`/`.html` filenames and `{% … %}` tags unchanged
 - [ ] Terms match `GLOSSARY.md`; new recurring terms added there
