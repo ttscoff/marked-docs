@@ -1,54 +1,54 @@
 # <%= @title %>
 
-Die Schnellaktionspalette ist ein durchsuchbarer Befehlsstarter für Marked. Es sammelt Aktionen aus der Hauptmenüleiste und dem Vorschau-**Zahnradmenü** sowie Tastaturbefehle, die nur in der Vorschau verfügbar sind und nicht in Menüs angezeigt werden (z. B. **Autoscroll**). Verwenden Sie es, wenn Sie wissen, was Sie tun möchten, sich aber nicht erinnern können, in welchem ​​Menü es enthalten ist.
+Die Schnellaktionspalette ist ein durchsuchbarer Befehlsstarter für Marked. Sie sammelt Aktionen aus der Hauptmenüleiste und dem **Zahnradmenü** der Vorschau, dazu reine Vorschaubefehle, die in keinem Menü auftauchen (etwa **Automatisches Scrollen**). Nutzen Sie sie, wenn Sie wissen, was Sie tun möchten, sich aber nicht erinnern, in welchem Menü es steckt.
 
-## Öffnen der Schnellaktionspalette
+## Die Schnellaktionspalette öffnen
 
-Öffnen Sie die Palette mit {% kbd shift cmd P %} oder von {% appmenu File, Quick Actions… %}. Das Bedienfeld erscheint als schwebendes Fenster über Ihrem aktuellen Dokument.
+Öffnen Sie die Palette mit {% kbd shift cmd P %} oder über {% appmenu Ablage, Schnellaktionen… %}. Das Panel erscheint als schwebendes Fenster über Ihrem aktuellen Dokument.
 
-Drücken Sie dieselbe Tastenkombination erneut oder drücken Sie **Escape**, um die Palette zu schließen. Wenn die Palette bereits geöffnet ist, wird sie auch durch Auswahl von **Schnellaktionen…** aus dem Menü geschlossen.
+Mit derselben Tastenkombination oder mit **Escape** schließen Sie die Palette wieder. Ist die Palette bereits offen, schließt auch die Auswahl von **Schnellaktionen…** im Menü sie.
 
-## Customisieren der Verknüpfung
+## Den Tastaturkurzbefehl anpassen
 
-Die Standardverknüpfung ist {% kbd shift cmd P %}. Um es zu ändern, öffnen Sie {% prefspane General %} und zeichnen Sie eine neue Kombination unter **Aktionspalette öffnen** im Abschnitt **Verknüpfungen** auf.
+Der Standard-Tastaturkurzbefehl ist {% kbd shift cmd P %}. Um ihn zu ändern, öffnen Sie {% prefspane General %} und legen unter **Aktionspalette öffnen** im Abschnitt **Verknüpfungen** eine neue Tastenkombination fest.
 
-Im Gegensatz zu **Aktivieren Sie Marked** und **Erstes Fenster öffnen** funktioniert die Schnellaktionsverknüpfung nur, wenn Marked die aktive Anwendung ist. Dadurch wird die Menüverknüpfung {% appmenu File, Quick Actions… %} entsprechend Ihrer Einstellung aktualisiert.
+Anders als **Marked aktivieren** und **Erstes Fenster öffnen** funktioniert dieser Tastaturkurzbefehl nur, wenn Marked die aktive Anwendung ist. Er aktualisiert den im Menü {% appmenu Ablage, Schnellaktionen… %} angezeigten Tastaturkurzbefehl passend zu Ihrer Einstellung.
 
-## Suchen und Filtern
+## Suchen und filtern
 
-Geben Sie oben im Bedienfeld das Suchfeld ein, um Befehle in Echtzeit zu filtern. Matching ist unscharf und nachsichtig:
+Tippen Sie oben im Panel in das Suchfeld, um Befehle in Echtzeit zu filtern. Der Abgleich ist unscharf und nachsichtig:
 
-- Wortreihenfolge spielt keine Rolle (`view source` entspricht **Quellenansicht umschalten**)
-- Initialen funktionieren gut (`sv` entspricht **Quellansicht**)
-- Reduzierter Abgleich findet Befehle ohne Leerzeichen (`akdoc` entspricht **Ask About Document**)
+- Die Wortreihenfolge spielt keine Rolle (`umschalten quelltext` findet **Quelltextansicht umschalten**)
+- Anfangsbuchstaben funktionieren gut (`db` findet **Dokument befragen**)
+- Auch ohne Leerzeichen wird gefunden (`autoscr` findet **Automatisches Scrollen**)
 
-Bei jedem Ergebnis wird links der Befehlsname und rechts die entsprechende Tastenkombination (sofern verfügbar) in Grau angezeigt. Einige Befehle zeigen auch einen Breadcrumb-Pfad an (z. B. `Preview › Autoscroll`), wenn die Aktion aus einem Untermenü oder der Vorschau-Engine stammt.
+Jedes Ergebnis zeigt links den Befehlsnamen und rechts in Grau den zugehörigen Tastaturkurzbefehl (sofern vorhanden). Manche Befehle zeigen zusätzlich einen Breadcrumb-Pfad (z. B. `Vorschau › Automatisches Scrollen`), wenn die Aktion aus einem Untermenü oder der Vorschau-Engine stammt.
 
 ## Was in der Liste erscheint
 
-Die Palette umfasst:
+Die Palette enthält:
 
-- **Menübefehle** aus der Hauptmenüleiste, einschließlich dynamischer Menüs wie **Stil**, **Verlauf** und offene **Fenster**-Registerkarten
+- **Menübefehle** aus der Hauptmenüleiste, einschließlich dynamischer Menüs wie **Stil**, **Verlauf** und offener **Fenster**-Tabs
 - **Zahnradmenü**-Befehle aus dem Vorschaufenster
-- **Vorschau-Verknüpfungen** aus der Tastaturbelegung in der Vorschau (dieselben Befehle, die im Vorschau-Hilfe-HUD angezeigt werden), einschließlich Navigation, Autoscroll, Lesezeichen, Suche und anderen Nur-Vorschau-Aktionen
+- **Vorschau-Tastaturkurzbefehle** aus der internen Tastaturbelegung (dieselben Befehle wie im Hilfe-HUD der Vorschau), darunter Navigation, automatisches Scrollen, Lesezeichen, Suche und weitere reine Vorschauaktionen
 
-Wenn derselbe Befehl an mehr als einer Stelle erscheint, zeigt Marked den kürzesten Menüpfad an und führt Verknüpfungsinformationen aus Duplikaten zusammen.
+Erscheint derselbe Befehl an mehreren Stellen, zeigt Marked den kürzesten Menüpfad und führt die Angaben zu den Tastaturkurzbefehlen aus den Duplikaten zusammen.
 
 ## Tastaturnavigation
 
 Navigieren Sie in der Schnellaktionspalette vollständig über die Tastatur:
 
-- **Pfeiltasten ↑/↓**: Durch die gefilterte Liste navigieren
-- **Zurück**: Den ausgewählten Befehl ausführen
-- **Escape**: Schließen Sie die Palette
-- **⌘-Tastenkombinationen**: Schließen Sie die Palette und führen Sie den entsprechenden Menübefehl aus (drücken Sie beispielsweise {% kbd cmd U %}, um **Quellansicht umschalten** auszuführen, anstatt ihn in der Liste auszuwählen).
+- **Pfeiltasten ↑/↓**: durch die gefilterte Liste bewegen
+- **Eingabetaste**: den ausgewählten Befehl ausführen
+- **Escape**: die Palette schließen
+- **⌘-Tastenkombinationen**: schließen die Palette und führen den passenden Menübefehl aus (drücken Sie z. B. {% kbd cmd U %}, um **Quelltextansicht umschalten** auszuführen, statt es in der Liste auszuwählen)
 
-Durch einfache Eingabe (ohne Befehlstaste) wird das Suchfeld gefiltert. Nur in der Vorschau verfügbare Einzeltastenkürzel wie `s` für Autoscroll filtern die Liste; Drücken Sie **Return**, um den ausgewählten Befehl auszuführen.
+Reine Eingabe (ohne Befehlstaste) filtert das Suchfeld. Einzeltasten nur für die Vorschau wie `s` für Automatisches Scrollen filtern die Liste; drücken Sie **Eingabetaste**, um den ausgewählten Befehl auszuführen.
 
 ## Befehle ausführen
 
-Durch die Auswahl eines Menübefehls wird dieser auf die gleiche Weise ausgelöst wie durch die Auswahl aus dem Menü, einschließlich dynamischer und Zahnradmenüelemente.
+Wählen Sie einen Menübefehl aus, wird er genauso ausgelöst wie über das Menü – auch dynamische Einträge und Zahnradmenü-Einträge.
 
-Wenn Sie eine **Vorschauverknüpfung** auswählen, wird die zugehörige Aktion in der aktiven Vorschau ausgeführt (z. B. das Umschalten des automatischen Bildlaufs oder das Springen zur nächsten Kopfzeile). Für diese Befehle ist ein geöffnetes Dokument mit Vorschau erforderlich. Wenn keine Vorschau verfügbar ist, wird die Palette weiterhin geöffnet, Aktionen, die nur in der Vorschau erfolgen, haben jedoch keine Auswirkung.
+Wählen Sie einen **Vorschau-Tastaturkurzbefehl** aus, wird die zugehörige Aktion in der aktiven Vorschau ausgeführt (z. B. automatisches Scrollen umschalten oder zur nächsten Überschrift springen). Diese Befehle brauchen ein geöffnetes Dokument mit Vorschau; ist keine Vorschau verfügbar, öffnet sich die Palette zwar, die reinen Vorschauaktionen bleiben aber wirkungslos.
 
-Informationen zum entsprechenden Dateiwechsel finden Sie unter [Quick Open](Quick_Open.html). Die vollständige Tastaturreferenz für die Vorschau finden Sie unter [Keyboard Shortcuts](Keyboard_Shortcuts.html) oder drücken Sie in der Vorschau {% kbd h %}, um das Hilfe-HUD anzuzeigen.
+Zum Wechseln zwischen zusammengehörigen Dateien siehe [Schnell öffnen](Quick_Open.html). Die vollständige Tastaturreferenz der Vorschau finden Sie unter [Tastaturkurzbefehle](Keyboard_Shortcuts.html) oder drücken Sie in der Vorschau {% kbd h %}, um das Hilfe-HUD anzuzeigen.

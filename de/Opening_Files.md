@@ -32,7 +32,7 @@ Wenn Sie kompatiblen Text (z. B. Markdown) in Ihrer Zwischenablage haben, könne
 
 ## Ein neues Dokument erstellen
 
-Mit Marked können Sie über den Befehl {% appmenu Ablage, Neu ({{cmd}}N) %} eine neue, leere Textdatei erstellen. Sie werden sofort nach einem Speicherort für die Datei gefragt, und im {% prefspane Apps %} können Sie neben der Schaltfläche „Texteditor“ die Option „Neue Dateien automatisch bearbeiten“ aktivieren, um die neu erstellte Datei automatisch in Ihrem Standardeditor zu öffnen.
+Mit Marked können Sie über den Befehl {% appmenu Ablage, Neu ({{cmd}}N) %} eine neue, leere Textdatei erstellen. Sie werden sofort nach einem Speicherort für die Datei gefragt, und unter {% prefspane Apps %} können Sie neben der Schaltfläche „Texteditor“ die Option „Neue Dateien automatisch bearbeiten“ aktivieren, um die neu erstellte Datei automatisch in Ihrem Standardeditor zu öffnen.
 
 ## Zuletzt geöffnet
 

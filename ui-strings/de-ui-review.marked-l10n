@@ -802,7 +802,7 @@
 "449-Uj-t8Q.ibShadowedToolTip" = "Markdown-Absätze an der angegebenen Spalte für bessere Lesbarkeit umbrechen.";
 # EN: Wrap Markdown paragraphs at the specified column for readability.
 
-"5RB-rA-kQ1.title" = "Minikarte umschalten";
+"5RB-rA-kQ1.title" = "Mini-Übersicht umschalten";
 # EN: Toggle Mini Map
 
 "5Uo-Zq-AO9.title" = "100.00%";
@@ -2525,7 +2525,7 @@ Schreibe alle Antworten auf %@.";
 "HqO-s8-yX7.ibShadowedToolTip" = "Tastenkürzelfeld anklicken um Hotkey zum Öffnen der Aktionspalette aufzuzeichnen";
 # EN: Click the shortcut field to record a hotkey for opening the actions palette
 
-"I30-g4-XjK.ibShadowedToolTip" = "Blockzitate werden bei der Wortzählung ignoriert";
+"I30-g4-XjK.ibShadowedToolTip" = "Blockzitate bei der Wortzählung ignorieren";
 # EN: Ignore block quoted text in word count
 
 "I4p-yl-edz.title" = "Vorschauverhalten:";
@@ -2735,7 +2735,7 @@ Schreibe alle Antworten auf %@.";
 "QmQ-of-AsC.ibShadowedToolTip" = "Ignoriert die erste Überschrift der ersten Ebene im Dokument, wenn H1 als Seitenumbrüche verwendet werden.";
 # EN: Ignore the first level-one headline in the document when using H1s as page breaks.
 
-"Qz7-4r-MXY.ibShadowedToolTip" = "In Blöcken zitierter Text wird bei der Wortzählung ignoriert";
+"Qz7-4r-MXY.ibShadowedToolTip" = "Blockzitate bei der Wortzählung ignorieren";
 # EN: Ignore block quoted text in word count
 
 "RGW-BJ-5Zj.title" = "Typografisch korrekte Anführungszeichen und Zeichensetzung generieren";
@@ -2885,7 +2885,7 @@ Schreibe alle Antworten auf %@.";
 "Wcb-ed-SyD.title" = "Rendern Sie ~text~ als Unterstrich";
 # EN: Render ~text~ as underscore
 
-"Wif-YO-AUc.title" = "Abschnitte mit Überschriften werden ausgeblendet";
+"Wif-YO-AUc.title" = "Überschriften klappen Abschnitte ein";
 # EN: Headlines collapse sections
 
 "Wkh-0o-sjb.title" = "Drucken/PDF:";
@@ -3069,7 +3069,7 @@ Schreibe alle Antworten auf %@.";
 "fBQ-Bn-JSp.ibShadowedToolTip" = "Interpretiert Dateien mit dem Namen Book.txt als Indexdateien und verarbeitet die spezielle Leanpub-Syntax.";
 # EN: Interpret files named Book.txt as index files and handle special Leanpub syntax.
 
-"fJZ-eg-9pc.title" = "Links zu Textdateien sollten geöffnet werden in:";
+"fJZ-eg-9pc.title" = "Textdatei-Links öffnen in:";
 # EN: Links to text files should open in:
 
 "fMi-KN-YJF.ibShadowedToolTip" = "Wenn diese Option deaktiviert ist, wird auf der ersten Seite keine Fußzeile gedruckt.";
