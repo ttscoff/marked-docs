@@ -23,7 +23,7 @@ Sie können den [Markdown Dingus](x-marked-3://dingus) verwenden, um mit den ver
 
 Marked ist eine Live-Markdown-Vorschau-App für macOS – eine editorunabhängige (Multi)Markdown-Vorschau-Anwendung, die eine Datei auf Änderungen überwacht und die Vorschau bei jedem Speichern aktualisiert. Durch die Trennung und Automatisierung der Formatierungsdetails können Sie sich mehr auf das Schreiben und weniger auf die Präsentation konzentrieren, während Sie gleichzeitig Ihr Endprodukt im Auge behalten.
 
-Für Setup-Workflows und editorspezifische Schnellstarts siehe [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html). Für eine kürzere Produktübersicht besuchen Sie [markedapp.com/markdown-preview](https://markedapp.com/markdown-preview/).
+Für Setup-Workflows und editorspezifische Schnellstarts siehe [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_Mac.html). Für eine kürzere Produktübersicht besuchen Sie [markedapp.com/markdown-preview](https://markedapp.com/markdown-preview/).
 
 Marked funktioniert mit jeder lokal zugänglichen Datei, einschließlich iCloud-Dokumenten. Ziehen Sie einfach ein Textdokument aus der Symbolleiste eines beliebigen Editors auf Marked, und es wird als HTML-Vorschau gerendert, beginnt mit der Verfolgung von Änderungen und aktualisiert die Vorschau, während Sie schreiben. Es kann sogar [mehrteilige Dokumente](Multi-File_Documents.html) mit einer einfachen „Include“-Syntax oder aus Scrivener-, Leanpub- und mmd_merge-Indexformaten kompilieren.
 

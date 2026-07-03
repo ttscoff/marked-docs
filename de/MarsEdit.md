@@ -4,7 +4,7 @@
 
 ## MarsEdit-Vorschaufenster
 
-Wählen Sie {% appmenu File, New, MarsEdit Preview %}. Marked fordert AppleScript auf, den **vorderen Beitrag in MarsEdit** zu lesen (die Bundle-IDs von Red Sweater für Direct, Mac App Store, Setapp und MarsEdit 4/5 werden erkannt). Lassen Sie MarsEdit laufen, während Sie arbeiten, während ein Dokument geöffnet ist.
+Wählen Sie {% appmenu Ablage, Neu, MarsEdit-Vorschau %}. Marked verwendet AppleScript, um den **vordersten Beitrag in MarsEdit** zu lesen (die Bundle-IDs von Red Sweater für Direkt-Download, Mac App Store, Setapp und MarsEdit 4/5 werden erkannt). Lassen Sie MarsEdit während der Arbeit mit geöffnetem Dokument laufen.
 
 - **Manuelle Aktualisierung:** Speichern Sie aus der Vorschau von Marked, wenn Sie eine Aktualisierung erzwingen möchten.
 - **Automatische Updates:** Aktivieren Sie die Wiedergabe, damit jede automatische Speicherung von MarsEdit Marked aktualisiert wird.
@@ -17,9 +17,9 @@ Der Inhalt im **erweiterten** Feld von MarsEdit wird in der Vorschau und Quelle 
 
 ### Tags und Kategorien in Metadaten
 
-Die Tags und Kategorien von MarsEdit werden dem Metadatenblock MultiMarkdown zugänglich gemacht. Mit dem MultiMarkdown-Prozessor ({% prefspane Processor %}) können Sie sie wie folgt referenzieren:
+Die Tags und Kategorien von MarsEdit werden im MultiMarkdown-Metadatenblock verfügbar gemacht. Mit dem MultiMarkdown-Prozessor ({% prefspane Processor %}) können Sie sie wie folgt referenzieren:
 
-Markiert: [%tags]
-    Gepostet in: [%categories]
+Tagged: [%tags]
+    Posted in: [%categories]
 
 [me]: https://www.red-sweater.com/marsedit/

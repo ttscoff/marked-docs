@@ -2,7 +2,7 @@
 
 [VoodooPad][vp] bündelt jede Seite in einer einzigen Datenbankdatei. Ziehen Sie `.vpdoc` auf Marked, um eine Vorschau der Seite anzuzeigen, die derzeit in VoodooPad ganz vorne liegt. Verwenden Sie {% kbd cmd S %} in VoodooPad, wann immer Sie Marked zum Neuladen von der Festplatte benötigen.
 
-Marked überwacht das Dokument auf der Festplatte und tauscht die Vorschau aus, wenn Sie die Seiten in VoodooPad wechseln.
+Marked überwacht das Dokument auf der Festplatte und aktualisiert die Vorschau, wenn Sie in VoodooPad die Seite wechseln.
 
 ## Eingebettete Bilder
 
