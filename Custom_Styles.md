@@ -102,14 +102,21 @@ text with `p { font-size: 1em; }` and `li p { font-size: 1em; }` so
 screen-only rules like `p { font-size: 1.1429em; }` do not inflate body copy
 in PDFs and printed output.
 
-PDF export uses print media on the hidden WebView used for generation, so
-`@media print { ... }` rules in your stylesheet apply the same way they do for
-printing.
+PDF export may use **print** or **screen** media on the hidden WebView used for
+generation. Built-in themes typically use print media; **custom styles** and
+[Fountain](Fountain_for_Screenwriters.html) documents often use screen media so
+layout matches the preview. That means `@media print { ... }` rules are not
+always applied during PDF export.
 
-To set sizes that differ from Marked's print defaults, add explicit rules
-inside `@media print` in your custom CSS (or in Additional CSS). Use
-`!important` when you need to override Marked's injected print styles --- for
-example:
+For reliable PDF and Print/PDF Preview styling, prefix selectors with the
+`mkprinting` class Marked adds to `<body>` during export (see [Writing Custom
+CSS](Writing_Custom_CSS.html#printstyles) for details and examples). You can use
+`.mkprinting` alone, or combine it with `@media print` when you need both paths
+covered.
+
+To set sizes that differ from Marked's print defaults, add explicit rules in
+your custom CSS (or in Additional CSS). Use `!important` when you need to
+override Marked's injected print styles --- for example:
 
 ```css
 @media print {
@@ -124,12 +131,24 @@ example:
     font-size: 16pt !important;
   }
 }
+
+.mkprinting #wrapper p,
+.mkprinting body p,
+.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+.mkprinting h1 {
+  font-size: 16pt !important;
+}
 ```
 
 Rules without `!important` may lose to later rules in `mkprintstyles` or to
 other unqualified selectors in your sheet that still apply in print. Putting
-print-only tweaks in `@media print` (rather than only in screen rules) keeps
-the preview and export behavior easier to reason about.
+print-only tweaks in `@media print` and/or `.mkprinting` rules (rather than
+only in screen rules) keeps the preview and export behavior easier to reason
+about.
 
 ## Watching CSS changes
 

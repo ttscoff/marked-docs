@@ -95,7 +95,58 @@ If your theme has additional padding or a fixed width, modify the max-width to f
 
 ## Print styles
 
-Be sure to include print styles that remove any background colors, fixed scrolling, etc. Use "@media print" to define them within your theme.
+Be sure to include print styles that remove any background colors, fixed scrolling, and preview-only UI. Marked gives you two ways to target print and PDF output.
+
+### `@media print`
+
+Standard CSS print rules apply when printing from Marked or when PDF export uses print media:
+
+```css
+@media print {
+  .inverted, .inverted #wrapper { background: white !important; }
+  #wrapper { padding: 0; }
+}
+```
+
+### The `.mkprinting` class
+
+When Marked prepares a document for **PDF export** or **Print/PDF Preview** ({% kbd cmd P %}), it adds the class `mkprinting` to the `<body>` tag (alongside export classes such as `bandw`, `breakAfterTOC`, and your style's `mkstyle--*` class). Marked's built-in themes use this class for most print-specific rules instead of relying on `@media print` alone.
+
+PDF export often loads the hidden rendering WebView with **screen** media (especially for custom styles and [Fountain](Fountain_for_Screenwriters.html) documents), so `@media print` blocks in your stylesheet may **not** apply to PDF output. Rules prefixed with `.mkprinting` always apply during export because they are ordinary class selectors, not media queries.
+
+```css
+/* Hide preview UI during print/PDF */
+.mkprinting #generated-toc,
+.mkprinting #criticnav,
+.mkprinting .mkscrollmeter {
+  display: none !important;
+}
+
+/* Print/PDF typography */
+.mkprinting #wrapper {
+  background: white;
+  padding: 0;
+}
+
+.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+For styles that must work in **both** browser printing and Marked PDF export, duplicate critical rules or combine selectors:
+
+```css
+@media print {
+  #wrapper img { max-width: 100%; }
+}
+
+.mkprinting #wrapper img {
+  max-width: 100%;
+}
+```
+
+When debugging custom print CSS, open Print/PDF Preview or export to PDF, then use [Safari's Web Inspector](#webkitinspector) to inspect the document --- the `<body>` will have the `mkprinting` class while print layout is active.
 
 Link-hiding in print is handled outside of the main theme, allowing users to choose to have link highlights and underlines hidden in printout. As long as you have a base style set for the text, you don't need to worry about this.
 
@@ -105,7 +156,7 @@ So, have at it. Convert your blog theme, create a killer print style for PDF doc
 
 In the {% prefspane Style %}, you can edit additional CSS. These styles will be appended to any theme loaded, and can be used to make universal changes to all themes.
 
-Using [high specificity](#overridingspecificity) and @media queries for print and screen, you can control just about every styling aspect with a bit of CSS knowledge.
+Using [high specificity](#overridingspecificity), `@media` queries for print and screen, and `.mkprinting` selectors for PDF export, you can control just about every styling aspect with a bit of CSS knowledge.
 
 ## WebKit Inspector
 
