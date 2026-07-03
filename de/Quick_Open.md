@@ -1,74 +1,73 @@
 # <%= @title %>
 
-Quick Open bietet schnellen Zugriff auf Ihre geöffneten Dokumente und zuletzt verwendeten Dateien.
+Schnell öffnen bietet raschen Zugriff auf Ihre geöffneten Dokumente und zuletzt verwendeten Dateien.
 
-## Öffnen Schnell öffnen
+## Schnell öffnen aufrufen
 
-Greifen Sie mit {% kbd shift cmd O %} oder über das Menü {% appmenu File, Quick Open %} auf das Schnellöffnungsfeld zu. Das Bedienfeld erscheint als schwebendes Fenster über Ihrem aktuellen Dokument, sodass Sie schnell zwischen geöffneten Dokumenten wechseln oder zuletzt verwendete Dateien öffnen können.
+Rufen Sie das Schnell-öffnen-Panel mit {% kbd shift cmd O %} oder über das Menü {% appmenu Ablage, Schnell öffnen %} auf. Das Panel erscheint als schwebendes Fenster über Ihrem aktuellen Dokument und lässt Sie schnell zwischen geöffneten Dokumenten wechseln oder zuletzt verwendete Dateien öffnen.
 
-![Quick Open Panel][qo]
+![Schnell-öffnen-Panel][qo]
 
 [qo]: images/quick-open-800.jpg @2x width=800
 
 ## Dokumentabschnitte
 
-Das Schnellöffnungsfenster organisiert Dokumente in übersichtliche Abschnitte:
+Das Schnell-öffnen-Panel gliedert Dokumente in übersichtliche Abschnitte:
 
-### Dokumente öffnen
+### Geöffnete Dokumente
 
-Oben in der Liste sehen Sie alle aktuell geöffneten Dokumente. Dokumente werden visuell nach ihrem Fenster gruppiert:
+Oben in der Liste sehen Sie alle aktuell geöffneten Dokumente. Sie sind nach ihrem Fenster gruppiert:
 
-- **Fenster mit Registerkarten**: Dokumente in Fenstern mit Registerkarten zeigen als Untertitel „Fenster mit X-Registerkarten“, was angibt, wie viele Registerkarten sich in dieser Fenstergruppe befinden
-- **Eigenständiges Fenster**: Dokumente in einzelnen Fenstern zeigen „Fenster“ als Untertitel
+- **Fenster mit Tabs**: Dokumente in Fenstern mit Tabs zeigen als Untertitel „Fenster mit X Tabs“ und geben so an, wie viele Tabs zur Fenstergruppe gehören
+- **Eigenständige Fenster**: Dokumente in einzelnen Fenstern zeigen „Fenster“ als Untertitel
 
-Für jedes geöffnete Dokument wird Folgendes angezeigt:
-- Der Dateiname des Dokuments als Haupttitel
-– Die Fenstergruppierungsinformationen als Untertitel
-- Ein Dokumentsymbol
+Für jedes geöffnete Dokument werden angezeigt:
+- der Dateiname des Dokuments als Haupttitel
+- die Angabe zur Fenstergruppierung als Untertitel
+- ein Dokumentsymbol
 
-### Aktuelle Dokumente
+### Zuletzt geöffnete Dokumente
 
-Unterhalb der geöffneten Dokumente unterteilt ein Trennzeichen „Zuletzt verwendete Dokumente“ die Liste. Im Abschnitt „Zuletzt verwendete Dokumente“ werden bis zu 10 Ihrer zuletzt geöffneten Dateien angezeigt, die derzeit nicht geöffnet sind. Für jedes aktuelle Dokument wird Folgendes angezeigt:
+Unterhalb der geöffneten Dokumente trennt der Abschnittstitel „Zuletzt geöffnete Dokumente“ die Liste. Dieser Abschnitt zeigt bis zu 10 Ihrer zuletzt geöffneten Dateien, die aktuell nicht geöffnet sind. Für jedes dieser Dokumente werden angezeigt:
 
-- Der Dateiname des Dokuments als Haupttitel
-- „Neueste“ als Untertitel
-- Ein Dokumentsymbol
+- der Dateiname des Dokuments als Haupttitel
+- „Zuletzt geöffnet“ als Untertitel
+- ein Dokumentsymbol
 
-### Andere öffnen
+### Anderes öffnen
 
-Unten in der Liste können Sie mit der Option „Andere öffnen…“ die Standard-Dateiauswahl von macOS öffnen, um eine beliebige Datei auszuwählen. Diese Option zeigt Folgendes an:
+Unten in der Liste können Sie mit der Option „Anderes öffnen…“ die Standard-Dateiauswahl von macOS öffnen, um eine beliebige Datei auszuwählen. Diese Option zeigt:
 
-- „Open Other…“ als Haupttitel
-- „Öffne eine Datei oder einen Ordner“ als Untertitel
-- Ein Ordnersymbol
+- „Anderes öffnen…“ als Haupttitel
+- „Datei oder Ordner öffnen“ als Untertitel
+- ein Ordnersymbol
 
-## Suchen und Filtern
+## Suchen und filtern
 
-Geben Sie oben im Bedienfeld das Suchfeld ein, um die Liste in Echtzeit zu filtern. Die Suche entspricht:
+Tippen Sie oben im Panel in das Suchfeld, um die Liste in Echtzeit zu filtern. Durchsucht werden:
 
-- Dokumentdateinamen
-- Vollständige Dateipfade
+- die Dateinamen der Dokumente
+- die vollständigen Dateipfade
 
-Während Sie tippen, wird die Liste sofort aktualisiert und zeigt nur passende Dokumente an. Die Option „Andere öffnen…“ bleibt immer unten in den gefilterten Ergebnissen sichtbar.
+Während Sie tippen, aktualisiert sich die Liste sofort und zeigt nur passende Dokumente. Die Option „Anderes öffnen…“ bleibt in den gefilterten Ergebnissen immer unten sichtbar.
 
 ## Tastaturnavigation
 
-Navigieren Sie im Quick Open-Bereich vollständig mit Ihrer Tastatur:
+Das Schnell-öffnen-Panel lässt sich vollständig per Tastatur steuern:
 
-- **Pfeiltasten ↑/↓**: Durch die Liste nach oben und unten bewegen
-- **Zurück**: Öffnet das ausgewählte Dokument oder die ausgewählte Option
-- **Escape**: Schließen Sie das Schnellöffnungsfeld
-- **Befehl (⌘)**: Halten Sie gedrückt, um Dateipfade anzuzeigen (siehe unten)
+- **Pfeiltasten ↑/↓**: in der Liste nach oben und unten bewegen
+- **Eingabetaste**: das ausgewählte Dokument bzw. die ausgewählte Option öffnen
+- **Escape**: das Schnell-öffnen-Panel schließen
+- **Befehlstaste (⌘)**: gedrückt halten, um Dateipfade einzublenden (siehe unten)
 
 ## Dateipfade anzeigen
 
-Halten Sie die **Befehlstaste (⌘)** gedrückt, während das Schnellöffnungsfenster geöffnet ist, um den vollständigen Dateipfad für jedes Dokument im Untertitelbereich anzuzeigen. Pfade in Ihrem Home-Verzeichnis werden mit der Abkürzung `~` angezeigt (z. B. `~/Documents/file.md`). Lassen Sie die Befehlstaste los, um zur normalen Ansicht mit Fenstergruppierung oder „Zuletzt“-Informationen zurückzukehren.
+Halten Sie die **Befehlstaste (⌘)** gedrückt, während das Schnell-öffnen-Panel geöffnet ist, um im Untertitelbereich den vollständigen Dateipfad jedes Dokuments zu sehen. Pfade in Ihrem Home-Ordner werden mit der Abkürzung `~` dargestellt (z. B. `~/Documents/file.md`). Lassen Sie die Befehlstaste los, um zur normalen Ansicht mit Fenstergruppierung oder „Zuletzt geöffnet“-Angabe zurückzukehren.
 
-Dies ist besonders nützlich, wenn Sie mehrere Dateien mit demselben Namen geöffnet haben oder wenn Sie den genauen Speicherort eines Dokuments überprüfen müssen.
+Das ist besonders nützlich, wenn Sie mehrere Dateien mit demselben Namen geöffnet haben oder den genauen Speicherort eines Dokuments prüfen müssen.
 
 ## Dokumente öffnen
 
-- **Offene Dokumente**: Wenn Sie ein geöffnetes Dokument auswählen, wird dessen Fenster in den Vordergrund gebracht und zur Registerkarte dieses Dokuments gewechselt, wenn es sich in einem Fenster mit Registerkarten befindet
-- **Zuletzt verwendete Dokumente**: Wenn Sie ein aktuelles Dokument auswählen, wird es in einem neuen Fenster geöffnet oder als Registerkarte hinzugefügt (abhängig von Ihrer Einstellung „Dokumente in Registerkarten öffnen“ in {% prefspane General %}).
-- **Andere öffnen...**: Wenn Sie diese Option auswählen, wird das Standarddialogfeld für die Dateiauswahl von macOS geöffnet
-
+- **Geöffnete Dokumente**: Wählen Sie ein geöffnetes Dokument aus, wird dessen Fenster in den Vordergrund geholt und – falls es in einem Fenster mit Tabs liegt – zum Tab dieses Dokuments gewechselt
+- **Zuletzt geöffnete Dokumente**: Wählen Sie ein zuletzt geöffnetes Dokument aus, wird es in einem neuen Fenster geöffnet oder als Tab hinzugefügt (abhängig von Ihrer Einstellung „Dokumente in Tabs öffnen“ unter {% prefspane General %})
+- **Anderes öffnen…**: Diese Option öffnet den Standard-Dateiauswahldialog von macOS
