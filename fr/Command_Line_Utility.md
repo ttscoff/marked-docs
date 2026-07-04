@@ -1,29 +1,27 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-The `mk` command-line tool provides easy access to Marked's features from the terminal, enabling workflow automation and integration with shell scripts and other command-line tools.
+L'outil en ligne de commande `mk` donne un accès simple aux fonctionnalités de Marked depuis le terminal, permettant l'automatisation de flux de travail et l'intégration avec des scripts shell et d'autres outils en ligne de commande.
 
 ## Installation
 
-The recommended way to install `mk` is with Homebrew:
+La méthode recommandée pour installer `mk` est d'utiliser Homebrew :
 
 ```bash
 brew tap ttscoff/thelab
 brew install ttscoff/thelab/mk
 ```
 
-Si vous n'utilisez pas Homebrew, téléchargez et installez le package signé :
+Si vous n'utilisez pas Homebrew, téléchargez et installez le package signé :
 
-{% download "https://github.com/ttscoff/mk/releases/latest/download/mk.pkg" "Signed PKG installer for mk. Double-click to launch Installer and follow the prompts." %}
+{% download "https://github.com/ttscoff/mk/releases/latest/download/mk.pkg" "Programme d'installation PKG signé pour mk. Double-cliquez pour lancer Installateur et suivez les instructions." %}
 
-After downloading `mk.pkg`, double-click it and follow the installer prompts.
+Une fois `mk.pkg` téléchargé, double-cliquez dessus et suivez les instructions de l'installateur.
 
-## Basic Usage
+## Utilisation de base
 
-### Opening Files
+### Ouvrir des fichiers
 
-Open a markdown file in Marked from the command line:
+Ouvrez un fichier markdown dans Marked depuis la ligne de commande :
 
 ```bash
 mk file.md
@@ -33,7 +31,7 @@ mk --raise document.md  # Open and raise window above all others
 
 ### Contenu en streaming depuis STDIN
 
-Stream content directly to Marked's Streaming Preview:
+Diffusez du contenu directement vers l'aperçu en continu de Marked :
 
 ```bash
 echo "# Hello World" | mk
@@ -41,59 +39,59 @@ cat notes.md | mk
 mk -  # Explicitly use STDIN
 ```
 
-The Streaming Preview window will open and display the content in real-time as it's piped from other commands.
+La fenêtre d'aperçu en continu s'ouvre et affiche le contenu en temps réel, à mesure qu'il est transmis (pipe) depuis d'autres commandes.
 
-## Command Reference
+## Référence des commandes
 
-### File Operations
+### Opérations sur les fichiers
 
-**`mk [file]`** — Open a markdown file in Marked
+**`mk [file]`** : ouvrir un fichier markdown dans Marked
 
-**`mk [file] --raise`** — Ouvrez le fichier et élevez la fenêtre au-dessus de toutes les autres
+**`mk [file] --raise`** : ouvrir le fichier et élever la fenêtre au-dessus de toutes les autres
 
-### STDIN and Streaming
+### STDIN et streaming
 
-**`mk`** ou **`mk -`** — Lisez depuis STDIN et ouvrez l'aperçu en streaming
+**`mk`** ou **`mk -`** : lire depuis STDIN et ouvrir l'aperçu en continu
 
-**`mk --stream`** — Ouvrir la fenêtre d'aperçu du streaming sans lire STDIN
+**`mk --stream`** : ouvrir la fenêtre d'aperçu en continu sans lire STDIN
 
-### Preview Management
+### Gestion de l'aperçu
 
-**`mk --refresh`** — Refresh the frontmost preview window
+**`mk --refresh`** : actualiser la fenêtre d'aperçu au premier plan
 
-**`mk --refresh all`** — Actualisez toutes les fenêtres d'aperçu ouvertes
+**`mk --refresh all`** : actualiser toutes les fenêtres d'aperçu ouvertes
 
-**`mk --refresh file.md`** — Refresh the preview for a specific file (if open)
+**`mk --refresh file.md`** : actualiser l'aperçu d'un fichier spécifique (s'il est ouvert)
 
-### Preferences
+### Préférences
 
-**`mk --pref`** — Open Marked preferences (General page)
+**`mk --pref`** : ouvrir les préférences de Marked (page Général)
 
-**`mk --pref Advanced`** — Open preferences to a specific page
+**`mk --pref Advanced`** : ouvrir les préférences sur une page spécifique
 
-**`mk --defaults KEY=VALUE [KEY=VALUE...]`** — Définir les préférences utilisateur (plusieurs paires autorisées)
+**`mk --defaults KEY=VALUE [KEY=VALUE...]`** : définir les préférences utilisateur (plusieurs paires autorisées)
 
 ```bash
 mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 ```
 
-### Style Management
+### Gestion des styles
 
-**`mk --style NAME`** — Définir le style d'aperçu pour les fenêtres ouvertes
+**`mk --style NAME`** : définir le style d'aperçu pour les fenêtres ouvertes
 
-**`mk --add-style FILE`** — Add a CSS file as a custom style to Marked
+**`mk --add-style FILE`** : ajouter un fichier CSS comme style personnalisé dans Marked
 
 ```bash
 mk --add-style ~/Styles/custom.css
 ```
 
-### JavaScript Execution
+### Exécution de JavaScript
 
-**`mk --dojs "JAVASCRIPT_COMMAND"`** — Exécutez JavaScript dans la fenêtre la plus en avant
+**`mk --dojs "JAVASCRIPT_COMMAND"`** : exécuter du JavaScript dans la fenêtre au premier plan
 
-**`mk --dojs "SCRIPT" all`** — Run JavaScript in all windows
+**`mk --dojs "SCRIPT" all`** : exécuter du JavaScript dans toutes les fenêtres
 
-**`mk --dojs "SCRIPT" file.md`** — Run JavaScript in specific file(s)
+**`mk --dojs "SCRIPT" file.md`** : exécuter du JavaScript dans un ou plusieurs fichiers spécifiques
 
 ```bash
 mk --dojs "window.scrollTo(0,0)"
@@ -102,29 +100,29 @@ mk --dojs "alert('Hello')" all
 
 ### Extraction et importation de contenu
 
-**`mk --extract URL`** — Extract content from URL and open in Marked
+**`mk --extract URL`** : extraire le contenu d'une URL et l'ouvrir dans Marked
 
 ```bash
 mk --extract https://example.com/article
 ```
 
-**`mk --importurl [URL]`** — Ouvrir la fenêtre URL d'importation (éventuellement avec l'URL)
+**`mk --importurl [URL]`** : ouvrir la fenêtre d'importation d'URL (éventuellement avec l'URL)
 
-**`mk --stylestealer [URL]`** — HUD de style ouvert (en option avec URL)
+**`mk --stylestealer [URL]`** : ouvrir le HUD de récupération de style (éventuellement avec une URL)
 
-### Utility Commands
+### Commandes utilitaires
 
-**`mk --paste`** — Create new document from clipboard
+**`mk --paste`** : créer un nouveau document à partir du presse-papiers
 
-**`mk --preview TEXT`** — Prévisualisez le texte directement dans un nouveau document
+**`mk --preview TEXT`** : prévisualiser le texte directement dans un nouveau document
 
-**`mk --dingus`** — Ouvrez Markdown Dingus pour tester les processeurs
+**`mk --dingus`** : ouvrir Markdown Dingus pour tester les processeurs
 
-**`mk --help`** or **`mk -h`** — Show usage information
+**`mk --help`** ou **`mk -h`** : afficher les informations d'utilisation
 
-**`mk --version`** or **`mk -v`** — Show version information
+**`mk --version`** ou **`mk -v`** : afficher les informations de version
 
-## Examples
+## Exemples
 
 ```bash
 # Open a file
@@ -155,11 +153,11 @@ mk --extract https://blog.example.com/article
 mk --preview "## Hello\n\nThis is **markdown** text!"
 ```
 
-## Integration
+## Intégration
 
-### Shell Aliases
+### Alias shell
 
-Add to your `~/.zshrc` or `~/.bash_profile`:
+Ajoutez ceci à votre `~/.zshrc` ou `~/.bash_profile` :
 
 ```bash
 alias mko='mk --raise'      # Open with raise
@@ -168,7 +166,7 @@ alias mkr='mk --refresh all' # Refresh all
 
 ### Scripts
 
-Utilisez `mk` dans les scripts shell pour l'automatisation :
+Utilisez `mk` dans les scripts shell pour l'automatisation :
 
 ```bash
 #!/bin/bash
@@ -178,9 +176,9 @@ fswatch -o document.md | while read; do
 done
 ```
 
-### Workflows
+### Flux de travail
 
-Combine with other tools:
+Combinez avec d'autres outils :
 
 ```bash
 # Convert clipboard to markdown and preview
@@ -190,30 +188,30 @@ pbpaste | markdown | mk
 grep -r "TODO" . | head -20 | mk
 ```
 
-## Open Source
+## Open source
 
-The `mk` command-line tool is open source and available on GitHub:
+L'outil en ligne de commande `mk` est open source et disponible sur GitHub :
 
 **https://github.com/ttscoff/mk**
 
-You can:
-- View the source code
-- Contribute improvements
-- Report issues
-- Construire à partir des sources si nécessaire
+Vous pouvez :
+- consulter le code source
+- contribuer des améliorations
+- signaler des problèmes
+- construire à partir des sources si nécessaire
 
-The tool is written in Swift and can be compiled using Xcode. Voir le [README](https://github.com/ttscoff/mk) pour les instructions de construction.
+L'outil est écrit en Swift et peut être compilé avec Xcode. Voir le [README](https://github.com/ttscoff/mk) pour les instructions de construction.
 
 ## Version
 
-Check your installed `mk` version with:
+Vérifiez la version de `mk` installée avec :
 
 ```bash
 mk --version
 ```
 
-## Related Features
+## Fonctionnalités associées
 
-- See [URL Handler](URL_Handler) for more information about Marked's URL scheme
-- Voir [Streaming Preview](Streaming_Preview) pour plus de détails sur la fonctionnalité d'aperçu en streaming
-- See [Workflow Integration](Workflow_Integration) for automation examples
+- Voir le [gestionnaire d'URL](URL_Handler) pour plus d'informations sur le schéma d'URL de Marked
+- Voir [Aperçu en continu](Streaming_Preview) pour plus de détails sur la fonctionnalité d'aperçu en continu
+- Voir [Intégration aux flux de travail](Workflow_Integration) pour des exemples d'automatisation
