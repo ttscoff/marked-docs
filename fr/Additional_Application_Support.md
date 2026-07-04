@@ -1,61 +1,59 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marked works with many editors and writing apps. This page covers shared **settings**, the **clipboard preview**, pointers to **streaming preview**, and scripting resources. Detailed guides for popular apps live in their own help topics (see the **Supported Apps** section in the sidebar).
+Marked fonctionne avec de nombreux éditeurs et applications d'écriture. Cette page couvre les **paramètres** partagés, l'**aperçu du presse-papiers**, des renvois vers l'**aperçu en continu**, ainsi que des ressources de script. Les guides détaillés pour les applications populaires se trouvent dans leurs propres rubriques d'aide (voir la section **Applications prises en charge** dans la barre latérale).
 
-## Per-app guides
+## Guides par application
 
-Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for the overall workflow. Si vous utilisez Obsidian, consultez [Marked vs Obsidian Preview](Marked_vs_Obsidian_Preview.html) pour décider quand Marked ajoute de la valeur aux côtés de l'aperçu intégré d'Obsidian.
+Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.html) pour une vue d'ensemble du fonctionnement. Si vous utilisez Obsidian, consultez [Marked face à l'aperçu intégré d'Obsidian](Marked_vs_Obsidian_Preview.html) pour décider quand Marked ajoute de la valeur par rapport à l'aperçu intégré d'Obsidian.
 
-| Topic | Help page |
+| Sujet | Page d'aide |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
-| **Curio** (streaming preview) | [Curio](Curio.html) |
-| **Brouillons** (aperçu en streaming + actions) | [Drafts](Drafts.html) |
-| **DEVONthink** (Script menu integration) | [DEVONthink](DEVONthink.html) |
-| **Folder watching** (nvALT, nvUltra, etc.) | [Surveillance de dossiers](Folder_Watching.html) |
+| **Curio** (aperçu en continu) | [Curio](Curio.html) |
+| **Drafts** (aperçu en continu + actions) | [Drafts](Drafts.html) |
+| **DEVONthink** (intégration au menu Scripts) | [DEVONthink](DEVONthink.html) |
+| **Surveillance de dossiers** (nvALT, nvUltra, etc.) | [Surveillance de dossiers](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
-| **Résolution d'URL de crochet** | [Hookmark](Hookmark.html) |
+| **Résolution des URL Hookmark** | [Hookmark](Hookmark.html) |
 | **iA Writer** | [iA Writer](iA_Writer.html) |
-| **iThoughtsX** `.itmz` maps | [iThoughtsX](iThoughtsX.html) |
+| **iThoughtsX** cartes `.itmz` | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** aperçu en direct | [MarsEdit](MarsEdit.html) |
 | **MindNode** | [MindNode](MindNode.html) |
-| **Compositeur MultiMarkdown** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
+| **MultiMarkdown Composer** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
-| Voûtes et légendes **Obsidienne** | [Obsidian](Obsidian.html) |
-| **OmniOutliner / OPML** | [OmniOutliner and OPML](OmniOutliner_and_OPML.html) |
-| **RTF / RTFD** (Pages, TextEdit, etc.) | [RTF and RTFD Support](RTF_Support.html) |
-| **PDF** | [PDF Support](PDF_Support.html) |
-| **Scrivener 3** | [Support Scrivener 3](Scrivener_Support.html) |
-| **The Archive** streaming preview | [The Archive](The_Archive.html) |
-| **Ulysses** export workflow | [Ulysses](Ulysses.html) |
-| **Vim** (vim-marked plugin) | [Vim](Vim.html) |
-| **VS Code** (Open in Marked extension) | [VS Code](VS_Code.html) |
+| Coffres et légendes **Obsidian** | [Obsidian](Obsidian.html) |
+| **OmniOutliner / OPML** | [OmniOutliner et OPML](OmniOutliner_and_OPML.html) |
+| **RTF / RTFD** (Pages, TextEdit, etc.) | [Prise en charge de RTF et RTFD](RTF_Support.html) |
+| **PDF** | [Prise en charge de PDF](PDF_Support.html) |
+| **Scrivener 3** | [Prise en charge de Scrivener 3](Scrivener_Support.html) |
+| **The Archive** aperçu en continu | [The Archive](The_Archive.html) |
+| **Ulysses** flux d'export | [Ulysses](Ulysses.html) |
+| **Vim** (plugin vim-marked) | [Vim](Vim.html) |
+| **VS Code** (extension Open in Marked) | [VS Code](VS_Code.html) |
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
-| **Xcode playgrounds** | [Terrains de jeux Xcode](Xcode_Playgrounds.html) |
+| **Xcode Playgrounds** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Application settings
+## Paramètres de l'application
 
 I> Plusieurs intégrations exposent des bascules à l'intérieur de {% prefspane Apps %} et {% prefspane Preview %}.
 
-![Application Settings][appsettings]
+![Paramètres de l'application][appsettings]
 
-Use these panes for wiki-link defaults, Scrivener hand-off, streamed clipboard settings, Mind Map embedding options for OPML/OmniOutliner, Obsidian integrations, or other processors that rely on cooperative editors.
+Utilisez ces volets pour les valeurs par défaut des liens wiki, le transfert vers Scrivener, les paramètres du presse-papiers en continu, les options d'intégration de cartes mentales pour OPML/OmniOutliner, les intégrations Obsidian, ou d'autres processeurs qui dépendent d'éditeurs coopératifs.
 
-## Clipboard Preview
+## Aperçu du presse-papiers
 
 ![][ClipboardPreviewMenu]
 
 Le Markdown (ou le texte brut compatible) dans le presse-papiers s'ouvre avec {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Si le presse-papiers contient **HTML ou RTF**, Marked le convertit en source de type Markdown avant l'aperçu, y compris la détection de titre approximatif lorsque les paragraphes RTF utilisent de grandes tailles de police de feuille de style.
 
-## Streaming Preview
+## Aperçu en continu
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra, and several other editors can push Markdown into Marked as you type via **Streaming Preview**. Voir [Streaming Preview](Streaming_Preview.html) pour la configuration et le dépannage.
+Bear, Curio, Drafts, The Archive, nvALT, nvUltra et plusieurs autres éditeurs peuvent envoyer du Markdown vers Marked au fil de la frappe grâce à l'**aperçu en continu**. Voir [Aperçu en continu](Streaming_Preview.html) pour la configuration et le dépannage.
 
-## Scripts et pack bonus
+## Scripts et Bonus Pack
 
-Automations for BBEdit, TextMate, DEVONthink, Emacs, Vim, and more ship with the [Marked Bonus Pack][bonus]. Install or adapt those scripts when you want menu-bar or editor macros beyond the integrations listed above.
+Des automatisations pour BBEdit, TextMate, DEVONthink, Emacs, Vim et d'autres sont fournies avec le [Marked Bonus Pack][bonus]. Installez ou adaptez ces scripts si vous voulez des macros de barre de menus ou d'éditeur au-delà des intégrations listées ci-dessus.
 
 
 [appsettings]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane
