@@ -1,20 +1,18 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marked includes an AppleScript dictionary for automating preview, export, and workflow integration. Vous pouvez ouvrir des documents, contrôler l'aperçu (rechargement, défilement, surlignages, défilement automatique, lecture rapide), lire les statistiques, modifier les processeurs et les styles, copier du HTML ou du RTF dans le presse-papiers et exporter vers la plupart des mêmes formats disponibles dans le menu {% appmenu File, Export %}. **Preview headings / table of contents via AppleScript is work in progress** (see below).
+Marked inclut un dictionnaire AppleScript pour automatiser l'aperçu, l'export et l'intégration aux flux de travail. Vous pouvez ouvrir des documents, contrôler l'aperçu (rechargement, défilement, surlignages, défilement automatique, lecture rapide), lire les statistiques, modifier les processeurs et les styles, copier du HTML ou du RTF dans le presse-papiers et exporter vers la plupart des mêmes formats disponibles dans le menu {% appmenu File, Export %}. **L'aperçu des titres / table des matières via AppleScript est en cours de développement** (voir ci-dessous).
 
-For URL-based automation (shell scripts, `open` commands, and callbacks), see the [URL Handler](URL_Handler.html). AppleScript et le gestionnaire d'URL se complètent : utilisez AppleScript lorsque vous devez cibler un document ou une fenêtre spécifique, et les URL lorsqu'un simple appel `open 'x-marked://...'` suffit.
+Pour l'automatisation basée sur les URL (scripts shell, commandes `open` et callbacks), consultez le [gestionnaire d'URL](URL_Handler.html). AppleScript et le gestionnaire d'URL se complètent : utilisez AppleScript lorsque vous devez cibler un document ou une fenêtre spécifique, et les URL lorsqu'un simple appel `open 'x-marked://...'` suffit.
 
-## Viewing the dictionary
+## Consulter le dictionnaire
 
-In **Script Editor**, choose **File → Open Dictionary…** and select Marked. Le dictionnaire répertorie les commandes sur les objets **application**, **document** et **window**, ainsi que les commandes d'exportation dans la suite Marked.
+Dans **Éditeur de script**, choisissez **Fichier → Ouvrir le dictionnaire…** puis sélectionnez Marked. Le dictionnaire répertorie les commandes sur les objets **application**, **document** et **window**, ainsi que les commandes d'exportation dans la suite Marked.
 
-On macOS you can browse scripting definitions with **Script Editor**.
+Sur macOS, vous pouvez parcourir les définitions de script avec **Éditeur de script**.
 
-## Targeting Marked
+## Cibler Marked
 
-Pour l'installation standard :
+Pour l'installation standard :
 
 ```applescript
 tell application "Marked"
@@ -22,36 +20,36 @@ tell application "Marked"
 end tell
 ```
 
-## Documents and windows
+## Documents et fenêtres
 
 **Application**
 
-- `documents` -- open preview documents (ordered list).
+- `documents` -- documents d'aperçu ouverts (liste ordonnée).
 - `windows` -- fenêtres d'aperçu.
 
 **Document**
 
 - `name` -- nom d'affichage.
-- `path` -- file path when the document is saved on disk.
-- `modified` -- whether the document has unsaved editor changes.
-- `processor` -- Markdown processor for this preview (read/write). Valid names: `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. Setting `processor` applies a per-document override and reloads the preview; cela ne change pas la valeur par défaut globale dans {% prefspane Processor %}.
-- `preprocessor` -- preprocessor for this preview (read/write). Use `true` or `false` to enable or disable the custom preprocessor, or a preprocessor name when applicable.
-- `source text` -- raw Markdown source (read-only).
-- `critic markup mode` -- whether CriticMarkup processing is enabled (read/write). Le modifier recharge l’aperçu.
-- `is autoscrolling` -- whether autoscroll is active (read-only).
-- `is speed reading` -- whether speed read mode is active (read-only).
+- `path` -- chemin du fichier lorsque le document est enregistré sur le disque.
+- `modified` -- indique si le document a des modifications d'éditeur non enregistrées.
+- `processor` -- Processeur Markdown pour cet aperçu (lecture/écriture). Noms valides : `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. Modifier `processor` applique une exception par document et recharge l'aperçu ; cela ne change pas la valeur par défaut globale dans {% prefspane Processor %}.
+- `preprocessor` -- préprocesseur pour cet aperçu (lecture/écriture). Utilisez `true` ou `false` pour activer ou désactiver le préprocesseur personnalisé, ou un nom de préprocesseur si applicable.
+- `source text` -- source Markdown brute (lecture seule).
+- `critic markup mode` -- indique si le traitement CriticMarkup est activé (lecture/écriture). Le modifier recharge l'aperçu.
+- `is autoscrolling` -- indique si le défilement automatique est actif (lecture seule).
+- `is speed reading` -- indique si le mode lecture rapide est actif (lecture seule).
 - Commandes de prévisualisation, de lecture, de statistiques et d'exportation (voir ci-dessous).
 
 **Window**
 
-- `document` -- the `MarkdownDocument` shown in that window.
-- `style` -- current preview style name (read/write). Setting `style` reloads the preview with the chosen theme (same as picking a style from the preview style menu).
-- `close`, `save`, `print` -- standard window commands.
-- The same preview, reader, statistics, and export commands as on documents (forwarded to the window's document).
+- `document` -- le `MarkdownDocument` affiché dans cette fenêtre.
+- `style` -- nom du style d'aperçu actuel (lecture/écriture). Modifier `style` recharge l'aperçu avec le thème choisi (comme sélectionner un style depuis le menu des styles d'aperçu).
+- `close`, `save`, `print` -- commandes de fenêtre standard.
+- Les mêmes commandes d'aperçu, de lecture, de statistiques et d'exportation que sur les documents (transmises au document de la fenêtre).
 
-Prefer `tell document 1` or `tell window 1's document` when exporting a specific preview. Export commands on the application use the key window or current document when no receiver is specified.
+Préférez `tell document 1` ou `tell window 1's document` lorsque vous exportez un aperçu spécifique. Les commandes d'exportation sur l'application utilisent la fenêtre principale ou le document actuel lorsqu'aucun destinataire n'est spécifié.
 
-### Example: open and read path
+### Exemple : ouvrir et lire le chemin
 
 ```applescript
 tell application "Marked"
@@ -60,7 +58,7 @@ tell application "Marked"
 end tell
 ```
 
-### Exemple : modifier le style d'aperçu
+### Exemple : modifier le style d'aperçu
 
 ```applescript
 tell application "Marked"
@@ -70,11 +68,11 @@ tell application "Marked"
 end tell
 ```
 
-Style names match the preview style menu (display name, CSS resource name such as `swiss`, or internal identifier). Custom styles you added in the Style Manager are supported.
+Les noms de style correspondent au menu des styles d'aperçu (nom affiché, nom de ressource CSS comme `swiss`, ou identifiant interne). Les styles personnalisés que vous avez ajoutés dans le Gestionnaire de styles sont pris en charge.
 
-Use **`get preview style names`** on the application object to list enabled style display names.
+Utilisez **`get preview style names`** sur l'objet application pour lister les noms affichés des styles activés.
 
-### Exemple : processeur et texte source
+### Exemple : processeur et texte source
 
 ```applescript
 tell application "Marked"
@@ -86,21 +84,21 @@ tell application "Marked"
 end tell
 ```
 
-## Application commands
+## Commandes de l'application
 
-These commands apply to the **application** object (not a specific document).
+Ces commandes s'appliquent à l'objet **application** (pas à un document spécifique).
 
 | Command | Description |
 | --- | --- |
 | `open streaming preview` | Ouvrez une fenêtre [aperçu du presse-papiers en streaming](Streaming_Preview.html). |
-| `preview clipboard` | Open a [clipboard preview](Opening_Files.html) of the current clipboard contents (same as {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}). |
-| `close all` | Fermez tous les documents d'aperçu ouverts (pas d'invite de sauvegarde ; Marqué ne modifie pas les fichiers source). |
-| `get available processors` | Liste des noms de processeur : `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. |
-| `get preview style names` | List enabled preview style display names. |
-| `get_available_formats` | List supported `convert_to` format names. |
+| `preview clipboard` | Ouvre un [aperçu du presse-papiers](Opening_Files.html) de son contenu actuel (identique à {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}). |
+| `close all` | Fermez tous les documents d'aperçu ouverts (pas d'invite de sauvegarde ; Marked ne modifie pas les fichiers source). |
+| `get available processors` | Liste des noms de processeur : `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. |
+| `get preview style names` | Liste les noms affichés des styles d'aperçu activés. |
+| `get_available_formats` | Liste les noms de formats pris en charge par `convert_to`. |
 | `get_available_profiles` | Répertoriez les noms des profils d'exportation (identiques à la propriété `profiles`). |
 
-Bring Marked to the front with the standard AppleScript **`activate`** command:
+Placez Marked au premier plan avec la commande AppleScript standard **`activate`** :
 
 ```applescript
 tell application "Marked"
@@ -109,9 +107,9 @@ tell application "Marked"
 end tell
 ```
 
-## Preview control
+## Contrôle de l'aperçu
 
-Available on **document** and **window**. Most of these require a loaded preview WebView.
+Disponibles sur **document** et **window**. La plupart nécessitent une WebView d'aperçu chargée.
 
 | Command | Parameters | Description |
 | --- | --- | --- |
@@ -119,10 +117,10 @@ Available on **document** and **window**. Most of these require a loaded preview
 | `reveal in finder` | — | Révélez le fichier du document dans le Finder. |
 | `show highlights` | — | Activez la mise en évidence des mots clés (évitez les mots, les substituts, la voix passive, les listes personnalisées). |
 | `full screen` | optional `enabled` boolean | Entrez, quittez ou basculez en mode aperçu plein écran. |
-| `scroll to heading` | `title` or `id` | Scroll to a heading by visible title text or DOM `id`. |
-| `scroll to position` | `percent` or `line` | Faites défiler par pourcentage de la hauteur du document ou par numéro de ligne approximatif. |
-| `copy html` | — | Copiez l'aperçu HTML dans le presse-papiers (menu d'engrenage ou {% kbd shift cmd C %} ; voir [Copier HTML](Exporting.html#copyhtml)). |
-| `copy rtf` | — | Copy rich text to the clipboard. |
+| `scroll to heading` | `title` ou `id` | Faites défiler jusqu'à un titre par son texte visible ou son `id` DOM. |
+| `scroll to position` | `percent` ou `line` | Faites défiler par pourcentage de la hauteur du document ou par numéro de ligne approximatif. |
+| `copy html` | — | Copiez l'aperçu HTML dans le presse-papiers (menu Action ou {% kbd shift cmd C %} ; voir [Copier HTML](Exporting.html#copyhtml)). |
+| `copy rtf` | — | Copiez le texte enrichi dans le presse-papiers. |
 
 ```applescript
 tell application "Marked"
@@ -136,15 +134,15 @@ tell application "Marked"
 end tell
 ```
 
-## Autoscroll and speed read
+## Défilement automatique et lecture rapide
 
 | Command | Description |
 | --- | --- |
-| `autoscroll` | Start autoscroll. Optional `wpm` integer sets words per minute before starting. |
-| `stop autoscroll` | Stop autoscroll. |
-| `pause autoscroll` | Pause or resume autoscroll. |
-| `speed read` | Start or toggle [speed read](Speed_Reading.html). |
-| `stop speed read` | Stop speed read. |
+| `autoscroll` | Démarre le défilement automatique. Un entier `wpm` optionnel définit les mots par minute avant de démarrer. |
+| `stop autoscroll` | Arrête le défilement automatique. |
+| `pause autoscroll` | Met en pause ou reprend le défilement automatique. |
+| `speed read` | Démarre ou bascule la [lecture rapide](Speed_Reading.html). |
+| `stop speed read` | Arrête la lecture rapide. |
 | `pause speed read` | Mettre en pause ou reprendre la lecture rapide. |
 
 Vérifiez l'état avec les propriétés du document `is autoscrolling` et `is speed reading`.
@@ -158,25 +156,25 @@ tell application "Marked"
 end tell
 ```
 
-## Statistics
+## Statistiques
 
-**`get statistics`** returns a `statistics_record` with numeric values computed from the current Markdown source (not the formatted strings shown in the statistics drawer).
+**`get statistics`** renvoie un `statistics_record` contenant des valeurs numériques calculées à partir de la source Markdown actuelle (pas les chaînes formatées affichées dans le tiroir de statistiques).
 
 | Property | Description |
 | --- | --- |
-| `word_count` | Word count |
-| `sentence_count` | Sentence count |
-| `character_count` | Character count |
-| `paragraph_count` | Paragraph count |
+| `word_count` | Nombre de mots |
+| `sentence_count` | Nombre de phrases |
+| `character_count` | Nombre de caractères |
+| `paragraph_count` | Nombre de paragraphes |
 | `average_words_per_sentence` | Mots moyens par phrase |
-| `average_syllables_per_word` | Average syllables per word |
-| `complex_word_percentage` | Complex word percentage |
-| `reading_ease` | Flesch reading ease |
-| `fog_index` | Gunning fog index |
-| `grade_level` | Flesch–Kincaid grade level |
-| `gulpease` | Indice Gulpease (lisibilité en italien ; `0` lorsqu'il n'est pas applicable) |
-| `gulpease_band` | Gulpease band `1`–`4` (when applicable) |
-| `reading_time_minutes` | Reading time at **250 WPM** |
+| `average_syllables_per_word` | Syllabes moyennes par mot |
+| `complex_word_percentage` | Pourcentage de mots complexes |
+| `reading_ease` | Indice de lisibilité Flesch |
+| `fog_index` | Indice de brouillard Gunning |
+| `grade_level` | Niveau scolaire Flesch–Kincaid |
+| `gulpease` | Indice Gulpease (lisibilité en italien ; `0` lorsqu'il n'est pas applicable) |
+| `gulpease_band` | Bande Gulpease `1`–`4` (si applicable) |
+| `reading_time_minutes` | Temps de lecture à **250 mots/min** |
 
 ```applescript
 tell application "Marked"
@@ -186,22 +184,22 @@ tell application "Marked"
 end tell
 ```
 
-## Table of contents (work in progress)
+## Table des matières (en cours de développement)
 
 {% note %}
-**WIP — not reliable yet.** The dictionary includes a **`headings`** property and **`headings`** command for reading nested preview headings (`heading_item` records). Cette automatisation ne fonctionne **pas correctement** dans les versions actuelles (résultats vides, erreurs de coercition ou « aucun résultat n'a été renvoyé »). Il sera corrigé dans une version ultérieure. Préférez **`scroll to heading`** avec un titre ou un identifiant connu d'ici là.
+**En cours de développement — pas encore fiable.** Le dictionnaire inclut une propriété **`headings`** et une commande **`headings`** pour lire les titres imbriqués de l'aperçu (enregistrements `heading_item`). Cette automatisation ne fonctionne **pas correctement** dans les versions actuelles (résultats vides, erreurs de coercition ou « aucun résultat n'a été renvoyé »). Il sera corrigé dans une version ultérieure. Préférez **`scroll to heading`** avec un titre ou un identifiant connu d'ici là.
 {% endnote %}
 
-**Comportement prévu** (une fois terminé) : enregistrements `heading_item` imbriqués à partir des en-têtes dans l'**aperçu** (`h1`–`h6`), et non à partir du Markdown brut.
+**Comportement prévu** (une fois terminé) : enregistrements `heading_item` imbriqués à partir des en-têtes dans l'**aperçu** (`h1`–`h6`), et non à partir du Markdown brut.
 
 | Property | Description |
 | --- | --- |
-| `title` | Heading text |
-| `id` | DOM `id` attribute (empty string when absent) |
-| `level` | Heading level `1`–`6` |
-| `children` | Nested list of `heading_item` records |
+| `title` | Texte du titre |
+| `id` | Attribut `id` du DOM (chaîne vide si absent) |
+| `level` | Niveau de titre `1`–`6` |
+| `children` | Liste imbriquée d'enregistrements `heading_item` |
 
-**`headings`** (propriété du document) — tous les niveaux. **`headings levels {2, 3}`** (command) — optional filter: only those heading depths (not a range).
+**`headings`** (propriété du document) — tous les niveaux. **`headings levels {2, 3}`** (commande) — filtre optionnel : uniquement ces niveaux de titre précis (pas une plage).
 
 ```applescript
 -- Planned; do not rely on this yet
@@ -213,9 +211,9 @@ end tell
 
 Utilisez les valeurs `id` avec **`scroll to heading id "..."`** une fois que l'automatisation des titres est stable.
 
-## Print with profile
+## Imprimer avec un profil
 
-**`print with profile`** applies an export profile's print settings temporarily, then prints the document (same preference bundle as export profiles from {% prefspane Export %}).
+**`print with profile`** applique temporairement les paramètres d'impression d'un profil d'exportation, puis imprime le document (même ensemble de préférences que les profils d'exportation dans {% prefspane Export %}).
 
 ```applescript
 tell application "Marked"
@@ -225,13 +223,13 @@ tell application "Marked"
 end tell
 ```
 
-Profile names are case-sensitive. After printing, Marked restores the previously active export profile.
+Les noms de profil sont sensibles à la casse. Après l'impression, Marked restaure le profil d'exportation précédemment actif.
 
-## Export profiles
+## Profils d'exportation
 
-Export profiles store bundles of export/print preferences (margins, headers, TOC options, and similar settings from {% prefspane Export %}).
+Les profils d'exportation stockent des ensembles de préférences d'export/impression (marges, en-têtes, options de table des matières et autres réglages similaires depuis {% prefspane Export %}).
 
-**Read profile names**
+**Lire les noms de profil**
 
 ```applescript
 tell application "Marked"
@@ -240,7 +238,7 @@ tell application "Marked"
 end tell
 ```
 
-**Export with a profile**
+**Exporter avec un profil**
 
 ```applescript
 tell application "Marked"
@@ -250,32 +248,32 @@ tell application "Marked"
 end tell
 ```
 
-Profile names are case-sensitive and must match a saved profile exactly.
+Les noms de profil sont sensibles à la casse et doivent correspondre exactement à un profil enregistré.
 
-## Export commands
+## Commandes d'exportation
 
-Export commands are available on the **application**, **document**, and **window** objects. Each command requires a **`to`** parameter with the output path (POSIX path string or `file` object).
+Les commandes d'exportation sont disponibles sur les objets **application**, **document** et **window**. Chaque commande nécessite un paramètre **`to`** avec le chemin de sortie (chaîne de chemin POSIX ou objet `file`).
 
 | Command | Output |
 | --- | --- |
 | `export markdown` | Markdown (.md) |
 | `export html` | HTML |
-| `export paginated pdf` | Paginated PDF (print layout) |
-| `export continuous pdf` | Continuous-scroll PDF |
+| `export paginated pdf` | PDF paginé (mise en page impression) |
+| `export continuous pdf` | PDF à défilement continu |
 | `export epub` | EPUB |
 | `export docx` | Microsoft Word (.docx) |
-| `export odt` | OpenDocument Text |
+| `export odt` | Texte OpenDocument |
 | `export textbundle` | TextBundle |
 | `export rtf` | RTF |
 | `export opml` | OPML |
 
 **Notes**
 
-- Paginated PDF uses the same HTML-to-PDF pipeline as {% appmenu File, Export As, Save PDF (Paginated) %}. It is not available for raw HTML preview documents.
-- HTML export uses the **rendered preview** (what you see in the WebView), not the raw Markdown source file.
-- Continuous PDF captures the current preview WebView layout.
+- Le PDF paginé utilise le même pipeline HTML-vers-PDF que {% appmenu File, Export As, Save PDF (Paginated) %}. Il n'est pas disponible pour les documents d'aperçu HTML brut.
+- L'export HTML utilise l'**aperçu rendu** (ce que vous voyez dans la WebView), pas le fichier source Markdown brut.
+- Le PDF continu capture la mise en page actuelle de la WebView d'aperçu.
 
-### Basic export
+### Exportation de base
 
 ```applescript
 tell application "Marked"
@@ -285,54 +283,54 @@ tell application "Marked"
 end tell
 ```
 
-### Export paths and sandboxing
+### Chemins d'exportation et bac à sable
 
-- Use a full POSIX path for the destination file.
-- Marked can create intermediate folders when the export path is **inside the folder of the open document** (for example exporting to `.../MyProject/build/output.pdf` while previewing `.../MyProject/chapter.md`).
-- Exports outside the document's folder require a writable path Marked can access (saved document location, security-scoped bookmarks, or folders you have granted via Open dialogs). If the path is not writable, the command returns an error before export starts.
+- Utilisez un chemin POSIX complet pour le fichier de destination.
+- Marked peut créer des dossiers intermédiaires lorsque le chemin d'exportation se trouve **à l'intérieur du dossier du document ouvert** (par exemple en exportant vers `.../MyProject/build/output.pdf` tout en prévisualisant `.../MyProject/chapter.md`).
+- Les exports en dehors du dossier du document nécessitent un chemin accessible en écriture par Marked (emplacement du document enregistré, security-scoped bookmarks, ou dossiers autorisés via des boîtes de dialogue d'ouverture). Si le chemin n'est pas accessible en écriture, la commande renvoie une erreur avant le début de l'export.
 
-## `with` options (properties record)
+## Options `with` (enregistrement de propriétés)
 
-Instead of `with profile`, you can pass a record of options using **`with`** or **`with properties`**:
+Au lieu de `with profile`, vous pouvez transmettre un enregistrement d'options avec **`with`** ou **`with properties`** :
 
 ```applescript
 export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in", fontSize:"14"}
 ```
 
-AppleScript recognizes these keys directly (they are mapped before export):
+AppleScript reconnaît directement ces clés (elles sont mappées avant l'export) :
 
 | Key | Description | Example |
 | --- | --- | --- |
-| `style` | Preview style to apply before export (full preview reload) | `"Amblin"`, `"Swiss"` |
-| `pageSize` | Print page size name | `"A4"`, `"Letter"` |
-| `margins` | Print margins (see below) | `"1in"`, `"1in 2in"` |
-| `fontSize` | Override export/print base font size in points (paginated and continuous PDF) | `"14"`, `"12pt"` |
+| `style` | Style d'aperçu à appliquer avant l'export (rechargement complet de l'aperçu) | `"Amblin"`, `"Swiss"` |
+| `pageSize` | Nom du format de page d'impression | `"A4"`, `"Letter"` |
+| `margins` | Marges d'impression (voir ci-dessous) | `"1in"`, `"1in 2in"` |
+| `fontSize` | Remplace la taille de police de base pour l'export/impression, en points (PDF paginé et continu) | `"14"`, `"12pt"` |
 
-`fontSize` enables the same **Custom font size for export/print** option from {% prefspane Export %}. It does not affect Fountain documents, which use fixed screenplay sizing.
+`fontSize` active la même option **Taille de police personnalisée pour l'export/impression** depuis {% prefspane Export %}. Cela n'affecte pas les documents Fountain, qui utilisent une taille de scénario fixe.
 
-When `style` is included, Marked applies that theme, waits for the preview to finish reloading, then exports. You do not need a separate `set style` step.
+Lorsque `style` est inclus, Marked applique ce thème, attend que l'aperçu ait fini de se recharger, puis exporte. Vous n'avez pas besoin d'une étape `set style` séparée.
 
-Other keys in the record can match **export preference** names from profiles (same keys stored in {% prefspane Export %}, such as `printBackgrounds`, `printTOC`, `topPrintMargin`). Those values are applied temporarily for the export.
+Les autres clés de l'enregistrement peuvent correspondre à des noms de **préférences d'export** issus des profils (mêmes clés stockées dans {% prefspane Export %}, comme `printBackgrounds`, `printTOC`, `topPrintMargin`). Ces valeurs sont appliquées temporairement pour cet export.
 
-You cannot combine conflicting sources carelessly: if you use `with profile`, load that profile first; if you use a `with` record, profile keys in the record override the current settings for that export.
+Vous ne pouvez pas combiner des sources contradictoires sans précaution : si vous utilisez `with profile`, chargez d'abord ce profil ; si vous utilisez un enregistrement `with`, les clés de profil de cet enregistrement remplacent les réglages actuels pour cet export.
 
-### Margin shorthand
+### Raccourci de marges
 
-The `margins` value is a string with one to four measurements. Units: `in`, `cm`, `mm`, `pt`, or `"` for inches. A number without a unit is treated as points.
+La valeur `margins` est une chaîne contenant une à quatre mesures. Unités : `in`, `cm`, `mm`, `pt`, ou `"` pour les pouces. Un nombre sans unité est traité comme des points.
 
 | Values | Signification |
 | --- | --- |
-| `1in` | All sides |
-| `1in 2in` | Top and bottom `1in`, left and right `2in` |
-| `1in 2in 1in` | Top `1in`, left and right `2in`, bottom `1in` |
-| `1in 2in 1in 2in` | Top, right, bottom, left |
+| `1in` | Tous les côtés |
+| `1in 2in` | Haut et bas `1in`, gauche et droite `2in` |
+| `1in 2in 1in` | Haut `1in`, gauche et droite `2in`, bas `1in` |
+| `1in 2in 1in 2in` | Haut, droite, bas, gauche |
 
 ```applescript
 export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Combined example
+### Exemple combiné
 
 ```applescript
 tell application "Marked"
@@ -344,38 +342,38 @@ end tell
 
 ## `convert_to`
 
-L'objet application expose également les commandes de script héritées :
+L'objet application expose également les commandes de script héritées :
 
-- **`convert_to`** -- convert Markdown text or a file path to a format (`html`, `pdf`, `epub`, `docx`, `rtf`, and others), optionally with a `profile` and `output_path`.
-- **`get_available_formats`** -- list supported conversion format names.
+- **`convert_to`** -- convertit du texte Markdown ou un chemin de fichier vers un format (`html`, `pdf`, `epub`, `docx`, `rtf`, et d'autres), avec éventuellement un `profile` et un `output_path`.
+- **`get_available_formats`** -- liste les noms de formats de conversion pris en charge.
 - **`get_available_profiles`** -- liste les noms des profils d'exportation (identique à la propriété `profiles`).
 
 `convert_to` reste disponible pour les anciens flux de travail et l'automatisation AppleScript uniquement.
 
-## Debugging
+## Débogage
 
-Enable **Debug mode** in {% prefspane Advanced %} (or the debug preference in Settings). Marked then logs AppleScript export steps at Info level with the prefix `[AppleScript]` in Console.app and Marked's log viewer.
+Activez le **mode débogage** dans {% prefspane Advanced %} (ou la préférence de débogage dans les Paramètres). Marked enregistre alors les étapes d'export AppleScript au niveau Info avec le préfixe `[AppleScript]` dans Console.app et dans le visualiseur de journaux de Marked.
 
-Lignes de journal utiles lors du traçage d'une exportation PDF paginée :
+Lignes de journal utiles lors du traçage d'une exportation PDF paginée :
 
 - `paginated PDF: fetching preview HTML`
 - `HTMLToPDFGenerator: loadHTMLString`
 - `HTMLToPDFGenerator: didFinishLoadForFrame`
 - `paginated PDF: generator finished`
 
-Long exports (especially paginated PDF) suspend the AppleScript event until completion so clients do not time out mid-export.
+Les exports longs (en particulier le PDF paginé) suspendent l'événement AppleScript jusqu'à la fin, afin que les clients ne dépassent pas le délai en plein export.
 
-## Errors
+## Erreurs
 
-Failed exports set the script error string on the command (visible in Script Editor and `on error` handlers). Common messages:
+Les exports échoués définissent une chaîne d'erreur de script sur la commande (visible dans Éditeur de script et les gestionnaires `on error`). Messages courants :
 
-- Export path is required.
+- Le chemin d'exportation est requis.
 - Le répertoire d'export n'existe pas (en dehors du dossier document).
-- Cannot create export directory or permission error writing the file.
+- Impossible de créer le répertoire d'exportation, ou erreur de permission lors de l'écriture du fichier.
 - Nom du style d'aperçu inconnu.
 - Délai d'attente pour le rechargement de l'aperçu après le changement de style.
-- Paginated PDF export timed out or failed while generating pages.
+- L'export PDF paginé a expiré ou a échoué pendant la génération des pages.
 
 ## Intégration avec d'autres outils
 
-Applications can use Marked's AppleScript surface to read document metadata. For the Shortcuts app, see [Shortcuts Integration](Shortcuts_Integration.html). For shell-driven workflows, folder watchers, and editor callbacks, the [URL Handler](URL_Handler.html) is often simpler. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.
+Les applications peuvent utiliser la surface AppleScript de Marked pour lire les métadonnées de document. Pour l'app Raccourcis, consultez [Intégration avec Raccourcis](Shortcuts_Integration.html). Pour les flux de travail basés sur des scripts shell, la surveillance de dossiers, et les callbacks d'éditeur, le [gestionnaire d'URL](URL_Handler.html) est souvent plus simple. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.
