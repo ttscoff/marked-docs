@@ -4,16 +4,18 @@ Who is working on which section, so contributors don't translate the same files 
 
 | Section (config.yaml `folder`) | Assigned to | Status |
 |---|---|---|
-| Getting_Started | Thomas (@fucx, lead) | in progress |
+| Getting_Started | Thomas (@fucx, lead) | done |
 | Settings | Thomas (@fucx, lead) | in progress |
-| Supported_Apps | Hilthart (@h3pdesign) | assigned |
-| Reading_Features | — | open |
-| Just_for_Writers | — | open |
+| Supported_Apps | Hilthart (@h3pdesign) | done |
+| Reading_Features | Andreas Lattka | offered |
+| Just_for_Writers | Hilthart (@h3pdesign) | offered |
 | Special_Features | — | open |
 | Comparisons_FAQ | — | open |
 | Troubleshooting | — | open |
-| About_Markdown | — | open |
+| About_Markdown | Thomas Ungricht (@Thomas-U) | offered |
 | Credits | — | open |
+
+Status: *done* = translated and reviewed · *in progress* = being worked on · *offered* = proposed to a translator, awaiting their confirmation · *open* = unclaimed. Ping the lead to claim an open section.
 
 ## Which files belong to a section?
 
