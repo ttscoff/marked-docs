@@ -150,7 +150,7 @@ When debugging custom print CSS, open Print/PDF Preview or export to PDF, then u
 
 Link-hiding in print is handled outside of the main theme, allowing users to choose to have link highlights and underlines hidden in printout. As long as you have a base style set for the text, you don't need to worry about this.
 
-So, have at it. Convert your blog theme, create a killer print style for PDF documents, or craft the perfect preview for the style of writing you do. If you make something awesome, let me know and I'll post it for the whole Marked community.
+So, have at it. Convert your blog theme, create a killer print style for PDF documents, or craft the perfect preview for the style of writing you do. If you make something awesome, [share it with the community](https://markedapp.com/styleshare/).
 
 ## Additional CSS Settings
 
