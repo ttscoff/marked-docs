@@ -1,90 +1,88 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marked can preview the same file with several built-in Markdown processors. Each one makes different tradeoffs between **writing workflow** (books, blogs, GitHub READMEs) and **output control** (IDs, classes, metadata). Vous choisissez la valeur par défaut dans {% prefspane Processor %} ; you can also override the processor per document.
+Marked peut prévisualiser le même fichier avec plusieurs processeurs Markdown intégrés. Chacun fait des compromis différents entre le **flux de rédaction** (livres, blogs, README GitHub) et le **contrôle de la sortie** (ID, classes, métadonnées). Vous choisissez la valeur par défaut dans {% prefspane Processor %} ; vous pouvez également remplacer le processeur pour un document donné.
 
-This page summarizes how the four main processors differ. For full syntax details, see the reference pages under **Help → Markdown Reference** (e.g. [MultiMarkdown v5 Specification](MultiMarkdown_v5_Spec.html), [Kramdown Specification](Kramdown_Spec.html), [CommonMark Specification](CommonMark_Spec.html), [Discount GFM Specification](Discount_GFM_Spec.html)).
+Cette page résume les différences entre les quatre principaux processeurs. Pour tous les détails de syntaxe, consultez les pages de référence sous **Aide → Référence Markdown** (par exemple [Spécification MultiMarkdown v5](MultiMarkdown_v5_Spec.html), [Spécification Kramdown](Kramdown_Spec.html), [Spécification CommonMark](CommonMark_Spec.html), [Spécification Discount GFM](Discount_GFM_Spec.html)).
 
 ---
 
 ## MultiMarkdown (v5)
 
-**Idéal pour :** la prose longue, la rédaction académique ou technique, et tout ce qui repose sur des **métadonnées**, des **citations** et des fonctionnalités **spécifiques à MultiMarkdown**.
+**Idéal pour :** la prose longue, la rédaction académique ou technique, et tout ce qui repose sur des **métadonnées**, des **citations** et des fonctionnalités **spécifiques à MultiMarkdown**.
 
-Marked ships with **MultiMarkdown 5** (see the [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-5/) for the upstream documentation).
+Marked embarque **MultiMarkdown 5** (voir le [guide utilisateur MultiMarkdown](https://fletcher.github.io/MultiMarkdown-5/) pour la documentation d'origine).
 
-### Strengths
+### Avantages
 
-- **Narrative and reference-heavy documents:** Footnotes, bibliography/citations, and tables are first-class.
-- **Métadonnées :** Blocs de métadonnées MultiMarkdown standard (`Key: Value` en-têtes) plus **transclusion** et autres commodités MMD décrites dans le guide v5.
-- **Metadata substitution:** Keys from metadata can be inserted in the body with `[%key]`-style replacement so titles, author strings, and similar values stay in sync with the header.
-- **Tables, images, and cross-references:** Aligned with the features documented for MultiMarkdown 5.
+- **Documents narratifs ou riches en références :** notes de bas de page, bibliographie/citations et tableaux sont traités en priorité.
+- **Métadonnées :** blocs de métadonnées MultiMarkdown standard (en-têtes `Key: Value`) plus **transclusion** et autres commodités MMD décrites dans le guide v5.
+- **Substitution de métadonnées :** les clés des métadonnées peuvent être insérées dans le corps du texte via un remplacement de type `[%key]`, afin que les titres, noms d'auteur et valeurs similaires restent synchronisés avec l'en-tête.
+- **Tableaux, images et références croisées :** conformes aux fonctionnalités documentées pour MultiMarkdown 5.
 
-### IDs and manual headings
+### ID et titres manuels
 
-- Heading IDs are **normalized** in a way that tends to produce **lowercase, concatenated** slugs (no spaces — words run together).
-- For **manual header IDs**, MultiMarkdown uses the form: `## Headline Text [my-id]` (the bracketed identifier after the heading text).
+- Les ID de titre sont **normalisés** de façon à produire généralement des slugs **en minuscules et concaténés** (pas d'espaces, les mots sont accolés).
+- Pour les **ID de titre manuels**, MultiMarkdown utilise la forme : `## Headline Text [my-id]` (l'identifiant entre crochets après le texte du titre).
 
-### When to pick something else
+### Quand choisir autre chose
 
-If you need **GitHub-flavored** task lists and the exact behavior of GitHub’s current parser, prefer **CommonMark (GFM)**. If you need **fine-grained HTML classes/IDs** on arbitrary elements, consider **Kramdown**.
+Si vous avez besoin de listes de tâches **façon GitHub** et du comportement exact de l'analyseur actuel de GitHub, préférez **CommonMark (GFM)**. Si vous avez besoin de **classes/ID HTML précis** sur des éléments arbitraires, envisagez **Kramdown**.
 
 ---
 
 ## Kramdown
 
-**Idéal pour :** Documents pour lesquels vous souhaitez **un contrôle précis sur la sortie HTML** : **classes**, **ID** et attributs personnalisés, afin que votre CSS puisse cibler des blocs et des étendues spécifiques.
+**Idéal pour :** documents pour lesquels vous souhaitez **un contrôle précis sur la sortie HTML** : **classes**, **ID** et attributs personnalisés, afin que votre CSS puisse cibler des blocs et des étendues spécifiques.
 
-The [kramdown syntax reference](https://kramdown.gettalong.org/syntax.html) is the authoritative guide.
+La [référence de syntaxe kramdown](https://kramdown.gettalong.org/syntax.html) fait autorité.
 
-### Strengths
+### Avantages
 
-- **Mostly compatible** with MultiMarkdown-style habits for everyday Markdown, while adding its own extensions.
-- **Inline and block attribute lists (IALs):** Attach `{: #id .class key="value"}` to paragraphs, headers, code blocks, links, images, and more --- ideal for Jekyll-style sites and custom stylesheets.
-- **Header IDs:** kramdown normalizes auto-generated header IDs to **lowercase, hyphen-separated** words (e.g. `my-section-title`). For **manual IDs**, use the `{#id}` form after the headline text — e.g. Setext: `My Section {#my-section}` then the underline, or ATX: `# My Section {#my-section}` (see kramdown’s [headers](https://kramdown.gettalong.org/syntax.html#headers) for exact placement and IAL rules).
-- **Listes de définitions, notes de bas de page, typographie intelligente, blocs mathématiques :** Riche ensemble de fonctionnalités pour les pipelines de publication qui nécessitent plus qu'un simple Markdown.
+- **Globalement compatible** avec les habitudes de style MultiMarkdown pour un usage Markdown courant, tout en ajoutant ses propres extensions.
+- **Listes d'attributs en ligne et de bloc (IAL) :** associez `{: #id .class key="value"}` à des paragraphes, titres, blocs de code, liens, images, et plus encore : idéal pour les sites de type Jekyll et les feuilles de style personnalisées.
+- **ID de titre :** kramdown normalise les ID de titre générés automatiquement en mots **en minuscules, séparés par des traits d'union** (par exemple `my-section-title`). Pour les **ID manuels**, utilisez la forme `{#id}` après le texte du titre, par exemple en Setext : `My Section {#my-section}` puis la ligne de soulignement, ou en ATX : `# My Section {#my-section}` (voir la section [headers](https://kramdown.gettalong.org/syntax.html#headers) de kramdown pour le placement exact et les règles IAL).
+- **Listes de définitions, notes de bas de page, typographie intelligente, blocs mathématiques :** riche ensemble de fonctionnalités pour les pipelines de publication qui nécessitent plus qu'un simple Markdown.
 
-### When to pick something else
+### Quand choisir autre chose
 
-If you rely on **MultiMarkdown-only** metadata substitution (`[%key]`) or MMD-specific citation workflows, **MultiMarkdown** may be a better fit. For **README and repo docs** that must match GitHub online, **CommonMark (GFM)** is usually closer.
+Si vous dépendez de la substitution de métadonnées **propre à MultiMarkdown** (`[%key]`) ou de flux de citation spécifiques à MMD, **MultiMarkdown** conviendra probablement mieux. Pour les **README et docs de dépôt** qui doivent correspondre à GitHub en ligne, **CommonMark (GFM)** est généralement plus proche.
 
 ---
 
 ## CommonMark (GitHub Flavored Markdown / cmark-gfm)
 
-**Idéal pour :** **Fichiers README**, **descriptions de problèmes/RP** et **documentation de projet** qui doivent correspondre le plus étroitement possible au **comportement Markdown actuel de GitHub**.
+**Idéal pour :** **fichiers README**, **descriptions de problèmes/PR** et **documentation de projet** qui doivent correspondre le plus étroitement possible au **comportement Markdown actuel de GitHub**.
 
-Marked uses a **GFM**-oriented engine (cmark-gfm). La spécification formelle est la [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), construite sur [CommonMark](https://commonmark.org/).
+Marked utilise un moteur orienté **GFM** (cmark-gfm). La spécification formelle est la [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), construite sur [CommonMark](https://commonmark.org/).
 
-### Strengths
+### Avantages
 
-- **Correspondance la plus proche de GitHub :** Les tableaux, les barrés, les éléments de la liste de tâches, les blocs de code clôturés avec des balises de langue et les liens automatiques se comportent comme le rendu GitHub moderne.
-- **Unambiguous parsing:** CommonMark defines block/inline precedence and list rules precisely — stricter in some edge cases than "classic" Markdown.pl behavior, but **more predictable** once you learn the rules.
-- **Practical for wrapped text:** Paragraph and list rules are designed to behave well with hard-wrapped prose (see the spec's sections on lazy continuations and lists).
+- **Correspondance la plus proche de GitHub :** les tableaux, les barrés, les éléments de la liste de tâches, les blocs de code clôturés avec des balises de langue et les liens automatiques se comportent comme le rendu GitHub moderne.
+- **Analyse sans ambiguïté :** CommonMark définit précisément la préséance bloc/inline et les règles de liste : plus strict dans certains cas limites que le comportement Markdown.pl « classique », mais **plus prévisible** une fois les règles apprises.
+- **Pratique pour le texte à retour à la ligne manuel :** les règles de paragraphe et de liste sont conçues pour bien se comporter avec une prose à retour à la ligne forcé (voir les sections de la spécification sur les continuations paresseuses et les listes).
 
-### Header IDs
+### ID des titres
 
 Les ancres de titre générées automatiquement sont généralement **en minuscules et séparées par des traits d'union**, conformément aux slugging courants de style GitHub.
 
 ### Quand choisir autre chose
 
-GFM ne réplique pas les flux de travail **métadonnées MultiMarkdown**, **kramdown IAL** ou **MMD citation**. For books, theses, or heavy metadata, use **MultiMarkdown** or **Kramdown** as appropriate.
+GFM ne réplique pas les flux de travail **métadonnées MultiMarkdown**, **kramdown IAL** ou **MMD citation**. Pour les livres, thèses, ou les métadonnées importantes, utilisez **MultiMarkdown** ou **Kramdown** selon le cas.
 
 ---
 
 ## Discount
 
-**Idéal pour :** Un processeur **rapide basé sur C** qui suit le **Markdown classique** et un ensemble de fonctionnalités **plus anciennes à saveur GitHub** — utile lorsque vous souhaitez un comportement plus proche du **Markdown original** plus des tableaux, des notes de bas de page et des extensions associées sans le livre de règles complet de CommonMark.
+**Idéal pour :** un processeur **rapide basé sur C** qui suit le **Markdown classique** et un ensemble de fonctionnalités **plus anciennes à saveur GitHub**, utile lorsque vous souhaitez un comportement plus proche du **Markdown original** plus des tableaux, des notes de bas de page et des extensions associées sans le livre de règles complet de CommonMark.
 
-Accueil du projet : [Remise](https://www.pell.portland.or.us/~orc/Code/discount/).
+Accueil du projet : [Discount](https://www.pell.portland.or.us/~orc/Code/discount/).
 
-### Strengths
+### Avantages
 
-- **PHP Markdown Extra-style tables** and many extensions (footnotes, fenced code when enabled, etc. --- see Marked's [Discount GFM Specification](Discount_GFM_Spec.html) for what Marked enables).
-- **Optional "GitHub" extras** in upstream Discount (e.g. checkbox lists when built with the right flags); Marqué documente la combinaison qu'il expédie dans la page des spécifications de remise.
+- **Tableaux de style PHP Markdown Extra** et de nombreuses extensions (notes de bas de page, blocs de code délimités si activés, etc. ; voir la [spécification Discount GFM](Discount_GFM_Spec.html) de Marked pour savoir ce que Marked active).
+- **Extras « GitHub » optionnels** dans la version amont de Discount (par exemple les listes à cases à cocher, lorsqu'elles sont compilées avec les bons indicateurs) ; Marked documente la combinaison qu'il embarque dans la page des spécifications Discount.
 - **Typographie de style SmartyPants** et autres commodités décrites sur le site Discount (bien que tous les processeurs inclus offrent en fait des fonctionnalités de typographie).
-- Philosophically close to **John Gruber's Markdown** plus practical extensions, rather than the full CommonMark test suite.
+- Philosophiquement proche du **Markdown de John Gruber**, avec des extensions pratiques en plus, plutôt que la suite de tests complète de CommonMark.
 
 ### Quand choisir autre chose
 
@@ -92,20 +90,20 @@ Pour une **parité parfaite au pixel près avec le github.com** d'aujourd'hui, p
 
 ---
 
-## Quick comparison
+## Comparaison rapide
 
-| Concern | MultiMarkdown | Kramdown | CommonMark (GFM) | Discount |
+| Critère | MultiMarkdown | Kramdown | CommonMark (GFM) | Discount |
 |--------|---------------|--------|-----------------------|--------------|
-| **Primary use** | Prose, papers, books | HTML stylisé, sites de type Jekyll | READMEs, GitHub-like docs | Classic MD + extensions |
-| **Citations / MMD metadata** | Fort | Via different syntax | No | No |
-| **Manual heading ID style** | `## Title [id]` | `## Title {: #id }` (IAL) | Spec / GitHub slug rules | None |
-| **Auto heading IDs** | Lowercase concatenated | Lowercase hyphenated | Lowercase hyphenated | Lowercase-hyphenated |
-| **Attributs supplémentaires (classes/identifiants)** | Limited MMD mechanisms | **IALs** — very strong | Limited | Limited |
+| **Usage principal** | Prose, articles, livres | HTML stylisé, sites de type Jekyll | README, docs façon GitHub | Markdown classique + extensions |
+| **Citations / métadonnées MMD** | Fort | Via une syntaxe différente | Non | Non |
+| **Style d'ID de titre manuel** | `## Title [id]` | `## Title {: #id }` (IAL) | Règles de slug spec/GitHub | Aucun |
+| **ID de titre automatiques** | Minuscules concaténées | Minuscules séparées par des traits d'union | Minuscules séparées par des traits d'union | Minuscules séparées par des traits d'union |
+| **Attributs supplémentaires (classes/identifiants)** | Mécanismes MMD limités | **IAL, très solides** | Limité | Limité |
 
 ---
 
-## See also
+## Voir aussi
 
-- [Paramètres : Processeur](Settings_Processor.html) — processeur par défaut et options associées
-- [Markdown Dingus](Markdown_Dingus.html) — essayez les processeurs côte à côte dans Marked
-- [Custom Processor](Custom_Processor.html) — plug in your own toolchain when needed
+- [Paramètres : Processeur](Settings_Processor.html), processeur par défaut et options associées
+- [Markdown Dingus](Markdown_Dingus.html), essayez les processeurs côte à côte dans Marked
+- [Processeur personnalisé](Custom_Processor.html), branchez votre propre chaîne d'outils si nécessaire
