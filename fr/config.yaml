@@ -82,6 +82,22 @@ Sections:
     - chrome
     - Firefox
     wiki_keywords: []
+  - title: Utiliser l'extension Partage
+    file: Share_Extension
+    description: Envoyez des fichiers et du texte sélectionné à Marked depuis le menu Partager de macOS. Activez Marked dans Réglages Système s'il n'apparaît pas.
+    keywords:
+    - extension partage
+    - feuille partage
+    - menu partager
+    - finder
+    - texte
+    - coller
+    - aperçu presse-papiers
+    - réglages système
+    wiki_keywords:
+    - extension partage
+    - menu partager marked
+    - envoyer à marked
   - title: Ouverture rapide
     file: Quick_Open
     description: Quick Open offre un accès rapide à vos documents ouverts et fichiers récents. Accédez au panneau Ouverture rapide en utilisant Shift-Cmd-O ou depuis le menu Fichier, Ouverture rapide...

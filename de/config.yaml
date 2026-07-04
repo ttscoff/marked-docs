@@ -82,6 +82,22 @@ Sections:
     - chrome
     - firefox
     wiki_keywords: []
+  - title: Using the Share Extension
+    file: Share_Extension
+    description: Send files and selected text to Marked from the macOS Share menu. Enable Marked in System Settings if it does not appear.
+    keywords:
+    - share extension
+    - share sheet
+    - share menu
+    - finder
+    - text
+    - paste
+    - clipboard preview
+    - system settings
+    wiki_keywords:
+    - share extension
+    - share menu marked
+    - send to marked
   - title: Quick Open
     file: Quick_Open
     description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...

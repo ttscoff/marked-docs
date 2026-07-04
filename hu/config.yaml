@@ -82,6 +82,22 @@ Sections:
     - króm
     - firefox
     wiki_keywords: []
+  - title: A Megosztás-bővítmény használata
+    file: Share_Extension
+    description: Fájlok és kijelölt szöveg küldése a Markednek a macOS Megosztás menüjéből. Engedélyezze a Markedet a Rendszerbeállításokban, ha nem jelenik meg.
+    keywords:
+    - megosztás bővítmény
+    - megosztási lap
+    - megosztás menü
+    - finder
+    - szöveg
+    - beillesztés
+    - vágólap előnézet
+    - rendszerbeállítások
+    wiki_keywords:
+    - megosztás bővítmény
+    - megosztás menü marked
+    - küldés markednek
   - title: Gyors nyitás
     file: Quick_Open
     description: A Quick Open gyors hozzáférést biztosít a megnyitott dokumentumokhoz és a legutóbbi fájlokhoz. A Gyors megnyitás panel elérése a Shift-Cmd-O billentyűkombinációval vagy a Fájl menü Gyors megnyitása...

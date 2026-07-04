@@ -82,6 +82,22 @@ Sections:
     - cromo
     - Firefox
     wiki_keywords: []
+  - title: Usare l'estensione Condividi
+    file: Share_Extension
+    description: Invia file e testo selezionato a Marked dal menu Condividi di macOS. Attiva Marked in Impostazioni di sistema se non compare.
+    keywords:
+    - estensione condividi
+    - foglio condividi
+    - menu condividi
+    - finder
+    - testo
+    - incolla
+    - anteprima appunti
+    - impostazioni di sistema
+    wiki_keywords:
+    - estensione condividi
+    - menu condividi marked
+    - inviare a marked
   - title: Apertura rapida
     file: Quick_Open
     description: Quick Open fornisce un accesso rapido ai documenti aperti e ai file recenti. Accedi al pannello Apertura rapida utilizzando Maiusc-Cmd-O o dal menu File, Apertura rapida...

@@ -77,6 +77,22 @@ Sections:
     - cromo
     - firefox
     wiki_keywords: []
+  - title: Usar la extensión Compartir
+    file: Share_Extension
+    description: Envíe archivos y texto seleccionado a Marked desde el menú Compartir de macOS. Active Marked en Ajustes del Sistema si no aparece.
+    keywords:
+    - extensión compartir
+    - hoja compartir
+    - menú compartir
+    - finder
+    - texto
+    - pegar
+    - vista previa portapapeles
+    - ajustes del sistema
+    wiki_keywords:
+    - extensión compartir
+    - menú compartir marked
+    - enviar a marked
   - title: Apertura rápida
     file: Quick_Open
     description: Quick Open proporciona acceso rápido a sus documentos abiertos y archivos recientes. Acceda al panel de Apertura rápida usando Shift-Cmd-O o desde el menú Archivo, Apertura rápida...

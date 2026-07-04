@@ -82,6 +82,22 @@ Sections:
     - chrome
     - firefox
     wiki_keywords: []
+  - title: 共有拡張機能の使用
+    file: Share_Extension
+    description: macOS の共有メニューからファイルや選択テキストを Marked に送信します。表示されない場合はシステム設定で Marked を有効にしてください。
+    keywords:
+    - 共有拡張機能
+    - 共有シート
+    - 共有メニュー
+    - finder
+    - テキスト
+    - ペースト
+    - クリップボードプレビュー
+    - システム設定
+    wiki_keywords:
+    - 共有拡張機能
+    - 共有メニュー marked
+    - marked に送信
   - title: Quick Open
     file: Quick_Open
     description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...

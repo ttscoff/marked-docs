@@ -82,6 +82,22 @@ Sections:
     - chrome
     - firefox
     wiki_keywords: []
+  - title: 使用共享延伸功能
+    file: Share_Extension
+    description: 從 macOS 共享選單將檔案和選取文字傳送到 Marked。若未顯示，請在系統設定中啟用 Marked。
+    keywords:
+    - 共享延伸功能
+    - 共享表單
+    - 共享選單
+    - finder
+    - 文字
+    - 貼上
+    - 剪貼簿預覽
+    - 系統設定
+    wiki_keywords:
+    - 共享延伸功能
+    - 共享選單 marked
+    - 傳送到 marked
   - title: Quick Open
     file: Quick_Open
     description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...
