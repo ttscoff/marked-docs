@@ -1,14 +1,12 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Le défilement automatique déplace lentement l'aperçu pour une lecture ou une vérification mains libres. Elle est distincte de la [Table des matières](Document_Navigation.html) et de la [Mini-carte](Document_Navigation.html#minimap) ; it scrolls the current view automatically.
+Le défilement automatique déplace lentement l'aperçu pour une lecture ou une vérification mains libres. Il est distinct de la [Table des matières](Document_Navigation.html) et de la [Mini-carte](Document_Navigation.html#minimap) ; il fait défiler automatiquement la vue actuelle.
 
-## Starting and stopping
+## Démarrer et arrêter
 
-Déclenchez le défilement automatique en appuyant sur {% kbd s %}. The preview scrolls forward at the current speed.
+Déclenchez le défilement automatique en appuyant sur {% kbd s %}. L'aperçu défile vers l'avant à la vitesse actuelle.
 
-An indicator at the bottom-left shows the speed. Adjust it with the **Up** and **Down** arrow keys; maintenez **Shift** avec les flèches pour des pas plus grands.
+Un indicateur en bas à gauche affiche la vitesse. Ajustez-la avec les touches fléchées **Haut** et **Bas** ; maintenez **Shift** avec les flèches pour des pas plus grands.
 
 Retour ({% kbd return %}) met en pause ou reprend le défilement.
 
@@ -16,4 +14,4 @@ Retour ({% kbd return %}) met en pause ou reprend le défilement.
 
 Appuyez à nouveau sur {% kbd s %} ou sur Échap pour quitter le mode de défilement automatique.
 
-When using Marked like a teleprompter, you can add scripted pauses in the Markdown source—see [Autoscroll pauses](Special_Syntax.html#pauses) under [Marked Special Syntax](Special_Syntax.html).
+Lorsque vous utilisez Marked comme un téléprompteur, vous pouvez ajouter des pauses scriptées dans la source Markdown : voir [Pauses de défilement automatique](Special_Syntax.html#pauses) dans [Syntaxe spéciale de Marked](Special_Syntax.html).
