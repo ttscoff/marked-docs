@@ -10,7 +10,7 @@
 #
 # See README.md in the content root for wiki_keywords rules.
 ---
-Title: Aide marquée
+Title: Aide Marked
 CSS: marked.min.css
 Version: '46'
 Logo: MarkedIcon.png
@@ -29,10 +29,10 @@ Dependencies:
 - tipuesearch
 MDIndex: Overview
 MetaDescriptions:
-  Search: Recherchez la documentation d'aide marquée par mot-clé ou par sujet.
-  Ask: Posez des questions sur les fonctionnalités marquées avec l'assistant d'aide intégré.
+  Search: Recherchez la documentation d'aide de Marked par mot-clé ou par sujet.
+  Ask: Posez des questions sur les fonctionnalités de Marked avec l'assistant d'aide intégré.
   Changelog: Notes de version et historique des versions pour Marked.
-  Contents: Index alphabétique complet des mots clés des rubriques d'aide marquées.
+  Contents: Index alphabétique complet des mots clés des rubriques d'aide de Marked.
 CDN: ''
 Sections:
 - title: Commencer
@@ -57,13 +57,13 @@ Sections:
     - meilleure application de prévisualisation des points marquants
   - title: Quoi de neuf
     file: Whats_New
-    description: 'Versions marquées récentes : nouvelles fonctionnalités, améliorations et correctifs. Consultez le journal des modifications complet pour l’historique des versions.'
+    description: "Versions récentes de Marked : nouvelles fonctionnalités, améliorations et correctifs. Consultez le journal des modifications complet pour l’historique des versions."
     keywords:
     - journal des modifications
     wiki_keywords: []
   - title: Ouverture de fichiers
     file: Opening_Files
-    description: Marqué vous donne des options. Consultez Live Markdown Preview sur Mac pour la visualisation du coffre-fort, l’aperçu en streaming et les guides spécifiques à l’éditeur.
+    description: Marked vous donne des options. Consultez Live Markdown Preview sur Mac pour la visualisation du coffre-fort, l’aperçu en streaming et les guides spécifiques à l’éditeur.
     keywords:
     - ouvrir
     - fichiers
@@ -75,7 +75,7 @@ Sections:
     keywords:
     - extension de navigateur
     - extensions
-    - démarquer
+    - markdown
     - sélection
     - URL
     - safari
@@ -109,7 +109,7 @@ Sections:
     wiki_keywords: []
   - title: Actions rapides
     file: Quick_Actions
-    description: La palette Actions rapides est un lanceur de commandes consultable pour Marqué. Il collecte les actions de la barre de menu principale et du menu d'aperçu, plus...
+    description: La palette Actions rapides est un lanceur de commandes consultable pour Marked. Il collecte les actions de la barre de menu principale et du menu d'aperçu, plus...
     keywords:
     - rapide
     - actes
@@ -128,12 +128,12 @@ Sections:
     description: Marked peut prévisualiser le même fichier avec plusieurs processeurs Markdown intégrés. Chacun fait des compromis différents entre le flux de travail d'écriture (livres, blogs,...
     keywords:
     - processeur
-    - multimarquage
+    - multimarkdown
     - Kramdown
-    - marque commune
-    - rabais
+    - commonmark
+    - discount
     - gfm
-    - réduction
+    - discount
     wiki_keywords:
     - quel processeur
     - processeur de distinctions
@@ -141,7 +141,7 @@ Sections:
   - title: Aperçu
     sidebar_title: Aperçu de l'apparence
     file: Previewing
-    description: Personnalisez l'apparence de l'aperçu marqué avec des styles, une typographie et des paramètres de fenêtre intégrés et personnalisés.
+    description: Personnalisez l'apparence de l'aperçu Marked avec des styles, une typographie et des paramètres de fenêtre intégrés et personnalisés.
     keywords:
     - aperçu
     - en direct
@@ -149,7 +149,7 @@ Sections:
     wiki_keywords: []
   - title: Fonctionnalités de l'interface
     file: Interface_Features
-    description: La flexibilité est la clé. Le menu Gear fournit la plupart des fonctionnalités de la barre de menus, ainsi que certaines fonctions spécifiques à l'aperçu. Cliquez simplement sur l'engrenage en bas...
+    description: La flexibilité est la clé. Le menu Action fournit la plupart des fonctionnalités de la barre de menus, ainsi que certaines fonctions spécifiques à l'aperçu. Cliquez simplement sur l'icône Action en bas...
     keywords:
     - rouleaux
     - source
@@ -178,17 +178,17 @@ Sections:
 - title: Comparaisons et FAQ
   folder: Comparaisons_FAQ
   pages:
-  - title: Aperçu marqué vs obsidienne
+  - title: Aperçu Marked vs Obsidian
     file: Marked_vs_Obsidian_Preview
     description: Obsidian inclut un aperçu Markdown intégré. Marked 3 est une application de prévisualisation et de publication dédiée qui fonctionne avec Obsidian et de nombreux autres éditeurs. Cette page...
     keywords:
-    - obsidienne
+    - obsidian
     - comparaison
     - aperçu
     - contre
     wiki_keywords:
-    - aperçu de l'obsidienne
-    - marqué vs obsidienne
+    - aperçu obsidian
+    - marked vs obsidian
   - title: FAQ sur l'aperçu Markdown
     file: Markdown_Preview_FAQ
     description: Réponses aux questions courantes sur l'utilisation de Marked pour l'aperçu, l'exportation, les éditeurs et les flux de travail Markdown sur Mac.
@@ -196,7 +196,7 @@ Sections:
     keywords:
     - FAQ
     - aperçu
-    - réduction
+    - discount
     - des questions
     wiki_keywords:
     - FAQ sur l'aperçu des points marquants
@@ -206,7 +206,7 @@ Sections:
   pages:
   - title: Navigation dans les documents
     file: Document_Navigation
-    description: 'Cette page décrit comment parcourir les aperçus longs : la table des matières, la recherche rapide, les signets et la mini-carte. Pour les raccourcis de défilement qui s\'appliquent...'
+    description: "Cette page décrit comment parcourir les aperçus longs : la table des matières, la recherche rapide, les signets et la mini-carte. Pour les raccourcis de défilement qui s'appliquent..."
     keywords:
     - toc
     - table des matières
@@ -237,7 +237,7 @@ Sections:
     wiki_keywords: [wiki links, wiki linking]
   - title: Aperçu de Zoom
     file: Zoom_Overview
-    description: 'Zoom Aperçu réduit le texte d\'aperçu afin que vous puissiez voir une plus grande partie du document à la fois, ce qui est utile pour repérer la structure, numériser une section ou juger...'
+    description: "Zoom Aperçu réduit le texte d'aperçu afin que vous puissiez voir une plus grande partie du document à la fois, ce qui est utile pour repérer la structure, numériser une section ou juger..."
     keywords:
     - zoom
     - répétition de mots
@@ -328,7 +328,7 @@ Sections:
     - gitbook
   - title: Fontaine pour les scénaristes
     file: Fountain_for_Screenwriters
-    description: 'L\'ouverture de n\'importe quel fichier avec une extension \\".fountain\\" activera automatiquement la prise en charge de Fountain pour la fenêtre. Une feuille de style Fountain par défaut sera appliquée pour...'
+    description: "L'ouverture de n'importe quel fichier avec une extension \".fountain\" activera automatiquement la prise en charge de Fountain pour la fenêtre. Une feuille de style Fountain par défaut sera appliquée pour..."
     keywords:
     - fontaine
     - scénario
@@ -336,7 +336,7 @@ Sections:
     wiki_keywords: []
   - title: Mise en évidence des mots clés
     file: Keyword_Highlighting
-    description: Attraper le verbiage gênant et mettre en évidence les phrases importantes. La mise en surbrillance des mots clés dans Marqué vous permet de saisir des expressions courantes que vous souhaiterez peut-être...
+    description: Attraper le verbiage gênant et mettre en évidence les phrases importantes. La mise en surbrillance des mots clés dans Marked vous permet de saisir des expressions courantes que vous souhaiterez peut-être...
     keywords:
     - passif
     - voix voix
@@ -348,7 +348,7 @@ Sections:
     - densité des mots clés
   - title: Orthographe et grammaire
     file: Spelling_Grammar
-    description: Vous pouvez utiliser le menu d'engrenage->Sous-menu Vérification pour commencer à vérifier l'orthographe Cmd-;, et choisir de vérifier également les suggestions de grammaire Shift-Cmd-;.
+    description: Vous pouvez utiliser le menu Action → sous-menu Relecture pour commencer à vérifier l'orthographe Cmd-;, et choisir de vérifier également les suggestions de grammaire Shift-Cmd-;.
     keywords:
     - orthographe
     - grammaire
@@ -357,7 +357,7 @@ Sections:
     wiki_keywords: [spellcheck]
   - title: Balisage critique
     file: CriticMarkup
-    description: Vous pouvez activer/désactiver la prise en charge de CriticMarkup pour n'importe quel document à partir du menu d'engrenage ou en utilisant Ctrl-Shift-C.
+    description: Vous pouvez activer/désactiver la prise en charge de CriticMarkup pour n'importe quel document à partir du menu Action ou en utilisant Ctrl-Shift-C.
     keywords:
     - vérification
     - relecture
@@ -377,7 +377,7 @@ Sections:
     - formule
   - title: Travailler avec DOCX
     file: Working_with_DOCX
-    description: 'Marked dispose d\'une prise en charge étendue pour travailler avec des fichiers Microsoft Word. Le flux de travail typique consiste d\'abord à prévisualiser, puis à exporter DOCX : ouvrez ou regardez votre Markdown...'
+    description: "Marked dispose d'une prise en charge étendue pour travailler avec des fichiers Microsoft Word. Le flux de travail typique consiste d'abord à prévisualiser, puis à exporter DOCX : ouvrez ou regardez votre Markdown..."
     keywords:
     - docx
     - mot
@@ -386,7 +386,7 @@ Sections:
     wiki_keywords: [docx, microsoft word]
   - title: Exportation HTML
     file: HTML_Export
-    description: Marqué exporte le HTML à partir de votre aperçu en direct --- le même résultat rendu que vous voyez à l'écran. Utilisez l'exportation HTML lorsque vous avez besoin d'un extrait à coller dans un blog ou...
+    description: Marked exporte le HTML à partir de votre aperçu en direct --- le même résultat rendu que vous voyez à l'écran. Utilisez l'exportation HTML lorsque vous avez besoin d'un extrait à coller dans un blog ou...
     keywords:
     - HTML
     - exportateur
@@ -422,7 +422,7 @@ Sections:
   - title: Prise en charge RTF et RTFD
     sidebar_title: RTF/RTFD
     file: RTF_Support
-    description: Marqué peut ouvrir directement les documents Rich Text Format (.rtf) et RTFD (.rtfd). Faites glisser un fichier vers Marqué ou utilisez le menu Fichier, Ouvrir... (O). Le document est converti...
+    description: Marked peut ouvrir directement les documents Rich Text Format (.rtf) et RTFD (.rtfd). Faites glisser un fichier vers Marked ou utilisez le menu Fichier, Ouvrir... (O). Le document est converti...
     keywords:
     - rtf
     - RTFD
@@ -435,7 +435,7 @@ Sections:
   - title: Importation et exportation PDF
     sidebar_title: PDF
     file: PDF_Support
-    description: Marqué peut ouvrir directement des documents PDF (.pdf). Faites glisser un fichier vers Marqué ou utilisez le menu Fichier, Ouvrir... (O). Le document est converti en Markdown pour aperçu et...
+    description: Marked peut ouvrir directement des documents PDF (.pdf). Faites glisser un fichier vers Marked ou utilisez le menu Fichier, Ouvrir... (O). Le document est converti en Markdown pour aperçu et...
     keywords:
     - pdf
     - importateur
@@ -468,7 +468,7 @@ Sections:
     wiki_keywords: [validate links, validate urls]
   - title: Commentaires et annotations
     file: Comments_and_Annotations
-    description: 'Marked a une gestion spéciale pour les commentaires et les annotations. Marqué reconnaît les commentaires provenant de : Toutes les annotations sont affichées dans une barre latérale et masquées dans le...'
+    description: "Marked a une gestion spéciale pour les commentaires et les annotations. Marked reconnaît les commentaires provenant de : Toutes les annotations sont affichées dans une barre latérale et masquées dans le..."
     keywords:
     - commentaires
     - annotations
@@ -492,7 +492,7 @@ Sections:
     wiki_keywords: [github tasks, github checkboxes, hard line breaks, syntax highlighting]
   - title: Utilisation de Marked with Agentic Coding
     file: Using_Marked_with_Agentic_Coding
-    description: 'Marked est un excellent compagnon pour les flux de travail modernes de « codage agent » dans lesquels les outils d\'IA génèrent des plans, refactorisent le code et continuent de mettre à jour la documentation pendant que vous travaillez. ...'
+    description: "Marked est un excellent compagnon pour les flux de travail modernes de « codage agent » dans lesquels les outils d'IA génèrent des plans, refactorisent le code et continuent de mettre à jour la documentation pendant que vous travaillez. ..."
     keywords:
     - agentique
     - codage
@@ -506,12 +506,12 @@ Sections:
 - title: Applications prises en charge
   folder: Applications_prises en charge
   pages:
-  - title: Ours
+  - title: Bear
     file: Bear
-    description: Dans Bear, choisissez Aperçu dans Marqué dans le menu Affichage (le libellé peut varier légèrement selon la version de Bear). Marked reçoit un TextBundle, donc des images et des ressources intégrées...
+    description: Dans Bear, choisissez Aperçu dans Marked dans le menu Affichage (le libellé peut varier légèrement selon la version de Bear). Marked reçoit un TextBundle, donc des images et des ressources intégrées...
     keywords:
-    - la nôtre
-    - notes d'ours
+    - bear
+    - bear notes
     - paquet de texte
     wiki_keywords: [bear app marked]
   - title: Curio
@@ -523,11 +523,11 @@ Sections:
     - brainstorming
     - aperçu en streaming
     wiki_keywords: [curio]
-  - title: DEVONpense
+  - title: DEVONthink
     file: DEVONthink
     description: Utilisez ce script dans DEVONthink pour envoyer la sélection actuelle à Marked. Il vérifie que vous avez sélectionné quelque chose, confirme qu'il s'agit de Markdown, puis l'ouvre en utilisant...
     keywords:
-    - Devonpense
+    - devonthink
     - pomme de script
     - menu des scripts
     - menu contextuel
@@ -544,7 +544,7 @@ Sections:
     - brouillons streaming aperçu
   - title: Surveillance de dossiers
     file: Folder_Watching
-    description: Déposez un dossier de notes en texte brut sur Marked. Marqué ouvre une fenêtre d'aperçu qui suit toujours le fichier éligible le plus récemment modifié dans ce dossier...
+    description: Déposez un dossier de notes en texte brut sur Marked. Marked ouvre une fenêtre d'aperçu qui suit toujours le fichier éligible le plus récemment modifié dans ce dossier...
     keywords:
     - dossier
     - nvalt
@@ -553,39 +553,39 @@ Sections:
     - vitesse de notation
     - dossier de surveillance
     wiki_keywords: [folder preview, notebook folder, folder watching]
-  - title: Montagnes
+  - title: Highland
     file: Highland
     description: Marked met à jour l'aperçu lorsque le fichier change sur le disque, tout comme un fichier Markdown normal.
     keywords:
-    - montagnes
+    - highland
     - fontaine
     - scénario
     wiki_keywords: [highland, fountain, screenplay]
-  - title: Crochet
+  - title: Hookmark
     file: Hookmark
-    description: 'Marked peut résoudre les liens hook:// pour les images et autres ressources dans un fichier lorsque l\'intégration Hookmark est activée.'
+    description: "Marked peut résoudre les liens hook:// pour les images et autres ressources dans un fichier lorsque l'intégration Hookmark est activée."
     keywords:
-    - crocheter
-    - crocheter
+    - hookmark
+    - hook url
     - URL du crochet
     - crochet://
     wiki_keywords: [hookmark, hookmark image urls]
-  - title: iA Rédacteur
+  - title: iA Writer
     file: iA_Writer
     description: Étant donné que le chemin d'aperçu correspond au fichier de l'éditeur, les mises à jour en direct se comportent comme n'importe quel autre document Markdown surveillé.
     keywords:
-    - je suis un écrivain
+    - ia writer
     - auteur
     wiki_keywords: [ia writer]
-  - title: iPenséesX
+  - title: iThoughtsX
     file: iThoughtsX
-    description: 'Dans les préférences d\'iThoughtsX, sous Avancé, définissez Markdown Preview (le libellé peut être \\"Markdown\\" ou \\"Markdown Preview\\" selon la version), puis choisissez si...'
+    description: "Dans les préférences d'iThoughtsX, sous Avancé, définissez Markdown Preview (le libellé peut être \"Markdown\" ou \"Markdown Preview\" selon la version), puis choisissez si..."
     keywords:
-    - je pense
+    - ithoughtsx
     - carte mentale
-    - ça mz
+    - itmz
     wiki_keywords: [ithoughts, mind map]
-  - title: Mars
+  - title: MarsEdit
     file: MarsEdit
     description: Choisissez le menu Fichier, le menu Nouveau, Aperçu MarsEdit. Marked demande à AppleScript de lire le premier message dans MarsEdit (identifiants de bundle de Red Sweater pour direct, Mac App...
     keywords:
@@ -593,23 +593,23 @@ Sections:
     - blogueur
     - WordPress
     wiki_keywords: [marsedit]
-  - title: Noeud mental
+  - title: MindNode
     file: MindNode
     description: Faites glisser un document [MindNode][mn] sur Marked (ou utilisez la commande Ouvrir dans Marked/preview de MindNode, selon la version de MindNode). Marked traite le fichier comme...
     keywords:
-    - noeud mental
+    - mindnode
     - carte mentale
     wiki_keywords: [mindnode]
   - title: Compositeur MultiMarkdown
     file: MultiMarkdown_Composer
-    description: Ouvrez les préférences d'aperçu de Composer et choisissez Marqué comme application d'aperçu, ou appuyez sur Opt-Cmd-P Ouvrir dans Marqué à partir du document actif chaque fois que vous...
+    description: Ouvrez les préférences d'aperçu de Composer et choisissez Marked comme application d'aperçu, ou appuyez sur Opt-Cmd-P Ouvrir dans Marked à partir du document actif chaque fois que vous...
     keywords:
     - compositeur
     - compositeur multimarkdown
     wiki_keywords: [multimarkdown composer]
   - title: nvUltra
     file: nvUltra
-    description: Dans le navigateur de dossiers de nvUltra (ou partout où vous parcourez les notes), faites un contrôle-clic sur le(s) fichier(s) pour ouvrir le menu contextuel et choisissez Aperçu du(des) fichier(s) dans Marqué.
+    description: Dans le navigateur de dossiers de nvUltra (ou partout où vous parcourez les notes), faites un contrôle-clic sur le(s) fichier(s) pour ouvrir le menu contextuel et choisissez Aperçu du(des) fichier(s) dans Marked.
     keywords:
     - nvultra
     - nv ultra
@@ -617,11 +617,11 @@ Sections:
     - remarques
     wiki_keywords:
     - nvultra
-  - title: Obsidienne
+  - title: Obsidian
     file: Obsidian
-    description: 'Marked fonctionne avec les notes [Obsidian][obsidian-app] de deux manières : ouvrez un dossier de coffre-fort pour un suivi automatique ou utilisez le plugin de communauté pour une synchronisation plus étroite.'
+    description: "Marked fonctionne avec les notes [Obsidian][obsidian-app] de deux manières : ouvrez un dossier de coffre-fort pour un suivi automatique ou utilisez le plugin de communauté pour une synchronisation plus étroite."
     keywords:
-    - obsidienne
+    - obsidian
     - sauter
     - wiki sur les liens
     - backlinks
@@ -638,38 +638,38 @@ Sections:
   - title: Prise en charge de Scrivener 3
     sidebar_title: Scrivener 3
     file: Scrivener_Support
-    description: Utilisez ensemble vos deux outils d’écriture préférés. Faites glisser un projet Scrivener (.scriv) vers Marqué et il sera compilé et prévisualisé. Si vous choisissez l'option de...
+    description: Utilisez ensemble vos deux outils d’écriture préférés. Faites glisser un projet Scrivener (.scriv) vers Marked et il sera compilé et prévisualisé. Si vous choisissez l'option de...
     keywords:
     - scribe
     wiki_keywords: [scrivener]
-  - title: Les archives
+  - title: The Archive
     file: The_Archive
-    description: 'Mises à jour marquées au fur et à mesure que vous tapez dans The Archive, suivant le même contrat de presse-papiers mkStreamingPreview que les autres applications intégrées : voir Détails techniques...'
+    description: "Marked se met à jour au fur et à mesure que vous tapez dans The Archive, suivant le même contrat de presse-papiers mkStreamingPreview que les autres applications intégrées : voir Détails techniques..."
     keywords:
-    - les archives
+    - the archive
     - archive
     - aperçu en streaming
     - zettelkasten
     wiki_keywords:
-    - les archives
-  - title: Ulysse
+    - the archive
+  - title: Ulysses
     file: Ulysses
-    description: Après la première configuration, Cmd-6 suivi de Retour suffisent souvent pour actualiser l'aperçu marqué de la feuille active (ou des feuilles que vous avez sélectionnées).
+    description: Après la première configuration, Cmd-6 suivi de Retour suffisent souvent pour actualiser l'aperçu Marked de la feuille active (ou des feuilles que vous avez sélectionnées).
     keywords:
-    - Ulysse
+    - ulysses
     - exportateur
     - paquet de texte
     wiki_keywords: [ulysses]
   - title: Vim
     file: Vim
-    description: 'Installez avec votre gestionnaire de plugins ; voir le [projet README][vimrepo] pour vim-plug et d\'autres options. Le g:marked_filetypes par défaut inclut le démarque et...'
+    description: "Installez avec votre gestionnaire de plugins ; voir le [projet README][vimrepo] pour vim-plug et d'autres options. Le g:marked_filetypes par défaut inclut Markdown et..."
     keywords:
     - vim
     - néovim
     wiki_keywords: [vim]
   - title: Code VS
     file: VS_Code
-    description: 'L\'[extension Ouvrir dans marqué][ext] (Visual Studio Marketplace) ajoute une action Ouvrir dans marqué : bouton titre de l\'éditeur, Shift-Cmd-M, menus contextuels dans l\'éditeur...'
+    description: "L'[extension Ouvrir dans Marked][ext] (Visual Studio Marketplace) ajoute une action Ouvrir dans Marked : bouton titre de l'éditeur, Shift-Cmd-M, menus contextuels dans l'éditeur..."
     keywords:
     - vscode
     - code de studio visuel
@@ -679,7 +679,7 @@ Sections:
     file: VoodooPad
     description: Marked surveille le document sur le disque et échange l'aperçu lorsque vous changez de page dans VoodooPad.
     keywords:
-    - vaudois
+    - voodoopad
     wiki_keywords: [voodoopad]
   - title: Terrains de jeux Xcode
     file: Xcode_Playgrounds
@@ -779,11 +779,11 @@ Sections:
     - extraction de style
     - extracteur de style
     - extraire les styles
-  - title: Démarqueur
+  - title: Markdownifier
     file: Markdownifier
     description: Le Markdownifier est un outil qui extrait automatiquement le contenu des pages Web et le convertit au format Markdown propre. Il traite intelligemment le Web...
     keywords:
-    - démarquage
+    - markdownifier
     - contenu
     - extracteur
     - la toile
@@ -816,7 +816,7 @@ Sections:
     - limitations du bac à sable
   - title: Paramètres par document
     file: Per-Document_Settings
-    description: Marqué permettra de définir certains attributs d'un document au format de métadonnées MultiMarkdown (détaillé ci-dessous). Vous pouvez les utiliser pour définir des caractéristiques...
+    description: Marked permettra de définir certains attributs d'un document au format de métadonnées MultiMarkdown (détaillé ci-dessous). Vous pouvez les utiliser pour définir des caractéristiques...
     keywords:
     - processeur
     - style
@@ -826,9 +826,9 @@ Sections:
     - style par fichier
     - configuration par document
     - paramètres par fichier
-  - title: Syntaxe spéciale marquée
+  - title: Syntaxe spéciale de Marked
     file: Special_Syntax
-    description: 'Marked prend en charge les légendes avec la syntaxe utilisée par Obsidian et Bear, qui est une citation en bloc spécialement formatée : la \\"NOTE\\" dans [!NOTE] n\'est pas sensible à la casse....'
+    description: "Marked prend en charge les légendes avec la syntaxe utilisée par Obsidian et Bear, qui est une citation en bloc spécialement formatée : la \"NOTE\" dans [!NOTE] n'est pas sensible à la casse...."
     keywords:
     - syntaxe
     - tableau
@@ -853,7 +853,7 @@ Sections:
     - carte mentale
     - contour
     - opml
-    - je pense
+    - ithoughtsx
     - gestionnaire d'esprit
     - sirène
     wiki_keywords: [embed mind map, embed outline, opml include]
@@ -919,7 +919,7 @@ Sections:
     - coquille
     - scénario
     - automation
-    - marqué par marque
+    - mk
     wiki_keywords: [marked cli, mk, command line utility]
   - title: Aperçu en streaming
     file: Streaming_Preview
@@ -947,7 +947,7 @@ Sections:
     wiki_keywords: []
   - title: Documentation sur l'API JavaScript
     external: true
-    description: Documentation externe pour l'API JavaScript marquée utilisée par les scripts d'aperçu personnalisés et l'automatisation.
+    description: Documentation externe pour l'API JavaScript de Marked utilisée par les scripts d'aperçu personnalisés et l'automatisation.
     url: "/help/jsapi/"
     wiki_keywords: [javascript api]
 - title: Paramètres
@@ -955,7 +955,7 @@ Sections:
   pages:
   - title: 'Paramètres : Général'
     file: Settings_General
-    description: Général Préférences marquées pour les nouveaux documents, les mises à jour, les signets et le comportement par défaut des fenêtres.
+    description: Préférences générales de Marked pour les nouveaux documents, les mises à jour, les signets et le comportement par défaut des fenêtres.
     keywords:
     - général
     - paramètres
@@ -965,7 +965,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Paramètres : Aperçu'
     file: Settings_Preview
-    description: 'Options dans : Activer la navigation sur la mini-carte : Générez une carte visuelle du document qui apparaît lorsque vous appuyez sur \\"0\\". Peut entraîner de courts retards lorsque...'
+    description: "Options dans : Activer la navigation sur la mini-carte : Générez une carte visuelle du document qui apparaît lorsque vous appuyez sur \"0\". Peut entraîner de courts retards lorsque..."
     keywords:
     - aperçu
     - effondrement
@@ -978,7 +978,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Paramètres : Style'
     file: Settings_Style
-    description: 'Options dans : Limiter la largeur du texte dans l\'aperçu : Définissez une largeur maximale pour le corps de l\'aperçu à l\'aide du curseur (en pixels).'
+    description: "Options dans : Limiter la largeur du texte dans l'aperçu : Définissez une largeur maximale pour le corps de l'aperçu à l'aide du curseur (en pixels)."
     keywords:
     - style
     - thème
@@ -986,17 +986,17 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Paramètres : Processeur'
     file: Settings_Processor
-    description: 'Options dans le processeur Markdown par défaut. Le processeur CommonMark est préféré pour les utilisateurs de GitHub, MultiMarkdown est idéal pour les rédacteurs, et Discount et...'
+    description: "Options dans le processeur Markdown par défaut. Le processeur CommonMark est préféré pour les utilisateurs de GitHub, MultiMarkdown est idéal pour les rédacteurs, et Discount et..."
     keywords:
     - processeur
-    - marque commune
-    - rabais
+    - commonmark
+    - discount
     - Kramdown
-    - multimarquage
+    - multimarkdown
     wiki_keywords: [processor settings]
   - title: 'Paramètres : Applications'
     file: Settings_Apps
-    description: 'Options dans : (Voir Prise en charge supplémentaire de l\'application) Éditeur de texte : Sélectionnez un éditeur de texte pour recevoir le document actuel lorsque vous tapez Cmd-E.'
+    description: "Options dans : (Voir Prise en charge supplémentaire de l'application) Éditeur de texte : Sélectionnez un éditeur de texte pour recevoir le document actuel lorsque vous tapez Cmd-E."
     keywords:
     - scribe
     - fontaine
@@ -1009,7 +1009,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Paramètres : Vérification'
     file: Settings_Proofing
-    description: 'Options dans : Toujours ouvrir les nouveaux documents en mode de vérification linguistique : Les nouveaux documents afficheront par défaut les surlignages des mots clés.'
+    description: "Options dans : Toujours ouvrir les nouveaux documents en mode de vérification linguistique : Les nouveaux documents afficheront par défaut les surlignages des mots clés."
     keywords:
     - vérification
     - commentaires
@@ -1018,7 +1018,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Paramètres : Exporter'
     file: Settings_Export
-    description: 'Options dans : (Voir Exporter pour plus d\'informations) Exporter le profil : Sélectionnez un profil enregistré dans le menu contextuel. Les profils stockent un ensemble complet d\'exportations...'
+    description: "Options dans : (Voir Exporter pour plus d'informations) Exporter le profil : Sélectionnez un profil enregistré dans le menu contextuel. Les profils stockent un ensemble complet d'exportations..."
     keywords:
     - exportateur
     - pdf
@@ -1029,7 +1029,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Paramètres : Avancé'
     file: Settings_Advanced
-    description: 'Options dans les : Métadonnées YAML et Pandoc : - __Ignore:__ Le laisse exactement tel qu\'il existe dans le document, utile si votre processeur ou préprocesseur en fait...'
+    description: "Options dans les : Métadonnées YAML et Pandoc : - __Ignore:__ Le laisse exactement tel qu'il existe dans le document, utile si votre processeur ou préprocesseur en fait..."
     keywords:
     - avancé
     - paramètres
@@ -1090,30 +1090,30 @@ Sections:
     - supplémentaire supplémentaire
     - ressources
     wiki_keywords: [support resources, additional resources]
-- title: À propos de la démarque
-  folder: À propos_Markdown
+- title: À propos de Markdown
+  folder: À_propos_Markdown
   pages:
   - title: Sélection du processeur
     file: Processor_Selection
     description: Il existe un guide de syntaxe Markdown dans le menu d'aide, ou vous pouvez vous référer à la documentation originale de John Gruber.
     keywords:
-    - multimarquage
+    - multimarkdown
     - Kramdown
-    - marque commune
-    - rabais
+    - commonmark
+    - discount
     - processeur
     - sélection
     - syntaxe de différenciation
     wiki_keywords: [markdown syntax]
-  - title: Présentation de la démarque
+  - title: Présentation de Markdown
     file: Markdown_Tutorial
     description: Markdown est un langage de balisage léger qui vous permet d'écrire en utilisant un format de texte brut facile à lire et à écrire, puis de le convertir structurellement...
     keywords:
-    - réduction
+    - discount
     - syntaxe
     - tutoriel
     wiki_keywords: []
-  - title: Démarquage Dingus
+  - title: Markdown Dingus
     file: Markdown_Dingus
     description: Le Markdown Dingus est un outil de test spécialisé qui vous aide à comprendre comment les différents processeurs Markdown gèrent votre contenu. Il offre un triple vitrage...
     keywords:
@@ -1130,13 +1130,13 @@ Sections:
     file: MultiMarkdown_v5_Spec
     description: Découvrez le Markdown Dingus pour expérimenter le processeur MultiMarkdown. MultiMarkdown est un processeur Markdown étendu conçu pour fonctionner avec des...
     keywords:
-    - multimarquage
+    - multimarkdown
     - spécification
   - title: Spécification CommonMark
     file: CommonMark_Spec
     description: Découvrez le Markdown Dingus pour expérimenter le processeur CommonMark (GFM).
     keywords:
-    - marque commune
+    - commonmark
     - spécification
     wiki_keywords: [commonmark syntax]
   - title: Spécification Kramdown
@@ -1146,11 +1146,11 @@ Sections:
     - Kramdown
     - spécification
     wiki_keywords: [kramdown syntax]
-  - title: Remise Spécification GFM
+  - title: Discount GFM Spec
     file: Discount_GFM_Spec
     description: Découvrez le Markdown Dingus pour expérimenter le processeur Discount. Discount GFM (GitHub Flavored Markdown) est un processeur Markdown basé sur C qui...
     keywords:
-    - rabais
+    - discount
     - gfm
     - spécification
     wiki_keywords: [discount syntax, gfm syntax]
@@ -1171,14 +1171,14 @@ Sections:
     file: MultiMarkdown_License
     description: Code Markdown original Copyright (c) 2003-2007 John Gruber Tous droits réservés.<br> Modifications MultiMarkdown Copyright (c) 2005-2009 Fletcher T. Penney Tous...
     keywords:
-    - multimarquage
+    - multimarkdown
     - licence
     wiki_keywords: []
-  - title: Licence à prix réduit
+  - title: Discount License
     file: Discount_License
     description: Copyright © 2007 David Loren Parsons.<br/> Tous droits réservés. L'autorisation est par la présente accordée, sans frais, à toute personne obtenant une copie de ce...
     keywords:
-    - rabais
+    - discount
     - licence
     wiki_keywords: []
   - title: Licence Kramdown
@@ -1190,9 +1190,9 @@ Sections:
     wiki_keywords: []
   - title: Licence CommonMark
     file: CommonMark_License
-    description: 'La spécification CommonMark (spec.txt) et la DTD (CommonMark.dtd) sont protégées par Copyright (C) 2014-16 John MacFarlane, publiées sous la licence Creative Commons CC-BY-SA 4.0 :...'
+    description: "La spécification CommonMark (spec.txt) et la DTD (CommonMark.dtd) sont protégées par Copyright (C) 2014-16 John MacFarlane, publiées sous la licence Creative Commons CC-BY-SA 4.0 :..."
     keywords:
-    - marque commune
+    - commonmark
     - licence
     wiki_keywords: []
   - title: Licence pdf22md
