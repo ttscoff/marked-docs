@@ -113,14 +113,14 @@ Disponibles sur **document** et **window**. La plupart nécessitent une WebView 
 
 | Command | Parameters | Description |
 | --- | --- | --- |
-| `refresh preview` | — | Rechargez l'aperçu à partir du fichier source (identique à {% appmenu Preview, Refresh %}). |
-| `reveal in finder` | — | Révélez le fichier du document dans le Finder. |
-| `show highlights` | — | Activez la mise en évidence des mots clés (évitez les mots, les substituts, la voix passive, les listes personnalisées). |
+| `refresh preview` | - | Rechargez l'aperçu à partir du fichier source (identique à {% appmenu Preview, Refresh %}). |
+| `reveal in finder` | - | Révélez le fichier du document dans le Finder. |
+| `show highlights` | - | Activez la mise en évidence des mots clés (évitez les mots, les substituts, la voix passive, les listes personnalisées). |
 | `full screen` | optional `enabled` boolean | Entrez, quittez ou basculez en mode aperçu plein écran. |
 | `scroll to heading` | `title` ou `id` | Faites défiler jusqu'à un titre par son texte visible ou son `id` DOM. |
 | `scroll to position` | `percent` ou `line` | Faites défiler par pourcentage de la hauteur du document ou par numéro de ligne approximatif. |
-| `copy html` | — | Copiez l'aperçu HTML dans le presse-papiers (menu Action ou {% kbd shift cmd C %} ; voir [Copier HTML](Exporting.html#copyhtml)). |
-| `copy rtf` | — | Copiez le texte enrichi dans le presse-papiers. |
+| `copy html` | - | Copiez l'aperçu HTML dans le presse-papiers (menu Action ou {% kbd shift cmd C %} ; voir [Copier HTML](Exporting.html#copyhtml)). |
+| `copy rtf` | - | Copiez le texte enrichi dans le presse-papiers. |
 
 ```applescript
 tell application "Marked"
@@ -187,7 +187,7 @@ end tell
 ## Table des matières (en cours de développement)
 
 {% note %}
-**En cours de développement — pas encore fiable.** Le dictionnaire inclut une propriété **`headings`** et une commande **`headings`** pour lire les titres imbriqués de l'aperçu (enregistrements `heading_item`). Cette automatisation ne fonctionne **pas correctement** dans les versions actuelles (résultats vides, erreurs de coercition ou « aucun résultat n'a été renvoyé »). Il sera corrigé dans une version ultérieure. Préférez **`scroll to heading`** avec un titre ou un identifiant connu d'ici là.
+**En cours de développement, pas encore fiable.** Le dictionnaire inclut une propriété **`headings`** et une commande **`headings`** pour lire les titres imbriqués de l'aperçu (enregistrements `heading_item`). Cette automatisation ne fonctionne **pas correctement** dans les versions actuelles (résultats vides, erreurs de coercition ou « aucun résultat n'a été renvoyé »). Il sera corrigé dans une version ultérieure. Préférez **`scroll to heading`** avec un titre ou un identifiant connu d'ici là.
 {% endnote %}
 
 **Comportement prévu** (une fois terminé) : enregistrements `heading_item` imbriqués à partir des en-têtes dans l'**aperçu** (`h1`–`h6`), et non à partir du Markdown brut.
@@ -199,7 +199,7 @@ end tell
 | `level` | Niveau de titre `1`–`6` |
 | `children` | Liste imbriquée d'enregistrements `heading_item` |
 
-**`headings`** (propriété du document) — tous les niveaux. **`headings levels {2, 3}`** (commande) — filtre optionnel : uniquement ces niveaux de titre précis (pas une plage).
+**`headings`** (propriété du document) : tous les niveaux. **`headings levels {2, 3}`** (commande), un filtre optionnel : uniquement ces niveaux de titre précis (pas une plage).
 
 ```applescript
 -- Planned; do not rely on this yet
