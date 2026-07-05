@@ -1,5 +1,3 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
 Consultez le [Markdown Dingus](x-marked-3://dingus?processor=kramdown) pour expérimenter le processeur Kramdown.
@@ -10,13 +8,13 @@ Kramdown est un convertisseur rapide et pur Ruby Markdown-superset qui étend la
 
 ## Caractéristiques clés
 
-- **Fast and Pure Ruby** : entièrement écrit en Ruby pour plus de performances et de portabilité
-- **Syntaxe stricte** : fournit des règles définies et des spécifications claires
-- **Fonctionnalités améliorées** : inclut de nombreuses extensions introuvables dans Markdown standard
-- **Intégration Jekyll** : processeur Markdown par défaut pour le générateur de site statique Jekyll
-- **Complet** : prend en charge les éléments au niveau du bloc et au niveau du span avec une personnalisation étendue
+- **Rapide et pur Ruby** : entièrement écrit en Ruby pour plus de performances et de portabilité
+- **Syntaxe stricte** : fournit des règles définies et des spécifications claires
+- **Fonctionnalités améliorées** : inclut de nombreuses extensions introuvables dans Markdown standard
+- **Intégration Jekyll** : processeur Markdown par défaut pour le générateur de site statique Jekyll
+- **Complet** : prend en charge les éléments au niveau du bloc et au niveau du span avec une personnalisation étendue
 
-## Différences majeures par rapport à la démarque standard
+## Différences majeures par rapport au Markdown standard
 
 ### 1. **Éléments améliorés au niveau des blocs**
 
@@ -115,11 +113,11 @@ A paragraph with attributes.
 - Prise en charge au niveau du bloc et au niveau de l'étendue
 
 ```markdown
-This *is*{:.underline} some ⟦3⟧{:#id}{:.class}.
+This *is*{:.underline} some `code`{:#id}{:.class}.
 A [link](test.html){:rel='something'} and some **tools**{:.tools}.
 ```
 
-**Prolongations**
+**Extensions**
 
 - Système d'extension personnalisé pour des fonctionnalités supplémentaires
 - Extensions intégrées pour les commentaires et les options
@@ -139,10 +137,10 @@ This text is completely ignored by kramdown.
 - Mise en évidence automatique de la syntaxe pour les blocs de code clôturés
 - Prise en charge de nombreux langages de programmation
 
-    ```rubis
-    vraiment bonjour
-      met "Bonjour, Monde!"
-    fin
+    ```ruby
+    def hello
+      puts "Hello, World!"
+    end
     ```
 
 **Blocs de code standard**
@@ -164,7 +162,7 @@ This text is completely ignored by kramdown.
 - Tabulations autorisées uniquement au début des lignes pour l'indentation
 - Ne doit pas être précédé d'espaces
 
-** Limites des blocs **
+**Limites des blocs**
 
 - Des règles claires indiquant quand les éléments doivent commencer/se terminer sur les limites des blocs
 - Comportement cohérent sur différents types d'éléments
@@ -217,7 +215,7 @@ This text is completely ignored by kramdown.
 
 ## Kramdown vs autres saveurs Markdown
 
-| Fonctionnalité | Kramdown | Marque commune (GFM) | Aromatisé GitHub | MultiMarkdown | Norme |
+| Fonctionnalité | Kramdown | CommonMark (GFM) | Format GitHub | MultiMarkdown | Standard |
 | ---------------- | -------- | ---------- | --------------- | ------------- | -------- |
 | Barré | Non | Oui | Non | Non | Non |
 | Listes de tâches | Non | Non | Oui | Oui | Non |
@@ -231,13 +229,13 @@ This text is completely ignored by kramdown.
 
 ## Avantages clés de Kramdown
 
-1. **Ensemble complet de fonctionnalités** : comprend de nombreuses extensions introuvables dans d'autres implémentations
-2. **Intégration Jekyll** : intégration transparente avec le générateur de site statique Jekyll
-3. **Ruby Ecosystem** : implémentation de Pure Ruby avec une bonne prise en charge des outils Ruby
-4. **Extensibilité** : système d'extension personnalisé pour des fonctionnalités supplémentaires
-5. **Prise en charge des attributs** : système d'attributs riche pour la personnalisation de la sortie HTML
-6. **Support mathématique** : prise en charge intégrée des expressions mathématiques LaTeX
-7. **Analyse stricte** : règles d'analyse claires et sans ambiguïté
+1. **Ensemble complet de fonctionnalités** : comprend de nombreuses extensions introuvables dans d'autres implémentations
+2. **Intégration Jekyll** : intégration transparente avec le générateur de site statique Jekyll
+3. **Écosystème Ruby** : implémentation de Pure Ruby avec une bonne prise en charge des outils Ruby
+4. **Extensibilité** : système d'extension personnalisé pour des fonctionnalités supplémentaires
+5. **Prise en charge des attributs** : système d'attributs riche pour la personnalisation de la sortie HTML
+6. **Support mathématique** : prise en charge intégrée des expressions mathématiques LaTeX
+7. **Analyse stricte** : règles d'analyse claires et sans ambiguïté
 
 ## Cas d'utilisation courants
 
@@ -268,19 +266,19 @@ This text is completely ignored by kramdown.
 - [Guide d'intégration de Jekyll](https://jekyllrb.com/docs/configuration/markdown/)
 - [Dépôt Kramdown GitHub](https://github.com/gettalong/kramdown)
 
-## Migration depuis la démarque standard
+## Migration depuis le Markdown standard
 
 La plupart des documents Markdown standard fonctionnent avec Kramdown sans modification. Pour profiter des fonctionnalités de Kramdown :
 
-1. **Ajouter des listes de définitions** : convertissez les glossaires et les listes de termes
-2. **Utiliser les listes d'attributs** : ajoutez des identifiants, des classes et des attributs personnalisés
-3. **Implémenter les notes de bas de page** : convertir les références entre parenthèses
+1. **Ajouter des listes de définitions** : convertissez les glossaires et les listes de termes
+2. **Utiliser les listes d'attributs** : ajoutez des identifiants, des classes et des attributs personnalisés
+3. **Implémenter les notes de bas de page** : convertir les références entre parenthèses
 
-## meilleures pratiques
+## Meilleures pratiques
 
-1. **Évitez la syntaxe paresseuse** : ne comptez pas sur le packaging dur pour la lisibilité
-2. **Utiliser les listes d'attributs** : exploitez les IAL pour le style et les métadonnées
-3. **Indentation cohérente** : utilisez des espaces au lieu de tabulations lorsque cela est possible
+1. **Évitez la syntaxe paresseuse** : ne comptez pas sur le packaging dur pour la lisibilité
+2. **Utiliser les listes d'attributs** : exploitez les IAL pour le style et les métadonnées
+3. **Indentation cohérente** : utilisez des espaces au lieu de tabulations lorsque cela est possible
 
 ---
 
