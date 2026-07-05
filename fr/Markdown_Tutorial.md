@@ -1,85 +1,83 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-## Qu'est-ce que le Markdown ?
+## Qu'est-ce que Markdown ?
 
-Markdown est un langage de balisage léger qui vous permet d'écrire en utilisant un format de texte brut facile à lire et à écrire, puis de le convertir en HTML structurellement valide. L'objectif primordial de la conception de la syntaxe de formatage de Markdown est de la rendre aussi lisible que possible.
+Markdown est un langage de balisage léger qui vous permet d'écrire dans un format texte brut facile à lire et à écrire, puis de le convertir en HTML structurellement valide. L'objectif de conception primordial de la syntaxe de formatage de Markdown est de la rendre aussi lisible que possible.
 
 ## Syntaxe de base
 
-### En-têtes
+### Titres
 
-Créez des en-têtes à l'aide de symboles de hachage (`#`). Le nombre de hachages détermine le niveau d'en-tête :
+Créez des titres en utilisant des symboles dièse (`#`). Le nombre de dièses détermine le niveau de titre :
 
 ```markdown
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+# Titre 1
+## Titre 2
+### Titre 3
+#### Titre 4
+##### Titre 5
+###### Titre 6
 ```
 
-### Accentuation
+### Emphase
 
-**Texte en gras** utilisant des doubles astérisques ou des doubles traits de soulignement :
+**Texte en gras** en utilisant des doubles astérisques ou doubles traits de soulignement :
 
 ```markdown
-**Bold text**
-__Bold text__
+**Texte en gras**
+__Texte en gras__
 ```
 
-*Texte en italique* utilisant des astérisques simples ou des traits de soulignement simples :
+*Texte en italique* en utilisant des astérisques simples ou des traits de soulignement simples :
 
 ```markdown
-*Italic text*
-_Italic text_
+*Texte en italique*
+_Texte en italique_
 ```
 
 ### Listes
 
-**Listes non ordonnées** utilisant des astérisques, des signes plus ou des traits d'union :
+**Listes non ordonnées** utilisant des astérisques, des signes plus ou des tirets :
 
 ```markdown
-* Item 1
-* Item 2
-* Item 3
+* Élément 1
+* Élément 2
+* Élément 3
 
-+ Item 1
-+ Item 2
-+ Item 3
++ Élément 1
++ Élément 2
++ Élément 3
 
-- Item 1
-- Item 2
-- Item 3
+- Élément 1
+- Élément 2
+- Élément 3
 ```
 
-**Listes ordonnées** utilisant des nombres suivis de points :
+**Listes ordonnées** utilisant des nombres suivis de points :
 
 ```markdown
-1. First item
-2. Second item
-3. Third item
+1. Premier élément
+2. Deuxième élément
+3. Troisième élément
 ```
 
 ### Liens
 
-**Liens en ligne** avec le texte entre crochets et l'URL entre parenthèses :
+**Liens en ligne** avec le texte entre crochets et l'URL entre parenthèses :
 
 ```markdown
-[Link text](http://example.com)
+[Texte du lien](http://example.com)
 ```
 
-**Liens de référence** avec le texte entre crochets et une référence entre crochets :
+**Liens de référence** avec le texte entre crochets et une référence entre crochets :
 
 ```markdown
-[Link text][reference]
+[Texte du lien][reference]
 
-[reference]: http://example.com "Optional title"
+[reference]: http://example.com "Titre facultatif"
 ```
 
-**Liens automatiques** en plaçant les URL entre crochets :
+**Liens automatiques** en entourant les URL de chevrons :
 
 ```markdown
 <http://example.com>
@@ -88,45 +86,45 @@ _Italic text_
 
 ### Images
 
-Les images utilisent une syntaxe similaire aux liens mais avec un point d'exclamation au début :
+Les images utilisent une syntaxe similaire aux liens, mais avec un point d'exclamation au début :
 
 ```markdown
-![Alt text](http://example.com/image.jpg)
-![Alt text][image-reference]
+![Texte alternatif](http://example.com/image.jpg)
+![Texte alternatif][image-reference]
 
-[image-reference]: http://example.com/image.jpg "Optional title"
+[image-reference]: http://example.com/image.jpg "Titre facultatif"
 ```
 
 ### Citations
 
-Créez des guillemets en utilisant le symbole supérieur à (`>`) au début de chaque ligne :
+Créez des citations en utilisant le symbole supérieur à (`>`) au début de chaque ligne :
 
 ```markdown
-> This is a blockquote.
-> It can span multiple lines.
+> Ceci est une citation.
+> Elle peut s'étendre sur plusieurs lignes.
 >
-> You can have multiple paragraphs in a blockquote.
+> Vous pouvez avoir plusieurs paragraphes dans une citation.
 ```
 
-###Code
+### Code
 
-**Code en ligne** utilisant des backticks :
+**Code en ligne** en utilisant des backticks :
 
 ```markdown
-Use ⟦4⟧ in your text.
+Utilisez `code` dans votre texte.
 ```
 
-**Blocs de code** en indentant avec quatre espaces ou une tabulation :
+**Blocs de code** en indentant avec quatre espaces ou une tabulation :
 
 ```markdown
-    This is a code block.
-    It preserves formatting and spacing.
-    Multiple lines are supported.
+    Ceci est un bloc de code.
+    Il préserve la mise en forme et l'espacement.
+    Plusieurs lignes sont prises en charge.
 ```
 
 ### Règles horizontales
 
-Créez des règles horizontales en utilisant au moins trois traits d'union, astérisques ou traits de soulignement :
+Créez des règles horizontales en utilisant trois tirets, astérisques ou traits de soulignement ou plus :
 
 ```markdown
 ---
@@ -138,90 +136,90 @@ ___
 
 ### Sauts de ligne
 
-**Sauts de ligne définitifs** en terminant une ligne par deux espaces ou plus :
+**Sauts de ligne forcés** en terminant une ligne par deux espaces ou plus :
 
 ```markdown
-This line ends with two spaces.
-This creates a hard line break.
+Cette ligne se termine par deux espaces.
+Cela crée un saut de ligne forcé.
 ```
 
-**Sauts de ligne doux** en appuyant simplement sur Entrée (crée un espace en HTML) :
+**Sauts de ligne doux** en appuyant simplement sur Entrée (crée un espace en HTML) :
 
 ```markdown
-This line
-continues on the next line with a space.
+Cette ligne
+se poursuit sur la ligne suivante avec un espace.
 ```
 
-### Caractères d'échappement
+### Échappement de caractères
 
-Échapper aux caractères spéciaux à l'aide de barres obliques inverses :
+Échappez les caractères spéciaux en utilisant des barres obliques inverses :
 
 ```markdown
-\*This text is not italic\*
-\[This is not a link\]
+\*Ce texte n'est pas en italique\*
+\[Ceci n'est pas un lien\]
 ```
 
-Caractères courants pouvant être échappés :
+Caractères courants pouvant être échappés :
 - `\` barre oblique inverse
-- `` ` `` backtick
+- `` ` `` accent grave
 - `*` astérisque
-- `_` soulignement
+- `_` trait de soulignement
 - `{}` accolades
 - `[]` crochets
 - `()` parenthèses
-- `#` hachage
+- `#` dièse
 - `+` plus
 - `-` moins
-- `.` période
+- `.` point
 - `!` point d'exclamation
 
-## meilleures pratiques
+## Bonnes pratiques
 
-1. **Utilisez des lignes vides** pour séparer les différents éléments pour une meilleure lisibilité
-2. **Soyez cohérent** avec vos choix de formatage (par exemple, utilisez `*` ou `_` pour mettre l'accent)
-3. **Gardez les choses simples** - Markdown est conçu pour être lisible sous forme de texte brut
-4. **Testez votre sortie** pour vous assurer qu'elle s'affiche comme prévu
-5. **Utilisez un texte de lien significatif** au lieu d'expressions génériques telles que « cliquez ici »
+1. **Utilisez des lignes vides** pour séparer les différents éléments et améliorer la lisibilité
+2. **Soyez cohérent** dans vos choix de formatage (par exemple, utilisez soit `*` soit `_` pour l'emphase)
+3. **Restez simple** : Markdown est conçu pour être lisible en texte brut
+4. **Testez votre résultat** pour vous assurer qu'il s'affiche comme prévu
+5. **Utilisez un texte de lien significatif** plutôt que des phrases génériques comme « cliquez ici »
 
 ## Modèles courants
 
 ### Listes imbriquées
 
 ```markdown
-1. First item
-   - Nested item
-   - Another nested item
-2. Second item
-   - More nested content
+1. Premier élément
+   - Élément imbriqué
+   - Un autre élément imbriqué
+2. Deuxième élément
+   - Plus de contenu imbriqué
 ```
 
 ### Listes avec paragraphes
 
 ```markdown
-1. First item
+1. Premier élément
 
-   This is a paragraph under the first item.
+   Voici un paragraphe sous le premier élément.
 
-2. Second item
+2. Deuxième élément
 
-   This is a paragraph under the second item.
+   Voici un paragraphe sous le deuxième élément.
 ```
 
-### Blockquotes avec d'autres éléments
+### Citations avec d'autres éléments
 
 ```markdown
-> This is a blockquote with **bold text** and *italic text*.
+> Ceci est une citation avec du **texte en gras** et du *texte en italique*.
 >
-> - It can contain lists
-> - And other Markdown elements
+> - Elle peut contenir des listes
+> - Et d'autres éléments Markdown
 >
-> > Nested blockquotes are also possible.
+> > Les citations imbriquées sont également possibles.
 ```
 
 ## Résumé
 
-Markdown fournit un moyen simple et lisible de formater du texte qui peut être facilement converti en HTML. La clé est de le garder simple et lisible tout en utilisant les éléments de syntaxe de base de manière cohérente. Avec de la pratique, vous constaterez que Markdown devient une seconde nature et facilite grandement la rédaction de contenu structuré.
+Markdown offre une façon simple et lisible de formater du texte qui peut être facilement converti en HTML. La clé est de rester simple et lisible tout en utilisant les éléments de syntaxe de base de manière cohérente. Avec de la pratique, vous constaterez que Markdown devient une seconde nature et facilite grandement la rédaction de contenu structuré.
 
 ---
 
-*Ce didacticiel couvre la syntaxe de base de Markdown telle que définie dans la spécification originale. Pour des fonctionnalités plus avancées, consultez la documentation des processeurs Markdown spécifiques tels que CommonMark (GFM), MultiMarkdown ou GitHub Flavored Markdown.*
+*Ce tutoriel couvre la syntaxe Markdown de base telle que définie dans la spécification originale. Pour des fonctionnalités plus avancées, consultez la documentation des processeurs Markdown spécifiques comme CommonMark (GFM), MultiMarkdown ou GitHub Flavored Markdown.*
