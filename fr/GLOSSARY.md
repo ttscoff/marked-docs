@@ -40,6 +40,8 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | Ask (button) | Demander | Confirmed |
 | Cancel (button) | Annuler | Confirmed |
 | System Settings (macOS app, not Marked's own Settings) | Réglages Système | Apple's current French name for the macOS System Settings app, distinct from the "Settings"/"Paramètres" entry above, which refers to Marked's own preferences window |
+| Mermaid | Mermaid | Diagramming library (mermaid.js.org). Never translate; confirmed mistranslation seen twice as "Sirène" (the mythical creature). Also used as a Marked setting name: "Intégrer les cartes en tant que diagrammes Mermaid". |
+| Hooks | Hooks | Marked's JavaScript API for re-running scripts on preview update (`Marked.hooks.register()`). Keep in English, singular "hook" or plural "hooks" as in source; do not translate to "crochets". |
 
 ## Do not translate (keep English)
 
