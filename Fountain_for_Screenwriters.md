@@ -1,10 +1,10 @@
 # <%= @title %>
 
-[Fountain](http://fountain.io/) is a specialized text markup language that is designed for writing screenplays. Screenwriters who write using Fountain's syntax can use Marked to preview their work. 
+[Fountain](http://fountain.io/) is a specialized text markup language that is designed for writing screenplays. Screenwriters who write using Fountain's syntax can use Marked to preview their work.
 
 Opening any file with a ".fountain" extension will automatically enable Fountain support for the window. A default Fountain stylesheet will be applied for preview and export.
 
-You can force any document to be processed as Markdown by opening the Gear menu in the lower right of the Preview window and selecting **Process as Fountain**.
+You can force any document to be processed as Markdown by opening the Gear menu in the lower right of the Preview window and deselecting **Process as Fountain**.
 
 Section and scene headers will show up in the Table of Contents for quick navigation of your screenplay.
 
