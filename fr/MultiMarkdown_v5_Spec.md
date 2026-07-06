@@ -1,5 +1,3 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
 Consultez le [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) pour expérimenter le processeur MultiMarkdown.
@@ -10,18 +8,18 @@ MultiMarkdown est un processeur Markdown étendu conçu pour fonctionner avec de
 
 ## Caractéristiques clés
 
-- **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
-- **Sortie multiformat** : convertit en HTML, LaTeX, PDF, ODF, RTF et Word
-- **Contenu sur présentation** : se concentre sur la structure et la signification du document
-- **Cross-Platform** : fonctionne sur n'importe quel système d'exploitation avec n'importe quel éditeur de texte
-- **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
-- **Version 5** : réécriture complète avec des performances et une fiabilité améliorées
+- **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
+- **Sortie multiformat** : convertit en HTML, LaTeX, PDF, ODF, RTF et Word
+- **Contenu sur présentation** : se concentre sur la structure et la signification du document
+- **Cross-Platform** : fonctionne sur n'importe quel système d'exploitation avec n'importe quel éditeur de texte
+- **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
+- **Version 5** : réécriture complète avec des performances et une fiabilité améliorées
 
 ## Objectifs de philosophie et de conception
 
 MultiMarkdown suit le principe selon lequel **le contenu est plus important que la présentation**. L'accent est mis sur la représentation de la signification des documents (il s'agit d'une liste, d'un tableau, etc.) plutôt que sur la dictée des polices, des couleurs ou du style.
 
-L'objectif est d'être utilisable pour 80 % des documents rédigés par 80 % des personnes, ce qui le rend adapté aux romans, aux thèses, à la documentation technique et à la plupart des autres contenus écrits.
+L'objectif est d'être utilisable pour 80 % des documents rédigés par 80 % des personnes, ce qui le rend adapté aux romans, aux thèses, à la documentation technique et à la plupart des autres contenus écrits.
 
 ## Principales fonctionnalités et extensions
 
@@ -32,16 +30,16 @@ L'objectif est d'être utilisable pour 80 % des documents rédigés par 80 % d
 - Inclusion automatique dans les en-têtes de sortie
 
 ```markdown
-title: My Document
+title: Mon document
 author: John Doe
 date: 2024-01-15
-custom: value
+custom: valeur
 
-<!-- A blank line ends the metadata -->
-Content
+<!-- Une ligne vide termine les métadonnées -->
+Contenu
 ---
 
-# Document Content
+# Contenu du document
 ```
 
 **Variables de métadonnées**
@@ -51,9 +49,9 @@ Content
 - Substitution automatique pendant le traitement
 
 ```markdown
-Title: [%title]
-Author: [%author]
-Date: [%date]
+Titre : [%title]
+Auteur : [%author]
+Date : [%date]
 ```
 
 ### 2. **Tableaux avancés**
@@ -65,12 +63,12 @@ Date: [%date]
 - Renvois aux tableaux
 
 ```markdown
-| Header 1 | Header 2 | Header 3 |
+| En-tête 1 | En-tête 2 | En-tête 3 |
 | :------- | :------: | -------: |
-| Left     |  Center  |    Right |
-| Aligned  | Aligned  |  Aligned |
+| Gauche   |  Centre  |   Droite |
+| Aligné   |  Aligné  |   Aligné |
 
-Table: Sample Table with Alignment
+Table: Exemple de tableau avec alignement
 ```
 
 **Caractéristiques du tableau**
@@ -89,9 +87,9 @@ Table: Sample Table with Alignment
 - Prise en charge des notes de bas de page en ligne
 
 ```markdown
-This is a sentence with a footnote[^1].
+Ceci est une phrase avec une note de bas de page[^1].
 
-[^1]: This is the footnote content.
+[^1]: Ceci est le contenu de la note de bas de page.
 ```
 
 **Aide aux citations**
@@ -101,23 +99,23 @@ This is a sentence with a footnote[^1].
 - Prise en charge de différents styles de citation
 
 ```
-This is a statement that should be attributed to
-its source[p. 23][#Doe:2006].
+Ceci est une déclaration qui doit être attribuée à
+sa source[p. 23][#Doe:2006].
 ```
 
 Et voici la description de la référence à être
 utilisé dans la bibliographie.
 
 ```
-[#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.
+[#Doe:2006]: John Doe. *Un livre extraordinaire quelconque*.  Vanity Press, 2006.
 ```
 
 Dans la sortie HTML, les citations ne peuvent pas être distinguées des notes de bas de page.
 
-Vous n'êtes pas obligé d'utiliser un localisateur (par exemple p. 23), et il n'y a pas de règles spéciales sur ce qui peut être utilisé comme localisateur si vous choisissez d'en utiliser un. Si vous préférez omettre le localisateur, utilisez simplement un jeu de crochets vide avant la citation :
+Vous n'êtes pas obligé d'utiliser un localisateur (par exemple p. 23), et il n'y a pas de règles spéciales sur ce qui peut être utilisé comme localisateur si vous choisissez d'en utiliser un. Si vous préférez omettre le localisateur, utilisez simplement un jeu de crochets vide avant la citation :
 
 ```
-This is a statement that should be attributed to its
+Ceci est une déclaration qui doit être attribuée à sa
 source[][#Doe:2006].
 ```
 
@@ -132,8 +130,8 @@ Il n'y a pas de règles sur le format de clé de citation que vous utilisez (par
 - Prise en charge des étiquettes personnalisées
 
 ```markdown
-See [Table 1] for details.
-Refer to [Section 2.1] for more information.
+Voir [Table 1] pour plus de détails.
+Consultez [Section 2.1] pour plus d'informations.
 
 ## Section 2.1 [section-2-1]
 ```
@@ -154,12 +152,12 @@ Refer to [Section 2.1] for more information.
 - Sortie HTML `<dl>` appropriée
 
 ```markdown
-Term 1
-: Definition 1
+Terme 1
+: Définition 1
 
-Term 2
-: Definition 2a
-: Definition 2b
+Terme 2
+: Définition 2a
+: Définition 2b
 ```
 
 ### 6. **Blocs de code clôturés**
@@ -177,24 +175,24 @@ def hello():
 ```
 ```
 
-**Code Block Features**
+**Fonctionnalités des blocs de code**
 
-- Language specification for syntax highlighting
-- Support for many programming languages
-- Proper HTML ⟦14⟧ output
+- Spécification du langage pour la coloration syntaxique
+- Prise en charge de nombreux langages de programmation
+- Sortie HTML `<code>` appropriée
 
-### 7. **Math Support**
+### 7. **Prise en charge des mathématiques**
 
-**Mathematical Expressions**
+**Expressions mathématiques**
 
-- LaTeX-compatible math syntax
-- Both inline and block math support
-- Integration with LaTeX output
+- Syntaxe mathématique compatible LaTeX
+- Prise en charge des mathématiques en ligne et en bloc
+- Intégration avec la sortie LaTeX
 
 ```markdown
-Inline math: $E = mc^2$
+Mathématiques en ligne : $E = mc^2$
 
-Block math:
+Mathématiques en bloc :
 
 $$
 \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
@@ -210,7 +208,7 @@ $$
 - Meilleure intégration avec les formats de sortie
 
 ```markdown
-[Link text]: url.html title="Link title" class="external"
+[Texte du lien]: url.html title="Titre du lien" class="external"
 ```
 
 ### 9. **Transclusion**
@@ -242,9 +240,9 @@ $$
 - Fonctionnalités d'édition collaborative
 
 ```markdown
-This is {>>deleted text<<} and this is {++added text++}.
+Ceci est {>>texte supprimé<<} et ceci est {++texte ajouté++}.
 
-This is a {~~deletion~>replacement~~}.
+Ceci est une {~~suppression~>remplacement~~}.
 ```
 
 ### 11. **Table des matières**
@@ -256,15 +254,15 @@ This is a {~~deletion~>replacement~~}.
 - Génération de table des matières personnalisable
 
 ```markdown
-# Document Title
+# Titre du document
 
 {{TOC}}
 
 ## Section 1
-Content here...
+Contenu ici...
 
 ## Section 2
-More content...
+Plus de contenu...
 ```
 
 ### 12. **Abréviations**
@@ -279,12 +277,12 @@ More content...
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets
 
-This uses HTML and CSS.
+Ceci utilise HTML et CSS.
 ```
 
 ## MultiMarkdown v5 vs autres saveurs Markdown
 
-| Fonctionnalité | MultiMarkdown v5 | Marque commune (GFM) | Remise | Kramdown | Norme |
+| Fonctionnalité | MultiMarkdown v5 | CommonMark (GFM) | Discount | Kramdown | Standard |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
 | Tableaux | Oui | Non | Oui | Oui | Non |
 | Barré | Oui | Non | Oui | Non | Non |
@@ -305,13 +303,13 @@ This uses HTML and CSS.
 
 ## Avantages clés de MultiMarkdown v5
 
-1. **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
-2. **Sortie multiformat** : conversion en HTML, LaTeX, PDF, ODF, RTF et Word
-3. **Soutien académique** : citations, notes de bas de page et références croisées
-4. **Fonctionnalités professionnelles** : métadonnées, transclusion et formatage avancé
-5. **Multiplateforme** : fonctionne sur n'importe quel système d'exploitation
-6. **À l'épreuve du temps** : le format de texte brut garantit une compatibilité à long terme
-7. **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
+1. **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
+2. **Sortie multiformat** : conversion en HTML, LaTeX, PDF, ODF, RTF et Word
+3. **Soutien académique** : citations, notes de bas de page et références croisées
+4. **Fonctionnalités professionnelles** : métadonnées, transclusion et formatage avancé
+5. **Multiplateforme** : fonctionne sur n'importe quel système d'exploitation
+6. **À l'épreuve du temps** : le format de texte brut garantit une compatibilité à long terme
+7. **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
 
 ## Cas d'utilisation courants
 
@@ -339,24 +337,24 @@ This uses HTML and CSS.
 - Bases de connaissances et wikis
 - Projets d'écriture collaborative
 
-## meilleures pratiques
+## Meilleures pratiques
 
-1. **Utiliser les métadonnées** : exploitez le contenu YAML pour les informations sur les documents
-2. **Structure avec en-têtes** : utilisez la hiérarchie de titres appropriée pour la génération de la table des matières
-3. **Tirez parti des références croisées** : utilisez les liens automatiques pour une meilleure navigation
-4. **Organisez avec Transclusion** : divisez les documents volumineux en fichiers gérables
-5. **Test de sortie** : vérifiez le formatage dans différents formats de sortie
-6. **Utiliser les citations** : mettre en œuvre des pratiques de citation académique appropriées
+1. **Utiliser les métadonnées** : exploitez le contenu YAML pour les informations sur les documents
+2. **Structure avec en-têtes** : utilisez la hiérarchie de titres appropriée pour la génération de la table des matières
+3. **Tirez parti des références croisées** : utilisez les liens automatiques pour une meilleure navigation
+4. **Organisez avec Transclusion** : divisez les documents volumineux en fichiers gérables
+5. **Test de sortie** : vérifiez le formatage dans différents formats de sortie
+6. **Utiliser les citations** : mettre en œuvre des pratiques de citation académique appropriées
 
 ## Migration à partir d'autres versions de Markdown
 
 La plupart des Markdown standard fonctionnent avec MultiMarkdown sans modifications. Pour profiter des fonctionnalités MMD :
 
-1. **Ajouter des métadonnées** : inclure les éléments préliminaires YAML pour les informations sur le document
-2. **Utilisez des références croisées** : remplacez les liens manuels par des références automatiques
-3. **Mettre en œuvre les citations** : ajouter un formatage approprié des citations académiques
-4. **Structure avec transclusion** : divisez les documents volumineux en fichiers plus petits
-5. **Tirer parti des tableaux** : utilisez les fonctionnalités avancées des tableaux pour la présentation des données
+1. **Ajouter des métadonnées** : inclure les éléments préliminaires YAML pour les informations sur le document
+2. **Utilisez des références croisées** : remplacez les liens manuels par des références automatiques
+3. **Mettre en œuvre les citations** : ajouter un formatage approprié des citations académiques
+4. **Structure avec transclusion** : divisez les documents volumineux en fichiers plus petits
+5. **Tirer parti des tableaux** : utilisez les fonctionnalités avancées des tableaux pour la présentation des données
 
 ## Ressources
 
