@@ -65,6 +65,10 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | widow (typography) | veuve | Settings_Style.md; standard French typographic term ("veuves et orphelins") |
 | Style Manager | Gestionnaire de styles | Settings_Style.md |
 | Outline mode | mode Plan | Settings_Style.md; "Outline" here refers to the outline/heading numbering mode, capitalized as a feature name |
+| transient preview | aperçu temporaire | Share_Extension.md; unsaved preview from pasted/shared text, distinct from "clipboard preview" (aperçu du presse-papiers) and "streaming preview" (aperçu en continu) |
+| Share extension (macOS) | extension de partage | Share_Extension.md |
+| Share menu (macOS) | menu Partager | Share_Extension.md |
+| Login Items & Extensions (macOS System Settings pane) | Éléments de connexion et extensions | Share_Extension.md; macOS system pane name |
 
 ## Do not translate (keep English)
 
