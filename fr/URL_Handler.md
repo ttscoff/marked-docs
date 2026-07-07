@@ -1,348 +1,347 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Le gestionnaire d'URL de Marked fournit des fonctionnalités de script et de flux de travail supplémentaires. Vous pouvez inclure une URL dans les notes d'une autre application, par exemple, qui ouvrira un fichier dans Marqué lorsque vous cliquerez dessus. Vous pouvez effectuer plusieurs actions, répertoriées ci-dessous.
+Le gestionnaire d'URL de Marked offre des possibilités supplémentaires de script et d'automatisation de flux de travail. Vous pouvez par exemple inclure une URL dans les notes d'une autre application, qui ouvrira un fichier dans Marked lorsqu'on cliquera dessus. Plusieurs actions sont possibles, comme indiqué ci-dessous.
 
 ## Le schéma d'URL
 
 Le schéma d'URL de Marked est `x-marked`, appelé avec des options telles que `x-marked://open?file=/Users/username/Desktop/report.md`.
 
-Vous pouvez cibler spécifiquement Marked 3 en utilisant `x-marked-3` au lieu de `x-marked`. Les méthodes et paramètres sont exactement les mêmes que pour `x-marked`, mais seul Marked 3 répondra à `x-marked-3`.
+Vous pouvez cibler spécifiquement Marked 3 en utilisant `x-marked-3` au lieu de `x-marked`. Les méthodes et paramètres sont exactement les mêmes qu'avec `x-marked`, mais seul Marked 3 répondra à `x-marked-3`.
 
-## Appel depuis la ligne de commande/les scripts
+## Appel depuis la ligne de commande ou un script
 
-L'appel du gestionnaire d'URL à partir de la ligne de commande ou d'un script peut être effectué à l'aide de macOS [`open` command](http://brettterpstra.com/2014/08/06/shell-tricks-the-os-x-open-command/) :
+Il est possible d'appeler le gestionnaire d'URL depuis la ligne de commande ou un script à l'aide de la [commande `open`](http://brettterpstra.com/2014/08/06/shell-tricks-the-os-x-open-command/) de macOS :
 
-	ouvrez 'x-marked://open?file=filename.md'
-	ouvrez 'x-marked://refresh?file=filename.md'
+	open 'x-marked://open?file=filename.md'
+	open 'x-marked://refresh?file=filename.md'
 
 ### Appel en arrière-plan
 
-Vous pouvez appeler la commande `open` avec l'indicateur `-g` pour exécuter le résultat en arrière-plan sans changer de focus. Pour exécuter la commande en arrière-plan et élever la fenêtre vers le haut sans voler le focus :
+Vous pouvez appeler la commande `open` avec l'indicateur `-g` pour exécuter le résultat en arrière-plan sans changer le focus. Pour exécuter la commande en arrière-plan et faire remonter la fenêtre au premier plan sans lui donner le focus :
 
 	open -g 'x-marked://open?file=filename.md&raise=true'
 
 ## Paramètres facultatifs
 
-### x-succès
+### x-success
 
-N'importe quelle commande peut fournir un paramètre de requête **x-success**. Définissez ceci sur une URL à appeler après avoir exécuté la commande. Par exemple : `x-marked://open/?file=filename.md&x-success=ithoughts:`. Vous pouvez également fournir un identifiant de bundle (tel que `com.googlecode.iterm`) pour ouvrir une application qui n'a pas de schéma d'URL.
+N'importe quelle commande peut inclure un paramètre de requête **x-success**. Définissez-le avec une URL à appeler après l'exécution de la commande. Par exemple : `x-marked://open/?file=filename.md&x-success=ithoughts:`. Vous pouvez également fournir un identifiant de bundle (comme `com.googlecode.iterm`) pour ouvrir une application qui ne dispose pas de schéma d'URL propre.
 
-### augmenter
+### raise
 
-Un paramètre **raise** peut être passé avec n'importe quelle commande qui accepte un paramètre `file` ou affecte toutes les fenêtres. Une fois l'action effectuée, la ou les fenêtres concernées s'élèveront au-dessus de toutes les autres fenêtres (toutes les applications) avant de renvoyer ou d'exécuter un rappel.
+Un paramètre **raise** peut être transmis à toute commande acceptant un paramètre `file`, ou affectant toutes les fenêtres. Une fois l'action exécutée, la ou les fenêtres concernées remonteront au-dessus de toutes les autres fenêtres (toutes applications confondues) avant de revenir ou d'exécuter un rappel.
 
-	"marqué x://refresh?file=filename.md&raise=true"
+	"x-marked://refresh?file=filename.md&raise=true"
 
-### lecture rapide
+### speedread
 
-Un paramètre **speedread** peut être transmis avec les commandes du gestionnaire d'URL qui ouvrent un document d'aperçu (`open`, `paste`, `preview` et `stream`). Définissez `speedread=1` pour démarrer automatiquement Speed ​​Read dès que l'aperçu cible est prêt.
+Un paramètre **speedread** peut être transmis aux commandes du gestionnaire d'URL qui ouvrent un document d'aperçu (`open`, `paste`, `preview` et `stream`). Définissez `speedread=1` pour démarrer automatiquement Lecture rapide dès que l'aperçu ciblé est prêt.
 
-Exemples :
+Exemples :
 
 	x-marked://open?file=/Users/username/Desktop/report.md&speedread=1
 
 	x-marked://preview?text=Some%20text&speedread=1
 
-	marqué d'un x://paste?speedread=1
+	x-marked://paste?speedread=1
 
 # Commandes disponibles
 
 Les commandes suivantes sont disponibles pour le gestionnaire d'URL `x-marked`.
 
-## ajouter un style
+## addstyle
 
-Ajoutez un nouveau style personnalisé à Marqué.
+Ajoute un nouveau style personnalisé à Marked.
 
-##### Paramètres :
+##### Paramètres :
 
-**css** : texte CSS codé en URL à écrire dans un style personnalisé. Obligatoire sauf si vous transmettez un paramètre **file**.
+**css** : texte CSS encodé en URL à écrire dans un style personnalisé. Requis, sauf si un paramètre **file** est fourni.
 
-**fichier** : chemin complet (POSIX) vers un fichier CSS à ajouter à Marked. Obligatoire sauf si vous passez un paramètre **css**.
+**file** : chemin complet (POSIX) vers un fichier CSS à ajouter à Marked. Requis, sauf si un paramètre **css** est fourni.
 
-**name** : Le nom du style à générer.
+**name** : le nom du style à générer.
 
-Avec le paramètre **css**, celui-ci sera utilisé à la fois comme nom de fichier lors de l'écriture sur le disque, avec ".css" ajouté, et comme nom d'élément de menu. Il est obligatoire pour le paramètre **css** et facultatif pour **file** (le nom du fichier sera utilisé comme si le paramètre name était vide).
+Avec le paramètre **css**, ce nom sera utilisé à la fois comme nom de fichier lors de l'écriture sur le disque (avec l'ajout de « .css ») et comme nom d'élément de menu. Il est requis pour le paramètre **css**, et facultatif pour **file** (le nom de fichier sera utilisé si le paramètre name est vide).
 
-	x-marked://addstyle?name=Mon+nouveau+style&css=...
+	x-marked://addstyle?name=My+new+style&css=...
 
 	x-marked://addstyle?file=/Users/myuser/Custom+Styles/Unicorn.css
 
-Si vous incluez un nom avec le paramètre file, l'élément de menu obtiendra ce nom au lieu du nom de fichier. Si vous utilisez à nouveau le même nom avec un chemin différent, l'élément de menu sera mis à jour avec le nouveau chemin plutôt que d'ajouter un deuxième élément portant le même nom.
+Si vous incluez un nom avec le paramètre file, l'élément de menu prendra ce nom plutôt que le nom du fichier. Si vous réutilisez le même nom avec un chemin différent, l'élément de menu sera mis à jour avec le nouveau chemin, plutôt que d'ajouter un second élément portant le même nom.
 
-## valeurs par défaut
+## defaults
 
-Définir les paramètres utilisateur. Accepte une liste de clés et de valeurs comme paramètres de requête. Seules les clés existantes seront définies. Si le changement de préférence nécessite une actualisation, toutes les fenêtres s'actualiseront automatiquement à moins que `refresh=0` ne soit transmis.
+Définit les Paramètres utilisateur. Accepte une liste de clés et de valeurs sous forme de paramètres de requête. Seules les clés existantes seront définies. Si la modification de préférence nécessite une actualisation, toutes les fenêtres seront actualisées automatiquement, sauf si `refresh=0` est transmis.
 
 Utilisez 1 pour vrai et 0 pour faux sur les valeurs booléennes.
 
-##### Paramètres :
+##### Paramètres :
 
-**rafraîchir** _(facultatif)_ : si défini sur 0, l'actualisation automatique des fenêtres d'aperçu ouvertes est désactivée
+**refresh** _(facultatif)_ : si défini sur 0, l'actualisation automatique des fenêtres d'aperçu ouvertes est désactivée
 
-* Par défaut : 1 (vrai)
+* Par défaut : 1 (vrai)
 
-##### Exemple :
+##### Exemple :
 
-marqué x://defaults?syntaxHighlight=1&includeMathJax=0
+	x-marked://defaults?syntaxHighlight=1&includeMathJax=0
 
-La méthode `defaults` est principalement conçue pour que le développeur puisse ajouter des liens vers des fonctionnalités ésotériques qui autrement ne seraient pas disponibles dans les paramètres. Cependant, vous souhaiterez peut-être activer certaines options standard lors de l'automatisation. Certains paramètres courants que vous souhaiterez peut-être contrôler pendant l'automatisation :
+La méthode `defaults` est principalement conçue pour permettre au développeur d'ajouter des liens vers des fonctionnalités ésotériques qui pourraient ne pas être autrement accessibles dans les Paramètres. Il existe toutefois certaines options standards que vous pourriez vouloir activer/désactiver lors de l'automatisation. Voici quelques Paramètres courants que vous pourriez vouloir contrôler pendant l'automatisation :
 
-syntaxeHighlight
-: activer ou désactiver la coloration syntaxique
+syntaxHighlight
+: active ou désactive la coloration syntaxique
 
-inclureMathJax
-: activer ou désactiver la gestion interne de MathJax
+includeMathJax
+: active ou désactive la gestion interne de MathJax
 
-processeur
-: réglé sur `multimarkdown` ou `mmd` pour changer le processeur en MultiMarkdown, `discount` ou `gfm` pour utiliser le processeur Discount
+processor
+: définissez sur `multimarkdown` ou `mmd` pour passer au processeur MultiMarkdown, ou sur `discount` ou `gfm` pour utiliser le processeur Discount
 
 h1IsPageBreak, h1IsPageBreak, breakBeforeFootnotes
-: Sauts de page automatiques à l'export avant les niveaux d'en-tête 1 et 2 et les notes de bas de page.
+: sauts de page automatiques à l'export avant les titres de niveau 1 et 2, et avant les notes de bas de page.
 
 
 ## dingus
 
-Ouvrez le Markdown Dingus pour tester différents processeurs Markdown.
+Ouvre le Markdown Dingus pour tester différents processeurs Markdown.
 
-	X-marqué://dingus
+	x-marked://dingus
 
-##### Paramètres :
+##### Paramètres :
 
-**processeur** (facultatif) : spécifiez le processeur à sélectionner par défaut. Valeurs valides :
+**processor** (facultatif) : indique quel processeur sélectionner par défaut. Valeurs valides :
 
-- `multimarkdown` - Processeur MultiMarkdown
-- `commonmark` - Processeur CommonMark (GFM)
-- `discount` ou `discount (gfm)` - Processeur de remise
-- `kramdown` - Processeur Kramdown
+- `multimarkdown` - processeur MultiMarkdown
+- `commonmark` - processeur CommonMark (GFM)
+- `discount` ou `discount (gfm)` - processeur Discount
+- `kramdown` - processeur Kramdown
 
-Exemples :
+Exemples :
 
-- `x-marked://dingus?processor=kramdown` - S'ouvre avec Kramdown sélectionné
-- `x-marked://dingus?processor=commonmark` - S'ouvre avec CommonMark (GFM) sélectionné
+- `x-marked://dingus?processor=kramdown` - ouvre avec Kramdown sélectionné
+- `x-marked://dingus?processor=commonmark` - ouvre avec CommonMark (GFM) sélectionné
 
-*Remarque :* Cela ouvre la fenêtre Markdown Dingus, qui vous permet de tester et de comparer différents processeurs Markdown (MultiMarkdown, CommonMark (GFM), Discount et Kramdown) côte à côte. Parfait pour expérimenter la syntaxe Markdown et comprendre les différences entre les processeurs.
+*Remarque :* Ceci ouvre la fenêtre Markdown Dingus, qui permet de tester et comparer différents processeurs Markdown (MultiMarkdown, CommonMark (GFM), Discount et Kramdown) côte à côte. Idéal pour expérimenter avec la syntaxe Markdown et comprendre les différences entre processeurs.
 
-## stylestealer / voler
+## stylestealer / steal
 
-Ouvrez le HUD du voleur de style. Utile lorsque vous souhaitez capturer du CSS à partir d'une page en direct ou exécuter une session d'extraction de contenu manuelle sans la lancer via l'interface utilisateur.
+Ouvre la fenêtre HUD du Voleur de styles. Utile lorsque vous souhaitez capturer le CSS d'une page en ligne ou lancer une session d'extraction manuelle de contenu sans passer par l'interface.
 
-	Synonymes : x-marked://stylestealer… , x-marked://steal…
+	Synonymes : x-marked://stylestealer … , x-marked://steal …
 
-##### Paramètres :
+##### Paramètres :
 
-**url** _(facultatif)_ : une URL à pré-remplir dans la fenêtre Style Stealer. En cas d'omission, le HUD s'ouvre vide.
+**url** _(facultatif)_ : une URL à préremplir dans la fenêtre du Voleur de styles. Si omis, le HUD s'ouvre vide.
 
-Exemples :
+Exemples :
 
 - `x-marked://stylestealer?url=https%3A%2F%2Fmarkedapp.com`
 - `x-marked://steal/https:%2F%2Fexample.com`
 
 ## importurl / markdownify
 
-Ouvrez la fenêtre « Importer l'URL » (Content Extractor) pour pouvoir exécuter le pipeline Markdownifier manuellement. Cela n'effectue **pas** l'extraction automatiquement - qui est gérée par la commande `extract` ci-dessous.
+Ouvre la fenêtre « Importer une URL » (Extracteur de contenu) afin de lancer manuellement le pipeline du Markdownifier. Cette commande n'effectue **pas** l'extraction automatiquement : celle-ci est gérée par la commande `extract` ci-dessous.
 
-	Synonymes : x-marked://importurl… , x-marked://markdownify…
+	Synonymes : x-marked://importurl … , x-marked://markdownify …
 
-##### Paramètres :
+##### Paramètres :
 
-**url** _(facultatif)_ : préremplit le champ URL d'importation. En cas d'omission, la fenêtre s'ouvre avec un champ vide attendant que vous colliez un lien.
-**html** _(facultatif, markdownify uniquement)_ : lorsqu'il est fourni le `x-marked://markdownify`, il doit s'agir de HTML brut codé en URL. Marked convertira le HTML en Markdown en utilisant les mêmes règles que l'aperçu du Presse-papiers et l'ouvrira dans un document transitoire, comme si vous aviez collé ce HTML dans une fenêtre d'aperçu du Presse-papiers.
+**url** _(facultatif)_ : préremplit le champ Importer une URL. Si omis, la fenêtre s'ouvre avec un champ vide, en attente d'un lien à coller.
+**html** _(facultatif, markdownify uniquement)_ : lorsqu'il est fourni sur `x-marked://markdownify`, ce paramètre doit être du HTML brut encodé en URL. Marked convertira le HTML en Markdown selon les mêmes règles que l'aperçu du presse-papiers, et l'ouvrira dans un document temporaire, comme si vous aviez collé ce HTML dans une fenêtre d'aperçu du presse-papiers.
 
-Exemples :
+Exemples :
 
 - `x-marked://importurl?url=https%3A%2F%2Fexample.com%2Farticle`
 - `x-marked://markdownify/https:%2F%2Fnews.ycombinator.com`
 
-## faire
+## do
 
-Exécutez une commande JavaScript dans une fenêtre de document. L'intégralité de l'API JavaScript de Marked est [documentée ici](https://markedapp.com/help/jsapi/).
+Exécute une commande JavaScript dans une fenêtre de document. L'ensemble de l'API JavaScript de Marked est [documentée ici](https://markedapp.com/help/jsapi/).
 
-##### Paramètres :
+##### Paramètres :
 
-**js** _(obligatoire)_ : chaîne de requête contenant une commande JavaScript
+**js** _(requis)_ : chaîne de requête contenant une commande JavaScript
 
-* Accepte les paramètres de chemin faisant référence aux noms de fichiers, ou "tous"
-* Les chemins divisés par / rechercheront plusieurs fichiers
-* Les noms de fichiers partiels complèteront la meilleure correspondance
+* Accepte des paramètres de chemin faisant référence à des noms de fichiers, ou « all »
+* Des chemins séparés par / permettent de rechercher plusieurs fichiers
+* Les noms de fichiers partiels seront complétés avec la meilleure correspondance
 
 		x-marked://do/filename1/filename2?js=...
-		marqué x://do/all?js=...
+		x-marked://do/all?js=...
 
-**file** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules
+**file** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules
 
 	x-marked://do?file=filename1,filename2&js=...
 
-Fonctionnera sur la fenêtre la plus en avant si un nom de fichier n'est pas donné (ou si "tout" n'est pas transmis)
+S'appliquera à la fenêtre au premier plan si aucun nom de fichier n'est fourni (ou si « all » n'est pas transmis)
 
-## aide
+## help
 
-Ouvrez le système d'aide interne Marked, en spécifiant éventuellement une rubrique. Ceci est principalement destiné à une utilisation interne, mais accessible via une URL. Une URL vers une section donnée peut être copiée en cliquant avec le bouton droit sur l'icône de signet à droite d'un titre et en sélectionnant __Copier le lien__. **Marked 3** L'aide et la recherche dans l'application utilisent le schéma `x-marked-3` pour ces liens afin que macOS les ouvre dans Marked 3 lorsque Marked 2 est également installé ; les exemples ci-dessous utilisent ce formulaire.
+Ouvre le système d'aide interne de Marked, en spécifiant éventuellement un sujet. Ceci est principalement destiné à un usage interne, mais reste accessible par URL. L'URL d'une section donnée peut être copiée en faisant un clic droit sur l'icône de signet à droite d'un titre, puis en sélectionnant __Copier le lien__. L'aide intégrée et la recherche de **Marked 3** utilisent le schéma `x-marked-3` pour ces liens, afin que macOS les ouvre dans Marked 3 lorsque Marked 2 est également installé ; les exemples ci-dessous utilisent cette forme.
 
-##### dingue
+##### dingus
 
-Ouvrez le Markdown Dingus pour tester différents processeurs Markdown.
+Ouvre le Markdown Dingus pour tester différents processeurs Markdown.
 
-	X-marqué://dingus
+	x-marked://dingus
 
-######## Paramètres :
+##### Paramètres :
 
-**processeur** (facultatif) : spécifiez le processeur à sélectionner par défaut. Valeurs valides :
+**processor** (facultatif) : indique quel processeur sélectionner par défaut. Valeurs valides :
 
-- `multimarkdown` - Processeur MultiMarkdown
-- `commonmark` - Processeur CommonMark (GFM)
-- `discount` ou `discount (gfm)` - Processeur de remise
-- `kramdown` - Processeur Kramdown
+- `multimarkdown` - processeur MultiMarkdown
+- `commonmark` - processeur CommonMark (GFM)
+- `discount` ou `discount (gfm)` - processeur Discount
+- `kramdown` - processeur Kramdown
 
-Exemples :
+Exemples :
 
-- `x-marked://dingus?processor=kramdown` - S'ouvre avec Kramdown sélectionné
-- `x-marked://dingus?processor=commonmark` - S'ouvre avec CommonMark (GFM) sélectionné
+- `x-marked://dingus?processor=kramdown` - ouvre avec Kramdown sélectionné
+- `x-marked://dingus?processor=commonmark` - ouvre avec CommonMark (GFM) sélectionné
 
-*Remarque :* Cela ouvre la fenêtre Markdown Dingus, qui vous permet de tester et de comparer différents processeurs Markdown (MultiMarkdown, CommonMark (GFM), Discount et Kramdown) côte à côte. Parfait pour expérimenter la syntaxe Markdown et comprendre les différences entre les processeurs.
+*Remarque :* Ceci ouvre la fenêtre Markdown Dingus, qui permet de tester et comparer différents processeurs Markdown (MultiMarkdown, CommonMark (GFM), Discount et Kramdown) côte à côte. Idéal pour expérimenter avec la syntaxe Markdown et comprendre les différences entre processeurs.
 
-##### Paramètres :
+##### Paramètres :
 
-**page** _(facultatif)_ : le titre exact d'une page existante, avec un hachage d'ancrage facultatif
+**page** _(facultatif)_ : le titre exact d'une page existante, avec une ancre facultative
 
 	x-marked-3://help?page=Document_Statistics
 
-Les espaces sont remplacés par des traits de soulignement, conformément à la convention de dénomination des fichiers d'aide marqués. Un deux-points (:) peut être utilisé à la place d'un hachage (#) lors de la spécification d'une ancre.
+Les espaces sont remplacés par des underscores, selon la convention de nommage des fichiers d'aide de Marked. Des deux-points (:) peuvent être utilisés à la place d'un dièse (#) pour spécifier une ancre.
 
-La cible peut être spécifiée par chemin uniquement (sans chaîne de requête) :
+La cible peut être spécifiée uniquement par le chemin (sans chaîne de requête) :
 
 	x-marked-3://help/Keyword_Highlighting:editingkeywords
 
 
-## extrait
+## extract
 
-Extrayez le contenu d'une URL Web et ouvrez-le en tant que nouveau document dans Marqué.
+Extrait le contenu d'une URL web et l'ouvre comme nouveau document dans Marked.
 
-	marqué d'un x://extract?url=https://example.com
+	x-marked://extract?url=https://example.com
 
-##### Paramètres :
+##### Paramètres :
 
-**url** _(obligatoire)_ : L'URL Web à partir de laquelle extraire le contenu. Doit commencer par `http://` ou `https://`
+**url** _(requis)_ : l'URL web dont extraire le contenu. Doit commencer par `http://` ou `https://`
 
-**window** _(facultatif)_ : Nom de la fenêtre
+**window** _(facultatif)_ : nom de la fenêtre
 
-**id** _(facultatif)_ : identifiant de l'espace de noms
+**id** _(facultatif)_ : identifiant d'espace de noms
 
-**base** _(facultatif)_ : URL de base pour les liens relatifs
+**base** _(facultatif)_ : URL de base pour les liens relatifs
 
-**raise** _(facultatif)_ : réglé sur `true` pour relever la fenêtre après l'ouverture
+**raise** _(facultatif)_ : définissez sur `true` pour faire remonter la fenêtre après ouverture
 
-**manuel** _(facultatif)_ : définissez sur `true` pour ouvrir la fenêtre d'extraction manuelle de Style Stealer au lieu d'effectuer une extraction automatique.
+**manual** _(facultatif)_ : définissez sur `true` pour ouvrir la fenêtre d'extraction manuelle du Voleur de styles plutôt que d'effectuer une extraction automatique.
 
-- Lorsque `manual=true`, Marqué ouvre le Style Stealer, pré-remplit le champ URL (si fourni), supprime toute boîte de dialogue d'ouverture automatique et vous permet de sélectionner et d'extraire de manière interactive les styles/contenus avant de les enregistrer.
-- En cas d'omission ou de `false`, Marked exécute l'extracteur automatique (Markdownifier) ​​et ouvre directement le résultat en tant que nouveau document temporaire.
+- Lorsque `manual=true`, Marked ouvre le Voleur de styles, préremplit le champ URL (si fourni), supprime toute boîte de dialogue d'ouverture automatique, et vous permet de sélectionner et d'extraire de manière interactive les styles/contenus avant d'enregistrer.
+- Lorsqu'il est omis ou défini sur `false`, Marked exécute l'extracteur automatique (Markdownifier) et ouvre directement le résultat comme nouveau document temporaire.
 
-##### Exemples :
+##### Exemples :
 
-	marqué d'un x://extract?url=https://news.ycombinator.com
+	x-marked://extract?url=https://news.ycombinator.com
 
-	marqué d'un x://extract?url=https://github.com&window=GitHub&raise=true
+	x-marked://extract?url=https://github.com&window=GitHub&raise=true
 
-	marqué d'un x://extract?url=https://example.com/article&manual=true
+	x-marked://extract?url=https://example.com/article&manual=true
 
-	marqué d'un x://extract?url=https://blog.example.com/post-title
+	x-marked://extract?url=https://blog.example.com/post-title
 
-*Remarque :* Cette commande utilise le service d'extraction de contenu de Marked pour récupérer des pages Web, extraire du contenu propre à l'aide de Readability, le convertir au format Markdown et ouvrir le résultat dans un nouveau document temporaire. Le contenu extrait comprend des métadonnées (titre, URL source, date) et est formaté en Markdown propre. Parfait pour capturer et éditer rapidement du contenu Web.
+*Remarque :* Cette commande utilise le service d'extraction de contenu de Marked pour récupérer des pages web, en extraire un contenu propre à l'aide de Readability, le convertir au format Markdown, et ouvrir le résultat dans un nouveau document temporaire. Le contenu extrait inclut des métadonnées (titre, URL source, date) et est formaté en Markdown propre. Idéal pour capturer et éditer rapidement du contenu web.
 
-## ouvert
+## open
 
-Ouvre le document spécifié dans Marqué.
+Ouvre le document spécifié dans Marked.
 
 	x-marked://open?file=/Users/username/Desktop/report.md
 
-##### Paramètres :
+##### Paramètres :
 
-**fichier** *(obligatoire)* : le chemin POSIX complet du document à ouvrir, ou une liste de chemins séparés par des virgules
+**file** *(requis)* : le chemin POSIX complet du document à ouvrir, ou une liste de chemins séparés par des virgules
 
-**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Speed Read après l'ouverture.
+**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Lecture rapide après l'ouverture.
 
-`open` accepte également un chemin dont les composants seront combinés en une seule url
+`open` accepte également un chemin dont les composants seront combinés en une seule URL
 
-	marqué x://open/~/nvALT2.2
+	x-marked://open/~/nvALT2.2
 
-Si le chemin du fichier fourni n'existe pas ou ne peut pas être ouvert, Marqué sera toujours au premier plan. L'exécution sans le paramètre *file* ou avec une valeur vide ouvrira simplement Marked.
+Si le chemin de fichier fourni n'existe pas ou ne peut pas être ouvert, Marked passera tout de même au premier plan. L'exécution sans le paramètre *file*, ou avec une valeur vide, ouvrira simplement Marked.
 
-Marqué ouvrira également les fichiers si seul le chemin d'un fichier est appelé sur le gestionnaire d'URL, par ex. `x-marked:///Users/username/Desktop/report.md`.
+Marked ouvrira également des fichiers si seul le chemin d'un fichier est appelé sur le gestionnaire d'URL, par exemple `x-marked:///Users/username/Desktop/report.md`.
 
-## coller
+## paste
 
-Créez un nouveau document à partir du contenu actuel du presse-papiers.
+Crée un nouveau document à partir du contenu actuel du presse-papiers.
 
-	marqué d'un X://coller
+	x-marked://paste
 
-##### Paramètres :
+##### Paramètres :
 
-**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Speed Read après avoir ouvert l'aperçu du presse-papiers.
+**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Lecture rapide après l'ouverture de l'aperçu du presse-papiers.
 
-*Remarque :* Cela crée un document temporaire à l'aide de la commande "Aperçu du Presse-papiers". Tout texte présent dans votre presse-papiers est ajouté à un nouveau document vierge, qui est ensuite ouvert dans Marqué. S'il est fermé sans enregistrer, il est supprimé.
+*Remarque :* Ceci crée un document temporaire à l'aide de la commande « Aperçu du presse-papiers ». Tout texte présent dans votre presse-papiers est ajouté à un nouveau document vierge, qui est ensuite ouvert dans Marked. S'il est fermé sans être enregistré, il est perdu.
 
-## aperçu
+## preview
 
-Prévisualisez le texte spécifié dans un nouveau document.
+Prévisualise le texte spécifié dans un nouveau document.
 
 	x-marked://preview?text=Some%20text%20to%20%2A%2Apreview%2A%2A%0A
 
-##### Paramètres :
+##### Paramètres :
 
-**text** *(obligatoire)* : Le texte à insérer dans l'aperçu. Le texte codé en pourcentage sera non codé avant la visualisation du document.
+**text** *(requis)* : le texte à insérer dans l'aperçu. Le texte encodé en pourcentage sera décodé avant l'affichage du document.
 
-**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Speed ​​Read après avoir ouvert le texte d'aperçu.
+**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Lecture rapide après l'ouverture du texte en aperçu.
 
-## flux
+## stream
 
-Ouvrez une fenêtre d'aperçu du presse-papiers en streaming.
+Ouvre une fenêtre d'aperçu en continu depuis le presse-papiers.
 
-	marqué x://stream
+	x-marked://stream
 
-##### Paramètres :
+##### Paramètres :
 
-**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Speed Read après avoir ouvert l'aperçu en streaming.
+**speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Lecture rapide après l'ouverture de l'aperçu en continu.
 
-*Remarque :* Cela crée un document temporaire à l'aide de la commande "Aperçu du Presse-papiers". Le texte transmis est ajouté à un nouveau document vierge, qui est ensuite ouvert dans Marqué. S'il est fermé sans enregistrer, il est supprimé.
+*Remarque :* Ceci crée un document temporaire à l'aide de la commande « Aperçu du presse-papiers ». Le texte transmis est ajouté à un nouveau document vierge, qui est ensuite ouvert dans Marked. S'il est fermé sans être enregistré, il est perdu.
 
-## actualiser
+## refresh
 
-Actualisez un aperçu de document ou tous les aperçus ouverts.
+Actualise l'aperçu d'un document, ou de tous les aperçus ouverts.
 
-##### Paramètres :
+##### Paramètres :
 
-**fichier** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules (les fichiers doivent être actuellement ouverts dans Marked). Appeler sans paramètre `file` ou `?file=all` actualisera toutes les fenêtres ouvertes.
+**file** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules (les fichiers doivent être actuellement ouverts dans Marked). Un appel sans paramètre `file`, ou avec `?file=all`, actualisera toutes les fenêtres ouvertes.
 
-Le paramètre *file* peut être partiel, Marked actualisera toutes les fenêtres ouvertes avec une correspondance partielle dans le *filename* (pas le chemin complet). Passer « tout » actualisera toutes les fenêtres.
+Le paramètre *file* peut être partiel : Marked actualisera toutes les fenêtres ouvertes présentant une correspondance partielle dans le *nom de fichier* (et non le chemin complet). Passer « all » actualisera toutes les fenêtres.
 
-	marqué x://rafraîchir
+	x-marked://refresh
 
 	x-marked://refresh?file=/Users/username/Desktop/report.md
 
-	marqué x://refresh?file=report.md
+	x-marked://refresh?file=report.md
 
-S'il est appelé sans le paramètre `file` mais avec les chemins de document spécifiés dans l'URL, les chemins divisés par / rechercheront plusieurs fichiers et les noms de fichiers partiels complèteront la meilleure correspondance.
+Si appelé sans paramètre `file` mais avec des chemins de document spécifiés dans l'URL, les chemins séparés par / permettront de rechercher plusieurs fichiers, et les noms de fichiers partiels seront complétés avec la meilleure correspondance.
 
-	marqué x://refresh/filename1/filename2
+	x-marked://refresh/filename1/filename2
 
-##style
+## style
 
-Définissez le style d'aperçu (CSS) pour un ou plusieurs documents.
+Définit le style d'aperçu (CSS) pour un ou plusieurs documents.
 
-##### Paramètres :
+##### Paramètres :
 
-**css** _(obligatoire)_ : chaîne de requête contenant le nom ou le chemin d'un style. Les styles doivent être présents dans le menu de styles de Marked en tant que styles personnalisés par défaut ou ajoutés manuellement.
+**css** _(requis)_ : chaîne de requête contenant le nom ou le chemin d'un style. Les styles doivent être présents dans le menu Style de Marked, en tant que style par défaut ou style personnalisé ajouté manuellement.
 
-* Accepte les paramètres de chemin faisant référence aux noms de fichiers, ou "tous"
-* Les chemins divisés par / rechercheront plusieurs fichiers
-* Les noms de fichiers partiels complèteront la meilleure correspondance
+* Accepte des paramètres de chemin faisant référence à des noms de fichiers, ou « all »
+* Des chemins séparés par / permettent de rechercher plusieurs fichiers
+* Les noms de fichiers partiels seront complétés avec la meilleure correspondance
 
 		x-marked://style/filename1/filename2?css=...
-		marqué x://style/all?css=...
+		x-marked://style/all?css=...
 
-**file** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules
+**file** : paramètre de requête contenant des chemins/noms de fichiers séparés par des virgules
 
 	x-marked://style?file=filename1,filename2&css=...
 
-Cette méthode fonctionnera sur la fenêtre la plus en avant si aucun nom de fichier n'est donné (ou si "tout" n'est pas transmis).
+Cette méthode s'appliquera à la fenêtre au premier plan si aucun nom de fichier n'est fourni (ou si « all » n'est pas transmis).
+
