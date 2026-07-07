@@ -69,6 +69,9 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | Share extension (macOS) | extension de partage | Share_Extension.md |
 | Share menu (macOS) | menu Partager | Share_Extension.md |
 | Login Items & Extensions (macOS System Settings pane) | Éléments de connexion et extensions | Share_Extension.md; macOS system pane name |
+| Shortcuts (Apple app) | Raccourcis | Shortcuts_Integration.md; official Apple French app name |
+| App Intents | App Intents | Apple developer framework name; kept in English like "Hooks" |
+| Quick Action (Finder feature) | Action rapide | Shortcuts_Integration.md; distinct from Marked's own "Quick Actions" feature (Actions rapides), but same French term applies and is disambiguated by context |
 
 ## Do not translate (keep English)
 
