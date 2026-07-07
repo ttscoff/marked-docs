@@ -78,6 +78,8 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | Text (Ulysses export format dropdown) | Texte | Confirmed by user, Ulysses.md |
 | Open In (Ulysses/macOS share sheet action) | Ouvrir dans | Confirmed by user as a generic macOS share-sheet term; note that this specific button no longer appears in current Ulysses UI (superseded by "Open With Marked", see below) |
 | Open With Marked (Ulysses export menu) | Ouvrir avec Marked | Confirmed by user, Ulysses.md; current Ulysses UI action (accessed via the ··· button next to Export), replaces the older "Open In" flow described in the original English doc |
+| Markdownify URL (browser extension button) | Markdownifier l'URL | Confirmed by user, Using_the_Browser_Extensions.md |
+| Markdownify Selection (browser extension button) | Markdownifier la sélection | Confirmed by user, Using_the_Browser_Extensions.md |
 
 ## Do not translate (keep English)
 
