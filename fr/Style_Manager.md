@@ -7,7 +7,7 @@ styles qui apparaissent dans les menus, leur ordre, leurs raccourcis clavier, et
 ## Ouvrir le Gestionnaire de styles
 
 Pour ouvrir le Gestionnaire de styles, cliquez sur le bouton **Gérer les styles…** dans le panneau
-{% prefspane Style %}, ou utilisez {% appmenu Style, Manage Styles (~@$m) %}. Vous pouvez également glisser des fichiers CSS directement sur la fenêtre des préférences --- Marked
+{% prefspane Style %}, ou utilisez {% appmenu Style, Manage Styles (~@$m) %}. Vous pouvez également glisser des fichiers CSS directement sur la fenêtre des préférences : Marked
 les importera, ouvrira le Gestionnaire de styles, et sélectionnera pour vous la ligne
 nouvellement ajoutée.
 
