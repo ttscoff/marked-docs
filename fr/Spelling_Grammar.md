@@ -1,9 +1,7 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Vous pouvez utiliser le menu d'engrenage -> sous-menu Vérification pour commencer à vérifier l'orthographe {% kbd cmd ; %}, et choisir de vérifier également les suggestions de grammaire {% kbd shift cmd ; %}.
+Vous pouvez utiliser le sous-menu Relecture du menu Action pour lancer la vérification orthographique {% kbd cmd ; %}, et choisir d'activer également les suggestions grammaticales {% kbd shift cmd ; %}.
 
-Pour naviguer dans les erreurs, utilisez {% kbd opt cmd ; %} (suivant) et {% kbd opt shift cmd ; %} (précédent).
+Pour naviguer entre les erreurs, utilisez {% kbd opt cmd ; %} (suivante) et {% kbd opt shift cmd ; %} (précédente).
 
-Cliquez sur le marqueur à gauche pour voir les détails de l'erreur, y compris des suggestions de correction.
+Cliquez sur le marqueur situé à gauche pour voir les détails de l'erreur, y compris des suggestions de correction.
