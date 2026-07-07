@@ -1,3 +1,4 @@
+#
 # <%= @title %>
 
 Marked est un excellent compagnon pour les flux de travail modernes de « codage agentique », où des outils d'IA génèrent des plans, refactorisent du code et mettent continuellement à jour la documentation pendant que vous travaillez. En laissant Marked surveiller vos dossiers de projet ou de planification, vous obtenez une vue en direct et lisible de tout ce que vos agents de codage modifient, sans avoir à fouiller dans votre éditeur ou votre arborescence de fichiers.
@@ -10,13 +11,13 @@ Plutôt que d'ouvrir un seul fichier, vous pouvez pointer Marked vers un dossier
 - Configurez votre agent de codage (ou vous-même) pour y enregistrer les documents de conception, les découpages de tâches et les notes d'avancement.
 - Ouvrez ce dossier dans Marked.
 
-Une fois que Marked surveille un dossier, il affiche automatiquement le **fichier modifié le plus récemment**. À mesure que votre agent crée ou met à jour des fichiers Markdown --- qu'il s'agisse d'un nouveau plan d'implémentation ou d'un journal d'avancement mis à jour --- Marked bascule vers le document nouveau ou modifié et actualise instantanément l'aperçu.
+Une fois que Marked surveille un dossier, il affiche automatiquement le **fichier modifié le plus récemment**. À mesure que votre agent crée ou met à jour des fichiers Markdown, qu'il s'agisse d'un nouveau plan d'implémentation ou d'un journal d'avancement mis à jour, Marked bascule vers le document nouveau ou modifié et actualise instantanément l'aperçu.
 
 Cela fonctionne particulièrement bien avec des outils agentiques comme Cursor, Claude et Copilot, qui régénèrent en continu des spécifications, des listes de tâches ou des notes d'architecture pendant que vous itérez sur une fonctionnalité.
 
 ## Défiler jusqu'à la première modification
 
-Lorsque le *défilement vers la modification* est activé dans les préférences de Marked, l'aperçu ne se contente pas de se recharger --- il **défile directement jusqu'à la première zone modifiée** du fichier lors de sa mise à jour.
+Lorsque le *défilement vers la modification* est activé dans les préférences de Marked, l'aperçu ne se contente pas de se recharger : il **défile directement jusqu'à la première zone modifiée** du fichier lors de sa mise à jour.
 
 Cela signifie que vous pouvez :
 
