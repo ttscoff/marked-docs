@@ -1,16 +1,14 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-[L'archive][l'archive] conserve vos notes sous forme de fichiers sur le disque et peut refléter la note que vous modifiez directement dans le canal **aperçu en streaming** de Marked.
+[The Archive][archive] conserve vos notes sous forme de fichiers sur le disque et peut refléter la note en cours d'édition directement dans le canal d'**aperçu en continu** de Marked.
 
-## Aperçu du flux sur Marqué
+## Diffuser l'aperçu vers Marked
 
-1. Dans Marqué, ouvrez {% appmenu File, New, Streaming Preview %} (ou réutilisez une fenêtre d'aperçu de streaming existante).
-2. Basculez vers The Archive et choisissez **Note → Stream Preview to Marked** afin que The Archive active Marked et commence à envoyer le texte de la note au premier plan.
+1. Dans Marked, ouvrez {% appmenu File, New, Streaming Preview %} (ou réutilisez une fenêtre d'aperçu en continu existante).
+2. Passez à The Archive et choisissez **Note &#8594; Stream Preview to Marked**, afin que The Archive active Marked et commence à envoyer le texte de la note au premier plan.
 
-Mises à jour marquées au fur et à mesure que vous tapez dans The Archive, en suivant le même contrat de presse-papiers `mkStreamingPreview` que les autres applications intégrées : voir [Détails techniques](Streaming_Preview.html#developers) sous [Aperçu en streaming](Streaming_Preview.html).
+Marked se met à jour au fur et à mesure que vous tapez dans The Archive, en suivant le même contrat de presse-papiers `mkStreamingPreview` que les autres applications intégrées&#8212;voir [Détails techniques](Streaming_Preview.html#developers) dans [Aperçu en continu](Streaming_Preview.html).
 
-Si les aperçus semblent obsolètes, confirmez que la fenêtre de diffusion en continu est toujours au premier plan dans Marqué et activez une fois la commande de menu Archiver.
+Si les aperçus semblent obsolètes, vérifiez que la fenêtre d'aperçu en continu est toujours au premier plan dans Marked, puis actionnez une fois la commande de menu dans The Archive.
 
 [archive]: https://www.zettelkasten.de/the-archive/
