@@ -164,7 +164,7 @@ sie. Unterstützte Paare: `"` `'` `(` `[` `` ` `` `<` .
 | **⌃⌘←** | Zeile oder Listenelement ausrücken (wie Umschalt+Tab) |
 | **⌃⌘ ↑** | Absatz nach oben verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach oben einfügen) |
 | **⌃⌘↓** | Absatz nach unten verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach unten einfügen) |
-| **⌘K** | Fügen Sie einen Markdown-Link ein oder umschließen Sie ihn: Umschließen Sie die Auswahl als `[text]()` und platzieren Sie den Cursor in der URL, oder fügen Sie `[]()` mit dem Cursor zwischen den Klammern ein, wenn keine Auswahl | vorhanden ist
+| **⌘K** | Fügen Sie einen Markdown-Link ein oder umschließen Sie ihn: Umschließen Sie die Auswahl als `[text]()` und platzieren Sie den Cursor in der URL, oder fügen Sie `[]()` mit dem Cursor zwischen den Klammern ein, wenn keine Auswahl vorhanden ist |
 | **F6** | Magischer Referenzlink: Auswahl als `[text][n]` umschließen und eine `[n]: `-Definition am Ende des Dokuments anfügen; wenn der Cursor auf einer vorhandenen Referenz steht, zwischen Inline-Marker und Definition springen |
 | **F7** | Magische Fußnote: `[^n]` an der Cursorposition (oder nach dem aktuellen Wort) einfügen und eine passende `[^n]: `-Definition am Ende des Dokuments anfügen; wenn der Cursor auf einer vorhandenen Fußnote steht, zwischen Marker und Definition springen |
 | **⌘U** | Ausgabebereich umschalten (Quelle/Vorschau) |
