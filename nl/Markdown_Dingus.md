@@ -165,8 +165,8 @@ zij. Ondersteunde paren: `"` `'` `(` `[` `` ` `` `<` .
 | **⌃⌘↑** | Alinea naar boven verplaatsen (paragraaf inclusief nieuwe regel knippen, één regel naar boven plakken) |
 | **⌃⌘↓** | Alinea naar beneden verplaatsen (paragraaf inclusief nieuwe regel knippen, één regel naar beneden plakken) |
 | **⌘K** | Een Markdown-link invoegen of omsluiten: selectie omsluiten als `[text]()` en de cursor in de URL plaatsen, of `[]()` invoegen met de cursor tussen de haakjes als er geen selectie is |
-| **F6** | Magische referentielink: selectie omsluiten als `[text][n]` en een `[n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande referentie staat, springen tussen inline markering en definitie |
-| **F7** | Magische voetnoot: `[^n]` invoegen bij de cursor (of na het huidige woord) en een bijbehorende `[^n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande voetnoot staat, springen tussen markering en definitie |
+| **F6** | Magische referentielink: selectie omsluiten als `[text][n]` en een `[n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande referentie staat, springt tussen inline markering en definitie |
+| **F7** | Magische voetnoot: `[^n]` invoegen bij de cursor (of na het huidige woord) en een bijbehorende `[^n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande voetnoot staat, springt tussen markering en definitie |
 | **⌘U** | Uitvoervenster schakelen (Bron/Voorbeeld) |
 | **⌥⌘↑** | Selectie uitbreiden: woord → binnenste/buitenste scheidingstekens → zin → alinea → aaneengesloten blok (zoals een tabel of codeblok) → omsluitende lijst/blokquote/codeblok → document |
 | **⌥⌘↓** | Contractselectie terug naar beneden via dezelfde niveaus naar de oorspronkelijke cursorpositie |
