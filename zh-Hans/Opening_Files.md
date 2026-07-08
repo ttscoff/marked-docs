@@ -20,7 +20,7 @@
 
 ![][2]
 
-   [2]: images/file_open.jpg @2x 宽度=300px 高度=118px 类=center
+   [2]: images/file_open.jpg @2x width=300px height=118px class=center
 
 当然，您可以使用 {% appmenu File, Open... ({{cmd}}O) %} 菜单选项直接打开 Markdown 文件。标记也可以在没有文本编辑器的情况下正常工作。只需单击一下即可预览和转换 Markdown。
 
