@@ -180,7 +180,7 @@ angrenzenden Absatz, damit Absätze nicht zusammengeführt werden.
 
 ### Magische Links und Fußnoten (F6 / F7)
 
-Der Dingus-Editor kann __Referenz-Links__ und
+Der Dingus-Editor kann __Referenzlinks__ und
 __Fußnoten__ für Sie erstellen, vergibt automatisch die nächste freie Nummer
 und fügt die passende Definition am Ende des Dokuments an.
 
