@@ -54,7 +54,7 @@ les règles sont exécutées, l'ordre des critères dans le prédicat
 
 ### Éditeur de prédicats
 
-![Éditeur de prédicat][prédicat]
+![Éditeur de prédicat][predicate]
 
 [predicate]: images/custom-rules-predicate-800.jpg @2x width=800
 
