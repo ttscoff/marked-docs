@@ -20,7 +20,7 @@ De eenvoudigste manier om Marked te gebruiken voor een bestand dat je al aan het
 
 ![][2]
 
-   [2]: afbeeldingen/file_open.jpg @2x breedte=300px hoogte=118px class=center
+   [2]: images/file_open.jpg @2x width=300px height=118px class=center
 
 U kunt Markdown-bestanden uiteraard rechtstreeks openen via de menuoptie {% appmenu File, Open... ({{cmd}}O) %}. Gemarkeerd werkt ook prima _zonder_ een teksteditor. U kunt uw Markdown met slechts één klik bekijken en converteren.
 
