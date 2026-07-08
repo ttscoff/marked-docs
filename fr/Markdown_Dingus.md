@@ -120,7 +120,7 @@ et en ajoutant la définition correspondante à la fin du document.
   sur un lien de référence ou sa définition, **F6**
   bascule entre le marqueur inline et la définition (ou crée la définition si elle manque).
 * __F7 (note de bas de page magique)__ : insère un marqueur de note de bas de page numéroté
-  `[^n]` au curseur---ou après le mot actuel lorsque le curseur est à l'intérieur---et ajoute `[^n]: ` avec le
+  `[^n]` au curseur — ou après le mot actuel lorsque le curseur est à l'intérieur — et ajoute `[^n]: ` avec le
   texte sélectionné comme corps de note lorsqu'il y a une sélection. Lorsque le curseur est sur un marqueur de note existant
   ou une définition, **F7** bascule entre les deux.
 
