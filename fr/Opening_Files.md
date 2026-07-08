@@ -42,7 +42,7 @@ Marqué vous permet de créer un nouveau fichier texte vide avec la commande {% 
 
    [3] : images/open_recent.jpg @2x width=300px height=174px class=center
 
-Marked garde également une trace des documents récents. L'option de menu {% appmenu File, Open Recent %} vous montrera les fichiers que vous avez ouverts et vous permettra d'y revenir. Vous pouvez rapidement rouvrir le dernier fichier que vous visualisiez avec {% kbd shift cmd R %}. Utilisez {% kbd shift cmd P %} ou [Actions rapides] (Quick_Actions.html) pour exécuter le menu et prévisualiser les commandes à partir du clavier. Il existe également de nombreux autres raccourcis clavier. Si vous souhaitez les apprendre, vous pouvez trouver un tableau sous [Clavier Raccourcis](Keyboard_Shortcuts.html).
+Marked garde également une trace des documents récents. L'option de menu {% appmenu File, Open Recent %} vous montrera les fichiers que vous avez ouverts et vous permettra d'y revenir. Vous pouvez rapidement rouvrir le dernier fichier que vous visualisiez avec {% kbd shift cmd R %}. Utilisez {% kbd shift cmd P %} ou [Actions rapides](Quick_Actions.html) pour exécuter le menu et prévisualiser les commandes à partir du clavier. Il existe également de nombreux autres raccourcis clavier. Si vous souhaitez les apprendre, vous pouvez trouver un tableau sous [Clavier Raccourcis](Keyboard_Shortcuts.html).
 
 ## Nouvelle vue dans le fichier actuel [multiview]
 
