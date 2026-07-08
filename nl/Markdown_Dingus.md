@@ -181,8 +181,8 @@ aangrenzende alinea, zodat alinea's niet samenvloeien.
 ### Magische links en voetnoten (F6 / F7)
 
 De Dingus-editor kan __referentielinks__ en
-__voetnoten__ voor u maken, wijst automatisch het volgende beschikbare nummer toe
-en voegt de bijbehorende definitie aan het einde van het document toe.
+__voetnoten__ voor u maken, automatisch het volgende beschikbare nummer toewijzen
+en de bijbehorende definitie aan het einde van het document toevoegen.
 
 * __F6 (magische referentielink)__: Met geselecteerde tekst wordt de
   selectie omsloten als `[text][n]` en wordt aan het einde van het document een nieuwe
