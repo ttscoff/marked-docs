@@ -150,26 +150,26 @@ them. Supported pairs: `"` `'` `(` `[` `` ` `` `<` .
 
 ### Shortcut Keys
 
-| Shortcut               | Action                                                                                                                                                                         |
-|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **⌘F**                 | Show or hide the find bar in the Markdown Input pane                                                                                                                            |
-| **⌘G**                 | Find next (when find bar is visible)                                                                                                                                           |
-| **⇧⌘G**                | Find previous (when find bar is visible)                                                                                                                                        |
-| **⌘B**                 | Bold: wrap selection in `**` or insert `**\|**` with cursor between                                                                                                            |
-| **⌘I**                 | Italic: wrap selection in `_` or insert `_\|_` with cursor between                                                                                                             |
-| **⇧⌘L**                | Cycle list marker (unordered ↔ ordered)                                                                                                                                        |
-| **Tab**                | Indent line or list item                                                                                                                                                       |
-| **Shift+Tab**          | Outdent line or list item                                                                                                                                                      |
-| **⌃⌘→**                | Indent line or list item (same as Tab)                                                                                                                                         |
-| **⌃⌘←**                | Outdent line or list item (same as Shift+Tab)                                                                                                                                  |
-| **⌃⌘↑**                | Move paragraph up (cut paragraph including newline, paste one line up)                                                                                                         |
-| **⌃⌘↓**                | Move paragraph down (cut paragraph including newline, paste one line down)                                                                                                     |
-| **⌘K**                 | Insert or wrap a Markdown link: wrap selection as `[text]()` and place the cursor in the URL, or insert `[]()` with the cursor between the brackets when there is no selection |
-| **F6**                 | Magic reference link: wrap selection as `[text][n]` and append a `[n]: ` definition at the end of the document; when the caret is on an existing reference, jump between the inline marker and its definition |
-| **F7**                 | Magic footnote: insert `[^n]` at the caret (or after the current word) and append a matching `[^n]: ` definition at the end of the document; when the caret is on an existing footnote, jump between the marker and its definition |
-| **⌘U**                 | Toggle output pane (Source/Preview)                                                                                                                                            |
-| **⌥⌘↑**                | Expand selection: word → inner/outer delimiters → sentence → paragraph → contiguous block (such as a table or code block) → enclosing list/blockquote/code block → document    |
-| **⌥⌘↓**                | Contract selection back down through the same levels to the original caret position                                                                                            |
+| Shortcut      | Action                                                                                                                                                                                                                             |
+| :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **⌘F**        | Show or hide the find bar in the Markdown Input pane                                                                                                                                                                               |
+| **⌘G**        | Find next (when find bar is visible)                                                                                                                                                                                               |
+| **⇧⌘G**       | Find previous (when find bar is visible)                                                                                                                                                                                           |
+| **⌘B**        | Bold: wrap selection in `**` or insert `**\|**` with cursor between                                                                                                                                                                |
+| **⌘I**        | Italic: wrap selection in `_` or insert `_\|_` with cursor between                                                                                                                                                                 |
+| **⇧⌘L**       | Cycle list marker (unordered ↔ ordered)                                                                                                                                                                                            |
+| **Tab**       | Indent line or list item                                                                                                                                                                                                           |
+| **Shift+Tab** | Outdent line or list item                                                                                                                                                                                                          |
+| **⌃⌘→**       | Indent line or list item (same as Tab)                                                                                                                                                                                             |
+| **⌃⌘←**       | Outdent line or list item (same as Shift+Tab)                                                                                                                                                                                      |
+| **⌃⌘↑**       | Move paragraph up (cut paragraph including newline, paste one line up)                                                                                                                                                             |
+| **⌃⌘↓**       | Move paragraph down (cut paragraph including newline, paste one line down)                                                                                                                                                         |
+| **⌘K**        | Insert or wrap a Markdown link: wrap selection as `[text]()` and place the cursor in the URL, or insert `[]()` with the cursor between the brackets when there is no selection                                                     |
+| **F6**        | Magic reference link: wrap selection as `[text][n]` and append a `[n]: ` definition at the end of the document; when the caret is on an existing reference, jump between the inline marker and its definition                      |
+| **F7**        | Magic footnote: insert `[^n]` at the caret (or after the current word) and append a matching `[^n]: ` definition at the end of the document; when the caret is on an existing footnote, jump between the marker and its definition |
+| **⌘U**        | Toggle output pane (Source/Preview)                                                                                                                                                                                                |
+| **⌥⌘↑**       | Expand selection: word → inner/outer delimiters → sentence → paragraph → contiguous block (such as a table or code block) → enclosing list/blockquote/code block → document                                                        |
+| **⌥⌘↓**       | Contract selection back down through the same levels to the original caret position                                                                                                                                                |
 
 Tab/Shift+Tab (and ⌃⌘←/⌃⌘→) respect list structure and
 blockquotes: they indent/outdent list items and add or
@@ -288,7 +288,7 @@ described in [Editing in the Dingus][3] applies here.
 ### Previewing in Marked
 
 * __Open the Dingus document as a full Marked preview__
-	- Click __Open in Marked__ in the Dingus status bar, or use  
+	- Click __Open in Marked__ in the Dingus status bar, or use
 
     __{% appmenu File, Open Dingus in Marked %}__ (⌘P).
 	- If the Dingus document is unsaved or has unsaved changes,

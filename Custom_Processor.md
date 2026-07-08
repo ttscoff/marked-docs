@@ -13,7 +13,7 @@ and click on **Custom Rules**.
 
 ![][1]
 
-[1]: images/custom-rules-button-800.jpg @2x width=800
+[1]: images/custom-rules-button-800.jpg @2x width=100%
 
 
 In the Rules Editor (AKA "Conductor"), you can add custom
@@ -23,15 +23,9 @@ other files exist in the same tree as the document being
 opened. When a rule is matched, the actions defined for the
 rule are run on that file.
 
-> Below the Processor field, the checkboxes in "New
-> documents use custom:" determine whether rules are tested
-> at all for Preprocessor and Processor phases. In general,
-> leave these checked, but if you wan to completely override
-> any custom processors, set that here.
-
 ![Rules Editor][2]
 
-  [2]: images/CustomRules-800.jpg @2x width=800
+[2]: images/CustomRules-800.jpg @2x width=800
 
 To create a new rule, use the `+`
 button at the bottom of the left-hand rules list. Give the
@@ -54,7 +48,7 @@ editor, and the order of actions to be run in sequence.
 
 ![Predicate Editor][predicate]
 
-[predicate]: images/custom-rules-predicate-800.jpg @2x width=800
+[predicate]: images/custom-rules-predicate-800.jpg @2x width=548
 
 Once a rule is added, use the predicate editor to define
 criteria that will determine whether the rule is run for a
@@ -498,8 +492,7 @@ MD_priority="High"
 
 #### Usage in Commands
 
-You can now use these environment variables in your Run
-Command actions:
+You can now use these environment variables in your Run Command actions:
 
 ```bash
 # Print the document title
