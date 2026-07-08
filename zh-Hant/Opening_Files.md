@@ -40,7 +40,7 @@ Marked 也可以直接開啟 **`.rtf` 和 `.rtfd`** 檔案（例如從 Pages 或
 
 ![][3]
 
-   [3]: images/open_recent.jpg @2x 寬度=300px 高度=174px 類別=center
+   [3]: images/open_recent.jpg @2x width=300px height=174px class=center
 
 Marked 也會追蹤最近的文檔。 {% appmenu File, Open Recent %} 選單選項將向您顯示已開啟的文件，並讓您跳回它們。您可以快速重新開啟使用{% kbd shift cmd R %}查看的最後一個檔案。使用{% kbd shift cmd P %}或[快速操作](Quick_Actions.html)從鍵盤執行選單和預覽指令。還有很多其他鍵盤快捷鍵。如果您想了解它們，可以在[鍵盤]下找到圖表快捷方式](Keyboard_Shortcuts.html)。
 
