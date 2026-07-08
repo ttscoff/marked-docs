@@ -165,6 +165,8 @@ sie. Unterstützte Paare: `"` `'` `(` `[` `` ` `` `<` .
 | **⌃⌘ ↑** | Absatz nach oben verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach oben einfügen) |
 | **⌃⌘↓** | Absatz nach unten verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach unten einfügen) |
 | **⌘K** | Fügen Sie einen Markdown-Link ein oder umschließen Sie ihn: Umschließen Sie die Auswahl als `[text]()` und platzieren Sie den Cursor in der URL, oder fügen Sie `[]()` mit dem Cursor zwischen den Klammern ein, wenn keine Auswahl | vorhanden ist
+| **F6** | Magischer Referenzlink: Auswahl als `[text][n]` umschließen und eine `[n]: `-Definition am Ende des Dokuments anfügen; wenn der Cursor auf einer vorhandenen Referenz steht, zwischen Inline-Marker und Definition springen |
+| **F7** | Magische Fußnote: `[^n]` an der Cursorposition (oder nach dem aktuellen Wort) einfügen und eine passende `[^n]: `-Definition am Ende des Dokuments anfügen; wenn der Cursor auf einer vorhandenen Fußnote steht, zwischen Marker und Definition springen |
 | **⌘U** | Ausgabebereich umschalten (Quelle/Vorschau) |
 | **⌥⌘ ↑** | Auswahl erweitern: Wort → innere/äußere Trennzeichen → Satz → Absatz → zusammenhängender Block (z. B. eine Tabelle oder ein Codeblock) → umschließende Liste/Blockzitat/Codeblock → Dokument |
 | **⌥⌘↓** | Vertragsauswahl durch die gleichen Ebenen zurück zur ursprünglichen Caret-Position |
@@ -175,6 +177,28 @@ Entfernen Sie `>` aus Blockquote-Zeilen. Absatz nach oben/unten verschieben
 Wählt den gesamten Absatz unter dem Cursor aus (einschließlich seiner
 nachgestellte neue Zeile), schneidet es aus und fügt es über oder unter dem ein
 angrenzenden Absatz, damit Absätze nicht zusammengeführt werden.
+
+### Magische Links und Fußnoten (F6 / F7)
+
+Der Dingus-Editor kann __Referenz-Links__ und
+__Fußnoten__ für Sie erstellen, vergibt automatisch die nächste freie Nummer
+und fügt die passende Definition am Ende des Dokuments an.
+
+* __F6 (magischer Referenzlink)__: Mit markiertem Text wird die
+  Auswahl als `[text][n]` umschlossen und am Ende des Dokuments eine neue
+  `[n]: `-Zeile hinzugefügt, in die Sie die URL eingeben können. Zum Erstellen
+  eines neuen Referenzlinks ist eine Auswahl erforderlich. Steht der Cursor
+  bereits auf einem Referenzlink oder seiner Definition, springt **F6**
+  zwischen Inline-Marker und Definition (oder legt die Definition an, falls sie fehlt).
+* __F7 (magische Fußnote)__: Fügt an der Cursorposition---oder nach dem
+  aktuellen Wort, wenn der Cursor darin steht---einen nummerierten Fußnotenmarker
+  `[^n]` ein und hängt `[^n]: ` an; bei markiertem Text wird der markierte Text
+  als Fußnotentext verwendet. Steht der Cursor auf einem vorhandenen Fußnotenmarker
+  oder einer Definition, springt **F7** zwischen beiden.
+
+Referenz- und Fußnotennummern werden automatisch vergeben, sodass Sie keine IDs
+von Hand verwalten müssen. Beide Shortcuts funktionieren nicht
+in abgegrenzten oder eingerückten Codeblöcken.
 
 ### Intelligentes URL-Einfügen
 
