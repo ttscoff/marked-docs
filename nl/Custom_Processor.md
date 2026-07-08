@@ -33,7 +33,7 @@ regel worden uitgevoerd op dat bestand.
 
 ![Regeleditor][2]
 
-  [2]: afbeeldingen/CustomRules-800.jpg @2x breedte=800
+  [2]: images/CustomRules-800.jpg @2x width=800
 
 Gebruik de `+` om een nieuwe regel te maken
 knop onderaan de linkerregellijst. Geef de
