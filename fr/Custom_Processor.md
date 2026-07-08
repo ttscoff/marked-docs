@@ -91,7 +91,7 @@ Pour faire correspondre tous les fichiers (c'est-à-dire un processeur personnal
 s'exécute), définissez _Filename_ sur `contains` `*`. L'astérisque sera
 agir comme un caractère générique et faire correspondre tous les fichiers.
 
-[Ajouter un prédicat][ajouterun prédicat]
+[Ajouter un prédicat][addpredicate]
 
 [addpredicate]: images/custom-rules-add-predicate-800.jpg @2x width=800
 
