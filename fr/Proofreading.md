@@ -1,31 +1,29 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Entrez en mode relecture à partir du menu d’engrenage. Il s'agit d'une fonctionnalité expérimentale conçue principalement pour les éditeurs qui reçoivent du texte d'autres personnes et ont besoin de faire des commentaires et de fournir des commentaires.
+Activez le mode de relecture depuis le menu Action. Il s'agit d'une fonctionnalité expérimentale conçue principalement pour les éditeurs qui reçoivent du texte d'autres personnes et doivent faire des commentaires et donner leur avis.
 
-Le mode de relecture gèle les mises à jour du document, empêchant ainsi la perte des annotations et des notes lors de l'actualisation du document. Un indicateur rouge apparaît dans la barre supérieure pour vous rappeler que le mode relecture est actif.
+Le mode de relecture fige les mises à jour du document, ce qui évite que les annotations et les notes soient perdues lors de l'actualisation du document. Un indicateur rouge apparaît dans la barre supérieure pour vous rappeler que le mode de relecture est actif.
 
-Navigation au clavier, mise en favoris et mot-clé mettant en évidence toutes les fonctions lors de la vérification.
+La navigation au clavier, la mise en favoris et la mise en évidence des mots clés fonctionnent toutes pendant la relecture.
 
-##Annotations
+## Annotations
 
-En mode relecture, la sélection de texte dans le document générera une fenêtre contextuelle qui vous permettra de choisir parmi plusieurs types de surbrillance différents. Cliquez sur le type de surbrillance que vous souhaitez ajouter au texte, ou annulez en cliquant sur le bouton "Annuler" ou en cliquant simplement en dehors de la fenêtre contextuelle.
+En mode de relecture, sélectionner du texte dans le document fait apparaître une fenêtre contextuelle qui vous permet de choisir parmi plusieurs types de surbrillance. Cliquez sur le type de surbrillance que vous souhaitez ajouter au texte, ou annulez en cliquant sur le bouton « Annuler » ou simplement en cliquant en dehors de la fenêtre contextuelle.
 
-## Remarques
+## Notes
 
 ![Annotations][1]
 
 [1]: images/Annotating.jpg class=center
 
-Une fois qu'un surlignage est ajouté, vous pouvez y ajouter de courtes notes en cliquant sur le surlignage. La fenêtre contextuelle contiendra désormais un champ de texte dans lequel vous pourrez saisir toutes les notes pouvant être pertinentes par rapport au texte en surbrillance. Les notes peuvent être supprimées et modifiées en cliquant sur un point surligné contenant déjà une note.
+Une fois une surbrillance ajoutée, vous pouvez y ajouter de courtes notes en cliquant dessus. La fenêtre contextuelle contiendra alors un champ de texte où vous pouvez saisir toute note pertinente pour le texte en surbrillance. Les notes peuvent être supprimées et modifiées en cliquant sur une surbrillance qui possède déjà une note.
 
-Les notes sont **uniquement** exportées lors de l'enregistrement au format HTML. Les faits saillants restent dans la plupart des formats d'exportation, notamment RTF et PDF.
+Les notes ne sont exportées **que** lors de l'enregistrement au format HTML. Les surbrillances restent présentes dans la plupart des formats d'exportation, y compris RTF et PDF.
 
 ## Vérification orthographique
 
-En mode relecture, vous pouvez accéder au correcteur orthographique à l'échelle du système à partir du menu d'engrenage : {% appmenu {{gear}}, Proofing, Show Spelling Errors %}. Cela sera lent sur les documents volumineux et un avertissement s'affichera vous informant si le processus prend environ 30 secondes. Étant donné que le correcteur orthographique ne fonctionne pas dans l'aperçu Web de Marked, un « hack » est implémenté pour que cela fonctionne, et ce n'est pas rapide.
+En mode de relecture, vous pouvez accéder au correcteur orthographique du système depuis le menu Action : {% appmenu {{gear}}, Proofing, Show Spelling Errors %}. Cela sera lent sur les documents volumineux, et un avertissement s'affichera pour vous prévenir si le traitement doit prendre plus de 30 secondes environ. Comme le correcteur orthographique ne fonctionne pas dans l'aperçu web de Marked, une « astuce » a été mise en place pour que cela fonctionne, et ce n'est pas la plus rapide.
 
-Une fois la vérification orthographique exécutée, vous pouvez ouvrir le panneau Corrections orthographiques pour activer la vérification grammaticale ainsi que voir les suggestions pour corriger les erreurs. Marqué *ne peut pas* les modifier sur place, vous devez revenir à votre document d'origine pour utiliser les résultats.
+Une fois la vérification orthographique effectuée, vous pouvez ouvrir le panneau des suggestions orthographiques pour activer la vérification grammaticale ainsi que voir les suggestions de correction des erreurs. Marked *ne peut pas* modifier ces éléments directement dans le document, vous devez retourner à votre document original pour exploiter les résultats.
 
-*Raccourcis :* {% kbd ctrl opt cmd S %} exécutera le correcteur orthographique. {% kbd ctrl opt cmd N %} passera à l'erreur suivante dans le document et {% kbd ctrl opt cmd G %} affichera le panneau des suppositions.
+*Raccourcis :* {% kbd ctrl opt cmd S %} lancera le correcteur orthographique. {% kbd ctrl opt cmd N %} passera à l'erreur suivante dans le document, et {% kbd ctrl opt cmd G %} affichera le panneau des suggestions.

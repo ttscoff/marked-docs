@@ -1,51 +1,49 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marked inclut des extensions de navigateur qui vous permettent d'envoyer des URL de pages ou du contenu sélectionné directement dans Marked 3.
+Marked inclut des extensions de navigateur qui vous permettent d'envoyer directement des URL de page ou du contenu sélectionné vers Marked 3.
 
-## Installer
+## Installation
 
-Téléchargez et installez à partir de [https://markedapp.com/extensions](https://markedapp.com/extensions) :
+Téléchargez et installez depuis [https://markedapp.com/extensions](https://markedapp.com/extensions) :
 
-- Firefox/Zen
-- Chrome / Courageux / Bord
-- Safari (fourni)
+- Firefox / Zen
+- Chrome / Brave / Edge
+- Safari (intégrée)
 
-## Comment fonctionne l'extension
+## Fonctionnement de l'extension
 
-Lorsque vous cliquez sur un bouton d'extension, une URL personnalisée gérée par Marked 3 s'ouvre à l'aide du schéma `x-marked-3://markdownify`.
+Lorsque vous cliquez sur un bouton de l'extension, celui-ci ouvre une URL personnalisée traitée par Marked 3 via le schéma `x-marked-3://markdownify`.
 
-### `Markdownify URL`
+### `Markdownifier l'URL`
 
-Dans la fenêtre contextuelle de l'extension, cliquez sur **`Markdownify URL`** pour envoyer l'URL de la page actuelle à Marqué.
+Dans le popup de l'extension, cliquez sur **`Markdownifier l'URL`** pour envoyer l'URL de la page actuelle à Marked.
 
-### `Markdownify Selection`
+### `Markdownifier la sélection`
 
-Dans la fenêtre contextuelle de l'extension, cliquez sur **`Markdownify Selection`** lorsque vous avez une sélection dans la page.
+Dans le popup de l'extension, cliquez sur **`Markdownifier la sélection`** lorsque vous avez une sélection sur la page.
 
-Marked reçoit le code HTML de la sélection actuelle et le convertit en Markdown.
+Marked reçoit le HTML de la sélection actuelle et le convertit en Markdown.
 
-### Sélectionner la section (mode de sélection de bloc)
+### Select Section (mode de sélection par bloc)
 
 ![][1]
 
 [1]: images/marked-3-chrome-1.jpg width=1280px height=800px class=center
 
-Cliquez sur **Sélectionner une section** pour accéder au « mode de sélection de section » :
+Cliquez sur **Select Section** pour entrer en « mode de sélection de section » :
 
-- Passez la souris sur la page pour mettre en surbrillance les éléments de bloc que vous pouvez sélectionner.
-- Cliquez sur un bloc pour l'envoyer immédiatement à Marked (envoi unique).
-- Cmd-cliquez sur les blocs pour sélectionner plusieurs blocs (Cmd-cliquez à nouveau pour supprimer un bloc).
+- Survolez la page pour mettre en évidence les éléments de bloc que vous pouvez sélectionner.
+- Cliquez sur un bloc pour l'envoyer immédiatement à Marked (envoi simple).
+- Cmd-cliquez sur des blocs pour en sélectionner plusieurs (Cmd-cliquez à nouveau pour retirer un bloc).
 - Appuyez sur Retour pour envoyer les blocs actuellement sélectionnés.
-- Appuyez sur Echap pour annuler le mode de sélection de section.
+- Appuyez sur Échap pour annuler le mode de sélection de section.
 
-Lors de la sélection, la fenêtre contextuelle fournit également des commandes de zoom pour vous aider à cliquer sur des sections petites ou denses :
+Pendant la sélection, le popup propose également des contrôles de zoom pour vous aider à cliquer sur des sections petites ou denses :
 
 ![][2]
 
 [2]: images/marked-3-chrome-2.jpg width=1280px height=800px class=center
 
-- `-` effectue un zoom arrière
-- **Ajuster la hauteur** effectue un zoom pour que la page s'adapte à la hauteur de la fenêtre d'affichage
-- `+` zoome
+- `-` fait un zoom arrière
+- **Fit Height** fait un zoom pour que la page s'ajuste à la hauteur de la fenêtre
+- `+` fait un zoom avant

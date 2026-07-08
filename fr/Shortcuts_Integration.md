@@ -1,186 +1,184 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marqué inclut des actions natives de **Raccourcis** (App Intents) pour ouvrir des fichiers, modifier les styles d'aperçu et exporter des documents. Ces actions apparaissent dans l'application Raccourcis lorsque vous recherchez **Marqué** et sont disponibles sur **macOS 13 (Ventura)** ou version ultérieure.
+Marked inclut des actions natives **Raccourcis** (App Intents) pour ouvrir des fichiers, changer le style d'aperçu et exporter des documents. Ces actions apparaissent dans l'application Raccourcis lorsque vous recherchez **Marked**, et sont disponibles sous **macOS 13 (Ventura)** ou une version ultérieure.
 
-Pour une automatisation basée sur un script avec un modèle objet complet, voir [Prise en charge AppleScript](AppleScript_Support.html). Pour les flux de travail basés sur des URL à partir du shell, consultez le [URL Handler](URL_Handler.html).
+Pour de l'automatisation par script avec un modèle d'objets complet, voir [Prise en charge d'AppleScript](AppleScript_Support.html). Pour des flux de travail basés sur des URL depuis le shell, voir le [Gestionnaire d'URL](URL_Handler.html).
 
 ## Rechercher des actions
 
 1. Ouvrez l'application **Raccourcis**.
 2. Créez un nouveau raccourci ou modifiez-en un existant.
-3. Recherchez **Marqué** dans la bibliothèque d'actions.
+3. Recherchez **Marked** dans la bibliothèque d'actions.
 
-Les actions sont regroupées sous **Documents** et **Exporter**. Marked enregistre également des expressions Siri telles que « Exporter le fichier avec Marked » et « Ouvrir dans Marked » pour des raccourcis rapides.
+Les actions sont regroupées sous **Documents** et **Export**. Marked enregistre également des phrases Siri telles que « Exporter un fichier avec Marked » et « Ouvrir dans Marked » pour des raccourcis rapides.
 
-## Présentation des actions
+## Aperçu des actions
 
-| Actions | Objectif |
+| Action | Objectif |
 | --- | --- |
-| **Ouvrir le fichier dans Marqué** | Ouvrez un Markdown ou un fichier texte dans une fenêtre d'aperçu. |
-| **Définir le style d'aperçu** | Modifiez le thème d'aperçu d'un document ouvert (ou ouvrez d'abord un fichier). |
-| **Ouvrir et exporter le fichier** | Ouvrez un fichier, puis exportez-le dans un autre format. |
-| **Document d'exportation** | Exporter un document ouvert (fenêtre avant ou un fichier spécifique). |
-| **Exporter les documents ouverts** | Exportez tous les documents actuellement ouverts dans Marqué. |
+| **Ouvrir un fichier dans Marked** | Ouvre un fichier Markdown ou texte dans une fenêtre d'aperçu. |
+| **Définir le style d'aperçu** | Change le thème d'aperçu d'un document ouvert (ou ouvre d'abord un fichier). |
+| **Ouvrir et exporter un fichier** | Ouvre un fichier, puis l'exporte vers un autre format. |
+| **Exporter le document** | Exporte un document ouvert (fenêtre au premier plan ou fichier spécifique). |
+| **Exporter les documents ouverts** | Exporte tous les documents actuellement ouverts dans Marked. |
 
-Toutes les actions d'exportation renvoient le ou les fichiers exportés sous forme de sortie Raccourcis **Fichier** afin que vous puissiez les transmettre à l'étape suivante (Mail, Finder, une autre application).
+Toutes les actions d'export renvoient le ou les fichiers exportés en sortie **Fichier** de Raccourcis, afin que vous puissiez les transmettre à l'étape suivante (Mail, Finder, une autre application).
 
-## Ouvrir le fichier dans Marqué
+## Ouvrir un fichier dans Marked
 
-**Paramètre :** **Fichier** -- le document à ouvrir (à partir du Finder, de la feuille de partage ou d'une étape précédente de raccourcis).
+**Paramètre :** **Fichier** -- le document à ouvrir (depuis le Finder, la feuille de partage ou une étape précédente de Raccourcis).
 
-Marqué ouvre le fichier dans une fenêtre d'aperçu. Utilisez-le lorsque vous souhaitez prévisualiser ou modifier dans Marqué avant de faire autre chose.
+Marked ouvre le fichier dans une fenêtre d'aperçu. Utilisez cette action lorsque vous souhaitez prévisualiser ou éditer dans Marked avant toute autre étape.
 
 ## Définir le style d'aperçu
 
-**Paramètres :**
+**Paramètres :**
 
-- **Style** -- style d'aperçu à partir d'un sélecteur (mêmes noms que le menu de style d'aperçu et le gestionnaire de styles).
-- **Fichier** (facultatif) -- un fichier spécifique. En cas d'omission, Marked utilise le document de couverture. Si le fichier n'est pas déjà ouvert, Marked l'ouvre en premier.
+- **Style** -- style d'aperçu choisi dans un sélecteur (mêmes noms que dans le menu de style d'aperçu et le Gestionnaire de styles).
+- **Fichier** (facultatif) -- un fichier spécifique. S'il est omis, Marked utilise le document au premier plan. Si le fichier n'est pas déjà ouvert, Marked l'ouvre d'abord.
 
-La définition d'un style recharge l'aperçu avec ce thème (comme si vous choisissiez un style dans le menu des styles d'aperçu).
+Définir un style recharge l'aperçu avec ce thème (comme si vous choisissiez un style depuis le menu de style d'aperçu).
 
-## Actions d'exportation
+## Actions d'export
 
-Les actions d'exportation partagent les mêmes options principales :
+Les actions d'export partagent les mêmes options de base :
 
-| Paramètre | Descriptif |
+| Paramètre | Description |
 | --- | --- |
-| **Format** | Markdown, HTML, PDF paginé, PDF continu, EPUB, DOCX, ODT, RTF, RTFD, TextBundle, TextPack ou OPML. |
-| **Profil** (facultatif) | Un profil d'exportation enregistré à partir de {% prefspane Export %}. |
+| **Format** | Markdown, HTML, PDF paginé, PDF continu, EPUB, DOCX, ODT, RTF, RTFD, TextBundle, TextPack, ou OPML. |
+| **Profil** (facultatif) | Un profil d'export enregistré depuis {% prefspane Export %}. |
 | **Style** (facultatif) | Style d'aperçu à appliquer avant l'export (rechargement complet de l'aperçu). |
-| **Taille de la page** (facultatif) | Imprimez le nom de la taille de la page, tel que `A4` ou `Letter`. |
-| **Marges** (facultatif) | Raccourci de marge (voir ci-dessous). |
-| **Taille de police** (facultatif) | Taille de police de base en points pour l'exportation PDF, par exemple `14` ou `12pt`. |
-| **Fichier de sortie** / **Dossier de sortie** (facultatif) | Chemin de destination. En cas d'omission, Marked écrit à côté du fichier source en utilisant l'extension correcte. |
+| **Taille de page** (facultatif) | Nom de la taille de page d'impression, comme `A4` ou `Letter`. |
+| **Marges** (facultatif) | Notation abrégée des marges (voir ci-dessous). |
+| **Taille de police** (facultatif) | Taille de police de base en points pour l'export PDF, comme `14` ou `12pt`. |
+| **Fichier de sortie** / **Dossier de sortie** (facultatif) | Chemin de destination. S'il est omis, Marked écrit à côté du fichier source avec l'extension appropriée. |
 
 **Remarques**
 
-- **Le PDF paginé** utilise le même pipeline de mise en page d'impression que {% appmenu File, Export As, Save PDF (Paginated) %}. Il n'est pas disponible pour les documents d'aperçu HTML bruts.
-- L'exportation **HTML** utilise l'aperçu rendu (ce que vous voyez dans WebView), et non le fichier source Markdown brut.
-- **Le PDF continu** capture la mise en page actuelle de l'aperçu WebView.
-- **Taille de police** active la même option de taille de police d'exportation/impression personnalisée à partir de {% prefspane Export %}. Cela n’affecte pas les documents Fountain.
+- **PDF paginé** utilise le même pipeline de mise en page d'impression que {% appmenu File, Export As, Save PDF (Paginated) %}. Non disponible pour les documents d'aperçu HTML brut.
+- L'export **HTML** utilise l'aperçu rendu (ce que vous voyez dans la WebView), et non le fichier source Markdown brut.
+- **PDF continu** capture la mise en page actuelle de la WebView d'aperçu.
+- **Taille de police** active la même option de taille de police personnalisée pour l'export/impression que dans {% prefspane Export %}. N'affecte pas les documents Fountain.
 
-### Ouvrir et exporter le fichier
+### Ouvrir et exporter un fichier
 
-Idéal pour les flux de travail du Finder : choisissez un fichier Markdown, ouvrez-le dans Marked et exportez-le en une seule étape.
+Idéal pour les flux de travail depuis le Finder : sélectionnez un fichier Markdown, ouvrez-le dans Marked et exportez-le en une seule étape.
 
-**Paramètres :** **Fichier** (obligatoire), plus les options d'exportation ci-dessus.
+**Paramètres :** **Fichier** (requis), plus les options d'export ci-dessus.
 
-Exemple d'utilisation : une action rapide qui extrait des fichiers du Finder et exporte des **PDF paginés** avec un profil et un style choisis.
+Exemple d'utilisation : une Action rapide qui prend des fichiers depuis le Finder et les exporte en **PDF paginé** avec un profil et un style choisis.
 
 ### Exporter le document
 
-Exportez un document **déjà ouvert** dans Marqué.
+Exporte un document **déjà ouvert** dans Marked.
 
-**Paramètres :**
+**Paramètres :**
 
-- **Fichier** (facultatif) -- un fichier ouvert spécifique. En cas d'omission, Marked exporte le document de couverture.
-- Options d'exportation et **Fichier de sortie** comme ci-dessus.
+- **Fichier** (facultatif) -- un fichier ouvert spécifique. S'il est omis, Marked exporte le document au premier plan.
+- Options d'export et **Fichier de sortie** comme ci-dessus.
 
-Utilisez-le lorsque Marked est déjà en cours d'exécution et que vous souhaitez exporter l'aperçu actuel sans rouvrir le fichier.
+Utilisez cette action lorsque Marked est déjà lancé et que vous souhaitez exporter l'aperçu actuel sans rouvrir le fichier.
 
 ### Exporter les documents ouverts
 
-Exportez **tous** les documents d'aperçu actuellement ouverts dans Marqué.
+Exporte **tous** les documents d'aperçu actuellement ouverts dans Marked.
 
-**Paramètres :**
+**Paramètres :**
 
-- **Format** et options d'exportation (profil, style, taille de page, marges, taille de police).
-- **Dossier de sortie** (facultatif) -- répertoire pour les fichiers exportés. En cas d'omission, chaque fichier est exporté à côté de son document source.
+- **Format** et options d'export (profil, style, taille de page, marges, taille de police).
+- **Dossier de sortie** (facultatif) -- répertoire pour les fichiers exportés. S'il est omis, chaque fichier est exporté à côté de son document source.
 
-Utile pour l'exportation par lots après avoir examiné plusieurs chapitres ou notes dans Marqué.
+Utile pour un export par lots après avoir consulté plusieurs chapitres ou notes dans Marked.
 
-## Raccourci de marge
+## Notation abrégée des marges
 
-Lorsque **Marges** est défini sur une action d'exportation, utilisez une chaîne comportant une à quatre mesures. Unités : `in`, `cm`, `mm`, `pt` ou `"` pour les pouces. Un nombre sans unité est traité comme des points.
+Lorsque **Marges** est défini sur une action d'export, utilisez une chaîne comportant une à quatre mesures. Unités : `in`, `cm`, `mm`, `pt`, ou `"` pour les pouces. Un nombre sans unité est traité comme des points.
 
 | Valeur | Signification |
 | --- | --- |
-| `1in` | Tous côtés |
+| `1in` | Tous les côtés |
 | `1in 2in` | Haut et bas `1in`, gauche et droite `2in` |
 | `1in 2in 1in` | Haut `1in`, gauche et droite `2in`, bas `1in` |
 | `1in 2in 1in 2in` | Haut, droite, bas, gauche |
 
-Cela correspond à la clé `margins` dans les enregistrements d'exportation [AppleScript](AppleScript_Support.html#with-options-properties-record).
+Cela correspond à la clé `margins` des enregistrements d'export [AppleScript](AppleScript_Support.html#with-options-properties-record).
 
-## Exemples de workflows
+## Exemples de flux de travail
 
-### Fichier du Finder au format PDF
+### Fichier du Finder vers PDF
 
-1. **Ouvrir et exporter le fichier**
-2. **Fichier** -- entrée à partir de la feuille de partage ou de l'action rapide du Finder.
+1. **Ouvrir et exporter un fichier**
+2. **Fichier** -- entrée depuis la feuille de partage ou une Action rapide du Finder.
 3. **Format** -- PDF paginé.
 4. **Style** -- thème facultatif (par exemple Amblin).
-5. **Profil** -- profil d'exportation enregistré facultatif.
-6. **Fichier de sortie** -- facultatif ; laissez vide pour écrire `filename.pdf` à côté de la source.
+5. **Profil** -- profil d'export enregistré facultatif.
+6. **Fichier de sortie** -- facultatif ; laissez vide pour écrire `nomfichier.pdf` à côté du fichier source.
 
-### Exporter ce qui est ouvert dans Marqué
+### Exporter ce qui est ouvert dans Marked
 
 1. **Exporter le document**
-2. Laissez **Fichier** vide pour utiliser la fenêtre avant.
-3. Choisissez **Format** et un profil ou un style facultatif.
+2. Laissez **Fichier** vide pour utiliser la fenêtre au premier plan.
+3. Choisissez le **Format** et éventuellement un profil ou un style.
 
-### Exporter par lots des documents ouverts
+### Export par lots des documents ouverts
 
 1. **Exporter les documents ouverts**
-2. Choisissez **Format** (par exemple EPUB).
-3. Définissez éventuellement **Dossier de sortie** pour collecter toutes les exportations dans un seul répertoire.
+2. Choisissez le **Format** (par exemple EPUB).
+3. Définissez éventuellement un **Dossier de sortie** pour rassembler tous les exports dans un même répertoire.
 
 ### Style puis export (deux étapes)
 
-1. **Définir le style d'aperçu** : choisissez un style (ciblez éventuellement un **fichier** spécifique).
-2. **Exporter le document** -- même fichier ou document frontal, avec le **Format** souhaité.
+1. **Définir le style d'aperçu** -- choisissez un style (en ciblant éventuellement un **Fichier** spécifique).
+2. **Exporter le document** -- même fichier ou document au premier plan, avec le **Format** souhaité.
 
-Vous pouvez également transmettre **Style** directement sur une action d'exportation ; Marqué applique le thème et attend le rechargement de l'aperçu avant d'exporter.
+Vous pouvez également transmettre le **Style** directement sur une action d'export ; Marked applique le thème et attend le rechargement de l'aperçu avant d'exporter.
 
-## Chemins d'exportation et sandboxing
+## Chemins d'export et bac à sable
 
-- Si **Fichier de sortie** ou **Dossier de sortie** est omis, Marqué écrit à côté du document source.
-- Marqué peut créer des dossiers intermédiaires lorsque le chemin d'exportation est **à l'intérieur du dossier du document ouvert**.
-- Les exportations en dehors du dossier du document nécessitent un chemin d'accès en écriture auquel Marked peut accéder (emplacement du document enregistré, signets de sécurité ou dossiers que vous avez accordés via les boîtes de dialogue Ouvrir).
+- Si **Fichier de sortie** ou **Dossier de sortie** est omis, Marked écrit à côté du document source.
+- Marked peut créer des dossiers intermédiaires lorsque le chemin d'export se trouve **à l'intérieur du dossier du document ouvert**.
+- Les exports en dehors du dossier du document nécessitent un chemin accessible en écriture par Marked (emplacement du document enregistré, signets à portée de sécurité, ou dossiers que vous avez autorisés via les boîtes de dialogue d'ouverture).
 
-Voir [Prise en charge AppleScript](AppleScript_Support.html#export-paths-and-sandboxing) pour les mêmes règles de bac à sable.
+Voir [Prise en charge d'AppleScript](AppleScript_Support.html#export-paths-and-sandboxing) pour les mêmes règles de bac à sable.
 
-## Action Héritage `convert_to`
+## Action historique `convert_to`
 
-Le dictionnaire AppleScript expose toujours **`convert_to`** pour convertir du texte ou des fichiers Markdown sans aperçu ouvert. Les actions de raccourcis natifs ci-dessus sont préférées : elles ouvrent les documents correctement, attendent le chargement de l'aperçu et prennent en charge l'exportation PDF paginé de manière asynchrone.
+Le dictionnaire AppleScript expose toujours **`convert_to`** pour convertir du texte ou des fichiers Markdown sans aperçu ouvert. Les actions natives Raccourcis ci-dessus sont à privilégier : elles ouvrent correctement les documents, attendent le chargement de l'aperçu et prennent en charge l'export PDF paginé de manière asynchrone.
 
-Voir [Raccourcis et `convert_to` dans la prise en charge AppleScript](AppleScript_Support.html#shortcuts-and-convert_to) pour plus de détails sur la commande héritée.
+Voir [Raccourcis et `convert_to` dans Prise en charge d'AppleScript](AppleScript_Support.html#shortcuts-and-convert_to) pour plus de détails sur cette commande historique.
 
-## Dépannage : les actions n'apparaissent pas dans les raccourcis
+## Dépannage : les actions n'apparaissent pas dans Raccourcis
 
-Les raccourcis indexent **un** Installation marquée par identifiant de bundle (`com.brettterpstra.marked`). Il préfère la copie avec le **numéro de build le plus élevé** (`CFBundleVersion`), pas nécessairement l'application que vous venez de créer dans Xcode.
+Raccourcis indexe **une seule** installation de Marked par identifiant de bundle (`com.brettterpstra.marked`). Il privilégie la copie avec le **numéro de build le plus élevé** (`CFBundleVersion`), pas nécessairement l'application que vous venez de compiler dans Xcode.
 
-Si Marqué n'apparaît pas sous **Applications** dans la bibliothèque d'actions Raccourcis :
+Si Marked n'apparaît pas sous **Applications** dans la bibliothèque d'actions de Raccourcis :
 
-1. Répertoriez chaque copie sur le disque :
+1. Listez toutes les copies présentes sur le disque :
    ```bash
    mdfind 'kMDItemCFBundleIdentifier == "com.brettterpstra.marked"'
    ```
-2. Supprimez ou renommez les copies obsolètes (par exemple un ancien `Marked.app` sur le bureau ou dans `/Applications` qui a été copié à partir d'une build **sans** métadonnées de raccourcis).
-3. Exécutez la version que vous souhaitez que les raccourcis utilisent (Xcode **Run**, ou ouvrez directement le `.app` dans DerivedData).
+2. Supprimez ou renommez les copies obsolètes (par exemple un ancien `Marked.app` sur le Bureau ou dans `/Applications`, copié depuis une version **sans** métadonnées Raccourcis).
+3. Exécutez la version que vous souhaitez que Raccourcis utilise (**Exécuter** dans Xcode, ou ouvrez directement le `.app` dans DerivedData).
 4. Quittez et rouvrez l'application **Raccourcis**.
 
-Une version qui inclut des raccourcis contient `Contents/Resources/Metadata.appintents`. Vous pouvez vérifier :
+Une version incluant Raccourcis contient `Contents/Resources/Metadata.appintents`. Vous pouvez le vérifier ainsi :
 
 ```bash
 ls "/path/to/Marked.app/Contents/Resources/Metadata.appintents"
 ```
 
-Au lancement, Marked enregistre `[MKShortcuts] Registering App Intents` dans Console.app lors de l'exécution de l'enregistrement (macOS 13+).
+Au lancement, Marked consigne `[MKShortcuts] Registering App Intents` dans Console.app lorsque l'enregistrement s'effectue (macOS 13+).
 
 ## Débogage
 
-Activez le **Mode débogage** dans {% prefspane Advanced %}. Étapes d'exportation des journaux marqués au niveau Info avec le préfixe `[AppleScript]` dans Console.app et la visionneuse de journaux de Marked (le pipeline d'exportation est partagé avec AppleScript).
+Activez le **Mode débogage** dans {% prefspane Advanced %}. Marked consigne les étapes d'export au niveau Info avec le préfixe `[AppleScript]` dans Console.app et dans le visualiseur de journaux de Marked (le pipeline d'export est partagé avec AppleScript).
 
 ## Erreurs
 
-Messages courants lorsqu'une action échoue :
+Messages courants en cas d'échec d'une action :
 
-- Aucun document marqué n'est disponible (rien d'ouvert et aucun fichier spécifié).
-- Ce fichier n'est pas ouvert dans Marked (utilisez **Open File** ou **Open and Export File**).
-- Profil d'exportation ou nom du style d'aperçu inconnu.
-- Délai d'attente expiré pour le chargement ou le rechargement de l'aperçu.
-- Erreurs d'autorisation de chemin d'exportation ou échec de génération de PDF paginé.
+- Aucun document Marked disponible (rien d'ouvert et aucun fichier spécifié).
+- Ce fichier n'est pas ouvert dans Marked (utilisez **Ouvrir un fichier** ou **Ouvrir et exporter un fichier**).
+- Nom de profil d'export ou de style d'aperçu inconnu.
+- Délai d'attente dépassé pour le chargement ou le rechargement de l'aperçu.
+- Erreurs de permission sur le chemin d'export ou échec de génération du PDF paginé.

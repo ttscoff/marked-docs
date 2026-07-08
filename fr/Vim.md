@@ -1,18 +1,16 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-[vim-marked][vimrepo] est un plugin Vim qui ouvre le tampon Markdown actuel dans Marked. Il ajoute `:MarkedOpen`, `:MarkedQuit`, `:MarkedToggle` et `:MarkedPreview` afin que vous puissiez envoyer le fichier (ou une plage) vers Marked sans quitter l'éditeur.
+[vim-marked][vimrepo] est un plugin Vim qui ouvre le buffer Markdown actuel dans Marked. Il ajoute les commandes `:MarkedOpen`, `:MarkedQuit`, `:MarkedToggle` et `:MarkedPreview`, afin de pouvoir envoyer le fichier (ou une plage) vers Marked sans quitter l'éditeur.
 
-## Configuration
+## Installation
 
-Installez avec votre gestionnaire de plugins ; voir le [projet README][vimrepo] pour `vim-plug` et d'autres options. Le `g:marked_filetypes` par défaut inclut `markdown` et des variantes courantes ; étendez la liste si vous utilisez un `filetype` personnalisé.
+Installez-le avec votre gestionnaire de plugins ; consultez le [README du projet][vimrepo] pour `vim-plug` et les autres options. Le réglage par défaut de `g:marked_filetypes` inclut `markdown` et les variantes courantes ; étendez la liste si vous utilisez un `filetype` personnalisé.
 
 ## macOS et nom de l'application
 
-Marqué est uniquement macOS, le plugin ne se charge donc pas sur d'autres systèmes. Le nom de l'application par défaut est **Marqué 2** ; si votre copie de Marked est installée sous un nom ou un chemin différent, définissez `g:marked_app` pour qu'il corresponde (par exemple un chemin complet vers l'ensemble d'applications). Le README couvre les arrêts, l'arrêt automatique et le comportement de focus.
+Marked est exclusif à macOS, le plugin ne se charge donc pas sur les autres systèmes. Le nom d'application par défaut est **Marked 2** ; si votre copie de Marked est installée sous un nom ou un chemin différent, définissez `g:marked_app` en conséquence (par exemple un chemin complet vers le bundle de l'application). Le README détaille le comportement de fermeture, de fermeture automatique et de focus.
 
-I> Cette rubrique d'aide ne fait pas partie du projet marqué vim ; pour les dernières commandes et options, utilisez le [dépôt GitHub][vimrepo].
+I> Ce sujet d'aide ne fait pas partie du projet vim-marked ; pour les commandes et options les plus récentes, consultez le [dépôt GitHub][vimrepo].
 
 
 [vimrepo]: https://github.com/itspriddle/vim-marked

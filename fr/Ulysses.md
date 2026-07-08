@@ -1,21 +1,18 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-[Ulysses][ulysses] n'écrit pas un simple fichier Markdown pour chaque feuille, vous **exportez** le texte actuel lorsque vous souhaitez que Marked le prévisualise.
+[Ulysses][ulysses] n'écrit pas de fichier Markdown brut pour chaque feuille : vous devez donc **exporter** le texte actuel lorsque vous souhaitez que Marked le prévisualise.
 
-## Exportation rapide vers marqué
+## Export rapide vers Marked
 
-1. Appuyez sur {% kbd cmd 6 %} dans Ulysses (ou cliquez sur le bouton de la barre d'outils d'exportation).
-2. Définissez la liste déroulante de format sur **Texte**.
-3. Définissez le format secondaire sur **Markdown** (voir la note ci-dessous sur TextBundle).
-4. Cliquez sur la flèche vers le bas à côté de **Ouvrir dans** et choisissez **Marqué**.
-5. Tabulez jusqu'à ce que l'action principale indique **Ouvrir dans**, puis confirmez.
+1. Appuyez sur {% kbd cmd 6 %} dans Ulysses (ou cliquez sur le bouton **Export** de la barre d'outils).
+2. Réglez le menu déroulant de format sur **Texte**.
+3. Réglez le format secondaire sur **Markdown** (voir la remarque ci-dessous concernant TextBundle).
+4. Cliquez sur le bouton **···** à côté d'**Export**, puis choisissez **Ouvrir avec Marked**.
 
-Après la première configuration, {% kbd cmd 6 %} suivi de **Retour** suffit souvent pour actualiser l'aperçu marqué de la feuille active (ou des feuilles que vous avez sélectionnées).
+Une fois cette configuration initiale effectuée, {% kbd cmd 6 %} suivi de **Retour** suffit souvent pour actualiser l'aperçu Marked de la feuille active (ou des feuilles sélectionnées).
 
-## Images et éléments
+## Images et ressources
 
-Marked peut également lire les exportations **TextBundle** ou **TextPack** depuis Ulysses. Utilisez la même feuille d'exportation mais choisissez une option groupée lorsque vous avez besoin d'images intégrées ou d'autres ressources en plus du Markdown.
+Marked peut également lire les exports **TextBundle** ou **TextPack** depuis Ulysses. Utilisez la même feuille d'export, mais choisissez une option de bundle lorsque vous avez besoin d'images intégrées ou d'autres ressources accompagnant le Markdown.
 
 [ulysses]: https://ulysses.app/
