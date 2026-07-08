@@ -40,7 +40,7 @@ Met Gemarkeerd kunt u een nieuw, leeg tekstbestand maken met de opdracht {% appm
 
 ![][3]
 
-   [3]: images/open_recent.jpg @2x breedte=300px hoogte=174px class=center
+   [3]: images/open_recent.jpg @2x width=300px height=174px class=center
 
 Marked houdt ook recente documenten bij. Met de menuoptie {% appmenu File, Open Recent %} worden de bestanden weergegeven die je hebt geopend en kun je ernaar terugkeren. Je kunt het laatste bestand dat je aan het bekijken was snel opnieuw openen met {% kbd shift cmd R %}. Gebruik {% kbd shift cmd P %} of [Snelle acties](Quick_Actions.html) om menu- en voorbeeldopdrachten vanaf het toetsenbord uit te voeren. Er zijn nog een heleboel andere sneltoetsen. Als je ze wilt leren, kun je een diagram vinden onder [Toetsenbord Snelkoppelingen](Keyboard_Shortcuts.html).
 
