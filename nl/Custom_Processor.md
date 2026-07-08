@@ -54,7 +54,7 @@ editor en de volgorde van de acties die achtereenvolgens moeten worden uitgevoer
 
 ### Predikaateditor
 
-![Predikaateditor][predikaat]
+![Predikaateditor][predicate]
 
 [predicate]: images/custom-rules-predicate-800.jpg @2x width=800
 
