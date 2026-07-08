@@ -33,7 +33,7 @@
 
 ![規則編輯器][2]
 
-  [2]: images/CustomRules-800.jpg @2x 寬度=800
+  [2]: images/CustomRules-800.jpg @2x width=800
 
 若要建立新規則，請使用 `+`
 左側規則清單底部的按鈕。給
