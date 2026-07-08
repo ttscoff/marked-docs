@@ -349,7 +349,7 @@ la mise en œuvre comprend un système de superposition divisée pour le texte
 fichiers qui permettent aux utilisateurs de choisir entre tester le fichier
 contre les règles ou en l'ajoutant comme une action.
 
-![Glisser-déposer dans les règles personnalisées][glisser]
+![Glisser-déposer dans les règles personnalisées][drag]
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
