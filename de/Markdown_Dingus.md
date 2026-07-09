@@ -1,353 +1,230 @@
 # <%= @title %>
 
-Der Markdown Dingus ist ein spezielles Testtool, das hilft
-Sie verstehen, wie verschiedene Markdown-Prozessoren mit Ihrem umgehen
-Inhalt. Es bietet eine Schnittstelle mit drei Fenstern, wo Sie können
-Bearbeiten Sie Markdown, sehen Sie sich die generierte HTML-Quelle an und sehen Sie sich die an
-gerenderte Vorschau gleichzeitig.
+Der Markdown-Dingus ist ein spezialisiertes Testwerkzeug, mit dem Sie nachvollziehen können, wie verschiedene Markdown-Prozessoren Ihren Inhalt behandeln. Er bietet eine dreigeteilte Oberfläche, in der Sie gleichzeitig Markdown bearbeiten, den erzeugten HTML-Quelltext ansehen und die gerenderte Vorschau sehen.
 
-Der Dingus teilt einige einfache Handhabungen mit denen von Marked
-Vorschau, wie z. B. eine spezielle Behandlung von abgeschirmten Codeblöcken.
-[Custom Rules](Custom_Processor.html) wird __nicht__ ausgeführt
-(Dirigent). Es verwendet die meisten Standardeinstellungen und ignoriert die Einstellungen
-wie „GitHub Zeilenumbrüche“ und „GitHub Kontrollkästchen“, also die
-Das Ergebnis kann von dem abweichen, was Sie in einem normalen Marked sehen
-Vorschau.
+Der Dingus teilt sich einige Low-Level-Behandlungen mit Markeds Vorschau, etwa die besondere Behandlung abgegrenzter Codeblöcke. Er führt __keine__ [Eigenen Regeln](Custom_Processor.html) (Conductor) aus. Er verwendet weitgehend die Standardeinstellungen und ignoriert Einstellungen wie „GitHub-Zeilenumbrüche“ und „GitHub-Kontrollkästchen“, sodass das Ergebnis von dem abweichen kann, was Sie in einer normalen Marked-Vorschau sehen.
 
-## Custom Regeln gelten nicht
+## Eigene Regeln gelten nicht
 
-Der Dingus ist eine __Prozessor-Sandbox__: Ihr Markdown geht
-direkt an den von Ihnen gewählten integrierten Prozessor (MultiMarkdown,
-CommonMark (GFM), Discount oder Kramdown). [Custom Rules](Custom_Processor.html)
-nie dort ausführen – keine Vorverarbeitungsaktionen, Suchen/Ersetzen-Regeln,
-Shell-Befehle, Text/Datei einfügen oder andere Conductor-Schritte.
+Der Dingus ist eine __Prozessor-Sandbox__: Ihr Markdown geht direkt an den integrierten Prozessor, den Sie wählen (MultiMarkdown, CommonMark (GFM), Discount oder Kramdown). [Eigene Regeln](Custom_Processor.html) laufen dort nie – keine Präprozessor-Aktionen, keine Suchen/Ersetzen-Regeln, keine Shell-Befehle, kein Text/Datei einfügen und keine anderen Conductor-Schritte.
 
-In einer normalen Vorschau können Custom-Regeln den Markdown ändern.
-Legen Sie vor dem Rendern Stile fest, fügen Sie CSS oder JavaScript ein und
-mehr. Nichts davon passiert, wenn Sie im Dingus bearbeiten.
-Das Ändern der Custom-Regeln bei geöffnetem Dingus ist nicht möglich
-Aktualisieren Sie die Vorschau.
+In einer normalen Vorschau können Eigene Regeln das Markdown vor dem Rendern ändern, Stile setzen, CSS oder JavaScript einfügen und mehr. Nichts davon passiert, wenn Sie im Dingus bearbeiten. Ändern Sie Eigene Regeln bei geöffnetem Dingus, aktualisiert das seine Vorschau nicht.
 
-Die Dingus __can__ verwenden dasselbe [preview CSS styles](Custom_Styles.html)
-als Hauptfenster (über das Stilmenü im Ausgabebereich).
-Das ist nur der Schein; es ist nicht dasselbe wie das Ausführen von Custom
-Regeln.
+Der Dingus __kann__ dieselben [Vorschau-CSS-Stile](Custom_Styles.html) wie das Hauptfenster verwenden (über das Stilmenü im Ausgabebereich). Das betrifft nur das Aussehen; es ist nicht dasselbe wie das Ausführen Eigener Regeln.
 
-__Open in Dingus__ aus einer Vorschau lädt das Dokument
-aktueller Markdown-Puffer. Wenn Custom Regeln bereits wann ausgeführt wurden
-Diese Datei wurde in Marked geöffnet. Möglicherweise sehen Sie deren Auswirkungen in
-der Text (z. B. durch eine Regel eingefügter Text), aber der
-Dingus wendet Regeln während der Eingabe nicht erneut an. Zum Testen von Custom
-Regeln, verwenden Sie eine standardmäßige Marked-Vorschau oder speichern Sie sie aus dem Dingus
-und öffnen Sie die Datei mit __Open in Marked__.
+__In Dingus öffnen__ aus einer Vorschau lädt den aktuellen Markdown-Puffer des Dokuments. Sind beim Öffnen dieser Datei in Marked bereits Eigene Regeln gelaufen, sehen Sie deren Auswirkungen womöglich im Text (zum Beispiel von einer Regel eingefügten Text), aber der Dingus wendet die Regeln während der Eingabe nicht erneut an. Um Eigene Regeln zu testen, nutzen Sie eine normale Marked-Vorschau oder speichern Sie aus dem Dingus und öffnen die Datei mit __In Marked öffnen__.
 
 ## Was ist ein „Dingus“?
 
-Ein „Dingus“ ist ein aus der Webentwicklung entlehnter Begriff
-bezieht sich auf ein einfaches Testtool oder eine Sandbox-Umgebung. Die
-Mit Markdown Dingus können Sie mit der Syntax von Markdown experimentieren
-Sehen Sie sofort, wie verschiedene Prozessoren es interpretieren.
+„Dingus“ ist ein aus der Webentwicklung entlehnter Begriff für ein einfaches Testwerkzeug oder eine Sandbox-Umgebung. Mit dem Markdown-Dingus experimentieren Sie mit Markdown-Syntax und sehen sofort, wie verschiedene Prozessoren sie interpretieren.
 
-## Zugriff auf Dingus
+## Zugriff auf den Dingus
 
-Auf den Markdown Dingus kann zugegriffen werden
-[<!--MKPH0-->][2]. Es ist besonders
-nützlich, wenn Sie:
+Den Markdown-Dingus erreichen Sie über [{% appmenu Hilfe, Markdown-Dingus öffnen %}][2]. Besonders nützlich ist er, wenn Sie:
 
-* Erlernen der neuen Markdown-Syntax
-* Fehlerbehebung bei Rendering-Problemen
-* Auswahl zwischen verschiedenen Prozessoren
-* Schreiben von Dokumentationen, die auf mehreren Ebenen funktionieren müssen
-  Systeme
+* neue Markdown-Syntax lernen möchten
+* Rendering-Probleme beheben wollen
+* zwischen verschiedenen Prozessoren den für Ihren Anwendungsfall am besten passenden suchen
+* Dokumentation schreiben, die über mehrere Systeme hinweg funktionieren muss
 
 ## Drei-Fenster-Layout
 
 ![][1]
 
-Das Fenster Dingus ist in drei synchronisierte Bereiche unterteilt:
+Das Dingus-Fenster ist in drei synchronisierte Bereiche unterteilt:
 
-### 1. Markdown Eingabe (linker Bereich)
+### 1. Markdown-Eingabe (linker Bereich)
 
-* __Syntax-Hervorhebung__: Ihr Markdown wird mit hervorgehoben
-  Farben, um die Struktur klar zu machen
-* __Live-Bearbeitung__: Geben Sie Änderungen ein und sehen Sie, wie sie sofort angezeigt werden
-  in den anderen Bereichen
-* __Große Schriftart__: 21pt Menlo-Schriftart für komfortables Bearbeiten
+* __Syntaxhervorhebung__: Ihr Markdown wird farblich hervorgehoben, damit die Struktur klar wird
+* __Live-Bearbeitung__: Tippen Sie und sehen Sie Änderungen sofort in den anderen Bereichen
+* __Große Schrift__: 21-pt-Menlo-Schrift für komfortables Bearbeiten
 
-__Options-Dropdown__ (oben rechts im linken Bereich): Die
-Mit dem Menü **Optionen** können Sie Folgendes umschalten:
+__Options-Dropdown__ (oben rechts im linken Bereich): Über das Menü **Optionen** schalten Sie um:
 
-* __Zeilennummern anzeigen__: Zeigt links einen Zwischenraum an
-  eine Zeilennummer pro Absatz (umbrochene Zeilen zählen als eine).
-  Linie).
-* __Unsichtbare anzeigen__: Zeigt Leerzeichen als Mittelpunkte (·), Tabulatoren als
-  ein Rechtspfeil (→) und Zeilenumbrüche als Wagenrücklauf
-  Symbol (↵) in einem hellen Grau, damit Sie Streuner erkennen können
-  Leerzeichen.
-* __Gremlins hervorheben__: Setzt einen hellroten Hintergrund ein
-  Nicht-ASCII-Zeichen (z. B. geschweifte Anführungszeichen, Emoji) und ein dunkles Zeichen
-  Roter Hintergrund bei problematischen unsichtbaren Zeichen (z. B.
-  Leerzeichen mit der Breite Null). Normale Tabulator- und Zeilenumbruchzeichen sind
-  nicht hervorgehoben.
+* __Zeilennummern anzeigen__: Zeigt am linken Rand eine Spalte mit einer Zeilennummer pro Absatz (umbrochene Zeilen zählen als eine Zeile).
+* __Unsichtbare anzeigen__: Zeigt Leerzeichen als Mittelpunkte (·), Tabulatoren als Rechtspfeil (→) und Zeilenumbrüche als Zeilenschaltungssymbol (↵) in hellem Grau, damit Sie verirrte Steuerzeichen erkennen.
+* __Gremlins hervorheben__: Legt einen hellroten Hintergrund auf Nicht-ASCII-Zeichen (z. B. typografische Anführungszeichen, Emoji) und einen dunkelroten Hintergrund auf problematische unsichtbare Zeichen (z. B. Zeichen ohne Breite). Normale Tabulator- und Zeilenumbruchzeichen werden nicht hervorgehoben.
 
-Ihre Auswahl wird gespeichert und beim nächsten Öffnen wiederhergestellt
-der Dingus.
+Ihre Auswahl wird gespeichert und beim nächsten Öffnen des Dingus wiederhergestellt.
 
-__Suchleiste__: Drücken Sie **⌘F**, um die Suchleiste unter dem anzuzeigen
-Bezeichnung „Markdown Eingabe“. Sie können im suchen und ersetzen
-Editor verwenden Sie **⌘G** für „Weitersuchen“ und **⇧⌘G** für „Suchen“.
-Zurück und ersetzen Sie eine oder alle Übereinstimmungen. Drücken Sie die Schließen-Taste
-Klicken Sie erneut auf die Schaltfläche oder **⌘F**, um die Suchleiste auszublenden.
+__Suchleiste__: Drücken Sie **⌘F**, um die Suchleiste unter der Beschriftung „Markdown-Eingabe“ einzublenden. Sie können im Editor suchen und ersetzen, mit **⌘G** weitersuchen und mit **⇧⌘G** rückwärts suchen sowie eine oder alle Übereinstimmungen ersetzen. Über die Schließen-Schaltfläche oder erneut **⌘F** blenden Sie die Suchleiste aus.
 
-### 2. HTML Quelle (mittlerer Bereich)
+### 2. HTML-Quelltext (mittlerer Bereich)
 
-* __Generated HTML__: Sehen Sie genau, was HTML das ausgewählte ist
-  Prozessor erstellt
-* __Syntax hervorgehoben__: HTML ist zur Vereinfachung farblich gekennzeichnet
-  Lesen
+* __Erzeugtes HTML__: Sehen Sie genau, welches HTML der gewählte Prozessor erzeugt
+* __Syntaxhervorhebung__: Die HTML-Syntax ist zum leichteren Lesen farblich gekennzeichnet
 
 ### 3. Gerenderte Vorschau (rechter Bereich)
 
-* __Live-Vorschau__: Sehen Sie, wie Ihr Markdown wann aussehen wird
-  gerendert
-* __Emoji-Unterstützung__: Emojis im GitHub-Stil wie `:zzz:` sind
-  in Bilder umgewandelt
-* __Auto-Scrolling__: Scrollt automatisch, um Ihre anzuzeigen
-  aktuelle Bearbeitungsposition
+* __Live-Vorschau__: Sehen Sie, wie Ihr Markdown gerendert aussieht
+* __Emoji-Unterstützung__: Emojis im GitHub-Stil wie `:zzz:` werden in Bilder umgewandelt
+* __Auto-Scrollen__: Scrollt automatisch zu Ihrer aktuellen Bearbeitungsposition
 
 ## Bearbeiten im Dingus
 
-Der Markdown-Eingabebereich enthält intelligente Bearbeitungsfunktionen für
-Machen Sie das Schreiben von Markdown schneller und natürlicher.
+Der Markdown-Eingabebereich bietet intelligente Bearbeitungsfunktionen, die das Schreiben von Markdown schneller und natürlicher machen.
 
-### Smart Newline (Return-Taste)
+### Intelligenter Zeilenumbruch (Return-Taste)
 
-Durch Drücken der Eingabetaste wird die aktuelle Zeile angepasst:
+Ein Druck auf Return passt sich an die aktuelle Zeile an:
 
-* __Lists__: In einer Listenzeile (`-`, `*` , `+` oder `1.` ),
-  Fügt ein neues Listenelement mit der richtigen Markierung ein. Nummeriert
-  Listen werden mit der nächsten Nummer fortgesetzt.
-* __Blockquotes__: Fügt in einer Zeile, die mit `>` beginnt, ein ein
-  neue Blockquote-Zeile.
-* __Code-Zäune__: Auf einer Linie mit drei oder mehr Backticks
-  (z. B. ` ``` `), fügt eine Leerzeile zwischen der Öffnung ein
-  und Zäune schließen.
-* __Andere Zeilen__: Fügt eine normale neue Zeile ein.
+* __Listen__: In einer Listenzeile (`-`, `*`, `+` oder `1.`) fügt er ein neues Listenelement mit der richtigen Markierung ein. Nummerierte Listen laufen mit der nächsten Nummer weiter.
+* __Blockzitate__: In einer Zeile, die mit `>` beginnt, fügt er eine neue Blockzitat-Zeile ein.
+* __Code-Blöcke__: In einer Zeile mit drei oder mehr Backticks (z. B. ` ``` `) fügt er eine Leerzeile zwischen öffnendem und schließendem Element ein.
+* __Andere Zeilen__: Fügt einen normalen Zeilenumbruch ein.
 
 ### Zeichenpaarung
 
-Wenn Sie ein Anfangszeichen eingeben, öffnet sich der Editor automatisch
-fügt das Schlusszeichen ein und platziert den Cursor dazwischen
-sie. Unterstützte Paare: `"` `'` `(` `[` `` ` `` `<` .
+Wenn Sie ein öffnendes Zeichen tippen, fügt der Editor automatisch das schließende Zeichen ein und setzt den Cursor dazwischen. Unterstützte Paare: `"` `'` `(` `[` `` ` `` `<`.
 
-* __Mit Auswahl__: Schließt den ausgewählten Text in das Paar ein.
-* __Ohne Auswahl__: Fügt das Paar mit dem Cursor ein
-  zwischen ihnen.
-* __Type-over__: Wenn das nächste Zeichen bereits das ist
-  Wenn Sie das schließende Trennzeichen eingeben, bewegt sich der Cursor bei erneuter Eingabe daran vorbei
-  es, anstatt ein Duplikat einzufügen.
-- __Leerzeichen in leerem Paar__: Wenn sich der Cursor zwischen einem leeren Paar befindet (z. B. `(|)`), wird durch die Eingabe eines Leerzeichens das Schlusszeichen durch ein Leerzeichen ersetzt.
+* __Mit Auswahl__: Umschließt den ausgewählten Text mit dem Paar.
+* __Ohne Auswahl__: Fügt das Paar ein und setzt den Cursor dazwischen.
+* __Type-over__: Ist das nächste Zeichen bereits das schließende Trennzeichen, bewegt ein erneutes Tippen den Cursor daran vorbei, statt ein Duplikat einzufügen.
+- __Leerzeichen im leeren Paar__: Steht der Cursor zwischen einem leeren Paar (z. B. `(|)`), ersetzt ein Leerzeichen das schließende Zeichen durch ein Leerzeichen.
 
-### Tastenkombinationen
+### Tastenkürzel
 
-| Verknüpfung | Aktion |
-|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **⌘F** | Ein- oder Ausblenden der Suchleiste im Markdown-Eingabebereich |
+| Kürzel | Aktion |
+| :------------ | :--- |
+| **⌘F** | Suchleiste im Markdown-Eingabebereich ein- oder ausblenden |
 | **⌘G** | Weitersuchen (wenn die Suchleiste sichtbar ist) |
-| **⇧⌘G** | Vorheriges suchen (wenn die Suchleiste sichtbar ist) |
-| **⌘B** | Fett: Auswahl in `**` umschließen oder `**\|**` mit Cursor zwischen | einfügen
-| **⌘I** | Kursiv: Auswahl in `_` umbrechen oder `_\|_` mit Cursor zwischen | einfügen
-| **⇧⌘L** | Zykluslistenmarkierung (ungeordnet ↔ geordnet) |
-| **Tabulatortaste** | Zeile oder Listenelement einrücken |
-| **Umschalt+Tabulator** | Zeile oder Listenelement ausrücken |
+| **⇧⌘G** | Rückwärts suchen (wenn die Suchleiste sichtbar ist) |
+| **⌘B** | Fett: Auswahl in `**` umschließen oder `**\|**` mit Cursor dazwischen einfügen |
+| **⌘I** | Kursiv: Auswahl in `_` umschließen oder `_\|_` mit Cursor dazwischen einfügen |
+| **⇧⌘L** | Listenmarkierung durchschalten (ungeordnet ↔ geordnet) |
+| **Tab** | Zeile oder Listenelement einrücken |
+| **Umschalt+Tab** | Zeile oder Listenelement ausrücken |
 | **⌃⌘→** | Zeile oder Listenelement einrücken (wie Tab) |
 | **⌃⌘←** | Zeile oder Listenelement ausrücken (wie Umschalt+Tab) |
-| **⌃⌘ ↑** | Absatz nach oben verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach oben einfügen) |
-| **⌃⌘↓** | Absatz nach unten verschieben (Absatz einschließlich Zeilenumbruch ausschneiden, eine Zeile nach unten einfügen) |
-| **⌘K** | Fügen Sie einen Markdown-Link ein oder umschließen Sie ihn: Umschließen Sie die Auswahl als `[text]()` und platzieren Sie den Cursor in der URL, oder fügen Sie `[]()` mit dem Cursor zwischen den Klammern ein, wenn keine Auswahl | vorhanden ist
-| **⌘U** | Ausgabebereich umschalten (Quelle/Vorschau) |
-| **⌥⌘ ↑** | Auswahl erweitern: Wort → innere/äußere Trennzeichen → Satz → Absatz → zusammenhängender Block (z. B. eine Tabelle oder ein Codeblock) → umschließende Liste/Blockzitat/Codeblock → Dokument |
-| **⌥⌘↓** | Vertragsauswahl durch die gleichen Ebenen zurück zur ursprünglichen Caret-Position |
+| **⌃⌘↑** | Absatz nach oben verschieben (Absatz samt Zeilenumbruch ausschneiden, eine Zeile höher einfügen) |
+| **⌃⌘↓** | Absatz nach unten verschieben (Absatz samt Zeilenumbruch ausschneiden, eine Zeile tiefer einfügen) |
+| **⌘K** | Markdown-Link einfügen oder umschließen: Auswahl als `[text]()` umschließen und den Cursor in die URL setzen, oder ohne Auswahl `[]()` mit dem Cursor zwischen den Klammern einfügen |
+| **F6** | Magischer Referenzlink: Auswahl als `[text][n]` umschließen und am Dokumentende eine `[n]: `-Definition anfügen; steht der Cursor auf einer vorhandenen Referenz, zwischen Inline-Marker und Definition springen |
+| **F7** | Magische Fußnote: `[^n]` an der Cursorposition (oder nach dem aktuellen Wort) einfügen und am Dokumentende eine passende `[^n]: `-Definition anfügen; steht der Cursor auf einer vorhandenen Fußnote, zwischen Marker und Definition springen |
+| **⌘U** | Ausgabebereich umschalten (Quelltext/Vorschau) |
+| **⌥⌘↑** | Auswahl erweitern: Wort → innere/äußere Trennzeichen → Satz → Absatz → zusammenhängender Block (z. B. eine Tabelle oder ein Codeblock) → umschließende Liste/Blockzitat/Codeblock → Dokument |
+| **⌥⌘↓** | Auswahl über dieselben Ebenen zurück bis zur ursprünglichen Cursorposition verkleinern |
 
-Tab/Umschalt+Tab (und ⌃⌘←/⌃⌘→) respektieren die Listenstruktur und
-Blockzitate: Sie rücken Listenelemente ein/aus und fügen ein oder hinzu
-Entfernen Sie `>` aus Blockquote-Zeilen. Absatz nach oben/unten verschieben
-Wählt den gesamten Absatz unter dem Cursor aus (einschließlich seiner
-nachgestellte neue Zeile), schneidet es aus und fügt es über oder unter dem ein
-angrenzenden Absatz, damit Absätze nicht zusammengeführt werden.
+Tab/Umschalt+Tab (und ⌃⌘←/⌃⌘→) berücksichtigen Listenstruktur und Blockzitate: Sie rücken Listenelemente ein oder aus und fügen `>` in Blockzitat-Zeilen hinzu oder entfernen es. „Absatz nach oben/unten verschieben“ wählt den gesamten Absatz unter dem Cursor aus (samt nachfolgendem Zeilenumbruch), schneidet ihn aus und fügt ihn über oder unter dem angrenzenden Absatz ein, damit Absätze nicht verschmelzen.
+
+### Magische Links und Fußnoten (F6 / F7)
+
+Der Dingus-Editor kann für Sie __Referenzlinks__ und __Fußnoten__ anlegen, vergibt automatisch die nächste freie Nummer und hängt die passende Definition am Dokumentende an.
+
+* __F6 (magischer Referenzlink)__: Mit markiertem Text wird die Auswahl als `[text][n]` umschlossen und am Dokumentende eine neue `[n]: `-Zeile ergänzt, in die Sie die URL eintragen. Zum Anlegen eines neuen Referenzlinks ist eine Auswahl nötig. Steht der Cursor bereits auf einem Referenzlink oder seiner Definition, springt **F6** zwischen Inline-Marker und Definition (oder legt die Definition an, falls sie fehlt).
+* __F7 (magische Fußnote)__: Fügt an der Cursorposition – oder nach dem aktuellen Wort, wenn der Cursor darin steht – einen nummerierten Fußnotenmarker `[^n]` ein und hängt `[^n]: ` an; bei markiertem Text wird der markierte Text als Fußnotentext verwendet. Steht der Cursor auf einem vorhandenen Fußnotenmarker oder einer Definition, springt **F7** zwischen beiden.
+
+Referenz- und Fußnotennummern werden automatisch vergeben, sodass Sie keine IDs von Hand verwalten müssen. Beide Tastenkürzel funktionieren nicht in abgegrenzten oder eingerückten Codeblöcken.
 
 ### Intelligentes URL-Einfügen
 
-Beim Einfügen enthält die Zwischenablage eine URL des Formulars
-`protocol://...` ohne Leerzeichen:
+Wenn Sie einfügen und die Zwischenablage eine URL der Form `protocol://...` ohne Leerzeichen enthält:
 
-* __Mit einer Auswahl__: Die Auswahl wird in eine umgewandelt
-  Markdown Link: `[selected text](url)` .
-* __Ohne Auswahl__: Die URL wird als eingefügt
-  Selbstverlinkung: `<url>` .
+* __Mit Auswahl__: Die Auswahl wird in einen Markdown-Link umgewandelt: `[selected text](url)`.
+* __Ohne Auswahl__: Die URL wird als Selbstlink eingefügt: `<url>`.
 
-Dadurch ist es einfach, kopierte URLs in Links umzuwandeln
-manuelle Eingabe.
+So verwandeln Sie kopierte URLs bequem in Links, ohne sie von Hand zu tippen.
 
-### Intelligente Auswahl (⌥⌘ ↑ / ⌥⌘↓)
+### Intelligente Auswahl (⌥⌘↑ / ⌥⌘↓)
 
-Der Dingus-Editor unterstützt die __semantische Auswahlerweiterung__:
+Der Dingus-Editor unterstützt eine __semantische Auswahlerweiterung__:
 
-* __⌥⌘ ↑__ beginnt beim Caretzeichen und erweitert die Auswahl
-  durch:
+* __⌥⌘↑__ beginnt an der Cursorposition und erweitert die Auswahl über:
 	- das aktuelle Wort
-	- Innen und außen abgegrenzter Inhalt (Anführungszeichen, Klammern,
-   Klammern und umzäunte Codeblöcke)
-	- der aktuelle Satz
-	- der aktuelle Absatz
-	- der zusammenhängende, nicht leere Zeilenblock (z. B. a
-   ganze Tabelle oder mehrzeiliger Codeblock ohne Leerzeilen)
-	– das umschließende Listenelement, Blockzitat oder Codeblock
+	- innere und äußere abgegrenzte Inhalte (Anführungszeichen, eckige Klammern, runde Klammern und abgegrenzte Codeblöcke)
+	- den aktuellen Satz
+	- den aktuellen Absatz
+	- den zusammenhängenden, nicht leeren Zeilenblock (zum Beispiel eine ganze Tabelle oder einen mehrzeiligen Codeblock ohne Leerzeilen)
+	- das umschließende Listenelement, Blockzitat oder den umschließenden Codeblock
 	- das gesamte Dokument
-* __⌥⌘↓__ geht durch die gleichen Ebenen zurück, bis es
-  kehrt zur ursprünglichen Caret-Position zurück.
+* __⌥⌘↓__ geht dieselben Ebenen wieder zurück, bis die ursprüngliche Cursorposition erreicht ist.
 
-Jeder Druck bewegt sich immer zu einem strikt größeren oder kleineren Wert
-Auswahl, sodass Sie währenddessen nie „No-Op“-Tastendrücke erhalten
-erweitern oder verkleinern.
+Jeder Druck führt immer zu einer strikt größeren oder kleineren Auswahl, sodass beim Erweitern oder Verkleinern nie ein „No-Op“-Tastendruck entsteht.
 
-## Verwendung des Dingus als Editor
+## Den Dingus als Editor verwenden
 
-Der Dingus ist nicht dazu gedacht, einen vollständigen Text zu ersetzen
-Editor, aber es kann sehr praktisch für __schnelle Bearbeitungen mit einem sein
-Live-Vorschau__, insbesondere wenn Sie genau sehen möchten, wie
-Änderungen werden gerendert. Das gesamte Textbearbeitungsverhalten
-Hier gilt die Beschreibung in [Editing in the Dingus][3].
+Der Dingus soll keinen vollwertigen Texteditor ersetzen, ist aber sehr praktisch für __schnelle Bearbeitungen mit Live-Vorschau__, besonders wenn Sie genau sehen wollen, wie sich Änderungen rendern. Das gesamte in [Bearbeiten im Dingus][3] beschriebene Textbearbeitungsverhalten gilt auch hier.
 
-### Eine Datei öffnen/eine neue Datei erstellen
+### Eine Datei öffnen / eine neue Datei erstellen
 
-* __Erstellen Sie eine neue Datei im Dingus__
-	- Wählen Sie __{% appmenu File, New, New Markdown File %}__
-   (⌘N).
-	- Wenn Sie dazu aufgefordert werden, wählen Sie __Dingus__, um eine neue, nicht gespeicherte Datei zu starten
-   Dingus Dokument.
-	– Neue Dingus-Dokumente werden mit ausgewählten Beispielinhalten geöffnet;
-   Beginnen Sie einfach mit der Eingabe, um es zu ersetzen.
-* __Öffnen Sie eine vorhandene Datei im Dingus__
-	- Verwenden Sie __{% appmenu File, Open in Dingus... %}__ (⌥⌘O) oder
-   Klicken Sie bei aktivem Fenster Dingus im Status auf __Öffnen…__
-   Bar. Der Befehl öffnet dann bei Bedarf das Fenster Dingus
-   zeigt das Fenster „Öffnen“ an.
-	- Wählen Sie eine unterstützte Klartext-/Markdown-Datei aus. Es ist
-   Der Inhalt ersetzt den aktuellen Dingus-Puffer.
-* __Öffnen Sie ein Marked-Vorschaudokument im Dingus__
-	- Verwenden Sie in einem normalen Vorschaufenster __{% appmenu Preview,
-   Open in Dingus %}__ (⌥⌘E).
-	- Der Markdown des aktuellen Dokuments wird in den Dingus geladen.
-   So können Sie experimentieren, ohne die Originaldatei anzufassen
-   bis Sie sich zum Speichern entscheiden. Custom Regeln werden nicht angewendet in
-   der Dingus; siehe [Custom Rules do not apply](#custom-rules-do-not-apply).
+* __Eine neue Datei im Dingus erstellen__
+	- Wählen Sie __{% appmenu Ablage, Neu, Neue Markdown-Datei %}__ (⌘N).
+	- Wählen Sie bei der Nachfrage __Dingus__, um ein neues, ungespeichertes Dingus-Dokument zu beginnen.
+	- Neue Dingus-Dokumente öffnen sich mit ausgewähltem Beispielinhalt; tippen Sie einfach los, um ihn zu ersetzen.
+* __Eine vorhandene Datei im Dingus öffnen__
+	- Verwenden Sie __{% appmenu Ablage, In Dingus öffnen… %}__ (⌥⌘O), oder klicken Sie bei aktivem Dingus-Fenster in der Statusleiste auf __Öffnen…__. Der Befehl öffnet bei Bedarf das Dingus-Fenster und zeigt dann das Öffnen-Fenster.
+	- Wählen Sie eine beliebige unterstützte Klartext-/Markdown-Datei; ihr Inhalt ersetzt den aktuellen Dingus-Puffer.
+* __Ein Marked-Vorschaudokument im Dingus öffnen__
+	- Verwenden Sie in einem normalen Vorschaufenster __{% appmenu Vorschau, In Dingus öffnen %}__ (⌥⌘E).
+	- Das Markdown des aktuellen Dokuments wird in den Dingus geladen, sodass Sie experimentieren können, ohne die Originaldatei anzutasten, bis Sie speichern. Eigene Regeln werden im Dingus nicht angewendet; siehe [Eigene Regeln gelten nicht](#eigene-regeln-gelten-nicht).
 
 ### Eine Datei speichern
 
 * __Änderungen an der aktuellen Datei speichern__
-	- Klicken Sie im Fenster Dingus in der Statusleiste auf __Speichern.
-   oder nutzen
-    __{% appmenu File, Save Dingus %}__ (⌘S).
-	- Wenn das Dokument Dingus noch nicht gespeichert wurde, werden Sie es tun
-   wird zur Eingabe eines Speicherorts und Dateinamens aufgefordert; danach ⌘S
-   aktualisiert die gleiche Datei.
+	- Klicken Sie im Dingus-Fenster in der Statusleiste auf __Speichern__ oder verwenden Sie __{% appmenu Ablage, Dingus speichern %}__ (⌘S).
+	- Wurde das Dingus-Dokument noch nicht gespeichert, werden Sie nach Speicherort und Dateinamen gefragt; danach aktualisiert ⌘S dieselbe Datei.
 * __Speichern unter / in eine neue Datei duplizieren__
-	- Verwenden Sie __{% appmenu File, Save Dingus As... %}__ (⌥⌘S).
-	– Dies öffnet immer ein __Speichern unter__-Dialogfeld und schreibt das
-   aktuellen Dingus-Inhalt in eine neue Datei kopieren, ohne ihn zu überschreiben
-   das Original.
+	- Verwenden Sie __{% appmenu Ablage, Dingus speichern unter… %}__ (⌥⌘S).
+	- Das öffnet immer einen __Speichern unter__-Dialog und schreibt den aktuellen Dingus-Inhalt in eine neue Datei, ohne das Original zu überschreiben.
 
-### Vorschau in Marked
+### In Marked ansehen
 
-* __Öffnen Sie das Dingus-Dokument als vollständige Marked-Vorschau__
-	- Klicken Sie in der Statusleiste von Dingus auf __In Marked__ öffnen oder verwenden Sie
+* __Das Dingus-Dokument als vollständige Marked-Vorschau öffnen__
+	- Klicken Sie in der Dingus-Statusleiste auf __In Marked öffnen__ oder verwenden Sie __{% appmenu Ablage, Dingus in Marked öffnen %}__ (⌘P).
+	- Ist das Dingus-Dokument ungespeichert oder hat es ungespeicherte Änderungen, werden Sie zuerst zum Speichern aufgefordert; dann öffnet Marked eine normale Vorschau für diese Datei.
 
-__{% appmenu File, Open Dingus in Marked %}__ (⌘P).
-	- Wenn das Dokument Dingus nicht gespeichert ist oder nicht gespeicherte Änderungen aufweist,
-   Sie werden zunächst zum Speichern aufgefordert. dann öffnet Marked a
-   Standardvorschau für diese Datei.
-
-Mit diesen Befehlen können Sie Dingus als behandeln
-Leichter Editor für schnelle Korrekturen und Experimente
-Wechseln Sie zu einer vollständigen Marked-Vorschau oder zu Ihrem regulären Editor, wenn
-Sie sind bereit für eine umfangreichere Bearbeitung.
+Mit diesen Befehlen nutzen Sie den Dingus als leichten Editor für schnelle Korrekturen und Experimente und springen dann zu einer vollständigen Marked-Vorschau oder Ihrem gewohnten Editor, wenn Sie umfangreicher bearbeiten wollen.
 
 ## Prozessorauswahl
 
-Verwenden Sie das Dropdown-Menü oben, um zwischen verschiedenen zu wechseln
-Markdown Prozessoren:
+Verwenden Sie das Dropdown-Menü oben, um zwischen verschiedenen Markdown-Prozessoren zu wechseln:
 
-* __MultiMarkdown__: Voll ausgestatteter Prozessor mit Tabellen,
-  Fußnoten und mathematische Unterstützung
-* __CommonMark (GFM)__: Standardmäßiger, schneller Prozessor nach dem
-  CommonMark-Spezifikation
-* __Rabatt__: GitHub Aromatisiert Markdown mit Aufgabe
-  Listen und Tabellen
-* __Kramdown__: Fortschrittlicher Prozessor mit zusätzlichen Funktionen
-  wie IALs und Typografie
+* __MultiMarkdown__: Voll ausgestatteter Prozessor mit Tabellen, Fußnoten und Mathematik-Unterstützung
+* __CommonMark (GFM)__: Standardkonformer, schneller Prozessor nach der CommonMark-Spezifikation
+* __Discount__: GitHub Flavored Markdown mit Aufgabenlisten und Tabellen
+* __Kramdown__: Fortgeschrittener Prozessor mit Zusatzfunktionen wie IALs und Typografie
 
 ## Warum den Dingus verwenden?
 
 ### Prozessorunterschiede verstehen
 
-Verschiedene Markdown-Prozessoren handhaben die Syntax unterschiedlich. Die
-Dingus hilft Ihnen:
+Verschiedene Markdown-Prozessoren behandeln Syntax unterschiedlich. Mit dem Dingus können Sie:
 
-* __Ausgabe vergleichen__: Sehen Sie genau, wie jeder Prozessor rendert
-  das gleiche Markdown
-* __Debug-Probleme__: Identifizieren Sie, warum bei einer bestimmten Syntax dies nicht der Fall ist
-  Funktioniert wie erwartet
-* __Syntax lernen__: Verstehen Sie die subtilen Unterschiede
-  zwischen Prozessorimplementierungen
+* __Ausgabe vergleichen__: Sehen Sie genau, wie jeder Prozessor dasselbe Markdown rendert
+* __Probleme debuggen__: Erkennen Sie, warum eine bestimmte Syntax nicht wie erwartet funktioniert
+* __Syntax lernen__: Verstehen Sie die feinen Unterschiede zwischen den Prozessor-Implementierungen
 
-### Testen vor dem Schreiben
+### Vor dem Schreiben testen
 
-Bevor Sie sich in Ihrem Markdown auf einen bestimmten Stil festlegen
-Dokumente:
+Bevor Sie sich in Ihren Dokumenten auf einen bestimmten Markdown-Stil festlegen:
 
-* __Validate Syntax__: Stellen Sie sicher, dass Ihr Markdown gerendert wird
-  richtig
-* __Prozessoren auswählen__: Entscheiden Sie, welcher Prozessor am besten funktioniert
-  für Ihre Inhalte
-* __Experimentieren Sie sicher__: Probieren Sie neue Syntax aus, ohne sie zu beeinträchtigen
-  Ihre tatsächlichen Dokumente
+* __Syntax prüfen__: Stellen Sie sicher, dass Ihr Markdown korrekt rendert
+* __Prozessoren wählen__: Entscheiden Sie, welcher Prozessor am besten zu Ihrem Inhalt passt
+* __Sicher experimentieren__: Probieren Sie neue Syntax aus, ohne Ihre echten Dokumente zu beeinflussen
 
 ## Häufige Anwendungsfälle
 
 ### Unterschiede in der Tabellensyntax
 
-Einige Prozessoren handhaben die Tabellensyntax anders. Der Dingus
-Hier können Sie sehen, welcher Prozessor Ihren Tisch am besten unterstützt
-Formatierungsanforderungen.
+Manche Prozessoren behandeln Tabellensyntax unterschiedlich. Der Dingus zeigt Ihnen, welcher Prozessor Ihre Tabellenformatierung am besten unterstützt.
 
-### Fußnotenunterstützung
+### Fußnoten-Unterstützung
 
-Nicht alle Prozessoren unterstützen Fußnoten. Verwenden Sie den Dingus, um
-Überprüfen Sie, ob die Fußnotensyntax mit dem von Ihnen gewählten Prozessor funktioniert.
+Nicht alle Prozessoren unterstützen Fußnoten. Prüfen Sie mit dem Dingus, ob die Fußnotensyntax mit Ihrem gewählten Prozessor funktioniert.
 
 ### Mathematik und Sonderzeichen
 
-Testen Sie, wie verschiedene Prozessoren mit Mathematik umgehen
-Ausdrücke und spezielle typografische Zeichen.
+Testen Sie, wie verschiedene Prozessoren mathematische Ausdrücke und besondere Typografie-Zeichen behandeln.
 
 ## Tipps für den effektiven Einsatz
 
-1. __Einfach beginnen__: Beginnen Sie mit dem einfachen Markdown und schrittweise
-   Komplexität hinzufügen
-2. __Edgefälle testen__: Probieren Sie ungewöhnliche Syntaxkombinationen aus
-   Prozessorgrenzen verstehen
-3. __Nebeneinander vergleichen__: Wechseln Sie zwischen Prozessoren zu
-   Unterschiede klar erkennen
-4. __Verwenden Sie echte Inhalte__: Kopieren Sie tatsächliche Inhalte von Ihrem
-   Dokumente zum Testen realer Szenarien
+1. __Einfach anfangen__: Beginnen Sie mit einfachem Markdown und steigern Sie die Komplexität schrittweise.
+2. __Grenzfälle testen__: Probieren Sie ungewöhnliche Syntax-Kombinationen, um die Grenzen der Prozessoren auszuloten.
+3. __Nebeneinander vergleichen__: Wechseln Sie zwischen Prozessoren, um Unterschiede klar zu erkennen.
+4. __Echte Inhalte verwenden__: Kopieren Sie tatsächliche Inhalte aus Ihren Dokumenten, um realistische Szenarien zu testen.
 
-Der Dingus ist ein leistungsstarkes Tool für jeden, der es möchte
-die Nuancen verschiedener Markdown-Implementierungen verstehen
-und stellen Sie sicher, dass ihre Inhalte in verschiedenen Bereichen korrekt gerendert werden
-Plattformen und Prozessoren.
+Der Dingus ist ein mächtiges Werkzeug für alle, die die Feinheiten verschiedener Markdown-Implementierungen verstehen und sicherstellen wollen, dass ihre Inhalte über verschiedene Plattformen und Prozessoren hinweg korrekt rendern.
 
 [1]: images/dingus-interface-800.jpg @2x width=800px height=573px class=center
 [2]: x-marked-3://dingus
-[3]: #editing-in-the-dingus
-
+[3]: #bearbeiten-im-dingus
