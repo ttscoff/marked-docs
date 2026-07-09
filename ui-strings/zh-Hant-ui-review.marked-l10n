@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3110,6 +3110,15 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "menu.validateAllLinks" = "驗證所有連結";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "目前檔案的新視圖";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "啟用自訂規則";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "自訂規則覆寫";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===

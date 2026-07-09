@@ -25,7 +25,7 @@
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
 #   Settings.strings: 474
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -7936,6 +7936,15 @@ Write all responses in %@." = "";
 "menu.validateAllLinks" = "";
 # EN: Validate All Links
 # DRAFT: Minden hivatkozás érvényesítése
+
+"menu.newViewIntoCurrentFile" = "Új nézet az aktuális fájlban";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Egyéni szabály engedélyezése";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Egyéni szabály felülírása";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===

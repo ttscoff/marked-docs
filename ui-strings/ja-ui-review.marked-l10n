@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3592,6 +3592,15 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 "menu.validateAllLinks" = "すべてのリンクを検証";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "現在のファイルへの新しいビュー";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "カスタムルールを有効にする";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "カスタムルールの上書き";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===

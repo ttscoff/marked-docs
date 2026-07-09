@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3595,6 +3595,15 @@ Schreibe alle Antworten auf %@.";
 
 "menu.validateAllLinks" = "Alle Links prüfen";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "Neue Ansicht der aktuellen Datei";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Eigene Regel aktivieren";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Eigene Regel überschreiben";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===

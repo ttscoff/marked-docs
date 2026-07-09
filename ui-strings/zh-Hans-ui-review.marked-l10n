@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3155,6 +3155,15 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 "menu.validateAllLinks" = "验证所有链接";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "当前文件的新视图";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "启用自定义规则";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "自定义规则覆盖";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===

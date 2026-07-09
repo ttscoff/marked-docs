@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3553,6 +3553,15 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "menu.validateAllLinks" = "Alle links valideren";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "Nieuwe weergave in huidig bestand";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Aangepaste regel inschakelen";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Aangepaste regel overschrijven";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===
