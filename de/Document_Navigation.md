@@ -55,7 +55,7 @@ Fügen Sie `max#` hinzu (zum Beispiel `<!--TOC max2-->`), um die Anzahl der ange
 
 ## Lesezeichen und Minikarte {#bookmarks-and-mini-map}
 
-Verwenden Sie das Vorschaumenü {% appmenu Gear %} und {% kbd Tab %} ({% kbd ⇥ %}), um das Dokument neben [search](Interface_Features.html#search) zu fokussieren, um beim Überfliegen Lesezeichen zu platzieren und erneut aufzurufen.
+Verwenden Sie das Vorschaumenü {% appmenu {{gear}} %} und {% kbd Tab %} ({% kbd ⇥ %}), um das Dokument neben [search](Interface_Features.html#search) zu fokussieren, um beim Überfliegen Lesezeichen zu platzieren und erneut aufzurufen.
 
 ### Lesezeichen setzen
 

@@ -30,7 +30,7 @@ Ist kein Editor gewählt, zeigt Marked beim Bearbeiten oder Kommentieren ein Men
 ### Anwendungsspezifische Einstellungen
 
 Kommentare und Anmerkungen standardmäßig anzeigen
-: Ist dies aktiviert, erscheinen in Scrivener-, Fountain-, Word- und CriticMarkup-Dokumenten gemachte Anmerkungen hervorgehoben in der Vorschau. Deaktivieren, um sie ganz auszublenden. Beim Lesen eines Dokuments lassen sie sich auch über das Menü {% appmenu Gear, Korrekturlesen ({{ctrl}}{{cmd}}C) %} umschalten.
+: Ist dies aktiviert, erscheinen in Scrivener-, Fountain-, Word- und CriticMarkup-Dokumenten gemachte Anmerkungen hervorgehoben in der Vorschau. Deaktivieren, um sie ganz auszublenden. Beim Lesen eines Dokuments lassen sie sich auch über das Menü {% appmenu {{gear}}, Korrekturlesen ({{ctrl}}{{cmd}}C) %} umschalten.
 : Sind Kommentare aktiviert, erscheinen Kommentare und Fußnoten in einer Seitenleiste. Fahren Sie über einen Kommentar, wird auf seine Stelle im Dokument verwiesen.
 
 #### DocC

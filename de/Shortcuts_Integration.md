@@ -55,7 +55,7 @@ Exportaktionen haben dieselben Kernoptionen:
 
 **Anmerkungen**
 
-- **Paginated PDF** verwendet dieselbe Drucklayout-Pipeline wie {% appmenu File, Export, Paginated PDF %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
+- **Paginated PDF** verwendet dieselbe Drucklayout-Pipeline wie {% appmenu Ablage, Exportieren als, PDF speichern (paginiert) %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
 - **HTML**-Export verwendet die gerenderte Vorschau (was Sie in der WebView sehen), nicht die rohe Markdown-Quelldatei.
 - **Kontinuierlich PDF** erfasst das aktuelle Vorschau-WebView-Layout.
 - **Schriftgröße** aktiviert die gleiche benutzerdefinierte Export-/Druck-Schriftgrößenoption von {% prefspane Export %}. Fountain-Dokumente sind davon nicht betroffen.

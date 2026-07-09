@@ -39,7 +39,7 @@ Rendern Sie GitHub-Kontrollkästchen
 
 \#Text ist Tag
 : Ermöglicht die Interpretation von Hashtags (`#` unmittelbar gefolgt von Text ohne Leerzeichen) als Tags und nicht als Überschriften. Diese Funktionalität ist für Bear-Benutzer standardmäßig verfügbar.
-: __Style tags__ bewirkt, dass Tags mit „Kapsel“-Formatierung angezeigt werden, um sie vom Text zu unterscheiden. Wenn dies aktiviert ist, können Tags mit {% appmenu {{gear}}, Proofing, Show Comments %} ein-/ausgeblendet werden.
+: __Style tags__ bewirkt, dass Tags mit „Kapsel“-Formatierung angezeigt werden, um sie vom Text zu unterscheiden. Wenn dies aktiviert ist, können Tags mit {% appmenu {{gear}}, Korrekturlesen, Kommentare anzeigen %} ein-/ausgeblendet werden.
 
 ![#Text is tag enabled][textistag]
 

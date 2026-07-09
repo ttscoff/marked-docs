@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Marked kann PDF-Dokumente (`.pdf`) direkt öffnen. Ziehen Sie eine Datei nach Marked oder verwenden Sie {% appmenu File, Open... ({{cmd}}O) %}. Das Dokument wird zur Vorschau und zum Export in Markdown konvertiert.
+Marked kann PDF-Dokumente (`.pdf`) direkt öffnen. Ziehen Sie eine Datei nach Marked oder verwenden Sie {% appmenu Ablage, Öffnen… ({{cmd}}O) %}. Das Dokument wird zur Vorschau und zum Export in Markdown konvertiert.
 
 Der PDF-Import funktioniert am besten bei **kleineren, textbasierten PDFs** (Folien, Artikel, Kurzberichte). Große Handbücher, Bücher und gescannte Dokumente werden unterstützt, aber oft langsam oder unvollständig konvertiert – siehe **Einschränkungen** unten.
 

@@ -18,7 +18,7 @@ Der Markdownifier verwendet erweiterte Algorithmen zur Inhaltsextraktion, um:
 
 ## Öffnen des Markdownifier
 
-Um auf den Markdownifier zuzugreifen, öffnen Sie {% appmenu File, New, Markdownify URL (@~k) %}. Geben Sie die URL ein, die Sie überprüfen möchten, und drücken Sie die Eingabetaste ({% kbd return %}).
+Um auf den Markdownifier zuzugreifen, öffnen Sie {% appmenu Ablage, Neu, URL in Markdown umwandeln (@~k) %}. Geben Sie die URL ein, die Sie überprüfen möchten, und drücken Sie die Eingabetaste ({% kbd return %}).
 
 ## Verwendung des Markdownifier
 

@@ -1,12 +1,12 @@
 # <%= @title %>
 
-Marked enthält ein AppleScript-Wörterbuch zur Automatisierung der Vorschau, des Exports und der Workflow-Integration. Sie können Dokumente öffnen, die Vorschau steuern (Neuladen, Scrollen, Hervorhebungen, Autoscroll, Schnelllesen), Statistiken lesen, Prozessoren und Stile ändern, HTML oder RTF in die Zwischenablage kopieren und in die meisten der gleichen Formate exportieren, die im Menü {% appmenu File, Export %} verfügbar sind. **Die Vorschau der Überschriften/Inhaltsverzeichnisse über AppleScript ist in Arbeit** (siehe unten).
+Marked enthält ein AppleScript-Wörterbuch zur Automatisierung der Vorschau, des Exports und der Workflow-Integration. Sie können Dokumente öffnen, die Vorschau steuern (Neuladen, Scrollen, Hervorhebungen, Autoscroll, Schnelllesen), Statistiken lesen, Prozessoren und Stile ändern, HTML oder RTF in die Zwischenablage kopieren und in die meisten der gleichen Formate exportieren, die im Menü {% appmenu Ablage, Exportieren… %} verfügbar sind. **Die Vorschau der Überschriften/Inhaltsverzeichnisse über AppleScript ist in Arbeit** (siehe unten).
 
 Informationen zur URL-basierten Automatisierung (Shell-Skripte, `open` Befehle und Rückrufe) finden Sie unter [URL Handler](URL_Handler.html). AppleScript und der URL-Handler ergänzen einander: Verwenden Sie AppleScript, wenn Sie auf ein bestimmtes Dokument oder Fenster abzielen müssen, und URLs, wenn ein einfacher `open 'x-marked://...'`-Aufruf ausreicht.
 
 ## Wörterbuch anzeigen
 
-Wählen Sie im **Skript-Editor** {% appmenu File, Open Dictionary... %} und dann Marked aus. Das Wörterbuch listet Befehle für die Objekte **application**, **document** und **window** sowie Exportbefehle in der Suite Marked auf.
+Wählen Sie im **Skript-Editor** {% appmenu Ablage, Wörterbuch öffnen… %} und dann Marked aus. Das Wörterbuch listet Befehle für die Objekte **application**, **document** und **window** sowie Exportbefehle in der Suite Marked auf.
 
 Unter macOS können Sie Skriptdefinitionen mit dem **Skripteditor** durchsuchen.
 
@@ -91,7 +91,7 @@ Diese Befehle gelten für das **Anwendungsobjekt** (kein bestimmtes Dokument).
 | Befehl | Beschreibung |
 | --- | --- |
 | `open streaming preview` | Öffnen Sie ein [streaming clipboard preview](Streaming_Preview.html)-Fenster. |
-| `preview clipboard` | Öffnen Sie einen [clipboard preview](Opening_Files.html) des aktuellen Inhalts der Zwischenablage (wie {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}). |
+| `preview clipboard` | Öffnen Sie einen [clipboard preview](Opening_Files.html) des aktuellen Inhalts der Zwischenablage (wie {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}). |
 | `close all` | Schließen Sie alle geöffneten Vorschaudokumente (keine Speicheraufforderung; Marked bearbeitet keine Quelldateien). |
 | `get available processors` | Prozessornamen auflisten: `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. |
 | `get preview style names` | Listen Sie die Anzeigenamen der aktivierten Vorschau-Stile auf. |
@@ -113,7 +113,7 @@ Verfügbar für **Dokument** und **Fenster**. Die meisten davon erfordern eine g
 
 | Befehl | Parameter | Beschreibung |
 | --- | --- | --- |
-| `refresh preview` | — | Laden Sie die Vorschau aus der Quelldatei neu (wie {% appmenu Preview, Refresh %}). |
+| `refresh preview` | — | Laden Sie die Vorschau aus der Quelldatei neu (wie {% appmenu Vorschau, Aktualisieren %}). |
 | `reveal in finder` | — | Zeigen Sie die Dokumentdatei im Finder an. |
 | `show highlights` | — | Aktivieren Sie die Schlüsselworthervorhebung (vermeiden Sie Wörter, Alternativen, Passiv, benutzerdefinierte Listen). |
 | `full screen` | optional `enabled` boolean | Vollbild-Vorschaumodus aufrufen, verlassen oder umschalten. |
@@ -269,7 +269,7 @@ Exportbefehle sind für die Objekte **application**, **document** und **window**
 
 **Anmerkungen**
 
-– Paginiertes PDF verwendet dieselbe HTML-zu-PDF-Pipeline wie {% appmenu File, Export, Paginated PDF %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
+– Paginiertes PDF verwendet dieselbe HTML-zu-PDF-Pipeline wie {% appmenu Ablage, Exportieren als, PDF speichern (paginiert) %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
 - Der HTML-Export verwendet die **gerenderte Vorschau** (was Sie in der WebView sehen), nicht die rohe Markdown-Quelldatei.
 – Kontinuierlich PDF erfasst das aktuelle Vorschau-WebView-Layout.
 

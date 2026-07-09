@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Durch Öffnen von {% appmenu File, New, Streaming Preview %} erhält Marked Live-Updates über ein benanntes Pasteboard, anstatt eine Datei auf der Festplatte anzusehen. Die Quell-App muss in Marked integriert werden.
+Durch Öffnen von {% appmenu Ablage, Neu, Streaming-Vorschau %} erhält Marked Live-Updates über ein benanntes Pasteboard, anstatt eine Datei auf der Festplatte anzusehen. Die Quell-App muss in Marked integriert werden.
 
 [Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) dokumentieren ihre eigenen Umschalt- und Menübefehle. nvUltra, nvALT, Bear und andere nutzen denselben Kanal: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
 

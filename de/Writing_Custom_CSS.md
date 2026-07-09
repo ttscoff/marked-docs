@@ -6,7 +6,7 @@ Sie können den Editor verwenden, um schöne Stile zu erstellen, oder wenn Sie g
 
 ## Erste Schritte
 
-Es gibt eine Galerie mit Custom-Stilen, die vom Entwickler und von Benutzern unter [markedapp.com/styles](https://markedapp.com/styles/) erstellt wurden. In der Galerie können Sie Stile in der Vorschau anzeigen und direkt in Marked installieren. Jeder installierte Stil kann im Finder zur Prüfung und Änderung angezeigt werden. Die Galerie kann mit einem internen Viewer mit {% appmenu Style, Generate a Custom Style %} geöffnet werden, oder klicken Sie auf das Stiftsymbol (Bearbeiten) neben einem bearbeitbaren Stil im Stil-Manager. Wenn Sie einen bearbeiten möchten Wenn Sie einen integrierten Stil verwenden möchten, müssen Sie ihn zunächst im Manager duplizieren.
+Es gibt eine Galerie mit Custom-Stilen, die vom Entwickler und von Benutzern unter [markedapp.com/styles](https://markedapp.com/styles/) erstellt wurden. In der Galerie können Sie Stile in der Vorschau anzeigen und direkt in Marked installieren. Jeder installierte Stil kann im Finder zur Prüfung und Änderung angezeigt werden. Die Galerie kann mit einem internen Viewer mit {% appmenu Stil, Eigenen Stil erzeugen %} geöffnet werden, oder klicken Sie auf das Stiftsymbol (Bearbeiten) neben einem bearbeitbaren Stil im Stil-Manager. Wenn Sie einen bearbeiten möchten Wenn Sie einen integrierten Stil verwenden möchten, müssen Sie ihn zunächst im Manager duplizieren.
 
 Es gibt auch einen [repository for Custom Styles](https://github.com/ttscoff/MarkedCustomStyles) auf GitHub mit Beispielen. Fühlen Sie sich frei, dort zu stöbern, es zu nutzen und einen Beitrag zu leisten. Wenn Sie Ihr Thema basierend auf einem der Basisthemen verbreiten, können Sie sich gerne selbst als Mitwirkender in die Credits eintragen.
 
@@ -24,7 +24,7 @@ Die folgenden Stile müssen in jedem Marked-CSS enthalten sein, damit sie geteil
 
 ### Invertiert
 
-Wenn der Benutzer {% appmenu Preview, Dark Mode %} auswählt, wird dem Body-Tag die Klasse „invertiert“ hinzugefügt. Damit können Sie die kontrastreichen Hell-auf-Dunkel-Stile gezielt einsetzen.
+Wenn der Benutzer {% appmenu Vorschau, Dunkelmodus %} auswählt, wird dem Body-Tag die Klasse „invertiert“ hinzugefügt. Damit können Sie die kontrastreichen Hell-auf-Dunkel-Stile gezielt einsetzen.
 
 Sie möchten, dass invertierte Stile nur auf die Vorschau angewendet werden, nicht auf den Druck. Verwenden Sie daher eine Medienabfrage (@media screen), um sie einzuschränken. Der folgende Code ist ziemlich universell einsetzbar und in den meisten Fällen können Sie ihn aus Kompatibilitätsgründen einfach in Ihr Stylesheet einfügen, Sie können ihn jedoch jederzeit anpassen.
 
@@ -113,7 +113,7 @@ Der Web Inspector von Safari ist die einfachste Möglichkeit, genau zu sehen, wa
 
 ### Aktivieren des Entwicklungsmenüs in Safari
 
-1. Öffnen Sie Safari und wählen Sie {% appmenu Safari, Settings… %}.
+1. Öffnen Sie Safari und wählen Sie {% appmenu Safari, Einstellungen… %}.
 2. Wählen Sie die Registerkarte **Erweitert**.
 3. Aktivieren Sie **Funktionen für Webentwickler anzeigen** (oder **Entwicklungsmenü in der Menüleiste anzeigen** bei älteren macOS-Versionen).
 
@@ -142,7 +142,7 @@ Von hier aus können Sie:
 
 ## Teilen von Custom CSS
 
-Verwenden Sie {% appmenu Style, Share a Custom Style %}, um die Sharing-App in Ihrem Webbrowser zu öffnen. Ziehen Sie Ihr CSS in die Drop-Zone (oder klicken Sie, um es von der Festplatte auszuwählen) und laden Sie das CSS für Ihren Custom-Stil hoch.
+Verwenden Sie {% appmenu Stil, Eigenen Stil teilen %}, um die Sharing-App in Ihrem Webbrowser zu öffnen. Ziehen Sie Ihr CSS in die Drop-Zone (oder klicken Sie, um es von der Festplatte auszuwählen) und laden Sie das CSS für Ihren Custom-Stil hoch.
 
 Freigegebene Stile müssen vom Entwickler genehmigt werden, bevor sie in der Galerie angezeigt werden. Sie sehen also keine unmittelbaren Ergebnisse.
 

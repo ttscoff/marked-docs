@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Marked kann Dokumente im Rich Text Format (`.rtf`) und RTFD (`.rtfd`) direkt öffnen. Ziehen Sie eine Datei nach Marked oder verwenden Sie {% appmenu File, Open... ({{cmd}}O) %}. Das Dokument wird zur Vorschau und zum Export in Markdown konvertiert.
+Marked kann Dokumente im Rich Text Format (`.rtf`) und RTFD (`.rtfd`) direkt öffnen. Ziehen Sie eine Datei nach Marked oder verwenden Sie {% appmenu Ablage, Öffnen… ({{cmd}}O) %}. Das Dokument wird zur Vorschau und zum Export in Markdown konvertiert.
 
 Dies funktioniert gut mit Dokumenten aus **Pages**, **TextEdit**, **Word** und anderen Apps, die RTF oder RTFD speichern. Marked ist immer noch ein **Vorschau**-Tool: Sie bearbeiten es in der Originalanwendung und Marked wird beim Speichern aktualisiert.
 
