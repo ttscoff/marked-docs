@@ -2664,7 +2664,7 @@ Schreibe alle Antworten auf %@.";
 "Nm6-SK-AuG.ibShadowedToolTip" = "Wenn dies aktiviert ist, überwacht Marked die aktuelle CSS-Datei auf Festplattenänderungen und hilft so bei der Bearbeitung benutzerdefinierter Stile und der Webentwicklung.";
 # EN: When this is enabled, Marked will watch the current CSS file for disk changes, aiding in custom style editing and web development.
 
-"NrG-bn-91R.title" = "Grenze:";
+"NrG-bn-91R.title" = "Trennlinie:";
 # EN: Border:
 
 "NsQ-wV-kdZ.title" = "Fußzeile";
@@ -2673,7 +2673,7 @@ Schreibe alle Antworten auf %@.";
 "O5N-R0-dHn.ibShadowedToolTip" = "Tags erhalten einen besonderen Stil und werden ausgeblendet, wenn „Kommentare anzeigen“ deaktiviert ist.";
 # EN: Tags receive special styling, and are hidden when "Show Comments" is disabled.
 
-"O8o-5s-Qjg.title" = "MarsBearbeiten:";
+"O8o-5s-Qjg.title" = "MarsEdit:";
 # EN: MarsEdit:
 
 "Oi5-Z5-rJa.title" = "CriticMarkup automatisch aktivieren";
@@ -3017,7 +3017,7 @@ Schreibe alle Antworten auf %@.";
 "dfR-ic-D1A.title" = "Geschwindigkeitsablesung mit Scrollposition synchronisieren";
 # EN: Sync Speed Reading with scroll position
 
-"docc-pref-label-cell.title" = "DokC:";
+"docc-pref-label-cell.title" = "DocC:";
 # EN: DocC:
 
 "docc-resolve-cb.ibShadowedToolTip" = "Löst in einem .docc-Dokumentationskatalog ![](ImageName) in Bilder im Ressourcenordner des Katalogs auf (einschließlich ~dark- und @2x-Varianten).";
@@ -3170,7 +3170,7 @@ Schreibe alle Antworten auf %@.";
 "kLP-gZ-m5G.ibShadowedToolTip" = "Zeigt die Stilauswahl in der unteren Leiste des Vorschaufensters an.";
 # EN: Shows the style picker in the bottom bar of the preview window.
 
-"kT6-ea-4Q4.title" = "Meermaid:";
+"kT6-ea-4Q4.title" = "Mermaid:";
 # EN: Mermaid:
 
 "kZl-d1-5M3.title" = "Aktualisieren";
@@ -3452,7 +3452,7 @@ Schreibe alle Antworten auf %@.";
 "vo9-JH-ze6.title" = "Popup-Statistiken zur Textauswahl";
 # EN: Popup stats for text selection
 
-"voM-LV-KIa.title" = "Wort:";
+"voM-LV-KIa.title" = "Word:";
 # EN: Word:
 
 "wSC-Yu-2MP.title" = "Stil-Tags";
@@ -3489,7 +3489,7 @@ Schreibe alle Antworten auf %@.";
 "yEj-Gr-Evm.ibShadowedToolTip" = "Hebt Codeblöcke mit highlight.js hervor.";
 # EN: Highlight code blocks with highlight.js.
 
-"yaf-cg-saC.title" = "Weitere Themen";
+"yaf-cg-saC.title" = "Weitere Stile";
 # EN: More Themes
 
 "yoG-j6-vbx.ibShadowedToolTip" = "Eine .markedprefs-Datei importieren, um die Einstellungen zu aktualisieren";
