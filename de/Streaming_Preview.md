@@ -1,8 +1,8 @@
 # <%= @title %>
 
-Durch Öffnen von {% appmenu Ablage, Neu, Streaming-Vorschau %} erhält Marked Live-Updates über ein benanntes Pasteboard, anstatt eine Datei auf der Festplatte anzusehen. Die Quell-App muss in Marked integriert werden.
+Durch Öffnen von {% appmenu Ablage, Neu, Streaming-Vorschau %} erhält Marked Live-Updates über eine benannte Zwischenablage, anstatt eine Datei auf der Festplatte zu überwachen. Die Quell-App muss in Marked integriert werden.
 
-[Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) dokumentieren ihre eigenen Umschalt- und Menübefehle. nvUltra, nvALT, Bear und andere nutzen denselben Kanal: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
+[Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) dokumentieren ihre eigenen Einstellungen und Menübefehle. nvUltra, nvALT, Bear und andere nutzen einen gemeinsamen Weg: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
 
 ## Entwickler
 
@@ -18,7 +18,7 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 
 ### Deklarieren einer Basis-URL für relative Assets
 
-Sie können auch eine Basis-URL für die Streaming-Vorschau bereitstellen, sodass relative URLs in Bildern und anderen Assets wie in der Quell-App funktionieren. Wenn die Basis-URL einen Dateinamen enthält, werden dessen Name und Erweiterung benutzerdefinierten Prozessoren zur Verfügung gestellt, dies ist jedoch nicht erforderlich. Um die Basis-URL einzuschließen, fügen Sie einfach ein NSURL-Objekt in die Zwischenablage ein:
+Sie können auch eine Basis-URL für die Streaming-Vorschau bereitstellen, sodass relative URLs in Bildern und anderen Assets wie in der Quell-App funktionieren. Wenn die Basis-URL einen Dateinamen enthält, werden dessen Name und Dateiendung benutzerdefinierten Prozessoren zur Verfügung gestellt, dies ist jedoch nicht erforderlich. Um die Basis-URL einzuschließen, fügen Sie einfach ein NSURL-Objekt in die Zwischenablage ein:
 
 ```obj-c
 NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
