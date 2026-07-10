@@ -7,7 +7,7 @@ Practical conventions for the German docs. Read this and `GLOSSARY.md` before tr
 Recurring things to watch when post-editing the machine-translated drafts:
 
 1. **Reference-link definitions** (`[label]: url`) each on their own line — never collapse several onto one line, or all but the first break.
-2. **Translate the link text, keep the target:** in `[text](Target.html)` and `[text][label]`, translate only the visible text; the filename and the `[label]` stay English.
+2. **Translate the link text, keep the target:** in `[text](Target.html)` and `[text][label]`, translate the visible text; the filename and the `[label]` stay English. Exception: product, format, and feature names stay English even as link text — see *Links and filenames*.
 3. **Dash:** the German parenthetical dash is `–` (en dash with spaces), not `---` or `—`.
 4. **Block tags** (`{% apponly div %}`, `{% endapponly %}`, …) on their own line, no trailing spaces.
 5. **Localize syntax example words, consistently:** `*kursiv*`, `**fett**` (not `*italics*` / `**bold**`).
@@ -54,7 +54,9 @@ This is where the German UI localization was weakest; keep the docs on the corre
 
 - Keep `.md` / `.html` filenames identical to English (`Exporting.md`, not translated).
 - Translate link **anchor text** only, never the target.
+- **Link text: German for descriptive titles, English for names.** Translate page-title link text to German (`[Opening Files]` → „[Dateien öffnen]“, `[Exporting]` → „[Export]“, `[Working With DOCX]` → „[Arbeiten mit DOCX]“). But keep product, format, and feature names English even as link text: `[RTF]`, `[DOCX]`, `[Scrivener]`, `[MathJax]`, `[Fountain]`, `[Autoscroll]`, `[Speed Reading]`, `[pdf22md]`.
 - Do not change `#anchor` IDs unless you add explicit heading IDs and update all references (ask the lead first).
+- **Cross-page anchors break when you translate a heading.** A link like `Exporting.html#headers-and-footers` targets a heading whose slug is derived from the *English* text; translating that heading („## Kopf- und Fußzeilen“) changes the slug and the inbound link dies — in every language. Fix by pinning the English anchor on the translated heading with an explicit ID: `## Kopf- und Fußzeilen [headers-and-footers]`. Before translating a page's headings, check who links into its sections (`grep -rn "ThisPage.html#"`), and pin every incoming anchor.
 
 ## `config.yaml` for this locale
 
@@ -67,4 +69,6 @@ Per root `README.md`: translate section `title`, `folder` slugs, page `title`/`s
 - [ ] „Überschrift“ used for headings (never „Schlagzeile“)
 - [ ] Sie used consistently, German quotes „…“ and ellipsis `…`
 - [ ] `.md`/`.html` filenames and `{% … %}` tags unchanged
+- [ ] Link text German for descriptive titles, English for product/format/feature names
+- [ ] Cross-page anchor targets pinned with explicit `[id]` where the heading was translated
 - [ ] Terms match `GLOSSARY.md`; new recurring terms added there
