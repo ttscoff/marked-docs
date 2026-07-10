@@ -50,7 +50,7 @@ Seitenränder legen Sie unter {% prefspane Export %} fest; sie wirken sich auf d
 
 Die Randeinstellungen können Sie pro Dokument mit dem Metadaten-Schlüssel `Margins:` überschreiben. Werte werden als Punkte interpretiert; Einheitensuffixe wie `px`, `pt` und `em` werden ignoriert. Verwenden Sie zwei Zahlen für vertikale und horizontale Ränder (`10 20`) oder vier Zahlen für oben, rechts, unten und links (`10, 20, 10, 20` oder `10 20 10 20`). Metadaten-Ränder überschreiben die Einstellungen unter {% prefspane Export %}.
 
-### Kopf- und Fußzeilen
+### Kopf- und Fußzeilen [headers-and-footers]
 
 Unter {% prefspane Export %} definierte Kopf- und Fußzeilen erscheinen oben und unten auf jeder gedruckten oder als paginiertes PDF gespeicherten Seite sowie im DOCX-Export. Sie können beliebigen Text oben links, oben mittig, oben rechts, unten links, unten mittig und unten rechts einsetzen. Zentrierter Text wird auf der Seite mittig ausgerichtet. Die folgenden Variablen werden in den Zeichenfolgen ersetzt, sofern verwendet:
 
