@@ -26,7 +26,7 @@ Marked kann auch **`.rtf`- und `.rtfd`-Dateien** direkt öffnen (z. B. Exporte a
 
 Marked kann **`.pdf`-Dateien** auf die gleiche Weise öffnen: Die Konvertierung läuft im Hintergrund, und sobald sie abgeschlossen ist, wird die Vorschau aktualisiert. Das funktioniert am besten bei kürzeren, textbasierten PDFs; große Handbücher und gescannte Dokumente sind langsamer und ungenauer. Details und Einschränkungen finden Sie unter [PDF-Unterstützung](PDF_Support.html).
 
-## Aus der Zwischenablage
+## Aus der Zwischenablage [from-the-clipboard]
 
 Wenn Sie kompatiblen Text (z. B. Markdown) in Ihrer Zwischenablage haben, können Sie eine sofortige Vorschau öffnen, indem Sie {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %} auswählen. Falls Sie eine Auswahl aus einem Webbrowser oder einer anderen App kopiert haben, die HTML oder RTF in die Zwischenablage gelegt hat, konvertiert Marked sie für die Vorschau in Markdown. Wenn Sie RTF aus einer App wie TextEdit oder Pages einfügen, werden größere Schriftgrößen grob in Überschriftenebenen umgewandelt (z. B. wird sehr großer Text zu einer Überschrift der Ebene 1, kleinerer großer Text zur Ebene 2 usw.). Sie können mehrere Zwischenablage-Vorschauen gleichzeitig geöffnet haben und sie über {% appmenu Ablage, Schnellvorschau speichern %} in einer neuen Datei speichern.
 
