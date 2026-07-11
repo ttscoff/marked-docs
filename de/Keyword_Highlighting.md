@@ -6,9 +6,9 @@ Schwierige Ausdrücke auffangen und wichtige Phrasen hervorheben.
 
 Durch die Schlüsselworthervorhebung in Marked können Sie häufig vorkommende Phrasen erkennen, die Sie vermeiden möchten, alternative Begriffe finden oder sie einfach für allgemeine Zwecke hervorheben. Die Liste der Schlüsselwörter, die für jede Kategorie verwendet werden, kann im {% prefspane Proofing %} bearbeitet werden.
 
-Aktivieren Sie die Hervorhebung mit {% kbd shift cmd H %} im Zahnradmenü ({% appmenu {{gear}}, Highlight Keywords %}) oder öffnen Sie die Schlüsselwortschublade mithilfe des Markierungssymbols unten links (neben dem Zahnradmenü). Die Schublade kann auch mit der Tastenkombination {% kbd shift cmd K %} geöffnet werden. Die Hervorhebung wird beim Öffnen der Schublade automatisch aktiviert und kann mit dem Schalter auf der linken Seite der Schublade ein- und ausgeschaltet werden.
+Aktivieren Sie die Hervorhebung mit {% kbd shift cmd H %} im Zahnradmenü ({% appmenu {{gear}}, Schlüsselwörter hervorheben %}) oder öffnen Sie die Schlüsselwortschublade mithilfe des Markierungssymbols unten links (neben dem Zahnradmenü). Die Schublade kann auch mit der Tastenkombination {% kbd shift cmd K %} geöffnet werden. Die Hervorhebung wird beim Öffnen der Schublade automatisch aktiviert und kann mit dem Schalter auf der linken Seite der Schublade ein- und ausgeschaltet werden.
 
-## Die Keyword-Schublade
+## Die Schlüsselwortschublade
 
 ![Keyword Drawer][kwd]
 
@@ -48,7 +48,7 @@ Sehen Sie sich auch den Befehl ["Visualize Word Repetition"][wordrep] an, um üb
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Passive Stimme
+## Passiv
 
 Marked weist auf die Verwendung von „Passiv“ in englischen Texten hin. Als [defined by Wikipedia][passive]:
 

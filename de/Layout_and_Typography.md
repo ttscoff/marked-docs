@@ -1,16 +1,16 @@
 # <%= @title %>
 
-Marked bietet Standardeinstellungen zur Verbesserung der Typografie und des Exportlayouts sowie eine begrenzte Kontrolle über die Optionen, wenn Sie weitere Anpassungen benötigen.
+Marked bietet Standardeinstellungen zur Verbesserung der Typografie und des Exportlayouts sowie detaillierte Optionen für weitere Anpassungen.
 
 ## Typografie
 
 ### Silbentrennung und Witwen
 
-Mit der Option „Auto-Silbentrennung in Absätzen“ kann Marked bestimmen, wo eine Zeile am besten getrennt werden sollte, um den „Rang“ eines Absatzes zu verbessern. Dies ist am nützlichsten, wenn Sie einen Stil mit Blocksatz verwenden, kann aber auch den Lesefluss in längeren Absätzen verbessern.
+Mit der Option „Automatische Silbentrennung in Absätzen“ kann Marked bestimmen, wo eine Zeile am besten getrennt werden sollte, um das Satzbild eines Absatzes zu verbessern. Dies ist besonders bei Blocksatz nützlich, kann aber auch den Lesefluss in längeren Absätzen verbessern.
 
 Wenn die Option „Witwen in Überschriften und Absätzen verhindern“ aktiviert ist, werden Umbrüche in Überschriften und Absätzen erzwungen, um zu verhindern, dass einzelne, kurze Wörter alleine in einer Zeile landen.
 
-Marked verbindet Schlagzeilen automatisch mit dem folgenden Element, um verwaiste Schlagzeilen beim Export in ein paginiertes Format (PDF, print) zu verhindern.
+Marked hält Überschriften automatisch mit dem folgenden Element zusammen, damit beim Export in ein seitenbasiertes Format (PDF, Druck) keine verwaisten Überschriften entstehen.
 
 ### Satzzeichen
 
@@ -22,7 +22,7 @@ Im Abschnitt „Layout und Typografie“ von {% prefspane Style %} ist _Fußnote
 
 ## Gliederungsmodus
 
-Im Gliederungsmodus wird jede Datei, die eine hierarchische Reihe von Kopfzeilen enthält, als APA- oder Dezimalgliederung angezeigt. Die Standardeinstellung ist der APA-Stil, dies kann jedoch deaktiviert werden.
+Im Gliederungsmodus wird jede Datei, die eine hierarchische Reihe von Überschriften enthält, als APA- oder Dezimalgliederung angezeigt. Standardmäßig wird der APA-Stil verwendet; diese Einstellung kann jedoch deaktiviert werden.
 
 Im {% prefspane Style %} unter „Layout und Typografie“ können Sie Dateinamenerweiterungen hinzufügen, für die der Gliederungsmodus automatisch aktiviert wird. Dies ist besonders nützlich für OPML und unterstützte Mindmap-Dateien (wie iThoughtsX und MindNode). Die Erweiterung sollte nur der alphanumerische Teil des Dateinamens sein, der nach dem letzten Punkt erscheint.
 
@@ -41,7 +41,7 @@ Zeilenumbrüche bleiben in diesen Blöcken standardmäßig erhalten, sodass Sie 
 
 Mit „Designs erlauben, Text in Codeblöcke einzuschließen“ lässt der Vorschaustil bestimmen, wie Codeblöcke formatiert werden. Das Deaktivieren dieser Option zwingt alle Codeblöcke dazu, den horizontalen Überlauf zu scrollen, anstatt ihn zu umbrechen, unabhängig vom aktuellen Vorschaustil.
 
-## Funktioniert im Vollbildmodus
+## Arbeiten im Vollbildmodus
 
 Wenn Sie Marked im Vollbildmodus (Strg-Befehl-F) verwenden, möchten Sie möglicherweise die Breite des angezeigten Texts begrenzen, um eine zentrierte Spalte mit lesbarem Inhalt zu erstellen. Über das Kontrollkästchen „Textbreite in der Vorschau begrenzen“ wird ein Schieberegler aktiviert, mit dem Sie die maximale Breite des angezeigten Inhalts festlegen können. Dies betrifft auch die Nicht-Vollbildanzeige.
 

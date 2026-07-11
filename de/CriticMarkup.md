@@ -8,8 +8,8 @@
 
 Sie können die CriticMarkup-Unterstützung für jedes Dokument über das Zahnradmenü oder mit {% kbd ctrl shift C %} umschalten.
 
-Wechseln Sie schnell die Ansichten in einer CriticMarkup-Vorschau mit {% kbd shift cmd [ %} und {% kbd shift cmd ] %}
+Wechseln Sie mit {% kbd shift cmd [ %} und {% kbd shift cmd ] %} schnell zwischen den Ansichten einer CriticMarkup-Vorschau.
 
 Wenn CriticMarkup aktiv ist, ändern sich die Wortanzahl und die Dokumentstatistiken basierend auf der Ansicht, in der Sie sich gerade befinden. Dies ermöglicht einen Vergleich der grundlegenden Statistiken sowie der Wort-, Satz- und Zeichenanzahl zwischen der ursprünglichen und der bearbeiteten Version eines Dokuments.
 
-Weitere Informationen zu CriticMarkup und der Integration mit Ihren bevorzugten Texteditoren finden Sie im [CriticMarkup homepage](http://criticmarkup.com/).
+Weitere Informationen zu CriticMarkup und zur Integration in Ihre bevorzugten Texteditoren finden Sie auf der [CriticMarkup-Website](http://criticmarkup.com/).
