@@ -1,121 +1,120 @@
 # <%= @title %>
 
-Mit Marked können bestimmte Attribute eines Dokuments im MultiMarkdown-Metadatenformat festgelegt werden (siehe unten). Sie können diese verwenden, um Merkmale und Stile zu definieren, die sich nur auf dieses Dokument auswirken, ohne die Standardeinstellungen zu ändern.
+Mit Marked lassen sich bestimmte Attribute eines Dokuments im MultiMarkdown-Metadatenformat festlegen (siehe unten). Damit definieren Sie Merkmale und Stile, die nur dieses Dokument betreffen, ohne die Standardeinstellungen zu ändern.
 
-Die meisten MultiMarkdown-Header werden von der Vorschau ignoriert, die folgenden sind jedoch zulässig und wirken sich auf das Rendering aus. Sie können andere Metadaten einbeziehen, die in der endgültigen Ausgabe gerendert werden sollen. Marked ignoriert einfach Schlüssel, die unten nicht aufgeführt sind. Wenn Sie als HTML speichern und *keine* Vorlage einbinden, stellt Marked alle Metadatenschlüssel wie erwartet dar.
+Die meisten MultiMarkdown-Header ignoriert die Vorschau, die folgenden sind jedoch zulässig und beeinflussen das Rendering. Sie können weitere Metadaten aufnehmen, die in der endgültigen Ausgabe erscheinen sollen; Marked ignoriert einfach Schlüssel, die unten nicht aufgeführt sind. Speichern Sie als HTML *ohne* Vorlage, stellt Marked alle Metadatenschlüssel wie erwartet dar.
 
 ## Metadatenformat
 
-Metadaten werden am Anfang der Datei Markdown oder unmittelbar im Anschluss an alle YAML-Header eingegeben. Sie bestehen aus einem Schlüssel, gefolgt von einem Doppelpunkt, optionalen Leerzeichen oder Tabulatoren und dem Wert:
+Metadaten stehen am Anfang der Markdown-Datei oder direkt nach etwaigen YAML-Headern. Sie bestehen aus einem Schlüssel, gefolgt von einem Doppelpunkt, optionalen Leerzeichen oder Tabulatoren und dem Wert:
 
-Beispielmetadaten: Beispielschlüssel
+	Beispiel-Metadatum: Beispielwert
 
-Mehrere Metadateneinträge sollten in eigenen Zeilen stehen, jedoch ohne Zeilenumbrüche dazwischen. Auf den letzten Metadateneintrag muss vor Beginn des Dokumenttextes eine Leerzeile folgen.
+Mehrere Metadateneinträge sollten je in einer eigenen Zeile stehen, aber ohne Leerzeilen dazwischen. Auf den letzten Metadateneintrag muss eine Leerzeile folgen, bevor der Dokumenttext beginnt.
 
-Erstens: Dies ist der erste Metadateneintrag
+	Erstens: Dies ist der erste Metadateneintrag
 	Zweitens: Dies ist der zweite Eintrag
 	Drittens: der letzte Metadateneintrag
 
-# Der Anfang des Dokumenttextes
+	# Der Anfang des Dokumenttextes
 
-## Marked Metadatenschlüssel
+## Markeds Metadatenschlüssel
 
 ### Metadaten für andere Prozessoren ausblenden [hidingmeta]
 
-**Hinweis:** Wenn Sie einen benutzerdefinierten Prozessor verwenden oder Ihre Markdown direkt in einer Quelle veröffentlichen, die diese Metadaten nicht verarbeitet, können Sie sie trotzdem verwenden, indem Sie vor und nach den Metadaten HTML Kommentarmarkierungen hinzufügen. Im Gegensatz zu MultiMarkdown und anderen Prozessoren lokalisiert Marked diese Tags an einer beliebigen Stelle im Dokument und verarbeitet/entfernt sie aus der Ausgabe. Daher liefert Folgendes in der Kopfzeile die gewünschten Ergebnisse in Marked, wird aber an anderer Stelle nicht angezeigt:
+**Hinweis:** Wenn Sie einen benutzerdefinierten Prozessor verwenden oder Ihr Markdown direkt an einer Quelle veröffentlichen, die diese Metadaten nicht verarbeitet, können Sie sie trotzdem nutzen, indem Sie vor und nach den Metadaten HTML-Kommentarmarkierungen einfügen. Anders als MultiMarkdown und andere Prozessoren findet Marked diese Tags an beliebiger Stelle im Dokument und verarbeitet/entfernt sie aus der Ausgabe. Folgendes im Header liefert daher in Marked das gewünschte Ergebnis, erscheint aber sonst nirgends:
 
-<!--
-	Marked Stil: Mein Custom Stil
-	Custom Prozessor: wahr
-	->
+	<!--
+	Marked Style: Mein eigener Stil
+	Custom Processor: true
+	-->
 
-*Stellen Sie einfach sicher, dass der Metadatenschlüssel am Anfang der Zeile ohne Leerzeichen oder Tabulatoren beginnt, und fügen Sie nach dem Wert nichts anderes in die Zeile ein.*
+*Achten Sie nur darauf, dass der Metadatenschlüssel am Zeilenanfang ohne Leerzeichen oder Tabulatoren beginnt, und schreiben Sie nach dem Wert nichts weiter in die Zeile.*
 
 ### Stile pro Dokument
 
-Der Schlüssel „Marked Style:“ legt einen Vorschaustil für das Dokument fest. Der Wert kann der Name eines Standardstils oder ein Name oder Pfad für jedes [Custom Style](Custom_Styles.html) sein, das Sie in den Einstellungen definiert haben. Wenn dieser Schlüssel gefunden wird und mit einem Stil übereinstimmt, den Marked kennt, wird dieser Stil jedes Mal für die Vorschau verwendet, wenn das Dokument, das ihn enthält, geladen wird.
+Der Schlüssel `Marked Style:` legt einen Vorschaustil für das Dokument fest. Der Wert kann der Name eines Standardstils oder ein Name bzw. Pfad zu einem [Eigenen Stil](Custom_Styles.html) sein, den Sie in den Einstellungen definiert haben. Wird dieser Schlüssel gefunden und passt er zu einem Marked bekannten Stil, wird dieser Stil bei jedem Laden des Dokuments für die Vorschau verwendet.
 
 **Beispiel**
 
-Marked Stil: Aufrechter Bürger
+	Marked Style: Upstanding Citizen
 
-### Zitate Sprache
+### Sprache der Anführungszeichen
 
-Standardmäßig verwendet Marked Anführungszeichen im englischen Stil. Sie können dies für jedes Dokument mit der Taste „Sprache der Zitate:“ ändern. Verfügbare Sprachen sind:
+Standardmäßig verwendet Marked Anführungszeichen im englischen Stil. Pro Dokument ändern Sie das mit dem Schlüssel `Quotes Language:`. Verfügbare Sprachen sind:
 
-* niederländisch
-* Englisch
-* französisch
-* deutsch
-*Guillemets
-* schwedisch
-
-**Beispiel**
-
-Zitate Sprache: Französisch
-
-Erstellt französischsprachige «Anführungszeichen».
-
-### Basis-Header-Ebene
-
-Mit der Taste „Base Header Level:“ können Sie die Header-Ebene festlegen, ab der Marked zu zählen beginnt. Dies sollte eine Zahl zwischen 1 und 6 sein und ändert die Art und Weise, wie „#“-Header gerendert werden. Wenn Sie die Header-Ebene auf 3 festlegen, wird das, was normalerweise ein Header der ersten Ebene (h1) wäre, als Header der dritten Ebene (h3) gerendert, und nachfolgende Header in der Hierarchie werden um 2 nach oben verschoben.
+* dutch
+* english
+* french
+* german
+* guillemets
+* swedish
 
 **Beispiel**
 
-Basis-Header-Ebene: 3
+	Quotes Language: french
 
-# Diese Überschrift wird als h3 gerendert
+	Erzeugt französische «Anführungszeichen».
 
-## Diese Überschrift wird ein h4 sein
+### Basis-Überschriftenebene
 
-Wird wie folgt gerendert:
+Mit dem Schlüssel `Base Header Level:` legen Sie fest, ab welcher Überschriftenebene Marked zu zählen beginnt. Das sollte eine Zahl von 1 bis 6 sein und ändert, wie `#`-Überschriften gerendert werden. Setzen Sie die Ebene auf 3, wird das, was normalerweise eine Überschrift erster Ebene (h1) wäre, als Überschrift dritter Ebene (h3) gerendert, und nachfolgende Überschriften in der Hierarchie werden um 2 verschoben.
 
-<h3>Diese Überschrift wird als h3 gerendert</h3>
+**Beispiel**
 
-<h4>Diese Überschrift wird ein h4 sein</h4>
+	Base Header Level: 3
 
-### Custom Prozessoren
+	# Diese Überschrift wird als h3 gerendert
 
-Wie im [Custom Processor](Custom_Processor.html#preprocessor) beschrieben, können Sie einen benutzerdefinierten Prozessor und einen benutzerdefinierten Präprozessor mithilfe von Metadaten aktivieren oder deaktivieren:
+	## Diese Überschrift wird ein h4
 
-Custom Prozessor: wahr
-    Custom Präprozessor: falsch
+	Wird gerendert als:
 
-„true“ oder „false“ schalten den Vor-/Prozessor ein und aus.
+	<h3>Diese Überschrift wird als h3 gerendert</h3>
 
-Der Wert „Prozessor“ kann auf „Multimarkdown“ oder „Discount“ gesetzt werden, um die Verwendung des einen oder anderen der internen Prozessoren zu erzwingen. Durch diese Einstellung pro Dokument wird die Standardeinstellung in {% prefspane Processor %} nicht geändert.
+	<h4>Diese Überschrift wird ein h4</h4>
+
+### Benutzerdefinierte Prozessoren
+
+Wie unter [Benutzerdefinierter Prozessor](Custom_Processor.html#preprocessor) beschrieben, aktivieren oder deaktivieren Sie einen benutzerdefinierten Prozessor und Präprozessor über Metadaten:
+
+    Custom Processor: true
+    Custom Preprocessor: false
+
+`true` oder `false` schalten den Prä-/Prozessor ein und aus.
+
+Der Wert von `Processor:` kann auf `multimarkdown` oder `discount` gesetzt werden, um einen der internen Prozessoren zu erzwingen. Diese Einstellung pro Dokument ändert nicht die Standardeinstellung unter {% prefspane Processor %}.
 
 ### Kopf-/Fußzeilen drucken
 
-Sie können die Einstellungen in {% prefspane Export %} zum Drucken von Kopf- und Fußzeilen mit den folgenden Tasten überschreiben:
+Die Einstellungen unter {% prefspane Export %} für Druck-Kopf- und -Fußzeilen überschreiben Sie mit den folgenden Schlüsseln:
 
-Kopfzeile links drucken:
-	Kopfzeile Mitte drucken:
-	Kopfzeile rechts drucken:
-	Fußzeile links drucken:
-	Fußzeile mittig drucken:
-	Fußzeile rechts drucken:
+	print header left:
+	print header center:
+	print header right:
+	print footer left:
+	print footer center:
+	print footer right:
 
-Dazu können [print variables](Exporting.html#headersandfooters) wie `%title`, `%page`, `%total` usw. sowie Verweise auf andere Metadaten mit `%md_[key without spaces]` gehören.
+Darin können [Druckvariablen](Exporting.html#headers-and-footers) wie `%title`, `%page`, `%total` usw. vorkommen sowie Verweise auf andere Metadaten über `%md_[Schlüssel ohne Leerzeichen]`.
 
 ### Druckränder
 
-Legen Sie die Seitenränder für die gedruckte und paginierte PDF-Ausgabe mit der Taste `Margins:` fest. Die Werte sind in Punkten angegeben; Suffixe wie `px`, `pt` und `em` werden ignoriert. Geben Sie zwei Zahlen für vertikale und horizontale Ränder oder vier Zahlen für oben, rechts, unten und links an:
+Die Seitenränder für Druck und paginierten PDF-Export legen Sie mit dem Schlüssel `Margins:` fest. Werte sind in Punkten; Suffixe wie `px`, `pt` und `em` werden ignoriert. Geben Sie zwei Zahlen für vertikale und horizontale Ränder an oder vier Zahlen für oben, rechts, unten und links:
 
-Ränder: 10 20
-	Ränder: 10, 20, 10, 20
+	Margins: 10 20
+	Margins: 10, 20, 10, 20
 
-Metadatenränder überschreiben die {% prefspane Export %}-Einstellungen und die Randfelder im PDF-Exportbereich.
+Metadaten-Ränder überschreiben die Einstellungen unter {% prefspane Export %} und die Randfelder im PDF-Export-Panel.
 
-### JavaScript einfügen
+### JavaScript einbinden
 
-Diese Methode gibt Daten an, die im Tag `<head>` des Dokuments enthalten sind. Marked ignoriert die meisten Werte für diesen Schlüssel, außer in der Ausgabe des vollständigen Dokuments, berücksichtigt aber auf diese Weise eingebundene Skripte. Hier definierte Skript-Tags befinden sich nicht im Header, werden jedoch vor dem schließenden Tag `</body>` angehängt. jQuery ist bereits geladen und Sie können dies in allen von Ihnen eingefügten Skripten nutzen.
+Diese Methode gibt Daten an, die im `<head>`-Tag des Dokuments enthalten sind. Marked ignoriert die meisten Werte dieses Schlüssels außer bei der Ausgabe des vollständigen Dokuments, berücksichtigt aber so eingebundene Skripte. Hier definierte Skript-Tags landen nicht im Header, sondern werden vor dem schließenden `</body>`-Tag angehängt. jQuery ist bereits geladen, und Sie können das in allen eingefügten Skripten nutzen.
 
 **Beispiel**
 
-XHTML Header: <script>(function($){$('#wrapper').fadeOut();})(jQuery);</script>
+	XHTML Header: <script>(function($){$('#wrapper').fadeOut();})(jQuery);</script>
 
--oder-
+		– oder –
 
-XHTML Header: <script src="myfancyscript.js"></script>
-
+	XHTML Header: <script src="myfancyscript.js"></script>
