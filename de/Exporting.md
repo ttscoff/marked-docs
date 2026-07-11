@@ -16,7 +16,7 @@ Das **Export-Panel** ist ein tastaturgesteuertes Panel im Spotlight-Stil, das sc
 
 Im Export-Panel können Sie Ihr Dokument als HTML, einseitiges PDF, paginiertes PDF, RTF-Paket oder als Microsoft-Word-DOC- oder -DOCX-Datei speichern. Sie können es auch in eine neue Markdown-Datei speichern (Marked-spezifische Funktionen werden gerendert und ihre Ergebnisse einbezogen), als OpenDocument (ODT) oder als OPML zur Verwendung in anderen Anwendungen.
 
-## HTML kopieren
+## HTML kopieren [copyhtml]
 
 Mit der Funktion „HTML kopieren“ legen Sie den HTML-Quelltext Ihrer Vorschau ohne Umwege in die Zwischenablage. Sie erreichen sie über das Zahnradmenü oder einfach mit {% kbd shift cmd C %}. Das kopierte HTML ist ein Schnipsel, der sich direkt in einen Blog, ein Forum oder ein HTML-Dokument einfügen lässt.
 
