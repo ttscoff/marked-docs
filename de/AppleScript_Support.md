@@ -2,15 +2,15 @@
 
 Marked enthält ein AppleScript-Wörterbuch zur Automatisierung der Vorschau, des Exports und der Workflow-Integration. Sie können Dokumente öffnen, die Vorschau steuern (Neuladen, Scrollen, Hervorhebungen, Autoscroll, Schnelllesen), Statistiken lesen, Prozessoren und Stile ändern, HTML oder RTF in die Zwischenablage kopieren und in die meisten der gleichen Formate exportieren, die im Menü {% appmenu Ablage, Exportieren… %} verfügbar sind. **Die Vorschau der Überschriften/Inhaltsverzeichnisse über AppleScript ist in Arbeit** (siehe unten).
 
-Informationen zur URL-basierten Automatisierung (Shell-Skripte, `open` Befehle und Rückrufe) finden Sie unter [URL Handler](URL_Handler.html). AppleScript und der URL-Handler ergänzen einander: Verwenden Sie AppleScript, wenn Sie auf ein bestimmtes Dokument oder Fenster abzielen müssen, und URLs, wenn ein einfacher `open 'x-marked://...'`-Aufruf ausreicht.
+Informationen zur URL-basierten Automatisierung (Shell-Skripte, `open`-Befehle und Callbacks) finden Sie unter [URL-Handler](URL_Handler.html). AppleScript und der URL-Handler ergänzen einander: Verwenden Sie AppleScript, wenn Sie auf ein bestimmtes Dokument oder Fenster abzielen müssen, und URLs, wenn ein einfacher `open 'x-marked://...'`-Aufruf ausreicht.
 
 ## Wörterbuch anzeigen
 
-Wählen Sie im **Skript-Editor** {% appmenu Ablage, Wörterbuch öffnen… %} und dann Marked aus. Das Wörterbuch listet Befehle für die Objekte **application**, **document** und **window** sowie Exportbefehle in der Suite Marked auf.
+Wählen Sie im **Skripteditor** **Ablage → Wörterbuch öffnen…** und dann Marked aus. Das Wörterbuch listet Befehle für die Objekte **application**, **document** und **window** sowie Exportbefehle in der Marked-Suite auf.
 
 Unter macOS können Sie Skriptdefinitionen mit dem **Skripteditor** durchsuchen.
 
-## Targeting Marked
+## Marked ansprechen
 
 Für die Standardinstallation:
 
@@ -27,17 +27,17 @@ end tell
 - `documents` – Vorschaudokumente öffnen (geordnete Liste).
 - `windows` – Vorschaufenster.
 
-**Dokumentieren**
+**Dokument**
 
 - `name` – Anzeigename.
 - `path` – Dateipfad, wenn das Dokument auf der Festplatte gespeichert wird.
 - `modified` – ob das Dokument nicht gespeicherte Editoränderungen aufweist.
-- `processor` -- Markdown Prozessor für diese Vorschau (Lesen/Schreiben). Gültige Namen: `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. Die Einstellung `processor` wendet eine Überschreibung pro Dokument an und lädt die Vorschau neu; Der globale Standardwert in {% prefspane Processor %} wird dadurch nicht geändert.
+- `processor` – Markdown-Prozessor für diese Vorschau (Lesen/Schreiben). Gültige Namen: `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. Die Einstellung `processor` wendet eine Überschreibung pro Dokument an und lädt die Vorschau neu; der globale Standardwert in {% prefspane Processor %} wird dadurch nicht geändert.
 - `preprocessor` – Präprozessor für diese Vorschau (Lesen/Schreiben). Verwenden Sie `true` oder `false`, um den benutzerdefinierten Präprozessor zu aktivieren oder zu deaktivieren, oder ggf. einen Präprozessornamen.
 - `source text` – rohe Markdown-Quelle (schreibgeschützt).
 - `critic markup mode` – ob die CriticMarkup-Verarbeitung aktiviert ist (Lesen/Schreiben). Durch Ändern wird die Vorschau neu geladen.
 - `is autoscrolling` – ob Autoscroll aktiv ist (schreibgeschützt).
-- `is speed reading` – ob der Geschwindigkeitslesemodus aktiv ist (schreibgeschützt).
+- `is speed reading` – ob der Schnelllesemodus aktiv ist (schreibgeschützt).
 - Vorschau-, Lese-, Statistik- und Exportbefehle (siehe unten).
 
 **Fenster**
@@ -68,7 +68,7 @@ tell application "Marked"
 end tell
 ```
 
-Stilnamen entsprechen dem Vorschau-Stilmenü (Anzeigename, CSS-Ressourcenname wie `swiss` oder interner Bezeichner). Custom Stile, die Sie im Stil-Manager hinzugefügt haben, werden unterstützt.
+Stilnamen entsprechen dem Vorschau-Stilmenü (Anzeigename, CSS-Ressourcenname wie `swiss` oder interner Bezeichner). Eigene Stile, die Sie im Stil-Manager hinzugefügt haben, werden unterstützt.
 
 Verwenden Sie **`get preview style names`** für das Anwendungsobjekt, um die Anzeigenamen aktivierter Stile aufzulisten.
 
@@ -90,15 +90,15 @@ Diese Befehle gelten für das **Anwendungsobjekt** (kein bestimmtes Dokument).
 
 | Befehl | Beschreibung |
 | --- | --- |
-| `open streaming preview` | Öffnen Sie ein [streaming clipboard preview](Streaming_Preview.html)-Fenster. |
-| `preview clipboard` | Öffnen Sie einen [clipboard preview](Opening_Files.html) des aktuellen Inhalts der Zwischenablage (wie {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}). |
-| `close all` | Schließen Sie alle geöffneten Vorschaudokumente (keine Speicheraufforderung; Marked bearbeitet keine Quelldateien). |
+| `open streaming preview` | Öffnet ein Fenster mit einer [Streaming-Zwischenablage-Vorschau](Streaming_Preview.html). |
+| `preview clipboard` | Öffnet eine [Zwischenablage-Vorschau](Opening_Files.html) des aktuellen Zwischenablage-Inhalts (wie {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}). |
+| `close all` | Schließt alle geöffneten Vorschaudokumente (keine Speicheraufforderung; Marked bearbeitet keine Quelldateien). |
 | `get available processors` | Prozessornamen auflisten: `MultiMarkdown`, `Discount`, `CommonMark (GFM)`, `Kramdown`. |
-| `get preview style names` | Listen Sie die Anzeigenamen der aktivierten Vorschau-Stile auf. |
+| `get preview style names` | Listet die Anzeigenamen der aktivierten Vorschaustile auf. |
 | `get_available_formats` | Liste der unterstützten Formatnamen `convert_to` auf. |
 | `get_available_profiles` | Exportprofilnamen auflisten (identisch mit der Eigenschaft `profiles`). |
 
-Bringen Sie Marked mit dem Standard-AppleScript-Befehl **`activate`** in den Vordergrund:
+Holen Sie Marked mit dem Standard-AppleScript-Befehl **`activate`** in den Vordergrund:
 
 ```applescript
 tell application "Marked"
@@ -113,14 +113,14 @@ Verfügbar für **Dokument** und **Fenster**. Die meisten davon erfordern eine g
 
 | Befehl | Parameter | Beschreibung |
 | --- | --- | --- |
-| `refresh preview` | — | Laden Sie die Vorschau aus der Quelldatei neu (wie {% appmenu Vorschau, Aktualisieren %}). |
-| `reveal in finder` | — | Zeigen Sie die Dokumentdatei im Finder an. |
-| `show highlights` | — | Aktivieren Sie die Schlüsselworthervorhebung (vermeiden Sie Wörter, Alternativen, Passiv, benutzerdefinierte Listen). |
+| `refresh preview` | — | Lädt die Vorschau aus der Quelldatei neu (wie {% appmenu Vorschau, Aktualisieren %}). |
+| `reveal in finder` | — | Zeigt die Dokumentdatei im Finder. |
+| `show highlights` | — | Aktiviert die Schlüsselwort-Hervorhebung (zu vermeidende Wörter, Alternativen, Passiv, eigene Listen). |
 | `full screen` | optional `enabled` boolean | Vollbild-Vorschaumodus aufrufen, verlassen oder umschalten. |
-| `scroll to heading` | `title` oder `id` | Scrollen Sie nach sichtbarem Titeltext oder DOM `id` zu einer Überschrift. |
-| `scroll to position` | `percent` oder `line` | Scrollen Sie nach Prozentsatz der Dokumenthöhe oder ungefährer Zeilennummer. |
-| `copy html` | — | Vorschau HTML in die Zwischenablage kopieren (Zahnradmenü oder {% kbd shift cmd C %}; siehe [Copy HTML](Exporting.html#copyhtml)). |
-| `copy rtf` | — | Kopieren Sie Rich-Text in die Zwischenablage. |
+| `scroll to heading` | `title` oder `id` | Scrollt zu einer Überschrift anhand des sichtbaren Titeltexts oder der DOM-`id`. |
+| `scroll to position` | `percent` oder `line` | Scrollt um einen Prozentsatz der Dokumenthöhe oder zu einer ungefähren Zeilennummer. |
+| `copy html` | — | Kopiert das Vorschau-HTML in die Zwischenablage (Zahnradmenü oder {% kbd shift cmd C %}; siehe [HTML kopieren](Exporting.html#copyhtml)). |
+| `copy rtf` | — | Kopiert Rich Text in die Zwischenablage. |
 
 ```applescript
 tell application "Marked"
@@ -138,12 +138,12 @@ end tell
 
 | Befehl | Beschreibung |
 | --- | --- |
-| `autoscroll` | Autoscroll starten. Die optionale Ganzzahl `wpm` legt Wörter pro Minute vor dem Start fest. |
-| `stop autoscroll` | Stoppen Sie den automatischen Bildlauf. |
-| `pause autoscroll` | Pausieren Sie den automatischen Bildlauf oder setzen Sie ihn fort. |
-| `speed read` | Starten oder umschalten [speed read](Speed_Reading.html). |
-| `stop speed read` | Stoppen Sie die Geschwindigkeitsmessung. |
-| `pause speed read` | Geschwindigkeitsmessung anhalten oder fortsetzen. |
+| `autoscroll` | Startet Autoscroll. Die optionale Ganzzahl `wpm` legt die Wörter pro Minute vor dem Start fest. |
+| `stop autoscroll` | Stoppt Autoscroll. |
+| `pause autoscroll` | Pausiert Autoscroll oder setzt es fort. |
+| `speed read` | Startet [Schnelllesen](Speed_Reading.html) oder schaltet es um. |
+| `stop speed read` | Stoppt das Schnelllesen. |
+| `pause speed read` | Pausiert das Schnelllesen oder setzt es fort. |
 
 Überprüfen Sie den Status mit den Dokumenteigenschaften `is autoscrolling` und `is speed reading`.
 
@@ -160,7 +160,7 @@ end tell
 
 **`get statistics`** gibt einen `statistics_record` mit numerischen Werten zurück, die aus der aktuellen Markdown-Quelle berechnet wurden (nicht die formatierten Zeichenfolgen, die in der Statistikleiste angezeigt werden).
 
-| Eigentum | Beschreibung |
+| Eigenschaft | Beschreibung |
 | --- | --- |
 | `word_count` | Wortanzahl |
 | `sentence_count` | Satzanzahl |
@@ -169,8 +169,8 @@ end tell
 | `average_words_per_sentence` | Durchschnittliche Wörter pro Satz |
 | `average_syllables_per_word` | Durchschnittliche Silben pro Wort |
 | `complex_word_percentage` | Komplexer Wortprozentsatz |
-| `reading_ease` | Flesch Lesefreundlichkeit |
-| `fog_index` | Gunning-Nebel-Index |
+| `reading_ease` | Flesch-Lesbarkeit |
+| `fog_index` | Gunning-Fog-Index |
 | `grade_level` | Flesch-Kincaid-Klassenstufe |
 | `gulpease` | Gulpease-Index (italienische Lesbarkeit; `0`, wenn nicht zutreffend) |
 | `gulpease_band` | Gulpease-Band `1`–`4` (falls zutreffend) |
@@ -184,22 +184,22 @@ tell application "Marked"
 end tell
 ```
 
-## Inhaltsverzeichnis (in Arbeit)
+## Inhaltsverzeichnis (in Arbeit) [table-of-contents-work-in-progress]
 
 {% note %}
-**WIP – noch nicht zuverlässig.** Das Wörterbuch enthält eine **`headings`**-Eigenschaft und einen **`headings`**-Befehl zum Lesen verschachtelter Vorschauüberschriften (`heading_item`-Datensätze). Diese Automatisierung funktioniert in aktuellen Builds **nicht richtig** (leere Ergebnisse, Zwangsfehler oder „es wurde kein Ergebnis zurückgegeben“). Es wird in einer späteren Version behoben. Bevorzugen Sie bis dahin *`scroll to heading`** mit einem bekannten Titel oder einer bekannten ID.
+**WIP – noch nicht zuverlässig.** Das Wörterbuch enthält eine **`headings`**-Eigenschaft und einen **`headings`**-Befehl zum Lesen verschachtelter Vorschauüberschriften (`heading_item`-Datensätze). Diese Automatisierung funktioniert in aktuellen Builds **nicht richtig** (leere Ergebnisse, Umwandlungsfehler oder „es wurde kein Ergebnis zurückgegeben“). Es wird in einer späteren Version behoben. Bevorzugen Sie bis dahin **`scroll to heading`** mit einem bekannten Titel oder einer bekannten ID.
 {% endnote %}
 
-**Geplantes Verhalten** (nach Abschluss): verschachtelte `heading_item` Datensätze aus Überschriften in der **Vorschau** (`h1`–`h6`), nicht aus Rohdaten Markdown.
+**Geplantes Verhalten** (nach Abschluss): verschachtelte `heading_item` Datensätze aus Überschriften in der **Vorschau** (`h1`–`h6`), nicht aus rohem Markdown.
 
-| Eigentum | Beschreibung |
+| Eigenschaft | Beschreibung |
 | --- | --- |
 | `title` | Überschriftentext |
 | `id` | DOM `id` Attribut (leerer String, wenn nicht vorhanden) |
 | `level` | Überschriftenebene `1`–`6` |
 | `children` | Verschachtelte Liste von `heading_item` Datensätzen |
 
-**`headings`** (Dokumenteigenschaft) – alle Ebenen. **`headings levels {2, 3}`** (Befehl) – optionaler Filter: nur die Kurstiefen (kein Bereich).
+**`headings`** (Dokumenteigenschaft) – alle Ebenen. **`headings levels {2, 3}`** (Befehl) – optionaler Filter: nur diese Überschriftentiefen (kein Bereich).
 
 ```applescript
 -- Planned; do not rely on this yet
@@ -225,7 +225,7 @@ end tell
 
 Bei Profilnamen muss die Groß-/Kleinschreibung beachtet werden. Nach dem Drucken stellt Marked das zuvor aktive Exportprofil wieder her.
 
-## Profile exportieren
+## Exportprofile
 
 Exportprofile speichern Bündel von Export-/Druckeinstellungen (Ränder, Kopfzeilen, Inhaltsverzeichnisoptionen und ähnliche Einstellungen von {% prefspane Export %}).
 
@@ -250,7 +250,7 @@ end tell
 
 Bei Profilnamen wird die Groß-/Kleinschreibung beachtet und sie müssen genau mit einem gespeicherten Profil übereinstimmen.
 
-## Befehle exportieren
+## Exportbefehle
 
 Exportbefehle sind für die Objekte **application**, **document** und **window** verfügbar. Jeder Befehl erfordert einen **`to`** Parameter mit dem Ausgabepfad (POSIX-Pfadzeichenfolge oder `file` Objekt).
 
@@ -258,8 +258,8 @@ Exportbefehle sind für die Objekte **application**, **document** und **window**
 | --- | --- |
 | `export markdown` | Markdown (.md) |
 | `export html` | HTML |
-| `export paginated pdf` | Paginiert PDF (Drucklayout) |
-| `export continuous pdf` | Kontinuierlicher Bildlauf PDF |
+| `export paginated pdf` | Paginiertes PDF (Drucklayout) |
+| `export continuous pdf` | Fortlaufendes PDF (Endlos-Scroll) |
 | `export epub` | EPUB |
 | `export docx` | Microsoft Word (.docx) |
 | `export odt` | OpenDocument-Text |
@@ -269,9 +269,9 @@ Exportbefehle sind für die Objekte **application**, **document** und **window**
 
 **Anmerkungen**
 
-– Paginiertes PDF verwendet dieselbe HTML-zu-PDF-Pipeline wie {% appmenu Ablage, Exportieren als, PDF speichern (paginiert) %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
+- Paginiertes PDF verwendet dieselbe HTML-zu-PDF-Pipeline wie {% appmenu Ablage, Exportieren als, PDF speichern (paginiert) %}. Es ist nicht für rohe HTML-Vorschaudokumente verfügbar.
 - Der HTML-Export verwendet die **gerenderte Vorschau** (was Sie in der WebView sehen), nicht die rohe Markdown-Quelldatei.
-– Kontinuierlich PDF erfasst das aktuelle Vorschau-WebView-Layout.
+- Fortlaufendes PDF erfasst das aktuelle Vorschau-WebView-Layout.
 
 ### Einfacher Export
 
@@ -283,13 +283,13 @@ tell application "Marked"
 end tell
 ```
 
-### Exportpfade und Sandboxing
+### Exportpfade und Sandboxing [export-paths-and-sandboxing]
 
 - Verwenden Sie einen vollständigen POSIX-Pfad für die Zieldatei.
 - Marked kann Zwischenordner erstellen, wenn sich der Exportpfad **im Ordner des geöffneten Dokuments** befindet (z. B. Exportieren nach `.../MyProject/build/output.pdf` während der Vorschau von `.../MyProject/chapter.md`).
-– Exporte außerhalb des Ordners des Dokuments erfordern einen beschreibbaren Pfad, auf den Marked zugreifen kann (Speicherort des Dokuments, sicherheitsbezogene Lesezeichen oder Ordner, die Sie über Dialogfelder zum Öffnen gewährt haben). Wenn der Pfad nicht beschreibbar ist, gibt der Befehl vor Beginn des Exports einen Fehler zurück.
+- Exporte außerhalb des Ordners des Dokuments erfordern einen beschreibbaren Pfad, auf den Marked zugreifen kann (Speicherort des Dokuments, sicherheitsbezogene Lesezeichen oder Ordner, die Sie über Dialogfelder zum Öffnen gewährt haben). Wenn der Pfad nicht beschreibbar ist, gibt der Befehl vor Beginn des Exports einen Fehler zurück.
 
-## `with` Optionen (Eigenschaftendatensatz)
+## `with`-Optionen (Eigenschaftsdatensatz) [with-options-properties-record]
 
 Anstelle von `with profile` können Sie einen Datensatz mit Optionen mit **`with`** oder **`with properties`** übergeben:
 
@@ -304,17 +304,17 @@ AppleScript erkennt diese Schlüssel direkt (sie werden vor dem Export zugeordne
 | `style` | Vorschaustil, der vor dem Export angewendet werden soll (vollständiges Neuladen der Vorschau) | `"Amblin"`, `"Swiss"` |
 | `pageSize` | Name der Seitengröße drucken | `"A4"`, `"Letter"` |
 | `margins` | Druckränder (siehe unten) | `"1in"`, `"1in 2in"` |
-| `fontSize` | Überschreiben Sie die Basisschriftgröße für Export/Druck in Punkten (paginiert und fortlaufend PDF) | `"14"`, `"12pt"` |
+| `fontSize` | Überschreiben Sie die Basisschriftgröße für Export/Druck in Punkten (paginiertes und fortlaufendes PDF) | `"14"`, `"12pt"` |
 
-`fontSize` aktiviert die gleiche **Custom-Schriftgröße für Export/Druck**-Option von {% prefspane Export %}. Fountain-Dokumente, die eine feste Drehbuchgröße verwenden, sind davon nicht betroffen.
+`fontSize` aktiviert die gleiche **Benutzerdefinierte Schriftgröße für Export/Druck**-Option von {% prefspane Export %}. Fountain-Dokumente, die eine feste Drehbuchgröße verwenden, sind davon nicht betroffen.
 
-Wenn `style` enthalten ist, wendet Marked dieses Design an, wartet, bis die Vorschau neu geladen wird, und exportiert dann. Sie benötigen keinen separaten `set style` Schritt.
+Wenn `style` enthalten ist, wendet Marked diesen Stil an, wartet, bis die Vorschau neu geladen wird, und exportiert dann. Sie benötigen keinen separaten `set style` Schritt.
 
 Andere Schlüssel im Datensatz können mit **Exportpräferenznamen** aus Profilen übereinstimmen (dieselben Schlüssel, die in {% prefspane Export %} gespeichert sind, z. B. `printBackgrounds`, `printTOC`, `topPrintMargin`). Diese Werte werden temporär für den Export übernommen.
 
 Sie können widersprüchliche Quellen nicht leichtfertig kombinieren: Wenn Sie `with profile` verwenden, laden Sie zuerst dieses Profil; Wenn Sie einen `with`-Datensatz verwenden, überschreiben die Profilschlüssel im Datensatz die aktuellen Einstellungen für diesen Export.
 
-### Margin-Kurzschrift
+### Kurzschreibweise für Ränder
 
 Der Wert `margins` ist eine Zeichenfolge mit ein bis vier Messungen. Einheiten: `in`, `cm`, `mm`, `pt` oder `"` für Zoll. Eine Zahl ohne Einheit wird als Punkt behandelt.
 
@@ -340,7 +340,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
+## `convert_to` [convert_to]
 
 Das Anwendungsobjekt macht auch ältere Skriptbefehle verfügbar:
 
@@ -376,4 +376,4 @@ Fehlgeschlagene Exporte setzen die Skriptfehlerzeichenfolge für den Befehl (sic
 
 ## Integration mit anderen Tools
 
-Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Informationen zur Shortcuts-App finden Sie unter [Shortcuts Integration](Shortcuts_Integration.html). Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist [URL Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.
+Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Informationen zur Shortcuts-App finden Sie unter [Shortcuts-Integration](Shortcuts_Integration.html). Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist der [URL-Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.
