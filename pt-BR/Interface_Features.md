@@ -8,7 +8,7 @@ Flexibilidade é fundamental.
 
 ![][4]
 
-   [4]: images/gearmenu.jpg @2x largura=740px altura=235px class=centro
+   [4]: images/gearmenu.jpg @2x width=740px height=235px class=center
 
 O menu Gear oferece a maioria dos recursos encontrados na barra de menus, além de algumas funções específicas de visualização. Basta clicar na engrenagem no canto inferior direito da janela para acessar essas funções.
 
@@ -16,7 +16,7 @@ O menu Gear oferece a maioria dos recursos encontrados na barra de menus, além 
 
 ![][5]
 
-   [5]: images/KeepOnTopPin.jpg @2x largura=740px altura=345px class=centro
+   [5]: images/KeepOnTopPin.jpg @2x width=740px height=345px class=center
 
 O ícone de cadeado no canto inferior esquerdo trará a janela de visualização para a frente e a manterá lá (flutuará) ao alternar para outros aplicativos. Você pode definir uma transparência na janela em {% prefspane General %} que permitirá que a janela desapareça ao usar outros aplicativos.
 
@@ -30,7 +30,7 @@ No {% prefspane General %} você pode usar "Manter novas janelas no topo" para d
 
 ![][6]
 
-   [6]: images/view_source.jpg @2x largura=740px altura=345px class=centro
+   [6]: images/view_source.jpg @2x width=740px height=345px class=center
 
 Você pode alternar entre visualizações de visualização e código-fonte com o botão no canto superior direito. Esta visualização também pode ser alternada com U.
 
@@ -38,7 +38,7 @@ Você pode alternar entre visualizações de visualização e código-fonte com 
 
 ![][7]
 
-   [7]: images/SearchBarFull.jpg @2x largura=818px altura=195px class=centro
+   [7]: images/SearchBarFull.jpg @2x width=818px height=195px class=center
 
 A barra de localização pode ser acessada com {% kbd cmd F %} e permite que você pesquise uma palavra ou frase na visualização. Depois de pesquisar, você pode usar {% kbd cmd G %} e {% kbd shift cmd G %} para navegar para frente e para trás em resultados adicionais.
 
@@ -134,7 +134,7 @@ Consulte a página [Visão geral do zoom](Zoom_Overview.html) ({% kbd z %} na vi
 
 ![][11]
 
-   [11]: images/markdown_reference.jpg @2x largura=1148px altura=267px class=centro
+   [11]: images/markdown_reference.jpg @2x width=1148px height=267px class=center
 
 Selecione Markdown Reference no menu {% appmenu Help %} para exibir um guia que flutua sobre as outras janelas. Isso é útil para quem ainda está aprendendo a sintaxe do Markdown. Você pode abrir este painel através do teclado usando {% kbd opt cmd M %}.
 

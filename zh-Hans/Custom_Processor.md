@@ -33,7 +33,7 @@
 
 ![规则编辑器][2]
 
-  [2]: images/CustomRules-800.jpg @2x 宽度=800
+  [2]: images/CustomRules-800.jpg @2x width=800
 
 要创建新规则，请使用 `+`
 左侧规则列表底部的按钮。给

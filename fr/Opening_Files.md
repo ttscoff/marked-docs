@@ -1,14 +1,12 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marqué vous donne des options.
+Marked vous donne des options.
 
 ## Workflow de prévisualisation en direct
 
 1. Faites glisser un fichier Markdown sur Marked (ou utilisez {% appmenu File, Open... ({{cmd}}O) %}).
 2. Modifiez le fichier dans votre éditeur préféré.
-3. Enregistrer --- Marqué met automatiquement à jour l'aperçu.
+3. Enregistrer : Marked met automatiquement à jour l'aperçu.
 
 Voir [Aperçu Live Markdown sur Mac](Live_Markdown_Preview_on_Mac.html) pour la visualisation du coffre-fort, l'aperçu en streaming et les guides spécifiques à l'éditeur.
 
@@ -20,13 +18,13 @@ Le moyen le plus simple d'utiliser Marked sur un fichier que vous êtes déjà e
 
 ![][2]
 
-   [2] : images/file_open.jpg @2x width=300px height=118px class=center
+[2]: images/file_open.jpg @2x width=300px height=118px class=center
 
 Vous pouvez bien sûr ouvrir les fichiers Markdown directement en utilisant l'option de menu {% appmenu File, Open... ({{cmd}}O) %}. Marked fonctionne également très bien _sans_ un éditeur de texte. Vous pouvez prévisualiser et convertir votre Markdown en un seul clic.
 
 Marked peut également ouvrir directement les fichiers **`.rtf` et `.rtfd`** (par exemple les exportations depuis Pages ou TextEdit). Ils sont convertis en Markdown pour aperçu et mise à jour lorsque vous enregistrez dans l'application d'origine. Voir [Support RTF et RTFD](RTF_Support.html) pour plus de détails, y compris les images et les limitations.
 
-Marqué peut ouvrir les **`.pdf`** fichiers de la même manière : la conversion s'exécute en arrière-plan, puis l'aperçu est mis à jour une fois terminé. Cela fonctionne mieux pour les PDF plus courts et basés sur du texte ; les manuels volumineux et les documents numérisés sont plus lents et moins précis. Voir [Support PDF](PDF_Support.html) pour plus de détails et les limitations.
+Marked peut ouvrir les fichiers **`.pdf`** de la même manière : la conversion s'exécute en arrière-plan, puis l'aperçu est mis à jour une fois terminé. Cela fonctionne mieux pour les PDF plus courts et basés sur du texte ; les manuels volumineux et les documents numérisés sont plus lents et moins précis. Voir [Support PDF](PDF_Support.html) pour plus de détails et les limitations.
 
 ## Depuis le Presse-papiers
 
@@ -34,15 +32,15 @@ Si vous avez du texte compatible (par exemple Markdown) dans votre presse-papier
 
 ## Création d'un nouveau document
 
-Marqué vous permet de créer un nouveau fichier texte vide avec la commande {% appmenu File, New ({{cmd}}N) %}. Il vous demandera immédiatement un emplacement pour enregistrer le fichier et vous pourrez activer l'option "Modifier automatiquement les nouveaux fichiers" dans le {% prefspane Apps %}, à côté du bouton Éditeur de texte pour ouvrir automatiquement le fichier nouvellement créé dans votre éditeur par défaut.
+Marked vous permet de créer un nouveau fichier texte vide avec la commande {% appmenu File, New ({{cmd}}N) %}. Il vous demandera immédiatement un emplacement pour enregistrer le fichier et vous pourrez activer l'option "Modifier automatiquement les nouveaux fichiers" dans le {% prefspane Apps %}, à côté du bouton Éditeur de texte pour ouvrir automatiquement le fichier nouvellement créé dans votre éditeur par défaut.
 
 ## Ouvrir récent
 
 ![][3]
 
-   [3] : images/open_recent.jpg @2x width=300px height=174px class=center
+[3]: images/open_recent.jpg @2x width=300px height=174px class=center
 
-Marked garde également une trace des documents récents. L'option de menu {% appmenu File, Open Recent %} vous montrera les fichiers que vous avez ouverts et vous permettra d'y revenir. Vous pouvez rapidement rouvrir le dernier fichier que vous visualisiez avec {% kbd shift cmd R %}. Utilisez {% kbd shift cmd P %} ou [Actions rapides](Quick_Actions.html) pour exécuter le menu et prévisualiser les commandes à partir du clavier. Il existe également de nombreux autres raccourcis clavier. Si vous souhaitez les apprendre, vous pouvez trouver un tableau sous [Clavier Raccourcis](Keyboard_Shortcuts.html).
+Marked garde également une trace des documents récents. L'option de menu {% appmenu File, Open Recent %} vous montrera les fichiers que vous avez ouverts et vous permettra d'y revenir. Vous pouvez rapidement rouvrir le dernier fichier que vous visualisiez avec {% kbd shift cmd R %}. Utilisez {% kbd shift cmd P %} ou [Actions rapides](Quick_Actions.html) pour exécuter le menu et prévisualiser les commandes à partir du clavier. Il existe également de nombreux autres raccourcis clavier. Si vous souhaitez les apprendre, vous pouvez trouver un tableau sous [Raccourcis clavier](Keyboard_Shortcuts.html).
 
 ## Nouvelle vue dans le fichier actuel [multiview]
 

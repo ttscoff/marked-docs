@@ -20,7 +20,7 @@ Estructura de carpetas:
 
 ![][1]
 
-   [1]: imágenes/multifiledocumentstructure.jpg @2x ancho=316px alto=163px clase=centro
+   [1]: imágenes/multifiledocumentstructure.jpg @2x width=316px height=163px class=center
 
 Índice.md:
 
@@ -165,7 +165,7 @@ GitBook permite el uso de anclajes en la tabla de contenido SUMMARY.md, pero Mar
 
 ![Límites de archivos incluidos][2]
 
-   [2]: imágenes/includeboundaries.png @2x ancho=859px alto=239px clase=centro
+   [2]: imágenes/includeboundaries.png @2x width=859px height=239px class=center
 
 Al visualizar un documento que contiene archivos incluidos, puede utilizar dos funciones para ayudar a determinar qué archivo está viendo.
 

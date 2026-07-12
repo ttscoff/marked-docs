@@ -33,7 +33,7 @@ regra são executadas nesse arquivo.
 
 ![Editor de regras][2]
 
-  [2]: imagens/CustomRules-800.jpg @2x largura=800
+  [2]: imagens/CustomRules-800.jpg @2x width=800
 
 Para criar uma nova regra, use o `+`
 botão na parte inferior da lista de regras à esquerda. Dê o

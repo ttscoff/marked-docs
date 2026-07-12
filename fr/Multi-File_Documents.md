@@ -1,28 +1,26 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
 Marked autorise plusieurs syntaxes différentes pour inclure un fichier dans un autre.
 
-## Syntaxe marquée
+## Syntaxe de Marked
 
 Vous pouvez inclure des fichiers externes dans un seul document d'aperçu en utilisant la syntaxe spéciale `<<[path/file]` au début d'une ligne. La ligne doit avoir des lignes vides au-dessus et en dessous, et le chemin est supposé être relatif au document principal à moins qu'il ne commence par une barre oblique (`/`) ou un tilde (`~`). Slash (répertoire racine) et tilde (répertoire personnel) peuvent être utilisés pour définir des chemins absolus vers les fichiers. Aucun chemin n'est nécessaire si les fichiers externes se trouvent dans le même dossier que le document principal, il suffit de mettre le nom du fichier (sensible à la casse et incluant l'extension) entre crochets.
 
-Vous pouvez utiliser les en-têtes de métadonnées "Include Base" ou "Transclude Base" pour modifier l'emplacement de base des fichiers inclus, par exemple :
+Vous pouvez utiliser les en-têtes de métadonnées "Include Base" ou "Transclude Base" pour modifier l'emplacement de base des fichiers inclus, par exemple :
 
-    Transclure la base : ~/Bureau
+    Transclude Base: ~/Desktop
 
-*Notez que lors de la visualisation de documents contenant des fichiers inclus, vous pouvez taper « I » (shift-i) pour voir quel fichier inclus se trouve dans la zone visible. Appuyer sur Entrée pendant que le chemin du fichier inclus est affiché ouvrira le fichier inclus dans l'éditeur par défaut.*
+*Notez que lors de la visualisation de documents contenant des fichiers inclus, vous pouvez taper « I » (shift-i) pour voir quel fichier inclus se trouve dans la zone visible. Appuyer sur Entrée pendant que le chemin du fichier inclus est affiché ouvrira le fichier inclus dans l'éditeur par défaut.*
 
-Grâce à cette fonctionnalité, vous pouvez créer des documents/livres volumineux en utilisant plusieurs fichiers (par exemple un fichier pour chaque chapitre), puis spécifier l'ordre des documents dans un seul fichier d'index. Peu importe le nom des fichiers ou la manière dont les dossiers sont organisés ; le fichier que vous ouvrez dans Marqué sera considéré comme l'index et les fichiers répertoriés à l'intérieur seront inclus. Un exemple de fichier d'index pour un document en trois parties :
+Grâce à cette fonctionnalité, vous pouvez créer des documents/livres volumineux en utilisant plusieurs fichiers (par exemple un fichier pour chaque chapitre), puis spécifier l'ordre des documents dans un seul fichier d'index. Peu importe le nom des fichiers ou la manière dont les dossiers sont organisés ; le fichier que vous ouvrez dans Marked sera considéré comme l'index et les fichiers répertoriés à l'intérieur seront inclus. Un exemple de fichier d'index pour un document en trois parties :
 
-Structure des dossiers :
+Structure des dossiers :
 
 ![][1]
 
-   [1] : images/multifiledocumentstructure.jpg @2x width=316px height=163px class=center
+[1]: images/multifiledocumentstructure.jpg @2x width=316px height=163px class=center
 
-Index.md :
+Index.md :
 
 	# Titre du document
 
@@ -44,7 +42,7 @@ Vous pouvez également inclure des extraits de code et du HTML ou du texte brut 
 
 L'exportation HTML finale d'un document contenant des inclusions aura des commentaires HTML contenant le chemin relatif du fichier inclus au début et à la fin du texte importé.
 
-**Remarque :** plus un document contient de fichiers, plus le temps de compilation global de l'aperçu sera lent. Marked essaie d'optimiser et de mettre en cache le processus, mais attendez-vous à des retards de rendu à mesure que la taille de votre document augmente.
+**Remarque :** plus un document contient de fichiers, plus le temps de compilation global de l'aperçu sera lent. Marked essaie d'optimiser et de mettre en cache le processus, mais attendez-vous à des retards de rendu à mesure que la taille de votre document augmente.
 
 ## Syntaxe de transclusion MultiMarkdown
 
@@ -54,44 +52,44 @@ Transclude Base ne sera reconnu que dans le document parent, pas dans les docume
 
 La syntaxe de code clôturée fournie par MultiMarkdown pour inclure des fichiers sans traitement ne fonctionnera pas dans Marked. Pour ce faire, veuillez utiliser la syntaxe `<<(file)` (bloc de code) ou `<<{file}` (brut).
 
-## Syntaxe du bloc IA Writer
+## Syntaxe du bloc iA Writer
 
-Marked 2.5.11+ prend en charge la syntaxe IA Writer [Content Block][ia]. Il s'agit d'une référence commençant par une barre oblique (`/`) sur sa propre ligne. Il peut s'agir d'un exemple de code, d'une image, d'un fichier markdown ou d'un fichier CSV. Tout sera traité de manière appropriée en fonction de l'extension du fichier inclus, et les CSV seront [convertis en tableaux Markdown][csv] si possible.
+Marked 2.5.11+ prend en charge la syntaxe iA Writer [Content Block][ia]. Il s'agit d'une référence commençant par une barre oblique (`/`) sur sa propre ligne. Il peut s'agir d'un exemple de code, d'une image, d'un fichier markdown ou d'un fichier CSV. Tout sera traité de manière appropriée en fonction de l'extension du fichier inclus, et les CSV seront [convertis en tableaux Markdown][csv] si possible.
 
-Dans IA Writer, les fichiers inclus sont importés dans le conteneur iCloud et ne nécessitent pas toujours de chemins « réels ». Dans Marqué, à moins que les fichiers inclus n'existent déjà dans le même dossier que le fichier en cours de prévisualisation, cette syntaxe doit être utilisée avec un chemin, absolu ou relatif. La première barre oblique sera ignorée, donc s'il s'agit d'un chemin absolu, commencez par deux barres obliques.
+Dans iA Writer, les fichiers inclus sont importés dans le conteneur iCloud et ne nécessitent pas toujours de chemins « réels ». Dans Marked, à moins que les fichiers inclus n'existent déjà dans le même dossier que le fichier en cours de prévisualisation, cette syntaxe doit être utilisée avec un chemin, absolu ou relatif. La première barre oblique sera ignorée, donc s'il s'agit d'un chemin absolu, commencez par deux barres obliques.
 
-Un extrait de code dans le même dossier que le document en cours de prévisualisation :
+Un extrait de code dans le même dossier que le document en cours de prévisualisation :
 
-    /extrait.h
+    /snippet.h
 
-Chemin relatif vers un sous-répertoire appelé "images" :
+Chemin relatif vers un sous-répertoire appelé "images" :
 
     /images/image.png "titre facultatif"
 
-Chemin absolu vers le dossier Documents :
+Chemin absolu vers le dossier Documents :
 
-    //Utilisateurs/nom d'utilisateur/Documents/content.csv
+    //Users/username/Documents/content.csv
 
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
 ## Comment les plans, les cartes mentales et les inclusions CSV sont convertis
 
-Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path]` ou IA Writer, Marked les convertit au lieu d'insérer le contenu brut du fichier. Le comportement des plans et des cartes mentales dépend de l'extension du fichier et de vos préférences [Paramètres : Applications → Cartes mentales/Contours][cartes mentales]. Les fichiers CSV/TSV sont toujours convertis en tableaux Markdown (voir [Création de tableaux à l'aide de fichiers CSV][csv]).
+Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path]` ou iA Writer, Marked les convertit au lieu d'insérer le contenu brut du fichier. Le comportement des plans et des cartes mentales dépend de l'extension du fichier et de vos préférences [Paramètres : Applications → Cartes mentales/Contours][mindmaps]. Les fichiers CSV/TSV sont toujours convertis en tableaux Markdown (voir [Création de tableaux à l'aide de fichiers CSV][csv]).
 
-| Formater | Rallonge | Lorsque « Intégrer en tant que sirène » est **activé** | Quand **éteint** |
+| Format | Extension | Lorsque « Intégrer en tant que Mermaid » est **activé** | Quand **éteint** |
 |--------|------------|-------------------------|--------------|
-| **iPensées X** | .itmz | Diagramme de carte mentale de sirène (arbre rangé) | Image d'aperçu du fichier .itmz |
-| **MindManager** | .mmap | Diagramme de carte mentale de sirène | Liste Markdown imbriquée |
-| **Esprit libre** | .mm | Diagramme de carte mentale de sirène | Liste Markdown imbriquée |
-| **OPML** | .opml | Diagramme de carte mentale de sirène | Liste Markdown imbriquée |
-| **OmniOutliner** | .ocontour | Diagramme de carte mentale de sirène | Liste Markdown imbriquée |
-| **Vélo** | .vélo | Carte mentale de sirène (nom de fichier en tant que nœud racine) | Liste Markdown imbriquée (pas de titre du document) |
-| **CSV/TSV** | .csv, .tsv | Tableau de démarque ||
+| **iThoughtsX** | .itmz | Diagramme de carte mentale Mermaid (arbre rangé) | Image d'aperçu du fichier .itmz |
+| **MindManager** | .mmap | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
+| **FreeMind** | .mm | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
+| **OPML** | .opml | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
+| **OmniOutliner** | .ooutline | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
+| **Bike** | .bike | Carte mentale Mermaid (nom de fichier en tant que nœud racine) | Liste Markdown imbriquée (pas de titre du document) |
+| **CSV/TSV** | .csv, .tsv | Tableau Markdown ||
 | **RTF/RTFD** | .rtf, .rtfd | Markdown via la conversion RTF (voir [Support RTF et RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via la conversion PDF lors de l'ouverture en tant que document principal (voir [Support PDF](PDF_Support.html)) ||
 
-Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, fichiers OPML, contours de vélo, contours OmniOutliner). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][cartes mentales] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
+Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, fichiers OPML, contours Bike, contours OmniOutliner). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][mindmaps] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
@@ -101,17 +99,17 @@ Marked prend également en charge les fichiers d'index dans des formats tels que
 
 ### Leanpub
 
-Si vous activez l'option dans le {% prefspane Apps %} sous Prise en charge Leanpub/GitBook, les fichiers nommés « Book.txt » seront automatiquement traités comme des fichiers d'index Leanpub. L'ancien format « frontmatter : » est également reconnu.
+Si vous activez l'option dans le {% prefspane Apps %} sous Prise en charge Leanpub/GitBook, les fichiers nommés « Book.txt » seront automatiquement traités comme des fichiers d'index Leanpub. L'ancien format « frontmatter: » est également reconnu.
 
 [Documentation Leanpub.][lpdocs]
 
-Exemple de fichier Leanpub Book.txt :
+Exemple de fichier Leanpub Book.txt :
 
-    sujet principal :
+    frontmatter:
     Remerciements.txt
     Préface.txt
     Introduction.txt
-    sujet principal :
+    mainmatter:
     Markdown.txt
     Exemples de livres.txt
     Insertion d'images.txt
@@ -123,9 +121,9 @@ Pour mmd\_merge, Marked nécessite que la première ligne soit "#merge" (un déc
 
 [Documentation mmd_merge.][mmdm]
 
-Exemple mmd_merge :
+Exemple mmd_merge :
 
-    #fusionner
+    #merge
     métadonnées.txt
     Chapitre-1.md
         sous-chapitre-1-1.md
@@ -142,7 +140,7 @@ Le formatage GitBook utilise une liste Markdown pour créer la structure et la t
 
 [Documentation GitBook.][gbdocs]
 
-Exemple GitBook SUMMARY.md :
+Exemple GitBook SUMMARY.md :
 
     # Résumé
 
@@ -165,10 +163,10 @@ GitBook permet d'utiliser des ancres dans la table des matières SUMMARY.md, mai
 
 ![Limites de fichiers incluses][2]
 
-   [2] : images/includeboundaries.png @2x width=859px height=239px class=center
+[2]: images/includeboundaries.png @2x width=859px height=239px class=center
 
 Lorsque vous affichez un document contenant des fichiers inclus, vous pouvez utiliser deux fonctionnalités pour vous aider à déterminer quel fichier vous consultez.
 
-* **Clavier :** Appuyer sur {% kbd shift I %} affichera brièvement une fenêtre contextuelle affichant le titre du fichier actuellement visible à la position de défilement de l'aperçu.
+* **Clavier :** Appuyer sur {% kbd shift I %} affichera brièvement une fenêtre contextuelle affichant le titre du fichier actuellement visible à la position de défilement de l'aperçu.
     * Appuyer sur {% kbd Return %} après {% kbd I %} modifiera le fichier affiché avec votre éditeur externe.
-* **Souris :** La sélection de « Afficher les limites des fichiers inclus » dans le menu Gear ({% kbd ctrl cmd B %}) ajoutera une barre colorée sur le côté gauche de l'aperçu, segmentée pour afficher le début et la fin des fichiers inclus. Il affiche également les inclusions imbriquées. Passer la souris sur une section de cette barre affichera le nom du fichier qu'elle représente, et cliquer dessus ouvrira ce fichier dans l'éditeur de votre choix.
+* **Souris :** La sélection de « Afficher les limites des fichiers inclus » dans le menu Action ({% kbd ctrl cmd B %}) ajoutera une barre colorée sur le côté gauche de l'aperçu, segmentée pour afficher le début et la fin des fichiers inclus. Il affiche également les inclusions imbriquées. Passer la souris sur une section de cette barre affichera le nom du fichier qu'elle représente, et cliquer dessus ouvrira ce fichier dans l'éditeur de votre choix.

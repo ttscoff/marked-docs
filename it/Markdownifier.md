@@ -6,7 +6,7 @@ Markdownifier è uno strumento che estrae automaticamente il contenuto dalle pag
 
 ![URL Markdownify][importurl]
 
-  [importurl]: import-url@2x.jpg larghezza=800 classe=centro
+  [importurl]: import-url@2x.jpg width=800 class=center
 
 ## Come funziona
 

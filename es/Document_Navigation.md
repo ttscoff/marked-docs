@@ -8,7 +8,7 @@ Esta página describe cómo moverse por vistas previas largas: la [Tabla de cont
 
 ![][8]
 
-   [8]: imágenes/tableofcontentsbutton.jpg @2x ancho=740px alto=238px clase=centro
+   [8]: imágenes/tableofcontentsbutton.jpg @2x width=740px height=238px class=center
 
 Si su documento tiene encabezados, aparece un botón de lista en la barra de herramientas. Haga clic en él para expandir la tabla de contenido; haga clic en un título para saltar a esa sección de la vista previa. Utilice {% kbd j %}/{% kbd k %} (abajo/arriba) para moverse por la lista y {% kbd Enter %} o {% kbd o %} para saltar al encabezado resaltado.
 
@@ -22,7 +22,7 @@ Cuando está en modo de pantalla completa, la tabla de contenido aparece como un
 
 ![Alternar pantalla completa][12]
 
-   [12]: imágenes/tableofcontentsfullscreentoggle.jpg @2x ancho=740px alto=238px clase=centro
+   [12]: imágenes/tableofcontentsfullscreentoggle.jpg @2x width=740px height=238px class=center
 
 
 Para obtener una lista resumida de teclas, consulte [Atajos de teclado](Keyboard_Shortcuts.html#TableofContentsNavigation).

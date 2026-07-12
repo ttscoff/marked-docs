@@ -1,358 +1,321 @@
 # <%= @title %>
 
+Mit Eigenen Regeln, Texttransformationen und der Möglichkeit, eigene Befehle auszuführen oder je nach passenden Dateieigenschaften unterschiedliche Prozessoren zu verwenden, gibt Ihnen Marked die volle Kontrolle.
 
-Marked gibt Ihnen die volle Kontrolle über Custom Regeln, Text
-Transformationen und die Möglichkeit, eigene Befehle auszuführen oder auszuführen
-verschiedene Prozessoren basierend auf übereinstimmenden Dateieigenschaften.
+## Eigene Präprozessoren/Prozessoren verwenden
 
-
-## Verwendung von Custom Präprozessoren/Prozessoren
-
-Um Custom Prozessoren hinzuzufügen, gehen Sie zu {% prefspane Processor %}
-und klicken Sie auf **Custom Regeln**.
+Um benutzerdefinierte Prozessoren hinzuzufügen, öffnen Sie {% prefspane Processor %} und klicken auf **Eigene Regeln**.
 
 ![][1]
 
 [1]: images/custom-rules-button-800.jpg @2x width=800
 
+Im Editor für Eigene Regeln (auch „Conductor“ genannt) legen Sie Regeln mit Kriterien an, die Dateien anhand von Dateiname, Pfad, Übereinstimmungen im Inhalt, Metadaten und sogar daran abgleichen, ob im selben Verzeichnisbaum wie das geöffnete Dokument weitere Dateien liegen. Trifft eine Regel zu, werden die für sie definierten Aktionen auf diese Datei angewendet.
 
-Im Regeleditor (auch bekannt als „Dirigent“) können Sie benutzerdefinierte Regeln hinzufügen
-Regeln mit Kriterien zum Zuordnen von Dateien basierend auf dem Dateinamen,
-Pfad, Übereinstimmungen im Inhalt, Metadaten und sogar ob
-Andere Dateien sind im selben Baum wie das Dokument vorhanden
-geöffnet. Wenn eine Regel übereinstimmt, werden die für die definierten Aktionen ausgeführt
-Regel werden für diese Datei ausgeführt.
+> Unterhalb des Felds „Prozessor“ legen die Kontrollkästchen unter „Neue Dokumente verwenden eigene:“ fest, ob Regeln für die Präprozessor- und Prozessorphase überhaupt geprüft werden. Lassen Sie diese in der Regel aktiviert; wenn Sie aber alle benutzerdefinierten Prozessoren vollständig übergehen wollen, stellen Sie das hier ein.
 
-> Unterhalb des Feldes Prozessor befinden sich die Kontrollkästchen in „Neu“.
-> Dokumente verwenden Benutzerdefiniert:“ legt fest, ob Regeln getestet werden
-> überhaupt für Präprozessor- und Prozessorphasen. Im Allgemeinen,
-> Lassen Sie diese aktiviert, wenn Sie sie jedoch vollständig überschreiben möchten
-> alle benutzerdefinierten Prozessoren, legen Sie diese hier fest.
-
-![Rules Editor][2]
+![Editor für Eigene Regeln][2]
 
   [2]: images/CustomRules-800.jpg @2x width=800
 
-Um eine neue Regel zu erstellen, verwenden Sie `+`
-Klicken Sie auf die Schaltfläche unten in der linken Regelliste. Geben Sie die
-Geben Sie einen Namen an und legen Sie ihn als Präprozessor oder Prozessor fest.
+Um eine neue Regel zu erstellen, verwenden Sie die Schaltfläche `+` unten in der Regelliste auf der linken Seite. Geben Sie der Regel einen Namen und legen Sie sie als Präprozessor oder Prozessor fest.
 
-Die drei Punkte neben einer Regel zeigen Vorprozessor, Prozessor und Aktiviert an. Es kann nur einer von „Präprozessor“ oder „Prozessor“ hervorgehoben werden, und Sie können auf die Punkte klicken, um den Status der Regel zu ändern.
+Die drei Punkte neben einer Regel stehen für ihren Status „Präprozessor“, „Prozessor“ und „Aktiviert“. Für jede Regel kann entweder „Präprozessor“ oder „Prozessor“ ausgewählt sein. Klicken Sie auf die Punkte, um den Status der Regel zu ändern.
 
 Präprozessor
-: Wird ausgeführt, nachdem die Datei zum ersten Mal verarbeitet wurde, wenn Marked eingeschlossene Dateien hinzufügt, und verarbeitet Stileinstellungen wie GitHub Zeilenumbrüche usw., jedoch vor der Verarbeitungsphase. Das Dokument ist zu diesem Zeitpunkt noch im Rohzustand Markdown und Sie können Änderungen am Inhalt vornehmen, um ihn an den Prozessor weiterzuleiten. Wenn kein Custom-Prozessor übereinstimmt oder keine Aktion „Prozessor ausführen“ in einem übereinstimmenden Custom-Prozessor ausgeführt wird, wird der Standardprozessor ausgeführt.
+: Wird ausgeführt, nachdem die Datei zunächst verarbeitet wurde – also nachdem Marked eingebundene Dateien hinzugefügt, Stileinstellungen wie GitHub-Zeilenumbrüche verarbeitet hat usw. –, aber vor der Verarbeitungsphase. Das Dokument liegt zu diesem Zeitpunkt noch als rohes Markdown vor, und Sie können den Inhalt ändern, der an den Prozessor übergeben wird. Trifft kein benutzerdefinierter Prozessor zu oder wird in einem zutreffenden benutzerdefinierten Prozessor keine Aktion **Prozessor ausführen** ausgeführt, kommt der Standardprozessor zum Einsatz.
 
 Prozessor
-: Ein Custom-Prozessor ersetzt den integrierten Prozessor, der in {% prefspane Processor %} definiert ist. Es kann alle Aktionen verarbeiten, die ein Präprozessor ausführen kann, und fügt die Aktionen „Befehl ausführen“ und „Prozessor ausführen“ hinzu. Dadurch können Sie einen benutzerdefinierten Befehl ausführen, z. Pandoc oder führen Sie einen anderen integrierten Prozessor für Dateien aus, die den Kriterien entsprechen.
+: Ein benutzerdefinierter Prozessor ersetzt den unter {% prefspane Processor %} festgelegten integrierten Prozessor. Er kann alles, was ein Präprozessor kann, und ergänzt die Aktionen **Befehl ausführen** und **Prozessor ausführen**. Damit können Sie einen eigenen Befehl ausführen, etwa Pandoc, oder für Dateien, die den Kriterien entsprechen, einen anderen integrierten Prozessor verwenden.
 
-Alle Tabellen im Custom-Regeleditor können nach neu angeordnet werden
-Durch Ziehen und Ablegen können Sie die Reihenfolge beeinflussen
-Regeln ausgeführt werden, die Reihenfolge der Kriterien im Prädikat
-Editor und die Reihenfolge der nacheinander auszuführenden Aktionen.
+Alle Tabellen im Editor für Eigene Regeln lassen sich per Drag-and-drop umsortieren. So beeinflussen Sie die Reihenfolge, in der Regeln ausgeführt werden, die Reihenfolge der Kriterien im Prädikat-Editor und die Reihenfolge der nacheinander auszuführenden Aktionen.
 
 ### Prädikat-Editor
 
-![Predicate Editor][predicate]
+![Prädikat-Editor][predicate]
 
 [predicate]: images/custom-rules-predicate-800.jpg @2x width=800
 
-Sobald eine Regel hinzugefügt wurde, verwenden Sie zum Definieren den Prädikateditor
-Kriterien, die bestimmen, ob die Regel für a ausgeführt wird
-angegebene Datei. Verwenden Sie das Dropdown-Menü auf der linken Seite, um eine auszuwählen
-Kriterium und verwenden Sie dann die Komparator- und Wertfelder zum Erstellen
-das Prädikat.
+Sobald eine Regel hinzugefügt ist, definieren Sie im Prädikat-Editor die Kriterien, die bestimmen, ob die Regel für eine bestimmte Datei ausgeführt wird. Wählen Sie über das Dropdown-Menü auf der linken Seite ein Kriterium und bauen Sie das Prädikat dann mit den Feldern für Vergleichsoperator und Wert.
 
-- _filename_ entspricht nur dem Dateinamen der Datei
-- _extension_ entspricht nur der Erweiterung der Datei
-- _path_ entspricht dem vollständigen POSIX-Pfad (Unix) der Datei
-- _tree_ sucht irgendwo in der Datei nach übereinstimmenden Dateinamen
-  Verzeichnisbaum der Datei
-- _text_ entspricht dem Textinhalt in der Datei. Vorwärts verwenden
-  umgibt den Textwert mit Schrägstrichen, um ihn zu einem regulären Wert zu machen
-  Ausdruckssuche.
-- _fileIncludes_ testet, ob die Datei enthalten ist
-  Dateien (unter Verwendung eines von [Marked's include
-  syntaxes](Multi-File_Documents.html)).
-- _metaType_ testet, ob die Datei YAML enthält,
-  MultiMarkdown oder Pandoc-Metadaten
-- _metadata.X_ testet auf bestimmte Metadatenschlüssel wie Autor,
-  Datum, Titel usw.
+- _Dateiname_ vergleicht nur den Dateinamen der Datei
+- _Erweiterung_ vergleicht nur die Erweiterung der Datei
+- _Pfad_ vergleicht den vollständigen POSIX-Pfad (Unix) der Datei
+- _Baum_ sucht irgendwo im Verzeichnisbaum der Datei nach passenden Dateinamen
+- _Text_ vergleicht den Textinhalt der Datei. Setzen Sie den Textwert in Schrägstriche, um daraus eine Suche mit regulärem Ausdruck zu machen.
+- _Datei enthält_ prüft, ob die Datei eingebundene Dateien enthält (über eine von [Markeds Einbinde-Syntaxen](Multi-File_Documents.html)).
+- _Metadatentyp_ prüft, ob die Datei YAML-, MultiMarkdown- oder Pandoc-Metadaten enthält
+- _Metadaten:_-Felder (zum Beispiel _Metadaten: Author_, _Metadaten: Date_, _Metadaten: Title_) prüfen auf bestimmte Metadatenschlüssel. Jeder Metadatenschlüssel erscheint im Dropdown-Menü als _Metadaten:_ gefolgt vom Feldnamen.
+- _Manuell aktiviert_ trifft zu, wenn die Regel für das aktuelle Vorschaufenster eingeschaltet wurde (siehe [Manuell aktivierte Regeln](#manuallyenabled) unten). Kombinieren Sie es mit anderen Kriterien in einer Alle-(UND)-Gruppe, damit die Regel nur läuft, wenn Sie sie einschalten _und_ die Datei Ihren übrigen Bedingungen entspricht.
 
-Um alle Dateien abzugleichen (d. h. einen Custom Prozessor, der immer
-ausgeführt wird), setzen Sie `filename` auf `contains` `*`. Das Sternchen wird
-fungiert als Platzhalter und gleicht alle Dateien ab.
+Um alle Dateien abzugleichen (also ein benutzerdefinierter Prozessor, der immer läuft), setzen Sie _Dateiname_ auf `enthält` `*`. Das Sternchen dient als Platzhalter und passt auf alle Dateien.
 
-[Add a predicate][addpredicate]
+[Ein Prädikat hinzufügen][addpredicate]
 
 [addpredicate]: images/custom-rules-add-predicate-800.jpg @2x width=800
 
-Klicken Sie auf das Pluszeichen (+) in der Prädikatzeile, um ein weiteres Prädikat hinzuzufügen. Halten Sie die Wahltaste gedrückt, während Sie auf das + klicken, um eine boolesche Gruppe hinzuzufügen, die auf „Alle“ (UND) oder „Beliebig“ (ODER) eingestellt werden kann.
+Klicken Sie auf das Pluszeichen (+) in der Prädikatzeile, um ein weiteres Prädikat hinzuzufügen. Halten Sie beim Klick auf das + die Wahltaste gedrückt, um eine boolesche Gruppe hinzuzufügen, die sich auf „Alle“ (UND) oder „Beliebige“ (ODER) setzen lässt.
+
+### Manuell aktivierte Regeln [manuallyenabled]
+
+Manche Regeln sollen nicht auf jeder Datei laufen, die ihren Kriterien entspricht. Fügen Sie ein Kriterium **Manuell aktiviert** hinzu, wenn eine Regel erst laufen soll, nachdem Sie sie für die aktuelle Vorschau eingeschaltet haben.
+
+Fügen Sie dieses Kriterium über die Schaltfläche **Manuell aktiviert hinzufügen** unter dem Prädikat-Editor ein. Jede Regel kann es nur einmal enthalten. Ist es vorhanden, erscheint die Regel im Untermenü {% appmenu Vorschau, Eigene Regel aktivieren %} für dieses Vorschaufenster.
+
+**Beispiel:** Sie pflegen eine Regel, die Druck-CSS einfügt, Kommentare entfernt und die Überschriftenebenen für den PDF-Export verschiebt. Diese Transformation soll nicht bei jedem Speichern während des Schreibens greifen, sondern nur auf Abruf. Geben Sie der Regel die normalen Dateiabgleich-Kriterien plus **Manuell aktiviert** und schalten Sie sie dann über das Vorschau-Menü (oder einen Auslöser-Kurzbefehl) ein, wenn Sie das Drucklayout prüfen wollen.
+
+#### Auslöser-Kurzbefehl
+
+Enthält eine ausgewählte Regel **Manuell aktiviert**, erscheint neben **Manuell aktiviert hinzufügen** das Feld **Auslöser-Kurzbefehl**. Klicken Sie auf den Rekorder und drücken Sie dann die gewünschte Tastenkombination. Dieser Kurzbefehl schaltet die Regel für die vorderste Marked-Vorschau um (ein, wenn aus; aus, wenn ein). Der Kurzbefehl wird mit der Regel gespeichert und bleibt über Neustarts hinweg erhalten. Leeren Sie das Feld, um den Kurzbefehl zu entfernen.
+
+![Rekorder für den Auslöser-Kurzbefehl im Conductor][manualshortcut]
+
+[manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
+
+#### Überschreibungen pro Vorschau im Vorschau-Menü
+
+Zwei Untermenüs des Vorschau-Menüs steuern Überschreibungen nur für die aktive Vorschau. Zeigen mehrere Fenster dieselbe Datei, werden die Einstellungen pro [Ansicht](#multiview) gespeichert.
+
+**Eigene Regel aktivieren**
+: Listet jede aktivierte Regel auf, die ein Kriterium **Manuell aktiviert** enthält. Setzen Sie bei einer Regel das Häkchen, um sie für diese Vorschau einzuschalten; entfernen Sie es, um sie auszuschalten. Die Vorschau aktualisiert sich sofort.
+
+**Eigene-Regel-Überschreibung**
+: Listet die Regeln der Prozessphase auf. Wählen Sie eine aus, um sie *anzuheften*: Während der Prozessphase wird dann nur diese Regel ausgewertet (andere Prozessregeln werden übersprungen). Wählen Sie **Keine (automatisch)**, um zum normalen Regelabgleich zurückzukehren. Das ist nützlich, wenn Sie für eine Vorschau eine bestimmte Prozessor-Pipeline erzwingen wollen, ohne die globalen Eigenen Regeln zu ändern.
+
+#### Überschreiben-Schaltfläche in der Vorschau-Symbolleiste
+
+Sobald eine Vorschau mindestens eine manuell aktivierte Regel oder eine angeheftete Prozess-Überschreibung hat, erscheint in der unteren Symbolleiste ein Verzweigungssymbol (links neben den Steuerelementen für Export und Drawer). Das gefüllte, in der Akzentfarbe eingefärbte Symbol bedeutet, dass Überschreibungen aktiv sind; das Umriss-Symbol bedeutet, dass sie ausgesetzt sind.
+
+![Überschreiben-Schaltfläche für Eigene Regeln in der Vorschau-Symbolleiste][conductoroverride]
+
+[conductoroverride]: images/conductor-override-toolbar.jpg @2x width=800
+
+Klicken Sie auf die Schaltfläche, um die Überschreibungen für diese Vorschau auszusetzen oder wieder zu aktivieren, ohne dabei die Häkchen Ihrer manuell aktivierten Regeln oder die angeheftete Prozessregel zu verlieren. Ausgesetzte Überschreibungen werden beim erneuten Klick wiederhergestellt. Das geht schneller, als Regeln im Menü abzuwählen, wenn Sie die normale Vorschau mit Ihrer Überschreibungs-Pipeline vergleichen wollen.
 
 ### Aktionen
 
-Verwenden Sie die Schaltfläche *+ Aktion*, um der Regel Aktionen hinzuzufügen.
+Fügen Sie der Regel über die Schaltfläche *+ Aktion* Aktionen hinzu.
 
-![Add an action][addaction]
+![Eine Aktion hinzufügen][addaction]
 
 [addaction]: images/custom-rules-add-action-800.jpg @2x width=800
 
-Zu den verfügbaren Aktionen gehören:
+Verfügbar sind unter anderem diese Aktionen:
 
 Stil festlegen
-: Legen Sie den Stil für die Vorschau fest. Jeder von Ihnen hinzugefügte integrierte Stil oder Custom-Stil ist verfügbar.
+: Legt den Stil für die Vorschau fest. Jeder integrierte Stil und jeder von Ihnen hinzugefügte Eigene Stil steht zur Auswahl.
 
 Befehl ausführen
-: Dies erfordert einen Befehlszeilenbefehl, einschließlich aller Argumente, und übergibt den Inhalt der Datei an STDIN. Der Befehl sollte die resultierende Ausgabe auf STDOUT zurückgeben.
+: Nimmt einen Befehlszeilenbefehl samt aller Argumente entgegen und übergibt den Inhalt der Datei über STDIN. Der Befehl sollte das Ergebnis über STDOUT zurückgeben.
 
-> **Mac App Store Sandboxing**: Die Mac App Store (MAS)-Version von Marked wird in einer Sandbox-Umgebung ausgeführt, die die Ausführung externer Binärdateien einschränkt. Wenn Sie externe Prozessoren wie Pandoc in der MAS-Version verwenden müssen, müssen Sie die Binärdatei in das App-Bundle kopieren. Gehen Sie dazu wie folgt vor:
+> **Sandboxing im Mac App Store**: Die Mac-App-Store-Version (MAS) von Marked läuft in einer Sandbox-Umgebung, die das Ausführen externer Binärdateien einschränkt. Wenn Sie in der MAS-Version externe Prozessoren wie Pandoc nutzen müssen, kopieren Sie die Binärdatei in das App-Bundle. Und zwar so:
 >
-> 1. Klicken Sie mit der rechten Maustaste auf Marked.app → Paketinhalt anzeigen
-> 2. Navigieren Sie zu Inhalt/Ressourcen/
-> 3. Erstellen Sie einen Ordner `bin`, falls dieser nicht vorhanden ist
-> 4. Kopieren Sie Ihre Binärdatei (z. B. `pandoc`) hierhin
-> `bin` Ordner
-> 5. Machen Sie es ausführbar: `chmod +x` die Binärdatei
-> 6. Verweisen Sie in der Aktion „Befehl ausführen“ wie folgt darauf:
+> 1. Rechtsklick auf Marked.app → Paketinhalt zeigen
+> 2. Zu `Contents/Resources/` navigieren
+> 3. Einen Ordner `bin` erstellen, falls noch nicht vorhanden
+> 4. Ihre Binärdatei (z. B. `pandoc`) in diesen `bin`-Ordner kopieren
+> 5. Sie ausführbar machen: `chmod +x` auf die Binärdatei anwenden
+> 6. In der Aktion „Befehl ausführen“ so darauf verweisen:
 >
-> `YOUR_BINARY_NAME [arguments]`
-> Oder verwenden Sie den vollständigen Pfad:
-> `/Applications/Marked.app/Contents/Resources/bin/YOUR_BINARY_NAME [arguments]`
+>     `IHR_BINARY_NAME [Argumente]`
+>     Oder den vollständigen Pfad verwenden:
+>     `/Applications/Marked.app/Contents/Resources/bin/IHR_BINARY_NAME [Argumente]`
 >
-> **Hinweis**: Skripte mit externen Shebangs (wie Python-Skripte, die auf `/opt/homebrew/bin/python` verweisen) werden beim Kopieren in das Bundle automatisch über Systeminterpreter ausgeführt. Die MAS-Version hat möglicherweise immer noch Probleme beim Ausführen von Binärdateien, bei denen es sich tatsächlich um Python- oder Ruby-Skripte und nicht um Binärdateien handelt.
-> Sie müssen die Binärdateien nach jedem App-Update erneut kopieren, da Updates das gesamte Paket ersetzen. Alternativ können Sie **Hilfe->Crossgrade** verwenden, um die Nicht-Sandbox-Version zu erhalten, für die es keine derartigen Einschränkungen gibt.
+> **Hinweis**: Skripte mit externen Shebangs (etwa Python-Skripte, die auf `/opt/homebrew/bin/python` verweisen) werden beim Kopieren in das Bundle automatisch über die System-Interpreter ausgeführt. Die MAS-Version hat unter Umständen weiterhin Probleme, Binärdateien auszuführen, die eigentlich Python- oder Ruby-Skripte statt echter Binärdateien sind.
+> Nach jedem App-Update müssen Sie die Binärdateien erneut kopieren, da Updates das gesamte Bundle ersetzen. Alternativ nutzen Sie **Hilfe → Crossgrade**, um auf die Version von Marked zu wechseln, die keine solchen Einschränkungen hat.
 
-Führen Sie das eingebettete Skript aus
-: Bearbeiten Sie ein vollständiges Skript im integrierten Code-Editor. Wie „Run Command“ sollte dies Eingaben auf STDIN entgegennehmen und Ausgaben auf STDOUT zurückgeben.
+Eingebettetes Skript ausführen
+: Bearbeiten Sie ein vollständiges Skript im integrierten Code-Editor. Wie **Befehl ausführen** sollte es Eingaben über STDIN entgegennehmen und Ausgaben über STDOUT zurückgeben.
 
 Metadaten festlegen
-: Fügt Metadaten hinzu oder legt sie fest. Geben Sie einen Schlüssel und einen Wert an. Wenn der Schlüssel vorhanden ist, wird sein Wert aktualisiert, andernfalls wird er hinzugefügt. Der Typ der verwendeten Metadaten wird automatisch durch den Inhalt der Datei (oder das Ergebnis einer Metadatenkonvertierungsaktion) bestimmt.
-: Wenn keine vorhandenen Metadaten gefunden werden, werden die Metadaten im MultiMarkdown-Format innerhalb eines HTML-Kommentars hinzugefügt. Marked kann diese Metadaten lesen, sie werden jedoch nicht in Ihrer Vorschau angezeigt, unabhängig davon, welcher Prozessor verwendet wird.
+: Fügt Metadaten hinzu oder setzt sie. Geben Sie einen Schlüssel und einen Wert an. Existiert der Schlüssel, wird sein Wert aktualisiert, andernfalls wird er hinzugefügt. Der verwendete Metadatentyp wird automatisch anhand des Dateiinhalts bestimmt (oder anhand des Ergebnisses einer Metadaten-Konvertierungsaktion).
+: Sind keine Metadaten vorhanden, werden die Metadaten im MultiMarkdown-Format innerhalb eines HTML-Kommentars hinzugefügt. Marked kann diese Metadaten lesen, sie erscheinen aber in keiner Vorschau, unabhängig vom verwendeten Prozessor.
 
 Metadaten löschen
-: Metadaten basierend auf ihrem Schlüssel löschen.
+: Löscht einen Metadateneintrag anhand seines Schlüssels.
 
 Metadaten entfernen
-: Alle Metadaten löschen. Betrifft YAML-, MultiMarkdown- und Pandoc-Metadaten.
+: Löscht alle Metadaten. Betrifft YAML-, MultiMarkdown- und Pandoc-Metadaten.
 
-Konvertieren Sie YAML Meta in MMD
-: Konvertiert einen YAML-Metadatenblock am Anfang der Datei in Metadaten im MultiMarkdown-Stil.
+YAML-Metadaten in MMD konvertieren
+: Wandelt einen YAML-Metadatenblock am Anfang der Datei in Metadaten im MultiMarkdown-Stil um.
 
-Konvertieren Sie MMD Meta in YAML
-: Konvertiert einen MultiMarkdown-Metadatenblock in YAML.
+MMD-Metadaten in YAML konvertieren
+: Wandelt einen MultiMarkdown-Metadatenblock in YAML um.
 
 Suchen und Ersetzen
-: Führen Sie eine Suche und Ersetzung im Inhalt der Datei durch.
-: Wenn die Suchzeichenfolge in Schrägstriche eingeschlossen ist (z. B. `/Project \w+/`), wird sie als regulärer Ausdruck behandelt. Sie können `$1`, `$2` usw. verwenden, um Übereinstimmungsgruppen in die Ersetzungszeichenfolge aufzunehmen.
-: Das Ersetzungsfeld unterstützt einige Escape-Sequenzen (einen Backslash gefolgt von): `\n` fügt eine neue Zeile ein, `\t` fügt ein Tabulatorzeichen ein, `\\` fügt einen Literal-Backslash ein, `\$` fügt ein Literal-Dollarzeichen ein (anstelle einer Übereinstimmungsgruppe)
-: Jede andere `\X`-Sequenz wird nur als `X` behandelt (der Backslash wird entfernt), sodass `\e` zu `e` wird. Ein nachgestelltes \ ohne Zeichen danach wird als wörtlicher Backslash beibehalten.
-: Verwenden Sie `[%key]` in der Ersetzungszeichenfolge, um einen Wert aus Dokumentmetadaten, Umgebungsvariablen oder Kontext einzufügen (z. B. `[%title]`, `[%MARKED_PATH]`). Schlüssel, die durch frühere Aktionen in derselben Regel oder durch eine vorhergehende Regel festgelegt wurden, sind verfügbar. Nicht übereinstimmende Schlüssel werden durch eine leere Zeichenfolge ersetzt.
+: Führt ein Suchen und Ersetzen im Inhalt der Datei durch.
+: Ist die Suchzeichenkette von Schrägstrichen umschlossen (z. B. `/Project \w+/`), wird sie als regulärer Ausdruck behandelt. Mit `$1`, `$2` usw. nehmen Sie Übereinstimmungsgruppen in die Ersetzung auf.
+: Das Ersetzungsfeld unterstützt einige Escape-Sequenzen (ein Backslash gefolgt von): `\n` fügt einen Zeilenumbruch ein, `\t` ein Tabulatorzeichen, `\\` einen wörtlichen Backslash, `\$` ein wörtliches Dollarzeichen (statt einer Übereinstimmungsgruppe).
+: Jede andere `\X`-Sequenz wird als bloßes `X` behandelt (der Backslash entfällt), aus `\e` wird also `e`. Ein abschließender `\` ohne folgendes Zeichen bleibt als wörtlicher Backslash erhalten.
+: Verwenden Sie `[%key]` in der Ersetzung, um einen Wert aus Dokumentmetadaten, Umgebungsvariablen oder Kontext einzufügen (z. B. `[%title]`, `[%MARKED_PATH]`). Schlüssel, die frühere Aktionen derselben Regel oder eine vorhergehende Regel gesetzt haben, stehen zur Verfügung. Nicht gefundene Schlüssel werden durch eine leere Zeichenkette ersetzt.
 
-Fügen Sie Titel H1 ein
-: Fügt ein H1 in das Dokument ein. Dies kann entweder aus Metadaten oder dem Dateinamen entnommen werden.
+Titel H1 einfügen
+: Fügt ein H1 in das Dokument ein. Es kann entweder aus Metadaten oder aus dem Dateinamen stammen.
 
-Header verschieben
-: Passen Sie die Header-Ebenen von -5 bis +5 an. Wenn Sie dies beispielsweise auf -1 festlegen, werden alle H1-Elemente zu H2-Elementen, H2-Elemente werden zu H3-Elementen usw. Legen Sie eine positive Zahl fest, um die Header-Ebenen um diesen Betrag anzuheben.
+Überschriften verschieben
+: Passt die Überschriftenebenen von -5 bis +5 an. Setzen Sie dies etwa auf -1, werden alle H1 zu H2, H2 zu H3 usw. Eine positive Zahl hebt die Überschriftenebenen um diesen Betrag an.
 
-Header normalisieren
-: Diese Aktion stellt nach Möglichkeit sicher, dass es nur ein H1 im Dokument gibt, und passt alle Header-Ebenen so an, dass sie in einer semantischen Reihenfolge sind und keine Ebenen überspringen, z. B. von H2 bis H4. Wenn das Originaldokument überhaupt semantisch geordnet ist, wird die Hierarchie dadurch gut verfeinert.
+Überschriften normalisieren
+: Diese Aktion stellt nach Möglichkeit sicher, dass es nur ein H1 im Dokument gibt, und passt alle Überschriftenebenen so an, dass sie in semantischer Reihenfolge stehen und keine Ebenen überspringen, z. B. von H2 direkt zu H4. Ist das Originaldokument schon einigermaßen semantisch geordnet, verfeinert dies die Hierarchie.
 
 Inhaltsverzeichnis einfügen
-: Ein Inhaltsverzeichnis einfügen. Das Inhaltsverzeichnis kann nach dem ersten H1, dem ersten H2 oder am Anfang der Datei stehen (wird nach allen Metadaten eingefügt).
+: Fügt ein Inhaltsverzeichnis ein. Es kann nach dem ersten H1, dem ersten H2 oder am Anfang der Datei stehen (wird dann nach etwaigen Metadaten eingefügt).
 
 Datei einfügen
-: Fügt eine ausgewählte Textdatei an einer bestimmten Stelle im Dokument ein. Dies kann nach dem ersten H1, dem ersten H2, oben, unten oder nach einer Textübereinstimmung erfolgen (verwenden Sie `/pattern/`, um nach einem regulären Ausdruck zu suchen).
+: Fügt eine ausgewählte Textdatei an einer bestimmten Stelle im Dokument ein. Das kann nach dem ersten H1, nach dem ersten H2, oben, unten oder nach einer Textübereinstimmung sein (verwenden Sie `/pattern/`, um nach einem regulären Ausdruck zu suchen).
 
 Text einfügen
-: Stellt einen Popup-Editor bereit, mit dem Sie Text direkt in die Aktion einbetten können. Die Positionierungsoptionen sind die gleichen wie bei _Datei einfügen_.
-: Verwenden Sie `[%key]` an einer beliebigen Stelle im eingefügten Text, um Werte aus Dokumentmetadaten, Umgebungsvariablen oder dem Marked-Kontext abzurufen (z. B. `[%author]`, `[%MARKED_PATH]`). Dies funktioniert unabhängig davon, welchen Prozessor Sie verwenden, sodass Sie MultiMarkdown nicht für die Metadatenersetzung benötigen. Werte aus früheren Aktionen in derselben Regel (z. B. **Metadaten festlegen**) oder aus einer vorhergehenden Regel werden einbezogen. Nicht übereinstimmende Schlüssel werden durch eine leere Zeichenfolge ersetzt.
+: Bietet einen Popup-Editor, mit dem Sie Text direkt in die Aktion einbetten. Die Positionierungsoptionen sind dieselben wie bei _Datei einfügen_.
+: Verwenden Sie `[%key]` an beliebiger Stelle im eingefügten Text, um Werte aus Dokumentmetadaten, Umgebungsvariablen oder dem Marked-Kontext abzurufen (z. B. `[%author]`, `[%MARKED_PATH]`). Das funktioniert unabhängig vom verwendeten Prozessor, Sie brauchen für die Metadaten-Ersetzung also kein MultiMarkdown. Werte aus früheren Aktionen derselben Regel (etwa **Metadaten festlegen**) oder aus einer vorhergehenden Regel werden einbezogen. Nicht gefundene Schlüssel werden durch eine leere Zeichenkette ersetzt.
 
 CSS-Datei einfügen
-: Fügt eine ausgewählte CSS-Datei in das Dokument ein. Diese wird nach jeder Stilauswahl geladen und kann verwendet werden, um vorhandene Stile zu überschreiben oder neue hinzuzufügen.
+: Fügt eine ausgewählte CSS-Datei in das Dokument ein. Sie wird nach jeder Stilauswahl geladen und lässt sich verwenden, um vorhandene Stile zu überschreiben oder neue hinzuzufügen.
 
 CSS einfügen
-: Bietet einen Popup-CSS-Editor, mit dem Sie Ihr eigenes CSS direkt zur Aktion hinzufügen können. Dieses CSS wird oben im Dokument nach allen vorhandenen Stilen eingefügt. Die Reihenfolge der eingefügten Stile entspricht der Reihenfolge der Aktionen in der Regel.
+: Bietet einen Popup-CSS-Editor, in dem Sie eigenes CSS direkt zur Aktion hinzufügen. Dieses CSS wird am Anfang des Dokuments nach allen vorhandenen Stilen eingefügt. Die Reihenfolge der eingefügten Stile entspricht der Reihenfolge der Aktionen in der Regel.
 
-Fügen Sie eine JavaScript-Datei ein
-: Fügt eine ausgewählte JavaScript-Datei am Ende des Dokuments ein. Beachten Sie, dass Sie eine Aktion *JavaScript einfügen* mit einem [update hook](#updatehook) verwenden müssen, wenn Sie möchten, dass das Skript bei jedem Update neu geladen wird.
+JavaScript-Datei einfügen
+: Fügt eine ausgewählte JavaScript-Datei am Ende des Dokuments ein. Beachten Sie: Damit das Skript bei jeder Aktualisierung neu geladen wird, brauchen Sie eine Aktion *JavaScript einfügen* mit einem [Update-Hook](#updatehook).
 
-Fügen Sie JavaScript von der URL ein
-: Verwenden Sie dies, um am Ende des Dokuments ein `<script>`-Tag einzufügen, das mit einem CDN oder einer anderen Remote-URL verknüpft ist. Beachten Sie, dass Sie eine Aktion *JavaScript einfügen* mit einem [update hook](#updatehook) verwenden müssen, wenn Sie möchten, dass das Skript bei jedem Update neu geladen wird.
+JavaScript von URL einfügen
+: Fügt am Ende des Dokuments ein `<script>`-Tag ein, das mit einem CDN oder einer anderen entfernten URL verknüpft ist. Beachten Sie: Damit das Skript bei jeder Aktualisierung neu geladen wird, brauchen Sie eine Aktion *JavaScript einfügen* mit einem [Update-Hook](#updatehook).
 
-Fügen Sie JavaScript ein
-: Stellt einen Popup-JavaScript-Editor bereit, mit dem Sie benutzerdefiniertes JavaScript direkt in die Aktion einbetten können. Dies wird am Ende des Dokuments eingefügt und die Reihenfolge, in der JavaScript von der Regel ausgeführt wird, wird durch die Reihenfolge der Aktionen bestimmt, wobei die letzte Aktion zuletzt hinzugefügt wird.
-: Beachten Sie, dass Sie ein [update hook](#updatehook) verwenden müssen, wenn Sie möchten, dass bei jedem Update Skripts ausgeführt werden.
+JavaScript einfügen
+: Bietet einen Popup-JavaScript-Editor, mit dem Sie eigenes JavaScript direkt in die Aktion einbetten. Es wird am Ende des Dokuments eingefügt; die Reihenfolge, in der die Regel das JavaScript ausführt, ergibt sich aus der Reihenfolge der Aktionen, wobei die zuletzt hinzugefügte Aktion zuletzt läuft.
+: Beachten Sie: Damit Skripte bei jeder Aktualisierung laufen, brauchen Sie einen [Update-Hook](#updatehook).
 
-Self-Link-URLs
-: Konvertieren Sie alle nackten URLs in `<url>`, wodurch in jedem Prozessor ein Hyperlink generiert wird.
+URLs selbst verlinken
+: Wandelt alle blanken URLs in `<url>` um, was in jedem Prozessor einen Hyperlink erzeugt.
 
-Verknüpfung ausführen
-: Führen Sie eine Apple-Verknüpfung aus. Jede Shortcut-Ausführung sollte Eingaben von STDIN entgegennehmen und am Ende eine Ausgabe zurückgeben (Stopp- und Rückgabeausgabe). Wenn Sie Aktionen ausführen möchten, die den Text nicht ändern, legen Sie die Eingabe auf eine Variable fest, führen Sie Ihre Aktionen aus und geben Sie am Ende die ursprüngliche Textvariable aus.
+Kurzbefehl ausführen
+: Führt einen Apple-Kurzbefehl aus. Jeder ausgeführte Kurzbefehl sollte die Eingabe über STDIN entgegennehmen und am Ende eine Ausgabe zurückgeben (Stoppen und Ausgabe zurückgeben). Wenn Sie Aktionen ausführen möchten, die den Text nicht verändern, weisen Sie die Eingabe einer Variablen zu, führen Ihre Aktionen aus und geben am Ende die ursprüngliche Textvariable aus.
 
-Führen Sie den Systemdienst aus
-: Führen Sie einen beliebigen Systemdienst in `~/Library/Services` aus. Der Dienst sollte Eingaben akzeptieren und Ausgaben zurückgeben.
+Systemdienst ausführen
+: Führt einen beliebigen Systemdienst aus `~/Library/Services` aus. Der Dienst sollte Eingaben annehmen und Ausgaben zurückgeben.
 
-Führen Sie den Automator-Workflow aus
-: Führen Sie eine beliebige Automator-Datei `.workflow` aus. Die Eingabe wird auf STDIN weitergeleitet und die Ausgabe wird auf STDOUT erwartet.
+Automator-Workflow ausführen
+: Führt eine beliebige Automator-Datei `.workflow` aus. Die Eingabe wird über STDIN übergeben, die Ausgabe wird über STDOUT erwartet.
 
-Weiter
-: Standardmäßig wird die Verarbeitung gestoppt, sobald eine Regel übereinstimmt (getrennt für Präprozessoren und Prozessoren, sodass ein Präprozessor und ein Prozessor übereinstimmen können). Diese Aktion erzwingt, dass der Regelabgleich fortgesetzt wird, nachdem die Regel ihre Aktionen ausgeführt hat.
+Regel ausführen
+: Ruft aus der aktuellen Regel heraus die Aktionen einer anderen Eigenen Regel auf. Wählen Sie die Zielregel im Popup. Die aufgerufene Regel läuft in derselben Phase (Präprozessor oder Prozess), ohne ihr Prädikat erneut auszuwerten, das macht sie für wiederverwendbare „Zutaten“-Regeln nützlich.
 
-### Hook aktualisieren
+  **Beispiel:** Definieren Sie eine kleine Regel namens „HTML-Kommentare entfernen“ mit einer Aktion **Suchen und Ersetzen** und geben Sie ihr ein Kriterium **Manuell aktiviert**, damit sie nie automatisch läuft. Fügen Sie in Ihrer Hauptregel zur Buchverarbeitung nacheinander mehrere **Regel ausführen**-Aktionen ein: zuerst „Überschriften normalisieren“, dann „HTML-Kommentare entfernen“, dann einen Befehl, der Pandoc aufruft. So bleibt jeder Schritt wartbar, ohne Aktionen über Regeln hinweg zu duplizieren.
 
-Marked führt nicht bei jedem Update eine vollständige Aktualisierung durch
-Sie haben Skripte, die Teile des DOM rendern, die sie benötigen
-um ihre Renderfunktion mit der Hook-API von Marked auszuführen.
+  **Verschachtelung:** Eine über **Regel ausführen** aufgerufene Regel kann keine weitere Regel aufrufen. Enthält die Zielregel eine **Regel ausführen**-Aktion, wird diese Aktion übersprungen; alle anderen Aktionen der Zielregel laufen weiterhin. Sie können einer einzelnen Regel mehrere **Regel ausführen**-Aktionen hinzufügen; sie werden der Reihe nach ausgeführt.
 
-Das folgende Beispiel verwendet Mermaid, was Sie eigentlich nie tun
-Dies ist nicht erforderlich, da Mermaid jetzt standardmäßig enthalten ist. Aber
-So würden Sie vorgehen, wenn Sie es manuell einbinden würden.
+  Eine Regel kann sich nicht selbst aufrufen, und Marked erkennt Zyklen (etwa: Regel A ruft Regel B auf, die wiederum Regel A aufruft) und überspringt den verschachtelten Aufruf. Meldungen zu übersprungenen Aufrufen finden Sie im [Protokoll eigener Regeln](#customprocessorlog).
 
-Fügen Sie eine Aktion **JavaScript einfügen** hinzu und klicken Sie im Bereich „JS bearbeiten“
-Fenster, initialisieren Sie das Skript und fügen Sie den Hook hinzu:
+Fortfahren
+: Standardmäßig endet die Verarbeitung, sobald eine Regel zutrifft (getrennt für Präprozessoren und Prozessoren, sodass je ein Präprozessor und ein Prozessor zutreffen können). Diese Aktion erzwingt, dass der Regelabgleich fortgesetzt wird, nachdem die Regel ihre Aktionen ausgeführt hat.
 
-„Javascript
+### Update-Hook [updatehook]
+
+Marked führt nicht bei jeder Aktualisierung eine vollständige Neudarstellung durch. Wenn Sie also Skripte haben, die Teile des DOM neu rendern sollen, müssen diese ihre Render-Funktion über Markeds Hook-API ausführen.
+
+Das folgende Beispiel verwendet Mermaid, was Sie eigentlich nie tun müssen, da Mermaid inzwischen standardmäßig enthalten ist. So würden Sie aber vorgehen, wenn Sie es manuell einbinden würden.
+
+Fügen Sie eine Aktion **JavaScript einfügen** hinzu und initialisieren Sie im Fenster „JS bearbeiten“ das Skript, dann fügen Sie den Hook hinzu:
+
+```javascript
 mermaid.initialize({ startOnLoad: true });
 
 Marked.hooks.register('update', function() {
     mermaid.run();
 });
-„
+```
 
-Dies führt dazu, dass `mermaid.run()` jedes Mal ausgeführt wird
-Marked führt eine Teilaktualisierung durch.
+Dadurch wird `mermaid.run()` jedes Mal ausgeführt, wenn Marked eine Teilaktualisierung durchführt.
 
-### Testregeln
+### Regeln testen
 
-Die Schaltfläche _Testregeln_ unter der Regelliste öffnet ein
-Dialog, in dem Sie eine beliebige Markdown-Datei auswählen können
-anhand aller Ihrer Regeln getestet. Regeln, die übereinstimmen, werden erhalten
-wird durch eine grüne Lasche auf der linken Seite hervorgehoben. Beim Matching
-Gegen eine Datei erscheint eine X-Schaltfläche, die dazu verwendet werden kann
-Löschen Sie den Test und heben Sie die Markierung der Zeilen auf.
+Die Schaltfläche _Regeln testen_ unter der Regelliste öffnet einen Dialog, in dem Sie eine beliebige Markdown-Datei auswählen können; sie wird dann gegen alle Ihre Regeln getestet. Zutreffende Regeln werden auf der linken Seite mit einer grünen Markierung hervorgehoben. Beim Test gegen eine Datei erscheint neben dem Button eine rote X-Schaltfläche, mit der Sie den Test zurücksetzen und die Hervorhebung der Zeilen entfernen können.
 
-## Drag-and-Drop
+## Drag-and-drop
 
-Das Dirigentenfenster unterstützt erweitertes Drag & Drop
-Funktionen, die Dateitypen intelligent erkennen und
-Bereitstellung geeigneter Aktionen basierend auf der gezogenen Datei. Die
-Die Implementierung umfasst ein geteiltes Overlay-System für Text
-Dateien, die es Benutzern ermöglichen, zwischen dem Testen der Datei zu wählen
-gegen Regeln verstoßen oder es als Aktion hinzufügen.
+Das Conductor-Fenster unterstützt erweitertes Drag-and-drop: Es erkennt Dateitypen intelligent und bietet je nach gezogener Datei passende Aktionen an. Für Textdateien gibt es ein geteiltes Overlay, mit dem Sie wählen können, ob Sie die Datei gegen die Regeln testen oder sie als Aktion hinzufügen.
 
-![Drag and Drop in Custom Rules][drag]
+![Drag-and-drop bei Eigenen Regeln][drag]
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
 ### Dateityperkennung
 
-Das System erkennt automatisch verschiedene Dateitypen und
-zeigt entsprechende Overlay-Meldungen an:
+Das System erkennt verschiedene Dateitypen automatisch und zeigt passende Overlay-Meldungen an:
 
-- **CSS-Dateien** (`.css`): Zeigt die Überlagerung „CSS-Datei einfügen“ an
-- **JavaScript-Dateien** (`.js`, `.javascript`): Zeigt „Einfügen
-  JS-Datei“-Overlay
-- **Skriptdateien** (jede ausführbare Datei)): Zeigt „Ausführen
-  „Befehl“-Overlay
-- **Textdateien**: Zeigt geteilte Überlagerung
-- **Ausführbare Dateien**: Zeigt die Überlagerung „Befehl ausführen“ an
-- **Unbekannte Erweiterungen**: Standardmäßig wird der Typ „Text“ verwendet und angezeigt
-  geteilte Überlagerung
+- **CSS-Dateien** (`.css`): zeigt das Overlay „CSS-Datei einfügen“
+- **JavaScript-Dateien** (`.js`, `.javascript`): zeigt das Overlay „JS-Datei einfügen“
+- **Skriptdateien** (jede ausführbare Datei): zeigt das Overlay „Befehl ausführen“
+- **Textdateien**: zeigen das geteilte Overlay
+- **Ausführbare Dateien**: zeigen das Overlay „Befehl ausführen“
+- **Unbekannte Erweiterungen**: fallen auf den Typ „Text“ zurück und zeigen das geteilte Overlay
 
-## Custom Prozessorprotokoll
+## Protokoll eigener Regeln [customprocessorlog]
 
-Wenn Sie merkwürdige Ergebnisse erhalten und sehen möchten, was vor sich geht, zeigt Ihnen das Custom-Regelprotokoll, welche Regeln in welcher Reihenfolge ausgeführt werden. Verwenden Sie **Hilfe->Regelprotokoll für Custom anzeigen**, um es zu öffnen.
+Wenn Sie merkwürdige Ergebnisse erhalten und sehen möchten, was vor sich geht, zeigt Ihnen das Protokoll eigener Regeln, welche Regeln in welcher Reihenfolge laufen. Öffnen Sie es über **Hilfe → Protokoll eigener Regeln anzeigen**. Auch aufgerufene **Regel ausführen**-Aktionen und übersprungene verschachtelte Aufrufe werden hier protokolliert.
 
-![Custom Rules Log][crlog]
+![Protokoll eigener Regeln][crlog]
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
 ## Mehrere Befehle ausführen
 
-Eine Regel kann mehrere aufeinanderfolgende Befehle enthalten. Die Ausgabe von
-Jeder Befehl wird an den nächsten weitergegeben. Wenn du haben willst
-Ein Befehl gibt gleichzeitig mit Marked etwas aus
-Wenn Sie Aktualisierungen in der Vorschau anzeigen möchten, geben Sie unbedingt den Originalinhalt zurück
-an STDOUT zur Verarbeitung des nächsten Befehls oder integriert
-Prozessor.
+Eine Regel kann mehrere **Befehl ausführen**-Aktionen nacheinander enthalten. Die Ausgabe jedes Befehls wird an den nächsten übergeben. Soll ein Befehl etwas ausgeben und gleichzeitig Markeds Vorschau aktualisiert werden, geben Sie unbedingt den ursprünglichen Inhalt an STDOUT zurück, damit der nächste Befehl oder der integrierte Prozessor ihn verarbeiten kann.
 
-Wenn Sie beispielsweise möchten, dass ein Befehl einen PDF aktualisiert
-Um ein Dokument mit Pandoc zu erstellen, übergeben Sie einfach den ursprünglichen Dateipfad
-(von Umgebungsvariablen) an Pandoc mit entsprechendem
-Befehlszeilenoptionen und geben Sie dann den STDIN-Inhalt zurück
-auf STDOUT übertragen.
+Wenn Sie zum Beispiel mit einem Befehl über Pandoc ein PDF-Dokument aktualisieren möchten, übergeben Sie einfach den ursprünglichen Dateipfad (aus den Umgebungsvariablen) mit den passenden Befehlszeilenoptionen an Pandoc und geben dann den STDIN-Inhalt wieder an STDOUT aus.
 
-## Dynamische Umgehung benutzerdefinierter Prozessoren
+## Benutzerdefinierte Prozessoren dynamisch umgehen
 
-Wenn ein benutzerdefinierter Prozessor „NOCUSTOM“ auf STDOUT zurückgibt, Marked
-beendet den benutzerdefinierten Prozessor und greift auf den zurück
-Standardmäßiger interner Prozessor. Auf diese Weise können Sie eine erstellen
-benutzerdefinierter Prozessor, der entscheiden kann, ob dies erforderlich ist oder nicht
-mit [environment variables](#environmentvariables) ausführen
-Unten der Dateiname oder die Erweiterung des Dokuments, Inhaltsübereinstimmung
-oder andere Logik.
+Gibt ein benutzerdefinierter Prozessor „NOCUSTOM“ über STDOUT zurück, beendet Marked den benutzerdefinierten Prozessor und fällt auf den internen Standardprozessor zurück. So können Sie einen benutzerdefinierten Prozessor bauen, der anhand der [Umgebungsvariablen](#environmentvariables), des Dateinamens oder der Erweiterung des Dokuments, einer Inhaltsübereinstimmung oder anderer Logik selbst entscheidet, ob er laufen soll.
 
-Wenn anstelle von `NOCUSTOM` ein Custom Prozessor zurückgegeben wird
-`MULTIMARKDOWN` oder `DISCOUNT` (oder `GFM`), `KRAMDOWN` oder
-`COMMONMARK`, dann wird dieser interne Prozessor verwendet
-nur dieses Dokument. Diese Änderung hat keine Auswirkungen auf die Standardeinstellung
-Prozessor in den Einstellungen eingestellt.
+Gibt ein benutzerdefinierter Prozessor statt `NOCUSTOM` den Wert `MULTIMARKDOWN` oder `DISCOUNT` (oder `GFM`), `KRAMDOWN` oder `COMMONMARK` zurück, wird nur für dieses Dokument der entsprechende interne Prozessor verwendet. Diese Änderung wirkt sich nicht auf den in den Einstellungen festgelegten Standardprozessor aus.
 
-## Umgebungsvariablen
+## Umgebungsvariablen [environmentvariables]
 
-Die Aktion „Befehl ausführen“ verfügt über einen Umgebungseditor, in dem Sie
-Sie können Ihre eigenen Umgebungsvariablen festlegen
-für den Befehl oder das Skript verfügbar. Zusätzlich zu diesen
-Benutzerdefinierte Variablen, Marked enthält einige eigene.
+Die Aktion **Befehl ausführen** hat einen Umgebungseditor, in dem Sie eigene Umgebungsvariablen setzen können, die dem Befehl oder Skript zur Verfügung stehen. Neben diesen eigenen Variablen bringt Marked einige eigene mit.
 
-Marked führt den benutzerdefinierten Prozessor in seiner eigenen Shell aus, d. h
-Standardumgebungsvariablen werden nicht automatisch übergeben.
-Sie können die Umgebungsvariablen von Marked verwenden, um Ihre zu erweitern
-eigene in Ihren Skripten. Marked erstellt die folgenden Variablen
-Verfügbar für die Verwendung in Ihren Shell-Skripten:
+Marked führt den benutzerdefinierten Prozessor in einer eigenen Shell aus, das heißt, Standard-Umgebungsvariablen werden nicht automatisch übergeben. Sie können Markeds Umgebungsvariablen nutzen, um Ihre eigenen in Ihren Skripten zu ergänzen. Marked stellt folgende Variablen für Ihre Shell-Skripte bereit:
 
 **MARKED_ORIGIN**
-: Der Speicherort (Basisverzeichnis) Ihrer primären Arbeitsdatei (der Ordner des Arbeitstextes, Scrivener oder Indexdatei).
+: Der Speicherort (Basisverzeichnis) Ihrer primären Arbeitsdatei (der Ordner des Arbeitstexts, der Scrivener- oder Indexdatei).
 
-**PFAD**
-: Marked legt einen Pfad fest, der standardmäßige ausführbare Ordner enthält, und hängt das Verzeichnis im `MARKED_ORIGIN` oben an. Die Standardwerte sind: `/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin`. Sie können Ihre eigene hinzufügen, indem Sie die PATH-Variable nach Bedarf festlegen und den Pfad von Marked anhängen oder überschreiben (z. B. `PATH=/usr/local/yourfolder:$PATH`).
+**PATH**
+: Marked setzt einen Pfad, der die Standard-Ordner für ausführbare Dateien enthält, und hängt das oben genannte Verzeichnis aus `MARKED_ORIGIN` an. Die Standardwerte sind: `/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin`. Sie können eigene ergänzen, indem Sie die Variable PATH nach Bedarf setzen und Markeds Pfad anhängen oder überschreiben (z. B. `PATH=/usr/local/yourfolder:$PATH`).
 
-**Zuhause**
-: Das Home-Verzeichnis des angemeldeten Benutzers. Python und andere Skripte, die auf das Setzen der HOME-Variablen angewiesen sind, übernehmen dies automatisch, es steht jedoch für andere Zwecke in Ihren Skripten zur Verfügung.
+**HOME**
+: Das Home-Verzeichnis des angemeldeten Benutzers. Python und andere Skripte, die auf die gesetzte HOME-Variable angewiesen sind, übernehmen dies automatisch; sie steht aber auch für andere Zwecke in Ihren Skripten zur Verfügung.
 
 **MARKED_EXT**
-: Die Erweiterung der primären Datei, die verarbeitet wird. Mit dieser Variable können Sie je nach Art der angezeigten Datei unterschiedliche Prozesse skripten. Wenn zum Beispiel `$MARKED_EXT == "md"` Ihren bevorzugten Markdown-Prozessor ausführt, aber wenn `$MARKED_EXT == "textile"` einen Textile-Prozessor ausführt.
+: Die Erweiterung der primären Datei, die verarbeitet wird. Mit dieser Variable können Sie je nach Dateityp unterschiedliche Abläufe skripten. Beispiel: Wenn `$MARKED_EXT == "md"`, führen Sie Ihren bevorzugten Markdown-Prozessor aus; wenn `$MARKED_EXT == "textile"`, führen Sie einen Textile-Prozessor aus.
 
 **MARKED_PATH**
-: Dies ist der vollständige UNIX-Pfad zur Hauptdatei, die zum Zeitpunkt des Ladens in Marked geöffnet ist.
+: Der vollständige UNIX-Pfad zur Hauptdatei, die zum Ladezeitpunkt in Marked geöffnet ist.
 
 **MARKED_INCLUDES**
-: Eine in Anführungszeichen gesetzte, durch Kommas getrennte Liste der Dateien, die Marked in den Text aufgenommen hat, der mit den verschiedenen [include syntaxes](Special_Syntax.html#pagebreaks) übergeben wird.
+: Eine in Anführungszeichen gesetzte, durch Kommas getrennte Liste der Dateien, die Marked über die verschiedenen [Einbinde-Syntaxen](Special_Syntax.html#pagebreaks) in den übergebenen Text eingefügt hat.
 
 **MARKED_PHASE**
-: Dies wird entweder auf „PROCESS“ oder „PREPROCESS“ gesetzt, sodass Sie ein einziges Skript verwenden können, um beide Phasen basierend auf dieser Variablen abzuwickeln.
+: Wird entweder auf „PROCESS“ oder „PREPROCESS“ gesetzt, sodass Sie mit einem einzigen Skript beide Phasen anhand dieser Variable abwickeln können.
 
 **MARKED_CSS_PATH**
-: Der vollständige Pfad zum aktuellen Stylesheet
+: Der vollständige Pfad zum aktuellen Stylesheet.
 
 ### Metadaten-Umgebungsvariablen
 
-Wenn die Aktion „Befehl ausführen“ in Marked ausgeführt wird
-Dirigentensystem, Dokumentmetadaten werden automatisch erstellt
-extrahiert und als Umgebungsvariablen zur Verfügung gestellt
-Befehl.
+Wird die Aktion **Befehl ausführen** in Markeds Conductor-System ausgeführt, werden die Dokumentmetadaten automatisch extrahiert und dem Befehl als Umgebungsvariablen bereitgestellt.
 
-#### Wie es funktioniert
+#### So funktioniert es
 
-1. **Metadatenextraktion**: Das System extrahiert Metadaten aus dem Dokument mithilfe der vorhandenen Methode `extractMetaDataFromString:`, die Folgendes unterstützt:
-   - YAML Titelseite (`---` Blöcke)
-   - MultiMarkdown-Metadaten (Schlüssel: Wertezeilen)
-   - Pandoc-Metadaten (`%` Schriftfelder)
-   – HTML Kommentarmetadaten (`<!-- key: value -->`)
+1. **Metadatenextraktion**: Das System extrahiert Metadaten aus dem Dokument über die vorhandene Methode `extractMetaDataFromString:`, die Folgendes unterstützt:
+   - YAML-Front-Matter (`---`-Blöcke)
+   - MultiMarkdown-Metadaten (`Schlüssel: Wert`-Zeilen)
+   - Pandoc-Metadaten (`%`-Titelblöcke)
+   - HTML-Kommentar-Metadaten (`<!-- key: value -->`)
 
 2. **Schlüsselnormalisierung**: Metadatenschlüssel werden für die Verwendung als Umgebungsvariablen normalisiert:
-   - In Kleinbuchstaben umgewandelt
-   - Alle nicht alphanumerischen Zeichen werden entfernt
-   - Leerzeichen und Sonderzeichen werden entfernt
+   - in Kleinbuchstaben umgewandelt
+   - alle nicht alphanumerischen Zeichen entfernt
+   - Leerzeichen und Sonderzeichen entfernt
 
 3. **Format der Umgebungsvariablen**: Jeder Metadatenschlüssel wird zu einer Umgebungsvariablen mit dem Präfix `MD_`:
    - `Author` → `MD_author`
@@ -374,8 +337,7 @@ Status: Draft
 Priority: High
 ```
 
-Die folgenden Umgebungsvariablen stehen zur Verfügung
-Befehle:
+Damit stünden den Befehlen folgende Umgebungsvariablen zur Verfügung:
 
 ```bash
 MD_title="My Document"
@@ -390,150 +352,92 @@ MD_priority="High"
 
 #### Verwendung in Befehlen
 
-Sie können diese Umgebungsvariablen jetzt in Ihrem Run verwenden
-Befehlsaktionen:
+Sie können diese Umgebungsvariablen dann in Ihren **Befehl ausführen**-Aktionen verwenden:
 
-„Bash
-# Drucken Sie den Dokumenttitel aus
-echo „Verarbeitung: $MD_title“
+```bash
+# Print the document title
+echo "Processing: $MD_title"
 
-# Metadaten in bedingter Logik verwenden
-if [ "$MD_status" = "Entwurf" ]; dann
-    echo „Dokument befindet sich noch im Entwurfsstatus“
+# Use metadata in conditional logic
+if [ "$MD_status" = "Draft" ]; then
+    echo "Document is still in draft status"
 fi
 
-# Übergeben Sie Metadaten an andere Tools
-pandoc „$MARKED_PATH“ \
+# Pass metadata to other tools
+pandoc "$MARKED_PATH" \
   --metadata title="$MD_title" \
   --metadata author="$MD_author" \
   --metadata date="$MD_date" \
-  -o Ausgabe.pdf
+  -o output.pdf
 
-# Verwenden Sie Metadaten für die Dateibenennung
-if [ -n "$MD_title" ]; dann
-    Output_file="${MD_title// /_}.html"
-sonst
-    Output_file="output.html"
+# Use metadata for file naming
+if [ -n "$MD_title" ]; then
+    output_file="${MD_title// /_}.html"
+else
+    output_file="output.html"
 fi
-„
+```
 
 #### Unterstützte Aktionen
 
-Diese Metadaten-zu-Umgebungsvariablen-Funktionalität ist
-erhältlich in:
+Diese Funktion – Metadaten als Umgebungsvariablen – steht zur Verfügung in:
 
 - **Befehl ausführen**-Aktionen
-- Aktionen **Eingebettetes Skript ausführen**
+- **Eingebettetes Skript ausführen**-Aktionen
 
-Die Metadaten werden automatisch aus dem Dokument extrahiert
-Inhalt und wird für jeden Befehl oder jedes Skript verfügbar gemacht
-durchläuft diese Aktionen.
+Die Metadaten werden automatisch aus dem Dokumentinhalt extrahiert und jedem Befehl oder Skript bereitgestellt, das über diese Aktionen läuft.
 
 ## Aktivieren und Deaktivieren
 
-Die benutzerdefinierten Prozessoren können für aktiviert und deaktiviert werden
-einzelne Dokumente mit {% kbd opt cmd C %}. Du
-kann auch einen Präprozessor oder Prozessor für ein Dokument aktivieren
-automatisch [using metadata](#perdocument) am Anfang
-das Dokument.
+Die benutzerdefinierten Prozessoren lassen sich für einzelne Dokumente mit {% kbd opt cmd C %} ein- und ausschalten. Sie können einen Präprozessor oder Prozessor für ein Dokument auch automatisch [über Metadaten](#perdocument) am Anfang des Dokuments einschalten.
 
-Die aktuellen Status der Bearbeiter für jedes Dokument sind
-werden als Kontrollleuchten angezeigt (nur sichtbar, wenn ein Prozessor vorhanden ist).
-aktiviert ist) links neben den Symbolleistenelementen unten
-rechte Symbolleiste der Vorschau.
+Der aktuelle Status der Prozessoren wird für jedes Dokument als Kontrollleuchte angezeigt (nur sichtbar, wenn ein Prozessor aktiv ist) – links neben den Symbolleistenelementen in der unteren rechten Symbolleiste der Vorschau.
 
-### Präprozessor
+### Präprozessor [preprocessor]
 
-Wenn Sie Präprozessorregeln einrichten, werden diese nach Marked ausgeführt.
-übernimmt alle Marked-spezifischen Aufgaben, z. B. das Einbeziehen externer
-Dokumente und Code, aber bevor es läuft, läuft der Prozessor
-(intern oder benutzerdefiniert). Dies gibt Ihnen die Möglichkeit zum Rendern
-Benutzerdefinierte Vorlagenvariablen, verarbeiten Sie Ersetzungen oder fügen Sie sie ein
-Ihre eigenen Inhalte auf andere Weise.
+Wenn Sie Präprozessorregeln einrichten, laufen diese, nachdem Marked alle Marked-spezifischen Aufgaben erledigt hat – etwa das Einbinden externer Dokumente und Codes –, aber bevor der (interne oder benutzerdefinierte) Prozessor läuft. So haben Sie die Gelegenheit, eigene Template-Variablen zu rendern, Ersetzungen vorzunehmen oder auf beliebige andere Weise eigene Inhalte einzufügen.
 
-Marked legt eine Umgebungsvariable für die Funktion fest
-Verzeichnis (`MARKED_ORIGIN`) in das übergeordnete Verzeichnis des
-Datei, die in der Vorschau angezeigt wird. Damit können Sie die Arbeitsweise ändern
-Verzeichnis eines Skripts und Include-Dateien mit relativen Pfaden
-zum Originaldokument. In Ruby ist das beispielsweise möglich
-Verwendung:
+Marked setzt eine Umgebungsvariable für das Arbeitsverzeichnis (`MARKED_ORIGIN`) auf das übergeordnete Verzeichnis der Datei, die in der Vorschau angezeigt wird. Damit können Sie das Arbeitsverzeichnis eines Skripts wechseln und Dateien mit Pfaden relativ zum Originaldokument einbinden. In Ruby geht das zum Beispiel so:
 
-Dir.chdir(ENV['MARKED_ORIGIN'])
+	Dir.chdir(ENV['MARKED_ORIGIN'])
 
-Wenn diese Option aktiviert ist, kann der benutzerdefinierte Präprozessor aktiviert und aktiviert werden
-für einzelne Dokumente ausschalten
-{% kbd ctrl opt cmd C %}.
+Ist er aktiviert, lässt sich der benutzerdefinierte Präprozessor für einzelne Dokumente mit {% kbd ctrl opt cmd C %} ein- und ausschalten.
 
-#### Pro-Dokument-Prozessor/Vorprozessor [perDokument]
+#### Prozessor/Präprozessor pro Dokument [perdocument]
 
-Custom Prozessoren können auch pro Dokument festgelegt werden
-Verwendung des Metadatenformats für [Per-Document
-settings](Per-Document_Settings.html).
+Benutzerdefinierte Prozessoren lassen sich auch pro Dokument festlegen, über das Metadatenformat für [Pro-Dokument-Einstellungen](Per-Document_Settings.html).
 
-Sie können angeben, ob benutzerdefinierte Prozessoreinstellungen verwendet werden sollen und
-Überschreiben Sie die Standardeinstellung für ein Dokument mit [Per-Document
-settings](Per-Document_Settings.html) (`Custom Processor:`
-und `Custom Preprocessor:`). Jede andere Einstellung als „true“
-oder „Ja“ deaktiviert den benutzerdefinierten Vor-/Prozessor.
+Über [Pro-Dokument-Einstellungen](Per-Document_Settings.html) (`Custom Processor:` und `Custom Preprocessor:`) geben Sie an, ob die benutzerdefinierten Prozessoreinstellungen verwendet werden und die Standardeinstellung für ein Dokument überschrieben wird. Jeder andere Wert als „true“ oder „yes“ deaktiviert den benutzerdefinierten Prä-/Prozessor.
 
 Beispielverwendung:
 
-Custom Prozessor: wahr
-    Custom Präprozessor: falsch
+    Custom Processor: true
+    Custom Preprocessor: false
 
-Wie auf der Seite [Per-Document
-Settings](Per-Document_Settings.html#hidingmeta) erwähnt, Sie
-kann diese Metadaten mit HTML Kommentarmarkierungen umgeben, um sie auszublenden
-es von GitHub und anderen Prozessoren, die es nicht entfernen
-aus der Ausgabe:
+Wie auf der Seite [Pro-Dokument-Einstellungen](Per-Document_Settings.html#hidingmeta) beschrieben, können Sie diese Metadaten mit HTML-Kommentarmarkierungen umgeben, um sie vor GitHub und anderen Prozessoren zu verbergen, die sie nicht aus der Ausgabe entfernen:
 
-<!--
-    Custom Prozessor: wahr
-    Custom Präprozessor: wahr
-    ->
+    <!--
+    Custom Processor: true
+    Custom Preprocessor: true
+    -->
 
-## Verwendung eines alternativen Markdown-Prozessors
+## Einen alternativen Markdown-Prozessor verwenden
 
-Jede Markdown-Variante, die Sie über die Befehlszeile rendern können, ist möglich
-mit Marked verwendet werden. Es muss in der Lage sein, Eingaben anzunehmen
-STDIN, was dasselbe ist, als würde man Ihren Markdown daran weiterleiten
-Befehlszeile, d. h. `cat myfile.md | myprocessor`. Es braucht
-um den resultierenden HTML auf STDOUT zurückzugeben, was jeder
-Der Prozessor, mit dem ich jemals gearbeitet habe, funktioniert standardmäßig.
+Jede Markdown-Variante, die Sie über die Befehlszeile rendern können, lässt sich mit Marked verwenden. Sie muss Eingaben über STDIN annehmen können – dasselbe wie das „Pipen“ Ihres Markdowns auf der Befehlszeile, also `cat myfile.md | myprocessor`. Und sie muss das resultierende HTML über STDOUT zurückgeben, was jeder Prozessor, mit dem ich je gearbeitet habe, standardmäßig tut.
 
-Verwenden Sie `which YOUR_PROCESSOR` im Terminal, um den Pfad zu bestimmen
-zur ausführbaren Datei hinzufügen und diese dann in den Pfad „Befehl ausführen“ einfügen
-Feld, oder ziehen Sie einfach die ausführbare Datei in das Custom-Regelfenster
-mit der Regel, zu der Sie die Aktion hinzufügen möchten, ausgewählt.
+Ermitteln Sie mit `which YOUR_PROCESSOR` im Terminal den Pfad zur ausführbaren Datei und fügen Sie diesen in das Pfadfeld von „Befehl ausführen“ ein – oder ziehen Sie die ausführbare Datei einfach in das Fenster „Eigene Regeln“, während die Regel ausgewählt ist, zu der Sie die Aktion hinzufügen möchten.
 
-Wenn Ihr Prozessor Argumente in der Befehlszeile benötigt,
-Sie müssen diese ebenfalls in das Feld eingeben. Einige
-Prozessoren benötigen Bindestriche, um auf STDIN und/oder STDOUT zu funktionieren.
-z.B. `-o - -` signalisiert häufig die Eingabe von STDIN und die Ausgabe an
-STDOUT. Weitere Informationen finden Sie in der Dokumentation Ihres Prozessors.
+Wenn Ihr Prozessor Argumente auf der Befehlszeile benötigt, geben Sie diese ebenfalls in das Feld ein. Manche Prozessoren brauchen Bindestriche, um über STDIN und/oder STDOUT zu funktionieren; `-o - -` signalisiert etwa häufig Eingabe von STDIN und Ausgabe an STDOUT. Einzelheiten finden Sie in der Dokumentation Ihres Prozessors.
 
-Ich habe die Custom-Prozessorfunktion mit Pandoc getestet.
-Kramdown, markiert (Rabatt), MultiMarkdown 6, Maruku und
-verschiedene andere Geschmacksrichtungen.
+Ich habe die Funktion „Benutzerdefinierter Prozessor“ mit Pandoc, Kramdown, marked (Discount), MultiMarkdown 6, Maruku und diversen anderen Varianten getestet.
 
 ### Eine Anmerkung zu Pandoc und Sandboxing
 
-Pandoc (und einige andere Befehlszeilentools) werden nicht ausgeführt
-die Mac App Store-Version (Sandbox) von Marked.
-Wenn Sie Pandoc ausführen müssen, verwenden Sie **Hilfe->Crossgrade**, um eine zu erhalten
-kostenlose Lizenz für die direkte (Paddle-)Version. Das ist wahr
-eines Prozessors, bei dem Sandboxing-Probleme auftreten: wenn Marked
-kann es aufgrund von MAS-Berechtigungsproblemen nicht ausführen, wird es aber tun
-Bieten Sie die Schritte zum Crossgrade an. Wenn bei Ihnen Probleme auftreten
-und dies nicht der Fall ist, kontaktieren Sie mich bitte über die
-[support site](https://support.markedapp.com/questions/add).
+Pandoc (und einige andere Befehlszeilen-Tools) laufen nicht in der Mac-App-Store-Version (Sandbox) von Marked. Wenn Sie Pandoc ausführen müssen, holen Sie sich über **Hilfe → Crossgrade** eine kostenlose Lizenz für die direkte (Paddle-)Version. Das gilt für jeden Prozessor, der auf Sandboxing-Probleme stößt: Wenn Marked ihn wegen MAS-Berechtigungsproblemen nicht ausführen kann, bietet es die Schritte zum Crossgrade an. Falls bei Ihnen Probleme auftreten kontaktieren Sie mich bitte über die [Support-Seite](https://support.markedapp.com/questions/add).
 
-### Pandoc als Markdown Auftragsverarbeiter der Schweizer Armee
+### Pandoc als Schweizer Taschenmesser unter den Markdown-Prozessoren
 
-[Pandoc](https://pandoc.org/) ist bei weitem die flexibelste
-Allzweck-Tool zur Verarbeitung einer Reihe von Markup-Formaten. Von
-Pandoc kann ein `-f`-Argument mit einem der folgenden Elemente hinzufügen
-Seien Sie Ihr Custom Auftragsverarbeiter für Folgendes:
+[Pandoc](https://pandoc.org/) ist mit Abstand das flexibelste Allzweck-Werkzeug für die Verarbeitung einer Vielzahl von Markup-Formaten. Mit einem `-f`-Argument und einem der folgenden Werte kann Pandoc Ihr benutzerdefinierter Prozessor für all diese Formate sein:
 
 - `commonmark`
 - `docbook`
@@ -545,62 +449,31 @@ Seien Sie Ihr Custom Auftragsverarbeiter für Folgendes:
 - `twiki`
 - `vimwiki`
 
-Und noch ein paar andere. Weitere Informationen finden Sie unter [Pandoc
-documentation](https://pandoc.org/MANUAL.html)
-Infos. Um eines davon als Eingabeformat zu verwenden, fügen Sie einfach das hinzu
-Geben Sie Folgendes in Ihr Feld „Befehl ausführen“ ein:
+Und viele weitere. Näheres in der [Pandoc-Dokumentation](https://pandoc.org/MANUAL.html). Um eines davon als Eingabeformat zu verwenden, geben Sie einfach Folgendes in Ihr Feld „Befehl ausführen“ ein:
 
-/usr/local/bin/pandoc -f INPUT_FORMAT
+    /usr/local/bin/pandoc -f INPUT_FORMAT
 
-Pandoc eignet sich perfekt zum Schreiben eines Skripts, das das verwendet
-`$MARKED_EXT` Umgebungsvariable, um das Format zu bestimmen
-um Pandoc auszuführen oder eine Reihe von Regeln mit zu verwenden
-Erweiterungsübereinstimmungen. Wenn die Erweiterung `md` ist, verwenden Sie
-`pandoc -f gfm` oder `pandoc -f markdown_mmd` (oder einfach zurückgeben
-`NOCUSTOM` auf STDOUT, um den Standardprozessor zu verwenden). Aber wenn ja
-`textile`, führen Sie `pandoc -f textile` innerhalb des Skripts aus. Und wenn
-Es ist `wiki`, verwenden Sie einen der Wiki-Markup-Prozessoren. Du bekommst
-die Idee.
+Pandoc eignet sich perfekt für ein Skript, das über die Umgebungsvariable `$MARKED_EXT` bestimmt, welches Format es durch Pandoc laufen lässt – oder für eine Reihe von Regeln mit Erweiterungsabgleich. Ist die Erweiterung `md`, verwenden Sie `pandoc -f gfm` oder `pandoc -f markdown_mmd` (oder geben Sie einfach `NOCUSTOM` über STDOUT zurück, um den Standardprozessor zu nutzen). Ist sie `textile`, führen Sie im Skript `pandoc -f textile` aus. Und ist sie `wiki`, verwenden Sie einen der Wiki-Markup-Prozessoren. Sie verstehen das Prinzip.
 
-Wie Pandoc-Fans wissen, kann Pandoc auch damit umgehen
-umfangreiche Bibliographie und LaTeX-Szenarien. Die meisten Funktionen
-Sie können einfach über die Befehlszeile darauf zugreifen
-durch die Verwendung von Übergabeargumenten in Marked.
+Wie Pandoc-Kenner wissen, beherrscht Pandoc auch umfangreiche Bibliografie- und LaTeX-Szenarien. Die meisten Funktionen, die Sie über die Befehlszeile erreichen, stehen in Marked einfach durch das Übergeben von Argumenten zur Verfügung.
 
-## Textil verwenden
+## Textile verwenden
 
-Einige Leute haben gefragt, wie man Textile zum Laufen bringt
-Marked. Sie benötigen einen Textilkonverter von
-die Befehlszeile. Es gibt einige Optionen, darunter Pandoc
-(siehe oben), aber wenn Sie Pandoc noch nicht installiert haben,
-Zwei weitere Optionen sind RedCloth für Ruby und Textile für Perl
-(erfordert die Installation der Entwicklertools). Installieren
-das eine oder andere:
+Ein paar Leute haben gefragt, wie sie Textile in Marked zum Laufen bringen. Sie brauchen einen Textile-Konverter, der über die Befehlszeile verfügbar ist. Es gibt einige Optionen, darunter Pandoc (siehe oben); falls Sie Pandoc aber noch nicht installiert haben, sind zwei weitere Optionen RedCloth für Ruby und Textile für Perl (setzt installierte Entwickler-Tools voraus). Installieren Sie das eine oder das andere:
 
-1. Installieren Sie Textile von
-   <https://github.com/bradchoate/text-textile> **ODER**
-   `sudo gem install RedCloth` im Terminal
-2. Verwenden Sie `which textile` oder `which redcloth`, um die zu bestimmen
-   Pfad, der in den Custom-Prozessorpfadeinstellungen verwendet werden soll
+1. Installieren Sie Textile von <https://github.com/bradchoate/text-textile> **ODER** `sudo gem install RedCloth` im Terminal
+2. Ermitteln Sie mit `which textile` oder `which redcloth` den Pfad, den Sie in den Pfadeinstellungen des benutzerdefinierten Prozessors verwenden
 
-Jetzt ist Marked ein Textil-Previewer für Sie!
+Jetzt ist Marked eine Textile-Vorschau für Sie!
 
 ## AsciiDoc verwenden
 
 1. Installieren Sie [AsciiDoctor](http://asciidoctor.org/).
-2. Aktivieren Sie eine Custom-Regel in {% prefspane Processor %}, um Ihre AsciiDoc-Dateien abzugleichen.
+2. Aktivieren Sie unter {% prefspane Processor %} eine Eigene Regel, die auf Ihre AsciiDoc-Dateien passt.
 3. Legen Sie die Regel als Prozessor fest und fügen Sie eine Aktion „Befehl ausführen“ hinzu
-    1. Bestimmen Sie den Pfad zu `asciidoc`
-       so etwas wie `/usr/bin/asciidoc` oder
-       `/opt/local/bin/asciidoc`. Wenn Sie unsicher sind, verwenden Sie
-       `which asciidoc` zum Suchen
-    2. Geben Sie `[PATH To asciidoc] --backend html5 -o - -` als ein
-       Der Befehl (das - am Ende sendet die Ausgabe als
-       STDOUT)
+    1. Ermitteln Sie den Pfad zu `asciidoc`, der etwa `/usr/bin/asciidoc` oder `/opt/local/bin/asciidoc` lautet. Im Zweifel finden Sie ihn mit `which asciidoc`
+    2. Geben Sie als Befehl `[PFAD zu asciidoc] --backend html5 -o - -` ein (das `-` am Ende sendet die Ausgabe an STDOUT)
 
-Dadurch wird das aktuelle Dokument an STDIN gesendet und angezeigt
-generiert HTML als STDOUT.
+Dadurch wird das aktuelle Dokument an STDIN gesendet und das erzeugte HTML über STDOUT angezeigt.
 
-Siehe [this gist](https://gist.github.com/mojavelinux/6324279)
-von [Dan Allen](https://gist.github.com/mojavelinux) für
-Weitere Informationen.
+Weitere Informationen finden Sie in [diesem Gist](https://gist.github.com/mojavelinux/6324279) von [Dan Allen](https://gist.github.com/mojavelinux).

@@ -1,102 +1,102 @@
 # <%= @title %>
 
-Optionen im {% prefspane Apps %}:
+Optionen unter {% prefspane Apps %}:
 
-(Siehe [Additional App Support](Additional_Application_Support.html))
+(Siehe [Zusätzliche App-Unterstützung](Additional_Application_Support.html))
 
-![Settings: Apps][1]
+![Einstellungen: Apps][1]
 
 [1]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
 ### Allgemeine Einstellungen
 
 Texteditor
-: Wählen Sie einen Texteditor aus, um das aktuelle Dokument zu empfangen, wenn Sie {% kbd cmd E %} eingeben.
+: Wählen Sie einen Texteditor, der das aktuelle Dokument erhält, wenn Sie {% kbd cmd E %} drücken.
 
-Bearbeiten Sie neue Dateien automatisch
-: Wenn Sie den Befehl „Neue Datei“ verwenden, öffnet diese Option automatisch die erstellte Datei in dem von Ihnen gewählten externen Editor.
+Neue Dateien automatisch bearbeiten
+: Beim Befehl „Neue Datei“ öffnet diese Option die erstellte Datei automatisch in Ihrem gewählten externen Editor.
 
-Links zu Textdateien sollten geöffnet werden in:
-: Bestimmen Sie das Verhalten von Marked, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.
+Textdatei-Links öffnen in:
+: Legt fest, wie sich Marked verhält, wenn ein in einem Vorschaufenster angeklickter Link zu einer lokalen Textdatei führt.
 
 Bildeditor
-: Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.
+: Wählen Sie eine Anwendung, die geöffnet wird, wenn Sie mit Rechtsklick auf ein lokales Bild „Bild bearbeiten“ wählen.
 
 Bildanmerkungs-/Markup-Editor
-: Wählen Sie eine Anwendung aus, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild mit Anmerkungen versehen“ ausgewählt wird.
+: Wählen Sie eine Anwendung, die geöffnet wird, wenn Sie mit Rechtsklick auf ein lokales Bild „Bild kommentieren“ wählen.
 
-Wenn kein Editor ausgewählt ist, zeigt Marked beim Bearbeiten oder Kommentieren ein Menü der installierten Anwendungen an. Das Menü enthält gängige Markdown-, Bild- und Anmerkungstools, die Sie auf Ihrem Mac finden, eine Option **Andere…** zum Auswählen einer beliebigen App aus `/Applications` und **Immer diese App verwenden** (standardmäßig aktiviert), um Ihre Auswahl als Standard zu speichern. Verwenden Sie die Schaltfläche „Löschen“ (Kreis mit einem X) neben jedem Auswahlsteuerelement in {% prefspane Apps %}, um eine Auswahl zu entfernen und zur Auswahl zurückzukehren.
+Ist kein Editor gewählt, zeigt Marked beim Bearbeiten oder Kommentieren ein Menü der installierten Anwendungen. Das Menü enthält gängige Markdown-, Bild- und Anmerkungswerkzeuge, die auf Ihrem Mac gefunden werden, eine Option **Andere…**, um eine beliebige App aus `/Applications` zu wählen, und **Diese App immer verwenden** (standardmäßig aktiviert), um Ihre Wahl als Standard zu speichern. Über die Löschen-Schaltfläche (Kreis mit X) neben jedem Auswählen-Steuerelement unter {% prefspane Apps %} entfernen Sie eine Auswahl und kehren zur Übersicht zurück.
 
 ### Anwendungsspezifische Einstellungen
 
 Kommentare und Anmerkungen standardmäßig anzeigen
-: Wenn diese Option aktiviert ist, werden in Scrivener-, Fountain-, Word- und CriticMarkup-Dokumenten erstellte Anmerkungen in der Vorschau hervorgehoben angezeigt. Deaktivieren Sie das Kontrollkästchen, um es vollständig auszublenden. Diese können auch beim Lesen eines Dokuments über das Menü {% appmenu Gear, Proofing ({{ctrl}}{{cmd}}C)%} umgeschaltet werden.
-: Wenn Kommentare aktiviert sind, werden Kommentare und Fußnoten in einer Seitenleiste angezeigt. Wenn Sie mit der Maus über einen Kommentar fahren, wird auf die Stelle im Dokument hingewiesen, an der er vorkommt.
+: Ist dies aktiviert, erscheinen in Scrivener-, Fountain-, Word- und CriticMarkup-Dokumenten gemachte Anmerkungen hervorgehoben in der Vorschau. Deaktivieren, um sie ganz auszublenden. Beim Lesen eines Dokuments lassen sie sich auch über das Menü {% appmenu {{gear}}, Korrekturlesen ({{ctrl}}{{cmd}}C) %} umschalten.
+: Sind Kommentare aktiviert, erscheinen Kommentare und Fußnoten in einer Seitenleiste. Fahren Sie über einen Kommentar, wird auf seine Stelle im Dokument verwiesen.
 
 #### DocC
 
-[(Info on DocC Support)](DocC_Support.html)
+[(Infos zur DocC-Unterstützung)](DocC_Support.html)
 
 DocC-Bildverweise auflösen
-: Lösen Sie in einem `.docc` Dokumentationskatalog erweiterungslose `![](ImageName)` Verweise auf Bilder im Katalogordner `Resources` auf, einschließlich der Varianten `~dark` und `@2x`.
+: Löst innerhalb eines `.docc`-Dokumentationskatalogs erweiterungslose `![](ImageName)`-Verweise auf Bilder im `Resources`-Ordner des Katalogs auf, einschließlich `~dark`- und `@2x`-Varianten.
 
-Lösen Sie dunkle und @2x-Bildvarianten auf
-: Erkennen Sie bei lokalen Bildern mit einer Dateierweiterung (`images/icon.png`) die Begleitdateien `~dark` und `@2x` im selben Ordner und geben Sie ein entsprechendes `<picture>`-Markup aus. Funktioniert in jedem Markdown- oder HTML-Dokument, nicht nur in DocC-Katalogen. Siehe [Image Variants](Image_Variants.html).
+Dunkle und @2x-Bildvarianten auflösen
+: Erkennt bei lokalen Bildern mit Dateierweiterung (`images/icon.png`) zugehörige `~dark`- und `@2x`-Dateien im selben Ordner und erzeugt responsives `<picture>`-Markup. Funktioniert in jedem Markdown- oder HTML-Dokument, nicht nur in DocC-Katalogen. Siehe [Bildvarianten](Image_Variants.html).
 
 #### Hookmark
 
-Hook://-URLs in Bildern und Links auflösen
-: Marked kann von Hookmark erstellte URLs lesen und sie in ihren Pfad auf der Festplatte auflösen.
+hook://-URLs in Bildern und Links auflösen
+: Marked kann von Hookmark erzeugte URLs lesen und zu ihrem Pfad auf der Festplatte auflösen.
 
 #### Leanpub/GitBook
 
-Aktivieren Sie die Leanpub-Unterstützung
-: Interpretieren Sie Dateien mit dem Namen `Book.txt` als Indexdateien und verarbeiten Sie die spezielle Leanpub-Syntax.
+Leanpub-Unterstützung aktivieren
+: Interpretiert Dateien namens `Book.txt` als Indexdateien und verarbeitet spezielle Leanpub-Syntax.
 
-Aktivieren Sie die GitBook-Unterstützung
-: Interpretieren Sie Dateien mit dem Namen `SUMMARY.md` als Indexdateien für die GitBook-Dokumentation.
+GitBook-Unterstützung aktivieren
+: Interpretiert Dateien namens `SUMMARY.md` als Indexdateien für GitBook-Dokumentation.
 
 #### Markdownifier
 
-Verwenden Sie Inline-Links
-: Markdown-Dokumente, die mit dem Markdownifier erstellt wurden, verwenden Inline- statt Referenzlinks.
+Inline-Links verwenden
+: Vom Markdownifier erstellte Markdown-Dokumente verwenden Inline- statt Referenzlinks.
 
-#### MarsBearbeiten
+#### MarsEdit
 
-Beitragstitel als Markdown-Header (h1) einfügen
-: Verwenden Sie den Titel des ausgewählten Beitrags als Markdown-Header.
+Beitragstitel als Markdown-Überschrift (h1) einfügen
+: Verwendet den Titel des ausgewählten Beitrags als Markdown-Überschrift.
 
 Metadaten als Tabelle anzeigen
-: Wenn aktiviert, werden Metadaten wie Kategorien und Titel als Markdown-Tabelle in der Vorschau angezeigt.
+: Ist dies aktiviert, werden Metadaten wie Kategorien und Titel als Markdown-Tabelle in der Vorschau angezeigt.
 
 #### Ordner
 
-Sehen Sie sich diese Erweiterungen nur in der Vorschau an
-: Beim Öffnen eines Ordners sucht Marked nach dem zuletzt geänderten Dokument und verwendet standardmäßig Erweiterungen wie `md`, `mmd` und `html`. Die Liste hier überschreibt die Standardeinstellung.
+Nur diese Erweiterungen in der Vorschau anzeigen
+: Beim Öffnen eines Ordners sucht Marked das zuletzt geänderte Dokument und greift dabei standardmäßig auf Erweiterungen wie `md`, `mmd` und `html` zurück. Die Liste hier überschreibt die Standardeinstellung.
 
 #### Scrivener
 
-[(Info on Scrivener Support)](Scrivener_Support.html)
+[(Infos zur Scrivener-Unterstützung)](Scrivener_Support.html)
 
-Fügen Sie Dokumenttitel als Markdown-Header ein
-: Analysieren Sie den Titel von Seiten und verschachtelten Seiten, um hierarchische Markdown-Header zu erstellen.
+Dokumenttitel als Markdown-Überschriften einfügen
+: Wertet die Titel von Seiten und verschachtelten Seiten aus, um hierarchische Markdown-Überschriften zu erzeugen.
 
-Fügen Sie Kompilierungsmetadaten (Titel, Autor) hinzu, wenn diese fehlen
-: Wenn ein Scrivener-Projekt kein `metadata`-Dokument oder keinen vorhandenen MultiMarkdown-Header hat, stellen Sie Titel und Autor aus den Kompilierungseinstellungen des Projekts voran (`Settings/compile.xml`).
+Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
+: Hat ein Scrivener-Projekt kein `metadata`-Dokument und keinen vorhandenen MultiMarkdown-Header, werden Titel und Autor aus den Kompilierungseinstellungen des Projekts (`Settings/compile.xml`) vorangestellt.
 
 .scriv-Dateien in Scrivener öffnen, wenn sie in Marked geöffnet werden
-: Wenn ein Scrivener-Dokument in Marked geöffnet wird, wird es automatisch auch in Scrivener geöffnet.
+: Wird ein Scrivener-Dokument in Marked geöffnet, wird es automatisch auch in Scrivener geöffnet.
 
-#### Wort
+#### Word
 
-Änderungsverfolgung konvertieren <-> CriticMarkup
-: Wenn aktiviert, wird die Änderungsverfolgung in Word-Dokumenten beim Import in CriticMarkup konvertiert, und CriticMarkup wird beim Exportieren von DOCX-Dateien in Word-Änderungsverfolgung konvertiert.
+Änderungsverfolgung <-> CriticMarkup konvertieren
+: Ist dies aktiviert, wird die Änderungsverfolgung in Word-Dokumenten beim Import in CriticMarkup umgewandelt, und CriticMarkup wird beim Export von DOCX-Dateien in die Word-Änderungsverfolgung umgewandelt.
 
-#### Mind Maps/Outlines {#MindMapsOutlines}
+#### Mindmaps/Gliederungen {#MindMapsOutlines}
 
 Als Mermaid-Mindmaps einbetten
-: Jedes Kontrollkästchen steuert ein enthaltenes Format. Wenn **aktiviert**, wird die enthaltene Datei in ein Mermaid-Mindmap-Diagramm (Aufgeräumtes-Tree-Layout) konvertiert. Wenn **aus**, verwendet Marked die Alternative für dieses Format.
-: **Mindmaps** – iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Wenn aktiviert: Meerjungfrau-Mindmap. Wenn deaktiviert: iThoughts bettet sein Vorschaubild ein; MindManager und FreeMind konvertieren in verschachtelte Markdown-Listen.
-: **OPML Dateien** (.opml). Wenn aktiviert: Meerjungfrau-Mindmap. Wenn deaktiviert: verschachtelte Markdown-Liste.
-: **OmniOutliner-Umrisse** (.ooutline). Wenn aktiviert: Meerjungfrau-Mindmap. Wenn deaktiviert: verschachtelte Markdown-Liste (oder ggf. Checkliste).
-: **Fahrradumrisse**. Wenn aktiviert: Meerjungfrau-Mindmap. Wenn deaktiviert: verschachtelte Markdown-Liste.
+: Jedes Kontrollkästchen steuert ein eingebundenes Format. Ist es **ein**, wird die eingebundene Datei in ein Mermaid-Mindmap-Diagramm (Tidy-Tree-Layout) umgewandelt. Ist es **aus**, verwendet Marked die Alternative für dieses Format.
+: **Mindmaps** – iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ein: Mermaid-Mindmap. Aus: iThoughts bindet sein Vorschaubild ein; MindManager und FreeMind werden in verschachtelte Markdown-Listen umgewandelt.
+: **OPML-Dateien** (.opml). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
+: **OmniOutliner-Gliederungen** (.ooutline). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste (oder Checkliste, wo zutreffend).
+: **Bike-Gliederungen**. Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.

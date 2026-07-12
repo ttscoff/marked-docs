@@ -8,7 +8,7 @@ La flexibilidad es clave.
 
 ![][4]
 
-   [4]: imágenes/gearmenu.jpg @2x ancho=740px alto=235px clase=centro
+   [4]: imágenes/gearmenu.jpg @2x width=740px height=235px class=center
 
 El menú Gear proporciona la mayoría de las funciones que se encuentran en la barra de menú, además de algunas funciones específicas de vista previa. Simplemente haga clic en el engranaje en la parte inferior derecha de la ventana para acceder a estas funciones.
 
@@ -16,7 +16,7 @@ El menú Gear proporciona la mayoría de las funciones que se encuentran en la b
 
 ![][5]
 
-   [5]: imágenes/KeepOnTopPin.jpg @2x ancho=740px alto=345px clase=centro
+   [5]: imágenes/KeepOnTopPin.jpg @2x width=740px height=345px class=center
 
 El ícono de candado en la parte inferior izquierda traerá la ventana de Vista previa al frente y la mantendrá allí (flotando) cuando cambie a otras aplicaciones. Puede establecer una transparencia en la ventana en {% prefspane General %} que permitirá que la ventana se desvanezca cuando use otras aplicaciones.
 
@@ -30,7 +30,7 @@ En {% prefspane General %} puede usar "Mantener nuevas ventanas en la parte supe
 
 ![][6]
 
-   [6]: imágenes/view_source.jpg @2x ancho=740px alto=345px clase=centro
+   [6]: imágenes/view_source.jpg @2x width=740px height=345px class=center
 
 Puede cambiar entre vista previa y vista de código fuente con el botón en la esquina superior derecha. Esta vista también se puede alternar con U.
 
@@ -38,7 +38,7 @@ Puede cambiar entre vista previa y vista de código fuente con el botón en la e
 
 ![][7]
 
-   [7]: imágenes/SearchBarFull.jpg @2x ancho=818px alto=195px clase=centro
+   [7]: imágenes/SearchBarFull.jpg @2x width=818px height=195px class=center
 
 Se puede acceder a la barra de búsqueda con {% kbd cmd F %} y le permite buscar en la vista previa una palabra o frase. Una vez que realice la búsqueda, puede usar {% kbd cmd G %} y {% kbd shift cmd G %} para navegar hacia adelante y hacia atrás a través de resultados adicionales.
 
@@ -134,7 +134,7 @@ Consulte la página [Descripción general del zoom](Zoom_Overview.html) ({% kbd 
 
 ![][11]
 
-   [11]: imágenes/markdown_reference.jpg @2x ancho=1148px alto=267px clase=centro
+   [11]: imágenes/markdown_reference.jpg @2x width=1148px height=267px class=center
 
 Seleccione Referencia de Markdown en el menú {% appmenu Help %} para mostrar una guía que flota sobre las otras ventanas. Esto es útil para aquellos que todavía están aprendiendo la sintaxis de Markdown. Puede abrir este panel a través del teclado usando {% kbd opt cmd M %}.
 

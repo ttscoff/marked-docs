@@ -8,7 +8,7 @@ La flessibilità è fondamentale.
 
 ![][4]
 
-   [4]: images/gearmenu.jpg @2x larghezza=740px altezza=235px classe=centro
+   [4]: images/gearmenu.jpg @2x width=740px height=235px class=center
 
 Il menu Gear fornisce la maggior parte delle funzionalità presenti nella barra dei menu, oltre ad alcune funzioni specifiche dell'anteprima. Basta fare clic sull'ingranaggio in basso a destra nella finestra per accedere a queste funzioni.
 
@@ -16,7 +16,7 @@ Il menu Gear fornisce la maggior parte delle funzionalità presenti nella barra 
 
 ![][5]
 
-   [5]: images/KeepOnTopPin.jpg @2x larghezza=740px altezza=345px classe=centro
+   [5]: images/KeepOnTopPin.jpg @2x width=740px height=345px class=center
 
 L'icona del lucchetto in basso a sinistra porterà la finestra di anteprima in primo piano e la manterrà lì (mobile) quando si passa ad altre applicazioni. Puoi impostare una trasparenza sulla finestra in {% prefspane General %} che consentirà alla finestra di sbiadire quando si utilizzano altre applicazioni.
 
@@ -30,7 +30,7 @@ In {% prefspane General %} puoi utilizzare "Mantieni le nuove finestre in primo 
 
 ![][6]
 
-   [6]: images/view_source.jpg @2x larghezza=740px altezza=345px classe=centro
+   [6]: images/view_source.jpg @2x width=740px height=345px class=center
 
 Puoi passare dalla visualizzazione di anteprima a quella del codice sorgente con il pulsante nell'angolo in alto a destra. Questa visualizzazione può essere attivata anche con U.
 
@@ -38,7 +38,7 @@ Puoi passare dalla visualizzazione di anteprima a quella del codice sorgente con
 
 ![][7]
 
-   [7]: images/SearchBarFull.jpg @2x larghezza=818px altezza=195px classe=centro
+   [7]: images/SearchBarFull.jpg @2x width=818px height=195px class=center
 
 È possibile accedere alla barra di ricerca con {% kbd cmd F %} e consente di cercare nell'anteprima una parola o una frase. Una volta eseguita la ricerca, puoi utilizzare {% kbd cmd G %} e {% kbd shift cmd G %} per spostarti avanti e indietro tra risultati aggiuntivi.
 
@@ -134,7 +134,7 @@ Vedi la pagina [Panoramica Zoom](Zoom_Overview.html) ({% kbd z %} nell'anteprima
 
 ![][11]
 
-   [11]: images/markdown_reference.jpg @2x larghezza=1148px altezza=267px classe=centro
+   [11]: images/markdown_reference.jpg @2x width=1148px height=267px class=center
 
 Seleziona Riferimento Markdown dal menu {% appmenu Help %} per visualizzare una guida che fluttua sulle altre finestre. Questo è utile per coloro che stanno ancora imparando la sintassi di Markdown. Puoi aprire questo pannello tramite la tastiera usando {% kbd opt cmd M %}.
 

@@ -8,7 +8,7 @@ Esta página descreve como navegar pelas visualizações longas: o [Índice](#í
 
 ![][8]
 
-   [8]: images/tableofcontentsbutton.jpg @2x largura=740px altura=238px class=centro
+   [8]: images/tableofcontentsbutton.jpg @2x width=740px height=238px class=center
 
 Se o seu documento contiver cabeçalhos, um botão de lista aparecerá na barra de ferramentas. Clique nele para expandir o Índice; clique em um título para ir para essa seção da visualização. Use {% kbd j %}/{% kbd k %} (para baixo/para cima) para percorrer a lista e {% kbd Enter %} ou {% kbd o %} para pular para o cabeçalho destacado.
 
@@ -22,7 +22,7 @@ No modo de tela inteira, o índice aparece como uma barra lateral fixa em vez de
 
 ![Alternar tela cheia][12]
 
-   [12]: images/tableofcontentsfullscreentoggle.jpg @2x largura=740px altura=238px class=centro
+   [12]: images/tableofcontentsfullscreentoggle.jpg @2x width=740px height=238px class=center
 
 
 Para obter uma lista condensada de teclas, consulte [Atalhos de teclado](Keyboard_Shortcuts.html#TableofContentsNavigation).

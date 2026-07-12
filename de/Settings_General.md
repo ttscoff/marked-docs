@@ -1,33 +1,33 @@
 # <%= @title %>
 
-Optionen im {% prefspane General %}:
+Optionen unter {% prefspane General %}:
 
-![Settings: General][1]
+![Einstellungen: Allgemein][1]
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
 ### Fenster
 
-Lassen Sie oben neue Fenster
-: Neue Fenster automatisch so einstellen, dass sie über anderen Anwendungen schweben.
+Neue Fenster im Vordergrund halten
+: Stellt neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.
 
 Fenster bei Aktualisierung öffnen
-: Wenn eine Änderung in einer überwachten Datei erkannt wird, wird das Vorschaufenster für dieses Dokument über andere Fenster auf Ihrem Desktop angezeigt, ohne dass Marked aktiviert wird.
+: Wird in einer überwachten Datei eine Änderung erkannt, hebt sich das Vorschaufenster dieses Dokuments über die anderen Fenster auf Ihrem Schreibtisch, ohne Marked zu aktivieren.
 
 Im Hintergrund durchscheinend
-: Das Fenster ausblenden, wenn es nicht fokussiert ist. Verwenden Sie den Schieberegler, um die Deckkraft einzustellen.
+: Blendet das Fenster ab, wenn es nicht fokussiert ist. Stellen Sie die Deckkraft mit dem Schieberegler ein.
 
-Deaktivieren Sie speicherintensive Funktionen für große Dokumente
-: Deaktivieren Sie einige prozessorintensive Funktionen, z. B. ausblendbare Überschriften, wenn Dokumente über 100 KB groß sind.
+Speicherintensive Funktionen bei großen Dokumenten deaktivieren
+: Deaktiviert bei Dokumenten über 100 KB einige prozessorintensive Funktionen wie einklappbare Überschriften.
 
-Neue Dokumente werden geöffnet
-: Wählen Sie **Windows**, **Tabs** oder **Automatisch** (folgen Sie den macOS-Systemeinstellungen für Tabs). Wenn Sie Tabulatoren verwenden, navigieren Sie mit {% kbd cmd shift [/] %} und [Quick Open panel](Quick_Open.html).
+Neue Dokumente geöffnet in
+: Wählen Sie **Fenster**, **Tabs** oder **Automatisch** (folgt der macOS-Systemeinstellung für Tabs). Bei Tabs navigieren Sie mit {% kbd cmd shift [/] %} und dem [Schnell-öffnen-Bedienfeld](Quick_Open.html).
 
-Bringen Sie das aktualisierte Dokument in den Vordergrund
-: Wenn eine Vorschau aktualisiert wird, wählen Sie ihre Registerkarte aus oder ordnen Sie ihr Fenster nach vorne **nur innerhalb von Marked**. Wenn sich eine andere Anwendung im Vordergrund befindet (z. B. Ihr Texteditor), bleibt Marked im Hintergrund – die richtige Registerkarte ist ausgewählt, sodass sie bereit ist, wenn Sie wieder zu Marked wechseln. Um die Vorschau über allen Anwendungen anzuzeigen, ohne Marked zu aktivieren, verwenden Sie stattdessen **Fenster bei Aktualisierung vergrößern**.
+Aktualisiertes Dokument nach vorne bringen
+: Wird eine Vorschau aktualisiert, wird ihr Tab ausgewählt oder ihr Fenster nach vorne geholt – **aber nur innerhalb von Marked**. Ist eine andere Anwendung im Vordergrund (z. B. Ihr Texteditor), bleibt Marked im Hintergrund; der richtige Tab ist ausgewählt, sodass er bereitsteht, wenn Sie zu Marked zurückwechseln. Um die Vorschau über alle Anwendungen zu heben, ohne Marked zu aktivieren, verwenden Sie stattdessen **Fenster bei Aktualisierung öffnen**.
 
 Den Fokus wieder auf die vorherige App richten
-: Wenn diese Option aktiviert ist und eine Raise/Bring-on-Update-Aktion dazu führt, dass Marked den Vordergrundfokus übernimmt, wird der Tastaturfokus auf die App zurückgesetzt, die vor dem Update ganz vorne war (z. B. Ihr Texteditor). Wenn diese Option deaktiviert ist, führt Marked diese Fokusübergabe niemals durch. Wenn Marked nicht ganz vorne steht, hat diese Option keine Auswirkung.
+: Führt eine Aktion beim Anheben oder Nach-vorne-holen dazu, dass Marked in den Vordergrund tritt, wird der Tastaturfokus bei aktivierter Option an die App zurückgegeben, die vor der Aktualisierung vorne war (etwa Ihr Texteditor). Ist die Option deaktiviert, nimmt Marked diese Fokusübergabe nie vor. Tritt Marked nicht in den Vordergrund, hat die Option keine Wirkung.
 
 ### Statusleiste
 
@@ -35,28 +35,28 @@ Stilauswahl anzeigen
 : Zeigt die Stilauswahl in der unteren Leiste des Vorschaufensters an.
 
 Wortanzahl anzeigen
-: Wortanzahl (und Statistikschaltfläche) in der unteren Leiste des Vorschaufensters anzeigen.
+: Zeigt die Wortanzahl (und die Statistik-Schaltfläche) in der unteren Leiste des Vorschaufensters an.
 
-Wortanzahl ausgeschlossen
-: Bei der Berechnung der Wortanzahl können alle Kombinationen von Folgendem ignoriert werden:
+Die Anzahl der Wörter schließt Folgendes aus
+: Bei der Berechnung der Wortanzahl lässt sich jede beliebige Kombination aus Folgendem ignorieren:
 
 - **Fußnoten/Zitate**
 - **Blockzitate**
-- **Eingerückte Codeblöcke** (umzäunte Codeblöcke sind immer ausgeschlossen)
+- **Eingerückte Codeblöcke** (mit Backticks abgegrenzte Codeblöcke werden immer ausgeschlossen)
 - **Bildunterschriften**
 
-### Verknüpfungen
+### Tastenkürzel
 
-Klicken Sie auf das Verknüpfungsfeld, um eine Tastenkombination aufzuzeichnen, die ein Ereignis auslöst:
+Klicken Sie auf das Kurzbefehl-Feld, um eine Tastenkombination aufzuzeichnen, die eine Aktion auslöst:
 
-Aktivieren Sie Marked
-: Wechseln Sie zu Marked, wenn dieser Hotkey in einer beliebigen Anwendung gedrückt wird.
+Marked aktivieren
+: Wechselt zu Marked, wenn diese Tastenkombination in einer beliebigen Anwendung gedrückt wird.
 
-Öffnen Sie das erste Fenster
-: Bringt das vorderste (letzte aktive) Vorschaufenster Marked in den Vordergrund, ohne die aktuelle Anwendung zu verlassen.
+Erstes Fenster öffnen
+: Holt das vorderste (zuletzt aktive) Marked-Vorschaufenster in den Vordergrund, ohne die aktuelle Anwendung zu verlassen.
 
 Aktionspalette öffnen
-: Öffnen Sie die Befehlspalette [Quick Actions](Quick_Actions.html), während Marked aktiv ist. Diese Verknüpfung gilt für {% appmenu File, Quick Actions… %} und funktioniert nur innerhalb von Marked (nicht aus anderen Anwendungen).
+: Öffnet die Befehlspalette der [Schnellaktionen](Quick_Actions.html), während Marked aktiv ist. Dieser Kurzbefehl gilt für {% appmenu Ablage, Schnellaktionen… %} und funktioniert nur innerhalb von Marked (nicht aus anderen Anwendungen).
 
 Warnungen zurücksetzen
-: Stellen Sie alle Warndialoge wieder her, die Sie zuvor geschlossen haben, damit sie erneut angezeigt werden können.
+: Stellt alle Warndialoge wieder her, die Sie zuvor ausgeblendet haben, sodass sie erneut erscheinen können.

@@ -15,7 +15,7 @@ usted.
 
 ![Administrador de estilos][img-style-manager]
 
-  [img-style-manager]: imágenes/capturas de pantalla/style-manager.jpg @2x ancho=1009px alto=517px clase=centro
+  [img-style-manager]: imágenes/capturas de pantalla/style-manager.jpg @2x width=1009px height=517px class=center
 
 ## La tabla de estilos
 

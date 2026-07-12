@@ -108,19 +108,28 @@ These apps (and others) register Quick Look preview extensions that may handle `
 | **Scrivener** | `com.literatureandlatte.scrivener3.ScrivQuickLook` |
 | **Black Ink** | `com.red-sweater.blackink2.quicklook` |
 
-W> **iA Writer** does not ship a dedicated Markdown Quick Look extension, but **Folder Quick Look**, **QLMarkdown**, and **Peek** are frequent sources of conflicts because they also target `net.daringfireball.markdown`.
+W> **iA Writer** assigns its own UTI (`net.ia.markdown`) to `.md` files when installed. Marked Quick Look 1.0.2+ handles that UTI. **Folder Quick Look**, **QLMarkdown**, and **Peek** are also frequent sources of conflicts.
 
 List registered preview extensions:
 
 ```bash
-pluginkit -m -D -p com.apple.quicklook.preview -A -v | grep -i markdown
+pluginkit -m -D -p com.apple.quicklook.preview -A -v | grep -i MarkedQuickLook
 ```
+
+W> Do not grep for `markdown` to verify Marked Quick Look. Its bundle ID is `com.brettterpstra.MarkedQuickLook.preview` and does not contain the word "markdown". A `grep -i markdown` can return no results even when Marked Quick Look is installed and enabled. To list other Markdown handlers, run the full `pluginkit` command without grep, or grep for a specific bundle ID from the table above.
 
 Extensions marked with `+` are explicitly enabled; use `pluginkit -e use -i com.brettterpstra.MarkedQuickLook.preview` to move Marked Quick Look to the front.
 
 ### Still seeing plain text?
 
-If the preview shows **unstyled monospace source**, macOS may be falling back to the built-in **Text.qlgenerator** because the preview extension failed to load. Check **Console.app** for errors from `MarkedQuickLookPreview`, then reinstall Marked Quick Look to `/Applications` and launch it once.
+If the preview shows **unstyled monospace source**, macOS is falling back to the built-in **Text.qlgenerator** because no preview extension matched the file's UTI.
+
+1. Confirm registration with `pluginkit ... | grep -i MarkedQuickLook` (not `markdown`).
+2. Check the file's assigned UTI: `mdls -name kMDItemContentType -name kMDItemContentTypeTree /path/to/file.md`
+3. Check **Console.app** for errors from `MarkedQuickLookPreview`.
+4. Reinstall Marked Quick Look to `/Applications` and launch it once.
+
+See the [Marked Quick Look troubleshooting guide](https://github.com/ttscoff/MarkedQuickLook/blob/main/TROUBLESHOOTING.md) for a full step-by-step checklist.
 
 ### Development builds
 

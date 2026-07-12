@@ -8,7 +8,7 @@ La convalida del collegamento esegue il ping della destinazione di un URL e veri
 
 ![][1]
 
-   [1]: images/validate_single.png @2x larghezza=832px altezza=267px classe=centro
+   [1]: images/validate_single.png @2x width=832px height=267px class=center
 
 Fare clic e tenere premuto su un collegamento nell'anteprima finché non lampeggia, quindi rilasciare per aprire il menu delle azioni del collegamento. Scegli "Convalida collegamento" per eseguire il test. I risultati vengono visualizzati nel popup.
 
@@ -16,7 +16,7 @@ Fare clic e tenere premuto su un collegamento nell'anteprima finché non lampegg
 
 ![][2]
 
-   [2]: images/screenshots/mainwindow-feature-urlvalidate-crop.jpg @2x larghezza=1089px altezza=300px classe=centro
+   [2]: images/screenshots/mainwindow-feature-urlvalidate-crop.jpg @2x width=1089px height=300px class=center
 
 Scegli "Convalida tutti i collegamenti" (scorciatoia {% kbd ctrl cmd L %}) dal menu ingranaggio o dal menu contestuale. Tutti i collegamenti remoti nel documento verranno controllati e i risultati verranno visualizzati in un popup. Facendo clic su un collegamento nel popup si scorrerà ed evidenzierà il rispettivo collegamento nel documento.
 

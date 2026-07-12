@@ -15,7 +15,7 @@ La forma más sencilla de implementar JavaScript personalizado que varía según
 
 ![][1]
 
-   [1]: imágenes/capturas de pantalla/AdditionalJavascript.jpg @2x ancho=592px alto=576px clase=centro
+   [1]: imágenes/capturas de pantalla/AdditionalJavascript.jpg @2x width=592px height=576px class=center
 
 Puede agregar URL de CDN de JavaScript en la ventana "Scripts adicionales", accesible desde {% prefspane Style %}. Ingrese las URL de CDN, una por línea. No incluya ninguna etiqueta `<script>`, solo la URL:
 

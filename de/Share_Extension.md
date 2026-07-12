@@ -14,7 +14,7 @@ Wenn Sie im Teilen-Menü **Marked** wählen, öffnet sich Marked sofort. Es gibt
 
 Wählen Sie in **Finder** (oder einer anderen App, die Dateien teilt) **Teilen → Marked**.
 
-Marked erhält den Dateipfad und öffnet die Datei über denselben `x-marked-3://open`-URL-Handler wie anderswo. Die Datei öffnet sich in Marked wie ein Dokument, das Sie auf das Dock-Symbol gezogen oder mit {% appmenu File, Open... ({{cmd}}O) %} geöffnet haben.
+Marked erhält den Dateipfad und öffnet die Datei über denselben `x-marked-3://open`-URL-Handler wie anderswo. Die Datei öffnet sich in Marked wie ein Dokument, das Sie auf das Dock-Symbol gezogen oder mit {% appmenu Ablage, Öffnen… ({{cmd}}O) %} geöffnet haben.
 
 Unterstützt werden Datei-URLs, lokale Dateien und Web-URLs, wenn die sendende App sie bereitstellt.
 
@@ -22,7 +22,7 @@ Unterstützt werden Datei-URLs, lokale Dateien und Web-URLs, wenn die sendende A
 
 Markieren Sie Text in einer App wie **TextEdit**, **Safari** oder **Mail** und wählen Sie **Teilen → Marked**.
 
-Marked legt den Text in die Zwischenablage und öffnet eine **temporäre Vorschau** über den Handler `x-marked-3://paste`. Das entspricht der ungespeicherten Vorschau von {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}. Sie können sie später mit {% appmenu File, Save Transient Preview %} speichern.
+Marked legt den Text in die Zwischenablage und öffnet eine **temporäre Vorschau** über den Handler `x-marked-3://paste`. Das entspricht der ungespeicherten Vorschau von {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}. Sie können sie später mit {% appmenu Ablage, Schnellvorschau speichern %} speichern.
 
 Klartext, HTML, RTF und Markdown werden unterstützt, wenn die Quell-App sie bereitstellt.
 

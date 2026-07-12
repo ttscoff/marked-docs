@@ -8,7 +8,7 @@ Tieni traccia mentre scrivi.
 
 ![][1]
 
-   [1]: images/WordCount.jpg @2x larghezza=840px altezza=61px classe=centro
+   [1]: images/WordCount.jpg @2x width=840px height=61px class=center
 
 Il conteggio delle parole si trova nella barra di stato in basso e può essere abilitato e disabilitato da {% prefspane General %} sotto la barra di stato. Puoi visualizzare ulteriori statistiche nella finestra di anteprima o sorgente dal menu a forma di ingranaggio, facendo clic sul conteggio delle parole o digitando Opzione-Comando-S ({% kbd opt cmd S %}). Tieni premuto il tasto Opzione ({% kbd opt  %}) mentre fai clic per visualizzare le statistiche di leggibilità e tieni premuto Opzione-Comando ({% kbd opt cmd %}) per aprire il pannello Statistiche avanzate.
 
@@ -18,7 +18,7 @@ Se viene selezionato del testo, la visualizzazione del conteggio delle parole e 
 
 ![Popup conteggio parole sulla selezione del testo][2]
 
-   [2]: images/wordcountforselection.jpg @2x larghezza=749px altezza=144px classe=centro
+   [2]: images/wordcountforselection.jpg @2x width=749px height=144px class=center
 
 Quando selezioni il testo nell'anteprima, il conteggio delle parole nella parte inferiore della finestra mostrerà le statistiche solo per il testo selezionato.
 
@@ -30,7 +30,7 @@ La funzione di zoom è utile per selezionare e ottenere rapidamente i conteggi d
 
 ![Barra delle statistiche di leggibilità][3]
 
-   [3]: images/screenshots/mainwindow-feature-stats-lower-crop.jpg @2x larghezza=1089px altezza=111px classe=centro
+   [3]: images/screenshots/mainwindow-feature-stats-lower-crop.jpg @2x width=1089px height=111px class=center
 
 Ulteriori statistiche di Flesch/Kincaid e dell'indice della nebbia sono disponibili con {% kbd opt shift cmd S %}.
 

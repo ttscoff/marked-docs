@@ -12,4 +12,4 @@ MultiMarkdown-Erweiterungen werden von Fletcher Penney in [this document](https:
 
 ## Alternatives Rendering
 
-Sie können im {% prefspane Processor %} zwischen MultiMarkdown, Kramdown, CommonaMark und Discount wählen. Jedes bietet zusätzliche Funktionen mit einer etwas anderen Syntax (siehe {% appmenu Help, Markdown Reference %} für weitere Details). In den meisten Fällen wird MultiMarkdown bevorzugt. Wenn Sie jedoch über Dateien verfügen, die bereits eine prozessorspezifische Syntax verwenden, oder Probleme beim Rendern einer Markdown-Datei mit MultiMarkdown auftreten, wählen Sie Commonmark als Standardprozessor aus.
+Sie können im {% prefspane Processor %} zwischen MultiMarkdown, Kramdown, CommonaMark und Discount wählen. Jedes bietet zusätzliche Funktionen mit einer etwas anderen Syntax (siehe {% appmenu Hilfe, Markdown-Referenz %} für weitere Details). In den meisten Fällen wird MultiMarkdown bevorzugt. Wenn Sie jedoch über Dateien verfügen, die bereits eine prozessorspezifische Syntax verwenden, oder Probleme beim Rendern einer Markdown-Datei mit MultiMarkdown auftreten, wählen Sie Commonmark als Standardprozessor aus.

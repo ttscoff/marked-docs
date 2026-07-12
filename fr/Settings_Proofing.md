@@ -1,46 +1,44 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Options dans le {% prefspane Proofing %} :
+Options du panneau de préférences {% prefspane Proofing %} :
 
-![Paramètres : Vérification][1]
+![Paramètres : Relecture][1]
 
 [1]: images/screenshots/preferences-Proofing.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-Ouvrez toujours les nouveaux documents en mode vérification
- : Les nouveaux documents afficheront par défaut les surlignages des mots clés.
+Toujours ouvrir les nouveaux documents en mode relecture
+: Les nouveaux documents afficheront par défaut la mise en évidence des mots-clés.
 
-Activer CriticMarkup automatiquement
-: Activez le traitement [CriticMarkup](CriticMarkup.html) automatiquement lorsqu'une syntaxe appropriée est détectée.
+Activer automatiquement CriticMarkup
+: Active automatiquement le traitement [CriticMarkup](CriticMarkup.html) lorsqu'une syntaxe appropriée est détectée.
 
-Mettre en surbrillance les erreurs de syntaxe Markdown
- : mettez en surbrillance les liens Markdown brisés et autres balises qui peuvent avoir été mal converties.
+Mettre en évidence les erreurs de syntaxe Markdown
+: Met en évidence les liens Markdown incorrects et les autres balisages qui pourraient avoir été mal convertis.
 
 Afficher la barre latérale des commentaires par défaut
-: ouvre la barre latérale des commentaires lorsqu'un document contenant des commentaires ou des annotations est chargé.
+: Ouvre la barre latérale des commentaires lorsqu'un document contenant des commentaires ou des annotations est chargé.
 
-Inclure des notes de bas de page dans la barre latérale des commentaires
-: lorsque la barre latérale des commentaires est ouverte, incluez des notes de bas de page à côté des commentaires. Lorsqu'il est désactivé, seuls les commentaires (CriticMarkup, Fountain, Word et similaires) apparaissent dans la barre latérale.
+Inclure les notes de bas de page dans la barre latérale des commentaires
+: Lorsque la barre latérale des commentaires est ouverte, inclut les notes de bas de page en plus des commentaires. Si cette option est désactivée, seuls les commentaires (CriticMarkup, Fountain, Word et similaires) apparaissent dans la barre latérale.
 
-Vitesse de lecture (wpm)
-: Ce nombre (mots par minute) est utilisé pour calculer le temps de lecture dans les affichages de statistiques textuelles. La vitesse de lecture moyenne pour les adultes est de 200 à 300 mots par minute.
+Vitesse de lecture (mpm)
+: Ce nombre (mots par minute) est utilisé pour calculer le temps de lecture affiché dans les statistiques du texte. La vitesse de lecture moyenne d'un adulte se situe entre 200 et 300 mots par minute.
 
-### Mots clés
+### Mots-clés
 
-[Définir des listes de mots-clés à mettre en avant](Keyword_Highlighting.html). Utilisez les onglets pour modifier chaque liste :
+[Définissez des listes de mots-clés à mettre en évidence](Keyword_Highlighting.html). Utilisez les onglets pour modifier chaque liste :
 
 Éviter
- : Mots et expressions (un par ligne) à signaler comme étant surutilisés ou méritant d'être révisés. Les correspondances ne sont pas sensibles à la casse et doivent être des mots ou des expressions complètes.
+: Mots et expressions (un par ligne) à signaler comme surutilisés ou à revoir. La correspondance ne tient pas compte de la casse et doit porter sur des mots ou expressions complets.
 
-Utiliser un autre
-: Suggérez une formulation alternative pour les expressions répertoriées.
+Utiliser une alternative
+: Suggère une formulation alternative pour les expressions listées.
 
-Mettre en surbrillance
-: Mettez en surbrillance des mots ou des expressions arbitraires pour les mettre en évidence lors de la vérification.
+Mettre en évidence
+: Met en évidence des mots ou expressions arbitraires pour les faire ressortir pendant la relecture.
 
 Ignorer les répétitions
- : Mots à exclure de l'analyse **Visualiser la répétition de mots** (un par ligne).
+: Mots à exclure de l'analyse **Visualiser les répétitions de mots** (un par ligne).
 
-Restaurer les phrases par défaut
- : réinitialisez la liste de mots clés actuelle aux valeurs par défaut de Marked (par exemple, la liste à éviter [Plain English Campaign](http://www.plainenglish.co.uk)).
+Restaurer les expressions par défaut
+: Réinitialise la liste de mots-clés actuelle aux valeurs par défaut de Marked (par exemple, la liste à éviter de la [Plain English Campaign](http://www.plainenglish.co.uk)).

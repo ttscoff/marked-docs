@@ -20,7 +20,7 @@ Estrutura de pastas:
 
 ![][1]
 
-   [1]: images/multifiledocumentstructure.jpg @2x largura=316px altura=163px class=centro
+   [1]: images/multifiledocumentstructure.jpg @2x width=316px height=163px class=center
 
 Índice.md:
 
@@ -165,7 +165,7 @@ O GitBook permite que âncoras sejam usadas no índice SUMMARY.md, mas Marked as
 
 ![Limites de arquivo incluídos][2]
 
-   [2]: images/includeboundaries.png @2x largura=859px altura=239px class=centro
+   [2]: images/includeboundaries.png @2x width=859px height=239px class=center
 
 Ao visualizar um documento contendo arquivos incluídos, você pode usar dois recursos para ajudar a descobrir qual arquivo está visualizando.
 

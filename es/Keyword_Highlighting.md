@@ -28,7 +28,7 @@ Si se hace clic en una palabra o frase resaltada, ese tipo se convertirá en el 
 
 ![Configuración de revisión][preferencias de revisión]
 
-  [preferencias de prueba]: imágenes/capturas de pantalla/preferencias-Proofing.jpg @2x ancho=689px alto=1031px clase=panel de preferencias
+  [preferencias de prueba]: imágenes/capturas de pantalla/preferencias-Proofing.jpg @2x width=689px height=1031px class=preferencepane
 
 De forma predeterminada, Marked utiliza la lista de palabras y frases usadas en exceso de la [Campaña en inglés sencillo](http://www.plainenglish.co.uk). Puede agregarlos o reemplazarlos fácilmente editándolos en {% prefspane Proofing %}. Cada campo es texto de formato libre y cada línea se interpreta como una frase de búsqueda. Utilice `*` al principio de una frase o palabra para hacer coincidir cualquier texto anterior y `?` para hacer coincidir un solo carácter como comodín.
 

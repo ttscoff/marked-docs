@@ -15,7 +15,7 @@ você.
 
 ![Gerenciador de estilo][gerenciador de estilo img]
 
-  [img-style-manager]: images/screenshots/style-manager.jpg @2x largura=1009px altura=517px class=center
+  [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
 ## A tabela de estilos
 

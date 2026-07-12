@@ -1,43 +1,41 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Options dans le {% prefspane Preview %} :
+Options du panneau de préférences {% prefspane Preview %} :
 
-![Paramètres : Aperçu][1]
+![Paramètres : Aperçu][1]
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Aperçu du comportement
+### Comportement de l'aperçu
 
-Activer la navigation sur la mini-carte
-: Générez une carte visuelle du document qui apparaît lorsque "0" est enfoncé. Peut entraîner de courts retards lors du rendu de documents volumineux.
+Activer la navigation par mini-carte
+: Génère une carte visuelle du document, qui s'affiche lorsque vous appuyez sur « 0 ». Peut entraîner de courts délais lors du rendu de documents volumineux.
 
-Les titres réduisent les sections
-: cliquer sur un élément de titre réduit la section située entre celui-ci et le titre suivant.
+Les titres replient les sections
+: Cliquer sur un élément de titre replie la section comprise entre celui-ci et le titre suivant.
 
-Nécessite {% kbd cmd %}‑clic
-: Si cette case est cochée, les titres ne se réduiront/s'agrandiront que lorsque vous cliquerez dessus avec la touche Commande enfoncée.
+Exiger un {% kbd cmd %}&#8209;clic
+: Si cette option est cochée, les titres ne se replieront/déplieront qu'en cas de clic avec la touche Commande maintenue enfoncée.
 
-Synchroniser l'aperçu et le défilement des sources
-: Lorsque votre éditeur le prend en charge, faites défiler l'aperçu pour qu'il corresponde à l'emplacement correspondant dans le document source.
+Synchroniser le défilement de l'aperçu et de la source
+: Lorsque votre éditeur le prend en charge, maintient l'aperçu défilé à l'emplacement correspondant dans le document source.
 
-Synchronisation de la lecture rapide avec la position de défilement
-: Gardez la superposition [Lecture rapide](Speed_Reading.html) alignée avec la position de défilement de l'aperçu. Vous pouvez également activer cette option à partir de la superposition Speed ​​Read.
+Synchroniser la lecture rapide avec la position de défilement
+: Maintient l'incrustation [Lecture rapide](Speed_Reading.html) alignée sur la position de défilement de l'aperçu. Vous pouvez également activer/désactiver cette option depuis l'incrustation Lecture rapide.
 
-### Faites défiler pour modifier
+### Défilement vers la modification
 
-Faites défiler pour modifier
-: Lors de la mise à jour de l'aperçu, Marked peut déterminer le premier point où le document a changé et y faire défiler automatiquement. Cela maintient l'aperçu synchronisé avec votre emplacement actuel dans le document que vous modifiez. Le marqueur de modification le plus récent constitue la première différence dans le document depuis la dernière actualisation. L'activation de « Ordre de comparaison inversé » considérera à la place la dernière différence dans le document (de haut en bas) comme la modification la plus récente.
+Défilement vers la modification
+: Lors de la mise à jour de l'aperçu, Marked peut déterminer le premier point où le document a changé et y faire défiler automatiquement la vue. Cela permet de garder l'aperçu synchronisé avec votre position actuelle dans le document en cours d'édition. Le marqueur de modification le plus récent correspond à la première différence détectée dans le document depuis la dernière actualisation. Activer « Ordre inversé des différences » fera au contraire considérer la dernière différence du document (de haut en bas) comme la modification la plus récente.
 
-Afficher le marqueur de modification le plus récent
-: Un petit marqueur rouge apparaît au point de la première modification détectée. Désactivez-le pour le rendre invisible. (Nécessite **Faites défiler pour modifier**.)
+Afficher le marqueur de modification la plus récente
+: Un petit marqueur rouge apparaît à l'endroit de la première modification détectée. Désactivez cette option pour le rendre invisible. (Nécessite l'option **Défilement vers la modification**.)
 
 Afficher tous les marqueurs de différence
-: Si cette option est activée, toutes les différences entre la dernière actualisation et le contenu actuel seront mises en évidence dans la gouttière. Vous pouvez parcourir les modifications en les faisant défiler jusqu'au milieu de la vue, en utilisant <kbd>e</kbd> (avant) et {% kbd shift E %} (en arrière).
+: Si cette option est activée, toutes les différences entre la dernière actualisation et le contenu actuel seront mises en évidence dans la marge. Vous pouvez naviguer entre les modifications, qui défilent jusqu'au centre de la vue, à l'aide de <kbd>e</kbd> (en avant) et {% kbd shift E %} (en arrière).
 
-Ordre de comparaison inversé
-: Si cette option est activée, les différences seront marquées dans l'ordre inverse (de bas en haut). Cela affecte la navigation, donc <kbd>e</kbd> naviguera vers le haut et {% kbd shift E %} naviguera vers le bas. La « modification la plus récente » deviendra la dernière différence dans le document.
+Ordre inversé des différences
+: Si cette option est activée, les différences seront repérées dans l'ordre inverse (de bas en haut). Cela affecte la navigation : <kbd>e</kbd> naviguera vers le haut et {% kbd shift E %} naviguera vers le bas. La « modification la plus récente » deviendra alors la dernière différence du document.
 
 ### Fonctionnalités supplémentaires
 
@@ -45,30 +43,30 @@ La table des matières suit la position de défilement
 : La table des matières met en évidence la section actuelle.
 
 Statistiques contextuelles pour la sélection de texte
-: Afficher une fenêtre contextuelle de comptage de mots pour le texte sélectionné chaque fois qu'une sélection est effectuée.
+: Affiche une info-bulle avec le nombre de mots pour le texte sélectionné dès qu'une sélection est effectuée.
 
-Activer les popovers de liens
-: Afficher un menu contextuel lorsque les liens externes sont cliqués et maintenus avant de les relâcher.
+Activer les info-bulles de liens
+: Affiche un menu contextuel lorsqu'un lien externe est cliqué et maintenu avant d'être relâché.
 
 Valider automatiquement les URL lors de la mise à jour
- : Validez les URL lors du chargement et de l'actualisation du document. Affiche uniquement les résultats s'il y a des erreurs.
-: Ceci exécute [link validation](Link_Validation.html) à chaque fois que le document est mis à jour (si vous avez un nombre important de liens, cela peut être un processus lent et doit être évité).
+: Valide les URL au chargement du document et lors des actualisations. N'affiche des résultats qu'en cas d'erreurs.
+: Cette option exécute la [validation des liens](Link_Validation.html) à chaque mise à jour du document (si vous avez un grand nombre de liens, cela peut ralentir le processus et il est préférable de l'éviter).
 
-### Lien wiki
+### Liens wiki
 
-Convertir [[Liens Wiki]]
-: Activez la [navigation wiki](Wiki_Navigation.html) de Marked pour la syntaxe `[[wiki link]]`.
+Convertir les [[liens wiki]]
+: Active la [navigation wiki](Wiki_Navigation.html) de Marked pour la syntaxe `[[lien wiki]]`.
 
 Extension par défaut
-: L'extension de nom de fichier Marked est utilisée lors de la résolution de liens wiki qui n'incluent pas d'extension (par exemple, `md`).
+: L'extension de fichier que Marked utilise lors de la résolution des liens wiki qui n'en incluent pas (par exemple, `md`).
 
 ### Apparence
 
 Mode sombre
-: Afficher toutes les fenêtres en mode "Contraste élevé", avec du chrome foncé et, si disponible, la version inversée du Style actuel (peut ne pas s'appliquer aux Styles personnalisés).
+: Affiche toutes les fenêtres en mode « Contraste élevé », avec une interface sombre et, si disponible, la version inversée du style actuel (peut ne pas s'appliquer aux styles personnalisés).
 
-Paramètre du système de correspondance
-: Basculez automatiquement le mode sombre lorsque le mode sombre de macOS est activé ou désactivé à l’échelle du système.
+Suivre le réglage système
+: Active ou désactive automatiquement le mode sombre lorsque le mode sombre de macOS est activé ou désactivé au niveau du système.
 
 Afficher le chemin complet dans le titre de la fenêtre
-: Lorsqu'il est activé, Marqué affichera le chemin complet du document actuel dans le titre de la fenêtre.
+: Lorsque cette option est activée, Marked affiche le chemin complet du document actuel dans le titre de la fenêtre.

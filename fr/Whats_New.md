@@ -1,11 +1,9 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Consultez le [journal complet des modifications](changelog.html) pour plus de détails.
+Consultez le [journal des modifications complet](changelog.html) pour plus de détails.
 
-- Export DOCX entièrement réécrit avec structure valide, styles personnalisés, en-têtes et pieds de page, conversion MathJax, suivi des modifications <-> CriticMarkup
-- Ouvrez les fichiers DOCX, exportez du Markdown propre ou du DOCX nettoyé
-- Gestion de CriticMarkup entièrement réécrite, aucune dépendance de script
-- Gestion de Scrivener entièrement réécrite, ultra-rapide, aucune dépendance de script
-- Nouveau générateur de règles personnalisées pour exécuter des transformations de documents et des scripts personnalisés basés sur la correspondance de critères
+- Export DOCX entièrement réécrit, avec une structure valide, des styles personnalisés, des en-têtes et pieds de page, la conversion MathJax, et le suivi des modifications <-> CriticMarkup
+- Ouverture de fichiers DOCX, export en Markdown propre ou en DOCX nettoyé
+- Gestion de CriticMarkup entièrement réécrite, sans dépendance à des scripts
+- Gestion de Scrivener entièrement réécrite, ultra-rapide, sans dépendance à des scripts
+- Nouvel éditeur de règles personnalisées pour exécuter des transformations de document et des scripts personnalisés selon des critères de correspondance

@@ -28,7 +28,7 @@ Az automatikus körvonal mód bizonyos fájlkiterjesztésekhez engedélyezhető 
 
 ![][2]
 
-   [2]: images/textzoom.jpg @2x szélesség=800px magasság=414px class=center
+   [2]: images/textzoom.jpg @2x width=800px height=414px class=center
 
 Módosíthatja a szöveg méretét a {% kbd cmd shift + %} és a {% kbd cmd shift - %} gombokkal, vagy használja a Nagyítás menüt az Előnézet alatt a menüsorban vagy a fogaskerék menüben a dokumentumablakban. A Megjelölt emlékezni fog minden változtatásra a következő alkalommal (és minden alkalommal). Állítsa vissza a nagyítást 100%-ra a {% kbd cmd 0 %} gombbal (vagy nyissa meg a **Zoom Reset** elemet a Zoom menüből).
 

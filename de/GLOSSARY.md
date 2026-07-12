@@ -5,13 +5,15 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | English | Translation | Notes |
 |---------|-------------|-------|
 | bookmark | Lesezeichen | |
+| callout | Callout | Feature-Name (Obsidian/Bear/Xcode Playground) → „das Callout“, engl. belassen. NICHT „Hinweistext/Beschriftung“. Die Callout-Typ-Keywords (`NOTE`, `WARNING`, `TIP` …) und Xcode-Typen (`Attention`, `See Also` …) sind literale Syntax → nie übersetzen |
 | clipboard | Zwischenablage | |
 | CriticMarkup, MultiMarkdown, CommonMark, MathJax, KaTeX | (unverändert) | Technische Namen, engl. belassen |
-| Custom Rules | Eigene Regeln | Benanntes Marked-Feature → App-Menü „Eigene Regeln bearbeiten“ |
+| Custom Rules | Eigene Regeln | Benanntes Marked-Feature → App-Menü „Eigene Regeln bearbeiten“. **App ist inkonsistent:** `MainMenu.strings` = „Eigene Regeln bearbeiten“, aber `Settings.strings` (`setting.customRules`, `.button`, `conductorNote`) = „Benutzerdefinierte Regeln“ + `setting.customRules.tooltip` noch englisch. **Kanonisch = „Eigene Regeln“** (Lead-Entscheid 06.07); Settings.strings von Brett anzugleichen |
 | Custom Styles (Marked-Stile) | Eigene Stile | App „Eigenen Stil erzeugen“, „Eigene Stil-Galerie“. Im DOCX-Export heißt die Auswahl „DOCX-Stil“ — die Word-Formatvorlagen werden aus den Marked-Stilen generiert |
 | custom … (generisch, ohne eigenen Menüpunkt) | benutzerdefiniert … | z. B. custom scripts → benutzerdefinierte Skripte; custom processor → benutzerdefinierter Prozessor |
 | dark mode | Dunkelmodus | App: „Dunkelmodus“ |
 | export | Export / exportieren | App-Menü: „Exportieren…“, „Exportieren als“ |
+| fenced code block | abgegrenzter Codeblock | NICHT „eingezäunt/umzäunt/abgeschirmt“ (häufiger MT-Wildwuchs, ~10 Dateien uneinheitlich). Der ```-Marker selbst (engl. „code fence“) → „Code-Block“ bzw. „Element“ je nach Kontext |
 | footnote | Fußnote | |
 | gear menu | Zahnradmenü | Token `{{gear}}` bleibt unverändert |
 | header / footer (print) | Kopfzeile / Fußzeile | |
@@ -44,6 +46,25 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | Table of Contents | Inhaltsverzeichnis | |
 | word count / character count | Wortanzahl / Zeichenanzahl | |
 | word repetition | Wortwiederholung | App: „Wortwiederholungen visualisieren“ |
+
+## Conductor / Eigene Regeln (Custom_Processor)
+
+Der Editor für Eigene Regeln heißt bei Marked „Conductor“. Wir führen den **Namen englisch** (nicht „Dirigent“), die **Action-Labels und Kriterien aber deutsch** (Annahme: Brett lokalisiert den Conductor mit; die Labels sind im de-UI noch englisch, daher hier die maßgeblichen Übersetzungen).
+
+| English | Translation | Notes |
+|---------|-------------|-------|
+| Conductor | Conductor | Feature-Name, engl. belassen; NICHT „Dirigent“ (zwei Altlasten in Additional_Javascript.md/Markdown_Dingus.md noch zu bereinigen) |
+| Rules Editor | Editor für Eigene Regeln | App-Menü „Eigene Regeln bearbeiten“ |
+| predicate / predicate editor | Prädikat / Prädikat-Editor | |
+| Manually enabled | Manuell aktiviert | Kriterium + Schaltfläche „Manuell aktiviert hinzufügen“ |
+| Trigger shortcut | Auslöser-Kurzbefehl | |
+| Custom Rules Log | Protokoll eigener Regeln | App-Menü „Hilfe, Protokoll eigener Regeln anzeigen“ |
+| Set Style / Run Command / Run Embedded Script | Stil festlegen / Befehl ausführen / Eingebettetes Skript ausführen | Conductor-Aktionen |
+| Set/Delete/Strip Metadata | Metadaten festlegen / löschen / entfernen | |
+| Insert Title H1 / Shift Headers / Normalize Headers | Titel H1 einfügen / Überschriften verschieben / Überschriften normalisieren | „Überschriften”, nicht „Header” |
+| Insert TOC / Insert File / Insert Text | Inhaltsverzeichnis einfügen / Datei einfügen / Text einfügen | |
+| Run Shortcut / Run System Service / Run Automator Workflow | Kurzbefehl ausführen / Systemdienst ausführen / Automator-Workflow ausführen | „Kurzbefehl“ = Apple-Shortcut |
+| Run Rule / Continue | Regel ausführen / Fortfahren | |
 
 ## Do not translate (keep English)
 

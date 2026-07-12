@@ -15,7 +15,7 @@ tu.
 
 ![Gestione stili][img-style-manager]
 
-  [img-style-manager]: images/screenshots/style-manager.jpg @2x larghezza=1009px altezza=517px classe=centro
+  [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
 ## Il Tavolo dello Stile
 

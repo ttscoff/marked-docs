@@ -28,7 +28,7 @@ Se uma palavra ou frase destacada for clicada, esse tipo se tornará o alvo da n
 
 ![Configurações de revisão][preferências de prova]
 
-  [proofprefs]: images/screenshots/preferences-Proofing.jpg @2x largura=689px altura=1031px class=preferencepane
+  [proofprefs]: images/screenshots/preferences-Proofing.jpg @2x width=689px height=1031px class=preferencepane
 
 Por padrão, Marked usa a lista de palavras e frases usadas em demasia da [Campanha em inglês simples](http://www.plainenglish.co.uk). Você pode adicioná-los ou substituí-los facilmente editando-os em {% prefspane Proofing %}. Cada campo é um texto de formato livre e cada linha é interpretada como uma frase de pesquisa. Use `*` no início de uma frase ou palavra para corresponder a qualquer texto anterior e `?` para corresponder a um único caractere como curinga.
 

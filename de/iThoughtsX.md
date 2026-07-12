@@ -11,7 +11,7 @@ Legen Sie in den iThoughtsX-Einstellungen unter **Erweitert** die Option **Markd
 
 Marked liest die Markdown-Darstellung aus der gepackten Map und rendert sie mit Ihrem aktiven Stylesheet.
 
-Verwenden Sie die Befehle **Gliederungsmodus** im Menü {% appmenu Gear %} von Marked, wenn Sie eine Gliederungsnummerierung im APA- oder Dezimalstil für die konvertierte Gliederung wünschen.
+Verwenden Sie die Befehle **Gliederungsmodus** im Menü {% appmenu {{gear}} %} von Marked, wenn Sie eine Gliederungsnummerierung im APA- oder Dezimalstil für die konvertierte Gliederung wünschen.
 
 Speichern Sie in iThoughtsX, um Aktualisierungen an Marked zu übertragen. Die Dateiüberwachung erkennt Änderungen im Dateisystem automatisch.
 

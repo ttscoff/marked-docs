@@ -10,7 +10,7 @@ Il generatore di stili è disponibile su [https://markedapp.com/style-generator/
 
 ![Generatore di stili][img-style-generator]
 
-  [img-style-generator]: images/style-generator-800.jpg @2x larghezza=800 classe=centro
+  [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
 ## Per iniziare
 

@@ -1,91 +1,91 @@
 # <%= @title %>
 
-Optionen im {% prefspane Export %}:
+Optionen unter {% prefspane Export %}:
 
-(Weitere Informationen finden Sie unter [Exporting](Exporting.html))
+(Siehe [Exportieren](Exporting.html) für weitere Informationen)
 
-![Settings: Export][1]
+![Einstellungen: Export][1]
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Profil exportieren
+### Exportprofil
 
-Profil exportieren
-: Wählen Sie ein gespeichertes Profil aus dem Popup-Menü aus. Profile speichern einen vollständigen Satz Exporteinstellungen für den schnellen Wechsel zwischen Arbeitsabläufen (z. B. Drucken PDF vs. Web HTML). Siehe [Export Profiles](Exporting.html#export-profiles).
+Exportprofil
+: Wählen Sie ein gespeichertes Profil aus dem Popup-Menü. Profile speichern einen vollständigen Satz an Exporteinstellungen für schnelles Wechseln zwischen Arbeitsabläufen (zum Beispiel Druck-PDF vs. Web-HTML). Siehe [Exportprofile](Exporting.html#export-profiles).
 
 Neu
-: Erstellen Sie ein neues Profil aus den aktuellen Einstellungen.
+: Erstellt ein neues Profil aus den aktuellen Einstellungen.
 
 Verwalten
-: Öffnen Sie den Profilmanager, um Profile umzubenennen, zu duplizieren oder zu löschen.
+: Öffnet den Profilmanager zum Umbenennen, Duplizieren oder Löschen von Profilen.
 
 ### Drucken/PDF
 
-Deaktivieren Sie Links/Hervorhebungen beim Exportieren von PDF oder beim Drucken
+Links/Hervorhebungen für PDF/Print deaktivieren
 : Entfernt beim Drucken die Formatierung (Unterstreichung und Farbe) von Links.
 
-Fügen Sie die URL als Textanmerkung ein
-: Beim Drucken oder Exportieren von PDF erscheint die URL für einen Link nach dem verlinkten Text.
+URL als Textanmerkung einfügen
+: Beim Drucken oder PDF-Export erscheint die URL eines Links hinter dem verlinkten Text.
 
-Ersetzen Sie horizontale Linien durch Seitenumbrüche
-: Horizontale Linien im Dokument in Seitenumbrüche umwandeln (dadurch werden Fußnoten zusätzlich auf eine neue Seite gezwungen).
+Horizontale Linien durch Seitenumbrüche ersetzen
+: Wandelt horizontale Linien im Dokument in Seitenumbrüche um (das erzwingt zusätzlich Fußnoten auf einer neuen Seite).
 
 Bilder beim Kopieren von HTML einbetten
-: Wenn diese Option aktiviert ist, wird beim Kopieren von HTML in die Zwischenablage nach lokalen Bildern gesucht und diese mit Base64 codiert, um sie als Daten-URLs in den Quellcode aufzunehmen.
+: Ist dies aktiviert, wird beim Kopieren von HTML in die Zwischenablage nach lokalen Bildern gesucht; sie werden Base64-codiert und als Data-URLs in den Quelltext eingebettet.
 
 Hintergrundfarben und Bilder drucken
-: Standardmäßig wird Marked mit einem weißen Hintergrund gedruckt/exportiert. Wenn Sie Hintergrundfarben und Bilder aus benutzerdefinierten Designs einbinden möchten, aktivieren Sie diese Option.
+: Standardmäßig druckt bzw. exportiert Marked mit weißem Hintergrund. Wenn Sie Hintergrundfarben und Bilder aus eigenen Stilen einbinden möchten, aktivieren Sie diese Option.
 
-Vermeiden Sie verwaiste Schlagzeilen
-: Diese Option verhindert, dass Überschriften für den nächsten Abschnitt am Ende einer Seite ohne nachfolgenden Inhalt angezeigt werden.
+Verwaiste Überschriften vermeiden
+: Diese Option verhindert, dass Überschriften des nächsten Abschnitts am Seitenende ohne nachfolgenden Inhalt stehen.
 
 Erstes H1 ausschließen
-: Ignorieren Sie die erste Überschrift der ersten Ebene im Dokument, wenn Sie H1-Zeichen als Seitenumbrüche verwenden.
+: Ignoriert die erste Überschrift der Ebene 1 im Dokument, wenn H1 als Seitenumbrüche verwendet werden.
 
-Verwenden Sie die erste H1 als Ersatztitel
-: Wenn Sie Apps wie Bear oder die Streaming-Vorschau verwenden, können Sie mit dieser Option den Dateinamen mit dem Inhalt des ersten H1 im Dokument überschreiben. Wenn Metadaten für „Titel“ angegeben werden, haben diese immer Vorrang.
+Erstes H1 als Ersatztitel verwenden
+: Bei Apps wie Bear oder der Streaming-Vorschau können Sie mit dieser Option den Dateinamen durch den Inhalt des ersten H1 im Dokument ersetzen. Sind Metadaten für „title“ angegeben, haben diese immer Vorrang.
 
-Fügen Sie vorher Seitenumbrüche hinzu
-: Verwenden Sie Überschriften der Ebenen 1/2 als Abschnittstrenner und beginnen Sie immer auf einer neuen Seite. Wählen Sie „Fußnoten“, um vor Fußnoten im Dokument immer einen Seitenumbruch einzufügen.
+Seitenumbrüche einfügen vor
+: Verwendet Überschriften der Ebene 1/2 als Abschnittstrenner, die immer auf einer neuen Seite beginnen. Wählen Sie „Fußnoten“, um vor allen Fußnoten im Dokument stets einen Seitenumbruch einzufügen.
 
 Seitenumbrüche in der Vorschau anzeigen
-: Zeigt eine helle gestrichelte Linie an, an der Umbrüche mit der Syntax <!\--BREAK\--> oder durch Aktivieren der Optionen für automatische Umbrüche in den Exporteinstellungen eingefügt werden.
+: Zeigt eine helle gestrichelte Linie, wo Umbrüche mit der Syntax &lt;!\--BREAK\--&gt; oder durch Aktivieren der Auto-Umbruch-Optionen in den Export-Einstellungen eingefügt werden.
 
-Custom Schriftgröße für Export/Druck
-: Wenn festgelegt, wird der gesamte Text basierend auf der ausgewählten Punkteinstellung skaliert (standardmäßig eine Basis von 10 Punkten).
+Benutzerdefinierte Schriftgröße für Export/Druck
+: Ist dies gesetzt, wird der gesamte Text anhand der gewählten Punktgröße skaliert (Standard ist eine Basis von 10 Punkt).
 
 Ränder
-: Definieren Sie die Druckränder (in Punkten angegeben) für oben, unten, links und rechts.
+: Legt die Druckränder (in Punkt) für oben, unten, links und rechts fest.
 
 Inhaltsverzeichnis ausdrucken
-: Automatisches Inhaltsverzeichnis in print/PDF einbinden.
+: Bindet ein automatisches Inhaltsverzeichnis in Druck/PDF ein.
 
 Seitenumbruch danach
-: Nach einem eingefügten Inhaltsverzeichnis automatisch zu einer neuen Seite wechseln.
+: Bricht nach einem eingefügten Inhaltsverzeichnis automatisch auf eine neue Seite um.
 
-Füllstandsmarkierungen im Inhaltsverzeichnis
-: Verwenden Sie die Dropdown-Listen, um die Listenelementmarkierung für jede Einrückungsebene in einem Inhaltsverzeichnis festzulegen.
+Inhaltsverzeichnis-Ebenenmarkierungen
+: Legen Sie über die Dropdown-Menüs die Listenmarkierung für jede Einrückungsebene eines Inhaltsverzeichnisses fest.
 
 ### Kopf- und Fußzeilen
 
-Konfigurieren Sie Schriftart, Logo, Kopf-/Fußzeilenfelder, Datums- und Uhrzeitformate, Einbindung der ersten Seite, Seitennummerierungsversatz und Ränder. Zu den Feldplatzhaltern gehören `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` und andere.
+Konfigurieren Sie Schrift, Logo, Kopf-/Fußzeilenfelder, Datums- und Zeitformate, das Einschließen auf der ersten Seite, den Versatz der Seitennummerierung und Trennlinien. Feld-Platzhalter sind unter anderem `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1` und `%h2`.
 
-Platzhalterverweise und Beispiele finden Sie unter [Headers and Footers](Exporting.html#headersandfooters) in [Exporting](Exporting.html). Siehe [Date and Time Formats](Exporting.html#dateandtimeformats) für die Formatcodes `%date` und `%time`.
+Siehe [Kopf- und Fußzeilen](Exporting.html#headersandfooters) in [Exportieren](Exporting.html) für die Platzhalter-Referenz und Beispiele. Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats) für die Formatcodes von `%date` und `%time`.
 
-Auf der ersten Seite einschließen
-: Wenn die Option für Kopf- und/oder Fußzeile deaktiviert ist, wird die erste Seite nicht im angegebenen Typ gedruckt.
+Auf erster Seite einschließen
+: Sind die Optionen für Kopf- und/oder Fußzeile deaktiviert, wird der jeweilige Typ auf der ersten Seite nicht gedruckt.
 
 Datumsformat
-: Formatzeichenfolge im Strftime-Stil für `%date` in Kopf- und Fußzeilen. Siehe [Date and Time Formats](Exporting.html#dateandtimeformats).
+: strftime-artige Formatzeichenkette für `%date` in Kopf- und Fußzeilen. Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats).
 
 Zeitformat
-: Formatzeichenfolge im Strftime-Stil für `%time` in Kopf- und Fußzeilen. Siehe [Date and Time Formats](Exporting.html#dateandtimeformats).
+: strftime-artige Formatzeichenkette für `%time` in Kopf- und Fußzeilen. Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats).
 
 Versatz der Seitennummerierung
-: Wird verwendet, um anzupassen, bei welcher Nummer die Seitenzahlen beginnen. Wenn Sie beispielsweise auf der ersten Seite ein Inhaltsverzeichnis haben und die Nummerierung auf der zweiten Seite beginnen soll, legen Sie den Offset auf -1 fest. Seite 2 ist nun Seite 1 und die Gesamtseitenzahl wird entsprechend angepasst.
+: Passt an, mit welcher Nummer die Seitennummerierung beginnt. Haben Sie zum Beispiel auf der ersten Seite ein Inhaltsverzeichnis und möchten, dass die Nummerierung auf der zweiten Seite beginnt, setzen Sie den Versatz auf -1. Seite 2 wird dann zu Seite 1, und die Gesamtseitenzahl wird entsprechend angepasst.
 
-Grenze
-: Drucken Sie eine horizontale Linie unter der Kopfzeile und/oder über der Fußzeile.
+Trennlinie
+: Druckt eine horizontale Linie unter der Kopfzeile und/oder über der Fußzeile.
 
 Standardformate wiederherstellen
-: Formatzeichenfolgen für Datum und Uhrzeit auf die Standardeinstellungen von Marked zurücksetzen (`%m-%d-%Y` und `%I:%M %p`). Siehe [Date and Time Formats](Exporting.html#dateandtimeformats).
+: Setzt die Datums- und Zeitformat-Zeichenketten auf Markeds Standardwerte zurück (`%m-%d-%Y` und `%I:%M %p`). Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats).

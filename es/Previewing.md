@@ -10,7 +10,7 @@ Cambiando tu forma de ver las cosas.
 
 ![][1]
 
-   [1]: imágenes/StylePicker.jpg @2x ancho=896px alto=195px clase=centro
+   [1]: imágenes/StylePicker.jpg @2x width=896px height=195px class=center
 
 Puede establecer un estilo predeterminado para documentos nuevos en {% prefspane Style %}. Si tiene el menú de estilo en la barra de herramientas habilitado en la configuración de Ventana, puede ajustar el estilo por documento directamente desde la ventana Vista previa. Su selección de estilo será recordada y será la primera opción para las opciones de exportación e impresión.
 
@@ -28,7 +28,7 @@ El modo de esquema automático se puede habilitar para extensiones de archivo es
 
 ![][2]
 
-   [2]: imágenes/textzoom.jpg @2x ancho=800px alto=414px clase=centro
+   [2]: imágenes/textzoom.jpg @2x width=800px height=414px class=center
 
 Puede cambiar el tamaño del texto usando {% kbd cmd shift + %} y {% kbd cmd shift - %}, o usar el menú Zoom en Vista previa en la barra de menú o en el menú de ajustes en la ventana del documento. Marked recordará cualquier cambio que realice la próxima vez (y siempre). Restablezca el zoom al 100% con {% kbd cmd 0 %} (o acceda a **Restablecer zoom** desde el menú Zoom).
 

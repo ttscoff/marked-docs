@@ -10,17 +10,17 @@ Sie können die Debug-Protokollierung aktivieren, indem Sie {% prefspane Advance
 
 {% note %}
 TODO: Funktioniert das noch?
-Sie können auf diese Optionen auch zugreifen, indem Sie beim Öffnen von {% appmenu Help %} in der Menüleiste die Taste {% kbd opt  %} gedrückt halten.
+Sie können auf diese Optionen auch zugreifen, indem Sie beim Öffnen von {% appmenu Hilfe %} in der Menüleiste die Taste {% kbd opt  %} gedrückt halten.
 {% endnote %}
 
 ### Anzeigen des Protokolls
 
-Wenn der **Debug-Modus** aktiviert ist, können Sie das Menü {% appmenu Help %} öffnen und Debug-Protokoll öffnen auswählen. Dadurch wird das Protokoll von Marked in Console.app geöffnet, das live aktualisiert wird, wenn während der Verwendung von Marked Protokollmeldungen hinzugefügt werden.
+Wenn der **Debug-Modus** aktiviert ist, können Sie das Menü {% appmenu Hilfe %} öffnen und Debug-Protokoll öffnen auswählen. Dadurch wird das Protokoll von Marked in Console.app geöffnet, das live aktualisiert wird, wenn während der Verwendung von Marked Protokollmeldungen hinzugefügt werden.
 
 ### Fehlerbehebung Custom Regeln
 
-[Custom preprocessors and processors](Custom_Processor.html) erhalten eine eigene Protokollschnittstelle. Wählen Sie {% appmenu Help, Show Custom Rules Log %}, um das Fenster zu öffnen. In diesem Fenster wird ein farbiges Protokoll angezeigt, das zeigt, welche Regeln übereinstimmten und welche Befehle sie ausführten.
+[Custom preprocessors and processors](Custom_Processor.html) erhalten eine eigene Protokollschnittstelle. Wählen Sie {% appmenu Hilfe, Protokoll eigener Regeln anzeigen %}, um das Fenster zu öffnen. In diesem Fenster wird ein farbiges Protokoll angezeigt, das zeigt, welche Regeln übereinstimmten und welche Befehle sie ausführten.
 
 ### Ein Problem melden
 
-Verwenden Sie {% appmenu Help, Report an Issue %}, um ein Fenster zu öffnen, das Ihre Einstellungen für die gängigsten Schlüssel und eine Vorlage zum Erstellen eines Fehlerberichts anzeigt. Verwenden Sie die Schaltfläche „In die Zwischenablage kopieren“, um den Inhalt des Fensters zu kopieren, und klicken Sie auf „Support-Site öffnen“, um [the new-question form](https://support.markedapp.com/questions/add) zu öffnen, wo Sie Ihren Bericht einfügen können. Ich versuche, innerhalb von 48 Stunden auf Meldungen zu antworten.
+Verwenden Sie {% appmenu Hilfe, Problem melden %}, um ein Fenster zu öffnen, das Ihre Einstellungen für die gängigsten Schlüssel und eine Vorlage zum Erstellen eines Fehlerberichts anzeigt. Verwenden Sie die Schaltfläche „In die Zwischenablage kopieren“, um den Inhalt des Fensters zu kopieren, und klicken Sie auf „Support-Site öffnen“, um [the new-question form](https://support.markedapp.com/questions/add) zu öffnen, wo Sie Ihren Bericht einfügen können. Ich versuche, innerhalb von 48 Stunden auf Meldungen zu antworten.

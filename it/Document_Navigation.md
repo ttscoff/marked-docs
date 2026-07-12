@@ -8,7 +8,7 @@ Questa pagina descrive come spostarsi nelle anteprime lunghe: il [Sommario](#tab
 
 ![][8]
 
-   [8]: images/tableofcontentsbutton.jpg @2x larghezza=740px altezza=238px classe=centro
+   [8]: images/tableofcontentsbutton.jpg @2x width=740px height=238px class=center
 
 Se il documento contiene intestazioni, nella barra degli strumenti viene visualizzato un pulsante di elenco. Fare clic per espandere il sommario; fai clic su un titolo per passare a quella sezione dell'anteprima. Usa {% kbd j %}/{% kbd k %} (giù/su) per spostarti nell'elenco e {% kbd Enter %} o {% kbd o %} per passare all'intestazione evidenziata.
 
@@ -22,7 +22,7 @@ In modalità a schermo intero, il sommario appare come una barra laterale fissa 
 
 ![Attiva/disattiva schermo intero][12]
 
-   [12]: images/tableofcontentsfullscreentoggle.jpg @2x larghezza=740px altezza=238px classe=centro
+   [12]: images/tableofcontentsfullscreentoggle.jpg @2x width=740px height=238px class=center
 
 
 Per un elenco ridotto di tasti, vedere [Scorciatoie da tastiera](Keyboard_Shortcuts.html#TableofContentsNavigation).

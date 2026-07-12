@@ -15,7 +15,7 @@ Il modo più semplice per implementare JavaScript personalizzato che varia a sec
 
 ![][1]
 
-   [1]: images/screenshots/AdditionalJavascript.jpg @2x larghezza=592px altezza=576px classe=centro
+   [1]: images/screenshots/AdditionalJavascript.jpg @2x width=592px height=576px class=center
 
 Puoi aggiungere URL CDN JavaScript nella finestra "Script aggiuntivi", accessibile da {% prefspane Style %}. Inserisci gli URL CDN, uno per riga. Non includere alcun tag `<script>`, solo l'URL:
 

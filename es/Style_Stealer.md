@@ -29,7 +29,7 @@ En el campo URL, ingrese la dirección del sitio web del que desea extraer estil
 
 ![Vista previa de Style Stealer][vista previa]
 
-  [vista previa]: imágenes/estilo-roba-vista previa.jpg @2x ancho=800
+  [vista previa]: imágenes/estilo-roba-vista previa.jpg @2x width=800
 
 ### Paso 3: cargar y navegar
 
@@ -49,7 +49,7 @@ Luego puede guardar este estilo personalizado en su carpeta CSS personalizado pa
 
 ![][img3]
 
-  [img3]: imágenes/ladrón de estilos-robados-800.jpg @2x ancho=800px alto=637px clase=centro
+  [img3]: imágenes/ladrón de estilos-robados-800.jpg @2x width=800px height=637px class=center
 
 ## Qué se extrae
 

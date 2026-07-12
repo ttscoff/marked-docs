@@ -8,7 +8,7 @@ Visualize seus documentos do seu jeito.
 
 ![][img1]
 
-  [img1]: images/custom_styles.jpg @2x largura=544px altura=196px class=centro
+  [img1]: images/custom_styles.jpg @2x width=544px height=196px class=center
 
 A maneira mais fácil de explorar estilos personalizados é através do
 [Galeria de estilos personalizados][2]. A partir daí você pode navegar
@@ -165,7 +165,7 @@ site existente usando o [Style Stealer][4]. Isso permite que você carregue uma 
 
 ![Ladrão de estilo][ladrão de estilo]
 
-  [stylestealer]: images/style-stealer-800.jpg @2x largura=800
+  [stylestealer]: images/style-stealer-800.jpg @2x width=800
 
 
 Gerencie estilos personalizados (renomeie, reordene, duplique e exclua) no [Style Manager](Style_Manager.html).

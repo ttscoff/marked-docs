@@ -4,4 +4,4 @@ Standardmäßig rendert Marked mit MultiMarkdown. Dies unterstützt alle Standar
 
 Alternativ können Sie im {% prefspane Processor %} zum Rabattprozessor wechseln. Dies ist eine GitHub-Variante des Discount-Prozessors und sollte Syntaxparität mit dem eigenen Parser von GitHub bieten.
 
-Weitere Einzelheiten finden Sie unter {% appmenu Help, Markdown Reference %}.
+Weitere Einzelheiten finden Sie unter {% appmenu Hilfe, Markdown-Referenz %}.

@@ -20,7 +20,7 @@ A maneira mais fácil de usar Marcado em um arquivo que você já está editando
 
 ![][2]
 
-   [2]: images/file_open.jpg @2x largura=300px altura=118px class=centro
+   [2]: images/file_open.jpg @2x width=300px height=118px class=center
 
 Você pode, é claro, abrir arquivos Markdown diretamente usando a opção de menu {% appmenu File, Open... ({{cmd}}O) %}. Marcado também funciona bem _sem_ um editor de texto. Você pode visualizar e converter seu Markdown com apenas um clique.
 
@@ -40,7 +40,7 @@ Marcado permite que você crie um novo arquivo de texto vazio com o comando {% a
 
 ![][3]
 
-   [3]: images/open_recent.jpg @2x largura=300px altura=174px class=centro
+   [3]: images/open_recent.jpg @2x width=300px height=174px class=center
 
 Marcado também mantém registro de documentos recentes. A opção de menu {% appmenu File, Open Recent %} mostrará os arquivos que você abriu e permitirá que você volte para eles. Você pode reabrir rapidamente o último arquivo que estava visualizando com {% kbd shift cmd R %}. Use {% kbd shift cmd P %} ou [Ações rápidas](Quick_Actions.html) para executar o menu e visualizar comandos do teclado. Se quiser aprendê-los, você pode encontrar um gráfico em [Atalhos de teclado](Keyboard_Shortcuts.html).
 

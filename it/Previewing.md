@@ -10,7 +10,7 @@ Cambiare il modo in cui vedi le cose.
 
 ![][1]
 
-   [1]: images/StylePicker.jpg @2x larghezza=896px altezza=195px classe=centro
+   [1]: images/StylePicker.jpg @2x width=896px height=195px class=center
 
 Puoi impostare uno stile predefinito per i nuovi documenti in {% prefspane Style %}. Se hai abilitato il menu Stile nella barra degli strumenti nelle impostazioni Finestra, puoi regolare lo stile in base al documento direttamente dalla finestra Anteprima. La tua selezione di stile verrà ricordata e sarà la prima scelta per le opzioni di esportazione e stampa.
 
@@ -28,7 +28,7 @@ La modalità struttura automatica può essere abilitata per estensioni di file s
 
 ![][2]
 
-   [2]: images/textzoom.jpg @2x larghezza=800px altezza=414px classe=centro
+   [2]: images/textzoom.jpg @2x width=800px height=414px class=center
 
 Puoi modificare la dimensione del testo utilizzando {% kbd cmd shift + %} e {% kbd cmd shift - %} oppure utilizzare il menu Zoom sotto Anteprima nella barra dei menu o nel menu a forma di ingranaggio nella finestra del documento. Marked ricorderà tutte le modifiche apportate per la prossima volta (e ogni volta). Ripristina lo zoom al 100% con {% kbd cmd 0 %} (o accedi a **Zoom Reset** dal menu Zoom).
 

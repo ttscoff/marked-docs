@@ -18,7 +18,7 @@ Tutte le annotazioni vengono visualizzate in una barra laterale e nascoste nell'
 
 ![Una nota a piè di pagina nella barra laterale dei commenti][barra laterale]
 
-  [barra laterale]: images/comment-sidebar-800.jpg @2x larghezza=800
+  [barra laterale]: images/comment-sidebar-800.jpg @2x width=800
 
 Passando il mouse sopra un commento nella barra laterale verrà tracciata una linea nella sua posizione nel documento. Nel caso delle note a piè di pagina, ciò indicherà il punto in cui si trova la nota a piè di pagina nel testo. Nel caso dei commenti, punterà alla posizione originale del commento, che potrebbe essere uno spazio vuoto nell'anteprima.
 

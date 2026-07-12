@@ -8,7 +8,7 @@ A validação do link faz ping no destino de um URL e testa erros. Isso ajuda a 
 
 ![][1]
 
-   [1]: images/validate_single.png @2x largura=832px altura=267px class=centro
+   [1]: images/validate_single.png @2x width=832px height=267px class=center
 
 Clique e segure um link na visualização até que ele pisque e solte para abrir o menu de ação do link. Escolha "Validar link" para executar o teste. Os resultados são exibidos no pop-up.
 
@@ -16,7 +16,7 @@ Clique e segure um link na visualização até que ele pisque e solte para abrir
 
 ![][2]
 
-   [2]: imagens/capturas de tela/mainwindow-feature-urlvalidate-crop.jpg @2x largura=1089px altura=300px classe=centro
+   [2]: imagens/capturas de tela/mainwindow-feature-urlvalidate-crop.jpg @2x width=1089px height=300px class=center
 
 Escolha "Validar todos os links" (atalho {% kbd ctrl cmd L %}) no menu Engrenagem ou no menu do botão direito. Todos os links remotos no documento serão verificados e os resultados serão exibidos em um pop-up. Clicar em um link no pop-up irá rolar e destacar seu respectivo link no documento.
 

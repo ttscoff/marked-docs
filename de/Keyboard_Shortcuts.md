@@ -1,121 +1,120 @@
 # <%= @title %>
 
-Ein schwebendes Bedienfeld mit einem Shortcut-Spickzettel ist über das Hilfemenü oder durch Drücken von {{opt}}{{cmd}}K verfügbar.
+Über das Hilfemenü oder mit {{opt}}{{cmd}}K öffnen Sie ein schwebendes Bedienfeld mit einer Kurzbefehl-Übersicht.
 
-### Verknüpfungen
+### Kurzbefehle
 
-|                     Verknüpfung | Funktion |
-| ---------------------------: | :------------------------------------------------ |
-|                 **{{cmd}},** | Einstellungen |
-|                 **{{cmd}}N** | Neue Datei |
-|                 **{{cmd}}O** | Öffnen |
-|        **{{shift}}{{cmd}}O** | Schnell öffnen |
-|        **{{shift}}{{cmd}}P** | Schnellaktionen |
-|        **{{shift}}{{cmd}}R** | Letztes erneut öffnen |
-|                 **{{cmd}}W** | Schließen |
-|                 **{{cmd}}P** | Drucken/Speichern PDF |
-|                 **{{cmd}}S** | Speichern HTML |
-|        **{{shift}}{{cmd}}S** | Speichern RTF |
-|                 **{{cmd}}C** | Kopieren |
-|        **{{shift}}{{cmd}}C** | HTML Quelle in die Zwischenablage kopieren |
-|                 **{{cmd}}U** | Quellansicht umschalten |
-|                 **{{cmd}}T** | Inhaltsverzeichnis umschalten |
-|                 **{{cmd}}R** | Vorschau neu laden |
-|               **{{cmd}}1-9** | Wählen Sie „Integrierter Stil |“.
-|        **{{opt}}{{cmd}}1-9** | Wählen Sie Custom Stil |
-|                 **{{cmd}}/** | Zahnradmenü |
-|        **{{shift}}{{cmd}}=** | Textgröße erhöhen |
-|        **{{shift}}{{cmd}}-** | Textgröße verringern |
-|        **{{shift}}{{cmd}}0** | Textgröße zurücksetzen |
-|                 **{{cmd}}M** | Minimieren |
-| **{{opt}}{{shift}}{{cmd}}F** | Bleiben Sie an der Spitze |
-|         **{{ctrl}}{{cmd}}B** | Grenzen der enthaltenen Dateien anzeigen |
-|         **{{ctrl}}{{cmd}}L** | URLs validieren |
-|         **{{ctrl}}{{cmd}}W** | Wortwiederholung visualisieren |
-|         **{{ctrl}}{{opt}}S** | Geschwindigkeitslesen umschalten |
-| **{{shift}}{{ctrl}}{{cmd}}I** | Nach Dokument fragen (Apple Intelligence) |
-|          **{{opt}}{{cmd}}S** | Dokumentstatistik |
+| Tastenkürzel | Funktion |
+| ---: | :--- |
+| **{{cmd}},** | Einstellungen… |
+| **{{cmd}}N** | Neue Datei |
+| **{{cmd}}O** | Öffnen… |
+| **{{shift}}{{cmd}}O** | Schnell öffnen |
+| **{{shift}}{{cmd}}P** | Schnellaktionen… |
+| **{{shift}}{{cmd}}R** | Zuletzt geöffnete erneut öffnen |
+| **{{cmd}}W** | Schließen |
+| **{{cmd}}P** | Drucken… |
+| **{{cmd}}S** | HTML speichern |
+| **{{shift}}{{cmd}}S** | RTF speichern |
+| **{{cmd}}C** | Kopieren |
+| **{{shift}}{{cmd}}C** | HTML-Quelltext kopieren |
+| **{{cmd}}U** | Quelltextansicht umschalten |
+| **{{cmd}}T** | Inhaltsverzeichnis umschalten |
+| **{{cmd}}R** | Aktualisieren |
+| **{{cmd}}1-9** | Integrierten Stil auswählen |
+| **{{opt}}{{cmd}}1-9** | Modifizierten Stil auswählen |
+| **{{cmd}}/** | Zahnradmenü |
+| **{{shift}}{{cmd}}=** | Textgröße erhöhen |
+| **{{shift}}{{cmd}}-** | Textgröße verringern |
+| **{{shift}}{{cmd}}0** | Textgröße zurücksetzen |
+| **{{cmd}}M** | Im Dock ablegen |
+| **{{opt}}{{shift}}{{cmd}}F** | Fenster im Vordergrund halten |
+| **{{ctrl}}{{cmd}}B** | Grenzen eingebetteter Dateien anzeigen |
+| **{{ctrl}}{{cmd}}L** | URLs validieren |
+| **{{ctrl}}{{cmd}}W** | Wortwiederholungen visualisieren |
+| **{{ctrl}}{{opt}}S** | Schnelllesen umschalten |
+| **{{shift}}{{ctrl}}{{cmd}}I** | Dokument befragen… (Apple Intelligence) |
+| **{{opt}}{{cmd}}S** | Dokumentstatistik |
 | **{{opt}}{{shift}}{{cmd}}S** | Lesbarkeitsstatistik |
-|                 **{{cmd}}I** | Detaillierte Statistiken |
-|          **{{opt}}{{cmd}}C** | Custom Prozessor umschalten |
-|                 **{{cmd}}F** | Suchen |
-|                 **{{cmd}}G** | Nächstes Spiel markieren |
-|        **{{shift}}{{cmd}}G** | Vorheriges Spiel markieren |
-|   **{{opt}}{{cmd}}{{left}}** | Alle Abschnitte einklappen |
-|  **{{opt}}{{cmd}}{{right}}** | Alle Abschnitte erweitern |
-|        **{{shift}}{{cmd}}V** | Vorschau der Zwischenablage |
-|                 **{{cmd}}K** | Aus URL extrahieren |
-|         **{{ctrl}}{{cmd}}S** | Vorschau der Zwischenablage speichern |
-|     **{{cmd}}\ (Backslash)** | Toggle Fountain/Scrivener Kommentare |
-|         **{{ctrl}}{{cmd}}C** | Kommentarseitenleiste umschalten |
-|          **{{opt}}{{cmd}}F** | Scrivener Dokumente filtern |
-|          **{{opt}}{{cmd}}K** | Tastaturkürzel anzeigen |
-|          **{{opt}}{{cmd}}M** | Markdown-Referenz anzeigen |
-[Verknüpfungen]
+| **{{cmd}}I** | Detaillierte Statistik |
+| **{{opt}}{{cmd}}C** | Modifizierten Prozessor umschalten |
+| **{{cmd}}F** | In Vorschau suchen |
+| **{{cmd}}G** | Nächstes suchen |
+| **{{shift}}{{cmd}}G** | Vorheriges suchen |
+| **{{opt}}{{cmd}}{{left}}** | Alle Abschnitte einklappen |
+| **{{opt}}{{cmd}}{{right}}** | Alle Abschnitte ausklappen |
+| **{{shift}}{{cmd}}V** | Vorschau der Zwischenablage |
+| **{{cmd}}K** | Aus URL extrahieren |
+| **{{ctrl}}{{cmd}}S** | Zwischenablagevorschau speichern |
+| **{{cmd}}\ (Backslash)** | Fountain-/Scrivener-Kommentare umschalten |
+| **{{ctrl}}{{cmd}}C** | Kommentare und Fußnoten anzeigen |
+| **{{opt}}{{cmd}}F** | Scrivener-Dokumente filtern |
+| **{{opt}}{{cmd}}K** | Tastaturkürzel anzeigen |
+| **{{opt}}{{cmd}}M** | Markdown-Referenz anzeigen |
+[Kurzbefehle]
 
 
 
-### Schnelles Umschalten
+### Schnellschalter
 
-Zusätzliche Tastaturkürzel zum Umschalten allgemeiner globaler Einstellungen.
+Zusätzliche Tastenkürzel zum Umschalten gängiger globaler Einstellungen.
 
-|                      Verknüpfung | Funktion |
-| -------------: | :------------------- |
+| Tastenkürzel | Funktion |
+| ---: | :--- |
 | **{{ctrl}}{{opt}}{{shift}}L** | Zeilenumbrüche beibehalten |
-| **{{ctrl}}{{opt}}{{shift}}I** | IDs in Schlagzeilen |
-| **{{ctrl}}{{opt}}{{shift}}Y** | Strip YAML |
-| **{{ctrl}}{{opt}}{{shift}}M** | Strip MMD Metadaten |
-| **{{ctrl}}{{opt}}{{shift}}S** | Scrollen Sie zu „Erste Bearbeitung |“.
-| **{{ctrl}}{{opt}}{{shift}}C** | CriticMarkup Immer |
+| **{{ctrl}}{{opt}}{{shift}}I** | IDs bei Überschriften |
+| **{{ctrl}}{{opt}}{{shift}}Y** | YAML entfernen |
+| **{{ctrl}}{{opt}}{{shift}}M** | MMD-Metadaten entfernen |
+| **{{ctrl}}{{opt}}{{shift}}S** | Zur ersten Bearbeitung scrollen |
+| **{{ctrl}}{{opt}}{{shift}}C** | CriticMarkup immer |
 | **{{ctrl}}{{opt}}{{shift}}T** | Intelligente Typografie |
-| **{{ctrl}}{{opt}}{{shift}}H** | Prozess innerhalb von HTML |
-[Schnelles Umschalten]
+| **{{ctrl}}{{opt}}{{shift}}H** | Innerhalb HTML verarbeiten |
+[Schnellschalter]
 
-### Vorschau der Navigation
+### Vorschau-Navigation [previewnavigation]
 
-Drücken Sie „?“ Sie können jederzeit die folgenden Verknüpfungen im Vorschaufenster anzeigen.
+Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster anzuzeigen.
 
-|                     Verknüpfung | Funktion |
-| ---------------------------: | :-------------------------------- |
-|              **t** oder **gg** | Nach oben springen |
-|               **b** oder **G** | Nach unten springen |
-|             **{{shift}}1-9** | Lesezeichen-Bildlaufposition |
-|               **{{opt}}1-9** | Nächste Schlagzeile als Lesezeichen speichern |
-|     **{{cmd}}D** oder **\`\`** | Nächstes verfügbares Lesezeichen hinzufügen |
-|                      **1-9** | Scrollen Sie zu Lesezeichen |
-|                        **0** | Minikarte anzeigen |
-|                      **N/P** | Nächstes/Vorheriges Lesezeichen Numerisch |
-|                      **n/p** | Nächstes/Vorheriges Lesezeichen in Seitenreihenfolge |
-|                  **j**/**k** | Nach unten/oben scrollen |
-|                  **J**/**K** | Schneller nach oben/unten scrollen |
-|                  **,**/**.** | Durch alle Kopfzeilen navigieren |
-|            **<**/**>** | Navigieren Sie durch H1/H2-Header |
-|                        **e** | Zum letzten Bearbeitungspunkt springen |
-|                        **s** | Automatisches Scrollen |
-|                        **S** | Automatisches Scrollen umkehren |
-| **{{shift}}{{l}}**/**{{r}}** | Automatisches Scrollen beschleunigen/verlangsamen |
-|                        **f** | Öffnen Sie den „Schnellumschalter“ |
-|                        **Ich** | Aktuellen enthaltenen Dateinamen anzeigen |
-|                        **z** | Zoom-Übersicht umschalten |
-|              **\[** / **\]** | Zielhighlights navigieren |
-|                **{** / **}** | Durch alle Highlights navigieren |
-|         **Escape ({{esc}})** | Überlagerung schließen/Textauswahl aufheben |
-|                  **h**/**?** | Hilfe-HUD ein-/ausblenden |
-|        **{{shift}}{{cmd}}F** | Fokusansicht |
+| Tastenkürzel | Funktion |
+| ---: | :--- |
+| **t** oder **gg** | Zum Anfang springen |
+| **b** oder **G** | Zum Ende springen |
+| **{{shift}}1-9** | Scrollposition als Lesezeichen speichern |
+| **{{opt}}1-9** | Nächste Überschrift als Lesezeichen speichern |
+| **{{cmd}}D** oder **\`\`** | Lesezeichen hinzufügen |
+| **1-9** | Zum Lesezeichen scrollen |
+| **0** | Mini-Übersicht anzeigen |
+| **N/P** | Nächstes Lesezeichen (numerisch) |
+| **n/p** | Nächstes Lesezeichen (Seitenreihenfolge) |
+| **j**/**k** | Nach unten scrollen |
+| **J**/**K** | Schneller scrollen |
+| **,**/**.** | Nächste Überschrift |
+| **&lt;**/**&gt;** | Nächste H1/H2-Überschrift |
+| **e** | Nächste Bearbeitungsmarkierung |
+| **s** | Automatisches Scrollen |
+| **S** | Automatisches Scrollen umkehren |
+| **{{shift}}{{l}}**/**{{r}}** | Automatisches Scrollen verlangsamen/beschleunigen |
+| **f** | Schnellwechsler öffnen |
+| **I** | Namen der aktuell eingebetteten Datei anzeigen |
+| **z** | Zoom-Übersicht umschalten |
+| **\[** / **\]** | Durch Zielhervorhebungen navigieren |
+| **{** / **}** | Durch alle Hervorhebungen navigieren |
+| **Escape ({{esc}})** | Überlagerung schließen/Text abwählen |
+| **h**/**?** | Hilfe-HUD ein-/ausblenden |
+| **{{shift}}{{cmd}}F** | Sichtbaren Bereich fokussieren |
 [Vorschau-Navigation]
 
-### Inhaltsverzeichnis Navigation
+### Inhaltsverzeichnis-Navigation
 
-Wenn das Inhaltsverzeichnis geöffnet ist, können Sie über die Tastatur navigieren.
+Wenn das Inhaltsverzeichnis geöffnet ist, können Sie per Tastatur navigieren.
 
-|          Verknüpfung | Funktion |
-| ----------------: | :----------- |
-|      **{{cmd}}T** | Inhaltsverzeichnis öffnen |
-|   **j**/**{{d}}** | Erstes/nächstes Element auswählen |
-|   **k**/**{{u}}** | Vorheriges Element auswählen |
-|             **o** | Scrollen Sie zur Auswahl |
-|         **Leerzeichen** | Öffnen Sie die TOC-Schnellsuche |
+| Tastenkürzel | Funktion |
+| ---: | :--- |
+| **{{cmd}}T** | Inhaltsverzeichnis öffnen |
+| **j**/**{{d}}** | Erstes/nächstes Element auswählen |
+| **k**/**{{u}}** | Vorheriges Element auswählen |
+| **o** | Zur Auswahl scrollen |
+| **Space** | Inhaltsverzeichnis-Schnellsuche öffnen |
 | **{{d}}**/**Tab** | Erstes Suchergebnis auswählen |
-|        **Flucht** | Suche löschen/Inhaltsverzeichnis verwerfen |
+| **Escape** | Suche löschen/Inhaltsverzeichnis schließen |
 [Inhaltsverzeichnis-Navigation]
-

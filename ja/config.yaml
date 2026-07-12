@@ -1,16 +1,11 @@
-# Marked Help — locale config (ja)
+# Japanese (ja) — localized help index
+# Copied from English master on 2026-07-11.
+# Translate: Title, MetaDescriptions, section title/folder, page title/sidebar_title,
+# description, keywords, and wiki_keywords.
+# Do NOT change page file: keys (English basenames) or build settings below.
 #
-# TRANSLATE in this file:
-#   Title, MetaDescriptions, section title, folder, page title, sidebar_title,
-#   description, keywords, wiki_keywords
-#
-# DO NOT CHANGE:
-#   file (page source basename — must match English .md filename)
-#   MDIndex, build paths (TargetProject, WebHelpBaseURL, …), Dependencies, Version
-#
-# See README.md in the content root for wiki_keywords rules.
 ---
-Title: Marked Help
+Title: マークされたヘルプ
 CSS: marked.min.css
 Version: '46'
 Logo: MarkedIcon.png
@@ -29,872 +24,856 @@ Dependencies:
 - tipuesearch
 MDIndex: Overview
 MetaDescriptions:
-  Search: Search Marked help documentation by keyword or topic.
-  Ask: Ask questions about Marked features with the built-in help assistant.
-  Changelog: Release notes and version history for Marked.
-  Contents: Full alphabetical keyword index of Marked help topics.
+  Search: マークされたヘルプ ドキュメントをキーワードまたはトピックで検索します。
+  Ask: 内蔵のヘルプ アシスタントを使用して、マークされた機能について質問します。
+  Changelog: Marked のリリース ノートとバージョン履歴。
+  Contents: マークされたヘルプ トピックの完全なアルファベット順のキーワード インデックス。
 CDN: ''
 Sections:
-- title: Getting Started
-  folder: Getting_Started
+- title: はじめる
+  folder: はじめる
   pages:
-  - title: Overview
+  - title: 概要
     file: Overview
-    description: Markdown is a basic markup language using simple symbols, allowing you to write HTML (and export to other formats) with simple syntax like italics and bold. ...
+    description: Markdown は単純なシンボルを使用する基本的なマークアップ言語で、斜体や太字などの単純な構文を使用して HTML を作成 (および他の形式にエクスポート) できます。 ...
     wiki_keywords: []
-  - title: Live Markdown Preview on Mac
+  - title: Mac でのライブ Markdown プレビュー
     file: Live_Markdown_Preview_on_Mac
-    description: Marked 3 watches your Markdown files and updates a live preview as you save while you keep writing in VS Code, Obsidian, Scrivener, or any editor.
+    description: Marked 3 は、VS Code、Obsidian、Scrivener、またはその他のエディターで書き続けている間、Markdown ファイルを監視し、保存時にライブ プレビューを更新します。
     keywords:
-    - live preview
-    - markdown preview
-    - mac
-    - workflow
-    - hub
+    - ライブプレビュー
+    - マークダウンプレビュー
+    - マック
+    - ワークフロー
+    - ハブ
     wiki_keywords:
-    - live markdown preview
-    - preview markdown mac
-    - best markdown preview app
-  - title: What's New
+    - ライブマークダウンプレビュー
+    - マークダウン Mac のプレビュー
+    - 最高のマークダウンプレビューアプリ
+  - title: 新着情報
     file: Whats_New
-    description: "Recent Marked releases: new features, improvements, and fixes. See the full changelog for version history."
+    description: '最近のマークされたリリース: 新機能、改善、修正。バージョン履歴については、完全な変更ログを参照してください。'
     keywords:
-    - changelog
+    - 変更ログ
     wiki_keywords: []
-  - title: Opening Files
+  - title: ファイルを開く
     file: Opening_Files
-    description: Marked gives you options. See Live Markdown Preview on Mac for vault watching, streaming preview, and editor-specific guides.
+    description: マークを付けるとオプションが表示されます。 Vault の監視、ストリーミング プレビュー、エディター固有のガイドについては、「Mac での Live Markdown プレビュー」を参照してください。
     keywords:
-    - open
-    - files
-    - recent
+    - 開ける
+    - ファイル
+    - 最近の
     wiki_keywords: []
-  - title: Using the Browser Extensions
+  - title: ブラウザ拡張機能の使用
     file: Using_the_Browser_Extensions
-    description: Install Marked browser extensions for Safari, Chrome, and Firefox to send pages and selections to Marked.
+    description: Safari、Chrome、Firefox 用の Marked ブラウザ拡張機能をインストールして、ページと選択内容を Marked に送信します。
     keywords:
-    - browser extension
-    - extensions
-    - markdownify
-    - selection
-    - url
-    - safari
-    - chrome
-    - firefox
+    - ブラウザ拡張機能
+    - 拡張子
+    - 値下げする
+    - 選択
+    - URL
+    - サファリ
+    - クロム
+    - ファイアフォックス
     wiki_keywords: []
-  - title: 共有拡張機能の使用
-    file: Share_Extension
-    description: macOS の共有メニューからファイルや選択テキストを Marked に送信します。表示されない場合はシステム設定で Marked を有効にしてください。
-    keywords:
-    - 共有拡張機能
-    - 共有シート
-    - 共有メニュー
-    - finder
-    - テキスト
-    - ペースト
-    - クリップボードプレビュー
-    - システム設定
-    wiki_keywords:
-    - 共有拡張機能
-    - 共有メニュー marked
-    - marked に送信
-  - title: Quick Open
+  - title: クイックオープン
     file: Quick_Open
-    description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...
+    description: クイック オープンを使用すると、開いているドキュメントや最近使用したファイルにすばやくアクセスできます。 Shift-Cmd-O を使用するか、[ファイル] メニューの [クイック オープン...] から [クイック オープン] パネルにアクセスします。
     keywords:
-    - quick
-    - open
-    - files
-    - recent
+    - 素早い
+    - 開ける
+    - ファイル
+    - 最近の
     wiki_keywords: []
-  - title: Quick Actions
+  - title: クイックアクション
     file: Quick_Actions
-    description: The Quick Actions palette is a searchable command launcher for Marked. It collects actions from the main menu bar and the preview gear menu, plus...
+    description: クイック アクション パレットは、Marked の検索可能なコマンド ランチャーです。メイン メニュー バーとプレビュー ギア メニューからのアクションを収集します。さらに...
     keywords:
-    - quick
-    - actions
-    - palette
-    - command
-    - launcher
-    - menu
-    - keyboard
+    - 素早い
+    - アクション
+    - パレット
+    - 指示
+    - ランチャー
+    - メニュー
+    - キーボード
     wiki_keywords:
-    - quick actions
-    - action palette
-    - command palette
-    - spotlight
-  - title: Choosing a Processor
+    - 素早い行動
+    - アクションパレット
+    - コマンドパレット
+    - スポットライト
+  - title: プロセッサの選択
     file: Choosing_a_Processor
-    description: Marked can preview the same file with several built-in Markdown processors. Each one makes different tradeoffs between writing workflow (books, blogs,...
+    description: Marked は、複数の組み込み Markdown プロセッサを使用して同じファイルをプレビューできます。それぞれが、執筆ワークフロー (書籍、ブログなど) の間に異なるトレードオフをもたらします。
     keywords:
-    - processor
-    - multimarkdown
-    - kramdown
-    - commonmark
-    - discount
-    - gfm
-    - markdown
+    - プロセッサー
+    - マルチマークダウン
+    - クラムダウン
+    - コモンマーク
+    - 割引
+    - GFM
+    - 値下げ
     wiki_keywords:
-    - which processor
-    - markdown processor
-    - choose processor
-  - title: Previewing
-    sidebar_title: Preview Appearance
+    - どのプロセッサ
+    - マークダウンプロセッサ
+    - プロセッサーを選択する
+  - title: プレビュー中
+    sidebar_title: プレビューの外観
     file: Previewing
-    description: Customize Marked preview appearance with built-in and custom styles, typography, and window settings.
+    description: 組み込みおよびカスタムのスタイル、タイポグラフィ、ウィンドウ設定を使用して、マーク付きプレビューの外観をカスタマイズします。
     keywords:
-    - preview
-    - live
-    - update
+    - プレビュー
+    - ライブ
+    - アップデート
     wiki_keywords: []
-  - title: Interface Features
+  - title: インターフェースの機能
     file: Interface_Features
-    description: Flexibility is key. The Gear menu provides most of the features found in the menubar, plus some preview-specific functions. Just click the gear in the lower ...
+    description: 柔軟性が重要です。 Gear メニューには、メニューバーにあるほとんどの機能に加えて、プレビュー固有の機能がいくつか用意されています。下の歯車をクリックするだけで……
     keywords:
-    - scroll
-    - source
-    - search
-    - find
-    - collapse
-    - headlines
-    - headers
-    - sections
-    - links
-    - zoom
+    - スクロール
+    - ソース
+    - 検索
+    - 探す
+    - 崩壊
+    - 見出し
+    - ヘッダー
+    - セクション
+    - リンク
+    - ズーム
     wiki_keywords: []
-  - title: Exporting
+  - title: 輸出中
     file: Exporting
-    description: Turning your Markdown into a finished document. Marked's preview is the basis for export --- what you see in the preview window is what you get in PDF,...
+    description: Markdown を完成したドキュメントに変換します。 Marked のプレビューはエクスポートの基礎です --- プレビュー ウィンドウに表示される内容は、PDF で取得されるものです...
     keywords:
     - pdf
     - rtf
-    - word
+    - 言葉
     - html
-    - print
+    - 印刷する
     - opml
-    - export
-    - word repetition
+    - 輸出
+    - 単語の繰り返し
     wiki_keywords: [export as, save as]
-- title: Comparisons & FAQ
-  folder: Comparisons_FAQ
+- title: 比較とよくある質問
+  folder: 比較_FAQ
   pages:
-  - title: Marked vs Obsidian Preview
+  - title: マーク対オブシディアンのプレビュー
     file: Marked_vs_Obsidian_Preview
-    description: Obsidian includes a built-in Markdown preview. Marked 3 is a dedicated preview and publishing app that works with Obsidian and many other editors. This page ...
+    description: Obsidian には、Markdown プレビューが組み込まれています。 Marked 3 は、Obsidian や他の多くのエディターと連携する専用のプレビューおよび公開アプリです。このページは...
     keywords:
-    - obsidian
-    - comparison
-    - preview
-    - vs
+    - 黒曜石
+    - 比較
+    - プレビュー
+    - 対
     wiki_keywords:
-    - obsidian preview
-    - marked vs obsidian
-  - title: Markdown Preview FAQ
+    - 黒曜石のプレビュー
+    - マーク対オブシディアン
+  - title: マークダウン プレビューに関するよくある質問
     file: Markdown_Preview_FAQ
-    description: Answers to common questions about using Marked for Markdown preview, export, editors, and workflows on Mac.
+    description: Mac での Marked for Markdown のプレビュー、エクスポート、エディター、ワークフローの使用に関するよくある質問への回答。
     structured_data: FAQPage
     keywords:
-    - faq
-    - preview
-    - markdown
-    - questions
+    - よくある質問
+    - プレビュー
+    - 値下げ
+    - 質問
     wiki_keywords:
-    - markdown preview faq
-    - preview questions
-- title: Reading Features
-  folder: Reading_Features
+    - マークダウン プレビューに関するよくある質問
+    - 質問のプレビュー
+- title: 読書機能
+  folder: 読書_特徴
   pages:
-  - title: Document Navigation
+  - title: ドキュメントナビゲーション
     file: Document_Navigation
-    description: "This page describes how to move around long previews: the Table of Contents, fast search, bookmarks, and the Mini Map. For scrolling shortcuts that apply..."
+    description: 'このページでは、長いプレビュー (目次、高速検索、ブックマーク、ミニマップ) を移動する方法について説明します。適用されるスクロール ショートカットについては...'
     keywords:
     - toc
-    - table of contents
-    - contents
-    - navigation
-    - bookmarks
-    - bookmark
-    - minimap
-    - mini map
-    - fast search
-    - filter
-    - headlines
-    - headers
+    - 目次
+    - コンテンツ
+    - ナビゲーション
+    - ブックマーク
+    - ブックマーク
+    - ミニマップ
+    - ミニマップ
+    - 高速検索
+    - フィルター
+    - 見出し
+    - ヘッダー
     wiki_keywords:
-    - table of contents
-    - bookmarks
-    - mini map
-    - fast search
-    - TOC filter
-  - title: Wiki Navigation
+    - 目次
+    - ブックマーク
+    - ミニマップ
+    - 高速検索
+    - TOCフィルター
+  - title: Wiki ナビゲーション
     file: Wiki_Navigation
-    description: Marked includes a wiki navigation system that allows you to quickly jump between related text files using simple [[wiki]] links. This system is designed for ...
+    description: Marked には、単純な [[wiki]] リンクを使用して関連するテキスト ファイル間をすばやく移動できる Wiki ナビゲーション システムが含まれています。このシステムは...向けに設計されています。
     keywords:
-    - wiki
-    - links
-    - navigation
-    - files
+    - ウィキ
+    - リンク
+    - ナビゲーション
+    - ファイル
     wiki_keywords: [wiki links, wiki linking]
-  - title: Zoom Overview
+  - title: ズームの概要
     file: Zoom_Overview
-    description: "Zoom Overview shrinks the preview text so you can see more of the document at once&#8212;useful for spotting structure, scanning for a section, or judging..."
+    description: '概要をズームすると、プレビュー テキストが縮小されるため、文書のより多くの部分を一度に確認できるため、構造を特定したり、セクションをスキャンしたり、判断したりする場合に役立ちます。'
     keywords:
-    - zoom
-    - word repetition
-    - navigation
+    - ズーム
+    - 単語の繰り返し
+    - ナビゲーション
     wiki_keywords:
-    - zoom overview
-    - preview zoom
-  - title: Autoscroll
+    - ズームの概要
+    - プレビューズーム
+  - title: 自動スクロール
     file: Autoscroll
-    description: Autoscroll slowly moves the preview for hands-free reading or proofing. It is separate from the Table of Contents and Mini Map; it scrolls the current view...
+    description: 自動スクロールによりプレビューがゆっくりと移動するので、ハンズフリーで読んだり校正したりできます。これは目次やミニマップとは別のものです。現在のビューをスクロールします...
     keywords:
-    - autoscroll
-    - scroll
-    - teleprompter
-    - reading
-    - proofread
+    - 自動スクロール
+    - スクロール
+    - テレプロンプター
+    - 読む
+    - 校正する
     wiki_keywords:
-    - autoscroll
-    - hands free scrolling
-  - title: Speed Reading
+    - 自動スクロール
+    - ハンズフリースクロ​​ール
+  - title: 速読
     file: Speed_Reading
-    description: Speed Read is an RSVP-style reading mode that displays one word at a time in a focused overlay.
+    description: Speed Read は、フォーカスされたオーバーレイに一度に 1 単語ずつ表示する RSVP スタイルの読書モードです。
     keywords:
-    - speed read
-    - speed reading
-    - rsvp
+    - 速読
+    - 速読
+    - お返事お願いします
     - wpm
-    - reading
-    - overlay
-    - shortcuts
+    - 読む
+    - かぶせる
+    - ショートカット
     wiki_keywords: [speed read, speed reading, rsvp mode]
-  - title: Ask About Document
+  - title: 文書について質問する
     file: AI_Ask_About_Document
-    description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
+    description: 「Ask About Document」は、Apple Intelligence と、macOS の最新バージョンに組み込まれているオンデバイス言語モデルを使用して、Markdown プレビューと...
     keywords:
-    - apple intelligence
-    - ai
-    - ask about document
-    - summarize
-    - summary
-    - outline
-    - key points
-    - question
-    - on-device
-    - foundation models
-    - reading
+    - アップルインテリジェンス
+    - あい
+    - 書類について尋ねる
+    - 要約する
+    - まとめ
+    - 概要
+    - 重要なポイント
+    - 質問
+    - オンデバイス
+    - 基礎モデル
+    - 読む
     wiki_keywords:
-    - ask about document
-    - apple intelligence
-    - document summary
-    - ai summary
-- title: Writing Features
-  folder: Just_for_Writers
+    - 書類について尋ねる
+    - アップルインテリジェンス
+    - 文書の概要
+    - AIの概要
+- title: 書き込み機能
+  folder: ライター向け
   pages:
-  - title: Layout and Typography
+  - title: レイアウトとタイポグラフィー
     file: Layout_and_Typography
-    description: Marked provides defaults for improving typography and export layout, as well as offering finite control over the options if you need more customization.
+    description: Marked は、タイポグラフィとエクスポート レイアウトを改善するためのデフォルトを提供するだけでなく、さらにカスタマイズが必要な場合にオプションを限定的に制御することもできます。
     keywords:
-    - widows
-    - hyphen
-    - punctuation
-    - style
-    - poetry
+    - 未亡人
+    - ハイフン
+    - 句読点
+    - スタイル
+    - 詩
     wiki_keywords:
-    - typography
-  - title: Document Statistics
+    - タイポグラフィ
+  - title: 文書統計
     file: Document_Statistics
-    description: Keep track as you write. Word count is located in the bottom status bar and can be enabled and disabled from the under Status Bar. You can view further...
+    description: 書きながら追跡してください。単語数は下部のステータス バーに表示され、ステータス バーの下から有効または無効にできます。さらに見ることができます...
     keywords:
-    - readability
-    - stats
-    - statistics
+    - 可読性
+    - 統計
+    - 統計
     wiki_keywords:
-    - fog index
-    - readability
-  - title: Multi-file Documents
+    - 霧指数
+    - 可読性
+  - title: 複数ファイルのドキュメント
     file: Multi-File_Documents
-    description: Marked allows several different syntaxes for including one file within another. You can include external files in a single preview document by using the...
+    description: Marked では、あるファイルを別のファイル内に含めるために、いくつかの異なる構文が使用できます。 ...を使用して、単一のプレビュー ドキュメントに外部ファイルを含めることができます。
     keywords:
-    - book
-    - writing
+    - 本
+    - 書き込み
     wiki_keywords:
-    - multiple files
-    - merge documents
-    - index files
-    - leanpub
+    - 複数のファイル
+    - 文書を結合する
+    - インデックスファイル
+    - 無駄のないパブ
     - mmd_merge
     - gitbook
-  - title: Fountain for Screenwriters
+  - title: 脚本家のための泉
     file: Fountain_for_Screenwriters
-    description: "Opening any file with a \".fountain\" extension will automatically enable Fountain support for the window. A default Fountain stylesheet will be applied for..."
+    description: '「.fountain」拡張子を持つファイルを開くと、ウィンドウの Fountain サポートが自動的に有効になります。デフォルトの Fountain スタイルシートが適用されます...'
     keywords:
-    - fountain
-    - screenplay
-    - screenwriting
+    - 噴水
+    - 脚本
+    - 脚本
     wiki_keywords: []
-  - title: Keyword Highlighting
+  - title: キーワードの強調表示
     file: Keyword_Highlighting
-    description: Catching troublesome verbiage and spotlighting important phrases. Keyword highlighting in Marked allows you to catch common phrases that you might want to...
+    description: 厄介な言葉遣いをキャッチし、重要なフレーズにスポットライトを当てます。マーク付きのキーワード強調表示により、必要な一般的なフレーズをキャッチできます。
     keywords:
-    - passive
-    - voice
-    - avoid
-    - writing
+    - 受け身
+    - 声
+    - 避ける
+    - 書き込み
     wiki_keywords:
-    - passive voice
-    - doubled words
-    - keyword density
-  - title: Spelling and Grammar
+    - 受動態
+    - 二重の言葉
+    - キーワード密度
+  - title: スペルと文法
     file: Spelling_Grammar
-    description: You can use the gear menu->Proofing submenu to start checking spelling Cmd-;, and opt to also check for grammar suggestions Shift-Cmd-;.
+    description: 歯車メニュー -> 校正サブメニューを使用して、Cmd+; でスペル チェックを開始し、Shift+Cmd+; で文法の提案もチェックすることを選択できます。
     keywords:
-    - spelling
-    - grammar
-    - proofreading
-    - proofing
+    - スペル
+    - 文法
+    - 校正
+    - 校正
     wiki_keywords: [spellcheck]
-  - title: CriticMarkup
+  - title: 批評家マークアップ
     file: CriticMarkup
-    description: You can toggle CriticMarkup support for any document from the gear menu or using Ctrl-Shift-C.
+    description: 歯車メニューまたは Ctrl-Shift-C を使用して、ドキュメントの CriticMarkup サポートを切り替えることができます。
     keywords:
-    - proofing
-    - proofreading
-    - collaboration
+    - 校正
+    - 校正
+    - コラボレーション
     wiki_keywords: []
-  - title: MathJax
+  - title: マスジャックス
     file: MathJax
-    description: Numbers matter just as much as words. By turning on MathJax in the , the necessary scripts and CSS will be included in the preview. Then MultiMarkdown math...
+    description: 数字は言葉と同じくらい重要です。で MathJax をオンにすると、必要なスクリプトと CSS がプレビューに含まれます。次に、MultiMarkdown の計算...
     keywords:
-    - math
-    - mathml
-    - latex
-    - katex
-    - equation
+    - 数学
+    - 数学
+    - ラテックス
+    - カテックス
+    - 方程式
     wiki_keywords:
-    - equation
-    - formula
-  - title: Working with DOCX
+    - 方程式
+    - 式
+  - title: DOCX の使用
     file: Working_with_DOCX
-    description: "Marked has extensive support for working with Microsoft Word files. The typical workflow is preview first, export DOCX second: open or watch your Markdown..."
+    description: 'Marked は、Microsoft Word ファイルの操作を広範にサポートしています。一般的なワークフローは、最初にプレビュー、2 番目に DOCX をエクスポートします。Markdown を開くか監視します。'
     keywords:
-    - docx
-    - word
-    - import
-    - export
+    - ドキュメント
+    - 言葉
+    - 輸入
+    - 輸出
     wiki_keywords: [docx, microsoft word]
-  - title: HTML Export
+  - title: HTML エクスポート
     file: HTML_Export
-    description: Marked exports HTML from your live preview --- the same rendered output you see on screen. Use HTML export when you need a snippet to paste into a blog or...
+    description: マークすると、ライブ プレビューから HTML がエクスポートされます。つまり、画面に表示されるのと同じレンダリングされた出力になります。ブログなどにスニペットを貼り付ける必要がある場合は、HTML エクスポートを使用します。
     keywords:
     - html
-    - export
-    - clipboard
-    - paste
-    - styles
-    - embed
-    - copy
+    - 輸出
+    - クリップボード
+    - ペースト
+    - スタイル
+    - 埋め込む
+    - コピー
     wiki_keywords:
-    - html export
-    - export html
-    - copy html
-    - save html
-    - embed images
-    - embedded styles
-    - base64 images
-  - title: EPUB Export
+    - htmlエクスポート
+    - HTMLをエクスポートする
+    - HTMLをコピー
+    - HTMLを保存
+    - 画像を埋め込む
+    - 埋め込みスタイル
+    - Base64の画像
+  - title: EPUB エクスポート
     file: EPUB_Export
-    description: Marked exports fully compliant EPUB files from your Markdown preview --- styled with the same built-in and custom themes you use on screen, and readable in...
+    description: マーク付きでは、Markdown プレビューから完全に準拠した EPUB ファイルをエクスポートします --- 画面上で使用するものと同じ組み込みテーマおよびカスタム テーマでスタイル設定され、次の形式で読み取ることができます...
     keywords:
     - epub
-    - ebook
-    - apple books
-    - export
-    - kindle
-    - ibooks
+    - 電子ブック
+    - アップルブック
+    - 輸出
+    - キンドル
+    - iブックス
     wiki_keywords:
-    - epub export
-    - apple books
-    - ebook export
-    - export epub
+    - epub エクスポート
+    - アップルブック
+    - 電子ブックのエクスポート
+    - epub をエクスポートする
     - epub
-  - title: RTF and RTFD Support
+  - title: RTF および RTFD のサポート
     sidebar_title: RTF / RTFD
     file: RTF_Support
-    description: Marked can open Rich Text Format (.rtf) and RTFD (.rtfd) documents directly. Drag a file to Marked or use File menu, Open... (O). The document is converted...
+    description: Marked は、リッチ テキスト形式 (.rtf) および RTFD (.rtfd) ドキュメントを直接開くことができます。ファイルを [マーク] にドラッグするか、[ファイル] メニューの [開く...] (O) を使用します。ドキュメントが変換されました...
     keywords:
     - rtf
     - rtfd
-    - rich text
-    - pages
-    - textedit
-    - import
-    - open
+    - リッチテキスト
+    - ページ
+    - テキスト編集
+    - 輸入
+    - 開ける
     wiki_keywords: [rtf, rtfd, rich text format, pages]
-  - title: PDF Import and Export
+  - title: PDF のインポートとエクスポート
     sidebar_title: PDF
     file: PDF_Support
-    description: Marked can open PDF documents (.pdf) directly. Drag a file to Marked or use File menu, Open... (O). The document is converted to Markdown for preview and...
+    description: マークを付けると、PDF ドキュメント (.pdf) を直接開くことができます。ファイルを [マーク] にドラッグするか、[ファイル] メニューの [開く...] (O) を使用します。ドキュメントはプレビュー用に Markdown に変換されます...
     keywords:
     - pdf
-    - import
-    - export
-    - print
-    - open
+    - 輸入
+    - 輸出
+    - 印刷する
+    - 開ける
     - ocr
-    - scan
-    - conversion
+    - スキャン
+    - 変換
     wiki_keywords: [pdf, portable document format, pdf import, pdf export, export pdf]
-  - title: Image Variants
+  - title: 画像のバリエーション
     file: Image_Variants
-    description: Marked can automatically build responsive <picture> elements for local images when companion dark mode and Retina files sit next to the image you reference. ...
+    description: Marked は、コンパニオン ダーク モードおよび Retina ファイルが参照する画像の隣にある場合、ローカル画像の応答性の高い <picture> 要素を自動的に構築できます。 ...
     keywords:
-    - image
-    - dark mode
-    - retina
-    - 2x
-    - picture
-    - srcset
-    - variants
+    - 画像
+    - ダークモード
+    - 網膜
+    - 2倍
+    - 写真
+    - ソースセット
+    - バリエーション
     wiki_keywords: [image variants, dark mode image variants, retina image, retina images, "@2x images", dark mode images]
-  - title: Link Validation
+  - title: リンクの検証
     file: Link_Validation
-    description: Link validation pings the destination of a URL and tests for errors. This helps avoid broken and invalid links in your published document, and is especially ...
+    description: リンク検証では、URL の宛先に ping を実行し、エラーをテストします。これは、公開ドキュメント内の壊れたリンクや無効なリンクを回避するのに役立ちます。特に...
     keywords:
-    - link
-    - url
-    - validate
+    - リンク
+    - URL
+    - 検証する
     wiki_keywords: [validate links, validate urls]
-  - title: Comments and Annotations
+  - title: コメントと注釈
     file: Comments_and_Annotations
-    description: "Marked has special handling for comments and annotations. Marked recognizes comments coming from: All annotations are shown in a sidebar and hidden in the..."
+    description: 'Marked はコメントと注釈を特別に処理します。マーク付きは、次からのコメントを認識します。すべての注釈はサイドバーに表示され、...'
     keywords:
-    - comments
-    - annotations
-    - proofing
-    - footnotes
-    - sidebar
+    - コメント
+    - 注釈
+    - 校正
+    - 脚注
+    - サイドバー
     wiki_keywords: [Word comments, Word annotations, Scrivener comments, Scrivener annotations, CriticMarkup comments]
-  - title: Features for Coders
+  - title: プログラマー向けの機能
     file: Features_For_Coders
-    description: Fenced code blocks are enabled in both included processors by default (MultiMarkdown and Discount). Fenced code blocks are delimited by three or more tildes ...
+    description: フェンスで囲まれたコード ブロックは、デフォルトで、組み込まれている両方のプロセッサ (MultiMarkdown とdiscount) で有効になっています。フェンスで囲まれたコード ブロックは 3 つ以上のチルダで区切られています...
     keywords:
-    - github
-    - task
-    - checkbox
-    - newline
-    - break
-    - syntax
-    - fenced
-    - code
-    - highlight
+    - ギットハブ
+    - タスク
+    - チェックボックス
+    - 改行
+    - 壊す
+    - 構文
+    - 柵で囲まれた
+    - コード
+    - ハイライト
     wiki_keywords: [github tasks, github checkboxes, hard line breaks, syntax highlighting]
-  - title: Using Marked with Agentic Coding
+  - title: エージェントティックコーディングによるマークの使用
     file: Using_Marked_with_Agentic_Coding
-    description: "Marked is a great companion for modern \"agentic coding\" workflows where AI tools generate plans, refactor code, and keep updating documentation as you work. ..."
+    description: 'Marked は、AI ツールが計画を生成し、コードをリファクタリングし、作業中にドキュメントを更新し続ける最新の「エージェント コーディング」ワークフローの強力なコンパニオンです。 ...'
     keywords:
-    - agentic
-    - coding
-    - ai
-    - cursor
-    - claude
-    - copilot
-    - github
-    - automation
+    - エージェント的な
+    - コーディング
+    - あい
+    - カーソル
+    - クロード
+    - 副操縦士
+    - ギットハブ
+    - オートメーション
     wiki_keywords: [agentic coding, ai coding assistant, ai code assistant, cursor, claude, copilot]
-- title: Supported Apps
-  folder: Supported_Apps
+- title: サポートされているアプリ
+  folder: サポートされているアプリ
   pages:
-  - title: Bear
+  - title: クマ
     file: Bear
-    description: In Bear choose Preview in Marked from the View menu (wording may vary slightly by Bear version). Marked receives a TextBundle, so embedded images and assets ...
+    description: Bear では、[表示] メニューから [マーク付きプレビュー] を選択します (表現は Bear のバージョンによって若干異なる場合があります)。 Marked は TextBundle を受け取るため、埋め込まれた画像とアセット...
     keywords:
-    - bear
-    - bear notes
-    - textbundle
+    - クマ
+    - クマのメモ
+    - テキストバンドル
     wiki_keywords: [bear app marked]
-  - title: Curio
+  - title: 骨董
     file: Curio
-    description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
+    description: ダブルクリックして Curio 内の図、メモ、リスト、またはその他の項目を編集すると、そのマークダウンがストリーミング プレビューに流れ、書き込み中に更新されます。
     keywords:
-    - curio
-    - zengobi
-    - brainstorming
-    - streaming preview
+    - 骨董
+    - ゼンゴビ
+    - ブレーンストーミング
+    - ストリーミングプレビュー
     wiki_keywords: [curio]
-  - title: DEVONthink
+  - title: デボン考える
     file: DEVONthink
-    description: Use this script in DEVONthink to send the current selection to Marked. It checks that you selected something, confirms it is Markdown, then opens it using...
+    description: DEVONthink でこのスクリプトを使用して、現在の選択内容を Marked に送信します。何かを選択したことを確認し、それが Markdown であることを確認してから、次の方法で開きます...
     keywords:
-    - devonthink
-    - applescript
-    - scripts menu
-    - contextual menu
+    - デボン考える
+    - アップルスクリプト
+    - スクリプトメニュー
+    - コンテキストメニュー
     wiki_keywords: [devonthink]
-  - title: Drafts
+  - title: 下書き
     file: Drafts
-    description: When this option is on, Drafts pushes Markdown to Marked via the integration Marked exposes for streaming previews (rather than relying on watching a file...
+    description: このオプションがオンの場合、Drafts は、Marked が (ファイルの監視に依存するのではなく) ストリーミング プレビュー用に公開する統合を介して、Marked に Markdown をプッシュします。
     keywords:
-    - drafts
-    - agile tortoise
-    - streaming preview
+    - 下書き
+    - 機敏なカメ
+    - ストリーミングプレビュー
     wiki_keywords:
-    - drafts
-    - drafts streaming preview
-  - title: Folder Watching
+    - 下書き
+    - ドラフトストリーミングプレビュー
+  - title: フォルダ監視
     file: Folder_Watching
-    description: Drop a folder of plain-text notes onto Marked. Marked opens a preview window that always tracks the most recently edited eligible file inside that folder...
+    description: プレーンテキストのメモのフォルダーを Marked にドロップします。マークすると、そのフォルダー内で最後に編集された対象となるファイルを常に追跡するプレビュー ウィンドウが開きます。
     keywords:
-    - folder
-    - nvalt
-    - nvultra
-    - nv alt
-    - notational velocity
-    - watch folder
+    - フォルダ
+    - アンヴァルト
+    - 静脈瘤
+    - NV 代替
+    - 表記速度
+    - 監視フォルダー
     wiki_keywords: [folder preview, notebook folder, folder watching]
-  - title: Highland
+  - title: ハイランド
     file: Highland
-    description: Marked updates the preview when the file changes on disk, just like a normal Markdown file.
+    description: 通常の Markdown ファイルと同様に、ディスク上でファイルが変更されると、Marked はプレビューを更新します。
     keywords:
-    - highland
-    - fountain
-    - screenplay
+    - 高地
+    - 噴水
+    - 脚本
     wiki_keywords: [highland, fountain, screenplay]
-  - title: Hookmark
+  - title: フックマーク
     file: Hookmark
-    description: "Marked can resolve hook:// links for images and other assets in a file when Hookmark integration is enabled."
+    description: 'フックマークの統合が有効になっている場合、Marked はファイル内の画像やその他のアセットのフック://リンクを解決できます。'
     keywords:
-    - hookmark
-    - hook
-    - hook url
-    - hook://
+    - フックマーク
+    - フック
+    - フックURL
+    - フック://
     wiki_keywords: [hookmark, hookmark image urls]
-  - title: iA Writer
+  - title: iAライター
     file: iA_Writer
-    description: Because the preview path matches the editor file, live updates behave like any other watched Markdown document.
+    description: プレビュー パスがエディター ファイルと一致するため、ライブ更新は他の監視対象の Markdown ドキュメントと同様に動作します。
     keywords:
-    - ia writer
-    - iawriter
+    - アイアライター
+    - アイライター
     wiki_keywords: [ia writer]
   - title: iThoughtsX
     file: iThoughtsX
-    description: "In iThoughtsX preferences, under Advanced, set Markdown Preview (wording may read \"Markdown\" or \"Markdown Preview\" depending on version), then pick whether..."
+    description: 'iThoughtsX の環境設定の [詳細] で、Markdown プレビューを設定し (バージョンによっては文言が「Markdown」または「Markdown Preview」となります)、次のどちらかを選択します...'
     keywords:
-    - ithoughts
-    - mind map
-    - itmz
+    - 考えた
+    - マインドマップ
+    - それ
     wiki_keywords: [ithoughts, mind map]
-  - title: MarsEdit
+  - title: 火星編集
     file: MarsEdit
-    description: Choose File menu, New menu, MarsEdit Preview. Marked asks AppleScript to read the front post in MarsEdit (Red Sweater's bundle IDs for direct, Mac App...
+    description: 「ファイル」メニュー、「新規」メニュー、「MarsEdit プレビュー」を選択します。 Marked は、AppleScript に MarsEdit のフロント ポスト (直接、Mac アプリ用の Red Sweater のバンドル ID) を読み取るように要求します。
     keywords:
-    - marsedit
-    - blog
-    - wordpress
+    - マルセディット
+    - ブログ
+    - ワードプレス
     wiki_keywords: [marsedit]
-  - title: MindNode
+  - title: マインドノード
     file: MindNode
-    description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
+    description: [MindNode][mn] ドキュメントをマーク上にドラッグします (または、MindNode のバージョンに応じて、MindNode の [マーク済みで開く/プレビュー] コマンドを使用します)。マークはファイルを次のように扱います...
     keywords:
-    - mindnode
-    - mind map
+    - マインドノード
+    - マインドマップ
     wiki_keywords: [mindnode]
-  - title: MultiMarkdown Composer
+  - title: MultiMarkdown コンポーザー
     file: MultiMarkdown_Composer
-    description: Open Composer's Preview preferences and choose Marked as the preview application, or press Opt-Cmd-P Open in Marked from the active document whenever you...
+    description: Composer のプレビュー環境設定を開き、プレビュー アプリケーションとして「マーク付き」を選択するか、Opt-Cmd-P キーを押して、アクティブなドキュメントから「マーク付きで開く」を押します。
     keywords:
-    - composer
-    - multimarkdown composer
+    - 作曲家
+    - マルチマークダウンコンポーザー
     wiki_keywords: [multimarkdown composer]
-  - title: nvUltra
+  - title: nvウルトラ
     file: nvUltra
-    description: In nvUltra's Folder Navigator (or wherever you browse notes), control-click file(s) to open the contextual menu and choose Preview File(s) in Marked.
+    description: nvUltra のフォルダー ナビゲーター (またはノートを参照している場所) で、ファイルを Control キーを押しながらクリックしてコンテキスト メニューを開き、[マークされたファイルのプレビュー] を選択します。
     keywords:
-    - nvultra
-    - nv ultra
-    - nvalt
-    - notes
+    - 静脈瘤
+    - NVウルトラ
+    - アンヴァルト
+    - メモ
     wiki_keywords:
-    - nvultra
-  - title: Obsidian
+    - 静脈瘤
+  - title: 黒曜石
     file: Obsidian
-    description: "Marked works with [Obsidian][obsidian-app] notes in two ways: open a vault folder for automatic following, or use the community plugin for tighter sync."
+    description: 'Marked は、[Obsidian][obsidian-app] ノートを 2 つの方法で操作します。Vault フォルダーを開いて自動フォローするか、コミュニティ プラグインを使用してより緊密な同期を行います。'
     keywords:
-    - obsidian
-    - vault
-    - wiki links
-    - backlinks
+    - 黒曜石
+    - 金庫室
+    - ウィキのリンク
+    - バックリンク
     wiki_keywords: [obsidian vault, obsidian plugin]
-  - title: OmniOutliner and OPML
+  - title: OmniOutliner と OPML
     file: OmniOutliner_and_OPML
-    description: Any OPML outline [OmniOutliner][oo] exports can be dragged into Marked just like Markdown. Marked converts the outline into readable Markdown headings and...
+    description: OPML アウトライン [OmniOutliner][oo] エクスポートは、Markdown と同じように Marked にドラッグできます。 Marked は、アウトラインを読みやすい Markdown 見出しに変換します。
     keywords:
     - opml
-    - omnioutliner
-    - outline
-    - mermaid
+    - オムニアウトライン
+    - 概要
+    - マーメイド
     wiki_keywords: [opml, omnioutliner]
-  - title: Scrivener 3 Support
-    sidebar_title: Scrivener 3
+  - title: Scrivener 3 のサポート
+    sidebar_title: 書士3
     file: Scrivener_Support
-    description: Use your two favorite writing tools together. Drag a Scrivener project (.scriv) to Marked and it will be compiled and previewed. If you choose the option to ...
+    description: 2 つのお気に入りの筆記具を組み合わせて使用​​します。 Scrivener プロジェクト (.scriv) を [Marked] にドラッグすると、コンパイルされてプレビューされます。オプションを選択すると...
     keywords:
-    - scrivener
+    - 行政書士
     wiki_keywords: [scrivener]
-  - title: The Archive
+  - title: アーカイブ
     file: The_Archive
-    description: "Marked updates as you type in The Archive, following the same mkStreamingPreview clipboard contract as other integrated apps&#8212;see Technical details..."
+    description: '他の統合アプリと同じ mkStreamingPreview クリップボード契約に従って、アーカイブに入力すると更新がマークされます。技術的な詳細を参照してください...'
     keywords:
-    - the archive
-    - archive
-    - streaming preview
-    - zettelkasten
+    - アーカイブ
+    - アーカイブ
+    - ストリーミングプレビュー
+    - ゼッテルカステン
     wiki_keywords:
-    - the archive
-  - title: Ulysses
+    - アーカイブ
+  - title: ユリシーズ
     file: Ulysses
-    description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
+    description: 最初のセットアップの後、多くの場合、Cmd-6 に続いて Return キーを押すだけで、アクティブなシート (または選択したシート) のマーク付きプレビューを更新できます。
     keywords:
-    - ulysses
-    - export
-    - textbundle
+    - ユリシーズ
+    - 輸出
+    - テキストバンドル
     wiki_keywords: [ulysses]
-  - title: Vim
+  - title: ヴィム
     file: Vim
-    description: "Install with your plugin manager; see the [project README][vimrepo] for vim-plug and other options. The default g:marked_filetypes includes markdown and..."
+    description: 'プラグインマネージャーを使用してインストールします。 vim-plug およびその他のオプションについては、[プロジェクトの README][vimrepo] を参照してください。デフォルトの g:marked_filetypes にはマークダウンと...が含まれます。'
     keywords:
-    - vim
-    - neovim
+    - ヴィム
+    - ネオビム
     wiki_keywords: [vim]
-  - title: VS Code
+  - title: VSコード
     file: VS_Code
-    description: "The [Open in Marked extension][ext] (Visual Studio Marketplace) adds an Open in Marked action: editor title button, Shift-Cmd-M, context menus in the editor ..."
+    description: '[マークされた拡張機能で開く][ext] (Visual Studio Marketplace) は、マークされた拡張機能で開くアクションを追加します: エディターのタイトル ボタン、Shift-Cmd-M、エディターのコンテキスト メニュー ...'
     keywords:
     - vscode
-    - visual studio code
-    - extension
+    - ビジュアルスタジオコード
+    - 拡大
     wiki_keywords: [vscode]
-  - title: VoodooPad
+  - title: ヴードゥーパッド
     file: VoodooPad
-    description: Marked watches the document on disk and swaps the preview when you change pages inside VoodooPad.
+    description: Marked はディスク上のドキュメントを監視し、VoodooPad 内でページを変更するとプレビューを切り替えます。
     keywords:
-    - voodoopad
+    - ブードゥーパッド
     wiki_keywords: [voodoopad]
-  - title: Xcode Playgrounds
+  - title: Xcode プレイグラウンド
     file: Xcode_Playgrounds
-    description: Open a Swift .playground package in Marked. Marked reads contents.swift (and related pages in multi-page playgrounds) and separates Markdown comments from...
+    description: Marked で Swift .playground パッケージを開きます。 Marked は、contents.swift (およびマルチページ プレイグラウンドの関連ページ) を読み取り、Markdown コメントを分離します。
     keywords:
-    - playground
-    - swift
+    - 遊び場
+    - 迅速
     - xcode
     wiki_keywords: [swift playground, xcode playground]
-  - title: DocC Support
-    sidebar_title: DocC
+  - title: ドキュメントサポート
+    sidebar_title: ドック
     file: DocC_Support
-    description: Marked understands Apple DocC documentation catalogs (.docc bundles). When you preview Markdown that lives inside or beside a catalog, Marked can resolve...
+    description: Marked は Apple DocC ドキュメント カタログ (.docc バンドル) を理解しています。カタログ内またはカタログの横にある Markdown をプレビューすると、Marked は...
     keywords:
-    - docc
-    - documentation
-    - catalog
+    - ドキュメント
+    - ドキュメント
+    - カタログ
     - xcode
-    - swift
-    - resources
-    - dark mode
-    - retina
+    - 迅速
+    - リソース
+    - ダークモード
+    - 網膜
     wiki_keywords: [docc, apple docc, documentation catalog]
-  - title: Additional app integrations
+  - title: 追加のアプリ統合
     file: Additional_Application_Support
-    description: Marked works with many editors and writing apps. This page covers shared settings, the clipboard preview, pointers to streaming preview, and scripting...
+    description: マークは多くのエディターやライティング アプリで動作します。このページでは、共有設定、クリップボード プレビュー、ストリーミング プレビューへのポインター、およびスクリプトについて説明します。
     keywords:
-    - clipboard
-    - apps preferences
-    - bonus pack
+    - クリップボード
+    - アプリの設定
+    - ボーナスパック
     wiki_keywords: [integrations]
-- title: Advanced Features
-  folder: Special_Features
+- title: 高度な機能
+  folder: 特集_機能
   pages:
-  - title: Custom Styles
+  - title: カスタムスタイル
     file: Custom_Styles
-    description: View your documents your way. The easiest way to explore Custom Styles is through the available styles in action, install them with the click of a button,...
+    description: ドキュメントを自分の方法で表示します。カスタム スタイルを探索する最も簡単な方法は、実際に使用可能なスタイルを確認し、ボタンをクリックしてインストールすることです。
     keywords:
-    - custom
-    - style
-    - styling
-    - theme
+    - カスタム
+    - スタイル
+    - スタイリング
+    - テーマ
     - css
     wiki_keywords: [custom styles, custom css, style generator]
-  - title: Creating Custom Styles
+  - title: カスタムスタイルの作成
     file: Writing_Custom_CSS
-    description: Marked has a built-in style editor, and can apply custom CSS files. You can use the editor to create beautiful styles, or if you know just enough CSS to be...
+    description: Marked にはスタイル エディターが組み込まれており、カスタム CSS ファイルを適用できます。エディターを使用して美しいスタイルを作成することも、CSS について十分な知識がある場合は...
     keywords:
-    - custom
-    - theme
-    - style
+    - カスタム
+    - テーマ
+    - スタイル
     - css
     wiki_keywords:
-    - write your own
-  - title: Custom Style Generator
+    - 自分で書いてください
+  - title: カスタム スタイル ジェネレーター
     file: Custom_Style_Generator
-    description: The Custom Style Generator is a web-based tool that lets you create custom styles for Marked without writing CSS by hand. It provides a visual interface...
+    description: カスタム スタイル ジェネレーターは、CSS を手動で記述せずに Marked のカスタム スタイルを作成できる Web ベースのツールです。視覚的なインターフェイスを提供します...
     keywords:
-    - style generator
-    - generator
-    - create style
-    - visual editor
-    - style builder
-    - typography
-    - colors
-    - fonts
-    - google fonts
-    - dark mode
+    - スタイルジェネレーター
+    - ジェネレータ
+    - スタイルを作成する
+    - ビジュアルエディター
+    - スタイルビルダー
+    - タイポグラフィ
+    - 色
+    - フォント
+    - グーグルフォント
+    - ダークモード
     wiki_keywords: [style generator, create custom style, visual style editor]
-  - title: Style Manager
+  - title: スタイルマネージャー
     file: Style_Manager
-    description: The Style Manager provides a centralized interface for managing all of your built‑in and Custom Styles. It gives you complete control over which Styles...
+    description: スタイル マネージャーは、すべての組み込みスタイルとカスタム スタイルを管理するための一元的なインターフェイスを提供します。どのスタイルを使用するかを完全に制御できます...
     keywords:
-    - style
-    - manager
-    - manage
-    - styles
-    - custom
-    - built-in
-    - enable
-    - disable
-    - duplicate
-    - preview
+    - スタイル
+    - マネージャー
+    - 管理
+    - スタイル
+    - カスタム
+    - 内蔵
+    - 有効にする
+    - 無効にする
+    - 重複
+    - プレビュー
     wiki_keywords: [manage custom styles, manage custom css]
-  - title: Style Stealer
+  - title: スタイルスティーラー
     file: Style_Stealer
-    description: Extract and steal styles from any website. The Style Stealer is a tool that allows you to extract CSS styles from any website and apply them to your...
+    description: あらゆる Web サイトからスタイルを抽出して盗用します。 Style Stealer は、あらゆる Web サイトから CSS スタイルを抽出し、Web サイトに適用できるツールです。
     keywords:
-    - style
-    - stealer
-    - extract
+    - スタイル
+    - 盗む人
+    - 抽出する
     - css
-    - website
-    - scrape
-    - design
+    - Webサイト
+    - こする
+    - デザイン
     wiki_keywords:
-    - style extraction
-    - style extractor
-    - extract styles
-  - title: Markdownifier
+    - スタイルの抽出
+    - スタイルエクストラクター
+    - スタイルを抽出する
+  - title: マークダウンファイアー
     file: Markdownifier
-    description: The Markdownifier is a tool that automatically extracts content from web pages and converts it to clean Markdown format. It intelligently processes web...
+    description: Markdownifier は、Web ページからコンテンツを自動的に抽出し、クリーンな Markdown 形式に変換するツールです。ウェブをインテリジェントに処理します...
     keywords:
-    - markdownifier
-    - content
-    - extractor
-    - web
-    - scrape
-    - url
-    - article
-    - extract
+    - 値下げ主義者
+    - コンテンツ
+    - エキストラクター
+    - ウェブ
+    - こする
+    - URL
+    - 記事
+    - 抽出する
     wiki_keywords:
-    - import a url
-    - from a url
-  - title: Custom Processor
+    - URLをインポートする
+    - URLから
+  - title: カスタムプロセッサ
     file: Custom_Processor
-    description: Marked gives you full control with Custom Rules, text transforms, and the ability to run your own commands or run different processors based on matching...
+    description: マークを付けると、カスタム ルール、テキスト変換、および一致に基づいて独自のコマンドを実行したり、さまざまなプロセッサを実行したりする機能を完全に制御できます。
     keywords:
-    - custom
-    - script
-    - scripting
+    - カスタム
+    - スクリプト
+    - スクリプト
     wiki_keywords:
-    - conductor
-    - run a script
-  - title: Sandbox Restrictions
+    - 導体
+    - スクリプトを実行する
+  - title: サンドボックスの制限事項
     file: Sandbox_Restrictions
-    description: The Mac App Store (MAS) version of Marked runs in a sandboxed environment that restricts certain operations for security reasons. This can affect some...
+    description: Marked の Mac App Store (MAS) バージョンは、セキュリティ上の理由から特定の操作を制限するサンドボックス環境で実行されます。これは一部に影響を与える可能性があります...
     keywords:
-    - sandbox
-    - mas
-    - restrictions
-    - crossgrade
+    - サンドボックス
+    - マス
+    - 制限
+    - クロスグレード
     wiki_keywords:
-    - sandbox limitations
-  - title: Per-Document Settings
+    - サンドボックスの制限事項
+  - title: ドキュメントごとの設定
     file: Per-Document_Settings
-    description: Marked will allow certain attributes of a document to be set in MultiMarkdown metadata format (detailed below). You can use these to define characteristics...
+    description: Marked を使用すると、ドキュメントの特定の属性を MultiMarkdown メタデータ形式で設定できるようになります (詳細は後述)。これらを使用して特性を定義できます...
     keywords:
-    - processor
-    - style
+    - プロセッサー
+    - スタイル
     wiki_keywords:
-    - per-file settings
-    - per-document style
-    - per-file style
-    - per-document configuration
-    - per-file settings
-  - title: Marked Special Syntax
+    - ファイルごとの設定
+    - ドキュメントごとのスタイル
+    - ファイルごとのスタイル
+    - ドキュメントごとの構成
+    - ファイルごとの設定
+  - title: マークされた特殊な構文
     file: Special_Syntax
-    description: "Marked supports callouts with the syntax used by Obsidian and Bear, which is a specially formatted block quote: The \"NOTE\" in [!NOTE] is case-insensitive...."
+    description: 'Marked は、Obsidian と Bear で使用される構文 (特別にフォーマットされたブロック引用符) のコールアウトをサポートしています。[!NOTE] の \\"NOTE\\" は大文字と小文字が区別されません。'
     keywords:
-    - syntax
-    - table
-    - contents
-    - break
-    - include
+    - 構文
+    - テーブル
+    - コンテンツ
+    - 壊す
+    - 含む
     wiki_keywords:
-    - callouts
-    - autoscroll pauses
-    - special syntax
-  - title: Creating Tables Using CSV Files
+    - コールアウト
+    - 自動スクロールの一時停止
+    - 特別な構文
+  - title: CSV ファイルを使用したテーブルの作成
     file: Creating_Tables_using_CSV_files
-    description: If a file included via [Marked's include syntax or IA Writer block syntax][include] has a CSV or TSV extension, Marked will attempt to parse it and convert...
+    description: [Marked の include 構文または IA Writer ブロック構文][include] によってインクルードされたファイルに CSV または TSV 拡張子がある場合、Marked はそれを解析して変換しようとします...
     keywords:
-    - tables
+    - テーブル
     - csv
     wiki_keywords: [from a csv file]
-  - title: Embedding Mind Maps and Outlines
+  - title: マインドマップとアウトラインの埋め込み
     file: Embedding_Mind_Maps_and_Outlines
-    description: Mind maps and outlines can be embedded in your Markdown preview using [Marked's include syntax][include] or the [IA Writer block syntax][ia]. The behavior...
+    description: マインド マップとアウトラインは、[Marked のインクルード構文][include] または [IA Writer ブロック構文][ia] を使用して Markdown プレビューに埋め込むことができます。挙動が…
     keywords:
-    - mind map
-    - outline
+    - マインドマップ
+    - 概要
     - opml
-    - ithoughts
-    - mindmanager
-    - mermaid
+    - 考えた
+    - マインドマネージャー
+    - マーメイド
     wiki_keywords: [embed mind map, embed outline, opml include]
-  - title: Keyboard Shortcuts
+  - title: キーボードショートカット
     file: Keyboard_Shortcuts
-    description: A floating panel with a shortcut cheat sheet is available from the Help menu, or by pressing K.
+    description: ショートカット チート シートを備えたフローティング パネルは、[ヘルプ] メニューから、または K を押すことによって利用できます。
     keywords:
-    - navigation
-    - keyboard
-    - hotkey
+    - ナビゲーション
+    - キーボード
+    - ホットキー
     wiki_keywords: [shortcuts, hotkey, hotkeys]
-  - title: Workflow Integration
+  - title: ワークフローの統合
     file: Workflow_Integration
-    description: Marked includes a full AppleScript dictionary for opening files, controlling the preview (reload, scroll, highlights, autoscroll, speed read), reading...
+    description: マークには、ファイルを開く、プレビューの制御 (リロード、スクロール、ハイライト、自動スクロール、速読)、読み取りのための完全な AppleScript 辞書が含まれています...
     keywords:
-    - scripting
-    - applescript
-    - automation
+    - スクリプト
+    - アップルスクリプト
+    - オートメーション
     wiki_keywords: [workflow, automation]
-  - title: URL Handler
+  - title: URLハンドラー
     file: URL_Handler
-    description: Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that...
+    description: Marked の URL ハンドラーは、追加のスクリプト機能とワークフロー機能を提供します。別のアプリケーションのメモに URL を含めることができます。たとえば、...
     keywords:
-    - url
-    - scheme
-    - handler
+    - URL
+    - スキーム
+    - ハンドラ
     wiki_keywords: [url handler, url scheme]
-  - title: AppleScript Support
+  - title: AppleScript のサポート
     file: AppleScript_Support
-    description: Marked includes an AppleScript dictionary for automating preview, export, and workflow integration. You can open documents, control the preview (reload,...
+    description: Marked には、プレビュー、エクスポート、ワークフロー統合を自動化するための AppleScript 辞書が含まれています。ドキュメントを開いたり、プレビューを制御したり (再読み込みなど) できます。
     keywords:
-    - applescript
-    - scripting
-    - automation
-    - export
-    - dictionary
+    - アップルスクリプト
+    - スクリプト
+    - オートメーション
+    - 輸出
+    - 辞書
     wiki_keywords:
-    - applescript
-    - applescript export
-    - scripted export
-    - automated export
+    - アップルスクリプト
+    - アップルスクリプトのエクスポート
+    - スクリプトによるエクスポート
+    - 自動エクスポート
   # - title: Shortcuts Integration
   #   file: Shortcuts_Integration
   #   keywords:
@@ -908,136 +887,136 @@ Sections:
   #   - siri shortcuts
   #   - app intents
   #   - shortcut export
-  - title: Command Line Utility
+  - title: コマンドラインユーティリティ
     file: Command_Line_Utility
-    description: The mk command-line tool provides easy access to Marked's features from the terminal, enabling workflow automation and integration with shell scripts and...
+    description: mk コマンドライン ツールを使用すると、ターミナルから Marked の機能に簡単にアクセスでき、ワークフローの自動化やシェル スクリプトとの統合が可能になります。
     keywords:
-    - command
-    - line
-    - cli
-    - terminal
-    - shell
-    - script
-    - automation
-    - mkmarked
+    - 指示
+    - ライン
+    - クリ
+    - ターミナル
+    - シェル
+    - スクリプト
+    - オートメーション
+    - マーク付き
     wiki_keywords: [marked cli, mk, command line utility]
-  - title: Streaming Preview
+  - title: ストリーミングプレビュー
     file: Streaming_Preview
-    description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
+    description: [ファイル] メニュー、[新規] メニュー、[ストリーミング プレビュー] を開くと、Marked はディスク上のファイルを監視する代わりに、名前付きペーストボードを介してライブ更新を受け取ります。ソースアプリは...
     keywords:
-    - integration
-    - automation
+    - 統合
+    - オートメーション
     wiki_keywords: []
-  - title: HTML Specific Settings
+  - title: HTML 固有の設定
     file: HTML_Specific_Settings
-    description: Marked includes an option to disable automatic header ID generation. You can find this option in the .
+    description: マークには、ヘッダー ID の自動生成を無効にするオプションが含まれています。このオプションは にあります。
     keywords:
-    - footnotes
-    - id
+    - 脚注
+    - ID
     - html
     wiki_keywords: []
-  - title: Embedding JavaScript
+  - title: JavaScriptの埋め込み
     file: Embedding_Scripts
-    description: There are several ways to embed additional JavaScripts in Marked. You can include scripts in a single document using <script> tags in the content itself....
+    description: Marked に追加の JavaScript を埋め込む方法はいくつかあります。コンテンツ自体の <script> タグを使用して、単一のドキュメントにスクリプトを含めることができます。
     keywords:
-    - script
-    - scripting
-    - javascript
-    - mermaid
+    - スクリプト
+    - スクリプト
+    - JavaScript
+    - マーメイド
     wiki_keywords: []
-  - title: JavaScript API Docs
+  - title: JavaScript API ドキュメント
     external: true
-    description: External documentation for the Marked JavaScript API used by custom preview scripts and automation.
+    description: カスタム プレビュー スクリプトと自動化で使用される Marked JavaScript API の外部ドキュメント。
     url: "/help/jsapi/"
     wiki_keywords: [javascript api]
-- title: Settings
-  folder: Settings
+- title: 設定
+  folder: 設定
   pages:
-  - title: 'Settings: General'
+  - title: '設定: 一般'
     file: Settings_General
-    description: General Marked preferences for new documents, updates, bookmarks, and default window behavior.
+    description: 一般 新しいドキュメント、更新、ブックマーク、およびデフォルトのウィンドウ動作に関するマークされた設定。
     keywords:
-    - general
-    - settings
-    - window
-    - status
-    - bar
+    - 一般的な
+    - 設定
+    - ウィンドウ
+    - 状態
+    - バー
     wiki_keywords: [general settings]
-  - title: 'Settings: Preview'
+  - title: '設定: プレビュー'
     file: Settings_Preview
-    description: "Options in the : Enable Mini Map navigation : Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when..."
+    description: 'のオプション: ミニマップ ナビゲーションを有効にする: \\"0\\" を押したときに表示されるドキュメントのビジュアル マップを生成します。次の場合、短期間の遅延が発生する可能性があります...'
     keywords:
-    - preview
-    - collapse
-    - headlines
-    - table of contents
+    - プレビュー
+    - 崩壊
+    - 見出し
+    - 目次
     - toc
-    - validate
-    - validation
-    - urls
+    - 検証する
+    - 検証
+    - URL
     wiki_keywords: [preview settings]
-  - title: 'Settings: Style'
+  - title: '設定: スタイル'
     file: Settings_Style
-    description: "Options in the : Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels)."
+    description: 'のオプション: プレビューのテキスト幅を制限する: スライダーを使用してプレビュー本文の最大幅を設定します (ピクセル単位)。'
     keywords:
-    - style
-    - theme
+    - スタイル
+    - テーマ
     - css
     wiki_keywords: [style settings]
-  - title: 'Settings: Processor'
+  - title: '設定: プロセッサー'
     file: Settings_Processor
-    description: "Options in the : Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and..."
+    description: 'のオプション: デフォルトの Markdown プロセッサ。 CommonMark プロセッサは GitHub ユーザーに好まれ、MultiMarkdown はライターに最適で、Discount と...'
     keywords:
-    - processor
-    - commonmark
-    - discount
-    - kramdown
-    - multimarkdown
+    - プロセッサー
+    - コモンマーク
+    - 割引
+    - クラムダウン
+    - マルチマークダウン
     wiki_keywords: [processor settings]
-  - title: 'Settings: Applications'
+  - title: '設定: アプリケーション'
     file: Settings_Apps
-    description: "Options in the : (See Additional App Support) Text Editor : Select a text editor to receive the current document when you type Cmd-E."
+    description: 'のオプション: (追加のアプリのサポートを参照) テキスト エディター: Cmd-E を入力したときに現在のドキュメントを受け取るテキスト エディターを選択します。'
     keywords:
-    - scrivener
-    - fountain
-    - criticmarkup
-    - comments
-    - tags
-    - docc
-    - image variants
-    - dark mode
+    - 行政書士
+    - 噴水
+    - 批評家マークアップ
+    - コメント
+    - タグ
+    - ドキュメント
+    - 画像のバリエーション
+    - ダークモード
     wiki_keywords: [apps settings]
-  - title: 'Settings: Proofing'
+  - title: '設定: 校正'
     file: Settings_Proofing
-    description: "Options in the : Always open new documents in proofing mode : New documents will default to showing keyword highlights."
+    description: 'のオプション: 新しいドキュメントを常に校正モードで開きます: 新しいドキュメントでは、デフォルトでキーワードのハイライトが表示されます。'
     keywords:
-    - proofing
-    - comments
-    - footnotes
-    - tags
+    - 校正
+    - コメント
+    - 脚注
+    - タグ
     wiki_keywords: [proofing settings, proofreading settings]
-  - title: 'Settings: Export'
+  - title: '設定: エクスポート'
     file: Settings_Export
-    description: "Options in the : (See Exporting for more info) Export Profile : Select a saved profile from the popup menu. Profiles store a complete set of export..."
+    description: 'のオプション: (詳細については、「エクスポート」を参照) プロファイルのエクスポート: ポップアップ メニューから保存されたプロファイルを選択します。プロファイルにはエクスポートの完全なセットが保存されます...'
     keywords:
-    - export
+    - 輸出
     - pdf
     - rtf
     - html
     - opml
     - epub
     wiki_keywords: [export settings]
-  - title: 'Settings: Advanced'
+  - title: '設定: 詳細設定'
     file: Settings_Advanced
-    description: "Options in the : YAML and Pandoc Metadata : - __Ignore:__ Leaves it exactly as it exists in the document, useful if your processor or preprocessor actually..."
+    description: 'YAML および Pandoc メタデータのオプション: - __Ignore:__ ドキュメント内に存在するものをそのまま残します。プロセッサまたはプリプロセッサが実際に...'
     keywords:
-    - advanced
-    - settings
-    - window
-    - status
-    - bar
-    - yaml
-    - frontmatter
+    - 高度な
+    - 設定
+    - ウィンドウ
+    - 状態
+    - バー
+    - ヤムル
+    - 前題
     wiki_keywords: [advanced settings]
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
@@ -1051,155 +1030,155 @@ Sections:
 #     - validation
 #     - include
 #     wiki_keywords: [faqs]
-- title: Troubleshooting
-  folder: Troubleshooting
+- title: トラブルシューティング
+  folder: トラブルシューティング
   pages:
-  - title: Preview Not Updating
+  - title: プレビューが更新されない
     file: Preview_doesn_t_update_when_file_is_saved
-    description: Previews not updating as expected? There have been some issues reported regarding slow (or non-existent) updates during a Time Machine run. The update...
+    description: プレビューが期待どおりに更新されませんか? Time Machine の実行中に更新が遅い (または存在しない) という問題がいくつか報告されています。アップデートは...
     keywords:
-    - preview
-    - update
-    - file
-    - save
+    - プレビュー
+    - アップデート
+    - ファイル
+    - 保存
     wiki_keywords: []
-  - title: Overall Performance
+  - title: 全体的なパフォーマンス
     file: Overall_Performance
-    description: Marked's overall rendering speed and performance can vary greatly based on your settings and the type of content you have in your document. There are...
+    description: Marked の全体的なレンダリング速度とパフォーマンスは、設定とドキュメント内のコンテンツの種類に応じて大きく異なります。がある...
     keywords:
-    - performance
-    - speed
+    - パフォーマンス
+    - スピード
     wiki_keywords: []
-  - title: Debugging
+  - title: デバッグ
     file: Troubleshooting
-    description: You can enable debug logging by opening and checking the Debug Mode checkbox at the bottom of the pane. This will display a dropdown menu where you can set...
+    description: デバッグ ログを有効にするには、ペインの下部にある [デバッグ モード] チェックボックスを開いてオンにします。これにより、設定できるドロップダウン メニューが表示されます...
     keywords:
-    - debug
-    - debugging
-    - console
-    - errors
-    - custom
-    - processor
+    - デバッグ
+    - デバッグ
+    - コンソール
+    - エラー
+    - カスタム
+    - プロセッサー
     wiki_keywords: []
-  - title: Additional Help
+  - title: 追加のヘルプ
     file: Additional_Help
-    description: If you have any other issues with Marked, you can search the Marked Support Site for answers to questions posed by other users. If you're unable to find an...
+    description: Marked に関してその他の問題がある場合は、Marked サポート サイトを検索して、他のユーザーからの質問に対する回答を見つけることができます。見つからない場合は...
     keywords:
-    - help
-    - support
-    - additional
-    - resources
+    - ヘルプ
+    - サポート
+    - 追加
+    - リソース
     wiki_keywords: [support resources, additional resources]
-- title: About Markdown
+- title: マークダウンについて
   folder: About_Markdown
   pages:
-  - title: Processor Selection
+  - title: プロセッサの選択
     file: Processor_Selection
-    description: There's a Markdown Syntax guide under the help menu, or you can refer to John Gruber's original documentation.
+    description: ヘルプ メニューの下に Markdown 構文ガイドがあります。または、John Gruber のオリジナルのドキュメントを参照することもできます。
     keywords:
-    - multimarkdown
-    - kramdown
-    - commonmark
-    - discount
-    - processor
-    - selection
-    - markdown syntax
+    - マルチマークダウン
+    - クラムダウン
+    - コモンマーク
+    - 割引
+    - プロセッサー
+    - 選択
+    - マークダウン構文
     wiki_keywords: [markdown syntax]
-  - title: Markdown Overview
+  - title: マークダウンの概要
     file: Markdown_Tutorial
-    description: Markdown is a lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally...
+    description: Markdown は、読みやすく、書きやすいプレーン テキスト形式を使用して記述し、それを構造的に変換できる軽量のマークアップ言語です。
     keywords:
-    - markdown
-    - syntax
-    - tutorial
+    - 値下げ
+    - 構文
+    - チュートリアル
     wiki_keywords: []
-  - title: Markdown Dingus
+  - title: ディンガスのマークダウン
     file: Markdown_Dingus
-    description: The Markdown Dingus is a specialized testing tool that helps you understand how different Markdown processors handle your content. It provides a three-pane...
+    description: Markdown Dingus は、さまざまな Markdown プロセッサがコンテンツをどのように処理するかを理解するのに役立つ特殊なテスト ツールです。 3 つのペインを提供します。
     keywords:
-    - dingus
-    - testing
-    - processor
-    - comparison
-    - debug
-    - syntax
+    - ディンガス
+    - テスト
+    - プロセッサー
+    - 比較
+    - デバッグ
+    - 構文
     - html
-    - preview
+    - プレビュー
     wiki_keywords: []
-  - title: MultiMarkdown v5 Specification
+  - title: MultiMarkdown v5 仕様
     file: MultiMarkdown_v5_Spec
-    description: Check out the Markdown Dingus to experiment with the MultiMarkdown processor. MultiMarkdown is an extended Markdown processor designed to work with complete ...
+    description: MultiMarkdown プロセッサを試してみるには、Markdown Dingus をチェックしてください。 MultiMarkdown は、完全な...
     keywords:
-    - multimarkdown
-    - specification
-  - title: CommonMark Specification
+    - マルチマークダウン
+    - 仕様
+  - title: CommonMarkの仕様
     file: CommonMark_Spec
-    description: Check out the Markdown Dingus to experiment with the CommonMark (GFM) processor.
+    description: CommonMark (GFM) プロセッサを試してみるには、Markdown Dingus をチェックしてください。
     keywords:
-    - commonmark
-    - specification
+    - コモンマーク
+    - 仕様
     wiki_keywords: [commonmark syntax]
-  - title: Kramdown Specification
+  - title: クラムダウン仕様
     file: Kramdown_Spec
-    description: Check out the Markdown Dingus to experiment with the Kramdown processor. Kramdown is a fast, pure-Ruby Markdown-superset converter that extends the original ...
+    description: Kramdown プロセッサを試してみるには、Markdown Dingus をチェックしてください。 Kramdown は、オリジナルのコードを拡張する、高速で純粋な Ruby Markdown スーパーセット コンバータです。
     keywords:
-    - kramdown
-    - specification
+    - クラムダウン
+    - 仕様
     wiki_keywords: [kramdown syntax]
-  - title: Discount GFM Specification
+  - title: 割引 GFM 仕様
     file: Discount_GFM_Spec
-    description: Check out the Markdown Dingus to experiment with the Discount processor. Discount GFM (GitHub Flavored Markdown) is a C-based Markdown processor that...
+    description: Markdown Dingus をチェックして、Discount プロセッサを試してみてください。ディスカウント GFM (GitHub Flavored Markdown) は、C ベースの Markdown プロセッサです。
     keywords:
-    - discount
-    - gfm
-    - specification
+    - 割引
+    - GFM
+    - 仕様
     wiki_keywords: [discount syntax, gfm syntax]
-- title: Credits
-  folder: Credits
+- title: クレジット
+  folder: クレジット
   pages:
-  - title: Credits
+  - title: クレジット
     file: Credits
-    description: Marked is built with a lot of help from the open source community. This page lists third-party code that ships inside Marked. Full license text for the...
+    description: Marked は、オープンソース コミュニティからの多大な支援を受けて構築されています。このページには、Marked 内に同梱されるサードパーティのコードがリストされています。ライセンスの全文...
     keywords:
-    - credits
-    - open source
-    - license
-    - acknowledgments
-    - third party
+    - クレジット
+    - オープンソース
+    - ライセンス
+    - 謝辞
+    - 第三者
     wiki_keywords: [open source, third party libraries, acknowledgments]
-  - title: MultiMarkdown License
+  - title: マルチマークダウンライセンス
     file: MultiMarkdown_License
-    description: Original Markdown Code Copyright (c) 2003-2007 John Gruber All rights reserved.<br> MultiMarkdown changes Copyright (c) 2005-2009 Fletcher T. Penney All...
+    description: 元の Markdown コード Copyright (c) 2003-2007 John Gruber All Rights Reserved.<br> MultiMarkdown の変更 Copyright (c) 2005-2009 Fletcher T. Penney All...
     keywords:
-    - multimarkdown
-    - license
+    - マルチマークダウン
+    - ライセンス
     wiki_keywords: []
-  - title: Discount License
+  - title: 割引ライセンス
     file: Discount_License
-    description: Copyright &copy; 2007 David Loren Parsons.<br/> All rights reserved. Permission is hereby granted, free of charge, to any person obtaining a copy of this...
+    description: 著作権 © 2007 デビッド ローレン パーソンズ。<br/> 全著作権所有。これにより、このコピーを入手する人には無償で許可が与えられます。
     keywords:
-    - discount
-    - license
+    - 割引
+    - ライセンス
     wiki_keywords: []
-  - title: Kramdown License
+  - title: クラムダウンライセンス
     file: Kramdown_License
-    description: Copyright (c) 2010-2015 Carsten Bormann <cabo@tzi.org> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and...
+    description: Copyright (c) 2010-2015 Carsten Bormann <cabo@tzi.org> このソフトウェアのコピーを入手する人には、無償で許可が与えられます。
     keywords:
-    - kramdown
-    - license
+    - クラムダウン
+    - ライセンス
     wiki_keywords: []
-  - title: CommonMark License
+  - title: コモンマークライセンス
     file: CommonMark_License
-    description: "The CommonMark spec (spec.txt) and DTD (CommonMark.dtd) are Copyright (C) 2014-16 John MacFarlane Released under the Creative Commons CC-BY-SA 4.0 license:..."
+    description: 'CommonMark 仕様 (spec.txt) および DTD (CommonMark.dtd) は、著作権 (C) 2014-16 John MacFarlane であり、クリエイティブ コモンズ CC-BY-SA 4.0 ライセンスに基づいてリリースされています。'
     keywords:
-    - commonmark
-    - license
+    - コモンマーク
+    - ライセンス
     wiki_keywords: []
-  - title: pdf22md License
+  - title: pdf22mdライセンス
     file: PDF22MD_License
-    description: Marked's PDF import feature uses components from pdf22md (PDF22MD Swift package).
+    description: Marked の PDF インポート機能は、pdf22md (PDF22MD Swift パッケージ) のコンポーネントを使用します。
     keywords:
     - pdf22md
-    - license
-    - mit
+    - ライセンス
+    - ミット
     wiki_keywords: []

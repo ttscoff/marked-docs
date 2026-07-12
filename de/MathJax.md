@@ -2,118 +2,118 @@
 
 Zahlen sind genauso wichtig wie Worte.
 
-## Vorschau von Formeln mit MathJax
+## Formeln mit MathJax in der Vorschau
 
 ![][1]
 
    [1]: images/mathjax.jpg @2x width=713px height=512px class=center
 
-Durch Aktivieren von MathJax im {% prefspane Style %} werden die erforderlichen Skripte und CSS in die Vorschau einbezogen. Dann kann die MultiMarkdown-Mathe-Syntax in Ihrem Markdown-Dokument verwendet werden und die Ergebnisse werden angezeigt.
+Wenn Sie MathJax unter {% prefspane Style %} aktivieren, werden die nötigen Skripte und das CSS in die Vorschau eingebunden. Dann können Sie in Ihrem Markdown-Dokument die MultiMarkdown-Mathe-Syntax verwenden, und die Ergebnisse werden angezeigt.
 
-Beispiel-Syntax MMD MathJax:
+Beispiel für MMD-MathJax-Syntax:
 
-\\\\[ {e}^{i\pi } 1=0 \\\\]
+    \\\\[ {e}^{i\pi } 1=0 \\\\]
 
-Wenn Sie sich dafür entscheiden, MathJax in eine exportierte HTML-Datei aufzunehmen, wird anstelle des eingebetteten MathJax-Codes ein CDN-Link verwendet. Dies erfordert eine Internetverbindung, um das gerenderte MathML anzuzeigen.
+Wenn Sie MathJax in eine exportierte HTML-Datei aufnehmen, wird statt des eingebetteten MathJax-Codes ein CDN-Link verwendet. Zum Anzeigen des gerenderten MathML ist dann eine Internetverbindung nötig.
 
-## MathJax Quelle: Lokal vs. CDN
+## MathJax-Quelle: Lokal oder CDN
 
-Wenn MathJax aktiviert ist, kann Marked es von einem der folgenden Orte laden:
+Bei aktiviertem MathJax kann Marked es aus einer von zwei Quellen laden:
 
-- **Lokal**: eine in der App gebündelte Kopie von MathJax v3 (schneller zu laden, funktioniert offline).
-- **CDN**: das offizielle MathJax v3 CDN (immer aktuell, keine Auswirkungen auf das App-Bundle).
+- **Lokal**: eine in der App gebündelte Kopie von MathJax v3 (lädt schneller, funktioniert offline).
+- **CDN**: das offizielle MathJax-v3-CDN (immer aktuell, ohne Einfluss auf die App-Größe).
 
-Im Popup **MathJax Quelle** in {% prefspane Style %} können Sie Folgendes auswählen:
+Über das Aufklappmenü **MathJax-Quelle** unter {% prefspane Style %} wählen Sie:
 
 - **Lokal** – verwendet die ES5-Komponente `tex-chtml.js` aus dem App-Bundle.
-- **CDN** – lädt die gleiche Komponente vom CDN. Hierzu ist eine Internetverbindung erforderlich.
+- **CDN** – lädt dieselbe Komponente vom CDN. Dafür ist eine Internetverbindung nötig.
 
-Exportierte HTML-Dateien verweisen immer auf MathJax von einem CDN, unabhängig von der Vorschauquelle, sodass sie in sich geschlossen und klein bleiben.
+Exportierte HTML-Dateien beziehen MathJax immer von einem CDN, unabhängig von der Vorschau-Quelle, sodass sie eigenständig und klein bleiben.
 
 ## Gleichungsnummerierung
 
-Sie können die Gleichungsnummerierung in {% prefspane Style %} aktivieren. Dies funktioniert sowohl mit MathJax als auch mit KaTeX, wird intern jedoch unterschiedlich implementiert. Für MathJax v3 ordnet Marked Ihre Einstellungen der entsprechenden MathJax-Konfiguration zu, sodass:
+Die Gleichungsnummerierung aktivieren Sie unter {% prefspane Style %}. Das funktioniert mit MathJax und KaTeX, ist intern aber unterschiedlich umgesetzt. Für MathJax v3 überträgt Marked Ihre Einstellungen in die passende MathJax-Konfiguration, sodass gilt:
 
-- „Zahlengleichungen“ steuert, ob Zahlen angezeigt werden.
-- Die Option „Seite“ steuert, ob Zahlen links oder rechts angezeigt werden.
+- „Gleichungen nummerieren“ steuert, ob überhaupt Nummern angezeigt werden.
+- Die Option „Seite“ steuert, ob die Nummern links oder rechts erscheinen.
 - Die Option „Nur AMS“ beschränkt die Nummerierung auf Gleichungen im AMS-Stil.
 
-Diese Optionen entsprechen den Einstellungen `tex.tags` und `tex.tagSide` von MathJax unter der Haube.
+Diese Optionen entsprechen im Hintergrund den MathJax-Einstellungen `tex.tags` und `tex.tagSide`.
 
 ## Zusätzliche Pakete
 
-MathJax v3 ist modular. Marked aktiviert immer die TeX/AMS-Kernpakete, und Sie können optional zusätzliche Pakete in {% prefspane Style %} aktivieren:
+MathJax v3 ist modular aufgebaut. Marked aktiviert immer die TeX/AMS-Kernpakete; zusätzliche Pakete können Sie optional unter {% prefspane Style %} einschalten:
 
-- **Physik** (`physics`) – physikalische Notation und Annehmlichkeiten.
-- **Chemie** (`mhchem`) – Chemiegleichungen.
-- **Bremse** (`braket`) – Dirac-Bremsennotation.
+- **Physik** (`physics`) – physikalische Notation und praktische Kurzbefehle.
+- **Chemie** (`mhchem`) – Chemie-Gleichungen.
+- **Bra–ket** (`braket`) – Diracsche Bra-ket-Notation.
 - **Fette Symbole** (`boldsymbol`) – fette mathematische Symbole.
 
-Klicken Sie auf **Zusätzliche Pakete…**, um eine kleine Checkliste zu öffnen, in der Sie diese Pakete aktivieren oder deaktivieren können. Änderungen werden wirksam, wenn Marked das nächste Mal Mathematik in der Vorschau rendert.
+Klicken Sie auf **Zusätzliche Pakete…**, um eine kleine Auswahlliste zu öffnen, in der Sie diese Pakete ein- oder ausschalten. Änderungen greifen, sobald Marked das nächste Mal Mathematik in der Vorschau rendert.
 
-## MathJax erweiterte Konfiguration
+## Erweiterte MathJax-Konfiguration
 
-Sie können zusätzliche benutzerdefinierte Konfigurationen zusätzlich zu den Standardeinstellungen von Marked anwenden, indem Sie ein gültiges JSON-Objekt im Feld **Erweiterte Konfiguration** hinzufügen. Dieses Feld wird in das Konfigurationsobjekt MathJax v3 (`window.MathJax`) eingefügt, bevor MathJax geladen wird. Es kann [any options supported by MathJax v3](https://docs.mathjax.org/en/latest/options/) enthalten, zum Beispiel:
+Zusätzlich zu Markeds Standardeinstellungen können Sie eigene Konfigurationen anwenden, indem Sie im Feld **Erweiterte Konfiguration** ein gültiges JSON-Objekt hinzufügen. Dieses Feld wird vor dem Laden von MathJax in das MathJax-v3-Konfigurationsobjekt (`window.MathJax`) eingefügt. Es kann [beliebige von MathJax v3 unterstützte Optionen](https://docs.mathjax.org/en/latest/options/) enthalten, zum Beispiel:
 
-{
+    {
         "tex": {
             "inlineMath": [["$","$"],["\\\\(","\\\\)"]],
             "displayMath": [["$$","$$"],["\\\\[","\\\\]"]],
-            "Makros": {
+            "macros": {
                 "tr": "{\\\\scriptscriptstyle\\\\mathrm{T}}"
             },
             "packages": { "[+]": ["physics"] }
         }
     }
 
-In diesem Beispiel werden TeX-Trennzeichen angepasst, ein `\tr`-Makro hinzugefügt und das `physics`-Paket zusätzlich zum Standardsatz aktiviert. Mit diesen Einstellungen werden alle folgenden Elemente ordnungsgemäß gerendert:
+Dieses Beispiel passt die TeX-Trennzeichen an, fügt ein `\tr`-Makro hinzu und aktiviert zusätzlich zum Standardsatz das `physics`-Paket. Mit diesen Einstellungen wird alles Folgende korrekt gerendert:
 
-Inline-Formel mit Klammern, \\\\({x}^{2} {y}^{2}=1\\\\) oder mit Dollarzeichen, ${x}^{2} {y}^{2}=1$.
+    Inline formula using parens, \\\\({x}^{2} {y}^{2}=1\\\\), or with dollar signs, ${x}^{2} {y}^{2}=1$.
 
-Anzeige mit maskierten Klammern:
+    Display with escaped brackets:
 
-\\\\[ {e}^{i\pi } 333=0 \label{testme} \\\\]
+    \\\\[ {e}^{i\pi } 333=0 \label{testme} \\\\]
 
-Oder mit doppelten Dollarzeichen:
+    Or with double dollar signs:
 
-$${x}_{1,2}=\\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a}$$
+    $${x}_{1,2}=\\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a}$$
 
 ![][2]
 
    [2]: images/mathjax2.jpg @2x width=837px height=260px class=center
 
-Die zusätzliche Konfiguration erweitert das vorhandene Objekt, sodass nur die angegebenen Eigenschaften überschrieben werden. Nicht angegebene Optionen bleiben für die aktuelle Voreinstellung auf der Standardeinstellung.
+Die zusätzliche Konfiguration erweitert das bestehende Objekt, sodass nur die angegebenen Eigenschaften überschrieben werden. Nicht angegebene Optionen behalten den Standardwert des aktuellen Presets.
 
-Beachten Sie, dass bei Verwendung des MultiMarkdown-Prozessors mit nicht standardmäßigen Trennzeichen Zeichen innerhalb des Ausdrucks analysiert werden, sodass Symbole wie `*` und `^` typografische Änderungen verursachen, die den MathJax-Prozessor beschädigen. Die beste Lösung in diesen Fällen ist die Verwendung des Discount-Prozessors in [Processor settings](x-marked-3://pref/processor).
+Beachten Sie: Beim MultiMarkdown-Prozessor mit nicht standardmäßigen Trennzeichen werden Zeichen innerhalb des Ausdrucks interpretiert, sodass Symbole wie `*` und `^` typografische Änderungen auslösen, die den MathJax-Prozessor durcheinanderbringen. Am besten verwenden Sie in solchen Fällen den Discount-Prozessor in den [Prozessor-Einstellungen](x-marked-3://pref/processor).
 
-Marked führt ein wenig Magie aus, wenn entweder MathJax oder KaTeX aktiviert sind, und konvertiert die mathematische Syntax, um sicherzustellen, dass sie mit dem aktuellen Prozessor (MultiMarkdown oder Discount) so kompatibel wie möglich ist. Das sollte unter allen Umständen großartig sein, aber wenn Sie feststellen, dass es Probleme verursacht, [contact support](https://support.markedapp.com/questions/add)!
+Marked vollführt etwas Magie, sobald MathJax oder KaTeX aktiviert ist, und wandelt die Mathe-Syntax so um, dass sie möglichst gut mit dem aktuellen Prozessor (MultiMarkdown oder Discount) verträglich ist. Das sollte in allen Fällen gut klappen; falls es doch Probleme macht, [kontaktieren Sie den Support](https://support.markedapp.com/questions/add)!
 
 
 ## KaTeX
 
 [katex]: https://katex.org/
 
-[KaTeX][] ist als Alternative zu MathJax verfügbar. Es ist leichter und daher schneller zu laden, was bei Dokumenten mit einer großen Anzahl von Formeln von Vorteil sein kann. Es verfügt jedoch nicht über so viele Funktionen und einige Gleichungen, die mit MathJax (oder LaTeX) funktionieren, werden möglicherweise nicht unterstützt.
+[KaTeX][] steht als Alternative zu MathJax bereit. Es ist leichtgewichtiger und lädt daher schneller, was bei Dokumenten mit vielen Formeln von Vorteil sein kann. Dafür hat es weniger Funktionen, und manche Gleichungen, die mit MathJax (oder LaTeX) funktionieren, werden womöglich nicht unterstützt.
 
-## Automatische Gleichungsnummerierung [Nummerierung]
+## Automatische Gleichungsnummerierung [numbering]
 
-Sie können die Gleichungsnummerierung in {% prefspane Style %} aktivieren. Dies funktioniert sowohl mit MathJax als auch mit KaTeX. Sie können auswählen, ob Zahlen auf der linken oder rechten Seite der Gleichung erscheinen sollen.
+Die Gleichungsnummerierung aktivieren Sie unter {% prefspane Style %}. Das funktioniert mit MathJax und KaTeX. Sie können wählen, ob die Nummern links oder rechts neben der Gleichung erscheinen.
 
 ### In MathJax
 
-In MathJax verwendet dies die Einstellung:
+In MathJax wird dafür diese Einstellung verwendet:
 
-{
-      TeX: { equalNumbers: { autoNumber: "all" } }
+    {
+      TeX: { equationNumbers: { autoNumber: "all" } }
     }
 
-Wenn Sie nur AMS-Gleichungen nummerieren möchten, wählen Sie „Nur AMS“ rechts neben dem Dropdown-Menü „Seite“ aus.
+Wenn Sie nur AMS-Gleichungen nummerieren möchten, wählen Sie „Nur AMS“ rechts neben dem Aufklappmenü „Seite“.
 
 ### In KaTeX
 
-KaTeX bietet keine Gleichungsnummerierung. Um dies in Marked zu simulieren, wird CSS verwendet und alle Anzeigegleichungen sind nummeriert.
+KaTeX bietet keine Gleichungsnummerierung. Um sie in Marked nachzubilden, wird CSS verwendet, und alle abgesetzten Gleichungen werden nummeriert.
 
 ## Exportprobleme
 
-Rich-Text-Formate verarbeiten keine Gleichungen (weder nach MathJax noch nach KaTeX). Sie werden im Ausgabedokument ausgeblendet, da der Versuch, die speziellen Schriftarten einzubeziehen, zu einem größeren Durcheinander führt, als Sie sich vorstellen können ... Dies ist etwas, das ich hoffentlich irgendwann beheben kann, aber im Moment ein Manko ist.
+Rich-Text-Formate können keine Gleichungen darstellen (weder über MathJax noch über KaTeX). Sie werden im Ausgabedokument ausgeblendet, denn der Versuch, die speziellen Schriftarten einzubetten, führt zu einem größeren Chaos, als man sich vorstellen mag … Das möchte ich irgendwann beheben, im Moment ist es aber eine Einschränkung.
 

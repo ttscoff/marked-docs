@@ -8,7 +8,7 @@ Os números são tão importantes quanto as palavras.
 
 ![][1]
 
-   [1]: images/mathjax.jpg @2x largura=713px altura=512px classe=centro
+   [1]: images/mathjax.jpg @2x width=713px height=512px class=center
 
 Ao ativar o MathJax em {% prefspane Style %}, os scripts e CSS necessários serão incluídos na visualização. Em seguida, a sintaxe matemática MultiMarkdown pode ser usada em seu documento Markdown e os resultados serão exibidos.
 
@@ -82,7 +82,7 @@ Este exemplo ajusta os delimitadores TeX, adiciona uma macro `\tr` e habilita o 
 
 ![][2]
 
-   [2]: images/mathjax2.jpg @2x largura=837px altura=260px class=centro
+   [2]: images/mathjax2.jpg @2x width=837px height=260px class=center
 
 A configuração adicional estende o objeto existente, portanto apenas as propriedades especificadas serão substituídas. As opções não especificadas permanecerão no padrão da predefinição atual.
 

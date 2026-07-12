@@ -1,44 +1,44 @@
 # <%= @title %>
 
-Optionen im {% prefspane Proofing %}:
+Optionen unter {% prefspane Proofing %}:
 
-![Settings: Proofing][1]
+![Einstellungen: Korrekturlesen][1]
 
 [1]: images/screenshots/preferences-Proofing.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-Öffnen Sie neue Dokumente immer im Korrekturmodus
-: In neuen Dokumenten werden standardmäßig Schlüsselworthervorhebungen angezeigt.
+Neue Dokumente immer im Korrekturmodus öffnen
+: Neue Dokumente zeigen standardmäßig die Schlüsselwort-Hervorhebungen.
 
-Aktivieren Sie CriticMarkup automatisch
-: Aktivieren Sie die automatische Verarbeitung von [CriticMarkup](CriticMarkup.html), wenn die entsprechende Syntax erkannt wird.
+CriticMarkup automatisch aktivieren
+: Aktiviert die [CriticMarkup](CriticMarkup.html)-Verarbeitung automatisch, wenn die entsprechende Syntax erkannt wird.
 
-Markieren Sie Markdown-Syntaxfehler
-: Heben Sie fehlerhafte Markdown-Links und andere Markups hervor, die möglicherweise nicht ordnungsgemäß konvertiert wurden.
+Markdown-Syntaxfehler hervorheben
+: Hebt kaputte Markdown-Links und anderes Markup hervor, das möglicherweise falsch umgewandelt wurde.
 
-Kommentarseitenleiste standardmäßig anzeigen
-: Öffnet die Kommentarseitenleiste, wenn ein Dokument mit Kommentaren oder Anmerkungen geladen wird.
+Kommentar-Seitenleiste standardmäßig anzeigen
+: Öffnet die Kommentar-Seitenleiste, wenn ein Dokument mit Kommentaren oder Anmerkungen geladen wird.
 
-Fügen Sie Fußnoten in die Kommentarseitenleiste ein
-: Wenn die Kommentarseitenleiste geöffnet ist, fügen Sie Fußnoten neben den Kommentaren ein. Wenn diese Option deaktiviert ist, werden in der Seitenleiste nur Kommentare (CriticMarkup, Fountain, Word und ähnliches) angezeigt.
+Fußnoten in der Kommentarseitenleiste einfügen
+: Bei geöffneter Kommentar-Seitenleiste werden Fußnoten neben den Kommentaren angezeigt. Ist dies deaktiviert, erscheinen nur Kommentare (CriticMarkup, Fountain, Word und Ähnliches) in der Seitenleiste.
 
-Lesegeschwindigkeit (wpm)
-: Diese Zahl (Wörter pro Minute) wird zur Berechnung der Lesezeit in Textstatistikanzeigen verwendet. Die durchschnittliche Lesegeschwindigkeit für Erwachsene beträgt 200-300 Wörter pro Minute.
+Lesegeschwindigkeit (WpM)
+: Diese Zahl (Wörter pro Minute) dient zur Berechnung der Lesezeit in den Textstatistik-Anzeigen. Die durchschnittliche Lesegeschwindigkeit Erwachsener liegt bei 200–300 Wörtern pro Minute.
 
 ### Schlüsselwörter
 
-[Define lists of keywords to be highlighted](Keyword_Highlighting.html). Verwenden Sie die Registerkarten, um jede Liste zu bearbeiten:
+[Definieren Sie Listen von Schlüsselwörtern, die hervorgehoben werden](Keyword_Highlighting.html). Bearbeiten Sie die einzelnen Listen über die Tabs:
 
 Vermeiden
-: Wörter und Phrasen (eines pro Zeile), die als überbeansprucht oder überarbeitungswürdig gekennzeichnet werden sollen. Bei Übereinstimmungen wird die Groß-/Kleinschreibung nicht beachtet und es müssen vollständige Wörter oder Phrasen vorliegen.
+: Wörter und Wendungen (eine pro Zeile), die als überstrapaziert oder überarbeitungswürdig markiert werden sollen. Treffer ignorieren die Groß-/Kleinschreibung und müssen vollständige Wörter oder Wendungen sein.
 
-Verwenden Sie Alternative
-: Schlagen Sie alternative Formulierungen für die aufgeführten Phrasen vor.
+Alternative verwenden
+: Schlägt für die aufgeführten Wendungen eine alternative Formulierung vor.
 
 Hervorheben
-: Markieren Sie beliebige Wörter oder Phrasen zur Hervorhebung beim Korrekturlesen.
+: Hebt beliebige Wörter oder Wendungen beim Korrekturlesen zur Betonung hervor.
 
 Wiederholungen ignorieren
-: Wörter, die von der **Visualize Word Repetition**-Analyse ausgeschlossen werden sollen (eines pro Zeile).
+: Wörter, die von der Analyse **Wortwiederholungen visualisieren** ausgeschlossen werden (eine pro Zeile).
 
 Standardphrasen wiederherstellen
-: Setzen Sie die aktuelle Schlüsselwortliste auf die Standardeinstellungen von Marked zurück (z. B. die Vermeidungsliste [Plain English Campaign](http://www.plainenglish.co.uk)).
+: Setzt die aktuelle Schlüsselwortliste auf Markeds Standardwerte zurück (zum Beispiel die Vermeiden-Liste der [Plain English Campaign](http://www.plainenglish.co.uk)).

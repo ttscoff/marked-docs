@@ -8,7 +8,7 @@ Acompanhe enquanto você escreve.
 
 ![][1]
 
-   [1]: images/WordCount.jpg @2x largura=840px altura=61px class=centro
+   [1]: images/WordCount.jpg @2x width=840px height=61px class=center
 
 A contagem de palavras está localizada na barra de status inferior e pode ser ativada e desativada em {% prefspane General %} na barra de status. Você pode visualizar mais estatísticas na janela de visualização ou de origem no menu de engrenagem, clicando na contagem de palavras ou digitando Option-Command-S ({% kbd opt cmd S %}). Mantenha pressionada a tecla Option ({% kbd opt  %}) enquanto clica para mostrar as estatísticas de legibilidade e mantenha pressionada a tecla Option-Command ({% kbd opt cmd %}) para abrir o painel Advanced Statistics.
 
@@ -18,7 +18,7 @@ Se o texto for selecionado, a exibição da contagem de palavras e o pop-up de p
 
 ![Pop-up de contagem de palavras na seleção de texto][2]
 
-   [2]: images/wordcountforselection.jpg @2x largura=749px altura=144px class=centro
+   [2]: images/wordcountforselection.jpg @2x width=749px height=144px class=center
 
 Quando você seleciona texto na visualização, a contagem de palavras na parte inferior da janela mostrará estatísticas apenas para o texto selecionado.
 
@@ -30,7 +30,7 @@ O recurso de zoom é útil para selecionar e obter rapidamente contagens de peda
 
 ![Barra de estatísticas de legibilidade][3]
 
-   [3]: images/screenshots/mainwindow-feature-stats-lower-crop.jpg @2x largura=1089px altura=111px classe=centro
+   [3]: images/screenshots/mainwindow-feature-stats-lower-crop.jpg @2x width=1089px height=111px class=center
 
 Estatísticas adicionais de Flesch/Kincaid e do Fog Index estão disponíveis em {% kbd opt shift cmd S %}.
 

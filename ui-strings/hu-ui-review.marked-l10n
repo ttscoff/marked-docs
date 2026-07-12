@@ -25,7 +25,7 @@
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
 #   Settings.strings: 474
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -7937,6 +7937,15 @@ Write all responses in %@." = "";
 # EN: Validate All Links
 # DRAFT: Minden hivatkozás érvényesítése
 
+"menu.newViewIntoCurrentFile" = "Új nézet az aktuális fájlban";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Egyéni szabály engedélyezése";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Egyéni szabály felülírása";
+# EN: Custom Rule Override
+
 
 === END PreviewContextMenu.strings ===
 
@@ -9001,3 +9010,14 @@ Write all responses in %@." = "";
 
 
 === END InfoPlist.strings ===
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 2
+# PRIORITY — Preview style menu (toolbar popup): None and Manage Styles…
+# Reported untranslated in German build (2026-07-10). Translate both values below.
+
+"setting.previewStyle.none" = "None";
+
+"setting.manageStyles.menu" = "Manage Styles…";
+
+=== END Settings.strings (gaps) ===

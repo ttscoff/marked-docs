@@ -165,6 +165,8 @@ zij. Ondersteunde paren: `"` `'` `(` `[` `` ` `` `<` .
 | **⌃⌘↑** | Alinea naar boven verplaatsen (paragraaf inclusief nieuwe regel knippen, één regel naar boven plakken) |
 | **⌃⌘↓** | Alinea naar beneden verplaatsen (paragraaf inclusief nieuwe regel knippen, één regel naar beneden plakken) |
 | **⌘K** | Een Markdown-link invoegen of omsluiten: selectie omsluiten als `[text]()` en de cursor in de URL plaatsen, of `[]()` invoegen met de cursor tussen de haakjes als er geen selectie is |
+| **F6** | Magische referentielink: selectie omsluiten als `[text][n]` en een `[n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande referentie staat, springt tussen inline markering en definitie |
+| **F7** | Magische voetnoot: `[^n]` invoegen bij de cursor (of na het huidige woord) en een bijbehorende `[^n]: `-definitie aan het einde van het document toevoegen; wanneer de cursor op een bestaande voetnoot staat, springt tussen markering en definitie |
 | **⌘U** | Uitvoervenster schakelen (Bron/Voorbeeld) |
 | **⌥⌘↑** | Selectie uitbreiden: woord → binnenste/buitenste scheidingstekens → zin → alinea → aaneengesloten blok (zoals een tabel of codeblok) → omsluitende lijst/blokquote/codeblok → document |
 | **⌥⌘↓** | Contractselectie terug naar beneden via dezelfde niveaus naar de oorspronkelijke cursorpositie |
@@ -175,6 +177,27 @@ verwijder `>` uit blockquote-regels. Paragraaf omhoog/omlaag verplaatsen
 selecteert de gehele paragraaf onder de cursor (inclusief de bijbehorende paragraaf).
 achterliggende nieuwe regel), knipt het en plakt het boven of onder de
 aangrenzende alinea, zodat alinea's niet samenvloeien.
+
+### Magische links en voetnoten (F6 / F7)
+
+De Dingus-editor kan __referentielinks__ en
+__voetnoten__ voor u maken, automatisch het volgende beschikbare nummer toewijzen
+en de bijbehorende definitie aan het einde van het document toevoegen.
+
+* __F6 (magische referentielink)__: Met geselecteerde tekst wordt de
+  selectie omsloten als `[text][n]` en wordt aan het einde van het document een nieuwe
+  `[n]: `-regel toegevoegd, zodat u de URL kunt typen. Voor het maken van een
+  nieuwe referentielink is een selectie vereist. Staat de cursor al
+  op een referentielink of de definitie ervan, dan springt **F6**
+  tussen inline markering en definitie (of maakt de definitie aan als die ontbreekt).
+* __F7 (magische voetnoot)__: Voegt een genummerde voetnootmarkering
+  `[^n]` in bij de cursor---of na het huidige woord wanneer de cursor daarin staat---en voegt `[^n]: ` toe met de
+  geselecteerde tekst als voetnoottekst wanneer er een selectie is. Staat de cursor op een bestaande voetnootmarkering
+  of definitie, dan springt **F7** tussen beide.
+
+Referentie- en voetnootnummers worden automatisch gekozen, zodat u geen ID's
+handmatig hoeft bij te houden. Geen van beide sneltoetsen werkt
+in omheinde of ingesprongen codeblokken.
 
 ### Slim URL plakken
 

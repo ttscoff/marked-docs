@@ -20,7 +20,7 @@ Struttura delle cartelle:
 
 ![][1]
 
-   [1]: images/multifiledocumentstructure.jpg @2x larghezza=316px altezza=163px classe=centro
+   [1]: images/multifiledocumentstructure.jpg @2x width=316px height=163px class=center
 
 Indice.md:
 
@@ -165,7 +165,7 @@ GitBook consente l'utilizzo degli ancoraggi nel sommario SUMMARY.md, ma Marked l
 
 ![Confini dei file inclusi][2]
 
-   [2]: images/includeboundaries.png @2x larghezza=859px altezza=239px classe=centro
+   [2]: images/includeboundaries.png @2x width=859px height=239px class=center
 
 Quando visualizzi un documento contenente file inclusi, puoi utilizzare due funzionalità per capire quale file stai guardando.
 

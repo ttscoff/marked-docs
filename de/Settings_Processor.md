@@ -1,62 +1,62 @@
 # <%= @title %>
 
-Optionen im {% prefspane Processor %}:
+Optionen unter {% prefspane Processor %}:
 
-![Settings: Processor][1]
+![Einstellungen: Prozessor][1]
 
 [1]: images/screenshots/preferences-Processor.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Verarbeiten Sie Markdown mit
+### Markdown verarbeiten mit
 
-Standardprozessor Markdown. Der CommonMark-Prozessor wird für GitHub-Benutzer bevorzugt, MultiMarkdown ist ideal für Autoren und Discount und Kramdown haben spezielle Zwecke. Marked gleicht einige Unterschiede in der Syntax aus. Weitere Informationen finden Sie unter __Help->Markdown Reference__.
+Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
 
-Custom Regeln
-: Klicken Sie auf die Schaltfläche „Custom-Regeln“, um den Regeleditor zu öffnen, in dem Sie verschiedene Prozessoren und Dokumenttransformationen angeben können, die basierend auf übereinstimmenden Kriterien ausgeführt werden sollen. Weitere Informationen finden Sie unter [Custom Processor](Custom_Processor.html).
+Eigene Regeln
+: Klicken Sie auf die Schaltfläche „Eigene Regeln“, um den Editor für Eigene Regeln zu öffnen. Dort legen Sie je nach passenden Kriterien verschiedene Prozessoren und Dokumenttransformationen fest. Einzelheiten unter [Eigene Regeln](Custom_Processor.html).
 
-Neue Dokumente verwenden benutzerdefinierte
-: Wenn diese Option aktiviert ist, verwenden neue Dokumente automatisch Ihren gespeicherten **Präprozessor** und/oder **Prozessor** aus Custom-Regeln, ohne dass eine dokumentspezifische Einrichtung erforderlich ist.
+Neue Dokumente verwenden eigene
+: Ist dies aktiviert, verwenden neue Dokumente automatisch Ihren gespeicherten **Präprozessor** und/oder **Prozessor** aus den Eigenen Regeln, ohne dass Sie pro Dokument etwas einrichten müssen.
 
 Vollständiger Festplattenzugriff
-: Klicken Sie auf **Erteilen**, um Marked die Berechtigung zu erteilen, Dateien außerhalb seiner Sandbox zu lesen, wenn benutzerdefinierte Prozessoren oder andere Funktionen verwendet werden, die einen umfassenderen Dateizugriff erfordern.
+: Klicken Sie auf **Gewähren**, um Marked die Berechtigung zu geben, beim Einsatz benutzerdefinierter Prozessoren oder anderer Funktionen mit erweitertem Dateizugriff auch Dateien außerhalb seiner Sandbox zu lesen.
 
-Um die Unterschiede zwischen den Prozessoren zu erkunden, sehen Sie sich [Markdown Dingus](Markdown_Dingus.html) an.
+Um die Unterschiede zwischen den Prozessoren zu erkunden, schauen Sie sich den [Markdown-Dingus](Markdown_Dingus.html) an.
 
 ### HTML
 
-Generieren Sie IDs für Schlagzeilen
-: Header-IDs basierend auf dem Inhalt des h1-h6-Tags generieren.
+IDs für Überschriften generieren
+: Erzeugt Überschriften-IDs anhand des Inhalts der h1–h6-Tags.
 
-Verwenden Sie zufällige Fußnoten-IDs
-: Generieren Sie zufällige Fußnoten-IDs, um Konflikte zu vermeiden, wenn mehrere Dokumente auf einer Seite angezeigt werden.
+Zufällige Fußnoten-IDs verwenden
+: Erzeugt zufällige Fußnoten-IDs, um Konflikte zu vermeiden, wenn mehrere Dokumente auf einer Seite angezeigt werden.
 
-Verarbeiten Sie Markdown innerhalb von HTML
-: Standardmäßig wird Markdown innerhalb von HTML-Tags normalerweise ignoriert. Diese Option zwingt Marked, die Verarbeitung innerhalb von Blockelementen fortzusetzen. Beachten Sie, dass einige Markups Probleme verursachen können.
+Markdown innerhalb von HTML verarbeiten
+: Standardmäßig wird Markdown innerhalb von HTML-Tags meist ignoriert. Diese Option zwingt Marked, auch innerhalb von Blockelementen weiterzuverarbeiten. Beachten Sie, dass manches Markup Probleme verursachen kann.
 
-### Rendern
+### Darstellung
 
-Behalten Sie Zeilenumbrüche in Absätzen bei
-: Zeilenumbrüche im Absatztext berücksichtigen und durch harte Umbrüche ersetzen, anstatt sie mit der vorherigen Zeile zu verketten.
+Zeilenumbrüche in Absätzen beibehalten
+: Berücksichtigt Zeilenumbrüche im Absatztext und ersetzt sie durch harte Umbrüche, statt sie mit der vorherigen Zeile zusammenzufügen.
 
-Rendern Sie GitHub-Kontrollkästchen
-: Rendern Sie `- [ ]` und `- [x]` zum Erstellen von Kontrollkästchen in Listen. Kontrollkästchen werden zur Vorschau gerendert, sind jedoch innerhalb von Marked nicht funktionsfähig.
+GitHub-Kontrollkästchen rendern
+: Rendert `- [ ]` und `- [x]` zum Erstellen von Kontrollkästchen in Listen. Die Kontrollkästchen werden in der Vorschau dargestellt, sind in Marked aber nicht funktional.
 
-Rendern GitHub :emoji:
-: Rendern Sie `:name:` Shortcodes als Emoji im GitHub-Stil in der Vorschau.
+GitHub-:emoji: rendern
+: Rendert `:name:`-Shortcodes als Emoji im GitHub-Stil in der Vorschau.
 
-\#Text ist Tag
-: Ermöglicht die Interpretation von Hashtags (`#` unmittelbar gefolgt von Text ohne Leerzeichen) als Tags und nicht als Überschriften. Diese Funktionalität ist für Bear-Benutzer standardmäßig verfügbar.
+\#Text ist ein Tag
+: Erlaubt, Hashtags (`#` direkt gefolgt von Text ohne Leerzeichen) als Tags statt als Überschriften zu interpretieren. Für Bear-Nutzer ist das die Standardeinstellung.
 
-Stil-Tags
-: Wenn **#Text ist Tag** aktiviert ist, werden erkannte Tags mit Kapselstil angezeigt. Tags können in {% appmenu {{gear}}, Proofing, Show Comments %} angezeigt oder ausgeblendet werden.
+Tags formatieren
+: Ist **#Text ist ein Tag** aktiviert, werden erkannte Tags mit Kapsel-Stil angezeigt. Tags lassen sich über {% appmenu {{gear}}, Korrekturlesen, Kommentare anzeigen %} ein- oder ausblenden.
 
-![#Text is tag enabled][textistag]
+![#Text ist ein Tag aktiviert][textistag]
 
 [textistag]: images/textistag.jpg @2x width=896px height=274px class=center
 
-Rendern Sie `==highlight==` und `~~delete~~`
-: Wenn diese Option aktiviert ist, wird der `==highlight==`-Text als HTML `<mark>`-Tag gerendert, das als gelbe Hervorhebung angezeigt wird, sofern nicht anderweitig durch einen Stil geändert. Darüber hinaus wird die Syntax `~~delete~~` mit einem Tag `<del>` gerendert.
+`==highlight==` und `~~delete~~` rendern
+: Ist diese Option aktiviert, wird `==highlight==`-Text als HTML-`<mark>`-Tag gerendert, das als gelbe Hervorhebung erscheint, sofern ein Stil es nicht anders festlegt. Zusätzlich wird die Syntax `~~delete~~` mit einem `<del>`-Tag gerendert.
 
-: Wenn __Render as CriticMarkup__ aktiviert ist, wird die Syntax `==highlight==` und `~~delete~~` in CriticMarkup konvertiert, das dann in der Original-, Markup- und bearbeiteten Ansicht angezeigt werden kann.
+: Ist **Als CriticMarkup rendern** aktiviert, wird die Syntax `==highlight==` und `~~delete~~` in CriticMarkup umgewandelt, das sich dann in der Original-, Markup- und bearbeiteten Ansicht anzeigen lässt.
 
-Rendern Sie `~text~` als Unterstrich
-: Wenn diese Option aktiviert ist, werden `~text~`, die von einzelnen Tilden umgeben sind, unterstrichen dargestellt. Dies steht in Konflikt mit der MultiMarkdown-Syntax für Subskripte und ist standardmäßig deaktiviert.
+`~text~` als Unterstreichung rendern
+: Ist diese Option aktiviert, wird `~text~` in einzelnen Tilden als unterstrichen gerendert. Das steht im Konflikt mit der MultiMarkdown-Syntax für Tiefstellung und ist standardmäßig deaktiviert.

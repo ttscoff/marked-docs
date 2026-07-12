@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 582
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -2098,7 +2098,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "1hb-Ih-LRV.title" = "CommonMark (GFM)";
 
-"1lQ-6n-ZAi.title" = "Profil d'export :";
+"1lQ-6n-ZAi.title" = "Profil d'exportation :";
 # EN: Export Profile:
 
 "1om-K7-Ro2.title" = "Nouveau";
@@ -2216,7 +2216,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "684.ibShadowedToolTip" = "Définit automatiquement les nouvelles fenêtres pour qu'elles « flottent » au-dessus des autres applications.";
 # EN: Automatically set new windows to "float" above other applications.
 
-"687.title" = "Garde les nouvelles fenêtres au dessus";
+"687.title" = "Garder les nouvelles fenêtres au dessus";
 # EN: Keep new windows on top
 
 "699.ibShadowedToolTip" = "Inclut une table des matières automatique dans la version imprimée/pdf.";
@@ -2701,7 +2701,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "Qz7-4r-MXY.ibShadowedToolTip" = "Ignore les blocs de texte entre guillemets dans le nombre de mots";
 # EN: Ignore block quoted text in word count
 
-"RGW-BJ-5Zj.title" = "Génère des guillemets et des signes de ponctuation typographiquement corrects";
+"RGW-BJ-5Zj.title" = "Générer des guillemets et des signes de ponctuation typographiquement corrects";
 # EN: Generate typographically correct quotes and punctuation
 
 "RL3-oF-r0C.title" = "Leanpub/GitBook :";
@@ -2875,7 +2875,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "Xzn-6O-vFG.ibShadowedToolTip" = "Intègre les fichiers OPML sous forme de diagrammes Mermaid. Si désactivé, les fichiers OPML inclus avec la syntaxe d'inclusion seront rendus sous forme de listes Markdown.";
 # EN: Embed OPML files as Mermaid diagrams. If disabled, OPML files included with include syntax will be rendered as Markdown lists.
 
-"Y6m-B7-bA2.title" = "Règles personnalisées";
+"Y6m-B7-bA2.title" = "Règles personnalisées :";
 # EN: Custom Rules
 
 "YKB-Zl-d5d.ibShadowedToolTip" = "Sélectionne un éditeur de texte pour afficher le document actuel lorsque vous tapez ⌘⌥E.";
@@ -2920,7 +2920,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "aUB-nd-9T9.ibShadowedToolTip" = "Par défaut, le Markdown à l'intérieur des balises HTML est généralement ignoré. Cette option force Marked à poursuivre le traitement dans les blocs d'éléments. Notez que certains balisages peuvent causer des problèmes.";
 # EN: By default, Markdown inside of HTML tags is usually ignored. This option forces Marked to continue processing within block elements. Note that some markup may cause issues.
 
-"agx-YP-Lfh.title" = "Paramètre du système de correspondance";
+"agx-YP-Lfh.title" = "Suivre les paramètres système";
 # EN: Match System Setting
 
 "azh-dp-9Z9.ibExternalAccessibilityDescription" = "Inverse l'ordre des différences";
@@ -3006,7 +3006,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "eLh-lb-5Lp.title" = "Autoriser les thèmes à renvoyer le texte à la ligne dans des blocs de code";
 # EN: Allow themes to wrap text inside code blocks
 
-"eMJ-jD-zMf.title" = "demande-moi à chaque fois";
+"eMJ-jD-zMf.title" = "me demander à chaque fois";
 # EN: ask me each time
 
 "eOT-Vx-WiJ.ibShadowedToolTip" = "Supprime le formatage (souligné et couleur) des liens lors de l'impression.";
@@ -3108,7 +3108,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "img-variant-resolve-cell.title" = "Résoudre les variantes d'image sombres et @2x";
 # EN: Resolve dark and @2x image variants
 
-"ixM-VJ-sV6.title" = "Translucide en arrière-plan";
+"ixM-VJ-sV6.title" = "Rendre transparent en arrière-plan";
 # EN: Translucent in background
 
 "j8n-js-3Kh.title" = "16";
@@ -3265,7 +3265,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "pXN-Ub-Ood.title" = "Utiliser ⌘E pour Rechercher avec la sélection";
 # EN: Use ⌘E for Find With Selection
 
-"pZg-9z-YEa.title" = "Inclut des notes de bas de page dans la barre latérale des commentaires";
+"pZg-9z-YEa.title" = "Inclure les notes de bas de page dans la barre latérale des commentaires";
 # EN: Include footnotes in comment sidebar
 
 "pbl-03-803.ibShadowedToolTip" = "Les blocs de code encadrés sont toujours ignorés";
@@ -3557,6 +3557,15 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "menu.validateAllLinks" = "Valider tous les liens";
 # EN: Validate All Links
+
+"menu.newViewIntoCurrentFile" = "Nouvelle vue dans le fichier actuel";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Activer la règle personnalisée";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Remplacement de règle personnalisée";
+# EN: Custom Rule Override
 
 
 === END PreviewContextMenu.strings ===
@@ -5369,17 +5378,17 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "setting.debugLevel" = "Niveau de sortie de débogage";
 # EN: Debug output level
 
-"setting.defaultPreviewStyle.tooltip" = "The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\\\\"Marked Style: Grump\\\\\").";
+"setting.defaultPreviewStyle.tooltip" = "Le style sélectionné ici sera chargé pour toute nouvelle fenêtre, sauf si les metadata précisent un style particulier pour le document (p.ex. \\\\\"Marked Style: Grump\\\\\").";
 # EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\"Marked Style: Grump\\").
 
-"setting.manageStyles.menu" = "Manage Styles…";
+"setting.manageStyles.menu" = "Gérer les styles…";
 
 "setting.moreThemes.tooltip" = "Explorez la galerie de styles, où vous pouvez télécharger ou installer des styles personnalisés";
 # EN: Explore the Style Gallery, where you can download or install Custom Styles
 
-"setting.openLinksInBackground" = "Always open links in the background";
+"setting.openLinksInBackground" = "Toujours ouvrir les liens en arrière-plan";
 
-"setting.openLinksInBackgroundHint.body" = "Command-click to open in background.";
+"setting.openLinksInBackgroundHint.body" = "Command-clic pour ouvrir en arrière-plan.";
 
 "setting.documentTabbingMode.automatic" = "Suivre le système";
 # EN: Follow system
@@ -5426,7 +5435,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "setting.mathNumberEquationsSide.right" = "Droite";
 # EN: Right
 
-"setting.panZoomMermaid" = "Pan and zoom diagrams";
+"setting.panZoomMermaid" = "Panoramique et zoom pour les diagrammes";
 
 "setting.printBorderAboveFooter" = "Bordure au-dessus du pied de page";
 # EN: Border above footer
@@ -5593,5 +5602,18 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 "tooltip.topPrintMargin" = "Définit les marges d'impression (en points).";
 # EN: Define print margins (specified in points).
 
+
+=== END Settings.strings (gaps) ===
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 2
+# PRIORITY — Preview style menu (toolbar popup): None and Manage Styles…
+# Seeded from MainMenu / outline None translations (2026-07-10).
+
+"setting.previewStyle.none" = "Aucun";
+# EN: None
+
+"setting.manageStyles.menu" = "Gérer les styles…";
+# EN: Manage Styles…
 
 === END Settings.strings (gaps) ===

@@ -7,7 +7,7 @@ Stile erscheinen in Menüs, in ihrer Reihenfolge, in Tastaturkürzeln und mehr.
 ## Öffnen des Style-Managers
 
 Um den Stil-Manager zu öffnen, klicken Sie im {% prefspane Style %} auf die Schaltfläche **Stile verwalten…**
-Bereich, oder verwenden Sie {% appmenu Style, Manage Styles (~@$m) %}. Sie können CSS-Dateien auch direkt in das Einstellungsfenster ziehen --- Marked
+Bereich, oder verwenden Sie {% appmenu Stil, Stile verwalten (~@$m) %}. Sie können CSS-Dateien auch direkt in das Einstellungsfenster ziehen --- Marked
 importiert sie, öffnet den Stil-Manager und wählt die neu hinzugefügte Zeile aus
 Du.
 

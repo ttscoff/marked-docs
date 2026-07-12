@@ -18,7 +18,7 @@ Todas as anotações são mostradas em uma barra lateral e ocultadas na visualiz
 
 ![Uma nota de rodapé na barra lateral de comentários][barra lateral]
 
-  [barra lateral]: images/comment-sidebar-800.jpg @2x largura=800
+  [barra lateral]: images/comment-sidebar-800.jpg @2x width=800
 
 Passar o mouse sobre um comentário na barra lateral desenhará uma linha até sua localização no documento. No caso de notas de rodapé, apontará onde a nota de rodapé ocorre no texto. No caso de comentários, apontará para o local original do comentário, que pode ser um espaço em branco na visualização.
 

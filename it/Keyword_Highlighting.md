@@ -28,7 +28,7 @@ Se si fa clic su una parola o frase evidenziata, quel tipo diventerà la destina
 
 ![Impostazioni correzione bozze][proofprefs]
 
-  [proofprefs]: images/screenshots/preferences-Proofing.jpg @2x larghezza=689px altezza=1031px class=preferencepane
+  [proofprefs]: images/screenshots/preferences-Proofing.jpg @2x width=689px height=1031px class=preferencepane
 
 Per impostazione predefinita, Marked utilizza l'elenco di parole e frasi di uso eccessivo della [Plain English Campaign](http://www.plainenglish.co.uk). Puoi aggiungerli o sostituirli facilmente modificandoli in {% prefspane Proofing %}. Ogni campo è costituito da testo in formato libero e ogni riga viene interpretata come una frase di ricerca. Utilizza `*` all'inizio di una frase o parola per corrispondere a qualsiasi testo precedente e `?` per corrispondere a un singolo carattere come carattere jolly.
 

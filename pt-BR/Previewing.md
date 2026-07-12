@@ -10,7 +10,7 @@ Mudando a maneira como você vê as coisas.
 
 ![][1]
 
-   [1]: images/StylePicker.jpg @2x largura=896px altura=195px class=centro
+   [1]: images/StylePicker.jpg @2x width=896px height=195px class=center
 
 Você pode definir um estilo padrão para novos documentos em {% prefspane Style %}. Se o menu de estilo na barra de ferramentas estiver ativado nas configurações da janela, você poderá ajustar o estilo por documento diretamente na janela de visualização. Sua seleção de estilo será lembrada e será a primeira escolha para opções de exportação e impressão.
 
@@ -28,7 +28,7 @@ O modo de contorno automático pode ser ativado para extensões de arquivo espec
 
 ![][2]
 
-   [2]: images/textzoom.jpg @2x largura=800px altura=414px class=centro
+   [2]: images/textzoom.jpg @2x width=800px height=414px class=center
 
 Você pode alterar o tamanho do texto usando {% kbd cmd shift + %} e {% kbd cmd shift - %} ou usar o menu Zoom em Visualização na barra de menu ou no menu de engrenagem na janela do documento. Marcado lembrará todas as alterações feitas na próxima vez (e sempre). Redefina o zoom para 100% com {% kbd cmd 0 %} (ou acesse **Zoom Reset** no menu Zoom).
 

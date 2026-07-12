@@ -22,7 +22,7 @@ Notizen werden **nur** exportiert, wenn sie in HTML gespeichert werden. Die Mark
 
 ## Rechtschreibprüfung
 
-Im Korrekturlesemodus können Sie über das Zahnradmenü auf die systemweite Rechtschreibprüfung zugreifen: {% appmenu {{gear}}, Proofing, Highlight All Spelling Errors %}. Dies ist bei großen Dokumenten langsam und es wird eine Warnung angezeigt, die Sie darauf hinweist, wenn der Vorgang etwa 30 Sekunden dauert. Da die Rechtschreibprüfung in der Webvorschau von Marked nicht funktioniert, ist ein „Hack“ implementiert, damit dies funktioniert, und dieser geht nicht schnell.
+Im Korrekturlesemodus können Sie über das Zahnradmenü auf die systemweite Rechtschreibprüfung zugreifen: {% appmenu {{gear}}, Korrekturlesen, Alle Rechtschreibfehler hervorheben %}. Dies ist bei großen Dokumenten langsam und es wird eine Warnung angezeigt, die Sie darauf hinweist, wenn der Vorgang etwa 30 Sekunden dauert. Da die Rechtschreibprüfung in der Webvorschau von Marked nicht funktioniert, ist ein „Hack“ implementiert, damit dies funktioniert, und dieser geht nicht schnell.
 
 Sobald die Rechtschreibprüfung ausgeführt wurde, können Sie das Bedienfeld „Rechtschreibvermutungen“ öffnen, um die Grammatikprüfung zu aktivieren und Vorschläge zur Fehlerbehebung anzuzeigen. Marked *können* diese nicht direkt bearbeiten, Sie müssen zu Ihrem Originaldokument zurückkehren, um die Ergebnisse nutzen zu können.
 

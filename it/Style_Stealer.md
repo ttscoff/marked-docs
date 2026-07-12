@@ -29,7 +29,7 @@ Nel campo URL, inserisci l'indirizzo del sito web da cui desideri estrarre gli s
 
 ![Anteprima di Style Stealer][anteprima]
 
-  [anteprima]: images/style-stealer-preview.jpg @2x larghezza=800
+  [anteprima]: images/style-stealer-preview.jpg @2x width=800
 
 ### Passaggio 3: carica e naviga
 
@@ -49,7 +49,7 @@ Puoi quindi salvare questo stile personalizzato nella cartella CSS personalizzat
 
 ![][img3]
 
-  [img3]: images/style-stealer-stolen-800.jpg @2x larghezza=800px altezza=637px classe=centro
+  [img3]: images/style-stealer-stolen-800.jpg @2x width=800px height=637px class=center
 
 ## Cosa viene estratto
 

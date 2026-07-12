@@ -8,7 +8,7 @@ Lleve un registro mientras escribe.
 
 ![][1]
 
-   [1]: imágenes/WordCount.jpg @2x ancho=840px alto=61px clase=centro
+   [1]: imágenes/WordCount.jpg @2x width=840px height=61px class=center
 
 El recuento de palabras se encuentra en la barra de estado inferior y se puede habilitar y deshabilitar desde {% prefspane General %} en la barra de estado. Puede ver más estadísticas en la ventana de vista previa o fuente desde el menú de ajustes, haciendo clic en el recuento de palabras o escribiendo Opción-Comando-S ({% kbd opt cmd S %}). Mantenga presionada la tecla Opción ({% kbd opt  %}) mientras hace clic para mostrar Estadísticas de legibilidad y mantenga presionada Opción-Comando ({% kbd opt cmd %}) para abrir el panel Estadísticas avanzadas.
 
@@ -18,7 +18,7 @@ Si se selecciona texto, la pantalla del recuento de palabras y la ventana emerge
 
 ![Ventana emergente de recuento de palabras al seleccionar texto][2]
 
-   [2]: imágenes/wordcountforselection.jpg @2x ancho=749px alto=144px clase=centro
+   [2]: imágenes/wordcountforselection.jpg @2x width=749px height=144px class=center
 
 Cuando selecciona texto en la vista previa, el recuento de palabras en la parte inferior de la ventana mostrará estadísticas solo para el texto seleccionado.
 
@@ -30,7 +30,7 @@ La función de zoom es útil para seleccionar y obtener recuentos rápidamente p
 
 ![Barra de estadísticas de legibilidad][3]
 
-   [3]: imágenes/capturas de pantalla/mainwindow-feature-stats-lower-crop.jpg @2x ancho=1089px alto=111px clase=centro
+   [3]: imágenes/capturas de pantalla/mainwindow-feature-stats-lower-crop.jpg @2x width=1089px height=111px class=center
 
 Estadísticas adicionales de Flesch/Kincaid y el Fog Index están disponibles en {% kbd opt shift cmd S %}.
 
