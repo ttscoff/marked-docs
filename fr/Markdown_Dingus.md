@@ -99,11 +99,33 @@ Lorsque vous tapez un caractère d'ouverture, l'éditeur insère le caractère d
 | **⌃⌘↑** | Déplacer le paragraphe vers le haut (couper le paragraphe, y compris la nouvelle ligne, coller une ligne vers le haut) |
 | **⌃⌘↓** | Déplacer le paragraphe vers le bas (couper le paragraphe, y compris la nouvelle ligne, coller une ligne vers le bas) |
 | **⌘K** | Insérez ou enveloppez un lien Markdown : enveloppez la sélection comme `[text]()` et placez le curseur dans l'URL, ou insérez `[]()` avec le curseur entre les crochets lorsqu'il n'y a pas de sélection |
+| **F6** | Lien de référence magique : enveloppe la sélection comme `[text][n]` et ajoute une définition `[n]: ` à la fin du document ; lorsque le curseur est sur une référence existante, bascule entre le marqueur inline et sa définition |
+| **F7** | Note de bas de page magique : insère `[^n]` au curseur (ou après le mot actuel) et ajoute une définition `[^n]: ` correspondante à la fin du document ; lorsque le curseur est sur une note existante, bascule entre le marqueur et sa définition |
 | **⌘U** | Basculer le volet de sortie (Source/Aperçu) |
 | **⌥⌘↑** | Développer la sélection : mot → délimiteurs internes/externes → phrase → paragraphe → bloc contigu (tel qu'un tableau ou un bloc de code) → liste/citation de bloc/bloc de code → document |
 | **⌥⌘↓** | Contracte la sélection en redescendant à travers les mêmes niveaux jusqu'à la position d'origine du curseur |
 
 Tab/Shift+Tab (et ⌃⌘←/⌃⌘→) respectent la structure de la liste et des citations : ils indentent/désindentent les éléments de liste et ajoutent ou suppriment `>` des lignes de citation de bloc. Déplacer le paragraphe vers le haut/bas sélectionne le paragraphe entier sous le curseur (y compris sa nouvelle ligne finale), le coupe et le colle au-dessus ou en dessous du paragraphe adjacent afin que les paragraphes ne fusionnent pas.
+
+### Liens et notes de bas de page magiques (F6 / F7)
+
+L'éditeur Dingus peut créer des __liens de référence__ et des
+__notes de bas de page__ pour vous, en attribuant automatiquement le prochain numéro disponible
+et en ajoutant la définition correspondante à la fin du document.
+
+* __F6 (lien de référence magique)__ : avec du texte sélectionné, enveloppe
+  la sélection comme `[text][n]` et ajoute une nouvelle ligne `[n]: ` à
+  la fin du document pour que vous puissiez saisir l'URL. La création d'un
+  nouveau lien de référence nécessite une sélection. Lorsque le curseur est déjà
+  sur un lien de référence ou sa définition, **F6**
+  bascule entre le marqueur inline et la définition (ou crée la définition si elle manque).
+* __F7 (note de bas de page magique)__ : insère un marqueur de note de bas de page numéroté
+  `[^n]` au curseur — ou après le mot actuel lorsque le curseur est à l'intérieur — et ajoute `[^n]: ` avec le
+  texte sélectionné comme corps de note lorsqu'il y a une sélection. Lorsque le curseur est sur un marqueur de note existant
+  ou une définition, **F7** bascule entre les deux.
+
+Les numéros de référence et de notes de bas de page sont choisis automatiquement, vous n'avez donc pas à gérer les identifiants à la main. Aucun de ces raccourcis ne fonctionne
+dans les blocs de code clôturés ou indentés.
 
 ### Coller une URL intelligente
 
