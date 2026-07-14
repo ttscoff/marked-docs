@@ -42,6 +42,32 @@ Marked vous permet de créer un nouveau fichier texte vide avec la commande {% a
 
 Marked garde également une trace des documents récents. L'option de menu {% appmenu File, Open Recent %} vous montrera les fichiers que vous avez ouverts et vous permettra d'y revenir. Vous pouvez rapidement rouvrir le dernier fichier que vous visualisiez avec {% kbd shift cmd R %}. Utilisez {% kbd shift cmd P %} ou [Actions rapides](Quick_Actions.html) pour exécuter le menu et prévisualiser les commandes à partir du clavier. Il existe également de nombreux autres raccourcis clavier. Si vous souhaitez les apprendre, vous pouvez trouver un tableau sous [Raccourcis clavier](Keyboard_Shortcuts.html).
 
+## Nouvelle vue dans le fichier actuel [multiview]
+
+Utilisez {% appmenu File, New View into Current File %} ({% kbd
+shift cmd N %}, également dans le menu contextuel d'aperçu) pour ouvrir un
+deuxième fenêtre d'aperçu sur le même fichier enregistré. Les deux fenêtres
+regardez le fichier sur le disque et mettez-le à jour lorsque vous enregistrez dans votre
+éditeur, mais chaque vue garde sa propre position de défilement,
+signets, style d'aperçu et [Règle personnalisée
+remplacements](Custom_Processor.html#manuallyenabled).
+
+**Exemple de cas d'utilisation :** Vous éditez un long manuscrit dans
+MultiMarkdown avec votre style et votre processeur habituels. Ouvrir un
+deuxième vue, passez-la à un style de vérification linguistique, épinglez un processus
+règle qui exécute un processeur intégré différent et active un
+règle manuelle qui met en évidence le balisage de révision. Vous comparez
+mises en page de brouillon et d'épreuve côte à côte sans en conserver deux
+copies du dossier.
+
+Lorsque plusieurs vues d'un fichier sont ouvertes, le titre de la fenêtre
+inclut **View 2**, **View 3**, etc. pour que vous puissiez le savoir
+fenêtres séparées dans le menu Fenêtre et Mission Control.
+
+Les vues alternatives ne sont pas disponibles pour les documents non enregistrés,
+aperçus du presse-papiers, aperçus en streaming ou basés sur des dossiers
+des projets qui ne correspondent pas à un seul fichier sur le disque.
+
 ## Ouverture rapide ##
 
 Vous pouvez rapidement basculer entre les documents ouverts, ouvrir des documents récents ou ouvrir la boîte de dialogue Fichier->Ouvrir avec le [Panneau d'ouverture rapide](Quick_Open.html) ({% kbd cmd shift o %}).
