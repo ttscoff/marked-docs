@@ -29,7 +29,7 @@
 | **{{shift}}{{cmd}}0** | Textgröße zurücksetzen |
 | **{{cmd}}M** | Im Dock ablegen |
 | **{{opt}}{{shift}}{{cmd}}F** | Fenster im Vordergrund halten |
-| **{{ctrl}}{{cmd}}B** | Grenzen eingebetteter Dateien anzeigen |
+| **{{ctrl}}{{cmd}}B** | Grenzen eingebundener Dateien anzeigen |
 | **{{ctrl}}{{cmd}}L** | URLs validieren |
 | **{{ctrl}}{{cmd}}W** | Wortwiederholungen visualisieren |
 | **{{ctrl}}{{opt}}S** | Schnelllesen umschalten |
@@ -95,7 +95,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **S** | Automatisches Scrollen umkehren |
 | **{{shift}}{{l}}**/**{{r}}** | Automatisches Scrollen verlangsamen/beschleunigen |
 | **f** | Schnellwechsler öffnen |
-| **I** | Namen der aktuell eingebetteten Datei anzeigen |
+| **I** | Namen der aktuell eingebundenen Datei anzeigen |
 | **z** | Zoom-Übersicht umschalten |
 | **\[** / **\]** | Durch Zielhervorhebungen navigieren |
 | **{** / **}** | Durch alle Hervorhebungen navigieren |

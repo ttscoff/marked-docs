@@ -66,6 +66,15 @@ Der Editor für Eigene Regeln heißt bei Marked „Conductor“. Wir führen den
 | Run Shortcut / Run System Service / Run Automator Workflow | Kurzbefehl ausführen / Systemdienst ausführen / Automator-Workflow ausführen | „Kurzbefehl“ = Apple-Shortcut |
 | Run Rule / Continue | Regel ausführen / Fortfahren | |
 
+## Two decided app strings (16.07.2026)
+
+Both were translated two different ways in the app (overview vs. menu). Agreed with Brett; the app strings get aligned to these, so quote **these** in the docs:
+
+| Term | Translation | Notes |
+|---------|-------------|-------|
+| Included files (transclusion) | **eingebundene** Dateien | Marked includes files by reference, so „einbinden“, never „einbetten“ — matching Multi-File_Documents, which uses it throughout. Reserve „eingebettet“ for things physically embedded in a file: eingebettete Bilder, eingebetteter Text (PDF), „Eingebettetes Skript ausführen“. |
+| Save Clipboard Preview | **Zwischenablagevorschau speichern** | Not „Schnellvorschau speichern“: the command saves the preview built from the *clipboard*, and „Schnellvorschau“ names a different concept (and collides with Quick Look). |
+
 ## Do not translate (keep English)
 
 - File names and code identifiers (`Exporting.md`, `Exporting.html`)

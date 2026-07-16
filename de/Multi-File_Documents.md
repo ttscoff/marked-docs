@@ -169,4 +169,4 @@ Beim Betrachten eines Dokuments mit eingebundenen Dateien helfen Ihnen zwei Funk
 
 * **Tastatur:** Ein Druck auf {% kbd shift I %} zeigt kurz ein Popup mit dem Titel der Datei, die an der aktuellen Scrollposition der Vorschau sichtbar ist.
     * Drücken Sie {% kbd Return %} direkt nach {% kbd I %}, wird die angezeigte Datei in Ihrem externen Editor bearbeitet.
-* **Maus:** Wählen Sie im Zahnradmenü „Grenzen eingebetteter Dateien anzeigen“ ({% kbd ctrl cmd B %}), erscheint links in der Vorschau ein farbiger Balken, der segmentiert Anfang und Ende der eingebundenen Dateien markiert. Er zeigt auch verschachtelte Einbindungen. Fahren Sie über einen Abschnitt des Balkens, erscheint der Dateiname; ein Klick öffnet die Datei im gewählten Editor.
+* **Maus:** Wählen Sie im Zahnradmenü „Grenzen eingebundener Dateien anzeigen“ ({% kbd ctrl cmd B %}), erscheint links in der Vorschau ein farbiger Balken, der segmentiert Anfang und Ende der eingebundenen Dateien markiert. Er zeigt auch verschachtelte Einbindungen. Fahren Sie über einen Abschnitt des Balkens, erscheint der Dateiname; ein Klick öffnet die Datei im gewählten Editor.
