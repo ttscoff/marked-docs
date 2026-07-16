@@ -34,11 +34,11 @@ Zusätzliche Statistiken von Flesch/Kincaid und dem Nebelindex sind mit {% kbd o
 
 ### Informationen zur Lesbarkeit
 
-**Flesch Reading Ease:** Höhere Werte weisen auf Material hin, das leichter zu lesen ist; Niedrigere Zahlen kennzeichnen Passagen, die schwieriger zu lesen sind.
+**Flesch Reading Ease:** Höhere Werte kennzeichnen leichter lesbare Texte; niedrigere Werte weisen auf schwierigere Passagen hin.
 
 **90,0–100,0**: durchschnittlicher 11-jähriger Schüler
 **60,0–70,0**: 13- bis 15-jährige Schüler
-**0,0--30,0**: Hochschulabsolventen
+**0,0–30,0**: Hochschulabsolventen
 
 **Flesch-Kincaid-Klassenstufe:** Die Anzahl der Schuljahre, die im Allgemeinen erforderlich sind, um diesen Text zu verstehen.
 
@@ -52,7 +52,7 @@ Zusätzliche Statistiken von Flesch/Kincaid und dem Nebelindex sind mit {% kbd o
 
 Wenn Sie im Zahnradmenü „Erweiterte Statistiken“ auswählen oder {% kbd cmd I %} drücken, wird ein Bereich mit erweiterten Dokumentstatistiken angezeigt, darunter die durchschnittliche Wort- und Satzlänge sowie die durchschnittliche Wortkomplexität.
 
-### Floating Advanced Statistics
+### Schwebende erweiterte Statistiken
 
 ![Floating Info Window][floating]
 
@@ -69,7 +69,7 @@ Wenn Sie beim Schreiben ein bestimmtes Ziel für die Wortzahl haben, können Sie
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualisieren Sie Wortwiederholungen
+## Wortwiederholungen visualisieren
 
 Wenn Sie im Zahnradmenü „Wortwiederholung visualisieren“ auswählen (oder {% kbd ctrl cmd W %} drücken), wird zu einer speziellen Ansicht gewechselt, die Nicht-Textelemente entfernt und Wörter hervorhebt, die in Ihrem Dokument wiederholt werden. Wiederholte Wörter werden hellrosa hervorgehoben. Wenn Sie mit der Maus über ein hervorgehobenes Wort fahren, werden die übereinstimmenden Wörter im gesamten Dokument heller hervorgehoben. Wenn Sie auf ein hervorgehobenes Wort klicken, wird der Hintergrund abgedunkelt und die Hervorhebung bleibt zur weiteren Überprüfung erhalten.
 
