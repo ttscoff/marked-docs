@@ -1,0 +1,414 @@
+# Marked Settings Gaps Localization
+# Locale: de (German)
+# Generated: 2026-07-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in the empty string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Markdownifier, CriticMarkup, etc.)
+# unless your locale normally localizes them.
+#
+# DRAFT lines (when present) are starting translations for review.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# German Settings.strings had ~349 translated keys; a Jul 14 commit
+# accidentally replaced most of them with English. Those are restored.
+# This package is the remaining English keys that still need translation.
+#
+# SUMMARY
+# -------
+#   Settings.strings (gaps) never previously sent: 14
+#   Settings.strings (gaps) already in de-ui-review, still English: 82
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 14
+# Keys still English in Marked/de.lproj/Settings.strings and not previously
+# included in de-ui-review.marked-l10n Settings gaps. Translate in place.
+
+"section.export" = "";
+# EN: Export
+
+"setting.folderPreviewExtensions.placeholder" = "";
+# EN: md, mmd, html
+
+"setting.headerFooterDateFormat.placeholder" = "";
+# EN: %m/%d/%Y
+
+"setting.headerFooterTimeFormat.placeholder" = "";
+# EN: %I:%M %p
+
+"setting.mathJaxSource.cdn" = "";
+# EN: CDN
+
+"setting.outlineModeExtensions.placeholder" = "";
+# EN: itmz, mm, opml
+
+"setting.processor.kramdown" = "";
+# EN: Kramdown
+
+"setting.tocMarker.aUpper" = "";
+# EN: A.
+
+"setting.tocMarker.alpha" = "";
+# EN: α.
+
+"setting.tocMarker.bullet" = "";
+# EN: •
+
+"setting.tocMarker.circle" = "";
+# EN: ○
+
+"setting.tocMarker.square" = "";
+# EN: ■
+
+"setting.wikiLinkDefaultExtension.placeholder" = "";
+# EN: md
+
+"tooltip.headerFooterLogo" = "";
+# EN: Add an image to the header. Drop an image in this well to define the logo. This is what will be used if %logo appears in the format strings below.
+# DRAFT: Fügen Sie der Kopfzeile ein Bild hinzu. Legen Sie ein Bild in dieses Feld ab, um das Logo zu definieren. Dies wird verwendet, wenn %logo in den Formatzeichenfolgen unten erscheint.
+
+
+=== END Settings.strings (gaps) ===
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 82
+# Already listed in de-ui-review.marked-l10n but still English in the app.
+# Skip if you already translated these in a pending return; otherwise fill here.
+
+"section.apps" = "";
+# EN: Applications
+# DRAFT: Anwendungen
+
+"setting.additionalMathJaxConfig" = "";
+# EN: Advanced MathJax configuration (JSON)
+# DRAFT: Erweiterte MathJax-Konfiguration (JSON)
+
+"setting.alphaLevel" = "";
+# EN: Window opacity
+# DRAFT: Fensteropazität
+
+"setting.appsEditorNote" = "";
+# EN: App picker
+# DRAFT: App-Auswahl
+
+"setting.appsEditorNote.body" = "";
+# EN: Use Choose App buttons in legacy Apps preferences (⌥⌘,) to select external editors.
+# DRAFT: Verwenden Sie die Schaltflächen „App auswählen“ in den Einstellungen für ältere Apps (⌥⌘,), um externe Editoren auszuwählen.
+
+"setting.bottomPrintMargin" = "";
+# EN: Bottom margin
+# DRAFT: Unterer Rand
+
+"setting.convertTrackChanges" = "";
+# EN: Convert change tracking ↔ CriticMarkup
+# DRAFT: Änderungsverfolgung konvertieren ↔ CriticMarkup
+
+"setting.customMarkdownProcessor" = "";
+# EN: Custom processor path
+# DRAFT: Custom Prozessorpfad
+
+"setting.customPreprocessor" = "";
+# EN: Custom preprocessor path
+# DRAFT: Custom Präprozessorpfad
+
+"setting.customPreprocessor.placeholder" = "";
+# EN: Path to script
+# DRAFT: Pfad zum Skript
+
+"setting.customPreprocessorDefault" = "";
+# EN: Use custom preprocessor for new documents
+# DRAFT: Verwenden Sie einen benutzerdefinierten Präprozessor für neue Dokumente
+
+"setting.customProcessor.placeholder" = "";
+# EN: Path to script
+# DRAFT: Pfad zum Skript
+
+"setting.customProcessorDefault" = "";
+# EN: Use custom processor for new documents
+# DRAFT: Verwenden Sie einen benutzerdefinierten Prozessor für neue Dokumente
+
+"setting.customRules.tooltip" = "";
+# EN: Edit Custom Rules to configure processors, preprocessors, and conditional CSS.
+# DRAFT: Bearbeiten Sie Custom-Regeln, um Prozessoren, Präprozessoren und bedingtes CSS zu konfigurieren.
+
+"setting.debugHint.body" = "";
+# EN: Help > Open Debug Log to view activity.
+# DRAFT: Hilfe > Debug-Protokoll öffnen, um die Aktivität anzuzeigen.
+
+"setting.debugLevel" = "";
+# EN: Debug output level
+# DRAFT: Debug-Ausgabeebene
+
+"setting.defaultSyntaxStyle" = "";
+# EN: Syntax theme
+# DRAFT: Syntaxthema
+
+"setting.documentTabbingMode.automatic" = "";
+# EN: Follow system
+# DRAFT: Folgen Sie dem System
+
+"setting.documentTabbingMode.tabs" = "";
+# EN: Tab in current window
+# DRAFT: Tab im aktuellen Fenster
+
+"setting.documentTabbingMode.windows" = "";
+# EN: Separate windows
+# DRAFT: Separate Fenster
+
+"setting.embediThoughtsAsMermaid" = "";
+# EN: Mind maps (iThoughts)
+# DRAFT: Mindmaps (iThoughts)
+
+"setting.folderPreviewExtensions" = "";
+# EN: Folder preview extensions
+# DRAFT: Erweiterungen für die Ordnervorschau
+
+"setting.fullDiskAccess.tooltip" = "";
+# EN: Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions.
+# DRAFT: Gewähren Sie vollen Festplattenzugriff auf Marked. Dies kann bei der Ausführung benutzerdefinierter Prozessoren hilfreich sein und das Funktionieren von Wiki-Links und das Laden von Bildern ermöglichen, ohne dass Berechtigungen angefordert werden müssen.
+
+"setting.headerFooterFontSize" = "";
+# EN: Header/footer font size
+# DRAFT: Schriftgröße der Kopf-/Fußzeile
+
+"setting.leftPrintMargin" = "";
+# EN: Left margin
+# DRAFT: Linker Rand
+
+"setting.limitTextWidthPixels" = "";
+# EN: Maximum text width (pixels)
+# DRAFT: Maximale Textbreite (Pixel)
+
+"setting.mathJaxSource" = "";
+# EN: MathJax source
+# DRAFT: MathJax Quelle
+
+"setting.mathNumberEquations" = "";
+# EN: Number equations
+# DRAFT: Zahlengleichungen
+
+"setting.mathNumberEquationsSide.left" = "";
+# EN: Left
+# DRAFT: Links
+
+"setting.mathNumberEquationsSide.right" = "";
+# EN: Right
+# DRAFT: Rechts
+
+"setting.moreThemes.tooltip" = "";
+# EN: Explore the Style Gallery, where you can download or install Custom Styles
+# DRAFT: Erkunden Sie die Style Gallery, wo Sie Custom Styles herunterladen oder installieren können
+
+"setting.openLinksInBackground" = "";
+# EN: Always open links in the background
+# DRAFT: Öffnen Sie Links immer im Hintergrund
+
+"setting.openLinksInBackgroundHint.body" = "";
+# EN: Command-click to open in background.
+# DRAFT: Klicken Sie bei gedrückter Befehlstaste, um es im Hintergrund zu öffnen.
+
+"setting.printBorderAboveFooter" = "";
+# EN: Border above footer
+# DRAFT: Rahmen über der Fußzeile
+
+"setting.printBorderBelowHeader" = "";
+# EN: Border below header
+# DRAFT: Rand unter der Kopfzeile
+
+"setting.printFooterFirstPage" = "";
+# EN: Footer on first page
+# DRAFT: Fußzeile auf der ersten Seite
+
+"setting.printHeaderBottomCenter" = "";
+# EN: Header bottom center
+# DRAFT: Kopfzeile unten in der Mitte
+
+"setting.printHeaderBottomLeft" = "";
+# EN: Header bottom left
+# DRAFT: Kopfzeile unten links
+
+"setting.printHeaderBottomRight" = "";
+# EN: Header bottom right
+# DRAFT: Kopfzeile unten rechts
+
+"setting.printHeaderFirstPage" = "";
+# EN: Header on first page
+# DRAFT: Kopfzeile auf der ersten Seite
+
+"setting.printHeaderTopCenter" = "";
+# EN: Header top center
+# DRAFT: Kopfzeile oben in der Mitte
+
+"setting.printHeaderTopLeft" = "";
+# EN: Header top left
+# DRAFT: Kopfzeile oben links
+
+"setting.printHeaderTopRight" = "";
+# EN: Header top right
+# DRAFT: Kopfzeile oben rechts
+
+"setting.resetAlerts.button" = "";
+# EN: Reset
+# DRAFT: Zurücksetzen
+
+"setting.rightPrintMargin" = "";
+# EN: Right margin
+# DRAFT: Rechter Rand
+
+"setting.scrivenerCompileMetadata" = "";
+# EN: Add compile metadata when missing
+# DRAFT: Fügen Sie Kompilierungsmetadaten hinzu, wenn diese fehlen
+
+"setting.showPageBreaksInPreview" = "";
+# EN: Show page breaks in preview
+# DRAFT: Seitenumbrüche in der Vorschau anzeigen
+
+"setting.swapCommandEHint" = "";
+# EN: Editor shortcut
+# DRAFT: Editor-Verknüpfung
+
+"setting.toctype1" = "";
+# EN: TOC level H1 marker
+# DRAFT: TOC-Level-H1-Marker
+
+"setting.toctype2" = "";
+# EN: TOC level H2 marker
+# DRAFT: TOC-Level-H2-Marker
+
+"setting.toctype3" = "";
+# EN: TOC level H3 marker
+# DRAFT: TOC-Level-H3-Marker
+
+"setting.toctype4" = "";
+# EN: TOC level H4 marker
+# DRAFT: TOC-Level-H4-Marker
+
+"setting.toctype5" = "";
+# EN: TOC level H5 marker
+# DRAFT: TOC-Level-H5-Marker
+
+"setting.toctype6" = "";
+# EN: TOC level H6 marker
+# DRAFT: TOC-Level-H6-Marker
+
+"setting.topPrintMargin" = "";
+# EN: Top margin
+# DRAFT: Oberer Rand
+
+"subsection.debug" = "";
+# EN: Debug
+# DRAFT: Debuggen
+
+"subsection.editors" = "";
+# EN: External Editors
+# DRAFT: Externe Redakteure
+
+"subsection.metadata" = "";
+# EN: YAML and Metadata
+# DRAFT: YAML und Metadaten
+
+"subsection.options" = "";
+# EN: Proofing Options
+# DRAFT: Korrekturoptionen
+
+"subsection.print" = "";
+# EN: Print and PDF
+# DRAFT: Drucken und PDF
+
+"tooltip.additionalMathJaxConfig" = "";
+# EN: Advanced MathJax configuration as JSON (for expert users).
+# DRAFT: Erweiterte MathJax-Konfiguration als JSON (für erfahrene Benutzer).
+
+"tooltip.bottomPrintMargin" = "";
+# EN: Bottom print margin (specified in points).
+# DRAFT: Unterer Druckrand (Angabe in Punkten).
+
+"tooltip.codeCanWrap" = "";
+# EN: If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing text will scroll horizontally.
+# DRAFT: Wenn diese Option aktiviert ist, dürfen Themen einen Umbruch innerhalb von Pre-Code-Blöcken verursachen. Wenn ein Thema keinen Umbruch bietet, wird überlaufender Text horizontal gescrollt.
+
+"tooltip.defaultPrintFontSize" = "";
+# EN: Point size used when Custom font size for export/print is enabled.
+# DRAFT: Punktgröße, die verwendet wird, wenn die Schriftgröße Custom für Export/Druck aktiviert ist.
+
+"tooltip.globalActionPaletteKey" = "";
+# EN: Click the shortcut field to record a hotkey for opening the Quick Action palette when Marked is the active application.
+# DRAFT: Klicken Sie auf das Verknüpfungsfeld, um einen Hotkey zum Öffnen der Schnellaktionspalette aufzuzeichnen, wenn Marked die aktive Anwendung ist.
+
+"tooltip.headerFooterFontSize" = "";
+# EN: Font size for print headers and footers.
+# DRAFT: Schriftgröße für gedruckte Kopf- und Fußzeilen.
+
+"tooltip.leftPrintMargin" = "";
+# EN: Left print margin (specified in points).
+# DRAFT: Linker Druckrand (Angabe in Punkten).
+
+"tooltip.mathJaxSource" = "";
+# EN: Choose whether to load MathJax from the CDN or from a local copy bundled with Marked.
+# DRAFT: Wählen Sie, ob MathJax vom CDN oder von einer lokalen Kopie geladen werden soll, die mit Marked gebündelt ist.
+
+"tooltip.mathNumberEquationsSide" = "";
+# EN: Choose which side equation numbers appear on.
+# DRAFT: Wählen Sie aus, auf welcher Seite die Gleichungsnummern erscheinen sollen.
+
+"tooltip.minimumRepeats" = "";
+# EN: Minimum number of consecutive repeated words before highlighting.
+# DRAFT: Mindestanzahl aufeinanderfolgender wiederholter Wörter vor der Hervorhebung.
+
+"tooltip.noLabels" = "";
+# EN: Generate header IDs based on contents of h1-h6 tags.
+# DRAFT: Generieren Sie Header-IDs basierend auf den Inhalten der h1-h6-Tags.
+
+"tooltip.noSmartyPants" = "";
+# EN: Disable SmartyPants-style punctuation transforms when using MultiMarkdown.
+# DRAFT: Deaktivieren Sie Interpunktionstransformationen im SmartyPants-Stil, wenn Sie MultiMarkdown verwenden.
+
+"tooltip.openLinksInBackground" = "";
+# EN: Open web links in your default browser without switching away from Marked.
+# DRAFT: Öffnen Sie Weblinks in Ihrem Standardbrowser, ohne von Marked zu wechseln.
+
+"tooltip.outlineModeExtensions" = "";
+# EN: File extensions that trigger outline mode (comma-separated).
+# DRAFT: Dateierweiterungen, die den Gliederungsmodus auslösen (durch Kommas getrennt).
+
+"tooltip.panZoomMermaid" = "";
+# EN: Add panning (drag) and zooming (⌘-scroll) to Mermaid diagrams.
+# DRAFT: Fügen Sie den Mermaid-Diagrammen Schwenken (Ziehen) und Zoomen (⌘-Scrollen) hinzu.
+
+"tooltip.requireCmdToCollapse" = "";
+# EN: Require that the command key be held when clicking a headline to collapse/expand.
+# DRAFT: Erfordern, dass die Befehlstaste gedrückt gehalten wird, wenn Sie auf eine Überschrift klicken, um sie zu reduzieren/zu erweitern.
+
+"tooltip.rightPrintMargin" = "";
+# EN: Right print margin (specified in points).
+# DRAFT: Rechter Druckrand (Angabe in Punkten).
+
+"tooltip.settingsBackup.export" = "";
+# EN: Export all preferences as a JSON file that can be imported later.
+# DRAFT: Exportieren Sie alle Einstellungen als JSON-Datei, die später importiert werden kann.
+
+"tooltip.showEditMarker" = "";
+# EN: Show a marker at the most recent edit point (first or last diff, depending on "Reverse diff order" setting).
+# DRAFT: Zeigt eine Markierung am letzten Bearbeitungspunkt an (erstes oder letztes Diff, abhängig von der Einstellung „Diff-Reihenfolge umkehren“).
+
+"tooltip.styleHashTags" = "";
+# EN: Tags receive special capsule styling in the preview.
+# DRAFT: Tags erhalten in der Vorschau ein spezielles Kapsel-Styling.
+
+"tooltip.topPrintMargin" = "";
+# EN: Define print margins (specified in points).
+# DRAFT: Definieren Sie die Druckränder (angegeben in Punkten).
+
+"tooltip.yamlHandling" = "";
+# EN: Determine how to handle YAML front matter. Ignore will leave it in place for the processor to handle, or you can convert it to MMD metadata or remove it entirely.
+# DRAFT: Bestimmen Sie, wie mit der Titelangelegenheit YAML umzugehen ist. Durch Ignorieren bleibt es für die Verarbeitung durch den Prozessor bestehen, Sie können es aber auch in MMD-Metadaten konvertieren oder ganz entfernen.
+
+
+=== END Settings.strings (gaps) ===
