@@ -28,13 +28,19 @@ Im Dokument angezeigte MathJax- und KaTeX-Gleichungen werden für die Darstellun
 
 ## Eigene Exportstile hinzufügen [adding-custom-export-styles]
 
-Sie können eigene Exportstile hinzufügen, indem Sie eine Vorlage und eine `styles.xml`-Datei in `~/Library/Application Support/Marked/Custom Word Styles/` ablegen. So erstellen Sie diese:
+Sie können eigene Exportstile hinzufügen, indem Sie ein zusammengehöriges Dateipaar in `~/Library/Application Support/Marked/Custom Word Styles/` ablegen:
+
+- `STYLENAME.xml` – die Absatz- und Zeichenformatvorlagen von Word (aus der `word/styles.xml` eines Dokuments)
+- `STYLENAME.thmx` – ein optionales Word-Design für Farben, Schriften und Effekte
+
+Ein Word-**Design** (`.thmx`) speichert die Formatvorlagen, die Sie im Dokument bearbeiten, **nicht**. Die liegen im Dokument selbst (oder in einer Vorlage wie `.dotx` / `Normal.dotm`). Marked benötigt die extrahierte `styles.xml` für die Definitionen der Formatvorlagen und die `.thmx` nur für Designfarben, -schriften und -effekte.
+
+So erstellen Sie einen eigenen Exportstil:
 
 1. Öffnen Sie eine mit Marked erzeugte DOCX-Datei in Word.
-2. Bearbeiten Sie dort die Formatvorlage jedes Elements – Rechtsklick auf die Formatvorlage, dann **Ändern…** – und wählen Sie im Dialog **Formatvorlage ändern** jeweils **Neue auf dieser Vorlage basierende Dokumente**.
-3. Speichern Sie die DOCX-Datei.
-4. Erzeugen Sie daraus ein Design: Gehen Sie im Menüband auf **Entwurf**, öffnen Sie links den **Designs**-Katalog und klicken Sie auf **Aktuelles Design speichern…**. Benennen Sie es so, wie es in Markeds Stil-Menü erscheinen soll, und speichern Sie es unter `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.thmx`, wobei `STYLENAME` der Name Ihres Stils ist.
-5. Wechseln Sie in den Finder und suchen Sie die aus Word gespeicherte DOCX-Datei. Duplizieren Sie sie, benennen Sie die Kopie in `FILENAME.zip` um und doppelklicken Sie zum Entpacken darauf.
-6. Im entpackten Dokument sehen Sie einen Ordner `word`, der eine `styles.xml`-Datei enthält. Kopieren Sie diese `styles.xml` in denselben Ordner wie oben und benennen Sie sie `STYLENAME.xml` (wobei `STYLENAME` der Name Ihres Stils ist). Die `.thmx`- und die `.xml`-Datei sollten denselben Basisnamen tragen (nur mit unterschiedlicher Endung).
+2. Bearbeiten Sie die Formatvorlagen, auf die es Ihnen ankommt: Rechtsklick auf eine Formatvorlage im Formatvorlagenkatalog oder im Formatvorlagenbereich, dann **Ändern…** (einen eigenen „Formatvorlagen-Editor“ gibt es nicht). Legen Sie Schriften, Abstände und weitere Formatierung fest und speichern Sie die DOCX-Datei.
+3. Optional übernehmen Sie Designfarben, -schriften und -effekte: Öffnen Sie den Reiter **Entwurf**, öffnen Sie den Designs-Katalog und wählen Sie **Aktuelles Design speichern…**. Speichern Sie es unter `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.thmx` – mit dem Namen, der in Markeds Stil-Menü erscheinen soll.
+4. Duplizieren Sie im Finder die gespeicherte DOCX-Datei, benennen Sie die Kopie in `FILENAME.zip` um und entpacken Sie sie.
+5. Kopieren Sie aus dem entpackten Paket die `word/styles.xml` nach `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.xml` (derselbe Basisname wie die `.thmx`, falls Sie eine erstellt haben).
 
-Beim nächsten DOCX-Export aus Marked erscheint Ihr neuer Stil im Stil-Menü des Speicherdialogs.
+Beim nächsten DOCX-Export aus Marked erscheint Ihr Stil im Stil-Menü des Speicherdialogs.
