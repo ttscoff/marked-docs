@@ -8,7 +8,7 @@ Who is working on which section, so contributors don't translate the same files 
 | Settings | Thomas (@fucx, lead) | done |
 | Supported_Apps | Hilthart (@h3pdesign) | done |
 | Reading_Features | Thomas Ungricht (@Thomas-U) | in progress (5/6 done; AI_Ask_About_Document open) |
-| Just_for_Writers | Hilthart (@h3pdesign) | in progress (5 pages already done by lead — see below, skip those) |
+| Just_for_Writers | Hilthart (@h3pdesign) | in progress (11/18; 5 done by lead — see below, skip those) |
 | Special_Features | Thomas (@fucx, lead) | in progress |
 | Comparisons_FAQ | — | open |
 | Troubleshooting | Thomas Ungricht (@Thomas-U) | offered |
