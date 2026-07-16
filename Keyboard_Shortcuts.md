@@ -30,11 +30,11 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |                 **{{cmd}}M** | Minimize                           |
 | **{{opt}}{{shift}}{{cmd}}F** | Keep on Top                        |
 |         **{{ctrl}}{{cmd}}B** | Show Boundaries of Included Files  |
-|         **{{ctrl}}{{cmd}}L** | Validate URLs                      |
+|         **{{ctrl}}{{cmd}}L** | Validate External Links            |
 |         **{{ctrl}}{{cmd}}W** | Visualize Word Repetition          |
 |         **{{ctrl}}{{opt}}S** | Toggle Speed Read                  |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Ask About Document (Apple Intelligence) |
-|          **{{opt}}{{cmd}}S** | Document Statistics                |
+|          **{{opt}}{{cmd}}S** | Basic Statistics                   |
 | **{{opt}}{{shift}}{{cmd}}S** | Readability Statistics             |
 |                 **{{cmd}}I** | Detailed Statistics                |
 |          **{{opt}}{{cmd}}C** | Toggle Custom Processor            |
@@ -44,7 +44,7 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |   **{{opt}}{{cmd}}{{left}}** | Collapse all sections              |
 |  **{{opt}}{{cmd}}{{right}}** | Expand all sections                |
 |        **{{shift}}{{cmd}}V** | Preview Clipboard                  |
-|                 **{{cmd}}K** | Extract from URL                   |
+|                 **{{cmd}}K** | Markdownify URL                    |
 |         **{{ctrl}}{{cmd}}S** | Save Transient Preview             |
 |     **{{cmd}}\ (Backslash)** | Toggle Fountain/Scrivener Comments |
 |         **{{ctrl}}{{cmd}}C** | Toggle Comment Sidebar             |
