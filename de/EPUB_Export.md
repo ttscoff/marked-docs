@@ -1,58 +1,58 @@
 # <%= @title %>
 
-Marked exportiert vollständig kompatible EPUB-Dateien aus Ihrer Markdown-Vorschau – gestaltet mit denselben integrierten und benutzerdefinierten Designs, die Sie auf dem Bildschirm verwenden, und lesbar in **Apple Books**, **Kobo** und anderen Standard-EPUB-Readern.
+Marked exportiert standardkonforme EPUB-Dateien aus Ihrer Markdown-Vorschau. Sie verwenden dieselben integrierten und eigenen Stile wie die Bildschirmvorschau und sind in **Apple Books**, **Kobo** und anderen gängigen EPUB-Readern lesbar.
 
-Der typische Arbeitsablauf ist **zuerst Vorschau, dann EPUB exportieren**: Öffnen oder kompilieren Sie Ihr Dokument in Marked, wählen Sie ein Thema, lesen Sie es in der Live-Vorschau Korrektur und exportieren Sie es dann, wenn das Buch fertig ist.
+Der typische Arbeitsablauf lautet: **zuerst die Vorschau prüfen, dann EPUB exportieren**. Öffnen oder kompilieren Sie Ihr Dokument in Marked, wählen Sie einen Stil, lesen Sie es in der Live-Vorschau Korrektur und exportieren Sie es, sobald das Buch fertig ist.
 
-## Exportieren eines EPUB
+## EPUB exportieren [exporting-an-epub]
 
-Öffnen Sie [Export Panel](Exporting.html#drawer) ({% kbd shift cmd e %}) oder verwenden Sie **Speichern unter** aus dem Zahnradmenü und wählen Sie **EPUB**.
+Öffnen Sie den [Exportbereich](Exporting.html#drawer) ({% kbd shift cmd e %}) oder wählen Sie im Zahnradmenü **Speichern unter** und anschließend **EPUB**.
 
 Im Dialog zum Speichern von EPUB können Sie Folgendes festlegen:
 
-* **Titel** --- Standardmäßig werden MultiMarkdown-Metadaten oder der Dateiname verwendet
-* **Autor** --- Standardmäßig ist Ihr macOS-Benutzername; Der zuletzt eingegebene Autor wird für den nächsten Export gespeichert
-* **Datum** --- ISO-Format; zum Speichern bearbeitbar
-* **Titelbild** --- optional PNG oder JPG; Marked generiert eine Standard-Cover-Vorschau, wenn keine festgelegt ist
+* **Titel** – standardmäßig aus den MultiMarkdown-Metadaten oder dem Dateinamen
+* **Autor** – standardmäßig Ihr macOS-Benutzername; der zuletzt eingegebene Name wird für den nächsten Export gespeichert
+* **Datum** – ISO-Format; kann beim Speichern bearbeitet werden
+* **Titelbild** – optionale PNG- oder JPG-Datei; ist keines festgelegt, erzeugt Marked eine Standardvorschau
 
-Marked bettet lokale Bilder in EPUB ein und kann Remote-Bilder herunterladen, sodass die fertige Datei in sich geschlossen ist. Exportierte EPUBs werden vor dem Speichern als wohlgeformte XHTML validiert. Dadurch werden Dateien erstellt, die den EPUB-Standards für Verteilung und Zugänglichkeit entsprechen.
+Marked bettet lokale Bilder in das EPUB ein und kann externe Bilder herunterladen, sodass die fertige Datei eigenständig ist. Vor dem Speichern prüft Marked das exportierte EPUB auf wohlgeformtes XHTML. So entstehen Dateien, die den EPUB-Standards für Verteilung und Barrierefreiheit entsprechen.
 
-Siehe [Export Profiles](Exporting.html#export-profiles) zum Speichern von EPUB-Metadaten und Exporteinstellungen für die wiederholte Verwendung.
+Unter [Exportprofile](Exporting.html#export-profiles) erfahren Sie, wie Sie EPUB-Metadaten und Exporteinstellungen zur erneuten Verwendung speichern.
 
-## Styling mit integrierten Themen
+## Gestaltung mit integrierten Stilen [styling-with-built-in-themes]
 
-Der für Ihr Dokument ausgewählte **Vorschaustil** bestimmt das Erscheinungsbild. Jedes integrierte Marked-Theme – Swiss, GitHub, Manuscript und der Rest – kann auf den EPUB-Export angewendet werden.
+Der für Ihr Dokument gewählte **Vorschaustil** bestimmt das Erscheinungsbild des EPUB. Jeder integrierte Marked-Stil – Swiss, GitHub, Manuscript und alle weiteren – kann für den EPUB-Export verwendet werden.
 
 1. Wählen Sie einen Stil aus dem Stilmenü des Vorschaufensters (oder legen Sie einen Standard in {% prefspane Style %} fest).
 2. Überprüfen Sie Typografie, Überschriften, Codeblöcke und Bilder in der Live-Vorschau.
-3. Export nach EPUB --- Marked bündelt das CSS des Themes im Paket EPUB.
+3. Exportieren Sie als EPUB – Marked bündelt das CSS des Stils im EPUB-Paket.
 
-Marked wendet außerdem exportspezifisches CSS zusätzlich zu Ihrem Vorschaudesign an, sodass Elemente wie Fußnoten, Tabellen und syntaxhervorgehobene Codeblöcke in E-Readern korrekt dargestellt werden. Dokumente im Gliederungsmodus verwenden gliederungsoptimierte Exportstile. [Leanpub](Multi-File_Documents.html) `Book.txt` Indizes verwenden automatisch den Leanpub-orientierten Exportstil.
+Zusätzlich zum Vorschaustil wendet Marked exportspezifisches CSS an, damit E-Reader Elemente wie Fußnoten, Tabellen und Codeblöcke mit Syntaxhervorhebung korrekt darstellen. Dokumente im Gliederungsmodus verwenden dafür optimierte Exportstile. [Leanpub](Multi-File_Documents.html)-Indizes namens `Book.txt` verwenden automatisch den Leanpub-Exportstil.
 
-I> EPUB-Leser ignorieren einige Nur-Web-CSS (feste Positionierung, Ansichtsfenster-Tricks usw.). Was Sie in der Vorschau von Marked sehen, ist das Ziel, aber E-Reader-Layout-Engines können Abstände und Schriftarten vereinfachen. Testen Sie es vor der Veröffentlichung in Apple Books oder Ihrem Zielleser.
+I> EPUB-Reader ignorieren manche CSS-Regeln, die nur für das Web gedacht sind (feste Positionierung, Viewport-Techniken usw.). Die Vorschau in Marked zeigt das angestrebte Ergebnis, E-Reader können Abstände und Schriften jedoch vereinfachen. Prüfen Sie das EPUB vor der Veröffentlichung in Apple Books oder Ihrem Ziel-Reader.
 
-## Styling mit benutzerdefinierten Themen
+## Gestaltung mit eigenen Stilen [styling-with-custom-themes]
 
-[Custom Styles](Custom_Styles.html) funktioniert für EPUB genauso wie für Vorschau und PDF:
+[Eigene Stile](Custom_Styles.html) funktionieren für EPUB genauso wie für die Vorschau und PDF:
 
-* Fügen Sie CSS-Dateien in {% prefspane Style %} oder [Style Manager](Custom_Styles.html) hinzu.
-* Wählen Sie vor dem Exportieren das benutzerdefinierte Design aus.
+* Fügen Sie CSS-Dateien unter {% prefspane Style %} oder im [Stil-Manager](Custom_Styles.html) hinzu.
+* Wählen Sie vor dem Export den eigenen Stil aus.
 * Marked bettet Ihr Stylesheet in das exportierte EPUB ein.
 
-Tipps für EPUB-freundliches benutzerdefiniertes CSS:
+Tipps für EPUB-taugliches eigenes CSS:
 
-* Halten Sie die Layouts flüssig – verwenden Sie relative Einheiten und `max-width: 100%` für Bilder (`#wrapper img { max-width: 100%; }` ist eine gute Basislinie).
-* Vermeiden Sie `@media print`-Regeln für das E-Book-Styling; EPUB verwendet die Hauptbildschirmstile sowie das Export-Stylesheet von Marked.
-* [Dark Mode](Previewing.html) Invertierung in der Vorschau verwendet `@media screen` Abfragen; Die meisten EPUB-Reader verwenden das helle Stylesheet, es sei denn, die Reader-App wendet ihr eigenes dunkles Design an.
-* Verwenden Sie [Additional CSS](Custom_Styles.html) in den Stileinstellungen, um alle Designs gleichzeitig zu optimieren (z. B. eine einheitliche Schriftgröße für alle Exporte).
+* Verwenden Sie flexible Layouts, relative Einheiten und `max-width: 100%` für Bilder (`#wrapper img { max-width: 100%; }` ist eine gute Grundlage).
+* Vermeiden Sie `@media print`-Regeln für die E-Book-Gestaltung; EPUB verwendet die allgemeinen Bildschirmstile sowie das Export-Stylesheet von Marked.
+* Die [Dunkelmodus](Previewing.html)-Invertierung der Vorschau verwendet `@media screen`-Abfragen. Die meisten EPUB-Reader verwenden das helle Stylesheet, sofern die Reader-App nicht selbst einen dunklen Stil anwendet.
+* Verwenden Sie [Zusätzliches CSS](Custom_Styles.html) in den Stileinstellungen, um alle Stile gleichzeitig anzupassen, beispielsweise mit einer einheitlichen Schriftgröße für alle Exporte.
 
-Hinweise zur Erstellung finden Sie unter [Creating Custom CSS](Writing_Custom_CSS.html).
+Hinweise zur Erstellung finden Sie unter [Eigenes CSS erstellen](Writing_Custom_CSS.html).
 
-## Syntaxhervorhebung und Mathematik
+## Syntaxhervorhebung und Mathematik [syntax-highlighting-and-math]
 
-Wenn **Syntaxhervorhebung beim Export einbeziehen** in {% prefspane Export %} aktiviert ist, werden Codeblöcke mit denselben Syntaxfarben wie in Ihrer Vorschau exportiert. Mit [MathJax](MathJax.html) gerenderte Mathematik ist im EPUB enthalten, sofern dies für die E-Reader-Unterstützung erforderlich ist.
+Wenn unter {% prefspane Export %} **Syntaxhervorhebung beim Export einschließen** aktiviert ist, werden Codeblöcke mit denselben Syntaxfarben wie in der Vorschau exportiert. Mit [MathJax](MathJax.html) gerenderte Formeln werden in der für E-Reader erforderlichen Form in das EPUB eingebunden.
 
-## Metadaten in Ihrer Quelldatei
+## Metadaten in Ihrer Quelldatei [metadata-in-your-source-file]
 
 Sie können EPUB-Metadaten im Dokument anstelle des Speicherdialogs festlegen. Verwenden Sie am Anfang einer Markdown-Datei (oder auf einer Scrivener-Metadatenseite) Schlüssel im MultiMarkdown-Stil:
 
@@ -62,35 +62,35 @@ author: Your Name
 cover image: path/to/image.jpg
 ```
 
-`cover image` akzeptiert einen Pfad relativ zum Dokument oder einen absoluten Pfad. PNG und JPG werden unterstützt. Dialogwerte überschreiben oder ergänzen fehlende Metadaten beim Export.
+`cover image` akzeptiert einen zum Dokument relativen oder einen absoluten Pfad. PNG und JPG werden unterstützt. Beim Export überschreiben die Werte aus dem Dialog vorhandene Metadaten oder ergänzen fehlende Angaben.
 
-## Bücher mit mehreren Dateien
+## Bücher mit mehreren Dateien [multi-file-books]
 
-Kompilieren Sie für lange Werke Kapitel mit [Multi-File Documents](Multi-File_Documents.html) --- Indexdateien, Scrivener-Exporten, Leanpub `Book.txt` oder Indizes im GitBook-Stil. Marked überwacht die enthaltenen Dateien, zeigt eine Vorschau des gesamten Buchs an und exportiert einen EPUB aus dem kompilierten HTML.
+Stellen Sie bei längeren Werken die Kapitel mit [Dokumenten aus mehreren Dateien](Multi-File_Documents.html) zusammen – über Indexdateien, Scrivener-Exporte, Leanpub-`Book.txt` oder Indizes im GitBook-Stil. Marked überwacht die eingebundenen Dateien, zeigt eine Vorschau des gesamten Buchs und exportiert aus dem kompilierten HTML ein EPUB.
 
-Überschriften im kompilierten Dokument werden zum EPUB [table of contents](Document_Navigation.html) für die Navigation in Apple Books und anderen Readern.
+Die Überschriften im kompilierten Dokument bilden das [EPUB-Inhaltsverzeichnis](Document_Navigation.html) für die Navigation in Apple Books und anderen Readern.
 
-## Lesen und Veröffentlichen
+## Lesen und Veröffentlichen [reading-and-publishing]
 
-Exportierte EPUBs werden direkt in **Apple Books** geöffnet (doppelklicken Sie auf die Datei oder verwenden Sie **Datei → Zur Bibliothek hinzufügen**). Sie funktionieren auch in Kobo, Thorium, Calibre und den meisten EPUB 3-kompatiblen Apps.
+Exportierte EPUBs lassen sich direkt in **Apple Books** öffnen (doppelklicken Sie auf die Datei oder wählen Sie **Ablage → Zur Mediathek hinzufügen**). Sie funktionieren auch in Kobo, Thorium, Calibre und den meisten EPUB-3-kompatiblen Apps.
 
-### Apple Books
+### Apple Books [apple-books]
 
-Ziehen Sie ein exportiertes `.epub` in die Bücher-App oder fügen Sie es über **Datei → Importieren** hinzu. Custom Typografie und Cover-Art aus Ihrem Marked-Thema. Verwenden Sie Apple Books auf Mac, iPad oder iPhone, um das Layout vor der Freigabe zu überprüfen.
+Ziehen Sie eine exportierte `.epub`-Datei in die Bücher-App oder fügen Sie sie über **Ablage → Importieren** hinzu. Eigene Typografie und das Titelbild aus Ihrem Marked-Stil bleiben erhalten. Prüfen Sie das Layout vor der Freigabe mit Apple Books auf dem Mac, iPad oder iPhone.
 
-### Kindle Direct Publishing (KDP)
+### Kindle Direct Publishing (KDP) [kindle-direct-publishing-kdp]
 
-EPUB ist ein akzeptiertes Upload-Format für [Kindle Direct Publishing](https://kdp.amazon.com/). Aus Marked exportieren und die Datei `.epub` hochladen; Amazon konvertiert es für die Kindle-Lieferung. KDP akzeptiert auch [DOCX](Working_with_DOCX.html). Aktuelle Anforderungen finden Sie im [supported eBook formats](https://kdp.amazon.com/en_US/help/topic/G200634390) von Amazon.
+EPUB ist ein zulässiges Upload-Format für [Kindle Direct Publishing](https://kdp.amazon.com/). Exportieren Sie die `.epub`-Datei aus Marked und laden Sie sie hoch; Amazon konvertiert sie für die Auslieferung auf Kindle-Geräten. KDP akzeptiert auch [DOCX](Working_With_DOCX.html). Die aktuellen Anforderungen finden Sie in Amazons Übersicht der [unterstützten E-Book-Formate](https://kdp.amazon.com/en_US/help/topic/G200634390).
 
-**MOBI ist nicht erforderlich** für neue KDP-Titel. Marked exportiert kein MOBI.
+Für neue KDP-Titel **ist MOBI nicht erforderlich**. Marked exportiert kein MOBI.
 
-Optional: Sehen Sie sich vor dem Hochladen eine Vorschau des Kindle-Layouts mit dem kostenlosen [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) von Amazon an.
+Optional können Sie das Kindle-Layout vor dem Hochladen mit Amazons kostenlosem [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) prüfen.
 
-## Verwandt
+## Verwandt [related]
 
-* [HTML Export](HTML_Export.html) --- eigenständiger HTML mit eingebetteten Stilen und Bildern
-* [Exporting](Exporting.html) --- Panel, Profile und andere Formate exportieren
-* [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) --- Vorschau des Workflows vor dem Export
-* [Custom Styles](Custom_Styles.html) und [Custom Style Generator](Custom_Style_Generator.html)
-* [Multi-File Documents](Multi-File_Documents.html) --- Bücher und Kapitelindizes
-* [AppleScript export](AppleScript_Support.html) --- EPUB-Export automatisieren
+* [HTML-Export](HTML_Export.html) – eigenständiges HTML mit eingebetteten Stilen und Bildern
+* [Exportieren](Exporting.html) – Exportbereich, Profile und weitere Formate
+* [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_Mac.html) – Arbeitsablauf vor dem Export prüfen
+* [Eigene Stile](Custom_Styles.html) und [Generator für eigene Stile](Custom_Style_Generator.html)
+* [Dokumente mit mehreren Dateien](Multi-File_Documents.html) – Bücher und Kapitelindizes
+* [AppleScript-Export](AppleScript_Support.html) – EPUB-Export automatisieren

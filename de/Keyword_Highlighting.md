@@ -2,13 +2,13 @@
 
 Schwierige Ausdrücke auffangen und wichtige Phrasen hervorheben.
 
-## Schlüsselwörter hervorheben
+## Schlüsselwörter hervorheben [highlighting-keywords]
 
 Durch die Schlüsselworthervorhebung in Marked können Sie häufig vorkommende Phrasen erkennen, die Sie vermeiden möchten, alternative Begriffe finden oder sie einfach für allgemeine Zwecke hervorheben. Die Liste der Schlüsselwörter, die für jede Kategorie verwendet werden, kann im {% prefspane Proofing %} bearbeitet werden.
 
-Aktivieren Sie die Hervorhebung mit {% kbd shift cmd H %} im Zahnradmenü ({% appmenu {{gear}}, Highlight Keywords %}) oder öffnen Sie die Schlüsselwortschublade mithilfe des Markierungssymbols unten links (neben dem Zahnradmenü). Die Schublade kann auch mit der Tastenkombination {% kbd shift cmd K %} geöffnet werden. Die Hervorhebung wird beim Öffnen der Schublade automatisch aktiviert und kann mit dem Schalter auf der linken Seite der Schublade ein- und ausgeschaltet werden.
+Aktivieren Sie die Hervorhebung mit {% kbd shift cmd H %} im Zahnradmenü ({% appmenu {{gear}}, Schlüsselwörter hervorheben %}) oder öffnen Sie die Schlüsselwortschublade mithilfe des Markierungssymbols unten links (neben dem Zahnradmenü). Die Schublade kann auch mit der Tastenkombination {% kbd shift cmd K %} geöffnet werden. Die Hervorhebung wird beim Öffnen der Schublade automatisch aktiviert und kann mit dem Schalter auf der linken Seite der Schublade ein- und ausgeschaltet werden.
 
-## Die Keyword-Schublade
+## Die Schlüsselwortschublade [the-keyword-drawer]
 
 ![Keyword Drawer][kwd]
 
@@ -22,7 +22,7 @@ Mit der Tastatur können Sie schnell durch die Highlights navigieren. Wenn Sie `
 
 Wenn auf ein hervorgehobenes Wort oder eine hervorgehobene Phrase geklickt wird, wird dieser Typ zum Ziel für die Navigation und mit `[` oder `]` wird von diesem Punkt im Dokument aus navigiert.
 
-## Schlüsselwörter bearbeiten
+## Schlüsselwörter bearbeiten [editing-keywords]
 
 ![Proofreading Settings][proofprefs]
 
@@ -36,7 +36,7 @@ Reguläre Ausdrücke können verwendet werden, indem der Ausdruck mit Schrägstr
 
 Das Obige entspricht allen Wörtern, die auf „ly“ enden, um sie hervorzuheben. Die Syntax für reguläre Ausdrücke in der Schlüsselworthervorhebung von Marked ist [same as JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Temporäre Schlüsselwörter
+## Temporäre Schlüsselwörter [temporary-keywords]
 
 Sie können der Schlüsselwortschublade auch temporäre Schlüsselwörter hinzufügen, indem Sie den Notizblock bearbeiten. Genau wie in den Feldern {% prefspane Proofing %} fügen Sie ein Schlüsselwort oder eine Phrase pro Zeile hinzu, wobei reguläre Ausdrücke zulässig sind (umgeben von Schrägstrichen). Klicken Sie nach der Bearbeitung temporärer Schlüsselwörter unbedingt auf die Schaltfläche „Aktualisieren“ (oder drücken Sie {% kbd cmd return  %}), um die Änderungen zu speichern und sie in Ihrem Dokument hervorgehoben anzuzeigen.
 
@@ -44,11 +44,11 @@ Reguläre Ausdrücke funktionieren auch im temporären Schlüsselwortfeld. Umgeb
 
 Temporäre Schlüsselwörter sind für Situationen gedacht, in denen die Schlüsselwortdichte wichtig ist. Sie ermöglichen es Ihnen, schnell zu erkennen, wie oft Sie die Zielwörter verwendet haben, und ihre Positionen im Dokument hervorzuheben. Die Anzahl der Treffer für die temporären Schlüsselwörter wird gut sichtbar in der Schublade angezeigt.
 
-Sehen Sie sich auch den Befehl ["Visualize Word Repetition"][wordrep] an, um überstrapazierte Wörter in Ihrem Text zu finden.
+Sehen Sie sich auch den Befehl [„Wortwiederholungen visualisieren“][wordrep] an, um überstrapazierte Wörter in Ihrem Text zu finden.
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Passive Stimme
+## Passiv [passive-voice]
 
 Marked weist auf die Verwendung von „Passiv“ in englischen Texten hin. Als [defined by Wikipedia][passive]:
 
@@ -59,6 +59,6 @@ Passiv ist nicht böse, wie Sie über [in posts by linguist Geoffrey K. Pullum][
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Doppelte Wörter
+## Doppelte Wörter [doubled-words]
 
 Doppelte Wörter (z. B. „the the“) werden automatisch orange hervorgehoben, wenn die Schlüsselworthervorhebung aktiviert ist. Dies ist derzeit nicht konfigurierbar, dürfte sich aber beim Korrekturlesen als nützlich erweisen.
