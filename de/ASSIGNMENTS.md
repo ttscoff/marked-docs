@@ -10,7 +10,7 @@ Who is working on which section, so contributors don't translate the same files 
 | Reading_Features | Thomas Ungricht (@Thomas-U) | in progress (5/6 done; AI_Ask_About_Document open) |
 | Just_for_Writers | Hilthart (@h3pdesign) | done |
 | Special_Features | Thomas (@fucx, lead) | done |
-| Comparisons_FAQ | — | open |
+| Comparisons_FAQ | Thomas (@fucx, lead) | in progress |
 | Troubleshooting | Thomas Ungricht (@Thomas-U) | offered |
 | About_Markdown | Hilthart (@h3pdesign) | in progress (2/7; Processor_Selection and Markdown_Dingus done — skip those) |
 | Credits | Thomas Ungricht (@Thomas-U) | done (license pages stay English) |
