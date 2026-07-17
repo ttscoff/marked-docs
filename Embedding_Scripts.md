@@ -33,7 +33,7 @@ Insert JavaScript from URL
 Insert JavaScript
 : Opens a code editor where you can write/paste your own JavaScript code
 
-These scripts will be inserted at the end of the preview, before the document tag. If you need to call an init function or update every time the preview updates, see [Including Raw JavaScript](Additional_Javascript.html#rawjs), and familiarize yourself with Marked's [hooks](#hooks).
+These scripts will be inserted at the end of the preview, before the document tag. If you need to call an init function or update every time the preview updates, see [Including Raw JavaScript](Embedding_Scripts.html#hooks), and familiarize yourself with Marked's [hooks](#hooks).
 
 ## Mermaid and Other Scripts [mermaid]
 

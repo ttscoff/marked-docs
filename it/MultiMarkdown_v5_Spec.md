@@ -41,7 +41,7 @@ custom: value
 Content
 ---
 
-# Document Content [document-content]
+# Document Content
 ```
 
 **Variabili dei metadati**
@@ -135,7 +135,7 @@ Non ci sono regole sul formato della chiave di citazione che usi (ad esempio Doe
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Tipi di riferimento**
@@ -256,14 +256,14 @@ This is a {~~deletion~>replacement~~}.
 - Generazione TOC personalizzabile
 
 ```markdown
-# Document Title [document-title]
+# Document Title
 
 {{TOC}}
 
-## Section 1 [section-1]
+## Section 1
 Content here...
 
-## Section 2 [section-2]
+## Section 2
 More content...
 ```
 

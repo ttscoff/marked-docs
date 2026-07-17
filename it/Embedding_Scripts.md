@@ -35,7 +35,7 @@ Inserisci JavaScript dall'URL
 Inserisci JavaScript
 : apre un editor di codice in cui puoi scrivere/incollare il tuo codice JavaScript
 
-Questi script verranno inseriti alla fine dell'anteprima, prima del tag del documento. Se hai bisogno di chiamare una funzione init o aggiornare ogni volta che l'anteprima si aggiorna, vedi [Incluso JavaScript Raw](Additional_Javascript.html#rawjs) e familiarizza con gli [hook](#hooks) di Marked.
+Questi script verranno inseriti alla fine dell'anteprima, prima del tag del documento. Se hai bisogno di chiamare una funzione init o aggiornare ogni volta che l'anteprima si aggiorna, vedi [Incluso JavaScript Raw](Embedding_Scripts.html#hooks) e familiarizza con gli [hook](#hooks) di Marked.
 
 ## Sirena e altri script [mermaid]
 

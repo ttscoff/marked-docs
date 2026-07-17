@@ -378,4 +378,4 @@ Le esportazioni non riuscite impostano la stringa di errore dello script sul com
 
 ## Integrazione con altri strumenti [integration-with-other-tools]
 
-Le applicazioni possono utilizzare la superficie AppleScript di Marked per leggere i metadati del documento. Per l'app Scorciatoie, vedere [Integrazione Scorciatoie](Shortcuts_Integration.html). Per flussi di lavoro basati su shell, osservatori di cartelle e callback di editor, [Gestore URL](URL_Handler.html) è spesso più semplice. Il [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) include script e servizi aggiuntivi.
+Le applicazioni possono utilizzare la superficie AppleScript di Marked per leggere i metadati del documento. Per flussi di lavoro basati su shell, osservatori di cartelle e callback di editor, [Gestore URL](URL_Handler.html) è spesso più semplice. Il [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) include script e servizi aggiuntivi.

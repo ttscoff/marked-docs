@@ -139,10 +139,10 @@ This text is completely ignored by kramdown.
 - Evidenziazione automatica della sintassi per blocchi di codice protetti
 - Supporto per molti linguaggi di programmazione
 
-    "rubino."
-    sicuramente ciao
-      mette "Ciao, mondo!"
-    fine
+    ```ruby
+    def hello
+      puts "Hello, World!"
+    end
     ```
 
 **Blocchi di codice standard**

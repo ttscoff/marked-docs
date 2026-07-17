@@ -35,7 +35,7 @@ URLからJavaScriptを挿入
 JavaScript を挿入する
 : 独自の JavaScript コードを作成/貼り付けることができるコード エディターが開きます。
 
-これらのスクリプトは、プレビューの最後、ドキュメント タグの前に挿入されます。 init 関数を呼び出す必要がある場合、またはプレビューが更新されるたびに更新する必要がある場合は、[Raw JavaScript を含む](Additional_Javascript.html#rawjs) を参照し、Marked の [フック](#hooks) についてよく理解してください。
+これらのスクリプトは、プレビューの最後、ドキュメント タグの前に挿入されます。 init 関数を呼び出す必要がある場合、またはプレビューが更新されるたびに更新する必要がある場合は、[Raw JavaScript を含む](Embedding_Scripts.html#hooks) を参照し、Marked の [フック](#hooks) についてよく理解してください。
 
 ## マーメイドとその他のスクリプト [mermaid]
 

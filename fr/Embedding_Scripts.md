@@ -33,7 +33,7 @@ Insérer du JavaScript à partir de l'URL
 Insérer du JavaScript
 : Ouvre un éditeur de code dans lequel vous pouvez écrire/coller votre propre code JavaScript
 
-Ces scripts seront insérés à la fin de l'aperçu, avant la balise du document. Si vous devez appeler une fonction init ou mettre à jour à chaque fois que l'aperçu est mis à jour, consultez [Inclure le JavaScript brut](Additional_Javascript.html#rawjs) et familiarisez-vous avec les [hooks](#hooks) de Marked.
+Ces scripts seront insérés à la fin de l'aperçu, avant la balise du document. Si vous devez appeler une fonction init ou mettre à jour à chaque fois que l'aperçu est mis à jour, consultez [Inclure le JavaScript brut](Embedding_Scripts.html#hooks) et familiarisez-vous avec les [hooks](#hooks) de Marked.
 
 ## Mermaid et autres scripts [mermaid]
 

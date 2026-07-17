@@ -33,7 +33,7 @@ JavaScript von URL einfügen
 JavaScript einfügen
 : Öffnet einen Code-Editor, in dem Sie eigenen JavaScript-Code schreiben oder einfügen
 
-Diese Skripte werden am Ende der Vorschau vor dem Dokument-Tag eingefügt. Wenn Sie bei jeder Aktualisierung der Vorschau eine Init-Funktion aufrufen oder etwas nachziehen müssen, lesen Sie [Rohes JavaScript einbinden](Additional_Javascript.html#rawjs) und machen Sie sich mit Markeds [Hooks](#hooks) vertraut.
+Diese Skripte werden am Ende der Vorschau vor dem Dokument-Tag eingefügt. Wenn Sie bei jeder Aktualisierung der Vorschau eine Init-Funktion aufrufen oder aktualisieren müssen, lesen Sie [Including Raw JavaScript](Embedding_Scripts.html#hooks) und machen Sie sich mit [hooks](#hooks) von Marked vertraut.
 
 ## Mermaid und andere Skripte [mermaid]
 

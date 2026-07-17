@@ -4,7 +4,7 @@
 
 **Marked Quick Look** は、Markdown およびプレーンテキスト ファイル用の Quick Look プレビュー拡張機能を追加する別の Mac App Store アプリです。 Finder でスペースバーを押すと (または macOS がサポートする場合はどこでも Quick Look を使用して)、生のソースではなくスタイル付きの HTML プレビューが表示されます。
 
-Marked Quick Look は **Marked 3 には含まれていません**。これは別途購入する必要があります (Mac App Store で **$4.99**)。 <!-- MAS リンク: 利用可能な場合は、ここに App Store URL を追加します -->
+Marked Quick Look は **Marked 3 には含まれていません**。これは別途購入する必要があります (Mac App Store で **$9.99**)。 <!-- MAS リンク: 利用可能な場合は、ここに App Store URL を追加します -->
 
 I> Marked Quick Look と Marked 3 は独立した製品です。 Marked を購入しても Quick Look 拡張機能はインストールされません。また、Marked Quick Look を購入しても Marked ライセンスは含まれません。 Marked がインストールされている場合、プレビューにはオプションの **Open in Marked** ボタンが含まれます。
 

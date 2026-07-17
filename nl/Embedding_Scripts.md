@@ -33,7 +33,7 @@ JavaScript invoegen vanaf URL
 JavaScript invoegen
 : Opent een code-editor waarin u uw eigen JavaScript-code kunt schrijven/plakken
 
-Deze scripts worden aan het einde van het voorbeeld ingevoegd, vóór de documenttag. Als u elke keer dat de preview wordt bijgewerkt een init-functie moet aanroepen of moet bijwerken, raadpleeg dan [Including Raw JavaScript](Additional_Javascript.html#rawjs) en maak uzelf vertrouwd met de [hooks](#hooks) van Marked.
+Deze scripts worden aan het einde van het voorbeeld ingevoegd, vóór de documenttag. Als u elke keer dat de preview wordt bijgewerkt een init-functie moet aanroepen of moet bijwerken, raadpleeg dan [Including Raw JavaScript](Embedding_Scripts.html#hooks) en maak uzelf vertrouwd met de [hooks](#hooks) van Marked.
 
 ## Zeemeermin en andere scripts [mermaid]
 

@@ -25,12 +25,8 @@ L'integrazione AppleScript consente inoltre ad applicazioni come Tags.app di fun
 
 Contrassegnato include [Azioni scorciatoie] native su macOS 13 o versioni successive. Utilizza **Apri ed esporta file** per flussi di lavoro dal Finder a PDF, **Esporta documento** per tutto ciò che è già aperto in Contrassegnato o **Imposta stile anteprima** per modificare i temi prima dell'esportazione. Le azioni di esportazione accettano **profili**, anteprima **stili** e opzioni come **dimensione pagina**, **margini** e **dimensione carattere** (stessa semantica dei record AppleScript `with`).
 
-[shortcuts]: Shortcuts_Integration.html
 {% endnote %}
 
-## Gestore URL [shortcuts]
-
-Il [gestore URL contrassegnato] [urlhandler] consente un'integrazione estesa semplicemente chiamando gli URL, da AppleScript o con un comando di base `open` in uno script di shell.
 
 ## Pacchetto bonus contrassegnato [url-handler]
 

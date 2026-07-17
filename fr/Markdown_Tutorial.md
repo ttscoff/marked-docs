@@ -11,12 +11,12 @@ Markdown est un langage de balisage léger qui vous permet d'écrire dans un for
 Créez des titres en utilisant des symboles dièse (`#`). Le nombre de dièses détermine le niveau de titre :
 
 ```markdown
-# Titre 1 [header-1]
-## Titre 2 [header-2]
-### Titre 3 [header-3]
-#### Titre 4 [header-4]
-##### Titre 5 [header-5]
-###### Titre 6 [header-6]
+# Titre 1
+## Titre 2
+### Titre 3
+#### Titre 4
+##### Titre 5
+###### Titre 6
 ```
 
 ### Emphase [emphasis]

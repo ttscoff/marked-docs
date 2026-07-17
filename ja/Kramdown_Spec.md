@@ -139,11 +139,11 @@ This text is completely ignored by kramdown.
 - フェンスで囲まれたコードブロックの自動構文ハイライト
 - 多くのプログラミング言語のサポート
 
-    「ルビー」
-    確かにこんにちは
-      「Hello, World!」を入力します。
-    終わり
-    「」
+    ```ruby
+    def hello
+      puts "Hello, World!"
+    end
+    ```
 
 **標準コードブロック**
 

@@ -125,31 +125,31 @@ mk --extract https://example.com/article
 ## Voorbeelden [examples]
 
 ``` bash
-# Open een bestand [open-a-file]
+# Open een bestand
 mk document.md
 
-# Stream prijsverlaging vanuit een bestand [stream-markdown-from-a-file]
+# Stream prijsverlaging vanuit een bestand
 kattennotities.md | mk
 
-# Verwerken en bekijken [process-and-preview]
+# Verwerken en bekijken
 grep -i "belangrijke" notes.md | mk
 
-# Vernieuw alle voorbeelden [refresh-all-previews]
+# Vernieuw alle voorbeelden
 mk --alles vernieuwen
 
-# Voeg een aangepaste stijl toe [add-a-custom-style]
+# Voeg een aangepaste stijl toe
 mk --add-style ~/Documents/MijnTheme.css
 
-# Stel voorkeuren in [set-preferences]
+# Stel voorkeuren in
 mk --standaard syntaxisHighlight=1 processor=multimarkdown
 
-# Voer JavaScript uit in alle vensters [run-javascript-in-all-windows]
+# Voer JavaScript uit in alle vensters
 mk --dojs "window.scrollTo(0,0)" allemaal
 
-# Extraheer inhoud van een webpagina [extract-content-from-a-webpage]
+# Extraheer inhoud van een webpagina
 mk --extract https://blog.example.com/article
 
-# Bekijk direct een voorbeeld van tekst [preview-text-directly]
+# Bekijk direct een voorbeeld van tekst
 mk --preview "## Hallo\n\nDit is **markdown** tekst!"
 ```
 
@@ -170,7 +170,7 @@ Gebruik `mk` in shellscripts voor automatisering:
 
 ```bash
 #!/bin/bash
-# Watch a file and stream changes to Marked [watch-a-file-and-stream-changes-to-marked]
+# Watch a file and stream changes to Marked
 fswatch -o document.md | while read; do
   cat document.md | mk
 done
@@ -181,10 +181,10 @@ done
 Combineer met ander gereedschap:
 
 ``` bash
-# Converteer klembord naar prijsverlaging en voorbeeld [convert-clipboard-to-markdown-and-preview]
+# Converteer klembord naar prijsverlaging en voorbeeld
 pbpaste | afwaardering | mk
 
-# Zoeken en bekijken [search-and-preview]
+# Zoeken en bekijken
 grep -r "TODO" . | hoofd -20 | mk
 ```
 

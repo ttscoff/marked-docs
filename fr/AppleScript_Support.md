@@ -376,4 +376,4 @@ Les exports échoués définissent une chaîne d'erreur de script sur la command
 
 ## Intégration avec d'autres outils [integration-with-other-tools]
 
-Les applications peuvent utiliser la surface AppleScript de Marked pour lire les métadonnées de document. Pour l'app Raccourcis, consultez [Intégration avec Raccourcis](Shortcuts_Integration.html). Pour les flux de travail basés sur des scripts shell, la surveillance de dossiers, et les callbacks d'éditeur, le [gestionnaire d'URL](URL_Handler.html) est souvent plus simple. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.
+Les applications peuvent utiliser la surface AppleScript de Marked pour lire les métadonnées de document. Pour les flux de travail basés sur des scripts shell, la surveillance de dossiers, et les callbacks d'éditeur, le [gestionnaire d'URL](URL_Handler.html) est souvent plus simple. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.

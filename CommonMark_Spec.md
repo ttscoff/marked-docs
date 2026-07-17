@@ -31,7 +31,7 @@ CommonMark enforces more consistent parsing behavior:
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: Requires blank line before heading*

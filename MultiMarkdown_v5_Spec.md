@@ -39,7 +39,7 @@ custom: value
 Content
 ---
 
-# Document Content [document-content]
+# Document Content
 ```
 
 **Metadata Variables**
@@ -133,7 +133,7 @@ There are no rules on the citation key format that you use (e.g. Doe:2006), but 
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Reference Types**
@@ -254,14 +254,14 @@ This is a {~~deletion~>replacement~~}.
 - Customizable TOC generation
 
 ```markdown
-# Document Title [document-title]
+# Document Title
 
 {{TOC}}
 
-## Section 1 [section-1]
+## Section 1
 Content here...
 
-## Section 2 [section-2]
+## Section 2
 More content...
 ```
 

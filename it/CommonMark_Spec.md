@@ -33,7 +33,7 @@ CommonMark applica un comportamento di analisi più coerente:
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: richiede una riga vuota prima dell'intestazione*
@@ -67,7 +67,7 @@ Text
 - Richiede rientro e marcatori di chiusura coerenti
 
 
-    "linguaggio".
+    ```language
     codice qui
     ```
 

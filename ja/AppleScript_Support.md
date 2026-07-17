@@ -378,4 +378,4 @@ end tell
 
 ## 他のツールとの統合 [integration-with-other-tools]
 
-アプリケーションは、Marked の AppleScript サーフェスを使用してドキュメントのメタデータを読み取ることができます。ショートカットアプリについては、「ショートカット統合」(Shortcuts_Integration.html)をご覧ください。シェル駆動のワークフロー、フォルダー ウォッチャー、エディター コールバックの場合、多くの場合、[URL ハンドラー](URL_Handler.html) の方が単純です。 [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) には、追加のスクリプトとサービスが含まれています。
+html) の方が単純です。 [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) には、追加のスクリプトとサービスが含まれています。

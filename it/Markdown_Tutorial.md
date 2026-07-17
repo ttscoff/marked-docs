@@ -13,12 +13,12 @@ Markdown è un linguaggio di markup leggero che ti consente di scrivere utilizza
 Crea intestazioni utilizzando i simboli hash (`#`). Il numero di hash determina il livello di intestazione:
 
 ```markdown
-# Header 1 [header-1]
-## Header 2 [header-2]
-### Header 3 [header-3]
-#### Header 4 [header-4]
-##### Header 5 [header-5]
-###### Header 6 [header-6]
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
 ```
 
 ### Enfasi [emphasis]

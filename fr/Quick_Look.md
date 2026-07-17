@@ -2,7 +2,7 @@
 
 **Marked Quick Look** est une application distincte du Mac App Store qui ajoute une extension d'aperçu Quick Look pour les fichiers Markdown et texte brut. Appuyez sur la barre d'espace dans le Finder (ou utilisez Quick Look partout où macOS le prend en charge) pour voir un aperçu HTML stylisé au lieu de la source brute.
 
-Marked Quick Look n'est **pas inclus avec Marked 3**. C'est un achat séparé (**4,99 $** sur le Mac App Store). <!-- MAS link: add App Store URL here when available -->
+Marked Quick Look n'est **pas inclus avec Marked 3**. C'est un achat séparé (**9,99 $** sur le Mac App Store). <!-- MAS link: add App Store URL here when available -->
 
 I> Marked Quick Look et Marked 3 sont des produits indépendants. Acheter Marked n'installe pas l'extension Quick Look, et acheter Marked Quick Look n'inclut pas de licence Marked. L'aperçu inclut un bouton facultatif **Open in Marked** lorsque Marked est installé.
 

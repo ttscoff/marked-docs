@@ -375,4 +375,4 @@ Failed exports set the script error string on the command (visible in Script Edi
 
 ## Integration with other tools [integration-with-other-tools]
 
-Applications can use Marked's AppleScript surface to read document metadata. For the Shortcuts app, see [Shortcuts Integration](Shortcuts_Integration.html). For shell-driven workflows, folder watchers, and editor callbacks, the [URL Handler](URL_Handler.html) is often simpler. The [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) includes additional scripts and services.
+Applications can use Marked's AppleScript surface to read document metadata. For shell-driven workflows, folder watchers, and editor callbacks, the [URL Handler](URL_Handler.html) is often simpler. The [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) includes additional scripts and services.

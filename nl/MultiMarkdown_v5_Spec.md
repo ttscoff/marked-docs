@@ -39,7 +39,7 @@ gewoonte: waarde
 Inhoud
 ---
 
-# Documentinhoud [document-content]
+# Documentinhoud
 ```
 
 **Metagegevensvariabelen**
@@ -133,7 +133,7 @@ Er zijn geen regels voor het citatiesleutelformaat dat u gebruikt (bijvoorbeeld 
 Zie [Tabel 1] voor details.
 Raadpleeg [Paragraaf 2.1] voor meer informatie.
 
-## Sectie 2.1 [section-2-1]
+## Sectie 2.1
 ```
 
 **Referentietypen**
@@ -254,14 +254,14 @@ Dit is een {~~verwijdering~>vervanging~~}.
 - Customiseerbare TOC-generatie
 
 ```afwaardering
-# Documenttitel [document-title]
+# Documenttitel
 
 {{TOC}}
 
-## Sectie 1 [section-1]
+## Sectie 1
 Inhoud hier...
 
-## Sectie 2 [section-2]
+## Sectie 2
 Meer inhoud...
 ```
 

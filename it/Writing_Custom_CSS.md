@@ -97,17 +97,68 @@ Se il tuo tema ha un'imbottitura aggiuntiva o una larghezza fissa, modifica la l
 
 ## Stili di stampa [printstyles]
 
-Assicurati di includere stili di stampa che rimuovano eventuali colori di sfondo, scorrimento fisso, ecc. Utilizza "@media print" per definirli all'interno del tuo tema.
+Assicurati di includere stili di stampa che rimuovano colori di sfondo, scorrimento fisso e l'interfaccia solo per l'anteprima. Marked offre due modi per indirizzare l'output di stampa e PDF.
 
-L'occultamento dei collegamenti nella stampa viene gestito al di fuori del tema principale, consentendo agli utenti di scegliere di nascondere le evidenziazioni e le sottolineature dei collegamenti nella stampa. Finché hai uno stile di base impostato per il testo, non devi preoccuparti di questo.
+### `@media print` [media-print]
 
-Quindi, datevi da fare. Converti il ​​tema del tuo blog, crea uno stile di stampa eccezionale per i documenti PDF o crea l'anteprima perfetta per il tuo stile di scrittura. Se crei qualcosa di fantastico, faccelo sapere e lo pubblicherò per tutta la community di Marked.
+Le regole CSS di stampa standard si applicano quando si stampa da Marked o quando l'esportazione PDF usa i media di stampa:
+
+```css
+@media print {
+  .inverted, .inverted #wrapper { background: white !important; }
+  #wrapper { padding: 0; }
+}
+```
+
+### La classe `.mkprinting` [the-mkprinting-class]
+
+Quando Marked prepara un documento per l'**esportazione PDF** o l'**anteprima Stampa/PDF** ({% kbd cmd P %}), aggiunge la classe `mkprinting` al tag `<body>` (insieme a classi di esportazione come `bandw`, `breakAfterTOC` e la classe `mkstyle--*` del tuo stile). I temi integrati di Marked usano questa classe per la maggior parte delle regole specifiche di stampa, invece di affidarsi solo a `@media print`.
+
+L'esportazione PDF spesso carica il WebView di rendering nascosto con media **screen** (soprattutto per stili personalizzati e documenti [Fountain](Fountain_for_Screenwriters.html)), quindi i blocchi `@media print` nel tuo foglio di stile **potrebbero non** applicarsi all'output PDF. Le regole con prefisso `.mkprinting` si applicano sempre durante l'esportazione perché sono selettori di classe normali, non media query.
+
+```css
+/* Hide preview UI during print/PDF */
+.mkprinting #generated-toc,
+.mkprinting #criticnav,
+.mkprinting .mkscrollmeter {
+  display: none !important;
+}
+
+/* Print/PDF typography */
+.mkprinting #wrapper {
+  background: white;
+  padding: 0;
+}
+
+.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+Per stili che devono funzionare **sia** nella stampa dal browser sia nell'esportazione PDF di Marked, duplica le regole critiche o combina i selettori:
+
+```css
+@media print {
+  #wrapper img { max-width: 100%; }
+}
+
+.mkprinting #wrapper img {
+  max-width: 100%;
+}
+```
+
+Quando esegui il debug del CSS di stampa personalizzato, apri l'anteprima Stampa/PDF o esporta in PDF, poi usa il [Web Inspector di Safari](#webkitinspector) per ispezionare il documento: il `<body>` avrà la classe `mkprinting` mentre il layout di stampa è attivo.
+
+Nascondere i link in stampa è gestito fuori dal tema principale, così gli utenti possono scegliere di nascondere evidenziazioni e sottolineature dei link nella stampa. Finché hai uno stile base per il testo, non devi preoccupartene.
+
+Quindi diamoci da fare. Converti il tema del tuo blog, crea uno stile di stampa eccellente per i PDF o l'anteprima perfetta per il tuo modo di scrivere. Se crei qualcosa di fantastico, [condividilo con la community](https://markedapp.com/styleshare/).
 
 ## Impostazioni CSS aggiuntive [additional-css-settings]
 
-In {% prefspane Style %} puoi modificare CSS aggiuntivi. Questi stili verranno aggiunti a qualsiasi tema caricato e potranno essere utilizzati per apportare modifiche universali a tutti i temi.
+In {% prefspane Style %} puoi modificare CSS aggiuntivi. Questi stili vengono aggiunti a qualsiasi tema caricato e possono servire per modifiche universali a tutti i temi.
 
-Utilizzando [alta specificità](#overridingspecificity) e le query @media per la stampa e lo schermo, puoi controllare praticamente ogni aspetto dello stile con un po' di conoscenza dei CSS.
+Usando [alta specificità](#overridingspecificity), query `@media` per stampa e schermo e selettori `.mkprinting` per l'esportazione PDF, puoi controllare quasi ogni aspetto dello stile con un po' di conoscenza CSS.
 
 ## Ispettore WebKit [webkitinspector]
 
@@ -121,7 +172,7 @@ L'Ispettore Web di Safari è il modo più semplice per vedere esattamente cosa s
 
 Una volta abilitato, nella barra dei menu di Safari verrà visualizzato il menu **Sviluppo**.
 
-![Menu Sviluppo Safari che mostra i documenti contrassegnati][menu sviluppo]
+![Menu Sviluppo Safari che mostra i documenti contrassegnati][develop-menu]
 
 ### Ispezione di un documento contrassegnato [inspecting-a-marked-document]
 
@@ -136,11 +187,11 @@ Da qui puoi:
 - Utilizza la barra laterale **Stili** per modificare le regole in tempo reale, quindi copia nuovamente gli snippet funzionanti in uno stile personalizzato o in un **CSS aggiuntivo**.
     - Dopo aver modificato i CSS nella scheda Elementi, puoi ottenere un riepilogo delle tue modifiche selezionando la scheda Modifiche
 
-	![Modifiche][modifiche CSS]
+	![Modifiche][css-changes]
 - Utilizza la scheda **Console** per eseguire JavaScript rispetto all'anteprima dal vivo. L'intera [API JavaScript contrassegnata](https://markedapp.com/help/jsapi/) è disponibile in questa console.
 - Esplora altre schede come **Rete** durante il debug delle risorse caricate dal tuo documento.
 
-![Ispezione di un'anteprima contrassegnata con Safari Web Inspector][ispezione]
+![Ispezione di un'anteprima contrassegnata con Safari Web Inspector][inspecting]
 
 ## Condivisione di CSS personalizzati [sharing-custom-css]
 

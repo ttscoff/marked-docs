@@ -77,6 +77,41 @@ Sections:
     - クロム
     - ファイアフォックス
     wiki_keywords: []
+  - title: Using the Share Extension
+    file: Share_Extension
+    description: Send files and selected text to Marked from the macOS Share menu. Enable Marked in System Settings if it does not appear.
+    keywords:
+    - share extension
+    - share sheet
+    - share menu
+    - finder
+    - text
+    - paste
+    - clipboard preview
+    - system settings
+    wiki_keywords:
+    - share extension
+    - share menu marked
+    - send to marked
+  - title: Marked Quick Look
+    file: Quick_Look
+    description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+    keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+    wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
   - title: クイックオープン
     file: Quick_Open
     description: クイック オープンを使用すると、開いているドキュメントや最近使用したファイルにすばやくアクセスできます。 Shift-Cmd-O を使用するか、[ファイル] メニューの [クイック オープン...] から [クイック オープン] パネルにアクセスします。
@@ -355,7 +390,7 @@ Sections:
     - 方程式
     - 式
   - title: DOCX の使用
-    file: Working_with_DOCX
+    file: Working_With_DOCX
     description: 'Marked は、Microsoft Word ファイルの操作を広範にサポートしています。一般的なワークフローは、最初にプレビュー、2 番目に DOCX をエクスポートします。Markdown を開くか監視します。'
     keywords:
     - ドキュメント
@@ -874,19 +909,6 @@ Sections:
     - アップルスクリプトのエクスポート
     - スクリプトによるエクスポート
     - 自動エクスポート
-  # - title: Shortcuts Integration
-  #   file: Shortcuts_Integration
-  #   keywords:
-  #   - shortcuts
-  #   - siri
-  #   - automation
-  #   - export
-  #   - app intents
-  #   wiki_keywords:
-  #   - shortcuts
-  #   - siri shortcuts
-  #   - app intents
-  #   - shortcut export
   - title: コマンドラインユーティリティ
     file: Command_Line_Utility
     description: mk コマンドライン ツールを使用すると、ターミナルから Marked の機能に簡単にアクセスでき、ワークフローの自動化やシェル スクリプトとの統合が可能になります。
@@ -1021,15 +1043,6 @@ Sections:
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
 #   pages:
-#   - title: Frequently Asked Questions
-#     file: Frequently_Asked_Questions
-#     keywords:
-#     - faq
-#     - license
-#     - url
-#     - validation
-#     - include
-#     wiki_keywords: [faqs]
 - title: トラブルシューティング
   folder: トラブルシューティング
   pages:

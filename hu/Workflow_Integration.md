@@ -20,14 +20,6 @@ Lásd: [AppleScript támogatás](AppleScript_Support.html) a parancsok listájá
 
 Az AppleScript integráció azt is lehetővé teszi, hogy az olyan alkalmazások, mint a Tags.app, közvetlenül a Markeden belül működjenek.
 
-{% note %}
-## Parancsikonok [shortcuts]
-
-A megjelölt natív [Parancsikon-műveletek](Shortcuts_Integration.html) macOS 13 vagy újabb rendszeren. Használja a **Fájl megnyitása és exportálása** a Finder-ből PDF-be munkafolyamatokhoz, a **Dokumentum exportálása** a Megjelöltben már megnyitott elemekhez, vagy az **Előnézeti stílus beállítása** a témák módosításához az exportálás előtt. Az exportálási műveletek elfogadják a **profilokat**, az előnézeti **stílusokat** és az olyan beállításokat, mint az **oldalméret**, **margók** és **betűméret** (ugyanaz a szemantika, mint az AppleScript `with` rekordoknál).
-
-[shortcuts]: Shortcuts_Integration.html
-{% endnote %}
-
 ## URL-kezelő [url-handler]
 
 A [Megjelölt URL-kezelő][urlhandler] kiterjedt integrációt tesz lehetővé egyszerűen az URL-ek meghívásával, akár AppleScriptből, akár egy héjszkriptben található alap `open` paranccsal.

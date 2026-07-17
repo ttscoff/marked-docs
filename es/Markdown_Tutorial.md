@@ -13,12 +13,12 @@ Markdown es un lenguaje de marcado liviano que le permite escribir utilizando un
 Cree encabezados usando símbolos hash (`#`). El número de hashes determina el nivel del encabezado:
 
 ```markdown
-# Header 1 [header-1]
-## Header 2 [header-2]
-### Header 3 [header-3]
-#### Header 4 [header-4]
-##### Header 5 [header-5]
-###### Header 6 [header-6]
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
 ```
 
 ### Énfasis [emphasis]

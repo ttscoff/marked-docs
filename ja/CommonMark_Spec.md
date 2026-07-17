@@ -33,7 +33,7 @@ CommonMark は、より一貫した解析動作を強制します。
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: 見出しの前に空行が必要です*
@@ -67,9 +67,9 @@ Text
 - 一貫したインデントと終了マーカーが必要です
 
 
-    「」言語
+    ```language
     コードはここにあります
-    「」
+    ```
 
 
 **インデントされたコード ブロック**

@@ -378,4 +378,4 @@ Las exportaciones fallidas establecen la cadena de error del script en el comand
 
 ## Integración con otras herramientas [integration-with-other-tools]
 
-Las aplicaciones pueden utilizar la superficie AppleScript de Marked para leer metadatos de documentos. Para la aplicación Atajos, consulte [Integración de atajos](Shortcuts_Integration.html). Para flujos de trabajo controlados por shell, observadores de carpetas y devoluciones de llamadas del editor, el [Manejador de URL](URL_Handler.html) suele ser más simple. El [Paquete de bonificación marcado](Workflow_Integration.html#marked-bonus-pack) incluye scripts y servicios adicionales.
+Las aplicaciones pueden utilizar la superficie AppleScript de Marked para leer metadatos de documentos. Para flujos de trabajo controlados por shell, observadores de carpetas y devoluciones de llamadas del editor, el [Manejador de URL](URL_Handler.html) suele ser más simple. El [Paquete de bonificación marcado](Workflow_Integration.html#marked-bonus-pack) incluye scripts y servicios adicionales.

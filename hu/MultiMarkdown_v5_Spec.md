@@ -41,7 +41,7 @@ custom: value
 Content
 ---
 
-# Document Content [document-content]
+# Document Content
 ```
 
 **Metaadat-változók**
@@ -135,7 +135,7 @@ Nincsenek szabályok az Ön által használt idézőkulcs-formátumra (pl. Doe:2
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Referencia típusok**
@@ -256,14 +256,14 @@ This is a {~~deletion~>replacement~~}.
 - Testreszabható TOC generálás
 
 ```markdown
-# Document Title [document-title]
+# Document Title
 
 {{TOC}}
 
-## Section 1 [section-1]
+## Section 1
 Content here...
 
-## Section 2 [section-2]
+## Section 2
 More content...
 ```
 

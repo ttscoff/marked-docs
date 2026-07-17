@@ -93,6 +93,25 @@ Sections:
     - extensión compartir
     - menú compartir marked
     - enviar a marked
+  - title: Marked Quick Look
+    file: Quick_Look
+    description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+    keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+    wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
   - title: Apertura rápida
     file: Quick_Open
     description: Quick Open proporciona acceso rápido a sus documentos abiertos y archivos recientes. Acceda al panel de Apertura rápida usando Shift-Cmd-O o desde el menú Archivo, Apertura rápida...
@@ -371,7 +390,7 @@ Sections:
     - ecuación
     - fórmula
   - title: Trabajar con DOCX
-    file: Working_with_DOCX
+    file: Working_With_DOCX
     description: 'Marked tiene un amplio soporte para trabajar con archivos de Microsoft Word. El flujo de trabajo típico es obtener una vista previa primero y luego exportar DOCX: abra o mire su Markdown...'
     keywords:
     - docx
@@ -890,19 +909,6 @@ Sections:
     - exportación de AppleScript
     - exportación con guión
     - exportación automatizada
-  # - title: Shortcuts Integration
-  #   file: Shortcuts_Integration
-  #   keywords:
-  #   - shortcuts
-  #   - siri
-  #   - automation
-  #   - export
-  #   - app intents
-  #   wiki_keywords:
-  #   - shortcuts
-  #   - siri shortcuts
-  #   - app intents
-  #   - shortcut export
   - title: Utilidad de línea de comando
     file: Command_Line_Utility
     description: La herramienta de línea de comandos mk proporciona un fácil acceso a las funciones de Marked desde la terminal, lo que permite la automatización del flujo de trabajo y la integración con scripts de shell y...
@@ -1037,15 +1043,6 @@ Sections:
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
 #   pages:
-#   - title: Frequently Asked Questions
-#     file: Frequently_Asked_Questions
-#     keywords:
-#     - faq
-#     - license
-#     - url
-#     - validation
-#     - include
-#     wiki_keywords: [faqs]
 - title: Solución de problemas
   folder: Solución de problemas
   pages:

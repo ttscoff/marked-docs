@@ -376,4 +376,4 @@ Bij mislukte exports wordt de scriptfoutreeks voor de opdracht ingesteld (zichtb
 
 ## Integratie met andere tools [integration-with-other-tools]
 
-Programma's kunnen het AppleScript-oppervlak van Marked gebruiken om metagegevens van documenten te lezen. Voor de Shortcuts-app, zie [Shortcuts Integration](Shortcuts_Integration.html). Voor shell-gestuurde workflows, mapwatchers en callbacks van editors is de [URL Handler](URL_Handler.html) vaak eenvoudiger. De [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) bevat aanvullende scripts en services.
+Programma's kunnen het AppleScript-oppervlak van Marked gebruiken om metagegevens van documenten te lezen. Voor shell-gestuurde workflows, mapwatchers en callbacks van editors is de [URL Handler](URL_Handler.html) vaak eenvoudiger. De [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) bevat aanvullende scripts en services.

@@ -127,31 +127,31 @@ mk --extract https://example.com/article
 ## Exemplos [examples]
 
 ```bash
-# Open a file [open-a-file]
+# Open a file
 mk document.md
 
-# Stream markdown from a file [stream-markdown-from-a-file]
+# Stream markdown from a file
 cat notes.md | mk
 
-# Process and preview [process-and-preview]
+# Process and preview
 grep -i "important" notes.md | mk
 
-# Refresh all previews [refresh-all-previews]
+# Refresh all previews
 mk --refresh all
 
-# Add a custom style [add-a-custom-style]
+# Add a custom style
 mk --add-style ~/Documents/MyTheme.css
 
-# Set preferences [set-preferences]
+# Set preferences
 mk --defaults syntaxHighlight=1 processor=multimarkdown
 
-# Run JavaScript in all windows [run-javascript-in-all-windows]
+# Run JavaScript in all windows
 mk --dojs "window.scrollTo(0,0)" all
 
-# Extract content from a webpage [extract-content-from-a-webpage]
+# Extract content from a webpage
 mk --extract https://blog.example.com/article
 
-# Preview text directly [preview-text-directly]
+# Preview text directly
 mk --preview "## Hello\n\nThis is **markdown** text!"
 ```
 
@@ -172,7 +172,7 @@ Use `mk` em scripts shell para automação:
 
 ```bash
 #!/bin/bash
-# Watch a file and stream changes to Marked [watch-a-file-and-stream-changes-to-marked]
+# Watch a file and stream changes to Marked
 fswatch -o document.md | while read; do
   cat document.md | mk
 done
@@ -183,10 +183,10 @@ done
 Combine com outras ferramentas:
 
 ```bash
-# Convert clipboard to markdown and preview [convert-clipboard-to-markdown-and-preview]
+# Convert clipboard to markdown and preview
 pbpaste | markdown | mk
 
-# Search and preview [search-and-preview]
+# Search and preview
 grep -r "TODO" . | head -20 | mk
 ```
 

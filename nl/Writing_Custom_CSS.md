@@ -95,17 +95,68 @@ Als uw thema extra opvulling of een vaste breedte heeft, past u de maximale bree
 
 ## Afdrukstijlen [printstyles]
 
-Zorg ervoor dat u afdrukstijlen opneemt die eventuele achtergrondkleuren, vast scrollen, enz. verwijderen. Gebruik "@media print" om deze binnen uw thema te definiëren.
+Neem afdrukstijlen op die achtergrondkleuren, vast scrollen en alleen-voor-voorbeeld-UI verwijderen. Marked biedt twee manieren om afdruk- en PDF-uitvoer te targeten.
 
-Het verbergen van links in gedrukte vorm gebeurt buiten het hoofdthema, waardoor gebruikers ervoor kunnen kiezen om linkaccenten en onderstrepingen verborgen te houden op de afdruk. Zolang u een basisstijl voor de tekst heeft ingesteld, hoeft u zich hier geen zorgen over te maken.
+### `@media print` [media-print]
 
-Dus, ga ervoor. Converteer uw blogthema, creëer een geweldige printstijl voor PDF documenten, of maak de perfecte preview voor de schrijfstijl die u gebruikt. Als je iets geweldigs maakt, laat het me weten, dan post ik het voor de hele Marked community.
+Standaard CSS-afdrukregels gelden bij afdrukken vanuit Marked of wanneer PDF-export printmedia gebruikt:
+
+```css
+@media print {
+  .inverted, .inverted #wrapper { background: white !important; }
+  #wrapper { padding: 0; }
+}
+```
+
+### De klasse `.mkprinting` [the-mkprinting-class]
+
+Wanneer Marked een document voorbereidt voor **PDF-export** of **Afdruk-/PDF-voorbeeld** ({% kbd cmd P %}), voegt het de klasse `mkprinting` toe aan de `<body>`-tag (naast exportklassen zoals `bandw`, `breakAfterTOC` en de `mkstyle--*`-klasse van je stijl). De ingebouwde thema's van Marked gebruiken deze klasse voor de meeste afdrukspecifieke regels in plaats van alleen op `@media print` te vertrouwen.
+
+PDF-export laadt de verborgen render-WebView vaak met **screen**-media (vooral bij aangepaste stijlen en [Fountain](Fountain_for_Screenwriters.html)-documenten), waardoor `@media print`-blokken in je stylesheet **mogelijk niet** op PDF-uitvoer worden toegepast. Regels met het voorvoegsel `.mkprinting` gelden tijdens export altijd, omdat het gewone klasseselectoren zijn en geen mediaqueries.
+
+```css
+/* Hide preview UI during print/PDF */
+.mkprinting #generated-toc,
+.mkprinting #criticnav,
+.mkprinting .mkscrollmeter {
+  display: none !important;
+}
+
+/* Print/PDF typography */
+.mkprinting #wrapper {
+  background: white;
+  padding: 0;
+}
+
+.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+Voor stijlen die **zowel** bij browserafdrukken als bij Marked PDF-export moeten werken, verdubbel je kritieke regels of combineer je selectoren:
+
+```css
+@media print {
+  #wrapper img { max-width: 100%; }
+}
+
+.mkprinting #wrapper img {
+  max-width: 100%;
+}
+```
+
+Bij het debuggen van aangepaste afdruk-CSS open je Afdruk-/PDF-voorbeeld of exporteer je naar PDF en gebruik je [Safari's Web Inspector](#webkitinspector) om het document te inspecteren — de `<body>` heeft de klasse `mkprinting` zolang de afdruklay-out actief is.
+
+Het verbergen van links bij afdrukken gebeurt buiten het hoofdthema, zodat gebruikers kunnen kiezen of linkaccenten en onderstrepingen op de afdruk verborgen blijven. Zolang je een basisstijl voor tekst hebt, hoef je je daar geen zorgen over te maken.
+
+Ga ervoor. Converteer je blogthema, maak een sterke afdrukstijl voor PDF's of de perfecte preview voor jouw schrijfstijl. Als je iets geweldigs maakt, [deel het met de community](https://markedapp.com/styleshare/).
 
 ## Aanvullende CSS-instellingen [additional-css-settings]
 
-In de {% prefspane Style %} kunt u aanvullende CSS bewerken. Deze stijlen worden aan elk geladen thema toegevoegd en kunnen worden gebruikt om universele wijzigingen in alle thema's aan te brengen.
+In {% prefspane Style %} kun je aanvullende CSS bewerken. Deze stijlen worden aan elk geladen thema toegevoegd en kunnen universele wijzigingen voor alle thema's doorvoeren.
 
-Met [high specificity](#overridingspecificity) en @media-query's voor afdrukken en scherm kunt u met een beetje CSS-kennis vrijwel elk stijlaspect beheersen.
+Met [hoge specificiteit](#overridingspecificity), `@media`-query's voor afdrukken en scherm, en `.mkprinting`-selectoren voor PDF-export kun je met een beetje CSS-kennis vrijwel elk stijlaspect beheersen.
 
 ## WebKit-inspecteur [webkitinspector]
 

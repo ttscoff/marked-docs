@@ -378,4 +378,4 @@ A sikertelen exportálás beállítja a parancsfájl-hiba karakterláncát a par
 
 ## Integráció más eszközökkel [integration-with-other-tools]
 
-Az alkalmazások használhatják a Marked AppleScript felületét a dokumentumok metaadatainak olvasásához. A Parancsikonok alkalmazáshoz lásd: [Shortcuts Integration](Shortcuts_Integration.html). Shell-vezérelt munkafolyamatok, mappafigyelők és szerkesztő-visszahívások esetén az [URL-kezelő](URL_Handler.html) gyakran egyszerűbb. A [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) további szkripteket és szolgáltatásokat tartalmaz.
+Az alkalmazások használhatják a Marked AppleScript felületét a dokumentumok metaadatainak olvasásához. Shell-vezérelt munkafolyamatok, mappafigyelők és szerkesztő-visszahívások esetén az [URL-kezelő](URL_Handler.html) gyakran egyszerűbb. A [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) további szkripteket és szolgáltatásokat tartalmaz.

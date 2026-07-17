@@ -35,7 +35,7 @@ Insira JavaScript do URL
 Insira JavaScript
 : Abre um editor de código onde você pode escrever/colar seu próprio código JavaScript
 
-Esses scripts serão inseridos no final da visualização, antes da tag do documento. Se você precisar chamar uma função init ou atualizar sempre que a visualização for atualizada, consulte [Incluindo JavaScript bruto](Additional_Javascript.html#rawjs) e familiarize-se com os [hooks](#hooks) do Marked.
+Esses scripts serão inseridos no final da visualização, antes da tag do documento. Se você precisar chamar uma função init ou atualizar sempre que a visualização for atualizada, consulte [Incluindo JavaScript bruto](Embedding_Scripts.html#hooks) e familiarize-se com os [hooks](#hooks) do Marked.
 
 ## Sereia e outros scripts [mermaid]
 

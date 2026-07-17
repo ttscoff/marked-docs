@@ -18,14 +18,6 @@ Voir [Prise en charge d'AppleScript](AppleScript_Support.html) pour la liste des
 
 L'intégration AppleScript permet également à des applications telles que Tags.app de fonctionner directement au sein de Marked.
 
-{% note %}
-## Shortcuts [shortcuts]
-
-Marked includes native [Shortcuts actions](Shortcuts_Integration.html) on macOS 13 or later. Use **Open and Export File** for Finder-to-PDF workflows, **Export Document** for whatever is already open in Marked, or **Set Preview Style** to change themes before export. Export actions accept **profiles**, preview **styles**, and options such as **page size**, **margins**, and **font size** (same semantics as AppleScript `with` records).
-
-[shortcuts]: Shortcuts_Integration.html
-{% endnote %}
-
 ## Gestionnaire d'URL [url-handler]
 
 Le [gestionnaire d'URL de Marked][urlhandler] permet une intégration étendue simplement en appelant des URL, que ce soit depuis AppleScript ou avec une simple commande `open` dans un script shell.

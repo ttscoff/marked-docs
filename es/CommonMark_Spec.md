@@ -33,7 +33,7 @@ CommonMark impone un comportamiento de análisis más consistente:
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: Requiere una línea en blanco antes del título*

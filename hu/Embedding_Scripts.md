@@ -35,7 +35,7 @@ JavaScript beillesztése az URL-ből
 JavaScript beillesztése
 : Megnyit egy kódszerkesztőt, amelybe saját JavaScript-kódot írhat/beilleszthet
 
-Ezek a szkriptek az előnézet végére, a dokumentumcímke elé kerülnek beszúrásra. Ha meg kell hívnia egy init függvényt vagy frissítenie kell minden alkalommal, amikor az előnézet frissül, olvassa el a [Nyers JavaScriptet beleértve](Additional_Javascript.html#rawjs) című részt, és ismerkedjen meg a Marked [hookjaival] (#hooks).
+Ezek a szkriptek az előnézet végére, a dokumentumcímke elé kerülnek beszúrásra. Ha meg kell hívnia egy init függvényt vagy frissítenie kell minden alkalommal, amikor az előnézet frissül, olvassa el a [Nyers JavaScriptet beleértve](Embedding_Scripts.html#hooks) című részt, és ismerkedjen meg a Marked [hookjaival] (#hooks).
 
 ## Mermaid és egyéb forgatókönyvek [mermaid]
 

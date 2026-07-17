@@ -69,9 +69,9 @@ Agreed translations for recurring terms. The lead translator maintains this file
 | Share extension (macOS) | extension de partage | Share_Extension.md |
 | Share menu (macOS) | menu Partager | Share_Extension.md |
 | Login Items & Extensions (macOS System Settings pane) | Éléments de connexion et extensions | Share_Extension.md; macOS system pane name |
-| Shortcuts (Apple app) | Raccourcis | Shortcuts_Integration.md; official Apple French app name |
+| Shortcuts (Apple app) | Raccourcis | Workflow_Integration.md; official Apple French app name |
 | App Intents | App Intents | Apple developer framework name; kept in English like "Hooks" |
-| Quick Action (Finder feature) | Action rapide | Shortcuts_Integration.md; distinct from Marked's own "Quick Actions" feature (Actions rapides), but same French term applies and is disambiguated by context |
+| Quick Action (Finder feature) | Action rapide | Workflow_Integration.md; distinct from Marked's own "Quick Actions" feature (Actions rapides), but same French term applies and is disambiguated by context |
 | callout | callout | Special_Syntax.md; kept as English loanword per Obsidian/Bear French community convention, unlike "tag" which has an established French term (balise) |
 | Autoscroll | Défilement automatique | Confirmed |
 | Teleprompter (style name) | Teleprompter | Special_Syntax.md; proper noun of a named preview style, kept unchanged like other named styles (e.g. Amblin, Grump) |

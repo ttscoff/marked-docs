@@ -39,7 +39,7 @@ custom: valeur
 Contenu
 ---
 
-# Contenu du document [document-content]
+# Contenu du document
 ```
 
 **Variables de métadonnées**
@@ -133,7 +133,7 @@ Il n'y a pas de règles sur le format de clé de citation que vous utilisez (par
 Voir [Table 1] pour plus de détails.
 Consultez [Section 2.1] pour plus d'informations.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Types de référence**
@@ -254,14 +254,14 @@ Ceci est une {~~suppression~>remplacement~~}.
 - Génération de table des matières personnalisable
 
 ```markdown
-# Titre du document [document-title]
+# Titre du document
 
 {{TOC}}
 
-## Section 1 [section-1]
+## Section 1
 Contenu ici...
 
-## Section 2 [section-2]
+## Section 2
 Plus de contenu...
 ```
 

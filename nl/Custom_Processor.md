@@ -394,22 +394,22 @@ U kunt deze omgevingsvariabelen nu in uw Run gebruiken
 Commandoacties:
 
 ``` bash
-# Druk de documenttitel af [print-the-document-title]
+# Druk de documenttitel af
 echo "Bezig met verwerken: $MD_title"
 
-# Gebruik metadata in voorwaardelijke logica [use-metadata-in-conditional-logic]
+# Gebruik metadata in voorwaardelijke logica
 if [ "$MD_status" = "Concept" ]; dan
     echo "Document heeft nog steeds de conceptstatus"
 fi
 
-# Geef metadata door aan andere tools [pass-metadata-to-other-tools]
+# Geef metadata door aan andere tools
 pandoc "$MARKED_PATH" \
   --metadata title="$MD_title" \
   --metadata auteur="$MD_author" \
   --metadata date="$MD_date" \
   -o uitvoer.pdf
 
-# Gebruik metadata voor bestandsnaamgeving [use-metadata-for-file-naming]
+# Gebruik metadata voor bestandsnaamgeving
 if [ -n "$MD_title" ]; dan
     output_file="${MD_title// /_}.html"
 anders

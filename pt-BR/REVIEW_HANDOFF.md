@@ -24,7 +24,7 @@ This package is ready for post-editing. Work in the `pt-BR/` folder on a
 - **English master:** `content/` at repo root (do not edit for locale work)
 - **MT banner:** 0 pages still contain `<!-- MT-DRAFT: machine translation; human review required -->` — remove it when a page is reviewed
 
-**Missing pages (115):** `AI_Ask_About_Document.md`, `Additional_Application_Support.md`, `Additional_Help.md`, `Additional_Javascript.md`, `AppleScript_Support.md`, `Autoscroll.md`, `Bear.md`, `Choosing_a_Processor.md`, `Command_Line_Utility.md`, `Comments_and_Annotations.md`, `CommonMark_License.md`, `CommonMark_Spec.md`
+**Missing pages (115):** `AI_Ask_About_Document.md`, `Additional_Application_Support.md`, `Additional_Help.md`, `Embedding_Scripts.md`, `AppleScript_Support.md`, `Autoscroll.md`, `Bear.md`, `Choosing_a_Processor.md`, `Command_Line_Utility.md`, `Comments_and_Annotations.md`, `CommonMark_License.md`, `CommonMark_Spec.md`
 … and 103 more
 
 ---

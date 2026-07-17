@@ -35,7 +35,7 @@ Insertar JavaScript desde la URL
 Insertar JavaScript
 : abre un editor de código donde puedes escribir/pegar tu propio código JavaScript.
 
-Estos scripts se insertarán al final de la vista previa, antes de la etiqueta del documento. Si necesita llamar a una función de inicio o actualizar cada vez que se actualiza la vista previa, consulte [Incluyendo JavaScript sin formato](Additional_Javascript.html#rawjs) y familiarícese con los [ganchos](#hooks) de Marked.
+Estos scripts se insertarán al final de la vista previa, antes de la etiqueta del documento. Si necesita llamar a una función de inicio o actualizar cada vez que se actualiza la vista previa, consulte [Incluyendo JavaScript sin formato](Embedding_Scripts.html#hooks) y familiarícese con los [ganchos](#hooks) de Marked.
 
 ## Sirena y otros guiones [mermaid]
 

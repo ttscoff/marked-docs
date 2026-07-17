@@ -504,22 +504,22 @@ Ahora puede usar estas variables de entorno en su Ejecución
 Acciones de comando:
 
 ```bash
-# Print the document title [print-the-document-title]
+# Print the document title
 echo "Processing: $MD_title"
 
-# Use metadata in conditional logic [use-metadata-in-conditional-logic]
+# Use metadata in conditional logic
 if [ "$MD_status" = "Draft" ]; then
     echo "Document is still in draft status"
 fi
 
-# Pass metadata to other tools [pass-metadata-to-other-tools]
+# Pass metadata to other tools
 pandoc "$MARKED_PATH" \
   --metadata title="$MD_title" \
   --metadata author="$MD_author" \
   --metadata date="$MD_date" \
   -o output.pdf
 
-# Use metadata for file naming [use-metadata-for-file-naming]
+# Use metadata for file naming
 if [ -n "$MD_title" ]; then
     output_file="${MD_title// /_}.html"
 else

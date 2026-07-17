@@ -376,4 +376,4 @@ Fehlgeschlagene Exporte setzen die Skriptfehlerzeichenfolge für den Befehl (sic
 
 ## Integration mit anderen Tools [integration-with-other-tools]
 
-Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Informationen zur Shortcuts-App finden Sie unter [Shortcuts-Integration](Shortcuts_Integration.html). Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist der [URL-Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.
+Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist der [URL-Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.

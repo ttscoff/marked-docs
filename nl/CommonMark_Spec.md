@@ -31,7 +31,7 @@ CommonMark dwingt consistenter parseergedrag af:
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: vereist een lege regel vóór de kop*

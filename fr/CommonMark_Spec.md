@@ -31,7 +31,7 @@ CommonMark applique un comportement d'analyse plus cohérent :
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark : nécessite une ligne vide avant le titre*

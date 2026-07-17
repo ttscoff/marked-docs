@@ -2,7 +2,7 @@
 
 **Marked Quick Look** is a separate Mac App Store app that adds a Quick Look preview extension for Markdown and plain-text files. Press Spacebar in Finder (or use Quick Look anywhere macOS supports it) to see a styled HTML preview instead of raw source.
 
-Marked Quick Look is **not included with Marked 3**. It is a separate purchase (**$4.99** on the Mac App Store). <!-- MAS link: add App Store URL here when available -->
+Marked Quick Look is **not included with Marked 3**. It is a separate purchase (**$9.99** on the Mac App Store). <!-- MAS link: add App Store URL here when available -->
 
 I> Marked Quick Look and Marked 3 are independent products. Buying Marked does not install the Quick Look extension, and buying Marked Quick Look does not include a Marked license. The preview includes an optional **Open in Marked** button when Marked is installed.
 

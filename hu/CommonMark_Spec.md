@@ -33,7 +33,7 @@ A CommonMark következetesebb elemzési viselkedést kényszerít ki:
 
 ```markdown
 Text
-# Heading [heading]
+# Heading
 ```
 
 *CommonMark: Üres sort igényel a címsor előtt*
