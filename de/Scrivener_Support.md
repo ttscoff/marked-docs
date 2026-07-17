@@ -68,13 +68,13 @@ Marked liest auch _inline_-Fußnoten aus Scrivener. Wenn Sie innerhalb oder am E
 
 Bilder können in das Scrivener-Dokument eingebettet oder mit Markdown-Bildsyntax referenziert werden. Die Markdown-Version eines Bild-Tags ist `![alt text](path/to/image.ext "optional title/description")`. Es kann auch das Referenzformat verwendet werden:
 
-![alt text][img1]
+    ![alt text][img1]
 
     [img1]: /path/to/image.ext "optional description"
 
 Der Basispfad für die HTML-Ausgabe in der Vorschau wird auf den Ordner festgelegt, der das Scrivener-Dokument enthält. Wenn Sie die Bilder also im selben Ordner wie das Arbeitsdokument ablegen, können Sie direkt auf sie zugreifen. Wenn sich Ihr Scrivener-Dokument in `~/Desktop/TestDoc.scriv` befindet und Sie ein Bild mit dem Namen „testimage.png“ in `~/Desktop/testimage.png` haben, können Sie das Bild zu Ihrem Dokument hinzufügen, indem Sie Folgendes verwenden:
 
-![Test image](testimage.png)
+    ![Test image](testimage.png)
 
 Relative Pfade, die auf dem übergeordneten Ordner des Dokuments basieren, funktionieren. Absolute Pfade ermöglichen den Zugriff auf Bilder an beliebigen Orten, sind für die HTML-Ausgabe aber möglicherweise weniger portierbar.
 

@@ -19,7 +19,7 @@ Der Inhalt im **erweiterten** Feld von MarsEdit wird in der Vorschau und Quelle 
 
 Die Tags und Kategorien von MarsEdit werden im MultiMarkdown-Metadatenblock verfügbar gemacht. Mit dem MultiMarkdown-Prozessor ({% prefspane Processor %}) können Sie sie wie folgt referenzieren:
 
-Tagged: [%tags]
-    Posted in: [%categories]
+    Tagged: [%tags]
+    Posted In: [%categories]
 
 [me]: https://www.red-sweater.com/marsedit/
