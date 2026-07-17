@@ -1,13 +1,13 @@
 # <%= @title %>
 
-## Automatische Header-IDs deaktivieren [disable-automatic-header-ids]
+## Automatische Überschriften-IDs deaktivieren [disable-automatic-header-ids]
 
-Marked enthält eine Option zum Deaktivieren der automatischen Header-ID-Generierung. Sie finden diese Option im {% prefspane Processor %}.
+Marked kann die automatische Vergabe von Überschriften-IDs abschalten. Die Option finden Sie unter {% prefspane Processor %}.
 
 ## Zufällige Fußnoten-IDs [random-footnote-ids]
 
-Im Bereich **Prozessor** können Sie die Option „Zufällige Fußnoten-IDs verwenden“ aktivieren, um zufällige Fußnoten-IDs zu generieren. Dies hilft, Konflikte zu vermeiden, wenn mehrere Dokumente auf einer Webseite angezeigt werden. Diese Option ist nur verfügbar, wenn der MultiMarkdown-Prozessor verwendet wird.
+Im Bereich **Verarbeitung** aktivieren Sie „Zufällige Fußnoten-IDs verwenden“, damit Marked zufällige Fußnoten-Kennungen vergibt. Das vermeidet Konflikte, wenn mehrere Dokumente auf einer Webseite stehen. Diese Option gibt es nur mit dem MultiMarkdown-Prozessor.
 
-## Prozess Markdown Innerhalb von HTML [process-markdown-inside-of-html]
+## Markdown innerhalb von HTML verarbeiten [process-markdown-inside-of-html]
 
-Standardmäßig wird die Markdown-Syntax innerhalb von HTML-Block-Tags normalerweise von Markdown-Prozessoren ignoriert. Diese Option zwingt Marked, die Verarbeitung innerhalb von Blockelementen fortzusetzen. Beachten Sie, dass einige Markups Probleme verursachen können.
+Markdown-Syntax innerhalb von HTML-Block-Tags wird von Markdown-Prozessoren normalerweise ignoriert. Diese Option zwingt Marked, auch innerhalb von Blockelementen weiterzuverarbeiten. Beachten Sie, dass manches Markup dabei Probleme machen kann.
