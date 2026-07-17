@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Mindmaps und Gliederungen können mit [Markeds Include-Syntax][include] oder der [iA-Writer-Block-Syntax][ia] in Ihre Markdown-Vorschau eingebettet werden. Das Verhalten hängt vom Dateiformat und der Einstellung „Karten als Mermaid-Diagramme einbetten“ in {% prefspane Apps %} unter *Mind Maps/Outlines* ab.
+Mindmaps und Gliederungen können mit [Markeds Include-Syntax][include] oder der [iA-Writer-Block-Syntax][ia] in Ihre Markdown-Vorschau eingebettet werden. Das Verhalten hängt vom Dateiformat ab und von den Kontrollkästchen pro Format unter **Als Mermaid-Mindmaps einbetten:** in {% prefspane Apps %} (*Mind Maps and Outlines*).
 
 [include]: Multi-File_Documents.html
 [ia]: Multi-File_Documents.html#ia-writer-block-syntax
@@ -21,27 +21,39 @@ FreeMind-Mindmap-Dateien verwenden die Erweiterung `.mm` und speichern Daten als
 
 ### OPML (.opml) [opml-opml]
 
-OPML (Outline Processor Markup Language) ist ein XML-Format für hierarchische Gliederungen, das häufig von Outlinern und Feed-Readern verwendet wird. iThoughts und andere Apps können nach OPML exportieren. Marked konvertiert enthaltene OPML-Dateien in Mermaid-Mindmap-Diagramme.
+OPML (Outline Processor Markup Language) ist ein XML-Format für hierarchische Gliederungen, das häufig von Outlinern und Feed-Readern verwendet wird. iThoughts und andere Apps können nach OPML exportieren. Marked konvertiert eingebundene OPML-Dateien in Mermaid-Mindmap-Diagramme.
 
 ### Bike (.bike) [bike-bike]
 
-Bike.app-Gliederungen werden als proprietäre HTML-Dateien (`.bike`) gespeichert. Sie können eine `.bike`-Datei direkt in Marked öffnen: Das Dokument wird als Markdown mit dem Dateinamen (ohne Erweiterung) als Hauptüberschrift (H1), Überschriftenelementen der obersten Ebene als H2, verschachtelten Überschriften als fett gedruckten Listenelementen und Aufgaben als Kontrollkästchen im GitHub-Stil gerendert. Wenn eine `.bike`-Datei über die Include-Syntax eingebunden wird, steuert die Einstellung „Als Mermaid-Diagramm einbetten“ für Bike (unter Apps → Mind Maps/Outlines), ob daraus eine Mermaid-Mindmap (mit dem Dateinamen als Stammknoten) oder eine verschachtelte Markdown-Liste (kein H1) wird.
+Bike.app-Gliederungen werden als proprietäre HTML-Dateien (`.bike`) gespeichert. Sie können eine `.bike`-Datei direkt in Marked öffnen: Das Dokument wird als Markdown mit dem Dateinamen (ohne Erweiterung) als Hauptüberschrift (H1), Überschriftenelementen der obersten Ebene als H2, verschachtelten Überschriften als fett gedruckten Listenelementen und Aufgaben als Kontrollkästchen im GitHub-Stil gerendert. Wenn eine `.bike`-Datei über die Include-Syntax eingebunden wird, steuert das Kontrollkästchen **Bike-Gliederungen** unter **Als Mermaid-Mindmaps einbetten:**, ob daraus eine Mermaid-Mindmap (mit dem Dateinamen als Stammknoten) oder eine verschachtelte Markdown-Liste (kein H1) wird.
 
-## Karten als Mermaid-Diagramme einbetten [embed-maps-as-mermaid-diagrams]
+### OmniOutliner (.ooutline) [omnioutliner-ooutline]
 
-Wenn **aktiviert** (Standardeinstellung), konvertiert Marked enthaltene Mindmaps und Gliederungen in [Mermaid](https://mermaid.js.org/)-Diagramme:
+OmniOutliner-Gliederungen lassen sich genauso einbinden. Das Kontrollkästchen **OmniOutliner-Gliederungen** unter **Als Mermaid-Mindmaps einbetten:** steuert, ob als Mermaid oder als Markdown-Liste gerendert wird.
 
-**iThoughts, MindManager, FreeMind, OPML & Bike** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
+## Als Mermaid-Mindmaps einbetten [embed-as-mermaid-mind-maps]
+
+Unter {% prefspane Apps %} gibt es bei *Mind Maps and Outlines* die Gruppe **Als Mermaid-Mindmaps einbetten:** mit einem Kontrollkästchen pro Format:
+
+- **Bike-Gliederungen**
+- **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
+- **OPML-Dateien**
+- **OmniOutliner-Gliederungen**
+
+Ist das Kontrollkästchen eines Formats **aktiviert** (Standard bei den unterstützten Formaten), wandelt Marked eingebundene Dateien dieses Typs in [Mermaid](https://mermaid.js.org/)-Diagramme um:
+
+**iThoughts, MindManager, FreeMind, OPML, Bike & OmniOutliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 **Einschränkung:** Das Einbetten von Mindmaps (Mermaid-Diagramme) funktioniert nicht mit dem Discount-Parser. Verwenden Sie MultiMarkdown, CommonMark (GFM) oder Kramdown für Mindmap-Vorschauen.
 
-Wenn **deaktiviert**:
+Ist das Kontrollkästchen eines Formats **deaktiviert**:
 
 - **iThoughts** – Das integrierte Vorschaubild (`preview.png`) aus der .itmz-Datei ist als Base64-Bild eingebettet. Der Alternativtext des Bildes verwendet den Dateinamen.
 - **MindManager** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **FreeMind** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **OPML** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (keine Mindmap).
 - **Bike** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (kein H1); Überschriftenelemente der obersten Ebene werden zu H2, verschachtelte Überschriften werden fett dargestellt und Aufgaben werden zu GitHub-Kontrollkästchen.
+- **OmniOutliner** – Die Gliederung ist als verschachtelte Markdown-Liste bzw. Checkliste eingebettet.
 
 ## Include-Syntax [include-syntax]
 
@@ -61,7 +73,7 @@ Pfade können relativ zum Hauptdokument oder absolut sein (beginnend mit `/` ode
 
 ## OPML-Konvertierung [opml-conversion]
 
-OPML-Dateien verwenden verschachtelte `<outline>`-Elemente mit einem `text`-Attribut. Wenn „Als Mermaid-Diagramm einbetten“ aktiviert ist (siehe [Einstellungen: Apps](Settings_Apps.html)), erzeugt die Konvertierung eine Mermaid-Mindmap im gleichen Format wie iThoughts und MindManager:
+OPML-Dateien verwenden verschachtelte `<outline>`-Elemente mit einem `text`-Attribut. Ist **OPML-Dateien** unter **Als Mermaid-Mindmaps einbetten:** aktiviert (siehe [Einstellungen: Apps](Settings_Apps.html)), erzeugt die Konvertierung eine Mermaid-Mindmap im gleichen Format wie iThoughts und MindManager:
 
 - Untergeordnete Gliederungen von `<body>` werden zur obersten Ebene (oder zu Kindern eines „Outline“-Stamms, wenn es mehrere Elemente der obersten Ebene gibt)
 - Verschachtelte Gliederungen definieren die Hierarchie
