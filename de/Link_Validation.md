@@ -1,8 +1,8 @@
 # <%= @title %>
 
-Die Linkvalidierung pingt das Ziel einer URL an und prüft auf Fehler. Dies trägt dazu bei, defekte und ungültige Links in Ihrem veröffentlichten Dokument zu vermeiden und ist besonders nützlich für Blogger.
+Die Linkvalidierung ruft das Ziel einer URL auf und prüft es auf Fehler. So vermeiden Sie defekte und ungültige Links in veröffentlichten Dokumenten – besonders hilfreich ist das für Blogger.
 
-## Validierung einzelner Links [validating-single-links]
+## Einzelne Links validieren [validating-single-links]
 
 ![][1]
 
@@ -16,14 +16,14 @@ Klicken Sie in der Vorschau auf einen Link und halten Sie ihn gedrückt, bis er 
 
    [2]: images/screenshots/mainwindow-feature-urlvalidate-crop.jpg @2x width=1089px height=300px class=center
 
-Wählen Sie „Alle Links validieren“ (Verknüpfung {% kbd ctrl cmd L %}) aus dem Zahnradmenü oder dem Rechtsklick-Menü. Alle Remote-Links im Dokument werden überprüft und die Ergebnisse werden in einem Popup angezeigt. Durch Klicken auf einen Link im Popup wird zum entsprechenden Link im Dokument gescrollt und dieser hervorgehoben.
+Wählen Sie im Zahnradmenü oder im Kontextmenü „Alle Links validieren“ (Tastaturkurzbefehl {% kbd ctrl cmd L %}). Alle externen Links im Dokument werden geprüft und die Ergebnisse in einem Popup angezeigt. Wenn Sie dort auf einen Link klicken, scrollt Marked zum entsprechenden Link im Dokument und hebt ihn hervor.
 
-Gültige URLs können im Popup mit der Schaltfläche „Gültige ausblenden“ oben ausgeblendet werden. Dadurch werden nur URLs angezeigt, die einen Fehlerstatus zurückgegeben haben.
+Mit der Schaltfläche „Gültige ausblenden“ oben im Popup können Sie gültige URLs ausblenden. Dann werden nur URLs angezeigt, die einen Fehlerstatus zurückgegeben haben.
 
-Durch Drücken von Escape werden die Validierungsergebnisse ausgeblendet. Sie können mit {% kbd ctrl cmd L %} oder dem Ausrüstungsmenü wieder angezeigt werden.
+Mit der Esc-Taste blenden Sie die Validierungsergebnisse aus. Über {% kbd ctrl cmd L %} oder das Zahnradmenü können Sie sie erneut anzeigen.
 
 ## Automatische Validierung [validating-automatically]
 
-Aktivieren Sie „URLs bei Aktualisierung automatisch validieren“ in den Vorschaueinstellungen (oder unten im Popup zur Linkvalidierung). Beim Laden des Dokuments werden die darin enthaltenen Links im Hintergrund getestet. Ein Dialog wird nur angezeigt, wenn Fehler vorliegen.
+Aktivieren Sie unter den Vorschau-Einstellungen (oder unten im Popup zur Linkvalidierung) „URLs beim Aktualisieren automatisch validieren“. Beim Laden des Dokuments werden die enthaltenen Links im Hintergrund geprüft. Ein Dialog erscheint nur, wenn Fehler vorliegen.
 
-Um das Popup zu deaktivieren, deaktivieren Sie es in den Einstellungen oder deaktivieren Sie das Kontrollkästchen unten im Popup-Fenster.
+Um das Popup zu deaktivieren, schalten Sie die Option in den Einstellungen aus oder deaktivieren Sie das Kontrollkästchen unten im Popup-Fenster.

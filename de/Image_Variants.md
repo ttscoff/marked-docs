@@ -1,8 +1,8 @@
 # <%= @title %>
 
-Marked kann automatisch reaktionsfähige `<picture>`-Elemente für lokale Bilder erstellen, wenn begleitende **Dunkelmodus**- und **Retina**-Dateien neben dem Bild liegen, auf das Sie verweisen. Hierbei werden dieselben Namenskonventionen wie in den DocC-Dokumentationskatalogen von Apple verwendet, es funktioniert jedoch für **jedes Markdown- oder HTML-Dokument** mit normalen Bildpfaden, die eine Dateierweiterung enthalten.
+Marked kann automatisch responsive `<picture>`-Elemente für lokale Bilder erstellen, wenn sich die zugehörigen **Dunkelmodus**- und **Retina**-Dateien neben dem referenzierten Bild befinden. Dabei verwendet Marked dieselben Namenskonventionen wie Apples DocC-Dokumentationskataloge. Die Funktion steht jedoch für **jedes Markdown- oder HTML-Dokument** mit normalen Bildpfaden und Dateierweiterung zur Verfügung.
 
-Siehe auch [DocC Support](DocC_Support.html) für erweiterungslose Katalogverweise innerhalb von `.docc` Bundles.
+Siehe auch [DocC-Unterstützung](DocC_Support.html) für Katalogverweise ohne Dateierweiterung in `.docc`-Bundles.
 
 ## Bildvarianten aktivieren [enabling-image-variants]
 
@@ -15,7 +15,7 @@ Diese Einstellung ist unabhängig von **DocC-Bildverweise auflösen**, die nur i
 Platzieren Sie Variantendateien im **gleichen Ordner** wie das Primärbild. Marked sucht basierend auf dem Basisnamen nach vier Kombinationen:
 
 | Rolle | Beispieldateiname |
-|------|----|
+|------|------------------|
 | Licht (1x) | `icon.png` |
 | Dunkel (1x) | `icon~dark.png` |
 | Licht (2x) | `icon@2x.png` |
@@ -25,9 +25,9 @@ Die Reihenfolge der Suffixe ist flexibel – `icon@2x~dark.png` und `icon~dark@2
 
 Unterstützte Erweiterungen: `png`, `jpg`, `jpeg`, `gif`, `svg`, `webp` und `pdf`.
 
-## Was wird neu geschrieben [what-gets-rewritten]
+## Was umgeschrieben wird [what-gets-rewritten]
 
-Marked scannt Ihr Dokument **vor** der endgültigen Vorschauwiedergabe:
+Marked durchsucht Ihr Dokument **vor** dem endgültigen Rendern der Vorschau:
 
 - **Markdown:** `![Alt text](images/icon.png)`
 - **HTML:** `<img src="images/icon.png" alt="Alt text">`
@@ -46,27 +46,27 @@ Beispielausgabe, wenn helle, dunkle und @2x-Dateien vorhanden sind:
 
 Die Vorschau (und der HTML-Export) folgt dann der Systemdarstellung des Benutzers für dunkle Varianten und der Gerätepixeldichte für @2x-Assets.
 
-## Was wird übersprungen [what-is-skipped]
+## Was übersprungen wird [what-is-skipped]
 
 Marked schreibt **nicht** um:
 
 - Remote-URLs (`http://`, `https://`, `data:`)
-– Verweise, die bereits auf eine `~dark`-Datei verweisen
-- `<img>`-Tags befinden sich bereits in einem vorhandenen `<picture>`-Element
-- Namen ohne Erweiterung wie `![Diagram](diagram)` – verwenden Sie [DocC Support](DocC_Support.html) für Referenzen im Katalogstil
+- Verweise, die bereits auf eine `~dark`-Datei zeigen
+- `<img>`-Tags, die sich bereits in einem vorhandenen `<picture>`-Element befinden
+- Namen ohne Erweiterung wie `![Diagram](diagram)` – verwenden Sie für Referenzen im Katalogstil die [DocC-Unterstützung](DocC_Support.html)
 
-## Live-Vorschau und Dateianzeige [live-preview-and-file-watching]
+## Live-Vorschau und Dateiüberwachung [live-preview-and-file-watching]
 
-Wenn Varianten erkannt werden, fügt Marked **jede vorhandene Variantendatei** neben dem Hauptdokument zu seiner Beobachtungsliste hinzu. Das Speichern von `icon~dark.png` in einem externen Editor löst das gleiche Neuladen von Livebildern aus wie das Bearbeiten von `icon.png`.
+Wenn Marked Varianten erkennt, fügt es **jede vorhandene Variantendatei** zusammen mit dem Hauptdokument zur Überwachungsliste hinzu. Wenn Sie `icon~dark.png` in einem externen Editor speichern, wird das Bild in der Live-Vorschau genauso neu geladen wie beim Bearbeiten von `icon.png`.
 
 ## Tipps [tips]
 
-- Verweisen Sie nach Möglichkeit auf das **light 1x**-Bild in Ihrer Quelle (`icon.png`, nicht `icon~dark.png`). Marked entdeckt Geschwister auf diesem Weg.
-– Wenn Sie nur über `@2x`-Assets verfügen, fügen Sie mindestens eine weitere Variante hinzu (normalerweise `~dark`), sonst lässt Marked die Referenz unverändert.
-- Bei der Variantenauflösung werden Pfade **relativ zum Dokument** (oder zum Ordner der eingebundenen Datei für verschachtelte Includes) verwendet, es gelten dieselben Basispfadregeln wie [Multi-file Documents](Multi-File_Documents.html).
+- Verweisen Sie in Ihrer Quelle nach Möglichkeit auf das **helle 1x-Bild** (`icon.png`, nicht `icon~dark.png`). Marked ermittelt die zugehörigen Dateien von diesem Pfad aus.
+- Wenn Sie nur über `@2x`-Assets verfügen, fügen Sie mindestens eine weitere Variante hinzu (normalerweise `~dark`), sonst lässt Marked die Referenz unverändert.
+- Bei der Variantenauflösung werden Pfade **relativ zum Dokument** verwendet (bei verschachtelten Einbindungen relativ zum Ordner der eingebundenen Datei). Dabei gelten dieselben Basispfadregeln wie für [Dokumente mit mehreren Dateien](Multi-File_Documents.html).
 
 ## Verwandte Themen [related-topics]
 
-- [DocC Support](DocC_Support.html) – erweiterungslose Bildnamen in `.docc` Katalogen
-- [Settings: Apps](Settings_Apps.html) – Präferenz schaltet für DocC- und Bildvarianten um
-- [Previewing](Previewing.html) – Live-Vorschau und Dateiaktualisierungen
+- [DocC-Unterstützung](DocC_Support.html) – Bildnamen ohne Erweiterung in `.docc`-Katalogen
+- [Einstellungen: Apps](Settings_Apps.html) – Einstellungen für DocC- und Bildvarianten
+- [Vorschau](Previewing.html) – Live-Vorschau und Dateiaktualisierungen
