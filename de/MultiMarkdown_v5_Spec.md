@@ -1,16 +1,16 @@
 # <%= @title %>
 
-Schauen Sie sich [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) an, um mit dem MultiMarkdown-Prozessor zu experimentieren.
+Probieren Sie [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) aus, um mit dem MultiMarkdown-Prozessor zu experimentieren.
 
 ## Was ist MultiMarkdown? [what-is-multimarkdown]
 
-MultiMarkdown ist ein erweiterter Markdown-Prozessor, der für die Arbeit mit vollständigen Dokumenten und nicht nur mit Webseitenfragmenten entwickelt wurde. Es erweitert die ursprüngliche Markdown-Syntax um Funktionen, die die Konvertierung in mehrere Ausgabeformate ermöglichen, darunter HTML, LaTeX, PDF, ODF und Microsoft Word-Dokumente.
+MultiMarkdown ist ein erweiterter Markdown-Prozessor für vollständige Dokumente statt nur für Webseitenfragmente. Er ergänzt die ursprüngliche Markdown-Syntax um Funktionen zur Konvertierung in mehrere Ausgabeformate, darunter HTML, LaTeX, PDF, ODF und Microsoft Word-Dokumente.
 
 ## Hauptmerkmale [key-characteristics]
 
-- **Dokumentorientiert**: Entwickelt für vollständige Dokumente, nicht nur für Webausschnitte
+- **Dokumentorientiert**: Für vollständige Dokumente entwickelt, nicht nur für Webausschnitte
 - **Multiformat-Ausgabe**: Konvertiert in HTML, LaTeX, PDF, ODF, RTF und Word
-- **Inhalt vor Präsentation**: Konzentriert sich auf die Struktur und Bedeutung des Dokuments
+- **Inhalt vor Darstellung**: Konzentriert sich auf Struktur und Bedeutung des Dokuments
 - **Plattformübergreifend**: Funktioniert auf jedem Betriebssystem mit jedem Texteditor
 - **Erweiterbar**: Umfangreicher Funktionsumfang für komplexe Dokumentanforderungen
 - **Version 5**: Vollständige Neufassung mit verbesserter Leistung und Zuverlässigkeit
@@ -27,20 +27,20 @@ Ziel ist es, für 80 % der Dokumente verwendbar zu sein, die 80 % der Menschen s
 
 - Dokumentmetadaten oben in den Dateien
 - Titel, Autor, Datum und benutzerdefinierte Variablen
-- Automatische Einbindung in Ausgabe-Header
+- Automatische Einbindung in Ausgabe-Kopfzeilen
 
-„Abschlag
-Titel: Mein Dokument
-Autor: John Doe
-Datum: 15.01.2024
-Benutzerdefiniert: Wert
+```markdown
+title: My Document
+author: John Doe
+date: 2024-01-15
+custom: value
 
-<!-- Eine Leerzeile beendet die Metadaten -->
-Inhalt
+<!-- A blank line ends the metadata -->
+Content
 ---
 
-# Dokumentinhalt [document-content]
-„
+# Document Content [document-content]
+```
 
 **Metadatenvariablen**
 
@@ -58,20 +58,20 @@ Date: [%date]
 
 **Vollständige Tabellenunterstützung**
 
-- Überschriften, Ausrichtung und komplexe Tabellenstrukturen
+- Kopfzeilen, Ausrichtung und komplexe Tabellenstrukturen
 - Unterstützung für Tabellenüberschriften und Beschriftungen
 - Querverweise auf Tabellen
 
-„Abschlag
-| Kopfzeile 1 | Kopfzeile 2 | Kopfzeile 3 |
+```markdown
+| Header 1 | Header 2 | Header 3 |
 | :------- | :------: | -------: |
-| Links |  Zentrum |    Richtig |
-| Ausgerichtet | Ausgerichtet |  Ausgerichtet |
+| Left     |  Center  |    Right |
+| Aligned  | Aligned  |  Aligned |
 
-Tabelle: Beispieltabelle mit Ausrichtung
-„
+Table: Sample Table with Alignment
+```
 
-**Tischfunktionen**
+**Tabellenfunktionen**
 
 - Spaltenausrichtung mit Doppelpunkten
 - Tabellenüberschriften und Beschriftungen
@@ -82,20 +82,20 @@ Tabelle: Beispieltabelle mit Ausrichtung
 
 **Fußnoten**
 
-– Fußnoten im Referenzstil mit der Syntax `[^1]`
+- Fußnoten im Referenzstil mit der Syntax `[^1]`
 - Automatische Nummerierung und Verlinkung
 - Unterstützung für Inline-Fußnoten
 
-„Abschlag
-Dies ist ein Satz mit einer Fußnote[^1].
+```markdown
+This is a sentence with a footnote[^1].
 
 [^1]: This is the footnote content.
-„
+```
 
 **Zitierunterstützung**
 
 - Formatierung wissenschaftlicher Zitate
-- Erstellung von Bibliographien
+- Erstellung von Bibliografien
 - Unterstützung verschiedener Zitierstile
 
 ```
@@ -103,8 +103,7 @@ This is a statement that should be attributed to
 its source[p. 23][#Doe:2006].
 ```
 
-Und es folgt die Beschreibung der Referenz
-in der Bibliographie verwendet.
+Anschließend folgt die Beschreibung der Referenz, die in der Bibliografie verwendet wird.
 
 ```
 [#Doe:2006]: John Doe. *Some Big Fancy Book*.  Vanity Press, 2006.
@@ -112,35 +111,35 @@ in der Bibliographie verwendet.
 
 In der HTML-Ausgabe sind Zitate nicht von Fußnoten zu unterscheiden.
 
-Sie sind nicht verpflichtet, einen Locator zu verwenden (z. B. S. 23), und es gibt keine besonderen Regeln dafür, was als Locator verwendet werden kann, wenn Sie sich für die Verwendung eines Locators entscheiden. Wenn Sie den Locator lieber weglassen möchten, verwenden Sie einfach einen leeren Satz eckiger Klammern vor dem Zitat:
+Sie müssen keine Fundstelle angeben (z. B. S. 23). Falls Sie eine verwenden, gelten keine besonderen Regeln für deren Inhalt. Um die Fundstelle wegzulassen, verwenden Sie vor dem Zitat einfach ein leeres Paar eckiger Klammern:
 
 ```
 This is a statement that should be attributed to its
 source[][#Doe:2006].
 ```
 
-Es gibt keine Regeln für das von Ihnen verwendete Zitierschlüsselformat (z. B. Doe:2006), ihm muss jedoch ein `#` vorangestellt werden, genau wie Fußnoten `^` verwenden.
+Für das Format des Zitierschlüssels (z. B. Doe:2006) gelten keine Regeln. Ihm muss jedoch ein `#` vorangestellt werden, so wie Fußnoten ein `^` verwenden.
 
 ### 4. **Querverweise** [4-cross-references]
 
 **Automatische Querverweise**
 
-- Link zu Überschriften, Tabellen, Abbildungen und Gleichungen
-- Automatische Etikettengenerierung
-- Unterstützung für benutzerdefinierte Etiketten
+- Verlinkung mit Überschriften, Tabellen, Abbildungen und Gleichungen
+- Automatische Erzeugung von Bezeichnern
+- Unterstützung für benutzerdefinierte Bezeichner
 
-„Abschlag
-Einzelheiten finden Sie in [Tabelle 1].
-Weitere Informationen finden Sie in [Abschnitt 2.1].
+```markdown
+See [Table 1] for details.
+Refer to [Section 2.1] for more information.
 
-## Abschnitt 2.1 [section-2-1]
-„
+## Section 2.1 [section-2-1]
+```
 
 **Referenztypen**
 
 - Überschriften: `[Section 1]`, `[Heading Title]`
 - Tabellen: `[Table 1]`, `[Table: Caption]`
-- Zahlen: `[Figure 1]`, `[Figure: Caption]`
+- Abbildungen: `[Figure 1]`, `[Figure: Caption]`
 - Gleichungen: `[Equation 1]`
 
 ### 5. **Definitionslisten** [5-definition-lists]
@@ -149,18 +148,18 @@ Weitere Informationen finden Sie in [Abschnitt 2.1].
 
 - Unterstützung für Definitionslisten
 - Mehrere Definitionen pro Begriff
-– Korrekte HTML `<dl>` Ausgabe
+- Korrekte HTML-Ausgabe mit `<dl>`
 
-„Abschlag
-Begriff 1
+```markdown
+Term 1
 : Definition 1
 
-Begriff 2
+Term 2
 : Definition 2a
 : Definition 2b
-„
+```
 
-### 6. **Eingezäunte Codeblöcke** [6-fenced-code-blocks]
+### 6. **Abgegrenzte Codeblöcke** [6-fenced-code-blocks]
 
 **Sprachspezifische Codeblöcke**
 
@@ -173,37 +172,37 @@ Begriff 2
 def hello():
     print("Hello, World!")
 ```
-„
+```
 
 **Codeblockfunktionen**
 
-- Sprachspezifikation für Syntaxhervorhebung
+- Sprachangabe für die Syntaxhervorhebung
 - Unterstützung für viele Programmiersprachen
-– Korrekte HTML `<pre><code>` Ausgabe
+- Korrekte HTML-Ausgabe mit `<pre><code>`
 
 ### 7. **Mathe-Unterstützung** [7-math-support]
 
 **Mathematische Ausdrücke**
 
 - LaTeX-kompatible mathematische Syntax
-- Sowohl Inline- als auch Block-Mathe-Unterstützung
+- Unterstützt Mathematik sowohl inline als auch in Blöcken
 - Integration mit LaTeX-Ausgabe
 
-„Abschlag
-Inline-Mathematik: $E = mc^2$
+```markdown
+Inline math: $E = mc^2$
 
-Blockmathematik:
+Block math:
 
 $$
 \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
 $$
-„
+```
 
 ### 8. **Bild- und Linkattribute** [8-image-and-link-attributes]
 
 **Erweiterte Links und Bilder**
 
-– Unterstützung für HTML-Attribute
+- Unterstützung für HTML-Attribute
 - Breite, Höhe, Alternativtext und mehr
 - Bessere Integration mit Ausgabeformaten
 
@@ -215,7 +214,7 @@ $$
 
 **Dateieinbindung**
 
-- Fügen Sie andere Dateien in Dokumente ein
+- Andere Dateien in Dokumente einfügen
 - Unterstützung für verschachtelte Includes
 - Automatische Pfadauflösung
 
@@ -224,70 +223,70 @@ $$
 {{../shared/intro.md}}
 ```
 
-**Transklusion-Funktionen**
+**Transklusionsfunktionen**
 
-- Dateieinbindung mit `<!--MKPH0-->`
+- Dateieinbindung mit `{{filename}}`
 - Unterstützung für relative und absolute Pfade
 - Unterstützung für verschachtelte Transklusion
 - Manifestgenerierung für enthaltene Dateien
 
-### 10. **CriticMarkup Integration** [10-criticmarkup-integration]
+### 10. **CriticMarkup-Integration** [10-criticmarkup-integration]
 
 **Änderungsverfolgung**
 
 - Unterstützung für die CriticMarkup-Syntax
-- Verfolgen Sie Hinzufügungen, Löschungen und Kommentare
+- Verfolgt Hinzufügungen, Löschungen und Kommentare
 - Funktionen zur kollaborativen Bearbeitung
 
-„Abschlag
-Dies ist {>>gelöschter Text<<} und dies ist {++hinzugefügter Text++}.
+```markdown
+This is {>>deleted text<<} and this is {++added text++}.
 
-Dies ist ein {~~Löschung~>Ersatz~~}.
-„
+This is a {~~deletion~>replacement~~}.
+```
 
 ### 11. **Inhaltsverzeichnis** [11-table-of-contents]
 
 **Automatische TOC-Generierung**
 
-- `<!--MKPH0-->` Platzhalter für Inhaltsverzeichnis
+- Platzhalter `{{TOC}}` für das Inhaltsverzeichnis
 - Hierarchische Struktur basierend auf Überschriften
-- Customisierbare TOC-Generierung
+- Anpassbare Erzeugung des Inhaltsverzeichnisses
 
-„Abschlag
-# Dokumenttitel [document-title]
+```markdown
+# Document Title [document-title]
 
 {{TOC}}
 
-## Abschnitt 1 [section-1]
-Inhalt hier...
+## Section 1 [section-1]
+Content here...
 
-## Abschnitt 2 [section-2]
-Mehr Inhalt...
-„
+## Section 2 [section-2]
+More content...
+```
 
 ### 12. **Abkürzungen** [12-abbreviations]
 
 **HTML-Stil-Abkürzungen**
 
-- Definieren Sie Abkürzungen für die automatische Erweiterung
+- Abkürzungen zur automatischen Erweiterung definieren
 - Unterstützung für Tooltips und Erklärungen
-– Korrekte HTML `<abbr>` Ausgabe
+- Korrekte HTML-Ausgabe mit `<abbr>`
 
-„Abschlag
+```markdown
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets
 
-Dies verwendet HTML und CSS.
-„
+This uses HTML and CSS.
+```
 
 ## MultiMarkdown v5 im Vergleich zu anderen Markdown-Varianten [multimarkdown-v5-vs-other-markdown-flavors]
 
-| Funktion | MultiMarkdown v5 | CommonMark (GFM) | Rabatt | Kramdown | Standard |
+| Funktion | MultiMarkdown v5 | CommonMark (GFM) | Discount | Kramdown | Standard |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
 | Tabellen | Ja | Nein | Ja | Ja | Nein |
 | Durchgestrichen | Ja | Nein | Ja | Nein | Nein |
 | Aufgabenlisten | Ja | Nein | Ja | Nein | Nein |
-| Eingezäunter Code | Ja | Ja | Ja | Ja | Nein |
+| Abgegrenzte Codeblöcke | Ja | Ja | Ja | Ja | Nein |
 | Mathematik | Ja | Nein | Nein | Ja | Nein |
 | Fußnoten | Ja | Nein | Ja | Ja | Nein |
 | Definitionslisten | Ja | Nein | Nein | Ja | Nein |
@@ -316,7 +315,7 @@ Dies verwendet HTML und CSS.
 **Akademisches Schreiben**
 
 - Abschlussarbeiten, Dissertationen und Forschungsarbeiten
-- Zitierverwaltung und Erstellung von Bibliographien
+- Zitierverwaltung und Erstellung von Bibliografien
 - Querverweise und Fußnoten
 
 **Technische Dokumentation**
@@ -331,38 +330,38 @@ Dies verwendet HTML und CSS.
 - Multiformat-Ausgabe für verschiedene Plattformen
 - Professionelle Dokumentformatierung
 
-**Content-Management**
+**Inhaltsverwaltung**
 
 - Dokumentationswebsites
 - Wissensdatenbanken und Wikis
 - Gemeinsame Schreibprojekte
 
-## Best Practices [best-practices]
+## Bewährte Vorgehensweisen [best-practices]
 
-1. **Metadaten verwenden**: Nutzen Sie die Titelseite von YAML für Dokumentinformationen
-2. **Struktur mit Überschriften**: Verwenden Sie die richtige Überschriftenhierarchie für die Inhaltsverzeichnisgenerierung
+1. **Metadaten verwenden**: Nutzen Sie den YAML-Metadatenblock für Dokumentinformationen
+2. **Mit Überschriften strukturieren**: Verwenden Sie die richtige Überschriftenhierarchie für die Erzeugung des Inhaltsverzeichnisses
 3. **Querverweise nutzen**: Verwenden Sie automatische Verlinkungen für eine bessere Navigation
-4. **Organisieren mit Transclusion**: Teilen Sie große Dokumente in überschaubare Dateien auf
-5. **Testausgabe**: Überprüfen Sie die Formatierung in verschiedenen Ausgabeformaten
+4. **Mit Transklusion organisieren**: Teilen Sie große Dokumente in überschaubare Dateien auf
+5. **Ausgabe testen**: Überprüfen Sie die Formatierung in verschiedenen Ausgabeformaten
 6. **Zitate verwenden**: Implementieren Sie ordnungsgemäße akademische Zitierpraktiken
 
 ## Migration von anderen Markdown-Varianten [migration-from-other-markdown-flavors]
 
-Die meisten Standard-Markdown funktionieren ohne Änderungen mit MultiMarkdown. So nutzen Sie die Funktionen von MMD:
+Die meisten Dokumente in Standard-Markdown funktionieren ohne Änderungen mit MultiMarkdown. So nutzen Sie die Funktionen von MMD:
 
-1. **Metadaten hinzufügen**: Fügen Sie YAML Titelblatt für Dokumentinformationen hinzu
+1. **Metadaten hinzufügen**: Fügen Sie einen YAML-Metadatenblock mit Dokumentinformationen hinzu
 2. **Querverweise verwenden**: Ersetzen Sie manuelle Links durch automatische Verweise
 3. **Zitate implementieren**: Fügen Sie die richtige Formatierung für akademische Zitate hinzu
 4. **Struktur mit Transklusion**: Teilen Sie große Dokumente in kleinere Dateien auf
-5. **Nutzung von Tabellen**: Nutzen Sie erweiterte Tabellenfunktionen für die Datenpräsentation
+5. **Tabellen verwenden**: Nutzen Sie erweiterte Tabellenfunktionen zur Darstellung von Daten
 
 ## Ressourcen [resources]
 
-- [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
-- [MultiMarkdown Syntax Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)
-- [MultiMarkdown GitHub Repository](https://github.com/fletcher/MultiMarkdown-5)
-- [MultiMarkdown Documentation](https://fletcher.github.io/MultiMarkdown-5/)
+- [MultiMarkdown-Benutzerhandbuch](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
+- [MultiMarkdown-Syntaxleitfaden](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)
+- [MultiMarkdown-Repository auf GitHub](https://github.com/fletcher/MultiMarkdown-5)
+- [MultiMarkdown-Dokumentation](https://fletcher.github.io/MultiMarkdown-5/)
 
 ---
 
-*Diese Dokumentation gilt für MultiMarkdown v5.1.0. Aktuelle Informationen finden Sie immer in der offiziellen MultiMarkdown-Dokumentation unter [fletcher.github.io/MultiMarkdown-5](https://fletcher.github.io/MultiMarkdown-5/).*
+*Diese Dokumentation behandelt MultiMarkdown v5.1.0. Aktuelle Informationen finden Sie in der offiziellen MultiMarkdown-Dokumentation unter [fletcher.github.io/MultiMarkdown-5](https://fletcher.github.io/MultiMarkdown-5/).*
