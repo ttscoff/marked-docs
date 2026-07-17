@@ -45,7 +45,7 @@ This is where the German UI localization was weakest; keep the docs on the corre
 
 ## Punctuation and typography
 
-- Quotation marks: German „…" (`„` U+201E … `"` U+201C). Not straight `"..."`.
+- Quotation marks: German „…“ (`„` U+201E … `“` U+201C). Not straight `"..."`.
 - Ellipsis: Unicode `…`, matching the app (nicht drei Punkte `...`).
 - Dash: Halbgeviertstrich `–` for parentheticals, not the em dash `—`.
 - Decimal/thousands: German conventions (1.000, 3,5).

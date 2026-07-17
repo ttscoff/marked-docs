@@ -26,7 +26,7 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `File, Open Dingus in Marked` | `Ablage, Dingus in Marked öffnen` |
 | `File, Open in Dingus...` | `Ablage, In Dingus öffnen…` |
 | `File, Export` | `Ablage, Exportieren…` |
-| `File, Export, Paginated PDF` | `Ablage, Exportieren als, PDF speichern (paginiert)` (EN-Tag „Export" = Menü „Exportieren als") |
+| `File, Export, Paginated PDF` | `Ablage, Exportieren als, PDF speichern (paginiert)` (EN-Tag „Export“ = Menü „Exportieren als“) |
 | `File, Open Dictionary...` | — Menüpunkt existiert nicht (in der App bestätigt); EN-Tag veraltet, bereits gemeldet |
 
 ## Preview → Vorschau
@@ -62,10 +62,10 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 |---|---|
 | `{{gear}}, Highlight Keywords` | `{{gear}}, Schlüsselwörter hervorheben` |
 | `{{gear}}, Proofing, Show Comments` | `{{gear}}, Korrekturlesen, Kommentare anzeigen` |
-| `{{gear}}, Proofing, Highlight All Spelling Errors` | `{{gear}}, Korrekturlesen, Rechtschreibfehler anzeigen` (EN-Tag „Highlight All…" = Menü „Rechtschreibfehler anzeigen") |
+| `{{gear}}, Proofing, Highlight All Spelling Errors` | `{{gear}}, Korrekturlesen, Rechtschreibfehler anzeigen` (EN-Tag „Highlight All…“ = Menü „Rechtschreibfehler anzeigen“) |
 
 ## Notes
 
 - `{% prefspane General %}` and similar keep the **English pane ID** — never translate those.
 - `Safari, Settings…` and other non-Marked menus follow that app's own German UI (`Safari, Einstellungen…`).
-- `Proofing` = „Korrekturlesen", `Style` = „Stil", `Preview` = „Vorschau", `File` = „Ablage", `Help` = „Hilfe".
+- `Proofing` = „Korrekturlesen“, `Style` = „Stil“, `Preview` = „Vorschau“, `File` = „Ablage“, `Help` = „Hilfe“.

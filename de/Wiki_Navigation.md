@@ -6,9 +6,9 @@ Marked enthält ein Wiki-Navigationssystem, mit dem Sie mithilfe einfacher `[[wi
 
 Um die Wiki-Verlinkung zu verwenden, aktivieren Sie **`[[wiki links]]` konvertieren** unter {% prefspane Preview %} und legen Sie die Standarderweiterung fest, die Marked bei der Suche nach passenden Dateien verwendet.
 
-Um das beste Erlebnis zu erzielen, setzen Sie **„Links zu Textdateien öffnen in:"** auf *„das aktuelle Fenster"* unter {% prefspane Apps %}. Dadurch wird sichergestellt, dass sich die Navigation natürlich anfühlt und der Verlauf erhalten bleibt.
+Um das beste Erlebnis zu erzielen, setzen Sie **„Links zu Textdateien öffnen in:“** auf *„das aktuelle Fenster“* unter {% prefspane Apps %}. Dadurch wird sichergestellt, dass sich die Navigation natürlich anfühlt und der Verlauf erhalten bleibt.
 
-Wenn **Markdown-Syntaxfehler hervorheben** unter {% prefspane Proofing %} aktiviert ist, wird `[[wiki link]]`-Syntax, die mit keinem Dateinamen im aktuellen Verzeichnis übereinstimmt, rot hervorgehoben, um anzuzeigen, dass eine referenzierte Datei nicht vorhanden ist. Diese Hervorhebungen werden aktualisiert, wenn Dateien hinzugefügt werden, jedoch erst, nachdem die aktuelle Datei gespeichert oder neu geladen wurde. Wenn Sie auf einen hervorgehobenen Link zu einer fehlenden Datei klicken, bietet Marked Ihnen an, eine neue Datei zu erstellen und bei Bedarf die Standarderweiterung anzuhängen. Die neue leere Datei wird in Marked geöffnet, und wenn „Neue Dateien automatisch bearbeiten" aktiviert ist, wird Ihr Editor mit der neuen Datei geöffnet.
+Wenn **Markdown-Syntaxfehler hervorheben** unter {% prefspane Proofing %} aktiviert ist, wird `[[wiki link]]`-Syntax, die mit keinem Dateinamen im aktuellen Verzeichnis übereinstimmt, rot hervorgehoben, um anzuzeigen, dass eine referenzierte Datei nicht vorhanden ist. Diese Hervorhebungen werden aktualisiert, wenn Dateien hinzugefügt werden, jedoch erst, nachdem die aktuelle Datei gespeichert oder neu geladen wurde. Wenn Sie auf einen hervorgehobenen Link zu einer fehlenden Datei klicken, bietet Marked Ihnen an, eine neue Datei zu erstellen und bei Bedarf die Standarderweiterung anzuhängen. Die neue leere Datei wird in Marked geöffnet, und wenn „Neue Dateien automatisch bearbeiten“ aktiviert ist, wird Ihr Editor mit der neuen Datei geöffnet.
 
 ## Wie Wiki-Links funktionieren [how-wiki-links-work]
 
