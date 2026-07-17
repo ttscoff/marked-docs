@@ -20,7 +20,7 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `File, New, Streaming Preview` | `Ablage, Neu, Streaming-Vorschau` |
 | `File, New, MarsEdit Preview` | `Ablage, Neu, MarsEdit-Vorschau` |
 | `File, New, Markdownify URL (@~k)` | `Ablage, Neu, URL in Markdown umwandeln (@~k)` |
-| `File, Save Clipboard Preview` | `Ablage, Zwischenablagevorschau speichern` |
+| `File, Save Clipboard Preview` | `Ablage, Zwischenablage-Vorschau speichern` |
 | `File, Save Dingus` | `Ablage, Dingus speichern` |
 | `File, Save Dingus As...` | `Ablage, Dingus speichern unter…` |
 | `File, Open Dingus in Marked` | `Ablage, Dingus in Marked öffnen` |

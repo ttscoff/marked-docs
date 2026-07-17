@@ -30,11 +30,11 @@
 | **{{cmd}}M** | Im Dock ablegen |
 | **{{opt}}{{shift}}{{cmd}}F** | Fenster im Vordergrund halten |
 | **{{ctrl}}{{cmd}}B** | Grenzen eingebundener Dateien anzeigen |
-| **{{ctrl}}{{cmd}}L** | URLs validieren |
+| **{{ctrl}}{{cmd}}L** | Externe Links prüfen |
 | **{{ctrl}}{{cmd}}W** | Wortwiederholungen visualisieren |
 | **{{ctrl}}{{opt}}S** | Schnelllesen umschalten |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Dokument befragen… (Apple Intelligence) |
-| **{{opt}}{{cmd}}S** | Dokumentstatistik |
+| **{{opt}}{{cmd}}S** | Basisstatistik |
 | **{{opt}}{{shift}}{{cmd}}S** | Lesbarkeitsstatistik |
 | **{{cmd}}I** | Detaillierte Statistik |
 | **{{opt}}{{cmd}}C** | Modifizierten Prozessor umschalten |
@@ -44,8 +44,8 @@
 | **{{opt}}{{cmd}}{{left}}** | Alle Abschnitte einklappen |
 | **{{opt}}{{cmd}}{{right}}** | Alle Abschnitte ausklappen |
 | **{{shift}}{{cmd}}V** | Vorschau der Zwischenablage |
-| **{{cmd}}K** | Aus URL extrahieren |
-| **{{ctrl}}{{cmd}}S** | Zwischenablagevorschau speichern |
+| **{{cmd}}K** | URL in Markdown umwandeln |
+| **{{ctrl}}{{cmd}}S** | Zwischenablage-Vorschau speichern |
 | **{{cmd}}\ (Backslash)** | Fountain-/Scrivener-Kommentare umschalten |
 | **{{ctrl}}{{cmd}}C** | Kommentare und Fußnoten anzeigen |
 | **{{opt}}{{cmd}}F** | Scrivener-Dokumente filtern |

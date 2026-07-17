@@ -73,7 +73,7 @@ Both were translated two different ways in the app (overview vs. menu). Agreed w
 | Term | Translation | Notes |
 |---------|-------------|-------|
 | Included files (transclusion) | **eingebundene** Dateien | Marked includes files by reference, so „einbinden“, never „einbetten“ — matching Multi-File_Documents, which uses it throughout. Reserve „eingebettet“ for things physically embedded in a file: eingebettete Bilder, eingebetteter Text (PDF), „Eingebettetes Skript ausführen“. |
-| Save Clipboard Preview | **Zwischenablagevorschau speichern** | Not „Schnellvorschau speichern“: the command saves the preview built from the *clipboard*, and „Schnellvorschau“ names a different concept (and collides with Quick Look). |
+| Save Clipboard Preview | **Zwischenablage-Vorschau speichern** | Not „Schnellvorschau speichern“: the command saves the preview built from the *clipboard*, and „Schnellvorschau“ names a different concept (and collides with Quick Look). |
 
 ## Do not translate (keep English)
 

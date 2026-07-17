@@ -22,7 +22,7 @@ Unterstützt werden Datei-URLs, lokale Dateien und Web-URLs, wenn die sendende A
 
 Markieren Sie Text in einer App wie **TextEdit**, **Safari** oder **Mail** und wählen Sie **Teilen → Marked**.
 
-Marked legt den Text in die Zwischenablage und öffnet eine **temporäre Vorschau** über den Handler `x-marked-3://paste`. Das entspricht der ungespeicherten Vorschau von {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}. Sie können sie später mit {% appmenu Ablage, Zwischenablagevorschau speichern %} speichern.
+Marked legt den Text in die Zwischenablage und öffnet eine **temporäre Vorschau** über den Handler `x-marked-3://paste`. Das entspricht der ungespeicherten Vorschau von {% appmenu Ablage, Neu, Zwischenablage-Vorschau ({{shift}}{{cmd}}V) %}. Sie können sie später mit {% appmenu Ablage, Zwischenablage-Vorschau speichern %} speichern.
 
 Klartext, HTML, RTF und Markdown werden unterstützt, wenn die Quell-App sie bereitstellt.
 
