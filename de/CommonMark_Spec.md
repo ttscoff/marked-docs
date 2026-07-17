@@ -1,50 +1,50 @@
 # <%= @title %>
 
-Schauen Sie sich [Markdown Dingus](x-marked-3://dingus?processor=commonmark) an, um mit dem CommonMark-Prozessor (GFM) zu experimentieren.
+Probieren Sie [Markdown Dingus](x-marked-3://dingus?processor=commonmark) aus, um mit dem CommonMark-Prozessor (GFM) zu experimentieren.
 
 
-## Was ist CommonMark?
+## Was ist CommonMark? [what-is-commonmark]
 
-CommonMark ist eine stark spezifizierte, hochkompatible Implementierung von Markdown. Es wurde erstellt, um die Unklarheiten und Inkonsistenzen in John Grubers ursprünglicher Markdown-Spezifikation zu beheben, die zu unterschiedlichen Implementierungen auf verschiedenen Plattformen und Tools führten.
+CommonMark ist eine genau spezifizierte, hochkompatible Implementierung von Markdown. Sie wurde entwickelt, um die Mehrdeutigkeiten und Inkonsistenzen in John Grubers ursprünglicher Markdown-Spezifikation zu beheben, die zu unterschiedlichen Implementierungen auf verschiedenen Plattformen und in verschiedenen Werkzeugen geführt hatten.
 
-## Warum CommonMark existiert
+## Warum CommonMark existiert [why-commonmark-exists]
 
-Die ursprüngliche Markdown-Spezifikation von John Gruber war in vielen Bereichen absichtlich mehrdeutig, was zu unterschiedlichen Interpretationen durch verschiedene Implementierungen führte. Dies führte zu Problemen, da dasselbe Markdown-Dokument auf verschiedenen Plattformen (GitHub, StackOverflow, Reddit usw.) unterschiedlich gerendert wurde.
+Die ursprüngliche Markdown-Spezifikation von John Gruber war in vielen Bereichen absichtlich mehrdeutig, sodass verschiedene Implementierungen sie unterschiedlich auslegten. Dadurch wurde dasselbe Markdown-Dokument auf verschiedenen Plattformen (GitHub, Stack Overflow, Reddit usw.) unterschiedlich gerendert.
 
 CommonMark bietet:
 
-- **Eindeutige Angaben** für die gesamte Markdown-Syntax
-- **Umfassende Testsuite** zur Gewährleistung eines konsistenten Verhaltens
+- **Eindeutige Vorgaben** für die gesamte Markdown-Syntax
+- **Umfassende Testsuite**, die konsistentes Verhalten gewährleistet
 - **Klare Vorrangregeln** für widersprüchliche Syntax
-- **Detaillierter Parsing-Algorithmus**, der konsistent implementiert werden kann
+- **Detaillierten Parsing-Algorithmus**, der sich konsistent implementieren lässt
 
-## Hauptunterschiede zum Standard Markdown
+## Hauptunterschiede zu Standard-Markdown [key-differences-from-standard-markdown]
 
-### 1. **Strengere Parsing-Regeln**
+### 1. **Strengere Parsing-Regeln** [1-stricter-parsing-rules]
 
 CommonMark erzwingt ein konsistenteres Parsing-Verhalten:
 
 **Leerzeilen vor Blockelementen**
 
-- CommonMark erfordert Leerzeilen vor Überschriften, Anführungszeichen und Listen
-- Der Standard Markdown erlaubt diese häufig ohne Leerzeilen
+- CommonMark erfordert Leerzeilen vor Überschriften, Blockzitaten und Listen
+- Standard-Markdown erlaubt diese häufig ohne Leerzeilen
 
 ```markdown
 Text
-# Heading
+# Heading [heading]
 ```
 
 *CommonMark: Erfordert eine Leerzeile vor der Überschrift*
 
-*Standard Markdown: Oft ohne Leerzeile erlaubt*
+*Standard-Markdown: oft ohne Leerzeile erlaubt*
 
-### 2. **Analyse von Listenelementen**
+### 2. **Analyse von Listenelementen** [2-list-item-parsing]
 
 **Einrückungsanforderungen**
 
-- CommonMark hat spezielle Regeln für das Einrücken von Listenelementen
+- CommonMark hat genaue Regeln für die Einrückung von Listenelementen
 - Unterlisten müssen konsistent eingerückt werden (normalerweise 4 Leerzeichen).
-- Standardmäßige Markdown-Implementierungen weichen hiervon ab
+- Standardimplementierungen von Markdown weichen hiervon ab
 
 ```markdown
 1. First item
@@ -52,16 +52,16 @@ Text
 2. Second item
 ```
 
-**Fortsetzung der Liste**
+**Listenfortsetzung**
 
-- CommonMark hat klare Regeln dafür, wann Listenelemente „locker“ oder „fest“ sind.
-- Lose Listen umschließen Elemente in `<p>`-Tags, enge Listen nicht
+- CommonMark hat klare Regeln dafür, wann Listen „locker“ oder „kompakt“ sind
+- Lockere Listen umschließen Elemente mit `<p>`-Tags, kompakte Listen nicht
 
-### 3. **Codeblock-Handhabung**
+### 3. **Codeblock-Handhabung** [3-code-block-handling]
 
-**Eingezäunte Codeblöcke**
+**Abgegrenzte Codeblöcke**
 
-– CommonMark standardisiert die Syntax von abgeschirmten Codeblöcken mit Backticks oder Tilden
+- CommonMark standardisiert die Syntax abgegrenzter Codeblöcke mit Backticks oder Tilden
 - Erfordert konsistente Einrückungs- und Schlussmarkierungen
 
 
@@ -72,10 +72,10 @@ Text
 
 **Eingerückte Codeblöcke**
 
-– CommonMark erfordert Leerzeilen vor eingerückten Codeblöcken
-- Der Standard Markdown erlaubt sie oft ohne Leerzeilen
+- CommonMark erfordert Leerzeilen vor eingerückten Codeblöcken
+- Standard-Markdown erlaubt sie oft ohne Leerzeilen
 
-### 4. **Link- und Bildverarbeitung**
+### 4. **Link- und Bildverarbeitung** [4-link-and-image-processing]
 
 **Vorrang des Referenzlinks**
 
@@ -91,13 +91,13 @@ Text
 **Link-Parsing-Reihenfolge**
 
 - CommonMark verarbeitet Links vor der Hervorhebung
-– Dies wirkt sich darauf aus, wie verschachtelte Syntax interpretiert wird
+- Dies wirkt sich darauf aus, wie verschachtelte Syntax interpretiert wird
 
-### 5. **Betonung und starke Betonung**
+### 5. **Hervorhebung und starke Hervorhebung** [5-emphasis-and-strong-emphasis]
 
 **Verschachtelte Hervorhebungsregeln**
 
-– CommonMark verfügt über spezielle Algorithmen für die Verarbeitung verschachtelter `*`- und `_`-Markierungen
+- CommonMark verwendet spezielle Algorithmen für verschachtelte `*`- und `_`-Markierungen
 - Verhindert mehrdeutiges Parsen komplexer Hervorhebungsmuster
 
 ```markdown
@@ -106,14 +106,14 @@ Text
 
 **Trennzeichenverarbeitung**
 
-- CommonMark verwendet einen „Trennzeichen-Stack“-Algorithmus für eine konsistente Hervorhebungsanalyse
+- CommonMark verwendet einen „Trennzeichenstapel“-Algorithmus für eine konsistente Hervorhebungsanalyse
 - Standardimplementierungen von Markdown unterscheiden sich in ihrem Ansatz
 
-### 6. **HTML Blockverarbeitung**
+### 6. **Verarbeitung von HTML-Blöcken** [6-html-block-processing]
 
-**HTML Blockerkennung**
+**Erkennung von HTML-Blöcken**
 
-- CommonMark verfügt über 7 verschiedene Arten von HTML-Blöcken mit spezifischen Regeln
+- CommonMark unterscheidet 7 Arten von HTML-Blöcken mit jeweils eigenen Regeln
 - Jeder Typ hat unterschiedliche Anforderungen an die Start-/Endbedingungen
 
 ```html
@@ -122,7 +122,7 @@ This is an HTML block in CommonMark
 </div>
 ```
 
-### 7. **Behandlung von Zeilenumbrüchen**
+### 7. **Behandlung von Zeilenumbrüchen** [7-line-break-handling]
 
 **Harte Zeilenumbrüche**
 
@@ -134,60 +134,60 @@ Line one
 Line two  <!-- Two spaces before line break -->
 ```
 
-### 8. **Entitäts- und Zeichenreferenzen**
+### 8. **Entitäts- und Zeichenreferenzen** [8-entity-and-character-references]
 
 **Numerische Zeichenreferenzen**
 
 - CommonMark unterstützt sowohl dezimale als auch hexadezimale numerische Referenzen
-– Die Standardunterstützung für Markdown variiert
+- Die Unterstützung in Standardimplementierungen von Markdown variiert
 
 ```html
 &#8212;  <!-- Decimal -->
 &#x2014; <!-- Hexadecimal -->
 ```
 
-## CommonMark-Parsing-Algorithmus
+## CommonMark-Parsing-Algorithmus [commonmark-parsing-algorithm]
 
 CommonMark verwendet einen zweiphasigen Parsing-Ansatz:
 
-### Phase 1: Blockstruktur
+### Phase 1: Blockstruktur [phase-1-block-structure]
 
-1. **Zeilenverarbeitung**: Jede Zeile wird auf Blockebenenmarkierungen analysiert
+1. **Zeilenverarbeitung**: Jede Zeile wird auf Markierungen auf Blockebene analysiert
 2. **Containerblöcke**: Blockzitate, Listen und andere Container werden identifiziert
-3. **Blattblöcke**: Überschriften, Codeblöcke, Absätze werden verarbeitet
+3. **Blattblöcke**: Überschriften, Codeblöcke und Absätze werden verarbeitet
 4. **Referenzlinks**: Linkdefinitionen werden zur späteren Verwendung gesammelt
 
-### Phase 2: Inline-Struktur
+### Phase 2: Inline-Struktur [phase-2-inline-structure]
 
 1. **Inline-Verarbeitung**: Text innerhalb von Blöcken wird auf Inline-Elemente analysiert
-2. **Hervorhebungsanalyse**: Verwendet den Trennstapelalgorithmus für eine konsistente Hervorhebung
+2. **Hervorhebungsanalyse**: Verwendet den Trennzeichenstapel-Algorithmus für eine konsistente Hervorhebung
 3. **Linkauflösung**: Referenzlinks werden anhand gesammelter Definitionen aufgelöst
 4. **Entitätsverarbeitung**: Zeichenreferenzen werden in tatsächliche Zeichen umgewandelt
 
-## Vorteile von CommonMark
+## Vorteile von CommonMark [benefits-of-commonmark]
 
-1. **Vorhersehbares Verhalten**: Die gleiche Eingabe erzeugt immer die gleiche Ausgabe
-2. **Plattformübergreifende Kompatibilität**: Funktioniert konsistent mit verschiedenen Tools
+1. **Vorhersehbares Verhalten**: Dieselbe Eingabe erzeugt immer dieselbe Ausgabe
+2. **Plattformübergreifende Kompatibilität**: Funktioniert in verschiedenen Werkzeugen konsistent
 3. **Umfassende Tests**: Umfangreiche Testsuite sorgt für Zuverlässigkeit
-4. **Klare Dokumentation**: Detaillierte Spezifikationen machen Rätselraten überflüssig
+4. **Klare Dokumentation**: Detaillierte Spezifikationen beseitigen Unklarheiten
 5. **Zukunftssicher**: Klar definierte Erweiterungspunkte für neue Funktionen
 
-## Implementierungshinweise
+## Implementierungshinweise [implementation-notes]
 
 CommonMark ist wie folgt konzipiert:
 
 - **Spezifikationskonform**: Entspricht genau der offiziellen CommonMark-Spezifikation
 - **Testgesteuert**: Besteht die offizielle CommonMark-Testsuite
 - **Erweiterbar**: Kann unter Beibehaltung der Kompatibilität um zusätzliche Funktionen erweitert werden
-- **Schnell**: Optimierte Parsing-Algorithmen für Leistung
+- **Schnell**: Optimierte Parsing-Algorithmen sorgen für hohe Leistung
 
-## Ressourcen
+## Ressourcen [resources]
 
-- [CommonMark Specification](https://spec.commonmark.org/0.31.2/)
-- [CommonMark Test Suite](https://github.com/commonmark/commonmark-spec)
+- [CommonMark-Spezifikation](https://spec.commonmark.org/0.31.2/)
+- [CommonMark-Testsuite](https://github.com/commonmark/commonmark-spec)
 - [CommonMark Dingus](https://spec.commonmark.org/dingus/) – Online-Testtool
-- [CommonMark Discussion Forum](https://talk.commonmark.org/)
+- [CommonMark-Diskussionsforum](https://talk.commonmark.org/)
 
 ---
 
-*Diese Dokumentation deckt CommonMark 0.31.2 (28.01.2024) ab. Die aktuellsten Informationen finden Sie immer in der offiziellen Spezifikation.*
+*Diese Dokumentation behandelt CommonMark 0.31.2 (28. Januar 2024). Die aktuellsten Informationen finden Sie in der offiziellen Spezifikation.*

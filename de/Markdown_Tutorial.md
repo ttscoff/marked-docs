@@ -1,59 +1,59 @@
 # <%= @title %>
 
-## Was ist Markdown?
+## Was ist Markdown? [what-is-markdown]
 
-Markdown ist eine leichte Auszeichnungssprache, die es Ihnen ermöglicht, in einem leicht lesbaren, einfach zu schreibenden Klartextformat zu schreiben und es dann in strukturell gültiges HTML zu konvertieren. Das übergeordnete Designziel für die Formatierungssyntax von Markdown besteht darin, sie so lesbar wie möglich zu machen.
+Markdown ist eine leichtgewichtige Auszeichnungssprache. Sie schreiben in einem gut lesbaren und einfach zu erstellenden Klartextformat, das sich anschließend in strukturell gültiges HTML umwandeln lässt. Das wichtigste Gestaltungsziel der Markdown-Syntax ist größtmögliche Lesbarkeit.
 
-## Grundlegende Syntax
+## Grundlegende Syntax [basic-syntax]
 
-### Kopfzeilen
+### Überschriften [headers]
 
-Erstellen Sie Header mit Hash-Symbolen (`#`). Die Anzahl der Hashes bestimmt die Header-Ebene:
+Erstellen Sie Überschriften mit Rautenzeichen (`#`). Die Anzahl der Rautenzeichen bestimmt die Überschriftenebene:
 
 ```markdown
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+# Header 1 [header-1]
+## Header 2 [header-2]
+### Header 3 [header-3]
+#### Header 4 [header-4]
+##### Header 5 [header-5]
+###### Header 6 [header-6]
 ```
 
-### Schwerpunkt
+### Hervorhebung [emphasis]
 
-**Fettgedruckter Text** mit doppelten Sternchen oder doppelten Unterstrichen:
+**Fetter Text** mit doppelten Sternchen oder Unterstrichen:
 
 ```markdown
 **Bold text**
 __Bold text__
 ```
 
-*Kursiver Text* mit einzelnen Sternchen oder einzelnen Unterstrichen:
+*Kursiver Text* mit einzelnen Sternchen oder Unterstrichen:
 
 ```markdown
 *Italic text*
 _Italic text_
 ```
 
-### Listen
+### Listen [lists]
 
 **Ungeordnete Listen** mit Sternchen, Pluszeichen oder Bindestrichen:
 
-„Abschlag
-* Punkt 1
-* Punkt 2
-* Punkt 3
+```markdown
+* Item 1
+* Item 2
+* Item 3
 
-+ Punkt 1
-+ Punkt 2
-+ Punkt 3
++ Item 1
++ Item 2
++ Item 3
 
-- Punkt 1
-- Punkt 2
-- Punkt 3
-„
+- Item 1
+- Item 2
+- Item 3
+```
 
-**Geordnete Listen** mit Zahlen gefolgt von Punkten:
+**Geordnete Listen** mit Zahlen, auf die ein Punkt folgt:
 
 ```markdown
 1. First item
@@ -61,41 +61,41 @@ _Italic text_
 3. Third item
 ```
 
-### Links
+### Links [links]
 
-**Inline-Links** mit dem Text in eckigen Klammern und der URL in Klammern:
+**Inline-Links** mit dem Text in eckigen Klammern und der URL in runden Klammern:
 
 ```markdown
 [Link text](http://example.com)
 ```
 
-**Referenzlinks** mit dem Text in eckigen Klammern und einem Verweis in eckigen Klammern:
+**Referenzlinks** mit dem Text und einer Referenz in jeweils eigenen eckigen Klammern:
 
-„Abschlag
+```markdown
 [Link text][reference]
 
 [reference]: http://example.com "Optional title"
-„
+```
 
-**Automatische Links** durch Umschließen von URLs in spitze Klammern:
+**Automatische Links**, indem Sie URLs in spitze Klammern einschließen:
 
 ```markdown
 <http://example.com>
 <user@example.com>
 ```
 
-### Bilder
+### Bilder [images]
 
 Bilder verwenden eine ähnliche Syntax wie Links, jedoch mit einem Ausrufezeichen am Anfang:
 
-„Abschlag
+```markdown
 ![Alt text](http://example.com/image.jpg)
 ![Alt text][image-reference]
 
 [image-reference]: http://example.com/image.jpg "Optional title"
-„
+```
 
-### Blockzitate
+### Blockzitate [blockquotes]
 
 Erstellen Sie Blockzitate mit dem Größer-als-Symbol (`>`) am Anfang jeder Zeile:
 
@@ -106,7 +106,7 @@ Erstellen Sie Blockzitate mit dem Größer-als-Symbol (`>`) am Anfang jeder Zeil
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Code
+### Code [code]
 
 **Inline-Code** mit Backticks:
 
@@ -122,35 +122,35 @@ Use `code` in your text.
     Multiple lines are supported.
 ```
 
-### Horizontale Regeln
+### Horizontale Linien [horizontal-rules]
 
-Erstellen Sie horizontale Regeln mit drei oder mehr Bindestrichen, Sternchen oder Unterstrichen:
+Erstellen Sie horizontale Linien mit drei oder mehr Bindestrichen, Sternchen oder Unterstrichen:
 
-„Abschlag
+```markdown
 ---
 
 ***
 
 ___
-„
+```
 
-### Zeilenumbrüche
+### Zeilenumbrüche [line-breaks]
 
-**Harte Zeilenumbrüche**, indem eine Zeile mit zwei oder mehr Leerzeichen endet:
+**Harte Zeilenumbrüche** erzeugen Sie, indem Sie eine Zeile mit zwei oder mehr Leerzeichen beenden:
 
 ```markdown
 This line ends with two spaces.
 This creates a hard line break.
 ```
 
-**Weiche Zeilenumbrüche** durch einfaches Drücken der Eingabetaste (erstellt ein Leerzeichen in HTML):
+**Weiche Zeilenumbrüche** erzeugen Sie durch einfaches Drücken der Eingabetaste (daraus wird in HTML ein Leerzeichen):
 
 ```markdown
 This line
 continues on the next line with a space.
 ```
 
-### Escape-Zeichen
+### Escape-Zeichen [escaping-characters]
 
 Sonderzeichen mit Backslashes maskieren:
 
@@ -168,12 +168,12 @@ Häufige Zeichen, die maskiert werden können:
 - `[]` eckige Klammern
 - `()` Klammern
 - `#` Hash
-- `+` plus
-- `-` minus
+- `+` Pluszeichen
+- `-` Minuszeichen
 - `.` Punkt
 - `!` Ausrufezeichen
 
-## Best Practices
+## Bewährte Vorgehensweisen [best-practices]
 
 1. **Verwenden Sie Leerzeilen**, um verschiedene Elemente zur besseren Lesbarkeit zu trennen
 2. **Seien Sie konsistent** bei Ihren Formatierungsoptionen (verwenden Sie z. B. entweder `*` oder `_` zur Hervorhebung).
@@ -181,9 +181,9 @@ Häufige Zeichen, die maskiert werden können:
 4. **Testen Sie Ihre Ausgabe**, um sicherzustellen, dass sie wie erwartet gerendert wird
 5. **Verwenden Sie aussagekräftigen Linktext** anstelle allgemeiner Phrasen wie „hier klicken“
 
-## Gemeinsame Muster
+## Häufige Muster [common-patterns]
 
-### Verschachtelte Listen
+### Verschachtelte Listen [nested-lists]
 
 ```markdown
 1. First item
@@ -193,19 +193,19 @@ Häufige Zeichen, die maskiert werden können:
    - More nested content
 ```
 
-### Listen mit Absätzen
+### Listen mit Absätzen [lists-with-paragraphs]
 
-„Abschlag
-1. Erster Punkt
+```markdown
+1. First item
 
-Dies ist ein Absatz unter dem ersten Punkt.
+   This is a paragraph under the first item.
 
-2. Zweiter Punkt
+2. Second item
 
-Dies ist ein Absatz unter dem zweiten Punkt.
-„
+   This is a paragraph under the second item.
+```
 
-### Blockzitate mit anderen Elementen
+### Blockzitate mit anderen Elementen [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -216,10 +216,10 @@ Dies ist ein Absatz unter dem zweiten Punkt.
 > > Nested blockquotes are also possible.
 ```
 
-## Zusammenfassung
+## Zusammenfassung [summary]
 
-Markdown bietet eine einfache, lesbare Möglichkeit, Text zu formatieren, der problemlos in HTML konvertiert werden kann. Der Schlüssel liegt darin, es einfach und lesbar zu halten und gleichzeitig die grundlegenden Syntaxelemente konsequent zu verwenden. Mit etwas Übung werden Sie feststellen, dass Markdown zur zweiten Natur wird und das Schreiben strukturierter Inhalte viel einfacher macht.
+Markdown bietet eine einfache, lesbare Möglichkeit, Text zu formatieren und problemlos in HTML umzuwandeln. Halten Sie den Text einfach und lesbar und verwenden Sie die grundlegenden Syntaxelemente konsistent. Mit etwas Übung geht Ihnen Markdown in Fleisch und Blut über und erleichtert das Schreiben strukturierter Inhalte erheblich.
 
 ---
 
-*Dieses Tutorial behandelt die Kernsyntax Markdown, wie sie in der Originalspezifikation definiert ist. Weitere erweiterte Funktionen finden Sie in der Dokumentation zu bestimmten Markdown-Prozessoren wie CommonMark (GFM), MultiMarkdown oder GitHub Flavored Markdown.*
+*Dieses Tutorial behandelt die Markdown-Kernsyntax aus der ursprünglichen Spezifikation. Erweiterte Funktionen finden Sie in der Dokumentation zu bestimmten Markdown-Prozessoren wie CommonMark (GFM), MultiMarkdown oder GitHub Flavored Markdown.*
