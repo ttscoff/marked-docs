@@ -1,14 +1,14 @@
 # <%= @title %>
 
-Wenn eine über [Marked's include syntax or IA Writer block syntax][include] eingebundene Datei eine CSV- oder TSV-Erweiterung hat, versucht Marked, sie zu analysieren und in eine MultiMarkdown-Tabelle zu konvertieren. Dies funktioniert mit den meisten Standardformaten, einschließlich durch Kommas und Tabulatoren getrennter Formate sowie mit zusätzlichen Trennzeichen und Anführungszeichenformaten, die automatisch erkannt werden.
+Hat eine über [Markeds Include-Syntax oder die iA-Writer-Block-Syntax][include] eingebundene Datei die Dateiendung `.csv` oder `.tsv`, versucht Marked, sie zu lesen und in eine MultiMarkdown-Tabelle umzuwandeln. Das klappt mit den meisten gängigen Formaten, also mit Komma- und Tabulator-Trennung ebenso wie mit weiteren Trennzeichen und Quoting-Varianten, die Marked automatisch erkennt.
 
-Ein Vorteil der Verwendung von CSV-Dateien anstelle des Schreibens von Markdown-Tabellen besteht darin, dass Zeilenumbrüche innerhalb von Zellen automatisch in `<br>`-Tags umgewandelt werden. Dies muss manuell durchgeführt werden, um beim Schreiben von MultiMarkdown-Tabellen Zeilenumbrüche einzuschließen, was eine zusätzliche Zeitersparnis darstellt.
+Ein Vorteil von CSV-Dateien gegenüber handgeschriebenen Markdown-Tabellen: Zeilenumbrüche innerhalb einer Zelle werden automatisch in `<br>`-Tags umgewandelt. In einer MultiMarkdown-Tabelle müssten Sie diese Tags von Hand einfügen – CSV spart Ihnen also zusätzlich Zeit.
 
-Nebenbei bemerkt gibt es eine hervorragende App namens [TableFlip][], die das Bearbeiten von Tabellen in Ihrem Dokument erheblich vereinfacht. Es lohnt sich, einen Blick darauf zu werfen, wenn Sie häufig mit Tabellendaten arbeiten.
+Am Rande: Es gibt eine hervorragende App namens [TableFlip][], die das Bearbeiten von Tabellen im Dokument erheblich vereinfacht. Sie ist einen Blick wert, wenn Sie häufig mit Tabellendaten arbeiten.
 
-Enthaltene CSV-Dateien werden auf Änderungen überwacht, sodass zusätzliche Bearbeitungen in der ursprünglichen CSV-Datei vorgenommen werden können und Marked die Vorschau beim Speichern automatisch aktualisiert.
+Eingebundene CSV-Dateien werden auf Änderungen überwacht: Sie arbeiten einfach in der ursprünglichen CSV-Datei weiter, und Marked aktualisiert die Vorschau beim Speichern automatisch.
 
-Konvertierte Tabellen werden in den Markdown-Export einbezogen, sodass Marked zum Kompilieren von Dokumenten mit strukturierten Daten und zum Exportieren einer einzelnen Datei verwendet werden kann.
+Umgewandelte Tabellen landen auch im Markdown-Export. So stellen Sie mit Marked Dokumente mit strukturierten Daten zusammen und exportieren sie als eine einzige Datei.
 
 [include]: Multi-File_Documents.html
 [TableFlip]: http://tableflipapp.com/
