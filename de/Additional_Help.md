@@ -1,3 +1,3 @@
 # <%= @title %>
 
-Wenn Sie andere Probleme mit Marked haben, können Sie [Marked Support Site](https://support.markedapp.com) nach Antworten auf Fragen anderer Benutzer durchsuchen. Wenn Sie keine Antwort finden, wenden Sie sich bitte an [ask a new question](https://support.markedapp.com/questions/add) und ich helfe Ihnen so schnell wie möglich.
+Bei weiteren Problemen mit Marked können Sie die [Marked-Support-Seite](https://support.markedapp.com) nach Antworten auf Fragen anderer Nutzer durchsuchen. Finden Sie keine Antwort, [stellen Sie gern eine neue Frage](https://support.markedapp.com/questions/add) – ich helfe Ihnen so schnell wie möglich.

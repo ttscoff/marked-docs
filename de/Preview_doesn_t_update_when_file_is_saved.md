@@ -2,8 +2,8 @@
 
 Vorschauen werden nicht wie erwartet aktualisiert?
 
-## Zeitmaschine [time-machine]
+## Time Machine [time-machine]
 
-Es wurden einige Probleme mit langsamen (oder nicht vorhandenen) Updates während eines Time Machine-Laufs gemeldet. Die Aktualisierungsfunktionen von Marked können beeinträchtigt sein, wenn Time Machine den Teil des Laufwerks verwendet, auf dem die Datei zu diesem Zeitpunkt vorhanden ist. Dies wird normalerweise behoben, wenn Time Machine seinen Lauf beendet.
+Während eines Time-Machine-Laufs wurden vereinzelt langsame oder ausbleibende Aktualisierungen gemeldet. Markeds Aktualisierung kann beeinträchtigt sein, wenn Time Machine gerade den Teil des Laufwerks bearbeitet, auf dem die Datei liegt. Das gibt sich in der Regel, sobald Time Machine fertig ist.
 
-Wenn Sie Probleme damit haben, dass Marked nicht auf Updates reagiert, nachdem Time Machine seine Ausführung abgeschlossen hat, oder zu einem Zeitpunkt, an dem Time Machine überhaupt nicht läuft, [file a ticket](https://support.markedapp.com/questions/add) und wir werden das Problem gemeinsam mit Ihnen beheben.
+Reagiert Marked auch dann nicht auf Änderungen, wenn Time Machine längst fertig ist oder gar nicht läuft, [reichen Sie bitte ein Ticket ein](https://support.markedapp.com/questions/add) – wir gehen dem dann gemeinsam mit Ihnen nach.
