@@ -2158,7 +2158,7 @@ Schreibe alle Antworten auf %@.";
 "27J-dC-nHz.ibShadowedToolTip" = "Konvertiert Links im [[Wiki-Link]]-Stil. Es werden nur Links konvertiert, die mit vorhandenen Dateinamen übereinstimmen.";
 # EN: Convert [[wiki link]] style links. Only links that match existing filenames will be converted.
 
-"2NR-Pg-rVO.ibShadowedToolTip" = "Rendern Sie - [ ] und - [x] zum Erstellen von Kontrollkästchen. Sie werden zur Vorschau gerendert, sind jedoch innerhalb von Marked nicht funktionsfähig.";
+"2NR-Pg-rVO.ibShadowedToolTip" = "Rendert - [ ] und - [x] zu Kontrollkästchen. Sie werden in der Vorschau angezeigt, sind in Marked aber nicht funktionsfähig.";
 # EN: Render - [ ] and - [x] for creating checkboxes. Checkboxes are rendered for preview but not functional within Marked.
 
 "2Sb-Zo-zN8.ibShadowedToolTip" = "Verwendet Umrisse im APA-Stil anstelle des standardmäßigen Dezimalformats";
@@ -2291,7 +2291,7 @@ Schreibe alle Antworten auf %@.";
 "6iu-Hv-rnF.title" = "Speicherintensive Funktionen bei großen Dokumenten deaktivieren";
 # EN: Disable memory-intensive features on large documents
 
-"6jZ-PG-IiX.title" = "Rendern Sie GitHub-Kontrollkästchen";
+"6jZ-PG-IiX.title" = "GitHub-Kontrollkästchen rendern";
 # EN: Render GitHub checkboxes
 
 "6zx-Ta-74D.ibShadowedToolTip" = "Stil-Manager öffnen";
@@ -2356,7 +2356,7 @@ Schreibe alle Antworten auf %@.";
 "9Yl-2p-W4T.title" = "In MultiMarkdown-Metadaten konvertieren";
 # EN: Convert to MultiMarkdown Metadata
 
-"9ny-nM-7Ku.ibShadowedToolTip" = "Rendern Sie ==text== als <mark>-Tag. Rendert auch ~~durchgestrichen~~ und ~unterstrichen~.";
+"9ny-nM-7Ku.ibShadowedToolTip" = "Rendert ==text== als <mark>-Tag. Rendert auch ~~durchgestrichen~~ und ~unterstrichen~.";
 # EN: Render ==text== as a <mark> tag. Also renders ~~strikethrough~~ and ~underline~.
 
 "9sl-AY-z4F.placeholderString" = "900";
@@ -2605,7 +2605,7 @@ Schreibe alle Antworten auf %@.";
 
 "LuR-pP-xeu.title" = "14";
 
-"M7o-ma-vSC.ibShadowedToolTip" = "Rendern Sie die :name:-Syntax als GitHub-Emoji";
+"M7o-ma-vSC.ibShadowedToolTip" = "Rendert die :name:-Syntax als GitHub-Emoji";
 # EN: Render :name: syntax as GitHub emoji
 
 "MDL-6U-a9Z.title" = "Kopfzeile";
@@ -2882,7 +2882,7 @@ Schreibe alle Antworten auf %@.";
 "WOj-Fg-hnd.ibShadowedToolTip" = "Bettet OmniOutliner-Dateien (.ooutline) als Mermaid-Diagramme ein. Wenn diese Option deaktiviert ist, werden OmniOutliner-Dateien, die mit der Include-Syntax eingebunden sind, als Markdown-Listen/Checklisten gerendert.";
 # EN: Embed OmniOutliner (.ooutline) files as Mermaid diagrams. If disabled, OmniOutlineir files included with include syntax will be rendered as Markdown lists/checklists.
 
-"Wcb-ed-SyD.title" = "Rendern Sie ~text~ als Unterstrich";
+"Wcb-ed-SyD.title" = "~text~ als Unterstrich rendern";
 # EN: Render ~text~ as underscore
 
 "Wif-YO-AUc.title" = "Überschriften klappen Abschnitte ein";
@@ -2891,7 +2891,7 @@ Schreibe alle Antworten auf %@.";
 "Wkh-0o-sjb.title" = "Drucken/PDF:";
 # EN: Print/PDF:
 
-"WpI-FN-1um.title" = "Rendern GitHub :emoji:";
+"WpI-FN-1um.title" = "GitHub-Emojis rendern";
 # EN: Render GitHub :emoji:
 
 "WtW-MJ-k53.ibShadowedToolTip" = "Anwendung auswählen, die geöffnet werden soll, wenn mit der rechten Maustaste auf ein lokales Bild geklickt und „Bild bearbeiten“ ausgewählt wird.";
@@ -3005,7 +3005,7 @@ Schreibe alle Antworten auf %@.";
 "dCL-aL-acF.ibShadowedToolTip" = "Druckt eine horizontale Linie unter der Kopfzeile.";
 # EN: Print a horizontal line below the header.
 
-"dCX-j9-zi7.title" = "Rendern als CriticMarkup";
+"dCX-j9-zi7.title" = "Als CriticMarkup rendern";
 # EN: Render as CriticMarkup
 
 "dSO-yT-31X.title" = "Benutzerdefinierte Schriftgröße für Export/Druck";
@@ -3176,7 +3176,7 @@ Schreibe alle Antworten auf %@.";
 "kZl-d1-5M3.title" = "Aktualisieren";
 # EN: Refresh
 
-"kbn-do-TaT.title" = "Rendern ==hervorheben== und ~~löschen~~";
+"kbn-do-TaT.title" = "==hervorheben== und ~~löschen~~ rendern";
 # EN: Render ==highlight== and ~~delete~~
 
 "khL-0a-Mvw.title" = "Unten rechts";
@@ -3257,7 +3257,7 @@ Schreibe alle Antworten auf %@.";
 
 "nFn-GQ-2Jj.title" = "Logo:";
 
-"nPd-8B-GbS.ibShadowedToolTip" = "Rendern Sie ~text~ als Unterstrich statt als Index (MultiMarkdown)";
+"nPd-8B-GbS.ibShadowedToolTip" = "Rendert ~text~ als Unterstrich statt als Index (MultiMarkdown)";
 # EN: Render ~text~ as underscore instead of subscript (MultiMarkdown)
 
 "newBringToFrontCheckbox.ibShadowedToolTip" = "Wenn eine Dateiänderung erkannt wird, wählen Sie die Registerkarte dieses Dokuments aus oder ordnen Sie sein Fenster nur innerhalb von Marked nach vorne. Wenn eine andere App ganz vorne steht, bleibt Marked im Hintergrund. Verwenden Sie „Fenster bei Aktualisierung öffnen“, um andere Anwendungen hervorzuheben.";
