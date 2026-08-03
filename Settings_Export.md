@@ -36,6 +36,9 @@ Embed images when copying HTML
 Print background colors and images
 : By default Marked will print/export with a white background. If you want to include background colors and images from custom themes, enable this option.
 
+Show comments in Print/PDF
+: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes already appear in the document body and are unchanged.
+
 Prevent orphaned headlines
 : This option prevents headlines for the next section from appearing at the bottom of a page without succeeding content.
 
