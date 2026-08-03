@@ -118,6 +118,8 @@ Put the token on a line by itself and it will generate markup that will force a 
 
 	{::pagebreak /}
 
+When **Treat +++ as page breaks** is enabled under Settings → Processor → Rendering, a line of three or more `+` characters (iA Writer style) is treated the same as `<!--BREAK-->`.
+
 ## Autoscroll pauses [pauses]
 
 Marked can function as a Teleprompter using the [Autoscroll](Autoscroll.html) feature (you should add the [Teleprompter style](https://markedapp.com/styles/preview?style=teleprompter)). When doing so, it may be useful to include pauses in the document. Do this using:

@@ -60,3 +60,6 @@ Render `==highlight==` and `~~delete~~`
 
 Render `~text~` as underscore
 : If this option is enabled, `~text~` surrounded by single tildes will be rendered as underlined. This conflicts with MultiMarkdown syntax for subscript and is disabled by default.
+
+Treat +++ as page breaks
+: When enabled, a line of three or more `+` characters is treated as a page break (same as `<!--BREAK-->`). Compatible with iA Writer. Off by default.
