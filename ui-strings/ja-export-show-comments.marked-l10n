@@ -1,0 +1,62 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: exportShowComments (Show comments in Print/PDF)
+# Generated: 2026-08-03
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# Scrivener, Fountain) unless your locale normally localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   Preferences.xib.strings: 2
+#   Settings.strings: 2
+#   MarkdownDocument.strings: 2
+#   PDFExportWindow.xib: English-only (no locale .strings table)
+
+=== BEGIN Preferences.xib.strings ===
+# Strings in this section: 2
+
+"Xrg-8N-tlp.title" = "Print/PDF でコメントを表示";
+# EN: Show comments in Print/PDF
+# DRAFT: Print/PDF でコメントを表示
+
+"Xrf-8N-cst.ibShadowedToolTip" = "PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。
+=== END Preferences.xib.strings ===
+
+=== BEGIN Settings.strings ===
+# Strings in this section: 2
+
+"setting.exportShowComments" = "Print/PDF でコメントを表示";
+# EN: Show comments in Print/PDF
+# DRAFT: Print/PDF でコメントを表示
+
+"tooltip.exportShowComments" = "PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。
+=== END Settings.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+# Strings in this section: 2
+# Continuous PDF save accessory checkbox
+
+"ESc-1a-Cel.title" = "Print/PDF でコメントを表示";
+# EN: Show comments in Print/PDF
+# DRAFT: Print/PDF でコメントを表示
+
+"ESc-1a-Cmt.ibShadowedToolTip" = "PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: PDF を印刷またはエクスポートするときに、CriticMarkup、Scrivener、Word、および Fountain のコメントを強調表示されたインライン テキストとして含めます。脚注は変更されていません。
+=== END MarkdownDocument.strings ===
+
+=== BEGIN PDFExportWindow.xib ===
+# No locale .strings table for PDFExportWindow.xib yet.
+# English title/tooltip are embedded in the XIB; L10n wiring is out of scope for this handoff.
+=== END PDFExportWindow.xib ===
