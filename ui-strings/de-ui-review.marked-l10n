@@ -5366,177 +5366,176 @@ Schreibe alle Antworten auf %@.";
 
 === BEGIN Settings.strings (gaps) ===
 # Strings in this section: 84
-# Pre-filled from Marked/de.lproj/Settings.strings. These keys are still English in the app — translate in place.
+# Synced from Marked/de.lproj/Settings.strings (English placeholders removed 2026-07-29).
 
-"section.apps" = "Applications";
+"section.apps" = "Anwendungen";
 
-"setting.additionalMathJaxConfig" = "Advanced MathJax configuration (JSON)";
+"setting.additionalMathJaxConfig" = "Erweiterte MathJax-Konfiguration (JSON)";
 
-"setting.alphaLevel" = "Window opacity";
+"setting.alphaLevel" = "Fensterdeckkraft";
 
-"setting.appsEditorNote" = "App picker";
+"setting.appsEditorNote" = "App-Auswahl";
 
-"setting.appsEditorNote.body" = "Use Choose App buttons in legacy Apps preferences (⌥⌘,) to select external editors.";
+"setting.appsEditorNote.body" = "Externe Editoren wählen Sie über die Schaltflächen „App auswählen“ in den alten Apps-Einstellungen (⌥⌘,).";
 
-"setting.bottomPrintMargin" = "Bottom margin";
+"setting.bottomPrintMargin" = "Unterer Rand";
 
-"setting.customRules.tooltip" = "Edit Custom Rules to configure processors, preprocessors, and conditional CSS.";
+"setting.customRules.tooltip" = "Bearbeiten Sie Eigene Regeln, um Prozessoren, Präprozessoren und bedingtes CSS zu konfigurieren.";
 
-"setting.fullDiskAccess.tooltip" = "Grant full disk access to Marked. This can help with running custom processors and allow functioning of Wiki Links and image loading without having to request permissions.";
+"setting.fullDiskAccess.tooltip" = "Gewährt Marked vollen Festplattenzugriff. Das kann beim Ausführen benutzerdefinierter Prozessoren helfen und lässt Wiki-Links und das Laden von Bildern funktionieren, ohne dass Berechtigungen angefragt werden müssen.";
 
-"setting.convertTrackChanges" = "Convert change tracking ↔ CriticMarkup";
+"setting.convertTrackChanges" = "Änderungsverfolgung ↔ CriticMarkup umwandeln";
 
-"setting.customMarkdownProcessor" = "Custom processor path";
+"setting.customMarkdownProcessor" = "Pfad zum benutzerdefinierten Prozessor";
 
-"setting.customPreprocessor" = "Custom preprocessor path";
+"setting.customPreprocessor" = "Pfad zum benutzerdefinierten Präprozessor";
 
-"setting.customPreprocessor.placeholder" = "Path to script";
+"setting.customPreprocessor.placeholder" = "Pfad zum Skript";
 
-"setting.customPreprocessorDefault" = "Use custom preprocessor for new documents";
+"setting.customPreprocessorDefault" = "Benutzerdefinierten Präprozessor für neue Dokumente verwenden";
 
-"setting.customProcessor.placeholder" = "Path to script";
+"setting.customProcessor.placeholder" = "Pfad zum Skript";
 
-"setting.customProcessorDefault" = "Use custom processor for new documents";
+"setting.customProcessorDefault" = "Benutzerdefinierten Prozessor für neue Dokumente verwenden";
 
-"setting.debugHint.body" = "Help > Open Debug Log to view activity.";
+"setting.debugHint.body" = "Über „Hilfe > Debug-Protokoll öffnen“ sehen Sie die Aktivität.";
 
-"setting.debugLevel" = "Debug output level";
+"setting.debugLevel" = "Detailgrad der Debug-Ausgabe";
 
 "setting.defaultPreviewStyle.tooltip" = "The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\\\\"Marked Style: Grump\\\\\").";
 # EN: The style selected here will be loaded for all new windows, unless a document-specific style is indicated in metadata (e.g. \\"Marked Style: Grump\\").
 
 "setting.manageStyles.menu" = "Manage Styles…";
 
-"setting.moreThemes.tooltip" = "Explore the Style Gallery, where you can download or install Custom Styles";
+"setting.moreThemes.tooltip" = "Öffnet die Style Gallery, in der Sie Eigene Stile herunterladen oder installieren können";
 
-"setting.openLinksInBackground" = "Always open links in the background";
+"setting.openLinksInBackground" = "Links immer im Hintergrund öffnen";
 
-"setting.openLinksInBackgroundHint.body" = "Command-click to open in background.";
+"setting.openLinksInBackgroundHint.body" = "Mit Befehlstaste-Klick im Hintergrund öffnen.";
 
-"setting.documentTabbingMode.automatic" = "Follow system";
+"setting.documentTabbingMode.automatic" = "Systemeinstellung folgen";
 
-"setting.documentTabbingMode.tabs" = "Tab in current window";
+"setting.documentTabbingMode.tabs" = "Tab im aktuellen Fenster";
 
-"setting.documentTabbingMode.windows" = "Separate windows";
+"setting.documentTabbingMode.windows" = "Separate Fenster";
 
 "setting.embediThoughtsAsMermaid" = "Mindmaps (iThoughts)";
 
-"setting.folderPreviewExtensions" = "Folder preview extensions";
+"setting.folderPreviewExtensions" = "Dateiendungen für die Ordnervorschau";
 
-"setting.headerFooterFontSize" = "Header/footer font size";
+"setting.headerFooterFontSize" = "Schriftgröße für Kopf- und Fußzeilen";
 
-"setting.leftPrintMargin" = "Left margin";
+"setting.leftPrintMargin" = "Linker Rand";
 
-"setting.limitTextWidthPixels" = "Maximum text width (pixels)";
+"setting.limitTextWidthPixels" = "Maximale Textbreite (Pixel)";
 
-"setting.mathJaxSource" = "MathJax source";
+"setting.mathJaxSource" = "MathJax-Quelle";
 
-"setting.mathNumberEquations" = "Number equations";
+"setting.mathNumberEquations" = "Gleichungen nummerieren";
 
-"setting.mathNumberEquationsSide.left" = "Left";
+"setting.mathNumberEquationsSide.left" = "Links";
 
-"setting.mathNumberEquationsSide.right" = "Right";
+"setting.mathNumberEquationsSide.right" = "Rechts";
 
-"setting.printBorderAboveFooter" = "Border above footer";
+"setting.printBorderAboveFooter" = "Linie über der Fußzeile";
 
-"setting.printBorderBelowHeader" = "Border below header";
+"setting.printBorderBelowHeader" = "Linie unter der Kopfzeile";
 
-"setting.printFooterFirstPage" = "Footer on first page";
+"setting.printFooterFirstPage" = "Fußzeile auf der ersten Seite";
 
-"setting.printHeaderBottomCenter" = "Header bottom center";
+"setting.printHeaderBottomCenter" = "Kopfzeile unten Mitte";
 
-"setting.printHeaderBottomLeft" = "Header bottom left";
+"setting.printHeaderBottomLeft" = "Kopfzeile unten links";
 
-"setting.printHeaderBottomRight" = "Header bottom right";
+"setting.printHeaderBottomRight" = "Kopfzeile unten rechts";
 
-"setting.printHeaderFirstPage" = "Header on first page";
+"setting.printHeaderFirstPage" = "Kopfzeile auf der ersten Seite";
 
-"setting.printHeaderTopCenter" = "Header top center";
+"setting.printHeaderTopCenter" = "Kopfzeile oben Mitte";
 
-"setting.printHeaderTopLeft" = "Header top left";
+"setting.printHeaderTopLeft" = "Kopfzeile oben links";
 
-"setting.printHeaderTopRight" = "Header top right";
+"setting.printHeaderTopRight" = "Kopfzeile oben rechts";
 
-"setting.resetAlerts.button" = "Reset";
+"setting.resetAlerts.button" = "Zurücksetzen";
 
-"setting.rightPrintMargin" = "Right margin";
+"setting.rightPrintMargin" = "Rechter Rand";
 
-"setting.scrivenerCompileMetadata" = "Add compile metadata when missing";
+"setting.scrivenerCompileMetadata" = "Compile-Metadaten ergänzen, wenn sie fehlen";
 
-"tooltip.settingsBackup.export" = "Export all preferences as a JSON file that can be imported later.";
+"tooltip.settingsBackup.export" = "Exportiert alle Einstellungen als JSON-Datei, die sich später wieder importieren lässt.";
 
-"setting.showPageBreaksInPreview" = "Show page breaks in preview";
+"setting.showPageBreaksInPreview" = "Seitenumbrüche in der Vorschau anzeigen";
 
-"setting.swapCommandEHint" = "Editor shortcut";
+"setting.swapCommandEHint" = "Editor-Kurzbefehl";
 
-"setting.defaultSyntaxStyle" = "Syntax theme";
+"setting.defaultSyntaxStyle" = "Syntax-Design";
 
-"setting.toctype1" = "TOC level H1 marker";
+"setting.toctype1" = "Inhaltsverzeichnis-Zeichen H1";
 
-"setting.toctype2" = "TOC level H2 marker";
+"setting.toctype2" = "Inhaltsverzeichnis-Zeichen H2";
 
-"setting.toctype3" = "TOC level H3 marker";
+"setting.toctype3" = "Inhaltsverzeichnis-Zeichen H3";
 
-"setting.toctype4" = "TOC level H4 marker";
+"setting.toctype4" = "Inhaltsverzeichnis-Zeichen H4";
 
-"setting.toctype5" = "TOC level H5 marker";
+"setting.toctype5" = "Inhaltsverzeichnis-Zeichen H5";
 
-"setting.toctype6" = "TOC level H6 marker";
+"setting.toctype6" = "Inhaltsverzeichnis-Zeichen H6";
 
-"setting.topPrintMargin" = "Top margin";
+"setting.topPrintMargin" = "Oberer Rand";
 
 "subsection.debug" = "Debug";
 
-"subsection.editors" = "External Editors";
+"subsection.editors" = "Externe Editoren";
 
-"subsection.metadata" = "YAML and Metadata";
+"subsection.metadata" = "YAML und Metadaten";
 
-"subsection.options" = "Proofing Options";
+"subsection.options" = "Optionen zum Korrekturlesen";
 
-"subsection.print" = "Print and PDF";
+"subsection.print" = "Drucken und PDF";
 
-"tooltip.yamlHandling" = "Determine how to handle YAML front matter. Ignore will leave it in place for the processor to handle, or you can convert it to MMD metadata or remove it entirely.";
+"tooltip.yamlHandling" = "Legt fest, wie YAML-Frontmatter behandelt wird. „Ignorieren“ belässt es für den Prozessor an Ort und Stelle; alternativ lässt es sich in MultiMarkdown-Metadaten umwandeln oder ganz entfernen.";
 
-"tooltip.additionalMathJaxConfig" = "Advanced MathJax configuration as JSON (for expert users).";
+"tooltip.additionalMathJaxConfig" = "Erweiterte MathJax-Konfiguration als JSON (für erfahrene Anwender).";
 
-"tooltip.bottomPrintMargin" = "Bottom print margin (specified in points).";
+"tooltip.bottomPrintMargin" = "Unterer Druckrand (in Punkt angegeben).";
 
-"tooltip.codeCanWrap" = "If checked, themes are allowed to cause wrapping within pre>code blocks. If a theme doesn't provide wrapping, overflowing text will scroll horizontally.";
+"tooltip.codeCanWrap" = "Ist dies aktiviert, dürfen Designs innerhalb von pre>code-Blöcken umbrechen. Bietet ein Design keinen Umbruch, scrollt überstehender Text waagerecht.";
 
-"tooltip.defaultPrintFontSize" = "Point size used when Custom font size for export/print is enabled.";
+"tooltip.defaultPrintFontSize" = "Punktgröße, die verwendet wird, wenn eine eigene Schriftgröße für Export und Druck aktiviert ist.";
 
-"tooltip.openLinksInBackground" = "Open web links in your default browser without switching away from Marked.";
+"tooltip.openLinksInBackground" = "Öffnet Weblinks im Standardbrowser, ohne Marked zu verlassen.";
 
-"tooltip.globalActionPaletteKey" = "Click the shortcut field to record a hotkey for opening the Quick Action palette when Marked is the active application.";
+"tooltip.globalActionPaletteKey" = "Klicken Sie in das Kurzbefehlfeld, um einen Tastaturkurzbefehl aufzuzeichnen, der die Schnellaktionen-Palette öffnet, während Marked die aktive App ist.";
 
-"tooltip.headerFooterFontSize" = "Font size for print headers and footers.";
+"tooltip.headerFooterFontSize" = "Schriftgröße für Kopf- und Fußzeilen im Druck.";
 
-"tooltip.leftPrintMargin" = "Left print margin (specified in points).";
+"tooltip.leftPrintMargin" = "Linker Druckrand (in Punkt angegeben).";
 
-"tooltip.mathJaxSource" = "Choose whether to load MathJax from the CDN or from a local copy bundled with Marked.";
+"tooltip.mathJaxSource" = "Legt fest, ob MathJax vom CDN oder aus einer lokal mit Marked gelieferten Kopie geladen wird.";
 
-"tooltip.mathNumberEquationsSide" = "Choose which side equation numbers appear on.";
+"tooltip.mathNumberEquationsSide" = "Legt fest, auf welcher Seite die Gleichungsnummern erscheinen.";
 
-"tooltip.minimumRepeats" = "Minimum number of consecutive repeated words before highlighting.";
+"tooltip.minimumRepeats" = "Mindestanzahl aufeinanderfolgender Wortwiederholungen, ab der hervorgehoben wird.";
 
-"tooltip.noLabels" = "Generate header IDs based on contents of h1-h6 tags.";
+"tooltip.noLabels" = "Erzeugt Überschriften-IDs aus dem Inhalt der h1- bis h6-Tags.";
 
-"tooltip.noSmartyPants" = "Disable SmartyPants-style punctuation transforms when using MultiMarkdown.";
+"tooltip.noSmartyPants" = "Deaktiviert die Zeichensetzung im SmartyPants-Stil, wenn MultiMarkdown verwendet wird.";
 
-"tooltip.outlineModeExtensions" = "File extensions that trigger outline mode (comma-separated).";
+"tooltip.outlineModeExtensions" = "Dateiendungen, die den Gliederungsmodus auslösen (durch Komma getrennt).";
 
-"tooltip.panZoomMermaid" = "Add panning (drag) and zooming (⌘-scroll) to Mermaid diagrams.";
+"tooltip.panZoomMermaid" = "Ergänzt Mermaid-Diagramme um Verschieben (Ziehen) und Zoomen (⌘-Scrollen).";
 
-"tooltip.requireCmdToCollapse" = "Require that the command key be held when clicking a headline to collapse/expand.";
+"tooltip.requireCmdToCollapse" = "Verlangt, dass beim Klick auf eine Überschrift die Befehlstaste gedrückt wird, um sie ein- oder auszuklappen.";
 
-"tooltip.rightPrintMargin" = "Right print margin (specified in points).";
+"tooltip.rightPrintMargin" = "Rechter Druckrand (in Punkt angegeben).";
 
-"tooltip.showEditMarker" = "Show a marker at the most recent edit point (first or last diff, depending on \"Reverse diff order\" setting).";
+"tooltip.showEditMarker" = "Zeigt eine Markierung an der zuletzt bearbeiteten Stelle (erste oder letzte Diff, je nach Einstellung „Diff-Reihenfolge umkehren“).";
 
-"tooltip.styleHashTags" = "Tags receive special capsule styling in the preview.";
+"tooltip.styleHashTags" = "Tags erhalten in der Vorschau eine besondere Kapsel-Formatierung.";
 
-"tooltip.topPrintMargin" = "Define print margins (specified in points).";
-
+"tooltip.topPrintMargin" = "Oberer Druckrand (in Punkt angegeben).";
 
 === END Settings.strings (gaps) ===
 
