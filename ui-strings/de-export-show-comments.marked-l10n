@@ -22,11 +22,11 @@
 === BEGIN Preferences.xib.strings ===
 # Strings in this section: 2
 
-"Xrg-8N-tlp.title" = "Kommentare in Print/PDF anzeigen";
+"Xrg-8N-tlp.title" = "Kommentare in Druck/PDF anzeigen";
 # EN: Show comments in Print/PDF
 # DRAFT: Kommentare in Print/PDF anzeigen
 
-"Xrf-8N-cst.ibShadowedToolTip" = "Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
+"Xrf-8N-cst.ibShadowedToolTip" = "Fügt CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
 # EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
 # DRAFT: Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.
 === END Preferences.xib.strings ===
@@ -34,11 +34,11 @@
 === BEGIN Settings.strings ===
 # Strings in this section: 2
 
-"setting.exportShowComments" = "Kommentare in Print/PDF anzeigen";
+"setting.exportShowComments" = "Kommentare in Druck/PDF anzeigen";
 # EN: Show comments in Print/PDF
 # DRAFT: Kommentare in Print/PDF anzeigen
 
-"tooltip.exportShowComments" = "Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
+"tooltip.exportShowComments" = "Fügt CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
 # EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
 # DRAFT: Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.
 === END Settings.strings ===
@@ -47,11 +47,11 @@
 # Strings in this section: 2
 # Continuous PDF save accessory checkbox
 
-"ESc-1a-Cel.title" = "Kommentare in Print/PDF anzeigen";
+"ESc-1a-Cel.title" = "Kommentare in Druck/PDF anzeigen";
 # EN: Show comments in Print/PDF
 # DRAFT: Kommentare in Print/PDF anzeigen
 
-"ESc-1a-Cmt.ibShadowedToolTip" = "Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
+"ESc-1a-Cmt.ibShadowedToolTip" = "Fügt CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.";
 # EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
 # DRAFT: Fügen Sie CriticMarkup-, Scrivener-, Word- und Fountain-Kommentare als hervorgehobenen Inline-Text ein, wenn Sie PDF drucken oder exportieren. Fußnoten bleiben unverändert.
 === END MarkdownDocument.strings ===

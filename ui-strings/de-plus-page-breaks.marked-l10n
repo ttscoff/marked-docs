@@ -13,7 +13,7 @@
 # We merge with: python3 scripts/merge_localization_updates.py <this-file>
 
 === BEGIN Settings.strings ===
-"setting.convertPlusPageBreaks" = "Behandeln Sie +++ als Seitenumbrüche";
+"setting.convertPlusPageBreaks" = "+++ als Seitenumbrüche behandeln";
 # EN: Treat +++ as page breaks
 # DRAFT: Behandeln Sie +++ als Seitenumbrüche
 

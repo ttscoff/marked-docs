@@ -45,7 +45,7 @@
 # EN: Paragraphs
 # DRAFT: Absätze
 
-"tooltip.scrivenerLineBreaks" = "Legt fest, wie ein einzelner Zeilenumbruch innerhalb eines Scrivener-Absatzes interpretiert wird. „Zeilenumbrüche“ behalten aufeinanderfolgende Zeilen als Zeilenumbrüche bei (abhängig von „Zeilenumbrüche in Absätzen beibehalten“); „Absätze“ beginnt einen neuen Absatz. Pipe-Tabellen und fenced Codeblöcke bleiben unberührt.";
+"tooltip.scrivenerLineBreaks" = "Legt fest, wie ein einzelner Zeilenumbruch innerhalb eines Scrivener-Absatzes interpretiert wird. „Zeilenumbrüche“ behalten aufeinanderfolgende Zeilen als Zeilenumbrüche bei (abhängig von „Zeilenumbrüche in Absätzen beibehalten“); „Absätze“ beginnt einen neuen Absatz. Pipe-Tabellen und abgegrenzte Codeblöcke bleiben unberührt.";
 # EN: How to interpret a single line break within a Scrivener paragraph. Line breaks keep consecutive lines as line breaks (subject to Preserve line breaks); Paragraphs start a new paragraph. Pipe tables and fenced code blocks are unaffected.
 # DRAFT: Legt fest, wie ein einzelner Zeilenumbruch innerhalb eines Scrivener-Absatzes interpretiert wird. „Zeilenumbrüche“ behalten aufeinanderfolgende Zeilen als Zeilenumbrüche bei (abhängig von „Zeilenumbrüche in Absätzen beibehalten“); „Absätze“ beginnt einen neuen Absatz. Pipe-Tabellen und fenced Codeblöcke bleiben unberührt.
 
