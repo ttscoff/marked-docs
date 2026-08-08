@@ -42,7 +42,7 @@ Marcado permite que você crie um novo arquivo de texto vazio com o comando {% a
 
    [3]: images/open_recent.jpg @2x width=300px height=174px class=center
 
-Marcado também mantém registro de documentos recentes. A opção de menu {% appmenu File, Open Recent %} mostrará os arquivos que você abriu e permitirá que você volte para eles. Você pode reabrir rapidamente o último arquivo que estava visualizando com {% kbd shift cmd R %}. Use {% kbd shift cmd P %} ou [Ações rápidas] (Quick_Actions.html) para executar o menu e visualizar comandos do teclado. Atalhos](Keyboard_Shortcuts.html).
+Marcado também mantém registro de documentos recentes. A opção de menu {% appmenu File, Open Recent %} mostrará os arquivos que você abriu e permitirá que você volte para eles. Você pode reabrir rapidamente o último arquivo que estava visualizando com {% kbd shift cmd R %}. Use {% kbd shift cmd P %} ou [Ações rápidas](Quick_Actions.html) para executar o menu e visualizar comandos do teclado. Se quiser aprendê-los, você pode encontrar um gráfico em [Atalhos de teclado](Keyboard_Shortcuts.html).
 
 ## Nova visualização no arquivo atual [multiview]
 

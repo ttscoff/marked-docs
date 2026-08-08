@@ -91,7 +91,7 @@ Az összes fájl illeszkedéséhez (azaz egy egyéni processzorhoz, amely mindig
 fut), állítsa a _Fájlnév_ értéket `contains` `*` értékre. A csillag lesz
 helyettesítő karakterként működik, és minden fájlnak megfelel.
 
-[Add a predikátum [add predicate]
+[Add a predikátum][addpredicate]
 
 [addpredicate]: images/custom-rules-add-predicate-800.jpg @2x width=800
 
