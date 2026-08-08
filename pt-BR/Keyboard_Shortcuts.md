@@ -4,7 +4,7 @@
 
 Um painel flutuante com uma folha de dicas de atalho está disponível no menu Ajuda ou pressionando {{opt}}{{cmd}}K.
 
-### Atalhos
+### Atalhos [shortcuts]
 
 |                     Atalho | Função |
 | ---------------------------: | :--------------------------------- |
@@ -57,7 +57,7 @@ Um painel flutuante com uma folha de dicas de atalho está disponível no menu A
 
 
 
-### Alternações rápidas
+### Alternações rápidas [quick-toggles]
 
 Atalhos de teclado extras para alternar configurações globais comuns.
 
@@ -73,7 +73,7 @@ Atalhos de teclado extras para alternar configurações globais comuns.
 | **{{ctrl}}{{opt}}{{shift}}H** | Processo dentro do HTML |
 [Alterações rápidas]
 
-### Visualizar navegação
+### Visualizar navegação [previewnavigation]
 
 Pressione "?" a qualquer momento para visualizar os seguintes atalhos na janela Visualização.
 
@@ -106,7 +106,7 @@ Pressione "?" a qualquer momento para visualizar os seguintes atalhos na janela 
 |        **{{shift}}{{cmd}}F** | Visualização de foco |
 [Visualizar navegação]
 
-### Navegação no índice
+### Navegação no índice [TableofContentsNavigation]
 
 Quando o Índice estiver aberto, você poderá navegar pelo teclado.
 

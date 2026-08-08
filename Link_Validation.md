@@ -2,7 +2,7 @@
 
 Link validation pings the destination of a URL and tests for errors. This helps avoid broken and invalid links in your published document, and is especially useful for bloggers.
 
-## Validating single links
+## Validating single links [validating-single-links]
 
 ![][1]
 
@@ -10,7 +10,7 @@ Link validation pings the destination of a URL and tests for errors. This helps 
 
 Click and hold on a link in the preview until it blinks, then release to open the link action menu. Choose "Validate link" to run the test. Results are displayed in the popup.
 
-## Validating all links
+## Validating all links [validating-all-links]
 
 ![][2]
 
@@ -22,7 +22,7 @@ Valid URLs may be hidden from the popup with the "Hide Valid" button at the top 
 
 Pressing Escape will hide the validation results. They can be revealed again using {% kbd ctrl cmd L %} or the Gear menu.
 
-## Validating automatically
+## Validating automatically [validating-automatically]
 
 Turn on "Automatically validate URLs on update" in the Preview settings (or at the bottom of the link validation popup). When the document loads, contained links will be tested in background. A dialog will only show if there are errors.
 

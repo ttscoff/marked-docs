@@ -6,7 +6,7 @@ A megjelölve közvetlenül megnyithatja a Rich Text formátumú (`.rtf`) és az
 
 Ez jól működik a **Pages**, **TextEdit**, **Word** és más RTF- vagy RTFD-mentő alkalmazások dokumentumaival. A Megjelölt továbbra is egy **előnézeti** eszköz: az eredeti alkalmazásban szerkesztheti, a Megjelölt frissítések pedig mentéskor.
 
-## Hogyan működik az átalakítás
+## Hogyan működik az átalakítás [how-conversion-works]
 
 A Marked az RTF-et HTML-vé konvertálja a rendszerszöveg-motor segítségével, majd Markdown-ba. Az átalakító:
 
@@ -17,11 +17,11 @@ A Marked az RTF-et HTML-vé konvertálja a rendszerszöveg-motor segítségével
 
 Ugyanezt a konverziós folyamatot használják a Scrivener RTF fordításához és az egyéb dokumentumokban található RTF-fájlokhoz.
 
-## Élő előnézet
+## Élő előnézet [live-preview]
 
 Amikor egy másik alkalmazásba menti az RTF- vagy RTFD-fájlt, a Marked észleli a változást, és automatikusan frissíti az előnézetet.
 
-## Képek
+## Képek [images]
 
 Az RTF nem határoz meg külön "felirat" mezőt a Cocoa által HTML-be exportált módon. Ami az elrendezésben feliratnak tűnik, az általában **normál szöveg** a következő bekezdésben, és a Megjelölve ezt törzsszövegként tartja meg.
 
@@ -29,11 +29,11 @@ A beágyazott képek és az RTFD-kötegekben lévő képek (például `pastedGra
 
 A megjelölt **nem** használja a képfájl nevét alternatív szövegként vagy MultiMarkdown ábrafeliratként. A kép alatt nem szabad látnia a `pastedGraphic.png` jelet, hacsak nem írta be ezt a szöveget a dokumentumba.
 
-## Exportálás és egyéb funkciók
+## Exportálás és egyéb funkciók [export-and-other-features]
 
-Az átalakítás után a Marked a dokumentumot más lefordított forrásokhoz hasonlóan kezeli (hasonlóan a [Scrivener](Scrivener_Support.html) és [DOCX](Working_with_DOCX.html)-hez): az exportálás, a statisztika és a legtöbb előnézeti funkció a Watchers gyorsítótárában tárolt generált Markdown-on fut.
+Az átalakítás után a Marked a dokumentumot más lefordított forrásokhoz hasonlóan kezeli (hasonlóan a [Scrivener](Scrivener_Support.html) és [DOCX](Working_With_DOCX.html)-hez): az exportálás, a statisztika és a legtöbb előnézeti funkció a Watchers gyorsítótárában tárolt generált Markdown-on fut.
 
-## Korlátozások
+## Korlátozások [limitations]
 
 A konverzió minősége a forrásalkalmazástól függ. Általánosságban:
 
@@ -44,9 +44,9 @@ A konverzió minősége a forrásalkalmazástól függ. Általánosságban:
 
 A fájl mentése nélküli egyszeri beillesztéshez használja helyette a [Vágólap előnézete](Opening_Files.html#from-the-clipboard)-t.
 
-## Kapcsolódó témák
+## Kapcsolódó témák [related-topics]
 
 - [PDF támogatás](PDF_Support.html) -- PDF dokumentumok megnyitása Markdown forrásként
-- [DOCX használata](Working_with_DOCX.html) -- Word-dokumentumok változáskövetéssel és megjegyzésekkel
+- [DOCX használata](Working_With_DOCX.html) -- Word-dokumentumok változáskövetéssel és megjegyzésekkel
 - [Fájlok megnyitása](Opening_Files.html) -- fogd és vidd, Nyissa meg a Legutóbbit, vágólap
 - [Exportálás](Exporting.html) -- Rich Text másolása és RTFD mentése (exportálás), eltérve az RTF forrásfájlként való megnyitásától

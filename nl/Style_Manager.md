@@ -4,7 +4,7 @@ De Style Manager biedt een gecentraliseerde interface voor het beheren van al uw
 ingebouwde en Custom stijlen. Het geeft je volledige controle over welke
 Stijlen verschijnen in menu's, hun volgorde, sneltoetsen en meer.
 
-## De Stijlmanager openen
+## De Stijlmanager openen [opening-the-style-manager]
 
 Om de Stijlmanager te openen, klikt u op de knop **Stijlen beheren…** in het {% prefspane Style %}
 deelvenster, of gebruik {% appmenu Style, Manage Styles (~@$m) %}. U kunt CSS-bestanden ook rechtstreeks naar het voorkeurenvenster slepen --- Marked
@@ -15,13 +15,13 @@ jij.
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## De stijltabel
+## De stijltabel [the-style-table]
 
 De Stijlmanager geeft al uw stijlen weer in een sorteerbare tabel die door elkaar kan worden gemengd
 ingebouwde en aangepaste stijlen naadloos. Elke rij in de tabel bevat er meerdere
 kolommen:
 
-### Selectievakje ingeschakeld
+### Selectievakje ingeschakeld [enabled-checkbox]
 
 Met het selectievakje **Ingeschakeld** wordt de stijl onmiddellijk aan de stijl toegevoegd of verwijderd
 menu, pop-up Standaardstijl en sneltoetsen. Wanneer u een stijl uitschakelt,
@@ -30,7 +30,7 @@ het is verborgen in de menu's, maar blijft in de Stijlmanager staan, zodat u het
 Als u de momenteel actieve stijl uitschakelt, schakelt Marked automatisch over naar de
 volgende beschikbare ingeschakelde stijl.
 
-### Naamkolom
+### Naamkolom [name-column]
 
 In de kolom **Naam** wordt de weergavenaam van de stijl weergegeven. U kunt deze naam bewerken
 inline door er direct op te klikken; veranderingen blijven bestaan en verspreiden zich naar elk menu
@@ -40,7 +40,7 @@ wil misschien een meer beschrijvende naam dan de bestandsnaam.
 Ingebouwde stijlen hebben vergrendelde namen die niet kunnen worden bewerkt. Om een
 naam van de ingebouwde stijl, dupliceer deze eerst om een bewerkbare kopie te maken.
 
-### Bronkolom
+### Bronkolom [source-column]
 
 De kolom **Bron** geeft aan waar de stijl vandaan komt:
 
@@ -50,7 +50,7 @@ De kolom **Bron** geeft aan waar de stijl vandaan komt:
 - **Gedupliceerd**: stijlen die zijn gemaakt door een andere stijl te dupliceren (ofwel ingebouwd
   of op maat)
 
-### Actiekolom
+### Actiekolom [actions-column]
 
 Elke rij bevat een **Acties**-stapel met knoppen voor het beheren van die stijl:
 
@@ -73,7 +73,7 @@ uitgeschakeld.
 standaardstatus als deze is gewijzigd. Deze knop is alleen zichtbaar voor
 ingebouwde stijlen.
 
-## Stijlen opnieuw ordenen
+## Stijlen opnieuw ordenen [reordering-styles]
 
 Rijen kunnen opnieuw worden gerangschikt via slepen en neerzetten. Sleep eenvoudigweg een stijlrij naar een nieuwe
 positie in de tafel. De volgorde die u hier instelt, zorgt voor:
@@ -85,17 +85,17 @@ positie in de tafel. De volgorde die u hier instelt, zorgt voor:
 Sleep stijlen naar de gewenste sneltoetsen
 bezetten.
 
-## Stijlen toevoegen
+## Stijlen toevoegen [adding-styles]
 
 Er zijn verschillende manieren om nieuwe aangepaste stijlen toe te voegen aan de Stijlmanager:
 
-### Knop Toevoegen
+### Knop Toevoegen [add-button]
 
 Klik op de knop **Nieuwe stijl toevoegen** om een bestandskiezer te openen
 waar u een of meer CSS-bestanden kunt selecteren om te importeren. Geselecteerde bestanden zullen zijn
 toegevoegd aan de Stijlmanager en standaard ingeschakeld.
 
-### Slepen en neerzetten
+### Slepen en neerzetten [drag-and-drop]
 
 U kunt CSS-bestanden rechtstreeks naar het venster Stijlmanager slepen. Wanneer je sleept
 bestanden over het venster heen, verschijnt er een overlay met de tekst "Voeg een Custom stijl toe" (of
@@ -108,7 +108,7 @@ zowel import als positionering in één handeling.
 Als u CSS-bestanden naar het {% prefspane Style %} voorkeurenpaneel sleept, gebeurt dat ook
 importeer ze en open automatisch de Stijlmanager.
 
-## Live voorbeeld
+## Live voorbeeld [live-preview]
 
 Het rechterdeelvenster van de Stijlmanager toont een live voorbeeld van de geselecteerde
 stijl. Het voorbeeld geeft een uitgebreid voorbeelddocument weer met kopjes,
@@ -119,33 +119,33 @@ Het voorbeeld gebruikt het CSS-bestand rechtstreeks vanaf de schijf, dus alle wi
 externe editor wordt onmiddellijk bijgewerkt in de preview. Dit maakt het gemakkelijk om
 bekijk uw wijzigingen in realtime terwijl u aangepaste stijlen ontwikkelt.
 
-### Voorbeeld van donkere modus
+### Voorbeeld van donkere modus [dark-mode-preview]
 
 Met een selectievakje boven het voorbeeld kunt u schakelen tussen de lichte en donkere modus
 voorvertoningen. Dit is handig om te testen hoe stijlen er in beide weergavemodi uitzien.
 vooral als u stijlen maakt die zich aanpassen aan het uiterlijk van het systeem.
 
-## Sneltoetsen
+## Sneltoetsen [keyboard-shortcuts]
 
 De Stijlmanager geeft een legenda weer onder de tabel die laat zien hoe toetsenbord
 snelkoppelingen zijn toegewezen. De eerste negen ingeschakelde stijlen ontvangen {% kbd cmd 1 %} door
 {% kbd cmd 9 %} ({% kbd cmd 0 %} is gereserveerd), de volgende tien ontvangen {% kbd opt cmd 1 %} tot en met {% kbd opt cmd 0 %}, enzovoort. U kunt de toegewezen sneltoetsen zien in het pop-upmenu Stijl in elk voorbeeld.
 
-## Uitgeschakelde stijlen filteren
+## Uitgeschakelde stijlen filteren [filtering-disabled-styles]
 
 Met een selectievakje onder aan het venster kunt u uitgeschakelde instellingen weergeven of verbergen
 stijlen. Als dit selectievakje niet is aangevinkt, worden alleen ingeschakelde stijlen weergegeven, wat het gemakkelijker maakt
 focus op en herschik uw actieve stijlen. Indien aangevinkt, alle stijlen (ingeschakeld en uitgeschakeld)
 worden getoond, zodat u uw volledige stijlcollectie kunt beheren.
 
-## Ingebouwde stijlen herstellen
+## Ingebouwde stijlen herstellen [restoring-builtin-styles]
 
 De knop **Alle ingebouwde stijlen herstellen** onder aan het venster
 herstelt alle ingebouwde stijlen naar hun standaardstatus. Dit is handig als je dat hebt
 ingebouwde stijlen heeft uitgeschakeld en deze opnieuw wilt inschakelen, of als u deze opnieuw wilt instellen
 eventuele wijzigingen die zijn aangebracht aan ingebouwde stijlen.
 
-## Tips
+## Tips [tips]
 
 - **Ordenen op frequentie**: sleep uw meest gebruikte stijlen naar boven om ze weer te geven
   ze de gemakkelijkste sneltoetsen ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)

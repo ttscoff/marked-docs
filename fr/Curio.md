@@ -2,7 +2,7 @@
 
 [Curio][curio] est une application de brainstorming visuel et de prise de notes qui peut diffuser l'élément que vous modifiez dans le canal **aperçu en continu** de Marked.
 
-## Flux sélectionné sur Marked
+## Flux sélectionné sur Marked [stream-selected-to-marked]
 
 1. Dans Marked, choisissez {% appmenu File, New, Streaming Preview %} pour qu'une fenêtre d'aperçu en continu soit prête.
 2. Dans Curio, activez **Affichage → Flux sélectionné sur Marked**.

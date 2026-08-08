@@ -2,7 +2,7 @@
 
 Behalten Sie beim Schreiben den Überblick.
 
-## Wortanzahl und Dokumentstatistik
+## Wortanzahl und Dokumentstatistik [word-count-and-document-statistics]
 
 ![][1]
 
@@ -12,7 +12,7 @@ Die Wortzählung befindet sich in der unteren Statusleiste und kann über {% pre
 
 Wenn Text ausgewählt ist, werden die Anzeige der Wortanzahl und das Popup-Fenster für Absätze/Sätze/Zeichen mit Informationen nur für die Auswahl aktualisiert.
 
-## Wortanzahl für die Auswahl
+## Wortanzahl für die Auswahl [word-count-for-selection]
 
 ![Word count popup on text selection][2]
 
@@ -24,7 +24,7 @@ Wenn „Wortanzahl für Auswahl anzeigen“ im {% prefspane Preview %} aktiviert
 
 Die Zoomfunktion ist praktisch, um größere Textabschnitte schnell auszuwählen und zu zählen. Geben Sie {% kbd z %} ein, um herauszuzoomen und Ihre Auswahl zu treffen.
 
-## Lesbarkeitsstatistik
+## Lesbarkeitsstatistik [readability-statistics]
 
 ![Readability stats bar][3]
 
@@ -32,19 +32,19 @@ Die Zoomfunktion ist praktisch, um größere Textabschnitte schnell auszuwählen
 
 Zusätzliche Statistiken von Flesch/Kincaid und dem Nebelindex sind mit {% kbd opt shift cmd S %} verfügbar.
 
-### Informationen zur Lesbarkeit
+### Informationen zur Lesbarkeit [readability-information]
 
-**Flesch Reading Ease:** Höhere Werte weisen auf Material hin, das leichter zu lesen ist; Niedrigere Zahlen kennzeichnen Passagen, die schwieriger zu lesen sind.
+**Flesch Reading Ease:** Höhere Werte kennzeichnen leichter lesbare Texte; niedrigere Werte weisen auf schwierigere Passagen hin.
 
 **90,0–100,0**: durchschnittlicher 11-jähriger Schüler
 **60,0–70,0**: 13- bis 15-jährige Schüler
-**0,0--30,0**: Hochschulabsolventen
+**0,0–30,0**: Hochschulabsolventen
 
 **Flesch-Kincaid-Klassenstufe:** Die Anzahl der Schuljahre, die im Allgemeinen erforderlich sind, um diesen Text zu verstehen.
 
 **Gunning Fog Index:** misst die Lesbarkeit englischer Schrift. Der Index schätzt die Jahre der formalen Bildung, die erforderlich sind, um den Text beim ersten Lesen zu verstehen. Ein Nebelindex von 12 erfordert das Leseniveau eines US-amerikanischen Oberstufenschülers (ca. 18 Jahre alt).
 
-## Erweiterte Statistiken
+## Erweiterte Statistiken [advanced-statistics]
 
 ![Advanced Statistics popup][adv]
 
@@ -52,7 +52,7 @@ Zusätzliche Statistiken von Flesch/Kincaid und dem Nebelindex sind mit {% kbd o
 
 Wenn Sie im Zahnradmenü „Erweiterte Statistiken“ auswählen oder {% kbd cmd I %} drücken, wird ein Bereich mit erweiterten Dokumentstatistiken angezeigt, darunter die durchschnittliche Wort- und Satzlänge sowie die durchschnittliche Wortkomplexität.
 
-### Floating Advanced Statistics
+### Schwebende erweiterte Statistiken [floating-advanced-statistics]
 
 ![Floating Info Window][floating]
 
@@ -60,7 +60,7 @@ Wenn Sie im Zahnradmenü „Erweiterte Statistiken“ auswählen oder {% kbd cmd
 
 Durch Drücken von {% kbd shift cmd I %} wird ein schwebendes Fenster mit allen detaillierten Statistiken und Lesbarkeitsinformationen geöffnet. Dieses Bedienfeld kann im Vordergrund bleiben, wenn Sie zu Ihrem Editor wechseln, sodass Sie sehen können, wie Ihre Statistiken bei jedem Speichern aktualisiert werden, unabhängig davon, ob die Vorschau sichtbar ist oder nicht. Durch Drücken des Symbols `<` wird die zugehörige Marked-Vorschau wieder in den Vordergrund gerückt. Wenn Sie die Optionstaste gedrückt halten und auf dieselbe Schaltfläche klicken, wird die Datei Markdown in Ihrem Standardtexteditor geöffnet (eingestellt in {% prefspane Apps %}).
 
-### Wortziele
+### Wortziele [word-targets]
 
 Wenn Sie beim Schreiben ein bestimmtes Ziel für die Wortzahl haben, können Sie oben in Ihrem Dokument einen Metadatenschlüssel „Ziel:“ hinzufügen. Marked verfolgt dann Ihren Fortschritt und zeigt einen Abschlussindikator im Bereich „Detaillierte Statistiken“ ({% kbd cmd I %}) und in den schwebenden Statistiken ({% kbd shift cmd I %}) an.
 
@@ -69,7 +69,7 @@ Wenn Sie beim Schreiben ein bestimmtes Ziel für die Wortzahl haben, können Sie
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualisieren Sie Wortwiederholungen
+## Wortwiederholungen visualisieren [visualizewordrepetition]
 
 Wenn Sie im Zahnradmenü „Wortwiederholung visualisieren“ auswählen (oder {% kbd ctrl cmd W %} drücken), wird zu einer speziellen Ansicht gewechselt, die Nicht-Textelemente entfernt und Wörter hervorhebt, die in Ihrem Dokument wiederholt werden. Wiederholte Wörter werden hellrosa hervorgehoben. Wenn Sie mit der Maus über ein hervorgehobenes Wort fahren, werden die übereinstimmenden Wörter im gesamten Dokument heller hervorgehoben. Wenn Sie auf ein hervorgehobenes Wort klicken, wird der Hintergrund abgedunkelt und die Hervorhebung bleibt zur weiteren Überprüfung erhalten.
 

@@ -8,66 +8,66 @@ Questa pagina riassume le differenze tra i quattro processori principali. Per i 
 
 ---
 
-## MultiMarkdown (v5)
+## MultiMarkdown (v5) [multimarkdown-v5]
 
 **Ideale per:** Prosa di lunga durata, scrittura accademica o tecnica e tutto ciò che si basa su **metadati**, **citazioni** e funzionalità **specifiche di MultiMarkdown**.
 
 Contrassegnato viene fornito con **MultiMarkdown 5** (consultare la [Guida dell'utente di MultiMarkdown](https://fletcher.github.io/MultiMarkdown-5/) per la documentazione upstream).
 
-### Punti di forza
+### Punti di forza [strengths]
 
 - **Documenti narrativi e ricchi di riferimenti:** Note a piè di pagina, bibliografia/citazioni e tabelle sono di prima classe.
 - **Metadati:** blocchi di metadati MultiMarkdown standard (`Key: Value` intestazioni) più **transclusione** e altre comodità MMD descritte nella guida v5.
 - **Sostituzione dei metadati:** le chiavi dei metadati possono essere inserite nel corpo con una sostituzione in stile `[%key]` in modo che titoli, stringhe dell'autore e valori simili rimangano sincronizzati con l'intestazione.
 - **Tabelle, immagini e riferimenti incrociati:** Allineati con le funzionalità documentate per MultiMarkdown 5.
 
-### ID e intestazioni del manuale
+### ID e intestazioni del manuale [ids-and-manual-headings]
 
 - Gli ID delle intestazioni sono **normalizzati** in un modo che tende a produrre caratteri **minuscoli, concatenati** (senza spazi: le parole corrono insieme).
 - Per gli **ID intestazioni manuali**, MultiMarkdown utilizza il formato: `## Headline Text [my-id]` (l'identificatore tra parentesi dopo il testo dell'intestazione).
 
-### Quando scegliere qualcos'altro
+### Quando scegliere qualcos'altro [when-to-pick-something-else]
 
 Se hai bisogno di elenchi di attività **in stile GitHub** e del comportamento esatto dell'attuale parser di GitHub, preferisci **CommonMark (GFM)**. Se hai bisogno di **classi/ID HTML a grana fine** su elementi arbitrari, considera **Kramdown**.
 
 ---
 
-## Kramdown
+## Kramdown [kramdown]
 
 **Ideale per:** Documenti in cui desideri **controllo preciso sull'output HTML**: **classi**, **ID** e attributi personalizzati, in modo che il tuo CSS possa indirizzare blocchi e intervalli specifici.
 
 Il [riferimento alla sintassi di Kramdown](https://kramdown.gettalong.org/syntax.html) è la guida autorevole.
 
-### Punti di forza
+### Punti di forza [strengths-2]
 
 - **Principalmente compatibile** con le abitudini in stile MultiMarkdown per il Markdown quotidiano, aggiungendo le proprie estensioni.
 - **Elenchi di attributi in linea e di blocco (IAL):** Allega `{: #id .class key="value"}` a paragrafi, intestazioni, blocchi di codice, collegamenti, immagini e altro --- ideale per siti in stile Jekyll e fogli di stile personalizzati.
 - **ID intestazione:** Kramdown normalizza gli ID intestazione generati automaticamente in **parole minuscole, separate da trattino** (ad esempio `my-section-title`). Per gli **ID manuali**, utilizza il modulo `{#id}` dopo il testo del titolo, ad es. Setext: `My Section {#my-section}` poi la sottolineatura, o ATX: `# My Section {#my-section}` (vedi [header](https://kramdown.gettalong.org/syntax.html#headers) di Kramdown per il posizionamento esatto e le regole IAL).
 - **Elenchi di definizioni, note a piè di pagina, tipografia intelligente, blocchi matematici:** Ricco set di funzionalità per pubblicare pipeline che richiedono qualcosa di più del "semplice" Markdown.
 
-### Quando scegliere qualcos'altro
+### Quando scegliere qualcos'altro [when-to-pick-something-else-2]
 
 Se ti affidi alla sostituzione dei metadati **solo MultiMarkdown** (`[%key]`) o a flussi di lavoro di citazione specifici di MMD, **MultiMarkdown** potrebbe essere la soluzione migliore. Per **README e documenti repository** che devono corrispondere a GitHub online, **CommonMark (GFM)** è solitamente più vicino.
 
 ---
 
-## CommonMark (Markdown aromatizzato su GitHub / cmark-gfm)
+## CommonMark (Markdown aromatizzato su GitHub / cmark-gfm) [commonmark-github-flavored-markdown-cmark-gfm]
 
 **Ideale per:** **file README**, **descrizioni di problemi/PR** e **documentazione di progetto** che dovrebbero corrispondere il più possibile all'**attuale comportamento Markdown di GitHub**.
 
 Marked utilizza un motore orientato al **GFM** (cmark-gfm). La specifica formale è la [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), basata su [CommonMark](https://commonmark.org/).
 
-### Punti di forza
+### Punti di forza [strengths-3]
 
 - **Corrispondenza più vicina a GitHub:** tabelle, barre barrate, elementi dell'elenco di attività, blocchi di codice delimitati con tag di lingua e collegamenti automatici si comportano come il moderno rendering di GitHub.
 - **Analisi inequivocabile:** CommonMark definisce con precisione la precedenza di blocco/inline e le regole dell'elenco: in alcuni casi limite è più rigido rispetto al comportamento "classico" di Markdown.pl, ma **più prevedibile** una volta apprese le regole.
 - **Pratico per il testo avvolto:** Le regole dei paragrafi e degli elenchi sono progettate per comportarsi bene con la prosa strutturata (vedere le sezioni delle specifiche su continuazioni ed elenchi pigri).
 
-### ID intestazione
+### ID intestazione [header-ids]
 
 Gli ancoraggi delle intestazioni generate automaticamente sono in genere **minuscoli e separati da trattini**, in linea con il comune slugging in stile GitHub.
 
-### Quando scegliere qualcos'altro
+### Quando scegliere qualcos'altro [when-to-pick-something-else-3]
 
 GFM non replica i flussi di lavoro **metadati MultiMarkdown**, **IAL Kramdown** o **citazioni MMD**. Per libri, tesi o metadati pesanti, utilizza **MultiMarkdown** o **Kramdown** a seconda dei casi.
 
@@ -92,7 +92,7 @@ Per una **parità pixel-perfetta con github.com** di oggi, preferisci **CommonMa
 
 ---
 
-## Confronto rapido
+## Confronto rapido [discount]
 
 | Preoccupazione | MultiMarkdown | Kramdown | Marchio comune (GFM) | Sconto |
 |--------|-------|--------|------------|----------|
@@ -104,7 +104,7 @@ Per una **parità pixel-perfetta con github.com** di oggi, preferisci **CommonMa
 
 ---
 
-## Vedi anche
+## Vedi anche [quick-comparison]
 
 - [Impostazioni: Processore](Settings_Processor.html): processore predefinito e opzioni correlate
 - [Markdown Dingus](Markdown_Dingus.html): prova i processori fianco a fianco in Marked

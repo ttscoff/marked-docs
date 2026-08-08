@@ -5,11 +5,11 @@
 Confira o [Markdown Dingus](x-marked-3://dingus?processor=commonmark) para experimentar o processador CommonMark (GFM).
 
 
-## O que é CommonMark?
+## O que é CommonMark? [what-is-commonmark]
 
 CommonMark é uma implementação de Markdown fortemente especificada e altamente compatível. Ele foi criado para resolver as ambiguidades e inconsistências na especificação Markdown original de John Gruber, que levou a implementações divergentes em diferentes plataformas e ferramentas.
 
-## Por que o CommonMark existe
+## Por que o CommonMark existe [why-commonmark-exists]
 
 A especificação Markdown original de John Gruber era intencionalmente ambígua em muitas áreas, levando a diferentes interpretações por várias implementações. Isso criou problemas onde o mesmo documento Markdown seria renderizado de forma diferente em plataformas diferentes (GitHub, StackOverflow, Reddit, etc.).
 
@@ -20,9 +20,9 @@ CommonMark fornece:
 - **Regras de precedência claras** para sintaxe conflitante
 - **Algoritmo de análise detalhado** que pode ser implementado de forma consistente
 
-## Principais diferenças do Markdown padrão
+## Principais diferenças do Markdown padrão [key-differences-from-standard-markdown]
 
-### 1. **Regras de análise mais rígidas**
+### 1. **Regras de análise mais rígidas** [1-stricter-parsing-rules]
 
 CommonMark impõe um comportamento de análise mais consistente:
 
@@ -40,7 +40,7 @@ Text
 
 *Marcação padrão: geralmente permite sem linha em branco*
 
-### 2. **Análise de itens de lista**
+### 2. **Análise de itens de lista** [2-list-item-parsing]
 
 **Requisitos de recuo**
 
@@ -59,7 +59,7 @@ Text
 - CommonMark tem regras claras para quando os itens da lista são "soltos" ou "apertados"
 - Listas soltas envolvem itens em tags `<p>`, listas restritas não
 
-### 3. **Manuseio de bloco de código**
+### 3. **Manuseio de bloco de código** [3-code-block-handling]
 
 **Blocos de código protegidos**
 
@@ -77,7 +77,7 @@ Text
 - CommonMark requer linhas em branco antes dos blocos de código recuados
 - O Markdown padrão geralmente permite sem linhas em branco
 
-### 4. **Link e processamento de imagem**
+### 4. **Link e processamento de imagem** [4-link-and-image-processing]
 
 **Precedência do link de referência**
 
@@ -95,7 +95,7 @@ Text
 - CommonMark processa links antes da ênfase
 - Isso afeta como a sintaxe aninhada é interpretada
 
-### 5. **Ênfase e forte ênfase**
+### 5. **Ênfase e forte ênfase** [5-emphasis-and-strong-emphasis]
 
 **Regras de ênfase aninhadas**
 
@@ -111,7 +111,7 @@ Text
 - CommonMark usa um algoritmo de "pilha delimitadora" para análise de ênfase consistente
 - As implementações de Markdown padrão variam em sua abordagem
 
-### 6. **Processamento de bloco HTML**
+### 6. **Processamento de bloco HTML** [6-html-block-processing]
 
 **Detecção de bloco HTML**
 
@@ -124,7 +124,7 @@ This is an HTML block in CommonMark
 </div>
 ```
 
-### 7. **Tratamento de quebra de linha**
+### 7. **Tratamento de quebra de linha** [7-line-break-handling]
 
 **Quebras de linha dura**
 
@@ -136,7 +136,7 @@ Line one
 Line two  <!-- Two spaces before line break -->
 ```
 
-### 8. **Referências de entidades e caracteres**
+### 8. **Referências de entidades e caracteres** [8-entity-and-character-references]
 
 **Referências de caracteres numéricos**
 
@@ -148,25 +148,25 @@ Line two  <!-- Two spaces before line break -->
 &#x2014; <!-- Hexadecimal -->
 ```
 
-## Algoritmo de análise CommonMark
+## Algoritmo de análise CommonMark [commonmark-parsing-algorithm]
 
 CommonMark usa uma abordagem de análise em duas fases:
 
-### Fase 1: Estrutura do Bloco
+### Fase 1: Estrutura do Bloco [phase-1-block-structure]
 
 1. **Processamento de linha**: cada linha é analisada em busca de marcadores em nível de bloco
 2. **Blocos de Contêiner**: Blockquotes, listas e outros contêineres são identificados
 3. **Blocos de folhas**: títulos, blocos de código e parágrafos são processados
 4. **Links de referência**: as definições de link são coletadas para uso posterior
 
-### Fase 2: Estrutura Inline
+### Fase 2: Estrutura Inline [phase-2-inline-structure]
 
 1. **Processamento Inline**: o texto dentro dos blocos é analisado para elementos inline
 2. **Análise de ênfase**: usa algoritmo de pilha delimitadora para ênfase consistente
 3. **Resolução de link**: links de referência são resolvidos usando definições coletadas
 4. **Processamento de entidades**: as referências de caracteres são convertidas em caracteres reais
 
-## Benefícios do CommonMark
+## Benefícios do CommonMark [benefits-of-commonmark]
 
 1. **Comportamento Previsível**: A mesma entrada sempre produz a mesma saída
 2. **Compatibilidade entre plataformas**: funciona de forma consistente em diferentes ferramentas
@@ -174,7 +174,7 @@ CommonMark usa uma abordagem de análise em duas fases:
 4. **Documentação clara**: especificações detalhadas eliminam suposições
 5. **Preparado para o futuro**: pontos de extensão bem definidos para novos recursos
 
-## Notas de implementação
+## Notas de implementação [implementation-notes]
 
 CommonMark foi projetado para ser:
 
@@ -183,7 +183,7 @@ CommonMark foi projetado para ser:
 - **Extensível**: pode ser estendido com recursos adicionais, mantendo a compatibilidade
 - **Rápido**: algoritmos de análise otimizados para desempenho
 
-## Recursos
+## Recursos [resources]
 
 - [Especificação CommonMark](https://spec.commonmark.org/0.31.2/)
 - [Suíte de testes CommonMark](https://github.com/commonmark/commonmark-spec)

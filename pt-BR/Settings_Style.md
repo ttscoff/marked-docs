@@ -8,7 +8,7 @@ Opções em {% prefspane Style %}:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Layout e tipografia
+### Layout e tipografia [layout-and-typography]
 
 Limitar a largura do texto na visualização
 : defina uma largura máxima para o corpo da visualização usando o controle deslizante (em pixels).
@@ -43,7 +43,7 @@ Sempre quebrar o código
 Detectar e estilizar texto RTL
 : Detecte o idioma por elemento no documento e estilize da direita para a esquerda de acordo.
 
-### Tema
+### Tema [theme]
 
 Gerenciar estilos
 : Abre a janela [Gerenciador de Estilo](Style_Manager.html). Adicione arquivos CSS da sua unidade para que apareçam nos menus do seletor de estilo. Use o botão `Add New Style` ou arraste os arquivos CSS para esta janela. Arraste para reordenar e use as caixas de seleção para ativar ou desativar Estilos.
@@ -61,7 +61,7 @@ CSS adicional
 : CSS adicionado aqui será incluído após a folha de estilo normal com todos os temas. Entre outras coisas, você pode usá-lo para substituir configurações gerais sem editar estilos internos.
 : Isso se aplica a todos os documentos e estilos. Se você deseja aplicar CSS personalizado a documentos com base em condições, use Regras Personalizadas em {% prefspane Processor %}.
 
-### Incluir scripts
+### Incluir scripts [include-scripts]
 
 Destaque de sintaxe
 : Ative destaque.js [destaque de sintaxe](Syntax_Highlighting.html) para blocos de código. Selecione um tema no menu suspenso.
@@ -73,7 +73,7 @@ Habilitar MathJax
 : **Configuração avançada** abre uma planilha para configuração personalizada do MathJax.
 
 Habilitar KaTeX
-: Carrega [KaTeX](Mathjax.html#katex) como uma alternativa ao MathJax. Apenas um ou outro pode ser selecionado.
+: Carrega [KaTeX](MathJax.html#katex) como uma alternativa ao MathJax. Apenas um ou outro pode ser selecionado.
 
 Equações numéricas
 : Se aplicável, Marcado adicionará números de figuras às equações renderizadas. Escolha **Lado Esquerdo** ou **Lado Direito** para numeração. Se estiver usando MathJax, você pode escolher **AMS apenas** para numerar apenas equações AMS.

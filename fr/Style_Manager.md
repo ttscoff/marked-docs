@@ -4,7 +4,7 @@ Le Gestionnaire de styles offre une interface centralisée pour gérer l'ensembl
 styles intégrés et personnalisés. Il vous donne un contrôle complet sur les
 styles qui apparaissent dans les menus, leur ordre, leurs raccourcis clavier, et plus encore.
 
-## Ouvrir le Gestionnaire de styles
+## Ouvrir le Gestionnaire de styles [opening-the-style-manager]
 
 Pour ouvrir le Gestionnaire de styles, cliquez sur le bouton **Gérer les styles…** dans le panneau
 {% prefspane Style %}, ou utilisez {% appmenu Style, Manage Styles (~@$m) %}. Vous pouvez également glisser des fichiers CSS directement sur la fenêtre des préférences : Marked
@@ -15,13 +15,13 @@ nouvellement ajoutée.
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## Le tableau des styles
+## Le tableau des styles [the-style-table]
 
 Le Gestionnaire de styles affiche tous vos styles dans un tableau triable qui mélange
 sans distinction styles intégrés et styles personnalisés. Chaque ligne du tableau contient
 plusieurs colonnes :
 
-### Case à cocher Activé
+### Case à cocher Activé [enabled-checkbox]
 
 La case à cocher **Activé** ajoute ou retire immédiatement le style du menu Style,
 du menu contextuel Style par défaut, et des raccourcis clavier. Lorsque vous désactivez un style,
@@ -30,7 +30,7 @@ il est masqué des menus mais reste dans le Gestionnaire de styles pour être fa
 Si vous désactivez le style actuellement actif, Marked bascule automatiquement vers le
 prochain style activé disponible.
 
-### Colonne Nom
+### Colonne Nom [name-column]
 
 La colonne **Nom** affiche le nom d'affichage du style. Vous pouvez modifier ce nom
 directement en cliquant dessus ; les modifications sont conservées et propagées à
@@ -40,7 +40,7 @@ lorsque vous souhaitez un nom plus descriptif que le nom du fichier.
 Les styles intégrés ont des noms verrouillés qui ne peuvent pas être modifiés. Pour personnaliser
 le nom d'un style intégré, dupliquez-le d'abord pour créer une copie modifiable.
 
-### Colonne Source
+### Colonne Source [source-column]
 
 La colonne **Source** indique la provenance du style :
 
@@ -48,7 +48,7 @@ La colonne **Source** indique la provenance du style :
 - **Personnalisé** : styles que vous avez ajoutés depuis des fichiers CSS de votre disque
 - **Dupliqué** : styles créés en dupliquant un autre style (intégré ou personnalisé)
 
-### Colonne Actions
+### Colonne Actions [actions-column]
 
 Chaque ligne comporte une pile **Actions** avec des boutons permettant de gérer ce style :
 
@@ -71,7 +71,7 @@ mais ils peuvent être désactivés.
 état par défaut s'il a été modifié. Ce bouton n'est visible que pour les
 styles intégrés.
 
-## Réorganiser les styles
+## Réorganiser les styles [reordering-styles]
 
 Les lignes peuvent être réorganisées par glisser-déposer. Faites simplement glisser une ligne de style vers une nouvelle
 position dans le tableau. L'ordre défini ici détermine :
@@ -83,17 +83,17 @@ position dans le tableau. L'ordre défini ici détermine :
 Glissez les styles vers les emplacements de raccourcis clavier que vous souhaitez leur
 attribuer.
 
-## Ajouter des styles
+## Ajouter des styles [adding-styles]
 
 Il existe plusieurs façons d'ajouter de nouveaux styles personnalisés au Gestionnaire de styles :
 
-### Bouton Ajouter
+### Bouton Ajouter [add-button]
 
 Cliquez sur le bouton **Ajouter un nouveau style** pour ouvrir un sélecteur de fichiers
 vous permettant de choisir un ou plusieurs fichiers CSS à importer. Les fichiers sélectionnés seront
 ajoutés au Gestionnaire de styles et activés par défaut.
 
-### Glisser-déposer
+### Glisser-déposer [drag-and-drop]
 
 Vous pouvez glisser des fichiers CSS directement sur la fenêtre du Gestionnaire de styles. Lorsque vous glissez
 des fichiers au-dessus de la fenêtre, une incrustation apparaît indiquant « Ajouter un style personnalisé » (ou
@@ -106,7 +106,7 @@ dépôt montre où le nouveau style sera inséré, ce qui vous permet de contrô
 Glisser des fichiers CSS sur le panneau de préférences {% prefspane Style %} les
 importera également et ouvrira automatiquement le Gestionnaire de styles.
 
-## Aperçu en direct
+## Aperçu en direct [live-preview]
 
 Le panneau de droite du Gestionnaire de styles affiche un aperçu en direct du
 style sélectionné. L'aperçu affiche un document d'exemple complet comportant des titres,
@@ -117,33 +117,33 @@ L'aperçu utilise directement le fichier CSS depuis le disque : toute modificati
 éditeur externe se répercute donc instantanément dans l'aperçu. Cela facilite
 la visualisation de vos modifications en temps réel lorsque vous développez des styles personnalisés.
 
-### Aperçu en mode sombre
+### Aperçu en mode sombre [dark-mode-preview]
 
 Une case à cocher au-dessus de l'aperçu vous permet de basculer entre les aperçus en mode
 clair et en mode sombre. Ceci est utile pour tester l'apparence des styles dans les deux modes
 d'apparence, en particulier si vous créez des styles qui s'adaptent à l'apparence du système.
 
-## Raccourcis clavier
+## Raccourcis clavier [keyboard-shortcuts]
 
 Le Gestionnaire de styles affiche une légende sous le tableau indiquant comment les raccourcis
 clavier sont attribués. Les neuf premiers styles activés reçoivent {% kbd cmd 1 %} à
 {% kbd cmd 9 %} ({% kbd cmd 0 %} est réservé), les dix suivants reçoivent {% kbd opt cmd 1 %} à {% kbd opt cmd 0 %}, et ainsi de suite. Vous pouvez consulter les raccourcis clavier attribués dans le menu contextuel Style de n'importe quel aperçu.
 
-## Filtrer les styles désactivés
+## Filtrer les styles désactivés [filtering-disabled-styles]
 
 Une case à cocher en bas de la fenêtre vous permet d'afficher ou de masquer les styles
 désactivés. Lorsqu'elle est décochée, seuls les styles activés sont affichés, ce qui facilite
 la concentration sur vos styles actifs et leur réorganisation. Lorsqu'elle est cochée, tous les styles (activés et désactivés)
 sont affichés, ce qui vous permet de gérer l'ensemble de votre collection de styles.
 
-## Restaurer les styles intégrés
+## Restaurer les styles intégrés [restoring-builtin-styles]
 
 Le bouton **Restaurer tous les styles intégrés** en bas de la fenêtre
 restaure tous les styles intégrés à leur état par défaut. Ceci est utile si vous avez
 désactivé des styles intégrés et souhaitez les réactiver, ou si vous souhaitez annuler
 toute modification apportée aux styles intégrés.
 
-## Astuces
+## Astuces [tips]
 
 - **Organiser par fréquence d'utilisation** : glissez vos styles les plus utilisés vers le haut pour leur
   attribuer les raccourcis clavier les plus accessibles ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)

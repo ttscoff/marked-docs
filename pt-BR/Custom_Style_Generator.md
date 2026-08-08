@@ -4,7 +4,7 @@
 
 O Custom Style Generator é uma ferramenta baseada na web que permite criar estilos personalizados para Marked sem escrever CSS manualmente. Ele fornece uma interface visual com controles de tipografia, cores, espaçamento e muito mais, com uma visualização ao vivo que é atualizada conforme você faz alterações.
 
-## Acessando o Gerador
+## Acessando o Gerador [accessing-the-generator]
 
 O Gerador de estilo está disponível em [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). Você pode usá-lo diretamente em seu navegador – não é necessária instalação.
 
@@ -12,7 +12,7 @@ O Gerador de estilo está disponível em [https://markedapp.com/style-generator/
 
   [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Primeiros passos
+## Primeiros passos [getting-started]
 
 Ao abrir o gerador pela primeira vez, você verá:
 
@@ -20,19 +20,19 @@ Ao abrir o gerador pela primeira vez, você verá:
 - **Painel de controles** (à direita): todos os controles de estilo organizados em seções
 - **Barra de ferramentas** (topo): título do estilo, seletor de tema base e opção de importação de CSS
 
-### Escolhendo um tema base
+### Escolhendo um tema base [choosing-a-base-theme]
 
 Comece selecionando um **Tema Base** no menu suspenso. Isso fornece uma base para o seu estilo – você pode personalizar cada aspecto dele. As opções populares incluem Em Branco (para começar do zero), Padrão e vários temas integrados.
 
-### Importando CSS Existente
+### Importando CSS Existente [importing-existing-css]
 
 Se você tiver um arquivo CSS existente que gostaria de usar como ponto de partida, clique em **Importar CSS** e selecione seu arquivo. O gerador carregará esses estilos e você poderá modificá-los usando os controles.
 
-## Controles de estilo
+## Controles de estilo [style-controls]
 
 O gerador organiza os controles em seções lógicas:
 
-### Tipografia básica
+### Tipografia básica [base-typography]
 
 Controle as configurações fundamentais de tipografia:
 
@@ -50,7 +50,7 @@ Ajuste o espaçamento e o recuo:
 - **Recuo da lista**: recuo para listas
 - **Blockquote Indent**: Margem esquerda para blockquotes
 
-### Fontes
+### Fontes [layout]
 
 Configure famílias e pesos de fontes:
 
@@ -61,7 +61,7 @@ Configure famílias e pesos de fontes:
 - **Espessura em negrito**: Peso da fonte para texto em negrito
 - **Espaçamento entre letras**: espaçamento entre caracteres para cabeçalhos e corpo do texto
 
-### Fontes do Google
+### Fontes do Google [fonts]
 
 Adicione Google Fonts ao seu estilo:
 
@@ -72,7 +72,7 @@ Adicione Google Fonts ao seu estilo:
 
 As fontes adicionadas aparecem em uma lista abaixo dos controles – clique no × para removê-las.
 
-### Cores
+### Cores [google-fonts]
 
 Defina cores para vários elementos:
 
@@ -87,13 +87,13 @@ Defina cores para vários elementos:
 
 As cores de cabeçalho individuais (H1–H6) podem ser definidas separadamente — use **Redefinir** para limpar uma substituição e retornar à cor do cabeçalho.
 
-### Modo escuro
+### Modo escuro [colors]
 
 Ative o **Modo escuro** para visualizar e configurar as cores do modo escuro. Quando ativado, você verá controles de cores separados para variantes do modo escuro. Os estilos de modo escuro se aplicam quando `.inverted` está definido no elemento body em Marcado.
 
 Use **Gerar cores** para criar automaticamente uma paleta de modo escuro com base nas cores do modo claro.
 
-### Imagens
+### Imagens [dark-mode]
 
 Controlar a aparência da imagem:
 
@@ -101,7 +101,7 @@ Controlar a aparência da imagem:
 - **Border Radius**: Cantos arredondados (por exemplo, "8px", "0")
 - **Alinhamento**: Padrão do documento, Esquerda, Centro ou Direita
 
-### Citações em bloco
+### Citações em bloco [images]
 
 Citações de estilo:
 
@@ -114,7 +114,7 @@ Citações de estilo:
 
 Controles separados estão disponíveis para citações em bloco no modo escuro.
 
-### Listas
+### Listas [blockquotes]
 
 Configurar a aparência da lista:
 
@@ -122,7 +122,7 @@ Configurar a aparência da lista:
 - **Margem Esquerda**: Espaçamento da borda esquerda
 - **Margem esquerda aninhada**: espaçamento para listas aninhadas (pode ser "herdado")
 
-### Listas de definições
+### Listas de definições [lists]
 
 Listas de definição de estilo (`<dl>`, `<dt>`, `<dd>`):
 
@@ -130,7 +130,7 @@ Listas de definição de estilo (`<dl>`, `<dt>`, `<dd>`):
 - Configurações de **DT** (termo): tamanho, peso e estilo da fonte
 - Configurações de **DD** (definição): tamanho da fonte, peso, estilo e recuo
 
-### Tabelas
+### Tabelas [definition-lists]
 
 Estilo de mesa abrangente:
 
@@ -149,7 +149,7 @@ Estilo de mesa abrangente:
 
 Controles separados estão disponíveis para tabelas no modo escuro.
 
-### Blocos de código
+### Blocos de código [tables]
 
 Blocos de código de estilo e código embutido:
 
@@ -162,7 +162,7 @@ Blocos de código de estilo e código embutido:
 
 Controles separados estão disponíveis para blocos de código no modo escuro.
 
-### Notas de rodapé
+### Notas de rodapé [code-blocks]
 
 Notas de rodapé de estilo:
 
@@ -172,7 +172,7 @@ Notas de rodapé de estilo:
 
 Controles separados estão disponíveis para notas de rodapé no modo escuro.
 
-### Sombra projetada
+### Sombra projetada [footnotes]
 
 Adicione sombras projetadas aos elementos:
 
@@ -189,7 +189,7 @@ Para personalização avançada além dos controles disponíveis, use o botão *
 
 O editor inclui destaque e validação de sintaxe – CSS inválido será sinalizado com mensagens de erro.
 
-## Visualização ao vivo
+## Visualização ao vivo [custom-css]
 
 O painel de visualização mostra seu estilo aplicado ao conteúdo de markdown de amostra, incluindo:
 
@@ -206,7 +206,7 @@ O painel de visualização mostra seu estilo aplicado ao conteúdo de markdown d
 
 As alterações são atualizadas em tempo real conforme você ajusta os controles.
 
-## Salvando e compartilhando
+## Salvando e compartilhando [live-preview]
 
 Quando estiver satisfeito com seu estilo, você terá várias opções:
 
@@ -234,7 +234,7 @@ Clique em **Compartilhar estilo** para publicar seu estilo na [Galeria de estilo
 
 Uma prévia do seu estilo aparecerá na caixa de diálogo de compartilhamento antes de publicar.
 
-## Metadados
+## Metadados [saving-and-sharing]
 
 Use a seção de metadados (expansível por meio do botão de seta próximo ao título do estilo) para definir:
 
@@ -245,7 +245,7 @@ Use a seção de metadados (expansível por meio do botão de seta próximo ao t
 
 Esses metadados são incluídos no cabeçalho do arquivo CSS e usados ao compartilhar estilos.
 
-## Dicas
+## Dicas [metadata]
 
 - Comece com um tema base próximo ao que você deseja e depois personalize
 - Use o tema **Em branco** se quiser controle total do zero
@@ -254,6 +254,6 @@ Esses metadados são incluídos no cabeçalho do arquivo CSS e usados ao compart
 - Use **CSS personalizado** com moderação — a maioria das necessidades pode ser atendida com os controles integrados
 - Visualize seu estilo com vários tipos de conteúdo antes de compartilhar
 
-## Compatibilidade do navegador
+## Compatibilidade do navegador [tips]
 
 O Style Generator funciona melhor em navegadores modernos (Chrome, Firefox, Safari, Edge). Requer que o JavaScript esteja ativado.

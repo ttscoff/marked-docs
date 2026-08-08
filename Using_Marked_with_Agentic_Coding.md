@@ -3,7 +3,7 @@
 
 Marked is a great companion for modern "agentic coding" workflows where AI tools generate plans, refactor code, and keep updating documentation as you work. By letting Marked watch your project or planning folders, you get a live, readable view of whatever your coding agents touch next, without having to hunt through your editor or file tree.
 
-## Watching your project or plan folder
+## Watching your project or plan folder [watching-your-project-or-plan-folder]
 
 Instead of opening a single file, you can point Marked at an entire folder that you use for plans, scratch notes, or AI-generated documentation:
 
@@ -15,7 +15,7 @@ Once Marked is watching a folder, it will automatically display the **most recen
 
 This works especially well with agentic tools like Cursor, Claude, and Copilot that continuously regenerate specs, to‑do lists, or architecture notes while you iterate on a feature.
 
-## Scrolling to the first change
+## Scrolling to the first change [scrolling-to-the-first-change]
 
 When *Scroll to Edit* is enabled in Marked's preferences, the preview doesn't just reload --- it **scrolls directly to the first changed area** of the file when it updates.
 
@@ -27,7 +27,7 @@ That means you can:
 
 Combined with folder watching, this makes it easy to see exactly what your agents are doing to your documents, even when they're making frequent, incremental edits.
 
-## Diagrams with Mermaid.js
+## Diagrams with Mermaid.js [diagrams-with-mermaidjs]
 
 Marked also has **Mermaid.js support enabled by default**, so sequence diagrams, flowcharts, and architecture diagrams that your agents generate using Mermaid code blocks will render cleanly in the preview. When your AI assistant outputs fenced code like:
 
@@ -42,7 +42,7 @@ flowchart TD
 
 Marked will automatically turn it into a styled, interactive diagram, giving you a visual view of complex workflows, data flows, or system designs created by tools like Cursor, Claude, Copilot, and other agentic coding assistants.
 
-## Example agentic coding workflows
+## Example agentic coding workflows [example-agentic-coding-workflows]
 
 - **Cursor + Marked**: Keep a `plans/` or `notes/` folder in your repo where Cursor writes step‑by‑step implementation plans. Point Marked at that folder to always see the latest plan, rendered cleanly, as you accept and apply edits in the editor.
 

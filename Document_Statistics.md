@@ -2,7 +2,7 @@
 
 Keep track as you write.
 
-## Word Count and Document Statistics
+## Word Count and Document Statistics [word-count-and-document-statistics]
 
 ![][1]
 
@@ -12,7 +12,7 @@ Word count is located in the bottom status bar and can be enabled and disabled f
 
 If text is selected, the word count display and the paragraph/sentences/character popup will update with info just for the selection.
 
-## Word Count for Selection
+## Word Count for Selection [word-count-for-selection]
 
 ![Word count popup on text selection][2]
 
@@ -24,7 +24,7 @@ If "Show Word Count For Selection" is enabled in the {% prefspane Preview %}, a 
 
 The zoom feature is handy for quickly selecting and getting counts for larger chunks of text. Type {% kbd z %} to zoom out and make your selection.
 
-## Readability Statistics
+## Readability Statistics [readability-statistics]
 
 ![Readability stats bar][3]
 
@@ -32,7 +32,7 @@ The zoom feature is handy for quickly selecting and getting counts for larger ch
 
 Additional statistics from Flesch/Kincaid and the Fog Index are available with {% kbd opt shift cmd S %}.
 
-### Readability information
+### Readability information [readability-information]
 
 **Flesch Reading Ease:** higher scores indicate material that is easier to read; lower numbers mark passages that are more difficult to read.
 
@@ -44,7 +44,7 @@ Additional statistics from Flesch/Kincaid and the Fog Index are available with {
 
 **Gunning fog index:** measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. A fog index of 12 requires the reading level of a U.S. high school senior (around 18 years old).
 
-## Advanced Statistics
+## Advanced Statistics [advanced-statistics]
 
 ![Advanced Statistics popup][adv]
 
@@ -52,7 +52,7 @@ Additional statistics from Flesch/Kincaid and the Fog Index are available with {
 
 Selecting Advanced Statistics from the gear menu ---- or pressing {% kbd cmd I %} --- will drop down a panel containing more advanced document statistics including average word and sentence length and average word complexity.
 
-### Floating Advanced Statistics
+### Floating Advanced Statistics [floating-advanced-statistics]
 
 ![Floating Info Window][floating]
 
@@ -60,7 +60,7 @@ Selecting Advanced Statistics from the gear menu ---- or pressing {% kbd cmd I %
 
 Pressing {% kbd shift cmd I %} will open a floating panel containing all of the detailed stats and readability information. This panel can remain in the forefront when you switch to your editor, so you can see your statistics update every time you save, whether the preview is visible or not. Pressing the `<` icon will return the associated Marked Preview to the foreground. If you hold down option and click the same button, it will open the Markdown file in your default text editor (set in the {% prefspane Apps %}).
 
-### Word Targets
+### Word Targets [word-targets]
 
 If you have a specific target for word count as you're writing, you can add a "target:" metadata key at the top of your document and Marked will track your progress, displaying a completion indicator in the Detailed Statistics panel ({% kbd cmd I %}) and in the Floating Stats ({% kbd shift cmd I %}).
 
@@ -69,7 +69,7 @@ If you have a specific target for word count as you're writing, you can add a "t
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualize Word Repetition
+## Visualize Word Repetition [visualizewordrepetition]
 
 Selecting Visualize Word Repetition from the gear menu (or pressing {% kbd ctrl cmd W %}) will switch to a special view which removes non-text elements and highlights words that are repeated in your document. Repeated words are highlighted in light pink, and hovering over a highlighted word will brighten the matching words throughout the document. Clicking a highlighted word will darken the background and "stick" the highlighting for further review.
 

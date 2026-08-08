@@ -4,19 +4,19 @@
 
 A paleta Ações Rápidas é um iniciador de comando pesquisável para Marcado. Ele coleta ações da barra de menu principal e do **menu de engrenagem** de visualização, além de comandos de teclado somente de visualização que não aparecem nos menus (como **Rolagem automática**). Use-o quando você sabe o que quer fazer, mas não consegue lembrar qual menu o contém.
 
-## Abrindo a paleta de ações rápidas
+## Abrindo a paleta de ações rápidas [opening-the-quick-actions-palette]
 
 Abra a paleta com {% kbd shift cmd P %} ou de {% appmenu File, Quick Actions… %}. O painel aparece como uma janela flutuante acima do documento atual.
 
 Pressione o mesmo atalho novamente ou pressione **Escape** para fechar a paleta. Se a paleta já estiver aberta, escolher **Ações Rápidas…** no menu também a fecha.
 
-## Personalizando o atalho
+## Personalizando o atalho [customizing-the-shortcut]
 
 O atalho padrão é {% kbd shift cmd P %}. Para alterá-lo, abra {% prefspane General %} e grave uma nova combinação em **Abrir Paleta de Ações** na seção **Atalhos**.
 
 Ao contrário de **Ativar Marcado** e **Abrir primeira janela**, o atalho de Ações Rápidas funciona apenas quando Marcado é o aplicativo ativo. Ele atualiza o atalho do menu {% appmenu File, Quick Actions… %} para corresponder à sua configuração.
 
-## Pesquisa e filtro
+## Pesquisa e filtro [search-and-filter]
 
 Digite no campo de pesquisa na parte superior do painel para filtrar comandos em tempo real. A correspondência é confusa e indulgente:
 
@@ -26,7 +26,7 @@ Digite no campo de pesquisa na parte superior do painel para filtrar comandos em
 
 Cada resultado mostra o nome do comando à esquerda e seu atalho de teclado (quando disponível) à direita em cinza. Alguns comandos também mostram um caminho de navegação (por exemplo `Preview › Autoscroll`) quando a ação vem de um submenu ou do mecanismo de visualização.
 
-## O que aparece na lista
+## O que aparece na lista [what-appears-in-the-list]
 
 A paleta inclui:
 
@@ -36,7 +36,7 @@ A paleta inclui:
 
 Quando o mesmo comando aparece em mais de um lugar, Marcado mostra o caminho de menu mais curto e mescla informações de atalho de duplicatas.
 
-## Navegação pelo teclado
+## Navegação pelo teclado [keyboard-navigation]
 
 Navegue pela paleta Ações Rápidas inteiramente a partir do teclado:
 
@@ -47,7 +47,7 @@ Navegue pela paleta Ações Rápidas inteiramente a partir do teclado:
 
 A digitação simples (sem a tecla Command) filtra o campo de pesquisa. Atalhos de tecla única somente para visualização, como `s` para rolagem automática, filtram a lista; pressione **Return** para executar o comando selecionado.
 
-## Executando Comandos
+## Executando Comandos [running-commands]
 
 Selecionar um comando de menu o despacha da mesma forma que escolhê-lo no menu, incluindo itens de menu dinâmicos e de engrenagem.
 

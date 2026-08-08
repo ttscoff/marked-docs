@@ -2,7 +2,7 @@
 
 [iThoughtsX][it] mind maps saved as `.itmz` packages can be previewed directly in Marked once **Markdown Preview** is enabled inside iThoughtsX.
 
-## Enable Markdown export channel
+## Enable Markdown export channel [enable-markdown-export-channel]
 
 In iThoughtsX preferences, under **Advanced**, set **Markdown Preview** (wording may read "Markdown" or "Markdown Preview" depending on version), then pick whether exported topics include:
 

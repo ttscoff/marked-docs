@@ -4,7 +4,7 @@ Marked dispose d'un éditeur de style intégré et peut appliquer des fichiers C
 
 Vous pouvez utiliser l'éditeur pour créer de superbes styles, ou, si vous en savez juste assez en CSS pour être dangereux, faire en sorte que Marked ait exactement l'apparence que vous souhaitez.
 
-## Pour commencer
+## Pour commencer [getting-started]
 
 Il existe une galerie de styles personnalisés créés par le développeur et par les utilisateurs, sur [markedapp.com/styles](https://markedapp.com/styles/). La galerie permet de prévisualiser et d'installer des styles directement dans Marked. Tout style installé peut être affiché dans le Finder pour examen et modification. La galerie peut être ouverte à l'aide d'un visualiseur interne avec {% appmenu Style, Generate a Custom Style %}, ou en cliquant sur l'icône de crayon (modifier) à côté de n'importe quel style modifiable dans le Gestionnaire de styles. Si vous souhaitez modifier un style intégré, vous devrez d'abord le dupliquer dans le gestionnaire.
 
@@ -18,11 +18,11 @@ Si vous concevez pour un usage personnel, il n'y a aucune règle. Activez le sui
 
 Si vous prévoyez de partager votre création CSS, il y a quelques points à couvrir. Premièrement, certaines classes du body doivent recevoir des styles :
 
-## Classes du body
+## Classes du body [body-classes]
 
 Les styles suivants doivent être inclus dans tout CSS Marked destiné à être partagé. Les classes du body permettent de cibler et de modifier n'importe quel sélecteur selon différentes options de préférence.
 
-### Inverted (mode sombre)
+### Inverted (mode sombre) [inverted]
 
 Lorsque l'utilisateur sélectionne {% appmenu Preview, Dark Mode %}, une classe « inverted » est ajoutée à la balise body. Vous pouvez l'utiliser pour cibler les styles à fort contraste, clair sur fond sombre.
 
@@ -44,7 +44,7 @@ Vous ne souhaitez appliquer les styles inversés qu'à l'aperçu, pas à l'impre
 }
 ```
 
-### Poetry (poésie)
+### Poetry (poésie) [poetry]
 
 L'utilisateur peut choisir si un texte indenté par tabulation doit être traité comme de la poésie ou du code. La seule différence est que les blocs pre/code sont stylés de façon plus, disons, poétique lorsque le mode poésie est choisi. La classe « poetry » est appliquée à la balise body.
 
@@ -61,7 +61,7 @@ Laissez libre cours à votre créativité dans la mise en forme, mais voici un e
 }
 ```
 
-## Cas particuliers
+## Cas particuliers [special-cases]
 
 Les tableaux, les balises Figure/Figcaption, ainsi que le cas particulier de `a.footnote` et `div.footnotes>a` doivent également être pris en compte. Il n'existe pas de règles fixes sur la façon de les gérer, mais examinez les styles par défaut pour avoir une idée des règles CSS dont Marked a besoin.
 
@@ -93,11 +93,11 @@ Il est également conseillé d'inclure une règle générale pour toutes les ima
 
 Si votre thème comporte un espacement supplémentaire ou une largeur fixe, ajustez le max-width en conséquence.
 
-## Styles d'impression
+## Styles d'impression [printstyles]
 
 Veillez à inclure des styles d'impression qui suppriment toute couleur d'arrière-plan, tout défilement fixe, et l'interface propre à l'aperçu. Marked offre deux façons de cibler la sortie impression et PDF.
 
-### `@media print`
+### `@media print` [media-print]
 
 Les règles CSS d'impression standards s'appliquent lors de l'impression depuis Marked, ou lorsque l'export PDF utilise le media type print :
 
@@ -108,7 +108,7 @@ Les règles CSS d'impression standards s'appliquent lors de l'impression depuis 
 }
 ```
 
-### La classe `.mkprinting`
+### La classe `.mkprinting` [the-mkprinting-class]
 
 Lorsque Marked prépare un document pour l'**export PDF** ou l'**aperçu Impression/PDF** ({% kbd cmd P %}), il ajoute la classe `mkprinting` à la balise `<body>` (aux côtés de classes d'export telles que `bandw`, `breakAfterTOC`, et de la classe `mkstyle--*` propre à votre style). Les thèmes intégrés de Marked utilisent cette classe pour la plupart des règles spécifiques à l'impression, plutôt que de se fier uniquement à `@media print`.
 
@@ -152,17 +152,17 @@ Le masquage des liens à l'impression est géré en dehors du thème principal, 
 
 Alors, à vous de jouer. Convertissez le thème de votre blog, créez un style d'impression parfait pour vos documents PDF, ou concevez l'aperçu idéal pour votre style d'écriture. Si vous créez quelque chose de formidable, [partagez-le avec la communauté](https://markedapp.com/styleshare/).
 
-## Réglages CSS supplémentaires
+## Réglages CSS supplémentaires [additional-css-settings]
 
 Dans le {% prefspane Style %}, vous pouvez modifier le CSS supplémentaire. Ces styles seront ajoutés après tout thème chargé, et peuvent servir à apporter des modifications universelles à tous les thèmes.
 
 En utilisant une [spécificité élevée](#overridingspecificity), des media queries `@media` pour l'impression et l'écran, ainsi que des sélecteurs `.mkprinting` pour l'export PDF, vous pouvez contrôler pratiquement tous les aspects du style avec un minimum de connaissances en CSS.
 
-## Inspecteur WebKit
+## Inspecteur WebKit [webkitinspector]
 
 L'Inspecteur web de Safari est le moyen le plus simple de voir exactement quel HTML et quel CSS Marked génère, et d'expérimenter en direct avec les styles personnalisés.
 
-### Activer le menu Développement dans Safari
+### Activer le menu Développement dans Safari [enabling-the-develop-menu-in-safari]
 
 1. Ouvrez Safari et choisissez {% appmenu Safari, Settings… %}.
 2. Sélectionnez l'onglet **Avancé**.
@@ -172,7 +172,7 @@ Une fois cette option activée, un menu **Développement** apparaîtra dans la b
 
 ![Menu Développement de Safari montrant les documents Marked][develop-menu]
 
-### Inspecter un document Marked
+### Inspecter un document Marked [inspecting-a-marked-document]
 
 1. Avec une fenêtre d'aperçu ouverte dans Marked, passez à Safari.
 2. Dans la barre de menus, choisissez **Développement → _\<nom de votre Mac\>_ → Marked → _\<titre du document\>_**.
@@ -191,21 +191,21 @@ Une fois cette option activée, un menu **Développement** apparaîtra dans la b
 
 ![Inspection d'un aperçu Marked avec l'Inspecteur web de Safari][inspecting]
 
-## Partager du CSS personnalisé
+## Partager du CSS personnalisé [sharing-custom-css]
 
 Utilisez {% appmenu Style, Share a Custom Style %} pour ouvrir l'application de partage dans votre navigateur web. Glissez votre CSS dans la zone de dépôt (ou cliquez pour le sélectionner depuis le disque) et envoyez le CSS de votre style personnalisé.
 
 Les styles partagés doivent être approuvés par le développeur avant d'apparaître dans la galerie : vous ne verrez donc pas de résultat immédiat.
 
-## Autres astuces
+## Autres astuces [other-tips]
 
-### Surcharger la spécificité
+### Surcharger la spécificité [overridingspecificity]
 
 Dans l'aperçu de Marked, une classe de body basée sur le nom de fichier du style actuel est ajoutée. Si l'aperçu est réglé sur « Swiss », la balise `<body>` portera une classe nommée `mkstyle--swiss`. Si votre CSS personnalisé s'appelle MyCustom.css, la classe du body sera `mkstyle--mycustom`. Vous pouvez l'utiliser avant les règles définies dans les styles de base pour les surcharger. Pour obtenir une spécificité absolue dans une règle, utilisez également l'ID #wrapper de la div conteneur :
 
 	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Style de la table des matières
+### Style de la table des matières [table-of-contents-styling]
 
 Si vous utilisez le jeton `<!--toc-->` pour [insérer une table des matières](Special_Syntax.html#tableofcontents), vous pouvez surcharger les réglages des indicateurs de niveau de la table des matières dans un style personnalisé, en utilisant « #wrapper » pour augmenter la spécificité :
 

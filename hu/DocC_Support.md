@@ -6,13 +6,13 @@ A Megjelölt megérti az [Apple DocC](https://www.swift.org/documentation/docc/)
 
 A **fájlkiterjesztésű útvonalakat** (`images/icon.png`) használó normál Markdown dokumentumokhoz lásd: [Képváltozatok](Image_Variants.html). Ez a funkció mindenhol működik; A DocC felbontás katalógus-specifikus.
 
-## DocC felbontás engedélyezése
+## DocC felbontás engedélyezése [enabling-docc-resolution]
 
 A {% prefspane Apps %} mezőben engedélyezze a **Dokumentumkép-hivatkozások feloldása** lehetőséget (alapértelmezés szerint be van kapcsolva).
 
 A DocC-észlelés akkor fut le, amikor a Marked megtalálja a megnyitott dokumentum `.docc` katalógus-elődjét. Nincs szükség speciális URL-sémára vagy Xcode-integrációra – nyissa meg a katalógus Markdown elemét ugyanúgy, mint bármely más fájlt.
 
-## Kiterjesztés nélküli hivatkozások
+## Kiterjesztés nélküli hivatkozások [extensionless-references]
 
 A DocC-katalógusban a szerzők általában képekre hivatkoznak **elérési út vagy kiterjesztés nélkül:
 
@@ -24,7 +24,7 @@ A Marked a `OrderStateTransitions`-től `Resources/OrderStateTransitions.png`-ig
 
 Azok a hivatkozások, amelyek már tartalmaznak elérési utat és kiterjesztést – `images/chart.png` – helyette az [Image Variants](Image_Variants.html)-re maradnak, és a DocC felbontás nem írja át őket.
 
-## Sötét mód és Retina változatok
+## Sötét mód és Retina változatok [dark-mode-and-retina-variants]
 
 A DocC katalógusok gyakran több fájlt is szállítanak képenként:
 
@@ -37,7 +37,7 @@ A DocC katalógusok gyakran több fájlt is szállítanak képenként:
 
 Ha egynél több változat létezik, a Marked ugyanazt a reszponzív `<picture>` jelölést bocsát ki, amelyet a [Képváltozatok](Image_Variants.html) részben leírtak. Az egyfájlos hivatkozás továbbra is normál `<img>` vagy `![](Resources/...)` elérési útra oldódik fel.
 
-## HTML és Markdown
+## HTML és Markdown [html-and-markdown]
 
 A DocC felbontás a Marked bekerülési engedélye alatt érvényes:
 
@@ -46,11 +46,11 @@ A DocC felbontás a Marked bekerülési engedélye alatt érvényes:
 
 Mindkettő frissül az előnézeti megjelenítés előtt.
 
-## Fájlnézés
+## Fájlnézés [file-watching]
 
 A katalógus `Resources` mappa alatt lévő megoldott képek hozzáadódnak a Marked figyelőlistájához. Egy változatfájl külső szerkesztése manuális frissítés nélkül frissíti az előnézetet.
 
-## Kapcsolódó témák
+## Kapcsolódó témák [related-topics]
 
 - [Image Variants](Image_Variants.html) — `~dark` és `@2x` észlelés a kiterjesztés alapú elérési utakhoz bármely projektben
 - [Xcode Playgrounds](Xcode_Playgrounds.html) – Swift játszótér kommentár előnézete

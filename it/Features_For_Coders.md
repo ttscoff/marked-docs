@@ -2,7 +2,7 @@
 
 #<%= @title %>
 
-## Blocchi di codice recintati
+## Blocchi di codice recintati [fenced-code-blocks]
 
 I blocchi di codice recintati sono abilitati in entrambi i processori inclusi per impostazione predefinita (MultiMarkdown e Discount). I blocchi di codice recintati sono delimitati da tre o più tilde (~) o apici inversi (\`). Puoi usarne più di tre, ma i delimitatori iniziale e finale devono avere esattamente lo stesso numero di caratteri.
 
@@ -40,7 +40,7 @@ L'evidenziazione della sintassi incorporata riconoscerà **256** specificatori d
 
 Consulta la sezione su [Sintassi speciale contrassegnata](Special_Syntax.html#includingcode) per sapere come includere file di codice esterni nel tuo documento.
 
-## Evidenziazione della sintassi
+## Evidenziazione della sintassi [syntax-highlighting]
 
 ![Evidenziazione automatica della sintassi][evidenzia]
 
@@ -60,7 +60,7 @@ L'opzione "Solo se è specificata la lingua" a destra del selettore dello stile 
 
 L'evidenziazione della sintassi verrà visualizzata nell'anteprima, nella stampa e nell'esportazione in PDF. Se abilitato nelle impostazioni e il tema è incluso durante l'esportazione dell'HTML, la libreria highlight.js utilizzata da Marked verrà incorporata nell'output HTML, consentendo all'HTML esportato di apparire come in Marked.
 
-### Lingue supportate
+### Lingue supportate [supported-languages]
 
 Marked viene fornito con **highlight.js 11.11.1**, incluse tutte le lingue principali più grammatiche di terze parti dall'elenco [lingue supportate da highlight.js](https://highlightjs.readthedocs.io/en/latest/supported-languages.html). Specificare il nome della lingua principale di seguito (o un alias documentato come `js` per JavaScript) dopo il recinto di apertura.
 
@@ -90,7 +90,7 @@ Due lingue elencate sul sito highlight.js non sono incluse nel pacchetto Marked:
     vbscript-html, verilog, vhdl, vim, wasm, scricciolo, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, zephir
 
-### Temi di evidenziazione della sintassi
+### Temi di evidenziazione della sintassi [syntax-highlighting-themes]
 
 **239** temi di evidenziazione della sintassi sono disponibili nel menu a discesa {% prefspane Style %}. I temi vengono caricati automaticamente dai fogli di stile in bundle di Marked; i nomi corrispondono al nome file CSS senza l'estensione (ad esempio, `github-dark` carica `github-dark.css`).
 
@@ -156,11 +156,11 @@ base16-3024, base16-apatia, base16-apprendista, base16-ceneri, base16-atelier-ca
     base16-windows-nt, base16-windows-nt-light, base16-woodland, base16-xcode-dusk,
     base16-zenburn
 
-## Interruzioni di riga su GitHub
+## Interruzioni di riga su GitHub [github-line-breaks]
 
 Contrassegnato può preservare le interruzioni di riga nei paragrafi. Basta selezionare {% prefspane Processor %} e selezionare la casella per mantenere le interruzioni di riga nei paragrafi.
 
-## Caselle di controllo GitHub
+## Caselle di controllo GitHub [github-checkboxes]
 
 Elenca gli elementi formattati come:
 
@@ -169,6 +169,6 @@ Elenca gli elementi formattati come:
 
 appariranno nell'anteprima come elementi della casella di controllo renderizzata. Non è possibile interagire con essi, ma il loro stato rifletterà eventuali modifiche nel documento di origine.
 
-## Avvolgimento del blocco di codice
+## Avvolgimento del blocco di codice [code-block-wrapping]
 
 Nella {% prefspane Style %} troverai un'opzione sotto Layout e tipografia: "Consenti ai temi di racchiudere il testo all'interno dei blocchi di codice". Disabilitare questa opzione costringerà tutti i blocchi di codice a scorrere l'overflow orizzontale anziché a capo, indipendentemente dallo stile di anteprima corrente.

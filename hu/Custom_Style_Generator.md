@@ -4,7 +4,7 @@
 
 A Custom Style Generator egy webalapú eszköz, amely lehetővé teszi egyéni stílusok létrehozását a Marked számára anélkül, hogy kézzel írna CSS-t. Vizuális felületet biztosít a tipográfia, a színek, a térköz és egyebek vezérlőivel, élő előnézettel, amely a változtatások során frissül.
 
-## Hozzáférés a generátorhoz
+## Hozzáférés a generátorhoz [accessing-the-generator]
 
 A Stílusgenerátor a következő címen érhető el: [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). Használhatja közvetlenül a webböngészőjében – nincs szükség telepítésre.
 
@@ -12,7 +12,7 @@ A Stílusgenerátor a következő címen érhető el: [https://markedapp.com/sty
 
   [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Első lépések
+## Első lépések [getting-started]
 
 Amikor először nyitja meg a generátort, a következőket fogja látni:
 
@@ -20,19 +20,19 @@ Amikor először nyitja meg a generátort, a következőket fogja látni:
 - **Vezérlőpanel** (jobbra): Az összes stílusvezérlő szakaszokba rendezve
 - **Eszköztár** (fent): Stíluscím, alaptéma-választó és CSS-importálási lehetőség
 
-### Alaptéma kiválasztása
+### Alaptéma kiválasztása [choosing-a-base-theme]
 
 Kezdje azzal, hogy a legördülő menüből válassza ki az **Alaptémát**. Ez alapot ad a stílusodhoz – ezután személyre szabhatod annak minden aspektusát. A népszerű lehetőségek közé tartozik az Üres (a nulláról kezdéshez), az Alapértelmezett és a különböző beépített témák.
 
-### Meglévő CSS importálása
+### Meglévő CSS importálása [importing-existing-css]
 
 Ha rendelkezik egy meglévő CSS-fájllal, amelyet kiindulási pontként szeretne használni, kattintson a **CSS importálása** lehetőségre, és válassza ki a fájlt. A generátor betölti ezeket a stílusokat, majd a vezérlők segítségével módosíthatja őket.
 
-## Stílusvezérlők
+## Stílusvezérlők [style-controls]
 
 A generátor logikai szakaszokba rendezi a vezérlőket:
 
-### Alap tipográfia
+### Alap tipográfia [base-typography]
 
 Az alapvető tipográfiai beállítások vezérlése:
 
@@ -41,7 +41,7 @@ Az alapvető tipográfiai beállítások vezérlése:
 - **Sormagasság**: A szövegsorok közötti térköz
 - **Scale Ratio**: A tipográfiai léptékhez használt arány (a címsorméretekre vonatkozik)
 
-### Elrendezés
+### Elrendezés [layout]
 
 A távolság és a behúzás beállítása:
 
@@ -50,7 +50,7 @@ A távolság és a behúzás beállítása:
 - **Lista behúzás**: Behúzás a listákhoz
 - **Blockquote Behúzás**: Bal margó az idézőjelekhez
 
-### Betűtípusok
+### Betűtípusok [fonts]
 
 Betűtípus-családok és súlyok beállítása:
 
@@ -61,7 +61,7 @@ Betűtípus-családok és súlyok beállítása:
 - **Bold Weight**: Betűsúly a félkövér szöveghez
 - **Betűköz**: Karaktertávolság a fejlécekhez és a törzsszöveghez
 
-### Google Fonts
+### Google Fonts [google-fonts]
 
 Adja hozzá stílusához a Google betűtípusokat:
 
@@ -72,7 +72,7 @@ Adja hozzá stílusához a Google betűtípusokat:
 
 A hozzáadott betűtípusok a vezérlőelemek alatti listában jelennek meg – kattintson a × gombra az eltávolításukhoz.
 
-### Színek
+### Színek [colors]
 
 Állítsa be a színeket a különböző elemekhez:
 
@@ -87,13 +87,13 @@ A hozzáadott betűtípusok a vezérlőelemek alatti listában jelennek meg – 
 
 Az egyes fejlécszínek (H1–H6) külön beállíthatók – a **Reset** segítségével törölheti a felülírást, és visszatérhet a fejlécszínhez.
 
-### Sötét mód
+### Sötét mód [dark-mode]
 
 Kapcsolja be a **Sötét mód** lehetőséget a sötét mód színeinek előnézetéhez és konfigurálásához. Ha engedélyezve van, külön színvezérlők jelennek meg a sötét mód változataihoz. A sötét mód stílusai akkor érvényesek, ha a `.inverted` be van állítva a törzselemen a Megjelölve.
 
 A **Színek létrehozása** használatával automatikusan létrehozhat egy sötét mód palettát a világos mód színei alapján.
 
-### Képek
+### Képek [images]
 
 Kép megjelenésének szabályozása:
 
@@ -101,7 +101,7 @@ Kép megjelenésének szabályozása:
 - **Határ sugara**: Lekerekített sarkok (pl. "8px", "0")
 - **Igazítás**: Dokumentum alapértelmezett, Balra, Középre vagy Jobbra
 
-### Idézetblokk
+### Idézetblokk [blockquotes]
 
 Stílus blokk idézetek:
 
@@ -114,7 +114,7 @@ Stílus blokk idézetek:
 
 Külön vezérlők állnak rendelkezésre a sötét módú blokk idézőjelekhez.
 
-### Listák
+### Listák [lists]
 
 A lista megjelenésének konfigurálása:
 
@@ -122,7 +122,7 @@ A lista megjelenésének konfigurálása:
 - **Bal margó**: Térköz a bal széltől
 - **Beágyazott bal margó**: A beágyazott listák szóközei (lehet "örökölni")
 
-### Definíciós listák
+### Definíciós listák [definition-lists]
 
 Stílusdefiníciós listák (`<dl>`, `<dt>`, `<dd>`):
 
@@ -130,7 +130,7 @@ Stílusdefiníciós listák (`<dl>`, `<dt>`, `<dd>`):
 - **DT** (kifejezés) beállítások: Betűméret, súly és stílus
 - **DD** (definíció) beállítások: Betűméret, súly, stílus és behúzás
 
-### Táblázatok
+### Táblázatok [tables]
 
 Átfogó asztalstílus:
 
@@ -149,7 +149,7 @@ Stílusdefiníciós listák (`<dl>`, `<dt>`, `<dd>`):
 
 Külön vezérlők állnak rendelkezésre a sötét módú táblázatokhoz.
 
-### Kódblokkok
+### Kódblokkok [code-blocks]
 
 Stíluskód blokkok és soron belüli kód:
 
@@ -162,7 +162,7 @@ Stíluskód blokkok és soron belüli kód:
 
 A sötét mód kódblokkjaihoz külön vezérlők állnak rendelkezésre.
 
-### Lábjegyzetek
+### Lábjegyzetek [footnotes]
 
 Stílus lábjegyzetek:
 
@@ -172,7 +172,7 @@ Stílus lábjegyzetek:
 
 A sötét mód lábjegyzeteihez külön vezérlők állnak rendelkezésre.
 
-### Vető árnyék
+### Vető árnyék [drop-shadow]
 
 Vethető árnyékok hozzáadása az elemekhez:
 
@@ -183,13 +183,13 @@ Vethető árnyékok hozzáadása az elemekhez:
    - Blokkidézetek
    - Asztalok
 
-## Egyéni CSS
+## Egyéni CSS [custom-css]
 
 A rendelkezésre álló vezérlőkön túlmutató speciális testreszabáshoz használja az **Egyéni CSS** gombot a kódszerkesztő megnyitásához. Az itt hozzáadott minden CSS hozzá lesz fűzve a generált stílushoz, és automatikusan a Marked dokumentumstruktúrájában működik.
 
 A szerkesztő tartalmazza a szintaxis kiemelését és érvényesítését – az érvénytelen CSS-t hibaüzenetekkel jelzi.
 
-## Élő előnézet
+## Élő előnézet [live-preview]
 
 Az előnézeti panelen látható a mintaleértékelési tartalomra alkalmazott stílus, beleértve:
 
@@ -206,23 +206,23 @@ Az előnézeti panelen látható a mintaleértékelési tartalomra alkalmazott s
 
 A változások valós időben frissülnek, ahogy módosítja a vezérlőket.
 
-## Mentés és megosztás
+## Mentés és megosztás [saving-and-sharing]
 
 Ha elégedett a stílusával, több lehetőség közül választhat:
 
-### CSS megtekintése
+### CSS megtekintése [view-css]
 
 Kattintson a **CSS megtekintése** lehetőségre a teljes generált CSS megtekintéséhez egy előugró ablakban. Mentés előtt átmásolhatja a vágólapra, vagy átnézheti.
 
-### CSS mentése
+### CSS mentése [save-css]
 
 Kattintson a **CSS mentése** lehetőségre stílusának CSS-fájlként való letöltéséhez. A letöltés előtt meg kell adnia a metaadatokat (cím, szerző, leírás).
 
-### Hozzáadás a megjelöltekhez
+### Hozzáadás a megjelöltekhez [add-to-marked]
 
 Kattintson a **Hozzáadás a megjelölthez** lehetőségre, hogy közvetlenül hozzáadja a stílust a Megjelölt telepítéshez. Ehhez a Markednek futnia kell, és megnyílik egy párbeszédpanel a stílusnév és a szerzői adatok megerősítéséhez.
 
-### Stílus megosztása
+### Stílus megosztása [share-style]
 
 Kattintson a **Stílus megosztása** lehetőségre, hogy közzétegye stílusát a [Marked Style Gallery](https://markedapp.com/styles) oldalon, hogy mások is használhatják. A következőket kell megadnia:
 
@@ -234,7 +234,7 @@ Kattintson a **Stílus megosztása** lehetőségre, hogy közzétegye stílusát
 
 A stílus előnézete megjelenik a megosztási párbeszédpanelen a közzététel előtt.
 
-## Metaadatok
+## Metaadatok [metadata]
 
 Használja a metaadatok szakaszt (a stílus címe melletti nyílgombbal bővíthető) a következők beállításához:
 
@@ -245,7 +245,7 @@ Használja a metaadatok szakaszt (a stílus címe melletti nyílgombbal bővíth
 
 Ezeket a metaadatokat a CSS-fájl fejléce tartalmazza, és stílusok megosztásához használják.
 
-## Tippek
+## Tippek [tips]
 
 - Kezdje a kívánthoz közeli alaptémával, majd szabja személyre
 - Használja az **Üres** témát, ha teljes irányítást szeretne a semmiből
@@ -254,6 +254,6 @@ Ezeket a metaadatokat a CSS-fájl fejléce tartalmazza, és stílusok megosztás
 - Használja takarékosan az **Egyéni CSS-t** – a legtöbb igény kielégíthető a beépített vezérlőkkel
 - Megosztás előtt tekintse meg stílusát különféle tartalomtípusokkal
 
-## Böngésző kompatibilitás
+## Böngésző kompatibilitás [browser-compatibility]
 
 A Style Generator a modern böngészőkben (Chrome, Firefox, Safari, Edge) működik a legjobban. A JavaScript engedélyezése szükséges.

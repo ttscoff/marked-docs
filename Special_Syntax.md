@@ -1,8 +1,8 @@
 # <%= @title %>
 
-## Callouts
+## Callouts [callouts]
 
-## Bear/Obsidian ##
+## Bear/Obsidian ## [bearobsidian]
 
 Marked supports callouts with the syntax used by Obsidian and Bear, which is a specially formatted block quote:
 
@@ -33,7 +33,7 @@ You can use a `+` or `-` to make the callout collapsible. A plus sign (`+`) mean
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Xcode Playground ###
+### Xcode Playground ## [xcode-playground]
 
 When previewing Xcode Playground files, Marked supports the native Xcode Playground callout syntax:
 
@@ -94,7 +94,7 @@ These callouts are automatically converted to Marked's callout format and styled
 > This feature only works when previewing Xcode Playground files (`.playground`). Regular markdown files will not process this syntax.
 
 
-## Table of Contents
+## Table of Contents [tableofcontents]
 
 You can specify where in the document the Table of Contents should appear using `<!--TOC-->`. If this is set, it overrides the option in Preferences and will always show in the preview window as well as when saving and printing. The Table of Contents will display only once, even if there are multiple `<!--TOC-->` specifiers in the content.
 
@@ -106,7 +106,7 @@ By default, the Table of Contents will print on the first page of the document i
 
 I> You can specify the type of numbering or lettering of each level of a nested Table of Contents hierarchy in the {% prefspane Export %}.
 
-## Page breaks
+## Page breaks [pagebreaks]
 
 You can force a page break for print/PDF output by using the syntax:
 
@@ -118,6 +118,8 @@ Put the token on a line by itself and it will generate markup that will force a 
 
 	{::pagebreak /}
 
+When **Treat +++ as page breaks** is enabled under Settings → Processor → Rendering, a line of three or more `+` characters (iA Writer style) is treated the same as `<!--BREAK-->`.
+
 ## Autoscroll pauses [pauses]
 
 Marked can function as a Teleprompter using the [Autoscroll](Autoscroll.html) feature (you should add the [Teleprompter style](https://markedapp.com/styles/preview?style=teleprompter)). When doing so, it may be useful to include pauses in the document. Do this using:
@@ -128,7 +130,7 @@ Marked can function as a Teleprompter using the [Autoscroll](Autoscroll.html) fe
 
 Where `X` is the number of seconds for which Marked should pause. So inserting `<!--PAUSE:15-->` would give you a 15-second pause when that point in the document reaches the middle of the screen.
 
-## File includes
+## File includes [file-includes]
 
 The contents of additional files can be inserted by using the syntax:
 
@@ -144,7 +146,7 @@ See ["Multi-File Documents"][ext] for more information.
 
 [ext]: Multi-File_Documents.html
 
-## Including code
+## Including code [includingcode]
 
 Marked can include external files as code using a syntax similar to file includes above:
 
@@ -156,7 +158,7 @@ Note the parenthesis instead of square brackets. For compatibility with Leanpub 
 
 The contents of the specified file will be inserted within a pre>code block in your document and will be available for automatic syntax highlighting if it's enabled. Code blocks can not be nested and will not be processed with MultiMarkdown. Custom processors will still be run over the pre>code block created.
 
-## Including unprocessed text or html
+## Including unprocessed text or html [includingunprocessedtextorhtml]
 
 E> **Note:** This feature is for advanced users.
 

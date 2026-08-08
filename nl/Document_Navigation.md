@@ -2,7 +2,7 @@
 
 Op deze pagina wordt beschreven hoe u door lange voorbeelden kunt navigeren: de [Table of Contents](#table-of-contents), [fast search](#fast-search), [bookmarks](#bookmarks-and-mini-map) en de [Mini Map](#minimap). Voor scrollsnelkoppelingen die overal van toepassing zijn (zoals {% kbd j %}/{% kbd k %}), zie [Keyboard Navigation](Interface_Features.html#keyboardnavigation) onder [Interface Features](Interface_Features.html).
 
-## Inhoudsopgave
+## Inhoudsopgave [table-of-contents]
 
 ![][8]
 
@@ -27,19 +27,19 @@ Voor een verkorte lijst met sleutels, zie [Keyboard Shortcuts](Keyboard_Shortcut
 
 Zie ook de [Document Navigation video on YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Volledig schermmodus voor de inhoudsopgave
+### Volledig schermmodus voor de inhoudsopgave [full-screen-mode-for-the-table-of-contents]
 
 Wanneer een Marked voorbeeldvenster op volledig scherm wordt weergegeven, kan de inhoudsopgave aan de linkerkant vast blijven staan ​​voor constante navigatie. Het schakelt nog steeds met {% kbd cmd T %}; Als u buiten de inhoudsopgave klikt, wordt deze in deze lay-out vaak niet verwijderd.
 
 In een normaal venster klikt u op het pictogram onder aan het inhoudsopgavepaneel om het als zijbalk vast te zetten; klik op het pictogram bovenaan de zijbalk om terug te keren naar de pop-upmodus.
 
-### Customaanpassen waar de inhoudsopgave verschijnt
+### Customaanpassen waar de inhoudsopgave verschijnt [customizing-where-the-toc-appears]
 
-De inhoudsopgave kan in het geëxporteerde document worden ingevoegd met behulp van de [special syntax](Special_Syntax.html#tocplacement) `<!--TOC-->`.
+De inhoudsopgave kan in het geëxporteerde document worden ingevoegd met behulp van de [special syntax](Special_Syntax.html#tableofcontents) `<!--TOC-->`.
 
 Voeg `max#` toe (bijvoorbeeld `<!--TOC max2-->`) om te beperken hoeveel kopniveaus er verschijnen.
 
-## Snel zoeken
+## Snel zoeken [fast-search]
 
 **Snelle navigatie** combineert de inhoudsopgave met de focus op het filter, zodat u kunt springen met minimaal typen:
 
@@ -53,11 +53,11 @@ Voeg `max#` toe (bijvoorbeeld `<!--TOC max2-->`) om te beperken hoeveel kopnivea
 
 (Eerdere documenten noemden dit "Fast Switcher"; het is dezelfde functie.)
 
-## Bladwijzers en minikaart {#bookmarks-and-mini-map}
+## Bladwijzers en minikaart [bookmarks-and-mini-map]
 
 Gebruik het {% appmenu Gear %} voorbeeldmenu en {% kbd Tab %} ({% kbd ⇥ %}) om het document naast [search](Interface_Features.html#search) te plaatsen en opnieuw te bekijken terwijl u bladert.
 
-### Bladwijzers instellen
+### Bladwijzers instellen [setting-bookmarks]
 
 Zet bladwijzers op de schuifpositie met behulp van {% kbd shift 1 %}--{% kbd shift 9 %} en spring terug met alleen {% kbd 1 %}--{% kbd 9 %}. Gebruik {% kbd n %} en {% kbd p %} voor volgende/vorige in **documentvolgorde**; {% kbd shift n %} en {% kbd shift p %} voor volgende/vorige in **numerieke** volgorde.
 
@@ -73,7 +73,7 @@ Druk tweemaal op {% kbd x %} ({% kbd xx %}) om alle bladwijzers te wissen.
 
 Er zijn [more preview shortcuts](Keyboard_Shortcuts.html); druk op {% kbd h %} in de preview voor een heads-up-lijst, of op {% kbd opt cmd K %} voor de volledige referentie.
 
-### Minikaart {#minimap}
+### Minikaart [minimap]
 
 Als de minikaart is ingeschakeld in de {% prefspane Preview %} instellingen, opent {% kbd 0 %} een geschaalde miniatuur van het hele document langs de bladwijzerstrook. Klik ergens op de kaart om daar door het volledige voorbeeld te scrollen. Opgeslagen bladwijzers verschijnen als horizontale lijnen met cijfers (en koppen indien relevant).
 
@@ -85,6 +85,6 @@ Druk op {% kbd 0 %} of Escape om de minikaart te sluiten.
 
 **Prestatieopmerking:** Door het genereren van de kaart kan het voorbeeld van grote documenten kort worden gepauzeerd; dit werkt alleen als de kaart zichtbaar is of na een formaatwijziging.
 
-### Zoomoverzicht (gerelateerd)
+### Zoomoverzicht (gerelateerd) [zoom-overview-related]
 
 Voor een overzicht op tekstschaal zonder de minikaart, zie [Zoom Overview](Zoom_Overview.html) ({% kbd z %}).

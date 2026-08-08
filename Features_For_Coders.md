@@ -1,6 +1,6 @@
 # <%= @title %>
 
-## Fenced Code Blocks
+## Fenced Code Blocks [fenced-code-blocks]
 
 Fenced code blocks are enabled in both included processors by default (MultiMarkdown and Discount). Fenced code blocks are delimited by three or more tildes (~) or backticks (\`). You can use more than three, but the beginning and ending delimiters must have exactly the same number of characters.
 
@@ -38,7 +38,7 @@ The built in syntax highlighting will recognize **256** language specifiers (see
 
 See the section on [Marked Special Syntax](Special_Syntax.html#includingcode) to learn how to include external code files in your document.
 
-## Syntax Highlighting
+## Syntax Highlighting [syntax-highlighting]
 
 ![Automatic Syntax Highlighting][highlight]
 
@@ -58,7 +58,7 @@ The "Only if language specified" option to the right of the syntax style selecto
 
 Syntax highlighting will show up in the preview and in print and PDF export. If enabled in settings and the theme is included when exporting HTML, the highlight.js library used by Marked will be embedded in the HTML output, allowing your exported HTML to appear as it does in Marked.
 
-### Supported languages
+### Supported languages [supported-languages]
 
 Marked ships with **highlight.js 11.11.1**, including all core languages plus third-party grammars from the [highlight.js supported languages](https://highlightjs.readthedocs.io/en/latest/supported-languages.html) list. Specify any primary language name below (or a documented alias such as `js` for JavaScript) after the opening fence.
 
@@ -88,7 +88,7 @@ Two languages listed on the highlight.js site are not included in Marked's bundl
     vbscript-html, verilog, vhdl, vim, wasm, wren, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, zephir
 
-### Syntax highlighting themes
+### Syntax highlighting themes [syntax-highlighting-themes]
 
 **239** syntax highlighting themes are available in the {% prefspane Style %} dropdown. Themes are loaded automatically from Marked's bundled stylesheets; names match the CSS filename without the extension (for example, `github-dark` loads `github-dark.css`).
 
@@ -154,11 +154,11 @@ Base16 themes (176 variants, each prefixed with `base16-`):
     base16-windows-nt, base16-windows-nt-light, base16-woodland, base16-xcode-dusk,
     base16-zenburn
 
-## GitHub Line Breaks
+## GitHub Line Breaks [github-line-breaks]
 
 Marked can preserve line breaks in your paragraphs. Just select the {% prefspane Processor %} and check the box to retain line breaks in paragraphs.
 
-## GitHub Checkboxes
+## GitHub Checkboxes [github-checkboxes]
 
 List items formatted as:
 
@@ -167,6 +167,6 @@ List items formatted as:
 
 will appear in the preview as rendered checkbox items. They cannot be interacted with, but their state will reflect any changes in the source document.
 
-## Code block wrapping
+## Code block wrapping [code-block-wrapping]
 
 In the {% prefspane Style %} you'll find an option under Layout and Typography: "Allow themes to wrap text inside code blocks." Disabling this will force all code blocks to scroll horizontal overflow rather than wrapping it, regardless of the current preview style.

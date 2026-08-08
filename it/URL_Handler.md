@@ -4,38 +4,38 @@
 
 Il gestore URL di Marked fornisce ulteriori funzionalità di scripting e flusso di lavoro. Puoi includere un URL nelle note di un'altra applicazione, ad esempio, che aprirà un file in Contrassegnato quando viene cliccato. È possibile eseguire diverse azioni, come elencato di seguito.
 
-## Lo schema URL
+## Lo schema URL [the-url-scheme]
 
 Lo schema URL di Marked è `x-marked`, chiamato con opzioni come `x-marked://open?file=/Users/username/Desktop/report.md`.
 
 Puoi prendere di mira specificamente Marked 3 usando `x-marked-3` invece di `x-marked`. I metodi e i parametri sono esattamente gli stessi di `x-marked`, ma solo Marked 3 risponderà a `x-marked-3`.
 
-## Chiamata dalla riga di comando/dagli script
+## Chiamata dalla riga di comando/dagli script [calling-from-the-command-linescripts]
 
 È possibile richiamare il gestore URL dalla riga di comando o da uno script utilizzando il [comando `open`](http://brettterpstra.com/2014/08/06/shell-tricks-the-os-x-open-command/) di macOS:
 
 	apri 'x-marked://open?file=nomefile.md'
 	apri 'x-marked://refresh?file=nomefile.md'
 
-### Chiamata in sottofondo
+### Chiamata in sottofondo [calling-in-the-background]
 
 Puoi chiamare il comando `open` con il flag `-g` per eseguire il risultato in background senza cambiare focus. Per eseguire il comando in background e alzare la finestra in alto senza togliere il focus:
 
 	open -g 'x-marked://open?file=nomefile.md&raise=true'
 
-## Parametri facoltativi
+## Parametri facoltativi [optional-parameters]
 
-### x-successo
+### x-successo [x-success]
 
 Qualsiasi comando può fornire un parametro di query **x-success**. Impostalo su un URL da chiamare dopo aver eseguito il comando. Ad esempio: `x-marked://open/?file=filename.md&x-success=ithoughts:`. Puoi anche fornire un identificatore del bundle (come `com.googlecode.iterm`) per aprire un'applicazione che non dispone di uno schema URL.
 
-### rilanciare
+### rilanciare [raise]
 
 Un parametro **raise** può essere passato con qualsiasi comando che accetti un parametro `file` o influisca su tutte le finestre. Una volta eseguita l'azione, le finestre interessate verranno sollevate sopra tutte le altre finestre (tutte le applicazioni) prima di ritornare o eseguire una richiamata.
 
 	"x-marked://refresh?file=nomefile.md&raise=true"
 
-### lettura veloce
+### lettura veloce [speedread]
 
 Un parametro **speedread** può essere passato con i comandi del gestore URL che aprono un documento di anteprima (`open`, `paste`, `preview` e `stream`). Imposta `speedread=1` per avviare automaticamente la lettura veloce non appena l'anteprima del target è pronta.
 
@@ -47,15 +47,15 @@ Esempi:
 
 	x-marked://paste?speedread=1
 
-# Comandi disponibili
+# Comandi disponibili [available-commands]
 
 I seguenti comandi sono disponibili per il gestore URL `x-marked`.
 
-## aggiungistile
+## aggiungistile [addstyle]
 
 Aggiungi un nuovo stile personalizzato a Contrassegnato.
 
-##### Parametri:
+##### Parametri: [parameters]
 
 **css**: testo CSS codificato nell'URL da scrivere in uno stile personalizzato. Obbligatorio a meno che non si passi un parametro **file**.
 
@@ -71,19 +71,19 @@ Con il parametro **css**, questo verrà utilizzato sia come nome del file durant
 
 Se includi un nome con il parametro file, la voce di menu otterrà quel nome invece del nome file. Se utilizzi nuovamente lo stesso nome con un percorso diverso, la voce di menu verrà aggiornata con il nuovo percorso anziché aggiungere una seconda voce con lo stesso nome.
 
-## valori predefiniti
+## valori predefiniti [defaults]
 
 Imposta le Impostazioni utente. Accetta un elenco di chiavi e valori come parametri di query. Verranno impostate solo le chiavi esistenti. Se la modifica delle preferenze richiede un aggiornamento, tutte le finestre si aggiorneranno automaticamente a meno che non venga superato `refresh=0`.
 
 Utilizzare 1 per vero e 0 per falso sui valori booleani.
 
-##### Parametri:
+##### Parametri: [parameters-2]
 
 **aggiorna** _(opzionale)_: se impostato su 0, l'aggiornamento automatico delle finestre di anteprima aperte è disabilitato
 
 * Predefinito: 1 (vero)
 
-##### Esempio:
+##### Esempio: [example]
 
 x-marked://defaults?syntaxHighlight=1&includeMathJax=0
 
@@ -98,17 +98,17 @@ includeMathJax
 processore
 : imposta su `multimarkdown` o `mmd` per cambiare il processore in MultiMarkdown, `discount` o `gfm` per utilizzare il processore Discount
 
-h1IsPageBreak, h1IsPageBreak, breakBeforeFootnotes
+h1IsPageBreak, h2IsPageBreak, breakBeforeFootnotes
 : interruzioni di pagina automatiche nell'esportazione prima dei livelli di intestazione 1 e 2 e note a piè di pagina.
 
 
-## dingo
+## dingo [dingus]
 
 Apri Markdown Dingus per testare diversi processori Markdown.
 
 	x-contrassegnato://dingus
 
-##### Parametri:
+##### Parametri: [parameters-3]
 
 **processore** (opzionale): specifica quale processore selezionare per impostazione predefinita. Valori validi:
 
@@ -124,13 +124,13 @@ Esempi:
 
 *Nota:* Si apre la finestra Markdown Dingus, che consente di testare e confrontare diversi processori Markdown (MultiMarkdown, CommonMark (GFM), Discount e Kramdown) fianco a fianco. Perfetto per sperimentare la sintassi Markdown e comprendere le differenze del processore.
 
-## stylestealer / ruba
+## stylestealer / ruba [stylestealer-steal]
 
 Apri l'HUD di Style Stealer. Utile quando desideri acquisire CSS da una pagina live o eseguire una sessione di estrazione manuale del contenuto senza avviarla tramite l'interfaccia utente.
 
 	Sinonimi: x-marked://stylestealer … , x-marked://steal …
 
-##### Parametri:
+##### Parametri: [parameters-4]
 
 **url** _(facoltativo)_: un URL da precompilare nella finestra Style Stealer. Se omesso, l'HUD si apre vuoto.
 
@@ -139,13 +139,13 @@ Esempi:
 - `x-marked://stylestealer?url=https%3A%2F%2Fmarkedapp.com`
 - `x-marked://steal/https:%2F%2Fexample.com`
 
-## importurl/markdownify
+## importurl/markdownify [importurl-markdownify]
 
 Apri la finestra "Importa URL" (Estrattore contenuto) in modo da poter eseguire manualmente la pipeline Markdownifier. Questo **non** esegue l'estrazione automaticamente, che viene gestita dal comando `extract` riportato di seguito.
 
 	Sinonimi: x-marked://importurl … , x-marked://markdownify …
 
-##### Parametri:
+##### Parametri: [parameters-5]
 
 **url** _(facoltativo)_: precompila il campo URL di importazione. Se omesso, la finestra si apre con un campo vuoto in attesa che tu incolli un collegamento.
 **html** _(facoltativo, solo markdownify)_: se fornito su `x-marked://markdownify`, deve essere HTML non elaborato con codifica URL. Marked convertirà l'HTML in Markdown utilizzando le stesse regole dell'Anteprima degli Appunti e lo aprirà in un documento temporaneo, come se avessi incollato l'HTML in una finestra di Anteprima degli Appunti.
@@ -155,11 +155,11 @@ Esempi:
 - `x-marked://importurl?url=https%3A%2F%2Fexample.com%2Farticle`
 - `x-marked://markdownify/https:%2F%2Fnews.ycombinator.com`
 
-## fallo
+## fallo [do]
 
 Esegui un comando JavaScript in una finestra del documento. L'intera API JavaScript di Marked è [documentata qui](https://markedapp.com/help/jsapi/).
 
-##### Parametri:
+##### Parametri: [parameters-6]
 
 **js** _(obbligatorio)_: stringa di query contenente un comando JavaScript
 
@@ -215,13 +215,13 @@ La destinazione può essere specificata solo dal percorso (senza stringa di quer
 	x-marked-3://help/Keyword_Highlighting:editingkeywords
 
 
-## estratto
+## estratto [help]
 
 Estrai il contenuto da un URL Web e aprilo come nuovo documento in Marked.
 
 	x-marked://extract?url=https://example.com
 
-##### Parametri:
+##### Parametri: [dingus-2]
 
 **url** _(obbligatorio)_: l'URL web da cui estrarre il contenuto. Deve iniziare con `http://` o `https://`
 
@@ -238,7 +238,7 @@ Estrai il contenuto da un URL Web e aprilo come nuovo documento in Marked.
 - Quando `manual=true`, Marked apre Style Stealer, precompila il campo URL (se fornito), sopprime qualsiasi finestra di dialogo Apri automatica e consente di selezionare ed estrarre in modo interattivo stili/contenuti prima di salvare.
 - Se omesso o `false`, Marked esegue l'estrattore automatico (Markdownifier) ​​e apre il risultato direttamente come un nuovo documento temporaneo.
 
-##### Esempi:
+##### Esempi: [parameters-7]
 
 	x-marked://extract?url=https://news.ycombinator.com
 
@@ -250,13 +250,13 @@ Estrai il contenuto da un URL Web e aprilo come nuovo documento in Marked.
 
 *Nota:* questo comando utilizza il servizio di estrazione dei contenuti di Marked per recuperare pagine Web, estrarre contenuti puliti utilizzando Leggibilità, convertirli nel formato Markdown e aprire il risultato in un nuovo documento temporaneo. Il contenuto estratto include metadati (titolo, URL di origine, data) ed è formattato come Markdown pulito. Perfetto per acquisire e modificare rapidamente contenuti web.
 
-## aperto
+## aperto [extract]
 
 Apre il documento specificato in Contrassegnato.
 
 	x-marked://open?file=/Users/nomeutente/Desktop/report.md
 
-##### Parametri:
+##### Parametri: [parameters-8]
 
 **file** *(obbligatorio)*: il percorso POSIX completo del documento da aprire o un elenco di percorsi separati da virgole
 
@@ -270,13 +270,13 @@ Se il percorso del file fornito non esiste o non può essere aperto, Marked verr
 
 Contrassegnato aprirà i file anche se sul gestore URL viene chiamato solo il percorso di un file, ad es. `x-marked:///Users/username/Desktop/report.md`.
 
-## incolla
+## incolla [open]
 
 Crea un nuovo documento dal contenuto corrente degli appunti.
 
 	x-contrassegnato://paste
 
-##### Parametri:
+##### Parametri: [parameters-9]
 
 **speedread** *(opzionale)*: imposta su `1` per avviare automaticamente la lettura veloce dopo aver aperto l'anteprima degli appunti.
 
@@ -294,23 +294,23 @@ Visualizza l'anteprima del testo specificato in un nuovo documento.
 
 **speedread** *(opzionale)*: imposta su `1` per avviare automaticamente la lettura veloce dopo aver aperto il testo di anteprima.
 
-## flusso
+## flusso [paste]
 
 Apri una finestra di anteprima degli appunti in streaming.
 
 	x-contrassegnato://stream
 
-##### Parametri:
+##### Parametri: [parameters-10]
 
 **speedread** *(opzionale)*: imposta su `1` per avviare automaticamente la lettura veloce dopo aver aperto l'anteprima dello streaming.
 
 *Nota:* Questo crea un documento temporaneo utilizzando il comando "Anteprima Appunti". Il testo passato viene aggiunto a un nuovo documento vuoto, che viene quindi aperto in Contrassegnato. Se chiuso senza salvare, viene scartato.
 
-## aggiorna
+## aggiorna [preview]
 
 Aggiorna l'anteprima di un documento o tutte le anteprime aperte.
 
-##### Parametri:
+##### Parametri: [parameters-11]
 
 **file**: parametro di query contenente percorsi/nomi file separati da virgole (i file devono essere attualmente aperti in Contrassegnato). La chiamata senza il parametro `file` o `?file=all` aggiornerà tutte le finestre aperte.
 

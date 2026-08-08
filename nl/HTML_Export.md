@@ -4,9 +4,9 @@ Marked exporteert HTML vanuit uw **live preview** --- dezelfde weergegeven uitvo
 
 De typische workflow is **eerst een voorbeeld bekijken, HTML seconde** exporteren: open of compileer uw document in Marked, kies een thema, proeflezen in de live preview en exporteer vervolgens wanneer de opmaak er goed uitziet.
 
-## Twee manieren om HTML te krijgen
+## Twee manieren om HTML te krijgen [two-ways-to-get-html]
 
-### Kopieer HTML (fragment)
+### Kopieer HTML (fragment) [copy-html-snippet]
 
 **Kopieer HTML** plaatst de HTML bron van het voorbeeld op het klembord --- klaar om te plakken in WordPress, Ghost, Squarespace, een forum, een e-mailsjabloon of elke app die HTML fragmenten accepteert.
 
@@ -16,7 +16,7 @@ De typische workflow is **eerst een voorbeeld bekijken, HTML seconde** exportere
 
 Kopieer HTML is ideaal wanneer uw bestemming al een eigen stylesheet heeft en u alleen de inhoudsopmaak nodig heeft.
 
-### Opslaan HTML (bestand)
+### Opslaan HTML (bestand) [save-html-file]
 
 **Opslaan HTML** schrijft een compleet `.html` bestand naar schijf.
 
@@ -26,7 +26,7 @@ Kopieer HTML is ideaal wanneer uw bestemming al een eigen stylesheet heeft en u 
 
 Opslaan HTML is ideaal voor archivering, het delen van een zelfstandig bestand of het rechtstreeks openen van het resultaat in een browser.
 
-## Bewaar HTML opties
+## Bewaar HTML opties [save-html-options]
 
 Het dialoogvenster Save HTML bevat een exportprofielkiezer en deze opties:
 
@@ -63,7 +63,7 @@ Documenten met [CriticMarkup](CriticMarkup.html) kunnen kiezen of de export bewe
 
 Selecteer een opgeslagen [Export Profile](Exporting.html#export-profiles) om uw favoriete HTML exportinstellingen (ingesloten stijlen, afbeeldingen, syntaxisaccentuering, wiskunde) in één stap te herstellen.
 
-## Styling met ingebouwde en aangepaste thema's
+## Styling met ingebouwde en aangepaste thema's [styling-with-built-in-and-custom-themes]
 
 De **voorbeeldstijl** bepaalt de weergave van HTML wanneer **Stijl opnemen in uitvoer** is aangevinkt:
 
@@ -77,7 +77,7 @@ I> Sommige CSS-voorbeelden (vaste positionering, viewport-trucs, donkere modus `
 
 Voor richtlijnen bij het schrijven, zie [Creating Custom CSS](Writing_Custom_CSS.html).
 
-## Metagegevens en MultiMarkdown headers
+## Metagegevens en MultiMarkdown headers [metadata-and-multimarkdown-headers]
 
 MeerdereMarkdown metadata bovenaan uw bronbestand kunnen de export van HTML beïnvloeden:
 
@@ -87,11 +87,11 @@ MeerdereMarkdown metadata bovenaan uw bronbestand kunnen de export van HTML beï
 
 Als u metagegevens gebruikt voor exportinstellingen, maar niet wilt dat sleutels zichtbaar zijn in andere uitvoer, verpak ze dan in HTML opmerkingen --- Marked vindt en verwerkt metagegevens met commentaar waar dan ook in het document. Zie [Per-Document Settings](Per-Document_Settings.html).
 
-## Documenten met meerdere bestanden
+## Documenten met meerdere bestanden [multi-file-documents]
 
 Voor boeken- en hoofdstukcompilaties gebruikt u [Multi-File Documents](Multi-File_Documents.html). Marked geeft een voorbeeld van het samengevoegde document weer en exporteert één HTML bestand uit het gecompileerde resultaat. Inbegrepen bestanden zijn gemarkeerd met HTML opmerkingen die hun bronpaden tonen --- handig bij het controleren van welk hoofdstuk aan welke sectie heeft bijgedragen.
 
-## Plakken in andere applicaties
+## Plakken in andere applicaties [pasting-into-other-applications]
 
 | Bestemming | Voorgestelde aanpak |
 | :-- | :-- |
@@ -103,7 +103,7 @@ Voor boeken- en hoofdstukcompilaties gebruikt u [Multi-File Documents](Multi-Fil
 
 [Copy Rich Text](Exporting.html#rtfexportoptions) (tandwielmenu) is een alternatief wanneer de doelapp opgemaakte tekst accepteert in plaats van de HTML bron.
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen [related-topics]
 
 * [Exporting](Exporting.html) --- exportpaneel, profielen en andere formaten
 * [EPUB Export](EPUB_Export.html) --- e-boekuitvoer met ingebouwde CSS

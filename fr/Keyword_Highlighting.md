@@ -2,13 +2,13 @@
 
 Attraper le verbiage gênant et mettre en évidence les phrases importantes.
 
-## Mise en surbrillance des mots clés
+## Mise en surbrillance des mots clés [highlighting-keywords]
 
 La mise en surbrillance des mots clés dans Marked vous permet de détecter des expressions courantes que vous souhaiterez peut-être éviter, de trouver des termes alternatifs ou simplement de les mettre en surbrillance à des fins générales. La liste des mots-clés utilisés pour correspondre à chaque catégorie peut être modifiée dans le {% prefspane Proofing %}.
 
 Activez la mise en surbrillance avec {% kbd shift cmd H %}, depuis le menu Action ({% appmenu {{gear}}, Highlight Keywords %}), ou ouvrez le tiroir de mots-clés à l'aide de l'icône de surligneur en bas à gauche (près du menu Action). Le tiroir peut également être ouvert avec le raccourci clavier {% kbd shift cmd K %}. La mise en surbrillance est automatiquement activée lorsque le tiroir est ouvert et peut être activée et désactivée avec l'interrupteur situé sur le côté gauche du tiroir.
 
-## Le tiroir de mots clés
+## Le tiroir de mots clés [the-keyword-drawer]
 
 ![Tiroir de mots-clés][kwd]
 
@@ -22,7 +22,7 @@ Vous pouvez naviguer rapidement parmi les points forts à l'aide du clavier. Tap
 
 Si un mot ou une phrase en surbrillance est cliqué, ce type deviendra la cible de la navigation et l'utilisation de `[` ou `]` naviguera à partir de ce point dans le document.
 
-## Modification des mots clés
+## Modification des mots clés [editing-keywords]
 
 ![Paramètres de relecture][proofprefs]
 
@@ -36,7 +36,7 @@ Les expressions régulières peuvent être utilisées en entourant l'expression 
 
 Ce qui précède correspondra à tous les mots se terminant par « ly » pour les mettre en surbrillance. La syntaxe des expressions régulières dans la mise en surbrillance des mots clés de Marked est identique à celle de [JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Mots clés temporaires
+## Mots clés temporaires [temporary-keywords]
 
 Vous pouvez également ajouter des mots-clés temporaires dans le tiroir de mots-clés en modifiant le bloc-notes. Tout comme dans les champs {% prefspane Proofing %}, vous ajoutez un mot-clé ou une phrase par ligne, expressions régulières autorisées (entourées de barres obliques). Après avoir modifié les mots-clés temporaires, assurez-vous de cliquer sur le bouton « Mettre à jour » (ou appuyez sur {% kbd cmd return  %}) pour enregistrer les modifications et les voir mises en surbrillance dans votre document.
 
@@ -48,7 +48,7 @@ Consultez également la commande [« Visualiser la répétition des mots »][wor
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Voix passive
+## Voix passive [passive-voice]
 
 Marked soulignera l'utilisation de « voix passive » dans le texte anglais. Comme [défini par Wikipédia][passive] :
 
@@ -59,6 +59,6 @@ La voix passive n'est pas mauvaise, comme vous pouvez le lire [dans les articles
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Mots doublés
+## Mots doublés [doubled-words]
 
 Les mots doubles (par exemple « le le ») sont automatiquement surlignés en orange lorsque la mise en surbrillance des mots clés est activée. Ceci n'est actuellement pas configurable, mais devrait s'avérer pratique pour la relecture.

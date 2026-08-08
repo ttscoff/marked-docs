@@ -6,7 +6,7 @@ Opties in de {% prefspane Style %}:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Lay-out en typografie
+### Lay-out en typografie [layout-and-typography]
 
 Beperk de tekstbreedte in Voorvertoning
 : stel een maximale breedte in voor de hoofdtekst van het voorbeeld met behulp van de schuifregelaar (in pixels).
@@ -41,7 +41,7 @@ Wrap-code altijd
 RTL-tekst detecteren en stylen
 : Detecteer de taal per element in het document en de stijl van rechts naar links dienovereenkomstig.
 
-### Thema
+### Thema [theme]
 
 Beheer stijlen
 : Opent het [Style Manager](Style_Manager.html) venster. Voeg CSS-bestanden van uw schijf toe om ze te laten verschijnen in de stijlkiezermenu's. Gebruik de knop `Add New Style` of sleep CSS-bestanden naar dit venster. Sleep om de volgorde te wijzigen en gebruik de selectievakjes om stijlen in of uit te schakelen.
@@ -59,7 +59,7 @@ Extra CSS
 : CSS die hier wordt toegevoegd, wordt opgenomen na het normale stylesheet met alle thema's. U kunt het onder andere gebruiken om instellingen over de hele linie te overschrijven zonder interne stijlen te bewerken.
 : Dit geldt voor alle documenten en alle stijlen. Als u aangepaste CSS wilt toepassen op documenten op basis van voorwaarden, gebruikt u Custom Regels onder {% prefspane Processor %}.
 
-### Scripts opnemen
+### Scripts opnemen [include-scripts]
 
 Syntaxisaccentuering
 : Schakel highlight.js [syntax highlighting](Syntax_Highlighting.html) in voor codeblokken. Selecteer een thema in de vervolgkeuzelijst.
@@ -71,7 +71,7 @@ Schakel MathJax in
 : **Geavanceerde configuratie** opent een blad voor aangepaste MathJax configuratie.
 
 Schakel KaTeX in
-: Laadt [KaTeX](Mathjax.html#katex) als alternatief voor MathJax. Er kan slechts het een of het ander worden geselecteerd.
+: Laadt [KaTeX](MathJax.html#katex) als alternatief voor MathJax. Er kan slechts het een of het ander worden geselecteerd.
 
 Getalvergelijkingen
 : Indien van toepassing zal Marked cijfernummers toevoegen aan weergegeven vergelijkingen. Kies **Linkerzijde** of **Rechterzijde** voor nummering. Als u MathJax gebruikt, kunt u **Alleen AMS** kiezen om alleen AMS-vergelijkingen te nummeren.

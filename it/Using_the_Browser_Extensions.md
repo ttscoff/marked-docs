@@ -4,7 +4,7 @@
 
 Marked include estensioni del browser che ti consentono di inviare URL di pagine o contenuti selezionati direttamente in Marked 3.
 
-## Installa
+## Installa [install]
 
 Scarica e installa da [https://markedapp.com/extensions](https://markedapp.com/extensions):
 
@@ -12,21 +12,21 @@ Scarica e installa da [https://markedapp.com/extensions](https://markedapp.com/e
 - Cromato/Coraggioso/Bordo
 - Safari (in bundle)
 
-## Come funziona l'estensione
+## Come funziona l'estensione [how-the-extension-works]
 
 Quando fai clic su un pulsante di estensione, si apre un URL personalizzato gestito da Marked 3 utilizzando lo schema `x-marked-3://markdownify`.
 
-### `Markdownify URL`
+### `Markdownify URL` [markdownify-url]
 
 Nel popup dell'estensione, fai clic su **`Markdownify URL`** per inviare l'URL della pagina corrente a Marked.
 
-### `Markdownify Selection`
+### `Markdownify Selection` [markdownify-selection]
 
 Nel popup dell'estensione, fai clic su **`Markdownify Selection`** quando hai una selezione nella pagina.
 
 Marked riceve l'HTML per la selezione corrente e lo converte in Markdown.
 
-### Seleziona sezione (modalità di selezione del blocco)
+### Seleziona sezione (modalità di selezione del blocco) [select-section-block-selection-mode]
 
 ![][1]
 

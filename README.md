@@ -54,8 +54,26 @@ English **`images/`** at the content root is the default for all locales. When y
 2. **Branching** — Work in a dedicated branch (for example `translate/de` or `locale/hu`). Do not mix locales in one branch or one pull request.
 3. **Scope** — Translate `.md` files into your locale folder. **Keep the same basename** as English (`Exporting.md`, not a translated filename). Cross-links depend on stable names.
 4. **Starter files** — Each locale directory already contains `config.yaml`, `SYNTAX.md`, and `GLOSSARY.md`. Customize the latter two before bulk translation; localize `config.yaml` as you go (see below).
-5. **Pull requests** — Open a PR when a section or milestone is ready. Note any resolved `{% note %}` blocks or glossary additions.
+5. **Pull requests** — Open a PR when a section or milestone is ready. See **Pull requests** below for titles, assignments, and review duties.
 6. **Review** — Spot-check `{% appmenu %}` paths against the localized app and verify `wiki_keywords` do not collide across pages.
+
+---
+
+## Pull requests
+
+### If you maintain a locale
+
+1. **Check regularly** — Review open pull requests for your assigned language (`de/`, `fr/`, `ja/`, etc.) so work does not stall.
+2. **Resolve Copilot feedback** — Address GitHub Copilot review comments on PRs in your locale before merge.
+3. **Merge when ready** — If you are the **admin** (lead translator) for that language, merge pull requests after they are approved and Copilot issues are resolved.
+
+### If you open a pull request
+
+1. **Prefix the title with your locale** — Use the locale abbreviation before the title, for example: `fr: Update translation for Markdown Dingus page`.
+2. **Assign the language admin** — If you are not the admin for that language, assign the locale admin as reviewer on the PR.
+3. **Request developer review when needed** — If you are the admin and want the change reviewed by the Marked developer, assign **@ttscoff**.
+
+For UI string changes in `ui-strings/`, also mention **@ttscoff** in the PR description so approved edits can be merged into the app's `.lproj` files (see **UI strings** above).
 
 ---
 

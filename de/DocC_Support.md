@@ -4,13 +4,13 @@ Marked versteht [Apple DocC](https://www.swift.org/documentation/docc/)-Dokument
 
 Für normale Markdown-Dokumente, die **Pfade mit Dateierweiterungen** (`images/icon.png`) verwenden, siehe [Bildvarianten](Image_Variants.html). Diese Funktion funktioniert überall; die DocC-Auflösung ist katalogspezifisch.
 
-## DocC-Auflösung aktivieren
+## DocC-Auflösung aktivieren [enabling-docc-resolution]
 
 Aktivieren Sie in {% prefspane Apps %} **DocC-Bildverweise auflösen** (standardmäßig aktiviert).
 
 Die DocC-Erkennung wird ausgeführt, wenn Marked einen übergeordneten `.docc`-Katalog des geöffneten Dokuments findet. Es ist kein spezielles URL-Schema und keine Xcode-Integration erforderlich – öffnen Sie den Markdown des Katalogs genauso wie jede andere Datei.
 
-## Erweiterungslose Referenzen
+## Erweiterungslose Referenzen [extensionless-references]
 
 In einem DocC-Katalog verweisen Autoren normalerweise auf Bilder **ohne** einen Pfad oder eine Erweiterung:
 
@@ -22,7 +22,7 @@ Marked löst `OrderStateTransitions` in `Resources/OrderStateTransitions.png` (o
 
 Referenzen, die bereits einen Pfad und eine Erweiterung enthalten – `images/chart.png` – werden stattdessen [Bildvarianten](Image_Variants.html) überlassen und durch die DocC-Auflösung nicht neu geschrieben.
 
-## Dunkelmodus und Retina-Varianten
+## Dunkelmodus und Retina-Varianten [dark-mode-and-retina-variants]
 
 DocC-Kataloge liefern oft mehrere Dateien pro Bild:
 
@@ -35,7 +35,7 @@ DocC-Kataloge liefern oft mehrere Dateien pro Bild:
 
 Wenn mehr als eine Variante vorhanden ist, gibt Marked das gleiche responsive `<picture>`-Markup aus, das unter [Bildvarianten](Image_Variants.html) beschrieben wird. Ein einzelner Dateiverweis wird weiterhin in einen normalen `<img>`- oder `![](Resources/...)`-Pfad aufgelöst.
 
-## HTML und Markdown
+## HTML und Markdown [html-and-markdown]
 
 Die DocC-Auflösung gilt während des Include-Durchlaufs von Marked:
 
@@ -44,11 +44,11 @@ Die DocC-Auflösung gilt während des Include-Durchlaufs von Marked:
 
 Beide werden vor dem Rendern der Vorschau aktualisiert.
 
-## Dateiüberwachung
+## Dateiüberwachung [file-watching]
 
 Aufgelöste Bilder im Katalogordner `Resources` werden zur Beobachtungsliste von Marked hinzugefügt. Durch die externe Bearbeitung einer Variantendatei wird die Vorschau ohne manuelle Aktualisierung aktualisiert.
 
-## Verwandte Themen
+## Verwandte Themen [related-topics]
 
 - [Bildvarianten](Image_Variants.html) – `~dark`- und `@2x`-Erkennung für Pfade mit Dateierweiterungen in jedem Projekt
 - [Xcode-Playgrounds](Xcode_Playgrounds.html) – Vorschau von Swift-Playground-Kommentaren

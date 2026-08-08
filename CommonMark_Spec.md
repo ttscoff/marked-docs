@@ -3,11 +3,11 @@
 Check out the [Markdown Dingus](x-marked-3://dingus?processor=commonmark) to experiment with the CommonMark (GFM) processor.
 
 
-## What is CommonMark?
+## What is CommonMark? [what-is-commonmark]
 
 CommonMark is a strongly specified, highly compatible implementation of Markdown. It was created to address the ambiguities and inconsistencies in John Gruber's original Markdown specification, which led to divergent implementations across different platforms and tools.
 
-## Why CommonMark Exists
+## Why CommonMark Exists [why-commonmark-exists]
 
 The original Markdown specification by John Gruber was intentionally ambiguous in many areas, leading to different interpretations by various implementations. This created problems where the same Markdown document would render differently on different platforms (GitHub, StackOverflow, Reddit, etc.).
 
@@ -18,9 +18,9 @@ CommonMark provides:
 - **Clear precedence rules** for conflicting syntax
 - **Detailed parsing algorithm** that can be implemented consistently
 
-## Key Differences from Standard Markdown
+## Key Differences from Standard Markdown [key-differences-from-standard-markdown]
 
-### 1. **Stricter Parsing Rules**
+### 1. **Stricter Parsing Rules** [1-stricter-parsing-rules]
 
 CommonMark enforces more consistent parsing behavior:
 
@@ -38,7 +38,7 @@ Text
 
 *Standard Markdown: Often allows without blank line*
 
-### 2. **List Item Parsing**
+### 2. **List Item Parsing** [2-list-item-parsing]
 
 **Indentation Requirements**
 
@@ -57,7 +57,7 @@ Text
 - CommonMark has clear rules for when list items are "loose" vs "tight"
 - Loose lists wrap items in `<p>` tags, tight lists don't
 
-### 3. **Code Block Handling**
+### 3. **Code Block Handling** [3-code-block-handling]
 
 **Fenced Code Blocks**
 
@@ -75,7 +75,7 @@ Text
 - CommonMark requires blank lines before indented code blocks
 - Standard Markdown often allows them without blank lines
 
-### 4. **Link and Image Processing**
+### 4. **Link and Image Processing** [4-link-and-image-processing]
 
 **Reference Link Precedence**
 
@@ -93,7 +93,7 @@ Text
 - CommonMark processes links before emphasis
 - This affects how nested syntax is interpreted
 
-### 5. **Emphasis and Strong Emphasis**
+### 5. **Emphasis and Strong Emphasis** [5-emphasis-and-strong-emphasis]
 
 **Nested Emphasis Rules**
 
@@ -109,7 +109,7 @@ Text
 - CommonMark uses a "delimiter stack" algorithm for consistent emphasis parsing
 - Standard Markdown implementations vary in their approach
 
-### 6. **HTML Block Processing**
+### 6. **HTML Block Processing** [6-html-block-processing]
 
 **HTML Block Detection**
 
@@ -122,7 +122,7 @@ This is an HTML block in CommonMark
 </div>
 ```
 
-### 7. **Line Break Handling**
+### 7. **Line Break Handling** [7-line-break-handling]
 
 **Hard Line Breaks**
 
@@ -134,7 +134,7 @@ Line one
 Line two  <!-- Two spaces before line break -->
 ```
 
-### 8. **Entity and Character References**
+### 8. **Entity and Character References** [8-entity-and-character-references]
 
 **Numeric Character References**
 
@@ -146,25 +146,25 @@ Line two  <!-- Two spaces before line break -->
 &#x2014; <!-- Hexadecimal -->
 ```
 
-## CommonMark Parsing Algorithm
+## CommonMark Parsing Algorithm [commonmark-parsing-algorithm]
 
 CommonMark uses a two-phase parsing approach:
 
-### Phase 1: Block Structure
+### Phase 1: Block Structure [phase-1-block-structure]
 
 1. **Line Processing**: Each line is analyzed for block-level markers
 2. **Container Blocks**: Blockquotes, lists, and other containers are identified
 3. **Leaf Blocks**: Headings, code blocks, paragraphs are processed
 4. **Reference Links**: Link definitions are collected for later use
 
-### Phase 2: Inline Structure
+### Phase 2: Inline Structure [phase-2-inline-structure]
 
 1. **Inline Processing**: Text within blocks is parsed for inline elements
 2. **Emphasis Parsing**: Uses delimiter stack algorithm for consistent emphasis
 3. **Link Resolution**: Reference links are resolved using collected definitions
 4. **Entity Processing**: Character references are converted to actual characters
 
-## Benefits of CommonMark
+## Benefits of CommonMark [benefits-of-commonmark]
 
 1. **Predictable Behavior**: Same input always produces same output
 2. **Cross-Platform Compatibility**: Works consistently across different tools
@@ -172,7 +172,7 @@ CommonMark uses a two-phase parsing approach:
 4. **Clear Documentation**: Detailed specification eliminates guesswork
 5. **Future-Proof**: Well-defined extension points for new features
 
-## Implementation Notes
+## Implementation Notes [implementation-notes]
 
 CommonMark is designed to be:
 
@@ -181,7 +181,7 @@ CommonMark is designed to be:
 - **Extensible**: Can be extended with additional features while maintaining compatibility
 - **Fast**: Optimized parsing algorithms for performance
 
-## Resources
+## Resources [resources]
 
 - [CommonMark Specification](https://spec.commonmark.org/0.31.2/)
 - [CommonMark Test Suite](https://github.com/commonmark/commonmark-spec)

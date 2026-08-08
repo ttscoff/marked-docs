@@ -1,0 +1,9 @@
+# Marked Gear Menu Localization
+# Locale: de (German)
+# Generated: 2026-07-18
+#
+# No missing gear-menu strings for this locale.
+# All Extras/gear titles are translated in MarkdownDocument.strings
+# or intentionally left English (product names / Zoom loanword),
+# after cross-ref against MainMenu / PreviewContextMenu.
+# Already ok: 68; filled from xref this run: 0

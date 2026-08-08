@@ -6,7 +6,7 @@ Options du panneau de préférences {% prefspane Processor %} :
 
 [1]: images/screenshots/preferences-Processor.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Traiter le Markdown avec
+### Traiter le Markdown avec [process-markdown-with]
 
 Processeur Markdown par défaut. Le processeur CommonMark est préférable pour les utilisateurs de GitHub, MultiMarkdown est idéal pour les rédacteurs, et Discount et Kramdown ont des usages spécialisés. Marked compense certaines différences de syntaxe entre eux. Voir __Aide->Référence Markdown__ pour plus d'informations.
 
@@ -21,7 +21,7 @@ Accès complet au disque
 
 Pour explorer les différences entre les processeurs, consultez le [Markdown Dingus](Markdown_Dingus.html).
 
-### HTML
+### HTML [html]
 
 Générer des ID sur les titres
 : Génère des ID d'en-tête à partir du contenu des balises h1 à h6.
@@ -32,7 +32,7 @@ Utiliser des ID de notes de bas de page aléatoires
 Traiter le Markdown à l'intérieur du HTML
 : Par défaut, le Markdown à l'intérieur de balises HTML est généralement ignoré. Cette option force Marked à continuer de le traiter au sein des éléments de bloc. Notez que certaines balises peuvent poser problème.
 
-### Rendu
+### Rendu [rendering]
 
 Conserver les sauts de ligne dans les paragraphes
 : Respecte les sauts de ligne dans le texte des paragraphes, en les remplaçant par des sauts forcés plutôt qu'en les concaténant à la ligne précédente.

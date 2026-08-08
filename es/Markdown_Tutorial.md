@@ -2,13 +2,13 @@
 
 # <%= @title %>
 
-## ¿Qué es el descuento?
+## ¿Qué es el descuento? [what-is-markdown]
 
 Markdown es un lenguaje de marcado liviano que le permite escribir utilizando un formato de texto plano fácil de leer y escribir y luego convertirlo a HTML estructuralmente válido. El objetivo primordial del diseño de la sintaxis de formato de Markdown es hacerla lo más legible posible.
 
-## Sintaxis básica
+## Sintaxis básica [basic-syntax]
 
-### Encabezados
+### Encabezados [headers]
 
 Cree encabezados usando símbolos hash (`#`). El número de hashes determina el nivel del encabezado:
 
@@ -21,7 +21,7 @@ Cree encabezados usando símbolos hash (`#`). El número de hashes determina el 
 ###### Header 6
 ```
 
-### Énfasis
+### Énfasis [emphasis]
 
 **Texto en negrita** con asteriscos dobles o guiones bajos dobles:
 
@@ -37,7 +37,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Listas
+### Listas [lists]
 
 **Listas desordenadas** que utilizan asteriscos, signos más o guiones:
 
@@ -63,7 +63,7 @@ _Italic text_
 3. Third item
 ```
 
-### Enlaces
+### Enlaces [links]
 
 **Enlaces en línea** con el texto entre corchetes y la URL entre paréntesis:
 
@@ -86,7 +86,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Imágenes
+### Imágenes [images]
 
 Las imágenes utilizan una sintaxis similar a la de los enlaces pero con un signo de exclamación al principio:
 
@@ -97,7 +97,7 @@ Las imágenes utilizan una sintaxis similar a la de los enlaces pero con un sign
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Citas en bloque
+### Citas en bloque [blockquotes]
 
 Cree citas en bloque usando el símbolo mayor que (`>`) al comienzo de cada línea:
 
@@ -108,7 +108,7 @@ Cree citas en bloque usando el símbolo mayor que (`>`) al comienzo de cada lín
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Código
+### Código [code]
 
 **Código en línea** usando comillas invertidas:
 
@@ -124,7 +124,7 @@ Use ⟦4⟧ in your text.
     Multiple lines are supported.
 ```
 
-### Reglas horizontales
+### Reglas horizontales [horizontal-rules]
 
 Cree reglas horizontales utilizando tres o más guiones, asteriscos o guiones bajos:
 
@@ -136,7 +136,7 @@ Cree reglas horizontales utilizando tres o más guiones, asteriscos o guiones ba
 ___
 ```
 
-### Saltos de línea
+### Saltos de línea [line-breaks]
 
 **Saltos de línea estrictos** al terminar una línea con dos o más espacios:
 
@@ -152,7 +152,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Personajes que escapan
+### Personajes que escapan [escaping-characters]
 
 Escapar de caracteres especiales usando barras invertidas:
 
@@ -175,7 +175,7 @@ Personajes comunes de los que se puede escapar:
 - `.` punto
 - `!` signo de exclamación
 
-## Mejores prácticas
+## Mejores prácticas [best-practices]
 
 1. **Utilice líneas en blanco** para separar diferentes elementos y mejorar la legibilidad.
 2. **Sea coherente** con sus opciones de formato (por ejemplo, utilice `*` o `_` para enfatizar)
@@ -183,9 +183,9 @@ Personajes comunes de los que se puede escapar:
 4. **Pruebe su resultado** para asegurarse de que se muestre como se esperaba
 5. **Utilice texto de enlace significativo** en lugar de frases genéricas como "haga clic aquí"
 
-## Patrones comunes
+## Patrones comunes [common-patterns]
 
-### Listas anidadas
+### Listas anidadas [nested-lists]
 
 ```markdown
 1. First item
@@ -195,7 +195,7 @@ Personajes comunes de los que se puede escapar:
    - More nested content
 ```
 
-### Listas con párrafos
+### Listas con párrafos [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -207,7 +207,7 @@ Personajes comunes de los que se puede escapar:
    This is a paragraph under the second item.
 ```
 
-### Citas en bloque con otros elementos
+### Citas en bloque con otros elementos [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -218,7 +218,7 @@ Personajes comunes de los que se puede escapar:
 > > Nested blockquotes are also possible.
 ```
 
-## Resumen
+## Resumen [summary]
 
 Markdown proporciona una forma sencilla y legible de formatear texto que se puede convertir fácilmente a HTML. La clave es mantenerlo simple y legible mientras se utilizan los elementos básicos de sintaxis de manera consistente. Con la práctica, descubrirá que Markdown se convierte en algo natural y facilita mucho la redacción de contenido estructurado.
 

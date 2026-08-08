@@ -10,7 +10,7 @@ Opzioni in {% prefspane Apps %}:
 
 [1]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Impostazioni generali
+### Impostazioni generali [general-settings]
 
 Editor di testo
 : seleziona un editor di testo per ricevere il documento corrente quando digiti {% kbd cmd E %}.
@@ -29,7 +29,7 @@ Editor di annotazioni/markup delle immagini
 
 Se non viene scelto alcun editor, Marked presenta un menu di applicazioni installate quando modifichi o annoti. Il menu include i comuni strumenti Markdown, immagini e annotazioni presenti sul tuo Mac, un'opzione **Altro…** per scegliere qualsiasi app da `/Applications` e **Usa sempre questa app** (abilitata per impostazione predefinita) per salvare la tua scelta come predefinita. Utilizza il pulsante Cancella (cerchio con una X) accanto a ciascun controllo Scegli in {% prefspane Apps %} per rimuovere una selezione e tornare al selettore.
 
-### Impostazioni specifiche dell'applicazione
+### Impostazioni specifiche dell'applicazione [application-specific-settings]
 
 Mostra commenti e annotazioni per impostazione predefinita
 : se selezionato, le annotazioni effettuate nei documenti Scrivener, Fountain, Word e CriticMarkup verranno visualizzate evidenziate nell'anteprima. Deseleziona per nasconderlo completamente. Questi possono anche essere attivati ​​durante la lettura di un documento dal menu {% appmenu Gear, Proofing ({{ctrl}}{{cmd}}C)%}.
@@ -45,12 +45,12 @@ Risolvi i riferimenti alle immagini DocC
 Risolvi varianti di immagini scure e @2x
 : per le immagini locali con estensione file (`images/icon.png`), rileva i file associati `~dark` e `@2x` nella stessa cartella ed emette markup reattivo `<picture>`. Funziona con qualsiasi documento Markdown o HTML, non solo con i cataloghi DocC. Vedi [Varianti immagine](Image_Variants.html).
 
-#### Segnapunto
+#### Segnapunto [docc]
 
 Risolvi gli URL hook:// nelle immagini e nei collegamenti
 : Marked può leggere gli URL creati da Hookmark, risolvendoli nel loro percorso su disco.
 
-#### Leanpub/GitBook
+#### Leanpub/GitBook [hookmark]
 
 Abilita il supporto Leanpub
 : interpreta i file denominati `Book.txt` come file indice e gestisce la sintassi Leanpub speciale.
@@ -58,12 +58,12 @@ Abilita il supporto Leanpub
 Abilita il supporto GitBook
 : interpreta i file denominati `SUMMARY.md` come file di indice per la documentazione di GitBook.
 
-#### Markdownifier
+#### Markdownifier [leanpubgitbook]
 
 Utilizza collegamenti in linea
 : i documenti Markdown creati da Markdownifier utilizzeranno collegamenti in linea anziché di riferimento.
 
-#### MarteModifica
+#### MarteModifica [markdownifier]
 
 Includi il titolo del post come intestazione Markdown (h1)
 : utilizza il titolo del post selezionato come intestazione Markdown.
@@ -71,12 +71,12 @@ Includi il titolo del post come intestazione Markdown (h1)
 Mostra i metadati come tabella
 : se abilitato, i metadati come categorie e titoli verranno visualizzati come tabella Markdown nell'anteprima.
 
-#### Cartelle
+#### Cartelle [marsedit]
 
 Visualizza in anteprima solo queste estensioni
 : Quando si apre una cartella, Marked cercherà il documento modificato più di recente, utilizzando per impostazione predefinita estensioni come `md`, `mmd` e `html`. L'elenco qui sovrascrive l'impostazione predefinita.
 
-#### Scrivener
+#### Scrivener [folders]
 
 [(Informazioni sul supporto Scrivener)](Scrivener_Support.html)
 
@@ -89,12 +89,12 @@ Aggiungi i metadati di compilazione (titolo, autore) quando mancano
 Apri i file .scriv in Scrivener quando vengono aperti in Marked
 : quando un documento Scrivener viene aperto in Marked, lo apre automaticamente anche in Scrivener.
 
-#### Parola
+#### Parola [scrivener]
 
 Converti il rilevamento delle modifiche <-> CriticMarkup
 : se abilitato, il rilevamento delle modifiche nei documenti Word verrà convertito in CriticMarkup al momento dell'importazione e CriticMarkup verrà convertito nel rilevamento delle modifiche di Word durante l'esportazione di file DOCX.
 
-#### Mappe mentali/Contorni {#MindMapsOutlines}
+#### Mappe mentali/Contorni [word]
 
 Incorpora come mappe mentali della Sirena
 : ciascuna casella di controllo controlla un formato incluso. Quando **attivo**, il file incluso viene convertito in un diagramma della mappa mentale della sirena (layout ad albero ordinato). Quando **disattivato**, Marked utilizza l'alternativa per quel formato.

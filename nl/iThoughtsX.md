@@ -2,7 +2,7 @@
 
 [iThoughtsX][it] mindmaps opgeslagen als `.itmz` pakketten kunnen direct worden bekeken in Marked zodra **Markdown Preview** is ingeschakeld in iThoughtsX.
 
-## Schakel Markdown exportkanaal in
+## Schakel Markdown exportkanaal in [enable-markdown-export-channel]
 
 In de iThoughtsX-voorkeuren stelt u onder **Geavanceerd** **Markdown Preview** in (de tekst kan "Markdown" of "Markdown Preview" zijn, afhankelijk van de versie) en kies vervolgens of de geëxporteerde onderwerpen het volgende bevatten:
 

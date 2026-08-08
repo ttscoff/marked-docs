@@ -2,7 +2,7 @@
 
 The Custom Style Generator is a web-based tool that lets you create custom styles for Marked without writing CSS by hand. It provides a visual interface with controls for typography, colors, spacing, and more, with a live preview that updates as you make changes.
 
-## Accessing the Generator
+## Accessing the Generator [accessing-the-generator]
 
 The Style Generator is available at [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). You can use it directly in your web browser — no installation required.
 
@@ -10,7 +10,7 @@ The Style Generator is available at [https://markedapp.com/style-generator/](htt
 
   [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Getting Started
+## Getting Started [getting-started]
 
 When you first open the generator, you'll see:
 
@@ -18,19 +18,19 @@ When you first open the generator, you'll see:
 - **Controls pane** (right): All the style controls organized into sections
 - **Toolbar** (top): Style title, base theme selector, and CSS import option
 
-### Choosing a Base Theme
+### Choosing a Base Theme [choosing-a-base-theme]
 
 Start by selecting a **Base Theme** from the dropdown. This provides a foundation for your style — you can then customize every aspect of it. Popular options include Blank (for starting from scratch), Default, and various built-in themes.
 
-### Importing Existing CSS
+### Importing Existing CSS [importing-existing-css]
 
 If you have an existing CSS file you'd like to use as a starting point, click **Import CSS** and select your file. The generator will load those styles and you can then modify them using the controls.
 
-## Style Controls
+## Style Controls [style-controls]
 
 The generator organizes controls into logical sections:
 
-### Base Typography
+### Base Typography [base-typography]
 
 Control the fundamental typography settings:
 
@@ -39,7 +39,7 @@ Control the fundamental typography settings:
 - **Line Height**: The spacing between lines of text
 - **Scale Ratio**: The ratio used for the typographic scale (affects heading sizes)
 
-### Layout
+### Layout [layout]
 
 Adjust spacing and indentation:
 
@@ -48,7 +48,7 @@ Adjust spacing and indentation:
 - **List Indent**: Indentation for lists
 - **Blockquote Indent**: Left margin for blockquotes
 
-### Fonts
+### Fonts [fonts]
 
 Configure font families and weights:
 
@@ -59,7 +59,7 @@ Configure font families and weights:
 - **Bold Weight**: Font weight for bold text
 - **Letter Spacing**: Character spacing for headers and body text
 
-### Google Fonts
+### Google Fonts [google-fonts]
 
 Add Google Fonts to your style:
 
@@ -70,7 +70,7 @@ Add Google Fonts to your style:
 
 Added fonts appear in a list below the controls — click the × to remove them.
 
-### Colors
+### Colors [colors]
 
 Set colors for various elements:
 
@@ -85,13 +85,13 @@ Set colors for various elements:
 
 Individual heading colors (H1–H6) can be set separately — use **Reset** to clear an override and return to the header color.
 
-### Dark Mode
+### Dark Mode [dark-mode]
 
 Toggle **Dark Mode** to preview and configure dark mode colors. When enabled, you'll see separate color controls for dark mode variants. Dark mode styles apply when `.inverted` is set on the body element in Marked.
 
 Use **Generate Colors** to automatically create a dark mode palette based on your light mode colors.
 
-### Images
+### Images [images]
 
 Control image appearance:
 
@@ -99,7 +99,7 @@ Control image appearance:
 - **Border Radius**: Rounded corners (e.g., "8px", "0")
 - **Alignment**: Document default, Left, Center, or Right
 
-### Blockquotes
+### Blockquotes [blockquotes]
 
 Style blockquotes:
 
@@ -112,7 +112,7 @@ Style blockquotes:
 
 Separate controls are available for dark mode blockquotes.
 
-### Lists
+### Lists [lists]
 
 Configure list appearance:
 
@@ -120,7 +120,7 @@ Configure list appearance:
 - **Left Margin**: Spacing from the left edge
 - **Nested Left Margin**: Spacing for nested lists (can be "inherit")
 
-### Definition Lists
+### Definition Lists [definition-lists]
 
 Style definition lists (`<dl>`, `<dt>`, `<dd>`):
 
@@ -128,7 +128,7 @@ Style definition lists (`<dl>`, `<dt>`, `<dd>`):
 - **DT** (term) settings: Font size, weight, and style
 - **DD** (definition) settings: Font size, weight, style, and indentation
 
-### Tables
+### Tables [tables]
 
 Comprehensive table styling:
 
@@ -147,7 +147,7 @@ Comprehensive table styling:
 
 Separate controls are available for dark mode tables.
 
-### Code Blocks
+### Code Blocks [code-blocks]
 
 Style code blocks and inline code:
 
@@ -160,7 +160,7 @@ Style code blocks and inline code:
 
 Separate controls are available for dark mode code blocks.
 
-### Footnotes
+### Footnotes [footnotes]
 
 Style footnotes:
 
@@ -170,7 +170,7 @@ Style footnotes:
 
 Separate controls are available for dark mode footnotes.
 
-### Drop Shadow
+### Drop Shadow [drop-shadow]
 
 Add drop shadows to elements:
 
@@ -181,13 +181,13 @@ Add drop shadows to elements:
    - Blockquotes
    - Tables
 
-## Custom CSS
+## Custom CSS [custom-css]
 
 For advanced customization beyond the available controls, use the **Custom CSS** button to open a code editor. Any CSS you add here will be appended to the generated style and automatically scoped to work within Marked's document structure.
 
 The editor includes syntax highlighting and validation — invalid CSS will be flagged with error messages.
 
-## Live Preview
+## Live Preview [live-preview]
 
 The preview pane shows your style applied to sample markdown content including:
 
@@ -204,23 +204,23 @@ The preview pane shows your style applied to sample markdown content including:
 
 Changes update in real-time as you adjust controls.
 
-## Saving and Sharing
+## Saving and Sharing [saving-and-sharing]
 
 Once you're happy with your style, you have several options:
 
-### View CSS
+### View CSS [view-css]
 
 Click **View CSS** to see the complete generated CSS in a popover. You can copy it to your clipboard or review it before saving.
 
-### Save CSS
+### Save CSS [save-css]
 
 Click **Save CSS** to download your style as a CSS file. You'll be prompted to enter metadata (title, author, description) before downloading.
 
-### Add to Marked
+### Add to Marked [add-to-marked]
 
 Click **Add to Marked** to directly add the style to your Marked installation. This requires Marked to be running and will open a dialog to confirm the style name and author information.
 
-### Share Style
+### Share Style [share-style]
 
 Click **Share Style** to publish your style to the [Marked Style Gallery](https://markedapp.com/styles) for others to use. You'll need to provide:
 
@@ -232,7 +232,7 @@ Click **Share Style** to publish your style to the [Marked Style Gallery](https:
 
 A preview of your style will appear in the share dialog before publishing.
 
-## Metadata
+## Metadata [metadata]
 
 Use the metadata section (expandable via the arrow button next to the style title) to set:
 
@@ -243,7 +243,7 @@ Use the metadata section (expandable via the arrow button next to the style titl
 
 This metadata is included in the CSS file header and used when sharing styles.
 
-## Tips
+## Tips [tips]
 
 - Start with a base theme close to what you want, then customize
 - Use the **Blank** theme if you want complete control from scratch
@@ -252,6 +252,6 @@ This metadata is included in the CSS file header and used when sharing styles.
 - Use **Custom CSS** sparingly — most needs can be met with the built-in controls
 - Preview your style with various content types before sharing
 
-## Browser Compatibility
+## Browser Compatibility [browser-compatibility]
 
 The Style Generator works best in modern browsers (Chrome, Firefox, Safari, Edge). It requires JavaScript to be enabled.

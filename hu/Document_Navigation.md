@@ -4,7 +4,7 @@
 
 Ez az oldal leírja, hogyan mozoghat a hosszú előnézetek között: a [Tartalomjegyzék](#tartalomjegyzék), [gyorskeresés](#gyorskeresés), [könyvjelzők](#bookmarks-and-mini-map) és a [Mini térkép](#minimap). A mindenhol érvényes görgetési billentyűparancsokhoz (például {% kbd j %}/{% kbd k %}) tekintse meg a [Billentyűzet navigáció](Interface_Features.html#keyboardnavigation) részt az [Interfész jellemzői](Interface_Features.html) alatt.
 
-## Tartalomjegyzék
+## Tartalomjegyzék [table-of-contents]
 
 ![][8]
 
@@ -29,19 +29,19 @@ A billentyűk tömörített listáját lásd: [Billentyűparancsok](Keyboard_Sho
 
 Lásd még a [Dokumentumnavigációs videót a YouTube-on](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Teljes képernyős mód a tartalomjegyzékhez
+### Teljes képernyős mód a tartalomjegyzékhez [full-screen-mode-for-the-table-of-contents]
 
 Ha a Megjelölt előnézeti ablak teljes képernyős, a Tartalomjegyzék rögzítve maradhat a bal oldalon az állandó navigáció érdekében. Továbbra is a {% kbd cmd T %}-vel vált; Ha a tartalomjegyzéken kívülre kattint, gyakran nem veti el azt ebben az elrendezésben.
 
 Normál ablakban kattintson a TOC panel alján található ikonra, hogy oldalsávként rögzítse; kattintson az oldalsáv tetején lévő ikonra az előugró módba való visszatéréshez.
 
-### A TOC megjelenési helyének testreszabása
+### A TOC megjelenési helyének testreszabása [customizing-where-the-toc-appears]
 
-A tartalomjegyzék a [speciális szintaxis](Special_Syntax.html#tocplacement) `<!--TOC-->` használatával beszúrható az exportált dokumentumba.
+A tartalomjegyzék a [speciális szintaxis](Special_Syntax.html#tableofcontents) `<!--TOC-->` használatával beszúrható az exportált dokumentumba.
 
 Az `max#` (például `<!--TOC max2-->`) hozzáadásával korlátozhatja, hogy hány címsorszint jelenjen meg.
 
-## Gyors keresés
+## Gyors keresés [fast-search]
 
 A **Gyors navigáció** a tartalomjegyzéket egyesíti a fókuszált szűrővel, így minimális gépeléssel ugorhat:
 
@@ -55,11 +55,11 @@ A **Gyors navigáció** a tartalomjegyzéket egyesíti a fókuszált szűrővel,
 
 (A korábbi dokumentumok ezt "Fast Switcher"-nek nevezték; ez ugyanaz a funkció.)
 
-## Könyvjelzők és minitérkép {#bookmarks-and-mini-map}
+## Könyvjelzők és minitérkép [bookmarks-and-mini-map]
 
 Használja a {% appmenu Gear %} előnézeti menüt, és a {% kbd Tab %} ({% kbd ⇥ %}) elemet állítsa a dokumentumra a [search](Interface_Features.html#search) mellé a könyvjelzők elhelyezéséhez és újbóli megtekintéséhez lapozás közben.
 
-### Könyvjelzők beállítása
+### Könyvjelzők beállítása [setting-bookmarks]
 
 Állítsa be a könyvjelzőket görgetési pozícióba a {% kbd shift 1 %}--{% kbd shift 9 %} használatával, és ugorjon vissza a {% kbd 1 %}--{% kbd 9 %} használatával. Használja a {% kbd n %} és {% kbd p %} karaktereket a következő/előző **dokumentumsorrendben**; {% kbd shift n %} és {% kbd shift p %} a következő/előző **numerikus** sorrendben.
 
@@ -75,7 +75,7 @@ Nyomja meg kétszer a {% kbd x %} gombot ({% kbd xx %}) az összes könyvjelző 
 
 Vannak [további előnézeti parancsikonok](Keyboard_Shortcuts.html); Nyomja meg a {% kbd h %} gombot az előnézetben a heads-up listához, vagy a {% kbd opt cmd K %} gombot a teljes hivatkozásért.
 
-### Mini térkép {#minimap}
+### Mini térkép [minimap]
 
 Ha a Mini Map engedélyezve van a {% prefspane Preview %} beállításokban, a {% kbd 0 %} megnyitja a teljes dokumentum méretezett bélyegképét a könyvjelzősáv mentén. Kattintson a térkép tetszőleges részére a teljes előnézet görgetéséhez. A mentett könyvjelzők vízszintes vonalakként jelennek meg számokkal (és adott esetben címsorokkal).
 
@@ -87,6 +87,6 @@ Nyomja meg a {% kbd 0 %} vagy az Escape billentyűt a minitérkép bezárásáho
 
 **Teljesítményre vonatkozó megjegyzés:** A térkép generálása rövid időre szüneteltetheti a hatalmas dokumentumok előnézetét; ez csak akkor fut, ha a térkép látható vagy átméretezés után.
 
-### Nagyítás áttekintése (kapcsolódó)
+### Nagyítás áttekintése (kapcsolódó) [zoom-overview-related]
 
 A minitérkép nélküli szöveges léptékű áttekintésért lásd: [Nagyítás áttekintése](Zoom_Overview.html) ({% kbd z %}).

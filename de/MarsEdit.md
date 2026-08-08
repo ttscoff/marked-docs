@@ -2,7 +2,7 @@
 
 [MarsEdit][me] speichert Beiträge in seiner Datenbank und nicht als lose Dateien auf der Festplatte. Marked verwendet daher einen dedizierten Vorschau-Workflow, der mit der laufenden MarsEdit-Anwendung kommuniziert.
 
-## MarsEdit-Vorschaufenster
+## MarsEdit-Vorschaufenster [marsedit-preview-window]
 
 Wählen Sie {% appmenu Ablage, Neu, MarsEdit-Vorschau %}. Marked verwendet AppleScript, um den **vordersten Beitrag in MarsEdit** zu lesen (die Bundle-IDs von Red Sweater für Direkt-Download, Mac App Store, Setapp und MarsEdit 4/5 werden erkannt). Lassen Sie MarsEdit während der Arbeit mit geöffnetem Dokument laufen.
 
@@ -11,15 +11,15 @@ Wählen Sie {% appmenu Ablage, Neu, MarsEdit-Vorschau %}. Marked verwendet Apple
 
 Wenn kein Beitrag verfügbar ist, zeigt Marked in der Vorschau einen kurzen Fehler anstelle von veraltetem Text an.
 
-### Erweiterte Beiträge
+### Erweiterte Beiträge [extended-posts]
 
 Der Inhalt im **erweiterten** Feld von MarsEdit wird in der Vorschau und Quelle von Marked mithilfe eines `<!--more-->`-Trenners im WordPress-Stil getrennt, sodass auf seitenbezogenen Websites (WordPress, Jekyll usw.) die Unterbrechung weiterhin angezeigt wird. An anderer Stelle ist der Kommentar harmlos.
 
-### Tags und Kategorien in Metadaten
+### Tags und Kategorien in Metadaten [tags-and-categories-in-metadata]
 
 Die Tags und Kategorien von MarsEdit werden im MultiMarkdown-Metadatenblock verfügbar gemacht. Mit dem MultiMarkdown-Prozessor ({% prefspane Processor %}) können Sie sie wie folgt referenzieren:
 
-Tagged: [%tags]
-    Posted in: [%categories]
+    Tagged: [%tags]
+    Posted In: [%categories]
 
 [me]: https://www.red-sweater.com/marsedit/

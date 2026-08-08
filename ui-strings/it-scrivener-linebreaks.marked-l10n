@@ -1,0 +1,52 @@
+# Marked Settings Localization Patch
+# Locale: it (Italian)
+# Generated: 2026-07-26
+# Feature: Scrivener line-break preference
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# New Applications → Scrivener setting: "Treat single line breaks as"
+# Popup options: "Line breaks" (default) and "Paragraphs".
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by this option.
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 4
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 4
+
+"setting.scrivenerLineBreaks" = "Tratta le interruzioni di riga singole come";
+# EN: Treat single line breaks as
+# DRAFT: Tratta le interruzioni di riga singole come
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Interruzioni di riga";
+# EN: Line breaks
+# DRAFT: Interruzioni di riga
+
+"setting.scrivenerLineBreaks.paragraphs" = "Paragrafi";
+# EN: Paragraphs
+# DRAFT: Paragrafi
+
+"tooltip.scrivenerLineBreaks" = "Come interpretare un'interruzione di riga singola in un paragrafo Scrivener. «Interruzioni di riga» mantiene le righe consecutive come interruzioni di riga (in base a «Conservare le interruzioni di riga nei paragrafi»); «Paragrafi» inizia un nuovo paragrafo. Le tabelle pipe e i blocchi di codice delimitati non sono interessati.";
+# EN: How to interpret a single line break within a Scrivener paragraph. Line breaks keep consecutive lines as line breaks (subject to Preserve line breaks); Paragraphs start a new paragraph. Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Come interpretare un'interruzione di riga singola in un paragrafo Scrivener. «Interruzioni di riga» mantiene le righe consecutive come interruzioni di riga (in base a «Conservare le interruzioni di riga nei paragrafi»); «Paragrafi» inizia un nuovo paragrafo. Le tabelle pipe e i blocchi di codice delimitati non sono interessati.
+
+=== END Settings.strings (gaps) ===

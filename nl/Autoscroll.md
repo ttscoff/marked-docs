@@ -2,7 +2,7 @@
 
 Autoscroll verplaatst het voorbeeld langzaam voor handsfree lezen of proeflezen. Het staat los van de [Table of Contents](Document_Navigation.html) en [Mini Map](Document_Navigation.html#minimap); het bladert automatisch door de huidige weergave.
 
-## Starten en stoppen
+## Starten en stoppen [starting-and-stopping]
 
 Activeer automatisch scrollen door op {% kbd s %} te drukken. Het voorbeeld scrollt vooruit met de huidige snelheid.
 

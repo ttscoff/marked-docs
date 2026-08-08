@@ -6,11 +6,11 @@ O Marked inclui uma **extensão Compartilhar** do macOS que aparece no menu Comp
 
 A extensão Compartilhar **vem com o Marked 3**. Você não baixa nem instala separadamente. Ela está incluída nas builds Direct, Mac App Store, Marked Pro e Setapp.
 
-## Como funciona
+## Como funciona [how-it-works]
 
 Quando você escolhe **Marked** em um menu Compartilhar, o Marked abre imediatamente. Não há janela intermediária de composição.
 
-### Compartilhar um arquivo
+### Compartilhar um arquivo [share-a-file]
 
 No **Finder** (ou outro app que compartilha arquivos), escolha **Compartilhar → Marked**.
 
@@ -18,7 +18,7 @@ O Marked recebe o caminho do arquivo e o abre com o mesmo manipulador de URL `x-
 
 Entradas suportadas incluem URLs de arquivo, arquivos locais e URLs da web quando o app de origem as fornece.
 
-### Compartilhar texto selecionado
+### Compartilhar texto selecionado [share-selected-text]
 
 Selecione texto em um app como **TextEdit**, **Safari** ou **Mail** e escolha **Compartilhar → Marked**.
 
@@ -28,16 +28,16 @@ Texto simples, HTML, RTF e Markdown são suportados quando o app de origem os fo
 
 Consulte [URL Handler](URL_Handler.html) para detalhes dos comandos subjacentes.
 
-## Usar o menu Compartilhar
+## Usar o menu Compartilhar [using-the-share-menu]
 
-### No Finder
+### No Finder [from-finder]
 
 1. Clique com o botão direito em um arquivo Markdown ou de texto (ou selecione-o e clique em **Compartilhar** na barra de ferramentas do Finder).
 2. Escolha **Marked** no menu Compartilhar.
 
 Se **Marked** não aparecer, veja [Ativar a extensão Compartilhar](#enable-the-share-extension) abaixo.
 
-### A partir de seleção de texto
+### A partir de seleção de texto [from-a-text-selection]
 
 1. Selecione o texto que deseja visualizar.
 2. Abra o menu **Compartilhar** do app (item Compartilhar, botão na barra ou menu contextual).
@@ -45,11 +45,11 @@ Se **Marked** não aparecer, veja [Ativar a extensão Compartilhar](#enable-the-
 
 O Marked inicia (ou vem para a frente) com uma visualização do conteúdo compartilhado.
 
-## Ativar a extensão Compartilhar
+## Ativar a extensão Compartilhar [enable-the-share-extension]
 
 O Marked deve estar instalado em `/Applications` (ou sua pasta Aplicativos usual) e ter sido aberto pelo menos uma vez antes de o macOS listar sua extensão Compartilhar.
 
-### Ativar Marked em Ajustes do Sistema
+### Ativar Marked em Ajustes do Sistema [turn-on-marked-in-system-settings]
 
 1. Abra **Ajustes do Sistema**.
 2. Vá em **Geral → Itens de login e extensões** (em algumas versões do macOS: **Privacidade e segurança → Extensões**).
@@ -57,7 +57,7 @@ O Marked deve estar instalado em `/Applications` (ou sua pasta Aplicativos usual
 4. Selecione **Compartilhamento** (ou **Sharing**).
 5. Ative **Marked**.
 
-### Adicionar Marked ao menu Compartilhar de um app
+### Adicionar Marked ao menu Compartilhar de um app [add-marked-to-an-apps-share-menu]
 
 Mesmo com a extensão ativada em todo o sistema, cada app escolhe quais destinos Compartilhar exibir:
 
@@ -69,7 +69,7 @@ Mesmo com a extensão ativada em todo o sistema, cada app escolhe quais destinos
 
 As alterações se aplicam imediatamente na maioria dos apps.
 
-## Se Marked não aparecer em Compartilhar
+## Se Marked não aparecer em Compartilhar [if-marked-does-not-appear-in-share]
 
 W> A extensão Compartilhar está disponível a partir do Marked 3.1.9. Certifique-se de ter atualizado pelo menos para essa versão.
 
@@ -82,7 +82,7 @@ Tente estes passos em ordem:
 5. **Reinicie o Mac** se a extensão ainda não aparecer após uma atualização. O macOS armazena em cache o registro de extensões Compartilhar.
 6. **Reinstale o Marked** em `/Applications` se estiver testando uma build copiada manualmente do Xcode ou de uma imagem de disco. A extensão deve estar em `Marked.app/Contents/PlugIns/`.
 
-## Dicas
+## Dicas [tips]
 
 - A extensão Compartilhar é ideal para visualizações rápidas de trechos da web, parágrafos de e-mail ou notas sem criar um arquivo primeiro.
 - Para páginas inteiras ou seleções complexas no navegador, as [extensões do navegador](Using_the_Browser_Extensions.html) podem oferecer mais controle (seleção de seção, Markdownify URL etc.).

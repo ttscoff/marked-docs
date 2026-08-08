@@ -2,11 +2,11 @@
 
 Bekijk de [Markdown Dingus](x-marked-3://dingus?processor=discount) om te experimenteren met de Kortingsprocessor.
 
-## Wat is Korting GFM?
+## Wat is Korting GFM? [what-is-discount-gfm]
 
 Discount GFM (GitHub Flavoured Markdown) is een op C gebaseerde Markdown processor die de uitgebreide Markdown syntaxis van GitHub implementeert. Het is gebaseerd op de originele Discount-bibliotheek, maar uitgebreid met GitHub-specifieke functies zoals tabellen, takenlijsten, doorgehaalde tekst en automatische URL-koppeling.
 
-## Belangrijkste kenmerken
+## Belangrijkste kenmerken [key-characteristics]
 
 - **C-gebaseerde prestaties**: snelle, native C-implementatie voor optimale prestaties
 - **GitHub Compatibiliteit**: implementeert de Markdown extensies van GitHub voor maximale compatibiliteit
@@ -14,9 +14,9 @@ Discount GFM (GitHub Flavoured Markdown) is een op C gebaseerde Markdown process
 - **Uitbreidbaar**: ondersteunt verschillende Markdown extensies en aangepaste opties
 - **HTML5 Ondersteuning**: Genereert moderne HTML5 uitvoer met de juiste semantische opmaak
 
-## Grote verschillen met standaard Markdown
+## Grote verschillen met standaard Markdown [major-differences-from-standard-markdown]
 
-### 1. **GitHub Gearomatiseerde Markdown Extensies**
+### 1. **GitHub Gearomatiseerde Markdown Extensies** [1-github-flavored-markdown-extensions]
 
 **Tabellen**
 
@@ -54,7 +54,7 @@ Discount GFM (GitHub Flavoured Markdown) is een op C gebaseerde Markdown process
 ~~Mistaken text that should be removed~~
 ```
 
-### 2. **Verbeterde ondersteuning voor codeblokken**
+### 2. **Verbeterde ondersteuning voor codeblokken** [2-enhanced-code-block-support]
 
 **Omheinde codeblokken**
 
@@ -76,7 +76,7 @@ function hello() {
 - Juiste syntaxisaccentuering indien ondersteund
 - Terugval op platte tekst voor niet-ondersteunde talen
 
-### 3. **Automatische URL-koppeling**
+### 3. **Automatische URL-koppeling** [3-automatic-url-linking]
 
 **URL automatisch koppelen**
 
@@ -95,7 +95,7 @@ Contact us at user@example.com
 - Verwerkt verschillende URL-formaten en protocollen
 - Configureerbare linkveiligheidsopties
 
-### 4. **Geavanceerde lijstfuncties**
+### 4. **Geavanceerde lijstfuncties** [4-advanced-list-features]
 
 **Alfabetische lijsten**
 
@@ -115,7 +115,7 @@ c. Third item
 - Verbeterde afstand en inkeping
 - Ondersteuning voor gemengde lijsttypen
 
-### 5. **Ondersteuning voor voetnoten**
+### 5. **Ondersteuning voor voetnoten** [5-footnotes-support]
 
 **Referentievoetnoten**
 
@@ -135,7 +135,7 @@ Dit is een zin met een voetnoot[^1].
 - Koppelingen tussen referenties en definities
 - Opeenvolgende nummering in het hele document
 
-### 6. **HTML Integratie**
+### 6. **HTML Integratie** [6-html-integration]
 
 **HTML5 Ondersteuning**
 
@@ -149,7 +149,7 @@ Dit is een zin met een voetnoot[^1].
 - Goede ontsnapping en ontsmetting
 - Integratie met Markdown syntaxis
 
-### 7. **Verbeterde nadrukregels**
+### 7. **Verbeterde nadrukregels** [7-enhanced-emphasis-rules]
 
 **Ontspannen nadruk**
 
@@ -168,7 +168,7 @@ This is _emphasized text_ that will be styled.
 - Consistent met standaard Markdown nadrukregels
 - Juiste HTML uitvoer met `<strong>` en `<em>` tags
 
-### 8. **Inhoudsopgave genereren**
+### 8. **Inhoudsopgave genereren** [8-table-of-contents-generation]
 
 **Automatische inhoudsopgave**
 
@@ -182,7 +182,7 @@ This is _emphasized text_ that will be styled.
 - Ankerlinks voor eenvoudige navigatie
 - Consistente ID-opmaak
 
-## Korting op GFM versus andere Markdown smaken
+## Korting op GFM versus andere Markdown smaken [discount-gfm-vs-other-markdown-flavors]
 
 | Kenmerk | Korting | CommonMark (GFM) | Kramdown | MeerdereMarkdown | Standaard |
 | ---------------- | ------------ | ---------- | -------- | ------------- | -------- |
@@ -200,7 +200,7 @@ This is _emphasized text_ that will be styled.
 | Automatische koppelingen | Ja | Nee | Nee | Nee | Nee |
 | Alfabetische lijsten | Ja | Nee | Nee | Nee | Nee |
 
-## Belangrijkste voordelen van korting GFM
+## Belangrijkste voordelen van korting GFM [key-advantages-of-discount-gfm]
 
 1. **GitHub Compatibiliteit**: perfect voor inhoud die moet werken op GitHub
 2. **Prestaties**: Snelle C-gebaseerde implementatie
@@ -209,7 +209,7 @@ This is _emphasized text_ that will be styled.
 5. **Naleving van normen**: volgt de Markdown-specificatie van GitHub
 6. **Lichtgewicht**: minimaal gebruik van bronnen en afhankelijkheden
 
-## Veelvoorkomende gebruiksscenario's
+## Veelvoorkomende gebruiksscenario's [common-use-cases]
 
 **GitHub Documentatie**
 
@@ -235,7 +235,7 @@ This is _emphasized text_ that will be styled.
 - Projectplanningsdocumenten
 - Notulen en notulen van vergaderingen
 
-## Configuratieopties
+## Configuratieopties [configuration-options]
 
 Korting GFM ondersteunt verschillende configuratiemogelijkheden:
 
@@ -246,7 +246,7 @@ Korting GFM ondersteunt verschillende configuratiemogelijkheden:
 - **Strikte modus**: verbeterde parseerregels
 - **Smart Quotes**: automatische offerteconversie
 
-## Implementatiedetails
+## Implementatiedetails [implementation-details]
 
 **Parser-opties**
 
@@ -263,7 +263,7 @@ Korting GFM ondersteunt verschillende configuratiemogelijkheden:
 - Toegankelijke tafelstructuren
 - Schone, geldige HTML uitvoer
 
-## Beste praktijken
+## Beste praktijken [best-practices]
 
 1. **Gebruik tabellen spaarzaam**: Tabellen zijn krachtig, maar kunnen complex zijn om te onderhouden
 2. **Maak gebruik van takenlijsten**: ideaal voor projectbeheer en documentatie
@@ -271,7 +271,7 @@ Korting GFM ondersteunt verschillende configuratiemogelijkheden:
 4. **Structuur met koppen**: gebruik de juiste kophiërarchie voor een betere inhoudsopgave
 5. **Test op GitHub**: Controleer de compatibiliteit met de weergave van GitHub
 
-## Migratie van standaard Markdown
+## Migratie van standaard Markdown [migration-from-standard-markdown]
 
 De meeste standaard Markdown werkt zonder wijzigingen met Discount GFM. Om te profiteren van de GFM-functies:
 
@@ -281,7 +281,7 @@ De meeste standaard Markdown werkt zonder wijzigingen met Discount GFM. Om te pr
 4. **Maak gebruik van automatische links**: verwijder handmatige linkmarkeringen voor eenvoudige URL's
 5. **Structuurkoppen**: Zorg voor de juiste kophiërarchie voor het genereren van inhoudsopgaven
 
-## Bronnen
+## Bronnen [resources]
 
 - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 - [Discount Library Documentation](https://www.pell.portland.or.us/~orc/Code/discount/)

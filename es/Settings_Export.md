@@ -10,7 +10,7 @@ Opciones en el {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Exportar perfil
+### Exportar perfil [export-profile]
 
 Perfil de exportación
 : seleccione un perfil guardado en el menú emergente. Los perfiles almacenan un conjunto completo de preferencias de exportación para cambiar rápidamente entre flujos de trabajo (por ejemplo, imprimir PDF frente a HTML web). Consulte [Exportar perfiles](Exporting.html#export-profiles).
@@ -21,7 +21,7 @@ Nuevo
 Administrar
 : abra el administrador de perfiles para cambiar el nombre, duplicar o eliminar perfiles.
 
-### Imprimir/PDF
+### Imprimir/PDF [printpdf]
 
 Deshabilite enlaces/resaltados al exportar PDF o imprimir
 : Elimina el formato (subrayado y color) de los enlaces al imprimir.
@@ -68,11 +68,11 @@ Salto de página después
 Marcadores de nivel de tabla de contenido
 : utilice los menús desplegables para configurar el marcador de elementos de la lista para cada nivel de sangría en una tabla de contenido.
 
-### Encabezados y pies de página
+### Encabezados y pies de página [headers-and-footers]
 
 Configure la fuente, el logotipo, los campos de encabezado/pie de página, los formatos de fecha y hora, la inclusión de la primera página, el desplazamiento de la numeración de páginas y los bordes. Los marcadores de posición de campo incluyen `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` y otros.
 
-Consulte [Encabezados y pies de página](Exporting.html#headersandfooters) en [Exportar](Exporting.html) para referencias de marcadores de posición y ejemplos. Consulte [Formatos de fecha y hora](Exporting.html#dateandtimeformats) para conocer los códigos de formato `%date` y `%time`.
+Consulte [Encabezados y pies de página](Exporting.html#headers-and-footers) en [Exportar](Exporting.html) para referencias de marcadores de posición y ejemplos. Consulte [Formatos de fecha y hora](Exporting.html#dateandtimeformats) para conocer los códigos de formato `%date` y `%time`.
 
 Incluir en la primera página
 : Si la opción para encabezado y/o pie de página no está marcada, la primera página no se imprimirá del tipo especificado.

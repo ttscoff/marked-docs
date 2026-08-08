@@ -2,7 +2,7 @@
 
 Lecture rapide est un mode de lecture de type RSVP qui affiche un mot à la fois dans une incrustation dédiée.
 
-## Fonctionnement de Lecture rapide
+## Fonctionnement de Lecture rapide [how-speed-read-works]
 
 Lecture rapide utilise une méthode appelée **présentation visuelle sérielle rapide** (RSVP, *Rapid Serial Visual Presentation*). Plutôt que de déplacer vos yeux le long des lignes de texte, les mots apparaissent à une position fixe. Cela réduit les mouvements oculaires, les changements de ligne et les retours en arrière qui se produisent normalement pendant la lecture, ce qui peut s'avérer utile pour survoler un texte, revoir un contenu déjà familier, ou parcourir rapidement un texte sans en perdre le fil.
 
@@ -10,7 +10,7 @@ Cette méthode n'a rien de magique et ne garantit pas une meilleure compréhensi
 
 La lettre rouge marque le point d'ancrage visuel du mot, parfois appelé le **point de reconnaissance optimal**. Pour de nombreux mots, les lecteurs identifient le mot le plus efficacement lorsque leur regard se pose légèrement à gauche du centre plutôt que sur la première lettre. En conservant ce point d'ancrage au même endroit et en le mettant en évidence, Lecture rapide offre à votre œil une cible constante. Il en résulte moins de changements de point focal entre les mots, et un rythme plus régulier à mesure que le texte avance.
 
-## Ouvrir Lecture rapide
+## Ouvrir Lecture rapide [opening-speed-read]
 
 Utilisez **Aperçu > Lecture rapide**, l'élément **Lecture rapide** du menu Action de la fenêtre d'aperçu, ou appuyez sur {% kbd ctrl opt S %}. Cet élément de menu est disponible lorsqu'une fenêtre d'aperçu Markdown est active (il est désactivé pour les aperçus HTML bruts et lorsqu'aucun document n'est ouvert).
 
@@ -23,7 +23,7 @@ Utilisez **Aperçu > Lecture rapide**, l'élément **Lecture rapide** du menu Ac
 </video>
 <p><em>Incrustation Lecture rapide montrant les contrôles de lecture, l'option de synchronisation et l'accès à l'aide.</em></p>
 
-## Contrôles de l'incrustation
+## Contrôles de l'incrustation [overlay-controls]
 
 Une fois l'incrustation affichée, les touches suivantes sont disponibles :
 
@@ -42,11 +42,11 @@ Les autres raccourcis de navigation habituels de l'aperçu fonctionnent toujours
 
 La table des matières peut également être utilisée pendant la Lecture rapide. Appuyez sur {% kbd cmd t %} pour l'ouvrir et naviguer, ou appuyez sur {% kbd f %} pour donner immédiatement le focus à la recherche rapide afin de naviguer entre les titres du document.
 
-## Démarrer à partir d'une sélection
+## Démarrer à partir d'une sélection [starting-from-a-selection]
 
 Si du texte est sélectionné dans l'aperçu au moment où vous démarrez Lecture rapide, la lecture utilise le texte sélectionné. En l'absence de sélection, Lecture rapide utilise l'intégralité du texte du document.
 
-## Synchronisation avec la position de défilement
+## Synchronisation avec la position de défilement [syncing-with-scroll-position]
 
 Activez **Synchroniser la lecture rapide avec la position de défilement** dans {% prefspane Preview %}, ou utilisez la case à cocher de l'incrustation Lecture rapide, pour garder l'aperçu et la position de Lecture rapide synchronisés.
 
@@ -54,6 +54,6 @@ Lorsque cette option est activée, Lecture rapide démarre au contenu actuelleme
 
 Si vous fermez Lecture rapide, faites défiler l'aperçu, puis rouvrez l'incrustation, la lecture démarre à partir de la nouvelle position visible. Si vous activez la case à cocher de l'incrustation alors que Lecture rapide est déjà ouvert, la lecture se réinitialise sur la position de défilement actuelle et se poursuit à partir de là.
 
-## Vitesse mémorisée
+## Vitesse mémorisée [remembered-speed]
 
 La valeur en mpm est enregistrée automatiquement lorsque vous la modifiez avec {% kbd ← %} et {% kbd → %}. La vitesse choisie est restaurée la prochaine fois que vous utilisez Lecture rapide.

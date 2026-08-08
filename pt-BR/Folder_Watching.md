@@ -6,7 +6,7 @@ Coloque uma **pasta** de notas de texto simples em Marcado. Marcado abre uma jan
 
 As atualizações são executadas sempre que qualquer arquivo monitorado é salvo: se o arquivo mais recente corresponder ao anterior, Marcado rola em direção à região de edição detectada; quando você alterna documentos, toda a visualização muda para o arquivo ativo.
 
-## Funciona bem com nvUltra, nvALT e ferramentas semelhantes
+## Funciona bem com nvUltra, nvALT e ferramentas semelhantes [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Aplicativos de notebook que deixam arquivos individuais no disco (bibliotecas clássicas **nvALT**, **nvUltra**, estilo **Notational Velocity**, pastas Git sincronizadas, pastas de rascunho do Dropbox etc.) combinam naturalmente com a observação de pastas: você escreve em uma janela e mantém Marcado fixado ao lado dela sem reabrir manualmente as visualizações.
 

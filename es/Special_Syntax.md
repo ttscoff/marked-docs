@@ -2,9 +2,9 @@
 
 # <%= @title %>
 
-## Llamadas
+## Llamadas [callouts]
 
-## Oso/Obsidiana ##
+## Oso/Obsidiana ## [bearobsidian]
 
 Marked admite llamadas con la sintaxis utilizada por Obsidian y Bear, que es una cita en bloque con formato especial:
 
@@ -35,7 +35,7 @@ Puede usar `+` o `-` para hacer que la leyenda sea plegable. Un signo más (`+`)
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Zona de juegos Xcode ###
+### Zona de juegos Xcode ### [xcode-playground]
 
 Al obtener una vista previa de los archivos de Xcode Playground, Marked admite la sintaxis de llamada nativa de Xcode Playground:
 
@@ -96,7 +96,7 @@ Estos rótulos se convierten automáticamente al formato de rótulo de Marked y 
 > Esta función solo funciona al obtener una vista previa de archivos de Xcode Playground (`.playground`). Los archivos de rebajas normales no procesarán esta sintaxis.
 
 
-## Tabla de contenidos
+## Tabla de contenidos [tableofcontents]
 
 Puede especificar en qué parte del documento debe aparecer la tabla de contenido usando `<!--TOC-->`. Si esto está configurado, anula la opción en Preferencias y siempre se mostrará en la ventana de vista previa, así como al guardar e imprimir. La tabla de contenido se mostrará solo una vez, incluso si hay varios especificadores `<!--TOC-->` en el contenido.
 
@@ -108,7 +108,7 @@ De forma predeterminada, la tabla de contenido se imprimirá en la primera pági
 
 I> Puede especificar el tipo de numeración o letras de cada nivel de una jerarquía de Tabla de contenido anidada en {% prefspane Export %}.
 
-## Saltos de página
+## Saltos de página [pagebreaks]
 
 Puede forzar un salto de página para la salida impresa/PDF utilizando la sintaxis:
 
@@ -120,7 +120,7 @@ Coloque el token en una línea por sí solo y generará un marcado que forzará 
 
 	{::salto de página /}
 
-## El desplazamiento automático se detiene [pausa]
+## El desplazamiento automático se detiene [pauses]
 
 Marked puede funcionar como un Teleprompter usando la función [Desplazamiento automático](Autoscroll.html) (debe agregar el [Estilo de Teleprompter](https://markedapp.com/styles/preview?style=teleprompter)). Al hacerlo, puede resultar útil incluir pausas en el documento. Haz esto usando:
 
@@ -130,7 +130,7 @@ Marked puede funcionar como un Teleprompter usando la función [Desplazamiento a
 
 Donde `X` es la cantidad de segundos durante los cuales Marked debe pausar. Entonces, insertar `<!--PAUSE:15-->` le daría una pausa de 15 segundos cuando ese punto del documento llegue a la mitad de la pantalla.
 
-## El archivo incluye
+## El archivo incluye [file-includes]
 
 El contenido de archivos adicionales se puede insertar utilizando la sintaxis:
 
@@ -146,7 +146,7 @@ Consulte ["Documentos de varios archivos"][ext] para obtener más información.
 
 [ext]: Multi-File_Documents.html
 
-## Incluyendo código
+## Incluyendo código [includingcode]
 
 Marked puede incluir archivos externos como código usando una sintaxis similar a la del archivo incluido arriba:
 
@@ -158,7 +158,7 @@ Tenga en cuenta el paréntesis en lugar de corchetes. Para compatibilidad con la
 
 El contenido del archivo especificado se insertará dentro de un bloque de pre>código en su documento y estará disponible para resaltado automático de sintaxis si está habilitado. Los bloques de código no se pueden anidar y no se procesarán con MultiMarkdown. Los procesadores personalizados seguirán ejecutándose sobre el bloque de código previo creado.
 
-## Incluyendo texto sin procesar o html
+## Incluyendo texto sin procesar o html [includingunprocessedtextorhtml]
 
 E> **Nota:** Esta función es para usuarios avanzados.
 

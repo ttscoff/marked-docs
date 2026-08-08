@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3593,6 +3593,15 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 "menu.validateAllLinks" = "すべてのリンクを検証";
 # EN: Validate All Links
 
+"menu.newViewIntoCurrentFile" = "現在のファイルへの新しいビュー";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "カスタムルールを有効にする";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "カスタムルールの上書き";
+# EN: Custom Rule Override
+
 
 === END PreviewContextMenu.strings ===
 
@@ -5644,5 +5653,18 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 "tooltip.topPrintMargin" = "印刷余白を指定します（ポイント単位）。";
 # EN: Define print margins (specified in points).
 
+
+=== END Settings.strings (gaps) ===
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 2
+# PRIORITY — Preview style menu (toolbar popup): None and Manage Styles…
+# Seeded from MainMenu / outline None translations (2026-07-10).
+
+"setting.previewStyle.none" = "なし";
+# EN: None
+
+"setting.manageStyles.menu" = "スタイルを管理…";
+# EN: Manage Styles…
 
 === END Settings.strings (gaps) ===

@@ -8,7 +8,7 @@ Opciones en el {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Ventana
+### Ventana [window]
 
 Mantenga nuevas ventanas en la parte superior
 : configura automáticamente nuevas ventanas para que "floten" sobre otras aplicaciones.
@@ -31,7 +31,7 @@ Traer el documento actualizado al frente
 Volver a centrarse en la aplicación anterior
 : Cuando está habilitado, si una acción de aumento/activación de actualización hace que Marcado tome el foco en primer plano, el foco del teclado vuelve a la aplicación que estaba en primer plano antes de la actualización (como su editor de texto). Cuando está deshabilitado, Marked nunca realiza esta transferencia de enfoque. Si Marcado no pasa a estar al frente, esta opción no tiene ningún efecto.
 
-### Barra de estado
+### Barra de estado [status-bar]
 
 Mostrar selector de estilo
 : muestra el selector de estilo en la barra inferior de la ventana de vista previa.
@@ -47,7 +47,7 @@ El recuento de palabras excluye
 - **Bloques de código con sangría** (los bloques de código delimitados siempre se excluyen)
 - **Subtítulos de imagen**
 
-### Atajos
+### Atajos [shortcuts]
 
 Haga clic en el campo de acceso directo para registrar una combinación de teclas de acceso rápido que desencadena un evento:
 

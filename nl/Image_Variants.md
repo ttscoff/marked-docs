@@ -4,13 +4,13 @@ Marked kan automatisch responsieve `<picture>` elementen bouwen voor lokale afbe
 
 Zie ook [DocC Support](DocC_Support.html) voor catalogusreferenties zonder uitbreidingen in `.docc` bundels.
 
-## Afbeeldingsvarianten inschakelen
+## Afbeeldingsvarianten inschakelen [enabling-image-variants]
 
 Schakel in {% prefspane Apps %} **Donkere en @2x afbeeldingsvarianten oplossen** in (standaard ingeschakeld) onder DocC-instellingen.
 
 Deze voorkeur staat los van **Resolve DocC-afbeeldingsreferenties**, die alleen van toepassing is binnen `.docc` catalogi. Afhankelijk van uw project kunt u één, beide of geen van beide gebruiken.
 
-## Naamgevingsconventie
+## Naamgevingsconventie [naming-convention]
 
 Plaats variantbestanden in **dezelfde map** als de primaire afbeelding. Marked zoekt naar vier combinaties op basis van de basisnaam:
 
@@ -25,7 +25,7 @@ De volgorde van de achtervoegsels is flexibel — `icon@2x~dark.png` en `icon~da
 
 Ondersteunde extensies: `png`, `jpg`, `jpeg`, `gif`, `svg`, `webp` en `pdf`.
 
-## Wat wordt herschreven
+## Wat wordt herschreven [what-gets-rewritten]
 
 Marked scant uw document **vóór** de definitieve voorbeeldweergave:
 
@@ -46,7 +46,7 @@ Voorbeelduitvoer wanneer lichte, donkere en @2x-bestanden aanwezig zijn:
 
 Het voorbeeld (en de HTML-export) volgt vervolgens het systeemuiterlijk van de gebruiker voor donkere varianten en de pixeldichtheid van het apparaat voor @2x assets.
 
-## Wat wordt overgeslagen
+## Wat wordt overgeslagen [what-is-skipped]
 
 Marked herschrijft **niet**:
 
@@ -55,17 +55,17 @@ Marked herschrijft **niet**:
 - `<img>` tags die al in een bestaand `<picture>` element zitten
 - Extensieloze namen zoals `![Diagram](diagram)` — gebruik [DocC Support](DocC_Support.html) voor verwijzingen in catalogusstijl
 
-## Live preview en bekijken van bestanden
+## Live preview en bekijken van bestanden [live-preview-and-file-watching]
 
 Wanneer varianten worden gedetecteerd, voegt Marked **elk bestaand variantbestand** toe aan de controlelijst naast het hoofddocument. Het opslaan van `icon~dark.png` in een externe editor activeert hetzelfde herladen van livebeelden als het bewerken van `icon.png`.
 
-## Tips
+## Tips [tips]
 
 - Verwijs indien mogelijk naar de **light 1x**-afbeelding in uw bron (`icon.png`, niet `icon~dark.png`). Marked ontdekt broers en zussen van dat pad.
 - Als u alleen `@2x` items heeft, neem dan ten minste één andere variant op (meestal `~dark`), anders laat Marked de referentie ongewijzigd.
 - Variantresolutie gebruikt paden **ten opzichte van het document** (of de map van het opgenomen bestand voor geneste include's), dezelfde basispadregels als [Multi-file Documents](Multi-File_Documents.html).
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen [related-topics]
 
 - [DocC Support](DocC_Support.html) — extensieloze afbeeldingsnamen in `.docc` catalogi
 - [Settings: Apps](Settings_Apps.html) — voorkeur schakelt tussen DocC en afbeeldingsvarianten

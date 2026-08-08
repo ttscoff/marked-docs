@@ -2,7 +2,7 @@
 
 [Drafts][drafts] auf dem Mac kann den aktiven Entwurf mithilfe der **Marked-Streaming-Vorschau** in Marked spiegeln – über denselben Zwischenablage-basierten Kanal, der unter [Streaming-Vorschau](Streaming_Preview.html) beschrieben wird. Sie können den aktuellen Entwurf auch einmalig mit einer Community-**Aktion** senden (ohne Live-Updates, bis Sie die Aktion erneut ausführen).
 
-## Streaming-Vorschau (Drafts für Mac)
+## Streaming-Vorschau (Drafts für Mac) [streaming-preview-drafts-for-mac]
 
 1. Wählen Sie in Marked {% appmenu Ablage, Neu, Streaming-Vorschau %} aus, damit ein Streaming-Vorschaufenster bereit ist.
 2. Öffnen Sie in **Drafts für Mac** die **Einstellungen** und aktivieren Sie **Enable Marked App Streaming Preview support**.
@@ -12,11 +12,11 @@
 
 Wenn diese Option aktiviert ist, sendet Drafts Markdown über die Integration, die Marked für Streaming-Vorschauen bereitstellt, an Marked (anstatt sich auf die Anzeige einer Datei auf der Festplatte zu verlassen).
 
-### Marked beziehen
+### Marked beziehen [get-marked]
 
 Wenn **Get Marked App** im Einstellungsblatt von Drafts angezeigt wird, verwenden Sie es, wenn Marked noch nicht installiert ist.
 
-## Vorschau in Aktion Marked (manuelle Aktualisierung)
+## Vorschau in Aktion Marked (manuelle Aktualisierung) [preview-in-marked-action-manual-refresh]
 
 Installieren Sie die Community-Aktion [**Preview in Marked**](https://actions.getdrafts.com/a/11f) aus dem Drafts-Verzeichnis. Sie sendet den **aktuellen Entwurfstext** über eine `x-marked://preview?text=…`-URL an Marked (Drafts ersetzt dabei Ihren Entwurfsinhalt). **Inhalte werden nicht live aktualisiert**: Führen Sie die Aktion immer dann erneut aus, wenn Marked den aktuellen Stand des Entwurfs anzeigen soll.
 

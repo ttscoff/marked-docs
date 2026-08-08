@@ -6,7 +6,7 @@ Marked puede abrir documentos en formato de texto enriquecido (`.rtf`) y RTFD (`
 
 Esto funciona bien con documentos de **Pages**, **TextEdit**, **Word** y otras aplicaciones que guardan RTF o RTFD. Marked sigue siendo una herramienta de **vista previa**: se edita en la aplicación original y Marked se actualiza cuando se guarda.
 
-## Cómo funciona la conversión
+## Cómo funciona la conversión [how-conversion-works]
 
 Marked convierte RTF a HTML utilizando el motor de texto del sistema y luego a Markdown. El convertidor:
 
@@ -17,11 +17,11 @@ Marked convierte RTF a HTML utilizando el motor de texto del sistema y luego a M
 
 Se utiliza el mismo proceso de conversión para la compilación Scrivener RTF y para los archivos RTF incluidos en otros documentos.
 
-## Vista previa en vivo
+## Vista previa en vivo [live-preview]
 
 Cuando guarda el archivo RTF o RTFD en otra aplicación, Marked detecta el cambio y actualiza la vista previa automáticamente.
 
-## Imágenes
+## Imágenes [images]
 
 RTF no define un campo de "título" separado de la forma en que Cocoa exporta a HTML. Lo que parece un título en su diseño suele ser **texto normal** en el siguiente párrafo, y Marked lo mantiene como texto del cuerpo.
 
@@ -29,11 +29,11 @@ Las imágenes incrustadas y las imágenes dentro de paquetes RTFD (por ejemplo, 
 
 Marked **no** usa el nombre del archivo de la imagen como texto alternativo o título de figura de MultiMarkdown. No deberías ver `pastedGraphic.png` debajo de la imagen a menos que hayas escrito ese texto en el documento.
 
-## Exportación y otras funciones
+## Exportación y otras funciones [export-and-other-features]
 
-Después de la conversión, Marked trata el documento como otras fuentes compiladas (similar a [Scrivener](Scrivener_Support.html) y [DOCX](Working_with_DOCX.html)): exportación, estadísticas y la mayoría de las funciones de vista previa se ejecutan contra el Markdown generado almacenado en la caché de Watchers.
+Después de la conversión, Marked trata el documento como otras fuentes compiladas (similar a [Scrivener](Scrivener_Support.html) y [DOCX](Working_With_DOCX.html)): exportación, estadísticas y la mayoría de las funciones de vista previa se ejecutan contra el Markdown generado almacenado en la caché de Watchers.
 
-## Limitaciones
+## Limitaciones [limitations]
 
 La calidad de la conversión depende de la aplicación de origen. En general:
 
@@ -44,9 +44,9 @@ La calidad de la conversión depende de la aplicación de origen. En general:
 
 Para pegar una sola vez sin guardar un archivo, utilice [Vista previa del portapapeles](Opening_Files.html#from-the-clipboard) en su lugar.
 
-## Temas relacionados
+## Temas relacionados [related-topics]
 
 - [Soporte PDF](PDF_Support.html): abre documentos PDF como fuentes de Markdown
-- [Trabajar con DOCX](Working_with_DOCX.html) -- Documentos de Word con seguimiento de cambios y comentarios
+- [Trabajar con DOCX](Working_With_DOCX.html) -- Documentos de Word con seguimiento de cambios y comentarios
 - [Abrir archivos](Opening_Files.html): arrastrar y soltar, Abrir recientes, portapapeles
 - [Exportar](Exporting.html) -- Copiar texto enriquecido y guardar RTFD (exportar), distinto de abrir RTF como archivo fuente

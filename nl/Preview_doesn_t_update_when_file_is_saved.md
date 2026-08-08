@@ -2,7 +2,7 @@
 
 Previews worden niet bijgewerkt zoals verwacht?
 
-## Tijdmachine
+## Tijdmachine [time-machine]
 
 Er zijn enkele problemen gemeld met betrekking tot trage (of niet-bestaande) updates tijdens een Time Machine-run. De updatemogelijkheden van Marked kunnen verminderd zijn als Time Machine het gedeelte van de schijf gebruikt waarop het bestand zich op dat moment bevindt. Dit herstelt zich meestal vanzelf wanneer Time Machine klaar is met werken.
 

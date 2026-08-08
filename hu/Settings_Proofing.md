@@ -26,7 +26,7 @@ Helyezzen el lábjegyzeteket a megjegyzés oldalsávon
 Olvasási sebesség (wpm)
 : Ez a szám (szavak percenként) a szövegstatisztikai kijelzők olvasási idejének kiszámítására szolgál. A felnőttek átlagos olvasási sebessége 200-300 szó percenként.
 
-### Kulcsszavak
+### Kulcsszavak [keywords]
 
 [A kiemelendő kulcsszavak listájának meghatározása](Keyword_Highlighting.html). Az egyes listák szerkesztéséhez használja a lapokat:
 

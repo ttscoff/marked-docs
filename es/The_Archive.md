@@ -4,7 +4,7 @@
 
 [El Archivo][archivo] mantiene sus notas como archivos en el disco y puede reflejar la nota que está editando directamente en el canal **vista previa de transmisión** de Marked.
 
-## Vista previa de transmisión a marcado
+## Vista previa de transmisión a marcado [stream-preview-to-marked]
 
 1. En Marcado, abra {% appmenu File, New, Streaming Preview %} (o reutilice una ventana de vista previa de transmisión existente).
 2. Cambie a The Archive y elija **Nota → Transmitir vista previa a Marked** para que The Archive active Marked y comience a enviar el texto de la nota más importante.

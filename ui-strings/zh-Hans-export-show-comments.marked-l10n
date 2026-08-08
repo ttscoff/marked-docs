@@ -1,0 +1,62 @@
+# Marked Localization Update
+# Locale: zh-Hans (Simplified Chinese)
+# Feature: exportShowComments (Show comments in Print/PDF)
+# Generated: 2026-08-03
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# Scrivener, Fountain) unless your locale normally localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   Preferences.xib.strings: 2
+#   Settings.strings: 2
+#   MarkdownDocument.strings: 2
+#   PDFExportWindow.xib: English-only (no locale .strings table)
+
+=== BEGIN Preferences.xib.strings ===
+# Strings in this section: 2
+
+"Xrg-8N-tlp.title" = "在 Print/PDF 中显示评论";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中显示评论
+
+"Xrf-8N-cst.ibShadowedToolTip" = "打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。
+=== END Preferences.xib.strings ===
+
+=== BEGIN Settings.strings ===
+# Strings in this section: 2
+
+"setting.exportShowComments" = "在 Print/PDF 中显示评论";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中显示评论
+
+"tooltip.exportShowComments" = "打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。
+=== END Settings.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+# Strings in this section: 2
+# Continuous PDF save accessory checkbox
+
+"ESc-1a-Cel.title" = "在 Print/PDF 中显示评论";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中显示评论
+
+"ESc-1a-Cmt.ibShadowedToolTip" = "打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 打印或导出 PDF 时，将 CriticMarkup、Scrivener、Word 和 Fountain 注释包含为突出显示的内嵌文本。脚注不变。
+=== END MarkdownDocument.strings ===
+
+=== BEGIN PDFExportWindow.xib ===
+# No locale .strings table for PDFExportWindow.xib yet.
+# English title/tooltip are embedded in the XIB; L10n wiring is out of scope for this handoff.
+=== END PDFExportWindow.xib ===

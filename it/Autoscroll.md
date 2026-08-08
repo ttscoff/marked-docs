@@ -4,7 +4,7 @@
 
 Lo scorrimento automatico sposta lentamente l'anteprima per la lettura o la correzione di bozze a mani libere. È separato dal [Sommario](Document_Navigation.html) e dalla [Mini mappa](Document_Navigation.html#minimap); scorre automaticamente la vista corrente.
 
-## Avvio e arresto
+## Avvio e arresto [starting-and-stopping]
 
 Attiva lo scorrimento automatico premendo {% kbd s %}. L'anteprima scorre in avanti alla velocità corrente.
 

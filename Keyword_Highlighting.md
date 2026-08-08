@@ -2,13 +2,13 @@
 
 Catching troublesome verbiage and spotlighting important phrases.
 
-## Highlighting Keywords
+## Highlighting Keywords [highlighting-keywords]
 
 Keyword highlighting in Marked allows you to catch common phrases that you might want to avoid, find alternate terms for or just highlight for general purposes. The list of keywords used to match each category can be edited in the {% prefspane Proofing %}.
 
 Enable highlighting with {% kbd shift cmd H %}, from the gear menu ({% appmenu {{gear}}, Highlight Keywords %}), or open the keyword drawer using the highlighter icon in the lower left (near the gear menu). The drawer can be opened with the keyboard shortcut {% kbd shift cmd K %} as well. Highlighting is automatically enabled when the drawer is opened, and can be toggled on and off with the switch on the left side of the drawer.
 
-## The Keyword Drawer
+## The Keyword Drawer [the-keyword-drawer]
 
 ![Keyword Drawer][kwd]
 
@@ -22,7 +22,7 @@ You can navigate quickly through the highlights using the keyboard. Typing `[` a
 
 If a highlighted word or phrase is clicked, that type will become the target for navigation and using `[` or `]` will navigate from that point in the document.
 
-## Editing Keywords
+## Editing Keywords [editing-keywords]
 
 ![Proofreading Settings][proofprefs]
 
@@ -36,7 +36,7 @@ Regular expressions can be used by surrounding the expression with forward slash
 
 The above will match any words ending in "ly" for highlighting. The syntax for regular expressions in Marked's keyword highlighting is the [same as JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Temporary Keywords
+## Temporary Keywords [temporary-keywords]
 
 You can also add temporary keywords in the Keyword Drawer by editing the notepad. Just like in the {% prefspane Proofing %} fields, you add one keyword or phrase per line, regular expressions allowed (surrounded by forward slashes). After editing temporary keywords, be sure to click the "Update" button (or press {% kbd cmd return  %}) to save the changes and see them highlighted in your document.
 
@@ -48,7 +48,7 @@ Also see the ["Visualize Word Repetition"][wordrep] command to find overused wor
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Passive Voice
+## Passive Voice [passive-voice]
 
 Marked will point out usage of "passive voice" in English text. As [defined by Wikipedia][passive]:
 
@@ -59,6 +59,6 @@ Passive voice isn't evil, as you can read about [in posts by linguist Geoffrey K
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Doubled Words
+## Doubled Words [doubled-words]
 
 Double words (e.g. "the the") are automatically highlighted in orange when Keyword Highlighting is enabled. This is currently not configurable, but should prove handy for proofreading.

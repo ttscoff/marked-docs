@@ -8,91 +8,91 @@ Esta página resume como os quatro processadores principais diferem. Para obter 
 
 ---
 
-## MultiMarkdown (v5)
+## MultiMarkdown (v5) [multimarkdown-v5]
 
 **Melhor para:** prosa longa, redação acadêmica ou técnica e qualquer coisa que dependa de **metadados**, **citações** e recursos **específicos do MultiMarkdown**.
 
 Marked vem com **MultiMarkdown 5** (consulte o [Guia do usuário do MultiMarkdown](https://fletcher.github.io/MultiMarkdown-5/) para obter a documentação original).
 
-### Pontos fortes
+### Pontos fortes [strengths]
 
 - **Documentos narrativos e com muitas referências:** Notas de rodapé, bibliografia/citações e tabelas são de primeira classe.
 - **Metadados:** Blocos de metadados MultiMarkdown padrão (`Key: Value` cabeçalhos) mais **transclusão** e outras conveniências MMD descritas no guia v5.
 - **Substituição de metadados:** Chaves de metadados podem ser inseridas no corpo com substituição no estilo `[%key]` para que títulos, strings de autor e valores semelhantes permaneçam sincronizados com o cabeçalho.
 - **Tabelas, imagens e referências cruzadas:** Alinhados com os recursos documentados para MultiMarkdown 5.
 
-### IDs e cabeçalhos manuais
+### IDs e cabeçalhos manuais [ids-and-manual-headings]
 
 - Os IDs de cabeçalho são **normalizados** de uma forma que tende a produzir slugs **minúsculas e concatenadas** (sem espaços — as palavras ficam juntas).
 - Para **IDs de cabeçalho manuais**, MultiMarkdown usa o formato: `## Headline Text [my-id]` (o identificador entre colchetes após o texto do título).
 
-### Quando escolher outra coisa
+### Quando escolher outra coisa [when-to-pick-something-else]
 
 Se você precisar de listas de tarefas **com sabor do GitHub** e do comportamento exato do analisador atual do GitHub, prefira **CommonMark (GFM)**. Se você precisar de **classes/IDs HTML refinados** em elementos arbitrários, considere **Kramdown**.
 
 ---
 
-## Kramdown
+## Kramdown [kramdown]
 
 **Ideal para:** Documentos onde você deseja **controle preciso sobre a saída HTML** — **classes**, **IDs** e atributos personalizados, para que seu CSS possa direcionar blocos e extensões específicos.
 
 A [referência de sintaxe do kramdown](https://kramdown.gettalong.org/syntax.html) é o guia oficial.
 
-### Pontos fortes
+### Pontos fortes [strengths-2]
 
 - **Principalmente compatível** com hábitos no estilo MultiMarkdown para Markdown diário, ao mesmo tempo que adiciona suas próprias extensões.
 - **Listas de atributos de bloco e inline (IALs):** Anexe `{: #id .class key="value"}` a parágrafos, cabeçalhos, blocos de código, links, imagens e muito mais --- ideal para sites no estilo Jekyll e folhas de estilo personalizadas.
 - **IDs de cabeçalho:** kramdown normaliza IDs de cabeçalho gerados automaticamente para palavras **em minúsculas e separadas por hífen** (por exemplo, `my-section-title`). Para **IDs manuais**, use o formato `{#id}` após o texto do título — por exemplo, Setext: `My Section {#my-section}` depois o sublinhado, ou ATX: `# My Section {#my-section}` (veja os [cabeçalhos](https://kramdown.gettalong.org/syntax.html#headers) do kramdown para posicionamento exato e regras IAL).
 - **Listas de definições, notas de rodapé, tipografia inteligente, blocos matemáticos:** Conjunto rico de recursos para pipelines de publicação que precisam de mais do que Markdown "simples".
 
-### Quando escolher outra coisa
+### Quando escolher outra coisa [when-to-pick-something-else-2]
 
 Se você depende de substituição de metadados **somente MultiMarkdown** (`[%key]`) ou fluxos de trabalho de citação específicos de MMD, **MultiMarkdown** pode ser uma opção melhor. Para **README e documentos de repositório** que devem corresponder ao GitHub online, **CommonMark (GFM)** geralmente é mais próximo.
 
 ---
 
-## CommonMark (Markdown com sabor do GitHub / cmark-gfm)
+## CommonMark (Markdown com sabor do GitHub / cmark-gfm) [commonmark-github-flavored-markdown-cmark-gfm]
 
 **Melhor para:** **arquivos README**, **descrições de problemas/PR** e **documentação do projeto** que devem corresponder ao **comportamento atual do Markdown do GitHub** o mais próximo possível.
 
 Marked usa um mecanismo orientado a **GFM** (cmark-gfm). A especificação formal é [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), construída em [CommonMark](https://commonmark.org/).
 
-### Pontos fortes
+### Pontos fortes [strengths-3]
 
 - **Correspondência mais próxima do GitHub:** tabelas, tachados, itens da lista de tarefas, blocos de código protegidos com tags de idioma e links automáticos se comportam como a renderização moderna do GitHub.
 - **Análise inequívoca:** CommonMark define precedência de bloco/inline e regras de lista com precisão - mais rigoroso em alguns casos extremos do que o comportamento "clássico" do Markdown.pl, mas **mais previsível** depois que você aprende as regras.
 - **Prático para texto encapsulado:** As regras de parágrafo e lista são projetadas para se comportarem bem com prosa compactada (veja as seções das especificações sobre continuações lentas e listas).
 
-### IDs de cabeçalho
+### IDs de cabeçalho [header-ids]
 
 As âncoras de título geradas automaticamente são normalmente **minúsculas e separadas por hífen**, consistente com o slugging comum no estilo GitHub.
 
-### Quando escolher outra coisa
+### Quando escolher outra coisa [when-to-pick-something-else-3]
 
 O GFM não replica fluxos de trabalho de **metadados MultiMarkdown**, **IALs kramdown** ou **citação MMD**. Para livros, teses ou metadados pesados, use **MultiMarkdown** ou **Kramdown** conforme apropriado.
 
 ---
 
-## Desconto
+## Desconto [discount]
 
 **Ideal para:** Um processador **rápido baseado em C** que rastreia o **Markdown clássico** e um conjunto de recursos **antigo com sabor do GitHub** — útil quando você deseja um comportamento mais próximo do **Markdown original** além de tabelas, notas de rodapé e extensões relacionadas sem o livro de regras completo do CommonMark.
 
 Casa do projeto: [Desconto](https://www.pell.portland.or.us/~orc/Code/discount/).
 
-### Pontos fortes
+### Pontos fortes [strengths-4]
 
 - **Tabelas de estilo PHP Markdown Extra** e muitas extensões (notas de rodapé, código protegido quando ativado, etc. --- consulte [Especificação GFM de desconto](Discount_GFM_Spec.html) do Marked para saber o que o Marked permite).
 - **Extras opcionais do "GitHub"** no desconto upstream (por exemplo, listas de caixas de seleção quando construídas com os sinalizadores corretos); Marcado documenta a combinação enviada na página de especificações de desconto.
 - **Tipografia estilo SmartyPants** e outras conveniências descritas no site de descontos (embora todos os processadores incluídos forneçam recursos de tipografia).
 - Filosoficamente próximo do **Markdown de John Gruber** mais extensões práticas, em vez do conjunto de testes CommonMark completo.
 
-### Quando escolher outra coisa
+### Quando escolher outra coisa [when-to-pick-something-else-4]
 
 Para **paridade perfeita de pixels com o github.com atual**, prefira **CommonMark (GFM)**. Para **metadados e citações do MultiMarkdown**, use **MultiMarkdown**.
 
 ---
 
-## Comparação rápida
+## Comparação rápida [quick-comparison]
 
 | Preocupação | MultiMarkdown | Kramdown | Marca Comum (GFM) | Desconto |
 |--------|---------------|--------|-------|----------|
@@ -104,7 +104,7 @@ Para **paridade perfeita de pixels com o github.com atual**, prefira **CommonMar
 
 ---
 
-## Veja também
+## Veja também [see-also]
 
 - [Configurações: Processador](Settings_Processor.html) — processador padrão e opções relacionadas
 - [Markdown Dingus](Markdown_Dingus.html) — experimente processadores lado a lado em Marked

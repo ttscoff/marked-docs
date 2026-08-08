@@ -4,7 +4,7 @@
 
 Marked funciona com muitos editores e aplicativos de escrita. Esta página aborda **configurações** compartilhadas, **visualização da área de transferência**, ponteiros para **visualização de streaming** e recursos de script. Guias detalhados para aplicativos populares estão em seus próprios tópicos de ajuda (consulte a seção **Aplicativos compatíveis** na barra lateral).
 
-## Guias por aplicativo
+## Guias por aplicativo [per-app-guides]
 
 Comece com [Live Markdown Preview no Mac](Live_Markdown_Preview_on_Mac.html) para o fluxo de trabalho geral. Se você usa Obsidian, consulte [Visualização de Marcado vs Obsidian](Marked_vs_Obsidian_Preview.html) para decidir quando Marcado agrega valor junto com a visualização integrada do Obsidian.
 
@@ -35,7 +35,7 @@ Comece com [Live Markdown Preview no Mac](Live_Markdown_Preview_on_Mac.html) par
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Parques Xcode** | [Parques Xcode](Xcode_Playgrounds.html) |
 
-## Configurações do aplicativo
+## Configurações do aplicativo [application-settings]
 
 I> Várias integrações expõem alternâncias dentro de {% prefspane Apps %} e {% prefspane Preview %}.
 
@@ -43,17 +43,17 @@ I> Várias integrações expõem alternâncias dentro de {% prefspane Apps %} e 
 
 Use esses painéis para padrões de link wiki, transferência do Scrivener, configurações de área de transferência transmitida, opções de incorporação de mapa mental para OPML/OmniOutliner, integrações Obsidian ou outros processadores que dependem de editores cooperativos.
 
-## Visualização da área de transferência
+## Visualização da área de transferência [clipboard-preview]
 
 ![][Menu de visualização da área de transferência]
 
 Markdown (ou texto simples compatível) na área de transferência abre com {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Se a área de transferência contiver **HTML ou RTF**, o Marked o converterá em uma fonte semelhante ao Markdown antes da visualização, incluindo detecção aproximada de cabeçalho quando parágrafos RTF usam tamanhos de fonte de folha de estilo grandes.
 
-## Visualização de streaming
+## Visualização de streaming [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra e vários outros editores podem enviar Markdown para Marked enquanto você digita via **Streaming Preview**. Consulte [Visualização de streaming](Streaming_Preview.html) para configuração e solução de problemas.
 
-## Scripts e pacote de bônus
+## Scripts e pacote de bônus [scripts-and-bonus-pack]
 
 Automações para BBEdit, TextMate, DEVONthink, Emacs, Vim e muito mais são fornecidas com o [Marked Bonus Pack][bonus]. Instale ou adapte esses scripts quando desejar macros da barra de menu ou do editor além das integrações listadas acima.
 

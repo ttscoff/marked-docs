@@ -4,13 +4,13 @@ Marked inclut un dictionnaire AppleScript pour automatiser l'aperçu, l'export e
 
 Pour l'automatisation basée sur les URL (scripts shell, commandes `open` et callbacks), consultez le [gestionnaire d'URL](URL_Handler.html). AppleScript et le gestionnaire d'URL se complètent : utilisez AppleScript lorsque vous devez cibler un document ou une fenêtre spécifique, et les URL lorsqu'un simple appel `open 'x-marked://...'` suffit.
 
-## Consulter le dictionnaire
+## Consulter le dictionnaire [viewing-the-dictionary]
 
 Dans **Éditeur de script**, choisissez **Fichier → Ouvrir le dictionnaire…** puis sélectionnez Marked. Le dictionnaire répertorie les commandes sur les objets **application**, **document** et **window**, ainsi que les commandes d'exportation dans la suite Marked.
 
 Sur macOS, vous pouvez parcourir les définitions de script avec **Éditeur de script**.
 
-## Cibler Marked
+## Cibler Marked [targeting-marked]
 
 Pour l'installation standard :
 
@@ -20,7 +20,7 @@ tell application "Marked"
 end tell
 ```
 
-## Documents et fenêtres
+## Documents et fenêtres [documents-and-windows]
 
 **Application**
 
@@ -49,7 +49,7 @@ end tell
 
 Préférez `tell document 1` ou `tell window 1's document` lorsque vous exportez un aperçu spécifique. Les commandes d'exportation sur l'application utilisent la fenêtre principale ou le document actuel lorsqu'aucun destinataire n'est spécifié.
 
-### Exemple : ouvrir et lire le chemin
+### Exemple : ouvrir et lire le chemin [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -58,7 +58,7 @@ tell application "Marked"
 end tell
 ```
 
-### Exemple : modifier le style d'aperçu
+### Exemple : modifier le style d'aperçu [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -72,7 +72,7 @@ Les noms de style correspondent au menu des styles d'aperçu (nom affiché, nom 
 
 Utilisez **`get preview style names`** sur l'objet application pour lister les noms affichés des styles activés.
 
-### Exemple : processeur et texte source
+### Exemple : processeur et texte source [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -84,7 +84,7 @@ tell application "Marked"
 end tell
 ```
 
-## Commandes de l'application
+## Commandes de l'application [application-commands]
 
 Ces commandes s'appliquent à l'objet **application** (pas à un document spécifique).
 
@@ -107,7 +107,7 @@ tell application "Marked"
 end tell
 ```
 
-## Contrôle de l'aperçu
+## Contrôle de l'aperçu [preview-control]
 
 Disponibles sur **document** et **window**. La plupart nécessitent une WebView d'aperçu chargée.
 
@@ -134,7 +134,7 @@ tell application "Marked"
 end tell
 ```
 
-## Défilement automatique et lecture rapide
+## Défilement automatique et lecture rapide [autoscroll-and-speed-read]
 
 | Command | Description |
 | --- | --- |
@@ -156,7 +156,7 @@ tell application "Marked"
 end tell
 ```
 
-## Statistiques
+## Statistiques [statistics]
 
 **`get statistics`** renvoie un `statistics_record` contenant des valeurs numériques calculées à partir de la source Markdown actuelle (pas les chaînes formatées affichées dans le tiroir de statistiques).
 
@@ -184,7 +184,7 @@ tell application "Marked"
 end tell
 ```
 
-## Table des matières (en cours de développement)
+## Table des matières (en cours de développement) [table-of-contents-work-in-progress]
 
 {% note %}
 **En cours de développement, pas encore fiable.** Le dictionnaire inclut une propriété **`headings`** et une commande **`headings`** pour lire les titres imbriqués de l'aperçu (enregistrements `heading_item`). Cette automatisation ne fonctionne **pas correctement** dans les versions actuelles (résultats vides, erreurs de coercition ou « aucun résultat n'a été renvoyé »). Il sera corrigé dans une version ultérieure. Préférez **`scroll to heading`** avec un titre ou un identifiant connu d'ici là.
@@ -211,7 +211,7 @@ end tell
 
 Utilisez les valeurs `id` avec **`scroll to heading id "..."`** une fois que l'automatisation des titres est stable.
 
-## Imprimer avec un profil
+## Imprimer avec un profil [print-with-profile]
 
 **`print with profile`** applique temporairement les paramètres d'impression d'un profil d'exportation, puis imprime le document (même ensemble de préférences que les profils d'exportation dans {% prefspane Export %}).
 
@@ -225,7 +225,7 @@ end tell
 
 Les noms de profil sont sensibles à la casse. Après l'impression, Marked restaure le profil d'exportation précédemment actif.
 
-## Profils d'exportation
+## Profils d'exportation [export-profiles]
 
 Les profils d'exportation stockent des ensembles de préférences d'export/impression (marges, en-têtes, options de table des matières et autres réglages similaires depuis {% prefspane Export %}).
 
@@ -250,7 +250,7 @@ end tell
 
 Les noms de profil sont sensibles à la casse et doivent correspondre exactement à un profil enregistré.
 
-## Commandes d'exportation
+## Commandes d'exportation [export-commands]
 
 Les commandes d'exportation sont disponibles sur les objets **application**, **document** et **window**. Chaque commande nécessite un paramètre **`to`** avec le chemin de sortie (chaîne de chemin POSIX ou objet `file`).
 
@@ -273,7 +273,7 @@ Les commandes d'exportation sont disponibles sur les objets **application**, **d
 - L'export HTML utilise l'**aperçu rendu** (ce que vous voyez dans la WebView), pas le fichier source Markdown brut.
 - Le PDF continu capture la mise en page actuelle de la WebView d'aperçu.
 
-### Exportation de base
+### Exportation de base [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -283,13 +283,13 @@ tell application "Marked"
 end tell
 ```
 
-### Chemins d'exportation et bac à sable
+### Chemins d'exportation et bac à sable [export-paths-and-sandboxing]
 
 - Utilisez un chemin POSIX complet pour le fichier de destination.
 - Marked peut créer des dossiers intermédiaires lorsque le chemin d'exportation se trouve **à l'intérieur du dossier du document ouvert** (par exemple en exportant vers `.../MyProject/build/output.pdf` tout en prévisualisant `.../MyProject/chapter.md`).
 - Les exports en dehors du dossier du document nécessitent un chemin accessible en écriture par Marked (emplacement du document enregistré, security-scoped bookmarks, ou dossiers autorisés via des boîtes de dialogue d'ouverture). Si le chemin n'est pas accessible en écriture, la commande renvoie une erreur avant le début de l'export.
 
-## Options `with` (enregistrement de propriétés)
+## Options `with` (enregistrement de propriétés) [with-options-properties-record]
 
 Au lieu de `with profile`, vous pouvez transmettre un enregistrement d'options avec **`with`** ou **`with properties`** :
 
@@ -314,7 +314,7 @@ Les autres clés de l'enregistrement peuvent correspondre à des noms de **préf
 
 Vous ne pouvez pas combiner des sources contradictoires sans précaution : si vous utilisez `with profile`, chargez d'abord ce profil ; si vous utilisez un enregistrement `with`, les clés de profil de cet enregistrement remplacent les réglages actuels pour cet export.
 
-### Raccourci de marges
+### Raccourci de marges [margin-shorthand]
 
 La valeur `margins` est une chaîne contenant une à quatre mesures. Unités : `in`, `cm`, `mm`, `pt`, ou `"` pour les pouces. Un nombre sans unité est traité comme des points.
 
@@ -330,7 +330,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Exemple combiné
+### Exemple combiné [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -340,7 +340,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
+## `convert_to` [convert_to]
 
 L'objet application expose également les commandes de script héritées :
 
@@ -350,7 +350,7 @@ L'objet application expose également les commandes de script héritées :
 
 `convert_to` reste disponible pour les anciens flux de travail et l'automatisation AppleScript uniquement.
 
-## Débogage
+## Débogage [debugging]
 
 Activez le **mode débogage** dans {% prefspane Advanced %} (ou la préférence de débogage dans les Paramètres). Marked enregistre alors les étapes d'export AppleScript au niveau Info avec le préfixe `[AppleScript]` dans Console.app et dans le visualiseur de journaux de Marked.
 
@@ -363,7 +363,7 @@ Lignes de journal utiles lors du traçage d'une exportation PDF paginée :
 
 Les exports longs (en particulier le PDF paginé) suspendent l'événement AppleScript jusqu'à la fin, afin que les clients ne dépassent pas le délai en plein export.
 
-## Erreurs
+## Erreurs [errors]
 
 Les exports échoués définissent une chaîne d'erreur de script sur la commande (visible dans Éditeur de script et les gestionnaires `on error`). Messages courants :
 
@@ -374,6 +374,6 @@ Les exports échoués définissent une chaîne d'erreur de script sur la command
 - Délai d'attente pour le rechargement de l'aperçu après le changement de style.
 - L'export PDF paginé a expiré ou a échoué pendant la génération des pages.
 
-## Intégration avec d'autres outils
+## Intégration avec d'autres outils [integration-with-other-tools]
 
-Les applications peuvent utiliser la surface AppleScript de Marked pour lire les métadonnées de document. Pour l'app Raccourcis, consultez [Intégration avec Raccourcis](Shortcuts_Integration.html). Pour les flux de travail basés sur des scripts shell, la surveillance de dossiers, et les callbacks d'éditeur, le [gestionnaire d'URL](URL_Handler.html) est souvent plus simple. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.
+Les applications peuvent utiliser la surface AppleScript de Marked pour lire les métadonnées de document. Pour les flux de travail basés sur des scripts shell, la surveillance de dossiers, et les callbacks d'éditeur, le [gestionnaire d'URL](URL_Handler.html) est souvent plus simple. Le [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) comprend des scripts et des services supplémentaires.

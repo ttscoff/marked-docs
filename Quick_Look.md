@@ -2,11 +2,11 @@
 
 **Marked Quick Look** is a separate Mac App Store app that adds a Quick Look preview extension for Markdown and plain-text files. Press Spacebar in Finder (or use Quick Look anywhere macOS supports it) to see a styled HTML preview instead of raw source.
 
-Marked Quick Look is **not included with Marked 3**. It is a separate purchase (**$4.99** on the Mac App Store). <!-- MAS link: add App Store URL here when available -->
+Marked Quick Look is **not included with Marked 3**. It is a separate purchase (**$9.99** on the Mac App Store). <!-- MAS link: add App Store URL here when available -->
 
 I> Marked Quick Look and Marked 3 are independent products. Buying Marked does not install the Quick Look extension, and buying Marked Quick Look does not include a Marked license. The preview includes an optional **Open in Marked** button when Marked is installed.
 
-## What you get
+## What you get [what-you-get]
 
 Marked Quick Look registers a **Quick Look Preview extension** that renders `.md`, `.markdown`, `.mmd`, and many plain-text files with the same visual polish Marked is known for:
 
@@ -18,7 +18,7 @@ Marked Quick Look registers a **Quick Look Preview extension** that renders `.md
 
 W> Quick Look previews are read-only. File includes (`<<[file]`, `{{file}}`, and similar syntax) are **not expanded** in Quick Look. They appear as highlighted placeholders (`Included file: path`) so you can see where content would be pulled in. Open the document in Marked for full multi-file rendering.
 
-## Installation
+## Installation [installation]
 
 1. Install **Marked Quick Look** from the Mac App Store.
 2. **Launch the app once** from `/Applications`. This registers the Quick Look extension with macOS.
@@ -26,7 +26,7 @@ W> Quick Look previews are read-only. File includes (`<<[file]`, `{{file}}`, and
 
 The container app includes a **Settings** window ({% kbd cmd %},{% kbd , %}) where you can choose the Apex processor mode, preview style, syntax-highlighting theme, and toggles for MathJax and Mermaid.
 
-## Apex and Markdown flavors
+## Apex and Markdown flavors [apex-and-markdown-flavors]
 
 Marked Quick Look uses [Apex](https://github.com/ApexMarkdown/apex) for all rendering. Apex is developed as a standalone processor and is also embedded in Marked 3.
 
@@ -42,21 +42,21 @@ In Settings, choose an **Apex mode** to match your writing style:
 
 Unified mode is the best default for most documents. Switch modes if a file was written for a specific processor and something renders unexpectedly.
 
-## Open in Marked
+## Open in Marked [open-in-marked]
 
 When Marked 3 is installed, the Quick Look preview can show an **Open in Marked** button in the toolbar. Click it to hand the file off to Marked for live preview, export, proofreading, and full include expansion.
 
 If Marked is not installed, the button appears disabled.
 
-## Troubleshooting Quick Look conflicts
+## Troubleshooting Quick Look conflicts [troubleshooting-quick-look-conflicts]
 
 macOS allows multiple apps to register Quick Look preview extensions for Markdown. Only one extension handles each preview, and **another app's plugin may take precedence** over Marked Quick Look.
 
-### How to tell which extension is active
+### How to tell which extension is active [how-to-tell-which-extension-is-active]
 
 Marked Quick Look previews include an **Open in Marked** toolbar when that option is enabled. If you see a different layout, raw monospace source, or another app's styling, a different Quick Look handler is probably winning.
 
-### Restore Marked Quick Look precedence
+### Restore Marked Quick Look precedence [restore-marked-quick-look-precedence]
 
 After installing or updating, or after resetting the Quick Look cache, run these steps:
 
@@ -82,7 +82,7 @@ To clear cached previews:
 qlmanage -r cache
 ```
 
-### Temporarily disable a conflicting extension
+### Temporarily disable a conflicting extension [temporarily-disable-a-conflicting-extension]
 
 To confirm another app is overriding Marked Quick Look, disable its extension with `pluginkit -e ignore -i BUNDLE_ID`, preview a file, then restore with `pluginkit -e default -i BUNDLE_ID`.
 
@@ -92,7 +92,7 @@ Example — disable **Folder Quick Look**'s Markdown extension:
 pluginkit -e ignore -i studio.appahead.AA7.Markdown-Quick-Look-Extension
 ```
 
-### Common conflicting apps
+### Common conflicting apps [common-conflicting-apps]
 
 These apps (and others) register Quick Look preview extensions that may handle `.md` files:
 
@@ -108,25 +108,34 @@ These apps (and others) register Quick Look preview extensions that may handle `
 | **Scrivener** | `com.literatureandlatte.scrivener3.ScrivQuickLook` |
 | **Black Ink** | `com.red-sweater.blackink2.quicklook` |
 
-W> **iA Writer** does not ship a dedicated Markdown Quick Look extension, but **Folder Quick Look**, **QLMarkdown**, and **Peek** are frequent sources of conflicts because they also target `net.daringfireball.markdown`.
+W> **iA Writer** assigns its own UTI (`net.ia.markdown`) to `.md` files when installed. Marked Quick Look 1.0.2+ handles that UTI. **Folder Quick Look**, **QLMarkdown**, and **Peek** are also frequent sources of conflicts.
 
 List registered preview extensions:
 
 ```bash
-pluginkit -m -D -p com.apple.quicklook.preview -A -v | grep -i markdown
+pluginkit -m -D -p com.apple.quicklook.preview -A -v | grep -i MarkedQuickLook
 ```
+
+W> Do not grep for `markdown` to verify Marked Quick Look. Its bundle ID is `com.brettterpstra.MarkedQuickLook.preview` and does not contain the word "markdown". A `grep -i markdown` can return no results even when Marked Quick Look is installed and enabled. To list other Markdown handlers, run the full `pluginkit` command without grep, or grep for a specific bundle ID from the table above.
 
 Extensions marked with `+` are explicitly enabled; use `pluginkit -e use -i com.brettterpstra.MarkedQuickLook.preview` to move Marked Quick Look to the front.
 
-### Still seeing plain text?
+### Still seeing plain text? [still-seeing-plain-text]
 
-If the preview shows **unstyled monospace source**, macOS may be falling back to the built-in **Text.qlgenerator** because the preview extension failed to load. Check **Console.app** for errors from `MarkedQuickLookPreview`, then reinstall Marked Quick Look to `/Applications` and launch it once.
+If the preview shows **unstyled monospace source**, macOS is falling back to the built-in **Text.qlgenerator** because no preview extension matched the file's UTI.
 
-### Development builds
+1. Confirm registration with `pluginkit ... | grep -i MarkedQuickLook` (not `markdown`).
+2. Check the file's assigned UTI: `mdls -name kMDItemContentType -name kMDItemContentTypeTree /path/to/file.md`
+3. Check **Console.app** for errors from `MarkedQuickLookPreview`.
+4. Reinstall Marked Quick Look to `/Applications` and launch it once.
+
+See the [Marked Quick Look troubleshooting guide](https://github.com/ttscoff/MarkedQuickLook/blob/main/TROUBLESHOOTING.md) for a full step-by-step checklist.
+
+### Development builds [development-builds]
 
 Debug builds from Xcode live in DerivedData and **do not register automatically**. Run the **Marked Quick Look** container app from Xcode (Cmd+R) after each clean build, then re-run the `pluginkit -a` and `pluginkit -e use` commands with the DerivedData path to your `.appex`.
 
-## Related topics
+## Related topics [related-topics]
 
 - [Opening Files](Opening_Files.html) — how Marked opens and watches documents
 - [Multi-file Documents](Multi-File_Documents.html) — include syntax and full expansion in Marked

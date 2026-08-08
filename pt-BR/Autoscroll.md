@@ -4,7 +4,7 @@
 
 A rolagem automática move lentamente a visualização para leitura ou revisão com as mãos livres. É separado do [Índice](Document_Navigation.html) e do [Mini Mapa](Document_Navigation.html#minimap); ele rola a visualização atual automaticamente.
 
-## Iniciando e parando
+## Iniciando e parando [starting-and-stopping]
 
 Acione a rolagem automática pressionando {% kbd s %}. A visualização avança na velocidade atual.
 

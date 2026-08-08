@@ -2,7 +2,7 @@
 
 Marked has special handling for comments and annotations.
 
-## Annotation sources
+## Annotation sources [annotation-sources]
 
 Marked recognizes comments coming from:
 
@@ -10,7 +10,7 @@ Marked recognizes comments coming from:
 - CriticMarkup comments
 - Microsoft Word comments and changes
 
-## The Comments sidebar
+## The Comments sidebar [the-comments-sidebar]
 
 All annotations are shown in a sidebar and hidden in the document preview. To show the annotations sidebar, use the **Gear Menu -> Proofing -> Show Comments**, or press {% kbd ctrl cmd C %}.
 

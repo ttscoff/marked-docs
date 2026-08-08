@@ -6,7 +6,7 @@ PDF import werkt het beste op **kleinere, op tekst gebaseerde PDFs** (dia's, art
 
 Marked is nog steeds een **preview**-tool: je bewerkt de PDF binnen Marked niet. Gebruik {% kbd cmd E %} om PDF te openen in **Preview** (of uw systeemstandaard), en Marked wordt vernieuwd wanneer het bestand op schijf verandert.
 
-## Hoe conversie werkt
+## Hoe conversie werkt [how-conversion-works]
 
 PDF import gebruikt de [pdf22md](https://github.com/twardoch/pdf22md) bibliotheek (MIT-licentie; zie [pdf22md License](PDF22MD_License.html)). Marked voert de conversie uit op de achtergrond en toont een korte melding **Converteren**.
 
@@ -19,17 +19,17 @@ De converter:
 
 Marked schakelt **niet** de optionele AI-opschoning van pdf22md in de app in. De conversiekwaliteit is afhankelijk van hoe de PDF is gemaakt.
 
-## Cache en live preview
+## Cache en live preview [cache-and-live-preview]
 
 Geconverteerde Markdown en afbeeldingen worden opgeslagen onder de Watchers-cache van Marked (`~/Library/Caches/Marked/Watchers/PDF/`). Het oorspronkelijke PDF pad blijft de documentbron voor het bekijken van bestanden.
 
 Wanneer u de PDF in een andere toepassing opslaat of vervangt, detecteert Marked de wijziging en wordt deze automatisch opnieuw geconverteerd (hetzelfde samengevoegde herlaadgedrag als [RTF](RTF_Support.html) en [Scrivener](Scrivener_Support.html)).
 
-## Exporteren en andere functies
+## Exporteren en andere functies [export-and-other-features]
 
 Na de conversie behandelt Marked het document als andere gecompileerde bronnen: export, statistieken en de meeste preview-functies worden uitgevoerd tegen de gegenereerde Markdown. Afbeeldingspaden in het voorbeeld wijzen op in de cache opgeslagen elementen totdat u exporteert.
 
-## Beperkingen
+## Beperkingen [limitations]
 
 Stel uw verwachtingen dienovereenkomstig in: PDF-tot-Markdown is nuttig, niet perfect.
 
@@ -54,9 +54,9 @@ Stel uw verwachtingen dienovereenkomstig in: PDF-tot-Markdown is nuttig, niet pe
 - **Wachtwoordbeveiligde PDFs** worden niet ondersteund in v1
 - **Ingesloten PDF afbeeldingen in Markdown** (`![]()` verwijzend naar een `.pdf` bestand) hebben niets te maken met de PDF-import; ze openen alleen een `.pdf` omdat het hoofddocument de conversie activeert
 
-Voor Word-documenten gebruikt u [Working with DOCX](Working_with_DOCX.html). Voor Rich Text gebruikt u [RTF and RTFD Support](RTF_Support.html).
+Voor Word-documenten gebruikt u [Working with DOCX](Working_With_DOCX.html). Voor Rich Text gebruikt u [RTF and RTFD Support](RTF_Support.html).
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen [related-topics]
 
 - [Opening Files](Opening_Files.html) — slepen en neerzetten, Recent openen, klembord
 - [Exporting](Exporting.html) — sla HTML, PDF, DOCX en Markdown op uit het voorbeeld

@@ -2,7 +2,7 @@
 
 Marked bevat browserextensies waarmee u pagina-URL's of geselecteerde inhoud rechtstreeks naar Marked kunt sturen 3.
 
-## Installeren
+## Installeren [install]
 
 Downloaden en installeren vanaf [https://markedapp.com/extensions](https://markedapp.com/extensions):
 
@@ -10,21 +10,21 @@ Downloaden en installeren vanaf [https://markedapp.com/extensions](https://marke
 - Chroom / Dapper / Rand
 - Safari (gebundeld)
 
-## Hoe de extensie werkt
+## Hoe de extensie werkt [how-the-extension-works]
 
 Wanneer u op een extensieknop klikt, wordt er een aangepaste URL geopend die wordt afgehandeld door Marked 3 met behulp van het `x-marked-3://markdownify` schema.
 
-### `Markdownify URL`
+### `Markdownify URL` [markdownify-url]
 
 Klik in de extensiepop-up op **`Markdownify URL`** om de huidige pagina-URL naar Marked te verzenden.
 
-### `Markdownify Selection`
+### `Markdownify Selection` [markdownify-selection]
 
 Klik in de extensiepop-up op **`Markdownify Selection`** wanneer u een selectie op de pagina hebt.
 
 Marked ontvangt de HTML voor de huidige selectie en converteert deze naar Markdown.
 
-### Sectie selecteren (blokselectiemodus)
+### Sectie selecteren (blokselectiemodus) [select-section-block-selection-mode]
 
 ![][1]
 

@@ -2,7 +2,7 @@
 
 Marked wurde mit viel Hilfe der Open-Source-Community erstellt. Auf dieser Seite wird der Code von Drittanbietern aufgeführt, der in Marked enthalten ist. Der vollständige Lizenztext für die Markdown-Prozessoren ist auf den verlinkten Seiten in [About Markdown](MultiMarkdown_Information.html) verfügbar.
 
-## Markdown-Prozessoren und -Konvertierung
+## Markdown-Prozessoren und -Konvertierung [markdown-processors-and-conversion]
 
 | Komponente | Autoren | Lizenz | Wird für |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Marked wurde mit viel Hilfe der Open-Source-Community erstellt. Auf dieser Seite
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Kramdown-Prozessoroption (im Lieferumfang von Ruby enthalten) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | PDF-zu-Markdown-Import |
 
-## Nativer Code und Frameworks
+## Nativer Code und Frameworks [native-code-and-frameworks]
 
 | Komponente | Autoren | Lizenz | Wird für |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Marked wurde mit viel Hilfe der Open-Source-Community erstellt. Auf dieser Seite
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniel Jackson | Siehe Projekt | Fortschrittsindikatoren |
 | [IAPManager](https://github.com/mruegenberg/IAPManager) | Marcel Ruegenberg | Siehe Projekt | In-App-Kaufhilfen (alt) |
 
-## Vorschau-JavaScript
+## Vorschau-JavaScript [preview-javascript]
 
 Diese Bibliotheken sind im Vorschaupaket von Marked (`marked.min.js` und zugehörige Ressourcen) zusammengefasst:
 
@@ -57,7 +57,7 @@ Diese Bibliotheken sind im Vorschaupaket von Marked (`marked.min.js` und zugehö
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Viewport-Erkennung |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | Hervorhebung der Suche im Dokument |
 
-## Lokalisierung
+## Lokalisierung [localization]
 
 Marked ist dank freiwilliger Übersetzer in mehreren Sprachen verfügbar:
 
@@ -75,6 +75,6 @@ Marked ist dank freiwilliger Übersetzer in mehreren Sprachen verfügbar:
 - Yuki Tamari
 - 亮 王
 
-## Danksagungen
+## Danksagungen [acknowledgments]
 
 Vielen Dank auch an Daniel Jalkut für die jahrelange Anleitung und an Felippe van Eekhout für das Marked-Symbol.

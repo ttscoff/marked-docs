@@ -2,7 +2,7 @@
 
 Linkvalidatie pingt de bestemming van een URL en test op fouten. Dit helpt verbroken en ongeldige links in uw gepubliceerde document te voorkomen, en is vooral handig voor bloggers.
 
-## Enkelvoudige links valideren
+## Enkelvoudige links valideren [validating-single-links]
 
 ![][1]
 
@@ -10,7 +10,7 @@ Linkvalidatie pingt de bestemming van een URL en test op fouten. Dit helpt verbr
 
 Klik op een link in het voorbeeld en houd deze ingedrukt totdat deze knippert. Laat vervolgens los om het linkactiemenu te openen. Kies "Link valideren" om de test uit te voeren. Resultaten worden weergegeven in de pop-up.
 
-## Alle links valideren
+## Alle links valideren [validating-all-links]
 
 ![][2]
 
@@ -22,7 +22,7 @@ Geldige URL's kunnen in de pop-up worden verborgen met de knop 'Geldige verberge
 
 Als u op Escape drukt, worden de validatieresultaten verborgen. Ze kunnen opnieuw worden onthuld met {% kbd ctrl cmd L %} of het uitrustingsmenu.
 
-## Automatisch valideren
+## Automatisch valideren [validating-automatically]
 
 Schakel 'URL's automatisch valideren bij update' in de Preview-instellingen (of onderaan de linkvalidatiepop-up) in. Wanneer het document wordt geladen, worden de aanwezige links op de achtergrond getest. Er wordt alleen een dialoogvenster weergegeven als er fouten zijn.
 

@@ -4,7 +4,7 @@ Met Marked kunnen bepaalde attributen van een document worden ingesteld in het M
 
 De meeste MultiMarkdown headers worden genegeerd door het voorbeeld, maar de volgende zijn toegestaan ​​en hebben invloed op de weergave. U kunt andere metagegevens opnemen die in de uiteindelijke uitvoer moeten worden weergegeven. Marked negeert alleen de sleutels die hieronder niet worden vermeld. Als u opslaat als HTML en *geen* een sjabloon toevoegt, worden met Marked alle metagegevenssleutels weergegeven zoals verwacht.
 
-## Metagegevensformaat
+## Metagegevensformaat [metadata-format]
 
 Metagegevens worden bovenaan het Markdown-bestand ingevoerd of onmiddellijk na eventuele YAML-headers. Ze bestaan ​​uit een sleutel, gevolgd door een dubbele punt, optionele spaties of tabs en de waarde:
 
@@ -96,7 +96,7 @@ printkop links:
 	voettekst midden afdrukken:
 	voettekst rechts afdrukken:
 
-Deze kunnen [print variables](Exporting.html#headersandfooters) bevatten zoals `%title`, `%page`, `%total`, enz., evenals verwijzingen naar andere metagegevens die `%md_[key without spaces]` gebruiken.
+Deze kunnen [print variables](Exporting.html#headers-and-footers) bevatten zoals `%title`, `%page`, `%total`, enz., evenals verwijzingen naar andere metagegevens die `%md_[key without spaces]` gebruiken.
 
 ### Afdrukmarges
 

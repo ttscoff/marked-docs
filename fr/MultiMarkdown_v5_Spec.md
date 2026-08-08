@@ -2,11 +2,11 @@
 
 Consultez le [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) pour expérimenter le processeur MultiMarkdown.
 
-## Qu'est-ce que MultiMarkdown ?
+## Qu'est-ce que MultiMarkdown ? [what-is-multimarkdown]
 
 MultiMarkdown est un processeur Markdown étendu conçu pour fonctionner avec des documents complets plutôt qu'avec de simples fragments de pages Web. Il étend la syntaxe Markdown d'origine avec des fonctionnalités qui permettent la conversion vers plusieurs formats de sortie, notamment les documents HTML, LaTeX, PDF, ODF et Microsoft Word.
 
-## Caractéristiques clés
+## Caractéristiques clés [key-characteristics]
 
 - **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
 - **Sortie multiformat** : convertit en HTML, LaTeX, PDF, ODF, RTF et Word
@@ -15,15 +15,15 @@ MultiMarkdown est un processeur Markdown étendu conçu pour fonctionner avec de
 - **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
 - **Version 5** : réécriture complète avec des performances et une fiabilité améliorées
 
-## Objectifs de philosophie et de conception
+## Objectifs de philosophie et de conception [philosophy-and-design-goals]
 
 MultiMarkdown suit le principe selon lequel **le contenu est plus important que la présentation**. L'accent est mis sur la représentation de la signification des documents (il s'agit d'une liste, d'un tableau, etc.) plutôt que sur la dictée des polices, des couleurs ou du style.
 
 L'objectif est d'être utilisable pour 80 % des documents rédigés par 80 % des personnes, ce qui le rend adapté aux romans, aux thèses, à la documentation technique et à la plupart des autres contenus écrits.
 
-## Principales fonctionnalités et extensions
+## Principales fonctionnalités et extensions [major-features-and-extensions]
 
-### 1. **Prise en charge des métadonnées**
+### 1. **Prise en charge des métadonnées** [1-metadata-support]
 
 - Documenter les métadonnées en haut des fichiers
 - Titre, auteur, date et variables personnalisées
@@ -54,7 +54,7 @@ Auteur : [%author]
 Date : [%date]
 ```
 
-### 2. **Tableaux avancés**
+### 2. **Tableaux avancés** [2-advanced-tables]
 
 **Prise en charge complète des tables**
 
@@ -78,7 +78,7 @@ Table: Exemple de tableau avec alignement
 - Renvois croisés avec `[Table 1]`
 - Prise en charge des structures de tables complexes
 
-### 3. **Notes de bas de page et citations**
+### 3. **Notes de bas de page et citations** [3-footnotes-and-citations]
 
 **Notes de bas de page**
 
@@ -121,7 +121,7 @@ source[][#Doe:2006].
 
 Il n'y a pas de règles sur le format de clé de citation que vous utilisez (par exemple Doe:2006), mais il doit être précédé d'un `#`, tout comme les notes de bas de page utilisent `^`.
 
-### 4. **Références croisées**
+### 4. **Références croisées** [4-cross-references]
 
 **Références croisées automatiques**
 
@@ -133,7 +133,7 @@ Il n'y a pas de règles sur le format de clé de citation que vous utilisez (par
 Voir [Table 1] pour plus de détails.
 Consultez [Section 2.1] pour plus d'informations.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Types de référence**
@@ -143,7 +143,7 @@ Consultez [Section 2.1] pour plus d'informations.
 - Chiffres : `[Figure 1]`, `[Figure: Caption]`
 - Équations : `[Equation 1]`
 
-### 5. **Listes de définitions**
+### 5. **Listes de définitions** [5-definition-lists]
 
 **Paires terme-définition**
 
@@ -160,7 +160,7 @@ Terme 2
 : Définition 2b
 ```
 
-### 6. **Blocs de code clôturés**
+### 6. **Blocs de code clôturés** [6-fenced-code-blocks]
 
 **Blocs de code spécifiques à la langue**
 
@@ -181,7 +181,7 @@ def hello():
 - Prise en charge de nombreux langages de programmation
 - Sortie HTML `<code>` appropriée
 
-### 7. **Prise en charge des mathématiques**
+### 7. **Prise en charge des mathématiques** [7-math-support]
 
 **Expressions mathématiques**
 
@@ -199,7 +199,7 @@ $$
 $$
 ```
 
-### 8. **Attributs d'image et de lien**
+### 8. **Attributs d'image et de lien** [8-image-and-link-attributes]
 
 **Liens et images améliorés**
 
@@ -211,7 +211,7 @@ $$
 [Texte du lien]: url.html title="Titre du lien" class="external"
 ```
 
-### 9. **Transclusion**
+### 9. **Transclusion** [9-transclusion]
 
 **Inclusion de fichier**
 
@@ -231,7 +231,7 @@ $$
 - Prise en charge de la transclusion imbriquée
 - Génération de manifeste pour les fichiers inclus
 
-### 10. **Intégration CriticMarkup**
+### 10. **Intégration CriticMarkup** [10-criticmarkup-integration]
 
 **Suivi des modifications**
 
@@ -245,7 +245,7 @@ Ceci est {>>texte supprimé<<} et ceci est {++texte ajouté++}.
 Ceci est une {~~suppression~>remplacement~~}.
 ```
 
-### 11. **Table des matières**
+### 11. **Table des matières** [11-table-of-contents]
 
 **Génération automatique de la table des matières**
 
@@ -265,7 +265,7 @@ Contenu ici...
 Plus de contenu...
 ```
 
-### 12. **Abréviations**
+### 12. **Abréviations** [12-abbreviations]
 
 **Abréviations de style HTML**
 
@@ -280,7 +280,7 @@ Plus de contenu...
 Ceci utilise HTML et CSS.
 ```
 
-## MultiMarkdown v5 vs autres saveurs Markdown
+## MultiMarkdown v5 vs autres saveurs Markdown [multimarkdown-v5-vs-other-markdown-flavors]
 
 | Fonctionnalité | MultiMarkdown v5 | CommonMark (GFM) | Discount | Kramdown | Standard |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
@@ -301,7 +301,7 @@ Ceci utilise HTML et CSS.
 | Transclusion | Oui | Non | Non | Non | Non |
 | Métadonnées | Oui | Non | Non | Non | Non |
 
-## Avantages clés de MultiMarkdown v5
+## Avantages clés de MultiMarkdown v5 [key-advantages-of-multimarkdown-v5]
 
 1. **Axé sur les documents** : conçu pour des documents complets, pas seulement des extraits Web
 2. **Sortie multiformat** : conversion en HTML, LaTeX, PDF, ODF, RTF et Word
@@ -311,7 +311,7 @@ Ceci utilise HTML et CSS.
 6. **À l'épreuve du temps** : le format de texte brut garantit une compatibilité à long terme
 7. **Extensible** : ensemble de fonctionnalités riches pour les exigences de documents complexes
 
-## Cas d'utilisation courants
+## Cas d'utilisation courants [common-use-cases]
 
 **Rédaction académique**
 
@@ -337,7 +337,7 @@ Ceci utilise HTML et CSS.
 - Bases de connaissances et wikis
 - Projets d'écriture collaborative
 
-## Meilleures pratiques
+## Meilleures pratiques [best-practices]
 
 1. **Utiliser les métadonnées** : exploitez le contenu YAML pour les informations sur les documents
 2. **Structure avec en-têtes** : utilisez la hiérarchie de titres appropriée pour la génération de la table des matières
@@ -346,7 +346,7 @@ Ceci utilise HTML et CSS.
 5. **Test de sortie** : vérifiez le formatage dans différents formats de sortie
 6. **Utiliser les citations** : mettre en œuvre des pratiques de citation académique appropriées
 
-## Migration à partir d'autres versions de Markdown
+## Migration à partir d'autres versions de Markdown [migration-from-other-markdown-flavors]
 
 La plupart des Markdown standard fonctionnent avec MultiMarkdown sans modifications. Pour profiter des fonctionnalités MMD :
 
@@ -356,7 +356,7 @@ La plupart des Markdown standard fonctionnent avec MultiMarkdown sans modificati
 4. **Structure avec transclusion** : divisez les documents volumineux en fichiers plus petits
 5. **Tirer parti des tableaux** : utilisez les fonctionnalités avancées des tableaux pour la présentation des données
 
-## Ressources
+## Ressources [resources]
 
 - [Guide de l'utilisateur MultiMarkdown](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
 - [Guide de syntaxe MultiMarkdown](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)

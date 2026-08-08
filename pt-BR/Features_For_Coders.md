@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-## Blocos de código protegidos
+## Blocos de código protegidos [fenced-code-blocks]
 
 Os blocos de código protegidos são habilitados em ambos os processadores incluídos por padrão (MultiMarkdown e Discount). Os blocos de código protegidos são delimitados por três ou mais tils (~) ou crases (\`). Você pode usar mais de três, mas os delimitadores inicial e final devem ter exatamente o mesmo número de caracteres.
 
@@ -40,7 +40,7 @@ O realce de sintaxe integrado reconhecerá **256** especificadores de idioma (co
 
 Veja a seção [Sintaxe Especial Marcada](Special_Syntax.html#includingcode) para aprender como incluir arquivos de código externo em seu documento.
 
-## Destaque de sintaxe
+## Destaque de sintaxe [syntax-highlighting]
 
 ![Destaque automático de sintaxe][destaque]
 
@@ -60,7 +60,7 @@ A opção "Somente se o idioma for especificado" à direita do seletor de estilo
 
 O realce de sintaxe aparecerá na visualização e na impressão e exportação de PDF. Se habilitado nas configurações e o tema estiver incluído ao exportar HTML, a biblioteca highlight.js usada pelo Marked será incorporada na saída HTML, permitindo que o HTML exportado apareça como no Marked.
 
-### Idiomas suportados
+### Idiomas suportados [supported-languages]
 
 Marcado vem com **highlight.js 11.11.1**, incluindo todos os idiomas principais, além de gramáticas de terceiros da lista [idiomas suportados pelo highlight.js](https://highlightjs.readthedocs.io/en/latest/supported-languages.html). Especifique qualquer nome de idioma primário abaixo (ou um alias documentado como `js` para JavaScript) após a cerca de abertura.
 
@@ -90,7 +90,7 @@ Duas linguagens listadas no site destaque.js não estão incluídas no pacote do
     vbscript-html, verilog, vhdl, vim, wasm, wren, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, zephir
 
-### Temas de destaque de sintaxe
+### Temas de destaque de sintaxe [syntax-highlighting-themes]
 
 **239** temas de realce de sintaxe estão disponíveis no menu suspenso {% prefspane Style %}. Os temas são carregados automaticamente a partir das folhas de estilo incluídas no Marked; os nomes correspondem ao nome do arquivo CSS sem a extensão (por exemplo, `github-dark` carrega `github-dark.css`).
 
@@ -156,11 +156,11 @@ base16-3024, base16-apatia, base16-aprendiz, base16-cinzas, base16-atelier-caver
     base16-windows-nt, base16-windows-nt-light, base16-woodland, base16-xcode-dusk,
     base16-zenburn
 
-## Quebras de linha do GitHub
+## Quebras de linha do GitHub [github-line-breaks]
 
 Marcado pode preservar quebras de linha em seus parágrafos. Basta selecionar {% prefspane Processor %} e marcar a caixa para manter as quebras de linha nos parágrafos.
 
-## Caixas de seleção do GitHub
+## Caixas de seleção do GitHub [github-checkboxes]
 
 Listar itens formatados como:
 
@@ -169,6 +169,6 @@ Listar itens formatados como:
 
 aparecerão na visualização como itens de caixa de seleção renderizados. Não é possível interagir com eles, mas seu estado refletirá quaisquer alterações no documento de origem.
 
-## Quebra de bloco de código
+## Quebra de bloco de código [code-block-wrapping]
 
 No {% prefspane Style %} você encontrará uma opção em Layout e Tipografia: "Permitir que temas envolvam texto dentro de blocos de código." Desabilitar isso forçará todos os blocos de código a rolarem o estouro horizontal em vez de envolvê-los, independentemente do estilo de visualização atual.

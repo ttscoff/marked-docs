@@ -1,0 +1,52 @@
+# Marked Settings Localization Patch
+# Locale: zh-Hant (Traditional Chinese)
+# Generated: 2026-07-26
+# Feature: Scrivener line-break preference
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# New Applications → Scrivener setting: "Treat single line breaks as"
+# Popup options: "Line breaks" (default) and "Paragraphs".
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by this option.
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 4
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 4
+
+"setting.scrivenerLineBreaks" = "將單一換行視為";
+# EN: Treat single line breaks as
+# DRAFT: 將單一換行視為
+
+"setting.scrivenerLineBreaks.lineBreaks" = "換行";
+# EN: Line breaks
+# DRAFT: 換行
+
+"setting.scrivenerLineBreaks.paragraphs" = "段落";
+# EN: Paragraphs
+# DRAFT: 段落
+
+"tooltip.scrivenerLineBreaks" = "指定如何解釋 Scrivener 段落中的單一換行。「換行」會將連續行保留為換行（受「保留段落中的換行」設定影響）；「段落」會開始新段落。管道表格與圍欄程式碼區塊不受影響。";
+# EN: How to interpret a single line break within a Scrivener paragraph. Line breaks keep consecutive lines as line breaks (subject to Preserve line breaks); Paragraphs start a new paragraph. Pipe tables and fenced code blocks are unaffected.
+# DRAFT: 指定如何解釋 Scrivener 段落中的單一換行。「換行」會將連續行保留為換行（受「保留段落中的換行」設定影響）；「段落」會開始新段落。管道表格與圍欄程式碼區塊不受影響。
+
+=== END Settings.strings (gaps) ===

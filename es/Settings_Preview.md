@@ -8,7 +8,7 @@ Opciones en el {% prefspane Preview %}:
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Comportamiento de vista previa
+### Comportamiento de vista previa [preview-behavior]
 
 Habilitar la navegación del minimapa
 : Genera un mapa visual del documento que aparece cuando se presiona "0". Puede causar breves retrasos al procesar documentos grandes.
@@ -25,7 +25,7 @@ Sincronización de vista previa y desplazamiento de fuente
 Sincronización de lectura rápida con posición de desplazamiento
 : Mantenga la superposición [Lectura rápida](Speed_Reading.html) alineada con la posición de desplazamiento de vista previa. También puede alternar esto desde la superposición de Lectura rápida.
 
-### Desplázate para editar
+### Desplázate para editar [scroll-to-edit]
 
 Desplázate para editar
 : Al actualizar la vista previa, Marked puede determinar el primer punto donde cambió el documento y desplazarse automáticamente hasta él. Esto mantiene la vista previa sincronizada con su ubicación actual en el documento que está editando. El marcador de edición más reciente es la primera diferencia en el documento desde la última actualización. Al habilitar el "Orden de diferencias inverso", se considerará la última diferencia en el documento (de arriba a abajo) como la edición más reciente.
@@ -39,7 +39,7 @@ Mostrar todos los marcadores de diferencias
 Orden de diferenciación inverso
 : Si esto está habilitado, las diferencias se marcarán en orden inverso (de abajo hacia arriba). Esto afecta la navegación, por lo que <kbd>e</kbd> navegará hacia arriba y {% kbd shift E %} navegará hacia abajo. La "edición más reciente" se convertirá en la última diferencia en el documento.
 
-### Funciones adicionales
+### Funciones adicionales [additional-features]
 
 La tabla de contenido rastrea la posición de desplazamiento
 : La tabla de contenido destaca la sección actual.
@@ -54,7 +54,7 @@ Validar automáticamente las URL al actualizar
 : Valide las URL al cargar y actualizar el documento. Sólo muestra resultados si hay errores.
 : Esto ejecuta [validación de enlaces](Link_Validation.html) cada vez que se actualiza el documento (si tiene una cantidad significativa de enlaces, esto puede ser un proceso lento y debe evitarse).
 
-### Enlace wiki
+### Enlace wiki [wiki-linking]
 
 Convertir [[Enlaces Wiki]]
 : Habilite la [navegación wiki](Wiki_Navigation.html) de Marked para la sintaxis `[[wiki link]]`.
@@ -62,7 +62,7 @@ Convertir [[Enlaces Wiki]]
 Extensión predeterminada
 : La extensión de nombre de archivo que Marked utiliza al resolver enlaces wiki que no incluyen una extensión (por ejemplo, `md`).
 
-### Apariencia
+### Apariencia [appearance]
 
 Modo oscuro
 : muestra todas las ventanas en modo "Alto contraste", con cromo oscuro y, si está disponible, la versión invertida del estilo actual (es posible que no se aplique a los estilos personalizados).

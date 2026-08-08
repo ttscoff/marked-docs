@@ -5,7 +5,7 @@
 
 Marked es un excelente compañero para los flujos de trabajo modernos de "codificación agente" donde las herramientas de inteligencia artificial generan planes, refactorizan el código y siguen actualizando la documentación mientras trabaja. Al permitir que Marked observe su proyecto o carpetas de planificación, obtendrá una vista en vivo y legible de lo que sus agentes de codificación toquen a continuación, sin tener que buscar en su editor o árbol de archivos.
 
-## Observando la carpeta de su proyecto o plan
+## Observando la carpeta de su proyecto o plan [watching-your-project-or-plan-folder]
 
 En lugar de abrir un solo archivo, puede señalar Marcado en una carpeta completa que usa para planos, notas preliminares o documentación generada por IA:
 
@@ -17,7 +17,7 @@ Una vez que Marked esté observando una carpeta, mostrará automáticamente el *
 
 Esto funciona especialmente bien con herramientas agentes como Cursor, Claude y Copilot que regeneran continuamente especificaciones, listas de tareas pendientes o notas de arquitectura mientras itera sobre una característica.
 
-## Desplazarse hasta el primer cambio
+## Desplazarse hasta el primer cambio [scrolling-to-the-first-change]
 
 Cuando *Desplazarse para editar* está habilitado en las preferencias de Marked, la vista previa no solo se recarga, sino que **se desplaza directamente a la primera área modificada** del archivo cuando se actualiza.
 
@@ -29,7 +29,7 @@ Eso significa que puedes:
 
 Combinado con la supervisión de carpetas, esto facilita ver exactamente qué están haciendo sus agentes con sus documentos, incluso cuando realizan ediciones incrementales y frecuentes.
 
-## Diagramas con Mermaid.js
+## Diagramas con Mermaid.js [diagrams-with-mermaidjs]
 
 Marked también tiene **compatibilidad con Mermaid.js habilitada de forma predeterminada**, por lo que los diagramas de secuencia, diagramas de flujo y diagramas de arquitectura que sus agentes generan usando bloques de código de Mermaid se representarán limpiamente en la vista previa. Cuando su asistente de IA genera código vallado como:
 
@@ -44,7 +44,7 @@ flowchart TD
 
 Marked lo convertirá automáticamente en un diagrama interactivo con estilo, brindándole una vista visual de flujos de trabajo complejos, flujos de datos o diseños de sistemas creados por herramientas como Cursor, Claude, Copilot y otros asistentes de codificación agentes.
 
-## Ejemplos de flujos de trabajo de codificación agente
+## Ejemplos de flujos de trabajo de codificación agente [example-agentic-coding-workflows]
 
 - **Cursor + Marcado**: mantenga una carpeta `plans/` o `notes/` en su repositorio donde Cursor escribe planes de implementación paso a paso. Apunte Marcado en esa carpeta para ver siempre el plan más reciente, renderizado de forma limpia, a medida que acepta y aplica las ediciones en el editor.
 

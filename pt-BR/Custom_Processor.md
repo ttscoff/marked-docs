@@ -8,7 +8,7 @@ transformações e a capacidade de executar seus próprios comandos ou executar
 processadores diferentes com base nas propriedades correspondentes do arquivo.
 
 
-## Usando pré-processadores/processadores personalizados
+## Usando pré-processadores/processadores personalizados [using-custom-preprocessorsprocessors]
 
 Para adicionar processadores personalizados, vá para {% prefspane Processor %}
 e clique em **Regras personalizadas**.
@@ -33,7 +33,7 @@ regra são executadas nesse arquivo.
 
 ![Editor de regras][2]
 
-  [2]: imagens/CustomRules-800.jpg @2x largura=800
+  [2]: imagens/CustomRules-800.jpg @2x width=800
 
 Para criar uma nova regra, use o `+`
 botão na parte inferior da lista de regras à esquerda. Dê o
@@ -52,7 +52,7 @@ arrastando e soltando, para que você possa afetar a ordem em que
 regras são executadas, a ordem dos critérios no predicado
 editor e a ordem das ações a serem executadas em sequência.
 
-### Editor de Predicados
+### Editor de Predicados [predicate-editor]
 
 ![Editor de Predicado][predicado]
 
@@ -97,7 +97,7 @@ atue como um curinga e corresponda a todos os arquivos.
 
 Clique no sinal de mais (+) na linha do predicado para adicionar outro predicado. Mantenha pressionada Option enquanto clica em + para adicionar um grupo booleano que pode ser definido como Todos (AND) ou Qualquer (OR).
 
-### Regras habilitadas manualmente [habilitadas manualmente]
+### Regras habilitadas manualmente [habilitadas manualmente] [manuallyenabled]
 
 Algumas regras não devem ser executadas em todos os arquivos que correspondam às suas
 critérios. Adicione um critério **ativado manualmente** quando desejar
@@ -118,7 +118,7 @@ regra de critérios normais de correspondência de arquivo mais **Ativado manual
 em seguida, alterne-o no menu Visualização (ou em um atalho de gatilho)
 quando estiver pronto para revisar o layout de impressão.
 
-#### Atalho de gatilho
+#### Atalho de gatilho [trigger-shortcut]
 
 Quando uma regra selecionada inclui **Ativado manualmente**, um
 O campo **Atalho do acionador** aparece ao lado de **Adicionar manualmente
@@ -132,10 +132,10 @@ Limpe o campo para remover o atalho.
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### Substituições por visualização no menu Visualização
+#### Substituições por visualização no menu Visualização [per-preview-overrides-in-the-preview-menu]
 
 Dois submenus do menu Visualização controlam substituições para o ativo
-apenas visualização. As configurações são salvas por [visualização](#multiview) quando
+apenas visualização. As configurações são salvas por [visualização](Opening_Files.html#multiview) quando
 várias janelas mostram o mesmo arquivo.
 
 **Ativar regra personalizada**
@@ -152,7 +152,7 @@ várias janelas mostram o mesmo arquivo.
   deseja forçar um pipeline de processador específico para um
   visualizar sem alterar as regras personalizadas globais.
 
-#### Botão Substituir na barra de ferramentas de visualização
+#### Botão Substituir na barra de ferramentas de visualização [override-button-in-the-preview-toolbar]
 
 Quando uma visualização tem pelo menos uma regra habilitada manualmente ou um
 substituição de processo fixada, um ícone de ramificação aparece na parte inferior
@@ -171,7 +171,7 @@ você clica novamente. Isso é mais rápido do que desmarcar regras no
 menu quando quiser comparar a visualização normal com o seu
 substituir o pipeline.
 
-### Ações
+### Ações [actions]
 
 Use o botão *+ Ação* para adicionar ações à regra.
 
@@ -307,7 +307,7 @@ Executar regra
 Continuar
 : por padrão, quando uma regra é correspondida, o processamento será interrompido (separadamente para pré-processadores e processadores, para que um pré-processador e um processador possam corresponder). Esta ação forçará a continuação da correspondência de regras depois que a regra executar suas ações.
 
-### Gancho de atualização
+### Gancho de atualização [updatehook]
 
 Marcado não faz uma atualização completa a cada atualização, então se
 você tem scripts que renderizam partes do DOM, eles precisam
@@ -331,7 +331,7 @@ Marked.hooks.register('update', function() {
 Isso fará com que `mermaid.run()` seja executado toda vez
 Marcado executa uma atualização parcial.
 
-### Regras de teste
+### Regras de teste [test-rules]
 
 O botão _Regras de teste_ na lista Regras abrirá um
 caixa de diálogo onde você pode selecionar qualquer arquivo Markdown e ele será
@@ -340,7 +340,7 @@ destacado com uma guia verde no lado esquerdo. Ao combinar
 contra um arquivo, um botão X aparecerá que pode ser usado para
 limpe o teste e desmarque as linhas.
 
-## Arraste e solte
+## Arraste e solte [drag-and-drop]
 
 A janela do Conductor suporta arrastar e soltar aprimorado
 recursos que detectam de forma inteligente tipos de arquivos e
@@ -353,7 +353,7 @@ contra regras ou adicionando-o como uma ação.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Detecção de tipo de arquivo
+### Detecção de tipo de arquivo [file-type-detection]
 
 O sistema detecta automaticamente diferentes tipos de arquivos e
 mostra mensagens de sobreposição apropriadas:
@@ -376,7 +376,7 @@ Se você estiver obtendo resultados estranhos e quiser dar uma olhada no que est
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Executando vários comandos
+## Executando vários comandos [executing-multiple-commands]
 
 Uma regra pode ter vários comandos em sequência. A saída de
 cada comando será passado para o próximo. Se você quiser ter
@@ -391,7 +391,7 @@ documento usando Pandoc, basta passar o caminho do arquivo original
 opções de linha de comando e, em seguida, ecoe o conteúdo STDIN de volta
 para STDOUT.
 
-## Ignorando dinamicamente processadores personalizados
+## Ignorando dinamicamente processadores personalizados [dynamically-bypassing-custom-processors]
 
 Se um processador personalizado retornar "NOCUSTOM" em STDOUT, marcado
 encerrará o processador personalizado e retornará ao
@@ -407,7 +407,7 @@ Se em vez de `NOCUSTOM` um Processador Personalizado retornar
 apenas esse documento. Esta alteração não afetará o padrão
 processador definido em Configurações.
 
-## Variáveis de ambiente
+## Variáveis de ambiente [environmentvariables]
 
 A ação Executar Comando possui um editor de ambiente onde você
 pode definir suas próprias variáveis de ambiente que serão
@@ -444,14 +444,14 @@ disponível para uso em seus scripts de shell:
 **MARKED_CSS_PATH**
 : O caminho completo para a folha de estilo atual
 
-### Variáveis de ambiente de metadados
+### Variáveis de ambiente de metadados [metadata-environment-variables]
 
 Quando a ação Executar Comando é executada no Marked's
 Sistema condutor, os metadados do documento são automaticamente
 extraídas e disponibilizadas como variáveis de ambiente para o
 comando.
 
-#### Como funciona
+#### Como funciona [how-it-works]
 
 1. **Extração de Metadados**: O sistema extrai metadados do documento usando o método `extractMetaDataFromString:` existente, que suporta:
    - Matéria inicial YAML (`---` blocos)
@@ -469,7 +469,7 @@ comando.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Exemplo
+#### Exemplo [example]
 
 Dado um documento com estes metadados:
 
@@ -498,7 +498,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Uso em Comandos
+#### Uso em Comandos [usage-in-commands]
 
 Agora você pode usar essas variáveis de ambiente em seu Run
 Ações de comando:
@@ -527,7 +527,7 @@ else
 fi
 ```
 
-#### Ações suportadas
+#### Ações suportadas [supported-actions]
 
 Esta funcionalidade variável de metadados para ambiente é
 disponível em:
@@ -539,7 +539,7 @@ Os metadados são extraídos automaticamente do documento
 conteúdo e disponibilizado para qualquer comando ou script que
 percorre essas ações.
 
-## Ativando e Desativando
+## Ativando e Desativando [enabling-and-disabling]
 
 Os processadores personalizados podem ser ligados e desligados para
 documentos individuais usando {% kbd opt cmd C %}. Você
@@ -552,7 +552,7 @@ exibido como luzes indicadoras (visíveis apenas quando um processador
 está ativado) à esquerda dos itens da barra de ferramentas na parte inferior
 barra de ferramentas direita da visualização.
 
-### Pré-processador
+### Pré-processador [preprocessor]
 
 Se você configurar regras de pré-processador, elas serão executadas após Marcadas
 lida com quaisquer tarefas específicas do Marked, como incluir
@@ -574,7 +574,7 @@ Quando ativado, o pré-processador personalizado pode ser ativado e
 desativado para documentos individuais usando
 {% kbd ctrl opt cmd C %}.
 
-#### Processador/Pré-processador por documento [por documento]
+#### Processador/Pré-processador por documento [por documento] [perdocument]
 
 Processadores personalizados também podem ser definidos por documento
 usando o formato de metadados para [Por Documento
@@ -602,7 +602,7 @@ da saída:
     Pré-processador personalizado: verdadeiro
     -->
 
-## Usando um processador Markdown alternativo
+## Usando um processador Markdown alternativo [using-an-alternative-markdown-processor]
 
 Qualquer tipo de Markdown que você possa renderizar na linha de comando pode
 ser usado com Marcado. Ele precisa ser capaz de receber contribuições
@@ -626,7 +626,7 @@ Testei o recurso Processador Personalizado com Pandoc,
 Kramdown, marcado (desconto), MultiMarkdown 6, Maruku e
 vários outros sabores.
 
-### Uma nota sobre Pandoc e Sandboxing
+### Uma nota sobre Pandoc e Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (e algumas outras ferramentas de linha de comando) não serão executados em
 a versão Mac App Store (em sandbox) do Marked.
@@ -638,7 +638,7 @@ ofereça as etapas para fazer crossgrade. Se você estiver enfrentando problemas
 e isso não está acontecendo, entre em contato comigo através do
 [site de suporte](https://support.markedapp.com/questions/add).
 
-### Pandoc como processador de descontos do exército suíço
+### Pandoc como processador de descontos do exército suíço [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) é de longe o mais flexível
 ferramenta multifuncional para lidar com uma variedade de formatos de marcação. Por
@@ -677,7 +677,7 @@ extensa bibliografia e cenários LaTeX. A maioria dos recursos
 você pode acessar através da linha de comando estão disponíveis apenas
 usando argumentos de passagem em Marcado.
 
-## Usando Têxtil
+## Usando Têxtil [using-textile]
 
 Algumas pessoas perguntaram como fazer o Têxtil funcionar em
 Marcado. Você precisa ter um conversor têxtil disponível em
@@ -695,7 +695,7 @@ um ou outro:
 
 Now Marked é um visualizador de têxteis para você!
 
-## Usando AsciiDoc
+## Usando AsciiDoc [using-asciidoc]
 
 1. Instale [AsciiDoctor](http://asciidoctor.org/).
 2. Habilite uma regra personalizada em {% prefspane Processor %} para corresponder aos seus arquivos AsciiDoc.

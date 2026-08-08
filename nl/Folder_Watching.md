@@ -4,7 +4,7 @@ Zet een **map** met notities in platte tekst neer op Marked. Marked opent een vo
 
 Updates worden uitgevoerd wanneer een bekeken bestand wordt opgeslagen: als het nieuwste bestand overeenkomt met het vorige, scrollt Marked naar het gedetecteerde bewerkingsgebied; wanneer u van document wisselt, wisselt het volledige voorbeeld naar het actieve bestand.
 
-## Werkt goed met nvUltra, nvALT en soortgelijke tools
+## Werkt goed met nvUltra, nvALT en soortgelijke tools [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Notebook-apps die individuele bestanden op schijf achterlaten (klassieke **nvALT**, **nvUltra**, **Notational Velocity**-stijl bibliotheken, gesynchroniseerde Git-mappen, Dropbox-werkmappen, etc.) koppelen op natuurlijke wijze met het bekijken van mappen: u schrijft in één venster en houdt Marked ernaast vast zonder voorvertoningen handmatig opnieuw te openen.
 

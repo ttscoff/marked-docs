@@ -8,7 +8,7 @@ Options dans le {% prefspane Export %} :
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Exporter le profil
+### Exporter le profil [export-profile]
 
 Exporter le profil
 : Sélectionnez un profil enregistré dans le menu contextuel. Les profils stockent un ensemble complet de préférences d'exportation pour une commutation rapide entre les flux de travail (par exemple, impression PDF ou Web HTML). Voir [Exporter des profils](Exporting.html#export-profiles).
@@ -19,7 +19,7 @@ Nouveau
 Gérer
 : Ouvrez le gestionnaire de profils pour renommer, dupliquer ou supprimer des profils.
 
-### Imprimer/PDF
+### Imprimer/PDF [printpdf]
 
 Désactiver les liens/surlignages lors de l'exportation de PDF ou de l'impression
 : Supprime le formatage (souligné et couleur) des liens lors de l'impression.
@@ -66,11 +66,11 @@ Saut de page après
 Marqueurs de niveau de la table des matières
 : Utilisez les listes déroulantes pour définir le marqueur d'élément de liste pour chaque niveau d'indentation dans une table des matières.
 
-### En-têtes et pieds de page
+### En-têtes et pieds de page [headers-and-footers]
 
 Configurez la police, le logo, les champs d'en-tête/pied de page, les formats de date et d'heure, l'inclusion de la première page, le décalage de numérotation des pages et les bordures. Les espaces réservés de champ incluent `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` et autres.
 
-Voir [En-têtes et pieds de page](Exporting.html#headersandfooters) dans [Exportation](Exporting.html) pour une référence d'espace réservé et des exemples. Voir [Formats de date et d'heure](Exporting.html#dateandtimeformats) pour les codes de format `%date` et `%time`.
+Voir [En-têtes et pieds de page](Exporting.html#headers-and-footers) dans [Exportation](Exporting.html) pour une référence d'espace réservé et des exemples. Voir [Formats de date et d'heure](Exporting.html#dateandtimeformats) pour les codes de format `%date` et `%time`.
 
 Inclure sur la première page
 : Si l'option d'en-tête et/ou de pied de page n'est pas cochée, la première page n'imprimera pas le type spécifié.

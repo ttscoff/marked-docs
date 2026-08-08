@@ -4,7 +4,7 @@
 
 A linkellenőrzés megpingeli az URL célhelyét, és teszteli a hibákat. Ez segít elkerülni a hibás és érvénytelen hivatkozásokat a közzétett dokumentumban, és különösen hasznos a bloggerek számára.
 
-## Egyetlen hivatkozás ellenőrzése
+## Egyetlen hivatkozás ellenőrzése [validating-single-links]
 
 ![][1]
 
@@ -12,7 +12,7 @@ A linkellenőrzés megpingeli az URL célhelyét, és teszteli a hibákat. Ez se
 
 Kattintson és tartsa lenyomva a hivatkozást az előnézetben, amíg az villogni nem kezd, majd engedje fel a hivatkozás műveleti menüjének megnyitásához. A teszt futtatásához válassza a „Link érvényesítése” lehetőséget. Az eredmények a felugró ablakban jelennek meg.
 
-## Az összes hivatkozás ellenőrzése
+## Az összes hivatkozás ellenőrzése [validating-all-links]
 
 ![][2]
 
@@ -24,7 +24,7 @@ Az érvényes URL-ek elrejthetők a felugró ablakban a tetején található "É
 
 Az Escape megnyomása elrejti az érvényesítési eredményeket. A {% kbd ctrl cmd L %} vagy a Fogaskerék menü segítségével ismét felfedhetők.
 
-## Automatikus érvényesítés
+## Automatikus érvényesítés [validating-automatically]
 
 Kapcsolja be az „URL-ek automatikus ellenőrzése frissítéskor” lehetőséget az Előnézet beállításainál (vagy a linkellenőrzési előugró ablak alján). Amikor a dokumentum betöltődik, a benne lévő hivatkozásokat a háttérben teszteljük. A párbeszédpanel csak akkor jelenik meg, ha hibák vannak.
 

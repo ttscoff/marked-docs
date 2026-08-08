@@ -4,19 +4,19 @@
 
 A Gyors műveletek paletta egy kereshető parancsindító a Marked számára. Összegyűjti a főmenüsor és az előnézeti **fogaskerék menü** műveleteit, valamint azokat a csak előnézeti billentyűparancsokat, amelyek nem jelennek meg a menükben (például **Automatikus görgetés**). Használja, ha tudja, mit szeretne csinálni, de nem emlékszik, melyik menü tartalmazza.
 
-## A Gyorsműveletek paletta megnyitása
+## A Gyorsműveletek paletta megnyitása [opening-the-quick-actions-palette]
 
 Nyissa meg a palettát a {% kbd shift cmd P %} vagy az {% appmenu File, Quick Actions… %} gombbal. A panel lebegő ablakként jelenik meg az aktuális dokumentum felett.
 
 Nyomja meg újra ugyanazt a parancsikont, vagy nyomja meg az **Escape** gombot a paletta bezárásához. Ha a paletta már nyitva van, akkor a menü **Gyorsműveletek…** parancsával is bezárja azt.
 
-## A parancsikon testreszabása
+## A parancsikon testreszabása [customizing-the-shortcut]
 
 Az alapértelmezett parancsikon a {% kbd shift cmd P %}. A módosításhoz nyissa meg a {% prefspane General %} elemet, és rögzítsen egy új kombinációt a **Akciópaletta megnyitása** alatt a **Parancsikonok** részben.
 
 A **Megjelölt aktiválása** és **Első ablak felemelése** lehetőségekkel ellentétben a Gyorsműveletek parancsikon csak akkor működik, ha a Megjelölt az aktív alkalmazás. Frissíti a {% appmenu File, Quick Actions… %} menüparancsot, hogy megfeleljen a beállításnak.
 
-## Keresés és szűrés
+## Keresés és szűrés [search-and-filter]
 
 Írja be a panel tetején található keresőmezőt a parancsok valós idejű szűréséhez. A párosítás homályos és megbocsátó:
 
@@ -26,7 +26,7 @@ A **Megjelölt aktiválása** és **Első ablak felemelése** lehetőségekkel e
 
 Minden eredmény a parancs nevét mutatja a bal oldalon, és a billentyűparancsát (ha elérhető) a jobb oldalon szürkén. Egyes parancsok navigációs útvonalat is mutatnak (például `Preview › Autoscroll`), ha a művelet egy almenüből vagy az előnézeti motorból származik.
 
-## Mi jelenik meg a listában
+## Mi jelenik meg a listában [what-appears-in-the-list]
 
 A paletta a következőket tartalmazza:
 
@@ -36,7 +36,7 @@ A paletta a következőket tartalmazza:
 
 Ha ugyanaz a parancs több helyen is megjelenik, a Marked a legrövidebb menüútvonalat mutatja, és egyesíti a parancsikonok információit a duplikátumokból.
 
-## Navigáció billentyűzettel
+## Navigáció billentyűzettel [keyboard-navigation]
 
 Navigáljon a Gyorsműveletek palettán teljes egészében a billentyűzetről:
 
@@ -47,7 +47,7 @@ Navigáljon a Gyorsműveletek palettán teljes egészében a billentyűzetről:
 
 Az egyszerű gépelés (a Command billentyű nélkül) szűri a keresőmezőt. Csak előnézeti egygombos billentyűparancsok, például `s` az automatikus görgetéshez, szűrik a listát; nyomja meg a **Return** gombot a kiválasztott parancs futtatásához.
 
-## Parancsok futtatása
+## Parancsok futtatása [running-commands]
 
 A menüparancs kiválasztása ugyanúgy elküldi azt, mint a menüből történő kiválasztása, beleértve a dinamikus és a fogaskerék menüelemeket.
 

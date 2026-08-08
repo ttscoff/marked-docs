@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-## Bloques de código vallados
+## Bloques de código vallados [fenced-code-blocks]
 
 Los bloques de código delimitados están habilitados en ambos procesadores incluidos de forma predeterminada (MultiMarkdown y Discount). Los bloques de código delimitados están delimitados por tres o más tildes (~) o comillas invertidas (\`). Puede utilizar más de tres, pero los delimitadores de inicio y fin deben tener exactamente la misma cantidad de caracteres.
 
@@ -40,7 +40,7 @@ El resaltado de sintaxis integrado reconocerá **256** especificadores de idioma
 
 Consulte la sección sobre [Sintaxis especial marcada](Special_Syntax.html#includingcode) para aprender cómo incluir archivos de código externo en su documento.
 
-## Resaltado de sintaxis
+## Resaltado de sintaxis [syntax-highlighting]
 
 ![Resaltado automático de sintaxis][resaltado]
 
@@ -60,7 +60,7 @@ La opción "Solo si se especifica el idioma" a la derecha del selector de estilo
 
 El resaltado de sintaxis aparecerá en la vista previa y en la impresión y exportación de PDF. Si está habilitado en la configuración y el tema se incluye al exportar HTML, la biblioteca resaltada.js utilizada por Marked se incrustará en la salida HTML, lo que permitirá que el HTML exportado aparezca como aparece en Marked.
 
-### Idiomas admitidos
+### Idiomas admitidos [supported-languages]
 
 Marked se envía con **highlight.js 11.11.1**, incluidos todos los idiomas principales más gramáticas de terceros de la lista [idiomas compatibles con Highlight.js](https://highlightjs.readthedocs.io/en/latest/supported-languages.html). Especifique cualquier nombre de idioma principal a continuación (o un alias documentado como `js` para JavaScript) después de la valla de apertura.
 
@@ -90,7 +90,7 @@ Dos idiomas enumerados en el sitio destacado.js no están incluidos en el paquet
     vbscript-html, verilog, vhdl, vim, wasm, wren, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, céfiro
 
-### Temas de resaltado de sintaxis
+### Temas de resaltado de sintaxis [syntax-highlighting-themes]
 
 **239** temas de resaltado de sintaxis están disponibles en el menú desplegable {% prefspane Style %}. Los temas se cargan automáticamente desde las hojas de estilo incluidas en Marked; Los nombres coinciden con el nombre del archivo CSS sin la extensión (por ejemplo, `github-dark` carga `github-dark.css`).
 
@@ -156,11 +156,11 @@ base16-3024, base16-apatía, base16-aprendiz, base16-cenizas, base16-atelier-cue
     base16-windows-nt, base16-windows-nt-light, base16-woodland, base16-xcode-dusk,
     base16-zenburn
 
-## Saltos de línea de GitHub
+## Saltos de línea de GitHub [github-line-breaks]
 
 Marcado puede conservar los saltos de línea en sus párrafos. Simplemente seleccione {% prefspane Processor %} y marque la casilla para conservar los saltos de línea en los párrafos.
 
-## Casillas de verificación de GitHub
+## Casillas de verificación de GitHub [github-checkboxes]
 
 Listar elementos formateados como:
 
@@ -169,6 +169,6 @@ Listar elementos formateados como:
 
 aparecerán en la vista previa como elementos de casilla de verificación representados. No se puede interactuar con ellos, pero su estado reflejará cualquier cambio en el documento fuente.
 
-## Ajuste de bloque de código
+## Ajuste de bloque de código [code-block-wrapping]
 
 En {% prefspane Style %} encontrarás una opción en Diseño y Tipografía: "Permitir que los temas ajusten texto dentro de bloques de código". Deshabilitar esto obligará a todos los bloques de código a desplazarse horizontalmente en lugar de ajustarlos, independientemente del estilo de vista previa actual.

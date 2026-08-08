@@ -4,7 +4,7 @@ Marked peut ouvrir directement des documents Rich Text Format (`.rtf`) et RTFD (
 
 Cela fonctionne bien avec les documents provenant de **Pages**, **TextEdit**, **Word**, et d'autres applications qui enregistrent au format RTF ou RTFD. Marked reste un outil **d'aperçu** : vous modifiez dans l'application d'origine et Marked se met à jour lorsque vous enregistrez.
 
-## Comment fonctionne la conversion
+## Comment fonctionne la conversion [how-conversion-works]
 
 Marked convertit le RTF en HTML à l'aide du moteur de texte système, puis en Markdown. Le convertisseur :
 
@@ -15,11 +15,11 @@ Marked convertit le RTF en HTML à l'aide du moteur de texte système, puis en M
 
 Le même pipeline de conversion est utilisé pour la compilation RTF de Scrivener et pour les fichiers RTF inclus dans d'autres documents.
 
-## Aperçu en direct
+## Aperçu en direct [live-preview]
 
 Lorsque vous enregistrez le fichier RTF ou RTFD dans une autre application, Marked détecte le changement et actualise l'aperçu automatiquement.
 
-## Images
+## Images [images]
 
 Le RTF ne définit pas de champ « légende » séparé de la manière dont Cocoa l'exporte en HTML. Ce qui ressemble à une légende dans votre mise en page est généralement du **texte normal** dans le paragraphe suivant, et Marked le conserve comme texte du corps.
 
@@ -27,11 +27,11 @@ Les images intégrées et les images à l'intérieur des bundles RTFD (par exemp
 
 Marked n'utilise **pas** le nom de fichier de l'image comme texte alternatif ou comme légende de figure MultiMarkdown. Vous ne devriez pas voir `pastedGraphic.png` sous l'image, sauf si vous avez tapé ce texte dans le document.
 
-## Exportation et autres fonctionnalités
+## Exportation et autres fonctionnalités [export-and-other-features]
 
-Après la conversion, Marked traite le document comme les autres sources compilées (de manière similaire à [Scrivener](Scrivener_Support.html) et [DOCX](Working_with_DOCX.html)) : l'exportation, les statistiques et la plupart des fonctionnalités d'aperçu s'exécutent sur le Markdown généré stocké dans le cache des observateurs.
+Après la conversion, Marked traite le document comme les autres sources compilées (de manière similaire à [Scrivener](Scrivener_Support.html) et [DOCX](Working_With_DOCX.html)) : l'exportation, les statistiques et la plupart des fonctionnalités d'aperçu s'exécutent sur le Markdown généré stocké dans le cache des observateurs.
 
-## Limitations
+## Limitations [limitations]
 
 La qualité de la conversion dépend de l'application source. En général :
 
@@ -42,9 +42,9 @@ La qualité de la conversion dépend de l'application source. En général :
 
 Pour un collage ponctuel sans enregistrer de fichier, utilisez plutôt [Aperçu du presse-papiers](Opening_Files.html#from-the-clipboard).
 
-## Sujets connexes
+## Sujets connexes [related-topics]
 
 - [Support PDF](PDF_Support.html) : ouvrir des documents PDF comme sources Markdown
-- [Travailler avec DOCX](Working_with_DOCX.html) : documents Word avec suivi des modifications et commentaires
+- [Travailler avec DOCX](Working_With_DOCX.html) : documents Word avec suivi des modifications et commentaires
 - [Ouverture de fichiers](Opening_Files.html) : glisser-déposer, Ouvrir récent, presse-papiers
 - [Exportation](Exporting.html) : Copier le texte enrichi et enregistrer en RTFD (exportation), différent de l'ouverture d'un RTF comme fichier source

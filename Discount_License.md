@@ -1,4 +1,4 @@
-# Discount BSD License
+# Discount BSD License [discount-bsd-license]
 
 Copyright &copy; 2007 David Loren Parsons.<br/>
 All rights reserved.

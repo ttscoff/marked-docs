@@ -4,13 +4,13 @@ Marked can automatically build responsive `<picture>` elements for local images 
 
 See also [DocC Support](DocC_Support.html) for extensionless catalog references inside `.docc` bundles.
 
-## Enabling image variants
+## Enabling image variants [enabling-image-variants]
 
 In {% prefspane Apps %}, enable **Resolve dark and @2x image variants** (on by default) under DocC settings.
 
 This preference is separate from **Resolve DocC image references**, which only applies inside `.docc` catalogs. You can use one, both, or neither depending on your project.
 
-## Naming convention
+## Naming convention [naming-convention]
 
 Place variant files in the **same folder** as the primary image. Marked looks for four combinations based on the base name:
 
@@ -25,7 +25,7 @@ Suffix order is flexible — `icon@2x~dark.png` and `icon~dark@2x.png` are treat
 
 Supported extensions: `png`, `jpg`, `jpeg`, `gif`, `svg`, `webp`, and `pdf`.
 
-## What gets rewritten
+## What gets rewritten [what-gets-rewritten]
 
 Marked scans your document **before** final preview rendering:
 
@@ -46,7 +46,7 @@ Example output when light, dark, and @2x files are present:
 
 The preview (and HTML export) then follows the user's system appearance for dark variants and device pixel density for @2x assets.
 
-## What is skipped
+## What is skipped [what-is-skipped]
 
 Marked does **not** rewrite:
 
@@ -55,17 +55,17 @@ Marked does **not** rewrite:
 - `<img>` tags already inside an existing `<picture>` element
 - Extensionless names like `![Diagram](diagram)` — use [DocC Support](DocC_Support.html) for catalog-style references
 
-## Live preview and file watching
+## Live preview and file watching [live-preview-and-file-watching]
 
 When variants are detected, Marked adds **every existing variant file** to its watch list alongside the main document. Saving `icon~dark.png` in an external editor triggers the same live image reload as editing `icon.png`.
 
-## Tips
+## Tips [tips]
 
 - Reference the **light 1x** image in your source when possible (`icon.png`, not `icon~dark.png`). Marked discovers siblings from that path.
 - If you only have `@2x` assets, include at least one other variant (typically `~dark`) or Marked will leave the reference unchanged.
 - Variant resolution uses paths **relative to the document** (or the included file's folder for nested includes), the same base path rules as [Multi-file Documents](Multi-File_Documents.html).
 
-## Related topics
+## Related topics [related-topics]
 
 - [DocC Support](DocC_Support.html) — extensionless image names inside `.docc` catalogs
 - [Settings: Apps](Settings_Apps.html) — preference toggles for DocC and image variants

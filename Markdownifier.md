@@ -1,4 +1,4 @@
-# Markdownifier
+# Markdownifier [markdownifier]
 
 The Markdownifier is a tool that automatically extracts content from web pages and converts it to clean Markdown format. It intelligently processes web content to give you just the meaningful text and structure, filtering out ads, navigation elements, and other clutter.
 
@@ -6,7 +6,7 @@ The Markdownifier is a tool that automatically extracts content from web pages a
 
   [importurl]: import-url@2x.jpg width=800 class=center
 
-## How It Works
+## How It Works [how-it-works]
 
 The Markdownifier uses advanced content extraction algorithms to:
 
@@ -16,20 +16,20 @@ The Markdownifier uses advanced content extraction algorithms to:
 4. **Filter out** advertisements, navigation, and other non-content elements
 5. **Preserve** important formatting like headers, lists, and links
 
-## Opening the Markdownifier
+## Opening the Markdownifier [opening-the-markdownifier]
 
 To access the Markdownifier, open {% appmenu File, New, Markdownify URL (@~k) %}. Enter the URL you want to Markdownify and press Return ({% kbd return %}).
 
-## Using the Markdownifier
+## Using the Markdownifier [using-the-markdownifier]
 
-### Basic Usage
+### Basic Usage [basic-usage]
 
 1. **Open the Markdownifier** using any of the methods above
 2. **Enter a URL** in the text field
 3. **Click "Automatic"** or press `Return` to extract content
 4. The extracted content will **automatically open** in a new Marked document
 
-### Manual Content Selection
+### Manual Content Selection [manual-content-selection]
 
 If automatic extraction doesn't capture the content you want:
 
@@ -38,7 +38,7 @@ If automatic extraction doesn't capture the content you want:
 3. **Click the "Extract Content"** button that appears over the web page
 4. The selected content will be converted to Markdown and opened in Marked
 
-### Clipboard Integration
+### Clipboard Integration [clipboard-integration]
 
 The Markdownifier automatically detects URLs in your clipboard when opened:
 
@@ -46,9 +46,9 @@ The Markdownifier automatically detects URLs in your clipboard when opened:
 - You still need to click **"Automatic"** or press `Return` to process it
 - This prevents accidental processing of clipboard URLs
 
-## Content Processing
+## Content Processing [content-processing]
 
-### Automatic Content Validation
+### Automatic Content Validation [automatic-content-validation]
 
 The Markdownifier intelligently validates extracted content to ensure it contains meaningful text:
 
@@ -60,7 +60,7 @@ The Markdownifier intelligently validates extracted content to ensure it contain
 
 If the extracted content is too short or appears to be mostly navigation/ads, the Markdownifier will automatically fall back to manual selection mode.
 
-### Content Formatting
+### Content Formatting [content-formatting]
 
 The extracted content is formatted as clean Markdown with:
 
@@ -70,9 +70,9 @@ The extracted content is formatted as clean Markdown with:
 - **Maintained links** and emphasis formatting
 - **Clean paragraphs** with proper spacing
 
-## Safety Features
+## Safety Features [safety-features]
 
-### Crash Prevention
+### Crash Prevention [crash-prevention]
 
 The Markdownifier includes several safety measures to prevent crashes:
 
@@ -81,16 +81,16 @@ The Markdownifier includes several safety measures to prevent crashes:
 - **Disables advanced web features** that might cause instability
 - **Automatic crash recovery** with safe mode fallback
 
-### Privacy Protection
+### Privacy Protection [privacy-protection]
 
 - **Private browsing mode** prevents tracking and cookies
 - **No plugins or Java** execution for security
 - **Limited JavaScript** with crypto API blocking
 - **Resource filtering** blocks tracking and ad content
 
-## Troubleshooting
+## Troubleshooting [troubleshooting]
 
-### Content Not Extracted
+### Content Not Extracted [content-not-extracted]
 
 If automatic extraction fails:
 
@@ -99,7 +99,7 @@ If automatic extraction fails:
 3. **Verify the URL** is accessible and contains article content
 4. **Look for paywalls or login requirements** that might block access
 
-### WebView Issues
+### WebView Issues [webview-issues]
 
 If the web view becomes unstable:
 
@@ -108,7 +108,7 @@ If the web view becomes unstable:
 3. **Use the "Convert" button** instead of manual selection
 4. **Close and reopen** the Markdownifier to reset
 
-### Missing Content
+### Missing Content [missing-content]
 
 If important content is missing from the extraction:
 
@@ -117,29 +117,29 @@ If important content is missing from the extraction:
 3. **Check the source HTML** to see if content is dynamically loaded
 4. **Try a different URL** if the site has complex structure
 
-## Tips for Best Results
+## Tips for Best Results [tips-for-best-results]
 
-### URL Selection
+### URL Selection [url-selection]
 
 - **Use article URLs** rather than homepage or category pages
 - **Avoid URLs with tracking parameters** when possible
 
-### Content Quality
+### Content Quality [content-quality]
 
 - **Longer articles** generally extract better than short posts
 - **Well-structured content** with proper headings works best
 - **Avoid sites with heavy JavaScript** for automatic extraction
 
-### Manual Selection
+### Manual Selection [manual-selection]
 
 - **Wait for the page to fully load** before extracting
 - **Scroll through the content** to ensure everything is loaded
 - **Hover over areas** to select the smallest blue box that contains all of the content you want to extract
 - **Click** when you've found the content you want
 
-## Advanced Features
+## Advanced Features [advanced-features]
 
-### Batch Processing
+### Batch Processing [batch-processing]
 
 While the Markdownifier processes one URL at a time, you can:
 
@@ -147,7 +147,7 @@ While the Markdownifier processes one URL at a time, you can:
 - **Use Services integration** to process URLs from other applications
 - **Copy extracted content** and paste into existing Marked documents
 
-### Integration with Marked
+### Integration with Marked [integration-with-marked]
 
 Extracted content opens in Marked with:
 
@@ -155,16 +155,16 @@ Extracted content opens in Marked with:
 - **Source URL preservation** in the document metadata
 - **Full Marked capabilities** for reading and exporting)
 
-## Technical Details
+## Technical Details [technical-details]
 
-### Supported Content Types
+### Supported Content Types [supported-content-types]
 
 - **HTML articles** with standard markup
 - **Blog posts** and news articles
 - **Documentation** and help pages
 - **Forum posts** and discussion content
 
-### Limitations
+### Limitations [limitations]
 
 - **Paywalled sites** may require login and manual extraction
 - **JavaScript-heavy sites** may require manual selection

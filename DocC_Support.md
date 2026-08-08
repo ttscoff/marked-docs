@@ -4,13 +4,13 @@ Marked understands [Apple DocC](https://www.swift.org/documentation/docc/) docum
 
 For normal Markdown documents that use **paths with file extensions** (`images/icon.png`), see [Image Variants](Image_Variants.html). That feature works everywhere; DocC resolution is catalog-specific.
 
-## Enabling DocC resolution
+## Enabling DocC resolution [enabling-docc-resolution]
 
 In {% prefspane Apps %}, enable **Resolve DocC image references** (on by default).
 
 DocC detection runs when Marked finds a `.docc` catalog ancestor of the open document. No special URL scheme or Xcode integration is required — open the catalog's Markdown the same way you would any other file.
 
-## Extensionless references
+## Extensionless references [extensionless-references]
 
 Inside a DocC catalog, authors typically reference images **without** a path or extension:
 
@@ -22,7 +22,7 @@ Marked resolves `OrderStateTransitions` to `Resources/OrderStateTransitions.png`
 
 References that already include a path and extension — `images/chart.png` — are left to [Image Variants](Image_Variants.html) instead and are not rewritten by DocC resolution.
 
-## Dark mode and Retina variants
+## Dark mode and Retina variants [dark-mode-and-retina-variants]
 
 DocC catalogs often ship multiple files per image:
 
@@ -35,7 +35,7 @@ DocC catalogs often ship multiple files per image:
 
 When more than one variant exists, Marked emits the same responsive `<picture>` markup described in [Image Variants](Image_Variants.html). A single-file reference still resolves to a normal `<img>` or `![](Resources/...)` path.
 
-## HTML and Markdown
+## HTML and Markdown [html-and-markdown]
 
 DocC resolution applies during Marked's include pass:
 
@@ -44,11 +44,11 @@ DocC resolution applies during Marked's include pass:
 
 Both are updated before preview rendering.
 
-## File watching
+## File watching [file-watching]
 
 Resolved images under the catalog `Resources` folder are added to Marked's watch list. Editing a variant file externally updates the preview without a manual refresh.
 
-## Related topics
+## Related topics [related-topics]
 
 - [Image Variants](Image_Variants.html) — `~dark` and `@2x` detection for extension-based paths in any project
 - [Xcode Playgrounds](Xcode_Playgrounds.html) — preview Swift playground commentary

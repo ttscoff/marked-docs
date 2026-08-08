@@ -2,19 +2,19 @@
 
 La palette Actions rapides est un lanceur de commandes consultable pour Marked. Elle rassemble les actions de la barre de menu principale et du **menu Action** de l'aperçu, ainsi que les commandes clavier propres à l'aperçu qui n'apparaissent dans aucun menu (comme **Défilement automatique**). Utilisez-la lorsque vous savez ce que vous voulez faire mais ne vous souvenez pas dans quel menu le trouver.
 
-## Ouvrir la palette Actions rapides
+## Ouvrir la palette Actions rapides [opening-the-quick-actions-palette]
 
 Ouvrez la palette avec {% kbd shift cmd P %} ou depuis {% appmenu File, Quick Actions… %}. Le panneau apparaît sous forme de fenêtre flottante au-dessus de votre document actuel.
 
 Appuyez à nouveau sur le même raccourci, ou appuyez sur **Échap**, pour fermer la palette. Si la palette est déjà ouverte, choisir **Actions rapides…** dans le menu la ferme également.
 
-## Personnaliser le raccourci
+## Personnaliser le raccourci [customizing-the-shortcut]
 
 Le raccourci par défaut est {% kbd shift cmd P %}. Pour le modifier, ouvrez {% prefspane General %} et enregistrez une nouvelle combinaison sous **Ouvrir la palette d'actions** dans la section **Raccourcis**.
 
 Contrairement à **Activer Marked** et **Élever la première fenêtre**, le raccourci Actions rapides ne fonctionne que lorsque Marked est l'application active. Il met à jour le raccourci du menu {% appmenu File, Quick Actions… %} pour correspondre à votre paramètre.
 
-## Recherche et filtrage
+## Recherche et filtrage [search-and-filter]
 
 Tapez dans le champ de recherche en haut du panneau pour filtrer les commandes en temps réel. La correspondance est approximative et tolérante :
 
@@ -24,7 +24,7 @@ Tapez dans le champ de recherche en haut du panneau pour filtrer les commandes e
 
 Chaque résultat affiche le nom de la commande à gauche et son raccourci clavier (si disponible) à droite en gris. Certaines commandes affichent également un chemin de navigation (par exemple `Aperçu › Défilement automatique`) lorsque l'action provient d'un sous-menu ou du moteur d'aperçu.
 
-## Ce qui apparaît dans la liste
+## Ce qui apparaît dans la liste [what-appears-in-the-list]
 
 La palette inclut :
 
@@ -34,7 +34,7 @@ La palette inclut :
 
 Lorsque la même commande apparaît à plusieurs endroits, Marked affiche le chemin de menu le plus court et fusionne les informations de raccourci des doublons.
 
-## Navigation au clavier
+## Navigation au clavier [keyboard-navigation]
 
 Naviguez dans la palette Actions rapides entièrement au clavier :
 
@@ -45,7 +45,7 @@ Naviguez dans la palette Actions rapides entièrement au clavier :
 
 La frappe simple (sans la touche Commande) filtre le champ de recherche. Les raccourcis à touche unique propres à l'aperçu, comme `s` pour le défilement automatique, filtrent la liste ; appuyez sur **Retour** pour exécuter la commande sélectionnée.
 
-## Exécuter des commandes
+## Exécuter des commandes [running-commands]
 
 Sélectionner une commande de menu l'exécute de la même manière que si vous la choisissiez dans le menu, y compris pour les éléments dynamiques et ceux du menu Action.
 

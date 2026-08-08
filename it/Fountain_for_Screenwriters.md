@@ -10,7 +10,7 @@ Puoi forzare l'elaborazione di qualsiasi documento come Markdown aprendo il menu
 
 Le intestazioni delle sezioni e delle scene verranno visualizzate nel sommario per una rapida navigazione nella sceneggiatura.
 
-## Script
+## Script [scrippets]
 
 Puoi anche utilizzare "script" in un documento normale per elaborare e stilizzare singole sezioni con Fountain. Circonda semplicemente il markup Fountain all'interno del documento principale con i tag `[scrippet]`:
 

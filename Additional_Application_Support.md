@@ -2,7 +2,7 @@
 
 Marked works with many editors and writing apps. This page covers shared **settings**, the **clipboard preview**, pointers to **streaming preview**, and scripting resources. Detailed guides for popular apps live in their own help topics (see the **Supported Apps** section in the sidebar).
 
-## Per-app guides
+## Per-app guides [per-app-guides]
 
 Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for the overall workflow. If you use Obsidian, see [Marked vs Obsidian Preview](Marked_vs_Obsidian_Preview.html) to decide when Marked adds value alongside Obsidian's built-in preview.
 
@@ -33,7 +33,7 @@ Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Xcode playgrounds** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Application settings
+## Application settings [application-settings]
 
 I> Several integrations expose toggles inside {% prefspane Apps %} and {% prefspane Preview %}.
 
@@ -41,17 +41,17 @@ I> Several integrations expose toggles inside {% prefspane Apps %} and {% prefsp
 
 Use these panes for wiki-link defaults, Scrivener hand-off, streamed clipboard settings, Mind Map embedding options for OPML/OmniOutliner, Obsidian integrations, or other processors that rely on cooperative editors.
 
-## Clipboard Preview
+## Clipboard Preview [clipboard-preview]
 
 ![][ClipboardPreviewMenu]
 
 Markdown (or compatible plain text) in the clipboard opens with {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). If the clipboard holds **HTML or RTF**, Marked converts it into Markdown-like source before preview&#8212;including rough heading detection when RTF paragraphs use large stylesheet font sizes.
 
-## Streaming Preview
+## Streaming Preview [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra, and several other editors can push Markdown into Marked as you type via **Streaming Preview**. See [Streaming Preview](Streaming_Preview.html) for setup and troubleshooting.
 
-## Scripts and Bonus Pack
+## Scripts and Bonus Pack [scripts-and-bonus-pack]
 
 Automations for BBEdit, TextMate, DEVONthink, Emacs, Vim, and more ship with the [Marked Bonus Pack][bonus]. Install or adapt those scripts when you want menu-bar or editor macros beyond the integrations listed above.
 

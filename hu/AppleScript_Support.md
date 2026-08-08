@@ -6,13 +6,13 @@ A Marked tartalmaz egy AppleScript szótárt az előnézet, az export és a munk
 
 Az URL-alapú automatizáláshoz (shell szkriptek, `open` parancsok és visszahívások) tekintse meg az [URL Handler](URL_Handler.html) részt. Az AppleScript és az URL-kezelő kiegészíti egymást: használja az AppleScriptet, ha egy adott dokumentumot vagy ablakot kell megcéloznia, és URL-eket, ha egy egyszerű `open 'x-marked://...'` hívás elegendő.
 
-## A szótár megtekintése
+## A szótár megtekintése [viewing-the-dictionary]
 
 A **Script Editor** programban válassza a **Fájl → Szótár megnyitása…** lehetőséget, és válassza a Megjelölt lehetőséget. A szótár felsorolja az **alkalmazás**, **dokumentum** és **ablak** objektumok parancsait, valamint a Marked suite exportparancsait.
 
 MacOS rendszeren a **Script Editor** segítségével böngészhet a szkriptdefiníciók között.
 
-## Célzás megjelölve
+## Célzás megjelölve [targeting-marked]
 
 A szabványos telepítéshez:
 
@@ -22,7 +22,7 @@ tell application "Marked"
 end tell
 ```
 
-## Dokumentumok és ablakok
+## Dokumentumok és ablakok [documents-and-windows]
 
 **Alkalmazás**
 
@@ -51,7 +51,7 @@ end tell
 
 Egy adott előnézet exportálásakor előnyben részesítse a `tell document 1` vagy a `tell window 1's document` értéket. Az alkalmazás exportálási parancsai a kulcsablakot vagy az aktuális dokumentumot használják, ha nincs megadva vevő.
 
-### Példa: elérési út megnyitása és olvasása
+### Példa: elérési út megnyitása és olvasása [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -60,7 +60,7 @@ tell application "Marked"
 end tell
 ```
 
-### Példa: az előnézeti stílus módosítása
+### Példa: az előnézeti stílus módosítása [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -74,7 +74,7 @@ A stílusnevek megegyeznek az előnézeti stílusmenüvel (megjelenítési név,
 
 Használja a **`get preview style names`**-t az alkalmazásobjektumban az engedélyezett stílusmegjelenítési nevek felsorolásához.
 
-### Példa: processzor és forrásszöveg
+### Példa: processzor és forrásszöveg [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -86,7 +86,7 @@ tell application "Marked"
 end tell
 ```
 
-## Alkalmazásparancsok
+## Alkalmazásparancsok [application-commands]
 
 Ezek a parancsok az **alkalmazás** objektumra vonatkoznak (nem egy adott dokumentumra).
 
@@ -109,7 +109,7 @@ tell application "Marked"
 end tell
 ```
 
-## Előnézeti vezérlő
+## Előnézeti vezérlő [preview-control]
 
 Elérhető **dokumentumban** és **ablakban**. Ezek többségéhez egy betöltött előnézeti WebView szükséges.
 
@@ -136,7 +136,7 @@ tell application "Marked"
 end tell
 ```
 
-## Automatikus görgetés és gyorsolvasás
+## Automatikus görgetés és gyorsolvasás [autoscroll-and-speed-read]
 
 | Parancs | Leírás |
 | --- | --- |
@@ -158,7 +158,7 @@ tell application "Marked"
 end tell
 ```
 
-## Statisztika
+## Statisztika [statistics]
 
 **`get statistics`** egy `statistics_record` értéket ad vissza az aktuális Markdown forrásból (nem a statisztikai fiókban látható formázott karakterláncokból) számított számértékekkel.
 
@@ -186,7 +186,7 @@ tell application "Marked"
 end tell
 ```
 
-## Tartalomjegyzék (folyamatban lévő munka)
+## Tartalomjegyzék (folyamatban lévő munka) [table-of-contents-work-in-progress]
 
 {% note %}
 **WIP – még nem megbízható.** A szótár tartalmaz egy **`headings`** tulajdonságot és **`headings`** parancsot a beágyazott előnézeti címsorok (`heading_item` rekordok) olvasásához. Ez az automatizálás **nem működik megfelelően** a jelenlegi buildekben (üres eredmények, kényszerítési hibák vagy „nincs eredmény”). Egy későbbi kiadásban javítják. Addig előnyben részesítse a **`scroll to heading`**-t ismert címmel vagy azonosítóval.
@@ -213,7 +213,7 @@ end tell
 
 Használja a `id` értékeket **`scroll to heading id "..."`**-val, ha a címsorok automatizálása stabil.
 
-## Nyomtatás profillal
+## Nyomtatás profillal [print-with-profile]
 
 **`print with profile`** ideiglenesen alkalmazza az exportprofil nyomtatási beállításait, majd kinyomtatja a dokumentumot (ugyanaz a beállításcsomag, mint a {% prefspane Export %} exportprofiljai).
 
@@ -227,7 +227,7 @@ end tell
 
 A profilnevek megkülönböztetik a kis- és nagybetűket. Nyomtatás után a Marked visszaállítja a korábban aktív exportálási profilt.
 
-## Profilok exportálása
+## Profilok exportálása [export-profiles]
 
 Az exportprofilok az exportálási/nyomtatási beállítások kötegeit tárolják (margók, fejlécek, tartalomjegyzék-beállítások és hasonló beállítások a {% prefspane Export %}-től).
 
@@ -252,7 +252,7 @@ end tell
 
 A profilnevek megkülönböztetik a kis- és nagybetűket, és pontosan meg kell egyeznie a mentett profillal.
 
-## Parancsok exportálása
+## Parancsok exportálása [export-commands]
 
 Az exportálási parancsok az **alkalmazás**, **dokumentum** és **ablak** objektumokon érhetők el. Minden parancshoz szükség van egy **`to`** paraméterre a kimeneti útvonallal (POSIX elérési út karakterlánc vagy `file` objektum).
 
@@ -275,7 +275,7 @@ Az exportálási parancsok az **alkalmazás**, **dokumentum** és **ablak** obje
 - A HTML-exportálás a **megjelenített előnézetet** használja (amit a WebView-ban lát), nem pedig a nyers Markdown-forrásfájlt.
 - A folyamatos PDF rögzíti az aktuális előnézeti WebView elrendezést.
 
-### Alapvető export
+### Alapvető export [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -285,13 +285,13 @@ tell application "Marked"
 end tell
 ```
 
-### Exportálási útvonalak és homokozó
+### Exportálási útvonalak és homokozó [export-paths-and-sandboxing]
 
 - Használjon teljes POSIX elérési utat a célfájlhoz.
 - A Megjelölt képes közbenső mappákat létrehozni, ha az exportálási útvonal **a megnyitott dokumentum mappájában** belül van (például a `.../MyProject/build/output.pdf` címre exportál a `.../MyProject/chapter.md` előnézete közben).
 - A dokumentum mappáján kívülre történő exportáláshoz írható elérési út szükséges, amelyhez a Megjelölt hozzáférhet (mentett dokumentum helye, biztonsági hatókörű könyvjelzők vagy a Megnyitás párbeszédpaneleken megadott mappák). Ha az elérési út nem írható, a parancs az exportálás megkezdése előtt hibát ad vissza.
 
-## `with` opciók (tulajdonságrekord)
+## `with` opciók (tulajdonságrekord) [with-options-properties-record]
 
 A `with profile` helyett a **`with`** vagy **`with properties`** használatával adhatja át az opciók rekordját:
 
@@ -316,7 +316,7 @@ A rekord többi kulcsa megegyezhet a profilokból származó **exportálási pre
 
 Az ütköző forrásokat nem kombinálhatja hanyagul: ha `with profile`-t használ, először töltse be azt a profilt; ha `with` rekordot használ, a rekordban lévő profilkulcsok felülírják az exportálás aktuális beállításait.
 
-### Margó gyorsírás
+### Margó gyorsírás [margin-shorthand]
 
 A `margins` érték egy karakterlánc, amely egy-négy mérést tartalmaz. Mértékegységek: `in`, `cm`, `mm`, `pt` vagy `"` hüvelyk esetén. Az egység nélküli számot pontként kell kezelni.
 
@@ -332,7 +332,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Kombinált példa
+### Kombinált példa [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -342,7 +342,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
+## `convert_to` [convert_to]
 
 Az alkalmazásobjektum a régi parancsfájl-parancsokat is megjeleníti:
 
@@ -352,7 +352,7 @@ Az alkalmazásobjektum a régi parancsfájl-parancsokat is megjeleníti:
 
 A `convert_to` továbbra is elérhető a régebbi munkafolyamatokhoz és csak az AppleScript-automatizáláshoz.
 
-## Hibakeresés
+## Hibakeresés [debugging]
 
 Engedélyezze a **Hibakeresési módot** a {% prefspane Advanced %} alatt (vagy a Beállításokban a hibakeresési beállításokat). A Marked ezután naplózza az AppleScript-exportálási lépéseket Info szinten a `[AppleScript]` előtaggal a Console.appban és a Marked naplónézőjében.
 
@@ -365,7 +365,7 @@ Hasznos naplósorok oldalszámozott PDF-exportálás nyomon követéséhez:
 
 A hosszú exportálások (különösen az oldalszámozott PDF-fájlok) felfüggesztik az AppleScript-eseményt a befejezésig, így az ügyfelek nem lépnek túl az exportálás közben.
 
-## Hibák
+## Hibák [errors]
 
 A sikertelen exportálás beállítja a parancsfájl-hiba karakterláncát a parancsban (látható a Script Editorban és a `on error` kezelőkben). Gyakori üzenetek:
 
@@ -376,6 +376,6 @@ A sikertelen exportálás beállítja a parancsfájl-hiba karakterláncát a par
 - Időtúllépés várva az előnézetre a stílusmódosítás utáni újratöltésre.
 - A lapozott PDF-exportálás időtúllépést szenvedett vagy meghiúsult az oldalak generálásakor.
 
-## Integráció más eszközökkel
+## Integráció más eszközökkel [integration-with-other-tools]
 
-Az alkalmazások használhatják a Marked AppleScript felületét a dokumentumok metaadatainak olvasásához. A Parancsikonok alkalmazáshoz lásd: [Shortcuts Integration](Shortcuts_Integration.html). Shell-vezérelt munkafolyamatok, mappafigyelők és szerkesztő-visszahívások esetén az [URL-kezelő](URL_Handler.html) gyakran egyszerűbb. A [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) további szkripteket és szolgáltatásokat tartalmaz.
+Az alkalmazások használhatják a Marked AppleScript felületét a dokumentumok metaadatainak olvasásához. Shell-vezérelt munkafolyamatok, mappafigyelők és szerkesztő-visszahívások esetén az [URL-kezelő](URL_Handler.html) gyakran egyszerűbb. A [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) további szkripteket és szolgáltatásokat tartalmaz.

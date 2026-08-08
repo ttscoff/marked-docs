@@ -3,7 +3,7 @@
 
 Marked est un excellent compagnon pour les flux de travail modernes de « codage agentique », où des outils d'IA génèrent des plans, refactorisent du code et mettent continuellement à jour la documentation pendant que vous travaillez. En laissant Marked surveiller vos dossiers de projet ou de planification, vous obtenez une vue en direct et lisible de tout ce que vos agents de codage modifient, sans avoir à fouiller dans votre éditeur ou votre arborescence de fichiers.
 
-## Surveiller votre dossier de projet ou de plans
+## Surveiller votre dossier de projet ou de plans [watching-your-project-or-plan-folder]
 
 Plutôt que d'ouvrir un seul fichier, vous pouvez pointer Marked vers un dossier entier que vous utilisez pour les plans, les notes provisoires, ou la documentation générée par l'IA :
 
@@ -15,7 +15,7 @@ Une fois que Marked surveille un dossier, il affiche automatiquement le **fichie
 
 Cela fonctionne particulièrement bien avec des outils agentiques comme Cursor, Claude et Copilot, qui régénèrent en continu des spécifications, des listes de tâches ou des notes d'architecture pendant que vous itérez sur une fonctionnalité.
 
-## Défiler jusqu'à la première modification
+## Défiler jusqu'à la première modification [scrolling-to-the-first-change]
 
 Lorsque le *défilement vers la modification* est activé dans les préférences de Marked, l'aperçu ne se contente pas de se recharger : il **défile directement jusqu'à la première zone modifiée** du fichier lors de sa mise à jour.
 
@@ -27,7 +27,7 @@ Cela signifie que vous pouvez :
 
 Combinée à la surveillance de dossier, cette fonctionnalité facilite le suivi précis de ce que vos agents font à vos documents, même lorsqu'ils effectuent des modifications fréquentes et incrémentales.
 
-## Diagrammes avec Mermaid.js
+## Diagrammes avec Mermaid.js [diagrams-with-mermaidjs]
 
 Marked dispose également de la **prise en charge de Mermaid.js activée par défaut** : les diagrammes de séquence, organigrammes et diagrammes d'architecture que vos agents génèrent à l'aide de blocs de code Mermaid s'afficheront donc proprement dans l'aperçu. Lorsque votre assistant IA produit un bloc de code délimité tel que :
 
@@ -42,7 +42,7 @@ flowchart TD
 
 Marked le transformera automatiquement en un diagramme stylé et interactif, vous offrant une vue visuelle des flux de travail complexes, des flux de données ou des conceptions système créés par des outils comme Cursor, Claude, Copilot et d'autres assistants de codage agentiques.
 
-## Exemples de flux de travail de codage agentique
+## Exemples de flux de travail de codage agentique [example-agentic-coding-workflows]
 
 - **Cursor + Marked** : conservez un dossier `plans/` ou `notes/` dans votre dépôt, dans lequel Cursor rédige des plans d'implémentation étape par étape. Pointez Marked vers ce dossier pour toujours consulter le dernier plan, proprement mis en forme, à mesure que vous acceptez et appliquez les modifications dans l'éditeur.
 

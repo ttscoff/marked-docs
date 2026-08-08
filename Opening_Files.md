@@ -2,7 +2,7 @@
 
 Marked gives you options.
 
-## Live preview workflow
+## Live preview workflow [live-preview-workflow]
 
 1. Drag a Markdown file onto Marked (or use {% appmenu File, Open... ({{cmd}}O) %}).
 2. Edit the file in your preferred editor.
@@ -10,11 +10,11 @@ Marked gives you options.
 
 See [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for vault watching, streaming preview, and editor-specific guides.
 
-## Drag to Dock Icon
+## Drag to Dock Icon [drag-to-dock-icon]
 
 The easiest way to use Marked on a file you're already editing is to drag the document icon from the toolbar of your editor or from Finder to the Marked icon in your Dock. Marked will immediately start tracking any Markdown file (or text file) dropped on it. You can also drag files directly from the Finder.
 
-## Using the Menu
+## Using the Menu [using-the-menu]
 
 ![][2]
 
@@ -26,15 +26,15 @@ Marked can also open **`.rtf` and `.rtfd`** files directly (for example exports 
 
 Marked can open **`.pdf`** files the same way: conversion runs in the background, then the preview updates when finished. This works best for shorter, text-based PDFs; large manuals and scanned documents are slower and less accurate. See [PDF Support](PDF_Support.html) for details and limitations.
 
-## From the Clipboard
+## From the Clipboard [from-the-clipboard]
 
 If you have compatible (e.g. Markdown) text in your clipboard, you can open an instant preview by selecting {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %}. If you copied a selection from a web browser or other app that put HTML or RTF on the clipboard, Marked converts it to Markdown for preview. When you paste RTF from an app like TextEdit or Pages, larger font sizes are roughly converted to heading levels (e.g. very large text becomes a level 1 heading, smaller large text becomes level 2, and so on). You can have multiple clipboard previews open at once, and you can save them to a new file by choosing {% appmenu File, Save Transient Preview %}.
 
-## Creating a New Document
+## Creating a New Document [creating-a-new-document]
 
 Marked allows you to create a new, empty text file with the {% appmenu File, New ({{cmd}}N) %} command. It will immediately ask you for a location to save the file, and you can enable the "Edit new files automatically" option in the {% prefspane Apps %}, next to the Text editor button to automatically open the newly-created file in your default editor.
 
-## Open Recent
+## Open Recent [open-recent]
 
 ![][3]
 
@@ -68,6 +68,6 @@ Alternate views are not available for unsaved documents,
 clipboard previews, streaming previews, or folder-based
 projects that do not map to a single file on disk.
 
-## Quick Open ##
+## Quick Open ## [quick-open]
 
 You can quickly switch between open documents, open recent documents, or open the File->Open dialog with the [Quick Open panel](Quick_Open.html) ({% kbd cmd shift o %}).

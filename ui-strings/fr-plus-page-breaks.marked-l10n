@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: fr (French)
+# Feature: convertPlusPageBreaks (Treat +++ as page breaks)
+# Generated: 2026-08-03
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer)
+# or the literals +++ and <!--BREAK--> unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertPlusPageBreaks" = "Traitez +++ comme des sauts de page";
+# EN: Treat +++ as page breaks
+# DRAFT: Traitez +++ comme des sauts de page
+
+"tooltip.convertPlusPageBreaks" = "Lorsqu'elle est activée, une ligne de trois caractères + ou plus est traitée comme un saut de page (identique à <!--BREAK-->). Compatible avec iA Writer. Désactivé par défaut.";
+# EN: When enabled, a line of three or more + characters is treated as a page break (same as <!--BREAK-->). Compatible with iA Writer. Off by default.
+# DRAFT: Lorsqu'elle est activée, une ligne de trois caractères + ou plus est traitée comme un saut de page (identique à <!--BREAK-->). Compatible avec iA Writer. Désactivé par défaut.
+=== END Settings.strings ===

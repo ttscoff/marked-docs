@@ -2,7 +2,7 @@
 
 Gardez une trace pendant que vous écrivez.
 
-## Nombre de mots et statistiques de documents
+## Nombre de mots et statistiques de documents [word-count-and-document-statistics]
 
 ![][1]
 
@@ -12,7 +12,7 @@ Le nombre de mots est situé dans la barre d'état inférieure et peut être act
 
 Si du texte est sélectionné, l'affichage du nombre de mots et la fenêtre contextuelle paragraphe/phrases/caractère seront mis à jour avec des informations uniquement pour la sélection.
 
-## Nombre de mots pour la sélection
+## Nombre de mots pour la sélection [word-count-for-selection]
 
 ![Pop-up contextuel du nombre de mots lors de la sélection de texte][2]
 
@@ -24,7 +24,7 @@ Si « Afficher le nombre de mots pour la sélection » est activé dans le {% pr
 
 La fonction de zoom est pratique pour sélectionner et obtenir rapidement des comptes pour des morceaux de texte plus volumineux. Tapez {% kbd z %} pour effectuer un zoom arrière et faire votre sélection.
 
-## Statistiques de lisibilité
+## Statistiques de lisibilité [readability-statistics]
 
 ![Barre de statistiques de lisibilité][3]
 
@@ -32,7 +32,7 @@ La fonction de zoom est pratique pour sélectionner et obtenir rapidement des co
 
 Des statistiques supplémentaires de Flesch/Kincaid et du Fog Index sont disponibles avec {% kbd opt shift cmd S %}.
 
-### Informations sur la lisibilité
+### Informations sur la lisibilité [readability-information]
 
 **Facilité de lecture Flesch :** des scores plus élevés indiquent un matériel plus facile à lire ; les nombres inférieurs marquent les passages plus difficiles à lire.
 
@@ -44,7 +44,7 @@ Des statistiques supplémentaires de Flesch/Kincaid et du Fog Index sont disponi
 
 **Indice Gunning Fog :** mesure la lisibilité de l'écriture anglaise. L'indice estime les années d'éducation formelle nécessaires pour comprendre le texte lors d'une première lecture. Un indice de brouillard de 12 nécessite le niveau de lecture d'un lycéen américain (environ 18 ans).
 
-## Statistiques avancées
+## Statistiques avancées [advanced-statistics]
 
 ![popup Statistiques avancées][adv]
 
@@ -52,7 +52,7 @@ Des statistiques supplémentaires de Flesch/Kincaid et du Fog Index sont disponi
 
 Sélectionner Statistiques avancées dans le menu Action, ou appuyer sur {% kbd cmd I %}, fait apparaître un panneau contenant des statistiques de document plus avancées, y compris la longueur moyenne des mots et des phrases et la complexité moyenne des mots.
 
-### Statistiques avancées flottantes
+### Statistiques avancées flottantes [floating-advanced-statistics]
 
 ![Fenêtre d'informations flottante][floating]
 
@@ -60,7 +60,7 @@ Sélectionner Statistiques avancées dans le menu Action, ou appuyer sur {% kbd 
 
 Appuyer sur {% kbd shift cmd I %} ouvrira un panneau flottant contenant toutes les statistiques détaillées et les informations de lisibilité. Ce panneau peut rester au premier plan lorsque vous basculez dans votre éditeur, afin que vous puissiez voir vos statistiques mises à jour à chaque fois que vous enregistrez, que l'aperçu soit visible ou non. En appuyant sur l'icône `<`, l'aperçu Marked associé sera ramené au premier plan. Si vous maintenez l'option enfoncée et cliquez sur le même bouton, cela ouvrira le fichier Markdown dans votre éditeur de texte par défaut (défini dans le {% prefspane Apps %}).
 
-### Cibles de mots
+### Cibles de mots [word-targets]
 
 Si vous avez un objectif spécifique pour le nombre de mots pendant que vous écrivez, vous pouvez ajouter une clé de métadonnées « cible : » en haut de votre document et Marked suivra votre progression, affichant un indicateur d'achèvement dans le panneau Statistiques détaillées ({% kbd cmd I %}) et dans les statistiques flottantes ({% kbd shift cmd I %}).
 
@@ -69,7 +69,7 @@ Si vous avez un objectif spécifique pour le nombre de mots pendant que vous éc
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualisez la répétition des mots
+## Visualisez la répétition des mots [visualizewordrepetition]
 
 En sélectionnant Visualiser la répétition de mots dans le menu Action (ou en appuyant sur {% kbd ctrl cmd W %}), vous passerez à une vue spéciale qui supprimera les éléments non textuels et mettra en évidence les mots répétés dans votre document. Les mots répétés sont surlignés en rose clair et le survol d'un mot en surbrillance éclaircira les mots correspondants dans tout le document. Cliquer sur un mot en surbrillance assombrit l'arrière-plan et « colle » le surlignage pour un examen plus approfondi.
 

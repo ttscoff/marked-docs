@@ -4,7 +4,7 @@
 
 [Ulisse] [Ulisse] non scrive un semplice file Markdown per ogni foglio, quindi **esporta** il testo corrente quando vuoi che Marked ne visualizzi l'anteprima.
 
-## Esportazione rapida in contrassegnato
+## Esportazione rapida in contrassegnato [quick-export-to-marked]
 
 1. Premi {% kbd cmd 6 %} in Ulisse (o fai clic sul pulsante Esporta nella barra degli strumenti).
 2. Imposta il menu a discesa del formato su **Testo**.
@@ -14,7 +14,7 @@
 
 Dopo la prima configurazione, {% kbd cmd 6 %} seguito da **Invio** è spesso sufficiente per aggiornare l'anteprima contrassegnata per il foglio attivo (o i fogli selezionati).
 
-## Immagini e risorse
+## Immagini e risorse [images-and-assets]
 
 Marked può anche leggere le esportazioni **TextBundle** o **TextPack** da Ulysses. Utilizza lo stesso foglio di esportazione ma scegli un'opzione di pacchetto quando hai bisogno di immagini incorporate o altre risorse insieme a Markdown.
 

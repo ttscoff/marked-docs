@@ -4,7 +4,7 @@ Legen Sie einen **Ordner** mit Klartextnotizen auf Marked ab. Marked öffnet ein
 
 Aktualisierungen erfolgen immer dann, wenn eine überwachte Datei gespeichert wird: Wenn die neueste Datei dieselbe wie zuvor ist, scrollt Marked in Richtung des erkannten Bearbeitungsbereichs. Wenn Sie zwischen Dokumenten wechseln, wechselt die gesamte Vorschau zur aktiven Datei.
 
-## Funktioniert gut mit nvUltra, nvALT und ähnlichen Tools
+## Funktioniert gut mit nvUltra, nvALT und ähnlichen Tools [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Notebook-Apps, die einzelne Dateien auf der Festplatte belassen (klassische Bibliotheken im **nvALT**-, **nvUltra**-, **Notational Velocity**-Stil, synchronisierte Git-Ordner, Dropbox-Scratch-Ordner usw.) lassen sich auf natürliche Weise mit der Ordnerüberwachung kombinieren – Sie schreiben in ein Fenster und lassen Marked daneben angeheftet, ohne die Vorschau manuell erneut zu öffnen.
 

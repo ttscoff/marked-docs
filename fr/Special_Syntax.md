@@ -1,8 +1,8 @@
 # <%= @title %>
 
-## Callouts
+## Callouts [callouts]
 
-## Bear/Obsidian ##
+## Bear/Obsidian ## [bearobsidian]
 
 Marked prend en charge les callouts avec la syntaxe utilisée par Obsidian et Bear, qui est une citation en bloc au format spécial :
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser un `+` ou un `-` pour rendre le callout repliable. Un signe
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Xcode Playground ###
+### Xcode Playground ### [xcode-playground]
 
 Lors de la prévisualisation de fichiers Xcode Playground, Marked prend en charge la syntaxe native des callouts Xcode Playground :
 
@@ -94,7 +94,7 @@ Ces callouts sont automatiquement convertis au format de callout de Marked et st
 > Cette fonctionnalité ne fonctionne que lors de la prévisualisation de fichiers Xcode Playground (`.playground`). Les fichiers Markdown classiques ne traiteront pas cette syntaxe.
 
 
-## Table des matières
+## Table des matières [tableofcontents]
 
 Vous pouvez spécifier l'endroit du document où la table des matières doit apparaître à l'aide de `<!--TOC-->`. Si ce marqueur est défini, il remplace l'option des Préférences et s'affichera toujours dans la fenêtre d'aperçu, ainsi que lors de l'enregistrement et de l'impression. La table des matières ne s'affichera qu'une seule fois, même si plusieurs marqueurs `<!--TOC-->` sont présents dans le contenu.
 
@@ -106,7 +106,7 @@ Par défaut, la table des matières s'imprimera sur la première page du documen
 
 I> Vous pouvez définir le type de numérotation ou de lettrage de chaque niveau d'une hiérarchie de table des matières imbriquée dans {% prefspane Export %}.
 
-## Sauts de page
+## Sauts de page [pagebreaks]
 
 Vous pouvez forcer un saut de page pour la sortie impression/PDF à l'aide de la syntaxe suivante :
 
@@ -128,7 +128,7 @@ Marked peut fonctionner comme un télésouffleur grâce à la fonctionnalité [D
 
 Où `X` est le nombre de secondes pendant lesquelles Marked doit marquer une pause. Ainsi, insérer `<!--PAUSE:15-->` produira une pause de 15 secondes lorsque ce point du document atteindra le milieu de l'écran.
 
-## Inclusions de fichiers
+## Inclusions de fichiers [file-includes]
 
 Le contenu de fichiers supplémentaires peut être inséré à l'aide de la syntaxe suivante :
 
@@ -144,7 +144,7 @@ Voir [« Documents multi-fichiers »][ext] pour plus d'informations.
 
 [ext]: Multi-File_Documents.html
 
-## Inclusion de code
+## Inclusion de code [includingcode]
 
 Marked peut inclure des fichiers externes en tant que code à l'aide d'une syntaxe similaire aux inclusions de fichiers ci-dessus :
 
@@ -156,7 +156,7 @@ Notez les parenthèses au lieu des crochets. Pour des raisons de compatibilité 
 
 Le contenu du fichier spécifié sera inséré dans un bloc pre>code de votre document et pourra bénéficier de la coloration syntaxique automatique si elle est activée. Les blocs de code ne peuvent pas être imbriqués et ne seront pas traités par MultiMarkdown. Les processeurs personnalisés continueront cependant de s'exécuter sur le bloc pre>code créé.
 
-## Inclusion de texte ou HTML non traité
+## Inclusion de texte ou HTML non traité [includingunprocessedtextorhtml]
 
 E> **Remarque :** Cette fonctionnalité est destinée aux utilisateurs avancés.
 

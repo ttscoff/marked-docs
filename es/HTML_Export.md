@@ -6,9 +6,9 @@ Marked exporta HTML desde su **vista previa en vivo**: el mismo resultado render
 
 El flujo de trabajo típico es **primero obtener una vista previa, luego exportar HTML**: abra o compile su documento en Marked, elija un tema, revise en la vista previa en vivo y luego exporte cuando el marcado se vea bien.
 
-## Dos formas de obtener HTML
+## Dos formas de obtener HTML [two-ways-to-get-html]
 
-### Copiar HTML (fragmento)
+### Copiar HTML (fragmento) [copy-html-snippet]
 
 **Copiar HTML** coloca la fuente HTML de la vista previa en el portapapeles, lista para pegar en WordPress, Ghost, Squarespace, un foro, una plantilla de correo electrónico o cualquier aplicación que acepte fragmentos HTML.
 
@@ -18,7 +18,7 @@ El flujo de trabajo típico es **primero obtener una vista previa, luego exporta
 
 Copiar HTML es ideal cuando tu destino ya tiene su propia hoja de estilo y solo necesitas el marcado del contenido.
 
-### Guardar HTML (archivo)
+### Guardar HTML (archivo) [save-html-file]
 
 **Guardar HTML** escribe un archivo `.html` completo en el disco.
 
@@ -28,7 +28,7 @@ Copiar HTML es ideal cuando tu destino ya tiene su propia hoja de estilo y solo 
 
 Guardar HTML es ideal para archivar, compartir un archivo independiente o abrir el resultado directamente en un navegador.
 
-## Guardar opciones HTML
+## Guardar opciones HTML [save-html-options]
 
 El cuadro de diálogo Guardar HTML incluye un selector de perfiles de exportación y estas opciones:
 
@@ -65,7 +65,7 @@ Los documentos con [CriticMarkup](CriticMarkup.html) pueden elegir si la exporta
 
 Seleccione un [Perfil de exportación](Exporting.html#export-profiles) guardado para restaurar su configuración de exportación HTML preferida (estilos incrustados, imágenes, resaltado de sintaxis, matemáticas) en un solo paso.
 
-## Estilo con temas integrados y personalizados
+## Estilo con temas integrados y personalizados [styling-with-built-in-and-custom-themes]
 
 El **estilo de vista previa** controla la apariencia HTML cuando se marca **Incluir estilo en la salida**:
 
@@ -79,7 +79,7 @@ I> Es posible que algunos CSS de solo vista previa (posicionamiento fijo, trucos
 
 Para obtener orientación sobre la creación, consulte [Creación de CSS personalizado](Writing_Custom_CSS.html).
 
-## Metadatos y encabezados MultiMarkdown
+## Metadatos y encabezados MultiMarkdown [metadata-and-multimarkdown-headers]
 
 Los metadatos de MultiMarkdown en la parte superior de su archivo fuente pueden afectar la exportación HTML:
 
@@ -89,11 +89,11 @@ Los metadatos de MultiMarkdown en la parte superior de su archivo fuente pueden 
 
 Si utiliza metadatos para la configuración de exportación pero no desea que las claves sean visibles en otras salidas, envuélvalas en comentarios HTML. Marcado busca y procesa metadatos comentados en cualquier parte del documento. Consulte [Configuración por documento](Per-Document_Settings.html).
 
-## Documentos de varios archivos
+## Documentos de varios archivos [multi-file-documents]
 
 Para compilaciones de libros y capítulos, utilice [Documentos de archivos múltiples](Multi-File_Documents.html). Marked obtiene una vista previa del documento combinado y exporta un archivo HTML a partir del resultado compilado. Los archivos incluidos están marcados con comentarios HTML que muestran sus rutas de origen, lo que resulta útil al auditar qué capítulo contribuyó con qué sección.
 
-## Pegar en otras aplicaciones
+## Pegar en otras aplicaciones [pasting-into-other-applications]
 
 | Destino | Enfoque sugerido |
 | :-- | :-- |
@@ -105,7 +105,7 @@ Para compilaciones de libros y capítulos, utilice [Documentos de archivos múlt
 
 [Copiar texto enriquecido](Exporting.html#rtfexportoptions) (menú de ajustes) es una alternativa cuando la aplicación de destino acepta texto formateado en lugar de fuente HTML.
 
-## Temas relacionados
+## Temas relacionados [related-topics]
 
 * [Exportar](Exporting.html) --- panel de exportación, perfiles y otros formatos
 * [Exportación EPUB](EPUB_Export.html) --- salida de libro electrónico con CSS integrado

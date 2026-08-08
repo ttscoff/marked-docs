@@ -3,7 +3,7 @@
 
 Marked is een geweldige aanvulling op moderne 'agentische codering'-workflows waarbij AI-tools plannen genereren, code refactoren en documentatie blijven bijwerken terwijl u werkt. Door Marked uw project- of planningsmappen te laten bekijken, krijgt u een live, leesbaar beeld van alles wat uw codeeragenten vervolgens aanraken, zonder dat u door uw editor of bestandsboom hoeft te zoeken.
 
-## Je project- of planmap bekijken
+## Je project- of planmap bekijken [watching-your-project-or-plan-folder]
 
 In plaats van één enkel bestand te openen, kunt u Marked naar een hele map verwijzen die u gebruikt voor plannen, kladnotities of door AI gegenereerde documentatie:
 
@@ -15,7 +15,7 @@ Zodra Marked een map bekijkt, wordt automatisch het **meest recent gewijzigde be
 
 Dit werkt vooral goed met agentische tools zoals Cursor, Claude en Copilot die voortdurend specificaties, takenlijsten of architectuurnotities genereren terwijl u een functie herhaalt.
 
-## Scrollen naar de eerste wijziging
+## Scrollen naar de eerste wijziging [scrolling-to-the-first-change]
 
 Wanneer *Scroll naar Bewerken* is ingeschakeld in de voorkeuren van Marked, wordt het voorbeeld niet alleen opnieuw geladen, maar **scrollt het direct naar het eerste gewijzigde gebied** van het bestand wanneer het wordt bijgewerkt.
 
@@ -27,7 +27,7 @@ Dat betekent dat u:
 
 In combinatie met het bewaken van mappen maakt dit het gemakkelijk om precies te zien wat uw agenten met uw documenten doen, zelfs als ze regelmatig incrementele bewerkingen uitvoeren.
 
-## Diagrammen met Mermaid.js
+## Diagrammen met Mermaid.js [diagrams-with-mermaidjs]
 
 In Marked is ook **Mermaid.js-ondersteuning standaard ingeschakeld**, zodat sequentiediagrammen, stroomdiagrammen en architectuurdiagrammen die uw agenten genereren met behulp van Mermaid-codeblokken, netjes worden weergegeven in de preview. Wanneer uw AI-assistent afgeschermde code uitvoert, zoals:
 
@@ -42,7 +42,7 @@ flowchart TD
 
 Marked verandert het automatisch in een opgemaakt, interactief diagram, waardoor u een visueel beeld krijgt van complexe workflows, gegevensstromen of systeemontwerpen gemaakt door tools als Cursor, Claude, Copilot en andere agentische codeerassistenten.
 
-## Voorbeeld van workflows voor agentische codering
+## Voorbeeld van workflows voor agentische codering [example-agentic-coding-workflows]
 
 - **Cursor + Marked**: Bewaar een map `plans/` of `notes/` in uw repository waar Cursor stapsgewijze implementatieplannen schrijft. Wijs Marked naar die map om altijd het nieuwste plan te zien, netjes weergegeven, terwijl u bewerkingen accepteert en toepast in de editor.
 

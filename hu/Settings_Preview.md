@@ -8,7 +8,7 @@ A {% prefspane Preview %} opciói:
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Tekintse meg a viselkedést
+### Tekintse meg a viselkedést [preview-behavior]
 
 Mini térképes navigáció engedélyezése
 : A dokumentum vizuális térképének létrehozása, amely megjelenik a „0” lenyomásakor. Rövid késéseket okozhat nagyméretű dokumentumok előállítása során.
@@ -25,7 +25,7 @@ Szinkronizálja az előnézetet és a forrás görgetését
 Szinkronizálja a gyorsolvasást görgetési pozícióval
 : Tartsa a [Speed Reading](Speed_Reading.html) fedvényt az előnézeti görgetés pozíciójához igazítva. Ezt a Gyorsolvasási fedvényen is átkapcsolhatja.
 
-### Görgessen a szerkesztéshez
+### Görgessen a szerkesztéshez [scroll-to-edit]
 
 Görgessen a szerkesztéshez
 : Az előnézet frissítésekor a Marked meg tudja határozni az első pontot, ahol a dokumentum megváltozott, és automatikusan rágörget. Ez szinkronban tartja az előnézetet a szerkesztett dokumentum jelenlegi helyével. A legutóbbi szerkesztési jelölő az első különbség a dokumentumban az utolsó frissítés óta. A „fordított különbségi sorrend” engedélyezése ehelyett a dokumentum utolsó eltérését (fentről lefelé) tekinti a legutóbbi szerkesztésnek.
@@ -39,7 +39,7 @@ Az összes különbségjelző megjelenítése
 Fordított különbségi sorrend
 : Ha ez engedélyezve van, a különbségek fordított sorrendben jelennek meg (alulról felfelé). Ez befolyásolja a navigációt, így az <kbd>e</kbd> felfelé, a {% kbd shift E %} pedig lefelé navigál. A „legutóbbi szerkesztés” lesz az utolsó különbség a dokumentumban.
 
-### További funkciók
+### További funkciók [additional-features]
 
 A tartalomjegyzék követi a görgetés pozícióját
 : A tartalomjegyzék kiemeli az aktuális részt.
@@ -54,7 +54,7 @@ Az URL-ek automatikus ellenőrzése frissítéskor
 : URL-ek érvényesítése a dokumentum betöltésekor és frissítésekor. Csak akkor jeleníti meg az eredményeket, ha hibák vannak.
 : Ez a [link validation](Link_Validation.html) minden alkalommal lefut, amikor a dokumentum frissül (ha jelentős számú hivatkozással rendelkezik, ez lassú folyamat lehet, és kerülni kell).
 
-### Wiki linkelés
+### Wiki linkelés [wiki-linking]
 
 Konvertálni [[Wiki linkek]]
 : Engedélyezze Marked [wiki navigációját](Wiki_Navigation.html) az `[[wiki link]]` szintaxishoz.
@@ -62,7 +62,7 @@ Konvertálni [[Wiki linkek]]
 Alapértelmezett kiterjesztés
 : A Megjelölt fájlnév-kiterjesztés olyan wikihivatkozások feloldásakor használatos, amelyek nem tartalmaznak kiterjesztést (például `md`).
 
-### Megjelenés
+### Megjelenés [appearance]
 
 Sötét mód
 : Az összes ablak megjelenítése "Nagy kontraszt" módban, sötét krómozással, és ha elérhető, az aktuális stílus fordított változatával (egyéni stílusokra esetleg nem vonatkozik).

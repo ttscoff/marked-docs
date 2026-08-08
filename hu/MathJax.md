@@ -4,7 +4,7 @@
 
 A számok éppúgy számítanak, mint a szavak.
 
-## Képletek előnézete a MathJax segítségével
+## Képletek előnézete a MathJax segítségével [preview-formulas-with-mathjax]
 
 ![][1]
 
@@ -18,7 +18,7 @@ Példa MMD MathJax szintaxisra:
 
 Ha úgy dönt, hogy a MathJaxot belefoglalja egy exportált HTML-fájlba, akkor a beágyazott MathJax-kód helyett egy CDN-hivatkozás kerül felhasználásra. Ehhez internetkapcsolat szükséges a renderelt MathML megtekintéséhez.
 
-## MathJax forrás: Helyi vs CDN
+## MathJax forrás: Helyi vs CDN [mathjax-source-local-vs-cdn]
 
 Ha a MathJax engedélyezve van, a Marked betöltheti a következők valamelyikéről:
 
@@ -32,7 +32,7 @@ Az {% prefspane Style %} **MathJax Source** előugró ablakában a következők 
 
 Az exportált HTML-fájlok mindig a CDN-ről hivatkoznak a MathJax-re, függetlenül az előnézeti forrástól, így önállóak és kicsik maradnak.
 
-## Egyenletszámozás
+## Egyenletszámozás [equation-numbering]
 
 Az egyenletszámozást a {% prefspane Style %}-ben engedélyezheti. Ez működik a MathJax-szel és a KaTeX-szel is, de belsőleg eltérő módon valósítják meg. A MathJax v3 esetén a Marked leképezi a beállításokat a megfelelő MathJax konfigurációra, így:
 
@@ -42,7 +42,7 @@ Az egyenletszámozást a {% prefspane Style %}-ben engedélyezheti. Ez működik
 
 Ezek az opciók megfelelnek a MathJax `tex.tags` és `tex.tagSide` beállításainak a motorháztető alatt.
 
-## További csomagok
+## További csomagok [additional-packages]
 
 A MathJax v3 moduláris. A Jelölve mindig engedélyezi az alapvető TeX/AMS-csomagokat, és opcionálisan bekapcsolhat továbbiakat is a {% prefspane Style %} alatt:
 
@@ -53,7 +53,7 @@ A MathJax v3 moduláris. A Jelölve mindig engedélyezi az alapvető TeX/AMS-cso
 
 Kattintson a **További csomagok…** elemre egy kis ellenőrzőlista megnyitásához, ahol be- vagy kikapcsolhatja ezeket a csomagokat. A változtatások a következő alkalommal lépnek életbe, amikor a Marked matematikai adatokat jelenít meg az előnézetben.
 
-## MathJax speciális konfiguráció
+## MathJax speciális konfiguráció [mathjax-advanced-configuration]
 
 A Marked alapértelmezett beállításain felül további egyéni konfigurációkat is alkalmazhat, ha hozzáad egy érvényes JSON-objektumot a **Speciális konfiguráció** mezőben. Ez a mező a MathJax v3 konfigurációs objektumba (`window.MathJax`) egyesül a MathJax betöltése előtt. Tartalmazhat [a MathJax v3 által támogatott bármely beállítást](https://docs.mathjax.org/en/latest/options/), például:
 
@@ -91,17 +91,17 @@ Vegye figyelembe, hogy a MultiMarkdown processzort nem szabványos határolókka
 A Marked egy kis varázslatot hajt végre, ha a MathJax vagy a KaTeX engedélyezve van, és átalakítja a matematikai szintaxist, hogy a lehető legjobban kompatibilis legyen az aktuális processzorral (MultiMarkdown vagy Discount). Ennek minden körülmények között nagyszerűnek kell lennie, de ha úgy találja, hogy problémákat okoz, [lépjen kapcsolatba az ügyfélszolgálattal](https://support.markedapp.com/questions/add)!
 
 
-## KaTeX
+## KaTeX [katex]
 
 [katex]: https://katex.org/
 
 A [KaTeX][] elérhető a MathJax alternatívájaként. Könnyebb súlyú, ezért gyorsabban tölthető be, ami nagyszerű lehet a sok képletet tartalmazó dokumentumoknál. Ennek ellenére nem rendelkezik annyi funkcióval, és előfordulhat, hogy egyes MathJax-szel (vagy LaTeX-szel) működő egyenletek nem támogatottak.
 
-## Automatikus egyenletszámozás [számozás]
+## Automatikus egyenletszámozás [számozás] [numbering]
 
 Az egyenletszámozást a {% prefspane Style %}-ben engedélyezheti. Ez MathJax és KaTeX esetén is működik. Kiválaszthatja, hogy a számok az egyenlet bal vagy jobb oldalán jelenjenek-e meg.
 
-### MathJax-ban
+### MathJax-ban [in-mathjax]
 
 A MathJax-ban ez a következő beállítást használja:
 
@@ -111,10 +111,10 @@ A MathJax-ban ez a következő beállítást használja:
 
 Ha csak az AMS-egyenleteket szeretné számozni, válassza a "Csak AMS" lehetőséget az "oldalsó" legördülő menü jobb oldalán.
 
-### A KaTeX-ben
+### A KaTeX-ben [in-katex]
 
 A KaTeX nem kínál egyenletszámozást. Ennek szimulálásához a Markedben CSS-t használnak, és minden megjelenítési egyenlet számozott.
 
-## Exportálási problémák
+## Exportálási problémák [export-issues]
 
 A Rich Text formátumok nem kezelik az egyenleteket (sem a MathJax, sem a KaTeX által). Elrejtve lesznek a kimeneti dokumentumban, mivel a speciális betűtípusok belefoglalása nagyobb zűrzavart eredményez, mint gondolná... Ezt remélem valamikor kijavítom, de jelenleg ez a hiányosság.

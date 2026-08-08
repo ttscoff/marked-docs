@@ -4,7 +4,7 @@
 
 [L'archivio] [archivio] mantiene le tue note come file su disco e può rispecchiare la nota che stai modificando direttamente nel canale **anteprima in streaming** di Marked.
 
-## Anteprima dello streaming su contrassegnato
+## Anteprima dello streaming su contrassegnato [stream-preview-to-marked]
 
 1. In Contrassegnato, apri {% appmenu File, New, Streaming Preview %} (o riutilizza una finestra di anteprima dello streaming esistente).
 2. Passa a L'Archivio e scegli **Nota → Streaming anteprima su Contrassegnato** in modo che L'Archivio attivi Contrassegnato e inizi a inviare il testo della nota in primo piano.

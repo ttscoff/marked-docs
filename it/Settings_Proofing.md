@@ -26,7 +26,7 @@ Includi note a piè di pagina nella barra laterale dei commenti
 Velocità di lettura (wpm)
 : Questo numero (parole al minuto) viene utilizzato per calcolare il tempo di lettura nelle visualizzazioni delle statistiche del testo. La velocità media di lettura per gli adulti è di 200-300 parole al minuto.
 
-### Parole chiave
+### Parole chiave [keywords]
 
 [Definire elenchi di parole chiave da evidenziare](Keyword_Highlighting.html). Utilizza le schede per modificare ciascun elenco:
 

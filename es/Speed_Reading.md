@@ -4,7 +4,7 @@
 
 Speed Read es un modo de lectura de estilo RSVP que muestra una palabra a la vez en una superposición enfocada.
 
-## Cómo funciona la lectura rápida
+## Cómo funciona la lectura rápida [how-speed-read-works]
 
 Speed Read utiliza un método llamado **Presentación visual en serie rápida** (RSVP). En lugar de mover los ojos a través de líneas de texto, las palabras aparecen en una posición fija. Esto reduce los movimientos oculares, los cambios de línea y el retroceso que normalmente ocurren durante la lectura, lo que puede resultar útil para hojear, revisar material familiar o moverse rápidamente a través del texto sin perder el lugar.
 
@@ -12,7 +12,7 @@ El método no es mágico y no garantiza una mejor comprensión a velocidades muy
 
 La letra roja marca el punto de anclaje visual de la palabra, a veces llamado **punto de reconocimiento óptimo**. En muchas palabras, los lectores identifican la palabra de manera más eficiente cuando su mirada se posa ligeramente a la izquierda del centro en lugar de mirar la primera letra. Al mantener ese punto de anclaje en el mismo lugar y resaltarlo, Speed ​​Read le brinda a su ojo un objetivo consistente. El resultado es menos reenfoque entre palabras y un ritmo más constante mientras avanza el texto.
 
-## Lectura de velocidad de apertura
+## Lectura de velocidad de apertura [opening-speed-read]
 
 Utilice **Vista previa > Lectura rápida**, el elemento **Lectura rápida** en el menú Engranaje de la ventana de vista previa, o presione {% kbd ctrl opt S %}. El elemento del menú está disponible cuando una ventana de documento de vista previa de Markdown está activa (está deshabilitada para vistas previas de HTML sin formato y cuando no hay ningún documento abierto).
 
@@ -25,7 +25,7 @@ Cuando se abre Speed ​​Read, comienza en un estado de pausa para que pueda o
 </vídeo>
 <p><em>Superposición de lectura rápida que muestra los controles de reproducción, la opción de sincronización y el acceso a la ayuda.</em></p>
 
-## Controles de superposición
+## Controles de superposición [overlay-controls]
 
 Una vez que la superposición sea visible, estas claves estarán disponibles:
 
@@ -44,11 +44,11 @@ Otros atajos de navegación de vista previa normales aún funcionan mientras la 
 
 La tabla de contenidos también se puede utilizar durante la lectura rápida. Presione {% kbd cmd t %} para abrirlo y navegar, o presione {% kbd f %} para enfocar inmediatamente la búsqueda rápida para navegar por los encabezados de los documentos.
 
-## A partir de una selección
+## A partir de una selección [starting-from-a-selection]
 
 Si se selecciona texto en la vista previa cuando inicia la lectura rápida, la reproducción utiliza el texto seleccionado. Si no hay ninguna selección activa, la lectura rápida utiliza el texto completo del documento.
 
-## Sincronización con la posición de desplazamiento
+## Sincronización con la posición de desplazamiento [syncing-with-scroll-position]
 
 Habilite **Sincronizar lectura rápida con posición de desplazamiento** en {% prefspane Preview %}, o use la casilla de verificación en la superposición de Lectura rápida para mantener la vista previa y la posición de Lectura rápida juntas.
 
@@ -56,6 +56,6 @@ Cuando esta opción está habilitada, la lectura rápida comienza en el contenid
 
 Si cierra Speed ​​Read, desplaza la vista previa y vuelve a abrir la superposición, la reproducción comienza desde la nueva posición visible. Si activa la casilla de verificación de superposición después de que la lectura rápida ya esté abierta, la reproducción se restablece a la posición de desplazamiento actual y continúa desde allí.
 
-## Velocidad recordada
+## Velocidad recordada [remembered-speed]
 
 El valor de WPM se guarda automáticamente cuando lo cambia con {% kbd ← %} y {% kbd → %}. La velocidad elegida se restaurará la próxima vez que utilices la lectura rápida.

@@ -4,7 +4,7 @@
 
 Marked foi construído com muita ajuda da comunidade de código aberto. Esta página lista o código de terceiros fornecido dentro do Marked. O texto completo da licença para os processadores Markdown está disponível nas páginas vinculadas em [Sobre Markdown](MultiMarkdown_Information.html).
 
-## Processadores Markdown e conversão
+## Processadores Markdown e conversão [markdown-processors-and-conversion]
 
 | Componente | Autores | Licença | Usado para |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ Marked foi construído com muita ajuda da comunidade de código aberto. Esta pá
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Opção de processador Kramdown (empacotado Ruby) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | Importação de PDF para Markdown |
 
-## Código e estruturas nativas
+## Código e estruturas nativas [native-code-and-frameworks]
 
 | Componente | Autores | Licença | Usado para |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ Marked foi construído com muita ajuda da comunidade de código aberto. Esta pá
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniel Jackson | Veja projeto | Indicadores de progresso |
 | [IAPManager](https://github.com/mruegenberg/IAPManager) | Marcel Ruegenberg | Veja projeto | Ajudantes de compra no aplicativo (legado) |
 
-## Visualizar JavaScript
+## Visualizar JavaScript [preview-javascript]
 
 Essas bibliotecas são concatenadas no pacote de visualização do Marked (`marked.min.js` e recursos relacionados):
 
@@ -59,7 +59,7 @@ Essas bibliotecas são concatenadas no pacote de visualização do Marked (`mark
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Detecção de janela de visualização |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | Destaque de pesquisa no documento |
 
-## Localização
+## Localização [localization]
 
 Marcado está disponível em vários idiomas graças a tradutores voluntários:
 
@@ -77,6 +77,6 @@ Marcado está disponível em vários idiomas graças a tradutores voluntários:
 -Yuki Tamari
 - você
 
-## Agradecimentos
+## Agradecimentos [acknowledgments]
 
 Obrigado também a Daniel Jalkut pelos anos de orientação e a Felippe van Eekhout pelo ícone Marcado.

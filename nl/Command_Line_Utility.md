@@ -2,7 +2,7 @@
 
 Het `mk` opdrachtregelprogramma biedt gemakkelijke toegang tot de functies van Marked vanaf de terminal, waardoor workflowautomatisering en integratie met shellscripts en andere opdrachtregelprogramma's mogelijk wordt.
 
-## Installatie
+## Installatie [installation]
 
 De aanbevolen manier om `mk` te installeren is met Homebrew:
 
@@ -17,9 +17,9 @@ Als u Homebrew niet gebruikt, download en installeer dan het ondertekende pakket
 
 Na het downloaden van `mk.pkg` dubbelklikt u erop en volgt u de aanwijzingen van het installatieprogramma.
 
-## Basisgebruik
+## Basisgebruik [basic-usage]
 
-### Bestanden openen
+### Bestanden openen [opening-files]
 
 Open een markdown-bestand in Marked vanaf de opdrachtregel:
 
@@ -29,7 +29,7 @@ mk ~/Documents/notes.md
 mk --raise document.md  # Open and raise window above all others
 ```
 
-### Streaminginhoud van STDIN
+### Streaminginhoud van STDIN [streaming-content-from-stdin]
 
 Stream inhoud rechtstreeks naar de streamingpreview van Marked:
 
@@ -41,21 +41,21 @@ mk -  # Explicitly use STDIN
 
 Het Streaming Preview-venster wordt geopend en geeft de inhoud in realtime weer zoals deze door andere opdrachten wordt doorgegeven.
 
-## Commandoreferentie
+## Commandoreferentie [command-reference]
 
-### Bestandsbewerkingen
+### Bestandsbewerkingen [file-operations]
 
 **`mk [file]`** — Open een afwaarderingsbestand in Marked
 
 **`mk [file] --raise`** — Open het bestand en plaats het venster boven alle andere
 
-### STDIN en streaming
+### STDIN en streaming [stdin-and-streaming]
 
 **`mk`** of **`mk -`** — Lees van STDIN en open Streaming Preview
 
 **`mk --stream`** — Open het streamingvoorbeeldvenster zonder STDIN te lezen
 
-### Voorbeeldbeheer
+### Voorbeeldbeheer [preview-management]
 
 **`mk --refresh`** — Vernieuw het voorste voorbeeldvenster
 
@@ -63,7 +63,7 @@ Het Streaming Preview-venster wordt geopend en geeft de inhoud in realtime weer 
 
 **`mk --refresh file.md`** — Vernieuw het voorbeeld voor een specifiek bestand (indien geopend)
 
-### Voorkeuren
+### Voorkeuren [preferences]
 
 **`mk --pref`** — Open Marked voorkeuren (pagina Algemeen)
 
@@ -75,7 +75,7 @@ Het Streaming Preview-venster wordt geopend en geeft de inhoud in realtime weer 
 mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 ```
 
-### Stijlbeheer
+### Stijlbeheer [style-management]
 
 **`mk --style NAME`** — Stel de voorbeeldstijl in voor geopende vensters
 
@@ -85,7 +85,7 @@ mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 mk --add-style ~/Styles/custom.css
 ```
 
-### JavaScript-uitvoering
+### JavaScript-uitvoering [javascript-execution]
 
 **`mk --dojs "JAVASCRIPT_COMMAND"`** — Voer JavaScript uit in het voorste venster
 
@@ -98,7 +98,7 @@ mk --dojs "window.scrollTo(0,0)"
 mk --dojs "alert('Hello')" all
 ```
 
-### Inhoud extraheren en importeren
+### Inhoud extraheren en importeren [content-extraction-and-import]
 
 **`mk --extract URL`** — Extraheer inhoud uit de URL en open in Marked
 
@@ -110,7 +110,7 @@ mk --extract https://example.com/article
 
 **`mk --stylestealer [URL]`** — Open Style Stealer HUD (optioneel met URL)
 
-### Hulpprogramma's
+### Hulpprogramma's [utility-commands]
 
 **`mk --paste`** — Maak een nieuw document vanaf het klembord
 
@@ -122,7 +122,7 @@ mk --extract https://example.com/article
 
 **`mk --version`** of **`mk -v`** — Versie-informatie weergeven
 
-## Voorbeelden
+## Voorbeelden [examples]
 
 ``` bash
 # Open een bestand
@@ -153,9 +153,9 @@ mk --extract https://blog.example.com/article
 mk --preview "## Hallo\n\nDit is **markdown** tekst!"
 ```
 
-## Integratie
+## Integratie [integration]
 
-### Shell-aliassen
+### Shell-aliassen [shell-aliases]
 
 Voeg toe aan je `~/.zshrc` of `~/.bash_profile`:
 
@@ -164,7 +164,7 @@ alias mko='mk --raise'      # Open with raise
 alias mkr='mk --refresh all' # Refresh all
 ```
 
-### Scripts
+### Scripts [scripts]
 
 Gebruik `mk` in shellscripts voor automatisering:
 
@@ -176,7 +176,7 @@ fswatch -o document.md | while read; do
 done
 ```
 
-### Werkstromen
+### Werkstromen [workflows]
 
 Combineer met ander gereedschap:
 
@@ -188,7 +188,7 @@ pbpaste | afwaardering | mk
 grep -r "TODO" . | hoofd -20 | mk
 ```
 
-## Open-source
+## Open-source [open-source]
 
 Het opdrachtregelprogramma `mk` is open source en beschikbaar op GitHub:
 
@@ -202,7 +202,7 @@ U kunt:
 
 De tool is geschreven in Swift en kan worden gecompileerd met Xcode. Zie de [README](https://github.com/ttscoff/mk) voor bouwinstructies.
 
-## Versie
+## Versie [version]
 
 Controleer uw geïnstalleerde `mk` versie met:
 
@@ -210,7 +210,7 @@ Controleer uw geïnstalleerde `mk` versie met:
 mk --version
 ```
 
-## Gerelateerde functies
+## Gerelateerde functies [related-features]
 
 - Zie [URL Handler](URL_Handler) voor meer informatie over het URL-schema van Marked
 - Zie [Streaming Preview](Streaming_Preview) voor details over de streaming preview-functie

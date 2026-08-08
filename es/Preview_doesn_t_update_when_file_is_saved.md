@@ -4,7 +4,7 @@
 
 ¿Las vistas previas no se actualizan como se esperaba?
 
-## Máquina del tiempo
+## Máquina del tiempo [time-machine]
 
 Se han informado algunos problemas relacionados con actualizaciones lentas (o inexistentes) durante la ejecución de Time Machine. Las capacidades de actualización de Marked pueden verse afectadas si Time Machine utiliza la parte de la unidad donde existe el archivo en ese momento. Por lo general, esto se solucionará solo cuando Time Machine finalice su ejecución.
 

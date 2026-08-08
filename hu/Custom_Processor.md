@@ -8,7 +8,7 @@ A Marked teljes irányítást biztosít az egyéni szabályokkal, szöveggel
 különböző processzorok a megfelelő fájltulajdonságok alapján.
 
 
-## Egyéni előfeldolgozók/processzorok használata
+## Egyéni előfeldolgozók/processzorok használata [using-custom-preprocessorsprocessors]
 
 Egyéni processzorok hozzáadásához lépjen a {% prefspane Processor %}
 és kattintson az **Egyéni szabályok** lehetőségre.
@@ -52,7 +52,7 @@ húzással, így befolyásolhatja a sorrendet
 szabályok futnak, a kritériumok sorrendje az állítmányban
 szerkesztőt, és a sorban végrehajtandó műveletek sorrendjét.
 
-### Predikátumszerkesztő
+### Predikátumszerkesztő [predicate-editor]
 
 ![Predikátumszerkesztő][predikátum]
 
@@ -118,7 +118,7 @@ szabály normál fájlegyezési feltételek plusz **Manuálisan engedélyezve**,
 majd kapcsolja be az Előnézet menüből (vagy egy trigger parancsikonból)
 ha készen áll a nyomtatási elrendezés ellenőrzésére.
 
-#### Indító parancsikon
+#### Indító parancsikon [trigger-shortcut]
 
 Ha egy kiválasztott szabályban szerepel a **Kézi engedélyezés** lehetőség, a
 Az **Indítási parancsikon** mező jelenik meg a **Kézi hozzáadása mellett
@@ -132,10 +132,10 @@ Törölje a mezőt a parancsikon eltávolításához.
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### Előnézetenkénti felülbírálások az Előnézet menüben
+#### Előnézetenkénti felülbírálások az Előnézet menüben [per-preview-overrides-in-the-preview-menu]
 
 Két Előnézet menü almenü vezérlése felülírja az aktív
-csak előnézet. A beállítások mentése [view](#multiview) szerint történik, amikor
+csak előnézet. A beállítások mentése [view](Opening_Files.html#multiview) szerint történik, amikor
 több ablak ugyanazt a fájlt mutatja.
 
 **Egyéni szabály engedélyezése**
@@ -152,7 +152,7 @@ több ablak ugyanazt a fájlt mutatja.
   egy adott processzorfolyamatot szeretne rákényszeríteni az egyikre
   előnézetet a globális egyéni szabályok megváltoztatása nélkül.
 
-#### Felülírás gomb az előnézeti eszköztáron
+#### Felülírás gomb az előnézeti eszköztáron [override-button-in-the-preview-toolbar]
 
 Ha egy előnézethez legalább egy manuálisan engedélyezett szabály tartozik, vagy a
 rögzítve Folyamat felülbírálása, egy ág ikon jelenik meg alul
@@ -171,7 +171,7 @@ ismét kattintasz. Ez gyorsabb, mint a szabályok bejelölésének törlése a
 menüt, ha össze szeretné hasonlítani a normál előnézetet a sajátjával
 csővezeték felülírása.
 
-### Műveletek
+### Műveletek [actions]
 
 A *+ Művelet* gombbal műveleteket adhat hozzá a szabályhoz.
 
@@ -307,7 +307,7 @@ Szabály futtatása
 Folytatás
 : Alapértelmezés szerint a szabály egyeztetése után a feldolgozás leáll (külön az előfeldolgozókhoz és a processzorokhoz, így egy előfeldolgozó és egy processzor egyezhet). Ez a művelet kényszeríti a szabályegyeztetés folytatását, miután a szabály végrehajtja a műveleteit.
 
-### Hook frissítése
+### Hook frissítése [updatehook]
 
 A Marked nem végez teljes frissítést minden frissítésnél, így ha
 olyan szkriptjei vannak, amelyek a DOM egyes részeit jelenítik meg, amire szükségük van
@@ -331,7 +331,7 @@ Marked.hooks.register('update', function() {
 Ez azt eredményezi, hogy a `mermaid.run()` minden alkalommal végrehajtódik
 A Megjelölt részleges frissítést hajt végre.
 
-### Tesztszabályok
+### Tesztszabályok [test-rules]
 
 A Szabályok listája alatti _Test Rules_ gomb megnyílik a
 párbeszédablak, ahol kiválaszthat bármilyen Markdown fájlt, és az lesz
@@ -340,7 +340,7 @@ bal oldalon zöld füllel kiemelve. Párosításkor
 egy fájl ellen, egy X gomb jelenik meg, amely használható
 törölje a tesztet, és szüntesse meg a sorok kiemelését.
 
-## Fogd és vidd
+## Fogd és vidd [drag-and-drop]
 
 A Conductor ablak támogatja a továbbfejlesztett drag and drop funkciót
 képességek, amelyek intelligensen felismerik a fájltípusokat és
@@ -353,7 +353,7 @@ szabályok ellen, vagy cselekvésként történő hozzáadásával.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Fájltípus észlelése
+### Fájltípus észlelése [file-type-detection]
 
 A rendszer automatikusan felismeri a különböző fájltípusokat és
 megfelelő fedvényüzeneteket jelenít meg:
@@ -376,7 +376,7 @@ Ha furcsa eredményeket kap, és meg szeretné tekinteni, mi történik, az egy�
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Több parancs végrehajtása
+## Több parancs végrehajtása [executing-multiple-commands]
 
 Egy szabályhoz több parancs is tartozhat egymás után. A kimenete
 minden parancs átkerül a következőre. Ha szeretnél
@@ -391,7 +391,7 @@ dokumentumot a Pandoc használatával, csak adja meg az eredeti fájl elérési 
 parancssori beállításokat, majd visszhangozza vissza az STDIN tartalmat
 ki STDOUT-ra.
 
-## Az egyéni processzorok dinamikus megkerülése
+## Az egyéni processzorok dinamikus megkerülése [dynamically-bypassing-custom-processors]
 
 Ha egy egyéni processzor a „NOCUSTOM” értéket adja vissza az STDOUT-on, megjelölve
 leállítja az egyéni processzort, és visszatér a
@@ -407,7 +407,7 @@ Ha a `NOCUSTOM` helyett egyéni processzor tér vissza
 csak az a dokumentum. Ez a módosítás nem érinti az alapértelmezettet
 processzor beállítása a Beállításokban.
 
-## Környezeti változók
+## Környezeti változók [environmentvariables]
 
 A Parancs futtatása műveletnek van egy környezetszerkesztője, ahol Ön
 beállíthatja saját környezeti változóit, amelyek lesznek
@@ -444,14 +444,14 @@ használható a shell szkriptekben:
 **MARKED_CSS_PATH**
 : Az aktuális stíluslap teljes elérési útja
 
-### Metaadatkörnyezeti változók
+### Metaadatkörnyezeti változók [metadata-environment-variables]
 
 Amikor a Parancs futtatása művelet végrehajtásra kerül a Markedben
 Konduktor rendszer, a dokumentum metaadatai automatikusan
 kinyerjük és környezeti változóként elérhetővé teszik a
 parancsot.
 
-#### Hogyan működik
+#### Hogyan működik [how-it-works]
 
 1. **Metaadat-kinyerés**: A rendszer a metaadatokat a meglévő `extractMetaDataFromString:` módszerrel kinyeri a dokumentumból, amely támogatja:
    - YAML elülső anyag (`---` blokk)
@@ -469,7 +469,7 @@ parancsot.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Példa
+#### Példa [example]
 
 Adott egy dokumentum a következő metaadatokkal:
 
@@ -498,7 +498,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Használat a parancsokban
+#### Használat a parancsokban [usage-in-commands]
 
 Most már használhatja ezeket a környezeti változókat a Futtatásban
 Parancs műveletek:
@@ -527,7 +527,7 @@ else
 fi
 ```
 
-#### Támogatott műveletek
+#### Támogatott műveletek [supported-actions]
 
 Ez a metaadat-környezetre változó funkció
 elérhető:
@@ -539,7 +539,7 @@ A metaadatok automatikusan kivonásra kerülnek a dokumentumból
 tartalmat, és elérhetővé kell tenni minden olyan parancs vagy szkript számára
 végigfut ezeken a műveleteken.
 
-## Engedélyezés és letiltás
+## Engedélyezés és letiltás [enabling-and-disabling]
 
 Az egyedi processzorok be- és kikapcsolhatók
 egyedi dokumentumokat a {% kbd opt cmd C %} használatával. Te
@@ -552,7 +552,7 @@ jelzőfényként jelenik meg (csak akkor látható, ha egy processzor
 engedélyezve van) az eszköztár elemeitől balra alul
 az Előnézet jobb oldali eszköztárában.
 
-### Előfeldolgozó
+### Előfeldolgozó [preprocessor]
 
 Ha beállítja az előfeldolgozó szabályokat, azok a Marked után futnak le
 kezel minden Megjelölt-specifikus feladatot, például a külsőt is
@@ -574,7 +574,7 @@ Ha engedélyezve van, az egyéni előfeldolgozó bekapcsolható és
 kikapcsolva az egyes dokumentumok használatához
 {% kbd ctrl opt cmd C %}.
 
-#### Dokumentumfeldolgozó/előfeldolgozó [dokumentum]
+#### Dokumentumfeldolgozó/előfeldolgozó [perdocument]
 
 Az egyéni processzorok dokumentumonként is beállíthatók
 a metaadat formátum használatával a [Dokumentumonként
@@ -602,7 +602,7 @@ a kimenetből:
     Egyéni előfeldolgozó: igaz
     -->
 
-## Alternatív Markdown processzor használata
+## Alternatív Markdown processzor használata [using-an-alternative-markdown-processor]
 
 Bármilyen Markdown íz, amelyet a parancssorból megjeleníthet
 használható a Marked. Képesnek kell lennie befogadni a bemenetet
@@ -626,7 +626,7 @@ Kipróbáltam az egyéni processzor funkciót a Pandoc segítségével,
 Kramdown, jelzett (kedvezmény), MultiMarkdown 6, Maruku és
 különféle egyéb ízek.
 
-### Megjegyzés a Pandoc-ról és a Sandboxingról
+### Megjegyzés a Pandoc-ról és a Sandboxingról [a-note-about-pandoc-and-sandboxing]
 
 A Pandoc (és néhány más parancssori eszköz) nem fut be
 a Marked Mac App Store (sandboxos) verziója.
@@ -638,7 +638,7 @@ ajánlja fel a crossgrade lépéseit. Ha problémákat tapasztal
 és ez nem történik meg, kérem, vegye fel velem a kapcsolatot a
 [támogatási webhely](https://support.markedapp.com/questions/add).
 
-### Pandoc, mint a svájci hadsereg leértékelési processzora
+### Pandoc, mint a svájci hadsereg leértékelési processzora [pandoc-as-swiss-army-markdown-processor]
 
 A [Pandoc](https://pandoc.org/) messze a legrugalmasabb
 univerzális eszköz a jelölési formátumok tömbjének kezelésére. által
@@ -677,7 +677,7 @@ kiterjedt bibliográfia és LaTeX forgatókönyvek. A legtöbb funkció
 a parancssoron keresztül érheti el csak
 átadási argumentumok használatával a Markedben.
 
-## Textil használata
+## Textil használata [using-textile]
 
 Néhányan megkérdezték, hogyan lehet a Textile-t munkába állni
 Megjelölve. Rendelkezésre kell állnia egy textil átalakítónak
@@ -695,7 +695,7 @@ egyik vagy másik:
 
 A Now Marked egy textil-előzetes az Ön számára!
 
-## Az AsciiDoc használata
+## Az AsciiDoc használata [using-asciidoc]
 
 1. Telepítse az [AsciiDoctor]-t (http://asciidoctor.org/).
 2. Engedélyezzen egy egyéni szabályt az {% prefspane Processor %}-ben, hogy illeszkedjen az AsciiDoc fájlokhoz.

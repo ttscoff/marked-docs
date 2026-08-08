@@ -2,9 +2,9 @@
 
 De Mac App Store (MAS)-versie van Marked draait in een sandbox-omgeving die om veiligheidsredenen bepaalde bewerkingen beperkt. Dit kan van invloed zijn op sommige functies, vooral bij gebruik van Custom Processors met externe binaire bestanden of scripts.
 
-## Algemene sandboxbeperkingen
+## Algemene sandboxbeperkingen [common-sandbox-restrictions]
 
-### Voer opdrachtbinaire bestanden uit
+### Voer opdrachtbinaire bestanden uit [run-command-binaries]
 
 Het meest voorkomende probleem dat gebruikers tegenkomen is dat externe binaire bestanden niet rechtstreeks in de MAS-versie kunnen worden uitgevoerd. Dit heeft invloed op:
 
@@ -12,9 +12,9 @@ Het meest voorkomende probleem dat gebruikers tegenkomen is dat externe binaire 
 - **Custom scripts** die afhankelijk zijn van externe binaire bestanden
 - **Systeemhulpprogramma's** die niet toegankelijk zijn vanuit de sandbox
 
-### Oplossingen
+### Oplossingen [workarounds]
 
-#### Binaire bestanden kopiëren naar de appbundel
+#### Binaire bestanden kopiëren naar de appbundel [copying-binaries-to-the-app-bundle]
 
 Als u externe processors zoals Pandoc in de MAS-versie moet gebruiken, kunt u het binaire bestand naar de app-bundel kopiëren:
 
@@ -31,7 +31,7 @@ Als u externe processors zoals Pandoc in de MAS-versie moet gebruiken, kunt u he
 
 **Belangrijk**: je moet de binaire bestanden na elke app-update opnieuw kopiëren, omdat updates de hele bundel vervangen.
 
-#### Ingebedde scripts gebruiken
+#### Ingebedde scripts gebruiken [using-embedded-scripts]
 
 In plaats van externe opdrachten uit te voeren, kunt u de actie **Ingesloten script uitvoeren** gebruiken in Custom Regels. Hierdoor kunt u scripts rechtstreeks in de code-editor van Marked schrijven, die toegang heeft tot systeemtolken die beschikbaar zijn in de sandbox.
 
@@ -39,7 +39,7 @@ In plaats van externe opdrachten uit te voeren, kunt u de actie **Ingesloten scr
 
 Als u vaak externe binaire bestanden moet gebruiken of als u andere sandbox-beperkingen tegenkomt, kunt u wellicht overschakelen naar de niet-sandbox-versie van Marked. De niet-sandboxversie kent dergelijke beperkingen niet en kan elk opdrachtregelprogramma of script uitvoeren dat u hebt geïnstalleerd.
 
-### Voor abonnementsgebruikers
+### Voor abonnementsgebruikers [for-subscription-users]
 
 Als je een actief Mac App Store-abonnement hebt:
 
@@ -49,7 +49,7 @@ Als je een actief Mac App Store-abonnement hebt:
 
 De Paddle-versie biedt dezelfde functies zonder beperkingen op het gebied van sandboxen.
 
-### Voor permanente ontgrendelingshouders
+### Voor permanente ontgrendelingshouders [for-permanent-unlock-holders]
 
 Als je een permanente ontgrendeling of levenslange licentie hebt gekocht via de Mac App Store, [email the developer](mailto:marked@brettterpstra.com?subject=Marked%20License%20Crossgrade&body=Please%20include%20your%20UUID%20%28Help-%3ECopy%20UUID%20in%20Marked%29%20in%20this%20email%20for%20receipt%20verification.) om een ​​gratis levenslange Paddle-licentie aan te vragen.
 
@@ -60,11 +60,11 @@ Als je een permanente ontgrendeling of levenslange licentie hebt gekocht via de 
 
 De Mac App Store verstrekt uw e-mailadres niet aan ontwikkelaars, dus verifiëren we aankopen met behulp van transactie-ID's of gebruikers-ID's die op onze server zijn opgeslagen. Door deze informatie op te nemen, kunnen we uw aankoop snel verifiëren en uw gratis Paddle-licentie genereren.
 
-### Setapp-versie
+### Setapp-versie [setapp-version]
 
 Als alternatief kunt u, als u een Setapp-abonnement heeft, de Setapp-versie van Marked gebruiken, die ook geen sandbox heeft en volledige toegang heeft tot systeembronnen.
 
-## Aanvullende bronnen
+## Aanvullende bronnen [additional-resources]
 
 Voor meer informatie over Custom processors en hun mogelijkheden, zie [Custom Processor](Custom_Processor.html).
 

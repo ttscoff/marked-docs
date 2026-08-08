@@ -1,12 +1,12 @@
 # <%= @title %>
 
-## Wat is Markdown?
+## Wat is Markdown? [what-is-markdown]
 
 Markdown is een lichtgewicht opmaaktaal waarmee u kunt schrijven in een gemakkelijk leesbare, gemakkelijk te schrijven tekstindeling en deze vervolgens kunt converteren naar structureel geldige HTML. Het overheersende ontwerpdoel voor de opmaaksyntaxis van Markdown is om deze zo leesbaar mogelijk te maken.
 
-## Basissyntaxis
+## Basissyntaxis [basic-syntax]
 
-### Kopteksten
+### Kopteksten [headers]
 
 Maak headers met behulp van hash-symbolen (`#`). Het aantal hashes bepaalt het headerniveau:
 
@@ -19,7 +19,7 @@ Maak headers met behulp van hash-symbolen (`#`). Het aantal hashes bepaalt het h
 ###### Header 6
 ```
 
-### Nadruk
+### Nadruk [emphasis]
 
 **Vetgedrukte tekst** met dubbele sterretjes of dubbele onderstrepingstekens:
 
@@ -35,7 +35,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Lijsten
+### Lijsten [lists]
 
 **Ongeordende lijsten** met sterretjes, plustekens of koppeltekens:
 
@@ -61,7 +61,7 @@ _Italic text_
 3. Third item
 ```
 
-### Koppelingen
+### Koppelingen [links]
 
 **Inline links** met de tekst tussen vierkante haakjes en de URL tussen haakjes:
 
@@ -84,7 +84,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Afbeeldingen
+### Afbeeldingen [images]
 
 Afbeeldingen gebruiken een soortgelijke syntaxis als links, maar met een uitroepteken aan het begin:
 
@@ -95,7 +95,7 @@ Afbeeldingen gebruiken een soortgelijke syntaxis als links, maar met een uitroep
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Blokcitaten
+### Blokcitaten [blockquotes]
 
 Maak blokaanhalingstekens met het groter-dan-symbool (`>`) aan het begin van elke regel:
 
@@ -106,7 +106,7 @@ Maak blokaanhalingstekens met het groter-dan-symbool (`>`) aan het begin van elk
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Code
+### Code [code]
 
 **Inlinecode** met backticks:
 
@@ -122,7 +122,7 @@ Use `code` in your text.
     Multiple lines are supported.
 ```
 
-### Horizontale regels
+### Horizontale regels [horizontal-rules]
 
 Maak horizontale regels met drie of meer koppeltekens, sterretjes of onderstrepingstekens:
 
@@ -134,7 +134,7 @@ Maak horizontale regels met drie of meer koppeltekens, sterretjes of onderstrepi
 ___
 ```
 
-### Regeleinden
+### Regeleinden [line-breaks]
 
 **Harde regeleinden** door een regel te beëindigen met twee of meer spaties:
 
@@ -150,7 +150,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Ontsnappende karakters
+### Ontsnappende karakters [escaping-characters]
 
 Ontsnap aan speciale tekens met behulp van backslashes:
 
@@ -173,7 +173,7 @@ Veelvoorkomende tekens waaraan kan worden ontsnapt:
 - `.` periode
 - `!` uitroepteken
 
-## Beste praktijken
+## Beste praktijken [best-practices]
 
 1. **Gebruik lege regels** om verschillende elementen van elkaar te scheiden voor een betere leesbaarheid
 2. **Wees consistent** met uw opmaakkeuzes (gebruik bijvoorbeeld `*` of `_` voor nadruk)
@@ -181,9 +181,9 @@ Veelvoorkomende tekens waaraan kan worden ontsnapt:
 4. **Test uw uitvoer** om er zeker van te zijn dat deze wordt weergegeven zoals verwacht
 5. **Gebruik betekenisvolle linktekst** in plaats van algemene zinnen zoals "klik hier"
 
-## Algemene patronen
+## Algemene patronen [common-patterns]
 
-### Geneste lijsten
+### Geneste lijsten [nested-lists]
 
 ```markdown
 1. First item
@@ -193,7 +193,7 @@ Veelvoorkomende tekens waaraan kan worden ontsnapt:
    - More nested content
 ```
 
-### Lijsten met alinea's
+### Lijsten met alinea's [lists-with-paragraphs]
 
 ```afwaardering
 1. Eerste artikel
@@ -205,7 +205,7 @@ Dit is een paragraaf onder het eerste item.
 Dit is een paragraaf onder het tweede item.
 ```
 
-### Blokcitaten met andere elementen
+### Blokcitaten met andere elementen [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -216,7 +216,7 @@ Dit is een paragraaf onder het tweede item.
 > > Nested blockquotes are also possible.
 ```
 
-## Samenvatting
+## Samenvatting [summary]
 
 Markdown biedt een eenvoudige, leesbare manier om tekst op te maken die gemakkelijk kan worden geconverteerd naar HTML. De sleutel is om het eenvoudig en leesbaar te houden en tegelijkertijd de basissyntaxiselementen consistent te gebruiken. Door te oefenen zul je merken dat Markdown een tweede natuur wordt en het schrijven van gestructureerde inhoud veel gemakkelijker maakt.
 

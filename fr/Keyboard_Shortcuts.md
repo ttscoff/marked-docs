@@ -2,7 +2,7 @@
 
 Un panneau flottant avec une aide-mémoire de raccourci est disponible dans le menu Aide ou en appuyant sur {{opt}}{{cmd}}K.
 
-### Raccourcis
+### Raccourcis [shortcuts]
 
 |                     Raccourci | Fonction |
 | --------------------------------: | :--------------------------------- |
@@ -55,7 +55,7 @@ Un panneau flottant avec une aide-mémoire de raccourci est disponible dans le m
 
 
 
-### Basculements rapides
+### Basculements rapides [quick-toggles]
 
 Raccourcis clavier supplémentaires pour basculer les paramètres globaux courants.
 
@@ -71,7 +71,7 @@ Raccourcis clavier supplémentaires pour basculer les paramètres globaux couran
 | **{{ctrl}}{{opt}}{{shift}}H** | Traiter à l'intérieur du HTML |
 [Basculements rapides]
 
-### Aperçu de la navigation
+### Aperçu de la navigation [previewnavigation]
 
 Appuyez sur "?" à tout moment pour afficher les raccourcis suivants dans la fenêtre Aperçu.
 
@@ -104,7 +104,7 @@ Appuyez sur "?" à tout moment pour afficher les raccourcis suivants dans la fen
 |        **{{shift}}{{cmd}}F** | Vue de mise au point |
 [Aperçu de la navigation]
 
-### Navigation dans la table des matières
+### Navigation dans la table des matières [TableofContentsNavigation]
 
 Lorsque la table des matières est ouverte, vous pouvez naviguer via le clavier.
 

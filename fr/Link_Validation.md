@@ -2,7 +2,7 @@
 
 La validation du lien envoie une requête ping à la destination d'une URL et teste les erreurs. Cela permet d'éviter les liens brisés et invalides dans votre document publié et est particulièrement utile pour les blogueurs.
 
-## Validation des liens uniques
+## Validation des liens uniques [validating-single-links]
 
 ![][1]
 
@@ -10,7 +10,7 @@ La validation du lien envoie une requête ping à la destination d'une URL et te
 
 Cliquez et maintenez sur un lien dans l'aperçu jusqu'à ce qu'il clignote, puis relâchez pour ouvrir le menu d'action du lien. Choisissez "Valider le lien" pour lancer le test. Les résultats sont affichés dans la fenêtre contextuelle.
 
-## Validation de tous les liens
+## Validation de tous les liens [validating-all-links]
 
 ![][2]
 
@@ -22,7 +22,7 @@ Les URL valides peuvent être masquées dans la fenêtre contextuelle grâce au 
 
 Appuyer sur Échap masquera les résultats de la validation. Ils peuvent être à nouveau révélés en utilisant {% kbd ctrl cmd L %} ou le menu Action.
 
-## Validation automatique
+## Validation automatique [validating-automatically]
 
 Activez « Valider automatiquement les URL lors de la mise à jour » dans les paramètres d'aperçu (ou en bas de la fenêtre contextuelle de validation du lien). Lors du chargement du document, les liens contenus seront testés en arrière-plan. Une boîte de dialogue s'affichera uniquement s'il y a des erreurs.
 

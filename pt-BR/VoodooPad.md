@@ -6,7 +6,7 @@
 
 Marcado monitora o documento no disco e troca a visualização quando você muda de página dentro do VoodooPad.
 
-## Imagens incorporadas
+## Imagens incorporadas [embedded-images]
 
 Quando você faz referência a imagens com Markdown ou HTML e o binário reside **dentro** do banco de dados VoodooPad, Marked pode extraí-lo para visualização. Imagens que são apenas **aliases** (arquivos arrastados por referência) não são armazenadas no pacote — aponte para aquelas com caminhos absolutos ou caminhos relativos ao `.vpdoc` no disco para que Marcado possa resolvê-los.
 

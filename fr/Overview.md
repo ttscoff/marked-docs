@@ -6,7 +6,7 @@
 
 **Assurez-vous de consulter la collection croissante de [vidéos tutorielles Marked](https://www.youtube.com/playlist?list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ).**
 
-## Qu'est-ce que le Markdown ?
+## Qu'est-ce que le Markdown ? [whats-markdown]
 
 [daringfireball]: http://daringfireball.net/projects/markdown/basics
 [mmd5]: https://fletcher.github.io/MultiMarkdown-5/
@@ -19,7 +19,7 @@ Marked fonctionne avec GitHub Flavored Markdown, CommonMark (GFM), Kramdown et M
 
 Vous pouvez utiliser le [Markdown Dingus](x-marked-3://dingus) pour expérimenter les différentes versions de Markdown prises en charge par Marked.
 
-## Qu'est-ce que Marked ?
+## Qu'est-ce que Marked ? [whats-marked]
 
 Marked est une application d'aperçu Markdown en direct pour macOS, une application d'aperçu (Multi) Markdown indépendante de l'éditeur qui surveille les modifications d'un fichier, mettant à jour l'aperçu à chaque fois que vous enregistrez. En séparant et en automatisant les détails du formatage, il vous permet de vous concentrer davantage sur l'écriture et moins sur la présentation, tout en gardant un œil sur votre produit final.
 
@@ -31,7 +31,7 @@ Marked possède des fonctionnalités supplémentaires, notamment le nombre de mo
 
 Oh oui, et cela fonctionne avec une tonne de vos applications préférées : des éditeurs de texte allant de Vim et Emacs à Sublime Text et TextMate, des éditeurs Markdown comme MultiMarkdown Composer, Byword et iA Writer, même des applications auxquelles vous ne vous attendez pas comme Ulysses, Scrivener, VoodooPad, MarsEdit, et plus encore.
 
-## Exemples d'utilisation
+## Exemples d'utilisation [example-uses]
 
 Marked transforme n'importe quel éditeur de texte en un éditeur compatible Markdown. Votre aperçu est toujours disponible et il se met à jour au fur et à mesure que vous travaillez.
 

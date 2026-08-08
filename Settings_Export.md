@@ -8,7 +8,7 @@ Options in the {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Export Profile
+### Export Profile [export-profile]
 
 Export Profile
 : Select a saved profile from the popup menu. Profiles store a complete set of export preferences for quick switching between workflows (for example, print PDF vs. web HTML). See [Export Profiles](Exporting.html#export-profiles).
@@ -19,7 +19,7 @@ New
 Manage
 : Open the profile manager to rename, duplicate, or delete profiles.
 
-### Print/PDF
+### Print/PDF [printpdf]
 
 Disable links/highlights when exporting PDF or Printing
 : Removes formatting (underline and color) from links when printing.
@@ -35,6 +35,9 @@ Embed images when copying HTML
 
 Print background colors and images
 : By default Marked will print/export with a white background. If you want to include background colors and images from custom themes, enable this option.
+
+Show comments in Print/PDF
+: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes already appear in the document body and are unchanged.
 
 Prevent orphaned headlines
 : This option prevents headlines for the next section from appearing at the bottom of a page without succeeding content.
@@ -66,11 +69,11 @@ Page Break after
 Table of contents level markers
 : Use the dropdowns to set the list item marker for each level of indentation in a table of contents.
 
-### Headers and Footers
+### Headers and Footers [headers-and-footers]
 
 Configure font, logo, header/footer fields, date and time formats, first-page inclusion, page numbering offset, and borders. Field placeholders include `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2`, and others.
 
-See [Headers and Footers](Exporting.html#headersandfooters) in [Exporting](Exporting.html) for placeholder reference and examples. See [Date and Time Formats](Exporting.html#dateandtimeformats) for `%date` and `%time` format codes.
+See [Headers and Footers](Exporting.html#headers-and-footers) in [Exporting](Exporting.html) for placeholder reference and examples. See [Date and Time Formats](Exporting.html#dateandtimeformats) for `%date` and `%time` format codes.
 
 Include on First Page
 : If the option for header and/or footer are unchecked, the first page will not print the specified type.

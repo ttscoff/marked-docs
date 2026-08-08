@@ -4,7 +4,7 @@
 
 Hay varias formas de incrustar JavaScripts adicionales en Marked.
 
-## Incluyendo JavaScript por documento
+## Incluyendo JavaScript por documento [including-javascript-per-document]
 
 Puede incluir scripts en un solo documento usando etiquetas `<script>` en el contenido mismo. Esto puede ser útil para bibliotecas como [D3](https://d3js.org/) para visualizaciones de datos que solo necesitas en documentos específicos:
 
@@ -18,7 +18,7 @@ Si está utilizando MultiMarkdown como procesador, puede incluir secuencias de c
 
 Para que los scripts incluidos se actualicen cuando cambia el contenido, consulte [Hooks](#hooks).
 
-## Incluyendo JavaScript
+## Incluyendo JavaScript [including-javascript]
 
 Puede incluir su propio JavaScript desde archivos locales, CDN o pegando código sin formato. Para acceder a esto, abra {% prefspane Style %} y haga clic en el botón *Reglas personalizadas*.
 
@@ -35,9 +35,9 @@ Insertar JavaScript desde la URL
 Insertar JavaScript
 : abre un editor de código donde puedes escribir/pegar tu propio código JavaScript.
 
-Estos scripts se insertarán al final de la vista previa, antes de la etiqueta del documento. Si necesita llamar a una función de inicio o actualizar cada vez que se actualiza la vista previa, consulte [Incluyendo JavaScript sin formato](#rawjs) y familiarícese con los [ganchos](#hooks) de Marked.
+Estos scripts se insertarán al final de la vista previa, antes de la etiqueta del documento. Si necesita llamar a una función de inicio o actualizar cada vez que se actualiza la vista previa, consulte [Incluyendo JavaScript sin formato](Embedding_Scripts.html#hooks) y familiarícese con los [ganchos](#hooks) de Marked.
 
-## Sirena y otros guiones {#mermaid}
+## Sirena y otros guiones [mermaid]
 
 jQuery está incluido de forma predeterminada y puede usarlo en cualquier script que agregue a Marked usando cualquiera de los métodos siguientes.
 
@@ -47,7 +47,7 @@ En la parte inferior de {% prefspane Style %}, hay una casilla de verificación 
 
 Si hay una biblioteca en particular que le gustaría que se incluyera de forma predeterminada, hágamelo saber en el [foro BrettTerpstra.com](https://forum.brettterpstra.com/) o a través de [el sitio de soporte](https://support.markedapp.com/questions/add).
 
-## Ganchos [ganchos]
+## Ganchos [hooks]
 
 A partir de versiones recientes, Marked ya no realiza una actualización de página completa al actualizar el contenido, sino que inyecta el nuevo contenido en el DOM sin necesidad de cargar la página. Esto significa que los scripts que se incluyeron y que se activan al cargar la página no se volverán a activar cuando se actualice el contenido. Marked proporciona una función de "ganchos" para adaptarse a esto. Para registrar un gancho, debe incluir un segundo bloque de secuencia de comandos que llame a la [`Marked.hooks.register()` función](https://markedapp.com/jsapi/Marked.hooks.html#.register__anchor), que acepta un activador, en este caso 'actualizar', y una función para ejecutar.
 

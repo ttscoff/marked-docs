@@ -10,7 +10,7 @@ A {% prefspane Apps %} opciói:
 
 [1]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Általános beállítások
+### Általános beállítások [general-settings]
 
 Szövegszerkesztő
 : Válasszon ki egy szövegszerkesztőt, amely az {% kbd cmd E %} beírásakor fogadja az aktuális dokumentumot.
@@ -29,13 +29,13 @@ Képannotáció/jelölőszerkesztő
 
 Ha nincs kiválasztva szerkesztő, a Marked megjeleníti a telepített alkalmazások menüjét, amikor szerkeszti vagy megjegyzéseket fűz. A menüben megtalálhatók a Mac számítógépen található általános Markdown, kép és annotációs eszközök, az **Egyéb…** opció, amellyel bármelyik alkalmazást kiválaszthatja az `/Applications` közül, és a **Mindig használja ezt az alkalmazást** (alapértelmezés szerint engedélyezve van), hogy elmentse választását alapértelmezettként. A kijelölés eltávolításához és a kiválasztóhoz való visszatéréshez használja a törlés gombot (körbe X-szel) a {% prefspane Apps %}-ben szereplő Válasszon vezérlőelemek mellett.
 
-### Alkalmazás-specifikus beállítások
+### Alkalmazás-specifikus beállítások [application-specific-settings]
 
 Alapértelmezés szerint a megjegyzések és megjegyzések megjelenítése
 : Ha be van jelölve, a Scrivener, Fountain, Word és CriticMarkup dokumentumokban készített megjegyzések kiemelve jelennek meg az előnézetben. Törölje a jelölést a teljes elrejtéshez. Ezek a {% appmenu Gear, Proofing ({{ctrl}}{{cmd}}C)%} menüből egy dokumentum olvasása közben is átkapcsolhatók.
 : Ha a megjegyzések engedélyezve vannak, a megjegyzések és lábjegyzetek az oldalsávon jelennek meg. Ha egy megjegyzés fölé viszi az egeret, az arra mutat, hogy a megjegyzés hol található a dokumentumban.
 
-#### DocC
+#### DocC [docc]
 
 [(Információ a DocC támogatásról)](DocC_Support.html)
 
@@ -45,12 +45,12 @@ DocC képhivatkozások feloldása
 Sötét és @2x képváltozatok feloldása
 : A (`images/icon.png`) fájlkiterjesztésű helyi képeknél észleli a `~dark` és `@2x` kísérőfájlokat ugyanabban a mappában, és érzékeny `<picture>` jelölést bocsát ki. Bármilyen Markdown vagy HTML dokumentumban működik, nem csak a DocC katalógusokban. Lásd: [Képváltozatok](Image_Variants.html).
 
-#### Hookmark
+#### Hookmark [hookmark]
 
 A hook:// URL-ek feloldása képekben és linkekben
 : A megjelölt be tudja olvasni a Hookmark által létrehozott URL-eket, és feloldja azokat a lemezen lévő elérési útjukra.
 
-#### Leanpub/GitBook
+#### Leanpub/GitBook [leanpubgitbook]
 
 Leanpub támogatás engedélyezése
 : A `Book.txt` nevű fájlokat indexfájlként értelmezi, és speciális Leanpub szintaxist kezel.
@@ -58,12 +58,12 @@ Leanpub támogatás engedélyezése
 Engedélyezze a GitBook támogatást
 : A `SUMMARY.md` nevű fájlokat indexfájlként értelmezi a GitBook dokumentációhoz.
 
-#### Markdownifier
+#### Markdownifier [markdownifier]
 
 Használjon beépített hivatkozásokat
 : A Markdownifier által létrehozott Markdown dokumentumok inline hivatkozásokat használnak hivatkozási hivatkozások helyett.
 
-#### MarsEdit
+#### MarsEdit [marsedit]
 
 Bejegyzés címe Markdown fejlécként (h1)
 : Használja a kiválasztott bejegyzés címét Markdown fejlécként.
@@ -71,12 +71,12 @@ Bejegyzés címe Markdown fejlécként (h1)
 A metaadatok megjelenítése táblázatként
 : Ha engedélyezve van, a metaadatok, például a kategóriák és a címek Markdown táblázatként jelennek meg az előnézetben.
 
-#### Mappák
+#### Mappák [folders]
 
 Csak ezeket a bővítményeket tekintse meg
 : Mappa megnyitásakor a Megjelölt a legutóbb módosított dokumentumot keresi, alapértelmezés szerint a következő kiterjesztéssel: `md`, `mmd` és `html`. Az itt található lista felülírja az alapértelmezettet.
 
-#### Scrivener
+#### Scrivener [scrivener]
 
 [(Információ a Scrivener támogatásáról)](Scrivener_Support.html)
 
@@ -89,12 +89,12 @@ Ha hiányzik, adja hozzá a fordítási metaadatokat (cím, szerző).
 Nyissa meg a .scriv fájlokat a Scrivenerben, amikor a Marked alkalmazásban van megnyitva
 : Ha egy Scrivener dokumentumot a Marked alkalmazásban nyit meg, akkor automatikusan nyissa meg a Scrivenerben is.
 
-#### Szó
+#### Szó [word]
 
 Változáskövetés átalakítása <-> CriticMarkup
 : Ha engedélyezve van, a Word dokumentumok változáskövetése importáláskor CriticMarkup formátumba, a DOCX fájlok exportálásakor pedig a CriticMarkup Word változáskövetéssé.
 
-#### Mind Maps/Outlines {#MindMapsOutlines}
+#### Mind Maps/Outlines [MindMapsOutlines]
 
 Beágyazás sellő gondolattérképként
 : Minden jelölőnégyzet egy mellékelt formátumot vezérel. Ha **be** van kapcsolva, a mellékelt fájl Hableány gondolattérkép-diagrammá alakul (tidy-fa-layout). Ha **ki**, a Marked az adott formátum alternatíváját használja.

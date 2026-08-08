@@ -1,0 +1,62 @@
+# Marked Localization Update
+# Locale: zh-Hant (Traditional Chinese)
+# Feature: exportShowComments (Show comments in Print/PDF)
+# Generated: 2026-08-03
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# Scrivener, Fountain) unless your locale normally localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   Preferences.xib.strings: 2
+#   Settings.strings: 2
+#   MarkdownDocument.strings: 2
+#   PDFExportWindow.xib: English-only (no locale .strings table)
+
+=== BEGIN Preferences.xib.strings ===
+# Strings in this section: 2
+
+"Xrg-8N-tlp.title" = "在 Print/PDF 中顯示評論";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中顯示評論
+
+"Xrf-8N-cst.ibShadowedToolTip" = "列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。
+=== END Preferences.xib.strings ===
+
+=== BEGIN Settings.strings ===
+# Strings in this section: 2
+
+"setting.exportShowComments" = "在 Print/PDF 中顯示評論";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中顯示評論
+
+"tooltip.exportShowComments" = "列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。
+=== END Settings.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+# Strings in this section: 2
+# Continuous PDF save accessory checkbox
+
+"ESc-1a-Cel.title" = "在 Print/PDF 中顯示評論";
+# EN: Show comments in Print/PDF
+# DRAFT: 在 Print/PDF 中顯示評論
+
+"ESc-1a-Cmt.ibShadowedToolTip" = "列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。";
+# EN: Include CriticMarkup, Scrivener, Word, and Fountain comments as highlighted inline text when printing or exporting PDF. Footnotes are unchanged.
+# DRAFT: 列印或匯出 PDF 時，將 CriticMarkup、Scrivener、Word 和 Fountain 註解包含為反白的內嵌文字。腳註不變。
+=== END MarkdownDocument.strings ===
+
+=== BEGIN PDFExportWindow.xib ===
+# No locale .strings table for PDFExportWindow.xib yet.
+# English title/tooltip are embedded in the XIB; L10n wiring is out of scope for this handoff.
+=== END PDFExportWindow.xib ===

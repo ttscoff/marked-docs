@@ -8,7 +8,7 @@ A {% prefspane General %} opciói:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Ablak
+### Ablak [window]
 
 Tartsa felül az új ablakokat
 : Az új ablakok automatikus beállítása úgy, hogy „lebegjen” a többi alkalmazás felett.
@@ -31,7 +31,7 @@ Vigye elő a frissített dokumentumot
 Visszatérés az előző alkalmazáshoz
 : Ha engedélyezve van, ha egy emelési/frissítési művelet hatására a Marked előtérbe kerül, a billentyűzet fókusza visszakerül arra az alkalmazásra, amelyik a frissítés előtt a legelső volt (például a szövegszerkesztőben). Ha le van tiltva, a Marked soha nem hajtja végre ezt a fókusz átadást. Ha a Megjelölt nem lesz a legelső, akkor ennek az opciónak nincs hatása.
 
-### Állapotsor
+### Állapotsor [status-bar]
 
 Stílusválasztó megjelenítése
 : Megjeleníti a stílusválasztót az előnézeti ablak alsó sávjában.
@@ -47,7 +47,7 @@ A szószám nem tartalmazza
 - **Behúzott kódblokkok** (a bekerített kódblokkok mindig kizártak)
 - **Képfeliratok**
 
-### Parancsikonok
+### Parancsikonok [shortcuts]
 
 Kattintson a parancsikon mezőre egy eseményt kiváltó gyorsbillentyű-kombináció rögzítéséhez:
 
