@@ -193,8 +193,8 @@ document.
   jumps between the inline marker and the definition (or
   creates the definition if it is missing).
 * __F7 (magic footnote)__: Inserts a numbered footnote marker
-  `[^n]` at the caret --- or after the current word when the
-  caret is inside one --- and appends `[^n]: ` with the
+  `[^n]` at the caret — or after the current word when the
+  caret is inside one — and appends `[^n]: ` with the
   selected text as the footnote body when there is a
   selection. When the caret is on an existing footnote marker
   or definition, **F7** jumps between them.
