@@ -1,4 +1,4 @@
-## CommonMark License ##
+## CommonMark License ## [commonmark-license]
 
 The CommonMark spec (spec.txt) and DTD (CommonMark.dtd) are
 

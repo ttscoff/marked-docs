@@ -6,7 +6,7 @@ Optionen unter {% prefspane Preview %}:
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Vorschauverhalten
+### Vorschauverhalten [preview-behavior]
 
 Navigation für die Mini-Übersicht aktivieren
 : Erzeugt eine visuelle Übersicht des Dokuments, die beim Drücken von „0“ erscheint. Bei großen Dokumenten kann das Rendern kurz verzögert sein.
@@ -23,7 +23,7 @@ Vorschau- und Quelltext-Scrollen synchronisieren
 Geschwindigkeitsablesung mit Scrollposition synchronisieren
 : Hält das [Speed Reading](Speed_Reading.html)-Overlay an der Scrollposition der Vorschau ausgerichtet. Das lässt sich auch über das Speed-Read-Overlay umschalten.
 
-### Zum Bearbeiten scrollen
+### Zum Bearbeiten scrollen [scroll-to-edit]
 
 Zum Bearbeiten scrollen
 : Beim Aktualisieren der Vorschau kann Marked die erste Stelle bestimmen, an der sich das Dokument geändert hat, und automatisch dorthin scrollen. So bleibt die Vorschau mit Ihrer aktuellen Position im bearbeiteten Dokument synchron. Die Markierung der letzten Bearbeitung ist der erste Unterschied im Dokument seit der letzten Aktualisierung. Aktivieren Sie „Diff-Reihenfolge umkehren“, gilt stattdessen der letzte Unterschied im Dokument (von oben nach unten) als letzte Bearbeitung.
@@ -37,7 +37,7 @@ Alle Diff-Marker anzeigen
 Diff-Reihenfolge umkehren
 : Ist dies aktiviert, werden Unterschiede in umgekehrter Reihenfolge (von unten nach oben) markiert. Das betrifft die Navigation: <kbd>e</kbd> navigiert nach oben, {% kbd shift E %} nach unten. Die „letzte Bearbeitung“ wird zum letzten Unterschied im Dokument.
 
-### Zusätzliche Funktionen
+### Zusätzliche Funktionen [additional-features]
 
 Das Inhaltsverzeichnis verfolgt die Scrollposition
 : Das Inhaltsverzeichnis hebt den aktuellen Abschnitt hervor.
@@ -52,7 +52,7 @@ URLs bei Aktualisierung automatisch validieren
 : Validiert URLs beim Laden und Aktualisieren des Dokuments. Zeigt nur bei Fehlern Ergebnisse an.
 : Führt bei jeder Dokumentaktualisierung die [Link-Validierung](Link_Validation.html) aus (bei sehr vielen Links kann das langsam sein und sollte vermieden werden).
 
-### Wiki-Verlinkung
+### Wiki-Verlinkung [wiki-linking]
 
 [[Wiki-Links]] konvertieren
 : Aktiviert Markeds [Wiki-Navigation](Wiki_Navigation.html) für die `[[wiki link]]`-Syntax.
@@ -60,7 +60,7 @@ URLs bei Aktualisierung automatisch validieren
 Standarderweiterung
 : Die Dateinamenserweiterung, die Marked beim Auflösen von Wiki-Links ohne Erweiterung verwendet (zum Beispiel `md`).
 
-### Aussehen
+### Aussehen [appearance]
 
 Dunkelmodus
 : Zeigt alle Fenster im Modus „Hoher Kontrast“ – mit dunkler Oberfläche und, falls vorhanden, der invertierten Version des aktuellen Stils (gilt möglicherweise nicht für Eigene Stile).

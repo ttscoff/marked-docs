@@ -1,8 +1,8 @@
-# pdf22md License
+# pdf22md License [pdf22md-license]
 
 Marked's PDF import feature uses components from [pdf22md](https://github.com/twardoch/pdf22md) (PDF22MD Swift package).
 
-## MIT License
+## MIT License [mit-license]
 
 Copyright (c) 2024 Adam Twardoch
 

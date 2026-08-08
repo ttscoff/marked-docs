@@ -4,7 +4,7 @@
 
 Többféleképpen is beágyazhat további JavaScripteket a Markedbe.
 
-## Beleértve a dokumentumonkénti JavaScriptet
+## Beleértve a dokumentumonkénti JavaScriptet [including-javascript-per-document]
 
 A szkripteket egyetlen dokumentumba foglalhatja magában a tartalomban található `<script>` címkék használatával. Ez hasznos lehet olyan könyvtáraknál, mint a [D3](https://d3js.org/) olyan adatvizualizációknál, amelyekre csak bizonyos dokumentumokban van szükség:
 
@@ -18,7 +18,7 @@ Ha a MultiMarkdownt használja processzorként, akkor szkripteket is beilleszthe
 
 Ha azt szeretné, hogy a mellékelt szkriptek a tartalom megváltozásakor frissüljenek, olvassa el a [Hookok](#hooks) részt.
 
-## Beleértve a JavaScriptet
+## Beleértve a JavaScriptet [including-javascript]
 
 Felveheti saját JavaScript-kódját helyi fájlokból, CDN-ekből vagy nyers kód beillesztésével. Ennek eléréséhez nyissa meg a {% prefspane Style %}-t, és kattintson az *Egyéni szabályok* gombra.
 
@@ -35,9 +35,9 @@ JavaScript beillesztése az URL-ből
 JavaScript beillesztése
 : Megnyit egy kódszerkesztőt, amelybe saját JavaScript-kódot írhat/beilleszthet
 
-Ezek a szkriptek az előnézet végére, a dokumentumcímke elé kerülnek beszúrásra. Ha meg kell hívnia egy init függvényt vagy frissítenie kell minden alkalommal, amikor az előnézet frissül, olvassa el a [Nyers JavaScriptet beleértve](#rawjs) című részt, és ismerkedjen meg a Marked [hookjaival] (#hooks).
+Ezek a szkriptek az előnézet végére, a dokumentumcímke elé kerülnek beszúrásra. Ha meg kell hívnia egy init függvényt vagy frissítenie kell minden alkalommal, amikor az előnézet frissül, olvassa el a [Nyers JavaScriptet beleértve](Embedding_Scripts.html#hooks) című részt, és ismerkedjen meg a Marked [hookjaival] (#hooks).
 
-## Mermaid és egyéb forgatókönyvek {#mermaid}
+## Mermaid és egyéb forgatókönyvek [mermaid]
 
 A jQuery alapértelmezés szerint benne van, és bármely olyan szkriptben használható, amelyet az alábbi módszerek bármelyikével hozzáad a Markedhez.
 
@@ -47,7 +47,7 @@ Az {% prefspane Style %} alján egy "Pásztázási és nagyítási diagramok" je
 
 Ha van egy adott könyvtár, amelyet alapértelmezés szerint szerepeltetni szeretne, tudassa velem a [BrettTerpstra.com fórumon](https://forum.brettterpstra.com/) vagy [a támogatási webhelyen](https://support.markedapp.com/questions/add).
 
-## Horgok [horgok]
+## Horgok [hooks]
 
 A legújabb verzióktól kezdve a Marked már nem hajt végre teljes oldalfrissítést a tartalom frissítésekor, hanem az új tartalmat oldalbetöltés nélkül szúrja be a DOM-ba. Ez azt jelenti, hogy az oldalbetöltéskor aktiválódó szkriptek nem aktiválódnak újra a tartalom frissítésekor. A Marked egy „horgok” funkciót biztosít ehhez. A hook regisztrálásához tartalmaznia kell egy második szkriptblokkot, amely meghívja a [`Marked.hooks.register()` függvényt](https://markedapp.com/jsapi/Marked.hooks.html#.register__anchor), amely elfogad egy triggert, ebben az esetben az „update”-t, és egy végrehajtandó függvényt.
 

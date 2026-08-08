@@ -8,7 +8,7 @@ Optionen unter {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Exportprofil
+### Exportprofil [export-profile]
 
 Exportprofil
 : Wählen Sie ein gespeichertes Profil aus dem Popup-Menü. Profile speichern einen vollständigen Satz an Exporteinstellungen für schnelles Wechseln zwischen Arbeitsabläufen (zum Beispiel Druck-PDF vs. Web-HTML). Siehe [Exportprofile](Exporting.html#export-profiles).
@@ -19,7 +19,7 @@ Neu
 Verwalten
 : Öffnet den Profilmanager zum Umbenennen, Duplizieren oder Löschen von Profilen.
 
-### Drucken/PDF
+### Drucken/PDF [printpdf]
 
 Links/Hervorhebungen für PDF/Print deaktivieren
 : Entfernt beim Drucken die Formatierung (Unterstreichung und Farbe) von Links.
@@ -66,11 +66,11 @@ Seitenumbruch danach
 Inhaltsverzeichnis-Ebenenmarkierungen
 : Legen Sie über die Dropdown-Menüs die Listenmarkierung für jede Einrückungsebene eines Inhaltsverzeichnisses fest.
 
-### Kopf- und Fußzeilen
+### Kopf- und Fußzeilen [headers-and-footers]
 
 Konfigurieren Sie Schrift, Logo, Kopf-/Fußzeilenfelder, Datums- und Zeitformate, das Einschließen auf der ersten Seite, den Versatz der Seitennummerierung und Trennlinien. Feld-Platzhalter sind unter anderem `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1` und `%h2`.
 
-Siehe [Kopf- und Fußzeilen](Exporting.html#headersandfooters) in [Exportieren](Exporting.html) für die Platzhalter-Referenz und Beispiele. Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats) für die Formatcodes von `%date` und `%time`.
+Siehe [Kopf- und Fußzeilen](Exporting.html#headers-and-footers) in [Exportieren](Exporting.html) für die Platzhalter-Referenz und Beispiele. Siehe [Datums- und Zeitformate](Exporting.html#dateandtimeformats) für die Formatcodes von `%date` und `%time`.
 
 Auf erster Seite einschließen
 : Sind die Optionen für Kopf- und/oder Fußzeile deaktiviert, wird der jeweilige Typ auf der ersten Seite nicht gedruckt.

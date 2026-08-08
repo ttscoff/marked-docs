@@ -6,7 +6,7 @@ Optionen unter {% prefspane Processor %}:
 
 [1]: images/screenshots/preferences-Processor.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Markdown verarbeiten mit
+### Markdown verarbeiten mit [process-markdown-with]
 
 Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
 
@@ -21,7 +21,7 @@ Vollständiger Festplattenzugriff
 
 Um die Unterschiede zwischen den Prozessoren zu erkunden, schauen Sie sich den [Markdown-Dingus](Markdown_Dingus.html) an.
 
-### HTML
+### HTML [html]
 
 IDs für Überschriften generieren
 : Erzeugt Überschriften-IDs anhand des Inhalts der h1–h6-Tags.
@@ -32,7 +32,7 @@ Zufällige Fußnoten-IDs verwenden
 Markdown innerhalb von HTML verarbeiten
 : Standardmäßig wird Markdown innerhalb von HTML-Tags meist ignoriert. Diese Option zwingt Marked, auch innerhalb von Blockelementen weiterzuverarbeiten. Beachten Sie, dass manches Markup Probleme verursachen kann.
 
-### Darstellung
+### Darstellung [rendering]
 
 Zeilenumbrüche in Absätzen beibehalten
 : Berücksichtigt Zeilenumbrüche im Absatztext und ersetzt sie durch harte Umbrüche, statt sie mit der vorherigen Zeile zusammenzufügen.

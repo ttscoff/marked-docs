@@ -2,7 +2,7 @@
 
 Marked erlaubt mehrere verschiedene Syntaxen, um eine Datei in eine andere einzubinden.
 
-## Marked-Syntax
+## Marked-Syntax [marked-syntax]
 
 Sie binden externe Dateien in ein einzelnes Vorschaudokument ein, indem Sie am Zeilenanfang die spezielle Syntax `<<[path/file]` verwenden. Über und unter der Zeile sollten Leerzeilen stehen, und der Pfad wird relativ zum Hauptdokument angenommen, sofern er nicht mit einem Schrägstrich (`/`) oder einer Tilde (`~`) beginnt. Schrägstrich (Wurzelverzeichnis) und Tilde (Home-Verzeichnis) dienen zum Definieren absoluter Pfade. Liegen die externen Dateien im selben Ordner wie das Hauptdokument, ist kein Pfad nötig – geben Sie einfach den Dateinamen (Groß-/Kleinschreibung beachten, samt Erweiterung) in die eckigen Klammern ein.
 
@@ -44,7 +44,7 @@ Der endgültige HTML-Export eines Dokuments mit Einbindungen enthält am Anfang 
 
 **Hinweis:** Je mehr Dateien ein Dokument einbindet, desto länger dauert die Gesamtkompilierung der Vorschau. Marked versucht zu optimieren und zwischenzuspeichern, aber mit wachsender Dokumentgröße sind gewisse Renderverzögerungen zu erwarten.
 
-## MultiMarkdown-Transclude-Syntax
+## MultiMarkdown-Transclude-Syntax [multimarkdown-transclude-syntax]
 
 Sie können auch die `{{filename}}`-Syntax nach der neueren MultiMarkdown-Spezifikation verwenden. Marked erkennt `Transclude Base: path` in MMD-Metadaten und nutzt es als Basis für die Dateieinbindung.
 
@@ -52,7 +52,7 @@ Sie können auch die `{{filename}}`-Syntax nach der neueren MultiMarkdown-Spezif
 
 Die abgegrenzte Code-Syntax, die MultiMarkdown zum Einbinden von Dateien ohne Verarbeitung bietet, funktioniert in Marked nicht. Verwenden Sie dafür die Syntax `<<(file)` (Codeblock) oder `<<{file}` (roh).
 
-## IA-Writer-Block-Syntax
+## IA-Writer-Block-Syntax [ia-writer-block-syntax]
 
 Marked 2.5.11+ unterstützt die [Content-Block][ia]-Syntax von IA Writer. Das ist eine Referenz, die in einer eigenen Zeile mit einem Schrägstrich (`/`) beginnt. Es kann ein Codebeispiel, ein Bild, eine Markdown-Datei oder eine CSV-Datei sein. Alles wird passend anhand der Erweiterung der eingebundenen Datei behandelt, und CSVs werden nach Möglichkeit [in Markdown-Tabellen umgewandelt][csv].
 
@@ -73,7 +73,7 @@ Absoluter Pfad zum Ordner „Dokumente“:
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
-## Wie Gliederungs-, Mindmap- und CSV-Einbindungen umgewandelt werden
+## Wie Gliederungs-, Mindmap- und CSV-Einbindungen umgewandelt werden [how-outline-mind-map-and-csv-includes-are-converted]
 
 Binden Sie bestimmte Dateitypen mit `<<[path]` oder der IA-Writer-Block-Syntax ein, wandelt Marked sie um, statt den rohen Dateiinhalt einzufügen. Das Verhalten bei Gliederungen und Mindmaps hängt von der Dateierweiterung und Ihren Einstellungen unter [Einstellungen: Apps → Mindmaps/Gliederungen][mindmaps] ab. CSV-/TSV-Dateien werden immer in Markdown-Tabellen umgewandelt (siehe [Tabellen aus CSV-Dateien erstellen][csv]).
 
@@ -93,11 +93,11 @@ Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes 
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
-## Buchformate
+## Buchformate [book-formats]
 
 Marked unterstützt auch Indexdateien in Formaten wie [Leanpub][lp], [GitBook][gb] und mmd\_merge (MultiMarkdown). Dateien in solchen Buchformat-Indizes werden auf Änderungen überwacht, und das Ergebnis ist eine vollständige Vorschau Ihres kompilierten Dokuments – genau wie im „Index.md“-Beispiel oben.
 
-### Leanpub
+### Leanpub [leanpub]
 
 Aktivieren Sie unter {% prefspane Apps %} die Leanpub/GitBook-Unterstützung, werden Dateien namens „Book.txt“ automatisch als Leanpub-Indexdateien behandelt. Das ältere Format „frontmatter:“ wird ebenfalls erkannt.
 
@@ -115,7 +115,7 @@ Beispiel für eine Leanpub-Book.txt:
     Inserting Images.txt
 
 
-### mmd_merge
+### mmd_merge [mmdmerge]
 
 Für mmd\_merge verlangt Marked, dass die erste Zeile „#merge“ lautet (ein spezieller Marked-Auslöser für mmd\_merge, der als Kommentar behandelt und von anderen Prozessoren ignoriert wird).
 
@@ -134,7 +134,7 @@ mmd_merge-Beispiel:
     FAQ.md
     Acknowledgments.md
 
-### GitBook
+### GitBook [gitbook]
 
 Die GitBook-Formatierung verwendet eine Markdown-Liste für Struktur und Inhaltsverzeichnis. Ist die GitBook-Unterstützung unter {% prefspane Apps %} aktiviert, wird eine Datei namens SUMMARY.md gelesen und automatisch ins mmd_merge-Format umgewandelt, was eine vollständige Vorschau Ihres GitBook-Dokuments ermöglicht.
 
@@ -159,7 +159,7 @@ GitBook erlaubt Anker im Inhaltsverzeichnis der SUMMARY.md, aber Marked ignorier
 [mmdm]: http://fletcher.github.io/peg-multimarkdown/#howdoisplitamultimarkdowndocumentintoseveralparts
 [gb]: https://www.gitbook.com/
 
-## Vorschaufunktionen für Mehrdatei-Dokumente
+## Vorschaufunktionen für Mehrdatei-Dokumente [multi-file-document-preview-features]
 
 ![Grenzen eingebundener Dateien][2]
 
@@ -169,4 +169,4 @@ Beim Betrachten eines Dokuments mit eingebundenen Dateien helfen Ihnen zwei Funk
 
 * **Tastatur:** Ein Druck auf {% kbd shift I %} zeigt kurz ein Popup mit dem Titel der Datei, die an der aktuellen Scrollposition der Vorschau sichtbar ist.
     * Drücken Sie {% kbd Return %} direkt nach {% kbd I %}, wird die angezeigte Datei in Ihrem externen Editor bearbeitet.
-* **Maus:** Wählen Sie im Zahnradmenü „Grenzen eingebetteter Dateien anzeigen“ ({% kbd ctrl cmd B %}), erscheint links in der Vorschau ein farbiger Balken, der segmentiert Anfang und Ende der eingebundenen Dateien markiert. Er zeigt auch verschachtelte Einbindungen. Fahren Sie über einen Abschnitt des Balkens, erscheint der Dateiname; ein Klick öffnet die Datei im gewählten Editor.
+* **Maus:** Wählen Sie im Zahnradmenü „Grenzen eingebundener Dateien anzeigen“ ({% kbd ctrl cmd B %}), erscheint links in der Vorschau ein farbiger Balken, der segmentiert Anfang und Ende der eingebundenen Dateien markiert. Er zeigt auch verschachtelte Einbindungen. Fahren Sie über einen Abschnitt des Balkens, erscheint der Dateiname; ein Klick öffnet die Datei im gewählten Editor.

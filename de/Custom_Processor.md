@@ -2,7 +2,7 @@
 
 Mit Eigenen Regeln, Texttransformationen und der Möglichkeit, eigene Befehle auszuführen oder je nach passenden Dateieigenschaften unterschiedliche Prozessoren zu verwenden, gibt Ihnen Marked die volle Kontrolle.
 
-## Eigene Präprozessoren/Prozessoren verwenden
+## Eigene Präprozessoren/Prozessoren verwenden [using-custom-preprocessorsprocessors]
 
 Um benutzerdefinierte Prozessoren hinzuzufügen, öffnen Sie {% prefspane Processor %} und klicken auf **Eigene Regeln**.
 
@@ -30,7 +30,7 @@ Prozessor
 
 Alle Tabellen im Editor für Eigene Regeln lassen sich per Drag-and-drop umsortieren. So beeinflussen Sie die Reihenfolge, in der Regeln ausgeführt werden, die Reihenfolge der Kriterien im Prädikat-Editor und die Reihenfolge der nacheinander auszuführenden Aktionen.
 
-### Prädikat-Editor
+### Prädikat-Editor [predicate-editor]
 
 ![Prädikat-Editor][predicate]
 
@@ -64,7 +64,7 @@ Fügen Sie dieses Kriterium über die Schaltfläche **Manuell aktiviert hinzufü
 
 **Beispiel:** Sie pflegen eine Regel, die Druck-CSS einfügt, Kommentare entfernt und die Überschriftenebenen für den PDF-Export verschiebt. Diese Transformation soll nicht bei jedem Speichern während des Schreibens greifen, sondern nur auf Abruf. Geben Sie der Regel die normalen Dateiabgleich-Kriterien plus **Manuell aktiviert** und schalten Sie sie dann über das Vorschau-Menü (oder einen Auslöser-Kurzbefehl) ein, wenn Sie das Drucklayout prüfen wollen.
 
-#### Auslöser-Kurzbefehl
+#### Auslöser-Kurzbefehl [trigger-shortcut]
 
 Enthält eine ausgewählte Regel **Manuell aktiviert**, erscheint neben **Manuell aktiviert hinzufügen** das Feld **Auslöser-Kurzbefehl**. Klicken Sie auf den Rekorder und drücken Sie dann die gewünschte Tastenkombination. Dieser Kurzbefehl schaltet die Regel für die vorderste Marked-Vorschau um (ein, wenn aus; aus, wenn ein). Der Kurzbefehl wird mit der Regel gespeichert und bleibt über Neustarts hinweg erhalten. Leeren Sie das Feld, um den Kurzbefehl zu entfernen.
 
@@ -72,7 +72,7 @@ Enthält eine ausgewählte Regel **Manuell aktiviert**, erscheint neben **Manuel
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### Überschreibungen pro Vorschau im Vorschau-Menü
+#### Überschreibungen pro Vorschau im Vorschau-Menü [per-preview-overrides-in-the-preview-menu]
 
 Zwei Untermenüs des Vorschau-Menüs steuern Überschreibungen nur für die aktive Vorschau. Zeigen mehrere Fenster dieselbe Datei, werden die Einstellungen pro [Ansicht](#multiview) gespeichert.
 
@@ -82,7 +82,7 @@ Zwei Untermenüs des Vorschau-Menüs steuern Überschreibungen nur für die akti
 **Eigene-Regel-Überschreibung**
 : Listet die Regeln der Prozessphase auf. Wählen Sie eine aus, um sie *anzuheften*: Während der Prozessphase wird dann nur diese Regel ausgewertet (andere Prozessregeln werden übersprungen). Wählen Sie **Keine (automatisch)**, um zum normalen Regelabgleich zurückzukehren. Das ist nützlich, wenn Sie für eine Vorschau eine bestimmte Prozessor-Pipeline erzwingen wollen, ohne die globalen Eigenen Regeln zu ändern.
 
-#### Überschreiben-Schaltfläche in der Vorschau-Symbolleiste
+#### Überschreiben-Schaltfläche in der Vorschau-Symbolleiste [override-button-in-the-preview-toolbar]
 
 Sobald eine Vorschau mindestens eine manuell aktivierte Regel oder eine angeheftete Prozess-Überschreibung hat, erscheint in der unteren Symbolleiste ein Verzweigungssymbol (links neben den Steuerelementen für Export und Drawer). Das gefüllte, in der Akzentfarbe eingefärbte Symbol bedeutet, dass Überschreibungen aktiv sind; das Umriss-Symbol bedeutet, dass sie ausgesetzt sind.
 
@@ -92,7 +92,7 @@ Sobald eine Vorschau mindestens eine manuell aktivierte Regel oder eine angeheft
 
 Klicken Sie auf die Schaltfläche, um die Überschreibungen für diese Vorschau auszusetzen oder wieder zu aktivieren, ohne dabei die Häkchen Ihrer manuell aktivierten Regeln oder die angeheftete Prozessregel zu verlieren. Ausgesetzte Überschreibungen werden beim erneuten Klick wiederhergestellt. Das geht schneller, als Regeln im Menü abzuwählen, wenn Sie die normale Vorschau mit Ihrer Überschreibungs-Pipeline vergleichen wollen.
 
-### Aktionen
+### Aktionen [actions]
 
 Fügen Sie der Regel über die Schaltfläche *+ Aktion* Aktionen hinzu.
 
@@ -227,11 +227,11 @@ Marked.hooks.register('update', function() {
 
 Dadurch wird `mermaid.run()` jedes Mal ausgeführt, wenn Marked eine Teilaktualisierung durchführt.
 
-### Regeln testen
+### Regeln testen [test-rules]
 
 Die Schaltfläche _Regeln testen_ unter der Regelliste öffnet einen Dialog, in dem Sie eine beliebige Markdown-Datei auswählen können; sie wird dann gegen alle Ihre Regeln getestet. Zutreffende Regeln werden auf der linken Seite mit einer grünen Markierung hervorgehoben. Beim Test gegen eine Datei erscheint neben dem Button eine rote X-Schaltfläche, mit der Sie den Test zurücksetzen und die Hervorhebung der Zeilen entfernen können.
 
-## Drag-and-drop
+## Drag-and-drop [drag-and-drop]
 
 Das Conductor-Fenster unterstützt erweitertes Drag-and-drop: Es erkennt Dateitypen intelligent und bietet je nach gezogener Datei passende Aktionen an. Für Textdateien gibt es ein geteiltes Overlay, mit dem Sie wählen können, ob Sie die Datei gegen die Regeln testen oder sie als Aktion hinzufügen.
 
@@ -239,7 +239,7 @@ Das Conductor-Fenster unterstützt erweitertes Drag-and-drop: Es erkennt Dateity
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Dateityperkennung
+### Dateityperkennung [file-type-detection]
 
 Das System erkennt verschiedene Dateitypen automatisch und zeigt passende Overlay-Meldungen an:
 
@@ -258,13 +258,13 @@ Wenn Sie merkwürdige Ergebnisse erhalten und sehen möchten, was vor sich geht,
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Mehrere Befehle ausführen
+## Mehrere Befehle ausführen [executing-multiple-commands]
 
 Eine Regel kann mehrere **Befehl ausführen**-Aktionen nacheinander enthalten. Die Ausgabe jedes Befehls wird an den nächsten übergeben. Soll ein Befehl etwas ausgeben und gleichzeitig Markeds Vorschau aktualisiert werden, geben Sie unbedingt den ursprünglichen Inhalt an STDOUT zurück, damit der nächste Befehl oder der integrierte Prozessor ihn verarbeiten kann.
 
 Wenn Sie zum Beispiel mit einem Befehl über Pandoc ein PDF-Dokument aktualisieren möchten, übergeben Sie einfach den ursprünglichen Dateipfad (aus den Umgebungsvariablen) mit den passenden Befehlszeilenoptionen an Pandoc und geben dann den STDIN-Inhalt wieder an STDOUT aus.
 
-## Benutzerdefinierte Prozessoren dynamisch umgehen
+## Benutzerdefinierte Prozessoren dynamisch umgehen [dynamically-bypassing-custom-processors]
 
 Gibt ein benutzerdefinierter Prozessor „NOCUSTOM“ über STDOUT zurück, beendet Marked den benutzerdefinierten Prozessor und fällt auf den internen Standardprozessor zurück. So können Sie einen benutzerdefinierten Prozessor bauen, der anhand der [Umgebungsvariablen](#environmentvariables), des Dateinamens oder der Erweiterung des Dokuments, einer Inhaltsübereinstimmung oder anderer Logik selbst entscheidet, ob er laufen soll.
 
@@ -300,11 +300,11 @@ Marked führt den benutzerdefinierten Prozessor in einer eigenen Shell aus, das 
 **MARKED_CSS_PATH**
 : Der vollständige Pfad zum aktuellen Stylesheet.
 
-### Metadaten-Umgebungsvariablen
+### Metadaten-Umgebungsvariablen [metadata-environment-variables]
 
 Wird die Aktion **Befehl ausführen** in Markeds Conductor-System ausgeführt, werden die Dokumentmetadaten automatisch extrahiert und dem Befehl als Umgebungsvariablen bereitgestellt.
 
-#### So funktioniert es
+#### So funktioniert es [how-it-works]
 
 1. **Metadatenextraktion**: Das System extrahiert Metadaten aus dem Dokument über die vorhandene Methode `extractMetaDataFromString:`, die Folgendes unterstützt:
    - YAML-Front-Matter (`---`-Blöcke)
@@ -322,7 +322,7 @@ Wird die Aktion **Befehl ausführen** in Markeds Conductor-System ausgeführt, w
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Beispiel
+#### Beispiel [example]
 
 Gegeben sei ein Dokument mit diesen Metadaten:
 
@@ -350,27 +350,27 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Verwendung in Befehlen
+#### Verwendung in Befehlen [usage-in-commands]
 
 Sie können diese Umgebungsvariablen dann in Ihren **Befehl ausführen**-Aktionen verwenden:
 
 ```bash
-# Print the document title
+# Dokumenttitel ausgeben
 echo "Processing: $MD_title"
 
-# Use metadata in conditional logic
+# Metadaten in einer Bedingung verwenden
 if [ "$MD_status" = "Draft" ]; then
     echo "Document is still in draft status"
 fi
 
-# Pass metadata to other tools
+# Metadaten an andere Tools übergeben
 pandoc "$MARKED_PATH" \
   --metadata title="$MD_title" \
   --metadata author="$MD_author" \
   --metadata date="$MD_date" \
   -o output.pdf
 
-# Use metadata for file naming
+# Metadaten für die Dateibenennung verwenden
 if [ -n "$MD_title" ]; then
     output_file="${MD_title// /_}.html"
 else
@@ -378,7 +378,7 @@ else
 fi
 ```
 
-#### Unterstützte Aktionen
+#### Unterstützte Aktionen [supported-actions]
 
 Diese Funktion – Metadaten als Umgebungsvariablen – steht zur Verfügung in:
 
@@ -387,7 +387,7 @@ Diese Funktion – Metadaten als Umgebungsvariablen – steht zur Verfügung in:
 
 Die Metadaten werden automatisch aus dem Dokumentinhalt extrahiert und jedem Befehl oder Skript bereitgestellt, das über diese Aktionen läuft.
 
-## Aktivieren und Deaktivieren
+## Aktivieren und Deaktivieren [enabling-and-disabling]
 
 Die benutzerdefinierten Prozessoren lassen sich für einzelne Dokumente mit {% kbd opt cmd C %} ein- und ausschalten. Sie können einen Präprozessor oder Prozessor für ein Dokument auch automatisch [über Metadaten](#perdocument) am Anfang des Dokuments einschalten.
 
@@ -421,7 +421,7 @@ Wie auf der Seite [Pro-Dokument-Einstellungen](Per-Document_Settings.html#hiding
     Custom Preprocessor: true
     -->
 
-## Einen alternativen Markdown-Prozessor verwenden
+## Einen alternativen Markdown-Prozessor verwenden [using-an-alternative-markdown-processor]
 
 Jede Markdown-Variante, die Sie über die Befehlszeile rendern können, lässt sich mit Marked verwenden. Sie muss Eingaben über STDIN annehmen können – dasselbe wie das „Pipen“ Ihres Markdowns auf der Befehlszeile, also `cat myfile.md | myprocessor`. Und sie muss das resultierende HTML über STDOUT zurückgeben, was jeder Prozessor, mit dem ich je gearbeitet habe, standardmäßig tut.
 
@@ -431,11 +431,11 @@ Wenn Ihr Prozessor Argumente auf der Befehlszeile benötigt, geben Sie diese ebe
 
 Ich habe die Funktion „Benutzerdefinierter Prozessor“ mit Pandoc, Kramdown, marked (Discount), MultiMarkdown 6, Maruku und diversen anderen Varianten getestet.
 
-### Eine Anmerkung zu Pandoc und Sandboxing
+### Eine Anmerkung zu Pandoc und Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (und einige andere Befehlszeilen-Tools) laufen nicht in der Mac-App-Store-Version (Sandbox) von Marked. Wenn Sie Pandoc ausführen müssen, holen Sie sich über **Hilfe → Crossgrade** eine kostenlose Lizenz für die direkte (Paddle-)Version. Das gilt für jeden Prozessor, der auf Sandboxing-Probleme stößt: Wenn Marked ihn wegen MAS-Berechtigungsproblemen nicht ausführen kann, bietet es die Schritte zum Crossgrade an. Falls bei Ihnen Probleme auftreten kontaktieren Sie mich bitte über die [Support-Seite](https://support.markedapp.com/questions/add).
 
-### Pandoc als Schweizer Taschenmesser unter den Markdown-Prozessoren
+### Pandoc als Schweizer Taschenmesser unter den Markdown-Prozessoren [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) ist mit Abstand das flexibelste Allzweck-Werkzeug für die Verarbeitung einer Vielzahl von Markup-Formaten. Mit einem `-f`-Argument und einem der folgenden Werte kann Pandoc Ihr benutzerdefinierter Prozessor für all diese Formate sein:
 
@@ -457,7 +457,7 @@ Pandoc eignet sich perfekt für ein Skript, das über die Umgebungsvariable `$MA
 
 Wie Pandoc-Kenner wissen, beherrscht Pandoc auch umfangreiche Bibliografie- und LaTeX-Szenarien. Die meisten Funktionen, die Sie über die Befehlszeile erreichen, stehen in Marked einfach durch das Übergeben von Argumenten zur Verfügung.
 
-## Textile verwenden
+## Textile verwenden [using-textile]
 
 Ein paar Leute haben gefragt, wie sie Textile in Marked zum Laufen bringen. Sie brauchen einen Textile-Konverter, der über die Befehlszeile verfügbar ist. Es gibt einige Optionen, darunter Pandoc (siehe oben); falls Sie Pandoc aber noch nicht installiert haben, sind zwei weitere Optionen RedCloth für Ruby und Textile für Perl (setzt installierte Entwickler-Tools voraus). Installieren Sie das eine oder das andere:
 
@@ -466,7 +466,7 @@ Ein paar Leute haben gefragt, wie sie Textile in Marked zum Laufen bringen. Sie 
 
 Jetzt ist Marked eine Textile-Vorschau für Sie!
 
-## AsciiDoc verwenden
+## AsciiDoc verwenden [using-asciidoc]
 
 1. Installieren Sie [AsciiDoctor](http://asciidoctor.org/).
 2. Aktivieren Sie unter {% prefspane Processor %} eine Eigene Regel, die auf Ihre AsciiDoc-Dateien passt.

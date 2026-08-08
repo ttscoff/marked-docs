@@ -24,7 +24,7 @@ Fußnoten in der Kommentarseitenleiste einfügen
 Lesegeschwindigkeit (WpM)
 : Diese Zahl (Wörter pro Minute) dient zur Berechnung der Lesezeit in den Textstatistik-Anzeigen. Die durchschnittliche Lesegeschwindigkeit Erwachsener liegt bei 200–300 Wörtern pro Minute.
 
-### Schlüsselwörter
+### Schlüsselwörter [keywords]
 
 [Definieren Sie Listen von Schlüsselwörtern, die hervorgehoben werden](Keyword_Highlighting.html). Bearbeiten Sie die einzelnen Listen über die Tabs:
 

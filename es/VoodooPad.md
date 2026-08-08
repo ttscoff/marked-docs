@@ -6,7 +6,7 @@
 
 Marked observa el documento en el disco e intercambia la vista previa cuando cambias de página dentro de VoodooPad.
 
-## Imágenes incrustadas
+## Imágenes incrustadas [embedded-images]
 
 Cuando haces referencia a imágenes con Markdown o HTML y el binario se encuentra **dentro** de la base de datos de VoodooPad, Marked puede extraerlo para la vista previa. Las imágenes que son solo **alias** (archivos arrastrados por referencia) no se almacenan en el paquete; señale aquellas con rutas absolutas o rutas relativas al `.vpdoc` en el disco para que Marked pueda resolverlas.
 

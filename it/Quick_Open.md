@@ -4,7 +4,7 @@
 
 Quick Open fornisce un accesso rapido ai documenti aperti e ai file recenti.
 
-## Apertura Apertura rapida
+## Apertura Apertura rapida [opening-quick-open]
 
 Accedi al pannello Apertura rapida utilizzando {% kbd shift cmd O %} o dal menu {% appmenu File, Quick Open %}. Il pannello appare come una finestra mobile sopra il documento corrente, consentendoti di passare rapidamente da un documento aperto all'altro o di aprire file recenti.
 
@@ -12,11 +12,11 @@ Accedi al pannello Apertura rapida utilizzando {% kbd shift cmd O %} o dal menu 
 
 [qo]: images/quick-open-800.jpg @2x width=800
 
-## Sezioni del documento
+## Sezioni del documento [document-sections]
 
 Il pannello Apertura rapida organizza i documenti in sezioni chiare:
 
-### Apri documenti
+### Apri documenti [open-documents]
 
 In cima all'elenco vedrai tutti i documenti attualmente aperti. I documenti sono raggruppati visivamente in base alla loro finestra:
 
@@ -28,7 +28,7 @@ Ogni documento aperto visualizza:
 - Le informazioni sul raggruppamento delle finestre come sottotitolo
 - Un'icona del documento
 
-### Documenti recenti
+### Documenti recenti [recent-documents]
 
 Sotto i documenti aperti, un separatore "Documenti recenti" divide l'elenco. La sezione dei documenti recenti mostra fino a 10 dei file aperti più di recente che non sono attualmente aperti. Ogni documento recente visualizza:
 
@@ -36,7 +36,7 @@ Sotto i documenti aperti, un separatore "Documenti recenti" divide l'elenco. La 
 - "Recenti" come sottotitolo
 - Un'icona del documento
 
-### Apri Altro
+### Apri Altro [open-other]
 
 In fondo all'elenco, l'opzione "Apri altro..." ti consente di aprire il selettore file standard di macOS per selezionare qualsiasi file. Questa opzione visualizza:
 
@@ -44,7 +44,7 @@ In fondo all'elenco, l'opzione "Apri altro..." ti consente di aprire il selettor
 - "Apri un file o una cartella" come sottotitolo
 - L'icona di una cartella
 
-## Cerca e filtra
+## Cerca e filtra [search-and-filter]
 
 Digita nel campo di ricerca nella parte superiore del pannello per filtrare l'elenco in tempo reale. La ricerca corrisponde a:
 
@@ -53,7 +53,7 @@ Digita nel campo di ricerca nella parte superiore del pannello per filtrare l'el
 
 Durante la digitazione, l'elenco si aggiorna immediatamente per mostrare solo i documenti corrispondenti. L'opzione "Apri altro..." rimane sempre visibile nella parte inferiore dei risultati filtrati.
 
-## Navigazione tramite tastiera
+## Navigazione tramite tastiera [keyboard-navigation]
 
 Naviga nel pannello Apertura rapida interamente con la tastiera:
 
@@ -62,13 +62,13 @@ Naviga nel pannello Apertura rapida interamente con la tastiera:
 - **Escape**: chiude il pannello di apertura rapida
 - **Comando (⌘)**: tieni premuto per rivelare i percorsi dei file (vedi sotto)
 
-## Visualizzazione dei percorsi dei file
+## Visualizzazione dei percorsi dei file [viewing-file-paths]
 
 Tieni premuto il tasto **Comando (⌘)** mentre il pannello Apertura rapida è aperto per visualizzare il percorso completo del file per ciascun documento nell'area dei sottotitoli. I percorsi nella tua home directory vengono visualizzati utilizzando la scorciatoia `~` (ad esempio, `~/Documents/file.md`). Rilascia il tasto Comando per tornare alla visualizzazione normale che mostra il raggruppamento delle finestre o le informazioni "Recenti".
 
 Ciò è particolarmente utile quando sono aperti più file con lo stesso nome o quando è necessario verificare la posizione esatta di un documento.
 
-## Apertura dei documenti
+## Apertura dei documenti [opening-documents]
 
 - **Documenti aperti**: la selezione di un documento aperto porta la sua finestra in primo piano e passa alla scheda del documento se si trova in una finestra a schede
 - **Documenti recenti**: selezionando un documento recente lo si apre in una nuova finestra o lo si aggiunge come scheda (a seconda della preferenza "Apri documenti in schede" in {% prefspane General %})

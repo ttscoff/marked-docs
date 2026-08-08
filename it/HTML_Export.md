@@ -6,9 +6,9 @@ Marked esporta HTML dalla tua **anteprima live** --- lo stesso output renderizza
 
 Il flusso di lavoro tipico è **prima l'anteprima, poi l'esportazione dell'HTML**: apri o compila il tuo documento in Marked, scegli un tema, correggi le bozze nell'anteprima live, quindi esporta quando il markup sembra corretto.
 
-## Due modi per ottenere HTML
+## Due modi per ottenere HTML [two-ways-to-get-html]
 
-### Copia HTML (snippet)
+### Copia HTML (snippet) [copy-html-snippet]
 
 **Copia HTML** inserisce il codice sorgente HTML dell'anteprima negli appunti, pronto per essere incollato in WordPress, Ghost, Squarespace, un forum, un modello di posta elettronica o qualsiasi app che accetti frammenti HTML.
 
@@ -18,7 +18,7 @@ Il flusso di lavoro tipico è **prima l'anteprima, poi l'esportazione dell'HTML*
 
 Copia HTML è l'ideale quando la tua destinazione ha già un proprio foglio di stile e hai solo bisogno del markup del contenuto.
 
-### Salva HTML (file)
+### Salva HTML (file) [save-html-file]
 
 **Salva HTML** scrive un file `.html` completo sul disco.
 
@@ -28,7 +28,7 @@ Copia HTML è l'ideale quando la tua destinazione ha già un proprio foglio di s
 
 Salva HTML è ideale per archiviare, condividere un file autonomo o aprire il risultato direttamente in un browser.
 
-## Salva le opzioni HTML
+## Salva le opzioni HTML [save-html-options]
 
 La finestra di dialogo Salva HTML include un selettore di profili di esportazione e queste opzioni:
 
@@ -65,7 +65,7 @@ I documenti con [CriticMarkup](CriticMarkup.html) possono scegliere se l'esporta
 
 Seleziona un [Profilo di esportazione](Exporting.html#export-profiles) salvato per ripristinare le tue impostazioni di esportazione HTML preferite (stili incorporati, immagini, evidenziazione della sintassi, matematica) in un solo passaggio.
 
-## Stile con temi integrati e personalizzati
+## Stile con temi integrati e personalizzati [styling-with-built-in-and-custom-themes]
 
 Lo **stile di anteprima** determina l'aspetto HTML quando è selezionato **Includi stile nell'output**:
 
@@ -79,7 +79,7 @@ I> Alcuni CSS di sola anteprima (posizionamento fisso, trucchi del viewport, inv
 
 Per indicazioni sulla creazione, vedere [Creazione di CSS personalizzati](Writing_Custom_CSS.html).
 
-## Metadati e intestazioni MultiMarkdown
+## Metadati e intestazioni MultiMarkdown [metadata-and-multimarkdown-headers]
 
 I metadati MultiMarkdown nella parte superiore del file sorgente possono influire sull'esportazione HTML:
 
@@ -89,11 +89,11 @@ I metadati MultiMarkdown nella parte superiore del file sorgente possono influir
 
 Se utilizzi i metadati per le impostazioni di esportazione ma non vuoi che le chiavi siano visibili in altri output, inseriscile nei commenti HTML --- Marked trova ed elabora i metadati commentati ovunque nel documento. Vedere [Impostazioni per documento](Per-Document_Settings.html).
 
-## Documenti multifile
+## Documenti multifile [multi-file-documents]
 
 Per libri e raccolte di capitoli, utilizzare [Documenti multi-file](Multi-File_Documents.html). Marked visualizza l'anteprima del documento unito ed esporta un file HTML dal risultato compilato. I file inclusi sono contrassegnati con commenti HTML che mostrano i loro percorsi di origine --- utili quando si controlla quale capitolo ha contribuito a quale sezione.
 
-## Incollare in altre applicazioni
+## Incollare in altre applicazioni [pasting-into-other-applications]
 
 | Destinazione | Approccio suggerito |
 | :-- | :-- |
@@ -105,7 +105,7 @@ Per libri e raccolte di capitoli, utilizzare [Documenti multi-file](Multi-File_D
 
 [Copia Rich Text](Exporting.html#rtfexportoptions) (menu a forma di ingranaggio) è un'alternativa quando l'app di destinazione accetta testo formattato anziché origine HTML.
 
-## Argomenti correlati
+## Argomenti correlati [related-topics]
 
 * [Esportazione](Exporting.html) --- esporta pannello, profili e altri formati
 * [Esportazione EPUB](EPUB_Export.html) --- output di ebook con CSS incorporato

@@ -6,25 +6,25 @@ Marked funciona con notas de [Obsidian][obsidian-app] de dos maneras: abre una *
 
 La vista previa incorporada de Obsidian es ideal cuando nunca sales de la aplicación. Elija Marcado cuando desee exportar con calidad de publicación, revisión avanzada, temas CSS personalizados o el mismo flujo de trabajo de vista previa en vivo en varios editores. Consulte [Vista previa de Marcado vs Obsidiana](Marked_vs_Obsidian_Preview.html) para obtener una comparación completa.
 
-## Abrir una bóveda completa
+## Abrir una bóveda completa [open-an-entire-vault]
 
 Arrastre la **carpeta de la bóveda** (el directorio que contiene la carpeta de configuración oculta de Obsidian en la raíz de la bóveda) a Marked in the Dock. Marcado observa ese árbol, mantiene la nota **editada más recientemente** en la vista previa y se actualiza a medida que guarda en Obsidian.
 
 Para los valores predeterminados específicos de la bóveda (estilo, procesador, URL base para imágenes, etc.), agregue una [Regla personalizada](http://support.markedapp.com) que coincida con las rutas de esa bóveda.
 
-## Sintaxis de llamada de obsidiana
+## Sintaxis de llamada de obsidiana [obsidian-callout-syntax]
 
 Cuando se ejecuta el procesador MultiMarkdown, Marked convierte **notas de estilo obsidiana** comunes (el patrón `> [!note]`) en marcas de bloque con estilo para que coincidan con el resto de la vista previa.
 
-## Complemento de obsidiana marcado 3
+## Complemento de obsidiana marcado 3 [marked-3-obsidian-plugin]
 
 El [complemento Marked 3 Obsidian][complemento] puede abrir la nota actual o toda la bóveda con comandos o teclas de acceso rápido para que la ventana Marcada rastree lo que está editando. Utilice la paleta de comandos (**⌘P**) y busque **Marcado**, o asigne teclas de acceso rápido en la configuración de **Teclas de acceso rápido** de Obsidian.
 
-### Instalación desde complementos comunitarios
+### Instalación desde complementos comunitarios [installing-from-community-plugins]
 
 En Obsidian, abra **Configuración → Complementos de la comunidad**, explore o busque **marcado** e instale **Abrir en marcado**.
 
-### Instalación manual del complemento
+### Instalación manual del complemento [manually-installing-the-plugin]
 
 Si prefieres instalar desde GitHub:
 

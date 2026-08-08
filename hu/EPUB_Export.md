@@ -6,7 +6,7 @@ A Marked teljesen kompatibilis EPUB-fájlokat exportál a Markdown előnézetéb
 
 A tipikus munkafolyamat az **előzetes előnézet, majd az EPUB exportálása**: nyissa meg vagy fordítsa le a dokumentumot a Marked alkalmazásban, válasszon témát, lektorálja az élő előnézetben, majd exportálja, amikor a könyv készen áll.
 
-## EPUB exportálása
+## EPUB exportálása [exporting-an-epub]
 
 Nyissa meg az [Exportálási panelt](Exporting.html#drawer) ({% kbd shift cmd e %}), vagy használja a **Mentés másként** lehetőséget a fogaskerék menüben, és válassza az **EPUB** lehetőséget.
 
@@ -21,7 +21,7 @@ A Marked helyi képeket ágyaz be az EPUB-ba, és távoli képeket tölthet le, 
 
 Lásd: [Profilok exportálása](Exporting.html#export-profiles) az EPUB metaadatok mentéséhez és a beállítások exportálásához az ismételt felhasználáshoz.
 
-## Stílus kialakítása beépített témákkal
+## Stílus kialakítása beépített témákkal [styling-with-built-in-themes]
 
 A dokumentummeghajtók EPUB megjelenéséhez kiválasztott **előnézeti stílus**. Minden beépített Marked téma --- Swiss, GitHub, Manuscript és a többi --- alkalmazható EPUB-exportálásra.
 
@@ -33,7 +33,7 @@ A Marked az export-specifikus CSS-t is alkalmazza az előnézeti téma tetején,
 
 I> Az EPUB-olvasók figyelmen kívül hagynak néhány csak webes CSS-t (rögzített pozicionálás, nézetablakos trükkök stb.). A Marked előnézetében látható a cél, de az e-olvasó elrendezési motorjai leegyszerűsíthetik a térközt és a betűtípusokat. Közzététel előtt tesztelje az Apple Booksban vagy a célolvasóban.
 
-## Stílus kialakítása egyéni témákkal
+## Stílus kialakítása egyéni témákkal [styling-with-custom-themes]
 
 Az [Egyéni stílusok](Custom_Styles.html) ugyanúgy működnek az EPUB esetében, mint az előnézetnél és a PDF-nél:
 
@@ -50,11 +50,11 @@ Tippek az EPUB-barát egyéni CSS-hez:
 
 A szerzői útmutatásért lásd: [Egyéni CSS létrehozása](Writing_Custom_CSS.html).
 
-## Szintaxis kiemelés és matematika
+## Szintaxis kiemelés és matematika [syntax-highlighting-and-math]
 
 Ha a **A szintaktikai kiemelés szerepeltetése az exportálásban** engedélyezve van a {% prefspane Export %}-ban, akkor a kódblokkoló exportálás az előnézettel megegyező szintaktikai színekkel történik. A [MathJax](MathJax.html) segítségével előállított matematikai adatok az e-olvasók támogatásának megfelelően szerepelnek az EPUB-ban.
 
-## Metaadatok a forrásfájlban
+## Metaadatok a forrásfájlban [metadata-in-your-source-file]
 
 A mentési párbeszédpanel helyett beállíthatja az EPUB metaadatokat a dokumentumban. A Markdown-fájl tetején (vagy a Scrivener metaadat-oldalán) használjon MultiMarkdown-stílusú billentyűket:
 
@@ -66,29 +66,29 @@ cover image: path/to/image.jpg
 
 `cover image` a dokumentumhoz viszonyított elérési utat vagy abszolút elérési utat fogad el. A PNG és a JPG támogatott. A párbeszédpanel-értékek felülírják vagy kitöltik a hiányzó metaadatokat az exportáláskor.
 
-## Több fájlból álló könyvek
+## Több fájlból álló könyvek [multi-file-books]
 
 Hosszabb munkák esetén fordítson fejezeteket [Multi-File Documents](Multi-File_Documents.html) --- indexfájlokkal, Scrivener-exportálással, Leanpub `Book.txt` vagy GitBook-stílusú indexekkel. A megjelölt figyeli a mellékelt fájlokat, megtekinti a teljes könyv előnézetét, és exportál egy EPUB-fájlt az összeállított HTML-ből.
 
 Az összeállított dokumentum címsorai EPUB [tartalomjegyzék](Document_Navigation.html) néven alakulnak az Apple Books és más olvasók navigációjához.
 
-## Olvasás és publikálás
+## Olvasás és publikálás [reading-and-publishing]
 
 Az exportált EPUB-fájlok közvetlenül az **Apple Books** alkalmazásban nyílnak meg (kattintson duplán a fájlra, vagy használja a **Fájl → Hozzáadás a könyvtárhoz** lehetőséget). A Kobo, Thorium, Calibre és a legtöbb EPUB 3-kompatibilis alkalmazásban is működnek.
 
-### Apple Books
+### Apple Books [apple-books]
 
 Húzzon egy exportált `.epub`-t a Könyvek alkalmazásba, vagy adja hozzá a **Fájl → Importálás** menüpontban. Egyéni tipográfia és borítóképek a Megjelölt témában keresztülvihetők. Használja az Apple Books alkalmazást Macen, iPaden vagy iPhone-on az elrendezés ellenőrzéséhez a megosztás előtt.
 
-### Kindle Direct Publishing (KDP)
+### Kindle Direct Publishing (KDP) [kindle-direct-publishing-kdp]
 
-Az EPUB a [Kindle Direct Publishing] (https://kdp.amazon.com/) által elfogadott feltöltési formátum. Exportáljon a Marked alkalmazásból, és töltse fel a `.epub` fájlt; Az Amazon átalakítja Kindle szállításra. A KDP a [DOCX](Working_with_DOCX.html)-t is elfogadja. Az aktuális követelményekért tekintse meg az Amazon [támogatott e-könyv-formátumait] (https://kdp.amazon.com/en_US/help/topic/G200634390).
+Az EPUB a [Kindle Direct Publishing] (https://kdp.amazon.com/) által elfogadott feltöltési formátum. Exportáljon a Marked alkalmazásból, és töltse fel a `.epub` fájlt; Az Amazon átalakítja Kindle szállításra. A KDP a [DOCX](Working_With_DOCX.html)-t is elfogadja. Az aktuális követelményekért tekintse meg az Amazon [támogatott e-könyv-formátumait] (https://kdp.amazon.com/en_US/help/topic/G200634390).
 
 **MOBI nem szükséges** új KDP-címeknél. A megjelölt nem exportál MOBI-t.
 
 Választható: a feltöltés előtt tekintse meg a Kindle elrendezés előnézetét az Amazon ingyenes [Kindle Previewerével] (https://kdp.amazon.com/help/topic/G202131170).
 
-## Kapcsolódó
+## Kapcsolódó [related]
 
 * [HTML Export](HTML_Export.html) --- önálló HTML beágyazott stílusokkal és képekkel
 * [Exportálás](Exporting.html) --- panel, profilok és egyéb formátumok exportálása

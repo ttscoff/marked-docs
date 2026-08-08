@@ -2,7 +2,7 @@
 
 Marked is built with a lot of help from the open source community. This page lists third-party code that ships inside Marked. Full license text for the Markdown processors is available on the linked pages in [About Markdown](MultiMarkdown_Information.html).
 
-## Markdown processors and conversion
+## Markdown processors and conversion [markdown-processors-and-conversion]
 
 | Component | Authors | License | Used for |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Marked is built with a lot of help from the open source community. This page lis
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Kramdown processor option (bundled Ruby) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | PDF to Markdown import |
 
-## Native code and frameworks
+## Native code and frameworks [native-code-and-frameworks]
 
 | Component | Authors | License | Used for |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Marked is built with a lot of help from the open source community. This page lis
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniel Jackson | See project | Progress indicators |
 | [IAPManager](https://github.com/mruegenberg/IAPManager) | Marcel Ruegenberg | See project | In-app purchase helpers (legacy) |
 
-## Preview JavaScript
+## Preview JavaScript [preview-javascript]
 
 These libraries are concatenated into Marked's preview bundle (`marked.min.js` and related resources):
 
@@ -57,7 +57,7 @@ These libraries are concatenated into Marked's preview bundle (`marked.min.js` a
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Viewport detection |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | In-document search highlighting |
 
-## Localization
+## Localization [localization]
 
 Marked is available in multiple languages thanks to volunteer translators:
 
@@ -75,6 +75,6 @@ Marked is available in multiple languages thanks to volunteer translators:
 - Yuki Tamari
 - 亮 王
 
-## Acknowledgments
+## Acknowledgments [acknowledgments]
 
 Thanks also to Daniel Jalkut for years of guidance, and to Felippe van Eekhout for the Marked icon.

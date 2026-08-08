@@ -2,7 +2,7 @@
 
 [Ulysses][ulysses] does not write a plain Markdown file for every sheet, so you **export** the current text when you want Marked to preview it.
 
-## Quick Export to Marked
+## Quick Export to Marked [quick-export-to-marked]
 
 1. Press {% kbd cmd 6 %} in Ulysses (or click the export toolbar button).
 2. Set the format dropdown to **Text**.
@@ -12,7 +12,7 @@
 
 After the first setup, {% kbd cmd 6 %} followed by **Return** is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
 
-## Images and assets
+## Images and assets [images-and-assets]
 
 Marked can also read **TextBundle** or **TextPack** exports from Ulysses. Use the same export sheet but choose a bundle option when you need embedded images or other resources alongside the Markdown.
 

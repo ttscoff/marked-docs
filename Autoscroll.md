@@ -2,7 +2,7 @@
 
 Autoscroll slowly moves the preview for hands-free reading or proofing. It is separate from the [Table of Contents](Document_Navigation.html) and [Mini Map](Document_Navigation.html#minimap); it scrolls the current view automatically.
 
-## Starting and stopping
+## Starting and stopping [starting-and-stopping]
 
 Trigger autoscroll by pressing {% kbd s %}. The preview scrolls forward at the current speed.
 

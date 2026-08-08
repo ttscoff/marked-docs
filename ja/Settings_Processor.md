@@ -8,7 +8,7 @@
 
 [1]: images/screenshots/preferences-Processor.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### マークダウンを処理する
+### マークダウンを処理する [process-markdown-with]
 
 デフォルトのマークダウンプロセッサ。 CommonMark プロセッサは GitHub ユーザーに好まれ、MultiMarkdown はライターに最適で、Discount と Kramdown は特殊な目的を持っています。マークは、構文間のいくつかの違いを補います。詳細については、「__Help->Markdown Reference__」を参照してください。
 
@@ -23,7 +23,7 @@
 
 プロセッサ間の違いを調べるには、[Markdown Dingus](Markdown_Dingus.html) を確認してください。
 
-### HTML
+### HTML [html]
 
 見出しに ID を生成する
 : h1～h6タグの内容に基づいてヘッダIDを生成します。
@@ -34,7 +34,7 @@
 HTML内のMarkdown処理
 : デフォルトでは、HTML タグ内の Markdown は通常無視されます。このオプションは、Marked にブロック要素内での処理を強制的に継続させます。マークアップによっては問題が発生する可能性があることに注意してください。
 
-### レンダリング
+### レンダリング [rendering]
 
 段落内の改行を保持する
 : 段落テキスト内の改行を尊重し、前の行と連結するのではなくハード改行に置き換えます。

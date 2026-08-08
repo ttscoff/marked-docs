@@ -8,7 +8,7 @@ Opzioni in {% prefspane Preview %}:
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Anteprima del comportamento
+### Anteprima del comportamento [preview-behavior]
 
 Abilita la navigazione sulla minimappa
 : Genera una mappa visiva del documento che appare quando si preme "0". Può causare brevi ritardi durante il rendering di documenti di grandi dimensioni.
@@ -25,7 +25,7 @@ Sincronizza l'anteprima e lo scorrimento della sorgente
 Sincronizza la lettura veloce con la posizione di scorrimento
 : Mantieni la sovrapposizione [Lettura veloce](Speed_Reading.html) allineata con la posizione di scorrimento dell'anteprima. Puoi anche attivare questa opzione dalla sovrapposizione Lettura veloce.
 
-### Scorri per modificare
+### Scorri per modificare [scroll-to-edit]
 
 Scorri per modificare
 : Quando si aggiorna l'anteprima, Marked può determinare il primo punto in cui il documento è cambiato e scorrere automaticamente fino ad esso. Ciò mantiene l'anteprima sincronizzata con la posizione corrente nel documento che stai modificando. L'indicatore di modifica più recente rappresenta la prima differenza nel documento dall'ultimo aggiornamento. Abilitando "Ordine differenze inverti" si considererà invece l'ultima differenza nel documento (dall'alto al basso) come la modifica più recente.
@@ -39,7 +39,7 @@ Mostra tutti gli indicatori di differenza
 Ordine differenziale inverso
 : Se è abilitato, le differenze verranno contrassegnate in ordine inverso (dal basso verso l'alto). Ciò influisce sulla navigazione, quindi <kbd>e</kbd> navigherà verso l'alto e {% kbd shift E %} navigherà verso il basso. La "modifica più recente" diventerà l'ultima differenza nel documento.
 
-### Funzionalità aggiuntive
+### Funzionalità aggiuntive [additional-features]
 
 Il sommario tiene traccia della posizione di scorrimento
 : Il sommario evidenzia la sezione corrente.
@@ -54,7 +54,7 @@ Convalida automaticamente gli URL durante l'aggiornamento
 : convalida gli URL al caricamento e all'aggiornamento del documento. Visualizza i risultati solo se sono presenti errori.
 : Viene eseguito [convalida collegamento](Link_Validation.html) ogni volta che il documento viene aggiornato (se si dispone di un numero significativo di collegamenti, questo può essere un processo lento e dovrebbe essere evitato).
 
-### Collegamento al wiki
+### Collegamento al wiki [wiki-linking]
 
 Converti [[Link Wiki]]
 : Abilita la [navigazione wiki](Wiki_Navigation.html) di Marked per la sintassi `[[wiki link]]`.
@@ -62,7 +62,7 @@ Converti [[Link Wiki]]
 Estensione predefinita
 : l'estensione del nome file che Marked utilizza quando si risolvono collegamenti wiki che non includono un'estensione (ad esempio, `md`).
 
-### Aspetto
+### Aspetto [appearance]
 
 Modalità oscura
 : Visualizza tutte le finestre in modalità "Contrasto elevato", con cromatura scura e, se disponibile, la versione invertita dello stile corrente (potrebbe non applicarsi agli stili personalizzati).

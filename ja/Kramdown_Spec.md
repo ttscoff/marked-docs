@@ -4,11 +4,11 @@
 
 [Markdown Dingus](x-marked-3://dingus?processor=kramdown) をチェックして、Kramdown プロセッサを試してください。
 
-## クラムダウンとは何ですか?
+## クラムダウンとは何ですか? [what-is-kramdown]
 
 Kramdown は、高速で純粋な Ruby Markdown スーパーセット コンバータであり、Maruku、PHP Markdown Extra、Pandoc などの他の実装にある機能を使用して元の Markdown 構文を拡張します。ほとんどの Markdown ドキュメントとの互換性を維持しながら、明確なルールを備えた厳密な構文を提供します。
 
-## 主な特徴
+## 主な特徴 [key-characteristics]
 
 - **高速で純粋な Ruby**: パフォーマンスと移植性のために完全に Ruby で書かれています
 - **厳密な構文**: 明確なルールと明確な仕様を提供します
@@ -16,9 +16,9 @@ Kramdown は、高速で純粋な Ruby Markdown スーパーセット コンバ�
 - **Jekyll Integration**: Jekyll 静的サイト ジェネレーターのデフォルトの Markdown プロセッサ
 - **包括的**: 広範なカスタマイズによりブロックレベルとスパンレベルの両方の要素をサポート
 
-## 標準マークダウンとの主な違い
+## 標準マークダウンとの主な違い [major-differences-from-standard-markdown]
 
-### 1. **拡張されたブロックレベル要素**
+### 1. **拡張されたブロックレベル要素** [1-enhanced-block-level-elements]
 
 **定義リスト**
 
@@ -60,7 +60,7 @@ $$
 $$
 ```
 
-### 2. **高度なテキスト マークアップ**
+### 2. **高度なテキスト マークアップ** [2-advanced-text-markup]
 
 **脚注**
 
@@ -95,7 +95,7 @@ This uses HTML and CSS.
 Even << guillemets >>
 ```
 
-### 3. **属性リストと拡張機能**
+### 3. **属性リストと拡張機能** [3-attribute-lists-and-extensions]
 
 **属性リスト定義 (ALD)**
 
@@ -132,25 +132,25 @@ This text is completely ignored by kramdown.
 {::options key="val" /}
 ```
 
-### 4. **コード ブロックのサポートの強化**
+### 4. **コード ブロックのサポートの強化** [4-enhanced-code-block-support]
 
 **言語仕様**
 
 - フェンスで囲まれたコードブロックの自動構文ハイライト
 - 多くのプログラミング言語のサポート
 
-    「ルビー」
-    確かにこんにちは
-      「Hello, World!」を入力します。
-    終わり
-    「」
+    ```ruby
+    def hello
+      puts "Hello, World!"
+    end
+    ```
 
 **標準コードブロック**
 
 - インデントされたコードブロックの処理の改善
 - 他のブロック要素との統合が改善されました
 
-### 5. **より厳格な解析ルール**
+### 5. **より厳格な解析ルール** [5-stricter-parsing-rules]
 
 **行の折り返し**
 
@@ -169,7 +169,7 @@ This text is completely ignored by kramdown.
 - 要素がブロック境界で開始/終了する必要がある場合の明確なルール
 - 異なる要素タイプ間での一貫した動作
 
-### 6. **高度なリンクと画像のサポート**
+### 6. **高度なリンクと画像のサポート** [6-advanced-link-and-image-support]
 
 **自動リンク**
 
@@ -190,7 +190,7 @@ This text is completely ignored by kramdown.
 ![Alt text](image.jpg){:width="300" height="200" class="responsive"}
 ```
 
-### 7. **HTML の統合**
+### 7. **HTML の統合** [7-html-integration]
 
 **HTML ブロック**
 
@@ -203,7 +203,7 @@ This text is completely ignored by kramdown.
 - 属性をサポートするインライン HTML
 - Markdown 構文との統合の改善
 
-### 8. **数学式**
+### 8. **数学式** [8-mathematical-expressions]
 
 **インライン数学**
 
@@ -215,7 +215,7 @@ This text is completely ignored by kramdown.
 - `$$...$$` ブロック数式の構文
 - 複雑な方程式と公式のサポート
 
-## Kramdown と他のマークダウン フレーバー
+## Kramdown と他のマークダウン フレーバー [kramdown-vs-other-markdown-flavors]
 
 |特集 |クラムダウン |コモンマーク (GFM) | GitHub 風味 |マルチマークダウン |標準 |
 | ---------------- | -------- | ---------- | --------------- | ------------- | -------- |
@@ -229,7 +229,7 @@ This text is completely ignored by kramdown.
 |属性リスト |はい |いいえ |いいえ |いいえ |いいえ |
 |タイポグラフィ |はい |いいえ |いいえ |はい |いいえ |
 
-## クラムダウンの主な利点
+## クラムダウンの主な利点 [key-advantages-of-kramdown]
 
 1. **包括的な機能セット**: 他の実装には見られない多くの拡張機能が含まれています
 2. **Jekyll 統合**: Jekyll 静的サイト ジェネレーターとのシームレスな統合
@@ -239,7 +239,7 @@ This text is completely ignored by kramdown.
 6. **数学サポート**: LaTeX 数学式の組み込みサポート
 7. **厳密な解析**: 明確で曖昧さのない解析ルール
 
-## 一般的な使用例
+## 一般的な使用例 [common-use-cases]
 
 **ジキル サイト**
 
@@ -261,14 +261,14 @@ This text is completely ignored by kramdown.
 - カスタム機能の拡張機能
 - メタデータとスタイルの属性リスト
 
-## リソース
+## リソース [resources]
 
 - [Kramdown 構文ドキュメント](https://kramdown.gettalong.org/syntax.html)
 - [Kramdown コンバーターのドキュメント](https://kramdown.gettalong.org/converter.html)
 - [Jekyll 統合ガイド](https://jekyllrb.com/docs/configuration/markdown/)
 - [Kramdown GitHub リポジトリ](https://github.com/gettalong/kramdown)
 
-## 標準マークダウンからの移行
+## 標準マークダウンからの移行 [migration-from-standard-markdown]
 
 ほとんどの標準的な Markdown ドキュメントは、変更を加えることなく Kramdown で動作します。 Kramdown の機能を活用するには:
 
@@ -276,7 +276,7 @@ This text is completely ignored by kramdown.
 2. **属性リストの使用**: ID、クラス、カスタム属性を追加します。
 3. **脚注の実装**: 括弧内の参照を変換する
 
-## ベストプラクティス
+## ベストプラクティス [best-practices]
 
 1. **遅延構文を避ける**: 読みやすさのためにハードラップに依存しないでください。
 2. **属性リストの使用**: スタイルとメタデータに IAL を活用する

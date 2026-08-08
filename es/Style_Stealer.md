@@ -4,7 +4,7 @@
 
 Extrae y roba estilos de cualquier sitio web.
 
-## ¿Qué es el ladrón de estilos?
+## ¿Qué es el ladrón de estilos? [what-is-the-style-stealer]
 
 Style Stealer es una herramienta que le permite extraer estilos CSS de cualquier sitio web y aplicarlos a sus documentos Markdown como [Estilos personalizados](Custom_Styles.html). Es perfecto para:
 
@@ -17,13 +17,13 @@ Style Stealer es una herramienta que le permite extraer estilos CSS de cualquier
 
 > Para obtener mejores resultados, ingrese a una página que contenga la mayor cantidad de texto posible. Por ejemplo, para extraer estilos de un blog, ábralo directamente en un artículo o publicación, no en la página de índice principal.
 
-## Cómo utilizar el ladrón de estilos
+## Cómo utilizar el ladrón de estilos [how-to-use-the-style-stealer]
 
-### Paso 1: abre el ladrón de estilos
+### Paso 1: abre el ladrón de estilos [step-1-open-the-style-stealer]
 
 Acceda a Style Stealer a través de **Ayuda** → **Style Stealer**.
 
-### Paso 2: Ingrese una URL
+### Paso 2: Ingrese una URL [step-2-enter-a-url]
 
 En el campo URL, ingrese la dirección del sitio web del que desea extraer estilos. Style Stealer funciona con cualquier sitio web de acceso público. Si el sitio está detrás de un muro de pago, es posible que tengas que iniciar sesión para poder extraer el contenido.
 
@@ -31,7 +31,7 @@ En el campo URL, ingrese la dirección del sitio web del que desea extraer estil
 
   [vista previa]: imágenes/estilo-roba-vista previa.jpg @2x width=800
 
-### Paso 3: cargar y navegar
+### Paso 3: cargar y navegar [step-3-load-and-navigate]
 
 Haga clic en **Extraer** o presione {% kbd return  %} para cargar el sitio web. Una vez cargado, puedes:
 
@@ -41,7 +41,7 @@ Haga clic en **Extraer** o presione {% kbd return  %} para cargar el sitio web. 
 
 El área de contenido principal que seleccione solo debe contener titulares, párrafos, listas, etc. No seleccione un área de contenido que contenga menús, barras laterales u otro contenido superfluo. A menudo, un título estará en un contenedor separado del contenido del párrafo normal. En estos casos, primero intente seleccionar el contenedor más pequeño que aún contenga ambos. Si los resultados son deficientes, haga clic en **Extraer** nuevamente y vuelva a seleccionar solo el contenedor que contiene los párrafos.
 
-### Paso 4: Extraer estilos
+### Paso 4: Extraer estilos [step-4-extract-styles]
 
 Al hacer clic en el área de contenido, se extraerán los estilos que se aplican a esa área. La vista previa se recargará con una página genérica que muestra todos los elementos HTML comunes y cómo se aplicarán a ellos los estilos extraídos.
 
@@ -51,30 +51,30 @@ Luego puede guardar este estilo personalizado en su carpeta CSS personalizado pa
 
   [img3]: imágenes/ladrón de estilos-robados-800.jpg @2x width=800px height=637px class=center
 
-## Qué se extrae
+## Qué se extrae [what-gets-extracted]
 
 Style Stealer captura un conjunto completo de estilos que incluyen:
 
-### Tipografía
+### Tipografía [typography]
 
 - **Familias de fuentes** y tamaños para todos los niveles de encabezado (H1-H6)
 - Estilo de **párrafo** que incluye altura y espaciado de línea
 - **Colores de texto** y colores de fondo
 - **Pesos de fuente** y estilos (negrita, cursiva, etc.)
 
-### Diseño y espaciado
+### Diseño y espaciado [layout-and-spacing]
 
 - **Márgenes y relleno** para todos los elementos
 - **Borde** estilos y colores
 - **Colores de fondo** incluidos fondos del cuerpo para temas oscuros
 
-### Elementos interactivos
+### Elementos interactivos [interactive-elements]
 
 - **Estilos de enlace** incluidos los estados de desplazamiento y visitado
 - **Botón** y estilo de elemento de formulario
 - Estilo **Lista** (viñetas, números, sangría)
 
-### Características especiales
+### Características especiales [special-features]
 
 - Estilo del **primer párrafo**
 - Formato **Cita en bloque**
@@ -82,13 +82,13 @@ Style Stealer captura un conjunto completo de estilos que incluyen:
 - Estilo **Tabla**
 - **Fuentes personalizadas** y fuentes web
 
-## Funciones avanzadas
+## Funciones avanzadas [advanced-features]
 
-### Bloqueo de medios
+### Bloqueo de medios [media-blocking]
 
 Style Stealer bloquea automáticamente el contenido multimedia (vídeos, imágenes, audio) para evitar fallos y centrarse en el estilo del texto. Esto garantiza un proceso de extracción fluido incluso en sitios web con muchos medios.
 
-### Soporte de pseudoselector
+### Soporte de pseudoselector [pseudo-selector-support]
 
 La herramienta captura pseudoselectores CSS como:
 
@@ -97,7 +97,7 @@ La herramienta captura pseudoselectores CSS como:
 - `:first-child` estilo de párrafo
 - `::first-letter` para mayúsculas
 
-### Filtrado inteligente
+### Filtrado inteligente [smart-filtering]
 
 Style Stealer filtra inteligentemente:
 
@@ -106,30 +106,30 @@ Style Stealer filtra inteligentemente:
 - Normas contradictorias o redundantes
 - Estilos que harían que el texto fuera ilegible.
 
-### Modo de depuración
+### Modo de depuración [debug-mode]
 
 Habilite el modo de depuración en Style Stealer para ver el registro detallado del proceso de extracción. Esto es útil para solucionar problemas o comprender qué estilos se están capturando.
 
-## Consejos para obtener mejores resultados
+## Consejos para obtener mejores resultados [tips-for-best-results]
 
-### Elija el área de contenido adecuada
+### Elija el área de contenido adecuada [choose-the-right-content-area]
 
 - Haga clic en el **área de contenido principal** de la página, no en los encabezados, barras laterales ni pies de página.
 - Busque el área que contiene el texto del artículo, la publicación del blog o el contenido principal.
 - Evite áreas con JavaScript pesado o contenido dinámico
 
-### Manejar temas oscuros
+### Manejar temas oscuros [handle-dark-themes]
 
 Style Stealer captura automáticamente los colores de fondo del cuerpo, lo que lo hace perfecto para extraer estilos de temas oscuros. La vista previa mostrará cómo se ve su contenido con el estilo oscuro extraído.
 
-### Consideraciones de fuentes
+### Consideraciones de fuentes [font-considerations]
 
 - Las **fuentes web** se capturan y se incluyen en los estilos extraídos.
   - Las fuentes que se cargan desde una URL remota (por ejemplo, Google Fonts) mantendrán esa URL. Las fuentes cargadas desde las URL de datos se duplicarán en la hoja de estilo generada.
 - **Fuentes del sistema** recurrirán elegantemente a diferentes sistemas
 - **La carga de fuentes** puede tardar un momento en la vista previa
 
-### Probando tus estilos
+### Probando tus estilos [testing-your-styles]
 
 Después de guardar los estilos extraídos:
 
@@ -141,33 +141,33 @@ Después de guardar los estilos extraídos:
    3. Haga clic en Revelar para mostrar el archivo en Finder.
    4. Abra el archivo en cualquier editor de texto sin formato (TextEdit funcionará en modo de texto sin formato) y realice los ajustes necesarios
 
-## Solución de problemas
+## Solución de problemas [troubleshooting]
 
-### El sitio web no se carga
+### El sitio web no se carga [website-wont-load]
 
 - Verifique que la URL sea correcta y de acceso público
 - Algunos sitios pueden bloquear el acceso automatizado
 - Pruebe con una página diferente en el mismo sitio
 
-### Los estilos se ven diferentes
+### Los estilos se ven diferentes [styles-look-different]
 
 - Los estilos extraídos se basan en el contenido específico que seleccionó
 - Algunos sitios utilizan CSS complejo que puede no traducirse perfectamente
 - Utilice CSS adicional o edite la hoja de estilo para realizar ajustes finos
 
-### Estilos faltantes
+### Estilos faltantes [missing-styles]
 
 - Asegúrate de haber seleccionado el área de contenido principal, no una barra lateral o un encabezado.
 - Algunos estilos pueden aplicarse a través de JavaScript y no serán capturados
 - Consulte la consola de depuración para obtener información detallada sobre la extracción.
 
-## Atajos de teclado
+## Atajos de teclado [keyboard-shortcuts]
 
 - {% kbd return  %} - Cargar URL para extracción
 - {% kbd cmd S %} - Guarde el estilo extraído en un archivo CSS de estilo personalizado
 - {% kbd cmd  %}-Clic: navega por los enlaces mientras obtienes una vista previa
 
-## Integración con estilos personalizados
+## Integración con estilos personalizados [integration-with-custom-styles]
 
 Los estilos extraídos se guardan en su carpeta CSS personalizado y pueden ser:
 

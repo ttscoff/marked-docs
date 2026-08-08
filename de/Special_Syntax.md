@@ -1,8 +1,8 @@
 # <%= @title %>
 
-## Callouts
+## Callouts [callouts]
 
-## Bear/Obsidian ##
+## Bear/Obsidian ## [bearobsidian]
 
 Marked unterstützt Callouts mit der von Obsidian und Bear verwendeten Syntax – ein speziell formatiertes Blockzitat:
 
@@ -33,7 +33,7 @@ Mit einem `+` oder `-` machen Sie das Callout ausklappbar. Ein Pluszeichen (`+`)
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Xcode Playground ###
+### Xcode Playground ### [xcode-playground]
 
 Bei der Vorschau von Xcode-Playground-Dateien unterstützt Marked die native Callout-Syntax von Xcode Playground:
 
@@ -106,7 +106,7 @@ Standardmäßig wird das Inhaltsverzeichnis auf der ersten Seite des Dokuments g
 
 I> Die Art der Nummerierung oder Beschriftung jeder Ebene einer verschachtelten Inhaltsverzeichnis-Hierarchie legen Sie unter {% prefspane Export %} fest.
 
-## Seitenumbrüche
+## Seitenumbrüche [pagebreaks]
 
 Einen Seitenumbruch für die Druck-/PDF-Ausgabe erzwingen Sie mit dieser Syntax:
 
@@ -128,7 +128,7 @@ Marked kann mit der [Autoscroll](Autoscroll.html)-Funktion als Teleprompter dien
 
 Dabei ist `X` die Anzahl der Sekunden, die Marked pausieren soll. `<!--PAUSE:15-->` erzeugt also eine 15-sekündige Pause, sobald diese Stelle im Dokument die Bildschirmmitte erreicht.
 
-## Dateien einbinden
+## Dateien einbinden [file-includes]
 
 Den Inhalt zusätzlicher Dateien fügen Sie mit dieser Syntax ein:
 
@@ -144,7 +144,7 @@ Weitere Informationen finden Sie unter [„Multi-File Documents“][ext].
 
 [ext]: Multi-File_Documents.html
 
-## Code einbinden
+## Code einbinden [includingcode]
 
 Marked kann externe Dateien als Code einbinden – mit einer Syntax, die den Datei-Einbindungen oben ähnelt:
 
@@ -156,7 +156,7 @@ Beachten Sie die runden statt der eckigen Klammern. Aus Kompatibilität mit der 
 
 Der Inhalt der angegebenen Datei wird in einen pre>code-Block in Ihrem Dokument eingefügt und steht für die automatische Syntaxhervorhebung zur Verfügung, sofern diese aktiviert ist. Codeblöcke lassen sich nicht verschachteln und werden nicht mit MultiMarkdown verarbeitet. Benutzerdefinierte Prozessoren laufen aber weiterhin über den erzeugten pre>code-Block.
 
-## Unverarbeiteten Text oder HTML einbinden
+## Unverarbeiteten Text oder HTML einbinden [includingunprocessedtextorhtml]
 
 E> **Hinweis:** Diese Funktion ist für fortgeschrittene Benutzer.
 

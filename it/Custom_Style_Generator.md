@@ -4,7 +4,7 @@
 
 Il generatore di stili personalizzati è uno strumento basato sul Web che ti consente di creare stili personalizzati per Marked senza scrivere CSS a mano. Fornisce un'interfaccia visiva con controlli per tipografia, colori, spaziatura e altro, con un'anteprima dal vivo che si aggiorna man mano che apporti modifiche.
 
-## Accesso al generatore
+## Accesso al generatore [accessing-the-generator]
 
 Il generatore di stili è disponibile su [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). Puoi usarlo direttamente nel tuo browser web: non è richiesta alcuna installazione.
 
@@ -12,7 +12,7 @@ Il generatore di stili è disponibile su [https://markedapp.com/style-generator/
 
   [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Per iniziare
+## Per iniziare [getting-started]
 
 Quando apri il generatore per la prima volta, vedrai:
 
@@ -20,19 +20,19 @@ Quando apri il generatore per la prima volta, vedrai:
 - **Riquadro controlli** (a destra): tutti i controlli di stile organizzati in sezioni
 - **Barra degli strumenti** (in alto): titolo dello stile, selettore del tema di base e opzione di importazione CSS
 
-### Scelta di un tema base
+### Scelta di un tema base [choosing-a-base-theme]
 
 Inizia selezionando un **Tema base** dal menu a discesa. Ciò fornisce una base per il tuo stile: puoi quindi personalizzarne ogni aspetto. Le opzioni più popolari includono Vuoto (per iniziare da zero), Predefinito e vari temi integrati.
 
-### Importazione di CSS esistenti
+### Importazione di CSS esistenti [importing-existing-css]
 
 Se disponi di un file CSS esistente che desideri utilizzare come punto di partenza, fai clic su **Importa CSS** e seleziona il file. Il generatore caricherà quegli stili e potrai quindi modificarli utilizzando i controlli.
 
-## Controlli di stile
+## Controlli di stile [style-controls]
 
 Il generatore organizza i controlli in sezioni logiche:
 
-### Tipografia di base
+### Tipografia di base [base-typography]
 
 Controlla le impostazioni tipografiche fondamentali:
 
@@ -41,7 +41,7 @@ Controlla le impostazioni tipografiche fondamentali:
 - **Altezza riga**: la spaziatura tra le righe di testo
 - **Rapporto di scala**: il rapporto utilizzato per la scala tipografica (influisce sulle dimensioni dell'intestazione)
 
-### Disposizione
+### Disposizione [layout]
 
 Regola spaziatura e rientro:
 
@@ -50,7 +50,7 @@ Regola spaziatura e rientro:
 - **Rientro elenco**: rientro per gli elenchi
 - **Rientro virgolette**: margine sinistro per le virgolette
 
-### Caratteri
+### Caratteri [fonts]
 
 Configura famiglie e pesi di caratteri:
 
@@ -72,7 +72,7 @@ Aggiungi Google Fonts al tuo stile:
 
 I caratteri aggiunti vengono visualizzati in un elenco sotto i controlli: fai clic su × per rimuoverli.
 
-### Colori
+### Colori [google-fonts]
 
 Imposta i colori per vari elementi:
 
@@ -87,13 +87,13 @@ Imposta i colori per vari elementi:
 
 I colori delle singole intestazioni (H1–H6) possono essere impostati separatamente: utilizza **Ripristina** per eliminare una sostituzione e tornare al colore dell'intestazione.
 
-### Modalità oscura
+### Modalità oscura [colors]
 
 Attiva la **Modalità oscura** per visualizzare in anteprima e configurare i colori della modalità oscura. Se abilitato, vedrai controlli colore separati per le varianti della modalità oscura. Gli stili della modalità oscura si applicano quando `.inverted` è impostato sull'elemento del corpo in Contrassegnato.
 
 Utilizza **Genera colori** per creare automaticamente una tavolozza in modalità scura basata sui colori della modalità luce.
 
-### Immagini
+### Immagini [dark-mode]
 
 Controllare l'aspetto dell'immagine:
 
@@ -101,7 +101,7 @@ Controllare l'aspetto dell'immagine:
 - **Raggio bordo**: angoli arrotondati (ad es. "8px", "0")
 - **Allineamento**: impostazione predefinita del documento, a sinistra, al centro o a destra
 
-### Citazioni
+### Citazioni [images]
 
 Citazioni di stile:
 
@@ -114,7 +114,7 @@ Citazioni di stile:
 
 Sono disponibili controlli separati per i blockquote in modalità oscura.
 
-### Elenchi
+### Elenchi [blockquotes]
 
 Configura l'aspetto dell'elenco:
 
@@ -122,7 +122,7 @@ Configura l'aspetto dell'elenco:
 - **Margine sinistro**: spaziatura dal bordo sinistro
 - **Margine sinistro nidificato**: spaziatura per elenchi nidificati (può essere "ereditato")
 
-### Elenchi di definizioni
+### Elenchi di definizioni [lists]
 
 Elenchi di definizioni di stile (`<dl>`, `<dt>`, `<dd>`):
 
@@ -130,7 +130,7 @@ Elenchi di definizioni di stile (`<dl>`, `<dt>`, `<dd>`):
 - Impostazioni **DT** (termine): dimensione, peso e stile del carattere
 - Impostazioni **DD** (definizione): dimensione, spessore, stile e rientro del carattere
 
-### Tabelle
+### Tabelle [definition-lists]
 
 Stile completo della tabella:
 
@@ -149,7 +149,7 @@ Stile completo della tabella:
 
 Sono disponibili controlli separati per le tabelle in modalità oscura.
 
-### Blocchi di codice
+### Blocchi di codice [tables]
 
 Blocchi di codice di stile e codice in linea:
 
@@ -162,7 +162,7 @@ Blocchi di codice di stile e codice in linea:
 
 Sono disponibili controlli separati per i blocchi di codice in modalità oscura.
 
-### Note a piè di pagina
+### Note a piè di pagina [code-blocks]
 
 Note di stile:
 
@@ -172,7 +172,7 @@ Note di stile:
 
 Sono disponibili controlli separati per le note a piè di pagina della modalità oscura.
 
-### Ombra esterna
+### Ombra esterna [footnotes]
 
 Aggiungi ombre esterne agli elementi:
 
@@ -183,13 +183,13 @@ Aggiungi ombre esterne agli elementi:
    - Blockquote
    - Tabelle
 
-## CSS personalizzato
+## CSS personalizzato [custom-css]
 
 Per una personalizzazione avanzata oltre ai controlli disponibili, utilizza il pulsante **CSS personalizzato** per aprire un editor di codice. Qualsiasi CSS aggiunto qui verrà aggiunto allo stile generato e verrà automaticamente adattato per funzionare all'interno della struttura del documento di Marked.
 
 L'editor include l'evidenziazione e la convalida della sintassi: i CSS non validi verranno contrassegnati con messaggi di errore.
 
-## Anteprima dal vivo
+## Anteprima dal vivo [live-preview]
 
 Il riquadro di anteprima mostra lo stile applicato al contenuto di markdown di esempio, tra cui:
 
@@ -206,23 +206,23 @@ Il riquadro di anteprima mostra lo stile applicato al contenuto di markdown di e
 
 Le modifiche si aggiornano in tempo reale mentre regoli i controlli.
 
-## Salvataggio e condivisione
+## Salvataggio e condivisione [saving-and-sharing]
 
 Una volta che sei soddisfatto del tuo stile, hai diverse opzioni:
 
-### Visualizza CSS
+### Visualizza CSS [view-css]
 
 Fai clic su **Visualizza CSS** per vedere il CSS completo generato in un popover. Puoi copiarlo negli appunti o rivederlo prima di salvarlo.
 
-### Salva CSS
+### Salva CSS [save-css]
 
 Fai clic su **Salva CSS** per scaricare il tuo stile come file CSS. Ti verrà richiesto di inserire i metadati (titolo, autore, descrizione) prima del download.
 
-### Aggiungi a contrassegnato
+### Aggiungi a contrassegnato [add-to-marked]
 
 Fai clic su **Aggiungi a Marked** per aggiungere direttamente lo stile all'installazione Marked. Ciò richiede che Marked sia in esecuzione e si aprirà una finestra di dialogo per confermare il nome dello stile e le informazioni sull'autore.
 
-### Condividi stile
+### Condividi stile [share-style]
 
 Fai clic su **Condividi stile** per pubblicare il tuo stile nella [Galleria stili contrassegnati](https://markedapp.com/styles) affinché altri possano utilizzarlo. Dovrai fornire:
 
@@ -234,7 +234,7 @@ Fai clic su **Condividi stile** per pubblicare il tuo stile nella [Galleria stil
 
 Un'anteprima del tuo stile apparirà nella finestra di dialogo di condivisione prima della pubblicazione.
 
-## Metadati
+## Metadati [metadata]
 
 Utilizza la sezione metadati (espandibile tramite il pulsante freccia accanto al titolo dello stile) per impostare:
 
@@ -245,7 +245,7 @@ Utilizza la sezione metadati (espandibile tramite il pulsante freccia accanto al
 
 Questi metadati sono inclusi nell'intestazione del file CSS e utilizzati durante la condivisione degli stili.
 
-## Suggerimenti
+## Suggerimenti [tips]
 
 - Inizia con un tema base vicino a quello che desideri, quindi personalizza
 - Utilizza il tema **Vuoto** se desideri il controllo completo da zero
@@ -254,6 +254,6 @@ Questi metadati sono inclusi nell'intestazione del file CSS e utilizzati durante
 - Utilizza i **CSS personalizzati** con parsimonia: la maggior parte delle esigenze può essere soddisfatta con i controlli integrati
 - Visualizza in anteprima il tuo stile con vari tipi di contenuto prima di condividerlo
 
-## Compatibilità del browser
+## Compatibilità del browser [browser-compatibility]
 
 Il generatore di stili funziona meglio con i browser moderni (Chrome, Firefox, Safari, Edge). Richiede che JavaScript sia abilitato.

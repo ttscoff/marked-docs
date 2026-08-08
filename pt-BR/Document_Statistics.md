@@ -4,7 +4,7 @@
 
 Acompanhe enquanto você escreve.
 
-## Contagem de palavras e estatísticas de documentos
+## Contagem de palavras e estatísticas de documentos [word-count-and-document-statistics]
 
 ![][1]
 
@@ -14,7 +14,7 @@ A contagem de palavras está localizada na barra de status inferior e pode ser a
 
 Se o texto for selecionado, a exibição da contagem de palavras e o pop-up de parágrafo/frase/caractere serão atualizados com informações apenas para a seleção.
 
-## Contagem de palavras para seleção
+## Contagem de palavras para seleção [word-count-for-selection]
 
 ![Pop-up de contagem de palavras na seleção de texto][2]
 
@@ -26,7 +26,7 @@ Se "Mostrar contagem de palavras para seleção" estiver habilitado em {% prefsp
 
 O recurso de zoom é útil para selecionar e obter rapidamente contagens de pedaços maiores de texto. Digite {% kbd z %} para diminuir o zoom e fazer sua seleção.
 
-## Estatísticas de legibilidade
+## Estatísticas de legibilidade [readability-statistics]
 
 ![Barra de estatísticas de legibilidade][3]
 
@@ -34,7 +34,7 @@ O recurso de zoom é útil para selecionar e obter rapidamente contagens de peda
 
 Estatísticas adicionais de Flesch/Kincaid e do Fog Index estão disponíveis em {% kbd opt shift cmd S %}.
 
-### Informações de legibilidade
+### Informações de legibilidade [readability-information]
 
 **Facilidade de leitura Flesch:** pontuações mais altas indicam material mais fácil de ler; números mais baixos marcam passagens que são mais difíceis de ler.
 
@@ -46,7 +46,7 @@ Estatísticas adicionais de Flesch/Kincaid e do Fog Index estão disponíveis em
 
 **Índice Gunning Fog:** mede a legibilidade da escrita em inglês. O índice estima os anos de educação formal necessários para compreender o texto na primeira leitura. Um índice de neblina de 12 requer o nível de leitura de um aluno do último ano do ensino médio nos EUA (cerca de 18 anos).
 
-## Estatísticas Avançadas
+## Estatísticas Avançadas [advanced-statistics]
 
 ![Pop-up de estatísticas avançadas][adv]
 
@@ -54,7 +54,7 @@ Estatísticas adicionais de Flesch/Kincaid e do Fog Index estão disponíveis em
 
 Selecionar Estatísticas Avançadas no menu de engrenagem ---- ou pressionar {% kbd cmd I %} --- abrirá um painel contendo estatísticas de documentos mais avançadas, incluindo comprimento médio de palavras e frases e complexidade média de palavras.
 
-### Estatísticas Avançadas Flutuantes
+### Estatísticas Avançadas Flutuantes [floating-advanced-statistics]
 
 ![Janela de informações flutuante][flutuante]
 
@@ -62,7 +62,7 @@ Selecionar Estatísticas Avançadas no menu de engrenagem ---- ou pressionar {% 
 
 Pressionar {% kbd shift cmd I %} abrirá um painel flutuante contendo todas as estatísticas detalhadas e informações de legibilidade. Este painel pode permanecer em primeiro plano quando você muda para o seu editor, para que você possa ver suas estatísticas atualizadas sempre que salvar, esteja a visualização visível ou não. Pressionar o ícone `<` retornará a visualização marcada associada ao primeiro plano. Se você segurar a opção e clicar no mesmo botão, o arquivo Markdown será aberto em seu editor de texto padrão (definido em {% prefspane Apps %}).
 
-### Alvos de palavras
+### Alvos de palavras [word-targets]
 
 Se você tiver uma meta específica para contagem de palavras enquanto escreve, poderá adicionar uma chave de metadados "target:" na parte superior do documento e Marcado acompanhará seu progresso, exibindo um indicador de conclusão no painel Estatísticas detalhadas ({% kbd cmd I %}) e nas Estatísticas flutuantes ({% kbd shift cmd I %}).
 
@@ -71,7 +71,7 @@ Se você tiver uma meta específica para contagem de palavras enquanto escreve, 
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualize a repetição de palavras
+## Visualize a repetição de palavras [visualizewordrepetition]
 
 Selecionar Visualizar repetição de palavras no menu de engrenagem (ou pressionar {% kbd ctrl cmd W %}) mudará para uma visualização especial que remove elementos não textuais e destaca palavras repetidas em seu documento. Palavras repetidas são destacadas em rosa claro e passar o mouse sobre uma palavra destacada iluminará as palavras correspondentes em todo o documento. Clicar em uma palavra destacada escurecerá o fundo e “colará” o destaque para revisão posterior.
 

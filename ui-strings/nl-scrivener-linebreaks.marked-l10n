@@ -1,0 +1,52 @@
+# Marked Settings Localization Patch
+# Locale: nl (Dutch)
+# Generated: 2026-07-26
+# Feature: Scrivener line-break preference
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# New Applications → Scrivener setting: "Treat single line breaks as"
+# Popup options: "Line breaks" (default) and "Paragraphs".
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by this option.
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 4
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 4
+
+"setting.scrivenerLineBreaks" = "Enkele regeleinden behandelen als";
+# EN: Treat single line breaks as
+# DRAFT: Enkele regeleinden behandelen als
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Regeleinden";
+# EN: Line breaks
+# DRAFT: Regeleinden
+
+"setting.scrivenerLineBreaks.paragraphs" = "Alinea's";
+# EN: Paragraphs
+# DRAFT: Alinea's
+
+"tooltip.scrivenerLineBreaks" = "Hoe een enkel regeleinde binnen een Scrivener-alinea wordt geïnterpreteerd. ‘Regeleinden’ houdt opeenvolgende regels als regeleinden (afhankelijk van ‘Bewaar regeleinden in alinea's’); ‘Alinea's’ start een nieuwe alinea. Pipe-tabellen en omheinde codeblokken blijven onaangetast.";
+# EN: How to interpret a single line break within a Scrivener paragraph. Line breaks keep consecutive lines as line breaks (subject to Preserve line breaks); Paragraphs start a new paragraph. Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Hoe een enkel regeleinde binnen een Scrivener-alinea wordt geïnterpreteerd. ‘Regeleinden’ houdt opeenvolgende regels als regeleinden (afhankelijk van ‘Bewaar regeleinden in alinea's’); ‘Alinea's’ start een nieuwe alinea. Pipe-tabellen en omheinde codeblokken blijven onaangetast.
+
+=== END Settings.strings (gaps) ===

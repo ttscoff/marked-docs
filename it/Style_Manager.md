@@ -6,7 +6,7 @@ Lo Style Manager fornisce un'interfaccia centralizzata per la gestione di tutti 
 Stili integrati e personalizzati. Ti dà il controllo completo su quale
 Gli stili vengono visualizzati nei menu, nel loro ordine, nelle scorciatoie da tastiera e altro ancora.
 
-## Apertura della Gestione stili
+## Apertura della Gestione stili [opening-the-style-manager]
 
 Per aprire Gestione stili, fai clic sul pulsante **Gestisci stili…** nella {% prefspane Style %}
 riquadro o utilizzare {% appmenu Style, Manage Styles (~@$m) %}. Puoi anche trascinare i file CSS direttamente nella finestra delle preferenze --- Contrassegnato
@@ -17,13 +17,13 @@ tu.
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## Il Tavolo dello Stile
+## Il Tavolo dello Stile [the-style-table]
 
 Il Gestore stili mostra tutti i tuoi stili in una tabella ordinabile che si mescola
 stili integrati e personalizzati senza soluzione di continuità. Ogni riga della tabella ne contiene diversi
 colonne:
 
-### Casella di controllo abilitata
+### Casella di controllo abilitata [enabled-checkbox]
 
 La casella di controllo **Abilitato** aggiunge o rimuove immediatamente lo stile dallo Stile
 menu, popup Stile predefinito e scorciatoie da tastiera. Quando disabiliti uno stile,
@@ -32,7 +32,7 @@ menu, popup Stile predefinito e scorciatoie da tastiera. Quando disabiliti uno s
 Se disabiliti lo stile attualmente attivo, Marked passa automaticamente allo stile
 successivo stile abilitato disponibile.
 
-### Colonna del nome
+### Colonna del nome [name-column]
 
 La colonna **Nome** mostra il nome visualizzato dello stile. Puoi modificare questo nome
 inline cliccando direttamente su di esso; le modifiche persistono e si propagano a ogni menu
@@ -42,7 +42,7 @@ potrebbe volere un nome più descrittivo rispetto al nome del file.
 Gli stili incorporati hanno nomi bloccati che non possono essere modificati. Per personalizzare a
 nome dello stile incorporato, duplicalo prima per creare una copia modificabile.
 
-### Colonna sorgente
+### Colonna sorgente [source-column]
 
 La colonna **Sorgente** indica da dove proviene lo stile:
 
@@ -52,7 +52,7 @@ La colonna **Sorgente** indica da dove proviene lo stile:
 - **Duplicato**: stili creati duplicando un altro stile (integrato
   o personalizzato)
 
-### Colonna Azioni
+### Colonna Azioni [actions-column]
 
 Ogni riga include una pila di **Azioni** con pulsanti per la gestione di quello stile:
 
@@ -75,7 +75,7 @@ disabilitato.
 stato predefinito se è stato modificato. Questo pulsante è visibile solo per
 stili incorporati.
 
-## Riordino degli stili
+## Riordino degli stili [reordering-styles]
 
 Le righe possono essere riordinate tramite trascinamento. Trascina semplicemente una riga di stile su una nuova
 posizione nella tabella. L'ordine impostato qui guida:
@@ -87,17 +87,17 @@ posizione nella tabella. L'ordine impostato qui guida:
 Trascina gli stili negli slot delle scorciatoie da tastiera che desideri
 occupare.
 
-## Aggiunta di stili
+## Aggiunta di stili [adding-styles]
 
 Esistono diversi modi per aggiungere nuovi stili personalizzati alla Gestione stili:
 
-### Pulsante Aggiungi
+### Pulsante Aggiungi [add-button]
 
 Fai clic sul pulsante **Aggiungi nuovo stile** per aprire un selettore di file
 dove puoi selezionare uno o più file CSS da importare. I file selezionati saranno
 aggiunto alla Gestione stili e abilitato per impostazione predefinita.
 
-### Trascina e rilascia
+### Trascina e rilascia [drag-and-drop]
 
 Puoi trascinare i file CSS direttamente nella finestra Gestione stili. Quando trascini
 file sulla finestra, verrà visualizzata una sovrapposizione che mostra "Aggiungi uno stile personalizzato" (o
@@ -110,7 +110,7 @@ sia l'importazione che il posizionamento in un'unica azione.
 Anche il trascinamento dei file CSS nel riquadro delle preferenze {% prefspane Style %} lo farà
 importarli e aprire automaticamente la Gestione stili.
 
-## Anteprima dal vivo
+## Anteprima dal vivo [live-preview]
 
 Il riquadro destro della Gestione stili visualizza un'anteprima dal vivo del selezionato
 stile. L'anteprima restituisce un documento campione completo con intestazioni,
@@ -121,33 +121,33 @@ L'anteprima utilizza il file CSS direttamente dal disco, quindi qualsiasi modifi
 l'editor esterno si aggiornerà immediatamente nell'anteprima. Questo rende facile
 guarda le tue modifiche in tempo reale mentre sviluppi stili personalizzati.
 
-### Anteprima della modalità oscura
+### Anteprima della modalità oscura [dark-mode-preview]
 
 Una casella di controllo sopra l'anteprima ti consente di alternare tra la modalità chiara e quella scura
 anteprime. Ciò è utile per testare l'aspetto degli stili in entrambe le modalità di aspetto,
 soprattutto se stai creando stili che si adattano all'aspetto del sistema.
 
-## Scorciatoie da tastiera
+## Scorciatoie da tastiera [keyboard-shortcuts]
 
 La Gestione stili visualizza una legenda sotto la tabella che mostra come funziona la tastiera
 vengono assegnate le scorciatoie. I primi nove stili abilitati ricevono {% kbd cmd 1 %} through
 {% kbd cmd 9 %} ({% kbd cmd 0 %} è riservato), i dieci successivi ricevono da {% kbd opt cmd 1 %} a {% kbd opt cmd 0 %} e così via. Puoi vedere le scorciatoie da tastiera assegnate nel menu a comparsa Stile su qualsiasi Anteprima.
 
-## Filtraggio degli stili disabilitati
+## Filtraggio degli stili disabilitati [filtering-disabled-styles]
 
 Una casella di controllo nella parte inferiore della finestra consente di mostrare o nascondere le opzioni disabilitate
 stili. Quando non è selezionato, vengono visualizzati solo gli stili abilitati, rendendolo più semplice
 concentrati e riordina i tuoi stili attivi. Se selezionato, tutti gli stili (abilitati e disabilitati)
 vengono visualizzati, consentendoti di gestire la tua raccolta di stili completa.
 
-## Ripristino degli stili incorporati
+## Ripristino degli stili incorporati [restoring-builtin-styles]
 
 Il pulsante **Ripristina tutti gli stili incorporati** nella parte inferiore della finestra
 ripristina tutti gli stili incorporati al loro stato predefinito. Questo è utile se lo hai
 disabilitato gli stili incorporati e desideri riattivarli o reimpostarli
 eventuali modifiche apportate agli stili incorporati.
 
-## Suggerimenti
+## Suggerimenti [tips]
 
 - **Organizza per frequenza**: trascina gli stili più utilizzati in alto per regalarli
   assegnargli le scorciatoie da tastiera più semplici ({% kbd cmd 1 %}, {% kbd cmd 2 %}, ecc.)

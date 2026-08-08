@@ -6,7 +6,7 @@ transforms, and the ability to run your own commands or run
 different processors based on matching file properties.
 
 
-## Using Custom Preprocessors/Processors
+## Using Custom Preprocessors/Processors [using-custom-preprocessorsprocessors]
 
 To add Custom Processors, go to the {% prefspane Processor %}
 and click on **Custom Rules**.
@@ -44,7 +44,7 @@ dragging and dropping, so you can affect the order in which
 rules are run, the order of the criteria in the predicate
 editor, and the order of actions to be run in sequence.
 
-### Predicate Editor
+### Predicate Editor [predicate-editor]
 
 ![Predicate Editor][predicate]
 
@@ -110,7 +110,7 @@ rule normal file-matching criteria plus **Manually enabled**,
 then toggle it from the Preview menu (or a trigger shortcut)
 when you are ready to proof the print layout.
 
-#### Trigger shortcut
+#### Trigger shortcut [trigger-shortcut]
 
 When a selected rule includes **Manually enabled**, a
 **Trigger shortcut** field appears beside **Add Manually
@@ -124,10 +124,10 @@ Clear the field to remove the shortcut.
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### Per-preview overrides in the Preview menu
+#### Per-preview overrides in the Preview menu [per-preview-overrides-in-the-preview-menu]
 
 Two Preview menu submenus control overrides for the active
-preview only. Settings are saved per [view](#multiview) when
+preview only. Settings are saved per [view](Opening_Files.html#multiview) when
 multiple windows show the same file.
 
 **Enable Custom Rule**
@@ -144,7 +144,7 @@ multiple windows show the same file.
   want to force a specific processor pipeline for one
   preview without changing global Custom Rules.
 
-#### Override button in the preview toolbar
+#### Override button in the preview toolbar [override-button-in-the-preview-toolbar]
 
 When a preview has at least one manually enabled rule or a
 pinned Process override, a branch icon appears in the bottom
@@ -163,7 +163,7 @@ you click again. This is faster than unchecking rules in the
 menu when you want to compare the normal preview with your
 override pipeline.
 
-### Actions
+### Actions [actions]
 
 Use the *+ Action* button to add actions to the rule.
 
@@ -299,7 +299,7 @@ Run Rule
 Continue
 : By default, once a rule is matched, processing will stop (separately for Preprocessors and Processors, so one Preprocessor and one Processor can match). This action will force rule matching to continue after the rule performs its actions.
 
-### Update Hook
+### Update Hook [updatehook]
 
 Marked does not do a full refresh with every update, so if
 you have scripts that render portions of the DOM, they need
@@ -323,7 +323,7 @@ Marked.hooks.register('update', function() {
 This will cause `mermaid.run()` to be executed every time
 Marked performs a partial update.
 
-### Test Rules
+### Test Rules [test-rules]
 
 The _Test Rules_ button under the Rules list will open a
 dialog where you can select any Markdown file and it will be
@@ -332,7 +332,7 @@ highlighted with a green tab on the left side. When matching
 against a file, an X button will appear which can be used to
 clear the test and unhighlight the rows.
 
-## Drag and Drop
+## Drag and Drop [drag-and-drop]
 
 The Conductor window supports enhanced drag and drop
 capabilities that intelligently detect file types and
@@ -345,7 +345,7 @@ against rules or adding it as an action.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### File Type Detection
+### File Type Detection [file-type-detection]
 
 The system automatically detects different file types and
 shows appropriate overlay messages:
@@ -368,7 +368,7 @@ If you're getting odd results and want a look at what's going on, the Custom Rul
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Executing Multiple Commands
+## Executing Multiple Commands [executing-multiple-commands]
 
 A rule can have multiple commands in sequence. The output of
 each command will be passed to the next. If you want to have
@@ -383,7 +383,7 @@ document using Pandoc, just pass the original file path
 command line options, and then echo the STDIN content back
 out to STDOUT.
 
-## Dynamically bypassing custom processors
+## Dynamically bypassing custom processors [dynamically-bypassing-custom-processors]
 
 If a custom processor returns "NOCUSTOM" on STDOUT, Marked
 will terminate the custom processor and fall back to the
@@ -399,7 +399,7 @@ If instead of `NOCUSTOM` a Custom Processor returns
 just that document. This change will not affect the default
 processor set in Settings.
 
-## Environment variables
+## Environment variables [environmentvariables]
 
 The Run Command action has an environment editor where you
 can set your own environment variables that will be
@@ -436,14 +436,14 @@ available for use in your shell scripts:
 **MARKED_CSS_PATH**
 : The full path to the current stylesheet
 
-### Metadata Environment Variables
+### Metadata Environment Variables [metadata-environment-variables]
 
 When the Run Command action is executed in Marked's
 Conductor system, document metadata is automatically
 extracted and made available as environment variables to the
 command.
 
-#### How it works
+#### How it works [how-it-works]
 
 1. **Metadata Extraction**: The system extracts metadata from the document using the existing `extractMetaDataFromString:` method, which supports:
    - YAML front matter (`---` blocks)
@@ -461,7 +461,7 @@ command.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Example
+#### Example [example]
 
 Given a document with this metadata:
 
@@ -490,7 +490,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Usage in Commands
+#### Usage in Commands [usage-in-commands]
 
 You can now use these environment variables in your Run Command actions:
 
@@ -518,7 +518,7 @@ else
 fi
 ```
 
-#### Supported Actions
+#### Supported Actions [supported-actions]
 
 This metadata-to-environment variable functionality is
 available in:
@@ -530,7 +530,7 @@ The metadata is automatically extracted from the document
 content and made available to any command or script that
 runs through these actions.
 
-## Enabling and Disabling
+## Enabling and Disabling [enabling-and-disabling]
 
 The custom processors can be turned on and off for
 individual documents using {% kbd opt cmd C %}. You
@@ -543,7 +543,7 @@ displayed as indicator lights (only visible when a processor
 is enabled) to the left of the toolbar items in the bottom
 right toolbar of the Preview.
 
-### Preprocessor
+### Preprocessor [preprocessor]
 
 If you set up preprocessor rules, they are run after Marked
 handles any Marked-specific tasks such as including external
@@ -593,7 +593,7 @@ from the output:
     Custom Preprocessor: true
     -->
 
-## Using an alternative Markdown processor
+## Using an alternative Markdown processor [using-an-alternative-markdown-processor]
 
 Any Markdown flavor you can render from the command line can
 be used with Marked. It needs to be able to take input on
@@ -617,7 +617,7 @@ I've tested the Custom Processor feature with Pandoc,
 Kramdown, marked (discount), MultiMarkdown 6, Maruku, and
 various other flavors.
 
-### A note about Pandoc and Sandboxing
+### A note about Pandoc and Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (and some other command line tools) will not run in
 the Mac App Store (sandboxed) version of Marked.
@@ -629,7 +629,7 @@ offer the steps to crossgrade. If you're experiencing issues
 and this isn't happening, please contact me through the
 [support site](https://support.markedapp.com/questions/add).
 
-### Pandoc as Swiss Army Markdown Processor
+### Pandoc as Swiss Army Markdown Processor [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) is by far the most flexible
 all-purpose tool for handling an array of markup formats. By
@@ -668,7 +668,7 @@ extensive bibliography and LaTeX scenarios. Most features
 you can access through the command line are available just
 by using passing arguments in Marked.
 
-## Using Textile
+## Using Textile [using-textile]
 
 A few people have asked how to get Textile working in
 Marked. You need to have a Textile converter available from
@@ -686,7 +686,7 @@ one or the other:
 
 Now Marked is a Textile previewer for you!
 
-## Using AsciiDoc
+## Using AsciiDoc [using-asciidoc]
 
 1. Install [AsciiDoctor](http://asciidoctor.org/).
 2. Enable a Custom Rule in {% prefspane Processor %} to match your AsciiDoc files.

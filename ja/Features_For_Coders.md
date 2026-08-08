@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-## フェンスで囲まれたコード ブロック
+## フェンスで囲まれたコード ブロック [fenced-code-blocks]
 
 フェンスで囲まれたコード ブロックは、デフォルトで、組み込まれている両方のプロセッサ (MultiMarkdown とdiscount) で有効になっています。フェンスで囲まれたコード ブロックは、3 つ以上のチルダ (~) またはバッククォート (\`) で区切られます。 3 つ以上の区切り文字を使用できますが、開始区切り文字と終了区切り文字はまったく同じ数の文字である必要があります。
 
@@ -40,7 +40,7 @@ Marked は、インデントされたフェンスで囲まれたコード ブロ
 
 文書に外部コード ファイルを含める方法については、[マークされた特殊な構文](Special_Syntax.html#includingcode) のセクションを参照してください。
 
-## 構文の強調表示
+## 構文の強調表示 [syntax-highlighting]
 
 ![自動構文ハイライト][ハイライト]
 
@@ -56,11 +56,11 @@ Marked は [highlight.js](https://highlightjs.org/) を使用して、言語を�
 
     ```js
     コード
-    「」
+    ```
 
 構文の強調表示は、プレビュー、印刷および PDF エクスポートに表示されます。設定で有効になっており、HTML のエクスポート時にテーマが含まれている場合、Marked で使用される highlight.js ライブラリが HTML 出力に埋め込まれ、エクスポートされた HTML が Marked と同じように表示されるようになります。
 
-### サポートされている言語
+### サポートされている言語 [supported-languages]
 
 マークには、[highlight.js でサポートされている言語](https://highlightjs.readthedocs.io/en/latest/supported-languages.html) リストのすべてのコア言語とサードパーティの文法を含む **highlight.js 11.11.1** が同梱されています。開始フェンスの後に、以下の主言語名 (または JavaScript の場合は `js` などの文書化された別名) を指定します。
 
@@ -90,7 +90,7 @@ Marked は [highlight.js](https://highlightjs.org/) を使用して、言語を�
     vbscript-html、verilog、vhdl、vim、wasm、ミソサザイ、x86asm、x86asmatt、xl、xml、xquery、xsharp、
     yaml、yul、zenscript、zephir
 
-### 構文強調表示テーマ
+### 構文強調表示テーマ [syntax-highlighting-themes]
 
 **239** 構文強調表示テーマは、{% prefspane Style %} ドロップダウンで利用できます。テーマは、Marked のバンドルされたスタイルシートから自動的にロードされます。名前は拡張子を除いた CSS ファイル名と一致します (たとえば、`github-dark` は `github-dark.css` をロードします)。
 
@@ -156,11 +156,11 @@ Base16 テーマ (176 のバリアント、それぞれに接頭辞 `base16-` �
     Base16-windows-nt、base16-windows-nt-light、base16-woodland、base16-xcode-dusk、
     Base16-ゼンバーン
 
-## GitHub の改行
+## GitHub の改行 [github-line-breaks]
 
 マークを付けると、段落内の改行を保持できます。段落内の改行を保持するには、{% prefspane Processor %} を選択してボックスにチェックを入れるだけです。
 
-## GitHub チェックボックス
+## GitHub チェックボックス [github-checkboxes]
 
 次の形式で項目をリストします。
 
@@ -169,6 +169,6 @@ Base16 テーマ (176 のバリアント、それぞれに接頭辞 `base16-` �
 
 レンダリングされたチェックボックス項目としてプレビューに表示されます。これらを操作することはできませんが、その状態はソース ドキュメント内の変更を反映します。
 
-## コードブロックのラッピング
+## コードブロックのラッピング [code-block-wrapping]
 
 {% prefspane Style %} の [レイアウトとタイポグラフィ] の下に、[テーマでコード ブロック内でテキストを折り返すことを許可する] オプションがあります。これを無効にすると、現在のプレビュー スタイルに関係なく、すべてのコード ブロックが折り返すのではなく、水平方向のオーバーフローを強制的にスクロールします。

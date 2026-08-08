@@ -4,7 +4,7 @@
 
 Marked possui amplo suporte para trabalhar com arquivos do Microsoft Word. O fluxo de trabalho típico é **visualizar primeiro, exportar DOCX depois**: abrir ou assistir seu Markdown em Marcado, refinar estilos e revisão na visualização ao vivo e, em seguida, exportar para Word quando o documento estiver pronto.
 
-## Abrindo arquivos DOCX
+## Abrindo arquivos DOCX [opening-docx-files]
 
 Marcado pode ler um arquivo DOCX e convertê-lo em limpo
 Remarcação. Elementos de estilo válidos, como títulos e listas,
@@ -14,18 +14,18 @@ O rastreamento de alterações e os comentários serão convertidos em
 Marcação Crítica. Os destaques serão convertidos em tags `<mark>`,
 com cores quando apropriado.
 
-## Exportando arquivos DOCX
+## Exportando arquivos DOCX [exporting-docx-files]
 
 Use a paleta Exportar para gerar um arquivo DOCX a partir do seu
 Remarcação. Na caixa de diálogo salvar, você pode especificar um arquivo integrado
 estilos --- este estilo pode ser facilmente alterado no Word apenas por
 abrindo o seletor de tema e selecionando um novo tema.
 
-### Cabeçalhos e rodapés
+### Cabeçalhos e rodapés [headers-and-footers]
 
 Se você configurar cabeçalhos e rodapés em {% prefspane Export %}, eles serão incluídos no DOCX exportado. Espaços reservados padrão como `%title`, `%date`, `%page` e `%total` são substituídos no momento da exportação. `%logo` e `%image` incorporam o logotipo nas preferências de Cabeçalho/Rodapé. `%md_*` variáveis ​​de metadados são resolvidas a partir dos metadados MultiMarkdown do documento. `%h1`--`%h6` tornam-se campos do Word **STYLEREF** vinculados aos estilos de título exportados; O Word os preenche quando você abre o documento. Veja [Exportando](Exporting.html#headers-and-footers) para a lista completa de variáveis ​​e diferenças entre o comportamento de DOCX e impressão/PDF.
 
-## Rastreamento de alterações
+## Rastreamento de alterações [change-tracking]
 
 A sintaxe CriticMarkup em um documento Markdown será convertida
 para Word Change Tracking quando exportado para DOCX. Comentários
@@ -37,11 +37,11 @@ Ao importar um arquivo DOCX no Marked, o controle de alterações será
 ser convertido em tags CriticMarkup e `<mark>` como
 apropriado.
 
-## Matemática
+## Matemática [math]
 
 As equações MathJax e Katex exibidas no documento serão convertidas em MathML para exibição no Word. Esta conversão não é perfeita, mas na maioria dos casos renderizará um bloco matemático válido no documento do Word. Isso se aplica apenas à exportação --- os blocos matemáticos em documentos do Word não serão convertidos durante a importação.
 
-## Adicionando estilos de exportação personalizados
+## Adicionando estilos de exportação personalizados [adding-custom-export-styles]
 
 Você pode adicionar seus próprios estilos de exportação incluindo um modelo e um arquivo estilos.xml em `~/Library/Application Support/Marked/Custom Word Styles/`. Para criá-los:
 

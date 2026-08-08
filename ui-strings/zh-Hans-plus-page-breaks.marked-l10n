@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: zh-Hans (Chinese, Simplified)
+# Feature: convertPlusPageBreaks (Treat +++ as page breaks)
+# Generated: 2026-08-03
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer)
+# or the literals +++ and <!--BREAK--> unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertPlusPageBreaks" = "将 +++ 视为分页符";
+# EN: Treat +++ as page breaks
+# DRAFT: 将 +++ 视为分页符
+
+"tooltip.convertPlusPageBreaks" = "启用后，一行三个或更多 + 字符将被视为分页符（与 <!--BREAK--> 相同）。与 iA Writer 兼容。默认关闭。";
+# EN: When enabled, a line of three or more + characters is treated as a page break (same as <!--BREAK-->). Compatible with iA Writer. Off by default.
+# DRAFT: 启用后，一行三个或更多 + 字符将被视为分页符（与 <!--BREAK--> 相同）。与 iA Writer 兼容。默认关闭。
+=== END Settings.strings ===

@@ -14,7 +14,7 @@ zoals "GitHub nieuwe regels" en "GitHub selectievakjes", dus de
 resultaat kan afwijken van wat u ziet in een normale Marked
 voorbeeld.
 
-## Custom Regels zijn niet van toepassing
+## Custom Regels zijn niet van toepassing [custom-rules-do-not-apply]
 
 De Dingus is een __processor-sandbox__: uw Markdown gaat
 rechtstreeks naar de ingebouwde processor van uw keuze (MultiMarkdown,
@@ -41,14 +41,14 @@ Dingus past de regels niet opnieuw toe terwijl u typt. Om Custom te testen
 Regels, gebruik een standaard Marked voorbeeld of sla op vanuit de Dingus
 en open het bestand met __Open in Marked__.
 
-## Wat is een "Dingus"?
+## Wat is een "Dingus"? [what-is-a-dingus]
 
 Een "dingus" is een term die is ontleend aan webontwikkeling
 verwijst naar een eenvoudige testtool of sandbox-omgeving. De
 Met Markdown Dingus kun je experimenteren met de syntaxis van Markdown en
 zie meteen hoe verschillende processors het interpreteren.
 
-## Toegang tot de Dingus
+## Toegang tot de Dingus [accessing-the-dingus]
 
 De Markdown Dingus is toegankelijk via
 [<!--MKPH0-->][2]. Het is bijzonder
@@ -60,13 +60,13 @@ handig wanneer u:
 * Schrijven van documentatie die voor meerdere doeleinden moet werken
   systemen
 
-## Indeling met drie panelen
+## Indeling met drie panelen [three-pane-layout]
 
 ![][1]
 
 Het venster Dingus is verdeeld in drie gesynchroniseerde vensters:
 
-### 1. Markdown Invoer (linkerdeelvenster)
+### 1. Markdown Invoer (linkerdeelvenster) [1-markdown-input-left-pane]
 
 * __Syntaxisaccentuering__: uw Markdown is gemarkeerd met
   kleuren om structuur duidelijk te maken
@@ -99,14 +99,14 @@ editor, gebruik **⌘G** voor Zoek Volgende en **⇧⌘G** voor Zoeken
 Vorige en vervang één of alle overeenkomsten. Druk op de sluiting
 of nogmaals **⌘F** om de zoekbalk te verbergen.
 
-### 2. HTML Bron (middelste deelvenster)
+### 2. HTML Bron (middelste deelvenster) [2-html-source-middle-pane]
 
 * __Generated HTML__: Zie precies wat HTML is geselecteerd
   verwerker creëert
 * __Syntaxis gemarkeerd__: HTML heeft een kleurcode voor het gemak
   lezen
 
-### 3. Gerenderd voorbeeld (rechterdeelvenster)
+### 3. Gerenderd voorbeeld (rechterdeelvenster) [3-rendered-preview-right-pane]
 
 * __Live Preview__: bekijk hoe uw Markdown er wanneer zal uitzien
   weergegeven
@@ -115,12 +115,12 @@ of nogmaals **⌘F** om de zoekbalk te verbergen.
 * __Automatisch scrollen__: scrolt automatisch om uw
   huidige bewerkingspositie
 
-## Bewerken in de Dingus
+## Bewerken in de Dingus [editing-in-the-dingus]
 
 Het Markdown Invoerpaneel bevat slimme bewerkingsfuncties
 maak schrijven Markdown sneller en natuurlijker.
 
-### Slimme nieuwe regel (Return-sleutel)
+### Slimme nieuwe regel (Return-sleutel) [smart-newline-return-key]
 
 Als u op Return drukt, past u zich aan de huidige regel aan:
 
@@ -134,7 +134,7 @@ Als u op Return drukt, past u zich aan de huidige regel aan:
   en hekken sluiten.
 * __Andere regels__: Voegt een normale nieuwe regel in.
 
-### Karakterkoppeling
+### Karakterkoppeling [character-pairing]
 
 Wanneer u een openingsteken typt, wordt de editor automatisch weergegeven
 voegt het slotteken in en plaatst de cursor ertussen
@@ -148,7 +148,7 @@ zij. Ondersteunde paren: `"` `'` `(` `[` `` ` `` `<` .
   in plaats van een duplicaat in te voegen.
 - __Spatie in leeg paar__: Als de cursor tussen een leeg paar staat (bijvoorbeeld `(|)`), vervangt het typen van een spatie het afsluitende teken door een spatie.
 
-### Sneltoetsen
+### Sneltoetsen [shortcut-keys]
 
 | Sneltoets | Actie |
 |:---------------------|:----------------------------------------------------------------- ---------------------------------------------------------------------------------------- |
@@ -178,7 +178,7 @@ selecteert de gehele paragraaf onder de cursor (inclusief de bijbehorende paragr
 achterliggende nieuwe regel), knipt het en plakt het boven of onder de
 aangrenzende alinea, zodat alinea's niet samenvloeien.
 
-### Magische links en voetnoten (F6 / F7)
+### Magische links en voetnoten (F6 / F7) [magic-links-and-footnotes-f6-f7]
 
 De Dingus-editor kan __referentielinks__ en
 __voetnoten__ voor u maken, automatisch het volgende beschikbare nummer toewijzen
@@ -199,7 +199,7 @@ Referentie- en voetnootnummers worden automatisch gekozen, zodat u geen ID's
 handmatig hoeft bij te houden. Geen van beide sneltoetsen werkt
 in omheinde of ingesprongen codeblokken.
 
-### Slim URL plakken
+### Slim URL plakken [smart-url-paste]
 
 Wanneer u plakt, bevat het klembord een URL van het formulier
 `protocol://...` zonder spaties:
@@ -212,7 +212,7 @@ Wanneer u plakt, bevat het klembord een URL van het formulier
 Dit maakt het gemakkelijk om gekopieerde URL's om te zetten in links zonder
 handmatig typen.
 
-### Slimme selectie (⌥⌘↑ / ⌥⌘↓)
+### Slimme selectie (⌥⌘↑ / ⌥⌘↓) [smart-selection]
 
 De Dingus editor ondersteunt __semantische selectie-uitbreiding__:
 
@@ -234,7 +234,7 @@ Elke druk gaat altijd naar een strikt grotere of kleinere waarde
 selectie, zodat u nooit "no-op"-toetsaanslagen krijgt terwijl u werkt
 uitbreiden of krimpen.
 
-## De Dingus gebruiken als editor
+## De Dingus gebruiken als editor [using-the-dingus-as-an-editor]
 
 De Dingus is niet bedoeld om een volledige tekst te vervangen
 editor, maar het kan erg handig zijn voor __snelle bewerkingen met een
@@ -242,7 +242,7 @@ live preview__, vooral als je precies wilt zien hoe
 veranderingen zullen opleveren. Al het tekstbewerkingsgedrag
 beschreven in [Editing in the Dingus][3] is hier van toepassing.
 
-### Een bestand openen/een nieuw bestand maken
+### Een bestand openen/een nieuw bestand maken [opening-a-filecreating-a-new-file]
 
 * __Maak een nieuw bestand in de Dingus__
 	- Kies __{% appmenu File, New, New Markdown File %}__
@@ -266,7 +266,7 @@ beschreven in [Editing in the Dingus][3] is hier van toepassing.
    totdat u ervoor kiest om op te slaan. Custom Regels worden niet toegepast
    de Dingus; zie [Custom Rules do not apply](#custom-rules-do-not-apply).
 
-### Een bestand opslaan
+### Een bestand opslaan [saving-a-file]
 
 * __Wijzigingen in het huidige bestand opslaan__
 	- Klik in het venster Dingus op __Opslaan__ in de statusbalk,
@@ -281,7 +281,7 @@ beschreven in [Editing in the Dingus][3] is hier van toepassing.
    huidige Dingus inhoud naar een nieuw bestand zonder te overschrijven
    het origineel.
 
-### Voorbeeld bekijken over Marked
+### Voorbeeld bekijken over Marked [previewing-in-marked]
 
 * __Open het Dingus document als een volledig Marked voorbeeld__
 	- Klik op __Open in Marked__ in de statusbalk van Dingus, of gebruik
@@ -296,7 +296,7 @@ lichtgewicht editor voor snelle oplossingen en experimenten dus
 ga naar een volledig Marked voorbeeld of naar uw gewone editor wanneer
 je bent klaar voor uitgebreidere bewerkingen.
 
-## Processorselectie
+## Processorselectie [processor-selection]
 
 Gebruik de vervolgkeuzelijst bovenaan om tussen verschillende te schakelen
 Markdown verwerkers:
@@ -310,9 +310,9 @@ Markdown verwerkers:
 * __Kramdown__: geavanceerde processor met extra functies
   zoals IAL's en typografie
 
-## Waarom de Dingus gebruiken?
+## Waarom de Dingus gebruiken? [why-use-the-dingus]
 
-### Processorverschillen begrijpen
+### Processorverschillen begrijpen [understanding-processor-differences]
 
 Verschillende Markdown-processors verwerken de syntaxis anders. De
 Dingus helpt u:
@@ -324,7 +324,7 @@ Dingus helpt u:
 * __Leer syntaxis__: begrijp de subtiele verschillen
   tussen processorimplementaties
 
-### Testen voordat u schrijft
+### Testen voordat u schrijft [testing-before-writing]
 
 Voordat u zich aan een bepaalde Markdown stijl in uw
 documenten:
@@ -336,25 +336,25 @@ documenten:
 * __Experimenteer veilig__: Probeer een nieuwe syntaxis zonder dat dit gevolgen heeft
   uw werkelijke documenten
 
-## Veelvoorkomende gebruiksscenario's
+## Veelvoorkomende gebruiksscenario's [common-use-cases]
 
-### Verschillen in tabelsyntaxis
+### Verschillen in tabelsyntaxis [table-syntax-differences]
 
 Sommige processors gaan anders met de tabelsyntaxis om. De Dingus
 laat u zien welke processor uw tafel het beste ondersteunt
 opmaakbehoeften.
 
-### Voetnootondersteuning
+### Voetnootondersteuning [footnote-support]
 
 Niet alle processors ondersteunen voetnoten. Gebruik de Dingus om
 controleer of de syntaxis van de voetnoot werkt met de door u gekozen processor.
 
-### Wiskundige en speciale tekens
+### Wiskundige en speciale tekens [math-and-special-characters]
 
 Test hoe verschillende processors met wiskunde omgaan
 uitdrukkingen en speciale typografische karakters.
 
-## Tips voor effectief gebruik
+## Tips voor effectief gebruik [tips-for-effective-use]
 
 1. __Begin eenvoudig__: begin met basis Markdown en geleidelijk
    complexiteit toevoegen

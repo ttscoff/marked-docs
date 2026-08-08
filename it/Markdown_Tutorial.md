@@ -2,13 +2,13 @@
 
 # <%= @title %>
 
-## Cos'è il Markdown?
+## Cos'è il Markdown? [what-is-markdown]
 
 Markdown è un linguaggio di markup leggero che ti consente di scrivere utilizzando un formato di testo semplice di facile lettura e scrittura, quindi di convertirlo in HTML strutturalmente valido. L'obiettivo di progettazione principale per la sintassi di formattazione di Markdown è renderlo il più leggibile possibile.
 
-## Sintassi di base
+## Sintassi di base [basic-syntax]
 
-### Intestazioni
+### Intestazioni [headers]
 
 Crea intestazioni utilizzando i simboli hash (`#`). Il numero di hash determina il livello di intestazione:
 
@@ -21,7 +21,7 @@ Crea intestazioni utilizzando i simboli hash (`#`). Il numero di hash determina 
 ###### Header 6
 ```
 
-### Enfasi
+### Enfasi [emphasis]
 
 **Testo in grassetto** utilizzando doppi asterischi o doppi trattini bassi:
 
@@ -37,7 +37,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Elenchi
+### Elenchi [lists]
 
 **Elenchi non ordinati** che utilizzano asterischi, segni più o trattini:
 
@@ -63,7 +63,7 @@ _Italic text_
 3. Third item
 ```
 
-### Collegamenti
+### Collegamenti [links]
 
 **Link in linea** con il testo tra parentesi quadre e l'URL tra parentesi:
 
@@ -86,7 +86,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Immagini
+### Immagini [images]
 
 Le immagini utilizzano una sintassi simile ai collegamenti ma con un punto esclamativo all'inizio:
 
@@ -97,7 +97,7 @@ Le immagini utilizzano una sintassi simile ai collegamenti ma con un punto escla
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Citazioni
+### Citazioni [blockquotes]
 
 Crea virgolette utilizzando il simbolo maggiore di (`>`) all'inizio di ogni riga:
 
@@ -108,7 +108,7 @@ Crea virgolette utilizzando il simbolo maggiore di (`>`) all'inizio di ogni riga
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Codice
+### Codice [code]
 
 **Codice in linea** utilizzando i backtick:
 
@@ -124,7 +124,7 @@ Use ⟦4⟧ in your text.
     Multiple lines are supported.
 ```
 
-### Regole orizzontali
+### Regole orizzontali [horizontal-rules]
 
 Crea regole orizzontali utilizzando tre o più trattini, asterischi o caratteri di sottolineatura:
 
@@ -136,7 +136,7 @@ Crea regole orizzontali utilizzando tre o più trattini, asterischi o caratteri 
 ___
 ```
 
-### Interruzioni di riga
+### Interruzioni di riga [line-breaks]
 
 **Interruzioni di riga rigide** terminando una riga con due o più spazi:
 
@@ -152,7 +152,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Caratteri escape
+### Caratteri escape [escaping-characters]
 
 Escape caratteri speciali utilizzando le barre rovesciate:
 
@@ -175,7 +175,7 @@ Caratteri comuni a cui è possibile eseguire l'escape:
 - `.` periodo
 - `!` punto esclamativo
 
-## Migliori pratiche
+## Migliori pratiche [best-practices]
 
 1. **Utilizza righe vuote** per separare i diversi elementi per una migliore leggibilità
 2. **Sii coerente** con le tue scelte di formattazione (ad esempio, usa `*` o `_` per dare enfasi)
@@ -183,9 +183,9 @@ Caratteri comuni a cui è possibile eseguire l'escape:
 4. **Testa il tuo output** per assicurarti che venga visualizzato come previsto
 5. **Utilizza link di testo significativi** invece di frasi generiche come "fai clic qui"
 
-## Modelli comuni
+## Modelli comuni [common-patterns]
 
-### Elenchi nidificati
+### Elenchi nidificati [nested-lists]
 
 ```markdown
 1. First item
@@ -195,7 +195,7 @@ Caratteri comuni a cui è possibile eseguire l'escape:
    - More nested content
 ```
 
-### Elenchi con paragrafi
+### Elenchi con paragrafi [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -207,7 +207,7 @@ Caratteri comuni a cui è possibile eseguire l'escape:
    This is a paragraph under the second item.
 ```
 
-### Citazioni con altri elementi
+### Citazioni con altri elementi [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -218,7 +218,7 @@ Caratteri comuni a cui è possibile eseguire l'escape:
 > > Nested blockquotes are also possible.
 ```
 
-## Riepilogo
+## Riepilogo [summary]
 
 Markdown fornisce un modo semplice e leggibile per formattare il testo che può essere facilmente convertito in HTML. La chiave è mantenerlo semplice e leggibile utilizzando in modo coerente gli elementi di sintassi di base. Con la pratica, scoprirai che Markdown diventa una seconda natura e rende molto più semplice la scrittura di contenuti strutturati.
 

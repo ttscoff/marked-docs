@@ -4,11 +4,11 @@
 
 **Marked Quick Look** は、Markdown およびプレーンテキスト ファイル用の Quick Look プレビュー拡張機能を追加する別の Mac App Store アプリです。 Finder でスペースバーを押すと (または macOS がサポートする場合はどこでも Quick Look を使用して)、生のソースではなくスタイル付きの HTML プレビューが表示されます。
 
-Marked Quick Look は **Marked 3 には含まれていません**。これは別途購入する必要があります (Mac App Store で **$4.99**)。 <!-- MAS リンク: 利用可能な場合は、ここに App Store URL を追加します -->
+Marked Quick Look は **Marked 3 には含まれていません**。これは別途購入する必要があります (Mac App Store で **$9.99**)。 <!-- MAS リンク: 利用可能な場合は、ここに App Store URL を追加します -->
 
 I> Marked Quick Look と Marked 3 は独立した製品です。 Marked を購入しても Quick Look 拡張機能はインストールされません。また、Marked Quick Look を購入しても Marked ライセンスは含まれません。 Marked がインストールされている場合、プレビューにはオプションの **Open in Marked** ボタンが含まれます。
 
-## 得られるもの
+## 得られるもの [what-you-get]
 
 Marked Quick Look は、`.md`、`.markdown`、`.mmd`、および多くのプレーンテキスト ファイルを同じ視覚的に洗練された状態でレンダリングする **Quick Look Preview 拡張機能**を登録します。Marked は次のことで知られています。
 
@@ -20,7 +20,7 @@ Marked Quick Look は、`.md`、`.markdown`、`.mmd`、および多くのプレ�
 
 W> Quick Look プレビューは読み取り専用です。ファイル インクルード (`<<[file]`、`{{file}}`、および同様の構文) は、Quick Look では**展開されません**。これらは強調表示されたプレースホルダー (`Included file: path`) として表示されるため、コンテンツがどこに取り込まれるかを確認できます。完全なマルチファイル レンダリングの場合は、「マーク」でドキュメントを開きます。
 
-## インストール
+## インストール [installation]
 
 1. Mac App Store から **マークされた Quick Look** をインストールします。
 2. `/Applications` から **アプリを 1 回起動**します。これにより、Quick Look 拡張機能が macOS に登録されます。
@@ -28,7 +28,7 @@ W> Quick Look プレビューは読み取り専用です。ファイル イン�
 
 コンテナ アプリには **設定** ウィンドウ ({% kbd cmd %}、{% kbd , %}) が含まれており、Apex プロセッサ モード、プレビュー スタイル、構文強調表示のテーマ、MathJax と Mermaid の切り替えを選択できます。
 
-## Apex および Markdown フレーバー
+## Apex および Markdown フレーバー [apex-and-markdown-flavors]
 
 マークされた Quick Look はすべてのレンダリングに [Apex](https://github.com/ApexMarkdown/apex) を使用します。 Apex はスタンドアロン プロセッサとして開発されており、Marked 3 にも組み込まれています。
 
@@ -44,21 +44,21 @@ W> Quick Look プレビューは読み取り専用です。ファイル イン�
 
 統合モードは、ほとんどのドキュメントにとって最適なデフォルトです。ファイルが特定のプロセッサ用に書き込まれ、予期せずレンダリングされる場合は、モードを切り替えます。
 
-## マーク付きで開く
+## マーク付きで開く [open-in-marked]
 
 Marked 3 がインストールされている場合、Quick Look プレビューのツールバーに **Open in Marked** ボタンが表示されます。これをクリックすると、ライブ プレビュー、エクスポート、校正、および完全なインクルード拡張のためにファイルがマーク済みに渡されます。
 
 Marked がインストールされていない場合、ボタンは無効になっているように見えます。
 
-## Quick Look の競合のトラブルシューティング
+## Quick Look の競合のトラブルシューティング [troubleshooting-quick-look-conflicts]
 
 macOS では、複数のアプリが Markdown の Quick Look プレビュー拡張機能を登録できます。各プレビューを処理できる拡張機能は 1 つだけであり、**別のアプリのプラグインが Marked Quick Look よりも優先される場合があります**。
 
-### どの拡張機能がアクティブであるかを確認する方法
+### どの拡張機能がアクティブであるかを確認する方法 [how-to-tell-which-extension-is-active]
 
 マーク付きクイック ルック プレビューには、このオプションが有効になっている場合、**マーク付きで開く** ツールバーが含まれます。別のレイアウト、生の等幅ソース、または別のアプリのスタイルが表示される場合は、おそらく別の Quick Look ハンドラーが優先されます。
 
-### マークされた Quick Look の優先順位を復元する
+### マークされた Quick Look の優先順位を復元する [restore-marked-quick-look-precedence]
 
 インストールまたは更新した後、または Quick Look キャッシュをリセットした後、次の手順を実行します。
 
@@ -84,7 +84,7 @@ killall quicklookd QuickLookUIService 2>/dev/null
 qlmanage -r cache
 ```
 
-### 競合する拡張機能を一時的に無効にする
+### 競合する拡張機能を一時的に無効にする [temporarily-disable-a-conflicting-extension]
 
 別のアプリが Marked Quick Look をオーバーライドしていることを確認するには、`pluginkit -e ignore -i BUNDLE_ID` でその拡張機能を無効にし、ファイルをプレビューして、`pluginkit -e default -i BUNDLE_ID` で復元します。
 
@@ -94,7 +94,7 @@ qlmanage -r cache
 pluginkit -e ignore -i studio.appahead.AA7.Markdown-Quick-Look-Extension
 ```
 
-### 一般的な競合するアプリ
+### 一般的な競合するアプリ [common-conflicting-apps]
 
 これらのアプリ (およびその他) は、`.md` ファイルを処理できる Quick Look プレビュー拡張機能を登録します。
 
@@ -122,7 +122,7 @@ W> マークされたクイックルックを確認するために `markdown` �
 
 `+` のマークが付いた拡張機能は明示的に有効になっています。 `pluginkit -e use -i com.brettterpstra.MarkedQuickLook.preview` を使用して、Marked Quick Look を前面に移動します。
 
-### まだプレーンテキストが表示されますか?
+### まだプレーンテキストが表示されますか? [still-seeing-plain-text]
 
 プレビューに **スタイルされていない等幅ソース**が表示される場合、ファイルの UTI に一致するプレビュー拡張子がないため、macOS は組み込みの **Text.qlgenerator** にフォールバックします。
 
@@ -133,11 +133,11 @@ W> マークされたクイックルックを確認するために `markdown` �
 
 完全なステップバイステップのチェックリストについては、[Marked Quick Look トラブルシューティング ガイド](https://github.com/ttscoff/MarkedQuickLook/blob/main/TROUBLESHOOTING.md) を参照してください。
 
-### 開発ビルド
+### 開発ビルド [development-builds]
 
 Xcode からのデバッグ ビルドは DerivedData に存在し、**自動的に登録されません**。各クリーン ビルド後に Xcode (Cmd+R) から **Marked Quick Look** コンテナ アプリを実行し、`.appex` への DerivedData パスを指定して `pluginkit -a` および `pluginkit -e use` コマンドを再実行します。
 
-## 関連トピック
+## 関連トピック [related-topics]
 
 - [ファイルを開く](Opening_Files.html) — Marked がドキュメントを開いて監視する方法
 - [マルチファイルドキュメント](Multi-File_Documents.html) — マークされた構文と完全な展開が含まれます

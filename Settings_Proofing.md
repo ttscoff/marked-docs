@@ -24,7 +24,7 @@ Include footnotes in comment sidebar
 Reading Speed (wpm)
 : This number (words per minute) is used to calculate the reading time in text statistics displays. The average reading speed for adults is 200-300 words per minute.
 
-### Keywords
+### Keywords [keywords]
 
 [Define lists of keywords to be highlighted](Keyword_Highlighting.html). Use the tabs to edit each list:
 

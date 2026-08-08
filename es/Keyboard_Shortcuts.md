@@ -4,7 +4,7 @@
 
 Un panel flotante con una hoja de trucos de acceso directo está disponible en el menú Ayuda o presionando {{opt}}{{cmd}}K.
 
-### Atajos
+### Atajos [shortcuts]
 
 |                     Atajo | Función |
 | ---------------------------: | :--------------------------------- |
@@ -57,7 +57,7 @@ Un panel flotante con una hoja de trucos de acceso directo está disponible en e
 
 
 
-### Cambios rápidos
+### Cambios rápidos [quick-toggles]
 
 Atajos de teclado adicionales para alternar configuraciones globales comunes.
 
@@ -73,7 +73,7 @@ Atajos de teclado adicionales para alternar configuraciones globales comunes.
 | **{{ctrl}}{{opt}}{{shift}}H** | Proceso dentro de HTML |
 [Alternancias rápidas]
 
-### Vista previa de navegación
+### Vista previa de navegación [previewnavigation]
 
 Presione "?" en cualquier momento para ver los siguientes accesos directos en la ventana Vista previa.
 
@@ -106,7 +106,7 @@ Presione "?" en cualquier momento para ver los siguientes accesos directos en la
 |        **{{shift}}{{cmd}}F** | Vista de enfoque |
 [Navegación previa]
 
-### Navegación por la tabla de contenidos
+### Navegación por la tabla de contenidos [TableofContentsNavigation]
 
 Cuando la tabla de contenido está abierta, puede navegar mediante el teclado.
 

@@ -4,7 +4,7 @@ Marked kan Rich Text Format (`.rtf`) en RTFD (`.rtfd`) documenten rechtstreeks o
 
 Dit werkt goed met documenten uit **Pages**, **TextEdit**, **Word** en andere apps die RTF of RTFD opslaan. Marked is nog steeds een **preview**-tool: u bewerkt in de oorspronkelijke toepassing en Marked wordt bijgewerkt wanneer u opslaat.
 
-## Hoe conversie werkt
+## Hoe conversie werkt [how-conversion-works]
 
 Marked converteert RTF naar HTML met behulp van de systeemtekstengine en vervolgens naar Markdown. De converter:
 
@@ -15,11 +15,11 @@ Marked converteert RTF naar HTML met behulp van de systeemtekstengine en vervolg
 
 Dezelfde conversiepijplijn wordt gebruikt voor het compileren van Scrivener RTF en voor RTF bestanden die in andere documenten zijn opgenomen.
 
-## Live voorbeeld
+## Live voorbeeld [live-preview]
 
 Wanneer u het bestand RTF of RTFD in een andere toepassing opslaat, detecteert Marked de wijziging en wordt het voorbeeld automatisch vernieuwd.
 
-## Afbeeldingen
+## Afbeeldingen [images]
 
 RTF definieert geen afzonderlijk "bijschrift"-veld op een manier waarop Cacao wordt geëxporteerd naar HTML. Wat in uw lay-out op een bijschrift lijkt, is meestal **normale tekst** in de volgende alinea, en Marked behoudt dat als hoofdtekst.
 
@@ -27,11 +27,11 @@ Ingesloten afbeeldingen en afbeeldingen in RTFD-bundels (bijvoorbeeld `pastedGra
 
 Marked gebruikt **niet** de bestandsnaam van de afbeelding als alternatieve tekst of een bijschrift met meerdereMarkdown figuren. Je zou `pastedGraphic.png` niet onder de afbeelding moeten zien, tenzij je die tekst in het document hebt getypt.
 
-## Exporteren en andere functies
+## Exporteren en andere functies [export-and-other-features]
 
-Na de conversie behandelt Marked het document als andere gecompileerde bronnen (vergelijkbaar met [Scrivener](Scrivener_Support.html) en [DOCX](Working_with_DOCX.html)): export, statistieken en de meeste preview-functies worden uitgevoerd op basis van de gegenereerde Markdown die is opgeslagen in de Watchers-cache.
+Na de conversie behandelt Marked het document als andere gecompileerde bronnen (vergelijkbaar met [Scrivener](Scrivener_Support.html) en [DOCX](Working_With_DOCX.html)): export, statistieken en de meeste preview-functies worden uitgevoerd op basis van de gegenereerde Markdown die is opgeslagen in de Watchers-cache.
 
-## Beperkingen
+## Beperkingen [limitations]
 
 De conversiekwaliteit is afhankelijk van de brontoepassing. Algemeen:
 
@@ -42,9 +42,9 @@ De conversiekwaliteit is afhankelijk van de brontoepassing. Algemeen:
 
 Voor een eenmalige plakactie zonder een bestand op te slaan, gebruikt u in plaats daarvan [Clipboard Preview](Opening_Files.html#from-the-clipboard).
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen [related-topics]
 
 - [PDF Support](PDF_Support.html) -- open PDF documenten als Markdown bronnen
-- [Working with DOCX](Working_with_DOCX.html) -- Word-documenten met het bijhouden van wijzigingen en opmerkingen
+- [Working with DOCX](Working_With_DOCX.html) -- Word-documenten met het bijhouden van wijzigingen en opmerkingen
 - [Opening Files](Opening_Files.html) -- slepen en neerzetten, Recent openen, klembord
 - [Exporting](Exporting.html) -- Kopieer Rich Text en sla RTFD op (exporteren), anders dan het openen van RTF als bronbestand

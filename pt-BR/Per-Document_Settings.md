@@ -6,7 +6,7 @@ Marcado permitirá que certos atributos de um documento sejam definidos no forma
 
 A maioria dos cabeçalhos MultiMarkdown são ignorados pela visualização, mas os seguintes são permitidos e afetam a renderização. Você pode incluir outros metadados a serem renderizados na saída final. Marcado irá apenas ignorar as chaves não listadas abaixo. Se você salvar como HTML e *não* incluir um modelo, Marcado renderizará todas as chaves de metadados conforme esperado.
 
-## Formato de metadados
+## Formato de metadados [metadata-format]
 
 Os metadados são inseridos na parte superior do arquivo Markdown ou imediatamente após qualquer cabeçalho YAML. Eles consistem em uma chave, seguida por dois pontos, espaços ou tabulações opcionais e o valor:
 
@@ -20,7 +20,7 @@ Múltiplas entradas de metadados devem estar em suas próprias linhas, mas sem q
 
 	# O início do texto do documento
 
-## Chaves de metadados marcadas
+## Chaves de metadados marcadas [marked-metadata-keys]
 
 ### Ocultando metadados para outros processadores [hidingmeta]
 
@@ -33,7 +33,7 @@ Múltiplas entradas de metadados devem estar em suas próprias linhas, mas sem q
 
 *Apenas certifique-se de que a chave de metadados comece no início da linha, sem espaços ou tabulações, e não coloque mais nada na linha após o valor.*
 
-### Estilos por documento
+### Estilos por documento [per-document-styles]
 
 A tecla "Estilo Marcado:" definirá um estilo de visualização para o documento. O valor pode ser o nome de um estilo padrão ou um nome ou caminho para qualquer [Estilo personalizado](Custom_Styles.html) que você definiu nas configurações. Se esta chave for encontrada e corresponder a um estilo que Marked conhece, esse estilo será usado para a visualização toda vez que o documento que a contém for carregado.
 
@@ -41,7 +41,7 @@ A tecla "Estilo Marcado:" definirá um estilo de visualização para o documento
 
 	Estilo Marcado: Cidadão Honrado
 
-### Idioma das citações
+### Idioma das citações [quotes-language]
 
 Por padrão, Marcado usa aspas no estilo inglês. Você pode modificar isso por documento com a chave "Quotes Language:". Os idiomas disponíveis são:
 
@@ -58,7 +58,7 @@ Por padrão, Marcado usa aspas no estilo inglês. Você pode modificar isso por 
 
 	Cria «aspas» no idioma francês.
 
-### Nível base do cabeçalho
+### Nível base do cabeçalho [base-header-level]
 
 Você pode definir o nível de cabeçalho a partir do qual Marcado inicia a contagem com a tecla "Base Header Level:". Deve ser um número de 1 a 6 e modificará a maneira como os cabeçalhos "#" são renderizados. Se você definir o nível do cabeçalho como 3, o que normalmente seria um cabeçalho de primeiro nível (h1) será renderizado como um cabeçalho de terceiro nível (h3) e os cabeçalhos subsequentes na hierarquia serão aumentados em 2.
 
@@ -76,7 +76,7 @@ Você pode definir o nível de cabeçalho a partir do qual Marcado inicia a cont
 
 	<h4>Este título será um h4</h4>
 
-### Processadores personalizados
+### Processadores personalizados [custom-processors]
 
 Conforme detalhado em [Processador Personalizado](Custom_Processor.html#preprocessor), você pode ativar ou desativar um processador personalizado e um pré-processador personalizado usando metadados:
 
@@ -87,7 +87,7 @@ Conforme detalhado em [Processador Personalizado](Custom_Processor.html#preproce
 
 O valor "Processador" pode ser definido como "multimarkdown" ou "desconto" para forçar o uso de um ou outro dos processadores internos. Esta configuração por documento não alterará a configuração padrão em {% prefspane Processor %}.
 
-### Imprimir cabeçalhos/rodapés
+### Imprimir cabeçalhos/rodapés [print-headersfooters]
 
 Você pode substituir as configurações em {% prefspane Export %} para imprimir cabeçalhos e rodapés usando as seguintes teclas:
 
@@ -98,9 +98,9 @@ Você pode substituir as configurações em {% prefspane Export %} para imprimir
 	imprimir centro do rodapé:
 	imprimir rodapé à direita:
 
-Isso pode incluir [variáveis de impressão](Exporting.html#headersandfooters) como `%title`, `%page`, `%total`, etc., bem como referências a outros metadados usando `%md_[key without spaces]`.
+Isso pode incluir [variáveis de impressão](Exporting.html#headers-and-footers) como `%title`, `%page`, `%total`, etc., bem como referências a outros metadados usando `%md_[key without spaces]`.
 
-### Imprimir margens
+### Imprimir margens [print-margins]
 
 Defina as margens da página para impressão e saída de PDF paginado com a tecla `Margins:`. Os valores estão em pontos; sufixos como `px`, `pt` e `em` são ignorados. Forneça dois números para margens verticais e horizontais ou quatro números para superior, direita, inferior e esquerda:
 
@@ -109,7 +109,7 @@ Defina as margens da página para impressão e saída de PDF paginado com a tecl
 
 As margens de metadados substituem as configurações {% prefspane Export %} e os campos de margem no painel de exportação de PDF.
 
-### Inserindo JavaScript
+### Inserindo JavaScript [inserting-javascript]
 
 Este método especifica os dados incluídos na tag `<head>` do documento. Marcado ignora a maioria dos valores desta chave, exceto na saída do documento completo, mas respeitará os scripts incluídos desta maneira. As tags de script definidas aqui não estarão no cabeçalho, porém serão anexadas antes da tag de fechamento `</body>`. O jQuery já está carregado e você pode tirar vantagem disso em qualquer script que injetar.
 

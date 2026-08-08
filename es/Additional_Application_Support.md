@@ -4,7 +4,7 @@
 
 Marked funciona con muchos editores y aplicaciones de escritura. Esta página cubre **configuraciones** compartidas, la **vista previa del portapapeles**, sugerencias para la **vista previa de transmisión** y recursos de secuencias de comandos. Las guías detalladas para aplicaciones populares se encuentran en sus propios temas de ayuda (consulte la sección **Aplicaciones compatibles** en la barra lateral).
 
-## Guías por aplicación
+## Guías por aplicación [per-app-guides]
 
 Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac.html) para el flujo de trabajo general. Si usa Obsidian, consulte [Vista previa de Marked vs Obsidian](Marked_vs_Obsidian_Preview.html) para decidir cuándo Marked agrega valor junto con la vista previa integrada de Obsidian.
 
@@ -35,7 +35,7 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | **VudúPad** | [VoodooPad](VoodooPad.html) |
 | **Patios de juegos Xcode** | [Parques infantiles de Xcode](Xcode_Playgrounds.html) |
 
-## Configuración de la aplicación
+## Configuración de la aplicación [application-settings]
 
 I> Varias integraciones exponen alternancias dentro de {% prefspane Apps %} y {% prefspane Preview %}.
 
@@ -43,17 +43,17 @@ I> Varias integraciones exponen alternancias dentro de {% prefspane Apps %} y {%
 
 Utilice estos paneles para valores predeterminados de enlaces wiki, transferencia de Scrivener, configuraciones de portapapeles transmitidas, opciones de incrustación de mapas mentales para OPML/OmniOutliner, integraciones de Obsidian u otros procesadores que dependen de editores cooperativos.
 
-## Vista previa del portapapeles
+## Vista previa del portapapeles [clipboard-preview]
 
 ![][Menú de vista previa del portapapeles]
 
 Markdown (o texto sin formato compatible) en el portapapeles se abre con {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Si el portapapeles contiene **HTML o RTF**, Marked lo convierte en una fuente similar a Markdown antes de la vista previa, incluida la detección aproximada de títulos cuando los párrafos RTF utilizan tamaños de fuente de hoja de estilo grandes.
 
-## Vista previa de transmisión
+## Vista previa de transmisión [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra y varios otros editores pueden insertar Markdown en Marked mientras escribe a través de **Vista previa de transmisión**. Consulte [Vista previa de transmisión](Streaming_Preview.html) para configuración y solución de problemas.
 
-## Guiones y paquete de bonificación
+## Guiones y paquete de bonificación [scripts-and-bonus-pack]
 
 Las automatizaciones para BBEdit, TextMate, DEVONthink, Emacs, Vim y más se envían con el [Paquete de bonificación marcado][bonificación]. Instale o adapte esos scripts cuando desee macros de barra de menú o editor más allá de las integraciones enumeradas anteriormente.
 

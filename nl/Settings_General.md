@@ -6,7 +6,7 @@ Opties in de {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Raam
+### Raam [window]
 
 Houd nieuwe vensters bovenaan
 : automatisch instellen dat nieuwe vensters boven andere toepassingen zweven.
@@ -29,7 +29,7 @@ Breng het bijgewerkte document naar voren
 Breng de focus terug naar de vorige app
 : Indien ingeschakeld, als een actie verhogen/brengen-op-update ervoor zorgt dat Marked de focus op de voorgrond overneemt, wordt de toetsenbordfocus teruggezet naar de app die zich vóór de update het meest bevond (zoals uw teksteditor). Indien uitgeschakeld, voert Marked deze focusoverdracht nooit uit. Als Marked niet vooraan staat, heeft deze optie geen effect.
 
-### Statusbalk
+### Statusbalk [status-bar]
 
 Stijlkiezer weergeven
 : toont de stijlkiezer in de onderste balk van het voorbeeldvenster.
@@ -45,7 +45,7 @@ Het aantal woorden is exclusief
 - **Ingesprongen codeblokken** (afgeschermde codeblokken zijn altijd uitgesloten)
 - **Afbeeldingsbijschriften**
 
-### Snelkoppelingen
+### Snelkoppelingen [shortcuts]
 
 Klik op het sneltoetsveld om een ​​sneltoetscombinatie op te nemen die een gebeurtenis activeert:
 

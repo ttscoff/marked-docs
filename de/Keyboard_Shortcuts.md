@@ -2,7 +2,7 @@
 
 Über das Hilfemenü oder mit {{opt}}{{cmd}}K öffnen Sie ein schwebendes Bedienfeld mit einer Kurzbefehl-Übersicht.
 
-### Kurzbefehle
+### Kurzbefehle [shortcuts]
 
 | Tastenkürzel | Funktion |
 | ---: | :--- |
@@ -29,12 +29,12 @@
 | **{{shift}}{{cmd}}0** | Textgröße zurücksetzen |
 | **{{cmd}}M** | Im Dock ablegen |
 | **{{opt}}{{shift}}{{cmd}}F** | Fenster im Vordergrund halten |
-| **{{ctrl}}{{cmd}}B** | Grenzen eingebetteter Dateien anzeigen |
-| **{{ctrl}}{{cmd}}L** | URLs validieren |
+| **{{ctrl}}{{cmd}}B** | Grenzen eingebundener Dateien anzeigen |
+| **{{ctrl}}{{cmd}}L** | Externe Links prüfen |
 | **{{ctrl}}{{cmd}}W** | Wortwiederholungen visualisieren |
 | **{{ctrl}}{{opt}}S** | Schnelllesen umschalten |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Dokument befragen… (Apple Intelligence) |
-| **{{opt}}{{cmd}}S** | Dokumentstatistik |
+| **{{opt}}{{cmd}}S** | Basisstatistik |
 | **{{opt}}{{shift}}{{cmd}}S** | Lesbarkeitsstatistik |
 | **{{cmd}}I** | Detaillierte Statistik |
 | **{{opt}}{{cmd}}C** | Modifizierten Prozessor umschalten |
@@ -44,8 +44,8 @@
 | **{{opt}}{{cmd}}{{left}}** | Alle Abschnitte einklappen |
 | **{{opt}}{{cmd}}{{right}}** | Alle Abschnitte ausklappen |
 | **{{shift}}{{cmd}}V** | Vorschau der Zwischenablage |
-| **{{cmd}}K** | Aus URL extrahieren |
-| **{{ctrl}}{{cmd}}S** | Zwischenablagevorschau speichern |
+| **{{cmd}}K** | URL in Markdown umwandeln |
+| **{{ctrl}}{{cmd}}S** | Zwischenablage-Vorschau speichern |
 | **{{cmd}}\ (Backslash)** | Fountain-/Scrivener-Kommentare umschalten |
 | **{{ctrl}}{{cmd}}C** | Kommentare und Fußnoten anzeigen |
 | **{{opt}}{{cmd}}F** | Scrivener-Dokumente filtern |
@@ -55,7 +55,7 @@
 
 
 
-### Schnellschalter
+### Schnellschalter [quick-toggles]
 
 Zusätzliche Tastenkürzel zum Umschalten gängiger globaler Einstellungen.
 
@@ -95,7 +95,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **S** | Automatisches Scrollen umkehren |
 | **{{shift}}{{l}}**/**{{r}}** | Automatisches Scrollen verlangsamen/beschleunigen |
 | **f** | Schnellwechsler öffnen |
-| **I** | Namen der aktuell eingebetteten Datei anzeigen |
+| **I** | Namen der aktuell eingebundenen Datei anzeigen |
 | **z** | Zoom-Übersicht umschalten |
 | **\[** / **\]** | Durch Zielhervorhebungen navigieren |
 | **{** / **}** | Durch alle Hervorhebungen navigieren |
@@ -104,7 +104,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **{{shift}}{{cmd}}F** | Sichtbaren Bereich fokussieren |
 [Vorschau-Navigation]
 
-### Inhaltsverzeichnis-Navigation
+### Inhaltsverzeichnis-Navigation [TableofContentsNavigation]
 
 Wenn das Inhaltsverzeichnis geöffnet ist, können Sie per Tastatur navigieren.
 

@@ -2,7 +2,7 @@
 
 Een zwevend paneel met een spiekbriefje voor snelkoppelingen is beschikbaar via het Help-menu of door op {{opt}}{{cmd}}K te drukken.
 
-### Snelkoppelingen
+### Snelkoppelingen [shortcuts]
 
 |                     Sneltoets | Functie |
 | --------------------------: | :------------------------------- |
@@ -55,7 +55,7 @@ Een zwevend paneel met een spiekbriefje voor snelkoppelingen is beschikbaar via 
 
 
 
-### Snelle schakelaars
+### Snelle schakelaars [quick-toggles]
 
 Extra sneltoetsen voor het wisselen van algemene algemene instellingen.
 
@@ -71,7 +71,7 @@ Extra sneltoetsen voor het wisselen van algemene algemene instellingen.
 | **{{ctrl}}{{opt}}{{shift}}H** | Proces binnen HTML |
 [Snelle schakelaars]
 
-### Voorbeeldnavigatie
+### Voorbeeldnavigatie [previewnavigation]
 
 Druk op "?" om op elk gewenst moment de volgende snelkoppelingen in het voorbeeldvenster te bekijken.
 
@@ -104,7 +104,7 @@ Druk op "?" om op elk gewenst moment de volgende snelkoppelingen in het voorbeel
 |        **{{shift}}{{cmd}}F** | Focusweergave |
 [Voorbeeldnavigatie]
 
-### Inhoudsopgave Navigatie
+### Inhoudsopgave Navigatie [TableofContentsNavigation]
 
 Wanneer de inhoudsopgave geopend is, kunt u via het toetsenbord navigeren.
 

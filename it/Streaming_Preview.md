@@ -6,7 +6,7 @@ Aprendo {% appmenu File, New, Streaming Preview %}, Marked riceve aggiornamenti 
 
 [Curio](Curio.html), [Drafts](Drafts.html) e [The Archive](The_Archive.html) documentano i propri interruttori e comandi di menu. nvUltra, nvALT, Bear e altri utilizzano lo stesso canale: apri l'anteprima in streaming in Marked, abilita l'integrazione nel tuo editor e inizia a digitare; gli aggiornamenti arrivano quasi in tempo reale.
 
-## Sviluppatori
+## Sviluppatori [developers]
 
 Per integrare l'anteprima in streaming con la tua app, devi solo inserire il testo markdown da visualizzare in anteprima negli appunti con nome. Utilizzare il seguente codice (Objective-C) per aggiornare, preferibilmente su un metodo didEndEditing o a intervalli limitati:
 
@@ -18,7 +18,7 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Dichiarare un URL di base per le risorse relative
+### Dichiarare un URL di base per le risorse relative [declaring-a-base-url-for-relative-assets]
 
 Puoi anche fornire un URL di base per l'anteprima dello streaming, consentendo agli URL relativi nelle immagini e in altre risorse di funzionare come farebbero nell'app di origine. Se l'URL di base include un nome file, il nome e l'estensione verranno resi disponibili ai processori personalizzati, ma non è obbligatorio farlo. Per includere l'URL di base, inserisci semplicemente un oggetto NSURL negli appunti:
 
@@ -42,7 +42,7 @@ pb.writeObjects([rawString, baseURL])
 
 Se viene utilizzata la versione di Marked del Mac App Store e baseURL non è accessibile tramite sandboxing, verrà richiesta l'autorizzazione la prima volta che l'URL viene caricato nell'anteprima.
 
-### Dichiarazione dell'applicazione sorgente
+### Dichiarazione dell'applicazione sorgente [declaring-the-source-application]
 
 Le app possono anche dichiararsi come fonte del contenuto di anteprima includendo una riga di metadati `source`. Ciò verrà solitamente eseguito all'interno di un commento HTML per consentire la compatibilità con entrambi i processori GFM e MultiMarkdown. Indica semplicemente il nome dell'app o l'ID del pacchetto:
 
@@ -52,6 +52,6 @@ source: Bear.app
 -->
 ```
 
-### Apertura dell'anteprima dello streaming in modo programmatico
+### Apertura dell'anteprima dello streaming in modo programmatico [opening-the-streaming-preview-programatically]
 
 La tua app può aprire l'anteprima dello streaming a livello di codice utilizzando il metodo del gestore URL `x-marked-3://stream/`. Questo metodo accetta anche un parametro `x-success` in cui puoi passare un ID bundle di un'app da attivare al completamento.

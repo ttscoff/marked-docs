@@ -4,7 +4,7 @@
 
 Esta página descreve como navegar pelas visualizações longas: o [Índice](#índice), [pesquisa rápida](#pesquisa rápida), [marcadores](#marcadores-e-minimapa) e o [Minimapa](#minimapa). Para atalhos de rolagem que se aplicam a todos os lugares (como {% kbd j %}/{% kbd k %}), consulte [Navegação pelo teclado](Interface_Features.html#keyboardnavigation) em [Recursos de interface](Interface_Features.html).
 
-## Índice
+## Índice [table-of-contents]
 
 ![][8]
 
@@ -29,19 +29,19 @@ Para obter uma lista condensada de teclas, consulte [Atalhos de teclado](Keyboar
 
 Veja também o [vídeo Navegação de documentos no YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Modo de tela inteira para o Índice
+### Modo de tela inteira para o Índice [full-screen-mode-for-the-table-of-contents]
 
 Quando uma janela de visualização marcada está em tela cheia, o Índice pode permanecer fixo à esquerda para navegação constante. Ainda alterna com {% kbd cmd T %}; clicar fora do sumário geralmente não o descartará neste layout.
 
 Em uma janela normal, clique no ícone na parte inferior do painel TOC para encaixá-lo como barra lateral; clique no ícone na parte superior da barra lateral para retornar ao modo pop-up.
 
-### Personalizando onde o sumário aparece
+### Personalizando onde o sumário aparece [customizing-where-the-toc-appears]
 
-O Índice pode ser injetado no documento exportado usando a [sintaxe especial](Special_Syntax.html#tocplacement) `<!--TOC-->`.
+O Índice pode ser injetado no documento exportado usando a [sintaxe especial](Special_Syntax.html#tableofcontents) `<!--TOC-->`.
 
 Adicione `max#` (por exemplo `<!--TOC max2-->`) para limitar quantos níveis de título aparecem.
 
-## Pesquisa rápida
+## Pesquisa rápida [fast-search]
 
 **Navegação rápida** combina o Índice com o filtro focado para que você possa pular com o mínimo de digitação:
 
@@ -55,11 +55,11 @@ Adicione `max#` (por exemplo `<!--TOC max2-->`) para limitar quantos níveis de 
 
 (Documentos anteriores se referiam a isso como "Fast Switcher"; é o mesmo recurso.)
 
-## Marcadores e Minimapa {#bookmarks-and-mini-map}
+## Marcadores e Minimapa [bookmarks-and-mini-map]
 
 Use o menu de visualização {% appmenu Gear %} e {% kbd Tab %} ({% kbd ⇥ %}) focando o documento ao lado de [pesquisar](Interface_Features.html#search) para colocar e revisitar os favoritos enquanto você folheia.
 
-### Configurando favoritos
+### Configurando favoritos [setting-bookmarks]
 
 Defina marcadores na posição de rolagem usando {% kbd shift 1 %}--{% kbd shift 9 %} e volte usando {% kbd 1 %}--{% kbd 9 %} sozinho. Use {% kbd n %} e {% kbd p %} para próximo/anterior na **ordem dos documentos**; {% kbd shift n %} e {% kbd shift p %} para próximo/anterior em ordem **numérica**.
 
@@ -75,7 +75,7 @@ Pressione {% kbd x %} duas vezes ({% kbd xx %}) para limpar todos os favoritos.
 
 Existem [mais atalhos de visualização](Keyboard_Shortcuts.html); pressione {% kbd h %} na visualização para obter uma lista de alerta ou {% kbd opt cmd K %} para a referência completa.
 
-### Minimapa {#minimapa}
+### Minimapa [minimap]
 
 Se o Minimapa estiver ativado nas configurações {% prefspane Preview %}, {% kbd 0 %} abre uma miniatura em escala de todo o documento ao longo da faixa de marcadores. Clique em qualquer lugar do mapa para rolar a visualização completa até lá. Os marcadores salvos aparecem como linhas horizontais com números (e títulos quando relevante).
 
@@ -87,6 +87,6 @@ Pressione {% kbd 0 %} ou Escape para fechar o Minimapa.
 
 **Nota de desempenho:** A geração do mapa pode pausar brevemente a visualização em documentos grandes; isso só é executado quando o mapa está visível ou após um redimensionamento.
 
-### Visão geral do zoom (relacionado)
+### Visão geral do zoom (relacionado) [zoom-overview-related]
 
 Para uma visão geral em escala de texto sem o Minimapa, consulte [Visão Geral do Zoom](Zoom_Overview.html) ({% kbd z %}).

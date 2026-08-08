@@ -2,7 +2,7 @@
 
 Met Marked zijn verschillende syntaxis mogelijk om het ene bestand in het andere op te nemen.
 
-## Marked Syntaxis
+## Marked Syntaxis [marked-syntax]
 
 U kunt externe bestanden in één voorbeelddocument opnemen door de speciale syntaxis `<<[path/file]` aan het begin van een regel te gebruiken. De regel moet boven en onder blanco regels bevatten en er wordt aangenomen dat het pad relatief is ten opzichte van het hoofddocument, tenzij het begint met een schuine streep (`/`) of een tilde (`~`). Slash (hoofdmap) en tilde (thuismap) kunnen worden gebruikt om absolute paden naar bestanden te definiëren. Er is geen pad nodig als de externe bestanden zich in dezelfde map bevinden als het hoofddocument. Plaats gewoon de bestandsnaam (hoofdlettergevoelig en inclusief extensie) tussen vierkante haakjes.
 

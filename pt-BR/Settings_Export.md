@@ -10,7 +10,7 @@ Opções em {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Exportar perfil
+### Exportar perfil [export-profile]
 
 Exportar perfil
 : selecione um perfil salvo no menu pop-up. Os perfis armazenam um conjunto completo de preferências de exportação para alternar rapidamente entre fluxos de trabalho (por exemplo, impressão de PDF versus HTML da web). Consulte [Exportar perfis](Exporting.html#export-profiles).
@@ -21,7 +21,7 @@ Novo
 Gerenciar
 : abra o gerenciador de perfis para renomear, duplicar ou excluir perfis.
 
-### Imprimir/PDF
+### Imprimir/PDF [printpdf]
 
 Desative links/destaques ao exportar PDF ou imprimir
 : remove a formatação (sublinhado e cor) dos links durante a impressão.
@@ -68,11 +68,11 @@ Quebra de página depois
 Marcadores de nível do índice
 : use os menus suspensos para definir o marcador de item da lista para cada nível de recuo em um sumário.
 
-### Cabeçalhos e rodapés
+### Cabeçalhos e rodapés [headers-and-footers]
 
 Configure fonte, logotipo, campos de cabeçalho/rodapé, formatos de data e hora, inclusão de primeira página, deslocamento de numeração de página e bordas. Os marcadores de campo incluem `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` e outros.
 
-Consulte [Cabeçalhos e Rodapés](Exporting.html#headersandfooters) em [Exportando](Exporting.html) para referências e exemplos de espaços reservados. Consulte [Formatos de data e hora](Exporting.html#dateandtimeformats) para códigos de formato `%date` e `%time`.
+Consulte [Cabeçalhos e Rodapés](Exporting.html#headers-and-footers) em [Exportando](Exporting.html) para referências e exemplos de espaços reservados. Consulte [Formatos de data e hora](Exporting.html#dateandtimeformats) para códigos de formato `%date` e `%time`.
 
 Incluir na primeira página
 : Se a opção de cabeçalho e/ou rodapé estiver desmarcada, a primeira página não imprimirá o tipo especificado.

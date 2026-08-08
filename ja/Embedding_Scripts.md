@@ -4,7 +4,7 @@
 
 Marked に追加の JavaScript を埋め込む方法はいくつかあります。
 
-## ドキュメントごとの JavaScript を含む
+## ドキュメントごとの JavaScript を含む [including-javascript-per-document]
 
 コンテンツ自体の `<script>` タグを使用して、単一のドキュメントにスクリプトを含めることができます。これは、特定のドキュメントでのみ必要なデータ視覚化用の [D3](https://d3js.org/) のようなライブラリに役立ちます。
 
@@ -18,7 +18,7 @@ MultiMarkdown をプロセッサとして使用している場合は、メタデ
 
 コンテンツが変更されたときに含まれるスクリプトを更新するには、[フック](#hooks) を参照してください。
 
-## JavaScript を含む
+## JavaScript を含む [including-javascript]
 
 ローカル ファイル、CDN から、または生のコードを貼り付けることで、独自の JavaScript を組み込むことができます。これにアクセスするには、{% prefspane Style %} を開き、*カスタム ルール* ボタンをクリックします。
 
@@ -35,9 +35,9 @@ URLからJavaScriptを挿入
 JavaScript を挿入する
 : 独自の JavaScript コードを作成/貼り付けることができるコード エディターが開きます。
 
-これらのスクリプトは、プレビューの最後、ドキュメント タグの前に挿入されます。 init 関数を呼び出す必要がある場合、またはプレビューが更新されるたびに更新する必要がある場合は、[Raw JavaScript を含む](#rawjs) を参照し、Marked の [フック](#hooks) についてよく理解してください。
+これらのスクリプトは、プレビューの最後、ドキュメント タグの前に挿入されます。 init 関数を呼び出す必要がある場合、またはプレビューが更新されるたびに更新する必要がある場合は、[Raw JavaScript を含む](Embedding_Scripts.html#hooks) を参照し、Marked の [フック](#hooks) についてよく理解してください。
 
-## マーメイドとその他のスクリプト {#mermaid}
+## マーメイドとその他のスクリプト [mermaid]
 
 jQuery はデフォルトで含まれており、以下のいずれかの方法を使用して Marked に追加するスクリプトでそれを使用できます。
 
@@ -47,7 +47,7 @@ Mermaid コンテンツが存在する場合、{% prefspane Style %} の下部�
 
 デフォルトで含めたい特定のライブラリがある場合は、[BrettTerpstra.com フォーラム](https://forum.brettterpstra.com/) または [サポート サイト](https://support.markedapp.com/questions/add) でお知らせください。
 
-## フック [フック]
+## フック [フック] [hooks]
 
 最近のバージョンでは、Marked はコンテンツを更新するときにページ全体の更新を実行しなくなり、ページの読み込みを必要とせずに新しいコンテンツを DOM に挿入します。これは、ページの読み込み時にトリガーされるスクリプトが含まれており、コンテンツが更新されても再トリガーされないことを意味します。 Marked は、これに対応する「フック」機能を提供します。フックを登録するには、[`Marked.hooks.register()` 関数](https://markedapp.com/jsapi/Marked.hooks.html#.register__anchor) を呼び出す 2 番目のスクリプト ブロックを含める必要があります。このブロックはトリガー (この場合は「update」) と実行する関数を受け取ります。
 

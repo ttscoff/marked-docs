@@ -2,38 +2,38 @@
 
 Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that will open a file in Marked when clicked. You can perform several actions, as listed below.
 
-## The URL scheme
+## The URL scheme [the-url-scheme]
 
 Marked's URL scheme is `x-marked`, called with options like `x-marked://open?file=/Users/username/Desktop/report.md`.
 
 You can specifically target Marked 3 by using `x-marked-3` instead of `x-marked`. The methods and parameters are exactly the same as `x-marked`, but only Marked 3 will respond to `x-marked-3`.
 
-## Calling from the command line/scripts
+## Calling from the command line/scripts [calling-from-the-command-linescripts]
 
 Calling the url handler from the command line or a script can be done using the macOS [`open` command](http://brettterpstra.com/2014/08/06/shell-tricks-the-os-x-open-command/):
 
 	open 'x-marked://open?file=filename.md'
 	open 'x-marked://refresh?file=filename.md'
 
-### Calling in the background
+### Calling in the background [calling-in-the-background]
 
 You can call the `open` command with the `-g` flag to perform the result in the background without switching focus. To perform the command in the background and raise the window to the top without stealing focus:
 
 	open -g 'x-marked://open?file=filename.md&raise=true'
 
-## Optional parameters
+## Optional parameters [optional-parameters]
 
-### x-success
+### x-success [x-success]
 
 Any command can provide an **x-success** query parameter. Set this to a url to be called after performing the command. For example: `x-marked://open/?file=filename.md&x-success=ithoughts:`. You can also provide a bundle identifier (such as `com.googlecode.iterm`) to open an application that doesn't have a URL scheme.
 
-### raise
+### raise [raise]
 
 A **raise** parameter can be passed with any command that accepts a `file` parameter or affects all windows. After the action is performed, the affected window(s) will raise above all other windows (all applications) before returning or executing a callback.
 
 	"x-marked://refresh?file=filename.md&raise=true"
 
-### speedread
+### speedread [speedread]
 
 A **speedread** parameter can be passed with URL handler commands that open a preview document (`open`, `paste`, `preview`, and `stream`). Set `speedread=1` to automatically start Speed Read as soon as the target preview is ready.
 
@@ -45,15 +45,15 @@ Examples:
 
 	x-marked://paste?speedread=1
 
-# Available commands
+# Available commands [available-commands]
 
 The following commands are available to the `x-marked` URL handler.
 
-## addstyle
+## addstyle [addstyle]
 
 Add a new custom style to Marked.
 
-##### Parameters:
+##### Parameters: [parameters]
 
 **css**: URL encoded CSS text to write to a custom style. Required unless passing a **file** parameter.
 
@@ -69,19 +69,19 @@ With the **css** parameter, this will be used as both the filename when writing 
 
 If you include a name with the file parameter, the menu item will get that name instead of the filename. If you use the same name again with a different path, the menu item will be updated with the new path rather than adding a second item with the same name.
 
-## defaults
+## defaults [defaults]
 
 Set user Settings. Accepts a list of keys and values as query parameters. Only existing keys will be set. If the preference change requires a refresh, all windows will refresh automatically unless `refresh=0` is passed.
 
 Use 1 for true and 0 for false on boolean values.
 
-##### Parameters:
+##### Parameters: [parameters-2]
 
 **refresh** _(optional)_: if set to 0, automatic refresh of open preview windows is disabled
 
 * Default: 1 (true)
 
-##### Example:
+##### Example: [example]
 
 	x-marked://defaults?syntaxHighlight=1&includeMathJax=0
 
@@ -96,17 +96,17 @@ includeMathJax
 processor
 : set to `multimarkdown` or `mmd` to change the processor to MultiMarkdown, `discount` or `gfm` to use the Discount processor
 
-h1IsPageBreak, h1IsPageBreak, breakBeforeFootnotes
+h1IsPageBreak, h2IsPageBreak, breakBeforeFootnotes
 : Automatic page breaks in export before header levels 1 and 2, and footnotes.
 
 
-## dingus
+## dingus [dingus]
 
 Open the Markdown Dingus for testing different Markdown processors.
 
 	x-marked://dingus
 
-##### Parameters:
+##### Parameters: [parameters-3]
 
 **processor** (optional): Specify which processor to select by default. Valid values:
 
@@ -122,13 +122,13 @@ Examples:
 
 *Note:* This opens the Markdown Dingus window, which allows you to test and compare different Markdown processors (MultiMarkdown, CommonMark (GFM), Discount, and Kramdown) side by side. Perfect for experimenting with Markdown syntax and understanding processor differences.
 
-## stylestealer / steal
+## stylestealer / steal [stylestealer-steal]
 
 Open the Style Stealer HUD. Useful when you want to capture CSS from a live page or run a manual content extraction session without launching it through the UI.
 
 	Synonyms: x-marked://stylestealer … , x-marked://steal …
 
-##### Parameters:
+##### Parameters: [parameters-4]
 
 **url** _(optional)_: A URL to pre-populate in the Style Stealer window. If omitted the HUD opens blank.
 
@@ -137,13 +137,13 @@ Examples:
 - `x-marked://stylestealer?url=https%3A%2F%2Fmarkedapp.com`
 - `x-marked://steal/https:%2F%2Fexample.com`
 
-## importurl / markdownify
+## importurl / markdownify [importurl-markdownify]
 
 Open the "Import URL" (Content Extractor) window so you can run the Markdownifier pipeline manually. This does **not** perform the extraction automatically — that is handled by the `extract` command below.
 
 	Synonyms: x-marked://importurl … , x-marked://markdownify …
 
-##### Parameters:
+##### Parameters: [parameters-5]
 
 **url** _(optional)_: Prefills the Import URL field. If omitted the window opens with an empty field waiting for you to paste a link.
 **html** _(optional, markdownify only)_: When provided on `x-marked://markdownify`, this should be URL-encoded raw HTML. Marked will convert the HTML to Markdown using the same rules as Clipboard Preview and open it in a transient document, as if you had pasted that HTML into a Clipboard Preview window.
@@ -153,11 +153,11 @@ Examples:
 - `x-marked://importurl?url=https%3A%2F%2Fexample.com%2Farticle`
 - `x-marked://markdownify/https:%2F%2Fnews.ycombinator.com`
 
-## do
+## do [do]
 
 Run a JavaScript command in a document window. Marked's entire JavaScript API is [documented here](https://markedapp.com/help/jsapi/).
 
-##### Parameters:
+##### Parameters: [parameters-6]
 
 **js** _(required)_: query string containing a JavaScript command
 
@@ -174,11 +174,11 @@ Run a JavaScript command in a document window. Marked's entire JavaScript API is
 
 Will operate on frontmost window if a filename is not given (or "all" is not passed)
 
-## help
+## help [help]
 
 Open the Marked internal help system, optionally specifying a topic. This is primarily for use internally, but accessible via URL. A url to any given section can be copied by right clicking on the bookmark icon to the right of a headline and selecting __Copy Link__. **Marked 3** in-app help and search use the `x-marked-3` scheme for these links so macOS opens them in Marked 3 when Marked 2 is also installed; the examples below use that form.
 
-##### dingus
+##### dingus [dingus-2]
 
 Open the Markdown Dingus for testing different Markdown processors.
 
@@ -200,7 +200,7 @@ Examples:
 
 *Note:* This opens the Markdown Dingus window, which allows you to test and compare different Markdown processors (MultiMarkdown, CommonMark (GFM), Discount, and Kramdown) side by side. Perfect for experimenting with Markdown syntax and understanding processor differences.
 
-##### Parameters:
+##### Parameters: [parameters-7]
 
 **page** _(optional)_: The exact title of an existing page, with optional anchor hash
 
@@ -213,13 +213,13 @@ The target may be specified by path alone (without query string):
 	x-marked-3://help/Keyword_Highlighting:editingkeywords
 
 
-## extract
+## extract [extract]
 
 Extract content from a web URL and open it as a new document in Marked.
 
 	x-marked://extract?url=https://example.com
 
-##### Parameters:
+##### Parameters: [parameters-8]
 
 **url** _(required)_: The web URL to extract content from. Must start with `http://` or `https://`
 
@@ -236,7 +236,7 @@ Extract content from a web URL and open it as a new document in Marked.
 - When `manual=true`, Marked opens the Style Stealer, pre-fills the URL field (if provided), suppresses any automatic Open dialog, and lets you interactively select and extract styles/content before saving.
 - When omitted or `false`, Marked runs the automatic extractor (Markdownifier) and opens the result directly as a new temporary document.
 
-##### Examples:
+##### Examples: [examples]
 
 	x-marked://extract?url=https://news.ycombinator.com
 
@@ -248,15 +248,15 @@ Extract content from a web URL and open it as a new document in Marked.
 
 *Note:* This command uses Marked's content extraction service to fetch web pages, extract clean content using Readability, convert to Markdown format, and open the result in a new temporary document. The extracted content includes metadata (title, source URL, date) and is formatted as clean Markdown. Perfect for quickly capturing and editing web content.
 
-## open
+## open [open]
 
 Opens the specified document in Marked.
 
 	x-marked://open?file=/Users/username/Desktop/report.md
 
-##### Parameters:
+##### Parameters: [parameters-9]
 
-**file** *(required)*: The full POSIX path to the document to be opened, or comma-separated list of paths
+**file** *(required)*: The full POSIX path to the document to be opened, or a comma-separated list of paths. Commas inside a filename are allowed; Marked only treats a comma as a multi-file separator when it follows a file extension (for example `.md,`) or when the next path starts with `/` or `~`.
 
 **speedread** *(optional)*: Set to `1` to start Speed Read automatically after opening.
 
@@ -268,47 +268,47 @@ If the file path provided doesn't exist or can't be opened, Marked will still co
 
 Marked will also open files if only the path of a file is called on the URL handler, e.g. `x-marked:///Users/username/Desktop/report.md`.
 
-## paste
+## paste [paste]
 
 Create a new document from the current contents of the clipboard.
 
 	x-marked://paste
 
-##### Parameters:
+##### Parameters: [parameters-10]
 
 **speedread** *(optional)*: Set to `1` to start Speed Read automatically after opening the clipboard preview.
 
 *Note:* This creates a temporary document using the "Preview Clipboard" command. Any text in your clipboard is added to a new, blank document, which is then opened in Marked. If closed without saving, it's discarded.
 
-## preview
+## preview [preview]
 
 Preview specified text in a new document.
 
 	x-marked://preview?text=Some%20text%20to%20%2A%2Apreview%2A%2A%0A
 
-##### Parameters:
+##### Parameters: [parameters-11]
 
 **text** *(required)*: The text to insert into the preview. Percent-encoded text will be unencoded prior to viewing the document.
 
 **speedread** *(optional)*: Set to `1` to start Speed Read automatically after opening the preview text.
 
-## stream
+## stream [stream]
 
 Open a streaming clipboard preview window.
 
 	x-marked://stream
 
-##### Parameters:
+##### Parameters: [parameters-12]
 
 **speedread** *(optional)*: Set to `1` to start Speed Read automatically after opening the streaming preview.
 
 *Note:* This creates a temporary document using the "Preview Clipboard" command. The passed text is added to a new, blank document, which is then opened in Marked. If closed without saving, it's discarded.
 
-## refresh
+## refresh [refresh]
 
 Refresh a document preview or all open previews.
 
-##### Parameters:
+##### Parameters: [parameters-13]
 
 **file**: query parameter containing comma-separated paths/filenames (files must be currently open in Marked). Calling with no `file` parameter or `?file=all` will refresh all open windows.
 
@@ -324,11 +324,11 @@ If called with no `file` parameter but document paths specified in the url, path
 
 	x-marked://refresh/filename1/filename2
 
-## style
+## style [style]
 
 Set the preview style (CSS) for one or more documents.
 
-##### Parameters:
+##### Parameters: [parameters-14]
 
 **css** _(required)_: query string containing the name or path of a style. Styles must be present in Marked's style menu as default or manually-added custom styles.
 

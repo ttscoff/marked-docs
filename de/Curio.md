@@ -2,7 +2,7 @@
 
 [Curio][curio] ist eine visuelle Brainstorming- und Notizen-App, die das gerade bearbeitete Element in den **Streaming-Vorschau**-Kanal von Marked streamen kann.
 
-## Auswahl zu Marked streamen
+## Auswahl zu Marked streamen [stream-selected-to-marked]
 
 1. Wählen Sie in Marked {% appmenu Ablage, Neu, Streaming-Vorschau %} aus, damit ein Streaming-Vorschaufenster bereit ist.
 2. Aktivieren Sie in Curio **View → Stream Selected to Marked**.

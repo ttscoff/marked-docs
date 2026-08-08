@@ -1,0 +1,52 @@
+# Marked Settings Localization Patch
+# Locale: es (Spanish)
+# Generated: 2026-07-26
+# Feature: Scrivener line-break preference
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# New Applications → Scrivener setting: "Treat single line breaks as"
+# Popup options: "Line breaks" (default) and "Paragraphs".
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by this option.
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 4
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 4
+
+"setting.scrivenerLineBreaks" = "Tratar los saltos de línea simples como";
+# EN: Treat single line breaks as
+# DRAFT: Tratar los saltos de línea simples como
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Saltos de línea";
+# EN: Line breaks
+# DRAFT: Saltos de línea
+
+"setting.scrivenerLineBreaks.paragraphs" = "Párrafos";
+# EN: Paragraphs
+# DRAFT: Párrafos
+
+"tooltip.scrivenerLineBreaks" = "Cómo interpretar un salto de línea simple dentro de un párrafo de Scrivener. «Saltos de línea» mantiene las líneas consecutivas como saltos de línea (sujeto a «Conservar saltos de línea en los párrafos»); «Párrafos» inicia un nuevo párrafo. Las tablas con pipes y los bloques de código delimitados no se ven afectados.";
+# EN: How to interpret a single line break within a Scrivener paragraph. Line breaks keep consecutive lines as line breaks (subject to Preserve line breaks); Paragraphs start a new paragraph. Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Cómo interpretar un salto de línea simple dentro de un párrafo de Scrivener. «Saltos de línea» mantiene las líneas consecutivas como saltos de línea (sujeto a «Conservar saltos de línea en los párrafos»); «Párrafos» inicia un nuevo párrafo. Las tablas con pipes y los bloques de código delimitados no se ven afectados.
+
+=== END Settings.strings (gaps) ===

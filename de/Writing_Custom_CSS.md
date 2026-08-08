@@ -4,7 +4,7 @@ Marked verfügt über einen integrierten Stileditor und kann eigene CSS-Dateien 
 
 Mit dem Editor erstellen Sie ansprechende Stile – oder wenn Sie gerade genug CSS können, um gefährlich zu sein, verpassen Sie Marked jedes beliebige Aussehen.
 
-## Erste Schritte
+## Erste Schritte [getting-started]
 
 Unter [markedapp.com/styles](https://markedapp.com/styles/) gibt es eine Galerie mit Eigenen Stilen, erstellt vom Entwickler und von Nutzern. In der Galerie können Sie Stile in der Vorschau ansehen und direkt in Marked installieren. Jeden installierten Stil können Sie im Finder anzeigen, um ihn zu prüfen und zu ändern. Die Galerie öffnen Sie mit einem internen Viewer über {% appmenu Stil, Eigenen Stil erzeugen %}, oder Sie klicken auf das Stift-Symbol (Bearbeiten) neben einem bearbeitbaren Stil im Stil-Manager. Möchten Sie einen integrierten Stil bearbeiten, müssen Sie ihn zuerst im Manager duplizieren.
 
@@ -18,11 +18,11 @@ Wenn Sie für den persönlichen Gebrauch gestalten, gibt es keine Regeln. Aktivi
 
 Wenn Sie Ihre CSS-Kreation teilen möchten, sollten Sie einige Punkte beachten. Erstens gibt es einige Body-Klassen, auf die Stile angewendet werden müssen:
 
-## Body-Klassen
+## Body-Klassen [body-classes]
 
 Die folgenden Stile müssen in jedem Marked-CSS enthalten sein, das geteilt werden soll. Über die Body-Klassen können Sie jeden Selektor unter verschiedenen Einstellungsoptionen gezielt ansprechen und ändern.
 
-### Inverted
+### Inverted [inverted]
 
 Wenn der Nutzer {% appmenu Vorschau, Dunkelmodus %} auswählt, wird dem Body-Tag die Klasse `inverted` hinzugefügt. Damit sprechen Sie die kontrastreichen Hell-auf-Dunkel-Stile gezielt an.
 
@@ -44,7 +44,7 @@ Invertierte Stile sollen nur in der Vorschau greifen, nicht im Druck – schrän
 }
 ```
 
-### Poetry
+### Poetry [poetry]
 
 Der Nutzer kann wählen, ob mit Tabulator eingerückter Text als Poesie oder als Code behandelt wird. Der einzige Unterschied: pre/code-Blöcke werden im Poesie-Modus etwas – nun ja – poetischer gestaltet. Die Klasse `poetry` wird auf das Body-Tag angewendet.
 
@@ -61,7 +61,7 @@ Gestalten Sie es so kreativ, wie Sie möchten – hier ist ein einfacher Ausschn
 }
 ```
 
-## Sonderfälle
+## Sonderfälle [special-cases]
 
 Auch Tabellen, `figure`/`figcaption` sowie die Sonderfälle `a.footnote` und `div.footnotes>a` müssen bedacht werden. Es gibt keine festen Regeln für den Umgang damit; werfen Sie aber einen Blick auf die Standardstile, um ein Gefühl dafür zu bekommen, welche CSS-Regeln Marked braucht.
 
@@ -97,7 +97,7 @@ Hat Ihr Design zusätzliches Padding oder eine feste Breite, passen Sie die `max
 
 Binden Sie unbedingt Druckstile ein, die Hintergrundfarben, festes Scrollen und reine Vorschau-Bedienelemente entfernen. Marked bietet Ihnen zwei Wege, Druck- und PDF-Ausgabe gezielt anzusprechen.
 
-### `@media print`
+### `@media print` [media-print]
 
 Standard-CSS-Druckregeln greifen, wenn Sie aus Marked drucken oder wenn der PDF-Export print-Medien verwendet:
 
@@ -108,7 +108,7 @@ Standard-CSS-Druckregeln greifen, wenn Sie aus Marked drucken oder wenn der PDF-
 }
 ```
 
-### Die Klasse `.mkprinting`
+### Die Klasse `.mkprinting` [the-mkprinting-class]
 
 Wenn Marked ein Dokument für den **PDF-Export** oder die **Druck-/PDF-Vorschau** ({% kbd cmd P %}) vorbereitet, fügt es dem `<body>`-Tag die Klasse `mkprinting` hinzu (neben Export-Klassen wie `bandw`, `breakAfterTOC` und der `mkstyle--*`-Klasse Ihres Stils). Markeds integrierte Designs nutzen für die meisten druckspezifischen Regeln diese Klasse, statt sich allein auf `@media print` zu verlassen.
 
@@ -152,7 +152,7 @@ Das Ausblenden von Links im Druck wird außerhalb des Haupt-Designs gehandhabt, 
 
 Also los. Verwandeln Sie Ihr Blog-Design, erstellen Sie einen erstklassigen Druckstil für PDF-Dokumente oder gestalten Sie die perfekte Vorschau für Ihre Art zu schreiben. Wenn Sie etwas Großartiges erschaffen, [teilen Sie es mit der Community](https://markedapp.com/styleshare/).
 
-## Zusätzliche CSS-Einstellungen
+## Zusätzliche CSS-Einstellungen [additional-css-settings]
 
 Unter {% prefspane Style %} können Sie zusätzliches CSS bearbeiten. Diese Stile werden an jedes geladene Design angehängt und lassen sich für universelle Änderungen an allen Designs nutzen.
 
@@ -162,7 +162,7 @@ Mit [hoher Spezifität](#overridingspecificity), `@media`-Abfragen für Druck un
 
 Safaris Web Inspector ist der einfachste Weg, um genau zu sehen, welches HTML und CSS Marked erzeugt, und um live mit Eigenen Stilen zu experimentieren.
 
-### Das Entwickeln-Menü in Safari aktivieren
+### Das Entwickeln-Menü in Safari aktivieren [enabling-the-develop-menu-in-safari]
 
 1. Öffnen Sie Safari und wählen Sie {% appmenu Safari, Einstellungen… %}.
 2. Wählen Sie den Tab **Erweitert**.
@@ -172,7 +172,7 @@ Nach der Aktivierung erscheint in Safaris Menüleiste ein **Entwickeln**-Menü.
 
 ![Safari „Entwickeln“-Menü mit Marked-Dokumenten][develop-menu]
 
-### Ein Marked-Dokument untersuchen
+### Ein Marked-Dokument untersuchen [inspecting-a-marked-document]
 
 1. Wechseln Sie bei geöffnetem Vorschaufenster in Marked zu Safari.
 2. Wählen Sie in der Menüleiste **Entwickeln → _\<Ihr Mac-Name\>_ → Marked → _\<Dokumenttitel\>_**.
@@ -191,13 +191,13 @@ Von hier aus können Sie:
 
 ![Untersuchen einer Marked-Vorschau mit Safaris Web Inspector][inspecting]
 
-## Eigenes CSS teilen
+## Eigenes CSS teilen [sharing-custom-css]
 
 Über {% appmenu Stil, Eigenen Stil teilen %} öffnen Sie die Sharing-App in Ihrem Webbrowser. Ziehen Sie Ihr CSS in die Ablagezone (oder klicken Sie, um es von der Festplatte auszuwählen) und laden Sie das CSS für Ihren Eigenen Stil hoch.
 
 Geteilte Stile müssen erst vom Entwickler freigegeben werden, bevor sie in der Galerie erscheinen – Sie sehen also nicht sofort ein Ergebnis.
 
-## Weitere Tipps
+## Weitere Tipps [other-tips]
 
 ### Übergeordnete Spezifität [overridingspecificity]
 
@@ -205,7 +205,7 @@ Innerhalb der Marked-Vorschau wird eine Body-Klasse hinzugefügt, die auf dem Da
 
 	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Inhaltsverzeichnis gestalten
+### Inhaltsverzeichnis gestalten [table-of-contents-styling]
 
 Wenn Sie mit dem Token `<!--toc-->` ein [Inhaltsverzeichnis einfügen](Special_Syntax.html#tableofcontents), können Sie die Einstellungen für die Ebenenmarkierungen des Inhaltsverzeichnisses in einem Eigenen Stil überschreiben, indem Sie mit `#wrapper` die Spezifität erhöhen:
 

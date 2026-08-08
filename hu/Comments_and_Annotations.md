@@ -4,7 +4,7 @@
 
 A Marked speciálisan kezeli a megjegyzéseket és megjegyzéseket.
 
-## Annotációs források
+## Annotációs források [annotation-sources]
 
 Megjelölve felismeri a következőtől érkező megjegyzéseket:
 
@@ -12,7 +12,7 @@ Megjelölve felismeri a következőtől érkező megjegyzéseket:
 - A CriticMarkup megjegyzései
 - A Microsoft Word megjegyzései és módosításai
 
-## A megjegyzések oldalsávja
+## A megjegyzések oldalsávja [the-comments-sidebar]
 
 Az összes megjegyzés megjelenik egy oldalsávban, és rejtve van a dokumentum előnézetében. A kommentárok oldalsávjának megjelenítéséhez használja a **Gear Menu -> Proofing -> Show Comments** menüpontot, vagy nyomja meg a {% kbd ctrl cmd C %} gombot.
 

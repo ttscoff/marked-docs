@@ -2,7 +2,7 @@
 
 Transformer votre Markdown en un document fini.
 
-## Exporter après aperçu
+## Exporter après aperçu [export-after-preview]
 
 L'aperçu de Marked est la base de l'exportation : ce que vous voyez dans la fenêtre d'aperçu est ce que vous obtenez au format PDF, DOCX, EPUB et d'autres formats (paramètres spécifiques à l'exportation modulo tels que les marges, les en-têtes et la pagination). Configurez votre style et relisez d'abord l'aperçu, puis exportez lorsque le document est prêt. Voir [Aperçu Live Markdown sur Mac](Live_Markdown_Preview_on_Mac.html) pour le flux de travail d'aperçu complet.
 
@@ -16,13 +16,13 @@ Le **Panneau d'exportation** est un panneau de type projecteur piloté par clavi
 
 Le panneau d'exportation vous permet d'enregistrer votre document au format HTML, PDF d'une seule page, PDF paginé, package RTF ou fichier Microsoft Word DOC ou DOCX. Vous pouvez également enregistrer dans un nouveau fichier Markdown (les fonctionnalités spécifiques à Markdown seront rendues et leurs résultats inclus), un document ouvert (ODT) ou au format OPML pour une utilisation dans d'autres applications.
 
-## Copier le HTML
+## Copier le HTML [copyhtml]
 
 Utilisez la fonction Copier HTML pour placer le code source HTML de votre aperçu dans votre presse-papiers sans aucun problème. Vous pouvez le sélectionner dans le menu Action ou simplement appuyer sur {% kbd shift cmd C %}. Le code HTML copié sera un extrait prêt à être inséré dans un blog, un forum ou un document HTML.
 
 Vous n'avez pas besoin d'être dans la vue source pour copier. Avec l'aperçu concentré (cliquez dessus), tapez simplement {% kbd shift cmd C %} et vous verrez un message contextuel vous informant que la source est dans votre presse-papiers.
 
-## Enregistrer le code HTML
+## Enregistrer le code HTML [save-html]
 
 ![][exporthtmlaccessory]
 
@@ -32,7 +32,7 @@ Vous pouvez éventuellement inclure n'importe lequel des styles de Marked (ou l'
 
 De plus, vous pouvez choisir d'incorporer toutes les images locales incluses dans le document dans le code HTML exporté, ce qui vous permet d'avoir un document autonome qui peut être hébergé n'importe où sans avoir besoin de déplacer les images avec lui. Cela ne fonctionne qu'avec les images référencées sur votre disque local avec des chemins relatifs ou absolus. Évitez d'utiliser les chemins `file:///` si vous souhaitez utiliser cette fonctionnalité.
 
-## Exporter Markdown au format PDF sur Mac
+## Exporter Markdown au format PDF sur Mac [export-markdown-to-pdf-on-mac]
 
 Imprimer/Aperçu PDF ({% kbd cmd P %}) fera apparaître une boîte de dialogue d'impression standard. Chaque style d'aperçu dans Marked est accompagné de ses propres styles d'impression qui suppriment les arrière-plans, modifient la taille des caractères et fournissent des bordures. L'aperçu s'imprimera en fonction du style actuellement sélectionné.
 
@@ -48,7 +48,7 @@ Les marges de page peuvent être définies dans le {% prefspane Export %} et aff
 
 Vous pouvez remplacer les paramètres de marge par document à l'aide de la clé de métadonnées `Margins:`. Les valeurs sont interprétées comme des points ; les suffixes d'unité tels que `px`, `pt` et `em` sont ignorés. Utilisez deux chiffres pour les marges verticales et horizontales (`10 20`), ou quatre chiffres pour le haut, la droite, le bas et la gauche (`10, 20, 10, 20` ou `10 20 10 20`). Les marges des métadonnées remplacent les paramètres {% prefspane Export %}.
 
-### En-têtes et pieds de page
+### En-têtes et pieds de page [headers-and-footers]
 
 Les en-têtes et pieds de page définis dans le {% prefspane Export %} apparaîtront en haut et en bas de toute page imprimée ou enregistrée au format PDF paginé et lors de l'exportation DOCX. Vous pouvez placer n'importe quel texte en haut à gauche, en haut au centre, en haut à droite, en bas à gauche, en bas au centre et en bas à droite. Le texte central est aligné au centre de la page. Les variables suivantes seront remplacées dans les chaînes si elles sont utilisées :
 
@@ -135,7 +135,7 @@ Les champs **Format de date** et **Format d'heure** dans le {% prefspane Export 
 
 Utilisez **Restaurer les formats par défaut** dans {% prefspane Export %} pour réinitialiser à `%m-%d-%Y` et `%I:%M %p`.
 
-### En-têtes et pieds de page par document
+### En-têtes et pieds de page par document [per-document-headers-and-footers]
 
 Vous pouvez spécifier des en-têtes et des pieds de page pour chaque document à l'aide des métadonnées MultiMarkdown tout en haut du document :
 
@@ -153,23 +153,23 @@ Ceux-ci remplaceront tous les paramètres des préférences. Notez que si vous u
 
     -->
 
-## Enregistrer le PDF
+## Enregistrer le PDF [save-pdf]
 
 Cette option enregistre votre aperçu directement dans un fichier PDF sur votre lecteur. Votre document sera rendu dans son intégralité, sans sauts de page. Pour inclure la pagination dans votre sortie, utilisez les options Imprimer/PDF dans le [Panneau d'exportation](#drawer).
 
-## Options d'exportation RTF
+## Options d'exportation RTF [rtfexportoptions]
 
 Marked peut exporter des données RTF (Rich Text Format) directement dans votre presse-papiers. Choisissez simplement la commande Copier le texte enrichi dans le menu Action.
 
 Marked peut également enregistrer votre fichier en tant que fichier **RTFD** (Rich Text Format). Le format RTFD est un format groupé qui comprend un fichier RTF et toutes les images intégrées dans le document.
 
-## Exportation DOCX
+## Exportation DOCX [docx-export]
 
 L'exportation au format DOCX créera un document Microsoft Word valide, avec des éléments tels que des titres, des en-têtes/pieds de page, des accents, des listes, etc., tous mappés à des styles Word valides. Cela signifie que vous pouvez facilement appliquer votre propre thème dans Word.
 
 Voir [Travailler avec DOCX][DOCX] pour plus de détails sur l'importation et l'exportation de Word.
 
-## Exporter Markdown vers EPUB
+## Exporter Markdown vers EPUB [export-markdown-to-epub]
 
 Marked peut exporter des documents EPUB 100 % valides et 100 % accessibles. Sélectionnez le type d'exportation EPUB, spécifiez les métadonnées telles que le titre, l'auteur et la date, et ajoutez éventuellement une photo de couverture. Le fichier enregistré sera lisible dans n'importe quelle visionneuse EPUB.
 
@@ -187,7 +187,7 @@ Si le titre n'est pas défini, il sera par défaut le nom de fichier du document
 
 La date sera toujours définie sur la date actuelle et ne peut actuellement pas être modifiée avec des métadonnées. Il peut cependant être modifié au moment de la sauvegarde, à condition que le formatage (ISO) reste intact.
 
-### Publication sur Amazon Kindle (KDP)
+### Publication sur Amazon Kindle (KDP) [publishing-to-amazon-kindle-kdp]
 
 EPUB est un format ouvert utilisé par de nombreuses applications et magasins de lecture (Apple Books, Kobo et autres), pas seulement Kindle. Si vous publiez via [Kindle Direct Publishing (KDP)](https://kdp.amazon.com/), exportez EPUB depuis Marked et téléchargez ce fichier sur KDP. Amazon le convertit dans son propre format de livraison Kindle (KFX) pour les lecteurs.
 
@@ -201,7 +201,7 @@ Avant de télécharger, vous souhaiterez peut-être vérifier à quoi ressembler
 
 Les profils d'exportation vous permettent d'enregistrer et de basculer rapidement entre différents ensembles de préférences d'exportation. Ceci est particulièrement utile si vous exportez régulièrement des documents à des fins différentes : par exemple, un profil pour les PDF prêts à imprimer avec des marges et des en-têtes spécifiques, et un autre pour le HTML prêt pour le Web avec des styles intégrés.
 
-### Utilisation des profils d'exportation
+### Utilisation des profils d'exportation [using-export-profiles]
 
 Lorsque vous lancez Marked pour la première fois, un profil « Par défaut » est automatiquement créé avec vos paramètres d'exportation actuels. Vous pouvez voir et sélectionner des profils dans les boîtes de dialogue d'exportation (Exportation PDF, Enregistrer HTML, etc.) à l'aide du menu contextuel du profil en haut de la boîte de dialogue.
 
@@ -232,7 +232,7 @@ Lorsque vous lancez Marked pour la première fois, un profil « Par défaut » e
   - **Supprimer** les profils (le profil « Par défaut » ne peut pas être supprimé)
   - Afficher tous les profils disponibles dans une liste
 
-### Ce que capturent les profils d'exportation
+### Ce que capturent les profils d'exportation [what-export-profiles-capture]
 
 Les profils d'exportation enregistrent toutes les préférences liées à l'exportation, notamment :
 
@@ -248,7 +248,7 @@ Les profils d'exportation enregistrent toutes les préférences liées à l'expo
 
 Les profils fonctionnent sur tous les types d'exportation : Markdown, HTML, PDF continu, PDF paginé, EPUB, DOCX, ODT, TextBundle, RTF et OPML.
 
-### Stockage de profil
+### Stockage de profil [profile-storage]
 
 Les profils sont stockés dans votre dossier Application Support à l'adresse :
 
@@ -256,7 +256,7 @@ Les profils sont stockés dans votre dossier Application Support à l'adresse :
 
 Cela signifie que vos profils persistent même si vous réinitialisez les préférences de l'application et qu'ils survivent aux mises à jour de l'application. Vous pouvez sauvegarder ce fichier pour conserver vos profils à travers les installations.
 
-### Conseils pour l'utilisation des profils d'exportation
+### Conseils pour l'utilisation des profils d'exportation [tips-for-using-export-profiles]
 
 - **Créez des profils pour les flux de travail courants** : si vous exportez régulièrement pour l'impression ou le Web, créez des profils distincts pour chacun.
 - **Utilisez des noms descriptifs** : les noms de profil tels que « Impression - Lettre » ou « Web - Styles intégrés » indiquent clairement à quoi sert chaque profil.
@@ -264,7 +264,7 @@ Cela signifie que vos profils persistent même si vous réinitialisez les préf�
 - **Démarrer à partir de profils existants** : utilisez « Dupliquer » dans la fenêtre de gestion pour créer des variantes de profils existants plutôt que de repartir de zéro.
 
 [break]: Special_Syntax.html#pagebreaks
-[DOCX]: Working_with_DOCX.html
+[DOCX]: Working_With_DOCX.html
 [custom]: Custom_Styles.html
 [dropbox]: http://dropbox.com
 [expbut]: images/ExportButton.png @2x width=534px height=256px class=center

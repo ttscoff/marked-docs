@@ -6,13 +6,13 @@ Marked comprende i cataloghi di documentazione [Apple DocC](https://www.swift.or
 
 Per i normali documenti Markdown che utilizzano **percorsi con estensioni di file** (`images/icon.png`), vedere [Varianti immagine](Image_Variants.html). Questa funzionalità funziona ovunque; La risoluzione DocC è specifica del catalogo.
 
-## Abilitazione della risoluzione DocC
+## Abilitazione della risoluzione DocC [enabling-docc-resolution]
 
 In {% prefspane Apps %}, abilita **Risolvi riferimenti immagine DocC** (attivato per impostazione predefinita).
 
 Il rilevamento DocC viene eseguito quando Marked trova un catalogo `.docc` antenato del documento aperto. Non è richiesto alcuno schema URL speciale o integrazione Xcode: apri Markdown del catalogo come faresti con qualsiasi altro file.
 
-## Riferimenti senza estensione
+## Riferimenti senza estensione [extensionless-references]
 
 All'interno di un catalogo DocC, gli autori in genere fanno riferimento a immagini **senza** un percorso o un'estensione:
 
@@ -24,7 +24,7 @@ Marked risolve da `OrderStateTransitions` a `Resources/OrderStateTransitions.png
 
 I riferimenti che già includono un percorso e un'estensione - `images/chart.png` - vengono invece lasciati a [Varianti immagine](Image_Variants.html) e non vengono riscritti dalla risoluzione DocC.
 
-## Modalità oscura e varianti Retina
+## Modalità oscura e varianti Retina [dark-mode-and-retina-variants]
 
 I cataloghi DocC spesso forniscono più file per immagine:
 
@@ -37,7 +37,7 @@ I cataloghi DocC spesso forniscono più file per immagine:
 
 Quando esiste più di una variante, Marked emette lo stesso markup reattivo `<picture>` descritto in [Varianti immagine](Image_Variants.html). Un riferimento a file singolo si risolve comunque in un normale percorso `<img>` o `![](Resources/...)`.
 
-## HTML e Markdown
+## HTML e Markdown [html-and-markdown]
 
 La risoluzione DocC si applica durante il passaggio di inclusione di Marked:
 
@@ -46,11 +46,11 @@ La risoluzione DocC si applica durante il passaggio di inclusione di Marked:
 
 Entrambi vengono aggiornati prima del rendering dell'anteprima.
 
-## Visualizzazione di file
+## Visualizzazione di file [file-watching]
 
 Le immagini risolte nella cartella catalogo `Resources` vengono aggiunte alla lista di controllo di Marked. La modifica di un file variante aggiorna esternamente l'anteprima senza aggiornamento manuale.
 
-## Argomenti correlati
+## Argomenti correlati [related-topics]
 
 - [Varianti immagine](Image_Variants.html) - rilevamento `~dark` e `@2x` per percorsi basati sull'estensione in qualsiasi progetto
 - [Xcode Playgrounds](Xcode_Playgrounds.html): anteprima del commento del parco giochi Swift

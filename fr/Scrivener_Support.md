@@ -4,13 +4,13 @@ Utilisez ensemble vos deux outils d'écriture préférés.
 
 > Marked peut toujours lire les fichiers Scrivener 2.0, mais le développement se concentrera sur la version 3 à partir de Marked 2.5.11.
 
-## Notions de base de Scrivener 3.0
+## Notions de base de Scrivener 3.0 [scrivener-30-basics]
 
 Faites glisser un projet Scrivener (.scriv) vers Marked et il sera compilé et prévisualisé. Si vous choisissez l'option d'ouvrir les fichiers .scriv dans Scrivener (ci-dessus), Marked lancera également Scrivener lorsque vous glisserez le fichier vers Marked.
 
 Comme pour les autres documents, les modifications des fichiers Scrivener sont mises à jour en direct à l'enregistrement. De plus, lorsqu'un document Scrivener est au premier plan dans Marked, {% kbd cmd E %} l'ouvrira dans Scrivener pour vous.
 
-## Filtrer les documents du classeur
+## Filtrer les documents du classeur [filtering-binder-documents]
 
 Lorsque vous ouvrez un projet Scrivener dans Marked, le contenu de l'aperçu est construit uniquement à partir des documents du classeur que vous sélectionnez. Le filtrage est toujours actif pour les fichiers `.scriv` ; le panneau de filtre est simplement un moyen pratique de modifier ce qui est inclus.
 
@@ -34,11 +34,11 @@ Les projets Scrivener 2 n'affichent que le classeur **Manuscrit** dans le pannea
 
 Le panneau de filtre peut rester ouvert en parallèle d'autres outils comme **Visualiser la répétition des mots**. Modifier une case à cocher recompile l'aperçu après un court délai ; si un projet volumineux est encore en cours de compilation, Marked annule l'importation en cours et recommence avec votre nouvelle sélection.
 
-## Titres Markdown à partir des titres Scrivener
+## Titres Markdown à partir des titres Scrivener [markdown-headers-from-scrivener-titles]
 
 Marked peut également créer pour vous des titres Markdown hiérarchiques basés sur les pages de votre fichier Scrivener. Pour activer cela, cochez simplement l'option indiquée ci-dessus.
 
-## Métadonnées MultiMarkdown
+## Métadonnées MultiMarkdown [multimarkdown-metadata]
 
 Si le premier document de votre dossier Manuscrit est nommé « metadata », il sera traité comme des métadonnées MultiMarkdown au début du document d'aperçu. Aucun titre ne sera inséré pour cette section, quel que soit le paramètre « Titres Markdown à partir des titres Scrivener » (décrit ci-dessus), ce qui permet au processeur MultiMarkdown de le lire comme des métadonnées et d'autoriser les remplacements et options d'exportation en conséquence.
 
@@ -46,25 +46,25 @@ Vous pouvez formater ce fichier en YAML si votre processeur est de ceux qui gèr
 
 Si vous n'utilisez pas de document `metadata`, Marked peut également ajouter au début des métadonnées MultiMarkdown à partir des paramètres de compilation de votre projet (`Settings/compile.xml`), en utilisant les mêmes champs **Title** et **Author** que Scrivener exporterait vers MultiMarkdown. Cette option est activée par défaut (clé de préférence `scrivenerCompileMetadata`). Les champs de métadonnées personnalisés ne sont inclus que lorsqu'ils apparaissent dans les paramètres de compilation **MMD Metadata** du projet, pas à partir des champs personnalisés par document.
 
-## Liens
+## Liens [links]
 
 Pour les liens externes (HTTP), vous pouvez utiliser soit la syntaxe Markdown, soit le format de lien de Scrivener. Marked convertira le format Scrivener en Markdown avant le traitement.
 
-## Commentaires
+## Commentaires [comments]
 
 Marked peut traiter les commentaires et notes de bas de page créés en ligne dans le document.
 
-## Tableaux
+## Tableaux [tables]
 
 Marked peut convertir les tableaux Scrivener basiques. Si vous souhaitez inclure un tableau dans votre sortie, il est toutefois préférable de le faire au [format de tableau MultiMarkdown](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#tables). (Une application appelée [TableFlip](http://tableflipapp.com/) peut simplifier grandement leur création.)
 
-## Fonctionnalités Scrivener supplémentaires
+## Fonctionnalités Scrivener supplémentaires [additional-scrivener-features]
 
 En plus des fonctionnalités de base de compilation et d'aperçu, Marked prend également en charge certaines conventions propres à Scrivener. Tout d'abord, dans votre document Scrivener, vous pouvez utiliser « Préserver le formatage » en ligne ou sur un bloc de texte autonome, et cela sera converti en blocs de code dans l'aperçu.
 
 Marked lit également les notes de bas de page _en ligne_ de Scrivener. Si vous saisissez une note de bas de page à l'intérieur ou à la fin d'un paragraphe, elle sera convertie en note de bas de page MultiMarkdown dans l'aperçu.
 
-## Utiliser des images dans votre document Scrivener
+## Utiliser des images dans votre document Scrivener [using-images-in-your-scrivener-document]
 
 Les images peuvent être intégrées dans le document Scrivener, ou référencées avec la syntaxe d'image Markdown. La version Markdown d'une balise d'image est `![texte alternatif](chemin/vers/image.ext "titre/description facultatif")`. Le format de référence peut également être utilisé :
 
@@ -78,7 +78,7 @@ Le chemin de base pour la sortie HTML dans l'aperçu sera défini sur le dossier
 
 Les chemins relatifs basés sur le dossier parent du document fonctionneront, et les chemins absolus permettront d'accéder à des images n'importe où, mais pourraient être moins portables pour la sortie HTML.
 
-## Remarque sur la sécurité
+## Remarque sur la sécurité [security-note]
 
 Un dossier de cache sera créé dans ~/Library/Application Support/Marked lorsque vous ouvrirez votre fichier .scriv dans Marked. Ce n'est pas un dossier protégé, donc si votre document original se trouve sur un disque chiffré ou autrement protégé, notez que son contenu sera non chiffré dans le cache. Pour une protection limitée, vous pouvez faire en sorte que ce cache n'apparaisse pas dans Spotlight en ajoutant ~/Library/Application Support/Marked à vos paramètres de confidentialité dans Spotlight.
 

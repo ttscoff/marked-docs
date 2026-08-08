@@ -8,7 +8,7 @@ Opzioni in {% prefspane Style %}:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Layout e tipografia
+### Layout e tipografia [layout-and-typography]
 
 Limita la larghezza del testo in Anteprima
 : imposta una larghezza massima per il corpo dell'anteprima utilizzando il cursore (in pixel).
@@ -43,7 +43,7 @@ Avvolgi sempre il codice
 Rileva e modella il testo RTL
 : rileva la lingua per elemento nel documento e lo stile da destra a sinistra di conseguenza.
 
-### Tema
+### Tema [theme]
 
 Gestisci stili
 : Apre la finestra [Gestione stili](Style_Manager.html). Aggiungi file CSS dal tuo disco per visualizzarli nei menu di selezione stile. Utilizza il pulsante `Add New Style` o trascina i file CSS in questa finestra. Trascina per riordinare e utilizza le caselle di controllo per abilitare o disabilitare gli stili.
@@ -61,7 +61,7 @@ CSS aggiuntivi
 : I CSS aggiunti qui verranno inclusi dopo il normale foglio di stile con tutti i temi. Tra le altre cose, puoi usarlo per sovrascrivere le impostazioni su tutta la linea senza modificare gli stili interni.
 : Questo vale per tutti i documenti e tutti gli stili. Se desideri applicare CSS personalizzati ai documenti in base alle condizioni, utilizza le regole personalizzate in {% prefspane Processor %}.
 
-### Includi script
+### Includi script [include-scripts]
 
 Evidenziazione della sintassi
 : attiva highlight.js [evidenziazione della sintassi](Syntax_Highlighting.html) per i blocchi di codice. Seleziona un tema dal menu a discesa.
@@ -73,7 +73,7 @@ Abilita MathJax
 : **Configurazione avanzata** apre un foglio per la configurazione personalizzata di MathJax.
 
 Abilita KaTeX
-: Carica [KaTeX](Mathjax.html#katex) come alternativa a MathJax. È possibile selezionare solo l'uno o l'altro.
+: Carica [KaTeX](MathJax.html#katex) come alternativa a MathJax. È possibile selezionare solo l'uno o l'altro.
 
 Equazioni numeriche
 : Se applicabile, Marked aggiungerà i numeri delle figure alle equazioni renderizzate. Scegli **Lato sinistro** o **Lato destro** per la numerazione. Se utilizzi MathJax, puoi scegliere **Solo AMS** per numerare solo le equazioni AMS.

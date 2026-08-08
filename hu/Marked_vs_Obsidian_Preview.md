@@ -4,7 +4,7 @@
 
 Az Obsidian beépített Markdown előnézetet tartalmaz. A Marked 3 egy dedikált előnézeti és közzétételi alkalmazás, amely együttműködik az Obsidiannal és sok más szerkesztővel. Ez az oldal segít eldönteni, hogy az egyes eszközök a megfelelőek-e.
 
-## Amikor az Obsidian beépített előnézete elég
+## Amikor az Obsidian beépített előnézete elég [when-obsidians-built-in-preview-is-enough]
 
 * Csak Obszidiánon belül írsz
 * Az alapvető előnézet és a bővítmények megfelelnek az Ön igényeinek
@@ -13,7 +13,7 @@ Az Obsidian beépített Markdown előnézetet tartalmaz. A Marked 3 egy dedikál
 
 Az Obsidian (és az olyan alkalmazások, mint a **Typora**) remekül illeszkednek, ha egy egyszerű, egyalkalmazásos megoldásra van csak szüksége.
 
-## Amikor megjelölt, a jobb választás
+## Amikor megjelölt, a jobb választás [when-marked-is-the-better-choice]
 
 * Élő előnézetet szeretne **bármely** szerkesztőből, nem csak az Obsidianból
 * Professzionális exportra van szüksége (PDF, DOCX, EPUB) egyedi CSS-sel
@@ -23,7 +23,7 @@ Az Obsidian (és az olyan alkalmazások, mint a **Typora**) remekül illeszkedne
 
 A Marked előnézete számos olyan funkciót tartalmaz, amelyeket az Obsidian, Typora és hasonló alkalmazások beépített előnézetei önmagukban nem kínálnak --- vagy amelyekhez közelítő beépülő modulok és megoldások szükségesek.
 
-## Egymás melletti összehasonlítás
+## Egymás melletti összehasonlítás [side-by-side-comparison]
 
 | Funkció | 3 | Obszidián előnézet |
 | :-- | :-- | :-- |
@@ -36,7 +36,7 @@ A Marked előnézete számos olyan funkciót tartalmaz, amelyeket az Obsidian, T
 
 A Typorát és a Marked 2-t is magában foglaló szélesebb összehasonlításért tekintse meg a [marketing-összehasonlító oldalt](https://markedapp.com/markdown-preview/).
 
-## Használja mindkettőt: Obszidián + Megjelölt munkafolyamat
+## Használja mindkettőt: Obszidián + Megjelölt munkafolyamat [use-both-obsidian-marked-workflow]
 
 Nem kell lecserélnie az Obsidian előnézetét --- vagy feladnia a Typora egyablakos szerkesztését --- a Marked előnyeinek kihasználásához. Sok író megtartja kedvenc szerkesztőjét, és hozzáadja a Megjelölt előnézeti funkciókat és exportálási lehetőségeket, amelyeket a másik alkalmazás nem biztosít.
 
@@ -45,7 +45,7 @@ Nem kell lecserélnie az Obsidian előnézetét --- vagy feladnia a Typora egyab
 3. A Marked figyeli a trezort, és megtekinti a legutóbb szerkesztett jegyzet előnézetét.
 4. Használja a Megjelölt elemet lektoráláshoz, dokumentumstatisztikákhoz, egyéni témákhoz és exportáláshoz, amikor a vázlat készen áll. Lásd: [Exportálás](Exporting.html).
 
-## Kapcsolódó
+## Kapcsolódó [related]
 
 * [Obszidián integrációs útmutató](Obsidian.html)
 * [Élő Markdown előnézet Macen](Live_Markdown_Preview_on_Mac.html)

@@ -2,7 +2,7 @@
 
 Marked werkt met veel editors en schrijf-apps. Deze pagina behandelt gedeelde **instellingen**, het **klembordvoorbeeld**, verwijzingen naar **streamingvoorbeeld** en scriptbronnen. Gedetailleerde handleidingen voor populaire apps zijn te vinden in hun eigen Help-onderwerpen (zie het gedeelte **Ondersteunde apps** in de zijbalk).
 
-## Gidsen per app
+## Gidsen per app [per-app-guides]
 
 Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor de algehele workflow. Als je Obsidian gebruikt, zie [Marked vs Obsidian Preview](Marked_vs_Obsidian_Preview.html) om te beslissen wanneer Marked waarde toevoegt naast de ingebouwde preview van Obsidian.
 
@@ -33,7 +33,7 @@ Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Xcode-speeltuinen** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Applicatie-instellingen
+## Applicatie-instellingen [application-settings]
 
 I> Verschillende integraties maken schakelaars zichtbaar binnen {% prefspane Apps %} en {% prefspane Preview %}.
 
@@ -41,17 +41,17 @@ I> Verschillende integraties maken schakelaars zichtbaar binnen {% prefspane App
 
 Gebruik deze vensters voor standaardinstellingen voor wikilinks, Scrivener hand-off, gestreamde klembordinstellingen, opties voor het insluiten van mindmaps voor OPML/OmniOutliner, Obsidian-integraties of andere processors die afhankelijk zijn van coöperatieve editors.
 
-## Klembordvoorbeeld
+## Klembordvoorbeeld [clipboard-preview]
 
 ![][ClipboardPreviewMenu]
 
 Markdown (of compatibele platte tekst) op het klembord wordt geopend met {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Als het klembord **HTML of RTF** bevat, converteert Marked deze naar een Markdown-achtige bron vóór de voorbeeldweergave, inclusief ruwe kopdetectie wanneer RTF alinea's grote stylesheet-lettergroottes gebruiken.
 
-## Streamingvoorbeeld
+## Streamingvoorbeeld [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra en verschillende andere editors kunnen Markdown in Marked pushen terwijl je typt via **Streaming Preview**. Zie [Streaming Preview](Streaming_Preview.html) voor installatie en probleemoplossing.
 
-## Scripts en bonuspakket
+## Scripts en bonuspakket [scripts-and-bonus-pack]
 
 Automatiseringen voor BBEdit, TextMate, DEVONthink, Emacs, Vim en meer worden geleverd met de [Marked Bonus Pack][bonus]. Installeer of pas deze scripts aan als u menubalk- of editormacro's wilt die verder gaan dan de hierboven genoemde integraties.
 

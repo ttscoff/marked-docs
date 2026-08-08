@@ -2,7 +2,7 @@
 
 So wird aus Ihrem Markdown ein fertiges Dokument.
 
-## Export nach der Vorschau
+## Export nach der Vorschau [export-after-preview]
 
 Die Vorschau von Marked ist die Grundlage für den Export – was Sie im Vorschaufenster sehen, erhalten Sie in PDF, DOCX, EPUB und anderen Formaten (abgesehen von exportspezifischen Einstellungen wie Rändern, Kopfzeilen und Paginierung). Richten Sie zuerst Ihren Stil ein und lesen Sie in der Vorschau Korrektur, und exportieren Sie dann, wenn das Dokument fertig ist. Den vollständigen Vorschau-Workflow finden Sie unter [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_Mac.html).
 
@@ -22,7 +22,7 @@ Mit der Funktion „HTML kopieren“ legen Sie den HTML-Quelltext Ihrer Vorschau
 
 Zum Kopieren müssen Sie nicht in der Quelltextansicht sein. Tippen Sie bei fokussierter Vorschau (klicken Sie hinein) einfach {% kbd shift cmd C %}, und eine Popup-Meldung bestätigt Ihnen, dass der Quelltext in der Zwischenablage liegt.
 
-## HTML speichern
+## HTML speichern [save-html]
 
 ![][exporthtmlaccessory]
 
@@ -34,7 +34,7 @@ Optional können Sie einen der Stile von Marked (oder einen Ihrer [eigenen Stile
 
 Zusätzlich können Sie alle im Dokument enthaltenen lokalen Bilder in das exportierte HTML einbetten. Dann haben Sie ein eigenständiges Dokument, das sich überall hosten lässt, ohne die Bilder mitverschieben zu müssen. Das funktioniert nur mit Bildern, die auf Ihrem lokalen Laufwerk über relative oder absolute Pfade referenziert sind. Vermeiden Sie `file:///`-Pfade, wenn Sie diese Funktion nutzen möchten.
 
-## Markdown auf dem Mac nach PDF exportieren
+## Markdown auf dem Mac nach PDF exportieren [export-markdown-to-pdf-on-mac]
 
 Die Druck-/PDF-Vorschau ({% kbd cmd P %}) öffnet einen Standard-Druckdialog. Jeder Vorschaustil in Marked hat eigene begleitende Druckstile, die Hintergründe entfernen, Schriftgrößen anpassen und Rahmen bereitstellen. Gedruckt wird auf Basis des aktuell ausgewählten Stils.
 
@@ -97,7 +97,7 @@ Zusätzlich können Sie über die Metadaten eine Kopf-/Fußzeilen-Schriftgröße
 
     Header Font Size: 10
 
-### Datums- und Uhrzeitformate
+### Datums- und Uhrzeitformate [dateandtimeformats]
 
 Die Felder **Datumsformat** und **Zeitformat** unter {% prefspane Export %} steuern, wie `%date` und `%time` in Kopf- und Fußzeilen dargestellt werden. Beide Felder nutzen Formatcodes im strftime-Stil: ein `%` gefolgt von einem Buchstaben. Literaler Text (etwa `-`, `:` oder Leerzeichen) wird unverändert übernommen.
 
@@ -137,7 +137,7 @@ Die Felder **Datumsformat** und **Zeitformat** unter {% prefspane Export %} steu
 
 Über **Standardformate wiederherstellen** unter {% prefspane Export %} setzen Sie auf `%m-%d-%Y` und `%I:%M %p` zurück.
 
-### Kopf- und Fußzeilen pro Dokument
+### Kopf- und Fußzeilen pro Dokument [per-document-headers-and-footers]
 
 Sie können Kopf- und Fußzeilen pro Dokument angeben, indem Sie ganz oben im Dokument MultiMarkdown-Metadaten verwenden:
 
@@ -155,23 +155,23 @@ Diese überschreiben alle Einstellungen in den Voreinstellungen. Hinweis: Wenn S
 
     -->
 
-## PDF speichern
+## PDF speichern [save-pdf]
 
 Diese Option speichert Ihre Vorschau direkt als PDF-Datei auf Ihrem Laufwerk. Ihr Dokument wird vollständig und ohne Seitenumbrüche gerendert. Um Paginierung in die Ausgabe aufzunehmen, verwenden Sie die Druck-/PDF-Optionen im [Export-Panel](#drawer).
 
-## RTF-Exportoptionen
+## RTF-Exportoptionen [rtfexportoptions]
 
 Marked kann RTF-Daten (Rich Text Format) direkt in Ihre Zwischenablage exportieren. Wählen Sie dazu einfach den Befehl „Rich Text kopieren“ aus dem Zahnradmenü.
 
 Marked kann Ihre Datei auch als **RTFD**-Datei (Rich Text Format) speichern. Das RTFD-Format ist ein Bundle-Format, das eine RTF-Datei und alle im Dokument eingebetteten Bilder enthält.
 
-## DOCX exportieren
+## DOCX exportieren [docx-export]
 
 Beim Export als DOCX entsteht ein gültiges Microsoft-Word-Dokument, in dem Elemente wie Überschriften, Kopf-/Fußzeilen, Hervorhebungen, Listen usw. auf gültige Word-Stile abgebildet sind. So können Sie in Word problemlos Ihr eigenes Design anwenden.
 
 Weitere Details zu Word-Import und -Export finden Sie unter [Mit DOCX arbeiten][DOCX].
 
-## Markdown nach EPUB exportieren
+## Markdown nach EPUB exportieren [export-markdown-to-epub]
 
 Marked kann zu 100 % gültige, zu 100 % barrierefreie EPUB-Dokumente exportieren. Wählen Sie den Exporttyp EPUB, geben Sie Metadaten wie Titel, Autor und Datum an und fügen Sie optional ein Titelbild hinzu. Die gespeicherte Datei ist in jedem EPUB-Viewer lesbar.
 
@@ -189,7 +189,7 @@ Ist kein Titel gesetzt, wird standardmäßig der Dateiname des Originaldokuments
 
 Das Datum wird immer auf das aktuelle Datum gesetzt und lässt sich derzeit nicht über Metadaten ändern. Beim Speichern können Sie es jedoch anpassen, solange die (ISO-)Formatierung erhalten bleibt.
 
-### Auf Amazon Kindle veröffentlichen (KDP)
+### Auf Amazon Kindle veröffentlichen (KDP) [publishing-to-amazon-kindle-kdp]
 
 EPUB ist ein offenes Format, das viele Lese-Apps und Stores nutzen (Apple Books, Kobo und andere), nicht nur Kindle. Wenn Sie über [Kindle Direct Publishing (KDP)](https://kdp.amazon.com/) veröffentlichen, exportieren Sie EPUB aus Marked und laden diese Datei zu KDP hoch. Amazon wandelt sie für die Leser in sein eigenes Kindle-Lieferformat (KFX) um.
 
@@ -199,11 +199,11 @@ KDP akzeptiert mehrere Manuskriptformate, darunter EPUB und DOCX (das Marked ebe
 
 Vor dem Hochladen möchten Sie vielleicht mit Amazons kostenlosem [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) prüfen, wie Ihr EPUB auf Kindle-Geräten aussieht. Das ist optionale Drittanbieter-Software von Amazon und nicht Teil von Marked.
 
-## Exportprofile
+## Exportprofile [export-profiles]
 
 Mit Exportprofilen speichern Sie verschiedene Sätze von Exporteinstellungen und wechseln schnell zwischen ihnen. Das ist besonders nützlich, wenn Sie regelmäßig Dokumente für verschiedene Zwecke exportieren – etwa ein Profil für druckfertige PDFs mit bestimmten Rändern und Kopfzeilen und ein anderes für webfertiges HTML mit eingebetteten Stilen.
 
-### Exportprofile verwenden
+### Exportprofile verwenden [using-export-profiles]
 
 Beim ersten Start von Marked wird automatisch ein Profil „Standard“ mit Ihren aktuellen Exporteinstellungen angelegt. In den Exportdialogen (PDF exportieren, HTML speichern usw.) sehen und wählen Sie Profile über das Profil-Aufklappmenü oben im Dialog.
 
@@ -234,7 +234,7 @@ Beim ersten Start von Marked wird automatisch ein Profil „Standard“ mit Ihre
   - Profile **löschen** (das Profil „Standard“ lässt sich nicht löschen)
   - alle verfügbaren Profile in einer Liste ansehen
 
-### Was Exportprofile erfassen
+### Was Exportprofile erfassen [what-export-profiles-capture]
 
 Exportprofile speichern alle exportbezogenen Einstellungen, darunter:
 
@@ -250,7 +250,7 @@ Exportprofile speichern alle exportbezogenen Einstellungen, darunter:
 
 Profile funktionieren über alle Exporttypen hinweg: Markdown, HTML, fortlaufendes PDF, paginiertes PDF, EPUB, DOCX, ODT, TextBundle, RTF und OPML.
 
-### Speicherort der Profile
+### Speicherort der Profile [profile-storage]
 
 Profile werden in Ihrem Application-Support-Ordner gespeichert, unter:
 
@@ -258,7 +258,7 @@ Profile werden in Ihrem Application-Support-Ordner gespeichert, unter:
 
 So bleiben Ihre Profile erhalten, selbst wenn Sie die App-Einstellungen zurücksetzen, und sie überstehen App-Updates. Sie können diese Datei sichern, um Ihre Profile über Neuinstallationen oder Rechnerwechsel hinweg aufzubewahren.
 
-### Tipps zum Umgang mit Exportprofilen
+### Tipps zum Umgang mit Exportprofilen [tips-for-using-export-profiles]
 
 - **Profile für gängige Arbeitsabläufe anlegen**: Wenn Sie regelmäßig für Druck und Web exportieren, legen Sie für beides je ein Profil an.
 - **Beschreibende Namen verwenden**: Profilnamen wie „Druck – A4“ oder „Web – eingebettete Stile“ machen klar, wofür ein Profil gedacht ist.
@@ -266,7 +266,7 @@ So bleiben Ihre Profile erhalten, selbst wenn Sie die App-Einstellungen zurücks
 - **Von vorhandenen Profilen ausgehen**: Nutzen Sie „Duplizieren“ im Verwaltungsfenster, um Varianten bestehender Profile zu erstellen, statt bei null anzufangen.
 
 [break]: Special_Syntax.html#pagebreaks
-[DOCX]: Working_with_DOCX.html
+[DOCX]: Working_With_DOCX.html
 [custom]: Custom_Styles.html
 [dropbox]: http://dropbox.com
 [expbut]: images/ExportButton.png @2x width=534px height=256px class=center

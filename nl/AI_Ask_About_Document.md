@@ -2,7 +2,7 @@
 
 Vragen over Document gebruikt **Apple Intelligence** en het taalmodel op het apparaat dat is ingebouwd in recente versies van macOS om uw Markdown voorbeeld samen te vatten en vragen over de inhoud ervan te beantwoorden. Alle verwerking vindt plaats op uw Mac; documenttekst wordt voor deze functie niet naar de servers van Marked of AI-services van derden verzonden.
 
-## Wat Apple Intelligence biedt
+## Wat Apple Intelligence biedt [what-apple-intelligence-provides]
 
 Apple Intelligence is het systeem van Apple voor generatieve functies op apparaten. Marked maakt gebruik van het **Foundation Models**-framework van Apple om toegang te krijgen tot hetzelfde model op het apparaat dat systeemschrijftools aanstuurt, dat direct in Marked wordt weergegeven voor documentgerichte taken.
 
@@ -10,7 +10,7 @@ Marked verzendt de platte tekst van uw document (de syntaxis van Markdown is voo
 
 Apple Intelligence is het beste in taaltaken zoals samenvatten, schetsen, kernpunten extraheren en vragen over de aangeboden tekst beantwoorden. Het is geen algemene codeerassistent of rekenmachine, en zeer lange documenten worden in secties behandeld, zodat de resultaten binnen de contextgrenzen van het model blijven.
 
-## Systeemcompatibiliteit
+## Systeemcompatibiliteit [system-compatibility]
 
 Vragen over document wordt alleen weergegeven als uw Mac de functie kan uitvoeren.
 
@@ -28,7 +28,7 @@ Vragen over document wordt alleen weergegeven als uw Mac de functie kan uitvoere
 
 Als uw Mac in aanmerking komt maar het menu-item ontbreekt, controleer dan of Apple Intelligence is ingeschakeld en dat u een huidige versie van Marked gebruikt die deze functie bevat. Het menu is volledig verborgen op niet-ondersteunde systemen en wordt niet weergegeven in een uitgeschakelde status.
 
-## Apple Intelligence inschakelen
+## Apple Intelligence inschakelen [enabling-apple-intelligence]
 
 1. Open **Systeeminstellingen**.
 2. Ga naar **Apple Intelligence & Siri** (of **Apple Intelligence**, afhankelijk van je macOS-versie).
@@ -37,7 +37,7 @@ Als uw Mac in aanmerking komt maar het menu-item ontbreekt, controleer dan of Ap
 
 Marked bevat geen afzonderlijke voorkeur voor deze functie. Beschikbaarheid volgt de systeemmodelstatus gerapporteerd door macOS.
 
-## Vraag over document openen
+## Vraag over document openen [opening-ask-about-document]
 
 Open het paneel op een van deze manieren:
 
@@ -46,7 +46,7 @@ Open het paneel op een van deze manieren:
 
 Het paneel wordt aan de linkerkant van het documentvenster gekoppeld. Je hebt een open document nodig met leesbare tekst; een leeg document of een voorbeeld met alleen HTML biedt de opdracht niet.
 
-## Het paneel Vragen over document
+## Het paneel Vragen over document [the-ask-about-document-panel]
 
 Het paneel is georganiseerd als een eenvoudige chatweergave:
 
@@ -56,7 +56,7 @@ Het paneel is georganiseerd als een eenvoudige chatweergave:
 
 Nadat een antwoord is voltooid, keert de focus terug naar het vraagveld, zodat u een vervolgvraag kunt stellen zonder te klikken.
 
-### Vooraf ingestelde acties
+### Vooraf ingestelde acties [preset-actions]
 
 | Actie | Wat het doet |
 | :-- | :-- |
@@ -67,7 +67,7 @@ Nadat een antwoord is voltooid, keert de focus terug naar het vraagveld, zodat u
 
 Vooraf ingestelde acties vereisen geen tekst in het vraagveld. Klik op een knop en wacht op het antwoord in het bovenstaande paneel.
 
-### Je eigen vragen stellen
+### Je eigen vragen stellen [asking-your-own-questions]
 
 1. Typ een vraag in het veld onder aan het paneel, bijvoorbeeld 'Welk probleem lost dit document op?' of "Wie is het beoogde publiek?"
 2. Druk op **Return** of klik op **Vragen**.
@@ -77,21 +77,21 @@ Voor vragen over een specifieke passage **selecteert u die tekst in het voorbeel
 
 Klik op **Annuleren** om een ​​lopende aanvraag te stoppen.
 
-## Voorbeelden
+## Voorbeelden [examples]
 
-### Snel overzicht van een lang artikel
+### Snel overzicht van een lang artikel [quick-overview-of-a-long-article]
 
 Open een lange blogpost of rapport in Marked, kies **Voorbeeld > Vragen over document…** en klik op **Document samenvatten**. Gebruik de samenvatting om te beslissen of u het volledige stuk wilt lezen of uw geheugen wilt opfrissen als u even niet aan het concept hebt gewerkt.
 
-### Opmerkingen over een geselecteerde paragraaf
+### Opmerkingen over een geselecteerde paragraaf [notes-on-a-selected-paragraph]
 
 Markeer een compacte alinea in het voorbeeld, open Vragen over document en klik op **Selectie samenvatten**. Handig als je slechts een kortere versie van één sectie nodig hebt.
 
-### Structurele herziening
+### Structurele herziening [structural-review]
 
 Klik op **Overzicht** op een concept met veel koppen om te zien of de redenering logisch verloopt, of gebruik **Kernpunten** voordat u een document naar iemand anders verzendt om te controleren of de hoofdideeën duidelijk zijn.
 
-### Gerichte vragen
+### Gerichte vragen [targeted-questions]
 
 Terwijl er geen selectie actief is, typt u vragen zoals:
 
@@ -101,7 +101,7 @@ Terwijl er geen selectie actief is, typt u vragen zoals:
 
 Terwijl een selectie actief is, kunt u specifiekere vragen stellen, zoals 'Wat veronderstelt deze paragraaf over de lezer?' of "Herschrijf dit idee in één zin" (het model antwoordt over de selectie; het bewerkt uw bronbestand niet).
 
-## Tips en beperkingen
+## Tips en beperkingen [tips-and-limitations]
 
 - **Privacy:** Bij de verwerking wordt gebruik gemaakt van het on-device-model van Apple. Marked leest uw documenttekst nog steeds lokaal om inhoud aan dat model te leveren; behandel gevoelig materiaal dienovereenkomstig.
 - **Nauwkeurigheid:** Controleer belangrijke feiten aan de hand van uw bron. AI-samenvattingen kunnen details weglaten of dubbelzinnige passages verkeerd lezen.

@@ -2,19 +2,19 @@
 
 The Quick Actions palette is a searchable command launcher for Marked. It collects actions from the main menu bar and the preview **gear menu**, plus preview-only keyboard commands that do not appear in menus (such as **Autoscroll**). Use it when you know what you want to do but cannot remember which menu holds it.
 
-## Opening the Quick Actions Palette
+## Opening the Quick Actions Palette [opening-the-quick-actions-palette]
 
 Open the palette with {% kbd shift cmd P %} or from {% appmenu File, Quick Actions… %}. The panel appears as a floating window above your current document.
 
 Press the same shortcut again, or press **Escape**, to close the palette. If the palette is already open, choosing **Quick Actions…** from the menu also closes it.
 
-## Customizing the Shortcut
+## Customizing the Shortcut [customizing-the-shortcut]
 
 The default shortcut is {% kbd shift cmd P %}. To change it, open {% prefspane General %} and record a new combination under **Open Action Palette** in the **Shortcuts** section.
 
 Unlike **Activate Marked** and **Raise first window**, the Quick Actions shortcut works only when Marked is the active application. It updates the {% appmenu File, Quick Actions… %} menu shortcut to match your setting.
 
-## Search and Filter
+## Search and Filter [search-and-filter]
 
 Type in the search field at the top of the panel to filter commands in real time. Matching is fuzzy and forgiving:
 
@@ -24,7 +24,7 @@ Type in the search field at the top of the panel to filter commands in real time
 
 Each result shows the command name on the left and its keyboard shortcut (when available) on the right in gray. Some commands also show a breadcrumb path (for example `Preview › Autoscroll`) when the action comes from a submenu or the preview engine.
 
-## What Appears in the List
+## What Appears in the List [what-appears-in-the-list]
 
 The palette includes:
 
@@ -34,7 +34,7 @@ The palette includes:
 
 When the same command appears in more than one place, Marked shows the shortest menu path and merges shortcut information from duplicates.
 
-## Keyboard Navigation
+## Keyboard Navigation [keyboard-navigation]
 
 Navigate the Quick Actions palette entirely from the keyboard:
 
@@ -45,7 +45,7 @@ Navigate the Quick Actions palette entirely from the keyboard:
 
 Plain typing (without the Command key) filters the search field. Preview-only single-key shortcuts such as `s` for Autoscroll filter the list; press **Return** to run the selected command.
 
-## Running Commands
+## Running Commands [running-commands]
 
 Selecting a menu command dispatches it the same way as choosing it from the menu, including dynamic and gear-menu items.
 

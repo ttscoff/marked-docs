@@ -2,7 +2,7 @@
 
 Bekijk uw documenten *op uw* manier.
 
-## Aangepaste stijlen gebruiken
+## Aangepaste stijlen gebruiken [using-custom-styles]
 
 ![][img1]
 
@@ -29,7 +29,7 @@ enige verwarring.
 Voeg Custom Stijlen toe met behulp van de Stijlmanager met de knop Toevoegen, of door een of meer CSS-bestanden naar de Instellingen te slepen
 venster.
 
-## Stijlen beheren met de Stijlmanager
+## Stijlen beheren met de Stijlmanager [managing-styles-with-the-style-manager]
 
 Door de Style Manager te starten, beschikt u over één plek waar u alle ingebouwde apparaten kunt beheren
 en aangepast thema. Klik op de knop **Stijlen beheren…** in de {% prefspane Style %}
@@ -61,7 +61,7 @@ de `⌘/#` snelkoppelingen, zodat je stijlen letterlijk naar de slots kunt slepe
 jij wilt. Je kunt ook externe CSS-bestanden naar specifieke posities slepen; de druppel
 indicator bepaalt waar de nieuwe stijl wordt ingevoegd.
 
-### Livevoorbeeld
+### Livevoorbeeld [live-preview]
 
 Het rechterdeelvenster bevat een voorbeeld dat de geselecteerde stijl weergeeft
 in een volledig HTML document met een uitgebreide reeks koppen, lijsten, tabellen, codeblokken, enz. De
@@ -72,7 +72,7 @@ uw eigen maken) [on GitHub][1] (zie de [examples][2] voor
 een snelle blik op wat er is). Zie [Creating Custom CSS][3]
 voor details en tips.
 
-## Extra CSS
+## Extra CSS [additional-css]
 
 Onder de {% prefspane Style %} vindt u een optie
 getiteld Extra CSS met een knop met het label 'CSS bewerken'.
@@ -92,7 +92,7 @@ CSS gebaseerd op voorwaardelijke overeenkomsten, gebruik Set Style, Insert
 CSS-bestand, of CSS-acties invoegen in {% prefspane Processor %}
 Custom Regels.
 
-## Afdrukken en PDF exporteren
+## Afdrukken en PDF exporteren [print-and-pdf-export]
 
 Marked injecteert een ingebouwd `@media print` blok (`mkprintstyles`) op elke
 voorbeeld. Het stelt standaardinstellingen in, zoals een **10pt**-basis op `html`, `body`, en
@@ -131,7 +131,7 @@ andere niet-gekwalificeerde selectors in uw blad die nog steeds van toepassing z
 Alleen print-aanpassingen in `@media print` (in plaats van alleen in schermregels) blijven behouden
 het voorbeeld- en exportgedrag is gemakkelijker om over te redeneren.
 
-## CSS-wijzigingen bekijken
+## CSS-wijzigingen bekijken [watching-css-changes]
 
 U kunt een vakje aanvinken in de sectie Custom Stijlen van de {% prefspane Style %}
 om Marked het actieve CSS-bestand te laten bekijken
@@ -147,7 +147,7 @@ Markdown bestand met alle markeringen die u wilt opmaken
 Maak bijvoorbeeld een aangepaste stijl en bekijk de preview live
 verandert terwijl u het bewerkt.
 
-## Aangepaste CSS schrijven
+## Aangepaste CSS schrijven [writing-custom-css]
 
 Als u bekend bent met CSS, kunt u uw eigen stijl creëren
 bladen voor gebruik in Marked. Zie [Writing Custom CSS][3] voor
@@ -156,7 +156,7 @@ details. Overweeg elke keer dat u iets nieuws creëert
 gebruikers. Zorg ervoor dat u de basisbeginselen behandelt die in de gids worden vermeld, en
 voeg de metadata-opmerking bovenaan toe.
 
-### Automatische Custom Stijlen met StyleStealer
+### Automatische Custom Stijlen met StyleStealer [automatic-custom-styles-with-stylestealer]
 
 U kunt zelfs automatisch een stijl genereren op basis van een
 bestaande website met behulp van de [Style Stealer][4]. Hierdoor kunt u een webpagina laden en de berekende stijlen ophalen voor alle belangrijke elementen gevonden in Markdown, en deze vervolgens opslaan in een aangepaste stijl.

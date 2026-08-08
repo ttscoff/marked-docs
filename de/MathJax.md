@@ -2,7 +2,7 @@
 
 Zahlen sind genauso wichtig wie Worte.
 
-## Formeln mit MathJax in der Vorschau
+## Formeln mit MathJax in der Vorschau [preview-formulas-with-mathjax]
 
 ![][1]
 
@@ -16,7 +16,7 @@ Beispiel für MMD-MathJax-Syntax:
 
 Wenn Sie MathJax in eine exportierte HTML-Datei aufnehmen, wird statt des eingebetteten MathJax-Codes ein CDN-Link verwendet. Zum Anzeigen des gerenderten MathML ist dann eine Internetverbindung nötig.
 
-## MathJax-Quelle: Lokal oder CDN
+## MathJax-Quelle: Lokal oder CDN [mathjax-source-local-vs-cdn]
 
 Bei aktiviertem MathJax kann Marked es aus einer von zwei Quellen laden:
 
@@ -30,7 +30,7 @@ Bei aktiviertem MathJax kann Marked es aus einer von zwei Quellen laden:
 
 Exportierte HTML-Dateien beziehen MathJax immer von einem CDN, unabhängig von der Vorschau-Quelle, sodass sie eigenständig und klein bleiben.
 
-## Gleichungsnummerierung
+## Gleichungsnummerierung [equation-numbering]
 
 Die Gleichungsnummerierung aktivieren Sie unter {% prefspane Style %}. Das funktioniert mit MathJax und KaTeX, ist intern aber unterschiedlich umgesetzt. Für MathJax v3 überträgt Marked Ihre Einstellungen in die passende MathJax-Konfiguration, sodass gilt:
 
@@ -40,7 +40,7 @@ Die Gleichungsnummerierung aktivieren Sie unter {% prefspane Style %}. Das funkt
 
 Diese Optionen entsprechen im Hintergrund den MathJax-Einstellungen `tex.tags` und `tex.tagSide`.
 
-## Zusätzliche Pakete
+## Zusätzliche Pakete [additional-packages]
 
 MathJax v3 ist modular aufgebaut. Marked aktiviert immer die TeX/AMS-Kernpakete; zusätzliche Pakete können Sie optional unter {% prefspane Style %} einschalten:
 
@@ -51,7 +51,7 @@ MathJax v3 ist modular aufgebaut. Marked aktiviert immer die TeX/AMS-Kernpakete;
 
 Klicken Sie auf **Zusätzliche Pakete…**, um eine kleine Auswahlliste zu öffnen, in der Sie diese Pakete ein- oder ausschalten. Änderungen greifen, sobald Marked das nächste Mal Mathematik in der Vorschau rendert.
 
-## Erweiterte MathJax-Konfiguration
+## Erweiterte MathJax-Konfiguration [mathjax-advanced-configuration]
 
 Zusätzlich zu Markeds Standardeinstellungen können Sie eigene Konfigurationen anwenden, indem Sie im Feld **Erweiterte Konfiguration** ein gültiges JSON-Objekt hinzufügen. Dieses Feld wird vor dem Laden von MathJax in das MathJax-v3-Konfigurationsobjekt (`window.MathJax`) eingefügt. Es kann [beliebige von MathJax v3 unterstützte Optionen](https://docs.mathjax.org/en/latest/options/) enthalten, zum Beispiel:
 
@@ -89,7 +89,7 @@ Beachten Sie: Beim MultiMarkdown-Prozessor mit nicht standardmäßigen Trennzeic
 Marked vollführt etwas Magie, sobald MathJax oder KaTeX aktiviert ist, und wandelt die Mathe-Syntax so um, dass sie möglichst gut mit dem aktuellen Prozessor (MultiMarkdown oder Discount) verträglich ist. Das sollte in allen Fällen gut klappen; falls es doch Probleme macht, [kontaktieren Sie den Support](https://support.markedapp.com/questions/add)!
 
 
-## KaTeX
+## KaTeX [katex]
 
 [katex]: https://katex.org/
 
@@ -99,7 +99,7 @@ Marked vollführt etwas Magie, sobald MathJax oder KaTeX aktiviert ist, und wand
 
 Die Gleichungsnummerierung aktivieren Sie unter {% prefspane Style %}. Das funktioniert mit MathJax und KaTeX. Sie können wählen, ob die Nummern links oder rechts neben der Gleichung erscheinen.
 
-### In MathJax
+### In MathJax [in-mathjax]
 
 In MathJax wird dafür diese Einstellung verwendet:
 
@@ -109,11 +109,11 @@ In MathJax wird dafür diese Einstellung verwendet:
 
 Wenn Sie nur AMS-Gleichungen nummerieren möchten, wählen Sie „Nur AMS“ rechts neben dem Aufklappmenü „Seite“.
 
-### In KaTeX
+### In KaTeX [in-katex]
 
 KaTeX bietet keine Gleichungsnummerierung. Um sie in Marked nachzubilden, wird CSS verwendet, und alle abgesetzten Gleichungen werden nummeriert.
 
-## Exportprobleme
+## Exportprobleme [export-issues]
 
 Rich-Text-Formate können keine Gleichungen darstellen (weder über MathJax noch über KaTeX). Sie werden im Ausgabedokument ausgeblendet, denn der Versuch, die speziellen Schriftarten einzubetten, führt zu einem größeren Chaos, als man sich vorstellen mag … Das möchte ich irgendwann beheben, im Moment ist es aber eine Einschränkung.
 

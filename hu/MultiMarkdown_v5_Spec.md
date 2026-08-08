@@ -4,11 +4,11 @@
 
 Tekintse meg a [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) dokumentumot, hogy kísérletezzen a MultiMarkdown processzorral.
 
-## Mi az a MultiMarkdown?
+## Mi az a MultiMarkdown? [what-is-multimarkdown]
 
 A MultiMarkdown egy kiterjesztett Markdown processzor, amelyet úgy terveztek, hogy a weboldal töredékei helyett teljes dokumentumokkal dolgozzon. Kibővíti az eredeti Markdown szintaxist olyan funkciókkal, amelyek lehetővé teszik a konvertálást többféle kimeneti formátumra, beleértve a HTML, LaTeX, PDF, ODF és Microsoft Word dokumentumokat.
 
-## Főbb jellemzők
+## Főbb jellemzők [key-characteristics]
 
 - **Dokumentumközpontú**: Teljes dokumentumokhoz tervezték, nem csak webrészletekhez
 - **Több formátumú kimenet**: HTML, LaTeX, PDF, ODF, RTF és Word formátumba konvertál
@@ -17,15 +17,15 @@ A MultiMarkdown egy kiterjesztett Markdown processzor, amelyet úgy terveztek, h
 - **Bővíthető**: Gazdag szolgáltatáskészlet összetett dokumentumkövetelményekhez
 - **5-ös verzió**: Teljes átírás jobb teljesítménnyel és megbízhatósággal
 
-## Filozófia és tervezési célok
+## Filozófia és tervezési célok [philosophy-and-design-goals]
 
 A MultiMarkdown azt az elvet követi, hogy **a tartalom fontosabb, mint a prezentáció**. A hangsúly a dokumentumok jelentésének ábrázolásán van (ez egy lista, azaz egy táblázat stb.), nem pedig a betűtípusok, színek vagy stílusok diktálásán.
 
 A cél, hogy az emberek 80%-a által írt dokumentumok 80%-a használható legyen, így alkalmas legyen regények, szakdolgozatok, műszaki dokumentációk és a legtöbb egyéb írásos tartalom elkészítésére.
 
-## Főbb szolgáltatások és bővítmények
+## Főbb szolgáltatások és bővítmények [major-features-and-extensions]
 
-### 1. **Metaadat-támogatás**
+### 1. **Metaadat-támogatás** [1-metadata-support]
 
 - Dokumentum metaadatok a fájlok tetején
 - Cím, szerző, dátum és egyéni változók
@@ -56,7 +56,7 @@ Author: [%author]
 Date: [%date]
 ```
 
-### 2. **Speciális táblázatok**
+### 2. **Speciális táblázatok** [2-advanced-tables]
 
 **Teljes asztali támogatás**
 
@@ -80,7 +80,7 @@ Table: Sample Table with Alignment
 - kereszthivatkozások a `[Table 1]`-vel
 - Komplex táblaszerkezetek támogatása
 
-### 3. **Lábjegyzetek és idézetek**
+### 3. **Lábjegyzetek és idézetek** [3-footnotes-and-citations]
 
 **Lábjegyzetek**
 
@@ -123,7 +123,7 @@ source[][#Doe:2006].
 
 Nincsenek szabályok az Ön által használt idézőkulcs-formátumra (pl. Doe:2006), de azt egy `#`-nek kell megelőznie, akárcsak a lábjegyzeteknél az `^` karaktert.
 
-### 4. **Kereszthivatkozások**
+### 4. **Kereszthivatkozások** [4-cross-references]
 
 **Automatikus kereszthivatkozások**
 
@@ -135,7 +135,7 @@ Nincsenek szabályok az Ön által használt idézőkulcs-formátumra (pl. Doe:2
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Referencia típusok**
@@ -145,7 +145,7 @@ Refer to [Section 2.1] for more information.
 - Ábrák: `[Figure 1]`, `[Figure: Caption]`
 - Egyenletek: `[Equation 1]`
 
-### 5. **Definíciólisták**
+### 5. **Definíciólisták** [5-definition-lists]
 
 **Kifejezés-meghatározás párok**
 
@@ -162,7 +162,7 @@ Term 2
 : Definition 2b
 ```
 
-### 6. **Elkerített kódblokkok**
+### 6. **Elkerített kódblokkok** [6-fenced-code-blocks]
 
 **Nyelvspecifikus kódblokkok**
 
@@ -183,7 +183,7 @@ def hello():
 - Support for many programming languages
 - Proper HTML ⟦14⟧ output
 
-### 7. **Math Support**
+### 7. **Math Support** [7-math-support]
 
 **Mathematical Expressions**
 
@@ -201,7 +201,7 @@ $$
 $$
 ```
 
-### 8. **Kép- és linkattribútumok**
+### 8. **Kép- és linkattribútumok** [8-image-and-link-attributes]
 
 **Továbbfejlesztett linkek és képek**
 
@@ -213,7 +213,7 @@ $$
 [Link text]: url.html title="Link title" class="external"
 ```
 
-### 9. **Transclusion**
+### 9. **Transclusion** [9-transclusion]
 
 **Fájlbefoglalás**
 
@@ -233,7 +233,7 @@ $$
 - Beágyazott transzlusio támogatás
 - Manifest generálása a mellékelt fájlok számára
 
-### 10. **CriticMarkup integráció**
+### 10. **CriticMarkup integráció** [10-criticmarkup-integration]
 
 **Változáskövetés**
 
@@ -247,7 +247,7 @@ This is {>>deleted text<<} and this is {++added text++}.
 This is a {~~deletion~>replacement~~}.
 ```
 
-### 11. **Tartalomjegyzék**
+### 11. **Tartalomjegyzék** [11-table-of-contents]
 
 **Automatikus tartalomjegyzék generálás**
 
@@ -267,7 +267,7 @@ Content here...
 More content...
 ```
 
-### 12. **Rövidítések**
+### 12. **Rövidítések** [12-abbreviations]
 
 **HTML-stílusú rövidítések**
 
@@ -282,7 +282,7 @@ More content...
 This uses HTML and CSS.
 ```
 
-## MultiMarkdown v5 vs egyéb Markdown ízek
+## MultiMarkdown v5 vs egyéb Markdown ízek [multimarkdown-v5-vs-other-markdown-flavors]
 
 | Funkció | MultiMarkdown v5 | CommonMark (GFM) | Kedvezmény | Kramdown | Standard |
 | ----------------- | ----------------- | ---------- | ------------ | -------- | -------- |
@@ -303,7 +303,7 @@ This uses HTML and CSS.
 | Transzklúzió | Igen | Nem | Nem | Nem | Nem |
 | Metaadatok | Igen | Nem | Nem | Nem | Nem |
 
-## A MultiMarkdown v5 legfontosabb előnyei
+## A MultiMarkdown v5 legfontosabb előnyei [key-advantages-of-multimarkdown-v5]
 
 1. **Dokumentumközpontú**: Teljes dokumentumokhoz tervezték, nem csak webrészletekhez
 2. **Több formátumú kimenet**: Konvertálás HTML, LaTeX, PDF, ODF, RTF és Word formátumba
@@ -313,7 +313,7 @@ This uses HTML and CSS.
 6. **Jövőbiztos**: Az egyszerű szöveges formátum biztosítja a hosszú távú kompatibilitást
 7. **Bővíthető**: Gazdag szolgáltatáskészlet összetett dokumentumkövetelményekhez
 
-## Általános használati esetek
+## Általános használati esetek [common-use-cases]
 
 **Akadémiai írás**
 
@@ -339,7 +339,7 @@ This uses HTML and CSS.
 - Tudásbázisok és wikik
 - Együttműködő írási projektek
 
-## Bevált gyakorlatok
+## Bevált gyakorlatok [best-practices]
 
 1. **Metaadatok használata**: Használja ki a YAML előlapját a dokumentuminformációkhoz
 2. **Struktúra címsorokkal**: Használjon megfelelő címsor-hierarchiát a tartalomjegyzék generálásához
@@ -348,7 +348,7 @@ This uses HTML and CSS.
 5. **Kimenet tesztelése**: Ellenőrizze a formázást a különböző kimeneti formátumok között
 6. **Idézetek használata**: Alkalmazzon megfelelő tudományos idézési gyakorlatot
 
-## Migráció más Markdown-ízekből
+## Migráció más Markdown-ízekből [migration-from-other-markdown-flavors]
 
 A legtöbb szabványos Markdown változtatás nélkül működik a MultiMarkdown-nal. Az MMD funkcióinak kihasználása:
 
@@ -358,7 +358,7 @@ A legtöbb szabványos Markdown változtatás nélkül működik a MultiMarkdown
 4. **Struktúra áttétellel**: A nagy dokumentumok felosztása kisebb fájlokra
 5. **Tőkeáttételi táblák**: Használjon fejlett táblázatfunkciókat az adatok megjelenítéséhez
 
-## Források
+## Források [resources]
 
 - [MultiMarkdown felhasználói kézikönyv](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
 - [MultiMarkdown szintaxis útmutató](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)

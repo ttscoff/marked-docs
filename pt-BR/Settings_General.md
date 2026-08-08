@@ -8,7 +8,7 @@ Opções em {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Janela
+### Janela [window]
 
 Mantenha as novas janelas no topo
 : define automaticamente novas janelas para "flutuar" acima de outros aplicativos.
@@ -31,7 +31,7 @@ Traga o documento atualizado para frente
 Retornar o foco ao aplicativo anterior
 : quando ativado, se uma ação aumentar/trazer atualização fizer com que Marcado fique em primeiro plano, o foco do teclado será retornado ao aplicativo que estava em primeiro lugar antes da atualização (como seu editor de texto). Quando desativado, Marcado nunca executa essa transferência de foco. Se Marcado não ficar na frente, esta opção não terá efeito.
 
-### Barra de status
+### Barra de status [status-bar]
 
 Mostrar seletor de estilo
 : mostra o seletor de estilo na barra inferior da janela de visualização.
@@ -47,7 +47,7 @@ A contagem de palavras exclui
 - **Blocos de código recuados** (blocos de código protegidos são sempre excluídos)
 - **Legendas das imagens**
 
-### Atalhos
+### Atalhos [shortcuts]
 
 Clique no campo de atalho para registrar uma combinação de teclas de atalho que aciona um evento:
 

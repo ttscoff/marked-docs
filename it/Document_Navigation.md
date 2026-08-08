@@ -4,7 +4,7 @@
 
 Questa pagina descrive come spostarsi nelle anteprime lunghe: il [Sommario](#tabella dei contenuti), la [ricerca veloce](#ricerca veloce), i [segnalibri](#segnalibri-e-mini-mappa) e la [minimappa](#minimappa). Per le scorciatoie di scorrimento applicabili ovunque (come {% kbd j %}/{% kbd k %}), vedere [Navigazione tramite tastiera](Interface_Features.html#keyboardnavigation) in [Funzioni interfaccia](Interface_Features.html).
 
-## Sommario
+## Sommario [table-of-contents]
 
 ![][8]
 
@@ -29,19 +29,19 @@ Per un elenco ridotto di tasti, vedere [Scorciatoie da tastiera](Keyboard_Shortc
 
 Vedi anche il [Video di navigazione del documento su YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Modalità a schermo intero per il sommario
+### Modalità a schermo intero per il sommario [full-screen-mode-for-the-table-of-contents]
 
 Quando una finestra di anteprima contrassegnata è a schermo intero, il sommario può rimanere fisso a sinistra per una navigazione costante. Si alterna ancora con {% kbd cmd T %}; fare clic all'esterno del sommario spesso non lo chiuderà in questo layout.
 
 In una finestra normale, fai clic sull'icona nella parte inferiore del pannello TOC per agganciarlo come barra laterale; fare clic sull'icona nella parte superiore della barra laterale per riportarla alla modalità popup.
 
-### Personalizzazione della posizione in cui appare il sommario
+### Personalizzazione della posizione in cui appare il sommario [customizing-where-the-toc-appears]
 
-Il sommario può essere inserito nel documento esportato utilizzando la [sintassi speciale](Special_Syntax.html#tocplacement) `<!--TOC-->`.
+Il sommario può essere inserito nel documento esportato utilizzando la [sintassi speciale](Special_Syntax.html#tableofcontents) `<!--TOC-->`.
 
 Aggiungi `max#` (ad esempio `<!--TOC max2-->`) per limitare il numero di livelli di intestazione visualizzati.
 
-## Ricerca veloce
+## Ricerca veloce [fast-search]
 
 **Navigazione veloce** combina il sommario con il filtro focalizzato in modo da poter saltare con una digitazione minima:
 
@@ -55,11 +55,11 @@ Aggiungi `max#` (ad esempio `<!--TOC max2-->`) per limitare il numero di livelli
 
 (I documenti precedenti lo chiamavano "Fast Switcher"; è la stessa funzionalità.)
 
-## Segnalibri e mini mappa {#bookmarks-and-mini-map}
+## Segnalibri e mini mappa [bookmarks-and-mini-map]
 
 Utilizza il menu di anteprima {% appmenu Gear %} e {% kbd Tab %} ({% kbd ⇥ %}) focalizzando il documento accanto a [cerca](Interface_Features.html#search) per posizionare e rivisitare i segnalibri mentre sfogli.
 
-### Impostazione dei segnalibri
+### Impostazione dei segnalibri [setting-bookmarks]
 
 Imposta i segnalibri sulla posizione di scorrimento utilizzando {% kbd shift 1 %}--{% kbd shift 9 %} e torna indietro utilizzando solo {% kbd 1 %}--{% kbd 9 %}. Utilizzare {% kbd n %} e {% kbd p %} per successivo/precedente nell'**ordine dei documenti**; {% kbd shift n %} e {% kbd shift p %} per successivo/precedente in ordine **numerico**.
 
@@ -75,7 +75,7 @@ Premi {% kbd x %} due volte ({% kbd xx %}) per cancellare tutti i segnalibri.
 
 Ci sono [altre scorciatoie di anteprima](Keyboard_Shortcuts.html); premi {% kbd h %} nell'anteprima per un elenco in anteprima o {% kbd opt cmd K %} per il riferimento completo.
 
-### Minimappa {#minimappa}
+### Minimappa [minimap]
 
 Se la minimappa è abilitata nelle impostazioni {% prefspane Preview %}, {% kbd 0 %} apre una miniatura in scala dell'intero documento lungo la striscia dei segnalibri. Fai clic in un punto qualsiasi della mappa per scorrere l'anteprima completa lì. I segnalibri salvati vengono visualizzati come linee orizzontali con numeri (e intestazioni se pertinenti).
 
@@ -87,6 +87,6 @@ Premi {% kbd 0 %} o Esc per chiudere la minimappa.
 
 **Nota sulle prestazioni:** la generazione della mappa può mettere brevemente in pausa l'anteprima su documenti di grandi dimensioni; funziona solo quando la mappa è visibile o dopo un ridimensionamento.
 
-### Panoramica dello zoom (correlato)
+### Panoramica dello zoom (correlato) [zoom-overview-related]
 
 Per una panoramica in scala del testo senza la minimappa, vedi [Panoramica zoom](Zoom_Overview.html) ({% kbd z %}).

@@ -4,7 +4,7 @@
 
 El desplazamiento automático mueve lentamente la vista previa para lectura o revisión con manos libres. Está separado de la [Tabla de contenido](Document_Navigation.html) y el [Minimapa](Document_Navigation.html#minimap); desplaza la vista actual automáticamente.
 
-## Iniciar y detener
+## Iniciar y detener [starting-and-stopping]
 
 Active el desplazamiento automático presionando {% kbd s %}. La vista previa avanza a la velocidad actual.
 

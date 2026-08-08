@@ -10,7 +10,7 @@ Você pode forçar qualquer documento a ser processado como Markdown abrindo o m
 
 Os cabeçalhos das seções e cenas aparecerão no Índice para navegação rápida em seu roteiro.
 
-## Roteiros
+## Roteiros [scrippets]
 
 Você também pode usar "scriptpets" em um documento normal para que seções individuais sejam processadas e estilizadas com Fountain. Simplesmente coloque sua marcação Fountain dentro do documento principal com tags `[scrippet]`:
 

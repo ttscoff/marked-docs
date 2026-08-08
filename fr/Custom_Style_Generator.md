@@ -2,7 +2,7 @@
 
 Le générateur de styles personnalisés est un outil Web qui vous permet de créer des styles personnalisés pour Marked sans écrire manuellement du CSS. Il fournit une interface visuelle avec des contrôles pour la typographie, les couleurs, l'espacement, etc., avec un aperçu en direct qui se met à jour à mesure que vous apportez des modifications.
 
-## Accéder au générateur
+## Accéder au générateur [accessing-the-generator]
 
 Le générateur de styles est disponible sur [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). Vous pouvez l'utiliser directement dans votre navigateur Web, aucune installation requise.
 
@@ -10,7 +10,7 @@ Le générateur de styles est disponible sur [https://markedapp.com/style-genera
 
 [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Pour commencer
+## Pour commencer [getting-started]
 
 Lorsque vous ouvrez le générateur pour la première fois, vous verrez :
 
@@ -18,19 +18,19 @@ Lorsque vous ouvrez le générateur pour la première fois, vous verrez :
 - **Volet Contrôles** (à droite) : Tous les contrôles de style organisés en sections
 - **Barre d'outils** (en haut) : titre du style, sélecteur de thème de base et option d'importation CSS
 
-### Choisir un thème de base
+### Choisir un thème de base [choosing-a-base-theme]
 
 Commencez par sélectionner un **Thème de base** dans la liste déroulante. Cela constitue une base pour votre style : vous pouvez ensuite en personnaliser chaque aspect. Les options populaires incluent Blank (pour repartir de zéro), Default et divers thèmes intégrés.
 
-### Importation de CSS existants
+### Importation de CSS existants [importing-existing-css]
 
 Si vous disposez d'un fichier CSS existant que vous souhaitez utiliser comme point de départ, cliquez sur **Importer CSS** et sélectionnez votre fichier. Le générateur chargera ces styles et vous pourrez ensuite les modifier à l'aide des commandes.
 
-## Contrôles de style
+## Contrôles de style [style-controls]
 
 Le générateur organise les contrôles en sections logiques :
 
-### Typographie de base
+### Typographie de base [base-typography]
 
 Contrôlez les paramètres de typographie fondamentaux :
 
@@ -39,7 +39,7 @@ Contrôlez les paramètres de typographie fondamentaux :
 - **Hauteur de ligne** : L'espacement entre les lignes de texte
 - **Rapport d'échelle** : Le rapport utilisé pour l'échelle typographique (affecte la taille des titres)
 
-### Disposition
+### Disposition [layout]
 
 Ajustez l'espacement et l'indentation :
 
@@ -48,7 +48,7 @@ Ajustez l'espacement et l'indentation :
 - **Retrait de liste** : Indentation pour les listes
 - **Retrait de citation** : Marge gauche pour les blockquotes
 
-### Polices
+### Polices [fonts]
 
 Configurez les familles de polices et les épaisseurs :
 
@@ -59,7 +59,7 @@ Configurez les familles de polices et les épaisseurs :
 - **Poids gras** : poids de la police pour le texte en gras
 - **Espacement des lettres** : espacement des caractères pour les en-têtes et le corps du texte
 
-### Polices Google
+### Polices Google [google-fonts]
 
 Ajoutez des polices Google à votre style :
 
@@ -70,7 +70,7 @@ Ajoutez des polices Google à votre style :
 
 Les polices ajoutées apparaissent dans une liste sous les contrôles ; cliquez sur le × pour les supprimer.
 
-### Couleurs
+### Couleurs [colors]
 
 Définir les couleurs pour divers éléments :
 
@@ -85,13 +85,13 @@ Définir les couleurs pour divers éléments :
 
 Les couleurs d'en-tête individuelles (H1 à H6) peuvent être définies séparément : utilisez **Réinitialiser** pour effacer un remplacement et revenir à la couleur d'en-tête.
 
-### Mode sombre
+### Mode sombre [dark-mode]
 
 Activez le **Mode sombre** pour prévisualiser et configurer les couleurs du mode sombre. Lorsqu'il est activé, vous verrez des commandes de couleur distinctes pour les variantes du mode sombre. Les styles du mode sombre s'appliquent lorsque `.inverted` est défini sur l'élément body dans Marked.
 
 Utilisez **Générer des couleurs** pour créer automatiquement une palette en mode sombre basée sur les couleurs de votre mode clair.
 
-### Images
+### Images [images]
 
 Contrôler l'apparence de l'image :
 
@@ -99,7 +99,7 @@ Contrôler l'apparence de l'image :
 - **Rayon de bordure** : coins arrondis (par exemple, "8px", "0")
 - **Alignement** : document par défaut, gauche, centre ou droite
 
-### Citations
+### Citations [blockquotes]
 
 Citations de style :
 
@@ -112,7 +112,7 @@ Citations de style :
 
 Des contrôles séparés sont disponibles pour les blockquotes en mode sombre.
 
-### Listes
+### Listes [lists]
 
 Configurer l'apparence de la liste :
 
@@ -120,7 +120,7 @@ Configurer l'apparence de la liste :
 - **Marge gauche** : espacement à partir du bord gauche
 - **Marge gauche imbriquée** : espacement pour les listes imbriquées (peut être "hériter")
 
-### Listes de définitions
+### Listes de définitions [definition-lists]
 
 Listes de définitions de styles (`<dl>`, `<dt>`, `<dd>`) :
 
@@ -128,7 +128,7 @@ Listes de définitions de styles (`<dl>`, `<dt>`, `<dd>`) :
 - Paramètres **DT** (terme) : taille, épaisseur et style de police
 - Paramètres **DD** (définition) : taille, épaisseur, style et indentation de la police
 
-### Tableaux
+### Tableaux [tables]
 
 Style de table complet :
 
@@ -147,7 +147,7 @@ Style de table complet :
 
 Des contrôles séparés sont disponibles pour les tableaux en mode sombre.
 
-### Blocs de code
+### Blocs de code [code-blocks]
 
 Blocs de code de style et code en ligne :
 
@@ -160,7 +160,7 @@ Blocs de code de style et code en ligne :
 
 Des commandes séparées sont disponibles pour les blocs de code du mode sombre.
 
-### Notes de bas de page
+### Notes de bas de page [footnotes]
 
 Notes de bas de page de style :
 
@@ -170,7 +170,7 @@ Notes de bas de page de style :
 
 Des commandes séparées sont disponibles pour les notes de bas de page du mode sombre.
 
-### Ombre portée
+### Ombre portée [drop-shadow]
 
 Ajoutez des ombres portées aux éléments :
 
@@ -181,13 +181,13 @@ Ajoutez des ombres portées aux éléments :
    - Citations
    - Tableaux
 
-## CSS personnalisé
+## CSS personnalisé [custom-css]
 
 Pour une personnalisation avancée au-delà des contrôles disponibles, utilisez le bouton **CSS personnalisé** pour ouvrir un éditeur de code. Tout CSS que vous ajoutez ici sera ajouté au style généré et automatiquement étendu pour fonctionner dans la structure du document Marked.
 
 L'éditeur inclut la coloration syntaxique et la validation : les CSS non valides seront signalés par des messages d'erreur.
 
-## Aperçu en direct
+## Aperçu en direct [live-preview]
 
 Le volet d'aperçu montre votre style appliqué à un exemple de contenu markdown, notamment :
 
@@ -204,23 +204,23 @@ Le volet d'aperçu montre votre style appliqué à un exemple de contenu markdow
 
 Les modifications sont mises à jour en temps réel à mesure que vous ajustez les commandes.
 
-## Sauvegarde et partage
+## Sauvegarde et partage [saving-and-sharing]
 
 Une fois que vous êtes satisfait de votre style, vous avez plusieurs options :
 
-### Afficher le CSS
+### Afficher le CSS [view-css]
 
 Cliquez sur **Afficher CSS** pour voir le CSS généré complet dans une fenêtre contextuelle. Vous pouvez le copier dans votre presse-papiers ou le consulter avant de l'enregistrer.
 
-### Enregistrer le CSS
+### Enregistrer le CSS [save-css]
 
 Cliquez sur **Enregistrer CSS** pour télécharger votre style sous forme de fichier CSS. Vous serez invité à saisir des métadonnées (titre, auteur, description) avant de télécharger.
 
-### Ajouter à Marked
+### Ajouter à Marked [add-to-marked]
 
 Cliquez sur **Ajouter à Marked** pour ajouter directement le style à votre installation Marked. Cela nécessite que Marked soit en cours d'exécution et ouvrira une boîte de dialogue pour confirmer le nom du style et les informations sur l'auteur.
 
-### Partager le style
+### Partager le style [share-style]
 
 Cliquez sur **Partager le style** pour publier votre style dans la [Galerie de styles Marked](https://markedapp.com/styles) pour que d'autres puissent l'utiliser. Vous devrez fournir :
 
@@ -232,7 +232,7 @@ Cliquez sur **Partager le style** pour publier votre style dans la [Galerie de s
 
 Un aperçu de votre style apparaîtra dans la boîte de dialogue de partage avant la publication.
 
-## Métadonnées
+## Métadonnées [metadata]
 
 Utilisez la section métadonnées (extensible via le bouton fléché à côté du titre du style) pour définir :
 
@@ -243,7 +243,7 @@ Utilisez la section métadonnées (extensible via le bouton fléché à côté d
 
 Ces métadonnées sont incluses dans l'en-tête du fichier CSS et utilisées lors du partage de styles.
 
-## Conseils
+## Conseils [tips]
 
 - Commencez avec un thème de base proche de ce que vous souhaitez, puis personnalisez-le
 - Utilisez le thème **Blank** si vous souhaitez un contrôle complet à partir de zéro
@@ -252,6 +252,6 @@ Ces métadonnées sont incluses dans l'en-tête du fichier CSS et utilisées lor
 - Utilisez **Custom CSS** avec parcimonie : la plupart des besoins peuvent être satisfaits avec les contrôles intégrés
 - Prévisualisez votre style avec différents types de contenu avant de le partager
 
-## Compatibilité du navigateur
+## Compatibilité du navigateur [browser-compatibility]
 
 Le générateur de styles fonctionne mieux dans les navigateurs modernes (Chrome, Firefox, Safari, Edge). Il nécessite que JavaScript soit activé.

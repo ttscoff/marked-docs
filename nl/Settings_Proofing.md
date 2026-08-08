@@ -24,7 +24,7 @@ Voeg voetnoten toe in de commentaarzijbalk
 Leessnelheid (wpm)
 : dit aantal (woorden per minuut) wordt gebruikt om de leestijd in tekststatistieken te berekenen. De gemiddelde leessnelheid voor volwassenen is 200-300 woorden per minuut.
 
-### Trefwoorden
+### Trefwoorden [keywords]
 
 [Define lists of keywords to be highlighted](Keyword_Highlighting.html). Gebruik de tabbladen om elke lijst te bewerken:
 

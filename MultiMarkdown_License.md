@@ -1,4 +1,4 @@
-## MultiMarkdown License
+## MultiMarkdown License [multimarkdown-license]
 
 **AUTHORS**
 

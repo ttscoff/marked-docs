@@ -4,9 +4,9 @@
 
 Marked fornisce impostazioni predefinite per migliorare la tipografia e il layout di esportazione, oltre a offrire un controllo limitato sulle opzioni se è necessaria una maggiore personalizzazione.
 
-## Tipografia
+## Tipografia [typography]
 
-### Sillabazione e vedove
+### Sillabazione e vedove [hyphenation-and-widows]
 
 L'opzione _Sillabazione automatica nei paragrafi_ consente a Marked di determinare dove è meglio sillabare una riga per migliorare lo "straccio" di un paragrafo. Ciò è particolarmente utile quando si utilizza uno stile con allineamento giustificato, ma può migliorare il flusso di lettura anche nei paragrafi più lunghi.
 
@@ -14,15 +14,15 @@ L'opzione _Previeni vedove nei titoli e nei paragrafi_, se abilitata, forzerà l
 
 Contrassegnato collega automaticamente i titoli con l'elemento seguente, per evitare titoli orfani durante l'esportazione in un formato impaginato (PDF, stampa).
 
-### Segni di punteggiatura
+### Segni di punteggiatura [punctuation-marks]
 
 Se il tuo processore è impostato su MultiMarkdown, avrai la possibilità di abilitare o disabilitare la "punteggiatura intelligente" utilizzando l'opzione _Genera virgolette e punteggiatura tipograficamente corrette_. Se abilitato, le virgolette doppie e singole accoppiate verranno trasformate in virgolette "curve", gli apostrofi verranno sostituiti con simboli tipograficamente corretti e verranno eseguite altre regolazioni automatiche.
 
-### Indicatori di nota a piè di pagina
+### Indicatori di nota a piè di pagina [footnote-markers]
 
 Nella sezione Layout e tipografia di {% prefspane Style %}, _Circonda gli indicatori di nota a piè di pagina con parentesi quadre_ è abilitato per impostazione predefinita quando si utilizza il processore MultiMarkdown e crea indicatori di nota a piè di pagina all'interno del documento che sono circondati da parentesi quadre (ad esempio "[1]"). Per disabilitare la creazione delle parentesi quadre, deseleziona questa opzione.
 
-## Modalità contorno
+## Modalità contorno [outline-mode]
 
 La modalità Struttura visualizzerà qualsiasi file contenente una serie gerarchica di intestazioni come struttura APA o decimale. L'impostazione predefinita è lo stile APA, ma è possibile disattivarlo.
 
@@ -39,10 +39,10 @@ Le interruzioni di riga vengono conservate in questi blocchi per impostazione pr
 
 > Questa impostazione aggiunge una classe corpo "poesia" che può essere utilizzata in temi personalizzati per definire lo stile di blocchi di codice e altri elementi quando la "modalità poesia" è abilitata.
 
-## Avvolgimento del blocco di codice
+## Avvolgimento del blocco di codice [poetry]
 
 L'opzione _Consenti ai temi di racchiudere il testo all'interno dei blocchi di codice_ consente allo Stile di anteprima di determinare come formattare i blocchi di codice. La disabilitazione di questa opzione forza tutti i blocchi di codice a scorrere l'overflow orizzontale anziché a capo, indipendentemente dallo stile di anteprima corrente.
 
-## Funziona a schermo intero
+## Funziona a schermo intero [code-block-wrapping]
 
 Quando utilizzi Contrassegnato in modalità a schermo intero (Control-Comando-F), potresti voler limitare la larghezza del testo visualizzato per creare una colonna centrata di contenuto leggibile. La casella di controllo _Limita larghezza del testo nell'anteprima_ abiliterà un dispositivo di scorrimento con il quale è possibile definire la larghezza massima del contenuto visualizzato. Ciò influisce anche sulla visualizzazione non a schermo intero.

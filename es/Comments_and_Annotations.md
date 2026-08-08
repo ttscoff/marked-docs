@@ -4,7 +4,7 @@
 
 Marked tiene un manejo especial para comentarios y anotaciones.
 
-## Fuentes de anotaciones
+## Fuentes de anotaciones [annotation-sources]
 
 Marked reconoce los comentarios provenientes de:
 
@@ -12,7 +12,7 @@ Marked reconoce los comentarios provenientes de:
 - Comentarios de CriticMarkup
 - Comentarios y cambios de Microsoft Word.
 
-## La barra lateral de Comentarios
+## La barra lateral de Comentarios [the-comments-sidebar]
 
 Todas las anotaciones se muestran en una barra lateral y se ocultan en la vista previa del documento. Para mostrar la barra lateral de anotaciones, use el **Menú de ajustes -> Revisión -> Mostrar comentarios** o presione {% kbd ctrl cmd C %}.
 

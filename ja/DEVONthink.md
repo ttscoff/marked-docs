@@ -4,7 +4,7 @@
 
 [DEVONthink](https://www.devontechnologies.com/apps/devonthink) は、AppleScript を使用して、選択した Markdown ファイルを Marked で直接開くことができます。
 
-## 選択したマークダウンをマークで開く
+## 選択したマークダウンをマークで開く [open-selected-markdown-in-marked]
 
 DEVONthink でこのスクリプトを使用して、現在の選択内容を Marked に送信します。何かが選択されていることを確認し、それが Markdown であることを確認してから、URL エンコードされたファイル パスを指定した `x-marked-3://` を使用してそのファイルを開きます。
 
@@ -61,7 +61,7 @@ on urlEncode(s)
 end urlEncode
 ```
 
-## DEVONthink Scripts メニューにインストール
+## DEVONthink Scripts メニューにインストール [install-in-devonthink-scripts-menu]
 
 1. 上記のスクリプトを **スクリプト エディタ** にコピーします。
 2. `Open in Marked.scpt` として保存します。

@@ -4,7 +4,7 @@
 
 A `mk` parancssori eszköz egyszerű hozzáférést biztosít a Marked szolgáltatásaihoz a terminálról, lehetővé téve a munkafolyamatok automatizálását, valamint a shell szkriptekkel és más parancssori eszközökkel való integrációt.
 
-## Telepítés
+## Telepítés [installation]
 
 A `mk` telepítésének javasolt módja a Homebrew:
 
@@ -19,9 +19,9 @@ Ha nem használja a Homebrew-t, töltse le és telepítse az aláírt csomagot:
 
 A `mk.pkg` letöltése után kattintson rá duplán, és kövesse a telepítő utasításait.
 
-## Alapvető használat
+## Alapvető használat [basic-usage]
 
-### Fájlok megnyitása
+### Fájlok megnyitása [opening-files]
 
 Nyisson meg egy markdown fájlt a Marked alkalmazásban a parancssorból:
 
@@ -31,7 +31,7 @@ mk ~/Documents/notes.md
 mk --raise document.md  # Open and raise window above all others
 ```
 
-### Tartalom streamelése az STDIN-ről
+### Tartalom streamelése az STDIN-ről [streaming-content-from-stdin]
 
 Tartalom streamelése közvetlenül a Marked streaming előnézetébe:
 
@@ -43,21 +43,21 @@ mk -  # Explicitly use STDIN
 
 Megnyílik a Streaming Előnézet ablak, és valós időben jeleníti meg a tartalmat, ahogyan azt más parancsokból továbbítják.
 
-## Parancs referencia
+## Parancs referencia [command-reference]
 
-### Fájlműveletek
+### Fájlműveletek [file-operations]
 
 **`mk [file]`** — Nyissa meg a Markdown fájlt a Megjelölt területen
 
 **`mk [file] --raise`** — Nyissa meg a fájlt, és emelje az ablakot a többi fölé
 
-### STDIN és adatfolyam
+### STDIN és adatfolyam [stdin-and-streaming]
 
 **`mk`** vagy **`mk -`** – Olvasson az STDIN-ből, és nyissa meg a Streaming előnézetét
 
 **`mk --stream`** — Nyissa meg a Streaming előnézeti ablakot az STDIN olvasása nélkül
 
-### Előnézet kezelés
+### Előnézet kezelés [preview-management]
 
 **`mk --refresh`** — A legelső előnézeti ablak frissítése
 
@@ -65,7 +65,7 @@ Megnyílik a Streaming Előnézet ablak, és valós időben jeleníti meg a tart
 
 **`mk --refresh file.md`** — Egy adott fájl előnézetének frissítése (ha nyitva van)
 
-### Beállítások
+### Beállítások [preferences]
 
 **`mk --pref`** — Megjelölt beállítások megnyitása (Általános oldal)
 
@@ -77,7 +77,7 @@ Megnyílik a Streaming Előnézet ablak, és valós időben jeleníti meg a tart
 mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 ```
 
-### Stíluskezelés
+### Stíluskezelés [style-management]
 
 **`mk --style NAME`** — Előnézeti stílus beállítása a nyitott ablakokhoz
 
@@ -87,7 +87,7 @@ mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 mk --add-style ~/Styles/custom.css
 ```
 
-### JavaScript végrehajtás
+### JavaScript végrehajtás [javascript-execution]
 
 **`mk --dojs "JAVASCRIPT_COMMAND"`** — JavaScript futtatása a legelső ablakban
 
@@ -100,7 +100,7 @@ mk --dojs "window.scrollTo(0,0)"
 mk --dojs "alert('Hello')" all
 ```
 
-### Tartalom kinyerése és importálása
+### Tartalom kinyerése és importálása [content-extraction-and-import]
 
 **`mk --extract URL`** – Tartalom kinyerése az URL-ből, és megnyitása a Megjelöltben
 
@@ -112,7 +112,7 @@ mk --extract https://example.com/article
 
 **`mk --stylestealer [URL]`** — Open Style Stealer HUD (opcionálisan URL-lel)
 
-### Segédprogramok parancsai
+### Segédprogramok parancsai [utility-commands]
 
 **`mk --paste`** — Új dokumentum létrehozása a vágólapról
 
@@ -124,7 +124,7 @@ mk --extract https://example.com/article
 
 **`mk --version`** vagy **`mk -v`** — Verzióinformációk megjelenítése
 
-## Példák
+## Példák [examples]
 
 ```bash
 # Open a file
@@ -155,9 +155,9 @@ mk --extract https://blog.example.com/article
 mk --preview "## Hello\n\nThis is **markdown** text!"
 ```
 
-## Integráció
+## Integráció [integration]
 
-### Shell álnevek
+### Shell álnevek [shell-aliases]
 
 Adja hozzá a `~/.zshrc` vagy `~/.bash_profile` számhoz:
 
@@ -166,7 +166,7 @@ alias mko='mk --raise'      # Open with raise
 alias mkr='mk --refresh all' # Refresh all
 ```
 
-### Szkriptek
+### Szkriptek [scripts]
 
 A `mk` használata shell szkriptekben az automatizáláshoz:
 
@@ -178,7 +178,7 @@ fswatch -o document.md | while read; do
 done
 ```
 
-### Munkafolyamatok
+### Munkafolyamatok [workflows]
 
 Kombináld más eszközökkel:
 
@@ -190,7 +190,7 @@ pbpaste | markdown | mk
 grep -r "TODO" . | head -20 | mk
 ```
 
-## Nyílt forráskód
+## Nyílt forráskód [open-source]
 
 A `mk` parancssori eszköz nyílt forráskódú, és elérhető a GitHubon:
 
@@ -204,7 +204,7 @@ A következőket teheti:
 
 Az eszköz Swiftben íródott, és Xcode segítségével fordítható. Lásd: [README](https://github.com/ttscoff/mk) az összeállítási utasításokért.
 
-## Verzió
+## Verzió [version]
 
 Ellenőrizze a telepített `mk` verziót a következővel:
 
@@ -212,7 +212,7 @@ Ellenőrizze a telepített `mk` verziót a következővel:
 mk --version
 ```
 
-## Kapcsolódó szolgáltatások
+## Kapcsolódó szolgáltatások [related-features]
 
 - A Marked URL-sémájával kapcsolatos további információkért lásd: [URL-kezelő](URL_Handler).
 - A streaming előnézeti funkcióval kapcsolatos részletekért lásd: [Streaming Preview](Streaming_Preview)

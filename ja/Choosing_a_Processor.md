@@ -8,91 +8,91 @@ Marked は、複数の組み込み Markdown プロセッサを使用して同じ
 
 ---
 
-## マルチマークダウン (v5)
+## マルチマークダウン (v5) [multimarkdown-v5]
 
 **最適な用途:** 長編の散文、学術文書または技術文書、**メタデータ**、**引用**、**MultiMarkdown 固有**の機能に依存するもの。
 
 Marked には **MultiMarkdown 5** が同梱されています (アップストリームのドキュメントについては、[MultiMarkdown ユーザー ガイド](https://fletcher.github.io/MultiMarkdown-5/) を参照してください)。
 
-### 強み
+### 強み [strengths]
 
 - **物語や参考文献の多い文書:** 脚注、参考文献/引用、および表は第一級です。
 - **メタデータ:** 標準 MultiMarkdown メタデータ ブロック (`Key: Value` ヘッダー) に加え、**トランスクルージョン** および v5 ガイドで説明されているその他の MMD の便利な機能。
 - **メタデータ置換:** メタデータのキーを `[%key]` スタイルの置換で本文に挿入できるため、タイトル、作成者文字列、および同様の値がヘッダーと同期したままになります。
 - **表、画像、および相互参照:** MultiMarkdown 5 について文書化された機能と一致しています。
 
-### ID とマニュアルの見出し
+### ID とマニュアルの見出し [ids-and-manual-headings]
 
 - 見出し ID は、**小文字の連結** スラッグ (スペースなし、単語が連続している) を生成する傾向にある方法で **正規化**されています。
 - **手動ヘッダー ID** の場合、MultiMarkdown は次の形式を使用します: `## Headline Text [my-id]` (見出しテキストの後の括弧で囲まれた識別子)。
 
-### 他のものを選択する場合
+### 他のものを選択する場合 [when-to-pick-something-else]
 
 **GitHub 風味の**タスク リストと GitHub の現在のパーサーの正確な動作が必要な場合は、**CommonMark (GFM)** をお勧めします。任意の要素に対して **きめ細かい HTML クラス/ID** が必要な場合は、**Kramdown** を検討してください。
 
 ---
 
-## クラムダウン
+## クラムダウン [kramdown]
 
 **最適な用途:** HTML 出力を**正確に制御**するドキュメント — カスタム **クラス**、**ID**、属性。これにより、CSS は特定のブロックとスパンをターゲットにできます。
 
 [kramdown syntax Reference](https://kramdown.gettalong.org/syntax.html) は信頼できるガイドです。
 
-### 強み
+### 強み [strengths-2]
 
 - 独自の拡張機能を追加しながら、日常の Markdown の MultiMarkdown スタイルの習慣と **ほとんど互換性があります**。
 - **インラインおよびブロック属性リスト (IAL):** `{: #id .class key="value"}` を段落、ヘッダー、コード ブロック、リンク、画像などに添付します --- Jekyll スタイルのサイトやカスタム スタイルシートに最適です。
 - **ヘッダー ID:** kramdown は、自動生成されたヘッダー ID を **小文字でハイフンで区切られた** 単語 (例: `my-section-title`) に正規化します。 **マニュアル ID** の場合は、見出しテキストの後に `{#id}` フォームを使用します。 Settext: `My Section {#my-section}` 次に下線、または ATX: `# My Section {#my-section}` (正確な配置と IAL ルールについては、kramdown の [ヘッダー](https://kramdown.gettalong.org/syntax.html#headers) を参照してください)。
 - **定義リスト、脚注、スマート タイポグラフィ、数学ブロック:** 「単純な」マークダウン以上のものを必要とするパブリッシュ パイプライン用の豊富な機能セット。
 
-### 他のものを選択する場合
+### 他のものを選択する場合 [when-to-pick-something-else-2]
 
 **MultiMarkdown のみ** メタデータ置換 (`[%key]`) または MMD 固有の引用ワークフローに依存している場合は、**MultiMarkdown** の方が適している可能性があります。オンラインの GitHub と一致する必要がある **README およびリポジトリ ドキュメント**の場合、通常は **CommonMark (GFM)** の方が近いです。
 
 ---
 
-## CommonMark (GitHub フレーバード マークダウン / cmark-gfm)
+## CommonMark (GitHub フレーバード マークダウン / cmark-gfm) [commonmark-github-flavored-markdown-cmark-gfm]
 
 **以下に最適:** **README ファイル**、**問題/PR の説明**、**プロジェクト ドキュメント**。**GitHub の現在の Markdown 動作**に可能な限り一致する必要があります。
 
 Marked は **GFM** 指向のエンジン (cmark-gfm) を使用します。正式な仕様は、[CommonMark](https://commonmark.org/) に基づいて構築された [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) です。
 
-### 強み
+### 強み [strengths-3]
 
 - **GitHub に最も近いもの:** テーブル、取り消し線、タスク リスト項目、言語タグを含むフェンスで囲まれたコード ブロック、および自動リンクは、最新の GitHub レンダリングのように動作します。
 - **曖昧さのない解析:** CommonMark は、ブロック/インラインの優先順位とリストのルールを正確に定義します。一部の特殊なケースでは「古典的な」Markdown.pl の動作よりも厳格ですが、ルールを学習すると **より予測可能になります**。
 - **ラップされたテキストに実用的:** 段落とリストのルールは、ハードラップされた散文でも適切に動作するように設計されています (遅延継続とリストに関する仕様のセクションを参照)。
 
-### ヘッダー ID
+### ヘッダー ID [header-ids]
 
 自動生成される見出しアンカーは通常、**小文字でハイフンで区切られ**ており、一般的な GitHub スタイルのスラッギングと一致します。
 
-### 他のものを選択する場合
+### 他のものを選択する場合 [when-to-pick-something-else-3]
 
 GFM は、**MultiMarkdown メタデータ**、**kramdown IAL**、または **MMD 引用** ワークフローを複製しません。書籍、論文、または大量のメタデータの場合は、必要に応じて **MultiMarkdown** または **Kramdown** を使用します。
 
 ---
 
-## 割引
+## 割引 [discount]
 
 **最適な用途:** **クラシックな Markdown** と **古い GitHub 風味の** 機能セットを追跡する **高速な C ベース** プロセッサ。完全な CommonMark ルール ブックがなくても、**元の Markdown** に近い動作と表、脚注、および関連する拡張機能が必要な場合に役立ちます。
 
 プロジェクトのホーム: [割引](https://www.pell.portland.or.us/~orc/Code/discount/)。
 
-### 強み
+### 強み [strengths-4]
 
 - **PHP Markdown Extra-style tables** および多くの拡張機能 (脚注、有効時のフェンス コードなど --- Marked で有効になる内容については、Marked の [割引 GFM 仕様](Discount_GFM_Spec.html) を参照)。
 - アップストリーム割引の **オプションの「GitHub」エクストラ** (例: 適切なフラグを使用して構築された場合のチェックボックス リスト);割引仕様ページで出荷される組み合わせを文書にマークします。
 - **SmartyPants スタイルのタイポグラフィ** および割引サイトで説明されているその他の便利な機能 (ただし、含まれているすべてのプロセッサが実際にはタイポグラフィ機能を提供します)。
 - 哲学的には、完全な CommonMark テスト スイートではなく、**John Gruber の Markdown** に実用的な拡張機能を加えたものに近いです。
 
-### 他のものを選択する場合
+### 他のものを選択する場合 [when-to-pick-something-else-4]
 
 **今日の github.com** とピクセル完璧な同等性を得るには、**CommonMark (GFM)** をお勧めします。 **MultiMarkdown メタデータと引用**には、**MultiMarkdown** を使用します。
 
 ---
 
-## 簡単な比較
+## 簡単な比較 [quick-comparison]
 
 |懸念事項 |マルチマークダウン |クラムダウン |コモンマーク (GFM) |割引 |
 |----------|------|----------|----------|----------|
@@ -104,7 +104,7 @@ GFM は、**MultiMarkdown メタデータ**、**kramdown IAL**、または **MMD
 
 ---
 
-## も参照
+## も参照 [see-also]
 
 - [設定: プロセッサー](Settings_Processor.html) — デフォルトのプロセッサーと関連オプション
 - [Markdown Dingus](Markdown_Dingus.html) — Marked でプロセッサを並べて試す

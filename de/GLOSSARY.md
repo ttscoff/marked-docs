@@ -53,7 +53,7 @@ Der Editor für Eigene Regeln heißt bei Marked „Conductor“. Wir führen den
 
 | English | Translation | Notes |
 |---------|-------------|-------|
-| Conductor | Conductor | Feature-Name, engl. belassen; NICHT „Dirigent“ (zwei Altlasten in Additional_Javascript.md/Markdown_Dingus.md noch zu bereinigen) |
+| Conductor | Conductor | Feature-Name, engl. belassen; NICHT „Dirigent“ (Markdown_Dingus ist bereinigt; die letzte Altlast steht in Additional_Javascript.md — die Seite ist aber nicht in `config.yaml` und wird nicht gebaut, siehe unten) |
 | Rules Editor | Editor für Eigene Regeln | App-Menü „Eigene Regeln bearbeiten“ |
 | predicate / predicate editor | Prädikat / Prädikat-Editor | |
 | Manually enabled | Manuell aktiviert | Kriterium + Schaltfläche „Manuell aktiviert hinzufügen“ |
@@ -65,6 +65,15 @@ Der Editor für Eigene Regeln heißt bei Marked „Conductor“. Wir führen den
 | Insert TOC / Insert File / Insert Text | Inhaltsverzeichnis einfügen / Datei einfügen / Text einfügen | |
 | Run Shortcut / Run System Service / Run Automator Workflow | Kurzbefehl ausführen / Systemdienst ausführen / Automator-Workflow ausführen | „Kurzbefehl“ = Apple-Shortcut |
 | Run Rule / Continue | Regel ausführen / Fortfahren | |
+
+## Two decided app strings (16.07.2026)
+
+Both were translated two different ways in the app (overview vs. menu). Agreed with Brett; the app strings get aligned to these, so quote **these** in the docs:
+
+| Term | Translation | Notes |
+|---------|-------------|-------|
+| Included files (transclusion) | **eingebundene** Dateien | Marked includes files by reference, so „einbinden“, never „einbetten“ — matching Multi-File_Documents, which uses it throughout. Reserve „eingebettet“ for things physically embedded in a file: eingebettete Bilder, eingebetteter Text (PDF), „Eingebettetes Skript ausführen“. |
+| Save Clipboard Preview | **Zwischenablage-Vorschau speichern** | Not „Schnellvorschau speichern“: the command saves the preview built from the *clipboard*, and „Schnellvorschau“ names a different concept (and collides with Quick Look). |
 
 ## Do not translate (keep English)
 

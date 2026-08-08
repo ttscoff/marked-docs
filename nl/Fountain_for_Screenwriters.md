@@ -8,7 +8,7 @@ U kunt forceren dat elk document wordt verwerkt als Markdown door het tandwielme
 
 Sectie- en scènekoppen verschijnen in de inhoudsopgave voor snelle navigatie door uw scenario.
 
-## Fragmenten
+## Fragmenten [scrippets]
 
 U kunt ook "scrippets" in een gewoon document gebruiken om afzonderlijke secties te laten verwerken en opmaken met Fountain. Omring eenvoudig uw Fountain-opmaak in het hoofddocument met `[scrippet]` tags:
 

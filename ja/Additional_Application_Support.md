@@ -4,7 +4,7 @@
 
 マークは多くのエディターやライティング アプリで動作します。このページでは、共有 **設定**、**クリップボード プレビュー**、**ストリーミング プレビュー**へのポインター、およびスクリプト リソースについて説明します。人気のあるアプリの詳細なガイドは、それぞれのヘルプ トピックに記載されています (サイドバーの **サポートされているアプリ** セクションを参照してください)。
 
-## アプリごとのガイド
+## アプリごとのガイド [per-app-guides]
 
 全体的なワークフローは、[Mac での Live Markdown プレビュー](Live_Markdown_Preview_on_Mac.html) から始めます。 Obsidian を使用する場合は、[Marked vs Obsidian Preview](Marked_vs_Obsidian_Preview.html) を参照して、Marked が Obsidian の組み込みプレビューとともに価値を追加するタイミングを決定してください。
 
@@ -35,7 +35,7 @@
 | **ヴードゥーパッド** | [ヴードゥーパッド](VoodooPad.html) |
 | **Xcode プレイグラウンド** | [Xcode プレイグラウンド](Xcode_Playgrounds.html) |
 
-## アプリケーションの設定
+## アプリケーションの設定 [application-settings]
 
 I> いくつかの統合では、{% prefspane Apps %} と {% prefspane Preview %} 内のトグルが公開されています。
 
@@ -43,17 +43,17 @@ I> いくつかの統合では、{% prefspane Apps %} と {% prefspane Preview %
 
 これらのペインは、Wiki リンクのデフォルト、Scrivener ハンドオフ、ストリーミング クリップボード設定、OPML/OmniOutliner のマインド マップ埋め込みオプション、Obsidian 統合、または連携エディターに依存するその他のプロセッサーに使用します。
 
-## クリップボードのプレビュー
+## クリップボードのプレビュー [clipboard-preview]
 
 ![][クリップボードプレビューメニュー]
 
 クリップボード内のマークダウン (または互換性のあるプレーン テキスト) は、{% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}) で開きます。クリップボードに **HTML または RTF** が保持されている場合、Marked はプレビューの前にそれを Markdown のようなソースに変換します。これには、RTF 段落で大きなスタイルシート フォント サイズが使用されている場合の大まかな見出し検出も含まれます。
 
-## ストリーミングプレビュー
+## ストリーミングプレビュー [streaming-preview]
 
 Bear、Curio、Drafts、The Archive、nvALT、nvUltra、およびその他のいくつかのエディターは、**ストリーミング プレビュー** を介して入力時に Markdown を Marked にプッシュできます。セットアップとトラブルシューティングについては、[ストリーミング プレビュー](Streaming_Preview.html) を参照してください。
 
-## スクリプトとボーナス パック
+## スクリプトとボーナス パック [scripts-and-bonus-pack]
 
 BBEdit、TextMate、DEVONthink、Emacs、Vim などのオートメーションには、[マーク付きボーナス パック][ボーナス] が同梱されています。上記の統合を超えてメニュー バーまたはエディタ マクロが必要な場合は、これらのスクリプトをインストールまたは調整します。
 

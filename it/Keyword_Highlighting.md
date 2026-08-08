@@ -4,13 +4,13 @@
 
 Catturare la verbosità problematica e mettere in luce le frasi importanti.
 
-## Evidenziazione delle parole chiave
+## Evidenziazione delle parole chiave [highlighting-keywords]
 
 L'evidenziazione delle parole chiave in Marked ti consente di individuare frasi comuni che potresti voler evitare, trovare termini alternativi o semplicemente evidenziare per scopi generali. L'elenco delle parole chiave utilizzate per corrispondere a ciascuna categoria può essere modificato in {% prefspane Proofing %}.
 
 Abilita l'evidenziazione con {% kbd shift cmd H %}, dal menu a forma di ingranaggio ({% appmenu {{gear}}, Highlight Keywords %}), oppure apri il cassetto delle parole chiave utilizzando l'icona dell'evidenziatore in basso a sinistra (vicino al menu a forma di ingranaggio). Il cassetto può essere aperto anche con la scorciatoia da tastiera {% kbd shift cmd K %}. L'evidenziazione viene abilitata automaticamente quando il cassetto viene aperto e può essere attivata e disattivata con l'interruttore sul lato sinistro del cassetto.
 
-## Il cassetto delle parole chiave
+## Il cassetto delle parole chiave [the-keyword-drawer]
 
 ![Cassetto delle parole chiave][kwd]
 
@@ -24,7 +24,7 @@ Puoi navigare rapidamente tra i punti salienti utilizzando la tastiera. Digitand
 
 Se si fa clic su una parola o frase evidenziata, quel tipo diventerà la destinazione della navigazione e utilizzando `[` o `]` si navigherà da quel punto nel documento.
 
-## Modifica delle parole chiave
+## Modifica delle parole chiave [editing-keywords]
 
 ![Impostazioni correzione bozze][proofprefs]
 
@@ -38,7 +38,7 @@ Le espressioni regolari possono essere utilizzate circondando l'espressione con 
 
 Quanto sopra corrisponderà a qualsiasi parola che termina con "ly" per l'evidenziazione. La sintassi per le espressioni regolari nell'evidenziazione delle parole chiave di Marked è la [stessa di JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Parole chiave temporanee
+## Parole chiave temporanee [temporary-keywords]
 
 Puoi anche aggiungere parole chiave temporanee nel cassetto delle parole chiave modificando il blocco note. Proprio come nei campi {% prefspane Proofing %}, aggiungi una parola chiave o una frase per riga, sono consentite le espressioni regolari (circondate da barre). Dopo aver modificato le parole chiave temporanee, assicurati di fare clic sul pulsante "Aggiorna" (o premere {% kbd cmd return  %}) per salvare le modifiche e vederle evidenziate nel documento.
 
@@ -50,7 +50,7 @@ Consulta anche il comando ["Visualizza ripetizione parole"][wordrep] per trovare
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Voce passiva
+## Voce passiva [passive-voice]
 
 Marked indicherà l'uso della "voce passiva" nel testo inglese. Come [definito da Wikipedia] [passivo]:
 
@@ -61,6 +61,6 @@ La voce passiva non è malvagia, come puoi leggere [nei post del linguista Geoff
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Parole raddoppiate
+## Parole raddoppiate [doubled-words]
 
 Le parole doppie (ad esempio "il il") vengono automaticamente evidenziate in arancione quando l'evidenziazione delle parole chiave è abilitata. Questo non è attualmente configurabile, ma dovrebbe rivelarsi utile per la correzione di bozze.

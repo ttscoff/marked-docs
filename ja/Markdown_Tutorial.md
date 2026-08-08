@@ -2,13 +2,13 @@
 
 # <%= @title %>
 
-## マークダウンとは何ですか?
+## マークダウンとは何ですか? [what-is-markdown]
 
 Markdown は、読みやすく書きやすいプレーン テキスト形式を使用して記述し、構造的に有効な HTML に変換できる軽量のマークアップ言語です。 Markdown の書式設定構文の最も重要な設計目標は、構文をできるだけ読みやすくすることです。
 
-## 基本的な構文
+## 基本的な構文 [basic-syntax]
 
-### ヘッダー
+### ヘッダー [headers]
 
 ハッシュ記号 (`#`) を使用してヘッダーを作成します。ハッシュの数によってヘッダー レベルが決まります。
 
@@ -21,7 +21,7 @@ Markdown は、読みやすく書きやすいプレーン テキスト形式を�
 ###### Header 6
 ```
 
-### 強調
+### 強調 [emphasis]
 
 **太字テキスト** 二重アスタリスクまたは二重アンダースコアを使用:
 
@@ -37,7 +37,7 @@ __Bold text__
 _Italic text_
 ```
 
-### リスト
+### リスト [lists]
 
 **アスタリスク、プラス記号、またはハイフンを使用した順序なしリスト**:
 
@@ -63,7 +63,7 @@ _Italic text_
 3. Third item
 ```
 
-### リンク
+### リンク [links]
 
 **インライン リンク**。角括弧内のテキストと括弧内の URL が含まれます。
 
@@ -86,7 +86,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### 画像
+### 画像 [images]
 
 画像はリンクと同様の構文を使用しますが、先頭に感嘆符が付いています。
 
@@ -97,7 +97,7 @@ _Italic text_
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### ブロック引用符
+### ブロック引用符 [blockquotes]
 
 各行の先頭に大なり記号 (`>`) を使用してブロック引用符を作成します。
 
@@ -108,7 +108,7 @@ _Italic text_
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### コード
+### コード [code]
 
 バッククォートを使用した **インライン コード**:
 
@@ -124,7 +124,7 @@ Use ⟦4⟧ in your text.
     Multiple lines are supported.
 ```
 
-### 横罫線
+### 横罫線 [horizontal-rules]
 
 3 つ以上のハイフン、アスタリスク、またはアンダースコアを使用して水平罫線を作成します。
 
@@ -136,7 +136,7 @@ Use ⟦4⟧ in your text.
 ___
 ```
 
-### 改行
+### 改行 [line-breaks]
 
 **ハード改行**は、行を 2 つ以上のスペースで終了します。
 
@@ -152,7 +152,7 @@ This line
 continues on the next line with a space.
 ```
 
-### エスケープ文字
+### エスケープ文字 [escaping-characters]
 
 バックスラッシュを使用して特殊文字をエスケープします。
 
@@ -175,7 +175,7 @@ continues on the next line with a space.
 - `.`期
 - `!` 感嘆符
 
-## ベストプラクティス
+## ベストプラクティス [best-practices]
 
 1. **空白行を使用**して、読みやすくするためにさまざまな要素を区切ります
 2. **書式設定の選択に一貫性を保つ** (例: 強調には `*` または `_` を使用します)
@@ -183,9 +183,9 @@ continues on the next line with a space.
 4. **出力をテスト**して、期待どおりにレンダリングされることを確認します
 5. **「ここをクリック」のような一般的なフレーズの代わりに、意味のあるリンク テキストを使用します**
 
-## 一般的なパターン
+## 一般的なパターン [common-patterns]
 
-### ネストされたリスト
+### ネストされたリスト [nested-lists]
 
 ```markdown
 1. First item
@@ -195,7 +195,7 @@ continues on the next line with a space.
    - More nested content
 ```
 
-### 段落のあるリスト
+### 段落のあるリスト [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -207,7 +207,7 @@ continues on the next line with a space.
    This is a paragraph under the second item.
 ```
 
-### 他の要素を含むブロック引用符
+### 他の要素を含むブロック引用符 [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -218,7 +218,7 @@ continues on the next line with a space.
 > > Nested blockquotes are also possible.
 ```
 
-## 概要
+## 概要 [summary]
 
 Markdown は、HTML に簡単に変換できるテキストをフォーマットするためのシンプルで読みやすい方法を提供します。重要なのは、基本的な構文要素を一貫して使用しながら、シンプルで読みやすいものに保つことです。練習すると、Markdown が自然になり、構造化されたコンテンツを書くのがはるかに簡単になることがわかります。
 

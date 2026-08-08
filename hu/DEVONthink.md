@@ -4,7 +4,7 @@
 
 A [DEVONthink](https://www.devontechnologies.com/apps/devonthink) AppleScript segítségével közvetlenül megnyithatja a kiválasztott Markdown fájlokat a Marked alkalmazásban.
 
-## Nyissa meg a kijelölt Markdown-t a Jelölve
+## Nyissa meg a kijelölt Markdown-t a Jelölve [open-selected-markdown-in-marked]
 
 Használja ezt a szkriptet a DEVONthinkben, hogy elküldje az aktuális kijelölést a Marked-nek. Ellenőrzi, hogy kiválasztottál-e valamit, megerősíti, hogy az Markdown, majd megnyitja a `x-marked-3://` használatával egy URL-kódolt fájlútvonallal.
 
@@ -61,7 +61,7 @@ on urlEncode(s)
 end urlEncode
 ```
 
-## Telepítés a DEVONthink Scripts menüben
+## Telepítés a DEVONthink Scripts menüben [install-in-devonthink-scripts-menu]
 
 1. Másolja a fenti szkriptet a **Script Editor**-ba.
 2. Mentse el `Open in Marked.scpt` néven.

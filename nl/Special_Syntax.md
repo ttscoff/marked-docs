@@ -1,8 +1,8 @@
 # <%= @title %>
 
-## Toelichtingen
+## Toelichtingen [callouts]
 
-## Beer/Obsidiaan ##
+## Beer/Obsidiaan ## [bearobsidian]
 
 Marked ondersteunt callouts met de syntaxis die wordt gebruikt door Obsidian en Bear, wat een speciaal opgemaakte blokcitaat is:
 
@@ -33,7 +33,7 @@ U kunt een `+` of `-` gebruiken om de callout samenvouwbaar te maken. Een pluste
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Xcode-speeltuin ###
+### Xcode-speeltuin ### [xcode-playground]
 
 Bij het bekijken van Xcode Playground-bestanden ondersteunt Marked de native Xcode Playground callout-syntaxis:
 
@@ -94,7 +94,7 @@ Deze highlights worden automatisch geconverteerd naar de highlight-indeling van 
 > Deze functie werkt alleen bij het bekijken van voorbeelden van Xcode Playground-bestanden (`.playground`). Normale markdown-bestanden verwerken deze syntaxis niet.
 
 
-## Inhoudsopgave
+## Inhoudsopgave [tableofcontents]
 
 Met `<!--TOC-->` kunt u opgeven waar in het document de inhoudsopgave moet verschijnen. Als dit is ingesteld, overschrijft dit de optie in Voorkeuren en wordt het altijd weergegeven in het voorbeeldvenster, evenals bij het opslaan en afdrukken. De inhoudsopgave wordt slechts één keer weergegeven, zelfs als de inhoud meerdere `<!--TOC-->`-specificaties bevat.
 
@@ -106,7 +106,7 @@ Standaard wordt de inhoudsopgave afgedrukt op de eerste pagina van het document 
 
 I> U kunt het type nummering of letters opgeven voor elk niveau van een geneste inhoudsopgavehiërarchie in {% prefspane Export %}.
 
-## Pagina-einden
+## Pagina-einden [pagebreaks]
 
 U kunt een pagina-einde forceren voor print/PDF-uitvoer met behulp van de syntaxis:
 
@@ -118,7 +118,7 @@ Plaats het token op zichzelf op een regel en het genereert markeringen die op da
 
 {::paginaeinde /}
 
-## Autoscroll pauzeert [pauzeert]
+## Autoscroll pauzeert [pauses]
 
 Marked kan functioneren als een teleprompter met behulp van de [Autoscroll](Autoscroll.html) functie (u moet de [Teleprompter style](https://markedapp.com/styles/preview?style=teleprompter) toevoegen). Daarbij kan het handig zijn om pauzes in het document op te nemen. Doe dit met behulp van:
 
@@ -128,7 +128,7 @@ Marked kan functioneren als een teleprompter met behulp van de [Autoscroll](Auto
 
 Waarbij `X` het aantal seconden is waarvoor Marked moet pauzeren. Als u dus `<!--PAUSE:15-->` invoegt, krijgt u een pauze van 15 seconden wanneer dat punt in het document het midden van het scherm bereikt.
 
-## Bestand bevat
+## Bestand bevat [file-includes]
 
 De inhoud van extra bestanden kan worden ingevoegd met behulp van de syntaxis:
 
@@ -144,7 +144,7 @@ Zie ["Multi-File Documents"][ext] voor meer informatie.
 
 [ext]: Multi-File_Documents.html
 
-## Inclusief code
+## Inclusief code [includingcode]
 
 Marked kan externe bestanden als code opnemen met een syntaxis die vergelijkbaar is met de bovenstaande bestandsindeling:
 
@@ -156,7 +156,7 @@ Let op de haakjes in plaats van vierkante haakjes. Voor compatibiliteit met de L
 
 De inhoud van het opgegeven bestand wordt ingevoegd in een precodeblok in uw document en is beschikbaar voor automatische syntaxisaccentuering als dit is ingeschakeld. Codeblokken kunnen niet worden genest en worden niet verwerkt met MultiMarkdown. Custom-processors worden nog steeds over het gemaakte pre>codeblok uitgevoerd.
 
-## Inclusief onbewerkte tekst of html
+## Inclusief onbewerkte tekst of html [includingunprocessedtextorhtml]
 
 E> **Opmerking:** Deze functie is voor gevorderde gebruikers.
 

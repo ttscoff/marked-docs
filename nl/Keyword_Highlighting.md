@@ -2,13 +2,13 @@
 
 Het opvangen van lastige woordenstroom en het onder de aandacht brengen van belangrijke zinnen.
 
-## Trefwoorden markeren
+## Trefwoorden markeren [highlighting-keywords]
 
 Door trefwoorden te markeren in Marked kunt u veelvoorkomende zinsdelen opvangen die u misschien wilt vermijden, alternatieve termen zoeken of deze gewoon markeren voor algemene doeleinden. De lijst met trefwoorden die bij elke categorie passen, kan worden bewerkt in de {% prefspane Proofing %}.
 
 Schakel markeren in met {% kbd shift cmd H %} vanuit het tandwielmenu ({% appmenu {{gear}}, Highlight Keywords %}), of open de zoekwoordenlade met behulp van het markeerstiftpictogram linksonder (bij het tandwielmenu). De lade kan ook worden geopend met de sneltoets {% kbd shift cmd K %}. Het accentueren wordt automatisch ingeschakeld wanneer de lade wordt geopend en kan worden in- en uitgeschakeld met de schakelaar aan de linkerkant van de lade.
 
-## De zoekwoordenlade
+## De zoekwoordenlade [the-keyword-drawer]
 
 ![Keyword Drawer][kwd]
 
@@ -22,7 +22,7 @@ Via het toetsenbord navigeer je snel door de highlights. Als u `[` en `]` typt, 
 
 Als er op een gemarkeerd woord of zinsdeel wordt geklikt, wordt dat type het doel voor navigatie en met behulp van `[` of `]` wordt vanaf dat punt in het document genavigeerd.
 
-## Trefwoorden bewerken
+## Trefwoorden bewerken [editing-keywords]
 
 ![Proofreading Settings][proofprefs]
 
@@ -36,7 +36,7 @@ Reguliere expressies kunnen worden gebruikt door de expressie te omringen met sc
 
 Het bovenstaande komt overeen met alle woorden die eindigen op "ly" voor markering. De syntaxis voor reguliere expressies in de trefwoordmarkering van Marked is [same as JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Tijdelijke trefwoorden
+## Tijdelijke trefwoorden [temporary-keywords]
 
 U kunt ook tijdelijke trefwoorden toevoegen aan de trefwoordenlade door het kladblok te bewerken. Net als in de {% prefspane Proofing %} velden voegt u één trefwoord of woordgroep per regel toe, reguliere expressies toegestaan ​​(omgeven door schuine strepen). Na het bewerken van tijdelijke trefwoorden, zorg ervoor dat u op de knop "Bijwerken" klikt (of druk op {% kbd cmd return  %}) om de wijzigingen op te slaan en ze gemarkeerd te zien in uw document.
 
@@ -48,7 +48,7 @@ Zie ook de opdracht ["Visualize Word Repetition"][wordrep] om overmatig gebruikt
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Passieve stem
+## Passieve stem [passive-voice]
 
 Marked wijst op het gebruik van "passieve stem" in Engelse tekst. Als [defined by Wikipedia][passive]:
 
@@ -59,6 +59,6 @@ Passieve stem is niet slecht, zoals je kunt lezen over [in posts by linguist Geo
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Verdubbelde woorden
+## Verdubbelde woorden [doubled-words]
 
 Dubbele woorden (bijvoorbeeld 'de de') worden automatisch oranje gemarkeerd wanneer 'Trefwoordaccentuering' is ingeschakeld. Dit is momenteel niet configureerbaar, maar zou handig moeten zijn voor proeflezen.

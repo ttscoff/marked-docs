@@ -8,7 +8,7 @@ A {% prefspane Style %} opciói:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Elrendezés és tipográfia
+### Elrendezés és tipográfia [layout-and-typography]
 
 Korlátozza a szöveg szélességét az Előnézetben
 : Állítsa be az előnézet törzsének maximális szélességét a csúszkával (pixelben).
@@ -43,7 +43,7 @@ Mindig csomagolja be a kódot
 RTL-szöveg észlelése és stílusa
 : Nyelv érzékelése elemenként a dokumentumban és a stílusnak megfelelően jobbról balra.
 
-### Téma
+### Téma [theme]
 
 Stílusok kezelése
 : Megnyitja a [Style Manager](Style_Manager.html) ablakot. Adjon hozzá CSS-fájlokat a meghajtóról, hogy megjelenjenek a Stílusválasztó menükben. Használja az `Add New Style` gombot, vagy húzza a CSS-fájlokat ebbe az ablakba. Húzza át az átrendezéshez, és használja a jelölőnégyzeteket a stílusok engedélyezéséhez vagy letiltásához.
@@ -61,7 +61,7 @@ További CSS
 : Az ide hozzáadott CSS a normál stíluslap után fog megjelenni az összes témával. Többek között a belső stílusok szerkesztése nélkül is felülírhatja a beállításokat.
 : Ez minden dokumentumra és minden stílusra vonatkozik. Ha egyéni CSS-t szeretne alkalmazni a dokumentumokra a feltételek alapján, használja az Egyéni szabályokat az {% prefspane Processor %} alatt.
 
-### Szkriptek szerepeltetése
+### Szkriptek szerepeltetése [include-scripts]
 
 Szintaxis kiemelés
 : A highlight.js [szintaxiskiemelés](Syntax_Highlighting.html) bekapcsolása kódblokkokhoz. Válasszon ki egy témát a legördülő menüből.
@@ -73,7 +73,7 @@ Engedélyezze a MathJaxot
 : A **Speciális konfiguráció** megnyit egy lapot az egyéni MathJax konfigurációhoz.
 
 Engedélyezze a KaTeX-et
-: A [KaTeX](Mathjax.html#katex) betöltése a MathJax alternatívájaként. Csak az egyik vagy a másik választható.
+: A [KaTeX](MathJax.html#katex) betöltése a MathJax alternatívájaként. Csak az egyik vagy a másik választható.
 
 Számegyenletek
 : Ha alkalmazható, a Marked számokat ad hozzá a renderelt egyenletekhez. A számozáshoz válassza a **Bal oldal** vagy a **Jobb oldal** lehetőséget. Ha MathJaxot használ, válassza a **Csak AMS** lehetőséget, ha csak az AMS-egyenleteket szeretné számozni.

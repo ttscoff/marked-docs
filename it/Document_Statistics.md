@@ -4,7 +4,7 @@
 
 Tieni traccia mentre scrivi.
 
-## Conteggio parole e statistiche dei documenti
+## Conteggio parole e statistiche dei documenti [word-count-and-document-statistics]
 
 ![][1]
 
@@ -14,7 +14,7 @@ Il conteggio delle parole si trova nella barra di stato in basso e può essere a
 
 Se viene selezionato del testo, la visualizzazione del conteggio delle parole e il popup di paragrafi/frasi/caratteri si aggiorneranno con le informazioni solo per la selezione.
 
-## Conteggio parole per la selezione
+## Conteggio parole per la selezione [word-count-for-selection]
 
 ![Popup conteggio parole sulla selezione del testo][2]
 
@@ -26,7 +26,7 @@ Se "Mostra conteggio parole per selezione" è abilitato in {% prefspane Preview 
 
 La funzione di zoom è utile per selezionare e ottenere rapidamente i conteggi di porzioni di testo più grandi. Digita {% kbd z %} per rimpicciolire ed effettuare la selezione.
 
-## Statistiche di leggibilità
+## Statistiche di leggibilità [readability-statistics]
 
 ![Barra delle statistiche di leggibilità][3]
 
@@ -34,7 +34,7 @@ La funzione di zoom è utile per selezionare e ottenere rapidamente i conteggi d
 
 Ulteriori statistiche di Flesch/Kincaid e dell'indice della nebbia sono disponibili con {% kbd opt shift cmd S %}.
 
-### Informazioni sulla leggibilità
+### Informazioni sulla leggibilità [readability-information]
 
 **Facilità di lettura di Flesch:** i punteggi più alti indicano materiale più facile da leggere; i numeri più bassi indicano i passaggi più difficili da leggere.
 
@@ -46,7 +46,7 @@ Ulteriori statistiche di Flesch/Kincaid e dell'indice della nebbia sono disponib
 
 **Indice di nebbia Gunning:** misura la leggibilità della scrittura inglese. L'indice stima gli anni di istruzione formale necessari per comprendere il testo in prima lettura. Un indice di nebbia pari a 12 richiede il livello di lettura di un liceale statunitense (circa 18 anni).
 
-## Statistiche avanzate
+## Statistiche avanzate [advanced-statistics]
 
 ![Popup Statistiche Avanzate][avv]
 
@@ -54,7 +54,7 @@ Ulteriori statistiche di Flesch/Kincaid e dell'indice della nebbia sono disponib
 
 Selezionando Statistiche avanzate dal menu a forma di ingranaggio ---- o premendo {% kbd cmd I %} --- verrà visualizzato un pannello contenente statistiche del documento più avanzate, tra cui la lunghezza media di parole e frasi e la complessità media delle parole.
 
-### Statistiche avanzate mobili
+### Statistiche avanzate mobili [floating-advanced-statistics]
 
 ![Finestra informazioni mobile][mobile]
 
@@ -62,7 +62,7 @@ Selezionando Statistiche avanzate dal menu a forma di ingranaggio ---- o premend
 
 Premendo {% kbd shift cmd I %} si aprirà un pannello mobile contenente tutte le statistiche dettagliate e le informazioni sulla leggibilità. Questo pannello può rimanere in primo piano quando passi al tuo editor, così puoi vedere le tue statistiche aggiornate ogni volta che salvi, indipendentemente dal fatto che l'anteprima sia visibile o meno. Premendo l'icona `<` si riporterà in primo piano l'anteprima contrassegnata associata. Se tieni premuta l'opzione e fai clic sullo stesso pulsante, si aprirà il file Markdown nel tuo editor di testo predefinito (impostato in {% prefspane Apps %}).
 
-### Obiettivi di parole
+### Obiettivi di parole [word-targets]
 
 Se hai un obiettivo specifico per il conteggio delle parole mentre scrivi, puoi aggiungere una chiave di metadati "obiettivo:" nella parte superiore del documento e Marked monitorerà i tuoi progressi, visualizzando un indicatore di completamento nel pannello Statistiche dettagliate ({% kbd cmd I %}) e nelle Statistiche mobili ({% kbd shift cmd I %}).
 
@@ -71,7 +71,7 @@ Se hai un obiettivo specifico per il conteggio delle parole mentre scrivi, puoi 
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualizza la ripetizione delle parole
+## Visualizza la ripetizione delle parole [visualizewordrepetition]
 
 Selezionando Visualizza ripetizione parole dal menu a forma di ingranaggio (o premendo {% kbd ctrl cmd W %}) passerai a una vista speciale che rimuove gli elementi non di testo ed evidenzia le parole ripetute nel documento. Le parole ripetute vengono evidenziate in rosa chiaro e il passaggio del mouse su una parola evidenziata renderà più luminose le parole corrispondenti in tutto il documento. Facendo clic su una parola evidenziata si oscurerà lo sfondo e si "bloccherà" l'evidenziazione per un'ulteriore revisione.
 

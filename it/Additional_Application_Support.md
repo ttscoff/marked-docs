@@ -4,7 +4,7 @@
 
 Marked funziona con molti editor e app di scrittura. Questa pagina copre le **impostazioni** condivise, l'**anteprima degli appunti**, i puntatori all'**anteprima in streaming** e le risorse di scripting. Guide dettagliate per le app più diffuse si trovano negli argomenti della guida dedicati (vedi la sezione **App supportate** nella barra laterale).
 
-## Guide per app
+## Guide per app [per-app-guides]
 
 Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) per il flusso di lavoro complessivo. Se usi Obsidian, consulta [Anteprima Marked vs Obsidian](Marked_vs_Obsidian_Preview.html) per decidere quando Marked aggiunge valore insieme all'anteprima integrata di Obsidian.
 
@@ -35,7 +35,7 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Parchi giochi Xcode** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Impostazioni dell'applicazione
+## Impostazioni dell'applicazione [application-settings]
 
 I> Diverse integrazioni espongono i commutatori all'interno di {% prefspane Apps %} e {% prefspane Preview %}.
 
@@ -43,17 +43,17 @@ I> Diverse integrazioni espongono i commutatori all'interno di {% prefspane Apps
 
 Utilizza questi riquadri per le impostazioni predefinite dei collegamenti wiki, la consegna di Scrivener, le impostazioni degli appunti in streaming, le opzioni di incorporamento della mappa mentale per OPML/OmniOutliner, le integrazioni di Obsidian o altri processori che si basano su editor cooperativi.
 
-## Anteprima degli appunti
+## Anteprima degli appunti [clipboard-preview]
 
 ![][Menu Anteprima Appunti]
 
 Markdown (o testo normale compatibile) negli appunti si apre con {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Se gli appunti contengono **HTML o RTF**, Marked lo converte in un sorgente simile a Markdown prima dell'anteprima, incluso il rilevamento approssimativo dell'intestazione quando i paragrafi RTF utilizzano caratteri di grandi dimensioni del foglio di stile.
 
-## Anteprima in streaming
+## Anteprima in streaming [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra e molti altri editor possono inserire Markdown in Marked durante la digitazione tramite **Anteprima streaming**. Vedi [Anteprima streaming](Streaming_Preview.html) per la configurazione e la risoluzione dei problemi.
 
-## Script e pacchetto bonus
+## Script e pacchetto bonus [scripts-and-bonus-pack]
 
 Le automazioni per BBEdit, TextMate, DEVONthink, Emacs, Vim e altre vengono fornite con il [Marked Bonus Pack] [bonus]. Installa o adatta questi script quando desideri macro della barra dei menu o dell'editor oltre alle integrazioni elencate sopra.
 

@@ -6,7 +6,7 @@ Options du panneau de préférences {% prefspane General %} :
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Fenêtre
+### Fenêtre [window]
 
 Conserver les nouvelles fenêtres au premier plan
 : Configure automatiquement les nouvelles fenêtres pour qu'elles « flottent » au-dessus des autres applications.
@@ -29,7 +29,7 @@ Amener le document mis à jour au premier plan
 Restaurer le focus à l'application précédente
 : Lorsque cette option est activée, si une action de remontée ou de mise au premier plan lors d'une mise à jour amène Marked au premier plan, le focus clavier revient à l'application qui était au premier plan avant la mise à jour (votre éditeur de texte, par exemple). Lorsqu'elle est désactivée, Marked n'effectue jamais ce transfert de focus. Si Marked ne passe pas au premier plan, cette option n'a aucun effet.
 
-### Barre d'état
+### Barre d'état [status-bar]
 
 Afficher le sélecteur de style
 : Affiche le sélecteur de style dans la barre inférieure de la fenêtre d'aperçu.
@@ -45,7 +45,7 @@ Le nombre de mots exclut
 - **Blocs de code indentés** (les blocs de code délimités sont toujours exclus)
 - **Légendes d'images**
 
-### Raccourcis
+### Raccourcis [shortcuts]
 
 Cliquez dans le champ de raccourci pour enregistrer une combinaison de touches qui déclenche un événement :
 

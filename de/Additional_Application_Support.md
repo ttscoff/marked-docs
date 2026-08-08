@@ -2,7 +2,7 @@
 
 Marked funktioniert mit vielen Editoren und Schreib-Apps. Auf dieser Seite werden gemeinsame **Einstellungen**, die **Zwischenablage-Vorschau**, Verweise auf die **Streaming-Vorschau** und Skriptressourcen behandelt. Detaillierte Anleitungen für beliebte Apps finden Sie in eigenen Hilfethemen (siehe Abschnitt **Unterstützte Apps** in der Seitenleiste).
 
-## Pro-App-Anleitungen
+## Pro-App-Anleitungen [per-app-guides]
 
 Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_Mac.html) für den gesamten Workflow. Wenn Sie Obsidian verwenden, lesen Sie [Marked im Vergleich zur Obsidian-Vorschau](Marked_vs_Obsidian_Preview.html), um zu entscheiden, wann Marked neben der integrierten Vorschau von Obsidian einen Mehrwert bietet.
 
@@ -33,7 +33,7 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Xcode-Playgrounds** | [Xcode-Playgrounds](Xcode_Playgrounds.html) |
 
-## Anwendungseinstellungen
+## Anwendungseinstellungen [application-settings]
 
 I> Mehrere Integrationen stellen Schalter innerhalb von {% prefspane Apps %} und {% prefspane Preview %} bereit.
 
@@ -41,17 +41,17 @@ I> Mehrere Integrationen stellen Schalter innerhalb von {% prefspane Apps %} und
 
 Verwenden Sie diese Bereiche für Wiki-Link-Standardeinstellungen, die Scrivener-Übergabe, Einstellungen für gestreamte Zwischenablagen, Mindmap-Einbettungsoptionen für OPML/OmniOutliner, Obsidian-Integrationen oder andere Prozessoren, die mit unterstützten Editoren zusammenarbeiten.
 
-## Vorschau der Zwischenablage
+## Vorschau der Zwischenablage [clipboard-preview]
 
 ![][ClipboardPreviewMenu]
 
 Markdown (oder kompatibler Klartext) in der Zwischenablage wird mit {% appmenu Ablage, Neu, Zwischenablage-Vorschau %} ({% kbd shift cmd V %}) geöffnet. Wenn die Zwischenablage **HTML oder RTF** enthält, konvertiert Marked den Inhalt vor der Vorschau in eine Markdown-ähnliche Quelle – einschließlich grober Überschriftenerkennung, wenn RTF-Absätze große Stylesheet-Schriftgrößen verwenden.
 
-## Streaming-Vorschau
+## Streaming-Vorschau [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra und mehrere andere Editoren können Markdown während der Eingabe über die **Streaming-Vorschau** an Marked senden. Informationen zur Einrichtung und Fehlerbehebung finden Sie unter [Streaming-Vorschau](Streaming_Preview.html).
 
-## Skripte und Bonuspaket
+## Skripte und Bonuspaket [scripts-and-bonus-pack]
 
 Automatisierungen für BBEdit, TextMate, DEVONthink, Emacs, Vim und mehr werden mit dem [Marked Bonus Pack][bonus] geliefert. Installieren oder passen Sie diese Skripte an, wenn Sie Menüleisten- oder Editor-Makros benötigen, die über die oben aufgeführten Integrationen hinausgehen.
 

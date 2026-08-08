@@ -2,7 +2,7 @@
 
 Le défilement automatique déplace lentement l'aperçu pour une lecture ou une vérification mains libres. Il est distinct de la [Table des matières](Document_Navigation.html) et de la [Mini-carte](Document_Navigation.html#minimap) ; il fait défiler automatiquement la vue actuelle.
 
-## Démarrer et arrêter
+## Démarrer et arrêter [starting-and-stopping]
 
 Déclenchez le défilement automatique en appuyant sur {% kbd s %}. L'aperçu défile vers l'avant à la vitesse actuelle.
 

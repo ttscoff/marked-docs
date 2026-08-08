@@ -4,7 +4,7 @@
 
 Los números importan tanto como las palabras.
 
-## Vista previa de fórmulas con MathJax
+## Vista previa de fórmulas con MathJax [preview-formulas-with-mathjax]
 
 ![][1]
 
@@ -18,7 +18,7 @@ Ejemplo de sintaxis de MMD MathJax:
 
 Si elige incluir MathJax en un archivo HTML exportado, se utilizará un enlace CDN en lugar del código MathJax incrustado. Esto requiere una conexión a Internet para ver el MathML renderizado.
 
-## Fuente de MathJax: local frente a CDN
+## Fuente de MathJax: local frente a CDN [mathjax-source-local-vs-cdn]
 
 Cuando MathJax está habilitado, Marked puede cargarlo desde:
 
@@ -32,7 +32,7 @@ La ventana emergente **MathJax Source** en {% prefspane Style %} te permite eleg
 
 Los archivos HTML exportados siempre hacen referencia a MathJax desde una CDN, independientemente de la fuente de la vista previa, por lo que siguen siendo pequeños y autónomos.
 
-## Numeración de ecuaciones
+## Numeración de ecuaciones [equation-numbering]
 
 Puede habilitar la numeración de ecuaciones en {% prefspane Style %}. Esto funciona tanto con MathJax como con KaTeX, pero se implementa de manera diferente internamente. Para MathJax v3, Marked asigna su configuración a la configuración adecuada de MathJax para que:
 
@@ -42,7 +42,7 @@ Puede habilitar la numeración de ecuaciones en {% prefspane Style %}. Esto func
 
 Estas opciones corresponden a las configuraciones `tex.tags` y `tex.tagSide` de MathJax bajo el capó.
 
-## Paquetes adicionales
+## Paquetes adicionales [additional-packages]
 
 MathJax v3 es modular. Marked siempre habilita los paquetes principales de TeX/AMS y, opcionalmente, puedes activar paquetes adicionales en {% prefspane Style %}:
 
@@ -53,7 +53,7 @@ MathJax v3 es modular. Marked siempre habilita los paquetes principales de TeX/A
 
 Haga clic en **Paquetes adicionales...** para abrir una pequeña lista de verificación donde puede activar o desactivar estos paquetes. Los cambios entrarán en vigor la próxima vez que Marked muestre matemáticas en la vista previa.
 
-## Configuración avanzada de MathJax
+## Configuración avanzada de MathJax [mathjax-advanced-configuration]
 
 Puede aplicar configuraciones personalizadas adicionales además de los valores predeterminados de Marked agregando un objeto JSON válido en el campo **Configuración avanzada**. Este campo se fusiona con el objeto de configuración de MathJax v3 (`window.MathJax`) antes de que se cargue MathJax. Puede contener [cualquier opción admitida por MathJax v3](https://docs.mathjax.org/en/latest/options/), por ejemplo:
 
@@ -91,17 +91,17 @@ Tenga en cuenta que al utilizar el procesador MultiMarkdown con delimitadores no
 Marked realiza un poco de magia cuando MathJax o KaTeX están habilitados, convirtiendo la sintaxis matemática para garantizar que sea lo más compatible posible con el procesador actual (MultiMarkdown o Discount). Esto debería ser excelente en todas las circunstancias, pero si encuentra que causa problemas, [comuníquese con el soporte técnico](https://support.markedapp.com/questions/add).
 
 
-## KaTeX
+## KaTeX [katex]
 
 [katex]: https://katex.org/
 
 [KaTeX][] está disponible como alternativa a MathJax. Es más liviano y, por lo tanto, más rápido de cargar, lo que puede resultar excelente en documentos con una gran cantidad de fórmulas. Sin embargo, no tiene tantas funciones y es posible que algunas ecuaciones que funcionan con MathJax (o LaTeX) no sean compatibles.
 
-## Numeración automática de ecuaciones [numeración]
+## Numeración automática de ecuaciones [numeración] [numbering]
 
 Puede habilitar la numeración de ecuaciones en {% prefspane Style %}. Esto funciona tanto con MathJax como con KaTeX. Puede seleccionar si los números aparecen en el lado izquierdo o derecho de la ecuación.
 
-### En MatemáticasJax
+### En MatemáticasJax [in-mathjax]
 
 En MathJax, esto usa la configuración:
 
@@ -111,10 +111,10 @@ En MathJax, esto usa la configuración:
 
 Si solo desea numerar ecuaciones AMS, seleccione "Solo AMS" a la derecha del menú desplegable "lateral".
 
-### En KaTeX
+### En KaTeX [in-katex]
 
 KaTeX no ofrece numeración de ecuaciones. Para simular esto en Marked, se utiliza CSS y todas las ecuaciones de visualización están numeradas.
 
-## Problemas de exportación
+## Problemas de exportación [export-issues]
 
 Los formatos de texto enriquecido no manejarán ecuaciones (ya sea de MathJax o KaTeX). Estarán ocultos en el documento de salida, ya que intentar incluir fuentes especiales resulta en un desastre mayor de lo que imaginas... Esto es algo que espero solucionar en algún momento, pero es una deficiencia por ahora.

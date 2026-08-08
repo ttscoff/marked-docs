@@ -6,7 +6,7 @@ A [VoodooPad][vp] minden oldalt egyetlen adatbázisfájlba köt. Húzza a `.vpdo
 
 A Marked figyeli a dokumentumot a lemezen, és felcseréli az előnézetet, amikor oldalt vált a VoodooPadben.
 
-## Beágyazott képek
+## Beágyazott képek [embedded-images]
 
 Ha a képekre Markdown vagy HTML használatával hivatkozik, és a bináris **belül** a VoodooPad adatbázisban él, a Marked ki tudja bontani az előnézethez. A csak **álnevek** (hivatkozással behúzott fájlok) nem tárolódnak a kötegben – mutasson azokra a képekre, amelyeknek abszolút elérési útja vagy a lemezen lévő `.vpdoc`-hoz viszonyított elérési útja van, hogy a Marked fel tudja oldani őket.
 

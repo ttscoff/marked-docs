@@ -24,7 +24,7 @@ Inclure les notes de bas de page dans la barre latérale des commentaires
 Vitesse de lecture (mpm)
 : Ce nombre (mots par minute) est utilisé pour calculer le temps de lecture affiché dans les statistiques du texte. La vitesse de lecture moyenne d'un adulte se situe entre 200 et 300 mots par minute.
 
-### Mots-clés
+### Mots-clés [keywords]
 
 [Définissez des listes de mots-clés à mettre en évidence](Keyword_Highlighting.html). Utilisez les onglets pour modifier chaque liste :
 

@@ -4,11 +4,11 @@
 
 [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) をチェックして、MultiMarkdown プロセッサを試してください。
 
-## MultiMarkdown とは何ですか?
+## MultiMarkdown とは何ですか? [what-is-multimarkdown]
 
 MultiMarkdown は、Web ページの断片だけではなく完全なドキュメントを処理するように設計された拡張 Markdown プロセッサです。元の Markdown 構文を拡張し、HTML、LaTeX、PDF、ODF、Microsoft Word ドキュメントなどの複数の出力形式への変換を可能にします。
 
-## 主な特徴
+## 主な特徴 [key-characteristics]
 
 - **ドキュメント重視**: Web スニペットだけでなく、完全なドキュメント向けに設計されています。
 - **マルチフォーマット出力**: HTML、LaTeX、PDF、ODF、RTF、Word に変換
@@ -17,15 +17,15 @@ MultiMarkdown は、Web ページの断片だけではなく完全なドキュ�
 - **拡張性**: 複雑なドキュメント要件に対応する豊富な機能セット
 - **バージョン 5**: パフォーマンスと信頼性が向上した完全な書き換え
 
-## 哲学と設計目標
+## 哲学と設計目標 [philosophy-and-design-goals]
 
 MultiMarkdown は、**コンテンツはプレゼンテーションよりも重要である**という原則に従っています。フォント、色、スタイルを指定するのではなく、ドキュメントの意味 (これはリスト、あれは表など) を表現することに重点が置かれています。
 
 目標は、80% の人が書く文書の 80% に使用可能であり、小説、論文、技術文書、その他のほとんどの文書コンテンツに適していることです。
 
-## 主な機能と拡張機能
+## 主な機能と拡張機能 [major-features-and-extensions]
 
-### 1. **メタデータのサポート**
+### 1. **メタデータのサポート** [1-metadata-support]
 
 - ファイルの先頭にあるドキュメントのメタデータ
 - タイトル、著者、日付、カスタム変数
@@ -56,7 +56,7 @@ Author: [%author]
 Date: [%date]
 ```
 
-### 2. **高度なテーブル**
+### 2. **高度なテーブル** [2-advanced-tables]
 
 **完全なテーブルのサポート**
 
@@ -80,7 +80,7 @@ Table: Sample Table with Alignment
 - `[Table 1]` との相互参照
 - 複雑なテーブル構造のサポート
 
-### 3. **脚注と引用**
+### 3. **脚注と引用** [3-footnotes-and-citations]
 
 **脚注**
 
@@ -123,7 +123,7 @@ source[][#Doe:2006].
 
 使用する引用キーの形式 (例: Doe:2006) に関する規則はありませんが、脚注で `^` を使用するのと同様に、その前に `#` を付ける必要があります。
 
-### 4. **相互参照**
+### 4. **相互参照** [4-cross-references]
 
 **自動相互参照**
 
@@ -135,7 +135,7 @@ source[][#Doe:2006].
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **参照タイプ**
@@ -145,7 +145,7 @@ Refer to [Section 2.1] for more information.
 - 数字: `[Figure 1]`、`[Figure: Caption]`
 - 方程式: `[Equation 1]`
 
-### 5. **定義リスト**
+### 5. **定義リスト** [5-definition-lists]
 
 **用語定義のペア**
 
@@ -162,7 +162,7 @@ Term 2
 : Definition 2b
 ```
 
-### 6. **フェンスで囲まれたコードブロック**
+### 6. **フェンスで囲まれたコードブロック** [6-fenced-code-blocks]
 
 **言語固有のコード ブロック**
 
@@ -183,7 +183,7 @@ def hello():
 - Support for many programming languages
 - Proper HTML ⟦14⟧ output
 
-### 7. **Math Support**
+### 7. **Math Support** [7-math-support]
 
 **Mathematical Expressions**
 
@@ -201,7 +201,7 @@ $$
 $$
 ```
 
-### 8. **画像とリンクの属性**
+### 8. **画像とリンクの属性** [8-image-and-link-attributes]
 
 **強化されたリンクと画像**
 
@@ -213,7 +213,7 @@ $$
 [Link text]: url.html title="Link title" class="external"
 ```
 
-### 9. **トランスクルージョン**
+### 9. **トランスクルージョン** [9-transclusion]
 
 **ファイルのインクルード**
 
@@ -233,7 +233,7 @@ $$
 - ネストされたトランスクルージョンのサポート
 - インクルードファイルのマニフェスト生成
 
-### 10. **CriticMarkup の統合**
+### 10. **CriticMarkup の統合** [10-criticmarkup-integration]
 
 **変更追跡**
 
@@ -247,7 +247,7 @@ This is {>>deleted text<<} and this is {++added text++}.
 This is a {~~deletion~>replacement~~}.
 ```
 
-### 11. **目次**
+### 11. **目次** [11-table-of-contents]
 
 **自動目次生成**
 
@@ -267,7 +267,7 @@ Content here...
 More content...
 ```
 
-### 12. **略語**
+### 12. **略語** [12-abbreviations]
 
 **HTML スタイルの略語**
 
@@ -282,7 +282,7 @@ More content...
 This uses HTML and CSS.
 ```
 
-## MultiMarkdown v5 と他の Markdown フレーバーの比較
+## MultiMarkdown v5 と他の Markdown フレーバーの比較 [multimarkdown-v5-vs-other-markdown-flavors]
 
 |特集 |マルチマークダウン v5 |コモンマーク (GFM) |割引 |クラムダウン |標準 |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
@@ -303,7 +303,7 @@ This uses HTML and CSS.
 |トランスクルージョン |はい |いいえ |いいえ |いいえ |いいえ |
 |メタデータ |はい |いいえ |いいえ |いいえ |いいえ |
 
-## MultiMarkdown v5 の主な利点
+## MultiMarkdown v5 の主な利点 [key-advantages-of-multimarkdown-v5]
 
 1. **ドキュメント重視**: Web スニペットだけでなく、完全なドキュメント向けに設計されています。
 2. **マルチフォーマット出力**: HTML、LaTeX、PDF、ODF、RTF、Word に変換
@@ -313,7 +313,7 @@ This uses HTML and CSS.
 6. **将来性**: プレーン テキスト形式により長期的な互換性が保証されます
 7. **拡張性**: 複雑なドキュメント要件に対応する豊富な機能セット
 
-## 一般的な使用例
+## 一般的な使用例 [common-use-cases]
 
 **アカデミックライティング**
 
@@ -339,7 +339,7 @@ This uses HTML and CSS.
 - ナレッジベースとウィキ
 - 共同執筆プロジェクト
 
-## ベストプラクティス
+## ベストプラクティス [best-practices]
 
 1. **メタデータの使用**: ドキュメント情報に YAML 前付を活用する
 2. **見出しのある構造**: 目次の生成に適切な見出し階層を使用します。
@@ -348,7 +348,7 @@ This uses HTML and CSS.
 5. **出力のテスト**: さまざまな出力形式の形式を確認します。
 6. **引用の使用**: 学術的な引用を適切に実践する
 
-## 他のマークダウン フレーバーからの移行
+## 他のマークダウン フレーバーからの移行 [migration-from-other-markdown-flavors]
 
 ほとんどの標準的な Markdown は、変更を加えることなく MultiMarkdown で動作します。 MMD の機能を利用するには:
 
@@ -358,7 +358,7 @@ This uses HTML and CSS.
 4. **トランスクルージョンを含む構造**: 大きなドキュメントを小さなファイルに分割します
 5. **テーブルの活用**: データのプレゼンテーションに高度なテーブル機能を使用する
 
-## リソース
+## リソース [resources]
 
 - [MultiMarkdown ユーザーガイド](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
 - [MultiMarkdown 構文ガイド](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)

@@ -6,7 +6,7 @@ L'importation PDF fonctionne mieux sur les **fichiers PDF texte plus petits** (d
 
 Marked est toujours un outil **d'aperçu** : vous ne modifiez pas le PDF dans Marked. Utilisez {% kbd cmd E %} pour ouvrir le PDF dans **Aperçu** (ou par défaut de votre système) et Marked s'actualise lorsque le fichier change sur le disque.
 
-## Comment fonctionne la conversion
+## Comment fonctionne la conversion [how-conversion-works]
 
 L'importation PDF utilise la bibliothèque [pdf22md](https://github.com/twardoch/pdf22md) (licence MIT ; voir [licence pdf22md](PDF22MD_License.html)). Marked exécute la conversion en arrière-plan tout en affichant un court avis de **Conversion**.
 
@@ -19,17 +19,17 @@ Le convertisseur :
 
 Marked n'active **pas** le nettoyage IA facultatif de pdf22md dans l'application. La qualité de la conversion dépend de la manière dont le PDF a été créé.
 
-## Cache et aperçu en direct
+## Cache et aperçu en direct [cache-and-live-preview]
 
 Les fichiers Markdown convertis et les images sont stockés dans le cache des observateurs de Marked (`~/Library/Caches/Marked/Watchers/PDF/`). Le chemin du PDF d'origine reste la source du document pour la surveillance des fichiers.
 
 Lorsque vous enregistrez ou remplacez le PDF dans une autre application, Marked détecte le changement et le reconvertit automatiquement (même comportement de rechargement fusionné que [RTF](RTF_Support.html) et [Scrivener](Scrivener_Support.html)).
 
-## Exportation et autres fonctionnalités
+## Exportation et autres fonctionnalités [export-and-other-features]
 
 Après la conversion, Marked traite le document comme les autres sources compilées : l'exportation, les statistiques et la plupart des fonctionnalités d'aperçu s'exécutent sur le Markdown généré. Les chemins d'image dans l'aperçu pointent vers les ressources mises en cache jusqu'à l'exportation.
 
-## Limites
+## Limites [limitations]
 
 Définissez vos attentes en conséquence : le PDF vers Markdown est utile, mais pas parfait.
 
@@ -54,9 +54,9 @@ Définissez vos attentes en conséquence : le PDF vers Markdown est utile, mais 
 - **Les PDF protégés par mot de passe** ne sont pas pris en charge dans la v1
 - **Les images PDF intégrées dans Markdown** (`![]()` faisant référence à un fichier `.pdf`) ne sont pas liées à l'importation PDF : seule l'ouverture d'un `.pdf` en tant que document principal déclenche la conversion
 
-Pour les documents Word, utilisez [Travailler avec DOCX](Working_with_DOCX.html). Pour le texte enrichi, utilisez [Support RTF et RTFD](RTF_Support.html).
+Pour les documents Word, utilisez [Travailler avec DOCX](Working_With_DOCX.html). Pour le texte enrichi, utilisez [Support RTF et RTFD](RTF_Support.html).
 
-## Sujets connexes
+## Sujets connexes [related-topics]
 
 - [Ouverture de fichiers](Opening_Files.html) : glisser-déposer, ouvrir récent, presse-papiers
 - [Exportation](Exporting.html) : enregistrez HTML, PDF, DOCX et Markdown à partir de l'aperçu

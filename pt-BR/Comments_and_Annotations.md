@@ -4,7 +4,7 @@
 
 Marcado possui tratamento especial para comentários e anotações.
 
-## Fontes de anotação
+## Fontes de anotação [annotation-sources]
 
 Marcado reconhece comentários vindos de:
 
@@ -12,7 +12,7 @@ Marcado reconhece comentários vindos de:
 - Comentários do CriticMarkup
 - Comentários e alterações do Microsoft Word
 
-## A barra lateral de comentários
+## A barra lateral de comentários [the-comments-sidebar]
 
 Todas as anotações são mostradas em uma barra lateral e ocultadas na visualização do documento. Para mostrar a barra lateral de anotações, use **Menu de engrenagem -> Revisão -> Mostrar comentários** ou pressione {% kbd ctrl cmd C %}.
 

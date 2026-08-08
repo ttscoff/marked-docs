@@ -6,7 +6,7 @@
 
 一般的なワークフローは、*最初にプレビュー、2 番目に EPUB をエクスポート**です。Marked でドキュメントを開くかコンパイルし、テーマを選択し、ライブ プレビューで校正し、本の準備ができたらエクスポートします。
 
-## EPUB のエクスポート
+## EPUB のエクスポート [exporting-an-epub]
 
 [エクスポートパネル](Exporting.html#drawer) ({% kbd shift cmd e %}) を開くか、歯車メニューから **名前を付けて保存**を使用して **EPUB** を選択します。
 
@@ -21,7 +21,7 @@ EPUB 保存ダイアログでは以下を設定できます。
 
 EPUB メタデータを保存し、繰り返し使用するために設定をエクスポートするには、[プロファイルのエクスポート](Exporting.html#export-profiles) を参照してください。
 
-## 組み込みテーマを使用したスタイル設定
+## 組み込みテーマを使用したスタイル設定 [styling-with-built-in-themes]
 
 ドキュメントに選択された**プレビュー スタイル**によって、EPUB の外観が決まります。すべての組み込みの Marked テーマ (Swiss、GitHub、Manuscript、その他) は、EPUB エクスポートに適用できます。
 
@@ -33,7 +33,7 @@ EPUB メタデータを保存し、繰り返し使用するために設定をエ
 
 I> EPUB リーダーは、一部の Web 専用 CSS (固定位置、ビューポート トリックなど) を無視します。 Marked のプレビューに表示されるものが目標ですが、電子書籍リーダーのレイアウト エンジンによって間隔やフォントが簡素化される場合があります。出版する前に、Apple Books またはターゲット リーダーでテストしてください。
 
-## カスタム テーマを使用したスタイリング
+## カスタム テーマを使用したスタイリング [styling-with-custom-themes]
 
 [カスタム スタイル](Custom_Styles.html) は、EPUB に対してもプレビューや PDF に対しても同じように機能します。
 
@@ -50,11 +50,11 @@ EPUB 対応のカスタム CSS に関するヒント:
 
 オーサリングのガイダンスについては、「カスタム CSS の作成」(Writing_Custom_CSS.html) を参照してください。
 
-## 構文の強調表示と計算
+## 構文の強調表示と計算 [syntax-highlighting-and-math]
 
 {% prefspane Export %} で **エクスポートに構文の強調表示を含める** が有効になっている場合、コード ブロックはプレビューと同じ構文の色でエクスポートされます。 [MathJax](MathJax.html) でレンダリングされた Math は、電子書籍リーダーのサポートに応じて EPUB に含まれています。
 
-## ソースファイル内のメタデータ
+## ソースファイル内のメタデータ [metadata-in-your-source-file]
 
 保存ダイアログの代わりにドキュメントに EPUB メタデータを設定できます。 Markdown ファイルの先頭 (または Scrivener メタデータ ページ) で、MultiMarkdown スタイルのキーを使用します。
 
@@ -66,29 +66,29 @@ cover image: path/to/image.jpg
 
 `cover image` は、ドキュメントに対する相対パスまたは絶対パスを受け入れます。 PNG と JPG がサポートされています。ダイアログの値は、エクスポート時に欠落しているメタデータを上書きするか埋めます。
 
-## 複数ファイルの書籍
+## 複数ファイルの書籍 [multi-file-books]
 
 長い作品の場合は、[マルチファイル ドキュメント](Multi-File_Documents.html) --- インデックス ファイル、Scrivener エクスポート、Leanpub `Book.txt`、または GitBook スタイルのインデックスを使用して章をコンパイルします。マーク付きのファイルは、含まれているファイルを監視し、書籍全体をプレビューし、コンパイルされた HTML から 1 つの EPUB をエクスポートします。
 
 コンパイルされたドキュメントの見出しは、Apple Books やその他のリーダーでのナビゲーション用の EPUB [目次](Document_Navigation.html) になります。
 
-## 読書と出版
+## 読書と出版 [reading-and-publishing]
 
 エクスポートされた EPUB は **Apple Books** で直接開きます (ファイルをダブルクリックするか、**ファイル → ライブラリに追加** を使用します)。これらは、Kobo、Thorium、Calibre、およびほとんどの EPUB 3 互換アプリでも動作します。
 
-### Apple Books
+### Apple Books [apple-books]
 
 エクスポートした `.epub` をブック アプリにドラッグするか、**ファイル → インポート** を通じて追加します。 Marked テーマのカスタム タイポグラフィーとカバー アートが引き継がれます。 Mac、iPad、または iPhone で Apple Books を使用して、共有する前にレイアウトを確認します。
 
-### Kindle ダイレクト パブリッシング (KDP)
+### Kindle ダイレクト パブリッシング (KDP) [kindle-direct-publishing-kdp]
 
-EPUB は、[Kindle ダイレクト パブリッシング](https://kdp.amazon.com/) で受け入れられるアップロード形式です。 Marked からエクスポートし、`.epub` ファイルをアップロードします。 Amazon がそれを Kindle 配信用に変換します。 KDP は [DOCX](Working_with_DOCX.html) も受け入れます。現在の要件については、Amazon の [サポートされている電子書籍形式](https://kdp.amazon.com/en_US/help/topic/G200634390) を参照してください。
+EPUB は、[Kindle ダイレクト パブリッシング](https://kdp.amazon.com/) で受け入れられるアップロード形式です。 Marked からエクスポートし、`.epub` ファイルをアップロードします。 Amazon がそれを Kindle 配信用に変換します。 KDP は [DOCX](Working_With_DOCX.html) も受け入れます。現在の要件については、Amazon の [サポートされている電子書籍形式](https://kdp.amazon.com/en_US/help/topic/G200634390) を参照してください。
 
 新しい KDP タイトルには **MOBI は必要ありません**。マークは MOBI をエクスポートしません。
 
 オプション: アップロードする前に、Amazon の無料 [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) を使用して Kindle レイアウトをプレビューします。
 
-## 関連
+## 関連 [related]
 
 * [HTML エクスポート](HTML_Export.html) --- スタイルと画像が埋め込まれたスタンドアロン HTML
 * [エクスポート](Exporting.html) --- パネル、プロファイル、その他の形式をエクスポートします

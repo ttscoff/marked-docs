@@ -4,11 +4,11 @@ Marked inclut une **extension de partage** macOS qui apparaît dans le menu Part
 
 L'extension de partage est **intégrée à Marked 3**. Vous n'avez pas besoin de la télécharger ou de l'installer séparément. Elle est fournie avec les versions Direct, Mac App Store, Marked Pro et Setapp.
 
-## Fonctionnement
+## Fonctionnement [how-it-works]
 
 Lorsque vous choisissez **Marked** dans un menu Partager, Marked s'ouvre immédiatement. Il n'y a pas de fenêtre de composition intermédiaire.
 
-### Partager un fichier
+### Partager un fichier [share-a-file]
 
 Depuis le **Finder** (ou une autre application permettant de partager des fichiers), choisissez **Partager → Marked**.
 
@@ -16,7 +16,7 @@ Marked reçoit le chemin du fichier et l'ouvre avec le même gestionnaire d'URL 
 
 Les entrées prises en charge incluent les URL de fichiers, les fichiers locaux et les URL web, lorsque l'application d'envoi les fournit.
 
-### Partager du texte sélectionné
+### Partager du texte sélectionné [share-selected-text]
 
 Sélectionnez du texte dans une application comme **TextEdit**, **Safari** ou **Mail**, puis choisissez **Partager → Marked**.
 
@@ -26,16 +26,16 @@ Le texte brut, le HTML, le RTF et les sélections Markdown sont pris en charge l
 
 Voir [Gestionnaire d'URL](URL_Handler.html) pour plus de détails sur les commandes sous-jacentes.
 
-## Utilisation du menu Partager
+## Utilisation du menu Partager [using-the-share-menu]
 
-### Depuis le Finder
+### Depuis le Finder [from-finder]
 
 1. Cliquez avec le bouton droit sur un fichier Markdown ou texte (ou sélectionnez-le et cliquez sur le bouton **Partager** de la barre d'outils du Finder).
 2. Choisissez **Marked** dans le menu Partager.
 
 Si **Marked** n'apparaît pas, consultez [Activer l'extension de partage](#enable-the-share-extension) ci-dessous.
 
-### Depuis une sélection de texte
+### Depuis une sélection de texte [from-a-text-selection]
 
 1. Sélectionnez le texte que vous souhaitez prévisualiser.
 2. Ouvrez le menu **Partager** de l'application (élément **Partager** de la barre de menus, bouton Partager de la barre d'outils, ou menu contextuel du clic droit).
@@ -43,11 +43,11 @@ Si **Marked** n'apparaît pas, consultez [Activer l'extension de partage](#enabl
 
 Marked se lance (ou passe au premier plan) avec un aperçu du contenu partagé.
 
-## Activer l'extension de partage {#enable-the-share-extension}
+## Activer l'extension de partage [enable-the-share-extension]
 
 Marked doit être installé dans `/Applications` (ou votre dossier Applications habituel) et lancé au moins une fois avant que macOS ne liste son extension de partage.
 
-### Activer Marked dans Réglages Système
+### Activer Marked dans Réglages Système [turn-on-marked-in-system-settings]
 
 1. Ouvrez **Réglages Système**.
 2. Accédez à **Général → Éléments de connexion et extensions** (sur certaines versions de macOS, cela apparaît sous **Confidentialité et sécurité → Extensions**).
@@ -55,7 +55,7 @@ Marked doit être installé dans `/Applications` (ou votre dossier Applications 
 4. Sélectionnez **Partage** (ou **Partager**).
 5. Activez **Marked**.
 
-### Ajouter Marked au menu Partager d'une application
+### Ajouter Marked au menu Partager d'une application [add-marked-to-an-apps-share-menu]
 
 Même lorsque l'extension est activée pour l'ensemble du système, chaque application vous permet de choisir les destinations de partage qui apparaissent :
 
@@ -67,7 +67,7 @@ Même lorsque l'extension est activée pour l'ensemble du système, chaque appli
 
 Les modifications s'appliquent immédiatement à ce menu Partager dans la plupart des applications.
 
-## Si Marked n'apparaît pas dans le menu Partager
+## Si Marked n'apparaît pas dans le menu Partager [if-marked-does-not-appear-in-share]
 
 W> L'extension de partage est disponible depuis Marked 3.1.9. Assurez-vous d'avoir mis à jour vers au moins cette version.
 
@@ -80,7 +80,7 @@ Essayez les étapes suivantes, dans l'ordre :
 5. **Redémarrez le Mac** si l'extension n'apparaît toujours pas après une mise à jour. macOS met en cache l'enregistrement des extensions de partage et a parfois besoin d'un redémarrage pour l'actualiser.
 6. **Réinstallez Marked** dans `/Applications` si vous testez une version copiée manuellement depuis Xcode ou une image disque. L'extension de partage doit être intégrée dans le bundle de l'application, à l'emplacement `Marked.app/Contents/PlugIns/`.
 
-## Astuces
+## Astuces [tips]
 
 - L'extension de partage est idéale pour prévisualiser rapidement des extraits web, des paragraphes d'e-mail ou des notes sans avoir à créer un fichier au préalable.
 - Pour des pages entières ou des sélections complexes depuis un navigateur, les [extensions de navigateur](Using_the_Browser_Extensions.html) peuvent offrir plus de contrôle (sélection de section, Markdownify d'URL, etc.).

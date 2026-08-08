@@ -4,11 +4,11 @@ Marked includes a macOS **Share extension** that appears in the system Share men
 
 The Share extension is **bundled with Marked 3**. You do not download or install it separately. It ships with the Direct, Mac App Store, Marked Pro, and Setapp builds.
 
-## How it works
+## How it works [how-it-works]
 
 When you choose **Marked** from a Share menu, Marked opens immediately. There is no intermediate compose window.
 
-### Share a file
+### Share a file [share-a-file]
 
 From **Finder** (or another app that shares files), choose **Share → Marked**.
 
@@ -16,7 +16,7 @@ Marked receives the file path and opens it with the same `x-marked-3://open` URL
 
 Supported inputs include file URLs, local files, and web URLs when the sending app provides them.
 
-### Share selected text
+### Share selected text [share-selected-text]
 
 Select text in an app such as **TextEdit**, **Safari**, or **Mail**, then choose **Share → Marked**.
 
@@ -26,16 +26,16 @@ Plain text, HTML, RTF, and Markdown selections are supported when the source app
 
 See [URL Handler](URL_Handler.html) for details on the underlying commands.
 
-## Using the Share menu
+## Using the Share menu [using-the-share-menu]
 
-### From Finder
+### From Finder [from-finder]
 
 1. Right-click a Markdown or text file (or select it and click the **Share** button in the Finder toolbar).
 2. Choose **Marked** from the Share menu.
 
 If **Marked** is not visible, see [Enable the Share extension](#enable-the-share-extension) below.
 
-### From a text selection
+### From a text selection [from-a-text-selection]
 
 1. Select the text you want to preview.
 2. Open the app’s **Share** menu (menu bar **Share** item, toolbar Share button, or right-click context menu).
@@ -43,11 +43,11 @@ If **Marked** is not visible, see [Enable the Share extension](#enable-the-share
 
 Marked launches (or comes to the front) with a preview of the shared content.
 
-## Enable the Share extension
+## Enable the Share extension [enable-the-share-extension]
 
 Marked must be installed in `/Applications` (or your usual Applications folder) and launched at least once before macOS lists its Share extension.
 
-### Turn on Marked in System Settings
+### Turn on Marked in System Settings [turn-on-marked-in-system-settings]
 
 1. Open **System Settings**.
 2. Go to **General → Login Items & Extensions** (on some macOS versions this appears as **Privacy & Security → Extensions**).
@@ -55,7 +55,7 @@ Marked must be installed in `/Applications` (or your usual Applications folder) 
 4. Select **Sharing** (or **Share**).
 5. Enable **Marked**.
 
-### Add Marked to an app’s Share menu
+### Add Marked to an app’s Share menu [add-marked-to-an-apps-share-menu]
 
 Even when the extension is enabled system-wide, each app lets you choose which Share destinations appear:
 
@@ -67,7 +67,7 @@ Even when the extension is enabled system-wide, each app lets you choose which S
 
 Changes apply to that Share menu immediately in most apps.
 
-## If Marked does not appear in Share
+## If Marked does not appear in Share [if-marked-does-not-appear-in-share]
 
 W> The Share extension first became available in Marked 3.1.9. Make sure you've upgraded to at least that version.
 
@@ -80,7 +80,7 @@ Try these steps in order:
 5. **Restart the Mac** if the extension still does not appear after an update. macOS caches Share extension registration and occasionally needs a restart to refresh it.
 6. **Reinstall Marked** to `/Applications` if you are testing a build copied manually from Xcode or a disk image. The Share extension must be embedded inside the app bundle at `Marked.app/Contents/PlugIns/`.
 
-## Tips
+## Tips [tips]
 
 - The Share extension is ideal for quick previews of web snippets, email paragraphs, or notes without creating a file first.
 - For whole pages or complex selections from a browser, the [browser extensions](Using_the_Browser_Extensions.html) may give more control (section selection, Markdownify URL, and so on).

@@ -4,7 +4,7 @@
 
 [O Arquivo][arquivo] mantém suas notas como arquivos em disco e pode espelhar a nota que você está editando diretamente no canal **visualização de streaming** do Marked.
 
-## Visualização do stream para marcado
+## Visualização do stream para marcado [stream-preview-to-marked]
 
 1. Em Marcado, abra {% appmenu File, New, Streaming Preview %} (ou reutilize uma janela de visualização de streaming existente).
 2. Mude para The Archive e escolha **Note → Stream Preview to Marked** para que The Archive ative Marked e comece a enviar o texto da nota mais inicial.

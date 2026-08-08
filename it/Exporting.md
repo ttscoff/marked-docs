@@ -4,11 +4,11 @@
 
 Trasformare il tuo Markdown in un documento finito.
 
-## Esporta dopo l'anteprima
+## Esporta dopo l'anteprima [export-after-preview]
 
 L'anteprima di Marked è la base per l'esportazione: ciò che vedi nella finestra di anteprima è ciò che ottieni in PDF, DOCX, EPUB e altri formati (impostazioni specifiche dell'esportazione del modulo come margini, intestazioni e impaginazione). Imposta prima il tuo stile e correggi le bozze in anteprima, quindi esporta quando il documento è pronto. Vedi [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) per il flusso di lavoro di anteprima completo.
 
-## Il pannello Esporta [cassetto]
+## Il pannello Esporta [drawer]
 
 ![Pannello di esportazione][pannello di esportazione]
 
@@ -18,13 +18,13 @@ Il **Pannello di esportazione** è un pannello in stile Spotlight gestito da tas
 
 Il pannello Esporta ti consente di salvare il tuo documento come HTML, PDF a pagina singola, PDF impaginato, pacchetto RTF o file Microsoft Word DOC o DOCX. Puoi anche salvare in un nuovo file Markdown (le funzionalità specifiche di Marked verranno renderizzate e i relativi risultati inclusi), un documento aperto (ODT) o come OPML per l'utilizzo in altre applicazioni.
 
-## Copia HTML
+## Copia HTML [copyhtml]
 
 Utilizza la funzione Copia HTML per inserire il codice sorgente HTML per la tua anteprima negli appunti senza problemi. Puoi selezionarlo dal menu a forma di ingranaggio o semplicemente premere {% kbd shift cmd C %}. L'HTML copiato sarà uno snippet pronto per l'inserimento in un blog, forum o documento HTML.
 
 Non è necessario essere nella vista sorgente per copiare. Con l'anteprima focalizzata (fai clic su di essa), digita semplicemente {% kbd shift cmd C %} e vedrai un messaggio popup che ti informa che la fonte è negli appunti.
 
-## Salva HTML
+## Salva HTML [save-html]
 
 ![][exporthtmlaccessorio]
 
@@ -36,7 +36,7 @@ Puoi facoltativamente includere uno qualsiasi degli stili di Marked (o uno dei t
 
 Inoltre, puoi scegliere di incorporare qualsiasi immagine locale inclusa nel documento all'interno dell'HTML esportato, consentendoti di avere un documento autonomo che può essere ospitato ovunque senza la necessità di spostare le immagini con esso. Funziona solo con immagini a cui si fa riferimento sull'unità locale con percorsi relativi o assoluti. Evita di utilizzare i percorsi `file:///` se desideri utilizzare questa funzionalità.
 
-## Esporta Markdown in PDF su Mac
+## Esporta Markdown in PDF su Mac [export-markdown-to-pdf-on-mac]
 
 Anteprima Stampa/PDF ({% kbd cmd P %}) farà apparire una finestra di dialogo di stampa standard. Ogni stile di anteprima in Marked ha i propri stili di stampa associati che rimuovono gli sfondi, modificano le dimensioni del testo e forniscono bordi. L'anteprima verrà stampata in base allo stile attualmente selezionato.
 
@@ -52,7 +52,7 @@ I margini della pagina possono essere impostati in {% prefspane Export %} e infl
 
 Puoi sovrascrivere le impostazioni dei margini per documento utilizzando la chiave dei metadati `Margins:`. I valori vengono interpretati come punti; i suffissi di unità come `px`, `pt` e `em` vengono ignorati. Utilizza due numeri per i margini verticale e orizzontale (`10 20`) o quattro numeri per superiore, destro, inferiore e sinistro (`10, 20, 10, 20` o `10 20 10 20`). I margini dei metadati sovrascrivono le impostazioni {% prefspane Export %}.
 
-### Intestazioni e piè di pagina
+### Intestazioni e piè di pagina [headers-and-footers]
 
 Le intestazioni e i piè di pagina definiti in {% prefspane Export %} appariranno nella parte superiore e inferiore di qualsiasi pagina stampata o salvata in PDF impaginato e nell'esportazione DOCX. Puoi inserire qualsiasi testo in alto a sinistra, in alto al centro, in alto a destra, in basso a sinistra, in basso al centro e in basso a destra. Il testo centrale è allineato al centro della pagina. Le seguenti variabili verranno sostituite nelle stringhe, se utilizzate:
 
@@ -99,7 +99,7 @@ Inoltre, puoi specificare una dimensione del carattere di intestazione/piè di p
 
     Dimensione carattere intestazione: 10
 
-### Formati di data e ora
+### Formati di data e ora [dateandtimeformats]
 
 I campi **Formato data** e **Formato ora** in {% prefspane Export %} controllano il modo in cui `%date` e `%time` vengono visualizzati nelle intestazioni e nei piè di pagina. Entrambi i campi utilizzano codici di formato in stile strftime: un `%` seguito da una lettera. Il testo letterale (come `-`, `:` o spazi) viene copiato così com'è.
 
@@ -139,7 +139,7 @@ I campi **Formato data** e **Formato ora** in {% prefspane Export %} controllano
 
 Utilizza **Ripristina formati predefiniti** in {% prefspane Export %} per ripristinare a `%m-%d-%Y` e `%I:%M %p`.
 
-### Intestazioni e piè di pagina per documento
+### Intestazioni e piè di pagina per documento [per-document-headers-and-footers]
 
 Puoi specificare intestazioni e piè di pagina in base al documento utilizzando i metadati MultiMarkdown nella parte superiore del documento:
 
@@ -157,23 +157,23 @@ Questi sovrascriveranno qualsiasi impostazione nelle preferenze. Tieni presente 
 
     -->
 
-## Salva PDF
+## Salva PDF [save-pdf]
 
 Questa opzione salva l'anteprima direttamente in un file PDF sul tuo disco. Il tuo documento verrà visualizzato nella sua interezza, senza interruzioni di pagina. Per includere l'impaginazione nell'output, utilizzare le opzioni Stampa/PDF nel [Pannello di esportazione](#cassetto).
 
-## Opzioni di esportazione RTF
+## Opzioni di esportazione RTF [rtfexportoptions]
 
 Marked può esportare dati RTF (Rich Text Format) direttamente negli appunti. Basta scegliere il comando Copia Rich Text dal menu a forma di ingranaggio.
 
 Marked può anche salvare il file come file **RTFD** (Rich Text Format). Il formato RTFD è un formato bundle che include un file RTF e tutte le immagini incorporate nel documento.
 
-## Esportazione DOCX
+## Esportazione DOCX [docx-export]
 
 L'esportazione come DOCX creerà un documento Microsoft Word valido, con elementi come titoli, intestazioni/piè di pagina, enfasi, elenchi, ecc., tutti mappati su stili Word validi. Ciò significa che puoi applicare facilmente il tuo tema in Word.
 
 Vedere [Lavorare con DOCX][DOCX] per ulteriori dettagli sull'importazione e l'esportazione di Word.
 
-## Esporta Markdown in EPUB
+## Esporta Markdown in EPUB [export-markdown-to-epub]
 
 Marked può esportare documenti EPUB validi al 100% e accessibili al 100%. Seleziona il tipo di esportazione EPUB, specifica i metadati come titolo, autore e data e, facoltativamente, aggiungi una foto di copertina. Il file salvato sarà leggibile in qualsiasi visualizzatore EPUB.
 
@@ -191,7 +191,7 @@ Se il titolo non è impostato, verrà utilizzato per impostazione predefinita il
 
 La data sarà sempre impostata sulla data corrente e al momento non può essere modificata con i metadati. Tuttavia, può essere modificato al momento del salvataggio, purché la formattazione (ISO) rimanga intatta.
 
-### Pubblicazione su Amazon Kindle (KDP)
+### Pubblicazione su Amazon Kindle (KDP) [publishing-to-amazon-kindle-kdp]
 
 EPUB è un formato aperto utilizzato da molte app e negozi di lettura (Apple Books, Kobo e altri), non solo Kindle. Se stai pubblicando tramite [Kindle Direct Publishing (KDP)](https://kdp.amazon.com/), esporta EPUB da Marked e carica il file su KDP. Amazon lo converte nel proprio formato di consegna Kindle (KFX) per i lettori.
 
@@ -201,11 +201,11 @@ KDP accetta diversi formati di manoscritti, inclusi EPUB e DOCX (che Marked può
 
 Prima del caricamento, potresti voler controllare come apparirà il tuo EPUB sui dispositivi Kindle utilizzando [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) gratuito di Amazon. Si tratta di un software opzionale di terze parti di Amazon, non parte di Marked.
 
-## Esporta profili
+## Esporta profili [export-profiles]
 
 I profili di esportazione ti consentono di salvare e passare rapidamente tra diversi set di preferenze di esportazione. Ciò è particolarmente utile se esporti regolarmente documenti per scopi diversi, ad esempio un profilo per PDF pronti per la stampa con margini e intestazioni specifici e un altro per HTML pronto per il Web con stili incorporati.
 
-### Utilizzo dei profili di esportazione
+### Utilizzo dei profili di esportazione [using-export-profiles]
 
 Quando avvii Marked per la prima volta, viene creato automaticamente un profilo "Predefinito" con le impostazioni di esportazione correnti. Puoi visualizzare e selezionare i profili nelle finestre di dialogo di esportazione (Esportazione PDF, Salva HTML, ecc.) utilizzando il menu a comparsa del profilo nella parte superiore della finestra di dialogo.
 
@@ -236,7 +236,7 @@ Quando avvii Marked per la prima volta, viene creato automaticamente un profilo 
   - **Elimina** profili (il profilo "Default" non può essere eliminato)
   - Visualizza tutti i profili disponibili in un elenco
 
-### Cosa catturano i profili di esportazione
+### Cosa catturano i profili di esportazione [what-export-profiles-capture]
 
 I profili di esportazione salvano tutte le preferenze relative all'esportazione, tra cui:
 
@@ -252,7 +252,7 @@ I profili di esportazione salvano tutte le preferenze relative all'esportazione,
 
 I profili funzionano con tutti i tipi di esportazione: Markdown, HTML, PDF continuo, PDF impaginato, EPUB, DOCX, ODT, TextBundle, RTF e OPML.
 
-### Archiviazione del profilo
+### Archiviazione del profilo [profile-storage]
 
 I profili sono archiviati nella cartella Supporto applicazioni in:
 
@@ -260,7 +260,7 @@ I profili sono archiviati nella cartella Supporto applicazioni in:
 
 Ciò significa che i tuoi profili persistono anche se ripristini le preferenze dell'app e sopravvivono agli aggiornamenti dell'app. Puoi eseguire il backup di questo file per preservare i tuoi profili tra le installazioni.
 
-### Suggerimenti per l'utilizzo dei profili di esportazione
+### Suggerimenti per l'utilizzo dei profili di esportazione [tips-for-using-export-profiles]
 
 - **Crea profili per flussi di lavoro comuni**: se esporti regolarmente per la stampa anziché per il web, crea profili separati per ciascuno
 - **Utilizza nomi descrittivi**: i nomi dei profili come "Stampa - Lettera" o "Web - Stili incorporati" chiariscono lo scopo di ciascun profilo
@@ -268,7 +268,7 @@ Ciò significa che i tuoi profili persistono anche se ripristini le preferenze d
 - **Inizia da profili esistenti**: utilizza "Duplica" nella finestra di gestione per creare variazioni di profili esistenti anziché iniziare da zero
 
 [break]: Special_Syntax.html#pagebreaks
-[DOCX]: Working_with_DOCX.html
+[DOCX]: Working_With_DOCX.html
 [custom]: Custom_Styles.html
 [dropbox]: http://dropbox.com
 [expbut]: images/ExportButton.png @2x width=534px height=256px class=center

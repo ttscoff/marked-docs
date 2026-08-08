@@ -8,7 +8,7 @@
 
 **Mindenképpen nézze meg a [Megjelölt oktatóvideók] (https://www.youtube.com/playlist?list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ) növekvő gyűjteményét.**
 
-## Mi az a Markdown?
+## Mi az a Markdown? [whats-markdown]
 
 [daringfireball]: http://daringfireball.net/projects/markdown/basics
 [mmd5]: https://fletcher.github.io/MultiMarkdown-5/
@@ -21,7 +21,7 @@ A Marked együttműködik a GitHub Flavored Markdown, CommonMark (GFM), Kramdown
 
 A [Markdown Dingus](x-marked-3://dingus) segítségével kísérletezhet a Markdown által támogatott különböző ízekkel.
 
-## Mi van megjelölve?
+## Mi van megjelölve? [whats-marked]
 
 A Marked egy élő Markdown előnézeti alkalmazás macOS-hez --- egy szerkesztő-agnosztikus (Multi)Markdown Preview alkalmazás, amely figyeli a fájl módosításait, és minden mentéskor frissíti az előnézetet. A formázás részleteinek szétválasztása és automatizálása lehetővé teszi, hogy többet összpontosítson az írásra és kevésbé a prezentációra, miközben továbbra is figyelemmel kíséri a végterméket.
 
@@ -33,7 +33,7 @@ A Marked további funkciókkal rendelkezik, beleértve a szószámot és más do
 
 Igen, és működik egy csomó kedvenc alkalmazásoddal: szövegszerkesztőkkel a Vimtől és az Emacs-től a Sublime Text és TextMate-ig, Markdown szerkesztők, mint a MultiMarkdown Composer, Byword és iA Writer, még olyan alkalmazások is, amelyekre talán nem is számítasz, mint például az Ulysses, a Scrivener, a VoodooPad, a MarsEdit és még sok más.
 
-## Felhasználási példa
+## Felhasználási példa [example-uses]
 
 A Marked bármely szövegszerkesztőt Markdown-kompatibilis szerkesztővé változtat. Az előnézet mindig elérhető, és munka közben frissül.
 

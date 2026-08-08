@@ -6,9 +6,9 @@ Marcado exporta HTML da sua **visualização ao vivo** --- a mesma saída render
 
 O fluxo de trabalho típico é **visualizar primeiro, depois exportar HTML**: abrir ou compilar seu documento no Marked, escolher um tema, revisar na visualização ao vivo e exportar quando a marcação estiver correta.
 
-## Duas maneiras de obter HTML
+## Duas maneiras de obter HTML [two-ways-to-get-html]
 
-### Copiar HTML (snippet)
+### Copiar HTML (snippet) [copy-html-snippet]
 
 **Copiar HTML** coloca o código-fonte HTML da visualização na área de transferência --- pronto para colar no WordPress, Ghost, Squarespace, um fórum, um modelo de e-mail ou qualquer aplicativo que aceite fragmentos de HTML.
 
@@ -18,7 +18,7 @@ O fluxo de trabalho típico é **visualizar primeiro, depois exportar HTML**: ab
 
 Copiar HTML é ideal quando seu destino já possui sua própria folha de estilo e você só precisa da marcação do conteúdo.
 
-### Salvar HTML (arquivo)
+### Salvar HTML (arquivo) [save-html-file]
 
 **Salvar HTML** grava um arquivo `.html` completo no disco.
 
@@ -28,7 +28,7 @@ Copiar HTML é ideal quando seu destino já possui sua própria folha de estilo 
 
 Salvar HTML é ideal para arquivar, compartilhar um arquivo independente ou abrir o resultado diretamente em um navegador.
 
-## Salvar opções de HTML
+## Salvar opções de HTML [save-html-options]
 
 A caixa de diálogo Salvar HTML inclui um seletor de perfil de exportação e estas opções:
 
@@ -65,7 +65,7 @@ Documentos com [CriticMarkup](CriticMarkup.html) podem escolher se a exportaçã
 
 Selecione um [Perfil de exportação](Exporting.html#export-profiles) salvo para restaurar suas configurações de exportação HTML preferidas (estilos incorporados, imagens, realce de sintaxe, matemática) em uma única etapa.
 
-## Estilo com temas integrados e personalizados
+## Estilo com temas integrados e personalizados [styling-with-built-in-and-custom-themes]
 
 O **estilo de visualização** gera a aparência do HTML quando **Incluir estilo na saída** está marcado:
 
@@ -79,7 +79,7 @@ I> Alguns CSS somente de visualização (posicionamento fixo, truques de janela 
 
 Para orientação de autoria, consulte [Criando CSS personalizado](Writing_Custom_CSS.html).
 
-## Metadados e cabeçalhos MultiMarkdown
+## Metadados e cabeçalhos MultiMarkdown [metadata-and-multimarkdown-headers]
 
 Os metadados MultiMarkdown na parte superior do seu arquivo de origem podem afetar a exportação de HTML:
 
@@ -89,11 +89,11 @@ Os metadados MultiMarkdown na parte superior do seu arquivo de origem podem afet
 
 Se você usa metadados para configurações de exportação, mas não deseja que as chaves fiquem visíveis em outras saídas, envolva-as em comentários HTML --- Marcado localiza e processa metadados comentados em qualquer lugar do documento. Consulte [Configurações por documento](Per-Document_Settings.html).
 
-## Documentos com vários arquivos
+## Documentos com vários arquivos [multi-file-documents]
 
 Para compilações de livros e capítulos, use [Documentos de vários arquivos](Multi-File_Documents.html). Marcado visualiza o documento mesclado e exporta um arquivo HTML do resultado compilado. Os arquivos incluídos são marcados com comentários HTML mostrando seus caminhos de origem – útil ao auditar qual capítulo contribuiu com qual seção.
 
-## Colando em outros aplicativos
+## Colando em outros aplicativos [pasting-into-other-applications]
 
 | Destino | Abordagem sugerida |
 | :-- | :-- |
@@ -105,7 +105,7 @@ Para compilações de livros e capítulos, use [Documentos de vários arquivos](
 
 [Copiar Rich Text](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o aplicativo de destino aceita texto formatado em vez de fonte HTML.
 
-## Tópicos relacionados
+## Tópicos relacionados [related-topics]
 
 * [Exportando](Exporting.html) --- painel de exportação, perfis e outros formatos
 * [Exportação de EPUB](EPUB_Export.html) --- saída de e-book com CSS incorporado

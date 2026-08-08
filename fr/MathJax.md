@@ -2,7 +2,7 @@
 
 Les chiffres comptent autant que les mots.
 
-## Prévisualiser les formules avec MathJax
+## Prévisualiser les formules avec MathJax [preview-formulas-with-mathjax]
 
 ![][1]
 
@@ -16,7 +16,7 @@ Exemple de syntaxe MMD MathJax :
 
 Si vous choisissez d'inclure MathJax dans un fichier HTML exporté, un lien CDN sera utilisé à la place du code MathJax intégré. Cela nécessite une connexion Internet pour afficher le MathML rendu.
 
-## Source MathJax : local ou CDN
+## Source MathJax : local ou CDN [mathjax-source-local-vs-cdn]
 
 Lorsque MathJax est activé, Marked peut le charger depuis :
 
@@ -30,7 +30,7 @@ La fenêtre contextuelle **MathJax Source** dans {% prefspane Style %} vous perm
 
 Les fichiers HTML exportés font toujours référence à MathJax à partir d'un CDN, quelle que soit la source d'aperçu, ils restent donc autonomes et petits.
 
-## Numérotation des équations
+## Numérotation des équations [equation-numbering]
 
 Vous pouvez activer la numérotation des équations dans {% prefspane Style %}. Cela fonctionne à la fois avec MathJax et KaTeX, mais est implémenté différemment en interne. Pour MathJax v3, Marked mappe vos paramètres à la configuration MathJax appropriée afin que :
 
@@ -40,7 +40,7 @@ Vous pouvez activer la numérotation des équations dans {% prefspane Style %}. 
 
 Ces options correspondent aux paramètres `tex.tags` et `tex.tagSide` de MathJax sous le capot.
 
-## Forfaits supplémentaires
+## Forfaits supplémentaires [additional-packages]
 
 MathJax v3 est modulaire. Marked active toujours les packages TeX/AMS de base, et vous pouvez éventuellement en activer des supplémentaires dans {% prefspane Style %} :
 
@@ -51,7 +51,7 @@ MathJax v3 est modulaire. Marked active toujours les packages TeX/AMS de base, e
 
 Cliquez sur **Packages supplémentaires…** pour ouvrir une petite liste de contrôle dans laquelle vous pouvez activer ou désactiver ces packages. Les modifications prendront effet la prochaine fois que Marked restituera les mathématiques dans l'aperçu.
 
-## Configuration avancée de MathJax
+## Configuration avancée de MathJax [mathjax-advanced-configuration]
 
 Vous pouvez appliquer des configurations personnalisées supplémentaires en plus des valeurs par défaut de Marked en ajoutant un objet JSON valide dans le champ **Configuration avancée**. Ce champ est fusionné dans l'objet de configuration MathJax v3 (`window.MathJax`) avant le chargement de MathJax. Il peut contenir [toutes les options prises en charge par MathJax v3](https://docs.mathjax.org/en/latest/options/), par exemple :
 
@@ -89,7 +89,7 @@ Notez qu'en utilisant le processeur MultiMarkdown avec des délimiteurs non stan
 Marked effectue un peu de magie lorsque MathJax ou KaTeX sont activés, convertissant la syntaxe mathématique pour garantir qu'elle est aussi compatible que possible avec le processeur actuel (MultiMarkdown ou Discount). Cela devrait être génial en toutes circonstances, mais si vous trouvez que cela pose des problèmes, [contactez le support](https://support.markedapp.com/questions/add) !
 
 
-## KaTeX
+## KaTeX [katex]
 
 [katex]: https://katex.org/
 
@@ -99,7 +99,7 @@ Marked effectue un peu de magie lorsque MathJax ou KaTeX sont activés, converti
 
 Vous pouvez activer la numérotation des équations dans {% prefspane Style %}. Cela fonctionne à la fois avec MathJax et KaTeX. Vous pouvez choisir si les nombres apparaissent sur le côté gauche ou droit de l'équation.
 
-### Dans MathJax
+### Dans MathJax [in-mathjax]
 
 Dans MathJax, cela utilise le paramètre :
 
@@ -109,10 +109,10 @@ Dans MathJax, cela utilise le paramètre :
 
 Si vous souhaitez numéroter uniquement les équations AMS, sélectionnez « AMS uniquement » à droite du menu déroulant « côté ».
 
-### Dans KaTeX
+### Dans KaTeX [in-katex]
 
 KaTeX ne propose pas de numérotation d'équations. Pour simuler cela dans Marked, CSS est utilisé et toutes les équations d'affichage sont numérotées.
 
-## Problèmes d'exportation
+## Problèmes d'exportation [export-issues]
 
 Les formats Rich Text ne géreront pas les équations (que ce soit par MathJax ou KaTeX). Elles seront cachées dans le document de sortie, car essayer d'inclure les polices spéciales entraîne un désordre plus important que vous ne l'imaginez... C'est quelque chose que j'espère corriger à un moment donné, mais c'est une lacune pour le moment.

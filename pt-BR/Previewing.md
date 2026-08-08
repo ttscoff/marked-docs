@@ -6,7 +6,7 @@ I> Esta página cobre a visualização *aparência* --- estilos, zoom, modo escu
 
 Mudando a maneira como você vê as coisas.
 
-## Escolhendo um estilo
+## Escolhendo um estilo [choosing-a-style]
 
 ![][1]
 
@@ -18,13 +18,13 @@ Os estilos personalizados adicionados nas configurações de Estilo estarão dis
 
 Os estilos podem ser selecionados com atalhos de teclado. Abra o menu de estilos para ver o atalho de teclado para cada estilo. Os atalhos de teclado são atribuídos na ordem dos estilos: os primeiros 9 estilos da lista podem ser acessados com {% kbd cmd 1 %} -- {% kbd cmd 9 %}, os próximos 10 estilos com {% kbd cmd opt 1 %} -- {% kbd cmd opt 0 %}, etc.
 
-## Modo de contorno
+## Modo de contorno [outline-mode]
 
 Se o seu documento for uma lista hierárquica, como uma gerada a partir de um mapa mental ou aplicativo de estrutura de tópicos, você poderá ativar o Modo de estrutura de tópicos no menu Engrenagem para aplicar formatação especial no estilo de estrutura de tópicos APA ou Decimal.
 
 O modo de contorno automático pode ser ativado para extensões de arquivo específicas em {% prefspane Style %}.
 
-## Zoom de texto
+## Zoom de texto [text-zoom]
 
 ![][2]
 
@@ -32,10 +32,10 @@ O modo de contorno automático pode ser ativado para extensões de arquivo espec
 
 Você pode alterar o tamanho do texto usando {% kbd cmd shift + %} e {% kbd cmd shift - %} ou usar o menu Zoom em Visualização na barra de menu ou no menu de engrenagem na janela do documento. Marcado lembrará todas as alterações feitas na próxima vez (e sempre). Redefina o zoom para 100% com {% kbd cmd 0 %} (ou acesse **Zoom Reset** no menu Zoom).
 
-## Modo escuro/alto contraste
+## Modo escuro/alto contraste [dark-modehigh-contrast]
 
 Se você preferir texto claro em um fundo escuro, Marcado tem o que você precisa. No menu __Preview__ você pode usar {% appmenu Preview, Dark Mode ({{opt}}{{cmd}}I) %} inverter as cores de qualquer um dos esquemas padrão para um resultado claro sobre escuro, e se um tema personalizado for [construído corretamente](Writing_Custom_CSS.html) ele funcionará lá também.
 
-## Mostrar/ocultar barra de status
+## Mostrar/ocultar barra de status [showhide-status-bar]
 
 A barra de status na parte inferior da janela de visualização pode ser alternada com o item de menu {% appmenu Preview, Show Status Bar ({{ctrl}}/) %}. Quando está oculto, pode ser visualizado e interagido passando o mouse sobre o espaço na parte inferior da visualização.

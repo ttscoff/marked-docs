@@ -1,12 +1,12 @@
 # <%= @title %>
 
-## Qu'est-ce que Markdown ?
+## Qu'est-ce que Markdown ? [what-is-markdown]
 
 Markdown est un langage de balisage léger qui vous permet d'écrire dans un format texte brut facile à lire et à écrire, puis de le convertir en HTML structurellement valide. L'objectif de conception primordial de la syntaxe de formatage de Markdown est de la rendre aussi lisible que possible.
 
-## Syntaxe de base
+## Syntaxe de base [basic-syntax]
 
-### Titres
+### Titres [headers]
 
 Créez des titres en utilisant des symboles dièse (`#`). Le nombre de dièses détermine le niveau de titre :
 
@@ -19,7 +19,7 @@ Créez des titres en utilisant des symboles dièse (`#`). Le nombre de dièses d
 ###### Titre 6
 ```
 
-### Emphase
+### Emphase [emphasis]
 
 **Texte en gras** en utilisant des doubles astérisques ou doubles traits de soulignement :
 
@@ -35,7 +35,7 @@ __Texte en gras__
 _Texte en italique_
 ```
 
-### Listes
+### Listes [lists]
 
 **Listes non ordonnées** utilisant des astérisques, des signes plus ou des tirets :
 
@@ -61,7 +61,7 @@ _Texte en italique_
 3. Troisième élément
 ```
 
-### Liens
+### Liens [links]
 
 **Liens en ligne** avec le texte entre crochets et l'URL entre parenthèses :
 
@@ -84,7 +84,7 @@ _Texte en italique_
 <user@example.com>
 ```
 
-### Images
+### Images [images]
 
 Les images utilisent une syntaxe similaire aux liens, mais avec un point d'exclamation au début :
 
@@ -95,7 +95,7 @@ Les images utilisent une syntaxe similaire aux liens, mais avec un point d'excla
 [image-reference]: http://example.com/image.jpg "Titre facultatif"
 ```
 
-### Citations
+### Citations [blockquotes]
 
 Créez des citations en utilisant le symbole supérieur à (`>`) au début de chaque ligne :
 
@@ -106,7 +106,7 @@ Créez des citations en utilisant le symbole supérieur à (`>`) au début de ch
 > Vous pouvez avoir plusieurs paragraphes dans une citation.
 ```
 
-### Code
+### Code [code]
 
 **Code en ligne** en utilisant des backticks :
 
@@ -122,7 +122,7 @@ Utilisez `code` dans votre texte.
     Plusieurs lignes sont prises en charge.
 ```
 
-### Règles horizontales
+### Règles horizontales [horizontal-rules]
 
 Créez des règles horizontales en utilisant trois tirets, astérisques ou traits de soulignement ou plus :
 
@@ -134,7 +134,7 @@ Créez des règles horizontales en utilisant trois tirets, astérisques ou trait
 ___
 ```
 
-### Sauts de ligne
+### Sauts de ligne [line-breaks]
 
 **Sauts de ligne forcés** en terminant une ligne par deux espaces ou plus :
 
@@ -150,7 +150,7 @@ Cette ligne
 se poursuit sur la ligne suivante avec un espace.
 ```
 
-### Échappement de caractères
+### Échappement de caractères [escaping-characters]
 
 Échappez les caractères spéciaux en utilisant des barres obliques inverses :
 
@@ -173,7 +173,7 @@ Caractères courants pouvant être échappés :
 - `.` point
 - `!` point d'exclamation
 
-## Bonnes pratiques
+## Bonnes pratiques [best-practices]
 
 1. **Utilisez des lignes vides** pour séparer les différents éléments et améliorer la lisibilité
 2. **Soyez cohérent** dans vos choix de formatage (par exemple, utilisez soit `*` soit `_` pour l'emphase)
@@ -181,9 +181,9 @@ Caractères courants pouvant être échappés :
 4. **Testez votre résultat** pour vous assurer qu'il s'affiche comme prévu
 5. **Utilisez un texte de lien significatif** plutôt que des phrases génériques comme « cliquez ici »
 
-## Modèles courants
+## Modèles courants [common-patterns]
 
-### Listes imbriquées
+### Listes imbriquées [nested-lists]
 
 ```markdown
 1. Premier élément
@@ -193,7 +193,7 @@ Caractères courants pouvant être échappés :
    - Plus de contenu imbriqué
 ```
 
-### Listes avec paragraphes
+### Listes avec paragraphes [lists-with-paragraphs]
 
 ```markdown
 1. Premier élément
@@ -205,7 +205,7 @@ Caractères courants pouvant être échappés :
    Voici un paragraphe sous le deuxième élément.
 ```
 
-### Citations avec d'autres éléments
+### Citations avec d'autres éléments [blockquotes-with-other-elements]
 
 ```markdown
 > Ceci est une citation avec du **texte en gras** et du *texte en italique*.
@@ -216,7 +216,7 @@ Caractères courants pouvant être échappés :
 > > Les citations imbriquées sont également possibles.
 ```
 
-## Résumé
+## Résumé [summary]
 
 Markdown offre une façon simple et lisible de formater du texte qui peut être facilement converti en HTML. La clé est de rester simple et lisible tout en utilisant les éléments de syntaxe de base de manière cohérente. Avec de la pratique, vous constaterez que Markdown devient une seconde nature et facilite grandement la rédaction de contenu structuré.
 

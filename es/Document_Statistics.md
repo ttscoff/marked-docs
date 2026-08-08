@@ -4,7 +4,7 @@
 
 Lleve un registro mientras escribe.
 
-## Recuento de palabras y estadísticas de documentos
+## Recuento de palabras y estadísticas de documentos [word-count-and-document-statistics]
 
 ![][1]
 
@@ -14,7 +14,7 @@ El recuento de palabras se encuentra en la barra de estado inferior y se puede h
 
 Si se selecciona texto, la pantalla del recuento de palabras y la ventana emergente de párrafo/frases/caracteres se actualizarán con información solo para la selección.
 
-## Recuento de palabras para la selección
+## Recuento de palabras para la selección [word-count-for-selection]
 
 ![Ventana emergente de recuento de palabras al seleccionar texto][2]
 
@@ -26,7 +26,7 @@ Si "Mostrar recuento de palabras para la selección" está habilitado en {% pref
 
 La función de zoom es útil para seleccionar y obtener recuentos rápidamente para fragmentos de texto más grandes. Escriba {% kbd z %} para alejar y hacer su selección.
 
-## Estadísticas de legibilidad
+## Estadísticas de legibilidad [readability-statistics]
 
 ![Barra de estadísticas de legibilidad][3]
 
@@ -34,7 +34,7 @@ La función de zoom es útil para seleccionar y obtener recuentos rápidamente p
 
 Estadísticas adicionales de Flesch/Kincaid y el Fog Index están disponibles en {% kbd opt shift cmd S %}.
 
-### Información de legibilidad
+### Información de legibilidad [readability-information]
 
 **Facilidad de lectura de Flesch:** las puntuaciones más altas indican material que es más fácil de leer; los números más bajos marcan pasajes que son más difíciles de leer.
 
@@ -46,7 +46,7 @@ Estadísticas adicionales de Flesch/Kincaid y el Fog Index están disponibles en
 
 **Índice de niebla Gunning:** mide la legibilidad de la escritura en inglés. El índice estima los años de educación formal necesarios para comprender el texto en una primera lectura. Un índice de niebla de 12 requiere el nivel de lectura de un estudiante de último año de secundaria de Estados Unidos (alrededor de 18 años).
 
-## Estadísticas avanzadas
+## Estadísticas avanzadas [advanced-statistics]
 
 ![Ventana emergente de Estadísticas avanzadas][adv]
 
@@ -54,7 +54,7 @@ Estadísticas adicionales de Flesch/Kincaid y el Fog Index están disponibles en
 
 Al seleccionar Estadísticas avanzadas en el menú de ajustes ---- o presionar {% kbd cmd I %} --- se desplegará un panel que contiene estadísticas de documentos más avanzadas, incluida la longitud promedio de palabras y oraciones y la complejidad promedio de las palabras.
 
-### Estadísticas avanzadas flotantes
+### Estadísticas avanzadas flotantes [floating-advanced-statistics]
 
 ![Ventana de información flotante][flotante]
 
@@ -62,7 +62,7 @@ Al seleccionar Estadísticas avanzadas en el menú de ajustes ---- o presionar {
 
 Al presionar {% kbd shift cmd I %} se abrirá un panel flotante que contiene todas las estadísticas detalladas e información de legibilidad. Este panel puede permanecer en primer plano cuando cambia a su editor, para que pueda ver sus estadísticas actualizadas cada vez que guarda, ya sea que la vista previa sea visible o no. Al presionar el ícono `<`, la Vista previa marcada asociada volverá al primer plano. Si mantiene presionada la opción y hace clic en el mismo botón, se abrirá el archivo Markdown en su editor de texto predeterminado (configurado en {% prefspane Apps %}).
 
-### Objetivos de palabras
+### Objetivos de palabras [word-targets]
 
 Si tiene un objetivo específico para el recuento de palabras mientras escribe, puede agregar una clave de metadatos "destino:" en la parte superior de su documento y Marked realizará un seguimiento de su progreso, mostrando un indicador de finalización en el panel Estadísticas detalladas ({% kbd cmd I %}) y en Estadísticas flotantes ({% kbd shift cmd I %}).
 
@@ -71,7 +71,7 @@ Si tiene un objetivo específico para el recuento de palabras mientras escribe, 
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualizar la repetición de palabras
+## Visualizar la repetición de palabras [visualizewordrepetition]
 
 Al seleccionar Visualizar repetición de palabras en el menú de ajustes (o presionar {% kbd ctrl cmd W %}) se cambiará a una vista especial que elimina elementos que no son de texto y resalta las palabras que se repiten en su documento. Las palabras repetidas se resaltan en rosa claro y, al pasar el cursor sobre una palabra resaltada, se iluminarán las palabras coincidentes en todo el documento. Al hacer clic en una palabra resaltada, se oscurecerá el fondo y se "pegará" el resaltado para su posterior revisión.
 

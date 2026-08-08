@@ -4,7 +4,7 @@
 
 Az [Archívum][archívum] a jegyzeteit fájlként tárolja a lemezen, és közvetlenül tükrözheti a szerkesztett jegyzeteket a Marked **streaming előnézet** csatornájában.
 
-## Az adatfolyam előnézete megjelölve
+## Az adatfolyam előnézete megjelölve [stream-preview-to-marked]
 
 1. A Megjelölt területen nyissa meg a {% appmenu File, New, Streaming Preview %} elemet (vagy használjon újra egy meglévő streaming előnézeti ablakot).
 2. Váltson az Archívumra, és válassza a **Jegyzet → Megjelölt adatfolyam előnézete** lehetőséget, hogy az Archívum aktiválja a Megjelölt funkciót, és megkezdje a legelső jegyzetszöveg küldését.

@@ -6,7 +6,7 @@ O Style Manager fornece uma interface centralizada para gerenciar todos os seus
 estilos integrados e personalizados. Dá a você controle total sobre quais
 Os estilos aparecem em menus, em sua ordem, em atalhos de teclado e muito mais.
 
-## Abrindo o Gerenciador de Estilos
+## Abrindo o Gerenciador de Estilos [opening-the-style-manager]
 
 Para abrir o Gerenciador de estilos, clique no botão **Gerenciar estilos…** no {% prefspane Style %}
 painel ou use {% appmenu Style, Manage Styles (~@$m) %}. Você também pode arrastar arquivos CSS diretamente para a janela de preferências --- Marcado
@@ -17,13 +17,13 @@ você.
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## A tabela de estilos
+## A tabela de estilos [the-style-table]
 
 O Style Manager exibe todos os seus estilos em uma tabela classificável que mistura
 estilos integrados e personalizados perfeitamente. Cada linha da tabela contém vários
 colunas:
 
-### Caixa de seleção habilitada
+### Caixa de seleção habilitada [enabled-checkbox]
 
 A caixa de seleção **Ativado** adiciona ou remove imediatamente o estilo da janela Estilo
 menu, pop-up Estilo padrão e atalhos de teclado. Quando você desabilita um estilo,
@@ -32,7 +32,7 @@ ele fica oculto nos menus, mas permanece no Gerenciador de estilos para fácil r
 Se você desabilitar o estilo atualmente ativo, Marcado muda automaticamente para o estilo
 próximo estilo habilitado disponível.
 
-### Coluna Nome
+### Coluna Nome [name-column]
 
 A coluna **Nome** exibe o nome de exibição do estilo. Você pode editar este nome
 inline clicando diretamente nele; as mudanças persistem e se propagam para todos os menus
@@ -42,7 +42,7 @@ pode querer um nome mais descritivo do que o nome do arquivo.
 Os estilos integrados têm nomes bloqueados que não podem ser editados. Para personalizar um
 nome do estilo integrado, duplique-o primeiro para criar uma cópia editável.
 
-### Coluna de origem
+### Coluna de origem [source-column]
 
 A coluna **Fonte** indica de onde vem o estilo:
 
@@ -52,7 +52,7 @@ A coluna **Fonte** indica de onde vem o estilo:
 - **Duplicado**: estilos criados pela duplicação de outro estilo (integrado
   ou personalizado)
 
-### Coluna Ações
+### Coluna Ações [actions-column]
 
 Cada linha inclui uma pilha de **Ações** com botões para gerenciar esse estilo:
 
@@ -75,7 +75,7 @@ desativado.
 estado padrão se tiver sido modificado. Este botão só é visível para
 estilos integrados.
 
-## Reordenando estilos
+## Reordenando estilos [reordering-styles]
 
 As linhas podem ser reordenadas arrastando e soltando. Basta arrastar uma linha de estilo para um novo
 posição na tabela. A ordem que você define aqui determina:
@@ -87,17 +87,17 @@ posição na tabela. A ordem que você define aqui determina:
 Arraste os estilos para os slots de atalho do teclado que você deseja
 ocupar.
 
-## Adicionando estilos
+## Adicionando estilos [adding-styles]
 
 Existem várias maneiras de adicionar novos estilos personalizados ao Style Manager:
 
-### Adicionar botão
+### Adicionar botão [add-button]
 
 Clique no botão **Adicionar novo estilo** para abrir um seletor de arquivos
 onde você pode selecionar um ou mais arquivos CSS para importar. Os arquivos selecionados serão
 adicionado ao Style Manager e ativado por padrão.
 
-### Arraste e solte
+### Arraste e solte [drag-and-drop]
 
 Você pode arrastar arquivos CSS diretamente para a janela do Style Manager. Quando você arrasta
 arquivos na janela, uma sobreposição aparecerá mostrando "Adicionar um estilo personalizado" (ou
@@ -110,7 +110,7 @@ importar e posicionar em uma ação.
 Arrastar arquivos CSS para o painel de preferências {% prefspane Style %} também
 importe-os e abra o Style Manager automaticamente.
 
-## Visualização ao vivo
+## Visualização ao vivo [live-preview]
 
 O painel direito do Style Manager exibe uma visualização ao vivo do selecionado
 estilo. A visualização renderiza um documento de amostra abrangente com títulos,
@@ -121,33 +121,33 @@ A visualização usa o arquivo CSS diretamente do disco, então qualquer ediçã
 o editor externo será atualizado instantaneamente na visualização. Isso torna mais fácil
 veja suas alterações em tempo real à medida que desenvolve estilos personalizados.
 
-### Visualização do modo escuro
+### Visualização do modo escuro [dark-mode-preview]
 
 Uma caixa de seleção acima da visualização permite alternar entre o modo claro e escuro
 prévias. Isso é útil para testar a aparência dos estilos em ambos os modos de aparência,
 especialmente se você estiver criando estilos que se adaptam à aparência do sistema.
 
-## Atalhos de teclado
+## Atalhos de teclado [keyboard-shortcuts]
 
 O Style Manager exibe uma legenda abaixo da tabela mostrando como o teclado
 atalhos são atribuídos. Os primeiros nove estilos habilitados recebem {% kbd cmd 1 %} até
 {% kbd cmd 9 %} ({% kbd cmd 0 %} é reservado), os próximos dez recebem {% kbd opt cmd 1 %} a {% kbd opt cmd 0 %} e assim por diante. Você pode ver os atalhos de teclado atribuídos no menu pop-up Estilo em qualquer visualização.
 
-## Filtrando estilos desativados
+## Filtrando estilos desativados [filtering-disabled-styles]
 
 Uma caixa de seleção na parte inferior da janela permite mostrar ou ocultar
 estilos. Quando desmarcada, apenas os estilos habilitados são exibidos, facilitando
 concentre-se e reordene seus estilos ativos. Quando marcado, todos os estilos (ativados e desativados)
 são mostrados, permitindo que você gerencie sua coleção completa de estilos.
 
-## Restaurando estilos integrados
+## Restaurando estilos integrados [restoring-builtin-styles]
 
 O botão **Restaurar todos os estilos integrados** na parte inferior da janela
 restaura todos os estilos integrados ao seu estado padrão. Isto é útil se você tiver
 estilos integrados desativados e deseja reativá-los ou se deseja redefinir
 quaisquer modificações feitas nos estilos integrados.
 
-## Dicas
+## Dicas [tips]
 
 - **Organize por frequência**: arraste os estilos mais usados para o topo para obter
   apresentam os atalhos de teclado mais fáceis ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)

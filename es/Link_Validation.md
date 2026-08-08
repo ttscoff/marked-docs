@@ -4,7 +4,7 @@
 
 La validación de enlaces hace ping al destino de una URL y comprueba si hay errores. Esto ayuda a evitar enlaces rotos e inválidos en su documento publicado y es especialmente útil para blogueros.
 
-## Validar enlaces individuales
+## Validar enlaces individuales [validating-single-links]
 
 ![][1]
 
@@ -12,7 +12,7 @@ La validación de enlaces hace ping al destino de una URL y comprueba si hay err
 
 Haga clic y mantenga presionado un enlace en la vista previa hasta que parpadee, luego suéltelo para abrir el menú de acción del enlace. Elija "Validar enlace" para ejecutar la prueba. Los resultados se muestran en la ventana emergente.
 
-## Validando todos los enlaces
+## Validando todos los enlaces [validating-all-links]
 
 ![][2]
 
@@ -24,7 +24,7 @@ Las URL válidas se pueden ocultar en la ventana emergente con el botón "Oculta
 
 Al presionar Escape se ocultarán los resultados de la validación. Se pueden revelar nuevamente usando {% kbd ctrl cmd L %} o el menú Engranaje.
 
-## Validando automáticamente
+## Validando automáticamente [validating-automatically]
 
 Active "Validar automáticamente las URL al actualizar" en la configuración de Vista previa (o en la parte inferior de la ventana emergente de validación de enlaces). Cuando se carga el documento, los enlaces contenidos se probarán en segundo plano. Sólo se mostrará un cuadro de diálogo si hay errores.
 

@@ -4,7 +4,7 @@
 
 Marcado permite diversas sintaxes diferentes para incluir um arquivo dentro de outro.
 
-## Sintaxe marcada
+## Sintaxe marcada [marked-syntax]
 
 Você pode incluir arquivos externos em um único documento de visualização usando a sintaxe especial `<<[path/file]` no início de uma linha. A linha deve ter linhas em branco acima e abaixo dela, e o caminho é considerado relativo ao documento principal, a menos que comece com uma barra (`/`) ou um til (`~`). Barra (diretório raiz) e til (diretório inicial) podem ser usados ​​para definir caminhos absolutos para arquivos. Nenhum caminho é necessário se os arquivos externos estiverem na mesma pasta do documento principal, basta colocar o nome do arquivo (diferenciando maiúsculas de minúsculas e incluindo extensão) entre colchetes.
 
@@ -46,7 +46,7 @@ A exportação HTML final de um documento contendo inclusões terá comentários
 
 **Observação:** quanto mais arquivos forem incluídos em um documento, mais lento será o tempo geral de compilação da visualização. Marcado tenta otimizar e armazenar em cache o processo, mas espera alguns atrasos na renderização à medida que o tamanho do documento aumenta.
 
-## Sintaxe de transclusão de MultiMarkdown
+## Sintaxe de transclusão de MultiMarkdown [multimarkdown-transclude-syntax]
 
 Você também pode usar a sintaxe `{{filename}}` baseada na especificação MultiMarkdown mais recente. Marked reconhecerá `Transclude Base: path` nos metadados MMD e os usará como base para transclusão de arquivos.
 
@@ -54,7 +54,7 @@ O Transclude Base só será reconhecido no documento pai, e não em documentos a
 
 A sintaxe do código protegido que o MultiMarkdown fornece para incluir arquivos sem processamento não funcionará no Marked. Para fazer isso, use a sintaxe `<<(file)` (bloco de código) ou `<<{file}` (bruto).
 
-## Sintaxe do bloco IA Writer
+## Sintaxe do bloco IA Writer [ia-writer-block-syntax]
 
 Marcado como 2.5.11+ suporta a sintaxe IA Writer [Content Block][ia]. Esta é uma referência que começa com uma barra (`/`) em sua própria linha. Pode ser um exemplo de código, uma imagem, um arquivo markdown ou um arquivo CSV. Tudo será tratado adequadamente com base na extensão do arquivo incluído, e os CSVs serão [convertidos em tabelas Markdown][csv], se possível.
 
@@ -75,7 +75,7 @@ Caminho absoluto para a pasta Documentos:
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
-## Como o esboço, o mapa mental e as inclusões de CSV são convertidos
+## Como o esboço, o mapa mental e as inclusões de CSV são convertidos [how-outline-mind-map-and-csv-includes-are-converted]
 
 Quando você inclui certos tipos de arquivo com sintaxe de bloco `<<[path]` ou IA Writer, Marked os converte em vez de inserir o conteúdo do arquivo bruto. O comportamento do esboço e do mapa mental depende da extensão do arquivo e de suas preferências [Configurações: Aplicativos → Mapas Mentais/Esboços][mapas mentais]. Arquivos CSV/TSV são sempre convertidos em tabelas Markdown (consulte [Criando tabelas usando arquivos CSV][csv]).
 
@@ -95,7 +95,7 @@ Cada formato de esboço/mapa mental tem sua própria caixa de seleção em *Mapa
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
-## Formatos de livros
+## Formatos de livros [book-formats]
 
 Marked também suporta arquivos de índice em formatos como [Leanpub][lp], [GitBook][gb] e mmd\_merge (MultiMarkdown). Os arquivos incluídos nos índices de formato de livro serão monitorados em busca de alterações e o resultado será uma visualização completa do documento compilado, assim como o exemplo "Index.md" acima.
 
@@ -136,7 +136,7 @@ Exemplo de mmd_merge:
     FAQ.md
     Agradecimentos.md
 
-### GitBook
+### GitBook [leanpub]
 
 A formatação do GitBook usa uma lista Markdown para criar a estrutura e o índice. Se o suporte ao GitBook estiver habilitado em {% prefspane Apps %} no suporte Leanpub/GitBook, um arquivo chamado SUMMARY.md será lido e convertido automaticamente para o formato mmd_merge, permitindo uma visualização completa do seu documento GitBook.
 
@@ -161,7 +161,7 @@ O GitBook permite que âncoras sejam usadas no índice SUMMARY.md, mas Marked as
 [mmdm]: http://fletcher.github.io/peg-multimarkdown/#howdoisplitamultimarkdowndocumentintoseveralparts
 [gb]: https://www.gitbook.com/
 
-## Recursos de visualização de documentos com vários arquivos
+## Recursos de visualização de documentos com vários arquivos [multi-file-document-preview-features]
 
 ![Limites de arquivo incluídos][2]
 

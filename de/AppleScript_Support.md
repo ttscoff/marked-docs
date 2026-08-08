@@ -4,13 +4,13 @@ Marked enthält ein AppleScript-Wörterbuch zur Automatisierung der Vorschau, de
 
 Informationen zur URL-basierten Automatisierung (Shell-Skripte, `open`-Befehle und Callbacks) finden Sie unter [URL-Handler](URL_Handler.html). AppleScript und der URL-Handler ergänzen einander: Verwenden Sie AppleScript, wenn Sie auf ein bestimmtes Dokument oder Fenster abzielen müssen, und URLs, wenn ein einfacher `open 'x-marked://...'`-Aufruf ausreicht.
 
-## Wörterbuch anzeigen
+## Wörterbuch anzeigen [viewing-the-dictionary]
 
 Wählen Sie im **Skripteditor** **Ablage → Wörterbuch öffnen…** und dann Marked aus. Das Wörterbuch listet Befehle für die Objekte **application**, **document** und **window** sowie Exportbefehle in der Marked-Suite auf.
 
 Unter macOS können Sie Skriptdefinitionen mit dem **Skripteditor** durchsuchen.
 
-## Marked ansprechen
+## Marked ansprechen [targeting-marked]
 
 Für die Standardinstallation:
 
@@ -20,7 +20,7 @@ tell application "Marked"
 end tell
 ```
 
-## Dokumente und Fenster
+## Dokumente und Fenster [documents-and-windows]
 
 **Anwendung**
 
@@ -49,7 +49,7 @@ end tell
 
 Bevorzugen Sie `tell document 1` oder `tell window 1's document` beim Exportieren einer bestimmten Vorschau. Exportbefehle in der Anwendung verwenden das Schlüsselfenster oder das aktuelle Dokument, wenn kein Empfänger angegeben ist.
 
-### Beispiel: Pfad öffnen und lesen
+### Beispiel: Pfad öffnen und lesen [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -58,7 +58,7 @@ tell application "Marked"
 end tell
 ```
 
-### Beispiel: Vorschaustil ändern
+### Beispiel: Vorschaustil ändern [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -72,7 +72,7 @@ Stilnamen entsprechen dem Vorschau-Stilmenü (Anzeigename, CSS-Ressourcenname wi
 
 Verwenden Sie **`get preview style names`** für das Anwendungsobjekt, um die Anzeigenamen aktivierter Stile aufzulisten.
 
-### Beispiel: Prozessor und Quelltext
+### Beispiel: Prozessor und Quelltext [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -84,7 +84,7 @@ tell application "Marked"
 end tell
 ```
 
-## Anwendungsbefehle
+## Anwendungsbefehle [application-commands]
 
 Diese Befehle gelten für das **Anwendungsobjekt** (kein bestimmtes Dokument).
 
@@ -107,7 +107,7 @@ tell application "Marked"
 end tell
 ```
 
-## Vorschausteuerung
+## Vorschausteuerung [preview-control]
 
 Verfügbar für **Dokument** und **Fenster**. Die meisten davon erfordern eine geladene Vorschau-WebView.
 
@@ -134,7 +134,7 @@ tell application "Marked"
 end tell
 ```
 
-## Autoscroll und Schnelllesen
+## Autoscroll und Schnelllesen [autoscroll-and-speed-read]
 
 | Befehl | Beschreibung |
 | --- | --- |
@@ -156,7 +156,7 @@ tell application "Marked"
 end tell
 ```
 
-## Statistik
+## Statistik [statistics]
 
 **`get statistics`** gibt einen `statistics_record` mit numerischen Werten zurück, die aus der aktuellen Markdown-Quelle berechnet wurden (nicht die formatierten Zeichenfolgen, die in der Statistikleiste angezeigt werden).
 
@@ -211,7 +211,7 @@ end tell
 
 Verwenden Sie `id`-Werte mit **`scroll to heading id "..."`**, sobald die Überschriftenautomatisierung stabil ist.
 
-## Mit Profil drucken
+## Mit Profil drucken [print-with-profile]
 
 **`print with profile`** wendet die Druckeinstellungen eines Exportprofils vorübergehend an und druckt dann das Dokument (gleiches Einstellungspaket wie Exportprofile von {% prefspane Export %}).
 
@@ -225,7 +225,7 @@ end tell
 
 Bei Profilnamen muss die Groß-/Kleinschreibung beachtet werden. Nach dem Drucken stellt Marked das zuvor aktive Exportprofil wieder her.
 
-## Exportprofile
+## Exportprofile [export-profiles]
 
 Exportprofile speichern Bündel von Export-/Druckeinstellungen (Ränder, Kopfzeilen, Inhaltsverzeichnisoptionen und ähnliche Einstellungen von {% prefspane Export %}).
 
@@ -250,7 +250,7 @@ end tell
 
 Bei Profilnamen wird die Groß-/Kleinschreibung beachtet und sie müssen genau mit einem gespeicherten Profil übereinstimmen.
 
-## Exportbefehle
+## Exportbefehle [export-commands]
 
 Exportbefehle sind für die Objekte **application**, **document** und **window** verfügbar. Jeder Befehl erfordert einen **`to`** Parameter mit dem Ausgabepfad (POSIX-Pfadzeichenfolge oder `file` Objekt).
 
@@ -273,7 +273,7 @@ Exportbefehle sind für die Objekte **application**, **document** und **window**
 - Der HTML-Export verwendet die **gerenderte Vorschau** (was Sie in der WebView sehen), nicht die rohe Markdown-Quelldatei.
 - Fortlaufendes PDF erfasst das aktuelle Vorschau-WebView-Layout.
 
-### Einfacher Export
+### Einfacher Export [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -314,7 +314,7 @@ Andere Schlüssel im Datensatz können mit **Exportpräferenznamen** aus Profile
 
 Sie können widersprüchliche Quellen nicht leichtfertig kombinieren: Wenn Sie `with profile` verwenden, laden Sie zuerst dieses Profil; Wenn Sie einen `with`-Datensatz verwenden, überschreiben die Profilschlüssel im Datensatz die aktuellen Einstellungen für diesen Export.
 
-### Kurzschreibweise für Ränder
+### Kurzschreibweise für Ränder [margin-shorthand]
 
 Der Wert `margins` ist eine Zeichenfolge mit ein bis vier Messungen. Einheiten: `in`, `cm`, `mm`, `pt` oder `"` für Zoll. Eine Zahl ohne Einheit wird als Punkt behandelt.
 
@@ -330,7 +330,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Kombiniertes Beispiel
+### Kombiniertes Beispiel [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -350,7 +350,7 @@ Das Anwendungsobjekt macht auch ältere Skriptbefehle verfügbar:
 
 `convert_to` bleibt für ältere Workflows und reine AppleScript-Automatisierung verfügbar.
 
-## Debuggen
+## Debuggen [debugging]
 
 Aktivieren Sie den **Debug-Modus** in {% prefspane Advanced %} (oder die Debug-Einstellung in den Einstellungen). Marked protokolliert dann AppleScript-Exportschritte auf Infoebene mit dem Präfix `[AppleScript]` in Console.app und im Protokollviewer von Marked.
 
@@ -363,7 +363,7 @@ Nützliche Protokollzeilen beim Verfolgen eines paginierten PDF-Exports:
 
 Lange Exporte (insbesondere paginierte PDF) unterbrechen das AppleScript-Ereignis bis zum Abschluss, damit es bei Clients während des Exports nicht zu einer Zeitüberschreitung kommt.
 
-## Fehler
+## Fehler [errors]
 
 Fehlgeschlagene Exporte setzen die Skriptfehlerzeichenfolge für den Befehl (sichtbar im Skripteditor und in den `on error`-Handlern). Häufige Meldungen:
 
@@ -374,6 +374,6 @@ Fehlgeschlagene Exporte setzen die Skriptfehlerzeichenfolge für den Befehl (sic
 - Zeitüberschreitung beim Warten auf das Neuladen der Vorschau nach einer Stiländerung.
 - Beim paginierten PDF-Export ist beim Generieren der Seiten eine Zeitüberschreitung aufgetreten oder ein Fehler aufgetreten.
 
-## Integration mit anderen Tools
+## Integration mit anderen Tools [integration-with-other-tools]
 
-Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Informationen zur Shortcuts-App finden Sie unter [Shortcuts-Integration](Shortcuts_Integration.html). Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist der [URL-Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.
+Anwendungen können die AppleScript-Oberfläche von Marked verwenden, um Dokumentmetadaten zu lesen. Für Shell-gesteuerte Workflows, Ordner-Watcher und Editor-Rückrufe ist der [URL-Handler](URL_Handler.html) oft einfacher. Das [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) enthält zusätzliche Skripte und Dienste.

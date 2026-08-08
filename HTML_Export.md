@@ -4,9 +4,9 @@ Marked exports HTML from your **live preview** --- the same rendered output you 
 
 The typical workflow is **preview first, export HTML second**: open or compile your document in Marked, choose a theme, proofread in the live preview, then export when the markup looks right.
 
-## Two ways to get HTML
+## Two ways to get HTML [two-ways-to-get-html]
 
-### Copy HTML (snippet)
+### Copy HTML (snippet) [copy-html-snippet]
 
 **Copy HTML** puts the preview's HTML source on the clipboard --- ready to paste into WordPress, Ghost, Squarespace, a forum, an email template, or any app that accepts HTML fragments.
 
@@ -16,7 +16,7 @@ The typical workflow is **preview first, export HTML second**: open or compile y
 
 Copy HTML is ideal when your destination already has its own stylesheet and you only need the content markup.
 
-### Save HTML (file)
+### Save HTML (file) [save-html-file]
 
 **Save HTML** writes a complete `.html` file to disk.
 
@@ -26,7 +26,7 @@ Copy HTML is ideal when your destination already has its own stylesheet and you 
 
 Save HTML is ideal for archiving, sharing a standalone file, or opening the result directly in a browser.
 
-## Save HTML options
+## Save HTML options [save-html-options]
 
 The Save HTML dialog includes an export profile picker and these options:
 
@@ -63,7 +63,7 @@ Documents with [CriticMarkup](CriticMarkup.html) can choose whether the export s
 
 Select a saved [Export Profile](Exporting.html#export-profiles) to restore your preferred HTML export settings (embedded styles, images, syntax highlighting, math) in one step.
 
-## Styling with built-in and custom themes
+## Styling with built-in and custom themes [styling-with-built-in-and-custom-themes]
 
 The **preview style** drives HTML appearance when **Include style in output** is checked:
 
@@ -77,7 +77,7 @@ I> Some preview-only CSS (fixed positioning, viewport tricks, Dark Mode `@media 
 
 For authoring guidance, see [Creating Custom CSS](Writing_Custom_CSS.html).
 
-## Metadata and MultiMarkdown headers
+## Metadata and MultiMarkdown headers [metadata-and-multimarkdown-headers]
 
 MultiMarkdown metadata at the top of your source file can affect HTML export:
 
@@ -87,11 +87,11 @@ MultiMarkdown metadata at the top of your source file can affect HTML export:
 
 If you use metadata for export settings but do not want keys visible in other outputs, wrap them in HTML comments --- Marked finds and processes commented metadata anywhere in the document. See [Per-Document Settings](Per-Document_Settings.html).
 
-## Multi-file documents
+## Multi-file documents [multi-file-documents]
 
 For books and chapter compilations, use [Multi-File Documents](Multi-File_Documents.html). Marked previews the merged document and exports one HTML file from the compiled result. Included files are marked with HTML comments showing their source paths --- useful when auditing which chapter contributed which section.
 
-## Pasting into other applications
+## Pasting into other applications [pasting-into-other-applications]
 
 | Destination | Suggested approach |
 | :-- | :-- |
@@ -103,7 +103,7 @@ For books and chapter compilations, use [Multi-File Documents](Multi-File_Docume
 
 [Copy Rich Text](Exporting.html#rtfexportoptions) (gear menu) is an alternative when the target app accepts formatted text rather than HTML source.
 
-## Related topics
+## Related topics [related-topics]
 
 * [Exporting](Exporting.html) --- export panel, profiles, and other formats
 * [EPUB Export](EPUB_Export.html) --- ebook output with embedded CSS

@@ -6,7 +6,7 @@ Marked può aprire direttamente documenti Rich Text Format (`.rtf`) e RTFD (`.rt
 
 Funziona bene con i documenti di **Pages**, **TextEdit**, **Word** e altre app che salvano RTF o RTFD. Marked è ancora uno strumento di **anteprima**: modifichi nell'applicazione originale e Marked si aggiorna quando salvi.
 
-## Come funziona la conversione
+## Come funziona la conversione [how-conversion-works]
 
 Marked converte RTF in HTML utilizzando il motore di testo del sistema, quindi in Markdown. Il convertitore:
 
@@ -17,11 +17,11 @@ Marked converte RTF in HTML utilizzando il motore di testo del sistema, quindi i
 
 La stessa pipeline di conversione viene utilizzata per la compilazione Scrivener RTF e per i file RTF inclusi in altri documenti.
 
-## Anteprima dal vivo
+## Anteprima dal vivo [live-preview]
 
 Quando salvi il file RTF o RTFD in un'altra applicazione, Marked rileva la modifica e aggiorna automaticamente l'anteprima.
 
-## Immagini
+## Immagini [images]
 
 RTF non definisce un campo "didascalia" separato nel modo in cui Cocoa esporta in HTML. Ciò che appare come una didascalia nel tuo layout è solitamente **testo normale** nel paragrafo successivo e Marked lo mantiene come corpo del testo.
 
@@ -29,11 +29,11 @@ Le immagini incorporate e le immagini all'interno dei bundle RTFD (ad esempio `p
 
 Marked **non** utilizza il nome del file immagine come testo alternativo o didascalia di una figura MultiMarkdown. Non dovresti vedere `pastedGraphic.png` sotto l'immagine a meno che tu non abbia digitato quel testo nel documento.
 
-## Esportazione e altre funzionalità
+## Esportazione e altre funzionalità [export-and-other-features]
 
-Dopo la conversione, Marked tratta il documento come altre fonti compilate (simili a [Scrivener](Scrivener_Support.html) e [DOCX](Working_with_DOCX.html)): esportazione, statistiche e la maggior parte delle funzionalità di anteprima vengono eseguite rispetto al Markdown generato archiviato nella cache degli Osservatori.
+Dopo la conversione, Marked tratta il documento come altre fonti compilate (simili a [Scrivener](Scrivener_Support.html) e [DOCX](Working_With_DOCX.html)): esportazione, statistiche e la maggior parte delle funzionalità di anteprima vengono eseguite rispetto al Markdown generato archiviato nella cache degli Osservatori.
 
-## Limitazioni
+## Limitazioni [limitations]
 
 La qualità della conversione dipende dall'applicazione di origine. In generale:
 
@@ -44,9 +44,9 @@ La qualità della conversione dipende dall'applicazione di origine. In generale:
 
 Per incollare una volta senza salvare un file, utilizza invece [Anteprima Appunti](Opening_Files.html#from-the-clipboard).
 
-## Argomenti correlati
+## Argomenti correlati [related-topics]
 
 - [Supporto PDF](PDF_Support.html) -- apre documenti PDF come origini Markdown
-- [Lavorare con DOCX](Working_with_DOCX.html) -- Documenti Word con rilevamento delle modifiche e commenti
+- [Lavorare con DOCX](Working_With_DOCX.html) -- Documenti Word con rilevamento delle modifiche e commenti
 - [Apertura file](Opening_Files.html) -- trascina e rilascia, Apri recenti, appunti
 - [Esportazione](Exporting.html) -- Copia Rich Text e salva RTFD (esportazione), distinto dall'apertura di RTF come file sorgente

@@ -4,7 +4,7 @@
 
 Quick Open proporciona acceso rápido a sus documentos abiertos y archivos recientes.
 
-## Apertura Apertura rápida
+## Apertura Apertura rápida [opening-quick-open]
 
 Acceda al panel de apertura rápida usando {% kbd shift cmd O %} o desde el menú {% appmenu File, Quick Open %}. El panel aparece como una ventana flotante sobre su documento actual, lo que le permite cambiar rápidamente entre documentos abiertos o abrir archivos recientes.
 
@@ -12,11 +12,11 @@ Acceda al panel de apertura rápida usando {% kbd shift cmd O %} o desde el men�
 
 [qo]: images/quick-open-800.jpg @2x width=800
 
-## Secciones del documento
+## Secciones del documento [document-sections]
 
 El panel de apertura rápida organiza los documentos en secciones claras:
 
-### Abrir documentos
+### Abrir documentos [open-documents]
 
 En la parte superior de la lista, verá todos los documentos abiertos actualmente. Los documentos se agrupan visualmente por su ventana:
 
@@ -28,7 +28,7 @@ Cada documento abierto muestra:
 - La ventana que agrupa la información como subtítulo.
 - Un icono de documento
 
-### Documentos recientes
+### Documentos recientes [recent-documents]
 
 Debajo de los documentos abiertos, un separador de "Documentos recientes" divide la lista. La sección de documentos recientes muestra hasta 10 de los archivos abiertos más recientemente que no están abiertos actualmente. Cada documento reciente muestra:
 
@@ -36,7 +36,7 @@ Debajo de los documentos abiertos, un separador de "Documentos recientes" divide
 - "Reciente" como subtítulo
 - Un icono de documento
 
-### Abrir otro
+### Abrir otro [open-other]
 
 En la parte inferior de la lista, la opción "Abrir otro..." le permite abrir el selector de archivos estándar de macOS para seleccionar cualquier archivo. Esta opción muestra:
 
@@ -44,7 +44,7 @@ En la parte inferior de la lista, la opción "Abrir otro..." le permite abrir el
 - "Abrir un archivo o carpeta" como subtítulo
 - Un icono de carpeta
 
-## Buscar y filtrar
+## Buscar y filtrar [search-and-filter]
 
 Escriba en el campo de búsqueda en la parte superior del panel para filtrar la lista en tiempo real. La búsqueda coincide con:
 
@@ -53,7 +53,7 @@ Escriba en el campo de búsqueda en la parte superior del panel para filtrar la 
 
 A medida que escribe, la lista se actualiza inmediatamente para mostrar solo los documentos coincidentes. La opción "Abrir otro..." siempre permanece visible en la parte inferior de los resultados filtrados.
 
-## Navegación por teclado
+## Navegación por teclado [keyboard-navigation]
 
 Navegue por el panel de apertura rápida completamente con su teclado:
 
@@ -62,13 +62,13 @@ Navegue por el panel de apertura rápida completamente con su teclado:
 - **Escape**: cierra el panel de apertura rápida
 - **Comando (⌘)**: manténgalo presionado para revelar las rutas de los archivos (ver más abajo)
 
-## Ver rutas de archivos
+## Ver rutas de archivos [viewing-file-paths]
 
 Mantenga presionada la tecla **Comando (⌘)** mientras el panel de apertura rápida está abierto para ver la ruta completa del archivo de cada documento en el área de subtítulos. Las rutas en su directorio de inicio se muestran usando la abreviatura `~` (por ejemplo, `~/Documents/file.md`). Suelta la tecla Comando para volver a la vista normal que muestra la agrupación de ventanas o la información "Reciente".
 
 Esto es particularmente útil cuando tiene varios archivos abiertos con el mismo nombre o cuando necesita verificar la ubicación exacta de un documento.
 
-## Documentos de apertura
+## Documentos de apertura [opening-documents]
 
 - **Documentos abiertos**: al seleccionar un documento abierto, su ventana pasa al primer plano y cambia a la pestaña de ese documento si está en una ventana con pestañas.
 - **Documentos recientes**: al seleccionar un documento reciente, se abre en una nueva ventana o se agrega como una pestaña (dependiendo de su preferencia "Abrir documentos en pestañas" en {% prefspane General %})

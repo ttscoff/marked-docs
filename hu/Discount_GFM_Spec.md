@@ -4,11 +4,11 @@
 
 Tekintse meg a [Markdown Dingus](x-marked-3://dingus?processor=discount) elemet, hogy kísérletezzen a Discount processzorral.
 
-## Mi az a Discount GFM?
+## Mi az a Discount GFM? [what-is-discount-gfm]
 
 A Discount GFM (GitHub Flavored Markdown) egy C-alapú Markdown processzor, amely a GitHub kiterjesztett Markdown szintaxisát valósítja meg. Az eredeti Discount-könyvtáron alapul, de GitHub-specifikus funkciókkal, például táblázatokkal, feladatlistákkal, áthúzott szöveggel és automatikus URL-összekapcsolással bővítve.
 
-## Főbb jellemzők
+## Főbb jellemzők [key-characteristics]
 
 - **C-alapú teljesítmény**: Gyors, natív C implementáció az optimális teljesítmény érdekében
 - **GitHub-kompatibilitás**: a GitHub Markdown-bővítményeit valósítja meg a maximális kompatibilitás érdekében
@@ -16,9 +16,9 @@ A Discount GFM (GitHub Flavored Markdown) egy C-alapú Markdown processzor, amel
 - **Bővíthető**: Támogatja a különböző Markdown-bővítményeket és egyéni beállításokat
 - **HTML5 támogatás**: Modern HTML5 kimenetet generál megfelelő szemantikai jelöléssel
 
-## Főbb különbségek a szabványos leértékeléshez képest
+## Főbb különbségek a szabványos leértékeléshez képest [major-differences-from-standard-markdown]
 
-### 1. **GitHub ízű leértékelési bővítmények**
+### 1. **GitHub ízű leértékelési bővítmények** [1-github-flavored-markdown-extensions]
 
 **Asztalok**
 
@@ -56,7 +56,7 @@ A Discount GFM (GitHub Flavored Markdown) egy C-alapú Markdown processzor, amel
 ~~Mistaken text that should be removed~~
 ```
 
-### 2. **Továbbfejlesztett kódblokk támogatás**
+### 2. **Továbbfejlesztett kódblokk támogatás** [2-enhanced-code-block-support]
 
 **Kerített kódblokkok**
 
@@ -78,7 +78,7 @@ function hello() {
 - Proper syntax highlighting when supported
 - Fallback to plain text for unsupported languages
 
-### 3. **Automatic URL Linking**
+### 3. **Automatic URL Linking** [3-automatic-url-linking]
 
 **URL Autolinking**
 
@@ -97,7 +97,7 @@ Contact us at user@example.com
 - Különféle URL formátumokat és protokollokat kezel
 - Konfigurálható link biztonsági opciók
 
-### 4. **Speciális listafunkciók**
+### 4. **Speciális listafunkciók** [4-advanced-list-features]
 
 **Alfabetikus listák**
 
@@ -117,7 +117,7 @@ c. Third item
 - Javított térköz és behúzás
 - Vegyes listatípusok támogatása
 
-### 5. **Lábjegyzetek támogatása**
+### 5. **Lábjegyzetek támogatása** [5-footnotes-support]
 
 **Referencia stílusú lábjegyzetek**
 
@@ -137,7 +137,7 @@ This is a sentence with a footnote[^1].
 - Hivatkozások és definíciók közötti kapcsolatok
 - Sorozatszámozás a dokumentumban
 
-### 6. **HTML integráció**
+### 6. **HTML integráció** [6-html-integration]
 
 **HTML5 támogatás**
 
@@ -151,7 +151,7 @@ This is a sentence with a footnote[^1].
 - Megfelelő szökés és fertőtlenítés
 - Integráció Markdown szintaxissal
 
-### 7. **További kiemelési szabályok**
+### 7. **További kiemelési szabályok** [7-enhanced-emphasis-rules]
 
 **Nyugodt hangsúly**
 
@@ -170,7 +170,7 @@ This is _emphasized text_ that will be styled.
 - Összhangban a szokásos Markdown hangsúlyszabályokkal
 - Megfelelő HTML-kimenet `<strong>` és `<em>` címkékkel
 
-### 8. **Tartalomjegyzék létrehozása**
+### 8. **Tartalomjegyzék létrehozása** [8-table-of-contents-generation]
 
 **Automatikus TOC**
 
@@ -184,7 +184,7 @@ This is _emphasized text_ that will be styled.
 - Horgonylinkek az egyszerű navigáció érdekében
 - Következetes azonosító formázás
 
-## Kedvezményes GFM vs egyéb Markdown ízek
+## Kedvezményes GFM vs egyéb Markdown ízek [discount-gfm-vs-other-markdown-flavors]
 
 | Funkció | Kedvezmény | CommonMark (GFM) | Kramdown | MultiMarkdown | Standard |
 | ----------------- | ------------ | ---------- | -------- | ------------- | -------- |
@@ -202,7 +202,7 @@ This is _emphasized text_ that will be styled.
 | Automatikus linkek | Igen | Nem | Nem | Nem | Nem |
 | Alfabetikus listák | Igen | Nem | Nem | Nem | Nem |
 
-## A kedvezményes GFM fő előnyei
+## A kedvezményes GFM fő előnyei [key-advantages-of-discount-gfm]
 
 1. **GitHub-kompatibilitás**: Tökéletes olyan tartalmakhoz, amelyeknek működniük kell a GitHubon
 2. **Teljesítmény**: Gyors C-alapú megvalósítás
@@ -211,7 +211,7 @@ This is _emphasized text_ that will be styled.
 5. **Szabványoknak való megfelelés**: Követi a GitHub Markdown specifikációját
 6. **Könnyű**: Minimális erőforrás-felhasználás és függőségek
 
-## Általános használati esetek
+## Általános használati esetek [common-use-cases]
 
 **GitHub dokumentáció**
 
@@ -237,7 +237,7 @@ This is _emphasized text_ that will be styled.
 - Projekttervezési dokumentumok
 - Az ülés jegyzetei és jegyzőkönyvei
 
-## Konfigurációs lehetőségek
+## Konfigurációs lehetőségek [configuration-options]
 
 A Discount GFM különféle konfigurációs lehetőségeket támogat:
 
@@ -248,7 +248,7 @@ A Discount GFM különféle konfigurációs lehetőségeket támogat:
 - **Szigorú mód**: Továbbfejlesztett elemzési szabályok
 - **Smart Quotes**: Automatikus árajánlat átalakítás
 
-## Megvalósítási részletek
+## Megvalósítási részletek [implementation-details]
 
 **Elemző beállításai**
 
@@ -265,7 +265,7 @@ A Discount GFM különféle konfigurációs lehetőségeket támogat:
 - Hozzáférhető táblázatszerkezetek
 - Tiszta, érvényes HTML kimenet
 
-## Bevált gyakorlatok
+## Bevált gyakorlatok [best-practices]
 
 1. **Használja takarékosan a táblákat**: A táblák hatékonyak, de karbantartásuk bonyolult lehet
 2. **Tőkeáttételi feladatlisták**: Kiválóan alkalmas projektmenedzsmenthez és dokumentációhoz
@@ -273,7 +273,7 @@ A Discount GFM különféle konfigurációs lehetőségeket támogat:
 4. **Struktúra címsorokkal**: Használjon megfelelő címsor-hierarchiát a jobb tartalomjegyzék létrehozása érdekében
 5. **Teszt a GitHubon**: A GitHub megjelenítésével való kompatibilitás ellenőrzése
 
-## Áttérés a Standard Markdownból
+## Áttérés a Standard Markdownból [migration-from-standard-markdown]
 
 A legtöbb szabványos Markdown változtatás nélkül működik a Discount GFM-mel. A GFM funkciók kihasználásához:
 
@@ -283,7 +283,7 @@ A legtöbb szabványos Markdown változtatás nélkül működik a Discount GFM-
 4. **Használja ki az automatikus linkeket**: Távolítsa el a kézi linkjelölést az egyszerű URL-ek esetében
 5. **Struktúracímsorok**: Biztosítsa a megfelelő címsor-hierarchiát a tartalomjegyzék generálásához
 
-## Források
+## Források [resources]
 
 - [GitHub ízesítésű Markdown specifikáció] (https://github.github.com/gfm/)
 - [Kedvezményes könyvtári dokumentáció](https://www.pell.portland.or.us/~orc/Code/discount/)

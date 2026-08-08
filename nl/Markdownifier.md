@@ -1,4 +1,4 @@
-# Markdownifier
+# Markdownifier [markdownifier]
 
 De Markdownifier is een tool die automatisch inhoud van webpagina's extraheert en deze converteert naar een schoon Markdown-formaat. Het verwerkt op intelligente wijze webinhoud om u alleen de betekenisvolle tekst en structuur te geven, waarbij advertenties, navigatie-elementen en andere rommel worden weggefilterd.
 
@@ -6,7 +6,7 @@ De Markdownifier is een tool die automatisch inhoud van webpagina's extraheert e
 
   [importurl]: import-url@2x.jpg width=800 class=center
 
-## Hoe het werkt
+## Hoe het werkt [how-it-works]
 
 De Markdownifier maakt gebruik van geavanceerde algoritmen voor inhoudsextractie om:
 
@@ -16,20 +16,20 @@ De Markdownifier maakt gebruik van geavanceerde algoritmen voor inhoudsextractie
 4. **Filter uit** advertenties, navigatie en andere niet-inhoudelijke elementen
 5. **Behoud** belangrijke opmaak, zoals kopteksten, lijsten en links
 
-## De Markdownifier openen
+## De Markdownifier openen [opening-the-markdownifier]
 
 Om toegang te krijgen tot de Markdownifier, open je {% appmenu File, New, Markdownify URL (@~k) %}. Voer de URL in die u wilt Markdownify en druk op Return ({% kbd return %}).
 
-## Met behulp van de Markdownifier
+## Met behulp van de Markdownifier [using-the-markdownifier]
 
-### Basisgebruik
+### Basisgebruik [basic-usage]
 
 1. **Open de Markdownifier** met een van de bovenstaande methoden
 2. **Voer een URL in** in het tekstveld
 3. **Klik op "Automatisch"** of druk op `Return` om inhoud te extraheren
 4. De geëxtraheerde inhoud wordt **automatisch geopend** in een nieuw Marked document
 
-### Handmatige inhoudselectie
+### Handmatige inhoudselectie [manual-content-selection]
 
 Als automatische extractie niet de gewenste inhoud vastlegt:
 
@@ -38,7 +38,7 @@ Als automatische extractie niet de gewenste inhoud vastlegt:
 3. **Klik op de knop "Inhoud extraheren"** die op de webpagina verschijnt
 4. De geselecteerde inhoud wordt geconverteerd naar Markdown en geopend in Marked
 
-### Klembordintegratie
+### Klembordintegratie [clipboard-integration]
 
 De Markdownifier detecteert automatisch URL's op uw klembord wanneer deze wordt geopend:
 
@@ -46,9 +46,9 @@ De Markdownifier detecteert automatisch URL's op uw klembord wanneer deze wordt 
 - U moet nog steeds op **"Automatisch"** klikken of op `Return` drukken om het te verwerken
 - Dit voorkomt onbedoelde verwerking van klembord-URL's
 
-## Inhoudsverwerking
+## Inhoudsverwerking [content-processing]
 
-### Automatische inhoudvalidatie
+### Automatische inhoudvalidatie [automatic-content-validation]
 
 De Markdownifier valideert op intelligente wijze de geëxtraheerde inhoud om ervoor te zorgen dat deze betekenisvolle tekst bevat:
 
@@ -60,7 +60,7 @@ De Markdownifier valideert op intelligente wijze de geëxtraheerde inhoud om erv
 
 Als de geëxtraheerde inhoud te kort is of voornamelijk uit navigatie/advertenties lijkt te bestaan, valt de Markdownifier automatisch terug naar de handmatige selectiemodus.
 
-### Inhoudsopmaak
+### Inhoudsopmaak [content-formatting]
 
 De geëxtraheerde inhoud wordt geformatteerd als schoon Markdown met:
 
@@ -70,9 +70,9 @@ De geëxtraheerde inhoud wordt geformatteerd als schoon Markdown met:
 - **Bijgehouden links** en nadrukopmaak
 - **Schone paragrafen** met de juiste spatiëring
 
-## Veiligheidsvoorzieningen
+## Veiligheidsvoorzieningen [safety-features]
 
-### Crashpreventie
+### Crashpreventie [crash-prevention]
 
 De Markdownifier bevat verschillende veiligheidsmaatregelen om crashes te voorkomen:
 
@@ -81,16 +81,16 @@ De Markdownifier bevat verschillende veiligheidsmaatregelen om crashes te voorko
 - **Schakelt geavanceerde webfuncties uit** die instabiliteit kunnen veroorzaken
 - **Automatisch crashherstel** met terugval in veilige modus
 
-### Privacybescherming
+### Privacybescherming [privacy-protection]
 
 - **Privé-browsingmodus** voorkomt tracking en cookies
 - **Geen plug-ins of Java**-uitvoering vanwege de veiligheid
 - **Beperkt JavaScript** met crypto-API-blokkering
 - **Bronnenfiltering** blokkeert tracking en advertentie-inhoud
 
-## Problemen oplossen
+## Problemen oplossen [troubleshooting]
 
-### Inhoud niet geëxtraheerd
+### Inhoud niet geëxtraheerd [content-not-extracted]
 
 Als automatische extractie mislukt:
 
@@ -99,7 +99,7 @@ Als automatische extractie mislukt:
 3. **Controleer of de URL** toegankelijk is en artikelinhoud bevat
 4. **Zoek naar betaalmuren of inlogvereisten** die de toegang kunnen blokkeren
 
-### WebView-problemen
+### WebView-problemen [webview-issues]
 
 Als de webweergave instabiel wordt:
 
@@ -108,7 +108,7 @@ Als de webweergave instabiel wordt:
 3. **Gebruik de knop "Converteren"** in plaats van handmatige selectie
 4. **Sluit en open** de Markdownifier om te resetten
 
-### Ontbrekende inhoud
+### Ontbrekende inhoud [missing-content]
 
 Als er belangrijke inhoud ontbreekt in de extractie:
 
@@ -117,29 +117,29 @@ Als er belangrijke inhoud ontbreekt in de extractie:
 3. **Controleer de bron HTML** om te zien of de inhoud dynamisch wordt geladen
 4. **Probeer een andere URL** als de site een complexe structuur heeft
 
-## Tips voor de beste resultaten
+## Tips voor de beste resultaten [tips-for-best-results]
 
-### URL-selectie
+### URL-selectie [url-selection]
 
 - **Gebruik artikel-URL's** in plaats van startpagina's of categoriepagina's
 - **Vermijd URL's met trackingparameters** indien mogelijk
 
-### Inhoudskwaliteit
+### Inhoudskwaliteit [content-quality]
 
 - **Langere artikelen** halen over het algemeen beter uit dan korte berichten
 - **Goed gestructureerde inhoud** met de juiste kopjes werkt het beste
 - **Vermijd sites met zwaar JavaScript** voor automatische extractie
 
-### Handmatige selectie
+### Handmatige selectie [manual-selection]
 
 - **Wacht tot de pagina volledig is geladen** voordat u deze uitpakt
 - **Blader door de inhoud** om er zeker van te zijn dat alles is geladen
 - **Beweeg over gebieden** om het kleinste blauwe vak te selecteren dat alle inhoud bevat die u wilt extraheren
 - **Klik** wanneer u de gewenste inhoud heeft gevonden
 
-## Geavanceerde functies
+## Geavanceerde functies [advanced-features]
 
-### Batchverwerking
+### Batchverwerking [batch-processing]
 
 Terwijl de Markdownifier één URL tegelijk verwerkt, kunt u:
 
@@ -147,7 +147,7 @@ Terwijl de Markdownifier één URL tegelijk verwerkt, kunt u:
 - **Gebruik Services-integratie** om URL's van andere applicaties te verwerken
 - **Kopieer de geëxtraheerde inhoud** en plak deze in bestaande Marked documenten
 
-### Integratie met Marked
+### Integratie met Marked [integration-with-marked]
 
 Geëxtraheerde inhoud wordt geopend over Marked met:
 
@@ -155,16 +155,16 @@ Geëxtraheerde inhoud wordt geopend over Marked met:
 - **Behoud van bron-URL** in de metadata van het document
 - **Volledige Marked mogelijkheden** voor lezen en exporteren)
 
-## Technische details
+## Technische details [technical-details]
 
-### Ondersteunde inhoudstypen
+### Ondersteunde inhoudstypen [supported-content-types]
 
 - **HTML artikelen** met standaard opmaak
 - **Blogposts** en nieuwsartikelen
 - **Documentatie** en helppagina's
 - **Forumberichten** en discussie-inhoud
 
-### Beperkingen
+### Beperkingen [limitations]
 
 - **Voor sites met een betaalmuur** is mogelijk inloggen en handmatige extractie vereist
 - **Sites met veel JavaScript** vereisen mogelijk handmatige selectie

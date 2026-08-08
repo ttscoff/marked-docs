@@ -2,7 +2,7 @@
 
 Ask About Document uses **Apple Intelligence** and the on-device language model built into recent versions of macOS to summarize your Markdown preview and answer questions about its content. All processing happens on your Mac; document text is not sent to Marked's servers or third-party AI services for this feature.
 
-## What Apple Intelligence provides
+## What Apple Intelligence provides [what-apple-intelligence-provides]
 
 Apple Intelligence is Apple's system for on-device generative features. Marked uses Apple's **Foundation Models** framework to access the same on-device model that powers system writing tools, exposed directly inside Marked for document-focused tasks.
 
@@ -10,7 +10,7 @@ Marked sends your document's plain text (Markdown syntax stripped for clarity) t
 
 Apple Intelligence is best at language tasks such as summarization, outlining, extracting key points, and answering questions about provided text. It is not a general coding assistant or calculator, and very long documents are handled in sections so results stay within the model's context limits.
 
-## System compatibility
+## System compatibility [system-compatibility]
 
 Ask About Document appears only when your Mac can run the feature.
 
@@ -28,7 +28,7 @@ Ask About Document appears only when your Mac can run the feature.
 
 If your Mac qualifies but the menu item is missing, confirm that Apple Intelligence is enabled and that you are running a current build of Marked that includes this feature. The menu is hidden entirely on unsupported systems rather than shown in a disabled state.
 
-## Enabling Apple Intelligence
+## Enabling Apple Intelligence [enabling-apple-intelligence]
 
 1. Open **System Settings**.
 2. Go to **Apple Intelligence & Siri** (or **Apple Intelligence**, depending on your macOS version).
@@ -37,7 +37,7 @@ If your Mac qualifies but the menu item is missing, confirm that Apple Intellige
 
 Marked does not include a separate preference for this feature. Availability follows the system model status reported by macOS.
 
-## Opening Ask About Document
+## Opening Ask About Document [opening-ask-about-document]
 
 Open the panel using any of these methods:
 
@@ -46,7 +46,7 @@ Open the panel using any of these methods:
 
 The panel docks to the left side of the document window. You need an open document with readable text; an empty document or HTML-only preview will not offer the command.
 
-## The Ask About Document panel
+## The Ask About Document panel [the-ask-about-document-panel]
 
 The panel is organized like a simple chat view:
 
@@ -56,7 +56,7 @@ The panel is organized like a simple chat view:
 
 After a response completes, focus returns to the question field so you can ask a follow-up without clicking.
 
-### Preset actions
+### Preset actions [preset-actions]
 
 | Action | What it does |
 | :-- | :-- |
@@ -67,7 +67,7 @@ After a response completes, focus returns to the question field so you can ask a
 
 Preset actions do not require text in the question field. Click a button and wait for the response in the panel above.
 
-### Asking your own questions
+### Asking your own questions [asking-your-own-questions]
 
 1. Type a question in the field at the bottom of the panel, for example "What problem does this document solve?" or "Who is the intended audience?"
 2. Press **Return** or click **Ask**.
@@ -77,21 +77,21 @@ For questions about a specific passage, **select that text in the preview** befo
 
 Click **Cancel** to stop a request in progress.
 
-## Examples
+## Examples [examples]
 
-### Quick overview of a long article
+### Quick overview of a long article [quick-overview-of-a-long-article]
 
 Open a lengthy blog post or report in Marked, choose **Preview > Ask About Document…**, and click **Summarize Document**. Use the summary to decide whether to read the full piece or to refresh your memory after time away from the draft.
 
-### Notes on a selected paragraph
+### Notes on a selected paragraph [notes-on-a-selected-paragraph]
 
 Highlight a dense paragraph in the preview, open Ask About Document, and click **Summarize Selection**. Useful when you only need a shorter version of one section.
 
-### Structural review
+### Structural review [structural-review]
 
 Click **Outline** on a draft with many headings to see whether the argument flows logically, or use **Key Points** before sending a document to someone else to check that the main ideas are clear.
 
-### Targeted questions
+### Targeted questions [targeted-questions]
 
 With no selection active, type questions such as:
 
@@ -101,7 +101,7 @@ With no selection active, type questions such as:
 
 With a selection active, ask narrower questions such as "What does this paragraph assume about the reader?" or "Rewrite this idea in one sentence" (the model answers about the selection; it does not edit your source file).
 
-## Tips and limitations
+## Tips and limitations [tips-and-limitations]
 
 - **Privacy:** Processing uses Apple's on-device model. Marked still reads your document text locally to provide content to that model; treat sensitive material accordingly.
 - **Accuracy:** Verify important facts against your source. AI summaries can omit details or misread ambiguous passages.

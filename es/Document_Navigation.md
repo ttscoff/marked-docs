@@ -4,7 +4,7 @@
 
 Esta página describe cómo moverse por vistas previas largas: la [Tabla de contenido](#tabla de contenido), [búsqueda rápida](#búsqueda rápida), [marcadores](#marcadores-y-mini-mapa) y el [Minimapa](#minimapa). Para conocer los atajos de desplazamiento que se aplican en todas partes (como {% kbd j %}/{% kbd k %}), consulte [Navegación con teclado](Interface_Features.html#keyboardnavigation) en [Funciones de interfaz](Interface_Features.html).
 
-## Tabla de contenidos
+## Tabla de contenidos [table-of-contents]
 
 ![][8]
 
@@ -29,19 +29,19 @@ Para obtener una lista resumida de teclas, consulte [Atajos de teclado](Keyboard
 
 Consulte también el [vídeo de navegación de documentos en YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Modo de pantalla completa para la tabla de contenidos
+### Modo de pantalla completa para la tabla de contenidos [full-screen-mode-for-the-table-of-contents]
 
 Cuando una ventana de vista previa marcada está en pantalla completa, la tabla de contenido puede permanecer fija a la izquierda para una navegación constante. Todavía alterna con {% kbd cmd T %}; Al hacer clic fuera del TOC a menudo no se descartará mientras se encuentre en este diseño.
 
 En una ventana normal, haga clic en el icono en la parte inferior del panel TOC para acoplarlo como barra lateral; haga clic en el icono en la parte superior de la barra lateral para volver al modo emergente.
 
-### Personalizando dónde aparece el TOC
+### Personalizando dónde aparece el TOC [customizing-where-the-toc-appears]
 
-La tabla de contenido se puede insertar en el documento exportado usando la [sintaxis especial](Special_Syntax.html#tocplacement) `<!--TOC-->`.
+La tabla de contenido se puede insertar en el documento exportado usando la [sintaxis especial](Special_Syntax.html#tableofcontents) `<!--TOC-->`.
 
 Agregue `max#` (por ejemplo `<!--TOC max2-->`) para limitar la cantidad de niveles de encabezado que aparecen.
 
-## Búsqueda rápida
+## Búsqueda rápida [fast-search]
 
 **Navegación rápida** combina la tabla de contenido con el filtro enfocado para que puedas saltar con un mínimo de escritura:
 
@@ -55,11 +55,11 @@ Agregue `max#` (por ejemplo `<!--TOC max2-->`) para limitar la cantidad de nivel
 
 (Los documentos anteriores se referían a esto como "Fast Switcher"; es la misma característica).
 
-## Marcadores y minimapa {#marcadores-y-mini-mapa}
+## Marcadores y minimapa [bookmarks-and-mini-map]
 
 Utilice el menú de vista previa {% appmenu Gear %} y {% kbd Tab %} ({% kbd ⇥ %}) enfocando el documento junto a [búsqueda](Interface_Features.html#search) para colocar y volver a visitar marcadores mientras hojea.
 
-### Configuración de marcadores
+### Configuración de marcadores [setting-bookmarks]
 
 Establezca marcadores en la posición de desplazamiento usando {% kbd shift 1 %}--{% kbd shift 9 %} y retroceda usando {% kbd 1 %}--{% kbd 9 %} solo. Utilice {% kbd n %} y {% kbd p %} para siguiente/anterior en **orden de documentos**; {% kbd shift n %} y {% kbd shift p %} para siguiente/anterior en orden **numérico**.
 
@@ -75,7 +75,7 @@ Presione {% kbd x %} dos veces ({% kbd xx %}) para borrar todos los marcadores.
 
 Hay [más atajos de vista previa](Keyboard_Shortcuts.html); presione {% kbd h %} en la vista previa para obtener una lista de avisos, o {% kbd opt cmd K %} para obtener la referencia completa.
 
-### Minimapa {#minimapa}
+### Minimapa [minimap]
 
 Si el Mini mapa está habilitado en la configuración {% prefspane Preview %}, {% kbd 0 %} abre una miniatura escalada de todo el documento a lo largo de la franja de marcadores. Haga clic en cualquier parte del mapa para ver la vista previa completa allí. Los marcadores guardados aparecen como líneas horizontales con números (y títulos cuando sea relevante).
 
@@ -87,6 +87,6 @@ Presione {% kbd 0 %} o Escape para cerrar el Mini Mapa.
 
 **Nota de rendimiento:** La generación del mapa puede pausar brevemente la vista previa en documentos grandes; esto sólo se ejecuta cuando el mapa está visible o después de cambiar su tamaño.
 
-### Descripción general de Zoom (relacionada)
+### Descripción general de Zoom (relacionada) [zoom-overview-related]
 
 Para obtener una descripción general a escala de texto sin el minimapa, consulte [Descripción general del zoom](Zoom_Overview.html) ({% kbd z %}).

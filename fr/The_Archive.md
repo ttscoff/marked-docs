@@ -2,7 +2,7 @@
 
 [The Archive][archive] conserve vos notes sous forme de fichiers sur le disque et peut refléter la note en cours d'édition directement dans le canal d'**aperçu en continu** de Marked.
 
-## Diffuser l'aperçu vers Marked
+## Diffuser l'aperçu vers Marked [stream-preview-to-marked]
 
 1. Dans Marked, ouvrez {% appmenu File, New, Streaming Preview %} (ou réutilisez une fenêtre d'aperçu en continu existante).
 2. Passez à The Archive et choisissez **Note &#8594; Stream Preview to Marked**, afin que The Archive active Marked et commence à envoyer le texte de la note au premier plan.

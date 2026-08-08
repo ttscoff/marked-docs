@@ -4,7 +4,7 @@
 
 Visualize seus documentos do seu jeito.
 
-## Usando estilos personalizados
+## Usando estilos personalizados [using-custom-styles]
 
 ![][img1]
 
@@ -31,7 +31,7 @@ alguma confusão.
 Adicione estilos personalizados usando o Gerenciador de estilos com o botão Adicionar ou arrastando um ou mais arquivos CSS para as configurações
 painel.
 
-## Gerenciando estilos com o Style Manager
+## Gerenciando estilos com o Style Manager [managing-styles-with-the-style-manager]
 
 Iniciar o Style Manager oferece um único local para selecionar todos os estilos integrados.
 e tema personalizado. Clique no botão **Gerenciar estilos…** em {% prefspane Style %}
@@ -63,7 +63,7 @@ as atribuições de atalho `⌘/#`, para que você possa literalmente arrastar e
 você quer. Você também pode arrastar arquivos CSS externos para posições específicas; a gota
 indicador determina onde o novo estilo será inserido.
 
-### Visualização ao vivo
+### Visualização ao vivo [live-preview]
 
 O painel direito contém uma visualização que renderiza o estilo selecionado
 dentro de um documento HTML completo com um conjunto abrangente de títulos, listas, tabelas, blocos de código, etc.
@@ -74,7 +74,7 @@ criando o seu próprio) [no GitHub][1] (veja os [exemplos][2] para
 uma rápida olhada no que está lá). Consulte [Criando CSS personalizado][3]
 para detalhes e dicas.
 
-## CSS adicional
+## CSS adicional [additional-css]
 
 Abaixo de {% prefspane Style %}, você encontrará uma opção
 intitulado CSS adicional com um botão denominado "Editar CSS".
@@ -94,7 +94,7 @@ CSS baseado em correspondências condicionais, use Set Style, Insert
 Arquivo CSS ou Inserir ações CSS em {% prefspane Processor %}
 Regras personalizadas.
 
-## Impressão e exportação de PDF
+## Impressão e exportação de PDF [print-and-pdf-export]
 
 Marcado injeta um bloco `@media print` integrado (`mkprintstyles`) em cada
 visualização. Ele define padrões como **10pt** com base em `html`, `body` e
@@ -133,7 +133,7 @@ outros seletores não qualificados em sua planilha que ainda se aplicam na impre
 ajustes somente para impressão em `@media print` (em vez de apenas nas regras da tela) mantêm
 o comportamento de visualização e exportação é mais fácil de raciocinar.
 
-## Observando alterações de CSS
+## Observando alterações de CSS [watching-css-changes]
 
 Você pode marcar uma caixa na seção Estilos Personalizados do {% prefspane Style %}
 para marcar o arquivo CSS ativo
@@ -149,7 +149,7 @@ Arquivo Markdown contendo toda a marcação que você deseja estilizar
 para, crie um estilo personalizado e assista à prévia ao vivo
 muda à medida que você o edita.
 
-## Escrevendo CSS personalizado
+## Escrevendo CSS personalizado [writing-custom-css]
 
 Se você estiver familiarizado com CSS, poderá criar seu próprio estilo
 folhas para uso em Marcado. Consulte [Escrever CSS personalizado][3] para
@@ -158,7 +158,7 @@ detalhes. Sempre que você criar algo novo, considere
 usuários. Certifique-se de cobrir os princípios básicos listados no guia e
 inclua o comentário de metadados na parte superior.
 
-### Estilos personalizados automáticos com StyleStealer
+### Estilos personalizados automáticos com StyleStealer [automatic-custom-styles-with-stylestealer]
 
 Você pode até gerar automaticamente um estilo baseado em um
 site existente usando o [Style Stealer][4]. Isso permite que você carregue uma página da web e obtenha os estilos calculados para todos os principais elementos encontrados no Markdown e, em seguida, salve-os em um estilo personalizado.

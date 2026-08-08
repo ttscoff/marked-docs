@@ -8,7 +8,7 @@ transformaciones y la capacidad de ejecutar sus propios comandos o ejecutar
 diferentes procesadores basados en propiedades de archivos coincidentes.
 
 
-## Uso de preprocesadores/procesadores personalizados
+## Uso de preprocesadores/procesadores personalizados [using-custom-preprocessorsprocessors]
 
 Para agregar procesadores personalizados, vaya a {% prefspane Processor %}
 y haga clic en **Reglas personalizadas**.
@@ -52,7 +52,7 @@ arrastrar y soltar, para que pueda afectar el orden en el que
 se ejecutan las reglas, el orden de los criterios en el predicado
 editor y el orden de las acciones que se ejecutarán en secuencia.
 
-### Editor de predicados
+### Editor de predicados [predicate-editor]
 
 ![Editor de predicados][predicado]
 
@@ -97,7 +97,7 @@ actúa como comodín y coincide con todos los archivos.
 
 Haga clic en el signo más (+) en la fila de predicados para agregar otro predicado. Mantenga presionada la opción mientras hace clic en + para agregar un grupo booleano que se puede configurar en Todos (Y) o Cualquiera (O).
 
-### Reglas habilitadas manualmente [habilitadas manualmente]
+### Reglas habilitadas manualmente [habilitadas manualmente] [manuallyenabled]
 
 Algunas reglas no deberían ejecutarse en todos los archivos que coincidan con su
 criterios. Agregue un criterio **Habilitado manualmente** cuando lo desee
@@ -118,7 +118,7 @@ reglar los criterios normales de coincidencia de archivos más **Habilitado manu
 luego cámbielo desde el menú Vista previa (o un atajo de activación)
 cuando esté listo para probar el diseño de impresión.
 
-#### Activar acceso directo
+#### Activar acceso directo [trigger-shortcut]
 
 Cuando una regla seleccionada incluye **Habilitado manualmente**, se
 El campo **Atajo de activación** aparece junto a **Agregar manualmente
@@ -132,7 +132,7 @@ Borre el campo para eliminar el acceso directo.
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### Anulaciones por vista previa en el menú Vista previa
+#### Anulaciones por vista previa en el menú Vista previa [per-preview-overrides-in-the-preview-menu]
 
 Dos submenús del menú Vista previa controlan las anulaciones de los activos
 vista previa solamente. La configuración se guarda por [vista](#multivista) cuando
@@ -152,7 +152,7 @@ Varias ventanas muestran el mismo archivo.
   desea forzar una canalización de procesador específica para uno
   vista previa sin cambiar las reglas personalizadas globales.
 
-#### Botón Anular en la barra de herramientas de vista previa
+#### Botón Anular en la barra de herramientas de vista previa [override-button-in-the-preview-toolbar]
 
 Cuando una vista previa tiene al menos una regla habilitada manualmente o una
 anulación de proceso anclado, aparece un icono de rama en la parte inferior
@@ -171,7 +171,7 @@ vuelves a hacer clic. Esto es más rápido que desmarcar reglas en el
 menú cuando desee comparar la vista previa normal con su
 anular la tubería.
 
-### Acciones
+### Acciones [actions]
 
 Utilice el botón *+ Acción* para agregar acciones a la regla.
 
@@ -307,7 +307,7 @@ Ejecutar regla
 Continuar
 : De forma predeterminada, una vez que una regla coincide, el procesamiento se detendrá (por separado para preprocesadores y procesadores, de modo que un preprocesador y un procesador puedan coincidir). Esta acción forzará que la coincidencia de reglas continúe después de que la regla realice sus acciones.
 
-### Gancho de actualización
+### Gancho de actualización [updatehook]
 
 Marked no realiza una actualización completa con cada actualización, por lo que si
 tienes scripts que representan partes del DOM, necesitan
@@ -331,7 +331,7 @@ Marked.hooks.register('update', function() {
 Esto hará que `mermaid.run()` se ejecute cada vez
 Marked realiza una actualización parcial.
 
-### Reglas de prueba
+### Reglas de prueba [test-rules]
 
 El botón _Probar reglas_ debajo de la lista de reglas abrirá una
 cuadro de diálogo donde puede seleccionar cualquier archivo Markdown y será
@@ -340,7 +340,7 @@ resaltado con una pestaña verde en el lado izquierdo. Al hacer coincidir
 contra un archivo, aparecerá un botón X que se puede utilizar para
 borre la prueba y destaque las filas.
 
-## Arrastrar y soltar
+## Arrastrar y soltar [drag-and-drop]
 
 La ventana del conductor admite arrastrar y soltar mejorados
 capacidades que detectan de forma inteligente tipos de archivos y
@@ -353,7 +353,7 @@ contra reglas o agregarlo como una acción.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Detección de tipo de archivo
+### Detección de tipo de archivo [file-type-detection]
 
 El sistema detecta automáticamente diferentes tipos de archivos y
 muestra mensajes superpuestos apropiados:
@@ -376,7 +376,7 @@ Si obtiene resultados extraños y desea ver lo que está sucediendo, el Registro
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Ejecutar múltiples comandos
+## Ejecutar múltiples comandos [executing-multiple-commands]
 
 Una regla puede tener varios comandos en secuencia. La salida de
 cada comando se pasará al siguiente. si quieres tener
@@ -391,7 +391,7 @@ documento usando Pandoc, simplemente pase la ruta del archivo original
 opciones de línea de comando y luego repetir el contenido STDIN
 hacia STDOUT.
 
-## Omitir dinámicamente procesadores personalizados
+## Omitir dinámicamente procesadores personalizados [dynamically-bypassing-custom-processors]
 
 Si un procesador personalizado devuelve "NOCUSTOM" en STDOUT, marcado
 finalizará el procesador personalizado y volverá al
@@ -407,7 +407,7 @@ Si en lugar de `NOCUSTOM` devuelve un Procesador personalizado
 solo ese documento. Este cambio no afectará el valor predeterminado.
 procesador configurado en Configuración.
 
-## Variables de entorno
+## Variables de entorno [environmentvariables]
 
 La acción Ejecutar comando tiene un editor de entorno donde
 Puede configurar sus propias variables de entorno que serán
@@ -444,14 +444,14 @@ disponible para usar en sus scripts de shell:
 **MARKED_CSS_PATH**
 : La ruta completa a la hoja de estilo actual.
 
-### Variables de entorno de metadatos
+### Variables de entorno de metadatos [metadata-environment-variables]
 
 Cuando la acción Ejecutar comando se ejecuta en Marked's
 Sistema conductor, los metadatos del documento se almacenan automáticamente.
 extraídos y puestos a disposición como variables de entorno para el
 comando.
 
-#### Cómo funciona
+#### Cómo funciona [how-it-works]
 
 1. **Extracción de metadatos**: el sistema extrae metadatos del documento utilizando el método `extractMetaDataFromString:` existente, que admite:
    - Portada de YAML (`---` bloques)
@@ -469,7 +469,7 @@ comando.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Ejemplo
+#### Ejemplo [example]
 
 Dado un documento con estos metadatos:
 
@@ -498,7 +498,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Uso en comandos
+#### Uso en comandos [usage-in-commands]
 
 Ahora puede usar estas variables de entorno en su Ejecución
 Acciones de comando:
@@ -527,7 +527,7 @@ else
 fi
 ```
 
-#### Acciones admitidas
+#### Acciones admitidas [supported-actions]
 
 Esta funcionalidad de variable de metadatos a entorno es
 disponible en:
@@ -539,7 +539,7 @@ Los metadatos se extraen automáticamente del documento.
 contenido y puesto a disposición de cualquier comando o script que
 recorre estas acciones.
 
-## Habilitar y deshabilitar
+## Habilitar y deshabilitar [enabling-and-disabling]
 
 Los procesadores personalizados se pueden encender y apagar para
 documentos individuales usando {% kbd opt cmd C %}. tu
@@ -552,7 +552,7 @@ mostrados como luces indicadoras (sólo visibles cuando un procesador
 está habilitado) a la izquierda de los elementos de la barra de herramientas en la parte inferior
 barra de herramientas derecha de la Vista previa.
 
-### Preprocesador
+### Preprocesador [preprocessor]
 
 Si configura reglas de preprocesador, se ejecutan después de Marcado
 maneja cualquier tarea específica de Marked, como incluir
@@ -574,7 +574,7 @@ Cuando está habilitado, el preprocesador personalizado se puede encender y
 desactivado para documentos individuales usando
 {% kbd ctrl opt cmd C %}.
 
-#### Procesador/preprocesador por documento [por documento]
+#### Procesador/preprocesador por documento [por documento] [perdocument]
 
 Los procesadores personalizados también se pueden configurar por documento
 utilizando el formato de metadatos para [Por documento
@@ -602,7 +602,7 @@ de la salida:
     Preprocesador personalizado: verdadero
     -->
 
-## Usando un procesador Markdown alternativo
+## Usando un procesador Markdown alternativo [using-an-alternative-markdown-processor]
 
 Cualquier versión de Markdown que puedas renderizar desde la línea de comando puede
 ser utilizado con marcado. Necesita poder recibir información sobre
@@ -626,7 +626,7 @@ Probé la función Procesador personalizado con Pandoc,
 Kramdown, marcado (descuento), MultiMarkdown 6, Maruku y
 varios otros sabores.
 
-### Una nota sobre Pandoc y Sandboxing
+### Una nota sobre Pandoc y Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (y algunas otras herramientas de línea de comandos) no se ejecutarán en
 la versión Mac App Store (en zona protegida) de Marked.
@@ -638,7 +638,7 @@ Ofrecer los pasos para realizar crossgrade. Si tienes problemas
 y esto no sucede, por favor contáctame a través del
 [sitio de soporte](https://support.markedapp.com/questions/add).
 
-### Pandoc como procesador de rebajas del ejército suizo
+### Pandoc como procesador de rebajas del ejército suizo [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) es, con diferencia, el más flexible
 Herramienta multiuso para manejar una variedad de formatos de marcado. Por
@@ -677,7 +677,7 @@ Amplia bibliografía y escenarios LaTeX. La mayoría de las funciones
 puedes acceder a través de la línea de comando están disponibles solo
 mediante el uso de argumentos de paso en Marked.
 
-## Usando Textil
+## Usando Textil [using-textile]
 
 Algunas personas han preguntado cómo hacer que Textile funcione en
 Marcado. Necesita tener un convertidor textil disponible en
@@ -695,7 +695,7 @@ uno u otro:
 
 ¡Ahora Marked es una vista previa de textiles para ti!
 
-## Usando AsciiDoc
+## Usando AsciiDoc [using-asciidoc]
 
 1. Instale [AsciiDoctor](http://asciidoctor.org/).
 2. Habilite una regla personalizada en {% prefspane Processor %} para que coincida con sus archivos AsciiDoc.

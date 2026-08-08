@@ -4,7 +4,7 @@
 
 A validação do link faz ping no destino de um URL e testa erros. Isso ajuda a evitar links quebrados e inválidos no documento publicado e é especialmente útil para blogueiros.
 
-## Validando links únicos
+## Validando links únicos [validating-single-links]
 
 ![][1]
 
@@ -12,7 +12,7 @@ A validação do link faz ping no destino de um URL e testa erros. Isso ajuda a 
 
 Clique e segure um link na visualização até que ele pisque e solte para abrir o menu de ação do link. Escolha "Validar link" para executar o teste. Os resultados são exibidos no pop-up.
 
-## Validando todos os links
+## Validando todos os links [validating-all-links]
 
 ![][2]
 
@@ -24,7 +24,7 @@ URLs válidos podem ser ocultados no pop-up com o botão "Ocultar válidos" na p
 
 Pressionar Escape ocultará os resultados da validação. Eles podem ser revelados novamente usando {% kbd ctrl cmd L %} ou o menu Gear.
 
-## Validando automaticamente
+## Validando automaticamente [validating-automatically]
 
 Ative "Validar URLs automaticamente na atualização" nas configurações de visualização (ou na parte inferior do pop-up de validação do link). Quando o documento for carregado, os links contidos serão testados em segundo plano. Uma caixa de diálogo só será exibida se houver erros.
 

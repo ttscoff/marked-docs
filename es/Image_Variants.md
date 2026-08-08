@@ -6,13 +6,13 @@ Marked puede crear automáticamente elementos `<picture>` responsivos para imág
 
 Consulte también [Soporte DocC](DocC_Support.html) para obtener referencias de catálogos sin extensión dentro de los paquetes `.docc`.
 
-## Habilitar variantes de imagen
+## Habilitar variantes de imagen [enabling-image-variants]
 
 En {% prefspane Apps %}, habilite **Resolver variantes de imagen oscura y @2x** (activado de forma predeterminada) en la configuración de DocC.
 
 Esta preferencia es independiente de **Resolver referencias de imágenes DocC**, que solo se aplica dentro de los catálogos `.docc`. Puede utilizar uno, ambos o ninguno según su proyecto.
 
-## Convención de nomenclatura
+## Convención de nomenclatura [naming-convention]
 
 Coloque los archivos variantes en la **misma carpeta** que la imagen principal. Marcado busca cuatro combinaciones basadas en el nombre base:
 
@@ -27,7 +27,7 @@ El orden de los sufijos es flexible: `icon@2x~dark.png` y `icon~dark@2x.png` se 
 
 Extensiones admitidas: `png`, `jpg`, `jpeg`, `gif`, `svg`, `webp` y `pdf`.
 
-## Lo que se reescribe
+## Lo que se reescribe [what-gets-rewritten]
 
 Marked escanea su documento **antes** de la presentación preliminar final:
 
@@ -48,7 +48,7 @@ Ejemplo de salida cuando hay archivos claros, oscuros y @2x presentes:
 
 La vista previa (y la exportación HTML) sigue la apariencia del sistema del usuario para las variantes oscuras y la densidad de píxeles del dispositivo para los recursos @2x.
 
-## ¿Qué se omite?
+## ¿Qué se omite? [what-is-skipped]
 
 Marcado **no** reescribe:
 
@@ -57,17 +57,17 @@ Marcado **no** reescribe:
 - `<img>` etiquetas que ya están dentro de un elemento `<picture>` existente
 - Nombres sin extensión como `![Diagram](diagram)`: use [DocC Support](DocC_Support.html) para referencias de estilo catálogo
 
-## Vista previa en vivo y visualización de archivos
+## Vista previa en vivo y visualización de archivos [live-preview-and-file-watching]
 
 Cuando se detectan variantes, Marked agrega **todos los archivos de variantes existentes** a su lista de vigilancia junto con el documento principal. Guardar `icon~dark.png` en un editor externo activa la misma recarga de imagen en vivo que editar `icon.png`.
 
-## Consejos
+## Consejos [tips]
 
 - Haga referencia a la imagen **light 1x** en su fuente cuando sea posible (`icon.png`, no `icon~dark.png`). Marked descubre hermanos de ese camino.
 - Si solo tiene `@2x` activos, incluya al menos otra variante (normalmente `~dark`) o Marcado dejará la referencia sin cambios.
 - La resolución variante utiliza rutas **relativas al documento** (o la carpeta del archivo incluido para inclusiones anidadas), las mismas reglas de ruta base que [Documentos de varios archivos](Multi-File_Documents.html).
 
-## Temas relacionados
+## Temas relacionados [related-topics]
 
 - [Soporte DocC](DocC_Support.html) — nombres de imágenes sin extensión dentro de catálogos `.docc`
 - [Configuración: Aplicaciones](Settings_Apps.html): alterna preferencias para DocC y variantes de imagen

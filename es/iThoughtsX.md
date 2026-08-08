@@ -4,7 +4,7 @@
 
 Los mapas mentales de [iThoughtsX][it] guardados como paquetes `.itmz` se pueden obtener una vista previa directamente en Marked una vez que **Markdown Preview** esté habilitado dentro de iThoughtsX.
 
-## Habilitar el canal de exportación Markdown
+## Habilitar el canal de exportación Markdown [enable-markdown-export-channel]
 
 En las preferencias de iThoughtsX, en **Avanzado**, configure **Vista previa de Markdown** (el texto puede leer "Markdown" o "Vista previa de Markdown" según la versión), luego elija si los temas exportados incluyen:
 

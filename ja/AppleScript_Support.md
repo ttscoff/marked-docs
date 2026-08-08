@@ -6,13 +6,13 @@ Marked には、プレビュー、エクスポート、ワークフロー統合�
 
 URL ベースの自動化 (シェル スクリプト、`open` コマンド、およびコールバック) については、[URL ハンドラー](URL_Handler.html) を参照してください。 AppleScript と URL ハンドラーは相互に補完します。特定のドキュメントまたはウィンドウをターゲットにする必要がある場合は AppleScript を使用し、単純な `open 'x-marked://...'` 呼び出しで十分な場合は URL を使用します。
 
-## 辞書の表示
+## 辞書の表示 [viewing-the-dictionary]
 
 **スクリプト エディタ**で、**ファイル → 辞書を開く…** を選択し、マーク済みを選択します。このディクショナリには、**application**、**document**、**window** オブジェクトのコマンドと、Marked スイートのエクスポート コマンドがリストされています。
 
 macOS では、**スクリプト エディタ** を使用してスクリプト定義を参照できます。
 
-## ターゲットをマークしました
+## ターゲットをマークしました [targeting-marked]
 
 標準インストールの場合:
 
@@ -22,7 +22,7 @@ tell application "Marked"
 end tell
 ```
 
-## ドキュメントとウィンドウ
+## ドキュメントとウィンドウ [documents-and-windows]
 
 **アプリケーション**
 
@@ -51,7 +51,7 @@ end tell
 
 特定のプレビューをエクスポートする場合は、`tell document 1` または `tell window 1's document` を優先します。アプリケーションのエクスポート コマンドは、受信者が指定されていない場合、キー ウィンドウまたは現在のドキュメントを使用します。
 
-### 例: パスを開いて読み取る
+### 例: パスを開いて読み取る [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -60,7 +60,7 @@ tell application "Marked"
 end tell
 ```
 
-### 例: プレビュー スタイルを変更する
+### 例: プレビュー スタイルを変更する [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -74,7 +74,7 @@ end tell
 
 有効なスタイル表示名を一覧表示するには、アプリケーション オブジェクトで **`get preview style names`** を使用します。
 
-### 例: プロセッサとソース テキスト
+### 例: プロセッサとソース テキスト [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -86,7 +86,7 @@ tell application "Marked"
 end tell
 ```
 
-## アプリケーションコマンド
+## アプリケーションコマンド [application-commands]
 
 これらのコマンドは **アプリケーション** オブジェクト (特定のドキュメントではありません) に適用されます。
 
@@ -109,7 +109,7 @@ tell application "Marked"
 end tell
 ```
 
-## プレビュー コントロール
+## プレビュー コントロール [preview-control]
 
 **ドキュメント**と**ウィンドウ**で利用できます。これらのほとんどでは、ロードされたプレビュー WebView が必要です。
 
@@ -136,7 +136,7 @@ tell application "Marked"
 end tell
 ```
 
-## 自動スクロールと高速読み取り
+## 自動スクロールと高速読み取り [autoscroll-and-speed-read]
 
 |コマンド |説明 |
 | --- | --- |
@@ -158,7 +158,7 @@ tell application "Marked"
 end tell
 ```
 
-## 統計
+## 統計 [statistics]
 
 **`get statistics`** は、現在の Markdown ソース (統計ドロワーに表示される書式設定された文字列ではない) から計算された数値を含む `statistics_record` を返します。
 
@@ -186,7 +186,7 @@ tell application "Marked"
 end tell
 ```
 
-## 目次 (作業中)
+## 目次 (作業中) [table-of-contents-work-in-progress]
 
 {% note %}
 **WIP — まだ信頼できません。** ディクショナリには、ネストされたプレビュー見出し (`heading_item` レコード) を読み取るための **`headings`** プロパティと **`headings`** コマンドが含まれています。この自動化は、現在のビルドでは **正しく動作しません** (空の結果、強制エラー、または「結果が返されませんでした」)。今後のリリースで修正される予定です。それまでは既知のタイトルまたは ID を持つ **`scroll to heading`** を優先します。
@@ -213,7 +213,7 @@ end tell
 
 見出しの自動化が安定したら、**`scroll to heading id "..."`** とともに `id` 値を使用します。
 
-## プロファイルを使用して印刷する
+## プロファイルを使用して印刷する [print-with-profile]
 
 **`print with profile`** は、エクスポート プロファイルの印刷設定を一時的に適用してから、ドキュメントを印刷します ({% prefspane Export %} のエクスポート プロファイルと同じ環境設定バンドル)。
 
@@ -227,7 +227,7 @@ end tell
 
 プロファイル名では大文字と小文字が区別されます。印刷後、Marked は以前にアクティブだったエクスポート プロファイルを復元します。
 
-## プロファイルをエクスポートする
+## プロファイルをエクスポートする [export-profiles]
 
 エクスポート プロファイルには、エクスポート/印刷設定 (マージン、ヘッダー、目次オプション、および{% prefspane Export %} の同様の設定) のバンドルが保存されます。
 
@@ -252,7 +252,7 @@ end tell
 
 プロファイル名は大文字と小文字が区別され、保存されたプロファイルと正確に一致する必要があります。
 
-## エクスポートコマンド
+## エクスポートコマンド [export-commands]
 
 エクスポート コマンドは、**アプリケーション**、**ドキュメント**、**ウィンドウ** オブジェクトで使用できます。各コマンドには、出力パス (POSIX パス文字列または `file` オブジェクト) を含む **`to`** パラメーターが必要です。
 
@@ -275,7 +275,7 @@ end tell
 - HTML エクスポートでは、生の Markdown ソース ファイルではなく、**レンダリングされたプレビュー** (WebView に表示されるもの) が使用されます。
 - 連続 PDF は、現在のプレビュー WebView レイアウトをキャプチャします。
 
-### 基本的なエクスポート
+### 基本的なエクスポート [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -285,13 +285,13 @@ tell application "Marked"
 end tell
 ```
 
-### エクスポート パスとサンドボックス
+### エクスポート パスとサンドボックス [export-paths-and-sandboxing]
 
 - 宛先ファイルには完全な POSIX パスを使用します。
 - エクスポート パスが **開いているドキュメントのフォルダー内** にある場合、マークを付けると中間フォルダーを作成できます (たとえば、`.../MyProject/chapter.md` をプレビュー中に `.../MyProject/build/output.pdf` にエクスポートする場合)。
 - ドキュメントのフォルダー外にエクスポートするには、マークがアクセスできる書き込み可能なパス (保存されたドキュメントの場所、セキュリティ対象のブックマーク、または [開く] ダイアログで許可したフォルダー) が必要です。パスが書き込み可能でない場合、コマンドはエクスポートが開始される前にエラーを返します。
 
-## `with` オプション (プロパティ レコード)
+## `with` オプション (プロパティ レコード) [with-options-properties-record]
 
 `with profile` の代わりに、**`with`** または **`with properties`** を使用してオプションのレコードを渡すことができます。
 
@@ -316,7 +316,7 @@ AppleScript はこれらのキーを直接認識します (エクスポート前
 
 競合するソースを不用意に結合することはできません。`with profile` を使用する場合は、最初にそのプロファイルをロードしてください。 `with` レコードを使用する場合、レコード内のプロファイル キーは、そのエクスポートの現在の設定をオーバーライドします。
 
-### マージンの省略表記
+### マージンの省略表記 [margin-shorthand]
 
 `margins` 値は、1 ～ 4 つの測定値を含む文字列です。単位: `in`、`cm`、`mm`、`pt`、または`"` (インチ)。単位のない数値はポイントとして扱われます。
 
@@ -332,7 +332,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### 組み合わせ例
+### 組み合わせ例 [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -342,7 +342,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
+## `convert_to` [convert_to]
 
 アプリケーション オブジェクトは、従来のスクリプト コマンドも公開します。
 
@@ -352,7 +352,7 @@ end tell
 
 `convert_to` は、古いワークフローと AppleScript のみの自動化で引き続き利用できます。
 
-## デバッグ
+## デバッグ [debugging]
 
 {% prefspane Advanced %} で **デバッグ モード** を有効にします (または [設定] のデバッグ設定)。 Marked は、Console.app と Marked のログ ビューアにプレフィックス `[AppleScript]` を付けて情報レベルで AppleScript エクスポート ステップをログに記録します。
 
@@ -365,7 +365,7 @@ end tell
 
 長いエクスポート (特にページ分割された PDF) は、クライアントがエクスポート中にタイムアウトしないように、完了するまで AppleScript イベントを一時停止します。
 
-## エラー
+## エラー [errors]
 
 エクスポートが失敗すると、コマンドにスクリプト エラー文字列が設定されます (スクリプト エディターおよび `on error` ハンドラーで表示されます)。一般的なメッセージ:
 
@@ -376,6 +376,6 @@ end tell
 - スタイル変更後のプレビューのリロードを待機中にタイムアウトしました。
 - ページ分割された PDF エクスポートがタイムアウトしたか、ページの生成中に失敗しました。
 
-## 他のツールとの統合
+## 他のツールとの統合 [integration-with-other-tools]
 
-アプリケーションは、Marked の AppleScript サーフェスを使用してドキュメントのメタデータを読み取ることができます。ショートカットアプリについては、「ショートカット統合」(Shortcuts_Integration.html)をご覧ください。シェル駆動のワークフロー、フォルダー ウォッチャー、エディター コールバックの場合、多くの場合、[URL ハンドラー](URL_Handler.html) の方が単純です。 [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) には、追加のスクリプトとサービスが含まれています。
+html) の方が単純です。 [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) には、追加のスクリプトとサービスが含まれています。

@@ -4,7 +4,7 @@
 
 Visualizza i tuoi documenti *a modo tuo*.
 
-## Utilizzo di stili personalizzati
+## Utilizzo di stili personalizzati [using-custom-styles]
 
 ![][img1]
 
@@ -31,7 +31,7 @@ una certa confusione.
 Aggiungi stili personalizzati utilizzando la Gestione stili con il pulsante Aggiungi o trascinando uno o più file CSS nelle Impostazioni
 riquadro.
 
-## Gestire gli stili con il Gestore stili
+## Gestire gli stili con il Gestore stili [managing-styles-with-the-style-manager]
 
 L'avvio di Gestione stili ti offre un unico posto in cui curare ogni integrato
 e tema personalizzato. Fai clic sul pulsante **Gestisci stili…** nella {% prefspane Style %}
@@ -63,7 +63,7 @@ le `⌘/#` assegnazioni di scorciatoie, così puoi letteralmente trascinare gli 
 vuoi. Puoi anche trascinare file CSS esterni in posizioni specifiche; la goccia
 L'indicatore determina dove viene inserito il nuovo stile.
 
-### Anteprima dal vivo
+### Anteprima dal vivo [live-preview]
 
 Il riquadro di destra contiene un'anteprima che esegue il rendering dello stile selezionato
 all'interno di un documento HTML completo con un set completo di intestazioni, elenchi, tabelle, blocchi di codice, ecc
@@ -74,7 +74,7 @@ creando il tuo) [su GitHub] [1] (vedi [esempi] [2] per
 una rapida occhiata a cosa c'è). Vedi [Creazione di CSS personalizzati][3]
 per dettagli e suggerimenti.
 
-## CSS aggiuntivi
+## CSS aggiuntivi [additional-css]
 
 Sotto {% prefspane Style %} troverai un'opzione
 intitolato CSS aggiuntivo con un pulsante denominato "Modifica CSS".
@@ -94,7 +94,7 @@ CSS basato su corrispondenze condizionali, utilizza Imposta stile, Inserisci
 File CSS o Inserisci azioni CSS in {% prefspane Processor %}
 Regole personalizzate.
 
-## Stampa ed esporta in PDF
+## Stampa ed esporta in PDF [print-and-pdf-export]
 
 Marked inserisce un blocco `@media print` incorporato (`mkprintstyles`) su ogni
 anteprima. Imposta valori predefiniti come una base **10pt** su `html`, `body` e
@@ -133,7 +133,7 @@ altri selettori non qualificati nel tuo foglio che si applicano ancora alla stam
 le modifiche di sola stampa in `@media print` (anziché solo nelle regole dello schermo) vengono mantenute
 il comportamento di anteprima ed esportazione è più facile da ragionare.
 
-## Guardare le modifiche CSS
+## Guardare le modifiche CSS [watching-css-changes]
 
 Puoi selezionare una casella nella sezione Stili personalizzati del {% prefspane Style %}
 per fare in modo che Marked guardi il file CSS attivo
@@ -149,7 +149,7 @@ File Markdown contenente tutto il markup a cui desideri applicare lo stile
 per, crea uno stile personalizzato e guarda l'anteprima dal vivo
 cambia mentre lo modifichi.
 
-## Scrittura di CSS personalizzati
+## Scrittura di CSS personalizzati [writing-custom-css]
 
 Se hai familiarità con i CSS, puoi creare il tuo stile
 fogli da utilizzare in Marked. Vedi [Scrittura di CSS personalizzati][3] per
@@ -158,7 +158,7 @@ dettagli. Ogni volta che crei qualcosa di nuovo, pensaci
 utenti. Assicurati di coprire le nozioni di base elencate nella guida e
 includere il commento sui metadati in alto.
 
-### Stili personalizzati automatici con StyleStealer
+### Stili personalizzati automatici con StyleStealer [automatic-custom-styles-with-stylestealer]
 
 Puoi anche generare automaticamente uno stile basato su un file
 sito Web esistente utilizzando [Style Stealer] [4]. Ciò ti consente di caricare una pagina Web e acquisire gli stili calcolati per tutti gli elementi principali trovati in Markdown, quindi salvarli in uno stile personalizzato.

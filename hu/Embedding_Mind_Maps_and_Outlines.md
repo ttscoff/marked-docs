@@ -7,29 +7,29 @@ Gondolattérképek és körvonalak beágyazhatók a Markdown előnézetébe a [M
 [include]: Multi-File_Documents.html
 [ia]: Multi-File_Documents.html#ia-writer-block-syntax
 
-## Támogatott formátumok
+## Támogatott formátumok [supported-formats]
 
-### iThoughts X (.itmz)
+### iThoughts X (.itmz) [ithoughts-x-itmz]
 
 Az iThoughts gondolattérkép-fájlok zip-archívumok, amelyek térképadatokat és opcionális előnézeti képet tartalmaznak.
 
-### MindManager (.mmap)
+### MindManager (.mmap) [mindmanager-mmap]
 
 A MindManager fájlok zip-archívumok, amelyek a következőt tartalmazzák: `Document.xml`. A kicsomagolt MindManager-csomagok (a `Document.xml`-t tartalmazó mappa) és a `Document.xml`-hez vezető közvetlen elérési út szintén támogatott.
 
-### FreeMind (.mm)
+### FreeMind (.mm) [freemind-mm]
 
 A FreeMind gondolattérkép-fájlok az `.mm` kiterjesztést használják, és XML-ként tárolják az adatokat. A Marked úgy érzékeli a FreeMind formátumot, hogy ellenőrzi, hogy a fájl tartalma `<map`-vel kezdődik-e; ha nem (pl. kódrészlet), akkor a fájl egyszerű szövegként szerepel. A FreeMind fájlokat a Mermaid gondolattérkép beágyazása támogatja.
 
-### OPML (.opml)
+### OPML (.opml) [opml-opml]
 
 Az OPML (Outline Processor Markup Language) egy XML-formátum hierarchikus körvonalakhoz, amelyet széles körben használnak a körvonalazók és a hírfolyam-olvasók. Az iThoughts és más alkalmazások exportálhatnak OPML-be. A megjelölt konvertálások OPML-fájlokat tartalmaztak Mermaid gondolattérkép-diagramokká.
 
-### Kerékpár (.bike)
+### Kerékpár (.bike) [bike-bike]
 
 A Bike.app körvonalait a rendszer védett HTML-fájlokként tárolja (`.bike`). A `.bike` fájlt közvetlenül a Marked alkalmazásban nyithatja meg: a dokumentum Markdownként jelenik meg, a fájlnévvel (mínusz kiterjesztéssel) a fő fejlécként (H1), a legfelső szintű címsorelemeket H2ként, a beágyazott címsorokat félkövér listaelemként, a feladatokat pedig GitHub-stílusú jelölőnégyzetként. Ha egy `.bike` fájl szerepel az include szintaxison keresztül, a Bike „Beágyazás sellődiagramként” beállítása (az Alkalmazások → Mind Maps/Outlines részben) szabályozza, hogy Mermaid gondolattérkép legyen (a fájlnév gyökércsomópontként) vagy beágyazott Markdown lista (nincs H1).
 
-## Térképek beágyazása sellődiagramként
+## Térképek beágyazása sellődiagramként [embed-maps-as-mermaid-diagrams]
 
 Ha **engedélyezve** (alapértelmezett), a megjelölt konvertálások gondolattérképeket és körvonalakat tartalmaztak [Hableány](https://mermaid.js.org/) diagramokká:
 
@@ -45,7 +45,7 @@ Ha **letiltva**:
 - **OPML** — A körvonal beágyazott Markdown listaként van beágyazva (nincs gondolattérkép).
 - **Kerékpár** — A körvonal beágyazott Markdown listaként van beágyazva (nincs H1); A legfelső szintű címsorelemek H2-vé, a beágyazott címsorok félkövérek, a feladatok pedig GitHub-jelölőnégyzetekké válnak.
 
-## Tartalmazza a szintaxist
+## Tartalmazza a szintaxist [include-syntax]
 
 Használja ugyanazt a szintaxist, mint a többi fájl esetében:
 
@@ -61,7 +61,7 @@ Vagy iA Writer blokk szintaxissal:
 
 Az elérési utak lehetnek a fő dokumentumhoz képest relatívak vagy abszolútak (`/` vagy `~` karakterekkel kezdve). A részletekért lásd: [Többfájlos dokumentumok](Multi-File_Documents.html).
 
-## OPML konverzió
+## OPML konverzió [opml-conversion]
 
 Az OPML-fájlok beágyazott `<outline>` elemeket használnak `text` attribútummal. Ha a „Beágyazás sellődiagramként” engedélyezve van (lásd: [Beállítások: Alkalmazások](Settings_Apps.html)), az átalakítás egy Mermaid gondolattérképet hoz létre, amely ugyanazt a formátumot használja, mint az iThoughts és a MindManager:
 
@@ -70,6 +70,6 @@ Az OPML-fájlok beágyazott `<outline>` elemeket használnak `text` attribútumm
 - A hiányzó vagy üres `text` a következőként jelenik meg: `(unnamed)`
 - A szöveg fertőtlenített; különleges karaktereket szöknek meg a Mermaid számára
 
-## Bike átalakítás
+## Bike átalakítás [bike-conversion]
 
 A kerékpáros `.bike` fájlok HTML formátumúak, `<ul>` és `<li>` elemekkel. Az elemeken lehet `data-type="heading"` (legfelső szint → H2 megnyitott vagy lista módban; beágyazott → félkövér) vagy `data-type="task"` (GitHub jelölőnégyzetek; kitöltve, ha a `data-done` időbélyeggel rendelkezik, vagy a `data-checked` / `data-completed` igaz). A szövegközi formázás és a csomópontszövegben lévő hivatkozások Markdown formátumba konvertálódnak. Mermaid gondolattérképként történő beágyazáskor a fájlnév (mínusz kiterjesztés) egyetlen gyökércsomópontként használatos, a címkék pedig egyszerű szöveges formázásúak a Mermaid gondolattérkép szintaxisához.

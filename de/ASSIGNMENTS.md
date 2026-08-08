@@ -7,12 +7,12 @@ Who is working on which section, so contributors don't translate the same files 
 | Getting_Started | Thomas (@fucx, lead) | done |
 | Settings | Thomas (@fucx, lead) | done |
 | Supported_Apps | Hilthart (@h3pdesign) | done |
-| Reading_Features | Thomas Ungricht (@Thomas-U) | offered |
-| Just_for_Writers | Hilthart (@h3pdesign) | in progress (5 pages already done by lead — see below, skip those) |
-| Special_Features | Thomas (@fucx, lead) | in progress |
-| Comparisons_FAQ | — | open |
-| Troubleshooting | — | open |
-| About_Markdown | — | open (Markdown_Dingus already done) |
+| Reading_Features | Thomas Ungricht (@Thomas-U) | in progress (5/6 done; AI_Ask_About_Document open) |
+| Just_for_Writers | Hilthart (@h3pdesign) | done |
+| Special_Features | Thomas (@fucx, lead) | done |
+| Comparisons_FAQ | Thomas (@fucx, lead) | in progress |
+| Troubleshooting | Thomas Ungricht (@Thomas-U) | offered |
+| About_Markdown | Hilthart (@h3pdesign) | in progress (2/7; Processor_Selection and Markdown_Dingus done — skip those) |
 | Credits | Thomas Ungricht (@Thomas-U) | done (license pages stay English) |
 
 Status: *done* = translated and reviewed · *in progress* = being worked on · *offered* = proposed to a translator, awaiting their confirmation · *open* = unclaimed. Ping the lead to claim an open section.
@@ -22,7 +22,7 @@ Status: *done* = translated and reviewed · *in progress* = being worked on · *
 The lead has post-edited several high-traffic pages that fall inside other sections. They are finished on `main`; please skip them:
 
 - **In Just_for_Writers:** Multi-File_Documents, MathJax, RTF_Support, PDF_Support, Working_With_DOCX
-- **In Special_Features:** Custom_Styles, Writing_Custom_CSS, Custom_Processor, Special_Syntax, URL_Handler, Streaming_Preview
+- **In Special_Features:** Custom_Styles, Writing_Custom_CSS, Custom_Processor, Special_Syntax, URL_Handler, Streaming_Preview, AppleScript_Support, Keyboard_Shortcuts, Per-Document_Settings
 - **In About_Markdown:** Markdown_Dingus
 
 ## Which files belong to a section?

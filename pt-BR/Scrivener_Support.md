@@ -6,13 +6,13 @@ Use suas duas ferramentas de escrita favoritas juntas.
 
 > Marked ainda pode ler arquivos do Scrivener 2.0, mas o desenvolvimento será focado na versão 3 após Marked 2.5.11.
 
-## Noções básicas do Scrivener 3.0
+## Noções básicas do Scrivener 3.0 [scrivener-30-basics]
 
 Arraste um projeto Scrivener (.scriv) para Marcado e ele será compilado e visualizado. Se você escolher a opção de abrir arquivos .scriv no Scrivener (acima), o Marked também iniciará o Scrivener quando você arrastar o arquivo para o Marked.
 
 Tal como acontece com outros documentos, as alterações nos arquivos do Scrivener são atualizadas ao salvar. Além disso, quando um documento do Scrivener estiver em primeiro plano no Marked, {% kbd cmd E %} irá abri-lo no Scrivener para você.
 
-## Filtrando documentos fichários
+## Filtrando documentos fichários [filtering-binder-documents]
 
 Quando você abre um projeto do Scrivener no Marked, o conteúdo de visualização é criado apenas a partir dos documentos do fichário selecionados. A filtragem está sempre ativa para arquivos `.scriv`; o painel de filtros é apenas uma maneira conveniente de alterar o que está incluído.
 
@@ -36,11 +36,11 @@ Os projetos do Scrivener 2 mostram apenas o fichário **Rascunho** no painel de 
 
 O painel de filtros pode permanecer aberto junto com outras ferramentas, como **Visualizar Repetição de Palavras**. Alterar uma caixa de seleção recompila a visualização após um pequeno atraso; se um projeto grande ainda estiver sendo compilado, Marcado cancela a importação em andamento e inicia novamente com sua nova seleção.
 
-## Cabeçalhos Markdown de títulos do Scrivener
+## Cabeçalhos Markdown de títulos do Scrivener [markdown-headers-from-scrivener-titles]
 
 Marked também pode criar cabeçalhos Markdown hierárquicos para você com base nas páginas do seu arquivo Scrivener. Para habilitar isso, basta marcar a opção mostrada acima.
 
-## Metadados MultiMarkdown
+## Metadados MultiMarkdown [multimarkdown-metadata]
 
 Se o primeiro documento na sua pasta Rascunho for denominado "metadados", ele será tratado como metadados MultiMarkdown no início do documento de visualização. Nenhum cabeçalho será inserido para esta seção, independentemente da configuração "Markdown Headers from Scrivener Titles" (descrita acima), permitindo que o processador MultiMarkdown os leia como metadados e permita substituições e opções de exportação de acordo.
 
@@ -52,21 +52,21 @@ Se você não usar um documento `metadata`, Marked também pode preceder os meta
 
 Para links externos (HTTP), você pode usar a sintaxe Markdown ou a formatação de link do Scrivener. Marcado converterá o formato Scrivener em Markdown antes do processamento.
 
-## Comentários
+## Comentários [links]
 
 Marcado pode processar comentários e notas de rodapé criados embutidos no documento.
 
-## Tabelas
+## Tabelas [comments]
 
 Marcado pode converter tabelas básicas do Scrivener. Entretanto, se você quiser incluir uma tabela em sua saída, é melhor fazê-lo em [formato de tabela MultiMarkdown](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#tables). (Um aplicativo chamado [TableFlip](http://tableflipapp.com/) pode tornar a geração deles uma tarefa simples.)
 
-## Recursos adicionais do Scrivener
+## Recursos adicionais do Scrivener [tables]
 
 Além dos recursos básicos de compilação e visualização, Marked também oferece suporte a algumas convenções específicas do Scrivener. Primeiro, em seu documento Scrivener, você pode usar "Preservar formatação" embutido ou em um bloco de texto independente e ele será convertido em blocos de código na visualização.
 
 Marcado também lê notas de rodapé _inline_ do Scrivener. Se você inserir uma nota de rodapé dentro ou no final de um parágrafo, ela será convertida em uma nota de rodapé MultiMarkdown na visualização.
 
-## Usando imagens em seu documento Scrivener
+## Usando imagens em seu documento Scrivener [additional-scrivener-features]
 
 As imagens podem ser incorporadas no documento Scrivener ou referenciadas com a sintaxe de imagem Markdown. A versão Markdown de uma tag de imagem é `![alt text](path/to/image.ext "optional title/description")`. O formato de referência também pode ser usado:
 
@@ -80,7 +80,7 @@ O caminho base para a saída HTML na visualização será definido para a pasta 
 
 Caminhos relativos baseados na pasta pai do documento funcionarão, e caminhos absolutos permitirão acesso a imagens em qualquer lugar, mas podem não ser tão portáveis para saída HTML.
 
-## Nota de segurança
+## Nota de segurança [using-images-in-your-scrivener-document]
 
 Uma pasta de cache será criada em ~/Library/Application Support/Marked quando você abrir seu arquivo .scriv em Marked. Esta não é uma pasta protegida, portanto, se o seu documento original estiver em um disco criptografado ou protegido de outra forma, observe que seu conteúdo não será criptografado no cache. Para proteção limitada, você pode garantir que esse cache não apareça no Spotlight adicionando ~/Library/Application Support/Marked às suas configurações de privacidade no Spotlight.
 

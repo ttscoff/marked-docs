@@ -4,7 +4,7 @@
 
 A Marked olyan böngészőbővítményeket tartalmaz, amelyek segítségével oldalak URL-jeit vagy kiválasztott tartalmat közvetlenül a Marked 3-ba küldhet.
 
-## Telepítés
+## Telepítés [install]
 
 Töltse le és telepítse innen: [https://markedapp.com/extensions](https://markedapp.com/extensions):
 
@@ -12,21 +12,21 @@ Töltse le és telepítse innen: [https://markedapp.com/extensions](https://mark
 - Króm / Brave / Edge
 - Safari (csomagban)
 
-## Hogyan működik a bővítmény
+## Hogyan működik a bővítmény [how-the-extension-works]
 
 Ha egy kiterjesztés gombra kattint, megnyílik egy egyéni URL, amelyet a Marked 3 kezel az `x-marked-3://markdownify` séma szerint.
 
-### `Markdownify URL`
+### `Markdownify URL` [markdownify-url]
 
 A kiterjesztés előugró ablakában kattintson a **`Markdownify URL`** elemre az aktuális oldal URL-jének elküldéséhez a Megjelölt oldalra.
 
-### `Markdownify Selection`
+### `Markdownify Selection` [markdownify-selection]
 
 A kiterjesztés előugró ablakában kattintson a **`Markdownify Selection`** elemre, ha kiválasztotta az oldalon.
 
 A Marked megkapja az aktuális kijelölés HTML-kódját, és azt Markdown-ba konvertálja.
 
-### Szakasz kiválasztása (blokkválasztási mód)
+### Szakasz kiválasztása (blokkválasztási mód) [select-section-block-selection-mode]
 
 ![][1]
 

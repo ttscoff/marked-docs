@@ -6,7 +6,7 @@ Style Manager proporciona una interfaz centralizada para gestionar todos sus
 Estilos integrados y personalizados. Le da control total sobre qué
 Los estilos aparecen en los menús, su orden, atajos de teclado y más.
 
-## Abrir el Administrador de estilos
+## Abrir el Administrador de estilos [opening-the-style-manager]
 
 Para abrir el Administrador de estilos, haga clic en el botón **Administrar estilos...** en el {% prefspane Style %}
 panel, o use {% appmenu Style, Manage Styles (~@$m) %}. También puedes arrastrar archivos CSS directamente a la ventana de preferencias --- Marcado
@@ -17,13 +17,13 @@ usted.
 
   [img-style-manager]: imágenes/capturas de pantalla/style-manager.jpg @2x width=1009px height=517px class=center
 
-## La tabla de estilos
+## La tabla de estilos [the-style-table]
 
 El Administrador de estilos muestra todos sus estilos en una tabla ordenable que combina
 estilos integrados y personalizados sin problemas. Cada fila de la tabla contiene varios
 columnas:
 
-### Casilla de verificación habilitada
+### Casilla de verificación habilitada [enabled-checkbox]
 
 La casilla de verificación **Activada** agrega o elimina inmediatamente el estilo del Estilo
 menú, ventana emergente Estilo predeterminado y métodos abreviados de teclado. Cuando desactivas un estilo,
@@ -32,7 +32,7 @@ está oculto en los menús, pero permanece en el Administrador de estilos para v
 Si desactiva el estilo actualmente activo, Marcado cambia automáticamente al estilo
 siguiente estilo habilitado disponible.
 
-### Columna de nombre
+### Columna de nombre [name-column]
 
 La columna **Nombre** muestra el nombre para mostrar del estilo. Puedes editar este nombre
 en línea haciendo clic directamente en él; los cambios persisten y se propagan a cada menú
@@ -42,7 +42,7 @@ Es posible que desee un nombre más descriptivo que el nombre del archivo.
 Los estilos integrados tienen nombres bloqueados que no se pueden editar. Para personalizar un
 nombre del estilo incorporado, duplíquelo primero para crear una copia editable.
 
-### Columna de origen
+### Columna de origen [source-column]
 
 La columna **Fuente** indica de dónde proviene el estilo:
 
@@ -52,7 +52,7 @@ La columna **Fuente** indica de dónde proviene el estilo:
 - **Duplicado**: Estilos creados duplicando otro Estilo (ya sea integrado
   o personalizado)
 
-### Columna de acciones
+### Columna de acciones [actions-column]
 
 Cada fila incluye una pila de **Acciones** con botones para administrar ese estilo:
 
@@ -75,7 +75,7 @@ discapacitado.
 estado predeterminado si ha sido modificado. Este botón sólo es visible para
 estilos incorporados.
 
-## Reordenar estilos
+## Reordenar estilos [reordering-styles]
 
 Las filas se pueden reordenar arrastrando y soltando. Simplemente arrastre una fila de estilo a una nueva
 posición en la tabla. El orden que establezca aquí conduce:
@@ -87,17 +87,17 @@ posición en la tabla. El orden que establezca aquí conduce:
 Arrastre los estilos a las ranuras de atajos de teclado que desee
 ocupar.
 
-## Agregar estilos
+## Agregar estilos [adding-styles]
 
 Hay varias formas de agregar nuevos estilos personalizados al Administrador de estilos:
 
-### Agregar botón
+### Agregar botón [add-button]
 
 Haga clic en el botón **Agregar nuevo estilo** para abrir un selector de archivos.
 donde puede seleccionar uno o más archivos CSS para importar. Los archivos seleccionados serán
 agregado al Administrador de estilos y habilitado de forma predeterminada.
 
-### Arrastrar y soltar
+### Arrastrar y soltar [drag-and-drop]
 
 Puede arrastrar archivos CSS directamente a la ventana del Administrador de estilos. cuando arrastras
 archivos sobre la ventana, aparecerá una superposición que muestra "Agregar un estilo personalizado" (o
@@ -110,7 +110,7 @@ tanto importar como posicionar en una sola acción.
 Arrastrar archivos CSS al panel de preferencias {% prefspane Style %} también
 importarlos y abrir el Administrador de estilos automáticamente.
 
-## Vista previa en vivo
+## Vista previa en vivo [live-preview]
 
 El panel derecho del Administrador de estilos muestra una vista previa en vivo del estilo seleccionado.
 estilo. La vista previa muestra un documento de muestra completo con títulos,
@@ -121,33 +121,33 @@ La vista previa utiliza el archivo CSS directamente desde el disco, por lo que c
 El editor externo se actualizará instantáneamente en la vista previa. Esto hace que sea fácil
 vea sus cambios en tiempo real a medida que desarrolla estilos personalizados.
 
-### Vista previa del modo oscuro
+### Vista previa del modo oscuro [dark-mode-preview]
 
 Una casilla de verificación encima de la vista previa le permite alternar entre el modo claro y oscuro
 vistas previas. Esto es útil para probar cómo se ven los estilos en ambos modos de apariencia,
 especialmente si está creando estilos que se adaptan a la apariencia del sistema.
 
-## Atajos de teclado
+## Atajos de teclado [keyboard-shortcuts]
 
 El Administrador de estilos muestra una leyenda debajo de la tabla que muestra cómo funciona el teclado.
 Se asignan atajos. Los primeros nueve estilos habilitados reciben {% kbd cmd 1 %} hasta
 {% kbd cmd 9 %} ({% kbd cmd 0 %} está reservado), los diez siguientes reciben {% kbd opt cmd 1 %} hasta {% kbd opt cmd 0 %}, y así sucesivamente. Puede ver los atajos de teclado asignados en el menú emergente Estilo en cualquier Vista previa.
 
-## Filtrado de estilos deshabilitados
+## Filtrado de estilos deshabilitados [filtering-disabled-styles]
 
 Una casilla de verificación en la parte inferior de la ventana le permite mostrar u ocultar personas deshabilitadas.
 estilos. Cuando no está marcada, sólo se muestran los estilos habilitados, lo que facilita la
 Concéntrate y reordena tus estilos activos. Cuando está marcado, todos los estilos (habilitados y deshabilitados)
 se muestran, lo que le permite administrar su colección de estilos completa.
 
-## Restaurar estilos integrados
+## Restaurar estilos integrados [restoring-builtin-styles]
 
 El botón **Restaurar todos los estilos integrados** en la parte inferior de la ventana
 restaura todos los estilos integrados a su estado predeterminado. Esto es útil si tienes
 estilos integrados deshabilitados y desea volver a habilitarlos, o si desea restablecerlos
 cualquier modificación realizada en los estilos integrados.
 
-## Consejos
+## Consejos [tips]
 
 - **Organizar por frecuencia**: arrastre los estilos más utilizados hacia la parte superior para mostrar
   ellos los atajos de teclado más fáciles ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)

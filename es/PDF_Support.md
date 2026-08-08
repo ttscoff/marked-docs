@@ -8,7 +8,7 @@ La importación de PDF funciona mejor en **PDF más pequeños basados ​​en t
 
 Marked sigue siendo una herramienta de **vista previa**: no editas el PDF dentro de Marked. Utilice {% kbd cmd E %} para abrir el PDF en **Vista previa** (o el valor predeterminado de su sistema) y Marcado se actualiza cuando el archivo cambia en el disco.
 
-## Cómo funciona la conversión
+## Cómo funciona la conversión [how-conversion-works]
 
 La importación de PDF utiliza la biblioteca [pdf22md](https://github.com/twardoch/pdf22md) (Licencia MIT; consulte [Licencia pdf22md](PDF22MD_License.html)). La conversión ejecutada marcada en segundo plano mientras muestra un breve aviso de **Conversión**.
 
@@ -21,17 +21,17 @@ El convertidor:
 
 Marked **no** habilita la limpieza de IA opcional de pdf22md en la aplicación. La calidad de la conversión depende de cómo se creó el PDF.
 
-## Caché y vista previa en vivo
+## Caché y vista previa en vivo [cache-and-live-preview]
 
 Markdown y las imágenes convertidas se almacenan en la caché de Watchers de Marked (`~/Library/Caches/Marked/Watchers/PDF/`). La ruta del PDF original sigue siendo la fuente del documento para visualizar archivos.
 
 Cuando guarda o reemplaza el PDF en otra aplicación, Marked detecta el cambio y lo vuelve a convertir automáticamente (el mismo comportamiento de recarga fusionada que [RTF](RTF_Support.html) y [Scrivener](Scrivener_Support.html)).
 
-## Exportación y otras funciones
+## Exportación y otras funciones [export-and-other-features]
 
 Después de la conversión, Marked trata el documento como otras fuentes compiladas: la exportación, las estadísticas y la mayoría de las funciones de vista previa se ejecutan en función del Markdown generado. Las rutas de las imágenes en la vista previa apuntan a los recursos almacenados en caché hasta que los exporte.
 
-## Limitaciones
+## Limitaciones [limitations]
 
 Establezca sus expectativas en consecuencia: PDF-to-Markdown es útil, no perfecto.
 
@@ -56,9 +56,9 @@ Establezca sus expectativas en consecuencia: PDF-to-Markdown es útil, no perfec
 - **Los archivos PDF protegidos con contraseña** no son compatibles con la versión 1
 - **Las imágenes PDF incrustadas en Markdown** (`![]()` que hacen referencia a un archivo `.pdf`) no están relacionadas con la importación de PDF: solo abrir un `.pdf` como documento principal activa la conversión
 
-Para documentos de Word, utilice [Trabajar con DOCX](Working_with_DOCX.html). Para texto enriquecido, utilice [Soporte RTF y RTFD](RTF_Support.html).
+Para documentos de Word, utilice [Trabajar con DOCX](Working_With_DOCX.html). Para texto enriquecido, utilice [Soporte RTF y RTFD](RTF_Support.html).
 
-## Temas relacionados
+## Temas relacionados [related-topics]
 
 - [Abrir archivos](Opening_Files.html): arrastrar y soltar, Abrir recientes, portapapeles
 - [Exportar](Exporting.html): guarda HTML, PDF, DOCX y Markdown desde la vista previa

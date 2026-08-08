@@ -4,9 +4,9 @@
 
 A versão Mac App Store (MAS) do Marked é executada em um ambiente de área restrita que restringe certas operações por motivos de segurança. Isso pode afetar alguns recursos, principalmente ao usar processadores personalizados com binários ou scripts externos.
 
-## Restrições comuns de sandbox
+## Restrições comuns de sandbox [common-sandbox-restrictions]
 
-### Executar binários de comando
+### Executar binários de comando [run-command-binaries]
 
 O problema mais comum que os usuários encontram é que os binários externos não podem ser executados diretamente na versão MAS. Isso afeta:
 
@@ -14,9 +14,9 @@ O problema mais comum que os usuários encontram é que os binários externos n�
 - **Scripts personalizados** que dependem de binários externos
 - **Utilitários do sistema** que não podem ser acessados no sandbox
 
-### Soluções alternativas
+### Soluções alternativas [workarounds]
 
-#### Copiando binários para o pacote de aplicativos
+#### Copiando binários para o pacote de aplicativos [copying-binaries-to-the-app-bundle]
 
 Se precisar usar processadores externos como Pandoc na versão MAS, você pode copiar o binário no pacote de aplicativos:
 
@@ -33,7 +33,7 @@ Se precisar usar processadores externos como Pandoc na versão MAS, você pode c
 
 **Importante**: você precisará copiar novamente os binários após cada atualização do aplicativo, pois as atualizações substituem todo o pacote.
 
-#### Usando scripts incorporados
+#### Usando scripts incorporados [using-embedded-scripts]
 
 Em vez de executar comandos externos, você pode usar a ação **Run Embedded Script** em Regras Personalizadas. Isso permite que você escreva scripts diretamente no editor de código do Marked, que pode acessar interpretadores de sistema disponíveis na sandbox.
 
@@ -41,7 +41,7 @@ Em vez de executar comandos externos, você pode usar a ação **Run Embedded Sc
 
 Se você precisa usar binários externos com frequência ou encontrar outras limitações de sandbox, você pode querer mudar para a versão sem sandbox do Marked. A versão sem sandbox não tem tais restrições e pode executar qualquer ferramenta ou script de linha de comando que você tenha instalado.
 
-### Para usuários assinantes
+### Para usuários assinantes [for-subscription-users]
 
 Se você tiver uma assinatura ativa da Mac App Store:
 
@@ -51,7 +51,7 @@ Se você tiver uma assinatura ativa da Mac App Store:
 
 A versão Paddle oferece os mesmos recursos sem restrições de sandbox.
 
-### Para detentores de desbloqueio permanente
+### Para detentores de desbloqueio permanente [for-permanent-unlock-holders]
 
 Se você adquiriu um desbloqueio permanente ou uma licença vitalícia através da Mac App Store, envie um e-mail para desenvolvedor](mailto:marked@brettterpstra.com?subject=Marked%20License%20Crossgrade&body=Por favor%20include%20your%20UUID%20%28Help-%3ECopy%20UUID%20in%20Marked%29%20in%20this%20email%20for%20receipt%20verification.) para solicite uma licença vitalícia gratuita do Paddle.
 
@@ -62,10 +62,10 @@ Se você adquiriu um desbloqueio permanente ou uma licença vitalícia através 
 
 A Mac App Store não fornece seu endereço de e-mail aos desenvolvedores, por isso verificamos as compras usando IDs de transação ou identificadores de usuário armazenados em nosso servidor. A inclusão dessas informações nos ajudará a verificar rapidamente sua compra e gerar sua licença Paddle gratuita.
 
-### Versão do Setapp
+### Versão do Setapp [setapp-version]
 
 Como alternativa, se você tiver uma assinatura do Setapp, poderá usar a versão Setapp do Marked, que também não está em sandbox e tem acesso total aos recursos do sistema.
 
-## Recursos Adicionais
+## Recursos Adicionais [additional-resources]
 
 Para obter mais informações sobre Processadores Personalizados e seus recursos, consulte [Processador Personalizado](Custom_Processor.html).

@@ -4,7 +4,7 @@
 
 Marked permite varias sintaxis diferentes para incluir un archivo dentro de otro.
 
-## Sintaxis marcada
+## Sintaxis marcada [marked-syntax]
 
 Puede incluir archivos externos en un único documento de vista previa utilizando la sintaxis especial `<<[path/file]` al principio de una línea. La línea debe tener líneas en blanco encima y debajo, y se supone que la ruta es relativa al documento principal a menos que comience con una barra (`/`) o una tilde (`~`). Se pueden utilizar barra diagonal (directorio raíz) y tilde (directorio de inicio) para definir rutas absolutas a los archivos. No se necesita ninguna ruta si los archivos externos están en la misma carpeta que el documento principal, simplemente coloque el nombre del archivo (distingue entre mayúsculas y minúsculas e incluye la extensión) entre corchetes.
 
@@ -46,7 +46,7 @@ La exportación HTML final de un documento que contiene inclusiones tendrá come
 
 **Nota:** cuantos más archivos se incluyan en un documento, más lento será el tiempo de compilación general de la vista previa. Marked intenta optimizar y almacenar en caché el proceso, pero espera algunos retrasos en la renderización a medida que aumenta el tamaño del documento.
 
-## Sintaxis de transclusión de MultiMarkdown
+## Sintaxis de transclusión de MultiMarkdown [multimarkdown-transclude-syntax]
 
 También puede utilizar la sintaxis `{{filename}}` basada en la especificación MultiMarkdown más nueva. Marked reconocerá `Transclude Base: path` en los metadatos MMD y los utilizará como base para la transclusión de archivos.
 
@@ -54,7 +54,7 @@ Transclude Base solo se reconocerá en el documento principal, no en documentos 
 
 La sintaxis de código delimitado que proporciona MultiMarkdown para incluir archivos sin procesamiento no funcionará en Marked. Para hacer esto, utilice la sintaxis `<<(file)` (bloque de código) o `<<{file}` (sin formato).
 
-## Sintaxis del bloque IA Writer
+## Sintaxis del bloque IA Writer [ia-writer-block-syntax]
 
 Marked 2.5.11+ admite la sintaxis de IA Writer [Bloque de contenido][ia]. Esta es una referencia que comienza con una barra diagonal (`/`) en su propia línea. Puede ser un ejemplo de código, una imagen, un archivo de rebajas o un archivo CSV. Todo se manejará adecuadamente según la extensión del archivo incluido y los CSV se [convertirán en tablas Markdown][csv] si es posible.
 
@@ -75,7 +75,7 @@ Ruta absoluta a la carpeta Documentos:
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
-## Cómo se convierten el esquema, el mapa mental y las inclusiones CSV
+## Cómo se convierten el esquema, el mapa mental y las inclusiones CSV [how-outline-mind-map-and-csv-includes-are-converted]
 
 Cuando incluye ciertos tipos de archivos con sintaxis de bloque `<<[path]` o IA Writer, Marked los convierte en lugar de insertar contenidos de archivos sin formato. El comportamiento de los esquemas y mapas mentales depende de la extensión del archivo y de sus preferencias [Configuración: Aplicaciones → Mapas mentales/Contornos][mapas mentales]. Los archivos CSV/TSV siempre se convierten a tablas Markdown (consulte [Creación de tablas usando archivos CSV][csv]).
 
@@ -95,11 +95,11 @@ Cada formato de esquema/mapa mental tiene su propia casilla de verificación en 
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
-## Formatos de libros
+## Formatos de libros [book-formats]
 
 Marked también admite archivos de índice en formatos como [Leanpub][lp], [GitBook][gb] y mmd\_merge (MultiMarkdown). Los archivos incluidos en los índices de formato de libro serán observados en busca de cambios y el resultado es una vista previa completa de su documento compilado, tal como en el ejemplo "Index.md" anterior.
 
-### Leanpub
+### Leanpub [leanpub]
 
 Si habilita la opción en {% prefspane Apps %} en compatibilidad con Leanpub/GitBook, los archivos denominados "Book.txt" se tratarán automáticamente como archivos de índice de Leanpub. También se reconoce el antiguo formato "frontmatter:".
 
@@ -117,7 +117,7 @@ Ejemplo de libro Leanpub.txt:
     Insertar imágenes.txt
 
 
-### mmd_merge
+### mmd_merge [mmdmerge]
 
 Para mmd\_merge, Marked requiere que la primera línea sea "#merge" (un activador marcado especial para mmd\_merge, tratado como un comentario e ignorado por otros procesadores).
 
@@ -136,7 +136,7 @@ Ejemplo de mmd_merge:
     Preguntas frecuentes.md
     Agradecimientos.md
 
-### Libro de Git
+### Libro de Git [gitbook]
 
 El formato de GitBook utiliza una lista Markdown para crear la estructura y la tabla de contenido. Si la compatibilidad con GitBook está habilitada en {% prefspane Apps %} en compatibilidad con Leanpub/GitBook, se leerá un archivo llamado SUMMARY.md y se convertirá automáticamente al formato mmd_merge, lo que permitirá una vista previa completa de su documento GitBook.
 
@@ -161,7 +161,7 @@ GitBook permite el uso de anclajes en la tabla de contenido SUMMARY.md, pero Mar
 [mmdm]: http://fletcher.github.io/peg-multimarkdown/#howdoisplitamultimarkdowndocumentintoseveralparts
 [gb]: https://www.gitbook.com/
 
-## Funciones de vista previa de documentos de varios archivos
+## Funciones de vista previa de documentos de varios archivos [multi-file-document-preview-features]
 
 ![Límites de archivos incluidos][2]
 

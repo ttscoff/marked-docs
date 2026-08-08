@@ -2,7 +2,7 @@
 
 Houd het bij terwijl u schrijft.
 
-## Aantal woorden en documentstatistieken
+## Aantal woorden en documentstatistieken [word-count-and-document-statistics]
 
 ![][1]
 
@@ -12,7 +12,7 @@ Het aantal woorden bevindt zich in de onderste statusbalk en kan worden in- en u
 
 Als tekst is geselecteerd, wordt het aantal woorden weergegeven en wordt de pop-up met alinea's/zinnen/tekens bijgewerkt met informatie die alleen voor de selectie geldt.
 
-## Aantal woorden voor selectie
+## Aantal woorden voor selectie [word-count-for-selection]
 
 ![Word count popup on text selection][2]
 
@@ -24,7 +24,7 @@ Als "Toon aantal woorden voor selectie" is ingeschakeld in {% prefspane Preview 
 
 De zoomfunctie is handig om snel grotere stukken tekst te selecteren en te tellen. Typ {% kbd z %} om uit te zoomen en uw selectie te maken.
 
-## Leesbaarheidsstatistieken
+## Leesbaarheidsstatistieken [readability-statistics]
 
 ![Readability stats bar][3]
 
@@ -32,7 +32,7 @@ De zoomfunctie is handig om snel grotere stukken tekst te selecteren en te telle
 
 Aanvullende statistieken van Flesch/Kincaid en de Fog Index zijn beschikbaar met {% kbd opt shift cmd S %}.
 
-### Leesbaarheidsinformatie
+### Leesbaarheidsinformatie [readability-information]
 
 **Flesch-leesgemak:** hogere scores duiden op materiaal dat gemakkelijker te lezen is; lagere cijfers markeren passages die moeilijker te lezen zijn.
 
@@ -44,7 +44,7 @@ Aanvullende statistieken van Flesch/Kincaid en de Fog Index zijn beschikbaar met
 
 **Gunning fog index:** meet de leesbaarheid van Engels schrift. De index schat het aantal jaren formeel onderwijs dat nodig is om de tekst bij een eerste lezing te begrijpen. Een mistindex van 12 vereist het leesniveau van een Amerikaanse middelbare scholier (ongeveer 18 jaar oud).
 
-## Geavanceerde statistieken
+## Geavanceerde statistieken [advanced-statistics]
 
 ![Advanced Statistics popup][adv]
 
@@ -52,7 +52,7 @@ Aanvullende statistieken van Flesch/Kincaid en de Fog Index zijn beschikbaar met
 
 Als u Geavanceerde statistieken selecteert in het tandwielmenu ---- of op {% kbd cmd I %} --- drukt, verschijnt er een paneel met meer geavanceerde documentstatistieken, waaronder de gemiddelde woord- en zinlengte en de gemiddelde woordcomplexiteit.
 
-### Zwevende geavanceerde statistieken
+### Zwevende geavanceerde statistieken [floating-advanced-statistics]
 
 ![Floating Info Window][floating]
 
@@ -60,7 +60,7 @@ Als u Geavanceerde statistieken selecteert in het tandwielmenu ---- of op {% kbd
 
 Als u op {% kbd shift cmd I %} drukt, wordt een zwevend paneel geopend met alle gedetailleerde statistieken en leesbaarheidsinformatie. Dit paneel kan op de voorgrond blijven wanneer u overschakelt naar uw editor, zodat u uw statistieken kunt zien bijwerken elke keer dat u opslaat, ongeacht of het voorbeeld zichtbaar is of niet. Als u op het pictogram `<` drukt, wordt het bijbehorende Marked voorbeeld naar de voorgrond teruggezet. Als u de optie ingedrukt houdt en op dezelfde knop klikt, wordt het bestand Markdown geopend in uw standaardteksteditor (ingesteld in {% prefspane Apps %}).
 
-### Woorddoelen
+### Woorddoelen [word-targets]
 
 Als u tijdens het schrijven een specifiek doel voor het aantal woorden hebt, kunt u een metagegevenssleutel "target:" bovenaan uw document toevoegen. Marked zal uw voortgang volgen, waarbij een voltooiingsindicator wordt weergegeven in het paneel Gedetailleerde statistieken ({% kbd cmd I %}) en in de zwevende statistieken ({% kbd shift cmd I %}).
 
@@ -69,7 +69,7 @@ Als u tijdens het schrijven een specifiek doel voor het aantal woorden hebt, kun
 [targetwordcount]: images/wordtargets.jpg @2x width=740px height=191px class=center
 
 
-## Visualiseer woordherhaling
+## Visualiseer woordherhaling [visualizewordrepetition]
 
 Als u Woordherhaling visualiseren selecteert in het tandwielmenu (of door op {% kbd ctrl cmd W %} te drukken), schakelt u over naar een speciale weergave waarin niet-tekstuele elementen worden verwijderd en woorden worden gemarkeerd die in uw document worden herhaald. Herhaalde woorden worden lichtroze gemarkeerd, en als u over een gemarkeerd woord beweegt, worden de overeenkomende woorden in het hele document helderder. Als u op een gemarkeerd woord klikt, wordt de achtergrond donkerder en wordt de markering 'vastgezet' voor verdere beoordeling.
 

@@ -4,7 +4,7 @@
 
 標記為您提供選項。
 
-## 即時預覽工作流程
+## 即時預覽工作流程 [live-preview-workflow]
 
 1. 將 Markdown 檔案拖曳到 Marked 上（或使用 {% appmenu File, Open... ({{cmd}}O) %}）。
 2. 在您喜歡的編輯器中編輯文件。
@@ -12,11 +12,11 @@
 
 請參閱 [Mac 上的即時 Markdown 預覽](Live_Markdown_Preview_on_Mac.html) 以了解 Vault 觀看、串流預覽和特定於編輯器的指南。
 
-## 拖曳至 Dock 圖標
+## 拖曳至 Dock 圖標 [drag-to-dock-icon]
 
 在已編輯的文件上使用「標記」的最簡單方法是將文件圖示從編輯器的工具列或從 Finder 拖曳到 Dock 中的「標記」圖示。 Marked 將立即開始追蹤放置在其上的任何 Markdown 文件（或文字檔案）。您也可以直接從 Finder 拖曳檔案。
 
-## 使用選單
+## 使用選單 [using-the-menu]
 
 ![][2]
 
@@ -28,15 +28,15 @@ Marked 也可以直接開啟 **`.rtf` 和 `.rtfd`** 檔案（例如從 Pages 或
 
 標記可以以相同的方式開啟 **`.pdf`** 檔案：轉換在背景運行，完成後預覽會更新。這最適合較短的、基於文字的 PDF；大型手冊和掃描文件速度較慢且不太準確。有關詳細資訊和限制，請參閱 [PDF 支援](PDF_Support.html)。
 
-## 從剪貼簿
+## 從剪貼簿 [from-the-clipboard]
 
 如果您的剪貼簿中有相容的（例如 Markdown）文本，您可以透過選擇 {% appmenu File, New, Clipboard Preview ({{shift}}{{cmd}}V) %} 來開啟即時預覽。如果您從 Web 瀏覽器或其他將 HTML 或 RTF 放在剪貼簿上的應用程式複製了選定內容，Marked 會將其轉換為 Markdown 以供預覽。當您從 TextEdit 或 Pages 等應用程式貼上 RTF 時，較大的字體大小將粗略地轉換為標題層級（例如，非常大的文字變為 1 級標題，較小的大文字變為 2 級標題，依此類推）。您可以一次開啟多個剪貼簿預覽，並且可以透過選擇 {% appmenu File, Save Transient Preview %} 將它們儲存到新檔案中。
 
-## 建立一個新文檔
+## 建立一個新文檔 [creating-a-new-document]
 
 標記允許您使用 {% appmenu File, New ({{cmd}}N) %} 指令建立一個新的空文本檔。它會立即詢問您儲存檔案的位置，您可以在「文字編輯器」按鈕旁邊的{% prefspane Apps %}中啟用「自動編輯新檔案」選項，以在預設編輯器中自動開啟新建立的檔案。
 
-## 開啟最近的
+## 開啟最近的 [open-recent]
 
 ![][3]
 
@@ -44,7 +44,7 @@ Marked 也可以直接開啟 **`.rtf` 和 `.rtfd`** 檔案（例如從 Pages 或
 
 Marked 也會追蹤最近的文檔。 {% appmenu File, Open Recent %} 選單選項將向您顯示已開啟的文件，並讓您跳回它們。您可以快速重新開啟使用{% kbd shift cmd R %}查看的最後一個檔案。使用{% kbd shift cmd P %}或[快速操作](Quick_Actions.html)從鍵盤執行選單和預覽指令。還有很多其他鍵盤快捷鍵。如果您想了解它們，可以在[鍵盤]下找到圖表快捷方式](Keyboard_Shortcuts.html)。
 
-## 目前檔案的新視圖 [多視圖]
+## 目前檔案的新視圖 [多視圖] [multiview]
 
 使用 {% appmenu File, New View into Current File %}（{% kbd
 shift cmd N %}，也在預覽上下文選單中）打開
@@ -70,6 +70,6 @@ MultiMarkdown 有您常用的風格和處理器。打開一個
 剪貼簿預覽、串流預覽或基於資料夾的預覽
 不映射到磁碟上的單一檔案的項目。
 
-## 快速開啟 ##
+## 快速開啟 ## [quick-open]
 
 您可以在開啟的文件之間快速切換、開啟最近使用的文件或使用[快速開啟面板](Quick_Open.html)（{% kbd cmd shift o %}）開啟檔案->開啟對話方塊。

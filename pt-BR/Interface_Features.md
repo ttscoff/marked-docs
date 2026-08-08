@@ -4,7 +4,7 @@
 
 Flexibilidade é fundamental.
 
-## Menu de engrenagem
+## Menu de engrenagem [gear-menu]
 
 ![][4]
 
@@ -12,7 +12,7 @@ Flexibilidade é fundamental.
 
 O menu Gear oferece a maioria dos recursos encontrados na barra de menus, além de algumas funções específicas de visualização. Basta clicar na engrenagem no canto inferior direito da janela para acessar essas funções.
 
-## Mantenha-se no topo
+## Mantenha-se no topo [keep-on-top]
 
 ![][5]
 
@@ -22,11 +22,11 @@ O ícone de cadeado no canto inferior esquerdo trará a janela de visualização
 
 Este recurso também pode ser alternado com {% kbd shift-opt-cmd-f %}.
 
-## Padrões de nível de janela
+## Padrões de nível de janela [window-level-defaults]
 
 No {% prefspane General %} você pode usar "Manter novas janelas no topo" para definir novas janelas para sempre permanecerem acima de outras janelas e/ou definir janelas para subirem ao topo quando o documento associado for atualizado. As janelas configuradas para serem atualizadas não "roubarão o foco" do seu editor, elas apenas ficarão visíveis sem se tornarem ativas.
 
-## Ver fonte
+## Ver fonte [view-source]
 
 ![][6]
 
@@ -34,7 +34,7 @@ No {% prefspane General %} você pode usar "Manter novas janelas no topo" para d
 
 Você pode alternar entre visualizações de visualização e código-fonte com o botão no canto superior direito. Esta visualização também pode ser alternada com U.
 
-## Pesquisa
+## Pesquisa [search]
 
 ![][7]
 
@@ -53,7 +53,7 @@ Use o recurso de pesquisa em combinação com os favoritos para salvar os locais
 
 Você pode alternar as caixas de seleção "Palavras inteiras", "Diferencia maiúsculas de minúsculas" e "Regex" usando {% kbd ctrl shift 1 %}, {% kbd 2 %} e {% kbd 3 %}, respectivamente.
 
-### Pesquisa avançada ###
+### Pesquisa avançada ### [advanced-search]
 
 Você pode usar curingas em uma pesquisa não regex. `*` corresponderá a qualquer série de caracteres que não sejam espaços e `?` corresponderá a qualquer caractere único.
 
@@ -63,24 +63,24 @@ Iniciar uma pesquisa com `*` tornará a pesquisa no seletor jQuery. Você pode u
 
 Isso é equivalente a `*h2:contains(Alice)`
 
-## Navegação de documentos (TOC, favoritos, Minimapa)
+## Navegação de documentos (TOC, favoritos, Minimapa) [document-navigation-toc-bookmarks-mini-map]
 
 A página [Navegação no Documento](Document_Navigation.html) cobre o Índice (incluindo a abertura do filtro com {% kbd Space %}), pesquisa rápida com {% kbd f %}, marcadores e o Minimapa.
 
-## Navegação pelo teclado
+## Navegação pelo teclado [keyboardnavigation]
 
 A janela de visualização pode ser navegada rapidamente usando atalhos de teclado. Use {% kbd j %} e {% kbd k %} para mover para cima e para baixo e mantenha pressionada a tecla Shift ({% kbd J %}/{% kbd K %}) para mover mais rápido. {% kbd t %} e {% kbd b %} serão movidos para a parte superior e inferior do documento (assim como {% kbd gg %} e {% kbd G %}, para fãs do Vim). {% kbd u %} e {% kbd d %} moverão meia página para cima e para baixo.
 
-### Salto de cabeçalho
+### Salto de cabeçalho [header-jumping]
 
 Pressionar as teclas vírgula ({% kbd , %}) e ponto final ({% kbd . %}) irá retroceder e avançar em qualquer cabeçalho do documento. Manter pressionada a tecla Shift ({% kbd shift  %}) saltará apenas entre os cabeçalhos de nível 1 e 2.
 
 
-## Tela inteira
+## Tela inteira [full-screen]
 
 O modo de tela inteira pode ser alternado no menu Visualização ou digitando {% kbd ctrl cmd F %}.
 
-## Clicando em links externos
+## Clicando em links externos [clicking-external-links]
 
 ![][10]
 
@@ -90,7 +90,7 @@ Clicar em um link externo na visualização do seu documento irá abri-lo no seu
 
 Veja um [vídeo de visão geral no YouTube](https://www.youtube.com/watch?v=nrt7YZPrnv0&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=1).
 
-## Títulos recolhíveis ##
+## Títulos recolhíveis ## [collapsibleheadlines]
 
 Quando "Recolher seções de títulos" estiver ativado em {% prefspane Preview %}, clicar nos títulos recolherá a seção entre esse título e o próximo título no mesmo nível. As subseções dessa seção ficam ocultas. Opcionalmente, você pode limitar esse comportamento a {% kbd cmd %} cliques.
 
@@ -108,7 +108,7 @@ Você pode recolher/expandir todas as seções de um documento de uma vez com "R
 
 Veja o [vídeo Navegação de documentos no YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2) para obter mais detalhes.
 
-## Indicadores/alternâncias personalizadas do processador ##
+## Indicadores/alternâncias personalizadas do processador ## [custom-processor-indicatorstoggles]
 
 ![][indicadores]
 
@@ -116,21 +116,21 @@ Veja o [vídeo Navegação de documentos no YouTube](https://www.youtube.com/wat
 
 Quando o processador e/ou pré-processador personalizado está ativado, luzes indicadoras aparecem na barra de ferramentas. Eles podem ser usados ​​para ver se o processador está ou não ativado para o documento atual (o indicador será destacado) e clicar neles alternará o uso do pré-processador e do processador personalizados, respectivamente.
 
-## Role para editar
+## Role para editar [scrolltoedit]
 
 O recurso “rolar para editar” no Marked monitora as diferenças entre a atualização mais recente e a última, tentando encontrar o ponto onde você fez as alterações mais recentes. Marcado sempre rastreia isso e uma pequena linha vermelha aparece na visualização para mostrar a localização da primeira alteração detectada. No {% prefspane Preview %}, você pode ativar "Rolar para a primeira edição" e quando uma visualização for atualizada, ela rolará suavemente a visualização para esse local.
 
 Com a opção "Rolar para a primeira edição" desativada, você ainda pode pressionar a tecla "e" a qualquer momento na visualização para ir para o último ponto de edição armazenado.
 
-## Rolagem automática
+## Rolagem automática [autoscroll]
 
 Veja a página dedicada [Autoscroll](Autoscroll.html). Ao usar Autoscroll como teleprompter, [sintaxe especial pode inserir pausas](Special_Syntax.html#pauses).
 
-## Visão geral do zoom
+## Visão geral do zoom [zoom-overview]
 
 Consulte a página [Visão geral do zoom](Zoom_Overview.html) ({% kbd z %} na visualização; também funciona em repetição de palavras com {% kbd ctrl cmd w %}).
 
-## Referência de redução
+## Referência de redução [markdown-reference]
 
 ![][11]
 
@@ -138,6 +138,6 @@ Consulte a página [Visão geral do zoom](Zoom_Overview.html) ({% kbd z %} na vi
 
 Selecione Markdown Reference no menu {% appmenu Help %} para exibir um guia que flutua sobre as outras janelas. Isso é útil para quem ainda está aprendendo a sintaxe do Markdown. Você pode abrir este painel através do teclado usando {% kbd opt cmd M %}.
 
-## Atalhos de teclado globais
+## Atalhos de teclado globais [global-keyboard-shortcuts]
 
 No {% prefspane General %}, você pode designar um atalho de teclado personalizado para ativar Marcado e um para elevar apenas a janela frontal para o topo sem sair do editor.

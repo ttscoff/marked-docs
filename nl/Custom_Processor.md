@@ -6,7 +6,7 @@ transformaties, en de mogelijkheid om uw eigen opdrachten uit te voeren of uit t
 verschillende processors op basis van overeenkomende bestandseigenschappen.
 
 
-## Gebruik van Custom preprocessors/processors
+## Gebruik van Custom preprocessors/processors [using-custom-preprocessorsprocessors]
 
 Om Custom processors toe te voegen, gaat u naar {% prefspane Processor %}
 en klik op **Custom Regels**.
@@ -50,7 +50,7 @@ slepen en neerzetten, zodat u de volgorde kunt beïnvloeden
 regels worden uitgevoerd, de volgorde van de criteria in het predikaat
 editor en de volgorde van de acties die achtereenvolgens moeten worden uitgevoerd.
 
-### Predikaateditor
+### Predikaateditor [predicate-editor]
 
 ![Predicate Editor][predicate]
 
@@ -88,7 +88,7 @@ fungeren als een jokerteken en matchen alle bestanden.
 
 Klik op het plusteken (+) op de predikaatrij om nog een predikaat toe te voegen. Houd Option ingedrukt terwijl u op de + klikt om een ​​Booleaanse groep toe te voegen die kan worden ingesteld op Alles (AND) of Willekeurig (OR).
 
-### Acties
+### Acties [manuallyenabled]
 
 Gebruik de knop *+ Actie* om acties aan de regel toe te voegen.
 
@@ -197,7 +197,7 @@ Voer de Automator-workflow uit
 Ga door
 : Zodra een regel is gekoppeld, stopt de verwerking standaard (afzonderlijk voor preprocessors en processors, zodat één preprocessor en één processor kunnen matchen). Deze actie zorgt ervoor dat het matchen van regels doorgaat nadat de regel zijn acties heeft uitgevoerd.
 
-### Hook bijwerken
+### Hook bijwerken [actions]
 
 Marked voert niet bij elke update een volledige vernieuwing uit, dus als
 je hebt scripts die delen van de DOM weergeven die ze nodig hebben
@@ -221,7 +221,7 @@ Marked.hooks.register('update', functie() {
 Dit zorgt ervoor dat `mermaid.run()` elke keer wordt uitgevoerd
 Marked voert een gedeeltelijke update uit.
 
-### Testregels
+### Testregels [updatehook]
 
 De knop _Testregels_ onder de lijst Regels opent een
 dialoogvenster waarin u elk Markdown-bestand kunt selecteren en dat zal het zijn
@@ -230,7 +230,7 @@ gemarkeerd met een groen tabblad aan de linkerkant. Bij het matchen
 tegen een bestand verschijnt een X-knop die hiervoor kan worden gebruikt
 Wis de test en verwijder de markering van de rijen.
 
-## Slepen en neerzetten
+## Slepen en neerzetten [drag-and-drop]
 
 Het Conductor-venster ondersteunt verbeterd slepen en neerzetten
 mogelijkheden die op intelligente wijze bestandstypen detecteren en
@@ -243,7 +243,7 @@ tegen de regels in of voeg het toe als actie.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Detectie van bestandstype
+### Detectie van bestandstype [file-type-detection]
 
 Het systeem detecteert automatisch verschillende bestandstypen en
 toont de juiste overlay-berichten:
@@ -258,7 +258,7 @@ toont de juiste overlay-berichten:
 - **Onbekende extensies**: standaard ingesteld op "tekst" en wordt weergegeven
   gesplitste overlay
 
-## Custom Processorlogboek
+## Custom Processorlogboek [customprocessorlog]
 
 Als u vreemde resultaten krijgt en wilt zien wat er aan de hand is, kunt u in het Custom Regellogboek zien welke regels in welke volgorde worden uitgevoerd. Gebruik **Help->Toon Custom Regellogboek** om het te openen.
 
@@ -266,7 +266,7 @@ Als u vreemde resultaten krijgt en wilt zien wat er aan de hand is, kunt u in he
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Meerdere opdrachten uitvoeren
+## Meerdere opdrachten uitvoeren [executing-multiple-commands]
 
 Een regel kan meerdere opdrachten achter elkaar bevatten. De output van
 elke opdracht wordt doorgegeven aan de volgende. Als je wilt hebben
@@ -281,7 +281,7 @@ document met Pandoc, geef gewoon het originele bestandspad door
 opdrachtregelopties en echo vervolgens de STDIN-inhoud terug
 naar STDOUT.
 
-## Aangepaste processors dynamisch omzeilen
+## Aangepaste processors dynamisch omzeilen [dynamically-bypassing-custom-processors]
 
 Als een aangepaste processor "NOCUSTOM" retourneert op STDOUT, Marked
 zal de aangepaste processor beëindigen en terugvallen op de
@@ -297,7 +297,7 @@ Als in plaats van `NOCUSTOM` een Custom Processor terugkeert
 alleen dat document. Deze wijziging heeft geen invloed op de standaardwaarde
 processor ingesteld in Instellingen.
 
-## Omgevingsvariabelen
+## Omgevingsvariabelen [environmentvariables]
 
 De actie Commando uitvoeren heeft een omgevingseditor waarin u
 kunt uw eigen omgevingsvariabelen instellen die dat zullen zijn
@@ -334,14 +334,14 @@ beschikbaar voor gebruik in uw shellscripts:
 **MARKED_CSS_PATH**
 : het volledige pad naar het huidige stylesheet
 
-### Omgevingsvariabelen metagegevens
+### Omgevingsvariabelen metagegevens [metadata-environment-variables]
 
 Wanneer de actie Opdracht uitvoeren wordt uitgevoerd in Marked's
 Dirigentsysteem, documentmetagegevens worden automatisch uitgevoerd
 geëxtraheerd en beschikbaar gesteld als omgevingsvariabelen voor de
 opdracht.
 
-#### Hoe het werkt
+#### Hoe het werkt [how-it-works]
 
 1. **Metagegevensextractie**: het systeem extraheert metagegevens uit het document met behulp van de bestaande `extractMetaDataFromString:`-methode, die het volgende ondersteunt:
    - YAML voorwerk (`---` blokken)
@@ -359,7 +359,7 @@ opdracht.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Voorbeeld
+#### Voorbeeld [example]
 
 Gegeven een document met deze metadata:
 
@@ -388,7 +388,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Gebruik in opdrachten
+#### Gebruik in opdrachten [usage-in-commands]
 
 U kunt deze omgevingsvariabelen nu in uw Run gebruiken
 Commandoacties:
@@ -417,7 +417,7 @@ anders
 fi
 ```
 
-#### Ondersteunde acties
+#### Ondersteunde acties [supported-actions]
 
 Deze variabele functionaliteit voor metadata naar omgeving is dat wel
 verkrijgbaar in:
@@ -429,7 +429,7 @@ De metadata worden automatisch uit het document gehaald
 inhoud en beschikbaar gemaakt voor elk commando of script dat
 loopt door deze acties heen.
 
-## In- en uitschakelen
+## In- en uitschakelen [enabling-and-disabling]
 
 De aangepaste processors kunnen voor worden in- en uitgeschakeld
 individuele documenten met behulp van {% kbd opt cmd C %}. Jij
@@ -442,7 +442,7 @@ weergegeven als indicatielampjes (alleen zichtbaar als er een processor
 is ingeschakeld) links van de werkbalkitems onderaan
 rechterwerkbalk van het voorbeeld.
 
-### Preprocessor
+### Preprocessor [preprocessor]
 
 Als u preprocessorregels instelt, worden deze na Marked uitgevoerd
 handelt alle Marked-specifieke taken af, zoals het opnemen van externe taken
@@ -464,7 +464,7 @@ Indien ingeschakeld, kan de aangepaste preprocessor worden ingeschakeld en
 uitgeschakeld voor individuele documenten met behulp van
 {% kbd ctrl opt cmd C %}.
 
-#### Per document Processor/Pre-processor [per document]
+#### Per document Processor/Pre-processor [per document] [perdocument]
 
 Custom Processoren kunnen ook per document worden ingesteld
 met behulp van het metadataformaat voor [Per-Document
@@ -492,7 +492,7 @@ van de uitvoer:
     Custom Preprocessor: waar
     -->
 
-## Met behulp van een alternatieve Markdown processor
+## Met behulp van een alternatieve Markdown processor [using-an-alternative-markdown-processor]
 
 Elke Markdown-smaak die u vanaf de opdrachtregel kunt weergeven, kan dat
 worden gebruikt met Marked. Het moet input kunnen krijgen
@@ -516,7 +516,7 @@ Ik heb de Custom Processorfunctie getest met Pandoc,
 Kramdown, gemarkeerd (korting), MultiMarkdown 6, Maruku, en
 diverse andere smaken.
 
-### Een opmerking over Pandoc en Sandboxing
+### Een opmerking over Pandoc en Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (en enkele andere opdrachtregelprogramma's) kunnen niet worden uitgevoerd
 de Mac App Store-versie (sandbox) van Marked.
@@ -528,7 +528,7 @@ bieden de stappen om te crossgraden. Als u problemen ondervindt
 en dit gebeurt niet, neem dan contact met mij op via de
 [support site](https://support.markedapp.com/questions/add).
 
-### Pandoc als Markdown-processor van het Zwitserse leger
+### Pandoc als Markdown-processor van het Zwitserse leger [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) is veruit het meest flexibel
 Universele tool voor het verwerken van een reeks opmaakformaten. Door
@@ -567,7 +567,7 @@ uitgebreide bibliografie en LaTeX-scenario's. De meeste functies
 u kunt toegang krijgen via de opdrachtregel en zijn alleen beschikbaar
 door het doorgeven van argumenten in Marked.
 
-## Textiel gebruiken
+## Textiel gebruiken [using-textile]
 
 Een paar mensen hebben gevraagd hoe ze textiel kunnen laten werken
 Marked. U dient een Textielconverter bij de hand te hebben
@@ -585,7 +585,7 @@ het een of het ander:
 
 Nu is Marked een textielpreviewer voor jou!
 
-## AsciiDoc gebruiken
+## AsciiDoc gebruiken [using-asciidoc]
 
 1. Installeer [AsciiDoctor](http://asciidoctor.org/).
 2. Schakel een Custom regel in {% prefspane Processor %} in, zodat deze overeenkomt met uw AsciiDoc-bestanden.

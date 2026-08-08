@@ -6,91 +6,91 @@ This page summarizes how the four main processors differ. For full syntax detail
 
 ---
 
-## MultiMarkdown (v5)
+## MultiMarkdown (v5) [multimarkdown-v5]
 
 **Best for:** Long-form prose, academic or technical writing, and anything that relies on **metadata**, **citations**, and **MultiMarkdown-specific** features.
 
 Marked ships with **MultiMarkdown 5** (see the [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-5/) for the upstream documentation).
 
-### Strengths
+### Strengths [strengths]
 
 - **Narrative and reference-heavy documents:** Footnotes, bibliography/citations, and tables are first-class.
 - **Metadata:** Standard MultiMarkdown metadata blocks (`Key: Value` headers) plus **transclusion** and other MMD conveniences described in the v5 guide.
 - **Metadata substitution:** Keys from metadata can be inserted in the body with `[%key]`-style replacement so titles, author strings, and similar values stay in sync with the header.
 - **Tables, images, and cross-references:** Aligned with the features documented for MultiMarkdown 5.
 
-### IDs and manual headings
+### IDs and manual headings [ids-and-manual-headings]
 
 - Heading IDs are **normalized** in a way that tends to produce **lowercase, concatenated** slugs (no spaces — words run together).
 - For **manual header IDs**, MultiMarkdown uses the form: `## Headline Text [my-id]` (the bracketed identifier after the heading text).
 
-### When to pick something else
+### When to pick something else [when-to-pick-something-else]
 
 If you need **GitHub-flavored** task lists and the exact behavior of GitHub’s current parser, prefer **CommonMark (GFM)**. If you need **fine-grained HTML classes/IDs** on arbitrary elements, consider **Kramdown**.
 
 ---
 
-## Kramdown
+## Kramdown [kramdown]
 
 **Best for:** Documents where you want **precise control over HTML output** — custom **classes**, **IDs**, and attributes, so your CSS can target specific blocks and spans.
 
 The [kramdown syntax reference](https://kramdown.gettalong.org/syntax.html) is the authoritative guide.
 
-### Strengths
+### Strengths [strengths-2]
 
 - **Mostly compatible** with MultiMarkdown-style habits for everyday Markdown, while adding its own extensions.
 - **Inline and block attribute lists (IALs):** Attach `{: #id .class key="value"}` to paragraphs, headers, code blocks, links, images, and more --- ideal for Jekyll-style sites and custom stylesheets.
 - **Header IDs:** kramdown normalizes auto-generated header IDs to **lowercase, hyphen-separated** words (e.g. `my-section-title`). For **manual IDs**, use the `{#id}` form after the headline text — e.g. Setext: `My Section {#my-section}` then the underline, or ATX: `# My Section {#my-section}` (see kramdown’s [headers](https://kramdown.gettalong.org/syntax.html#headers) for exact placement and IAL rules).
 - **Definition lists, footnotes, smart typography, math blocks:** Rich feature set for publishing pipelines that need more than "plain" Markdown.
 
-### When to pick something else
+### When to pick something else [when-to-pick-something-else-2]
 
 If you rely on **MultiMarkdown-only** metadata substitution (`[%key]`) or MMD-specific citation workflows, **MultiMarkdown** may be a better fit. For **README and repo docs** that must match GitHub online, **CommonMark (GFM)** is usually closer.
 
 ---
 
-## CommonMark (GitHub Flavored Markdown / cmark-gfm)
+## CommonMark (GitHub Flavored Markdown / cmark-gfm) [commonmark-github-flavored-markdown-cmark-gfm]
 
 **Best for:** **README files**, **issue/PR descriptions**, and **project documentation** that should match **GitHub's current Markdown behavior** as closely as possible.
 
 Marked uses a **GFM**-oriented engine (cmark-gfm). The formal spec is the [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), built on [CommonMark](https://commonmark.org/).
 
-### Strengths
+### Strengths [strengths-3]
 
 - **Closest match to GitHub:** Tables, strikethrough, task list items, fenced code blocks with language tags, and autolinks behave like modern GitHub rendering.
 - **Unambiguous parsing:** CommonMark defines block/inline precedence and list rules precisely — stricter in some edge cases than "classic" Markdown.pl behavior, but **more predictable** once you learn the rules.
 - **Practical for wrapped text:** Paragraph and list rules are designed to behave well with hard-wrapped prose (see the spec's sections on lazy continuations and lists).
 
-### Header IDs
+### Header IDs [header-ids]
 
 Auto-generated heading anchors are typically **lowercase and hyphen-separated**, consistent with common GitHub-style slugging.
 
-### When to pick something else
+### When to pick something else [when-to-pick-something-else-3]
 
 GFM does not replicate **MultiMarkdown metadata**, **kramdown IALs**, or **MMD citation** workflows. For books, theses, or heavy metadata, use **MultiMarkdown** or **Kramdown** as appropriate.
 
 ---
 
-## Discount
+## Discount [discount]
 
 **Best for:** A **fast, C-based** processor that tracks **classic Markdown** and an **older GitHub-flavored** feature set — useful when you want behavior closer to **original Markdown** plus tables, footnotes, and related extensions without the full CommonMark rule book.
 
 Project home: [Discount](https://www.pell.portland.or.us/~orc/Code/discount/).
 
-### Strengths
+### Strengths [strengths-4]
 
 - **PHP Markdown Extra-style tables** and many extensions (footnotes, fenced code when enabled, etc. --- see Marked's [Discount GFM Specification](Discount_GFM_Spec.html) for what Marked enables).
 - **Optional "GitHub" extras** in upstream Discount (e.g. checkbox lists when built with the right flags); Marked documents the combination it ships in the Discount spec page.
 - **SmartyPants-style typography** and other conveniences described on the Discount site (though all included processors actually provide typography features).
 - Philosophically close to **John Gruber's Markdown** plus practical extensions, rather than the full CommonMark test suite.
 
-### When to pick something else
+### When to pick something else [when-to-pick-something-else-4]
 
 For **pixel-perfect parity with today's github.com**, prefer **CommonMark (GFM)**. For **MultiMarkdown metadata and citations**, use **MultiMarkdown**.
 
 ---
 
-## Quick comparison
+## Quick comparison [quick-comparison]
 
 | Concern | MultiMarkdown | Kramdown | CommonMark (GFM) | Discount |
 |--------|---------------|--------|------------------|----------|
@@ -102,7 +102,7 @@ For **pixel-perfect parity with today's github.com**, prefer **CommonMark (GFM)*
 
 ---
 
-## See also
+## See also [see-also]
 
 - [Settings: Processor](Settings_Processor.html) — default processor and related options
 - [Markdown Dingus](Markdown_Dingus.html) — try processors side by side in Marked

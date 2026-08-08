@@ -2,7 +2,7 @@
 
 [Ulysses][ulysses] schreibt nicht für jedes Blatt eine einfache Markdown-Datei. **Exportieren** Sie daher den aktuellen Text, wenn Marked eine Vorschau anzeigen soll.
 
-## Schnellexport nach Marked
+## Schnellexport nach Marked [quick-export-to-marked]
 
 1. Drücken Sie {% kbd cmd 6 %} in Ulysses (oder klicken Sie auf die Schaltfläche „Exportieren“ in der Symbolleiste).
 2. Stellen Sie das Format-Auswahlmenü auf **Text** ein.
@@ -12,7 +12,7 @@
 
 Nach der ersten Einrichtung reicht {% kbd cmd 6 %} gefolgt von **Return** oft aus, um die Marked-Vorschau für das aktive Blatt (oder die von Ihnen ausgewählten Blätter) zu aktualisieren.
 
-## Bilder und Assets
+## Bilder und Assets [images-and-assets]
 
 Marked kann auch **TextBundle**- oder **TextPack**-Exporte von Ulysses lesen. Verwenden Sie dasselbe Exportblatt, wählen Sie jedoch eine Bundle-Option, wenn Sie zusätzlich zum Markdown eingebettete Bilder oder andere Ressourcen benötigen.
 

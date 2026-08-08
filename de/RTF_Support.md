@@ -4,7 +4,7 @@ Marked kann Dokumente im Rich Text Format (`.rtf`) und RTFD (`.rtfd`) direkt öf
 
 Dies funktioniert gut mit Dokumenten aus **Pages**, **TextEdit**, **Word** und anderen Apps, die RTF oder RTFD speichern. Marked ist immer noch ein **Vorschau**-Tool: Sie bearbeiten es in der Originalanwendung und Marked wird beim Speichern aktualisiert.
 
-## So funktioniert die Konvertierung
+## So funktioniert die Konvertierung [how-conversion-works]
 
 Marked konvertiert RTF mithilfe der Systemtext-Engine in HTML und dann in Markdown. Der Konverter:
 
@@ -15,11 +15,11 @@ Marked konvertiert RTF mithilfe der Systemtext-Engine in HTML und dann in Markdo
 
 Die gleiche Konvertierungspipeline wird für die Kompilierung von Scrivener RTF und für RTF-Dateien verwendet, die in anderen Dokumenten enthalten sind.
 
-## Live-Vorschau
+## Live-Vorschau [live-preview]
 
 Wenn Sie die RTF- oder RTFD-Datei in einer anderen Anwendung speichern, erkennt Marked die Änderung und aktualisiert die Vorschau automatisch.
 
-## Bilder
+## Bilder [images]
 
 RTF definiert kein separates „Beschriftungsfeld“ in der Art und Weise, wie Cocoa nach HTML exportiert. Was in Ihrem Layout wie eine Bildunterschrift aussieht, ist normalerweise **normaler Text** im nächsten Absatz, und Marked behält diesen als Fließtext bei.
 
@@ -27,11 +27,11 @@ Eingebettete Bilder und Bilder in RTFD-Bundles (z. B. `pastedGraphic.png` in ein
 
 Marked verwendet den Bilddateinamen **nicht** als Alternativtext oder als MultiMarkdown-Bildunterschrift. Unter dem Bild sollte kein `pastedGraphic.png` angezeigt werden, es sei denn, Sie haben diesen Text in das Dokument eingegeben.
 
-## Export und andere Funktionen
+## Export und andere Funktionen [export-and-other-features]
 
 Nach der Konvertierung behandelt Marked das Dokument wie andere kompilierte Quellen (ähnlich wie [Scrivener](Scrivener_Support.html) und [DOCX](Working_With_DOCX.html)): Export, Statistiken und die meisten Vorschaufunktionen werden mit dem generierten Markdown ausgeführt, das im Watchers-Cache gespeichert ist.
 
-## Einschränkungen
+## Einschränkungen [limitations]
 
 Die Konvertierungsqualität hängt von der Quellanwendung ab. Im Allgemeinen:
 
@@ -42,7 +42,7 @@ Die Konvertierungsqualität hängt von der Quellanwendung ab. Im Allgemeinen:
 
 Für ein einmaliges Einfügen ohne Speichern einer Datei verwenden Sie stattdessen die [Zwischenablage-Vorschau](Opening_Files.html#from-the-clipboard).
 
-## Verwandte Themen
+## Verwandte Themen [related-topics]
 
 - [PDF-Unterstützung](PDF_Support.html) – PDF-Dokumente als Markdown-Quellen öffnen
 - [Arbeiten mit DOCX](Working_With_DOCX.html) – Word-Dokumente mit Änderungsverfolgung und Kommentaren

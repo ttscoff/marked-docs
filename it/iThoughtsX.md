@@ -4,7 +4,7 @@
 
 [iThoughtsX][it] le mappe mentali salvate come pacchetti `.itmz` possono essere visualizzate in anteprima direttamente in Marked una volta abilitata l'**Anteprima Markdown** all'interno di iThoughtsX.
 
-## Abilita il canale di esportazione Markdown
+## Abilita il canale di esportazione Markdown [enable-markdown-export-channel]
 
 Nelle preferenze di iThoughtsX, in **Avanzate**, imposta **Anteprima Markdown** (la dicitura può essere "Markdown" o "Anteprima Markdown" a seconda della versione), quindi scegli se gli argomenti esportati includono:
 

@@ -2,19 +2,19 @@
 
 Die Schnellaktionspalette ist ein durchsuchbarer Befehlsstarter für Marked. Sie sammelt Aktionen aus der Hauptmenüleiste und dem **Zahnradmenü** der Vorschau, dazu reine Vorschaubefehle, die in keinem Menü auftauchen (etwa **Automatisches Scrollen**). Nutzen Sie sie, wenn Sie wissen, was Sie tun möchten, sich aber nicht erinnern, in welchem Menü es steckt.
 
-## Die Schnellaktionspalette öffnen
+## Die Schnellaktionspalette öffnen [opening-the-quick-actions-palette]
 
 Öffnen Sie die Palette mit {% kbd shift cmd P %} oder über {% appmenu Ablage, Schnellaktionen… %}. Das Panel erscheint als schwebendes Fenster über Ihrem aktuellen Dokument.
 
 Mit derselben Tastenkombination oder mit **Escape** schließen Sie die Palette wieder. Ist die Palette bereits offen, schließt auch die Auswahl von **Schnellaktionen…** im Menü sie.
 
-## Den Tastaturkurzbefehl anpassen
+## Den Tastaturkurzbefehl anpassen [customizing-the-shortcut]
 
 Der Standard-Tastaturkurzbefehl ist {% kbd shift cmd P %}. Um ihn zu ändern, öffnen Sie {% prefspane General %} und legen unter **Aktionspalette öffnen** im Abschnitt **Verknüpfungen** eine neue Tastenkombination fest.
 
 Anders als **Marked aktivieren** und **Erstes Fenster öffnen** funktioniert dieser Tastaturkurzbefehl nur, wenn Marked die aktive Anwendung ist. Er aktualisiert den im Menü {% appmenu Ablage, Schnellaktionen… %} angezeigten Tastaturkurzbefehl passend zu Ihrer Einstellung.
 
-## Suchen und filtern
+## Suchen und filtern [search-and-filter]
 
 Tippen Sie oben im Panel in das Suchfeld, um Befehle in Echtzeit zu filtern. Der Abgleich ist unscharf und nachsichtig:
 
@@ -24,7 +24,7 @@ Tippen Sie oben im Panel in das Suchfeld, um Befehle in Echtzeit zu filtern. Der
 
 Jedes Ergebnis zeigt links den Befehlsnamen und rechts in Grau den zugehörigen Tastaturkurzbefehl (sofern vorhanden). Manche Befehle zeigen zusätzlich einen Breadcrumb-Pfad (z. B. `Vorschau › Automatisches Scrollen`), wenn die Aktion aus einem Untermenü oder der Vorschau-Engine stammt.
 
-## Was in der Liste erscheint
+## Was in der Liste erscheint [what-appears-in-the-list]
 
 Die Palette enthält:
 
@@ -34,7 +34,7 @@ Die Palette enthält:
 
 Erscheint derselbe Befehl an mehreren Stellen, zeigt Marked den kürzesten Menüpfad und führt die Angaben zu den Tastaturkurzbefehlen aus den Duplikaten zusammen.
 
-## Tastaturnavigation
+## Tastaturnavigation [keyboard-navigation]
 
 Navigieren Sie in der Schnellaktionspalette vollständig über die Tastatur:
 
@@ -45,7 +45,7 @@ Navigieren Sie in der Schnellaktionspalette vollständig über die Tastatur:
 
 Reine Eingabe (ohne Befehlstaste) filtert das Suchfeld. Einzeltasten nur für die Vorschau wie `s` für Automatisches Scrollen filtern die Liste; drücken Sie **Eingabetaste**, um den ausgewählten Befehl auszuführen.
 
-## Befehle ausführen
+## Befehle ausführen [running-commands]
 
 Wählen Sie einen Menübefehl aus, wird er genauso ausgelöst wie über das Menü – auch dynamische Einträge und Zahnradmenü-Einträge.
 

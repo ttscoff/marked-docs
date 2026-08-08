@@ -4,13 +4,13 @@
 
 Capturando palavreado problemático e destacando frases importantes.
 
-## Destacando palavras-chave
+## Destacando palavras-chave [highlighting-keywords]
 
 O destaque de palavras-chave em Marcado permite capturar frases comuns que você pode querer evitar, encontrar termos alternativos ou apenas destacar para fins gerais. A lista de palavras-chave usadas para corresponder a cada categoria pode ser editada em {% prefspane Proofing %}.
 
 Ative o realce com {% kbd shift cmd H %}, no menu de engrenagem ({% appmenu {{gear}}, Highlight Keywords %}), ou abra a gaveta de palavras-chave usando o ícone de realce no canto inferior esquerdo (próximo ao menu de engrenagem). A gaveta também pode ser aberta com o atalho de teclado {% kbd shift cmd K %}. O realce é ativado automaticamente quando a gaveta é aberta e pode ser ativado e desativado com o interruptor no lado esquerdo da gaveta.
 
-## A gaveta de palavras-chave
+## A gaveta de palavras-chave [the-keyword-drawer]
 
 ![Gaveta de palavras-chave][kwd]
 
@@ -24,7 +24,7 @@ Você pode navegar rapidamente pelos destaques usando o teclado. Digitar `[` e `
 
 Se uma palavra ou frase destacada for clicada, esse tipo se tornará o alvo da navegação e usar `[` ou `]` navegará a partir desse ponto no documento.
 
-## Editando palavras-chave
+## Editando palavras-chave [editing-keywords]
 
 ![Configurações de revisão][preferências de prova]
 
@@ -38,7 +38,7 @@ Expressões regulares podem ser usadas cercando a expressão com barras:
 
 O texto acima corresponderá a quaisquer palavras que terminem em "ly" para destaque. A sintaxe para expressões regulares no destaque de palavras-chave de Marked é [igual ao JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Palavras-chave temporárias
+## Palavras-chave temporárias [temporary-keywords]
 
 Você também pode adicionar palavras-chave temporárias na gaveta de palavras-chave editando o bloco de notas. Assim como nos campos {% prefspane Proofing %}, você adiciona uma palavra-chave ou frase por linha, expressões regulares permitidas (cercadas por barras). Após editar palavras-chave temporárias, clique no botão "Atualizar" (ou pressione {% kbd cmd return  %}) para salvar as alterações e vê-las destacadas em seu documento.
 
@@ -50,7 +50,7 @@ Consulte também o comando ["Visualize Word Repetition"][wordrep] para encontrar
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Voz Passiva
+## Voz Passiva [passive-voice]
 
 Marcado indicará o uso de "voz passiva" no texto em inglês. Conforme [definido pela Wikipedia][passivo]:
 
@@ -61,6 +61,6 @@ A voz passiva não é má, como você pode ler sobre [nas postagens do linguista
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Palavras duplicadas
+## Palavras duplicadas [doubled-words]
 
 Palavras duplas (por exemplo, "o o") são automaticamente destacadas em laranja quando o Destaque de palavras-chave está ativado. Atualmente, isso não é configurável, mas deve ser útil para revisão.

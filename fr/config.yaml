@@ -98,6 +98,25 @@ Sections:
     - extension partage
     - menu partager marked
     - envoyer à marked
+  - title: Marked Quick Look
+    file: Quick_Look
+    description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+    keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+    wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
   - title: Ouverture rapide
     file: Quick_Open
     description: Quick Open offre un accès rapide à vos documents ouverts et fichiers récents. Accédez au panneau Ouverture rapide en utilisant Shift-Cmd-O ou depuis le menu Fichier, Ouverture rapide...
@@ -376,7 +395,7 @@ Sections:
     - équation
     - formule
   - title: Travailler avec DOCX
-    file: Working_with_DOCX
+    file: Working_With_DOCX
     description: "Marked dispose d'une prise en charge étendue pour travailler avec des fichiers Microsoft Word. Le flux de travail typique consiste d'abord à prévisualiser, puis à exporter DOCX : ouvrez ou regardez votre Markdown..."
     keywords:
     - docx
@@ -895,19 +914,6 @@ Sections:
     - exportation AppleScript
     - exportation scriptée
     - exportation automatisée
-  # - title: Shortcuts Integration
-  #   file: Shortcuts_Integration
-  #   keywords:
-  #   - shortcuts
-  #   - siri
-  #   - automation
-  #   - export
-  #   - app intents
-  #   wiki_keywords:
-  #   - shortcuts
-  #   - siri shortcuts
-  #   - app intents
-  #   - shortcut export
   - title: Utilitaire de ligne de commande
     file: Command_Line_Utility
     description: L'outil de ligne de commande mk offre un accès facile aux fonctionnalités de Marked depuis le terminal, permettant l'automatisation du flux de travail et l'intégration avec des scripts shell et...
@@ -1042,15 +1048,6 @@ Sections:
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
 #   pages:
-#   - title: Frequently Asked Questions
-#     file: Frequently_Asked_Questions
-#     keywords:
-#     - faq
-#     - license
-#     - url
-#     - validation
-#     - include
-#     wiki_keywords: [faqs]
 - title: Dépannage
   folder: Dépannage
   pages:

@@ -2,13 +2,13 @@
 
 # <%= @title %>
 
-## O que é Markdown?
+## O que é Markdown? [what-is-markdown]
 
 Markdown é uma linguagem de marcação leve que permite escrever usando um formato de texto simples fácil de ler e escrever e, em seguida, convertê-lo em HTML estruturalmente válido. O principal objetivo de design da sintaxe de formatação do Markdown é torná-la o mais legível possível.
 
-## Sintaxe Básica
+## Sintaxe Básica [basic-syntax]
 
-### Cabeçalhos
+### Cabeçalhos [headers]
 
 Crie cabeçalhos usando símbolos hash (`#`). O número de hashes determina o nível do cabeçalho:
 
@@ -21,7 +21,7 @@ Crie cabeçalhos usando símbolos hash (`#`). O número de hashes determina o n�
 ###### Header 6
 ```
 
-### Ênfase
+### Ênfase [emphasis]
 
 **Texto em negrito** usando asteriscos duplos ou sublinhados duplos:
 
@@ -37,7 +37,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Listas
+### Listas [lists]
 
 **Listas não ordenadas** usando asteriscos, sinais de adição ou hífens:
 
@@ -86,7 +86,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Imagens
+### Imagens [links]
 
 As imagens usam sintaxe semelhante aos links, mas com um ponto de exclamação no início:
 
@@ -97,7 +97,7 @@ As imagens usam sintaxe semelhante aos links, mas com um ponto de exclamação n
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Citações em bloco
+### Citações em bloco [images]
 
 Crie aspas usando o símbolo maior que (`>`) no início de cada linha:
 
@@ -108,7 +108,7 @@ Crie aspas usando o símbolo maior que (`>`) no início de cada linha:
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Código
+### Código [blockquotes]
 
 **Código embutido** usando crases:
 
@@ -124,7 +124,7 @@ Use ⟦4⟧ in your text.
     Multiple lines are supported.
 ```
 
-### Regras horizontais
+### Regras horizontais [code]
 
 Crie regras horizontais usando três ou mais hífens, asteriscos ou sublinhados:
 
@@ -136,7 +136,7 @@ Crie regras horizontais usando três ou mais hífens, asteriscos ou sublinhados:
 ___
 ```
 
-### Quebras de linha
+### Quebras de linha [horizontal-rules]
 
 **Quebras de linha rígidas** finalizando uma linha com dois ou mais espaços:
 
@@ -152,7 +152,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Personagens de fuga
+### Personagens de fuga [line-breaks]
 
 Escape de caracteres especiais usando barras invertidas:
 
@@ -175,7 +175,7 @@ Caracteres comuns que podem ser escapados:
 - `.` período
 - `!` ponto de exclamação
 
-## Melhores práticas
+## Melhores práticas [best-practices]
 
 1. **Use linhas em branco** para separar diferentes elementos para melhor legibilidade
 2. **Seja consistente** com suas escolhas de formatação (por exemplo, use `*` ou `_` para dar ênfase)
@@ -183,9 +183,9 @@ Caracteres comuns que podem ser escapados:
 4. **Teste sua saída** para garantir que ela seja renderizada conforme o esperado
 5. **Use um texto de link significativo** em vez de frases genéricas como "clique aqui"
 
-## Padrões Comuns
+## Padrões Comuns [common-patterns]
 
-### Listas aninhadas
+### Listas aninhadas [nested-lists]
 
 ```markdown
 1. First item
@@ -195,7 +195,7 @@ Caracteres comuns que podem ser escapados:
    - More nested content
 ```
 
-### Listas com parágrafos
+### Listas com parágrafos [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -207,7 +207,7 @@ Caracteres comuns que podem ser escapados:
    This is a paragraph under the second item.
 ```
 
-### Blockquotes com outros elementos
+### Blockquotes com outros elementos [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -218,7 +218,7 @@ Caracteres comuns que podem ser escapados:
 > > Nested blockquotes are also possible.
 ```
 
-## Resumo
+## Resumo [summary]
 
 Markdown fornece uma maneira simples e legível de formatar texto que pode ser facilmente convertido em HTML. A chave é mantê-lo simples e legível enquanto usa os elementos básicos da sintaxe de forma consistente. Com a prática, você descobrirá que o Markdown se torna uma segunda natureza e torna a escrita de conteúdo estruturado muito mais fácil.
 

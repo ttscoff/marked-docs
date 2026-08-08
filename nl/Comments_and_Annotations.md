@@ -2,7 +2,7 @@
 
 Marked heeft een speciale behandeling voor opmerkingen en annotaties.
 
-## Annotatiebronnen
+## Annotatiebronnen [annotation-sources]
 
 Marked herkent opmerkingen afkomstig van:
 
@@ -10,7 +10,7 @@ Marked herkent opmerkingen afkomstig van:
 - CriticMarkup opmerkingen
 - Microsoft Word-opmerkingen en wijzigingen
 
-## De opmerkingenzijbalk
+## De opmerkingenzijbalk [the-comments-sidebar]
 
 Alle annotaties worden weergegeven in een zijbalk en verborgen in het documentvoorbeeld. Om de annotatiezijbalk weer te geven, gebruikt u **Gear Menu -> Proofing -> Show Comments**, of drukt u op {% kbd ctrl cmd C %}.
 

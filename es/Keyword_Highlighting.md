@@ -4,13 +4,13 @@
 
 Captar palabrería problemática y resaltar frases importantes.
 
-## Resaltado de palabras clave
+## Resaltado de palabras clave [highlighting-keywords]
 
 El resaltado de palabras clave en Marked le permite detectar frases comunes que quizás desee evitar, encontrar términos alternativos o simplemente resaltarlas para fines generales. La lista de palabras clave utilizadas para coincidir con cada categoría se puede editar en {% prefspane Proofing %}.
 
 Habilite el resaltado con {% kbd shift cmd H %}, desde el menú de ajustes ({% appmenu {{gear}}, Highlight Keywords %}), o abra el cajón de palabras clave usando el ícono de resaltado en la parte inferior izquierda (cerca del menú de ajustes). El cajón también se puede abrir con el método abreviado de teclado {% kbd shift cmd K %}. El resaltado se habilita automáticamente cuando se abre el cajón y se puede activar y desactivar con el interruptor en el lado izquierdo del cajón.
 
-## El cajón de palabras clave
+## El cajón de palabras clave [the-keyword-drawer]
 
 ![Cajón de palabras clave][kwd]
 
@@ -24,7 +24,7 @@ Puede navegar rápidamente a través de los aspectos destacados usando el teclad
 
 Si se hace clic en una palabra o frase resaltada, ese tipo se convertirá en el destino de navegación y al usar `[` o `]` se navegará desde ese punto en el documento.
 
-## Edición de palabras clave
+## Edición de palabras clave [editing-keywords]
 
 ![Configuración de revisión][preferencias de revisión]
 
@@ -38,7 +38,7 @@ Las expresiones regulares se pueden utilizar rodeando la expresión con barras d
 
 Lo anterior coincidirá con cualquier palabra que termine en "ly" para resaltar. La sintaxis de las expresiones regulares en el resaltado de palabras clave de Marked es [igual que JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Palabras clave temporales
+## Palabras clave temporales [temporary-keywords]
 
 También puede agregar palabras clave temporales en el cajón de palabras clave editando el bloc de notas. Al igual que en los campos {% prefspane Proofing %}, agrega una palabra clave o frase por línea, se permiten expresiones regulares (rodeadas de barras diagonales). Después de editar las palabras clave temporales, asegúrese de hacer clic en el botón "Actualizar" (o presione {% kbd cmd return  %}) para guardar los cambios y verlos resaltados en su documento.
 
@@ -50,7 +50,7 @@ Consulte también el comando ["Visualizar repetición de palabras"][wordrep] par
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Voz pasiva
+## Voz pasiva [passive-voice]
 
 Marcado señalará el uso de "voz pasiva" en el texto en inglés. Como [definido por Wikipedia] [pasivo]:
 
@@ -61,6 +61,6 @@ La voz pasiva no es mala, como puedes leer [en publicaciones del lingüista Geof
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Palabras duplicadas
+## Palabras duplicadas [doubled-words]
 
 Las palabras dobles (por ejemplo, "el el") se resaltan automáticamente en naranja cuando está habilitado el resaltado de palabras clave. Actualmente, esto no es configurable, pero debería resultar útil para la revisión.

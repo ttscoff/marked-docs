@@ -4,11 +4,11 @@
 
 [Markdown Dingus](x-marked-3://dingus?processor=discount) をチェックして、割引プロセッサを試してください。
 
-## 割引 GFM とは何ですか?
+## 割引 GFM とは何ですか? [what-is-discount-gfm]
 
 割引 GFM (GitHub Flavored Markdown) は、GitHub の拡張 Markdown 構文を実装する C ベースの Markdown プロセッサです。これはオリジナルのDiscountライブラリに基づいていますが、テーブル、タスクリスト、取り消し線テキスト、自動URLリンクなどのGitHub固有の機能で強化されています。
 
-## 主な特徴
+## 主な特徴 [key-characteristics]
 
 - **C ベースのパフォーマンス**: 最適なパフォーマンスを実現する高速なネイティブ C 実装
 - **GitHub 互換性**: 互換性を最大限に高めるために GitHub の Markdown 拡張機能を実装します。
@@ -16,9 +16,9 @@
 - **拡張可能**: さまざまな Markdown 拡張機能とカスタム オプションをサポート
 - **HTML5 サポート**: 適切なセマンティック マークアップを使用して最新の HTML5 出力を生成します。
 
-## 標準マークダウンとの主な違い
+## 標準マークダウンとの主な違い [major-differences-from-standard-markdown]
 
-### 1. **GitHub 風味のマークダウン拡張機能**
+### 1. **GitHub 風味のマークダウン拡張機能** [1-github-flavored-markdown-extensions]
 
 **テーブル**
 
@@ -56,7 +56,7 @@
 ~~Mistaken text that should be removed~~
 ```
 
-### 2. **強化されたコード ブロックのサポート**
+### 2. **強化されたコード ブロックのサポート** [2-enhanced-code-block-support]
 
 **フェンスで囲まれたコードブロック**
 
@@ -78,7 +78,7 @@ function hello() {
 - Proper syntax highlighting when supported
 - Fallback to plain text for unsupported languages
 
-### 3. **Automatic URL Linking**
+### 3. **Automatic URL Linking** [3-automatic-url-linking]
 
 **URL Autolinking**
 
@@ -97,7 +97,7 @@ Contact us at user@example.com
 - さまざまな URL 形式とプロトコルを処理します
 - 設定可能なリンク安全オプション
 
-### 4. **高度なリスト機能**
+### 4. **高度なリスト機能** [4-advanced-list-features]
 
 **アルファベット順リスト**
 
@@ -117,7 +117,7 @@ c. Third item
 - 間隔とインデントの改善
 - 混合リストタイプのサポート
 
-### 5. **脚注のサポート**
+### 5. **脚注のサポート** [5-footnotes-support]
 
 **参考文献形式の脚注**
 
@@ -137,7 +137,7 @@ This is a sentence with a footnote[^1].
 - 参照と定義の間のリンク
 - ドキュメント全体に連番を付ける
 
-### 6. **HTML の統合**
+### 6. **HTML の統合** [6-html-integration]
 
 **HTML5 のサポート**
 
@@ -151,7 +151,7 @@ This is a sentence with a footnote[^1].
 - 適切なエスケープとサニタイズ
 - マークダウン構文との統合
 
-### 7. **強化された強調ルール**
+### 7. **強化された強調ルール** [7-enhanced-emphasis-rules]
 
 **リラックスした強調**
 
@@ -170,7 +170,7 @@ This is _emphasized text_ that will be styled.
 - 標準のマークダウン強調ルールとの一貫性
 - `<strong>` タグと `<em>` タグを使用した適切な HTML 出力
 
-### 8. **目次の生成**
+### 8. **目次の生成** [8-table-of-contents-generation]
 
 **自動目次**
 
@@ -184,7 +184,7 @@ This is _emphasized text_ that will be styled.
 - 簡単にナビゲーションできるアンカーリンク
 - 一貫した ID 形式
 
-## 割引 GFM と他のマークダウン フレーバー
+## 割引 GFM と他のマークダウン フレーバー [discount-gfm-vs-other-markdown-flavors]
 
 |特集 |割引 |コモンマーク (GFM) |クラムダウン |マルチマークダウン |標準 |
 | ---------------- | ------------ | ---------- | -------- | ------------- | -------- |
@@ -202,7 +202,7 @@ This is _emphasized text_ that will be styled.
 |オートリンク |はい |いいえ |いいえ |いいえ |いいえ |
 |アルファベット順リスト |はい |いいえ |いいえ |いいえ |いいえ |
 
-## 割引 GFM の主な利点
+## 割引 GFM の主な利点 [key-advantages-of-discount-gfm]
 
 1. **GitHub 互換性**: GitHub で動作する必要があるコンテンツに最適
 2. **パフォーマンス**: 高速な C ベースの実装
@@ -211,7 +211,7 @@ This is _emphasized text_ that will be styled.
 5. **標準への準拠**: GitHub の Markdown 仕様に従います。
 6. **軽量**: リソースの使用量と依存関係を最小限に抑える
 
-## 一般的な使用例
+## 一般的な使用例 [common-use-cases]
 
 **GitHub ドキュメント**
 
@@ -237,7 +237,7 @@ This is _emphasized text_ that will be styled.
 - プロジェクト計画書
 - 会議のメモと議事録
 
-## 構成オプション
+## 構成オプション [configuration-options]
 
 割引 GFM はさまざまな構成オプションをサポートしています。
 
@@ -248,7 +248,7 @@ This is _emphasized text_ that will be styled.
 - **厳密モード**: 強化された解析ルール
 - **スマート見積もり**: 自動見積もり変換
 
-## 実装の詳細
+## 実装の詳細 [implementation-details]
 
 **パーサー オプション**
 
@@ -265,7 +265,7 @@ This is _emphasized text_ that will be styled.
 - アクセス可能なテーブル構造
 - クリーンで有効な HTML 出力
 
-## ベストプラクティス
+## ベストプラクティス [best-practices]
 
 1. **テーブルの使用は控えめに**: テーブルは強力ですが、保守が複雑になる場合があります。
 2. **タスク リストの活用**: プロジェクト管理と文書化に最適
@@ -273,7 +273,7 @@ This is _emphasized text_ that will be styled.
 4. **見出しを含む構造**: 適切な見出し階層を使用して目次をより適切に生成します
 5. **GitHub でテスト**: GitHub のレンダリングとの互換性を確認します
 
-## 標準マークダウンからの移行
+## 標準マークダウンからの移行 [migration-from-standard-markdown]
 
 ほとんどの標準的な Markdown は、変更を加えることなく、Discount GFM で動作します。 GFM 機能を活用するには:
 
@@ -283,7 +283,7 @@ This is _emphasized text_ that will be styled.
 4. **自動リンクの活用**: 単純な URL の手動リンク マークアップを削除します。
 5. **構造見出し**: 目次生成のために適切な見出し階層を確保する
 
-## リソース
+## リソース [resources]
 
 - [GitHub フレーバーマークダウン仕様](https://github.github.com/gfm/)
 - [割引ライブラリドキュメント](https://www.pell.portland.or.us/~orc/Code/discount/)

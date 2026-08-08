@@ -4,13 +4,13 @@ Marked includes an AppleScript dictionary for automating preview, export, and wo
 
 For URL-based automation (shell scripts, `open` commands, and callbacks), see the [URL Handler](URL_Handler.html). AppleScript and the URL handler complement each other: use AppleScript when you need to target a specific document or window, and URLs when a simple `open 'x-marked://...'` call is enough.
 
-## Viewing the dictionary
+## Viewing the dictionary [viewing-the-dictionary]
 
 In **Script Editor**, choose **File → Open Dictionary…** and select Marked. The dictionary lists commands on the **application**, **document**, and **window** objects, plus export commands in the Marked suite.
 
 On macOS you can browse scripting definitions with **Script Editor**.
 
-## Targeting Marked
+## Targeting Marked [targeting-marked]
 
 For the standard install:
 
@@ -20,7 +20,7 @@ tell application "Marked"
 end tell
 ```
 
-## Documents and windows
+## Documents and windows [documents-and-windows]
 
 **Application**
 
@@ -49,7 +49,7 @@ end tell
 
 Prefer `tell document 1` or `tell window 1's document` when exporting a specific preview. Export commands on the application use the key window or current document when no receiver is specified.
 
-### Example: open and read path
+### Example: open and read path [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -58,7 +58,7 @@ tell application "Marked"
 end tell
 ```
 
-### Example: change preview style
+### Example: change preview style [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -72,7 +72,7 @@ Style names match the preview style menu (display name, CSS resource name such a
 
 Use **`get preview style names`** on the application object to list enabled style display names.
 
-### Example: processor and source text
+### Example: processor and source text [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -84,7 +84,7 @@ tell application "Marked"
 end tell
 ```
 
-## Application commands
+## Application commands [application-commands]
 
 These commands apply to the **application** object (not a specific document).
 
@@ -107,7 +107,7 @@ tell application "Marked"
 end tell
 ```
 
-## Preview control
+## Preview control [preview-control]
 
 Available on **document** and **window**. Most of these require a loaded preview WebView.
 
@@ -134,7 +134,7 @@ tell application "Marked"
 end tell
 ```
 
-## Autoscroll and speed read
+## Autoscroll and speed read [autoscroll-and-speed-read]
 
 | Command | Description |
 | --- | --- |
@@ -156,7 +156,7 @@ tell application "Marked"
 end tell
 ```
 
-## Statistics
+## Statistics [statistics]
 
 **`get statistics`** returns a `statistics_record` with numeric values computed from the current Markdown source (not the formatted strings shown in the statistics drawer).
 
@@ -184,7 +184,7 @@ tell application "Marked"
 end tell
 ```
 
-## Table of contents (work in progress)
+## Table of contents (work in progress) [table-of-contents-work-in-progress]
 
 {% note %}
 **WIP — not reliable yet.** The dictionary includes a **`headings`** property and **`headings`** command for reading nested preview headings (`heading_item` records). This automation is **not working correctly** in current builds (empty results, coercion errors, or “no result was returned”). It will be fixed in a later release. Prefer **`scroll to heading`** with a known title or id until then.
@@ -211,7 +211,7 @@ end tell
 
 Use `id` values with **`scroll to heading id "..."`** once headings automation is stable.
 
-## Print with profile
+## Print with profile [print-with-profile]
 
 **`print with profile`** applies an export profile's print settings temporarily, then prints the document (same preference bundle as export profiles from {% prefspane Export %}).
 
@@ -225,7 +225,7 @@ end tell
 
 Profile names are case-sensitive. After printing, Marked restores the previously active export profile.
 
-## Export profiles
+## Export profiles [export-profiles]
 
 Export profiles store bundles of export/print preferences (margins, headers, TOC options, and similar settings from {% prefspane Export %}).
 
@@ -250,7 +250,7 @@ end tell
 
 Profile names are case-sensitive and must match a saved profile exactly.
 
-## Export commands
+## Export commands [export-commands]
 
 Export commands are available on the **application**, **document**, and **window** objects. Each command requires a **`to`** parameter with the output path (POSIX path string or `file` object).
 
@@ -273,7 +273,7 @@ Export commands are available on the **application**, **document**, and **window
 - HTML export uses the **rendered preview** (what you see in the WebView), not the raw Markdown source file.
 - Continuous PDF captures the current preview WebView layout.
 
-### Basic export
+### Basic export [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -283,13 +283,13 @@ tell application "Marked"
 end tell
 ```
 
-### Export paths and sandboxing
+### Export paths and sandboxing [export-paths-and-sandboxing]
 
 - Use a full POSIX path for the destination file.
 - Marked can create intermediate folders when the export path is **inside the folder of the open document** (for example exporting to `.../MyProject/build/output.pdf` while previewing `.../MyProject/chapter.md`).
 - Exports outside the document's folder require a writable path Marked can access (saved document location, security-scoped bookmarks, or folders you have granted via Open dialogs). If the path is not writable, the command returns an error before export starts.
 
-## `with` options (properties record)
+## `with` options (properties record) [with-options-properties-record]
 
 Instead of `with profile`, you can pass a record of options using **`with`** or **`with properties`**:
 
@@ -314,7 +314,7 @@ Other keys in the record can match **export preference** names from profiles (sa
 
 You cannot combine conflicting sources carelessly: if you use `with profile`, load that profile first; if you use a `with` record, profile keys in the record override the current settings for that export.
 
-### Margin shorthand
+### Margin shorthand [margin-shorthand]
 
 The `margins` value is a string with one to four measurements. Units: `in`, `cm`, `mm`, `pt`, or `"` for inches. A number without a unit is treated as points.
 
@@ -330,7 +330,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Combined example
+### Combined example [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -340,8 +340,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
-
+## `convert_to` [convert_to]
 The application object also exposes legacy scripting commands:
 
 - **`convert_to`** -- convert Markdown text or a file path to a format (`html`, `pdf`, `epub`, `docx`, `rtf`, and others), optionally with a `profile` and `output_path`.
@@ -350,7 +349,7 @@ The application object also exposes legacy scripting commands:
 
 `convert_to` remains available for older workflows and AppleScript-only automation.
 
-## Debugging
+## Debugging [debugging]
 
 Enable **Debug mode** in {% prefspane Advanced %} (or the debug preference in Settings). Marked then logs AppleScript export steps at Info level with the prefix `[AppleScript]` in Console.app and Marked's log viewer.
 
@@ -363,7 +362,7 @@ Useful log lines when tracing a paginated PDF export:
 
 Long exports (especially paginated PDF) suspend the AppleScript event until completion so clients do not time out mid-export.
 
-## Errors
+## Errors [errors]
 
 Failed exports set the script error string on the command (visible in Script Editor and `on error` handlers). Common messages:
 
@@ -374,6 +373,6 @@ Failed exports set the script error string on the command (visible in Script Edi
 - Timed out waiting for preview to reload after style change.
 - Paginated PDF export timed out or failed while generating pages.
 
-## Integration with other tools
+## Integration with other tools [integration-with-other-tools]
 
-Applications can use Marked's AppleScript surface to read document metadata. For the Shortcuts app, see [Shortcuts Integration](Shortcuts_Integration.html). For shell-driven workflows, folder watchers, and editor callbacks, the [URL Handler](URL_Handler.html) is often simpler. The [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) includes additional scripts and services.
+Applications can use Marked's AppleScript surface to read document metadata. For shell-driven workflows, folder watchers, and editor callbacks, the [URL Handler](URL_Handler.html) is often simpler. The [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) includes additional scripts and services.

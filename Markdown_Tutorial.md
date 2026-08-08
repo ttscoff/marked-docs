@@ -1,12 +1,12 @@
 # <%= @title %>
 
-## What is Markdown?
+## What is Markdown? [what-is-markdown]
 
 Markdown is a lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid HTML. The overriding design goal for Markdown's formatting syntax is to make it as readable as possible.
 
-## Basic Syntax
+## Basic Syntax [basic-syntax]
 
-### Headers
+### Headers [headers]
 
 Create headers using hash symbols (`#`). The number of hashes determines the header level:
 
@@ -19,7 +19,7 @@ Create headers using hash symbols (`#`). The number of hashes determines the hea
 ###### Header 6
 ```
 
-### Emphasis
+### Emphasis [emphasis]
 
 **Bold text** using double asterisks or double underscores:
 
@@ -35,7 +35,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Lists
+### Lists [lists]
 
 **Unordered lists** using asterisks, plus signs, or hyphens:
 
@@ -61,7 +61,7 @@ _Italic text_
 3. Third item
 ```
 
-### Links
+### Links [links]
 
 **Inline links** with the text in square brackets and the URL in parentheses:
 
@@ -84,7 +84,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Images
+### Images [images]
 
 Images use similar syntax to links but with an exclamation mark at the beginning:
 
@@ -95,7 +95,7 @@ Images use similar syntax to links but with an exclamation mark at the beginning
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Blockquotes
+### Blockquotes [blockquotes]
 
 Create blockquotes using the greater-than symbol (`>`) at the beginning of each line:
 
@@ -106,7 +106,7 @@ Create blockquotes using the greater-than symbol (`>`) at the beginning of each 
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Code
+### Code [code]
 
 **Inline code** using backticks:
 
@@ -122,7 +122,7 @@ Use `code` in your text.
     Multiple lines are supported.
 ```
 
-### Horizontal Rules
+### Horizontal Rules [horizontal-rules]
 
 Create horizontal rules using three or more hyphens, asterisks, or underscores:
 
@@ -134,7 +134,7 @@ Create horizontal rules using three or more hyphens, asterisks, or underscores:
 ___
 ```
 
-### Line Breaks
+### Line Breaks [line-breaks]
 
 **Hard line breaks** by ending a line with two or more spaces:
 
@@ -150,7 +150,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Escaping Characters
+### Escaping Characters [escaping-characters]
 
 Escape special characters using backslashes:
 
@@ -173,7 +173,7 @@ Common characters that can be escaped:
 - `.` period
 - `!` exclamation mark
 
-## Best Practices
+## Best Practices [best-practices]
 
 1. **Use blank lines** to separate different elements for better readability
 2. **Be consistent** with your formatting choices (e.g., use either `*` or `_` for emphasis)
@@ -181,9 +181,9 @@ Common characters that can be escaped:
 4. **Test your output** to ensure it renders as expected
 5. **Use meaningful link text** instead of generic phrases like "click here"
 
-## Common Patterns
+## Common Patterns [common-patterns]
 
-### Nested Lists
+### Nested Lists [nested-lists]
 
 ```markdown
 1. First item
@@ -193,7 +193,7 @@ Common characters that can be escaped:
    - More nested content
 ```
 
-### Lists with Paragraphs
+### Lists with Paragraphs [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -205,7 +205,7 @@ Common characters that can be escaped:
    This is a paragraph under the second item.
 ```
 
-### Blockquotes with Other Elements
+### Blockquotes with Other Elements [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -216,7 +216,7 @@ Common characters that can be escaped:
 > > Nested blockquotes are also possible.
 ```
 
-## Summary
+## Summary [summary]
 
 Markdown provides a simple, readable way to format text that can be easily converted to HTML. The key is to keep it simple and readable while using the basic syntax elements consistently. With practice, you'll find that Markdown becomes second nature and makes writing structured content much easier.
 

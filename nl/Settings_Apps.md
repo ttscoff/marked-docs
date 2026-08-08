@@ -8,7 +8,7 @@ Opties in de {% prefspane Apps %}:
 
 [1]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Algemene instellingen
+### Algemene instellingen [general-settings]
 
 Teksteditor
 : Selecteer een teksteditor om het huidige document te ontvangen wanneer u {% kbd cmd E %} typt.
@@ -27,13 +27,13 @@ Afbeeldingsannotatie/opmaakeditor
 
 Als er geen editor is gekozen, presenteert Marked een menu met geïnstalleerde applicaties wanneer u bewerkt of annoteert. Het menu bevat veelgebruikte Markdown-, afbeeldings- en annotatiehulpmiddelen die u op uw Mac kunt vinden, een **Andere…**-optie om een ​​app te kiezen uit `/Applications`, en **Gebruik deze app altijd** (standaard ingeschakeld) om uw keuze als standaard op te slaan. Gebruik de knop Wissen (cirkel met een X) naast elk Kies-besturingselement in {% prefspane Apps %} om een ​​selectie te verwijderen en terug te keren naar de kiezer.
 
-### Applicatiespecifieke instellingen
+### Applicatiespecifieke instellingen [application-specific-settings]
 
 Toon standaard opmerkingen en annotaties
 : Indien aangevinkt, worden aantekeningen gemaakt in de documenten Scrivener, Fountain, Word en CriticMarkup gemarkeerd weergegeven in het voorbeeld. Haal het vinkje weg om volledig te verbergen. Deze kunnen ook worden omgeschakeld tijdens het lezen van een document vanuit het menu {% appmenu Gear, Proofing ({{ctrl}}{{cmd}}C)%}.
 : Wanneer opmerkingen zijn ingeschakeld, verschijnen opmerkingen en voetnoten in een zijbalk. Als u de muisaanwijzer op een opmerking plaatst, wordt naar de plaats in het document verwezen waar deze voorkomt.
 
-#### DocC
+#### DocC [docc]
 
 [(Info on DocC Support)](DocC_Support.html)
 
@@ -43,12 +43,12 @@ Los DocC-afbeeldingsreferenties op
 Los donkere en @2x afbeeldingsvarianten op
 : Voor lokale afbeeldingen met een bestandsextensie (`images/icon.png`), detecteert u begeleidende `~dark` en `@2x` bestanden in dezelfde map en verzendt u responsieve `<picture>` markup. Werkt in elk Markdown of HTML document, niet alleen in DocC-catalogi. Zie [Image Variants](Image_Variants.html).
 
-#### Haakmarkering
+#### Haakmarkering [hookmark]
 
 Los hook:// URL's op in afbeeldingen en links
 : Marked kan URL's lezen die door Hookmark zijn gemaakt en deze omzetten in hun pad op schijf.
 
-#### Leanpub/GitBook
+#### Leanpub/GitBook [leanpubgitbook]
 
 Schakel Leanpub-ondersteuning in
 : Interpreteer bestanden met de naam `Book.txt` als indexbestanden en hanteer de speciale Leanpub-syntaxis.
@@ -56,12 +56,12 @@ Schakel Leanpub-ondersteuning in
 Schakel GitBook-ondersteuning in
 : Interpreteer bestanden met de naam `SUMMARY.md` als indexbestanden voor GitBook-documentatie.
 
-#### Markdownifier
+#### Markdownifier [markdownifier]
 
 Gebruik inlinelinks
 : Markdown documenten gemaakt door de Markdownifier zullen inline gebruiken in plaats van referentielinks.
 
-#### MarsBewerken
+#### MarsBewerken [marsedit]
 
 Voeg de berichttitel toe als Markdown header (h1)
 : Gebruik de titel van het geselecteerde bericht als Markdown header.
@@ -69,12 +69,12 @@ Voeg de berichttitel toe als Markdown header (h1)
 Toon metadata als tabel
 : Indien ingeschakeld, worden metagegevens zoals categorieën en titels weergegeven als een Markdown tabel in het voorbeeld.
 
-#### Mappen
+#### Mappen [folders]
 
 Bekijk alleen een voorbeeld van deze extensies
 : Bij het openen van een map zoekt Marked naar het meest recent gewijzigde document, standaard met extensies zoals `md`, `mmd` en `html`. De lijst hier overschrijft de standaard.
 
-#### Scrivener
+#### Scrivener [scrivener]
 
 [(Info on Scrivener Support)](Scrivener_Support.html)
 
@@ -87,12 +87,12 @@ Voeg compileermetagegevens (titel, auteur) toe als deze ontbreken
 Open .scriv-bestanden in Scrivener wanneer geopend in Marked
 : Wanneer een Scrivener document wordt geopend in Marked, wordt het automatisch ook geopend in Scrivener.
 
-#### Woord
+#### Woord [word]
 
 Wijzigingen bijhouden omzetten <-> CriticMarkup
 : Indien ingeschakeld, wordt het bijhouden van wijzigingen in Word-documenten geconverteerd naar CriticMarkup bij het importeren, en wordt CriticMarkup geconverteerd naar het bijhouden van wijzigingen in Word bij het exporteren van DOCX bestanden.
 
-#### Mindmaps/overzichten {#MindMapsOutlines}
+#### Mindmaps/overzichten [MindMapsOutlines]
 
 Insluiten als zeemeermin-mindmaps
 : Elk selectievakje bestuurt één inbegrepen formaat. Wanneer **aan** wordt het opgenomen bestand geconverteerd naar een Mermaid-mindmapdiagram (opgeruimde boomstructuur). Wanneer **uit**, gebruikt Marked het alternatief voor dat formaat.

@@ -8,7 +8,7 @@
 基於匹配檔案屬性的不同處理器。
 
 
-## 使用自訂預處理器/處理器
+## 使用自訂預處理器/處理器 [using-custom-preprocessorsprocessors]
 
 若要新增自訂處理器，請前往 {% prefspane Processor %}
 然後按一下「**自訂規則**」。
@@ -52,7 +52,7 @@
 規則運行時，謂詞中條件的順序
 編輯器，以及要按順序運行的操作的順序。
 
-### 謂詞編輯器
+### 謂詞編輯器 [predicate-editor]
 
 ![謂詞編輯器][謂詞]
 
@@ -118,7 +118,7 @@ PDF 導出。你不希望每個人都進行這種轉變
 然後從預覽選單（或觸發器快捷方式）切換它
 當您準備好校對列印佈局時。
 
-#### 觸發快速鍵
+#### 觸發快速鍵 [trigger-shortcut]
 
 當選定的規則包含**手動啟用**時，
 **觸發快捷方式**欄位出現在**手動新增旁邊
@@ -132,10 +132,10 @@ PDF 導出。你不希望每個人都進行這種轉變
 
 [manualshortcut]: images/conductor-manual-rule-shortcut.jpg @2x width=800
 
-#### 預覽選單中的按預覽覆蓋
+#### 預覽選單中的按預覽覆蓋 [per-preview-overrides-in-the-preview-menu]
 
 兩個預覽選單子選單控制活動的覆蓋
-僅預覽。設定按 [視圖](#multiview) 儲存
+僅預覽。設定按 [視圖](Opening_Files.html#multiview) 儲存
 多個視窗顯示同一個檔案。
 
 **啟用自訂規則**
@@ -152,7 +152,7 @@ PDF 導出。你不希望每個人都進行這種轉變
   想要強制使用特定的處理器管道
   預覽而不更改全域自訂規則。
 
-#### 預覽工具列中的覆蓋按鈕
+#### 預覽工具列中的覆蓋按鈕 [override-button-in-the-preview-toolbar]
 
 當預覽至少有一個手動啟用的規則或
 固定的進程覆蓋，底部會出現一個分支圖標
@@ -171,7 +171,7 @@ PDF 導出。你不希望每個人都進行這種轉變
 當您想要將正常預覽與您的預覽進行比較時，選單
 覆蓋管道。
 
-### 行動
+### 行動 [actions]
 
 使用 *+ 操作* 按鈕將操作新增至規則。
 
@@ -307,7 +307,7 @@ PDF 導出。你不希望每個人都進行這種轉變
 繼續
 ：預設情況下，一旦匹配到規則，處理就會停止（預處理器和處理器是分開的，因此一個預處理器和一個處理器可以匹配）。此操作將強制規則匹配在規則執行其操作後繼續。
 
-### 更新掛鉤
+### 更新掛鉤 [updatehook]
 
 標記不會在每次更新時進行完全刷新，所以如果
 你有渲染 DOM 部分的腳本，它們需要
@@ -331,7 +331,7 @@ Marked.hooks.register('update', function() {
 這會導致`mermaid.run()`每次都會被執行
 標記執行部分更新。
 
-### 測試規則
+### 測試規則 [test-rules]
 
 規則清單下的_測試規則_按鈕將會開啟一個
 您可以在其中選擇任何 Markdown 文件的對話框，它將
@@ -340,7 +340,7 @@ Marked.hooks.register('update', function() {
 針對文件，將出現一個 X 按鈕，可用於
 清除測試並取消突出顯示行。
 
-## 拖放
+## 拖放 [drag-and-drop]
 
 Conductor 視窗支援增強的拖放功能
 智慧型檢測文件類型的功能和
@@ -353,7 +353,7 @@ Conductor 視窗支援增強的拖放功能
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### 檔案類型檢測
+### 檔案類型檢測 [file-type-detection]
 
 系統自動檢測不同的文件類型並
 顯示適當的覆蓋訊息：
@@ -376,7 +376,7 @@ Conductor 視窗支援增強的拖放功能
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## 執行多個命令
+## 執行多個命令 [executing-multiple-commands]
 
 一條規則可以依序包含多個命令。的輸出
 每個命令都會傳遞到下一個命令。如果你想擁有
@@ -391,7 +391,7 @@ Conductor 視窗支援增強的拖放功能
 命令列選項，然後回顯 STDIN 內容
 輸出到標準輸出。
 
-## 動態繞過自訂處理器
+## 動態繞過自訂處理器 [dynamically-bypassing-custom-processors]
 
 如果自訂處理器在 STDOUT 上返回“NOCUSTOM”，則標記為
 將終止自訂處理器並回退到
@@ -407,7 +407,7 @@ Conductor 視窗支援增強的拖放功能
 只是那個文件。此更改不會影響預設值
 在“設定”中設定處理器。
 
-## 環境變數
+## 環境變數 [environmentvariables]
 
 運行命令操作有一個環境編輯器，您可以在其中
 可以設定自己的環境變數
@@ -444,14 +444,14 @@ Marked 在自己的 shell 中運行自訂處理器，這意味著
 **MARKED_CSS_PATH**
 ：目前樣式表的完整路徑
 
-### 元資料環境變數
+### 元資料環境變數 [metadata-environment-variables]
 
 當在 Marked 中執行 Run Command 操作時
 指揮系統，文件元資料自動
 提取並作為環境變數提供給
 命令。
 
-#### 它是如何運作的
+#### 它是如何運作的 [how-it-works]
 
 1. **元資料擷取**：系統使用現有的`extractMetaDataFromString:`方法從文件中擷取元數據，支援：
    - YAML 前面的內容（`---` 塊）
@@ -469,7 +469,7 @@ Marked 在自己的 shell 中運行自訂處理器，這意味著
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### 範例
+#### 範例 [example]
 
 給定一個包含此元資料的文件：
 
@@ -498,7 +498,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### 指令中的用法
+#### 指令中的用法 [usage-in-commands]
 
 現在您可以在運行中使用這些環境變量
 命令動作：
@@ -527,7 +527,7 @@ else
 fi
 ```
 
-#### 支援的操作
+#### 支援的操作 [supported-actions]
 
 這種元資料到環境變數的功能是
 可用於：
@@ -539,7 +539,7 @@ fi
 內容並可供任何命令或腳本使用
 貫穿這些動作。
 
-## 啟用和停用
+## 啟用和停用 [enabling-and-disabling]
 
 定制處理器可以打開和關閉
 使用 {% kbd opt cmd C %} 的單一文件。你
@@ -552,7 +552,7 @@ fi
 已啟用）位於底部工具列項目的左側
 預覽的右側工具列。
 
-### 預處理器
+### 預處理器 [preprocessor]
 
 如果您設定預處理器規則，它們將在標記後運行
 處理任何特定於標記的任務，例如包括外部
@@ -574,7 +574,7 @@ fi
 關閉單一文件使用
 {% kbd ctrl opt cmd C %}。
 
-#### 每個文件處理器/預處理器 [每個文件]
+#### 每個文件處理器/預處理器 [每個文件] [perdocument]
 
 還可以根據每個文件設定自訂處理器
 使用元資料格式 [Per-Document
@@ -602,7 +602,7 @@ fi
     自訂預處理器：true
     -->
 
-## 使用替代 Markdown 處理器
+## 使用替代 Markdown 處理器 [using-an-alternative-markdown-processor]
 
 任何可以從命令列渲染的 Markdown 風格都可以
 與標記一起使用。它需要能夠接受輸入
@@ -626,7 +626,7 @@ STDIN，與透過「管道」將 Markdown 傳輸到它相同
 Kramdown、marked（折扣）、MultiMarkdown 6、Maruku 和
 各種其他口味。
 
-### 關於 Pandoc 和沙盒的說明
+### 關於 Pandoc 和沙盒的說明 [a-note-about-pandoc-and-sandboxing]
 
 Pandoc（和其他一些命令列工具）將無法運行
 Marked 的 Mac App Store（沙盒）版本。
@@ -638,7 +638,7 @@ Marked 的 Mac App Store（沙盒）版本。
 但這並沒有發生，請透過以下方式與我聯繫
 [支援網站](https://support.markedapp.com/questions/add)。
 
-### Pandoc 作為瑞士陸軍 Markdown 處理器
+### Pandoc 作為瑞士陸軍 Markdown 處理器 [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) 是迄今為止最靈活的
 用於處理一系列標記格式的通用工具。由
@@ -677,7 +677,7 @@ Pandoc 愛好者都知道，Pandoc 還可以處理
 您可以透過命令列存取即可
 透過在 Marked 中使用傳遞參數。
 
-## 使用紡織品
+## 使用紡織品 [using-textile]
 
 有幾個人問如何讓 Textile 工作
 標記。您需要有一個紡織轉換器，可從
@@ -695,7 +695,7 @@ Pandoc 愛好者都知道，Pandoc 還可以處理
 
 Now Marked 是一款適合您的紡織品預覽器！
 
-## 使用 AsciiDoc
+## 使用 AsciiDoc [using-asciidoc]
 
 1.安裝【AsciiDoctor】(http://asciidoctor.org/)。
 2. 在 {% prefspane Processor %} 中啟用自訂規則以符合您的 AsciiDoc 檔案。

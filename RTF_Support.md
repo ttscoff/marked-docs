@@ -4,7 +4,7 @@ Marked can open Rich Text Format (`.rtf`) and RTFD (`.rtfd`) documents directly.
 
 This works well with documents from **Pages**, **TextEdit**, **Word**, and other apps that save RTF or RTFD. Marked is still a **preview** tool: you edit in the original application and Marked updates when you save.
 
-## How conversion works
+## How conversion works [how-conversion-works]
 
 Marked converts RTF to HTML using the system text engine, then to Markdown. The converter:
 
@@ -15,11 +15,11 @@ Marked converts RTF to HTML using the system text engine, then to Markdown. The 
 
 The same conversion pipeline is used for Scrivener RTF compile and for RTF files included in other documents.
 
-## Live preview
+## Live preview [live-preview]
 
 When you save the RTF or RTFD file in another application, Marked detects the change and refreshes the preview automatically.
 
-## Images
+## Images [images]
 
 RTF does not define a separate "caption" field in a way Cocoa exports to HTML. What looks like a caption in your layout is usually **normal text** in the next paragraph, and Marked keeps that as body text.
 
@@ -27,11 +27,11 @@ Embedded images and images inside RTFD bundles (for example `pastedGraphic.png` 
 
 Marked does **not** use the image filename as alt text or a MultiMarkdown figure caption. You should not see `pastedGraphic.png` under the image unless you typed that text in the document.
 
-## Export and other features
+## Export and other features [export-and-other-features]
 
-After conversion, Marked treats the document like other compiled sources (similar to [Scrivener](Scrivener_Support.html) and [DOCX](Working_with_DOCX.html)): export, statistics, and most preview features run against the generated Markdown stored in the Watchers cache.
+After conversion, Marked treats the document like other compiled sources (similar to [Scrivener](Scrivener_Support.html) and [DOCX](Working_With_DOCX.html)): export, statistics, and most preview features run against the generated Markdown stored in the Watchers cache.
 
-## Limitations
+## Limitations [limitations]
 
 Conversion quality depends on the source application. In general:
 
@@ -42,9 +42,9 @@ Conversion quality depends on the source application. In general:
 
 For a one-off paste without saving a file, use [Clipboard Preview](Opening_Files.html#from-the-clipboard) instead.
 
-## Related topics
+## Related topics [related-topics]
 
 - [PDF Support](PDF_Support.html) -- open PDF documents as Markdown sources
-- [Working with DOCX](Working_with_DOCX.html) -- Word documents with change tracking and comments
+- [Working with DOCX](Working_With_DOCX.html) -- Word documents with change tracking and comments
 - [Opening Files](Opening_Files.html) -- drag and drop, Open Recent, clipboard
 - [Exporting](Exporting.html) -- Copy Rich Text and save RTFD (export), distinct from opening RTF as a source file

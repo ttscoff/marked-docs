@@ -6,7 +6,7 @@ Optionen unter {% prefspane Style %}:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Layout und Typografie
+### Layout und Typografie [layout-and-typography]
 
 Textbreite in der Vorschau begrenzen
 : Legt mit dem Schieberegler eine maximale Breite (in Pixeln) für den Textbereich der Vorschau fest.
@@ -41,7 +41,7 @@ Code immer umbrechen
 RTL-Text erkennen und formatieren
 : Erkennt die Sprache je Element im Dokument und formatiert Rechts-nach-links-Text entsprechend.
 
-### Stil
+### Stil [theme]
 
 Stile verwalten
 : Öffnet das Fenster [Stil-Manager](Style_Manager.html). Fügen Sie CSS-Dateien von Ihrem Laufwerk hinzu, damit sie in den Stilauswahl-Menüs erscheinen. Verwenden Sie die Schaltfläche „Neuen Stil hinzufügen“ oder ziehen Sie CSS-Dateien in dieses Fenster. Ziehen Sie zum Umsortieren, und aktivieren oder deaktivieren Sie Stile über die Kontrollkästchen.
@@ -59,7 +59,7 @@ Zusätzliches CSS
 : Hier hinzugefügtes CSS wird bei allen Stilen nach dem normalen Stylesheet eingebunden. Unter anderem können Sie damit Einstellungen flächendeckend überschreiben, ohne interne Stile zu bearbeiten.
 : Das gilt für alle Dokumente und alle Stile. Wollen Sie eigenes CSS je nach Bedingung auf Dokumente anwenden, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
 
-### Skripte einbinden
+### Skripte einbinden [include-scripts]
 
 Syntaxhervorhebung
 : Aktiviert die highlight.js-[Syntaxhervorhebung](Syntax_Highlighting.html) für Codeblöcke. Wählen Sie einen Stil aus dem Dropdown-Menü.
@@ -71,7 +71,7 @@ MathJax aktivieren
 : **Erweiterte Konfiguration** öffnet ein Blatt für eine eigene MathJax-Konfiguration.
 
 KaTeX aktivieren
-: Lädt [KaTeX](Mathjax.html#katex) als Alternative zu MathJax. Es kann nur eines von beiden ausgewählt werden.
+: Lädt [KaTeX](MathJax.html#katex) als Alternative zu MathJax. Es kann nur eines von beiden ausgewählt werden.
 
 Gleichungen nummerieren
 : Sofern zutreffend, ergänzt Marked gerenderte Gleichungen um Formelnummern. Wählen Sie **Linke Seite** oder **Rechte Seite** für die Nummerierung. Mit MathJax können Sie **Nur AMS** wählen, um nur AMS-Gleichungen zu nummerieren.

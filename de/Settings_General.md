@@ -6,7 +6,7 @@ Optionen unter {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Fenster
+### Fenster [window]
 
 Neue Fenster im Vordergrund halten
 : Stellt neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.
@@ -29,7 +29,7 @@ Aktualisiertes Dokument nach vorne bringen
 Den Fokus wieder auf die vorherige App richten
 : Führt eine Aktion beim Anheben oder Nach-vorne-holen dazu, dass Marked in den Vordergrund tritt, wird der Tastaturfokus bei aktivierter Option an die App zurückgegeben, die vor der Aktualisierung vorne war (etwa Ihr Texteditor). Ist die Option deaktiviert, nimmt Marked diese Fokusübergabe nie vor. Tritt Marked nicht in den Vordergrund, hat die Option keine Wirkung.
 
-### Statusleiste
+### Statusleiste [status-bar]
 
 Stilauswahl anzeigen
 : Zeigt die Stilauswahl in der unteren Leiste des Vorschaufensters an.
@@ -45,7 +45,7 @@ Die Anzahl der Wörter schließt Folgendes aus
 - **Eingerückte Codeblöcke** (mit Backticks abgegrenzte Codeblöcke werden immer ausgeschlossen)
 - **Bildunterschriften**
 
-### Tastenkürzel
+### Tastenkürzel [shortcuts]
 
 Klicken Sie auf das Kurzbefehl-Feld, um eine Tastenkombination aufzuzeichnen, die eine Aktion auslöst:
 

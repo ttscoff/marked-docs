@@ -8,7 +8,7 @@ transformations et la possibilité d'exécuter vos propres commandes ou d'exécu
 différents processeurs en fonction des propriétés de fichier correspondantes.
 
 
-## Utilisation de préprocesseurs/processeurs personnalisés
+## Utilisation de préprocesseurs/processeurs personnalisés [using-custom-preprocessorsprocessors]
 
 Pour ajouter des processeurs personnalisés, accédez au {% prefspane Processor %}
 et cliquez sur **Règles personnalisées**.
@@ -52,7 +52,7 @@ glisser-déposer, afin que vous puissiez modifier l'ordre dans lequel
 les règles sont exécutées, l'ordre des critères dans le prédicat
 éditeur et l'ordre des actions à exécuter en séquence.
 
-### Éditeur de prédicats
+### Éditeur de prédicats [predicate-editor]
 
 ![Éditeur de prédicat][predicate]
 
@@ -171,7 +171,7 @@ vous cliquez à nouveau. C'est plus rapide que de décocher les règles dans le
 menu lorsque vous souhaitez comparer l'aperçu normal avec votre
 remplacer le pipeline.
 
-### Actions
+### Actions [manuallyenabled]
 
 Utilisez le bouton *+ Action* pour ajouter des actions à la règle.
 
@@ -307,7 +307,7 @@ Exécuter la règle
 Continuer
 : Par défaut, une fois qu'une règle correspond, le traitement s'arrêtera (séparément pour les préprocesseurs et les processeurs, afin qu'un préprocesseur et un processeur puissent correspondre). Cette action forcera la correspondance des règles à continuer une fois que la règle aura effectué ses actions.
 
-### Crochet de mise à jour
+### Crochet de mise à jour [updatehook]
 
 Marqué n'effectue pas une actualisation complète à chaque mise à jour, donc si
 vous avez des scripts qui restituent des parties du DOM, ils ont besoin
@@ -331,7 +331,7 @@ Marked.hooks.register('update', function() {
 Cela entraînera l'exécution de `mermaid.run()` à chaque fois
 Marqué effectue une mise à jour partielle.
 
-### Règles de test
+### Règles de test [test-rules]
 
 Le bouton _Test Rules_ sous la liste des règles ouvrira un
 boîte de dialogue où vous pouvez sélectionner n'importe quel fichier Markdown et il sera
@@ -340,7 +340,7 @@ mis en évidence par un onglet vert sur le côté gauche. Lors de la corresponda
 contre un fichier, un bouton X apparaîtra qui peut être utilisé pour
 effacez le test et désélectionnez les lignes.
 
-## Glisser-déposer
+## Glisser-déposer [drag-and-drop]
 
 La fenêtre Conductor prend en charge le glisser-déposer amélioré
 des capacités qui détectent intelligemment les types de fichiers et
@@ -353,7 +353,7 @@ contre les règles ou en l'ajoutant comme une action.
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Détection du type de fichier
+### Détection du type de fichier [file-type-detection]
 
 Le système détecte automatiquement différents types de fichiers et
 affiche les messages de superposition appropriés :
@@ -376,7 +376,7 @@ Si vous obtenez des résultats étranges et souhaitez voir ce qui se passe, le j
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Exécuter plusieurs commandes
+## Exécuter plusieurs commandes [executing-multiple-commands]
 
 Une règle peut avoir plusieurs commandes en séquence. La sortie de
 chaque commande sera transmise à la suivante. Si tu veux avoir
@@ -391,7 +391,7 @@ document utilisant Pandoc, transmettez simplement le chemin du fichier d'origine
 options de ligne de commande, puis renvoyer le contenu STDIN
 vers STDOUT.
 
-## Contournement dynamique des processeurs personnalisés
+## Contournement dynamique des processeurs personnalisés [dynamically-bypassing-custom-processors]
 
 Si un processeur personnalisé renvoie "NOCUSTOM" sur STDOUT, marqué
 mettra fin au processeur personnalisé et reviendra au
@@ -407,7 +407,7 @@ Si au lieu de `NOCUSTOM` un processeur personnalisé renvoie
 juste ce document. Ce changement n'affectera pas la valeur par défaut
 processeur défini dans Paramètres.
 
-## Variables d'environnement
+## Variables d'environnement [environmentvariables]
 
 L'action Exécuter la commande possède un éditeur d'environnement dans lequel vous
 pouvez définir vos propres variables d'environnement qui seront
@@ -444,14 +444,14 @@ disponible pour une utilisation dans vos scripts shell :
 **MARKED_CSS_PATH**
 : Le chemin complet vers la feuille de style actuelle
 
-### Variables d'environnement de métadonnées
+### Variables d'environnement de métadonnées [metadata-environment-variables]
 
 Lorsque l'action Exécuter la commande est exécutée dans l'espace de travail de Marked
 Système conducteur, les métadonnées du document sont automatiquement
 extrait et mis à disposition en tant que variables d'environnement au
 commande.
 
-#### Comment ça marche
+#### Comment ça marche [how-it-works]
 
 1. **Extraction de métadonnées** : le système extrait les métadonnées du document à l'aide de la méthode `extractMetaDataFromString:` existante, qui prend en charge :
    - Matière première YAML (`---` blocs)
@@ -469,7 +469,7 @@ commande.
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Exemple
+#### Exemple [example]
 
 Étant donné un document avec ces métadonnées :
 
@@ -498,7 +498,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Utilisation dans les commandes
+#### Utilisation dans les commandes [usage-in-commands]
 
 Vous pouvez désormais utiliser ces variables d'environnement dans votre Run
 Actions de commande :
@@ -527,7 +527,7 @@ else
 fi
 ```
 
-#### Actions prises en charge
+#### Actions prises en charge [supported-actions]
 
 Cette fonctionnalité de métadonnées à variable d'environnement est
 disponible en :
@@ -539,7 +539,7 @@ Les métadonnées sont automatiquement extraites du document
 contenu et mis à la disposition de toute commande ou script qui
 traverse ces actions.
 
-## Activation et désactivation
+## Activation et désactivation [enabling-and-disabling]
 
 Les processeurs personnalisés peuvent être activés et désactivés pendant
 documents individuels en utilisant {% kbd opt cmd C %}. Vous
@@ -552,7 +552,7 @@ affichés sous forme de voyants (visibles uniquement lorsqu'un processeur
 est activé) à gauche des éléments de la barre d'outils en bas
 barre d'outils droite de l'aperçu.
 
-### Préprocesseur
+### Préprocesseur [preprocessor]
 
 Si vous configurez des règles de préprocesseur, elles sont exécutées après Marqué
 gère toutes les tâches spécifiques à Marked, telles que l'inclusion de
@@ -574,7 +574,7 @@ Lorsqu'il est activé, le préprocesseur personnalisé peut être activé et
 désactivé pour les documents individuels en utilisant
 {% kbd ctrl opt cmd C %}.
 
-#### Processeur/Pré-processeur par document [pardocument]
+#### Processeur/Pré-processeur par document [perdocument]
 
 Des processeurs personnalisés peuvent également être définis pour chaque document.
 en utilisant le format de métadonnées pour [Par-Document
@@ -602,7 +602,7 @@ de la sortie :
     Préprocesseur personnalisé : vrai
     -->
 
-## Utilisation d'un processeur Markdown alternatif
+## Utilisation d'un processeur Markdown alternatif [using-an-alternative-markdown-processor]
 
 Toute version Markdown que vous pouvez restituer à partir de la ligne de commande peut
 être utilisé avec Marked. Il doit pouvoir donner son avis sur
@@ -626,7 +626,7 @@ J'ai testé la fonctionnalité Custom Processor avec Pandoc,
 Kramdown, marqué (remise), MultiMarkdown 6, Maruku et
 diverses autres saveurs.
 
-### Une note sur Pandoc et Sandboxing
+### Une note sur Pandoc et le Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (et certains autres outils de ligne de commande) ne fonctionnera pas dans
 la version Mac App Store (sandbox) de Marked.
@@ -638,7 +638,7 @@ proposer les étapes de crossgrade. Si vous rencontrez des problèmes
 et cela ne se produit pas, veuillez me contacter via le
 [site d'assistance](https://support.markedapp.com/questions/add).
 
-### Pandoc en tant que processeur de démarques de l'armée suisse
+### Pandoc, le couteau suisse des processeurs Markdown [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) est de loin le plus flexible
 outil polyvalent pour gérer une gamme de formats de balisage. Par
@@ -677,7 +677,7 @@ bibliographie complète et scénarios LaTeX. La plupart des fonctionnalités
 vous pouvez accéder via la ligne de commande sont disponibles uniquement
 en utilisant des arguments passants dans Marked.
 
-## Utilisation de textiles
+## Utilisation de Textile [using-textile]
 
 Quelques personnes ont demandé comment faire fonctionner le textile en
 Marqué. Vous devez disposer d'un convertisseur textile disponible auprès de
@@ -695,7 +695,7 @@ l'un ou l'autre :
 
 Marked est désormais un aperçu textile pour vous !
 
-## Utilisation d'AsciiDoc
+## Utilisation d'AsciiDoc [using-asciidoc]
 
 1. Installez [AsciiDoctor](http://asciidoctor.org/).
 2. Activez une règle personnalisée dans {% prefspane Processor %} pour correspondre à vos fichiers AsciiDoc.

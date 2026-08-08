@@ -2,7 +2,7 @@
 
 La flexibilité est la clé.
 
-## Menu Action
+## Menu Action [gear-menu]
 
 ![][4]
 
@@ -10,7 +10,7 @@ La flexibilité est la clé.
 
 Le menu Action fournit la plupart des fonctionnalités de la barre de menus, ainsi que certaines fonctions spécifiques à l'aperçu. Cliquez simplement sur l'icône Action en bas à droite de la fenêtre pour accéder à ces fonctions.
 
-## Rester au premier plan
+## Rester au premier plan [keep-on-top]
 
 ![][5]
 
@@ -20,11 +20,11 @@ L'icône de verrouillage en bas à gauche amènera la fenêtre d'aperçu au prem
 
 Cette fonctionnalité peut également être activée avec {% kbd shift-opt-cmd-f %}.
 
-## Valeurs par défaut au niveau de la fenêtre
+## Valeurs par défaut au niveau de la fenêtre [window-level-defaults]
 
 Dans le {% prefspane General %}, vous pouvez utiliser « Conserver les nouvelles fenêtres en haut » pour définir les nouvelles fenêtres pour qu'elles restent toujours au-dessus des autres fenêtres, et/ou pour que les fenêtres s'élèvent en haut lorsque leur document associé est mis à jour. Les fenêtres configurées pour s'élever lors de la mise à jour ne « voleront pas le focus » de votre éditeur : elles s'élèveront uniquement pour devenir visibles, sans devenir actives.
 
-## Afficher la source
+## Afficher la source [view-source]
 
 ![][6]
 
@@ -32,7 +32,7 @@ Dans le {% prefspane General %}, vous pouvez utiliser « Conserver les nouvelles
 
 Vous pouvez basculer entre les vues d'aperçu et de code source avec le bouton dans le coin supérieur droit. Cette vue peut également être basculée avec U.
 
-## Recherche
+## Recherche [search]
 
 ![][7]
 
@@ -51,7 +51,7 @@ Utilisez la fonction de recherche en combinaison avec la mise en favoris pour en
 
 Vous pouvez cocher les cases « Mots entiers », « Sensible à la casse » et « Regex » en utilisant respectivement {% kbd ctrl shift 1 %}, {% kbd 2 %} et {% kbd 3 %}.
 
-### Recherche avancée ###
+### Recherche avancée ### [advanced-search]
 
 Vous pouvez utiliser des caractères génériques dans une recherche non-regex. `*` correspondra à n'importe quelle série de caractères autres que des espaces et `?` correspondra à n'importe quel caractère unique.
 
@@ -61,24 +61,24 @@ Démarrer une recherche avec un `*` en fera une recherche de sélecteur jQuery. 
 
 C'est l'équivalent de `*h2:contains(Alice)`
 
-## Navigation dans les documents (TOC, signets, Mini Map)
+## Navigation dans les documents (TOC, signets, Mini Map) [document-navigation-toc-bookmarks-mini-map]
 
 La page [Navigation du document](Document_Navigation.html) couvre la table des matières (y compris l'ouverture du filtre avec {% kbd Space %}), la recherche rapide avec {% kbd f %}, les signets et la mini-carte.
 
-## Navigation au clavier
+## Navigation au clavier [keyboardnavigation]
 
 La fenêtre d'aperçu peut être parcourue rapidement à l'aide de raccourcis clavier. Utilisez {% kbd j %} et {% kbd k %} pour monter et descendre, et maintenez la touche Shift ({% kbd J %}/{% kbd K %}) enfoncée pour vous déplacer plus rapidement. {% kbd t %} et {% kbd b %} se déplaceront en haut et en bas du document (tout comme {% kbd gg %} et {% kbd G %}, pour les fans de Vim). {% kbd u %} et {% kbd d %} se déplaceront d'une demi-page de haut en bas.
 
-### Saut d'en-tête
+### Saut d'en-tête [header-jumping]
 
 En appuyant sur les touches virgule ({% kbd , %}) et point ({% kbd . %}), vous passerez en arrière et en avant dans tous les en-têtes du document. Maintenir Shift ({% kbd shift  %}) permettra de sauter uniquement entre les en-têtes de niveau 1 et 2.
 
 
-## Plein écran
+## Plein écran [full-screen]
 
 Le mode plein écran peut être basculé à partir du menu Aperçu ou en tapant {% kbd ctrl cmd F %}.
 
-## Cliquer sur des liens externes
+## Cliquer sur des liens externes [clicking-external-links]
 
 ![][10]
 
@@ -88,7 +88,7 @@ Cliquer sur un lien externe dans l'aperçu de votre document l'ouvrira dans votr
 
 Voir une [vidéo de présentation sur YouTube](https://www.youtube.com/watch?v=nrt7YZPrnv0&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=1).
 
-## Titres pliables ##
+## Titres pliables ## [collapsibleheadlines]
 
 Lorsque « Réduire les sections des titres » est activé dans le {% prefspane Preview %}, cliquer sur les titres réduira la section entre ce titre et le titre suivant au même niveau. Les sous-sections de cette section sont masquées. En option, vous pouvez limiter ce comportement à {% kbd cmd %} clics.
 
@@ -106,7 +106,7 @@ Vous pouvez réduire/développer toutes les sections d'un document à la fois av
 
 Voir la [Vidéo de navigation dans les documents sur YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2) pour plus de détails.
 
-## Indicateurs/bascules de processeur personnalisés ##
+## Indicateurs/bascules de processeur personnalisés ## [custom-processor-indicatorstoggles]
 
 ![][indicators]
 
@@ -114,21 +114,21 @@ Voir la [Vidéo de navigation dans les documents sur YouTube](https://www.youtub
 
 Lorsque le processeur personnalisé et/ou le préprocesseur sont activés, des voyants lumineux apparaissent dans la barre d'outils. Ceux-ci peuvent être utilisés pour voir si le processeur est activé ou non pour le document actuel (l'indicateur sera mis en surbrillance) et cliquer dessus activera respectivement l'utilisation du préprocesseur et du processeur personnalisés.
 
-## Faites défiler pour modifier
+## Faites défiler pour modifier [scrolltoedit]
 
 La fonctionnalité « faire défiler pour modifier » dans Marked assure le suivi des différences entre la dernière mise à jour et la précédente, en essayant de trouver le point où vous avez effectué vos modifications les plus récentes. Marked suit toujours cela et une petite ligne rouge apparaît dans l'aperçu pour vous montrer l'emplacement du premier changement détecté. Dans le {% prefspane Preview %}, vous pouvez activer « Faire défiler jusqu'à la première modification » et lorsqu'un aperçu est mis à jour, il fera défiler doucement la vue jusqu'à cet emplacement.
 
 Avec « Faire défiler jusqu'à la première modification » désactivé, vous pouvez toujours appuyer sur la touche « e » à tout moment dans l'aperçu pour accéder au dernier point de modification stocké.
 
-## Défilement automatique
+## Défilement automatique [autoscroll]
 
 Voir la page dédiée [Autoscroll](Autoscroll.html). Lorsque vous utilisez le défilement automatique comme téléprompteur, [une syntaxe spéciale peut insérer des pauses](Special_Syntax.html#pauses).
 
-## Aperçu du zoom
+## Aperçu du zoom [zoom-overview]
 
 Voir la page [Zoom Overview](Zoom_Overview.html) ({% kbd z %} dans l'aperçu ; fonctionne également en répétition de mots avec {% kbd ctrl cmd w %}).
 
-## Référence Markdown
+## Référence Markdown [markdown-reference]
 
 ![][11]
 
@@ -136,6 +136,6 @@ Voir la page [Zoom Overview](Zoom_Overview.html) ({% kbd z %} dans l'aperçu ; f
 
 Sélectionnez Référence Markdown dans le menu {% appmenu Help %} pour afficher un guide qui flotte au-dessus de vos autres fenêtres. C'est pratique pour ceux qui apprennent encore la syntaxe de Markdown. Vous pouvez ouvrir ce panneau via le clavier en utilisant {% kbd opt cmd M %}.
 
-## Raccourcis clavier globaux
+## Raccourcis clavier globaux [global-keyboard-shortcuts]
 
 Dans le {% prefspane General %}, vous pouvez désigner un raccourci clavier personnalisé pour activer Marked, et un autre pour élever uniquement la fenêtre avant vers le haut sans quitter votre éditeur.
