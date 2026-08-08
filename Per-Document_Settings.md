@@ -4,11 +4,11 @@ Marked will allow certain attributes of a document to be set in MultiMarkdown me
 
 Most MultiMarkdown headers are ignored by the preview, but the following are allowed and affect rendering. You can include other metadata to be rendered in the final output, Marked will just ignore keys not listed below. If you save as HTML and do *not* include a template, Marked will render all metadata keys as expected.
 
-## Metadata format
+## Metadata format [metadata-format]
 
 Metadata is entered at the top of the Markdown file or immediately following any YAML headers. They consist of a key, followed by a colon, optional spaces or tabs and the value:
 
-	Example metadata: example key
+	Example metadata: example value
 
 Multiple metadata entries should be on their own lines, but without any line breaks between them. The last metadata entry needs to be followed by a blank line before the start of the document text.
 
@@ -18,7 +18,7 @@ Multiple metadata entries should be on their own lines, but without any line bre
 
 	# The beginning of the document text
 
-## Marked metadata keys
+## Marked metadata keys [marked-metadata-keys]
 
 ### Hiding metadata for other processors [hidingmeta]
 
@@ -31,7 +31,7 @@ Multiple metadata entries should be on their own lines, but without any line bre
 
 *Just make sure that the metadata key begins at the start of the line with no spaces or tabs, and don't put anything else on the line after the value.*
 
-### Per-document styles
+### Per-document styles [per-document-styles]
 
 The "Marked Style:" key will set a preview style for the document. The value can be the name of a default style or a name or path for any [Custom Style](Custom_Styles.html) you have defined in the settings. If this key is found and matches a style that Marked knows about, that style will be used for the preview every time the document containing it is loaded.
 
@@ -39,7 +39,7 @@ The "Marked Style:" key will set a preview style for the document. The value can
 
 	Marked Style: Upstanding Citizen
 
-### Quotes language
+### Quotes language [quotes-language]
 
 By default, Marked uses English-style quotation marks. You can modify this on a per-document basis with the "Quotes Language:" key. Available languages are:
 
@@ -56,7 +56,7 @@ By default, Marked uses English-style quotation marks. You can modify this on a 
 
 	Creates French-language «quotation marks.»
 
-### Base header level
+### Base header level [base-header-level]
 
 You can set the header level that Marked starts counting from with the "Base Header Level:" key. This should be a number 1-6, and will modify the way that "#" headers are rendered. If you set the header level to 3, then what would normally be a first-level header (h1) is rendered as a third-level header (h3), and subsequent headers in the hierarchy are shifted up by 2.
 
@@ -74,7 +74,7 @@ You can set the header level that Marked starts counting from with the "Base Hea
 
 	<h4>This headline will be an h4</h4>
 
-### Custom Processors
+### Custom Processors [custom-processors]
 
 As detailed in the [Custom Processor](Custom_Processor.html#preprocessor), you can enable or disable a custom processor and custom preprocessor using metadata:
 
@@ -85,7 +85,7 @@ As detailed in the [Custom Processor](Custom_Processor.html#preprocessor), you c
 
 The "Processor" value can be set to "multimarkdown" or "discount" to force one or the other of the internal processors to be used. This per-document setting will not change the default setting in {% prefspane Processor %}.
 
-### Print Headers/Footers
+### Print Headers/Footers [print-headersfooters]
 
 You can override settings in {% prefspane Export %} for print headers and footers using the following keys:
 
@@ -96,9 +96,9 @@ You can override settings in {% prefspane Export %} for print headers and footer
 	print footer center:
 	print footer right:
 
-These can include [print variables](Exporting.html#headersandfooters) like `%title`, `%page`, `%total`, etc., as well as references to other metadata using `%md_[key without spaces]`.
+These can include [print variables](Exporting.html#headers-and-footers) like `%title`, `%page`, `%total`, etc., as well as references to other metadata using `%md_[key without spaces]`.
 
-### Print Margins
+### Print Margins [print-margins]
 
 Set page margins for Print and paginated PDF output with the `Margins:` key. Values are in points; suffixes like `px`, `pt`, and `em` are ignored. Provide two numbers for vertical and horizontal margins, or four numbers for top, right, bottom, and left:
 
@@ -107,7 +107,7 @@ Set page margins for Print and paginated PDF output with the `Margins:` key. Val
 
 Metadata margins override {% prefspane Export %} settings and the margin fields in the PDF export panel.
 
-### Inserting JavaScript
+### Inserting JavaScript [inserting-javascript]
 
 This method specifies data that is included in the `<head>` tag of the document. Marked ignores most values for this key, except in full-document output, but will respect scripts included in this manner. Script tags defined here will not be in the header, however, they'll be appended before the closing `</body>` tag. jQuery is already loaded, and you can take advantage of that in any scripts you inject.
 

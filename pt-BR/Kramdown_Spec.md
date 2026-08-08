@@ -4,11 +4,11 @@
 
 Confira o [Markdown Dingus](x-marked-3://dingus?processor=kramdown) para experimentar o processador Kramdown.
 
-## O que é Kramdown?
+## O que é Kramdown? [what-is-kramdown]
 
 Kramdown é um conversor rápido e puro de Ruby Markdown-superset que estende a sintaxe original do Markdown com recursos encontrados em outras implementações como Maruku, PHP Markdown Extra e Pandoc. Ele fornece uma sintaxe estrita com regras definidas, mantendo a compatibilidade com a maioria dos documentos Markdown.
 
-## Principais características
+## Principais características [key-characteristics]
 
 - **Ruby Rápido e Puro**: Escrito inteiramente em Ruby para desempenho e portabilidade
 - **Sintaxe estrita**: fornece regras definidas e especificações claras
@@ -16,9 +16,9 @@ Kramdown é um conversor rápido e puro de Ruby Markdown-superset que estende a 
 - **Integração Jekyll**: Processador Markdown padrão para gerador de site estático Jekyll
 - **Abrangente**: suporta elementos de nível de bloco e de extensão com ampla personalização
 
-## Principais diferenças do Markdown padrão
+## Principais diferenças do Markdown padrão [major-differences-from-standard-markdown]
 
-### 1. **Elementos aprimorados em nível de bloco**
+### 1. **Elementos aprimorados em nível de bloco** [1-enhanced-block-level-elements]
 
 **Listas de definições**
 
@@ -60,7 +60,7 @@ $$
 $$
 ```
 
-### 2. **Marcação de texto avançada**
+### 2. **Marcação de texto avançada** [2-advanced-text-markup]
 
 **Notas de rodapé**
 
@@ -95,7 +95,7 @@ This uses HTML and CSS.
 Even << guillemets >>
 ```
 
-### 3. **Listas de atributos e extensões**
+### 3. **Listas de atributos e extensões** [3-attribute-lists-and-extensions]
 
 **Definições de lista de atributos (ALDs)**
 
@@ -132,7 +132,7 @@ This text is completely ignored by kramdown.
 {::options key="val" /}
 ```
 
-### 4. **Suporte aprimorado para bloco de código**
+### 4. **Suporte aprimorado para bloco de código** [4-enhanced-code-block-support]
 
 **Especificação do idioma**
 
@@ -150,7 +150,7 @@ This text is completely ignored by kramdown.
 - Melhor manipulação de blocos de código recuados
 - Melhor integração com outros elementos do bloco
 
-### 5. **Regras de análise mais rígidas**
+### 5. **Regras de análise mais rígidas** [5-stricter-parsing-rules]
 
 **Quebra de linha**
 
@@ -169,7 +169,7 @@ This text is completely ignored by kramdown.
 - Regras claras para quando os elementos devem começar/terminar nos limites do bloco
 - Comportamento consistente em diferentes tipos de elementos
 
-### 6. **Suporte avançado para links e imagens**
+### 6. **Suporte avançado para links e imagens** [6-advanced-link-and-image-support]
 
 **Links automáticos**
 
@@ -190,7 +190,7 @@ This text is completely ignored by kramdown.
 ![Alt text](image.jpg){:width="300" height="200" class="responsive"}
 ```
 
-### 7. **Integração HTML**
+### 7. **Integração HTML** [7-html-integration]
 
 **Blocos HTML**
 
@@ -203,7 +203,7 @@ This text is completely ignored by kramdown.
 - HTML embutido com suporte a atributos
 - Melhor integração com sintaxe Markdown
 
-### 8. **Expressões Matemáticas**
+### 8. **Expressões Matemáticas** [8-mathematical-expressions]
 
 **Matemática embutida**
 
@@ -215,7 +215,7 @@ This text is completely ignored by kramdown.
 - `$$...$$` sintaxe para expressões matemáticas de bloco
 - Suporte para equações e fórmulas complexas
 
-## Kramdown vs outros sabores de Markdown
+## Kramdown vs outros sabores de Markdown [kramdown-vs-other-markdown-flavors]
 
 | Recurso | Kramdown | Marca Comum (GFM) | GitHub com sabor | MultiMarkdown | Padrão |
 | ---------------- | -------- | ---------- | --------------- | ------------- | -------- |
@@ -229,7 +229,7 @@ This text is completely ignored by kramdown.
 | Listas de atributos | Sim | Não | Não | Não | Não |
 | Tipografia | Sim | Não | Não | Sim | Não |
 
-## Principais vantagens do Kramdown
+## Principais vantagens do Kramdown [key-advantages-of-kramdown]
 
 1. **Conjunto abrangente de recursos**: Inclui muitas extensões não encontradas em outras implementações
 2. **Integração Jekyll**: Integração perfeita com o gerador de site estático Jekyll
@@ -239,7 +239,7 @@ This text is completely ignored by kramdown.
 6. **Suporte matemático**: suporte integrado para expressões matemáticas LaTeX
 7. **Análise estrita**: regras de análise claras e inequívocas
 
-## Casos de uso comuns
+## Casos de uso comuns [common-use-cases]
 
 **Sites Jekyll**
 
@@ -261,14 +261,14 @@ This text is completely ignored by kramdown.
 - Extensões para funcionalidade personalizada
 - Listas de atributos para metadados e estilos
 
-## Recursos
+## Recursos [resources]
 
 - [Documentação de sintaxe Kramdown](https://kramdown.gettalong.org/syntax.html)
 - [Documentação do conversor Kramdown](https://kramdown.gettalong.org/converter.html)
 - [Guia de integração Jekyll](https://jekyllrb.com/docs/configuration/markdown/)
 - [Repositório Kramdown GitHub](https://github.com/gettalong/kramdown)
 
-## Migração do Markdown padrão
+## Migração do Markdown padrão [migration-from-standard-markdown]
 
 A maioria dos documentos padrão do Markdown funcionam com o Kramdown sem modificação. Para aproveitar as vantagens dos recursos do Kramdown:
 
@@ -276,7 +276,7 @@ A maioria dos documentos padrão do Markdown funcionam com o Kramdown sem modifi
 2. **Use listas de atributos**: adicione IDs, classes e atributos personalizados
 3. **Implementar notas de rodapé**: converter referências entre parênteses
 
-## Melhores práticas
+## Melhores práticas [best-practices]
 
 1. **Evite sintaxe preguiçosa**: não confie no empacotamento rígido para facilitar a leitura
 2. **Use listas de atributos**: aproveite IALs para estilização e metadados

@@ -6,7 +6,7 @@ Options in the {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Window
+### Window [window]
 
 Keep new windows on top
 : Automatically set new windows to "float" above other applications.
@@ -29,7 +29,7 @@ Bring updated document to front
 Return focus to previous app
 : When enabled, if a raise/bring-on-update action causes Marked to take foreground focus, keyboard focus is returned to the app that was frontmost before the update (such as your text editor). When disabled, Marked never performs this focus handoff. If Marked does not become frontmost, this option has no effect.
 
-### Status bar
+### Status bar [status-bar]
 
 Show style picker
 : Shows the style picker in the bottom bar of the preview window.
@@ -45,7 +45,7 @@ Word count excludes
 - **Indented code blocks** (fenced code blocks are always excluded)
 - **Image captions**
 
-### Shortcuts
+### Shortcuts [shortcuts]
 
 Click the shortcut field to record a hotkey combination that triggers an event:
 

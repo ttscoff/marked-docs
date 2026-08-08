@@ -6,11 +6,11 @@ Marked bevat een macOS **Deel-extensie** die in het systeemmenu Deel verschijnt.
 
 De Deel-extensie **zit in Marked 3**. U downloadt en installeert deze niet apart. Hij zit in de Direct-, Mac App Store-, Marked Pro- en Setapp-builds.
 
-## Werking
+## Werking [how-it-works]
 
 Wanneer u **Marked** kiest in een Deel-menu, opent Marked meteen. Er is geen tussenscherm om te bewerken.
 
-### Een bestand delen
+### Een bestand delen [share-a-file]
 
 Kies in **Finder** (of een andere app die bestanden deelt) **Deel → Marked**.
 
@@ -18,7 +18,7 @@ Marked ontvangt het bestandspad en opent het met dezelfde `x-marked-3://open`-UR
 
 Ondersteunde invoer: bestands-URL's, lokale bestanden en web-URL's wanneer de bron-app die levert.
 
-### Geselecteerde tekst delen
+### Geselecteerde tekst delen [share-selected-text]
 
 Selecteer tekst in een app zoals **TextEdit**, **Safari** of **Mail** en kies **Deel → Marked**.
 
@@ -28,16 +28,16 @@ Platte tekst, HTML, RTF en Markdown worden ondersteund wanneer de bron-app die l
 
 Zie [URL Handler](URL_Handler.html) voor details over de onderliggende commando's.
 
-## Het Deel-menu gebruiken
+## Het Deel-menu gebruiken [using-the-share-menu]
 
-### Vanuit Finder
+### Vanuit Finder [from-finder]
 
 1. Klik met rechts op een Markdown- of tekstbestand (of selecteer het en klik op **Deel** in de Finder-werkbalk).
 2. Kies **Marked** in het Deel-menu.
 
 Als **Marked** niet zichtbaar is, zie [De Deel-extensie inschakelen](#enable-the-share-extension) hieronder.
 
-### Vanuit tekstselectie
+### Vanuit tekstselectie [from-a-text-selection]
 
 1. Selecteer de tekst die u wilt bekijken.
 2. Open het **Deel**-menu van de app (menubalk, werkbalkknop of contextmenu).
@@ -45,11 +45,11 @@ Als **Marked** niet zichtbaar is, zie [De Deel-extensie inschakelen](#enable-the
 
 Marked start (of komt naar voren) met een preview van de gedeelde inhoud.
 
-## De Deel-extensie inschakelen
+## De Deel-extensie inschakelen [enable-the-share-extension]
 
 Marked moet in `/Applications` (of uw gebruikelijke map Programma's) staan en minstens één keer zijn gestart voordat macOS de Deel-extensie toont.
 
-### Marked inschakelen in Systeeminstellingen
+### Marked inschakelen in Systeeminstellingen [turn-on-marked-in-system-settings]
 
 1. Open **Systeeminstellingen**.
 2. Ga naar **Algemeen → Inlogitems en extensies** (op sommige macOS-versies: **Privacy en beveiliging → Extensies**).
@@ -57,7 +57,7 @@ Marked moet in `/Applications` (of uw gebruikelijke map Programma's) staan en mi
 4. Selecteer **Delen** (of **Sharing**).
 5. Schakel **Marked** in.
 
-### Marked toevoegen aan het Deel-menu van een app
+### Marked toevoegen aan het Deel-menu van een app [add-marked-to-an-apps-share-menu]
 
 Ook als de extensie systeembreed aan staat, kiest elke app welke Deel-bestemmingen zichtbaar zijn:
 
@@ -69,7 +69,7 @@ Ook als de extensie systeembreed aan staat, kiest elke app welke Deel-bestemming
 
 Wijzigingen gelden in de meeste apps meteen.
 
-## Als Marked niet in Deel verschijnt
+## Als Marked niet in Deel verschijnt [if-marked-does-not-appear-in-share]
 
 W> De Deel-extensie is beschikbaar vanaf Marked 3.1.9. Zorg dat u minstens die versie gebruikt.
 
@@ -82,7 +82,7 @@ Probeer deze stappen in volgorde:
 5. **Start de Mac opnieuw** als de extensie na een update nog ontbreekt. macOS cachet registratie van Deel-extensies.
 6. **Installeer Marked opnieuw** in `/Applications` als u een handmatig gekopieerde build uit Xcode of een schijfafbeelding test. De Deel-extensie moet in `Marked.app/Contents/PlugIns/` zitten.
 
-## Tips
+## Tips [tips]
 
 - De Deel-extensie is ideaal voor snelle previews van webfragmenten, e-mailalinea's of notities zonder eerst een bestand te maken.
 - Voor hele pagina's of complexe browserselecties bieden de [browserextensies](Using_the_Browser_Extensions.html) vaak meer controle (sectieselectie, Markdownify URL, enz.).

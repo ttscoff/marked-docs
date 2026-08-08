@@ -6,7 +6,7 @@ Options in the {% prefspane Style %}:
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Layout and typography
+### Layout and typography [layout-and-typography]
 
 Limit text width in Preview
 : Set a maximum width for the body of the preview using the slider (in pixels).
@@ -41,7 +41,7 @@ Always wrap code
 Detect and style RTL text
 : Detect language per element in document and style Right To Left accordingly.
 
-### Theme
+### Theme [theme]
 
 Manage Styles
 : Opens the [Style Manager](Style_Manager.html) window. Add CSS files from your drive to have them appear in Style picker menus. Use the `Add New Style` button or drag CSS files to this window. Drag to reorder, and use the checkboxes to enable or disable Styles.
@@ -59,7 +59,7 @@ Additional CSS
 : CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles.
 : This applies to all documents and all styles. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
 
-### Include Scripts
+### Include Scripts [include-scripts]
 
 Syntax Highlighting
 : Turn on highlight.js [syntax highlighting](Syntax_Highlighting.html) for code blocks. Select a theme from the dropdown.
@@ -71,7 +71,7 @@ Enable MathJax
 : **Advanced Configuration** opens a sheet for custom MathJax configuration.
 
 Enable KaTeX
-: Loads [KaTeX](Mathjax.html#katex) as an alternative to MathJax. Only one or the other may be selected.
+: Loads [KaTeX](MathJax.html#katex) as an alternative to MathJax. Only one or the other may be selected.
 
 Number equations
 : If applicable, Marked will add figure numbers to rendered equations. Choose **Left Side** or **Right Side** for numbering. If using MathJax, you can choose **AMS only** to number only AMS equations.

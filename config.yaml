@@ -71,6 +71,41 @@ Sections:
     - chrome
     - firefox
     wiki_keywords: []
+  - title: Using the Share Extension
+    file: Share_Extension
+    description: Send files and selected text to Marked from the macOS Share menu. Enable Marked in System Settings if it does not appear.
+    keywords:
+    - share extension
+    - share sheet
+    - share menu
+    - finder
+    - text
+    - paste
+    - clipboard preview
+    - system settings
+    wiki_keywords:
+    - share extension
+    - share menu marked
+    - send to marked
+  - title: Marked Quick Look
+    file: Quick_Look
+    description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+    keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+    wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
   - title: Quick Open
     file: Quick_Open
     description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...
@@ -349,7 +384,7 @@ Sections:
     - equation
     - formula
   - title: Working with DOCX
-    file: Working_with_DOCX
+    file: Working_With_DOCX
     description: "Marked has extensive support for working with Microsoft Word files. The typical workflow is preview first, export DOCX second: open or watch your Markdown..."
     keywords:
     - docx
@@ -868,19 +903,6 @@ Sections:
     - applescript export
     - scripted export
     - automated export
-  # - title: Shortcuts Integration
-  #   file: Shortcuts_Integration
-  #   keywords:
-  #   - shortcuts
-  #   - siri
-  #   - automation
-  #   - export
-  #   - app intents
-  #   wiki_keywords:
-  #   - shortcuts
-  #   - siri shortcuts
-  #   - app intents
-  #   - shortcut export
   - title: Command Line Utility
     file: Command_Line_Utility
     description: The mk command-line tool provides easy access to Marked's features from the terminal, enabling workflow automation and integration with shell scripts and...
@@ -1015,15 +1037,6 @@ Sections:
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
 #   pages:
-#   - title: Frequently Asked Questions
-#     file: Frequently_Asked_Questions
-#     keywords:
-#     - faq
-#     - license
-#     - url
-#     - validation
-#     - include
-#     wiki_keywords: [faqs]
 - title: Troubleshooting
   folder: Troubleshooting
   pages:

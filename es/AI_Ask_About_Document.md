@@ -4,7 +4,7 @@
 
 Pregunte sobre el documento utiliza **Apple Intelligence** y el modelo de lenguaje del dispositivo integrado en versiones recientes de macOS para resumir su vista previa de Markdown y responder preguntas sobre su contenido. Todo el procesamiento ocurre en tu Mac; El texto del documento no se envía a los servidores de Marked ni a los servicios de inteligencia artificial de terceros para esta función.
 
-## Qué proporciona Apple Intelligence
+## Qué proporciona Apple Intelligence [what-apple-intelligence-provides]
 
 Apple Intelligence es el sistema de Apple para funciones generativas en el dispositivo. Marked utiliza el marco **Foundation Models** de Apple para acceder al mismo modelo en el dispositivo que impulsa las herramientas de escritura del sistema, expuesto directamente dentro de Marked para tareas centradas en documentos.
 
@@ -12,7 +12,7 @@ Marked envía el texto sin formato de su documento (la sintaxis de Markdown se e
 
 Apple Intelligence es mejor en tareas lingüísticas como resumir, esquematizar, extraer puntos clave y responder preguntas sobre el texto proporcionado. No es un asistente de codificación ni una calculadora general, y los documentos muy extensos se manejan en secciones para que los resultados se mantengan dentro de los límites del contexto del modelo.
 
-## Compatibilidad del sistema
+## Compatibilidad del sistema [system-compatibility]
 
 Preguntar sobre el documento aparece solo cuando su Mac puede ejecutar la función.
 
@@ -30,7 +30,7 @@ Preguntar sobre el documento aparece solo cuando su Mac puede ejecutar la funci�
 
 Si su Mac califica pero falta el elemento del menú, confirme que Apple Intelligence esté habilitado y que esté ejecutando una versión actual de Marked que incluya esta función. El menú está completamente oculto en sistemas no compatibles en lugar de mostrarse en un estado deshabilitado.
 
-## Habilitando la inteligencia de Apple
+## Habilitando la inteligencia de Apple [enabling-apple-intelligence]
 
 1. Abra **Configuración del sistema**.
 2. Vaya a **Apple Intelligence y Siri** (o **Apple Intelligence**, según su versión de macOS).
@@ -39,7 +39,7 @@ Si su Mac califica pero falta el elemento del menú, confirme que Apple Intellig
 
 Marcado no incluye una preferencia separada para esta característica. La disponibilidad sigue el estado del modelo del sistema informado por macOS.
 
-## Abrir documento de pregunta sobre
+## Abrir documento de pregunta sobre [opening-ask-about-document]
 
 Abra el panel usando cualquiera de estos métodos:
 
@@ -48,7 +48,7 @@ Abra el panel usando cualquiera de estos métodos:
 
 El panel se acopla al lado izquierdo de la ventana del documento. Necesita un documento abierto con texto legible; un documento vacío o una vista previa de solo HTML no ofrecerán el comando.
 
-## El panel Preguntar sobre el documento
+## El panel Preguntar sobre el documento [the-ask-about-document-panel]
 
 El panel está organizado como una simple vista de chat:
 
@@ -58,7 +58,7 @@ El panel está organizado como una simple vista de chat:
 
 Una vez completada una respuesta, el foco vuelve al campo de preguntas para que pueda realizar un seguimiento sin hacer clic.
 
-### Acciones preestablecidas
+### Acciones preestablecidas [preset-actions]
 
 | Acción | Qué hace |
 | :-- | :-- |
@@ -69,7 +69,7 @@ Una vez completada una respuesta, el foco vuelve al campo de preguntas para que 
 
 Las acciones preestablecidas no requieren texto en el campo de pregunta. Haga clic en un botón y espere la respuesta en el panel de arriba.
 
-### Haciendo tus propias preguntas
+### Haciendo tus propias preguntas [asking-your-own-questions]
 
 1. Escriba una pregunta en el campo en la parte inferior del panel, por ejemplo "¿Qué problema resuelve este documento?" o "¿Quién es el público objetivo?"
 2. Presione **Volver** o haga clic en **Preguntar**.
@@ -79,21 +79,21 @@ Si tiene preguntas sobre un pasaje específico, **seleccione ese texto en la vis
 
 Haga clic en **Cancelar** para detener una solicitud en curso.
 
-## Ejemplos
+## Ejemplos [examples]
 
-### Descripción rápida de un artículo extenso
+### Descripción rápida de un artículo extenso [quick-overview-of-a-long-article]
 
 Abra una publicación de blog extensa o un informe en Marcado, elija **Vista previa > Preguntar sobre el documento...** y haga clic en **Resumir documento**. Utilice el resumen para decidir si leer el artículo completo o refrescar su memoria después de un tiempo sin leer el borrador.
 
-### Notas sobre un párrafo seleccionado
+### Notas sobre un párrafo seleccionado [notes-on-a-selected-paragraph]
 
 Resalte un párrafo denso en la vista previa, abra Preguntar sobre el documento y haga clic en **Resumir selección**. Útil cuando solo necesitas una versión más corta de una sección.
 
-### Revisión estructural
+### Revisión estructural [structural-review]
 
 Haga clic en **Esquema** en un borrador con muchos títulos para ver si el argumento fluye de manera lógica, o use **Puntos clave** antes de enviar un documento a otra persona para verificar que las ideas principales estén claras.
 
-### Preguntas específicas
+### Preguntas específicas [targeted-questions]
 
 Sin ninguna selección activa, escriba preguntas como:
 
@@ -103,7 +103,7 @@ Sin ninguna selección activa, escriba preguntas como:
 
 Con una selección activa, haga preguntas más específicas como "¿Qué supone este párrafo sobre el lector?" o "Reescribe esta idea en una frase" (el modelo responde sobre la selección; no edita tu archivo fuente).
 
-## Consejos y limitaciones
+## Consejos y limitaciones [tips-and-limitations]
 
 - **Privacidad:** El procesamiento utiliza el modelo en el dispositivo de Apple. Marked todavía lee el texto de su documento localmente para proporcionar contenido a ese modelo; trate el material sensible en consecuencia.
 - **Precisión:** Verifique hechos importantes con su fuente. Los resúmenes de IA pueden omitir detalles o malinterpretar pasajes ambiguos.

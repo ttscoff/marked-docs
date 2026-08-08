@@ -2,7 +2,7 @@
 
 Marked autorise plusieurs syntaxes différentes pour inclure un fichier dans un autre.
 
-## Syntaxe de Marked
+## Syntaxe de Marked [marked-syntax]
 
 Vous pouvez inclure des fichiers externes dans un seul document d'aperçu en utilisant la syntaxe spéciale `<<[path/file]` au début d'une ligne. La ligne doit avoir des lignes vides au-dessus et en dessous, et le chemin est supposé être relatif au document principal à moins qu'il ne commence par une barre oblique (`/`) ou un tilde (`~`). Slash (répertoire racine) et tilde (répertoire personnel) peuvent être utilisés pour définir des chemins absolus vers les fichiers. Aucun chemin n'est nécessaire si les fichiers externes se trouvent dans le même dossier que le document principal, il suffit de mettre le nom du fichier (sensible à la casse et incluant l'extension) entre crochets.
 
@@ -44,7 +44,7 @@ L'exportation HTML finale d'un document contenant des inclusions aura des commen
 
 **Remarque :** plus un document contient de fichiers, plus le temps de compilation global de l'aperçu sera lent. Marked essaie d'optimiser et de mettre en cache le processus, mais attendez-vous à des retards de rendu à mesure que la taille de votre document augmente.
 
-## Syntaxe de transclusion MultiMarkdown
+## Syntaxe de transclusion MultiMarkdown [multimarkdown-transclude-syntax]
 
 Vous pouvez également utiliser la syntaxe `{{filename}}` basée sur la nouvelle spécification MultiMarkdown. Marked reconnaîtra `Transclude Base: path` dans les métadonnées MMD et l'utilisera comme base pour la transclusion de fichiers.
 
@@ -52,7 +52,7 @@ Transclude Base ne sera reconnu que dans le document parent, pas dans les docume
 
 La syntaxe de code clôturée fournie par MultiMarkdown pour inclure des fichiers sans traitement ne fonctionnera pas dans Marked. Pour ce faire, veuillez utiliser la syntaxe `<<(file)` (bloc de code) ou `<<{file}` (brut).
 
-## Syntaxe du bloc iA Writer
+## Syntaxe du bloc iA Writer [ia-writer-block-syntax]
 
 Marked 2.5.11+ prend en charge la syntaxe iA Writer [Content Block][ia]. Il s'agit d'une référence commençant par une barre oblique (`/`) sur sa propre ligne. Il peut s'agir d'un exemple de code, d'une image, d'un fichier markdown ou d'un fichier CSV. Tout sera traité de manière appropriée en fonction de l'extension du fichier inclus, et les CSV seront [convertis en tableaux Markdown][csv] si possible.
 
@@ -73,7 +73,7 @@ Chemin absolu vers le dossier Documents :
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
-## Comment les plans, les cartes mentales et les inclusions CSV sont convertis
+## Comment les plans, les cartes mentales et les inclusions CSV sont convertis [how-outline-mind-map-and-csv-includes-are-converted]
 
 Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path]` ou iA Writer, Marked les convertit au lieu d'insérer le contenu brut du fichier. Le comportement des plans et des cartes mentales dépend de l'extension du fichier et de vos préférences [Paramètres : Applications → Cartes mentales/Contours][mindmaps]. Les fichiers CSV/TSV sont toujours convertis en tableaux Markdown (voir [Création de tableaux à l'aide de fichiers CSV][csv]).
 
@@ -93,11 +93,11 @@ Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/O
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
-## Formats de livres
+## Formats de livres [book-formats]
 
 Marked prend également en charge les fichiers d'index dans des formats tels que [Leanpub][lp], [GitBook][gb] et mmd\_merge (MultiMarkdown). Les fichiers inclus dans les index au format livre seront surveillés pour détecter les modifications et le résultat sera un aperçu complet de votre document compilé, tout comme l'exemple "Index.md" ci-dessus.
 
-### Leanpub
+### Leanpub [leanpub]
 
 Si vous activez l'option dans le {% prefspane Apps %} sous Prise en charge Leanpub/GitBook, les fichiers nommés « Book.txt » seront automatiquement traités comme des fichiers d'index Leanpub. L'ancien format « frontmatter: » est également reconnu.
 
@@ -115,7 +115,7 @@ Exemple de fichier Leanpub Book.txt :
     Insertion d'images.txt
 
 
-### mmd_merge
+### mmd_merge [mmdmerge]
 
 Pour mmd\_merge, Marked nécessite que la première ligne soit "#merge" (un déclencheur Marked spécial pour mmd\_merge, traité comme un commentaire et ignoré par les autres processeurs).
 
@@ -134,7 +134,7 @@ Exemple mmd_merge :
     FAQ.md
     Remerciements.md
 
-### GitBook
+### GitBook [gitbook]
 
 Le formatage GitBook utilise une liste Markdown pour créer la structure et la table des matières. Si le support GitBook est activé dans le {% prefspane Apps %} sous Leanpub/GitBook support, un fichier nommé SUMMARY.md sera lu et automatiquement converti au format mmd_merge, permettant un aperçu complet de votre document GitBook.
 
@@ -159,7 +159,7 @@ GitBook permet d'utiliser des ancres dans la table des matières SUMMARY.md, mai
 [mmdm]: http://fletcher.github.io/peg-multimarkdown/#howdoisplitamultimarkdowndocumentintoseveralparts
 [gb]: https://www.gitbook.com/
 
-## Fonctionnalités d'aperçu de documents multi-fichiers
+## Fonctionnalités d'aperçu de documents multi-fichiers [multi-file-document-preview-features]
 
 ![Limites de fichiers incluses][2]
 

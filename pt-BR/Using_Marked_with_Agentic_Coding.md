@@ -5,7 +5,7 @@
 
 Marked é um ótimo companheiro para fluxos de trabalho modernos de "codificação de agente", onde ferramentas de IA geram planos, refatoram código e atualizam a documentação enquanto você trabalha. Ao permitir que Marked observe seu projeto ou pastas de planejamento, você obtém uma visualização legível e ao vivo de tudo o que seus agentes de codificação tocarem em seguida, sem ter que procurar em seu editor ou árvore de arquivos.
 
-## Observando seu projeto ou pasta de plano
+## Observando seu projeto ou pasta de plano [watching-your-project-or-plan-folder]
 
 Em vez de abrir um único arquivo, você pode apontar Marcado para uma pasta inteira que você usa para planos, notas de rascunho ou documentação gerada por IA:
 
@@ -17,7 +17,7 @@ Assim que Marked estiver monitorando uma pasta, ele exibirá automaticamente o *
 
 Isso funciona especialmente bem com ferramentas de agente como Cursor, Claude e Copilot, que regeneram continuamente especificações, listas de tarefas ou notas de arquitetura enquanto você itera em um recurso.
 
-## Rolando para a primeira alteração
+## Rolando para a primeira alteração [scrolling-to-the-first-change]
 
 Quando *Rolar para editar* está habilitado nas preferências do Marked, a visualização não apenas recarrega --- ela **rola diretamente para a primeira área alterada** do arquivo quando ele é atualizado.
 
@@ -29,7 +29,7 @@ Isso significa que você pode:
 
 Combinado com a observação de pastas, isso facilita ver exatamente o que seus agentes estão fazendo em seus documentos, mesmo quando fazem edições incrementais frequentes.
 
-## Diagramas com Mermaid.js
+## Diagramas com Mermaid.js [diagrams-with-mermaidjs]
 
 Marked também tem **suporte a Mermaid.js habilitado por padrão**, portanto, diagramas de sequência, fluxogramas e diagramas de arquitetura que seus agentes geram usando blocos de código Mermaid serão renderizados de forma limpa na visualização. Quando seu assistente de IA gera código protegido como:
 
@@ -44,7 +44,7 @@ flowchart TD
 
 Marcado irá transformá-lo automaticamente em um diagrama interativo e estilizado, oferecendo uma visão visual de fluxos de trabalho complexos, fluxos de dados ou designs de sistema criados por ferramentas como Cursor, Claude, Copilot e outros assistentes de codificação de agentes.
 
-## Exemplo de fluxos de trabalho de codificação agente
+## Exemplo de fluxos de trabalho de codificação agente [example-agentic-coding-workflows]
 
 - **Cursor + Marcado**: Mantenha uma pasta `plans/` ou `notes/` em seu repositório onde o Cursor escreve planos de implementação passo a passo. Ponto marcado nessa pasta para sempre ver o plano mais recente, renderizado de forma limpa, conforme você aceita e aplica edições no editor.
 

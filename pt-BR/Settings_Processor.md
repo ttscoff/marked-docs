@@ -8,7 +8,7 @@ Opções em {% prefspane Processor %}:
 
 [1]: images/screenshots/preferences-Processor.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Processo Markdown com
+### Processo Markdown com [process-markdown-with]
 
 Processador Markdown padrão. O processador CommonMark é preferido para usuários do GitHub, MultiMarkdown é ideal para escritores e Discount e Kramdown têm finalidades especializadas. Marcado compensa algumas diferenças entre sintaxe. Consulte __Help->Referência de Markdown__ para obter informações adicionais.
 
@@ -34,7 +34,7 @@ Use IDs de notas de rodapé aleatórios
 Processar Markdown dentro do HTML
 : por padrão, o Markdown dentro das tags HTML geralmente é ignorado. Esta opção força Marked a continuar o processamento nos elementos do bloco. Observe que algumas marcações podem causar problemas.
 
-### Renderização
+### Renderização [html]
 
 Manter quebras de linha em parágrafos
 : Respeite as quebras de linha no texto do parágrafo, substituindo por quebras rígidas em vez de concatenar com a linha anterior.

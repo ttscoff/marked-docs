@@ -1,6 +1,6 @@
 # <%= @title %>
 
-## AppleScript
+## AppleScript [applescript]
 
 Marked includes a full [AppleScript dictionary](AppleScript_Support.html) for opening files, controlling the preview (reload, scroll, highlights, autoscroll, speed read), reading statistics, setting processors, copying HTML or RTF, changing preview styles, and exporting to Markdown, HTML, PDF, EPUB, DOCX, ODT, TextBundle, RTF, and OPML. **Preview headings / table of contents** via AppleScript is [documented as work in progress](AppleScript_Support.html#table-of-contents-work-in-progress) and is not reliable yet.
 
@@ -18,19 +18,11 @@ See [AppleScript Support](AppleScript_Support.html) for the command list, margin
 
 The AppleScript integration also allows applications such as Tags.app to function directly within Marked.
 
-{% note %}
-## Shortcuts
-
-Marked includes native [Shortcuts actions](Shortcuts_Integration.html) on macOS 13 or later. Use **Open and Export File** for Finder-to-PDF workflows, **Export Document** for whatever is already open in Marked, or **Set Preview Style** to change themes before export. Export actions accept **profiles**, preview **styles**, and options such as **page size**, **margins**, and **font size** (same semantics as AppleScript `with` records).
-
-[shortcuts]: Shortcuts_Integration.html
-{% endnote %}
-
-## URL Handler
+## URL Handler [url-handler]
 
 The [Marked URL handler][urlhandler] allows extensive integration simply by calling URLs, either from AppleScript or with a basic `open` command in a shell script.
 
-## Marked Bonus Pack
+## Marked Bonus Pack [marked-bonus-pack]
 
 The Marked Bonus Pack is a collection of scripts, commands and services. Some work with multiple editors, some are specific to certain editors. The Services will generally work with any editor that has the necessary capabilities. The rest are organized in folders based on the application they work with.
 

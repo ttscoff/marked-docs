@@ -4,7 +4,7 @@
 
 As visualizações não estão sendo atualizadas conforme o esperado?
 
-## Máquina do Tempo
+## Máquina do Tempo [time-machine]
 
 Foram relatados alguns problemas relacionados a atualizações lentas (ou inexistentes) durante a execução do Time Machine. Os recursos de atualização do Marked podem ser prejudicados se o Time Machine estiver usando a parte da unidade onde o arquivo existe no momento. Isso geralmente será resolvido quando o Time Machine terminar sua execução.
 

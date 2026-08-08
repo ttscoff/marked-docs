@@ -7,7 +7,7 @@ Practical conventions for the German docs. Read this and `GLOSSARY.md` before tr
 Recurring things to watch when post-editing the machine-translated drafts:
 
 1. **Reference-link definitions** (`[label]: url`) each on their own line — never collapse several onto one line, or all but the first break.
-2. **Translate the link text, keep the target:** in `[text](Target.html)` and `[text][label]`, translate only the visible text; the filename and the `[label]` stay English.
+2. **Translate the link text, keep the target:** in `[text](Target.html)` and `[text][label]`, translate the visible text; the filename and the `[label]` stay English. Exception: product, format, and feature names stay English even as link text — see *Links and filenames*.
 3. **Dash:** the German parenthetical dash is `–` (en dash with spaces), not `---` or `—`.
 4. **Block tags** (`{% apponly div %}`, `{% endapponly %}`, …) on their own line, no trailing spaces.
 5. **Localize syntax example words, consistently:** `*kursiv*`, `**fett**` (not `*italics*` / `**bold**`).
@@ -45,7 +45,7 @@ This is where the German UI localization was weakest; keep the docs on the corre
 
 ## Punctuation and typography
 
-- Quotation marks: German „…" (`„` U+201E … `"` U+201C). Not straight `"..."`.
+- Quotation marks: German „…“ (`„` U+201E … `“` U+201C). Not straight `"..."`.
 - Ellipsis: Unicode `…`, matching the app (nicht drei Punkte `...`).
 - Dash: Halbgeviertstrich `–` for parentheticals, not the em dash `—`.
 - Decimal/thousands: German conventions (1.000, 3,5).
@@ -54,7 +54,19 @@ This is where the German UI localization was weakest; keep the docs on the corre
 
 - Keep `.md` / `.html` filenames identical to English (`Exporting.md`, not translated).
 - Translate link **anchor text** only, never the target.
+- **Link text: German for descriptive titles, English for names.** Translate page-title link text to German (`[Opening Files]` → „[Dateien öffnen]“, `[Exporting]` → „[Export]“, `[Working With DOCX]` → „[Arbeiten mit DOCX]“). But keep product, format, and feature names English even as link text: `[RTF]`, `[DOCX]`, `[Scrivener]`, `[MathJax]`, `[Fountain]`, `[Autoscroll]`, `[Speed Reading]`, `[pdf22md]`.
 - Do not change `#anchor` IDs unless you add explicit heading IDs and update all references (ask the lead first).
+- **Cross-page anchors break when you translate a heading.** A link like `Exporting.html#headers-and-footers` targets a heading whose slug is derived from the *English* text; translating that heading („## Kopf- und Fußzeilen“) changes the slug and the inbound link dies — in every language. Fix by pinning the English anchor on the translated heading with an explicit ID: `## Kopf- und Fußzeilen [headers-and-footers]`. Before translating a page's headings, check who links into its sections (`grep -rn "ThisPage.html#"`), and pin every incoming anchor.
+
+## Code blocks and examples
+
+The rule of thumb: anything the reader **types** stays English, anything the reader **reads** becomes German.
+
+- **Commands, options, keys, and values are literal — never translate them.** The machine translation broke this repeatedly, because inside a damaged fence it no longer recognized the text as code: `cat notes.md` → „Katzennotizen.md“, `pbpaste | markdown` → „pbpaste | Abschlag“, `head -20` → „Kopf -20“, `processor=multimarkdown` → „Prozessor=Multimarkdown“, `mk --dojs "…" all` → „alle“. The same holds for AppleScript commands (`open streaming preview`, `get statistics`), `with` record keys (`style`, `pageSize`, `margins`), metadata keys, CSS values (`pre`, `pre-wrap`, `inherit`), and JSON keys (`macros`, `equationNumbers`).
+- **Comments inside code blocks are prose — translate them.** `# Open a file` → „# Datei öffnen“. They are read, not executed, so translating them breaks nothing and helps the reader. Infinitive, like control labels.
+- **Illustrative example content is prose — translate it.** Where an example shows Markdown the reader would see rendered, translate it: `mk --preview "## Hello\n\nThis is **markdown** text!"` → „## Hallo\n\nDies ist **Markdown**-Text!“. Placeholder values too: `Example metadata: example value` → „Beispiel-Metadatum: Beispielwert“.
+- **Indentation marks literal code too, and it goes missing the same way.** A four-space or tab indent makes a code block just as a fence does, and the machine translation dropped it in places, with the same consequence: the block stops being code and its contents get translated. In `Fountain_for_Screenwriters` the opening `[scrippet]` lost its indent while the closing tag kept it. In `Keyword_Highlighting` the regex `/\\S*?ly/` lost its indent and was then translated to `/\\Listig/`, because `S*?ly` looks like „sly“. Neither shows up in a fence count, so compare indented lines too: `grep -cE '^(    |\t)\S' Page.md de/Page.md`. Treat a mismatch as a signal, not a verdict, and look at what it flags: where the English is hard-wrapped and the German is not, the continuation lines of a wrapped list item start with four spaces and are counted as indented, so the German legitimately has fewer. Markdown_Dingus is the example. A real hit looks different: one line of a two-line block loses its indent while its neighbour keeps it.
+- **Check the fences before you post-edit.** In several files the machine translation turned ```` ```bash ```` into „Bash and the closing ```` ``` ```` into „, which silently un-codes the whole block — it renders as body text, `#` comments become headings, and the commands inside were then translated too. Compare against the English original before you touch the prose: `grep -c '^```' Page.md de/Page.md` must match, and `grep -n '^„' de/Page.md` must not land on a fence.
 
 ## `config.yaml` for this locale
 
@@ -67,4 +79,9 @@ Per root `README.md`: translate section `title`, `folder` slugs, page `title`/`s
 - [ ] „Überschrift“ used for headings (never „Schlagzeile“)
 - [ ] Sie used consistently, German quotes „…“ and ellipsis `…`
 - [ ] `.md`/`.html` filenames and `{% … %}` tags unchanged
+- [ ] Code-fence count matches the English original, no `„` where a ``` belongs
+- [ ] Indented-line count matches the English original (indentation marks literal code too)
+- [ ] Commands, keys, and values in code blocks identical to English; comments and example content German
+- [ ] Link text German for descriptive titles, English for product/format/feature names
+- [ ] Cross-page anchor targets pinned with explicit `[id]` where the heading was translated
 - [ ] Terms match `GLOSSARY.md`; new recurring terms added there

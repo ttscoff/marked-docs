@@ -2,7 +2,7 @@
 
 Ouverture rapide donne un accès rapide à vos documents ouverts et à vos fichiers récents.
 
-## Ouvrir le panneau Ouverture rapide
+## Ouvrir le panneau Ouverture rapide [opening-quick-open]
 
 Accédez au panneau Ouverture rapide avec {% kbd shift cmd O %} ou depuis le menu {% appmenu File, Quick Open %}. Le panneau apparaît sous forme de fenêtre flottante au-dessus de votre document actuel, vous permettant de basculer rapidement entre les documents ouverts ou d'ouvrir des fichiers récents.
 
@@ -10,11 +10,11 @@ Accédez au panneau Ouverture rapide avec {% kbd shift cmd O %} ou depuis le men
 
 [qo]: images/quick-open-800.jpg @2x width=800
 
-## Sections de documents
+## Sections de documents [document-sections]
 
 Le panneau Ouverture rapide organise les documents en sections claires :
 
-### Documents ouverts
+### Documents ouverts [open-documents]
 
 En haut de la liste, vous verrez tous les documents actuellement ouverts. Les documents sont regroupés visuellement par fenêtre :
 
@@ -26,7 +26,7 @@ Chaque document ouvert affiche :
 - les informations de regroupement de fenêtre comme sous-titre
 - une icône de document
 
-### Documents récents
+### Documents récents [recent-documents]
 
 Sous les documents ouverts, un séparateur « Documents récents » divise la liste. La section des documents récents affiche jusqu'à 10 de vos fichiers les plus récemment ouverts qui ne sont pas actuellement ouverts. Chaque document récent affiche :
 
@@ -34,7 +34,7 @@ Sous les documents ouverts, un séparateur « Documents récents » divise la li
 - « Récent » comme sous-titre
 - une icône de document
 
-### Ouvrir autre chose
+### Ouvrir autre chose [open-other]
 
 En bas de la liste, l'option « Ouvrir autre chose… » vous permet d'ouvrir le sélecteur de fichiers standard de macOS pour sélectionner n'importe quel fichier. Cette option affiche :
 
@@ -42,7 +42,7 @@ En bas de la liste, l'option « Ouvrir autre chose… » vous permet d'ouvrir le
 - « Ouvrir un fichier ou un dossier » comme sous-titre
 - une icône de dossier
 
-## Recherche et filtrage
+## Recherche et filtrage [search-and-filter]
 
 Tapez dans le champ de recherche en haut du panneau pour filtrer la liste en temps réel. La recherche porte sur :
 
@@ -51,7 +51,7 @@ Tapez dans le champ de recherche en haut du panneau pour filtrer la liste en tem
 
 Au fur et à mesure que vous tapez, la liste se met à jour immédiatement pour n'afficher que les documents correspondants. L'option « Ouvrir autre chose… » reste toujours visible en bas des résultats filtrés.
 
-## Navigation au clavier
+## Navigation au clavier [keyboard-navigation]
 
 Naviguez dans le panneau Ouverture rapide entièrement au clavier :
 
@@ -60,13 +60,13 @@ Naviguez dans le panneau Ouverture rapide entièrement au clavier :
 - **Échap** : fermer le panneau Ouverture rapide
 - **Commande (⌘)** : maintenir enfoncée pour révéler les chemins de fichiers (voir ci-dessous)
 
-## Afficher les chemins de fichiers
+## Afficher les chemins de fichiers [viewing-file-paths]
 
 Maintenez la touche **Commande (⌘)** enfoncée pendant que le panneau Ouverture rapide est ouvert pour voir le chemin de fichier complet de chaque document dans la zone de sous-titre. Les chemins dans votre dossier personnel sont affichés à l'aide du raccourci `~` (par exemple, `~/Documents/file.md`). Relâchez la touche Commande pour revenir à la vue normale affichant le regroupement de fenêtre ou l'information « Récent ».
 
 Ceci est particulièrement utile lorsque vous avez plusieurs fichiers portant le même nom ouverts, ou lorsque vous devez vérifier l'emplacement exact d'un document.
 
-## Ouvrir des documents
+## Ouvrir des documents [opening-documents]
 
 - **Documents ouverts** : sélectionner un document ouvert amène sa fenêtre au premier plan et bascule vers l'onglet de ce document s'il se trouve dans une fenêtre à onglets
 - **Documents récents** : sélectionner un document récent l'ouvre dans une nouvelle fenêtre ou l'ajoute comme onglet (selon votre préférence « Ouvrir les documents en onglets » dans {% prefspane General %})

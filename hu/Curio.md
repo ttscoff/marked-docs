@@ -4,7 +4,7 @@
 
 A [Curio][curio] egy vizuális ötletbörze és jegyzetelő alkalmazás, amely a szerkesztett elemet streamelheti a Marked **streaming előnézet** csatornájára.
 
-## Stream Kijelölve megjelölve
+## Stream Kijelölve megjelölve [stream-selected-to-marked]
 
 1. A Megjelölt területen válassza a {% appmenu File, New, Streaming Preview %} lehetőséget, hogy készen álljon a streaming előnézeti ablaka.
 2. A Curio programban kapcsolja be a **Nézet → Megjelölt adatfolyam** lehetőséget.

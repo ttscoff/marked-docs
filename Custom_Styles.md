@@ -2,7 +2,7 @@
 
 View your documents *your* way.
 
-## Using custom styles
+## Using custom styles [using-custom-styles]
 
 ![][img1]
 
@@ -29,7 +29,7 @@ some confusion.
 Add Custom Styles using the Style Manager with the Add Button, or by dragging one or more CSS files onto the Settings
 pane.
 
-## Managing styles with the Style Manager
+## Managing styles with the Style Manager [managing-styles-with-the-style-manager]
 
 Launching the Style Manager gives you a single place to curate every built‑in
 and custom theme. Click the **Manage Styles…** button in the {% prefspane Style %}
@@ -61,7 +61,7 @@ the `⌘/#` shortcut assignments, so you can literally drag styles into the slot
 you want. You can also drag external CSS files into specific positions; the drop
 indicator determines where the new style is inserted.
 
-### Live preview
+### Live preview [live-preview]
 
 The right pane holds a preview that renders the selected style
 inside a full HTML document with a comprehensive set of headings, lists, tables, code blocks, etc. The
@@ -72,7 +72,7 @@ creating your own) [on GitHub][1] (see the [examples][2] for
 a quick peek at what's there). See [Creating Custom CSS][3]
 for details and tips.
 
-## Additional CSS
+## Additional CSS [additional-css]
 
 Under the {% prefspane Style %}, you'll find an option
 titled Additional CSS with a button labeled "Edit CSS."
@@ -92,7 +92,7 @@ CSS based on conditional matches, use the Set Style, Insert
 CSS File, or Insert CSS actions in {% prefspane Processor %}
 Custom Rules.
 
-## Print and PDF export
+## Print and PDF export [print-and-pdf-export]
 
 Marked injects a built-in `@media print` block (`mkprintstyles`) on every
 preview. It sets defaults such as a **10pt** base on `html`, `body`, and
@@ -150,7 +150,7 @@ print-only tweaks in `@media print` and/or `.mkprinting` rules (rather than
 only in screen rules) keeps the preview and export behavior easier to reason
 about.
 
-## Watching CSS changes
+## Watching CSS changes [watching-css-changes]
 
 You can check a box in the Custom Styles section of the {% prefspane Style %}
 to have Marked watch the active CSS file
@@ -166,7 +166,7 @@ Markdown file containing all the markup you want to style
 for, create a custom style, and watch the preview for live
 changes as you edit it.
 
-## Writing custom CSS
+## Writing custom CSS [writing-custom-css]
 
 If you're familiar with CSS, you can create your own style
 sheets for use in Marked. See [Writing Custom CSS][3] for
@@ -175,7 +175,7 @@ details. Any time you create something new, consider
 users. Be sure to cover the basics listed in the guide, and
 include the metadata comment at the top.
 
-### Automatic Custom Styles with StyleStealer
+### Automatic Custom Styles with StyleStealer [automatic-custom-styles-with-stylestealer]
 
 You can even automatically generate a style based on an
 existing website using the [Style Stealer][4]. This allows you to load a web page and grab the calculated styles for all major elements found in Markdown, then save it to a custom style.

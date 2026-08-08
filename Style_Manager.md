@@ -4,7 +4,7 @@ The Style Manager provides a centralized interface for managing all of your
 built‑in and Custom Styles. It gives you complete control over which
 Styles appear in menus, their order, keyboard shortcuts, and more.
 
-## Opening the Style Manager
+## Opening the Style Manager [opening-the-style-manager]
 
 To open the Style Manager, click the **Manage Styles…** button in the {% prefspane Style %}
 pane, or use {% appmenu Style, Manage Styles (~@$m) %}. You can also drag CSS files directly onto the preferences window --- Marked
@@ -15,13 +15,13 @@ you.
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## The Style Table
+## The Style Table [the-style-table]
 
 The Style Manager displays all of your styles in a sortable table that mixes
 built‑in and custom styles seamlessly. Each row in the table contains several
 columns:
 
-### Enabled Checkbox
+### Enabled Checkbox [enabled-checkbox]
 
 The **Enabled** checkbox immediately adds or removes the style from the Style
 menu, Default Style popup, and keyboard shortcuts. When you disable a style,
@@ -30,7 +30,7 @@ it's hidden from menus but remains in the Style Manager for easy re‑enablement
 If you disable the currently active style, Marked automatically switches to the
 next available enabled style.
 
-### Name Column
+### Name Column [name-column]
 
 The **Name** column displays the style's display name. You can edit this name
 inline by clicking directly on it; changes persist and propagate to every menu
@@ -40,7 +40,7 @@ might want a more descriptive name than the filename.
 Built‑in styles have locked names that cannot be edited. To customize a
 built‑in style's name, duplicate it first to create an editable copy.
 
-### Source Column
+### Source Column [source-column]
 
 The **Source** column indicates where the style comes from:
 
@@ -50,7 +50,7 @@ The **Source** column indicates where the style comes from:
 - **Duplicated**: Styles created by duplicating another Style (either built‑in
   or custom)
 
-### Actions Column
+### Actions Column [actions-column]
 
 Each row includes an **Actions** stack with buttons for managing that Style:
 
@@ -73,7 +73,7 @@ disabled.
 default state if it has been modified. This button is only visible for
 built‑in styles.
 
-## Reordering Styles
+## Reordering Styles [reordering-styles]
 
 Rows can be reordered via drag and drop. Simply drag a style row to a new
 position in the table. The order you set here drives:
@@ -85,17 +85,17 @@ position in the table. The order you set here drives:
 Drag styles into the keyboard shortcut slots you want them to
 occupy.
 
-## Adding Styles
+## Adding Styles [adding-styles]
 
 There are several ways to add new custom styles to the Style Manager:
 
-### Add Button
+### Add Button [add-button]
 
 Click the **Add New Style** button to open a file picker
 where you can select one or more CSS files to import. Selected files will be
 added to the Style Manager and enabled by default.
 
-### Drag and Drop
+### Drag and Drop [drag-and-drop]
 
 You can drag CSS files directly onto the Style Manager window. When you drag
 files over the window, an overlay will appear showing "Add a Custom Style" (or
@@ -108,7 +108,7 @@ both import and positioning in one action.
 Dragging CSS files onto the {% prefspane Style %} preferences pane will also
 import them and open the Style Manager automatically.
 
-## Live Preview
+## Live Preview [live-preview]
 
 The right pane of the Style Manager displays a live preview of the selected
 style. The preview renders a comprehensive sample document with headings,
@@ -119,33 +119,33 @@ The preview uses the CSS file directly from disk, so any edits you make in your
 external editor will update instantly in the preview. This makes it easy to
 see your changes in real time as you develop custom styles.
 
-### Dark Mode Preview
+### Dark Mode Preview [dark-mode-preview]
 
 A checkbox above the preview allows you to toggle between light and dark mode
 previews. This is useful for testing how styles look in both appearance modes,
 especially if you're creating styles that adapt to system appearance.
 
-## Keyboard Shortcuts
+## Keyboard Shortcuts [keyboard-shortcuts]
 
 The Style Manager displays a legend below the table showing how keyboard
 shortcuts are assigned. The first nine enabled styles receive {% kbd cmd 1 %} through
 {% kbd cmd 9 %} ({% kbd cmd 0 %} is reserved), the next ten receive {% kbd opt cmd 1 %} through {% kbd opt cmd 0 %}, and so on. You can see the assigned keyboard shortcuts in the Style popup menu on any Preview.
 
-## Filtering Disabled Styles
+## Filtering Disabled Styles [filtering-disabled-styles]
 
 A checkbox at the bottom of the window allows you to show or hide disabled
 styles. When unchecked, only enabled styles are displayed, making it easier to
 focus on and reorder your active styles. When checked, all styles (enabled and disabled)
 are shown, allowing you to manage your complete style collection.
 
-## Restoring Built‑in Styles
+## Restoring Built‑in Styles [restoring-builtin-styles]
 
 The **Restore All Built‑in Styles** button at the bottom of the window
 restores all built‑in styles to their default state. This is useful if you've
 disabled built‑in styles and want to re‑enable them, or if you want to reset
 any modifications made to built‑in styles.
 
-## Tips
+## Tips [tips]
 
 - **Organize by frequency**: Drag your most‑used styles to the top to give
   them the easiest keyboard shortcuts ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)

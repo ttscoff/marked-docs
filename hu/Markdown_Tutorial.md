@@ -2,13 +2,13 @@
 
 # <%= @title %>
 
-## Mi az a Markdown?
+## Mi az a Markdown? [what-is-markdown]
 
 A Markdown egy könnyű jelölőnyelv, amely lehetővé teszi, hogy könnyen olvasható, könnyen írható egyszerű szöveges formátum használatával írjon, majd átalakítsa azt szerkezetileg érvényes HTML-vé. A Markdown formázási szintaxisának elsődleges tervezési célja az, hogy a lehető legjobban olvasható legyen.
 
-## Alapszintaxis
+## Alapszintaxis [basic-syntax]
 
-### Fejlécek
+### Fejlécek [headers]
 
 Hozzon létre fejléceket hash szimbólumok (`#`) használatával. A hash-ek száma határozza meg a fejléc szintjét:
 
@@ -21,7 +21,7 @@ Hozzon létre fejléceket hash szimbólumok (`#`) használatával. A hash-ek sz�
 ###### Header 6
 ```
 
-### Hangsúly
+### Hangsúly [emphasis]
 
 **félkövér szöveg** dupla csillaggal vagy dupla aláhúzással:
 
@@ -37,7 +37,7 @@ __Bold text__
 _Italic text_
 ```
 
-### Listák
+### Listák [lists]
 
 **Rendezés nélküli listák** csillagokkal, pluszjelekkel vagy kötőjelekkel:
 
@@ -63,7 +63,7 @@ _Italic text_
 3. Third item
 ```
 
-### Linkek
+### Linkek [links]
 
 **Inline linkek**, szögletes zárójelben a szöveggel és zárójelben az URL-lel:
 
@@ -86,7 +86,7 @@ _Italic text_
 <user@example.com>
 ```
 
-### Képek
+### Képek [images]
 
 A képek a hivatkozásokhoz hasonló szintaxist használnak, de az elején felkiáltójellel:
 
@@ -97,7 +97,7 @@ A képek a hivatkozásokhoz hasonló szintaxist használnak, de az elején felki
 [image-reference]: http://example.com/image.jpg "Optional title"
 ```
 
-### Idézetblokk
+### Idézetblokk [blockquotes]
 
 Hozzon létre idézőjeleket a nagyobb, mint szimbólum (`>`) használatával az egyes sorok elején:
 
@@ -108,7 +108,7 @@ Hozzon létre idézőjeleket a nagyobb, mint szimbólum (`>`) használatával az
 > You can have multiple paragraphs in a blockquote.
 ```
 
-### Kód
+### Kód [code]
 
 **Inline kód** backtick használatával:
 
@@ -124,7 +124,7 @@ Use ⟦4⟧ in your text.
     Multiple lines are supported.
 ```
 
-### Vízszintes szabályok
+### Vízszintes szabályok [horizontal-rules]
 
 Hozzon létre vízszintes szabályokat három vagy több kötőjel, csillag vagy aláhúzás segítségével:
 
@@ -136,7 +136,7 @@ Hozzon létre vízszintes szabályokat három vagy több kötőjel, csillag vagy
 ___
 ```
 
-### Sortörések
+### Sortörések [line-breaks]
 
 **Kemény sortörés** egy sor két vagy több szóközzel történő befejezésével:
 
@@ -152,7 +152,7 @@ This line
 continues on the next line with a space.
 ```
 
-### Menekülő karakterek
+### Menekülő karakterek [escaping-characters]
 
 Speciális karakterek kilépése fordított perjelekkel:
 
@@ -175,7 +175,7 @@ Gyakori karakterek, amelyek megkerülhetők:
 - `.` időszak
 - `!` felkiáltójel
 
-## Bevált gyakorlatok
+## Bevált gyakorlatok [best-practices]
 
 1. **Használjon üres sorokat** a különböző elemek elválasztásához a jobb olvashatóság érdekében
 2. **Legyen következetes** a formázási választásaival (például használja a `*` vagy a `_` karaktereket a kiemeléshez)
@@ -183,9 +183,9 @@ Gyakori karakterek, amelyek megkerülhetők:
 4. **Tesztelje le a kimenetet**, hogy megbizonyosodjon arról, hogy a várt módon jelenik meg
 5. **Használjon értelmes linkszöveget** olyan általános kifejezések helyett, mint a "kattintson ide"
 
-## Gyakori minták
+## Gyakori minták [common-patterns]
 
-### Beágyazott listák
+### Beágyazott listák [nested-lists]
 
 ```markdown
 1. First item
@@ -195,7 +195,7 @@ Gyakori karakterek, amelyek megkerülhetők:
    - More nested content
 ```
 
-### Listák bekezdésekkel
+### Listák bekezdésekkel [lists-with-paragraphs]
 
 ```markdown
 1. First item
@@ -207,7 +207,7 @@ Gyakori karakterek, amelyek megkerülhetők:
    This is a paragraph under the second item.
 ```
 
-### Az idézetek blokkolása más elemekkel
+### Az idézetek blokkolása más elemekkel [blockquotes-with-other-elements]
 
 ```markdown
 > This is a blockquote with **bold text** and *italic text*.
@@ -218,7 +218,7 @@ Gyakori karakterek, amelyek megkerülhetők:
 > > Nested blockquotes are also possible.
 ```
 
-## Összegzés
+## Összegzés [summary]
 
 A Markdown egyszerű, olvasható módot biztosít a szöveg formázására, amely könnyen konvertálható HTML-be. A kulcs az, hogy egyszerű és olvasható legyen, miközben az alapvető szintaktikai elemeket következetesen használja. Gyakorlattal rá fog jönni, hogy a Markdown másodlagossá válik, és sokkal könnyebbé teszi a strukturált tartalom írását.
 

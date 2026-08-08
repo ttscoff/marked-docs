@@ -4,7 +4,7 @@
 
 [Curio][curio] es una aplicación visual de lluvia de ideas y toma de notas que puede transmitir el elemento que estás editando al canal **vista previa de transmisión** de Marked.
 
-## Transmisión seleccionada para marcar
+## Transmisión seleccionada para marcar [stream-selected-to-marked]
 
 1. En Marcado, elija {% appmenu File, New, Streaming Preview %} para que esté lista una ventana de vista previa de la transmisión.
 2. En Curio, active **Ver → Transmisión seleccionada para marcar**.

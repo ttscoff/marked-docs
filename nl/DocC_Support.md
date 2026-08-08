@@ -4,13 +4,13 @@ Marked begrijpt [Apple DocC](https://www.swift.org/documentation/docc/) document
 
 Voor normale Markdown documenten die **paden met bestandsextensies** (`images/icon.png`) gebruiken, zie [Image Variants](Image_Variants.html). Die functie werkt overal; DocC-resolutie is catalogusspecifiek.
 
-## DocC-resolutie inschakelen
+## DocC-resolutie inschakelen [enabling-docc-resolution]
 
 Schakel in {% prefspane Apps %} **Resolve DocC image references** in (standaard ingeschakeld).
 
 DocC-detectie wordt uitgevoerd wanneer Marked een `.docc` catalogusvoorouder van het geopende document vindt. Er is geen speciaal URL-schema of Xcode-integratie vereist; open de Markdown van de catalogus op dezelfde manier als elk ander bestand.
 
-## Extensieloze referenties
+## Extensieloze referenties [extensionless-references]
 
 Binnen een DocC-catalogus verwijzen auteurs doorgaans naar afbeeldingen **zonder** een pad of extensie:
 
@@ -22,7 +22,7 @@ Marked zet `OrderStateTransitions` om in `Resources/OrderStateTransitions.png` (
 
 Verwijzingen die al een pad en extensie bevatten — `images/chart.png` — worden in plaats daarvan overgelaten aan [Image Variants](Image_Variants.html) en worden niet herschreven door DocC-resolutie.
 
-## Donkere modus en Retina-varianten
+## Donkere modus en Retina-varianten [dark-mode-and-retina-variants]
 
 DocC-catalogi verzenden vaak meerdere bestanden per afbeelding:
 
@@ -35,7 +35,7 @@ DocC-catalogi verzenden vaak meerdere bestanden per afbeelding:
 
 Als er meer dan één variant bestaat, zendt Marked dezelfde responsieve `<picture>` opmaak uit zoals beschreven in [Image Variants](Image_Variants.html). Een verwijzing naar één bestand leidt nog steeds tot een normaal pad `<img>` of `![](Resources/...)`.
 
-## HTML en Markdown
+## HTML en Markdown [html-and-markdown]
 
 DocC-resolutie is van toepassing tijdens de include-pass van Marked:
 
@@ -44,11 +44,11 @@ DocC-resolutie is van toepassing tijdens de include-pass van Marked:
 
 Beide worden bijgewerkt voordat de preview wordt weergegeven.
 
-## Bestanden bekijken
+## Bestanden bekijken [file-watching]
 
 Opgeloste afbeeldingen in de map catalogus `Resources` worden toegevoegd aan de volglijst van Marked. Als u een variantbestand extern bewerkt, wordt het voorbeeld bijgewerkt zonder handmatig vernieuwen.
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen [related-topics]
 
 - [Image Variants](Image_Variants.html) — `~dark` en `@2x` detectie voor op extensies gebaseerde paden in elk project
 - [Xcode Playgrounds](Xcode_Playgrounds.html) — preview Snel speeltuincommentaar

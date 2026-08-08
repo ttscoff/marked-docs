@@ -98,6 +98,25 @@ Sections:
     - megosztás bővítmény
     - megosztás menü marked
     - küldés markednek
+  - title: Marked Quick Look
+    file: Quick_Look
+    description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+    keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+    wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
   - title: Gyors nyitás
     file: Quick_Open
     description: A Quick Open gyors hozzáférést biztosít a megnyitott dokumentumokhoz és a legutóbbi fájlokhoz. A Gyors megnyitás panel elérése a Shift-Cmd-O billentyűkombinációval vagy a Fájl menü Gyors megnyitása...
@@ -376,7 +395,7 @@ Sections:
     - egyenlet
     - képlet
   - title: Dolgozik a DOCX-szel
-    file: Working_with_DOCX
+    file: Working_With_DOCX
     description: 'A Marked kiterjedt támogatást nyújt a Microsoft Word fájlokkal való munkavégzéshez. A tipikus munkafolyamat először az előnézet, második a DOCX exportálása: nyissa meg vagy nézze meg a Markdownt...'
     keywords:
     - docx
@@ -895,19 +914,6 @@ Sections:
     - applescript export
     - scripted export
     - automatizált exportálás
-  # - title: Shortcuts Integration
-  #   file: Shortcuts_Integration
-  #   keywords:
-  #   - shortcuts
-  #   - siri
-  #   - automation
-  #   - export
-  #   - app intents
-  #   wiki_keywords:
-  #   - shortcuts
-  #   - siri shortcuts
-  #   - app intents
-  #   - shortcut export
   - title: Command Line Utility
     file: Command_Line_Utility
     description: Az mk parancssori eszköz egyszerű hozzáférést biztosít a Marked szolgáltatásaihoz a terminálról, lehetővé téve a munkafolyamatok automatizálását, valamint a shell szkriptekkel és...
@@ -1042,15 +1048,6 @@ Sections:
 # - title: FAQ, Tips, and Tricks
 #   folder: FAQ
 #   pages:
-#   - title: Frequently Asked Questions
-#     file: Frequently_Asked_Questions
-#     keywords:
-#     - faq
-#     - license
-#     - url
-#     - validation
-#     - include
-#     wiki_keywords: [faqs]
 - title: Hibaelhárítás
   folder: Hibaelhárítás
   pages:

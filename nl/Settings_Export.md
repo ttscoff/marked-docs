@@ -8,7 +8,7 @@ Opties in de {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Profiel exporteren
+### Profiel exporteren [export-profile]
 
 Profiel exporteren
 : selecteer een opgeslagen profiel in het pop-upmenu. Profielen slaan een volledige set exportvoorkeuren op, zodat u snel kunt schakelen tussen workflows (bijvoorbeeld afdrukken PDF versus web HTML). Zie [Export Profiles](Exporting.html#export-profiles).
@@ -19,7 +19,7 @@ Nieuw
 Beheer
 : open profielbeheer om profielen te hernoemen, dupliceren of verwijderen.
 
-### Afdrukken/PDF
+### Afdrukken/PDF [printpdf]
 
 Schakel links/highlights uit bij het exporteren van PDF of afdrukken
 : verwijdert de opmaak (onderstreping en kleur) van koppelingen tijdens het afdrukken.
@@ -66,11 +66,11 @@ Pagina-einde na
 Inhoudsopgave niveaumarkeringen
 : gebruik de vervolgkeuzelijsten om de lijstitemmarkering in te stellen voor elk inspringingsniveau in een inhoudsopgave.
 
-### Kop- en voetteksten
+### Kop- en voetteksten [headers-and-footers]
 
 Configureer lettertype, logo, kop-/voettekstvelden, datum- en tijdnotaties, opname van de eerste pagina, offset van paginanummering en randen. Tijdelijke aanduidingen voor velden zijn `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` en andere.
 
-Zie [Headers and Footers](Exporting.html#headersandfooters) in [Exporting](Exporting.html) voor verwijzing naar tijdelijke aanduidingen en voorbeelden. Zie [Date and Time Formats](Exporting.html#dateandtimeformats) voor `%date` en `%time` formaatcodes.
+Zie [Headers and Footers](Exporting.html#headers-and-footers) in [Exporting](Exporting.html) voor verwijzing naar tijdelijke aanduidingen en voorbeelden. Zie [Date and Time Formats](Exporting.html#dateandtimeformats) voor `%date` en `%time` formaatcodes.
 
 Opnemen op eerste pagina
 : Als de optie voor kop- en/of voettekst niet is aangevinkt, wordt de eerste pagina niet met het opgegeven type afgedrukt.

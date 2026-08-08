@@ -1,53 +1,46 @@
 # <%= @title %>
 
-Marked bietet umfassende Unterstützung für die Arbeit mit Microsoft Word-Dateien. Der typische Arbeitsablauf ist **zuerst Vorschau, dann DOCX exportieren**: Öffnen oder sehen Sie sich Ihren Markdown in Marked an, verfeinern Sie Stile und Korrekturlesen in der Live-Vorschau und exportieren Sie ihn dann nach Word, wenn das Dokument fertig ist.
+Marked bietet umfangreiche Unterstützung für die Arbeit mit Microsoft-Word-Dateien. Der typische Ablauf ist **zuerst Vorschau, dann DOCX-Export**: Öffnen oder überwachen Sie Ihr Markdown in Marked, feilen Sie in der Live-Vorschau an Stil und Korrektur, und exportieren Sie erst nach Word, wenn das Dokument fertig ist.
 
-## Öffnen von DOCX-Dateien
+## DOCX-Dateien öffnen [opening-docx-files]
 
-Marked kann eine DOCX-Datei lesen und in eine saubere Datei konvertieren
-Markdown. Gültige Stilelemente wie Überschriften und Listen werden verwendet
-in ihr Markdown-Äquivalent umgewandelt werden.
+Marked kann eine DOCX-Datei lesen und in sauberes Markdown umwandeln. Gültige Stilelemente wie Überschriften und Listen werden in ihr Markdown-Äquivalent überführt.
 
-Änderungsverfolgung und Kommentare werden konvertiert
-CriticMarkup. Highlights werden in `<mark>`-Tags umgewandelt.
-ggf. mit Farben.
+Änderungsverfolgung und Kommentare werden in CriticMarkup umgewandelt. Hervorhebungen werden zu `<mark>`-Tags, gegebenenfalls mit Farben.
 
-## Exportieren von DOCX-Dateien
+## DOCX-Dateien exportieren [exporting-docx-files]
 
-Verwenden Sie die Export-Palette, um eine DOCX-Datei aus Ihrem zu generieren
-Markdown. Im Speicherdialog können Sie eine integrierte Datei angeben
-Stile --- Dieser Stil kann in Word ganz einfach geändert werden
-Öffnen Sie die Themenauswahl und wählen Sie ein neues Thema aus.
+Über das Export-Panel erzeugen Sie aus Ihrem Markdown eine DOCX-Datei. Im Speicherdialog können Sie einen integrierten Stil angeben – dieser Stil lässt sich in Word ganz einfach ändern, indem Sie die Designauswahl öffnen und ein neues Design wählen.
 
-### Kopf- und Fußzeilen
+### Kopf- und Fußzeilen [headers-and-footers]
 
-Wenn Sie Kopf- und Fußzeilen in {% prefspane Export %} konfigurieren, sind diese im exportierten DOCX enthalten. Standardplatzhalter wie `%title`, `%date`, `%page` und `%total` werden beim Export ersetzt. `%logo` und `%image` betten das Logo aus den Kopf-/Fußzeileneinstellungen ein. `%md_*` Metadatenvariablen werden aus den MultiMarkdown-Metadaten des Dokuments aufgelöst. `%h1`--`%h6` werden zu Word-**STYLEREF**-Feldern, die an die exportierten Überschriftenstile gebunden sind; Word füllt sie aus, wenn Sie das Dokument öffnen. Unter [Exporting](Exporting.html#headers-and-footers) finden Sie die vollständige Variablenliste und die Unterschiede zwischen dem Verhalten von DOCX und print/PDF.
+Wenn Sie Kopf- und Fußzeilen in {% prefspane Export %} konfigurieren, sind diese im exportierten DOCX enthalten. Standardplatzhalter wie `%title`, `%date`, `%page` und `%total` werden beim Export ersetzt. `%logo` und `%image` betten das Logo aus den Kopf-/Fußzeileneinstellungen ein. `%md_*`-Metadatenvariablen werden aus den MultiMarkdown-Metadaten des Dokuments aufgelöst. `%h1`–`%h6` werden zu Word-**STYLEREF**-Feldern, die an die exportierten Überschriftenstile gebunden sind; Word füllt sie aus, wenn Sie das Dokument öffnen. Die vollständige Variablenliste sowie die Unterschiede zwischen dem Verhalten bei DOCX und bei Druck/PDF finden Sie unter [Export](Exporting.html#headers-and-footers).
 
-## Änderungsverfolgung
+## Änderungsverfolgung [change-tracking]
 
-Die CriticMarkup-Syntax in einem Markdown-Dokument wird konvertiert
-zur Word-Änderungsverfolgung beim Export nach DOCX. Kommentare
-Folgende Einfügungen, Löschungen und Ersetzungen werden durchgeführt
-werden bei der Änderungsverfolgung in der rechten Spalte in Word angezeigt
-ist aktiviert.
+CriticMarkup-Syntax in einem Markdown-Dokument wird beim Export nach DOCX in die Word-Änderungsverfolgung umgewandelt. Kommentare zu Einfügungen, Löschungen und Ersetzungen erscheinen in Word in der rechten Spalte, sobald die Änderungsverfolgung aktiviert ist.
 
-Beim Importieren einer DOCX-Datei in Marked erfolgt die Änderungsverfolgung
-in die Tags CriticMarkup und `<mark>` konvertiert werden
-angemessen.
+Beim Importieren einer DOCX-Datei in Marked wird die Änderungsverfolgung passend in CriticMarkup und `<mark>`-Tags umgewandelt.
 
-## Mathe
+## Mathematik [math]
 
-Die im Dokument angezeigten MathJax- und Katex-Gleichungen werden zur Anzeige in Word in MathML konvertiert. Diese Konvertierung ist nicht perfekt, stellt aber in den meisten Fällen einen gültigen Mathematikblock im Word-Dokument dar. Dies gilt nur für den Export --- Matheblöcke in Word-Dokumenten werden beim Import nicht konvertiert.
+Im Dokument angezeigte MathJax- und KaTeX-Gleichungen werden für die Darstellung in Word in MathML umgewandelt. Diese Umwandlung ist nicht perfekt, ergibt aber in den meisten Fällen einen gültigen Formelblock im Word-Dokument. Das gilt nur für den Export – Formelblöcke in Word-Dokumenten werden beim Import nicht umgewandelt.
 
-## Custom Exportstile hinzufügen
+## Eigene Exportstile hinzufügen [adding-custom-export-styles]
 
-Sie können Ihre eigenen Exportstile hinzufügen, indem Sie eine Vorlage und eine Datei „styles.xml“ in `~/Library/Application Support/Marked/Custom Word Styles/` einfügen. Um diese zu erstellen:
+Sie können eigene Exportstile hinzufügen, indem Sie ein zusammengehöriges Dateipaar in `~/Library/Application Support/Marked/Custom Word Styles/` ablegen:
 
-1. Öffnen Sie eine mit Marked generierte DOCX-Datei in Word
-2. Bearbeiten Sie dort im Stileditor die Stile für jedes Element und wählen Sie für jedes Element „Zur Vorlage hinzufügen“ aus.
-3. Speichern Sie die Datei DOCX.
-4. Erstellen Sie eine Vorlage, indem Sie in der oberen Leiste auf **Design** gehen und im Dropdown-Menü *Vorlage* links auf **Aktuelle Vorlage speichern** klicken. Benennen Sie es so, wie es im Stilmenü Marked angezeigt werden soll, und speichern Sie es unter `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.thmx`, wobei `STYLENAME` der Name Ihres Stils ist.
-5. Gehen Sie zum Finder und suchen Sie die Datei DOCX, die Sie aus Word gespeichert haben. Duplizieren Sie es, benennen Sie die Kopie in `FILENAME.zip` um und doppelklicken Sie zum Entpacken darauf.
-6. Im entpackten Dokument sehen Sie einen Ordner „word“, der eine Datei „styles.xml“ enthält. Kopieren Sie die Datei „styles.xml“ in denselben Ordner wie oben und nennen Sie sie `STYLENAME.xml` (wobei `STYLENAME` der Name Ihres Stils ist). Die Dateien `.thmx` und `.xml` sollten denselben Basisnamen haben (nur unterschiedliche Erweiterungen).
+- `STYLENAME.xml` – die Absatz- und Zeichenformatvorlagen von Word (aus der `word/styles.xml` eines Dokuments)
+- `STYLENAME.thmx` – ein optionales Word-Design für Farben, Schriften und Effekte
 
-Wenn Sie das nächste Mal einen DOCX aus Marked exportieren, wird Ihr neuer Stil im Menü „Stil“ des Dialogfelds „Speichern“ angezeigt.
+Ein Word-**Design** (`.thmx`) speichert die Formatvorlagen, die Sie im Dokument bearbeiten, **nicht**. Die liegen im Dokument selbst (oder in einer Vorlage wie `.dotx` / `Normal.dotm`). Marked benötigt die extrahierte `styles.xml` für die Definitionen der Formatvorlagen und die `.thmx` nur für Designfarben, -schriften und -effekte.
+
+So erstellen Sie einen eigenen Exportstil:
+
+1. Öffnen Sie eine mit Marked erzeugte DOCX-Datei in Word.
+2. Bearbeiten Sie die Formatvorlagen, auf die es Ihnen ankommt: Rechtsklick auf eine Formatvorlage im Formatvorlagenkatalog oder im Formatvorlagenbereich, dann **Ändern…** (einen eigenen „Formatvorlagen-Editor“ gibt es nicht). Legen Sie Schriften, Abstände und weitere Formatierung fest und speichern Sie die DOCX-Datei.
+3. Optional übernehmen Sie Designfarben, -schriften und -effekte: Öffnen Sie den Reiter **Entwurf**, öffnen Sie den Designs-Katalog und wählen Sie **Aktuelles Design speichern…**. Speichern Sie es unter `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.thmx` – mit dem Namen, der in Markeds Stil-Menü erscheinen soll.
+4. Duplizieren Sie im Finder die gespeicherte DOCX-Datei, benennen Sie die Kopie in `FILENAME.zip` um und entpacken Sie sie.
+5. Kopieren Sie aus dem entpackten Paket die `word/styles.xml` nach `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.xml` (derselbe Basisname wie die `.thmx`, falls Sie eine erstellt haben).
+
+Beim nächsten DOCX-Export aus Marked erscheint Ihr Stil im Stil-Menü des Speicherdialogs.

@@ -2,7 +2,7 @@
 
 Visualisez vos documents *à votre* manière.
 
-## Utiliser des styles personnalisés
+## Utiliser des styles personnalisés [using-custom-styles]
 
 ![][img1]
 
@@ -14,7 +14,7 @@ Pour ajouter des feuilles de style personnalisées de votre disque local à Mark
 
 Ajoutez des styles personnalisés à l'aide du gestionnaire de styles avec le bouton Ajouter, ou en faisant glisser un ou plusieurs fichiers CSS sur le volet des paramètres.
 
-## Gérer les styles avec le Style Manager
+## Gérer les styles avec le Style Manager [managing-styles-with-the-style-manager]
 
 Le lancement du Style Manager vous offre un emplacement unique pour organiser tous les thèmes intégrés et personnalisés. Cliquez sur le bouton **Gérer les styles…** dans le volet {% prefspane Style %}, ou déposez simplement les fichiers CSS dans la fenêtre des préférences, Marked les importera, ouvrira le gestionnaire de styles et sélectionnera la ligne nouvellement ajoutée pour vous. Faire glisser des fichiers CSS directement dans la fenêtre Style Manager fonctionne également ; quand plusieurs fichiers sont déplacés, vous verrez la superposition se mettre à jour vers « Ajouter N styles personnalisés » pour qu'il soit clair que vous importez un lot.
 
@@ -29,13 +29,13 @@ Dans le gestionnaire de styles, vous trouverez un tableau triable qui mélange l
 
 Les lignes sont réorganisées par glisser-déposer, et l'ordre déterminera le menu Style ainsi que les attributions de raccourcis `⌘/#`, afin que vous puissiez littéralement faire glisser les styles dans les emplacements que vous voulez. Vous pouvez également faire glisser des fichiers CSS externes vers des positions spécifiques ; l'indicateur de dépôt détermine où le nouveau style est inséré.
 
-### Aperçu en direct
+### Aperçu en direct [live-preview]
 
 Le volet de droite contient un aperçu qui restitue le style sélectionné dans un document HTML complet avec un ensemble complet de titres, de listes, de tableaux, de blocs de code, etc. L'aperçu utilise le CSS réel sur le disque, de sorte que les modifications que vous effectuez dans votre éditeur externe sont mises à jour instantanément. Une case à cocher active l'aperçu du mode sombre.
 
 Vous pouvez trouver des styles supplémentaires à utiliser (ou comme exemples pour créer le vôtre) [sur GitHub][1] (voir les [exemples][2] pour un rapide coup d'œil à ce qu'il y a). Voir [Écrire du CSS personnalisé][3] pour plus de détails et de conseils.
 
-## CSS supplémentaire
+## CSS supplémentaire [additional-css]
 
 Sous le {% prefspane Style %}, vous trouverez une option intitulée CSS supplémentaire avec un bouton intitulé « Modifier le CSS ». Cliquer sur ce bouton ouvre une fenêtre dans laquelle vous pouvez ajouter des règles CSS universelles qui seront appliquées à tous les styles. Notez que la spécificité des règles peut être importante lorsque vous remplacez certains styles par défaut de Marked. Le corps principal du document est enveloppé dans un div avec l'identifiant `#wrapper`. Préfixer un sélecteur avec ceci peut permettre des remplacements plus faciles, par exemple :
 
@@ -43,7 +43,7 @@ Sous le {% prefspane Style %}, vous trouverez une option intitulée CSS supplém
 
 Le CSS dans ce champ sera appliqué à chaque document, quel que soit le style qu'il utilise. Si vous souhaitez appliquer du CSS basé sur des correspondances conditionnelles, utilisez les actions Définir le style, Insérer un fichier CSS ou Insérer du CSS dans {% prefspane Processor %} Règles personnalisées.
 
-## Impression et export PDF
+## Impression et export PDF [print-and-pdf-export]
 
 Marked injecte un bloc `@media print` intégré (`mkprintstyles`) sur chaque aperçu. Il définit des valeurs par défaut telles qu'une base **10pt** sur `html`, `body` et `#wrapper` (ou la taille de **Taille de police personnalisée pour l'exportation/impression** dans {% prefspane Export %} lorsque cette option est activée), et normalise le texte des paragraphes avec `p { font-size: 1em; }` et `li p { font-size: 1em; }` afin que les règles affichées uniquement à l'écran comme `p { font-size: 1.1429em; }` ne gonflent pas le corps du texte dans les PDF et les sorties imprimées.
 
@@ -81,17 +81,17 @@ Pour définir des tailles différentes des valeurs d'impression par défaut de M
 
 Les règles sans `!important` peuvent perdre face aux règles ultérieures en `mkprintstyles` ou à d'autres sélecteurs non qualifiés dans votre feuille qui s'appliquent toujours en version imprimée. Mettre les ajustements d'impression uniquement dans les règles `@media print` et/ou `.mkprinting` (plutôt que uniquement dans les règles d'écran) rend le comportement de prévisualisation et d'exportation plus facile à comprendre.
 
-## Surveiller les modifications CSS
+## Surveiller les modifications CSS [watching-css-changes]
 
 Vous pouvez cocher une case dans la section Styles personnalisés du {% prefspane Style %} pour que Marked surveille le fichier CSS actif en plus du fichier Markdown que vous modifiez. Quand des modifications sont détectées sur l'un ou l'autre fichier, l'aperçu sera mis à jour. Ceci est utile pour modifier des styles personnalisés sans avoir à actualiser constamment, et peut également être utilisé pour des tâches simples de développement web.
 
 Ceci est également utile pour certains travaux de conception web de base et d'expérimentation CSS (comme la création de styles personnalisés). Chargez un fichier Markdown contenant toutes les balises que vous souhaitez styliser, créez un style personnalisé, et observez l'aperçu en direct se modifier au fur et à mesure que vous le modifiez.
 
-## Écrire du CSS personnalisé
+## Écrire du CSS personnalisé [writing-custom-css]
 
 Si vous êtes familier avec CSS, vous pouvez créer vos propres feuilles de style à utiliser dans Marked. Voir [Écrire du CSS personnalisé][3] pour plus de détails. Chaque fois que vous créez quelque chose de nouveau, pensez à [le soumettre][6] à la [galerie][2] pour le partager avec d'autres utilisateurs. Assurez-vous de couvrir les bases répertoriées dans le guide, et incluez le commentaire sur les métadonnées en haut.
 
-### Styles personnalisés automatiques avec StyleStealer
+### Styles personnalisés automatiques avec StyleStealer [automatic-custom-styles-with-stylestealer]
 
 Vous pouvez même générer automatiquement un style basé sur un site Web existant utilisant le [Style Stealer][4]. Cela vous permet de charger une page Web et de récupérer les styles calculés pour tous les principaux éléments trouvés dans Markdown, puis de l'enregistrer dans un style personnalisé.
 

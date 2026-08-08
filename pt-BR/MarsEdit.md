@@ -4,7 +4,7 @@
 
 [MarsEdit][me] armazena postagens dentro de seu banco de dados, não como arquivos soltos em disco. Portanto, o Marked usa um fluxo de trabalho de visualização dedicado que se comunica com o aplicativo MarsEdit em execução.
 
-## Janela de visualização do MarsEdit
+## Janela de visualização do MarsEdit [marsedit-preview-window]
 
 Escolha {% appmenu File, New, MarsEdit Preview %}. Marked pede ao AppleScript para ler a **postagem inicial no MarsEdit** (os IDs do pacote Red Sweater para Direct, Mac App Store, Setapp e MarsEdit 4/5 são reconhecidos). Mantenha o MarsEdit funcionando com um documento aberto enquanto você trabalha.
 
@@ -13,11 +13,11 @@ Escolha {% appmenu File, New, MarsEdit Preview %}. Marked pede ao AppleScript pa
 
 Se nenhuma postagem estiver disponível, Marcado apresenta um pequeno erro na visualização em vez de texto obsoleto.
 
-### Postagens estendidas
+### Postagens estendidas [extended-posts]
 
 O conteúdo no campo **estendido** do MarsEdit é separado na visualização e na fonte do Marked usando um divisor `<!--more-->` no estilo WordPress para que sites orientados à paginação (WordPress, Jekyll, etc.) ainda vejam a quebra. O comentário é inofensivo em outro lugar.
 
-### Tags e categorias em metadados
+### Tags e categorias em metadados [tags-and-categories-in-metadata]
 
 As tags e categorias do MarsEdit são expostas ao bloco de metadados MultiMarkdown. Com o processador MultiMarkdown ({% prefspane Processor %}), você pode referenciá-los como:
 

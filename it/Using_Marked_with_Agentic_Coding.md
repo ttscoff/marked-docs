@@ -5,7 +5,7 @@
 
 Marked è un ottimo compagno per i moderni flussi di lavoro di "codifica agente" in cui gli strumenti di intelligenza artificiale generano piani, effettuano il refactoring del codice e continuano ad aggiornare la documentazione mentre lavori. Lasciando che Marked controlli il tuo progetto o le cartelle di pianificazione, ottieni una visualizzazione live e leggibile di qualunque cosa i tuoi agenti di codifica tocchino successivamente, senza dover cercare nell'editor o nell'albero dei file.
 
-## Guardando la cartella del tuo progetto o del tuo piano
+## Guardando la cartella del tuo progetto o del tuo piano [watching-your-project-or-plan-folder]
 
 Invece di aprire un singolo file, puoi puntare Marked su un'intera cartella che utilizzi per piani, appunti o documentazione generata dall'intelligenza artificiale:
 
@@ -17,7 +17,7 @@ Una volta che Marked sta controllando una cartella, visualizzerà automaticament
 
 Funziona particolarmente bene con strumenti agenti come Cursor, Claude e Copilot che rigenerano continuamente specifiche, elenchi di cose da fare o note di architettura mentre si esegue l'iterazione di una funzionalità.
 
-## Scorrimento fino alla prima modifica
+## Scorrimento fino alla prima modifica [scrolling-to-the-first-change]
 
 Quando *Scorri per modificare* è abilitato nelle preferenze di Marked, l'anteprima non si limita a ricaricarsi: **scorre direttamente alla prima area modificata** del file quando si aggiorna.
 
@@ -29,7 +29,7 @@ Ciò significa che puoi:
 
 In combinazione con la sorveglianza delle cartelle, ciò rende facile vedere esattamente cosa stanno facendo i tuoi agenti sui tuoi documenti, anche quando apportano modifiche frequenti e incrementali.
 
-## Diagrammi con Sirena.js
+## Diagrammi con Sirena.js [diagrams-with-mermaidjs]
 
 Marked ha anche il **supporto Sirena.js abilitato per impostazione predefinita**, quindi i diagrammi di sequenza, i diagrammi di flusso e i diagrammi dell'architettura che i tuoi agenti generano utilizzando i blocchi di codice Sirena verranno visualizzati in modo pulito nell'anteprima. Quando il tuo assistente AI genera codice protetto come:
 
@@ -44,7 +44,7 @@ flowchart TD
 
 Marked lo trasformerà automaticamente in un diagramma interattivo con stile, offrendoti una visualizzazione visiva di flussi di lavoro complessi, flussi di dati o progetti di sistemi creati da strumenti come Cursor, Claude, Copilot e altri assistenti di codifica degli agenti.
 
-## Esempio di flussi di lavoro di codifica degli agenti
+## Esempio di flussi di lavoro di codifica degli agenti [example-agentic-coding-workflows]
 
 - **Cursore + Contrassegnato**: mantieni una cartella `plans/` o `notes/` nel repository in cui Cursore scrive i piani di implementazione passo passo. Punto contrassegnato in quella cartella per vedere sempre il piano più recente, reso in modo pulito, mentre accetti e applichi le modifiche nell'editor.
 

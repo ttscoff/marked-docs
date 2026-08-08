@@ -2,7 +2,7 @@
 
 Marked allows several different syntaxes for including one file within another.
 
-## Marked Syntax
+## Marked Syntax [marked-syntax]
 
 You can include external files in a single preview document by using the special syntax `<<[path/file]` at the beginning of a line. The line should have blank lines above and below it, and the path is assumed to be relative to the main document unless it begins with a slash (`/`) or a tilde (`~`). Slash (root directory) and tilde (home directory) may be used to define absolute paths to files. No path is needed if the external files are in the same folder as the main document, just put the filename (case sensitive and including extension) in the square brackets.
 
@@ -44,7 +44,7 @@ The final HTML export of a document containing includes will have HTML comments 
 
 **Note:** the more files included in a document, the slower the overall compile time of the preview will be. Marked tries to optimize and cache the process, but expect some rendering delays as your document size increases.
 
-## MultiMarkdown Transclude Syntax
+## MultiMarkdown Transclude Syntax [multimarkdown-transclude-syntax]
 
 You can also use `{{filename}}` syntax based on the newer MultiMarkdown spec. Marked will recognize `Transclude Base: path` in MMD metadata and use it as the base for file transclusion.
 
@@ -52,7 +52,7 @@ Transclude Base will only be recognized in the parent document, not in additiona
 
 The fenced code syntax that MultiMarkdown provides for including files without processing will not work in Marked. To do this, please use the `<<(file)` (code block) or `<<{file}` (raw) syntax.
 
-## IA Writer Block syntax
+## IA Writer Block syntax [ia-writer-block-syntax]
 
 Marked 2.5.11+ supports the IA Writer [Content Block][ia] syntax. This is a reference beginning with a forward slash (`/`) on its own line. It can be a code sample, an image, a markdown file, or a CSV file. All will be handled appropriately based on the extension of the included file, and CSVs will be [converted into Markdown][csv] tables if possible.
 
@@ -73,7 +73,7 @@ Absolute path to the Documents folder:
 [ia]: https://github.com/iainc/Markdown-Content-Blocks
 [csv]: Creating_Tables_using_CSV_files.html
 
-## How outline, mind map, and CSV includes are converted
+## How outline, mind map, and CSV includes are converted [how-outline-mind-map-and-csv-includes-are-converted]
 
 When you include certain file types with `<<[path]` or IA Writer block syntax, Marked converts them instead of inserting raw file contents. Outline and mind map behavior depends on the file extension and your [Settings: Apps → Mind Maps/Outlines][mindmaps] preferences. CSV/TSV files are always converted to Markdown tables (see [Creating Tables using CSV files][csv]).
 
@@ -93,11 +93,11 @@ Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mi
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
-## Book Formats
+## Book Formats [book-formats]
 
 Marked also supports index files in formats like [Leanpub][lp], [GitBook][gb] and mmd\_merge (MultiMarkdown). Files included in book format indexes will be watched for changes and the result is a complete preview of your compiled document, just like the "Index.md" example above.
 
-### Leanpub
+### Leanpub [leanpub]
 
 If you enable the option in the {% prefspane Apps %} under Leanpub/GitBook support, files named "Book.txt" will be treated as Leanpub index files automatically. The older "frontmatter:" format is also recognized.
 
@@ -115,7 +115,7 @@ Leanpub Book.txt example:
     Inserting Images.txt
 
 
-### mmd_merge
+### mmd_merge [mmdmerge]
 
 For mmd\_merge, Marked require that the first line be "#merge" (a special Marked trigger for mmd\_merge, treated as a comment and ignored by other processors).
 
@@ -134,7 +134,7 @@ mmd_merge example:
     FAQ.md
     Acknowledgments.md
 
-### GitBook
+### GitBook [gitbook]
 
 GitBook formatting uses a Markdown list to create the structure and Table of Contents. If GitBook support is enabled in the {% prefspane Apps %} under Leanpub/GitBook support, a file named SUMMARY.md will be read and automatically converted to mmd_merge format, allowing a full preview of your GitBook document.
 
@@ -159,7 +159,7 @@ GitBook allows for anchors to be used in SUMMARY.md table of contents, but Marke
 [mmdm]: http://fletcher.github.io/peg-multimarkdown/#howdoisplitamultimarkdowndocumentintoseveralparts
 [gb]: https://www.gitbook.com/
 
-## Multi-file Document Preview Features
+## Multi-file Document Preview Features [multi-file-document-preview-features]
 
 ![Included File Boundaries][2]
 

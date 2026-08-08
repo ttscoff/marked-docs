@@ -6,7 +6,7 @@ Helyezzen egy egyszerű szöveges jegyzetek **mappáját** a Megjelölt oldalra.
 
 A frissítések akkor futnak le, amikor bármelyik megtekintett fájl mentésre kerül: ha a legújabb fájl megegyezik az előzővel, a Marked az észlelt szerkesztési terület felé görget; amikor dokumentumokat vált, a teljes előnézet az aktív fájlra vált.
 
-## Jól működik az nvUltra, nvALT és hasonló eszközökkel
+## Jól működik az nvUltra, nvALT és hasonló eszközökkel [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Azok a notebook-alkalmazások, amelyek egyedi fájlokat hagynak a lemezen (klasszikus **nvALT**, **nvUltra**, **Notational Velocity**-stílusú könyvtárak, szinkronizált Git-mappák, Dropbox scratch mappák stb.), természetesen párosulnak a mappafigyeléssel – Ön egyetlen ablakban ír, és az előnézetek manuális újranyitása nélkül mellette tartja a Megjelölt elemet.
 

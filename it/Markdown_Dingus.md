@@ -16,7 +16,7 @@ come "newline GitHub" e "caselle di controllo GitHub", quindi il file
 il risultato potrebbe differire da quello che vedi in un normale Marked
 anteprima.
 
-## Le regole personalizzate non si applicano
+## Le regole personalizzate non si applicano [custom-rules-do-not-apply]
 
 Il Dingus è un __sandbox del processore__: il tuo Markdown va
 direttamente al processore integrato scelto (MultiMarkdown,
@@ -43,14 +43,14 @@ Dingus non riapplicherà le regole durante la digitazione. Per testare Custom
 Regole, utilizza un'anteprima contrassegnata standard o salva da Dingus
 e apri il file con __Apri in contrassegnato__.
 
-## Cos'è un "Dingus"?
+## Cos'è un "Dingus"? [what-is-a-dingus]
 
 Un "dingus" è un termine preso in prestito dallo sviluppo web che
 si riferisce a un semplice strumento di test o a un ambiente sandbox. Il
 Markdown Dingus ti consente di sperimentare la sintassi di Markdown e
 vedere immediatamente come i diversi processori lo interpretano.
 
-## Accesso al Dingus
+## Accesso al Dingus [accessing-the-dingus]
 
 È possibile accedere al Markdown Dingus da
 [{% appmenu Help, Markdown Dingus %}][2]. È particolarmente
@@ -62,13 +62,13 @@ utile quando sei:
 * Scrivere documentazione che deve funzionare su più livelli
   sistemi
 
-## Layout a tre riquadri
+## Layout a tre riquadri [three-pane-layout]
 
 ![][1]
 
 La finestra Dingus è divisa in tre riquadri sincronizzati:
 
-### 1. Ingresso ribasso (riquadro sinistro)
+### 1. Ingresso ribasso (riquadro sinistro) [1-markdown-input-left-pane]
 
 * __Evidenziazione della sintassi__: il tuo Markdown viene evidenziato con
   colori per rendere chiara la struttura
@@ -101,14 +101,14 @@ editor, utilizza **⌘G** per Trova successivo e **⇧⌘G** per Trova
 Precedente e sostituisci una o tutte le corrispondenze. Premi la chiusura
 o ancora **⌘F** per nascondere la barra di ricerca.
 
-### 2. Sorgente HTML (riquadro centrale)
+### 2. Sorgente HTML (riquadro centrale) [2-html-source-middle-pane]
 
 * __HTML generato__: vedi esattamente quale HTML è selezionato
   il processore crea
 * __Sintassi evidenziata__: HTML è codificato a colori per una facile comprensione
   lettura
 
-### 3. Anteprima renderizzata (riquadro destro)
+### 3. Anteprima renderizzata (riquadro destro) [3-rendered-preview-right-pane]
 
 * __Anteprima dal vivo__: guarda come apparirà il tuo Markdown quando
   reso
@@ -117,12 +117,12 @@ o ancora **⌘F** per nascondere la barra di ricerca.
 * __Scorrimento automatico__: scorre automaticamente per mostrare il tuo
   posizione di modifica corrente
 
-## Modifica nel Dingus
+## Modifica nel Dingus [editing-in-the-dingus]
 
 Il riquadro Markdown Input include funzionalità di modifica intelligente
 rendi la scrittura di Markdown più veloce e naturale.
 
-### Nuova riga intelligente (tasto di ritorno)
+### Nuova riga intelligente (tasto di ritorno) [smart-newline-return-key]
 
 Premendo Invio ci si adatta alla riga corrente:
 
@@ -136,7 +136,7 @@ Premendo Invio ci si adatta alla riga corrente:
   e chiusura delle recinzioni.
 * __Altre righe__: inserisce un normale ritorno a capo.
 
-### Accoppiamento di personaggi
+### Accoppiamento di personaggi [character-pairing]
 
 Quando digiti un carattere di apertura, l'editor automaticamente
 inserisce il carattere di chiusura e posiziona il cursore tra
@@ -150,7 +150,7 @@ loro. Coppie supportate: `"` `'` `(` `[` `` ` `` `<` .
   invece di inserire un duplicato.
 - __Spazio nella coppia vuota__: se il cursore si trova tra una coppia vuota (es. `(|)`), digitando uno spazio si sostituisce il carattere di chiusura con uno spazio.
 
-### Tasti di scelta rapida
+### Tasti di scelta rapida [shortcut-keys]
 
 | Scorciatoia | Azione |
 |:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -178,7 +178,7 @@ seleziona l'intero paragrafo sotto il cursore (compreso il suo
 fine riga finale), lo taglia e lo incolla sopra o sotto il file
 paragrafo adiacente in modo che i paragrafi non si uniscano.
 
-### Incolla URL intelligente
+### Incolla URL intelligente [magic-links-and-footnotes-f6-f7]
 
 Quando incolli e gli appunti contengono un URL del modulo
 `protocol://...` senza spazi:
@@ -191,7 +191,7 @@ Quando incolli e gli appunti contengono un URL del modulo
 Ciò semplifica la trasformazione degli URL copiati in collegamenti senza
 digitazione manuale.
 
-### Selezione intelligente (⌥⌘↑ / ⌥⌘↓)
+### Selezione intelligente (⌥⌘↑ / ⌥⌘↓) [smart-url-paste]
 
 L'editor Dingus supporta l'__espansione della selezione semantica__:
 
@@ -213,7 +213,7 @@ Ogni pressione si sposta sempre su un valore strettamente più grande o più pic
 selezione, in modo da non ricevere mai pressioni di tasti "no-op" mentre
 espansione o contrazione.
 
-## Utilizzo di Dingus come editor
+## Utilizzo di Dingus come editor [using-the-dingus-as-an-editor]
 
 Il Dingus non intende sostituire un testo completo
 editor, ma può essere molto utile per __modifiche rapide con a
@@ -221,7 +221,7 @@ anteprima dal vivo__, soprattutto quando vuoi vedere esattamente come
 le modifiche verranno renderizzate. Tutto il comportamento di modifica del testo
 descritto in [Modifica in Dingus] [3] si applica qui.
 
-### Apertura di un file/creazione di un nuovo file
+### Apertura di un file/creazione di un nuovo file [opening-a-filecreating-a-new-file]
 
 * __Crea un nuovo file nel Dingus__
 	- Scegli __{% appmenu File, New, New Markdown File %}__
@@ -245,7 +245,7 @@ descritto in [Modifica in Dingus] [3] si applica qui.
    finché non scegli di salvare. Le regole personalizzate non vengono applicate
    il Dingo; vedere [Le regole personalizzate non si applicano](#custom-rules-do-not-apply).
 
-### Salvataggio di un file
+### Salvataggio di un file [saving-a-file]
 
 * __Salva le modifiche al file corrente__
 	- Nella finestra di Dingus, fai clic su __Salva__ nella barra di stato,
@@ -260,7 +260,7 @@ descritto in [Modifica in Dingus] [3] si applica qui.
    il contenuto corrente di Dingus in un nuovo file senza sovrascriverlo
    l'originale.
 
-### Anteprima in Marked
+### Anteprima in Marked [previewing-in-marked]
 
 * __Apri il documento Dingus come anteprima completa contrassegnata__
 	- Fai clic su __Apri in Marked__ nella barra di stato di Dingus oppure utilizza
@@ -275,7 +275,7 @@ editor leggero per soluzioni rapide ed esperimenti, quindi
 passa a un'anteprima completa di Marked o al tuo editor normale quando
 sei pronto per modifiche più estese.
 
-## Selezione del processore
+## Selezione del processore [processor-selection]
 
 Utilizza il menu a discesa in alto per passare da uno all'altro
 Processori di markdown:
@@ -289,9 +289,9 @@ Processori di markdown:
 * __Kramdown__: processore avanzato con funzionalità aggiuntive
   come IAL e tipografia
 
-## Perché usare il Dingus?
+## Perché usare il Dingus? [why-use-the-dingus]
 
-### Comprendere le differenze tra i processori
+### Comprendere le differenze tra i processori [understanding-processor-differences]
 
 Diversi processori Markdown gestiscono la sintassi in modo diverso. Il
 Dingus ti aiuta:
@@ -303,7 +303,7 @@ Dingus ti aiuta:
 * __Impara la sintassi__: comprendi le sottili differenze
   tra le implementazioni del processore
 
-### Testare prima di scrivere
+### Testare prima di scrivere [testing-before-writing]
 
 Prima di impegnarti in un particolare stile Markdown nel tuo
 documenti:
@@ -315,25 +315,25 @@ documenti:
 * __Sperimenta in modo sicuro__: prova la nuova sintassi senza influire
   i tuoi documenti reali
 
-## Casi d'uso comuni
+## Casi d'uso comuni [common-use-cases]
 
-### Differenze di sintassi delle tabelle
+### Differenze di sintassi delle tabelle [table-syntax-differences]
 
 Alcuni processori gestiscono la sintassi delle tabelle in modo diverso. Il Dingo
 ti consente di vedere quale processore supporta meglio la tua tabella
 esigenze di formattazione.
 
-### Supporto per le note a piè di pagina
+### Supporto per le note a piè di pagina [footnote-support]
 
 Non tutti i processori supportano le note a piè di pagina. Usa il Dingus per
 verifica che la sintassi della nota a piè di pagina funzioni con il processore scelto.
 
-### Matematica e caratteri speciali
+### Matematica e caratteri speciali [math-and-special-characters]
 
 Testare il modo in cui i diversi processori gestiscono la matematica
 espressioni e caratteri tipografici speciali.
 
-## Suggerimenti per un utilizzo efficace
+## Suggerimenti per un utilizzo efficace [tips-for-effective-use]
 
 1. __Inizia in modo semplice__: inizia con Markdown di base e gradualmente
    aggiungere complessità

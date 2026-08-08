@@ -8,7 +8,7 @@ A importação de PDF funciona melhor em **PDFs menores baseados em texto** (sli
 
 Marcado ainda é uma ferramenta de **visualização**: você não edita o PDF dentro do Marcado. Use {% kbd cmd E %} para abrir o PDF em **Visualização** (ou no padrão do sistema) e Marcado como atualizado quando o arquivo é alterado no disco.
 
-## Como funciona a conversão
+## Como funciona a conversão [how-conversion-works]
 
 A importação de PDF usa a biblioteca [pdf22md](https://github.com/twardoch/pdf22md) (Licença MIT; consulte [Licença pdf22md](PDF22MD_License.html)). Marcado executa a conversão em segundo plano enquanto mostra um breve aviso de **Conversão**.
 
@@ -21,17 +21,17 @@ O conversor:
 
 Marcado **não** habilita a limpeza opcional de IA do pdf22md no aplicativo. A qualidade da conversão depende de como o PDF foi criado.
 
-## Cache e visualização ao vivo
+## Cache e visualização ao vivo [cache-and-live-preview]
 
 O Markdown convertido e as imagens são armazenados no cache do Marked's Watchers (`~/Library/Caches/Marked/Watchers/PDF/`). O caminho original do PDF permanece a origem do documento para visualização de arquivos.
 
 Quando você salva ou substitui o PDF em outro aplicativo, o Marked detecta a alteração e reconverte automaticamente (mesmo comportamento de recarga unida de [RTF](RTF_Support.html) e [Scrivener](Scrivener_Support.html)).
 
-## Exportação e outros recursos
+## Exportação e outros recursos [export-and-other-features]
 
 Após a conversão, Marked trata o documento como outras fontes compiladas: exportação, estatísticas e a maioria dos recursos de visualização são executados no Markdown gerado. Os caminhos da imagem na visualização apontam para os ativos armazenados em cache até você exportar.
 
-## Limitações
+## Limitações [limitations]
 
 Defina suas expectativas de acordo – PDF-to-Markdown é útil, não perfeito.
 
@@ -56,9 +56,9 @@ Defina suas expectativas de acordo – PDF-to-Markdown é útil, não perfeito.
 - **PDFs protegidos por senha** não são suportados na v1
 - **Imagens PDF incorporadas no Markdown** (`![]()` referenciando um arquivo `.pdf`) não estão relacionadas à importação de PDF — apenas abrir um `.pdf` quando o documento principal aciona a conversão
 
-Para documentos do Word, use [Trabalhando com DOCX](Working_with_DOCX.html). Para Rich Text, use [Suporte RTF e RTFD](RTF_Support.html).
+Para documentos do Word, use [Trabalhando com DOCX](Working_With_DOCX.html). Para Rich Text, use [Suporte RTF e RTFD](RTF_Support.html).
 
-## Tópicos relacionados
+## Tópicos relacionados [related-topics]
 
 - [Abrindo arquivos](Opening_Files.html) — arrastar e soltar, Abrir recente, área de transferência
 - [Exportando](Exporting.html) — salve HTML, PDF, DOCX e Markdown da visualização

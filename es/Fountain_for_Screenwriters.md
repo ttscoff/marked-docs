@@ -10,7 +10,7 @@ Puede forzar que cualquier documento se procese como Markdown abriendo el menú 
 
 Los encabezados de secciones y escenas aparecerán en la tabla de contenido para una navegación rápida por el guión.
 
-## Guiones
+## Guiones [scrippets]
 
 También puede utilizar "scriptets" en un documento normal para procesar y diseñar secciones individuales con Fountain. Simplemente rodee su marcado de Fountain dentro del documento principal con etiquetas `[scrippet]`:
 

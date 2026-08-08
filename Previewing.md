@@ -4,7 +4,7 @@ I> This page covers preview *appearance* --- styles, zoom, dark mode, and the st
 
 Changing the way you see things.
 
-## Choosing a style
+## Choosing a style [choosing-a-style]
 
 ![][1]
 
@@ -16,13 +16,13 @@ Custom styles added in the Style settings will be available in both menus.
 
 Styles can be selected with keyboard shortcuts. Open the style menu to see the keyboard shortcut for each style. Keyboard shortcuts are assigned in Style order: the first 9 styles in the list can be accessed with {% kbd cmd 1 %} -- {% kbd cmd 9 %}, the next 10 styles with {% kbd cmd opt 1 %} -- {% kbd cmd opt 0 %}, etc.
 
-## Outline mode
+## Outline mode [outline-mode]
 
 If your document is a hierarchical list, such as one generated from a mind map or outlining application, you can enable Outline Mode from the Gear menu to apply special formatting in either APA or Decimal outlining style.
 
 Automatic outline mode can be enabled for specific file extensions in the {% prefspane Style %}.
 
-## Text Zoom
+## Text Zoom [text-zoom]
 
 ![][2]
 
@@ -30,10 +30,10 @@ Automatic outline mode can be enabled for specific file extensions in the {% pre
 
 You can change the text size using {% kbd cmd shift + %} and {% kbd cmd shift - %}, or use the Zoom menu under Preview in the menubar or in the gear menu on the document window. Marked will remember any changes you make for next time (and every time). Reset the zoom to 100% with {% kbd cmd 0 %} (or access **Zoom Reset** from the Zoom menu).
 
-## Dark Mode/High Contrast
+## Dark Mode/High Contrast [dark-modehigh-contrast]
 
 If you prefer light text on a dark background, Marked has you covered. In the __Preview__ menu you can use {% appmenu Preview, Dark Mode ({{opt}}{{cmd}}I) %} invert the colors any of the default schemes for a light on dark result, and if a custom theme is [built properly](Writing_Custom_CSS.html) it will work there as well.
 
-## Show/Hide Status Bar
+## Show/Hide Status Bar [showhide-status-bar]
 
 The status bar at the bottom of the preview window can be toggled with the {% appmenu Preview, Show Status Bar ({{ctrl}}/) %} menu item. When it's hidden, it can be viewed and interacted with by hovering over the space at the bottom of the preview.

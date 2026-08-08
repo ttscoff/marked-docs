@@ -2,9 +2,9 @@
 
 <%= @faq_intro %>
 
-<% @faq_items.each tun |item| %>
+<% @faq_items.each do |item| %>
 ## <%= item['question'] %>
 
 <%= item['body'] %>
 
-<% Ende %>
+<% end %>

@@ -4,7 +4,7 @@
 
 [Ulysses][ulysses] no escribe un archivo Markdown simple para cada hoja, por lo que **exportas** el texto actual cuando deseas que Marked obtenga una vista previa del mismo.
 
-## Exportación rápida a marcado
+## Exportación rápida a marcado [quick-export-to-marked]
 
 1. Presione {% kbd cmd 6 %} en Ulysses (o haga clic en el botón exportar de la barra de herramientas).
 2. Establezca el menú desplegable de formato en **Texto**.
@@ -14,7 +14,7 @@
 
 Después de la primera configuración, {% kbd cmd 6 %} seguido de **Regresar** suele ser suficiente para actualizar la vista previa marcada de la hoja activa (o las hojas que seleccionó).
 
-## Imágenes y recursos
+## Imágenes y recursos [images-and-assets]
 
 Marked también puede leer exportaciones de **TextBundle** o **TextPack** de Ulysses. Utilice la misma hoja de exportación, pero elija una opción de paquete cuando necesite imágenes incrustadas u otros recursos junto con Markdown.
 

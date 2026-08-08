@@ -10,7 +10,7 @@ Bármely dokumentumot kényszeríthet Markdown-ként való feldolgozásra, ha me
 
 A szakaszok és a jelenetek fejlécei megjelennek a Tartalomjegyzékben, így gyorsan navigálhat a forgatókönyvben.
 
-## Szkriptek
+## Szkriptek [scrippets]
 
 Használhat "szkripteket" egy normál dokumentumban is, hogy az egyes szakaszokat a Fountain segítségével dolgozza fel és alakítsa ki. Egyszerűen vegye körül a Fountain jelölést a fő dokumentumon belül `[scrippet]` címkékkel:
 

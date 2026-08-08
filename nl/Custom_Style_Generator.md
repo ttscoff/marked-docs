@@ -2,7 +2,7 @@
 
 De Custom Stijlgenerator is een webgebaseerde tool waarmee u aangepaste stijlen voor Marked kunt maken zonder handmatig CSS te schrijven. Het biedt een visuele interface met bedieningselementen voor typografie, kleuren, spatiëring en meer, met een live voorbeeld dat wordt bijgewerkt naarmate u wijzigingen aanbrengt.
 
-## Toegang tot de generator
+## Toegang tot de generator [accessing-the-generator]
 
 De Stijlgenerator is verkrijgbaar op [https://markedapp.com/style-generator/](https://markedapp.com/style-generator/). U kunt het rechtstreeks in uw webbrowser gebruiken; er is geen installatie vereist.
 
@@ -10,7 +10,7 @@ De Stijlgenerator is verkrijgbaar op [https://markedapp.com/style-generator/](ht
 
   [img-style-generator]: images/style-generator-800.jpg @2x width=800 class=center
 
-## Aan de slag
+## Aan de slag [getting-started]
 
 Wanneer u de generator voor het eerst opent, ziet u het volgende:
 
@@ -18,19 +18,19 @@ Wanneer u de generator voor het eerst opent, ziet u het volgende:
 - **Besturingspaneel** (rechts): alle stijlregelaars georganiseerd in secties
 - **Werkbalk** (boven): Stijltitel, basisthemakiezer en CSS-importoptie
 
-### Een basisthema kiezen
+### Een basisthema kiezen [choosing-a-base-theme]
 
 Begin door een **Basisthema** te selecteren in de vervolgkeuzelijst. Dit vormt de basis voor uw stijl; u kunt vervolgens elk aspect ervan aanpassen. Populaire opties zijn onder meer Blank (om helemaal opnieuw te beginnen), Default en verschillende ingebouwde thema's.
 
-### Bestaande CSS importeren
+### Bestaande CSS importeren [importing-existing-css]
 
 Als u een bestaand CSS-bestand heeft dat u als uitgangspunt wilt gebruiken, klikt u op **CSS importeren** en selecteert u uw bestand. De generator laadt deze stijlen en u kunt ze vervolgens wijzigen met de bedieningselementen.
 
-## Stijlbediening
+## Stijlbediening [style-controls]
 
 De generator organiseert de bedieningselementen in logische secties:
 
-### Basistypografie
+### Basistypografie [base-typography]
 
 Beheer de fundamentele typografie-instellingen:
 
@@ -39,7 +39,7 @@ Beheer de fundamentele typografie-instellingen:
 - **Lijnhoogte**: de afstand tussen tekstregels
 - **Schaalverhouding**: de verhouding die wordt gebruikt voor de typografische schaal (is van invloed op de kopgroottes)
 
-### Indeling
+### Indeling [layout]
 
 Pas de afstand en inspringing aan:
 
@@ -48,7 +48,7 @@ Pas de afstand en inspringing aan:
 - **Lijstinspringing**: Inspringing voor lijsten
 - **Blockquote Inspringen**: linkermarge voor blokquotes
 
-### Lettertypen
+### Lettertypen [fonts]
 
 Configureer lettertypefamilies en gewichten:
 
@@ -59,7 +59,7 @@ Configureer lettertypefamilies en gewichten:
 - **Vetgewicht**: lettertypegewicht voor vetgedrukte tekst
 - **Letterafstand**: tekenafstand voor kopteksten en hoofdtekst
 
-### Google-lettertypen
+### Google-lettertypen [google-fonts]
 
 Voeg Google Fonts toe aan uw stijl:
 
@@ -70,7 +70,7 @@ Voeg Google Fonts toe aan uw stijl:
 
 Toegevoegde lettertypen verschijnen in een lijst onder de besturingselementen. Klik op de × om ze te verwijderen.
 
-### Kleuren
+### Kleuren [colors]
 
 Kleuren instellen voor verschillende elementen:
 
@@ -85,13 +85,13 @@ Kleuren instellen voor verschillende elementen:
 
 Individuele kopkleuren (H1–H6) kunnen afzonderlijk worden ingesteld. Gebruik **Reset** om een ​​overschrijving op te heffen en terug te keren naar de kopkleur.
 
-### Donkere modus
+### Donkere modus [dark-mode]
 
 Schakel **Donkere modus** in om kleuren in de donkere modus te bekijken en te configureren. Indien ingeschakeld, zie je afzonderlijke kleurbedieningen voor varianten in de donkere modus. Stijlen voor de donkere modus zijn van toepassing wanneer `.inverted` is ingesteld op het body-element in Marked.
 
 Gebruik **Kleuren genereren** om automatisch een palet voor de donkere modus te maken op basis van uw kleuren in de lichte modus.
 
-### Afbeeldingen
+### Afbeeldingen [images]
 
 Controle van het uiterlijk van de afbeelding:
 
@@ -99,7 +99,7 @@ Controle van het uiterlijk van de afbeelding:
 - **Randradius**: afgeronde hoeken (bijvoorbeeld "8px", "0")
 - **Uitlijning**: Documentstandaard, Links, Midden of Rechts
 
-### Blokcitaten
+### Blokcitaten [blockquotes]
 
 Stijl blokcitaten:
 
@@ -112,7 +112,7 @@ Stijl blokcitaten:
 
 Er zijn aparte bedieningselementen beschikbaar voor blockquotes in de donkere modus.
 
-### Lijsten
+### Lijsten [lists]
 
 Configureer de weergave van de lijst:
 
@@ -120,7 +120,7 @@ Configureer de weergave van de lijst:
 - **Linkermarge**: afstand vanaf de linkerrand
 - **Geneste linkermarge**: afstand voor geneste lijsten (kan "overnemen")
 
-### Definitielijsten
+### Definitielijsten [definition-lists]
 
 Stijldefinitielijsten (`<dl>`, `<dt>`, `<dd>`):
 
@@ -128,7 +128,7 @@ Stijldefinitielijsten (`<dl>`, `<dt>`, `<dd>`):
 - **DT** (term) instellingen: lettergrootte, gewicht en stijl
 - **DD** (definitie) instellingen: lettergrootte, gewicht, stijl en inspringing
 
-### Tabellen
+### Tabellen [tables]
 
 Uitgebreide tafelstijl:
 
@@ -147,7 +147,7 @@ Uitgebreide tafelstijl:
 
 Er zijn aparte bedieningselementen beschikbaar voor tabellen in de donkere modus.
 
-### Codeblokken
+### Codeblokken [code-blocks]
 
 Stijlcodeblokken en inlinecode:
 
@@ -160,7 +160,7 @@ Stijlcodeblokken en inlinecode:
 
 Er zijn aparte bedieningselementen beschikbaar voor codeblokken in de donkere modus.
 
-### Voetnoten
+### Voetnoten [footnotes]
 
 Stijl voetnoten:
 
@@ -170,7 +170,7 @@ Stijl voetnoten:
 
 Er zijn aparte bedieningselementen beschikbaar voor voetnoten in de donkere modus.
 
-### Slagschaduw
+### Slagschaduw [drop-shadow]
 
 Slagschaduwen toevoegen aan elementen:
 
@@ -181,13 +181,13 @@ Slagschaduwen toevoegen aan elementen:
    - Blokcitaten
    - Tafels
 
-## Custom CSS
+## Custom CSS [custom-css]
 
 Voor geavanceerde aanpassingen die verder gaan dan de beschikbare besturingselementen, gebruikt u de knop **Custom CSS** om een ​​code-editor te openen. Alle CSS die u hier toevoegt, wordt toegevoegd aan de gegenereerde stijl en automatisch aangepast aan de documentstructuur van Marked.
 
 De editor bevat syntaxisaccentuering en validatie: ongeldige CSS wordt gemarkeerd met foutmeldingen.
 
-## Live voorbeeld
+## Live voorbeeld [live-preview]
 
 In het voorbeeldvenster wordt uw stijl weergegeven die is toegepast op voorbeelden van prijsverlagingsinhoud, waaronder:
 
@@ -204,23 +204,23 @@ In het voorbeeldvenster wordt uw stijl weergegeven die is toegepast op voorbeeld
 
 Wijzigingen worden in realtime bijgewerkt terwijl u de bedieningselementen aanpast.
 
-## Opslaan en delen
+## Opslaan en delen [saving-and-sharing]
 
 Als je eenmaal tevreden bent met je stijl, heb je verschillende opties:
 
-### CSS bekijken
+### CSS bekijken [view-css]
 
 Klik op **CSS bekijken** om de volledige gegenereerde CSS in een popover te zien. U kunt het naar uw klembord kopiëren of bekijken voordat u het opslaat.
 
-### CSS opslaan
+### CSS opslaan [save-css]
 
 Klik op **CSS opslaan** om uw stijl als CSS-bestand te downloaden. Voordat u gaat downloaden, wordt u gevraagd om metagegevens (titel, auteur, beschrijving) in te voeren.
 
-### Toevoegen aan Marked
+### Toevoegen aan Marked [add-to-marked]
 
 Klik op **Toevoegen aan Marked** om de stijl direct toe te voegen aan uw Marked installatie. Hiervoor moet Marked actief zijn en er wordt een dialoogvenster geopend om de stijlnaam en auteursinformatie te bevestigen.
 
-### Deel stijl
+### Deel stijl [share-style]
 
 Klik op **Stijl delen** om uw stijl te publiceren op de [Marked Style Gallery](https://markedapp.com/styles) zodat anderen deze kunnen gebruiken. U moet het volgende opgeven:
 
@@ -232,7 +232,7 @@ Klik op **Stijl delen** om uw stijl te publiceren op de [Marked Style Gallery](h
 
 Er verschijnt een voorbeeld van uw stijl in het dialoogvenster voor delen voordat u deze publiceert.
 
-## Metagegevens
+## Metagegevens [metadata]
 
 Gebruik het metadatagedeelte (uitbreidbaar via de pijlknop naast de stijltitel) om het volgende in te stellen:
 
@@ -243,7 +243,7 @@ Gebruik het metadatagedeelte (uitbreidbaar via de pijlknop naast de stijltitel) 
 
 Deze metagegevens zijn opgenomen in de CSS-bestandskop en worden gebruikt bij het delen van stijlen.
 
-## Tips
+## Tips [tips]
 
 - Begin met een basisthema dat dicht bij uw wensen ligt en pas het vervolgens aan
 - Gebruik het **Leeg**-thema als u volledige controle vanaf het begin wilt
@@ -252,6 +252,6 @@ Deze metagegevens zijn opgenomen in de CSS-bestandskop en worden gebruikt bij he
 - Gebruik **Custom CSS** spaarzaam; aan de meeste behoeften kan worden voldaan met de ingebouwde besturingselementen
 - Bekijk een voorbeeld van uw stijl met verschillende inhoudstypen voordat u deze deelt
 
-## Browsercompatibiliteit
+## Browsercompatibiliteit [browser-compatibility]
 
 De Stijlgenerator werkt het beste in moderne browsers (Chrome, Firefox, Safari, Edge). Het vereist dat JavaScript is ingeschakeld.

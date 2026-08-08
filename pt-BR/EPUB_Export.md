@@ -6,7 +6,7 @@ Marked exporta arquivos EPUB totalmente compatíveis da visualização do Markdo
 
 O fluxo de trabalho típico é **visualizar primeiro, depois exportar EPUB**: abrir ou compilar seu documento no Marked, escolher um tema, revisar na visualização ao vivo e exportar quando o livro estiver pronto.
 
-## Exportando um EPUB
+## Exportando um EPUB [exporting-an-epub]
 
 Abra o [Painel de exportação](Exporting.html#drawer) ({% kbd shift cmd e %}) ou use **Salvar como** no menu de engrenagem e escolha **EPUB**.
 
@@ -21,7 +21,7 @@ Marked incorpora imagens locais no EPUB e pode baixar imagens remotas para que o
 
 Consulte [Exportar perfis](Exporting.html#export-profiles) para salvar metadados EPUB e exportar configurações para uso repetido.
 
-## Estilo com temas integrados
+## Estilo com temas integrados [styling-with-built-in-themes]
 
 O **estilo de visualização** selecionado para o seu documento gera a aparência do EPUB. Cada tema marcado integrado --- Swiss, GitHub, Manuscript e o resto --- pode ser aplicado à exportação de EPUB.
 
@@ -33,7 +33,7 @@ Marcado também aplica CSS específico de exportação sobre seu tema de visuali
 
 I> Os leitores de EPUB ignoram alguns CSS somente da web (posicionamento fixo, truques de janela de visualização, etc.). O que você vê na visualização do Marked é o objetivo, mas os mecanismos de layout do e-reader podem simplificar o espaçamento e as fontes. Teste no Apple Books ou no seu leitor alvo antes de publicar.
 
-## Estilo com temas personalizados
+## Estilo com temas personalizados [styling-with-custom-themes]
 
 [Estilos personalizados](Custom_Styles.html) funcionam da mesma maneira para EPUB e para visualização e PDF:
 
@@ -50,11 +50,11 @@ Dicas para CSS personalizado compatível com EPUB:
 
 Para orientação de autoria, consulte [Criando CSS personalizado](Writing_Custom_CSS.html).
 
-## Destaque de sintaxe e matemática
+## Destaque de sintaxe e matemática [syntax-highlighting-and-math]
 
 Se **Incluir destaque de sintaxe na exportação** estiver habilitado em {% prefspane Export %}, os blocos de código serão exportados com as mesmas cores de sintaxe da sua visualização. A matemática renderizada com [MathJax](MathJax.html) está incluída no EPUB conforme apropriado para suporte ao leitor eletrônico.
 
-## Metadados no seu arquivo de origem
+## Metadados no seu arquivo de origem [metadata-in-your-source-file]
 
 Você pode definir metadados EPUB no documento em vez da caixa de diálogo para salvar. Na parte superior de um arquivo Markdown (ou em uma página de metadados do Scrivener), use chaves no estilo MultiMarkdown:
 
@@ -66,29 +66,29 @@ cover image: path/to/image.jpg
 
 `cover image` aceita um caminho relativo ao documento ou um caminho absoluto. PNG e JPG são suportados. Os valores da caixa de diálogo substituem ou preenchem os metadados ausentes no momento da exportação.
 
-## Livros com vários arquivos
+## Livros com vários arquivos [multi-file-books]
 
 Para trabalhos longos, compile capítulos com [Documentos Multi-Arquivos](Multi-File_Documents.html) --- arquivos de índice, exportações do Scrivener, Leanpub `Book.txt` ou índices estilo GitBook. Marcado observa arquivos incluídos, visualiza o livro completo e exporta um EPUB do HTML compilado.
 
 Os títulos do documento compilado tornam-se o EPUB [índice](Document_Navigation.html) para navegação no Apple Books e outros leitores.
 
-## Leitura e publicação
+## Leitura e publicação [reading-and-publishing]
 
 Os EPUBs exportados abrem diretamente no **Apple Books** (clique duas vezes no arquivo ou use **Arquivo → Adicionar à biblioteca**). Eles também funcionam em Kobo, Thorium, Caliber e na maioria dos aplicativos compatíveis com EPUB 3.
 
-### Apple Livros
+### Apple Livros [apple-books]
 
 Arraste um `.epub` exportado para o aplicativo Livros ou adicione-o através de **Arquivo → Importar**. A tipografia personalizada e a arte da capa do seu tema marcado são executadas. Use o Apple Books no Mac, iPad ou iPhone para verificar o layout antes de compartilhar.
 
-### Publicação direta Kindle (KDP)
+### Publicação direta Kindle (KDP) [kindle-direct-publishing-kdp]
 
-EPUB é um formato de upload aceito para [Kindle Direct Publishing](https://kdp.amazon.com/). Exporte de Marked e carregue o arquivo `.epub`; A Amazon o converte para entrega no Kindle. O KDP também aceita [DOCX](Working_with_DOCX.html). Consulte [formatos de e-books suportados](https://kdp.amazon.com/en_US/help/topic/G200634390) da Amazon para obter os requisitos atuais.
+EPUB é um formato de upload aceito para [Kindle Direct Publishing](https://kdp.amazon.com/). Exporte de Marked e carregue o arquivo `.epub`; A Amazon o converte para entrega no Kindle. O KDP também aceita [DOCX](Working_With_DOCX.html). Consulte [formatos de e-books suportados](https://kdp.amazon.com/en_US/help/topic/G200634390) da Amazon para obter os requisitos atuais.
 
 **MOBI não é necessário** para novos títulos KDP. Marcado não exporta MOBI.
 
 Opcional: visualize o layout do Kindle com o [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) gratuito da Amazon antes de fazer o upload.
 
-## Relacionado
+## Relacionado [related]
 
 * [Exportação de HTML](HTML_Export.html) --- HTML autônomo com estilos e imagens incorporados
 * [Exportando](Exporting.html) --- painel de exportação, perfis e outros formatos

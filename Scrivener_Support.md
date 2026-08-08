@@ -4,13 +4,13 @@ Use your two favorite writing tools together.
 
 > Marked can still read Scrivener 2.0 files, but development will be focused on version 3 after Marked 2.5.11.
 
-## Scrivener 3.0 Basics
+## Scrivener 3.0 Basics [scrivener-30-basics]
 
 Drag a Scrivener project (.scriv) to Marked and it will be compiled and previewed. If you choose the option to open .scriv files in Scrivener (above), Marked will also launch Scrivener when you drag the file to Marked.
 
 As with other documents, changes to Scrivener files are updated live on save. Also, when a Scrivener document is in the foreground in Marked, {% kbd cmd E %} will open it in Scrivener for you.
 
-## Filtering binder documents
+## Filtering binder documents [filtering-binder-documents]
 
 When you open a Scrivener project in Marked, preview content is built only from the binder documents you select. Filtering is always active for `.scriv` files; the filter panel is just a convenient way to change what is included.
 
@@ -34,11 +34,11 @@ Scrivener 2 projects show only the **Draft** binder in the filter panel. Scriven
 
 The filter panel can stay open alongside other tools such as **Visualize Word Repetition**. Changing a checkbox recompiles the preview after a short delay; if a large project is still compiling, Marked cancels the in-progress import and starts again with your new selection.
 
-## Markdown Headers From Scrivener Titles
+## Markdown Headers From Scrivener Titles [markdown-headers-from-scrivener-titles]
 
 Marked can also create hierarchical Markdown headers for you based on your Scrivener file's pages. To enable this, just check the option shown above.
 
-## MultiMarkdown metadata
+## MultiMarkdown metadata [multimarkdown-metadata]
 
 If the first document in your Draft folder is named "metadata", it will be treated as MultiMarkdown metadata at the beginning of the preview document. No header will be inserted for this section, regardless of the "Markdown Headers from Scrivener Titles" setting (described above), allowing the MultiMarkdown processor to read it as metadata and allow replacements and export options accordingly.
 
@@ -46,25 +46,25 @@ You can make this file YAML-formatted if your processor is one that handles YAML
 
 If you do not use a `metadata` document, Marked can also prepend MultiMarkdown metadata from your project's compile settings (`Settings/compile.xml`), using the same **Title** and **Author** fields Scrivener would export to MultiMarkdown. This is enabled by default (preference key `scrivenerCompileMetadata`). Custom metadata fields are only included when they appear in the project's **MMD Metadata** compile settings, not from per-document custom fields.
 
-## Links
+## Links [links]
 
 For external (HTTP) links, you can use either Markdown syntax or Scrivener's link formatting. Marked will convert Scrivener format to Markdown before processing.
 
-## Comments
+## Comments [comments]
 
 Marked can process comments and footnotes created inline within the document.
 
-## Tables
+## Tables [tables]
 
 Marked can convert basic Scrivener tables. If you want to include a table in your output, however, it's best to do it in [MultiMarkdown table format](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#tables). (An app called [TableFlip](http://tableflipapp.com/) can make generating these a simple task.)
 
-## Additional Scrivener Features
+## Additional Scrivener Features [additional-scrivener-features]
 
 In addition to the basic compiling and preview features, Marked also supports some Scrivener-specific conventions. First, in your Scrivener document, you can use "Preserve Formatting" inline or on a block of standalone text and it will be converted to code blocks in the preview.
 
 Marked also reads _inline_ footnotes from Scrivener. If you enter a footnote within or at the end of a paragraph, it will be converted to a MultiMarkdown footnote in the preview.
 
-## Using images in your Scrivener document
+## Using images in your Scrivener document [using-images-in-your-scrivener-document]
 
 Images can be embedded in the Scrivener document, or referenced with Markdown image syntax. The Markdown version of an image tag is `![alt text](path/to/image.ext "optional title/description")`. Reference format may be used as well:
 
@@ -78,7 +78,7 @@ The base path for the HTML output in the Preview will be set to the folder conta
 
 Relative paths based on the parent folder of the document will work, and absolute paths will allow access to images anywhere but may not be as portable for HTML output.
 
-## Security Note
+## Security Note [security-note]
 
 A cache folder will be created in ~/Library/Application Support/Marked when you open your .scriv file in Marked. This is not a protected folder, so if your original document is on an encrypted disk or otherwise protected, note that its contents will be unencrypted in the cache. For limited protection, you can ensure this cache doesn't show up in Spotlight by adding ~/Library/Application Support/Marked to your privacy settings in Spotlight.
 

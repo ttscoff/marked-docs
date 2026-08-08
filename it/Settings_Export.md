@@ -10,7 +10,7 @@ Opzioni in {% prefspane Export %}:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Esporta profilo
+### Esporta profilo [export-profile]
 
 Esporta profilo
 : selezionare un profilo salvato dal menu a comparsa. I profili memorizzano un set completo di preferenze di esportazione per il passaggio rapido tra flussi di lavoro (ad esempio, stampa PDF o HTML web). Vedi [Esporta profili](Exporting.html#export-profiles).
@@ -21,7 +21,7 @@ Nuovo
 Gestisci
 : apre il gestore profili per rinominare, duplicare o eliminare i profili.
 
-### Stampa/PDF
+### Stampa/PDF [printpdf]
 
 Disabilita collegamenti/evidenziazioni durante l'esportazione di PDF o la stampa
 : rimuove la formattazione (sottolineatura e colore) dai collegamenti durante la stampa.
@@ -68,11 +68,11 @@ Interruzione di pagina dopo
 Indicatori di livello del sommario
 : utilizzare i menu a discesa per impostare il contrassegno dell'elemento dell'elenco per ciascun livello di rientro in un sommario.
 
-### Intestazioni e piè di pagina
+### Intestazioni e piè di pagina [headers-and-footers]
 
 Configura carattere, logo, campi di intestazione/piè di pagina, formati di data e ora, inclusione della prima pagina, offset della numerazione delle pagine e bordi. I segnaposto di campo includono `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` e altri.
 
-Vedi [Intestazioni e piè di pagina](Exporting.html#headersandfooters) in [Esportazione](Exporting.html) per riferimenti ed esempi di segnaposto. Vedi [Formati di data e ora](Exporting.html#dateandtimeformats) per i codici di formato `%date` e `%time`.
+Vedi [Intestazioni e piè di pagina](Exporting.html#headers-and-footers) in [Esportazione](Exporting.html) per riferimenti ed esempi di segnaposto. Vedi [Formati di data e ora](Exporting.html#dateandtimeformats) per i codici di formato `%date` e `%time`.
 
 Includi nella prima pagina
 : Se l'opzione per l'intestazione e/o il piè di pagina non è selezionata, la prima pagina non verrà stampata del tipo specificato.

@@ -4,7 +4,7 @@
 
 [Bozze] [bozze] su Mac può eseguire il mirroring della bozza attiva in Contrassegnato utilizzando l'**Anteprima streaming contrassegnato**, lo stesso canale basato sugli appunti descritto in [Anteprima streaming](Streaming_Preview.html). Puoi anche inviare la bozza corrente una volta con un'**azione** della community (nessun aggiornamento in tempo reale finché non la esegui di nuovo).
 
-## Anteprima in streaming (Bozze per Mac)
+## Anteprima in streaming (Bozze per Mac) [streaming-preview-drafts-for-mac]
 
 1. In Contrassegnato, scegli {% appmenu File, New, Streaming Preview %} in modo che sia pronta una finestra di anteprima dello streaming.
 2. In **Bozze per Mac**, apri **Impostazioni** e attiva **Abilita supporto anteprima streaming app contrassegnate**.
@@ -14,11 +14,11 @@
 
 Quando questa opzione è attiva, Drafts spinge Markdown su Marked tramite l'integrazione che Marked espone per le anteprime in streaming (invece di fare affidamento sulla visione di un file su disco).
 
-### Fatti segnare
+### Fatti segnare [get-marked]
 
 Se nel foglio delle impostazioni di Drafts viene visualizzato **Get Marked App**, utilizzalo quando Marked non è ancora installato.
 
-## Anteprima nell'azione contrassegnata (aggiornamento manuale)
+## Anteprima nell'azione contrassegnata (aggiornamento manuale) [preview-in-marked-action-manual-refresh]
 
 Installa l'azione della community [**Anteprima in contrassegnato**](https://actions.getdrafts.com/a/11f) dalla directory delle bozze. Invia la **bozza di testo corrente** a Marked utilizzando un URL `x-marked://preview?text=…` (Drafts sostituisce i contenuti della bozza). **I contenuti non vengono aggiornati in tempo reale**: esegui nuovamente l'azione ogni volta che desideri che Marked corrisponda alla bozza.
 

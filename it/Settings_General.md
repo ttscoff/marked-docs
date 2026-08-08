@@ -8,7 +8,7 @@ Opzioni in {% prefspane General %}:
 
 [1]: images/screenshots/preferences-General.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Finestra
+### Finestra [window]
 
 Mantieni le nuove finestre in primo piano
 : imposta automaticamente le nuove finestre in modo che "fluttuino" sopra altre applicazioni.
@@ -31,7 +31,7 @@ Porta in primo piano il documento aggiornato
 Riporta lo stato attivo sull'app precedente
 : se abilitato, se un'azione di aumento/avvio dell'aggiornamento fa sì che Marked venga messo a fuoco in primo piano, lo stato attivo della tastiera viene restituito all'app che era in primo piano prima dell'aggiornamento (ad esempio l'editor di testo). Quando disabilitato, Marked non esegue mai questo trasferimento del focus. Se Marked non diventa in primo piano, questa opzione non ha effetto.
 
-### Barra di stato
+### Barra di stato [status-bar]
 
 Mostra selettore di stile
 : mostra il selettore di stile nella barra inferiore della finestra di anteprima.
@@ -47,7 +47,7 @@ Il conteggio delle parole esclude
 - **Blocchi di codice rientrati** (i blocchi di codice protetti sono sempre esclusi)
 - **Didascalie immagini**
 
-### Scorciatoie
+### Scorciatoie [shortcuts]
 
 Fare clic sul campo del collegamento per registrare una combinazione di tasti di scelta rapida che attiva un evento:
 

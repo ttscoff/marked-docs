@@ -1,166 +1,108 @@
 # <%= @title %>
 
-Der Style Manager bietet eine zentrale Schnittstelle zur Verwaltung aller Ihrer
-integrierte und Custom-Stile. Es gibt Ihnen die vollständige Kontrolle darüber
-Stile erscheinen in Menüs, in ihrer Reihenfolge, in Tastaturkürzeln und mehr.
+Der Stil-Manager bietet eine zentrale Oberfläche, um alle Ihre integrierten und Eigenen Stile zu verwalten. Sie steuern damit vollständig, welche Stile in den Menüs erscheinen, in welcher Reihenfolge, mit welchen Tastaturkurzbefehlen und mehr.
 
-## Öffnen des Style-Managers
+## Den Stil-Manager öffnen [opening-the-style-manager]
 
-Um den Stil-Manager zu öffnen, klicken Sie im {% prefspane Style %} auf die Schaltfläche **Stile verwalten…**
-Bereich, oder verwenden Sie {% appmenu Style, Manage Styles (~@$m) %}. Sie können CSS-Dateien auch direkt in das Einstellungsfenster ziehen --- Marked
-importiert sie, öffnet den Stil-Manager und wählt die neu hinzugefügte Zeile aus
-Du.
+Um den Stil-Manager zu öffnen, klicken Sie unter {% prefspane Style %} auf die Schaltfläche **Stile verwalten…** oder verwenden Sie {% appmenu Stil, Stile verwalten (~@$m) %}. Sie können CSS-Dateien auch direkt auf das Einstellungsfenster ziehen: Marked importiert sie, öffnet den Stil-Manager und wählt die neu hinzugefügte Zeile für Sie aus.
 
-![Style Manager][img-style-manager]
+![Stil-Manager][img-style-manager]
 
   [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
 
-## Die Stiltabelle
+## Die Stil-Tabelle [the-style-table]
 
-Der Stil-Manager zeigt alle Ihre Stile in einer sortierbaren Tabelle an, die gemischt ist
-integrierte und benutzerdefinierte Stile nahtlos. Jede Zeile in der Tabelle enthält mehrere
-Spalten:
+Der Stil-Manager zeigt alle Ihre Stile in einer sortierbaren Tabelle, die integrierte und eigene Stile nahtlos mischt. Jede Zeile der Tabelle enthält mehrere Spalten:
 
-### Kontrollkästchen aktiviert
+### Kontrollkästchen „Aktiviert“ [enabled-checkbox]
 
-Das Kontrollkästchen **Aktiviert** fügt den Stil sofort zum Stil hinzu oder entfernt ihn daraus
-Menü, Standardstil-Popup und Tastaturkürzel. Wenn Sie einen Stil deaktivieren,
-Es ist in den Menüs ausgeblendet, verbleibt aber zur einfachen erneuten Aktivierung im Stil-Manager.
+Das Kontrollkästchen **Aktiviert** fügt den Stil sofort zum Stil-Menü, zum Standardstil-Popup und zu den Tastaturkurzbefehlen hinzu bzw. entfernt ihn daraus. Deaktivieren Sie einen Stil, wird er aus den Menüs ausgeblendet, bleibt aber zur einfachen Reaktivierung im Stil-Manager.
 
-Wenn Sie den aktuell aktiven Stil deaktivieren, wechselt Marked automatisch zum
-Nächster verfügbarer aktivierter Stil.
+Deaktivieren Sie den gerade aktiven Stil, wechselt Marked automatisch zum nächsten verfügbaren aktivierten Stil.
 
-### Namensspalte
+### Spalte „Name“ [name-column]
 
-In der Spalte **Name** wird der Anzeigename des Stils angezeigt. Sie können diesen Namen bearbeiten
-inline, indem Sie direkt darauf klicken; Änderungen bleiben bestehen und werden auf jedes Menü übertragen
-wo der Stil erscheint. Dies ist besonders nützlich für benutzerdefinierte Stile, bei denen Sie
-Möglicherweise möchten Sie einen aussagekräftigeren Namen als den Dateinamen.
+Die Spalte **Name** zeigt den Anzeigenamen des Stils. Sie können diesen Namen direkt bearbeiten, indem Sie darauf klicken; Änderungen bleiben erhalten und wirken sich auf jedes Menü aus, in dem der Stil erscheint. Das ist besonders bei eigenen Stilen nützlich, wenn Sie einen aussagekräftigeren Namen als den Dateinamen möchten.
 
-Integrierte Stile haben gesperrte Namen, die nicht bearbeitet werden können. Um eine anzupassen
-Wenn Sie den Namen des integrierten Stils verwenden möchten, duplizieren Sie ihn zuerst, um eine bearbeitbare Kopie zu erstellen.
+Integrierte Stile haben gesperrte Namen, die sich nicht bearbeiten lassen. Um den Namen eines integrierten Stils anzupassen, duplizieren Sie ihn zuerst, um eine bearbeitbare Kopie zu erhalten.
 
-### Quellspalte
+### Spalte „Quelle“ [source-column]
 
 Die Spalte **Quelle** gibt an, woher der Stil stammt:
 
-- **Integriert**: Stile, die mit Marked geliefert und in der Anwendung gespeichert werden
-  Bündel
-- **Custom**: Stile, die Sie aus CSS-Dateien auf Ihrem Laufwerk hinzugefügt haben
-- **Dupliziert**: Stile, die durch Duplizieren eines anderen Stils (entweder integriert) erstellt wurden
-  oder benutzerdefiniert)
+- **Integriert**: Stile, die mit Marked geliefert werden und im App-Bundle liegen
+- **Eigen**: Stile, die Sie aus CSS-Dateien auf Ihrem Laufwerk hinzugefügt haben
+- **Dupliziert**: Stile, die durch Duplizieren eines anderen Stils entstanden sind (integriert oder eigen)
 
-### Spalte „Aktionen“.
+### Spalte „Aktionen“ [actions-column]
 
-Jede Zeile enthält einen Stapel **Aktionen** mit Schaltflächen zum Verwalten dieses Stils:
+Jede Zeile enthält einen **Aktionen**-Block mit Schaltflächen zum Verwalten des jeweiligen Stils:
 
-**Bearbeiten**: Öffnet die CSS-Datei in Ihrem Standardeditor. Integrierte Stile können nicht sein
-direkt bearbeitet werden – Sie müssen sie zuerst duplizieren, um eine bearbeitbare Kopie zu erstellen.
+**Bearbeiten**: Öffnet die CSS-Datei in Ihrem Standardeditor. Integrierte Stile lassen sich nicht direkt bearbeiten – duplizieren Sie sie zuerst, um eine bearbeitbare Kopie zu erhalten.
 
-**Duplizieren**: Erstellt eine Kopie des Stils und eine neue CSS-Datei auf der Festplatte. Die
-Das Duplikat erscheint direkt unter dem ursprünglichen Stil in der Tabelle. Das ist
-Die empfohlene Methode zum Anpassen integrierter Stile.
+**Duplizieren**: Erstellt eine Kopie des Stils und eine neue CSS-Datei auf der Festplatte. Das Duplikat erscheint direkt unter dem Originalstil in der Tabelle. Das ist der empfohlene Weg, um integrierte Stile anzupassen.
 
-**Anzeigen**: Zeigt die CSS-Datei im Finder an, sodass Sie sie leichter finden können
-Ihr Antrieb. Diese Schaltfläche ist nur für benutzerdefinierte Stile mit einem Dateipfad verfügbar.
+**Im Finder anzeigen**: Zeigt die CSS-Datei im Finder, damit Sie die Datei auf Ihrem Laufwerk leicht finden. Diese Schaltfläche gibt es nur bei eigenen Stilen mit einem Dateipfad.
 
-**Löschen**: Entfernt den Stil aus Marked. Für benutzerdefinierte Stile erhalten Sie Angaben
-die Option, entweder nur die Referenz zu entfernen (die CSS-Datei beizubehalten) oder zu verschieben
-die CSS-Datei in den Papierkorb. Integrierte Stile können nicht gelöscht werden, sie können jedoch gelöscht werden
-deaktiviert.
+**Löschen**: Entfernt den Stil aus Marked. Bei eigenen Stilen können Sie wählen, ob nur die Referenz entfernt wird (die CSS-Datei bleibt) oder die CSS-Datei in den Papierkorb wandert. Integrierte Stile lassen sich nicht löschen, aber deaktivieren.
 
-**Wiederherstellen**: Bei integrierten Stilen stellt diese Schaltfläche den Stil wieder her
-Standardzustand, wenn er geändert wurde. Diese Schaltfläche ist nur sichtbar für
-Integrierte Stile.
+**Wiederherstellen**: Bei integrierten Stilen setzt diese Schaltfläche den Stil auf seinen Standardzustand zurück, falls er geändert wurde. Sie ist nur bei integrierten Stilen sichtbar.
 
-## Stile neu anordnen
+## Stile neu anordnen [reordering-styles]
 
-Zeilen können per Drag & Drop neu angeordnet werden. Ziehen Sie einfach eine Stilzeile in eine neue
-Platz in der Tabelle. Die Reihenfolge, die Sie hier festlegen, steuert:
+Zeilen lassen sich per Drag-and-drop umsortieren. Ziehen Sie eine Stilzeile einfach an eine neue Position in der Tabelle. Die hier festgelegte Reihenfolge steuert:
 
-- Die Menüreihenfolge „Stil“ in den Menüs von Marked
-- Tastaturkürzelzuweisungen (`⌘1`–`⌘9` für die ersten neun aktivierten Stile,
-  `⌥⌘1`–`⌥⌘0` für die nächsten zehn usw.)
+- die Reihenfolge des Stil-Menüs in Markeds Menüs
+- die Tastaturkurzbefehl-Zuweisungen (`⌘1`–`⌘9` für die ersten neun aktivierten Stile, `⌥⌘1`–`⌥⌘0` für die nächsten zehn usw.)
 
-Ziehen Sie Stile in die gewünschten Tastaturkürzel-Slots
-besetzen.
+Ziehen Sie Stile also in die Kurzbefehl-Plätze, die sie belegen sollen.
 
-## Stile hinzufügen
+## Stile hinzufügen [adding-styles]
 
-Es gibt mehrere Möglichkeiten, neue benutzerdefinierte Stile zum Stil-Manager hinzuzufügen:
+Es gibt mehrere Wege, neue eigene Stile zum Stil-Manager hinzuzufügen:
 
-### Schaltfläche „Hinzufügen“.
+### Hinzufügen-Schaltfläche [add-button]
 
-Klicken Sie auf die Schaltfläche **Neuen Stil hinzufügen**, um eine Dateiauswahl zu öffnen
-Hier können Sie eine oder mehrere CSS-Dateien zum Importieren auswählen. Ausgewählte Dateien werden angezeigt
-Zum Stil-Manager hinzugefügt und standardmäßig aktiviert.
+Klicken Sie auf die Schaltfläche **Neuen Stil hinzufügen**, um eine Dateiauswahl zu öffnen, in der Sie eine oder mehrere CSS-Dateien zum Import auswählen. Ausgewählte Dateien werden dem Stil-Manager hinzugefügt und standardmäßig aktiviert.
 
-### Drag-and-Drop
+### Drag-and-drop [drag-and-drop]
 
-Sie können CSS-Dateien direkt in das Style-Manager-Fenster ziehen. Beim Ziehen
-Dateien über dem Fenster, erscheint ein Overlay mit der Meldung „Füge einen Custom-Stil hinzu“ (oder
-„N Custom Stile hinzufügen“ für mehrere Dateien). Legen Sie die Dateien ab, um sie zu importieren.
+Sie können CSS-Dateien direkt auf das Stil-Manager-Fenster ziehen. Ziehen Sie Dateien über das Fenster, erscheint ein Overlay mit „Eigenen Stil hinzufügen“ (bzw. „N Eigene Stile hinzufügen“ bei mehreren Dateien). Lassen Sie die Dateien los, um sie zu importieren.
 
-Sie können CSS-Dateien auch an bestimmte Positionen in der Tabelle ziehen – den Drop
-Der Indikator zeigt an, wo der neue Stil eingefügt wird, sodass Sie steuern können
-Sowohl Import als auch Positionierung in einer Aktion.
+Sie können CSS-Dateien auch an bestimmte Positionen in der Tabelle ziehen – die Ablage-Markierung zeigt, wo der neue Stil eingefügt wird, sodass Sie Import und Positionierung in einem Schritt steuern.
 
-Das Ziehen von CSS-Dateien in den Einstellungsbereich {% prefspane Style %} funktioniert ebenfalls
-Importieren Sie sie und öffnen Sie den Style Manager automatisch.
+Ziehen Sie CSS-Dateien auf den Einstellungsbereich {% prefspane Style %}, werden sie ebenfalls importiert und der Stil-Manager öffnet sich automatisch.
 
-## Live-Vorschau
+## Live-Vorschau [live-preview]
 
-Im rechten Bereich des Stil-Managers wird eine Live-Vorschau der ausgewählten Elemente angezeigt
-Stil. Die Vorschau zeigt ein umfassendes Beispieldokument mit Überschriften,
-Listen, Tabellen, Codeblöcke, Blockzitate und andere allgemeine Markdown-Elemente,
-alles mit dem tatsächlichen CSS des ausgewählten Stils gestaltet.
+Der rechte Bereich des Stil-Managers zeigt eine Live-Vorschau des ausgewählten Stils. Die Vorschau rendert ein umfassendes Beispieldokument mit Überschriften, Listen, Tabellen, Codeblöcken, Blockzitaten und anderen gängigen Markdown-Elementen, alles mit dem tatsächlichen CSS des ausgewählten Stils gestaltet.
 
-Die Vorschau verwendet die CSS-Datei direkt von der Festplatte, also alle Änderungen, die Sie in Ihrer vornehmen
-Der externe Editor wird in der Vorschau sofort aktualisiert. Das macht es einfach
-Sehen Sie Ihre Änderungen in Echtzeit, während Sie benutzerdefinierte Stile entwickeln.
+Die Vorschau verwendet die CSS-Datei direkt von der Festplatte, sodass Änderungen in Ihrem externen Editor sofort in der Vorschau erscheinen. So sehen Sie Ihre Änderungen beim Entwickeln eigener Stile in Echtzeit.
 
-### Vorschau im Dunkelmodus
+### Vorschau im Dunkelmodus [dark-mode-preview]
 
-Über ein Kontrollkästchen über der Vorschau können Sie zwischen Hell- und Dunkelmodus wechseln
-Vorschauen. Dies ist nützlich, um zu testen, wie Stile in beiden Darstellungsmodi aussehen.
-insbesondere, wenn Sie Stile erstellen, die sich an das Erscheinungsbild des Systems anpassen.
+Ein Kontrollkästchen über der Vorschau schaltet zwischen Hell- und Dunkelmodus-Vorschau um. Das ist praktisch, um zu testen, wie Stile in beiden Erscheinungsmodi aussehen – besonders, wenn Sie Stile erstellen, die sich an das Systemerscheinungsbild anpassen.
 
-## Tastaturkürzel
+## Tastaturkurzbefehle [keyboard-shortcuts]
 
-Der Stil-Manager zeigt unterhalb der Tabelle eine Legende an, die zeigt, wie die Tastatur funktioniert
-Verknüpfungen werden zugewiesen. Die ersten neun aktivierten Stile erhalten {% kbd cmd 1 %} durch
-{% kbd cmd 9 %} ({% kbd cmd 0 %} ist reserviert), die nächsten zehn erhalten {% kbd opt cmd 1 %} bis {% kbd opt cmd 0 %} und so weiter. Sie können die zugewiesenen Tastaturkürzel in jeder Vorschau im Popup-Menü „Stil“ sehen.
+Der Stil-Manager zeigt unter der Tabelle eine Legende, wie die Tastaturkurzbefehle vergeben werden. Die ersten neun aktivierten Stile erhalten {% kbd cmd 1 %} bis {% kbd cmd 9 %} ({% kbd cmd 0 %} ist reserviert), die nächsten zehn erhalten {% kbd opt cmd 1 %} bis {% kbd opt cmd 0 %} usw. Die zugewiesenen Tastaturkurzbefehle sehen Sie im Stil-Popup-Menü jeder Vorschau.
 
-## Deaktivierte Stile filtern
+## Deaktivierte Stile filtern [filtering-disabled-styles]
 
-Über ein Kontrollkästchen am unteren Rand des Fensters können Sie deaktivierte Elemente ein- oder ausblenden
-Stile. Wenn diese Option deaktiviert ist, werden nur aktivierte Stile angezeigt, was die Arbeit erleichtert
-Konzentrieren Sie sich auf Ihre aktiven Stile und ordnen Sie sie neu. Wenn diese Option aktiviert ist, werden alle Stile (aktiviert und deaktiviert) angezeigt.
-werden angezeigt, sodass Sie Ihre komplette Stilkollektion verwalten können.
+Ein Kontrollkästchen am unteren Fensterrand steuert die Anzeige deaktivierter Stile. Ist es nicht markiert, werden nur aktivierte Stile angezeigt, sodass Sie sich leichter auf Ihre aktiven Stile konzentrieren und sie umsortieren können. Ist es markiert, werden alle Stile (aktiviert und deaktiviert) angezeigt, sodass Sie Ihre gesamte Stilsammlung verwalten.
 
-## Integrierte Stile wiederherstellen
+## Integrierte Stile wiederherstellen [restoring-builtin-styles]
 
-Die Schaltfläche **Alle integrierten Stile wiederherstellen** unten im Fenster
-Stellt alle integrierten Stile auf ihren Standardzustand zurück. Dies ist nützlich, wenn Sie dies getan haben
-Sie haben integrierte Stile deaktiviert und möchten sie erneut aktivieren oder zurücksetzen
-alle an integrierten Stilen vorgenommenen Änderungen.
+Die Schaltfläche **Alle integrierten Stile wiederherstellen** am unteren Fensterrand setzt alle integrierten Stile auf ihren Standardzustand zurück. Das ist nützlich, wenn Sie integrierte Stile deaktiviert haben und sie wieder aktivieren möchten, oder wenn Sie Änderungen an integrierten Stilen zurücksetzen wollen.
 
-## Tipps
+## Tipps [tips]
 
-- **Nach Häufigkeit organisieren**: Ziehen Sie Ihre am häufigsten verwendeten Stile zum Verschenken nach oben
-  ihnen die einfachsten Tastaturkürzel ({% kbd cmd 1 %}, {% kbd cmd 2 %} usw.)
+- **Nach Häufigkeit ordnen**: Ziehen Sie Ihre meistgenutzten Stile nach oben, damit sie die einfachsten Tastaturkurzbefehle erhalten ({% kbd cmd 1 %}, {% kbd cmd 2 %} usw.).
 
-- **Deaktivieren statt löschen**: Anstatt Stile zu löschen, die Sie nicht verwenden,
-  deaktivieren Sie sie. Sie bleiben Ihnen aus dem Weg, bleiben aber bei Bedarf verfügbar
-  sie später.
+- **Deaktivieren statt löschen**: Statt ungenutzte Stile zu löschen, deaktivieren Sie sie. Sie sind dann aus dem Weg, bleiben aber verfügbar, falls Sie sie später brauchen.
 
-- **Duplikat zum Experimentieren verwenden**: Duplizieren Sie einen Stil, bevor Sie ihn zum Hauptstil machen
-  Änderungen, sodass Sie jederzeit zum Original zurückkehren können.
+- **Zum Experimentieren duplizieren**: Duplizieren Sie einen Stil, bevor Sie größere Änderungen vornehmen, damit Sie jederzeit zum Original zurückkehren können.
 
-- **Vorschau während der Bearbeitung**: Lassen Sie den Stil-Manager während der Bearbeitung von CSS geöffnet
-  Dateien, um die Aktualisierung Ihrer Änderungen in Echtzeit im Vorschaufenster zu sehen.
+- **Beim Bearbeiten in der Vorschau prüfen**: Lassen Sie den Stil-Manager beim Bearbeiten der CSS-Dateien geöffnet, um Ihre Änderungen in Echtzeit im Vorschaubereich zu sehen.
 
-- **Batch-Import**: Sie können mehrere CSS-Dateien gleichzeitig auswählen, wenn Sie den verwenden
-  Klicken Sie auf die Schaltfläche „Hinzufügen“ oder ziehen Sie mehrere Dateien, um sie alle in einer Aktion zu importieren.
-
-
+- **Stapel-Import**: Über die Hinzufügen-Schaltfläche können Sie mehrere CSS-Dateien auf einmal auswählen oder mehrere Dateien in einem Schritt hineinziehen.

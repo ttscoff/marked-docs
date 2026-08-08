@@ -4,7 +4,7 @@
 
 A Marked a nyílt forráskódú közösség sok segítségével készült. Ez az oldal harmadik féltől származó kódot sorol fel, amelyet a Markeden belül szállítanak. A Markdown processzorok teljes licencszövege a [A Markdown névjegye](MultiMarkdown_Information.html) hivatkozási oldalain érhető el.
 
-## Markdown processzorok és átalakítás
+## Markdown processzorok és átalakítás [markdown-processors-and-conversion]
 
 | Alkatrész | Szerzők | Licenc | Használt |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ A Marked a nyílt forráskódú közösség sok segítségével készült. Ez az
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Kramdown processzor opció (Ruby csomagban) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | PDF a Markdown importba |
 
-## Natív kód és keretrendszerek
+## Natív kód és keretrendszerek [native-code-and-frameworks]
 
 | Alkatrész | Szerzők | Licenc | Használt |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@ A Marked a nyílt forráskódú közösség sok segítségével készült. Ez az
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniel Jackson | Lásd a projektet | Előrehaladási mutatók |
 | [IAPMager](https://github.com/mruegenberg/IAPManager) | Marcel Ruegenberg | Lásd a projektet | Alkalmazáson belüli vásárlási segítők (örökölt) |
 
-## JavaScript előnézete
+## JavaScript előnézete [preview-javascript]
 
 Ezek a könyvtárak a Marked előnézeti csomagjában vannak összefűzve (`marked.min.js` és a kapcsolódó erőforrások):
 
@@ -59,7 +59,7 @@ Ezek a könyvtárak a Marked előnézeti csomagjában vannak összefűzve (`mark
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Nézőablak észlelése |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | Dokumentumkeresés kiemelése |
 
-## Lokalizálás
+## Lokalizálás [localization]
 
 A Marked több nyelven is elérhető önkéntes fordítóknak köszönhetően:
 
@@ -77,6 +77,6 @@ A Marked több nyelven is elérhető önkéntes fordítóknak köszönhetően:
 - Yuki Tamari
 - 亮 王
 
-## Köszönetnyilvánítás
+## Köszönetnyilvánítás [acknowledgments]
 
 Köszönet Daniel Jalkutnak is az évekig tartó útmutatásért, és Felippe van Eekhoutnak a Megjelölt ikonért.

@@ -2,7 +2,7 @@
 
 Er zijn verschillende manieren om extra JavaScripts in Marked in te sluiten.
 
-## Inclusief JavaScript per document
+## Inclusief JavaScript per document [including-javascript-per-document]
 
 U kunt scripts in één document opnemen met `<script>` tags in de inhoud zelf. Dit kan handig zijn voor bibliotheken zoals [D3](https://d3js.org/) voor datavisualisaties die je alleen in specifieke documenten nodig hebt:
 
@@ -16,7 +16,7 @@ CSS-header: <script src="file.js"></script>
 
 Om opgenomen scripts te laten vernieuwen wanneer de inhoud verandert, zie [Hooks](#hooks).
 
-## Inclusief JavaScript
+## Inclusief JavaScript [including-javascript]
 
 U kunt uw eigen JavaScript toevoegen vanuit lokale bestanden, CDN's of door onbewerkte code te plakken. Om hier toegang toe te krijgen, opent u {% prefspane Style %} en klikt u op de knop *Custom Regels*.
 
@@ -33,9 +33,9 @@ JavaScript invoegen vanaf URL
 JavaScript invoegen
 : Opent een code-editor waarin u uw eigen JavaScript-code kunt schrijven/plakken
 
-Deze scripts worden aan het einde van het voorbeeld ingevoegd, vóór de documenttag. Als u elke keer dat de preview wordt bijgewerkt een init-functie moet aanroepen of moet bijwerken, raadpleeg dan [Including Raw JavaScript](#rawjs) en maak uzelf vertrouwd met de [hooks](#hooks) van Marked.
+Deze scripts worden aan het einde van het voorbeeld ingevoegd, vóór de documenttag. Als u elke keer dat de preview wordt bijgewerkt een init-functie moet aanroepen of moet bijwerken, raadpleeg dan [Ruwe JavaScript opnemen](Embedding_Scripts.html#hooks) en maak uzelf vertrouwd met de [hooks](#hooks) van Marked.
 
-## Zeemeermin en andere scripts {#mermaid}
+## Zeemeermin en andere scripts [mermaid]
 
 jQuery is standaard inbegrepen en u kunt het gebruiken in alle scripts die u aan Marked toevoegt met behulp van een van de onderstaande methoden.
 
@@ -45,7 +45,7 @@ Onderaan de {% prefspane Style %} is een selectievakje voor "Pan- en zoomdiagram
 
 Als u een bepaalde bibliotheek standaard wilt zien, laat het me dan weten via [BrettTerpstra.com forum](https://forum.brettterpstra.com/) of via [the support site](https://support.markedapp.com/questions/add).
 
-## Haken [haken]
+## Haken [hooks]
 
 Vanaf recente versies voert Marked niet langer een volledige paginavernieuwing uit bij het bijwerken van inhoud, maar injecteert de nieuwe inhoud in de DOM zonder dat de pagina hoeft te worden geladen. Dit betekent dat opgenomen scripts die worden geactiveerd bij het laden van de pagina, niet opnieuw worden geactiveerd wanneer de inhoud wordt bijgewerkt. Marked biedt hiervoor een "hooks"-functie. Om een ​​hook te registreren, moet je een tweede scriptblok toevoegen dat de [<!--MKPH0--> function](https://markedapp.com/jsapi/Marked.hooks.html#.register__anchor) aanroept, dat een trigger accepteert, in dit geval 'update', en een functie die moet worden uitgevoerd.
 

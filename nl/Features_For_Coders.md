@@ -1,6 +1,6 @@
 # <%= @title %>
 
-## Omheinde codeblokken
+## Omheinde codeblokken [fenced-code-blocks]
 
 Omheinde codeblokken zijn standaard ingeschakeld in beide meegeleverde processors (MultiMarkdown en Discount). Omheinde codeblokken worden begrensd door drie of meer tildes (~) of backticks (\`). U kunt er meer dan drie gebruiken, maar de begin- en eindscheidingstekens moeten exact hetzelfde aantal tekens bevatten.
 
@@ -38,7 +38,7 @@ De ingebouwde syntaxisaccentuering herkent **256** taalspecificaties (zie [Suppo
 
 Zie de sectie over [Marked Special Syntax](Special_Syntax.html#includingcode) om te leren hoe u externe codebestanden in uw document kunt opnemen.
 
-## Syntaxisaccentuering
+## Syntaxisaccentuering [syntax-highlighting]
 
 ![Automatic Syntax Highlighting][highlight]
 
@@ -58,7 +58,7 @@ De optie "Alleen als de taal is opgegeven" rechts van de syntaxisstijlkiezer is 
 
 Syntaxisaccentuering wordt weergegeven in het voorbeeld en in print en PDF export. Indien ingeschakeld in de instellingen en het thema wordt opgenomen bij het exporteren van HTML, wordt de highlight.js-bibliotheek die door Marked wordt gebruikt, ingebed in de uitvoer van HTML, waardoor uw geëxporteerde HTML wordt weergegeven zoals in Marked.
 
-### Ondersteunde talen
+### Ondersteunde talen [supported-languages]
 
 Marked wordt geleverd met **highlight.js 11.11.1**, inclusief alle kerntalen plus grammatica's van derden uit de [highlight.js supported languages](https://highlightjs.readthedocs.io/en/latest/supported-languages.html) lijst. Geef hieronder een naam voor de primaire taal op (of een gedocumenteerde alias zoals `js` voor JavaScript) na het openingshek.
 
@@ -88,7 +88,7 @@ Twee talen die op de highlight.js-site worden vermeld, zijn niet opgenomen in de
     vbscript-html, verilog, vhdl, vim, wasm, winterkoninkje, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, zephir
 
-### Syntaxis die thema's benadrukt
+### Syntaxis die thema's benadrukt [syntax-highlighting-themes]
 
 **239** thema's voor syntaxisaccentuering zijn beschikbaar in de vervolgkeuzelijst {% prefspane Style %}. Thema's worden automatisch geladen vanuit de gebundelde stylesheets van Marked; namen komen overeen met de CSS-bestandsnaam zonder de extensie (bijvoorbeeld `github-dark` laadt `github-dark.css`).
 
@@ -154,11 +154,11 @@ basis16-3024, basis16-apathie, basis16-leerling, basis16-as, basis16-atelier-gro
     base16-windows-nt, base16-windows-nt-licht, base16-bos, base16-xcode-dusk,
     base16-zenburn
 
-## GitHub Regeleinden
+## GitHub Regeleinden [github-line-breaks]
 
 Marked kan regeleinden in uw alinea's behouden. Selecteer gewoon de {% prefspane Processor %} en vink het vakje aan om regeleinden in alinea's te behouden.
 
-## GitHub Selectievakjes
+## GitHub Selectievakjes [github-checkboxes]
 
 Lijstitems geformatteerd als:
 
@@ -167,6 +167,6 @@ Lijstitems geformatteerd als:
 
 zal in het voorbeeld verschijnen als weergegeven selectievakje-items. Er kan geen interactie mee plaatsvinden, maar hun status weerspiegelt eventuele wijzigingen in het brondocument.
 
-## Codeblokverpakking
+## Codeblokverpakking [code-block-wrapping]
 
 In de {% prefspane Style %} vind je een optie onder Lay-out en typografie: "Sta toe dat thema's tekst binnen codeblokken laten lopen." Als u dit uitschakelt, worden alle codeblokken gedwongen de horizontale overloop te scrollen in plaats van deze in te wikkelen, ongeacht de huidige voorbeeldstijl.

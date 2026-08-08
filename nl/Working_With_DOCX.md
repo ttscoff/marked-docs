@@ -2,7 +2,7 @@
 
 Marked biedt uitgebreide ondersteuning voor het werken met Microsoft Word-bestanden. De typische workflow is **eerst een voorbeeld bekijken, DOCX seconde** exporteren: open of bekijk uw Markdown in Marked, verfijn stijlen en proeflezen in de live preview en exporteer vervolgens naar Word wanneer het document klaar is.
 
-## DOCX bestanden openen
+## DOCX bestanden openen [opening-docx-files]
 
 Marked kan een DOCX bestand lezen en het naar een schoon bestand converteren
 Markdown. Geldige stijlelementen zoals koppen en lijsten zijn dat wel
@@ -12,18 +12,18 @@ Het bijhouden van wijzigingen en opmerkingen worden omgezet naar
 CriticMarkup. Hoogtepunten worden geconverteerd naar `<mark>` tags,
 met kleuren waar nodig.
 
-## DOCX bestanden exporteren
+## DOCX bestanden exporteren [exporting-docx-files]
 
 Gebruik het palet Exporteren om een DOCX bestand te genereren van uw
 Markdown. In het dialoogvenster Opslaan kunt u een ingebouwd bestand opgeven
 stijlen --- deze stijl kan eenvoudig in Word worden gewijzigd door gewoon
 de themakiezer openen en een nieuw thema selecteren.
 
-### Kop- en voetteksten
+### Kop- en voetteksten [headers-and-footers]
 
 Als u kop- en voetteksten configureert in {% prefspane Export %}, worden deze opgenomen in de geëxporteerde DOCX. Standaard tijdelijke aanduidingen zoals `%title`, `%date`, `%page` en `%total` worden tijdens het exporteren vervangen. `%logo` en `%image` sluiten het logo in vanuit de koptekst-/voettekstvoorkeuren. `%md_*` metadatavariabelen worden omgezet op basis van de MultiMarkdown metadata van het document. `%h1`--`%h6` worden Word **STYLEREF**-velden gekoppeld aan de geëxporteerde kopstijlen; Word vult ze in wanneer u het document opent. Zie [Exporting](Exporting.html#headers-and-footers) voor de volledige lijst met variabelen en verschillen tussen DOCX en print/PDF gedrag.
 
-## Wijzigingen bijhouden
+## Wijzigingen bijhouden [change-tracking]
 
 De syntaxis CriticMarkup in een Markdown document wordt geconverteerd
 naar Word Change Tracking bij export naar DOCX. Opmerkingen
@@ -35,11 +35,11 @@ Wanneer u een DOCX bestand in Marked importeert, worden wijzigingen bijgehouden
 worden geconverteerd naar CriticMarkup en `<mark>` tags als
 geschikt.
 
-## Wiskunde
+## Wiskunde [math]
 
 MathJax en Katex-vergelijkingen die in het document worden weergegeven, worden geconverteerd naar MathML voor weergave in Word. Deze conversie is niet perfect, maar levert in de meeste gevallen een geldig wiskundeblok op in het Word-document. Dit geldt alleen voor export --- wiskundeblokken in Word-documenten worden bij het importeren niet geconverteerd.
 
-## Custom exportstijlen toevoegen
+## Custom exportstijlen toevoegen [adding-custom-export-styles]
 
 U kunt uw eigen exportstijlen toevoegen door een sjabloon en een stijlen.xml-bestand op te nemen in `~/Library/Application Support/Marked/Custom Word Styles/`. Om deze te maken:
 

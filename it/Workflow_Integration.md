@@ -21,18 +21,14 @@ Vedi [Supporto AppleScript](AppleScript_Support.html) per l'elenco dei comandi, 
 L'integrazione AppleScript consente inoltre ad applicazioni come Tags.app di funzionare direttamente all'interno di Marked.
 
 {% note %}
-## Scorciatoie
+## Scorciatoie [applescript]
 
 Contrassegnato include [Azioni scorciatoie] native su macOS 13 o versioni successive. Utilizza **Apri ed esporta file** per flussi di lavoro dal Finder a PDF, **Esporta documento** per tutto ciò che è già aperto in Contrassegnato o **Imposta stile anteprima** per modificare i temi prima dell'esportazione. Le azioni di esportazione accettano **profili**, anteprima **stili** e opzioni come **dimensione pagina**, **margini** e **dimensione carattere** (stessa semantica dei record AppleScript `with`).
 
-[shortcuts]: Shortcuts_Integration.html
 {% endnote %}
 
-## Gestore URL
 
-Il [gestore URL contrassegnato] [urlhandler] consente un'integrazione estesa semplicemente chiamando gli URL, da AppleScript o con un comando di base `open` in uno script di shell.
-
-## Pacchetto bonus contrassegnato
+## Pacchetto bonus contrassegnato [url-handler]
 
 Il Marked Bonus Pack è una raccolta di script, comandi e servizi. Alcuni funzionano con più editor, altri sono specifici per determinati editor. I Servizi generalmente funzioneranno con qualsiasi editor che disponga delle capacità necessarie. Il resto è organizzato in cartelle in base all'applicazione con cui lavorano.
 

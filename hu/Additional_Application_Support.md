@@ -4,7 +4,7 @@
 
 A Marked számos szerkesztővel és íróalkalmazással működik. Ez az oldal a megosztott **beállításokat**, a **vágólap előnézetét**, a **streaming előnézetre** mutató mutatókat és a parancsfájl-erőforrásokat tartalmazza. A népszerű alkalmazások részletes útmutatói a saját súgótémájukban találhatók (lásd az oldalsáv **Támogatott alkalmazások** szakaszát).
 
-## Alkalmazásonkénti útmutatók
+## Alkalmazásonkénti útmutatók [per-app-guides]
 
 Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemmel az általános munkafolyamathoz. Ha Obsidian-t használ, tekintse meg a [Marked vs Obsidian Preview](Marked_vs_Obsidian_Preview.html) részt annak eldöntéséhez, hogy a Marked mikor ad hozzá értéket az Obsidian beépített előnézetéhez.
 
@@ -35,7 +35,7 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Xcode játszóterek** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Alkalmazásbeállítások
+## Alkalmazásbeállítások [application-settings]
 
 I> Számos integráció kapcsolót tesz elérhetővé a {% prefspane Apps %} és az {% prefspane Preview %} között.
 
@@ -43,17 +43,17 @@ I> Számos integráció kapcsolót tesz elérhetővé a {% prefspane Apps %} és
 
 Használja ezeket a paneleket a wikilink alapértelmezéseihez, a Scrivener átadáshoz, a streamelt vágólap beállításaihoz, az OPML/OmniOutliner Mind Map beágyazási opcióihoz, az Obsidian integrációkhoz vagy más olyan processzorokhoz, amelyek együttműködő szerkesztőkre támaszkodnak.
 
-## Vágólap előnézete
+## Vágólap előnézete [clipboard-preview]
 
 ![][ClipboardPreviewMenu]
 
 A Markdown (vagy kompatibilis egyszerű szöveg) a vágólapon a {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}) gombbal nyílik meg. Ha a vágólap **HTML-t vagy RTF-et** tartalmaz, a Marked azt Markdown-szerű forrásba konvertálja az előnézet előtt – beleértve a durva fejlécészlelést, amikor az RTF bekezdések nagy stíluslap-betűméreteket használnak.
 
-## Streaming előnézet
+## Streaming előnézet [streaming-preview]
 
 A Bear, a Curio, a Drafts, az Archive, az nvALT, az nvUltra és számos más szerkesztő a **Streaming előnézet** segítségével beírhatja a Markdownt a Markedbe, miközben gépel. A beállításhoz és a hibaelhárításhoz lásd: [Streaming előnézet](Streaming_Preview.html).
 
-## Szkriptek és bónuszcsomag
+## Szkriptek és bónuszcsomag [scripts-and-bonus-pack]
 
 A BBEdit, a TextMate, a DEVONthink, az Emacs, a Vim és más alkalmazások automatizálása a [Marked Bonus Pack][bónusz] csomaggal érkezik. Telepítse vagy módosítsa ezeket a szkripteket, ha menüsor- vagy szerkesztőmakrókat szeretne a fent felsorolt ​​integrációkon túl.
 

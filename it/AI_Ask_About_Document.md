@@ -4,7 +4,7 @@
 
 Chiedi informazioni sul documento utilizza **Apple Intelligence** e il modello linguistico integrato nel dispositivo integrato nelle versioni recenti di macOS per riepilogare l'anteprima di Markdown e rispondere a domande sul suo contenuto. Tutta l'elaborazione avviene sul tuo Mac; il testo del documento non viene inviato ai server di Marked o ai servizi AI di terze parti per questa funzionalità.
 
-## Cosa offre Apple Intelligence
+## Cosa offre Apple Intelligence [what-apple-intelligence-provides]
 
 Apple Intelligence è il sistema di Apple per le funzionalità generative sul dispositivo. Marked utilizza il framework **Foundation Models** di Apple per accedere allo stesso modello sul dispositivo che alimenta gli strumenti di scrittura del sistema, esposto direttamente all'interno di Marked per attività incentrate sui documenti.
 
@@ -12,7 +12,7 @@ Marked invia il testo normale del documento (sintassi Markdown rimossa per chiar
 
 Apple Intelligence è la migliore in attività linguistiche come riepilogare, delineare, estrarre punti chiave e rispondere a domande sul testo fornito. Non è un assistente di codifica o un calcolatore generale e i documenti molto lunghi vengono gestiti in sezioni in modo che i risultati rimangano entro i limiti del contesto del modello.
 
-## Compatibilità del sistema
+## Compatibilità del sistema [system-compatibility]
 
 Chiedi informazioni sul documento viene visualizzato solo quando il tuo Mac può eseguire la funzione.
 
@@ -30,7 +30,7 @@ Chiedi informazioni sul documento viene visualizzato solo quando il tuo Mac può
 
 Se il tuo Mac è idoneo ma manca la voce di menu, conferma che Apple Intelligence è abilitata e che stai utilizzando una build corrente di Marked che include questa funzionalità. Il menu è completamente nascosto sui sistemi non supportati anziché mostrato in uno stato disabilitato.
 
-## Abilitazione dell'intelligenza di Apple
+## Abilitazione dell'intelligenza di Apple [enabling-apple-intelligence]
 
 1. Apri **Impostazioni di sistema**.
 2. Vai su **Apple Intelligence e Siri** (o **Apple Intelligence**, a seconda della versione di macOS).
@@ -39,7 +39,7 @@ Se il tuo Mac è idoneo ma manca la voce di menu, conferma che Apple Intelligenc
 
 Contrassegnato non include una preferenza separata per questa funzionalità. La disponibilità segue lo stato del modello di sistema segnalato da macOS.
 
-## Apertura del documento Chiedi informazioni
+## Apertura del documento Chiedi informazioni [opening-ask-about-document]
 
 Apri il pannello utilizzando uno di questi metodi:
 
@@ -48,7 +48,7 @@ Apri il pannello utilizzando uno di questi metodi:
 
 Il pannello si aggancia al lato sinistro della finestra del documento. Hai bisogno di un documento aperto con testo leggibile; un documento vuoto o un'anteprima solo HTML non offrirà il comando.
 
-## Il pannello Chiedi informazioni sul documento
+## Il pannello Chiedi informazioni sul documento [the-ask-about-document-panel]
 
 Il pannello è organizzato come una semplice visualizzazione chat:
 
@@ -58,7 +58,7 @@ Il pannello è organizzato come una semplice visualizzazione chat:
 
 Una volta completata la risposta, lo stato attivo torna al campo della domanda in modo da poter chiedere un follow-up senza fare clic.
 
-### Azioni preimpostate
+### Azioni preimpostate [preset-actions]
 
 | Azione | Cosa fa |
 | :-- | :-- |
@@ -69,7 +69,7 @@ Una volta completata la risposta, lo stato attivo torna al campo della domanda i
 
 Le azioni preimpostate non richiedono testo nel campo della domanda. Fare clic su un pulsante e attendere la risposta nel pannello in alto.
 
-### Fai le tue domande
+### Fai le tue domande [asking-your-own-questions]
 
 1. Digita una domanda nel campo nella parte inferiore del pannello, ad esempio "Quale problema risolve questo documento?" o "Chi è il pubblico previsto?"
 2. Premi **Invio** o fai clic su **Chiedi**.
@@ -79,21 +79,21 @@ Per domande su un passaggio specifico, **seleziona il testo nell'anteprima** pri
 
 Fare clic su **Annulla** per interrompere una richiesta in corso.
 
-## Esempi
+## Esempi [examples]
 
-### Breve panoramica di un lungo articolo
+### Breve panoramica di un lungo articolo [quick-overview-of-a-long-article]
 
 Apri un lungo post di blog o un report in Contrassegnato, scegli **Anteprima > Chiedi informazioni sul documento…** e fai clic su **Riepiloga documento**. Utilizza il riassunto per decidere se leggere l'intero pezzo o rinfrescarti la memoria dopo un po' di tempo lontano dalla bozza.
 
-### Note su un paragrafo selezionato
+### Note su un paragrafo selezionato [notes-on-a-selected-paragraph]
 
 Evidenzia un paragrafo denso nell'anteprima, apri Chiedi informazioni sul documento e fai clic su **Riepiloga selezione**. Utile quando hai bisogno solo di una versione più breve di una sezione.
 
-### Revisione strutturale
+### Revisione strutturale [structural-review]
 
 Fai clic su **Struttura** su una bozza con molti titoli per vedere se l'argomento scorre in modo logico oppure utilizza **Punti chiave** prima di inviare un documento a qualcun altro per verificare che le idee principali siano chiare.
 
-### Domande mirate
+### Domande mirate [targeted-questions]
 
 Senza alcuna selezione attiva, digita domande come:
 
@@ -103,7 +103,7 @@ Senza alcuna selezione attiva, digita domande come:
 
 Con una selezione attiva, poni domande più ristrette come "Che cosa presuppone questo paragrafo riguardo al lettore?" o "Riscrivi questa idea in una frase" (il modello risponde sulla selezione; non modifica il file sorgente).
 
-## Suggerimenti e limitazioni
+## Suggerimenti e limitazioni [tips-and-limitations]
 
 - **Privacy:** L'elaborazione utilizza il modello on-device di Apple. Marked legge comunque il testo del documento localmente per fornire contenuto a quel modello; trattare di conseguenza il materiale sensibile.
 - **Precisione:** verifica i fatti importanti confrontandoli con la tua fonte. I riepiloghi AI possono omettere dettagli o interpretare erroneamente passaggi ambigui.

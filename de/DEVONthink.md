@@ -2,7 +2,7 @@
 
 [DEVONthink](https://www.devontechnologies.com/apps/devonthink) kann ausgewählte Markdown-Dateien mithilfe eines AppleScript direkt in Marked öffnen.
 
-## Ausgewähltes Markdown in Marked öffnen
+## Ausgewähltes Markdown in Marked öffnen [open-selected-markdown-in-marked]
 
 Verwenden Sie dieses Skript in DEVONthink, um die aktuelle Auswahl an Marked zu senden. Es prüft, ob etwas ausgewählt ist, bestätigt, dass es sich um Markdown handelt, und öffnet die Datei dann über `x-marked-3://` mit URL-codiertem Dateipfad.
 
@@ -59,7 +59,7 @@ on urlEncode(s)
 end urlEncode
 ```
 
-## Im DEVONthink-Skriptmenü installieren
+## Im DEVONthink-Skriptmenü installieren [install-in-devonthink-scripts-menu]
 
 1. Kopieren Sie das obige Skript in den **Skript-Editor**.
 2. Speichern Sie es als `Open in Marked.scpt`.

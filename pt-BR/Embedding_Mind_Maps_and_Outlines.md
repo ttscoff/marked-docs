@@ -7,29 +7,29 @@ Mapas mentais e contornos podem ser incorporados em sua visualização do Markdo
 [include]: Multi-File_Documents.html
 [ia]: Multi-File_Documents.html#ia-writer-block-syntax
 
-## Formatos Suportados
+## Formatos Suportados [supported-formats]
 
-### iPensamentos X (.itmz)
+### iPensamentos X (.itmz) [ithoughts-x-itmz]
 
 Os arquivos de mapas mentais do iThoughts são arquivos zip contendo dados do mapa e uma imagem de visualização opcional.
 
-### MindManager (.mmap)
+### MindManager (.mmap) [mindmanager-mmap]
 
 Os arquivos MindManager são arquivos zip contendo `Document.xml`. Pacotes MindManager descompactados (uma pasta contendo `Document.xml`) e caminhos diretos para `Document.xml` também são suportados.
 
-### FreeMind (.mm)
+### FreeMind (.mm) [freemind-mm]
 
 Os arquivos de mapas mentais do FreeMind usam a extensão `.mm` e armazenam dados como XML. Marked detecta o formato FreeMind verificando se o conteúdo do arquivo começa com `<map`; caso contrário (por exemplo, um trecho de código), o arquivo será incluído como texto simples. Os arquivos FreeMind são suportados para incorporação de mapas mentais Mermaid.
 
-### OPML (.opml)
+### OPML (.opml) [opml-opml]
 
 OPML (Outline Processor Markup Language) é um formato XML para contornos hierárquicos, amplamente utilizado por delineadores e leitores de feeds. iThoughts e outros aplicativos podem exportar para OPML. As conversões marcadas incluíam arquivos OPML em diagramas de mapas mentais Mermaid.
 
-### Bicicleta (.bike)
+### Bicicleta (.bike) [bike-bike]
 
 Os contornos do Bike.app são armazenados como arquivos HTML proprietários (`.bike`). Você pode abrir um arquivo `.bike` diretamente no Marked: o documento é renderizado como Markdown com o nome do arquivo (menos a extensão) como o título principal (H1), itens de cabeçalho de nível superior como H2, títulos aninhados como itens de lista em negrito e tarefas como caixas de seleção no estilo GitHub. Quando um arquivo `.bike` é incluído por meio da sintaxe de inclusão, a configuração "Incorporar como diagrama Sereia" para Bicicleta (em Aplicativos → Mapas Mentais/Esboços) controla se ele se torna um mapa mental Sereia (com o nome do arquivo como nó raiz) ou uma lista Markdown aninhada (sem H1).
 
-## Incorporar mapas como diagramas Mermaid
+## Incorporar mapas como diagramas Mermaid [embed-maps-as-mermaid-diagrams]
 
 Quando **ativado** (o padrão), as conversões marcadas incluem mapas mentais e contornos para diagramas [Sereia](https://mermaid.js.org/):
 
@@ -45,7 +45,7 @@ Quando **desativado**:
 - **OPML** — O esboço é incorporado como uma lista Markdown aninhada (sem mapa mental).
 - **Bike** — O contorno é incorporado como uma lista Markdown aninhada (sem H1); os itens de cabeçalho de nível superior tornam-se H2, os títulos aninhados ficam em negrito e as tarefas tornam-se caixas de seleção do GitHub.
 
-## Incluir sintaxe
+## Incluir sintaxe [include-syntax]
 
 Use a mesma sintaxe de outros arquivos:
 
@@ -61,7 +61,7 @@ Ou com a sintaxe do bloco iA Writer:
 
 Os caminhos podem ser relativos ao documento principal ou absolutos (começando com `/` ou `~`). Consulte [Documentos com Vários Arquivos](Multi-File_Documents.html) para obter detalhes.
 
-## Conversão OPML
+## Conversão OPML [opml-conversion]
 
 Os arquivos OPML usam elementos `<outline>` aninhados com um atributo `text`. Quando "Incorporar como diagrama Sereia" está ativado (consulte [Configurações: Aplicativos](Settings_Apps.html)), a conversão produz um mapa mental Sereia usando o mesmo formato do iThoughts e MindManager:
 
@@ -70,6 +70,6 @@ Os arquivos OPML usam elementos `<outline>` aninhados com um atributo `text`. Qu
 - `text` ausente ou vazio é mostrado como `(unnamed)`
 - O texto é higienizado; caracteres especiais são escapados para Mermaid
 
-## Conversão de bicicleta
+## Conversão de bicicleta [bike-conversion]
 
 Os arquivos Bike `.bike` são HTML com itens raiz `<ul>` e `<li>`. Os itens podem ter `data-type="heading"` (nível superior → H2 quando aberto ou no modo de lista; aninhado → negrito) ou `data-type="task"` (caixas de seleção do GitHub; concluído quando `data-done` tem um carimbo de data/hora ou `data-checked` / `data-completed` é verdadeiro). A formatação embutida e os links no texto do nó são convertidos em Markdown. Ao incorporar como um mapa mental Mermaid, o nome do arquivo (menos a extensão) é usado como o nó raiz único e os rótulos são formatados em texto simples para a sintaxe do mapa mental Mermaid.

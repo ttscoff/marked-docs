@@ -4,7 +4,7 @@
 
 A ferramenta de linha de comando `mk` fornece acesso fácil aos recursos do Marked a partir do terminal, permitindo automação do fluxo de trabalho e integração com scripts de shell e outras ferramentas de linha de comando.
 
-## Instalação
+## Instalação [installation]
 
 A maneira recomendada de instalar `mk` é com Homebrew:
 
@@ -19,9 +19,9 @@ Se você não usa Homebrew, baixe e instale o pacote assinado:
 
 Após baixar `mk.pkg`, clique duas vezes nele e siga as instruções do instalador.
 
-## Uso Básico
+## Uso Básico [basic-usage]
 
-### Abrindo arquivos
+### Abrindo arquivos [opening-files]
 
 Abra um arquivo markdown em Marcado na linha de comando:
 
@@ -31,7 +31,7 @@ mk ~/Documents/notes.md
 mk --raise document.md  # Open and raise window above all others
 ```
 
-### Transmissão de conteúdo do STDIN
+### Transmissão de conteúdo do STDIN [streaming-content-from-stdin]
 
 Transmita conteúdo diretamente para a visualização de streaming do Marked:
 
@@ -43,21 +43,21 @@ mk -  # Explicitly use STDIN
 
 A janela Streaming Preview será aberta e exibirá o conteúdo em tempo real à medida que é transmitido por outros comandos.
 
-## Referência de comando
+## Referência de comando [command-reference]
 
-### Operações de arquivo
+### Operações de arquivo [file-operations]
 
 **`mk [file]`** — Abra um arquivo markdown em Marked
 
 **`mk [file] --raise`** — Abra o arquivo e eleve a janela acima de todas as outras
 
-### STDIN e streaming
+### STDIN e streaming [stdin-and-streaming]
 
 **`mk`** ou **`mk -`** — Leia do STDIN e abra a visualização do streaming
 
 **`mk --stream`** — Abra a janela de visualização de streaming sem ler STDIN
 
-### Gerenciamento de visualização
+### Gerenciamento de visualização [preview-management]
 
 **`mk --refresh`** — Atualize a janela de visualização mais à frente
 
@@ -65,7 +65,7 @@ A janela Streaming Preview será aberta e exibirá o conteúdo em tempo real à 
 
 **`mk --refresh file.md`** — Atualize a visualização de um arquivo específico (se aberto)
 
-### Preferências
+### Preferências [preferences]
 
 **`mk --pref`** — Abra as preferências marcadas (página Geral)
 
@@ -77,7 +77,7 @@ A janela Streaming Preview será aberta e exibirá o conteúdo em tempo real à 
 mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 ```
 
-### Gerenciamento de estilo
+### Gerenciamento de estilo [style-management]
 
 **`mk --style NAME`** — Defina o estilo de visualização para janelas abertas
 
@@ -87,7 +87,7 @@ mk --defaults syntaxHighlight=1 includeMathJax=0 processor=multimarkdown
 mk --add-style ~/Styles/custom.css
 ```
 
-### Execução de JavaScript
+### Execução de JavaScript [javascript-execution]
 
 **`mk --dojs "JAVASCRIPT_COMMAND"`** — Execute JavaScript na janela frontal
 
@@ -100,7 +100,7 @@ mk --dojs "window.scrollTo(0,0)"
 mk --dojs "alert('Hello')" all
 ```
 
-### Extração e importação de conteúdo
+### Extração e importação de conteúdo [content-extraction-and-import]
 
 **`mk --extract URL`** — Extraia o conteúdo do URL e abra em Marked
 
@@ -112,7 +112,7 @@ mk --extract https://example.com/article
 
 **`mk --stylestealer [URL]`** — HUD do Style Stealer aberto (opcionalmente com URL)
 
-### Comandos utilitários
+### Comandos utilitários [utility-commands]
 
 **`mk --paste`** — Crie um novo documento da área de transferência
 
@@ -124,7 +124,7 @@ mk --extract https://example.com/article
 
 **`mk --version`** ou **`mk -v`** — Mostrar informações da versão
 
-## Exemplos
+## Exemplos [examples]
 
 ```bash
 # Open a file
@@ -155,9 +155,9 @@ mk --extract https://blog.example.com/article
 mk --preview "## Hello\n\nThis is **markdown** text!"
 ```
 
-## Integração
+## Integração [integration]
 
-### Aliases de shell
+### Aliases de shell [shell-aliases]
 
 Adicione ao seu `~/.zshrc` ou `~/.bash_profile`:
 
@@ -166,7 +166,7 @@ alias mko='mk --raise'      # Open with raise
 alias mkr='mk --refresh all' # Refresh all
 ```
 
-### Roteiros
+### Roteiros [scripts]
 
 Use `mk` em scripts shell para automação:
 
@@ -178,7 +178,7 @@ fswatch -o document.md | while read; do
 done
 ```
 
-### Fluxos de trabalho
+### Fluxos de trabalho [workflows]
 
 Combine com outras ferramentas:
 
@@ -190,7 +190,7 @@ pbpaste | markdown | mk
 grep -r "TODO" . | head -20 | mk
 ```
 
-## Código aberto
+## Código aberto [open-source]
 
 A ferramenta de linha de comando `mk` é de código aberto e está disponível no GitHub:
 
@@ -204,7 +204,7 @@ Você pode:
 
 A ferramenta é escrita em Swift e pode ser compilada usando Xcode. Veja o [README](https://github.com/ttscoff/mk) para instruções de construção.
 
-## Versão
+## Versão [version]
 
 Verifique sua versão `mk` instalada com:
 
@@ -212,7 +212,7 @@ Verifique sua versão `mk` instalada com:
 mk --version
 ```
 
-## Recursos relacionados
+## Recursos relacionados [related-features]
 
 - Consulte [URL Handler](URL_Handler) para obter mais informações sobre o esquema de URL do Marked
 - Consulte [Streaming Preview](Streaming_Preview) para obter detalhes sobre o recurso de visualização de streaming

@@ -6,13 +6,13 @@ Használja együtt két kedvenc íróeszközét.
 
 > A Marked továbbra is tudja olvasni a Scrivener 2.0 fájlokat, de a fejlesztés a Marked 2.5.11 utáni 3-as verzióra fog koncentrálni.
 
-## A Scrivener 3.0 alapjai
+## A Scrivener 3.0 alapjai [scrivener-30-basics]
 
 Húzzon egy Scrivener projektet (.scriv) a Marked (Megjelölt) elemre, és a rendszer lefordítja és megtekinti az előnézetet. Ha azt a lehetőséget választja, hogy .scriv fájlokat nyissa meg a Scrivenerben (fent), a Marked a Scrivener programot is elindítja, amikor a fájlt a Marked mappába húzza.
 
 Más dokumentumokhoz hasonlóan a Scrivener-fájlok módosításai mentéskor élőben frissülnek. Továbbá, ha egy Scrivener-dokumentum az előtérben van a Marked-ben, a {% kbd cmd E %} megnyitja azt a Scrivenerben.
 
-## Iratgyűjtő dokumentumok szűrése
+## Iratgyűjtő dokumentumok szűrése [filtering-binder-documents]
 
 Amikor megnyit egy Scrivener-projektet a Marked alkalmazásban, az előnézeti tartalom csak a kiválasztott iratgyűjtő dokumentumokból épül fel. A `.scriv` fájlok szűrése mindig aktív; a szűrőpanel csak egy kényelmes módja annak, hogy kicserélje a mellékelt tartalmat.
 
@@ -36,11 +36,11 @@ A Scrivener 2 projektek csak a **Piszkozat** kötőanyagot jelenítik meg a szű
 
 A szűrőpanel nyitva maradhat más eszközök mellett, mint például a **Szóismétlés megjelenítése**. A jelölőnégyzet módosítása rövid késleltetés után újrafordítja az előnézetet; ha egy nagy projekt még mindig fordítás alatt áll, a Marked megszakítja a folyamatban lévő importálást, és újrakezdi az új kijelöléssel.
 
-## Markdown fejlécek a Scrivener címekből
+## Markdown fejlécek a Scrivener címekből [markdown-headers-from-scrivener-titles]
 
 A Marked hierarchikus Markdown fejléceket is létrehozhat Önnek a Scrivener fájl oldalai alapján. Ennek engedélyezéséhez jelölje be a fent látható lehetőséget.
 
-## MultiMarkdown metaadatok
+## MultiMarkdown metaadatok [multimarkdown-metadata]
 
 Ha a Vázlat mappában lévő első dokumentum neve „metaadat”, akkor a rendszer MultiMarkdown metaadatként kezeli az előnézeti dokumentum elején. Ehhez a szakaszhoz a „Markdown Headers from Scrivener Titles” (Feljebb leírt) beállítástól függetlenül nem lesz beszúrva fejléc ehhez a szakaszhoz, ami lehetővé teszi a MultiMarkdown processzor számára, hogy metaadatként olvassa be, és ennek megfelelően engedélyezze a cseréket és az exportálási lehetőségeket.
 
@@ -48,25 +48,25 @@ Ezt a fájlt YAML-formátumúvá teheti, ha processzora YAML-t kezel.
 
 Ha nem használ `metadata` dokumentumot, a Marked a projekt fordítási beállításaiból (`Settings/compile.xml`) is előírhatja a MultiMarkdown metaadatokat, ugyanazokat a **Cím** és **Szerző** mezőket használva, amelyeket a Scrivener a MultiMarkdownba exportál. Ez alapértelmezés szerint engedélyezve van (`scrivenerCompileMetadata` beállítási billentyű). Az egyéni metaadatmezők csak akkor jelennek meg, ha a projekt **MMD Metaadat** fordítási beállításaiban jelennek meg, nem pedig dokumentumonkénti egyéni mezőkből.
 
-## Linkek
+## Linkek [links]
 
 Külső (HTTP) hivatkozásokhoz használhatja a Markdown szintaxist vagy a Scrivener hivatkozásformázását. A Marked a feldolgozás előtt konvertálja a Scrivener formátumot Markdown formátumba.
 
-## Megjegyzések
+## Megjegyzések [comments]
 
 A Marked képes feldolgozni a dokumentumon belül létrehozott megjegyzéseket és lábjegyzeteket.
 
-## Táblázatok
+## Táblázatok [tables]
 
 A Marked képes átalakítani az alapvető Scrivener táblákat. Ha azonban táblázatot szeretne tartalmazni a kimenetben, a legjobb, ha [MultiMarkdown táblázatformátumban] (https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#tables) teszi ezt. (A [TableFlip](http://tableflipapp.com/) nevű alkalmazás egyszerű feladattá teheti ezek létrehozását.)
 
-## További Scrivener funkciók
+## További Scrivener funkciók [additional-scrivener-features]
 
 Az alapvető fordítási és előnézeti funkciókon kívül a Marked néhány Scrivener-specifikus konvenciót is támogat. Először is, a Scrivener-dokumentumban használhatja a "Formázás megőrzése" funkciót soron belül vagy egy önálló szövegblokkon, és az előnézetben kódblokkokká konvertálódik.
 
 A Marked a Scrivener _inline_ lábjegyzeteit is olvassa. Ha lábjegyzetet ad meg egy bekezdésen belül vagy a végén, az az előnézetben MultiMarkdown lábjegyzetté alakul.
 
-## Képek használata a Scrivener dokumentumban
+## Képek használata a Scrivener dokumentumban [using-images-in-your-scrivener-document]
 
 A képek beágyazhatók a Scrivener dokumentumba, vagy a Markdown képszintaxissal hivatkozhatnak rájuk. A képcímke Markdown verziója `![alt text](path/to/image.ext "optional title/description")`. Referencia formátum is használható:
 
@@ -80,7 +80,7 @@ A HTML-kimenet alapútvonala az Előnézetben a Scrivener dokumentumot tartalmaz
 
 A dokumentum szülőmappáján alapuló relatív elérési utak működni fognak, az abszolút elérési utak pedig lehetővé teszik a képekhez való hozzáférést bárhol, de előfordulhat, hogy nem hordozhatóak a HTML-kimenethez.
 
-## Biztonsági megjegyzés
+## Biztonsági megjegyzés [security-note]
 
 Egy gyorsítótár-mappa jön létre a ~/Library/Application Support/Marked mappában, amikor megnyitja a .scriv fájlt a Marked alkalmazásban. Ez nem védett mappa, ezért ha az eredeti dokumentum titkosított lemezen van, vagy más módon védett, vegye figyelembe, hogy a tartalma titkosítatlan lesz a gyorsítótárban. A korlátozott védelem érdekében biztosíthatja, hogy ez a gyorsítótár ne jelenjen meg a Spotlightban, ha hozzáadja a ~/Library/Application Support/Marked elemet a Spotlight adatvédelmi beállításaihoz.
 

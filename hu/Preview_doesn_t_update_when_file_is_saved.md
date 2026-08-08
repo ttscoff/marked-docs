@@ -4,7 +4,7 @@
 
 Az előnézetek nem frissülnek a várt módon?
 
-## Time Machine
+## Time Machine [time-machine]
 
 Jelentettek néhány problémát a lassú (vagy nem létező) frissítésekkel kapcsolatban a Time Machine futtatása során. A Marked frissítési képességei sérülhetnek, ha a Time Machine a meghajtónak azt a részét használja, ahol a fájl akkor található. Ez általában akkor orvosolódik, amikor a Time Machine befejezi a futását.
 

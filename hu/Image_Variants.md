@@ -6,13 +6,13 @@ A Marked automatikusan érzékeny `<picture>` elemeket tud létrehozni a helyi k
 
 Lásd még: [DocC támogatás](DocC_Support.html) a `.docc` csomagokon belüli bővítmény nélküli katalógushivatkozásokért.
 
-## Képváltozatok engedélyezése
+## Képváltozatok engedélyezése [enabling-image-variants]
 
 A {% prefspane Apps %} mezőben engedélyezze a **Sötét és @2x képváltozatok feloldása** lehetőséget (alapértelmezés szerint be van kapcsolva) a DocC beállítások alatt.
 
 Ez a beállítás eltér a **Dokumentumkép-hivatkozások megoldása** beállítástól, amely csak a `.docc` katalógusokon belül érvényes. A projekttől függően használhatja az egyiket, mindkettőt vagy egyiket sem.
 
-## Elnevezési konvenció
+## Elnevezési konvenció [naming-convention]
 
 Helyezze el a változat fájljait **ugyanabban a mappában**, mint az elsődleges kép. A Marked négy kombinációt keres az alapnév alapján:
 
@@ -27,7 +27,7 @@ Az utótagok sorrendje rugalmas – a `icon@2x~dark.png` és a `icon~dark@2x.png
 
 Támogatott kiterjesztések: `png`, `jpg`, `jpeg`, `gif`, `svg`, `webp` és `pdf`.
 
-## Amit átírnak
+## Amit átírnak [what-gets-rewritten]
 
 A Marked beszkenneli a dokumentumot **az utolsó előnézeti megjelenítés előtt**:
 
@@ -48,7 +48,7 @@ Példa kimenet világos, sötét és @2x fájlok esetén:
 
 Az előnézet (és a HTML-exportálás) ezután követi a felhasználó rendszermegjelenését a sötét változatoknál és az eszköz pixelsűrűségét a @2x eszközöknél.
 
-## Ami kimaradt
+## Ami kimaradt [what-is-skipped]
 
 A megjelölt **nem** írja át:
 
@@ -57,17 +57,17 @@ A megjelölt **nem** írja át:
 - `<img>` címkék már egy meglévő `<picture>` elemen belül
 - Kiterjesztés nélküli nevek, például `![Diagram](diagram)` – a [DocC Support](DocC_Support.html) használata katalógus-stílusú hivatkozásokhoz
 
-## Élő előnézet és fájlnézés
+## Élő előnézet és fájlnézés [live-preview-and-file-watching]
 
 Változatok észlelésekor a Marked felveszi **minden létező változatfájlt** a figyelőlistájára a fő dokumentum mellé. A `icon~dark.png` külső szerkesztőben való mentése ugyanazt az élőkép újratöltését indítja el, mint a `icon.png` szerkesztése.
 
-## Tippek
+## Tippek [tips]
 
 - Ha lehetséges, hivatkozzon a **light 1x** képre a forrásban (`icon.png`, nem `icon~dark.png`). Marked testvéreket fedez fel ezen az úton.
 - Ha csak `@2x` eleme van, vegyen fel legalább egy másik változatot (általában `~dark`), különben a Megjelölt változat változatlanul hagyja a hivatkozást.
 - A változatfelbontás a **dokumentumhoz viszonyított** elérési utat használja (vagy a beágyazott tartalmak esetén a mellékelt fájl mappáját), ugyanazokat az alapelérési szabályokat, mint a [Többfájlos dokumentumok](Multi-File_Documents.html).
 
-## Kapcsolódó témák
+## Kapcsolódó témák [related-topics]
 
 - [DocC támogatás](DocC_Support.html) – kiterjesztések nélküli képnevek a `.docc` katalógusokban
 - [Beállítások: Alkalmazások](Settings_Apps.html) – a DocC és a képváltozatok preferenciája

@@ -8,7 +8,7 @@ Opções em {% prefspane Preview %}:
 
 [1]: images/screenshots/preferences-Preview.jpg @2x width=714px height=1031px class=preferencepane-scroll
 
-### Comportamento de visualização
+### Comportamento de visualização [preview-behavior]
 
 Ativar navegação no minimapa
 : Gere um mapa visual do documento que aparece quando "0" é pressionado. Pode causar pequenos atrasos ao renderizar documentos grandes.
@@ -25,7 +25,7 @@ Visualização de sincronização e rolagem de origem
 Sincronize a leitura rápida com a posição de rolagem
 : Mantenha a sobreposição [Leitura rápida](Speed_Reading.html) alinhada com a posição de rolagem da visualização. Você também pode alternar isso na sobreposição de leitura rápida.
 
-### Role para editar
+### Role para editar [scroll-to-edit]
 
 Role para editar
 : Ao atualizar a visualização, Marcado pode determinar o primeiro ponto onde o documento foi alterado e rolar automaticamente até ele. Isso mantém a visualização sincronizada com sua localização atual no documento que você está editando. O marcador de edição mais recente é a primeira diferença no documento desde a última atualização. Ativar "Ordem reversa de comparação" considerará a última diferença no documento (de cima para baixo) como a edição mais recente.
@@ -39,7 +39,7 @@ Mostrar todos os marcadores de comparação
 Ordem de diferença reversa
 : Se estiver habilitado, as diferenças serão marcadas na ordem inversa (de baixo para cima). Isso afeta a navegação, então <kbd>e</kbd> navegará para cima e {% kbd shift E %} navegará para baixo. A “edição mais recente” se tornará a última diferença no documento.
 
-### Recursos adicionais
+### Recursos adicionais [additional-features]
 
 O índice rastreia a posição de rolagem
 : Índice destaca a seção atual.
@@ -54,7 +54,7 @@ Validar URLs automaticamente na atualização
 : valide URLs no carregamento e atualização de documentos. Exibe resultados apenas se houver erros.
 : Isto executa [validação de link](Link_Validation.html) toda vez que o documento é atualizado (se você tiver um número significativo de links, este pode ser um processo lento e deve ser evitado).
 
-### Links Wiki
+### Links Wiki [wiki-linking]
 
 Converter [[Links Wiki]]
 : Habilite a [navegação wiki](Wiki_Navigation.html) de Marked para a sintaxe `[[wiki link]]`.
@@ -62,7 +62,7 @@ Converter [[Links Wiki]]
 Extensão padrão
 : A extensão de nome de arquivo Marked é usada ao resolver links wiki que não incluem uma extensão (por exemplo, `md`).
 
-### Aparência
+### Aparência [appearance]
 
 Modo escuro
 : Exibe todas as janelas no modo "Alto Contraste", com cromo escuro e, se disponível, a versão invertida do Estilo atual (pode não se aplicar a Estilos Personalizados).

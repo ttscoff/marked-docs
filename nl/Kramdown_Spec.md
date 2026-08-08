@@ -2,11 +2,11 @@
 
 Bekijk de [Markdown Dingus](x-marked-3://dingus?processor=kramdown) om te experimenteren met de Kramdown-processor.
 
-## Wat is Kramdown?
+## Wat is Kramdown? [what-is-kramdown]
 
 Kramdown is een snelle, pure Ruby Markdown-superset-converter die de originele Markdown-syntaxis uitbreidt met functies die te vinden zijn in andere implementaties zoals Maruku, PHP Markdown Extra en Pandoc. Het biedt een strikte syntaxis met duidelijke regels, terwijl de compatibiliteit met de meeste Markdown documenten behouden blijft.
 
-## Belangrijkste kenmerken
+## Belangrijkste kenmerken [key-characteristics]
 
 - **Snelle en pure Ruby**: volledig geschreven in Ruby voor prestaties en draagbaarheid
 - **Strikte syntaxis**: biedt duidelijke regels en duidelijke specificaties
@@ -14,9 +14,9 @@ Kramdown is een snelle, pure Ruby Markdown-superset-converter die de originele M
 - **Jekyll-integratie**: standaard Markdown processor voor de Jekyll statische sitegenerator
 - **Uitgebreid**: ondersteunt elementen op zowel blok- als spanniveau met uitgebreide aanpassingen
 
-## Grote verschillen met standaard Markdown
+## Grote verschillen met standaard Markdown [major-differences-from-standard-markdown]
 
-### 1. **Verbeterde elementen op blokniveau**
+### 1. **Verbeterde elementen op blokniveau** [1-enhanced-block-level-elements]
 
 **Definitielijsten**
 
@@ -58,7 +58,7 @@ $$
 $$
 ```
 
-### 2. **Geavanceerde tekstopmaak**
+### 2. **Geavanceerde tekstopmaak** [2-advanced-text-markup]
 
 **Voetnoten**
 
@@ -93,7 +93,7 @@ Dit maakt gebruik van HTML en CSS.
 Even << guillemets >>
 ```
 
-### 3. **Kenmerklijsten en extensies**
+### 3. **Kenmerklijsten en extensies** [3-attribute-lists-and-extensions]
 
 **Attributenlijstdefinities (ALD's)**
 
@@ -130,7 +130,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 {::options key="val" /}
 ```
 
-### 4. **Verbeterde ondersteuning voor codeblokken**
+### 4. **Verbeterde ondersteuning voor codeblokken** [4-enhanced-code-block-support]
 
 **Taalspecificatie**
 
@@ -148,7 +148,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 - Verbeterde verwerking van ingesprongen codeblokken
 - Betere integratie met andere blokelementen
 
-### 5. **Strengere parseerregels**
+### 5. **Strengere parseerregels** [5-stricter-parsing-rules]
 
 **Lijnwikkeling**
 
@@ -167,7 +167,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 - Duidelijke regels voor wanneer elementen moeten beginnen/eindigen op blokgrenzen
 - Consistent gedrag bij verschillende elementtypen
 
-### 6. **Geavanceerde ondersteuning voor links en afbeeldingen**
+### 6. **Geavanceerde ondersteuning voor links en afbeeldingen** [6-advanced-link-and-image-support]
 
 **Automatische koppelingen**
 
@@ -188,7 +188,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 ![Alt text](image.jpg){:width="300" height="200" class="responsive"}
 ```
 
-### 7. **HTML Integratie**
+### 7. **HTML Integratie** [7-html-integration]
 
 **HTML Blokken**
 
@@ -201,7 +201,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 - Inline HTML met attribuutondersteuning
 - Betere integratie met de syntaxis Markdown
 
-### 8. **Wiskundige uitdrukkingen**
+### 8. **Wiskundige uitdrukkingen** [8-mathematical-expressions]
 
 **Inline wiskunde**
 
@@ -213,7 +213,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 - `$$...$$` syntaxis voor blokwiskundige uitdrukkingen
 - Ondersteuning voor complexe vergelijkingen en formules
 
-## Kramdown versus andere Markdown smaken
+## Kramdown versus andere Markdown smaken [kramdown-vs-other-markdown-flavors]
 
 | Kenmerk | Kramdown | CommonMark (GFM) | GitHub Gearomatiseerd | MeerdereMarkdown | Standaard |
 | ---------------- | -------- | ---------- | --------------- | ------------- | -------- |
@@ -227,7 +227,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 | Attributenlijsten | Ja | Nee | Nee | Nee | Nee |
 | Typografie | Ja | Nee | Nee | Ja | Nee |
 
-## Belangrijkste voordelen van Kramdown
+## Belangrijkste voordelen van Kramdown [key-advantages-of-kramdown]
 
 1. **Uitgebreide functieset**: bevat veel extensies die niet in andere implementaties voorkomen
 2. **Jekyll-integratie**: Naadloze integratie met de statische sitegenerator van Jekyll
@@ -237,7 +237,7 @@ Deze tekst wordt door kramdown volledig genegeerd.
 6. **Wiskundige ondersteuning**: ingebouwde ondersteuning voor LaTeX-wiskundige uitdrukkingen
 7. **Strikte parsering**: duidelijke, ondubbelzinnige parseringsregels
 
-## Veelvoorkomende gebruiksscenario's
+## Veelvoorkomende gebruiksscenario's [common-use-cases]
 
 **Jekyll-sites**
 
@@ -259,14 +259,14 @@ Deze tekst wordt door kramdown volledig genegeerd.
 - Uitbreidingen voor aangepaste functionaliteit
 - Attributenlijsten voor metadata en styling
 
-## Bronnen
+## Bronnen [resources]
 
 - [Kramdown Syntax Documentation](https://kramdown.gettalong.org/syntax.html)
 - [Kramdown Converter Documentation](https://kramdown.gettalong.org/converter.html)
 - [Jekyll Integration Guide](https://jekyllrb.com/docs/configuration/markdown/)
 - [Kramdown GitHub Repository](https://github.com/gettalong/kramdown)
 
-## Migratie van standaard Markdown
+## Migratie van standaard Markdown [migration-from-standard-markdown]
 
 De meeste standaard Markdown documenten werken zonder aanpassingen met Kramdown. Om te profiteren van de functies van Kramdown:
 
@@ -274,7 +274,7 @@ De meeste standaard Markdown documenten werken zonder aanpassingen met Kramdown.
 2. **Gebruik attribuutlijsten**: voeg ID's, klassen en aangepaste attributen toe
 3. **Voetnoten implementeren**: verwijzingen tussen haakjes converteren
 
-## Beste praktijken
+## Beste praktijken [best-practices]
 
 1. **Vermijd luie syntaxis**: vertrouw niet op hard-wrapping voor de leesbaarheid
 2. **Gebruik attribuutlijsten**: maak gebruik van IAL's voor styling en metadata

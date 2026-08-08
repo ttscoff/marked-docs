@@ -2,7 +2,7 @@
 
 Marked a une gestion particulière des commentaires et annotations.
 
-## Sources d'annotations
+## Sources d'annotations [annotation-sources]
 
 Marked reconnaît les commentaires provenant de :
 
@@ -10,7 +10,7 @@ Marked reconnaît les commentaires provenant de :
 - commentaires CriticMarkup
 - commentaires et modifications Microsoft Word
 
-## La barre latérale des commentaires
+## La barre latérale des commentaires [the-comments-sidebar]
 
 Toutes les annotations sont affichées dans une barre latérale et masquées dans l'aperçu du document. Pour afficher la barre latérale des annotations, utilisez **Menu Action → Relecture → Afficher les commentaires**, ou appuyez sur {% kbd ctrl cmd C %}.
 

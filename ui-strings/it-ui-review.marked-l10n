@@ -28,7 +28,7 @@
 #   DocumentIntelligence.strings: 59
 #   Preferences.strings: 8
 #   Preferences.xib.strings: 583
-#   PreviewContextMenu.strings: 25
+#   PreviewContextMenu.strings: 28
 #   Statistics.strings: 35
 #   Tips.strings: 24
 #   KBShortcuts.strings: 199
@@ -3580,6 +3580,15 @@ Write all responses in %@." = "You help someone review a document open in Marked
 "menu.validateAllLinks" = "Valida tutti i link";
 # EN: Validate All Links
 
+"menu.newViewIntoCurrentFile" = "Nuova vista nel file corrente";
+# EN: New View into Current File
+
+"menu.enableCustomRule" = "Abilita regola personalizzata";
+# EN: Enable Custom Rule
+
+"menu.customRuleOverride" = "Ignora regola personalizzata";
+# EN: Custom Rule Override
+
 
 === END PreviewContextMenu.strings ===
 
@@ -5411,5 +5420,18 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "tooltip.topPrintMargin" = "Define print margins (specified in points).";
 
+
+=== END Settings.strings (gaps) ===
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 2
+# PRIORITY — Preview style menu (toolbar popup): None and Manage Styles…
+# Seeded from MainMenu / outline None translations (2026-07-10).
+
+"setting.previewStyle.none" = "Nessuno";
+# EN: None
+
+"setting.manageStyles.menu" = "Gestisci stili…";
+# EN: Manage Styles…
 
 === END Settings.strings (gaps) ===

@@ -4,9 +4,9 @@ Marked exporte le HTML à partir de votre **aperçu en direct**, le même résul
 
 Le flux de travail typique est **prévisualiser d'abord, exporter ensuite le HTML** : ouvrez ou compilez votre document dans Marked, choisissez un thème, relisez-le dans l'aperçu en direct, puis exportez-le lorsque le balisage semble correct.
 
-## Deux façons d'obtenir du HTML
+## Deux façons d'obtenir du HTML [two-ways-to-get-html]
 
-### Copier le HTML (extrait)
+### Copier le HTML (extrait) [copy-html-snippet]
 
 **Copier HTML** place la source HTML de l'aperçu dans le presse-papiers, prête à être collée dans WordPress, Ghost, Squarespace, un forum, un modèle de courrier électronique ou toute application acceptant des fragments HTML.
 
@@ -16,7 +16,7 @@ Le flux de travail typique est **prévisualiser d'abord, exporter ensuite le HTM
 
 Copier du HTML est idéal lorsque votre destination possède déjà sa propre feuille de style et que vous n'avez besoin que du balisage du contenu.
 
-### Enregistrer le HTML (fichier)
+### Enregistrer le HTML (fichier) [save-html-file]
 
 **Enregistrer HTML** écrit un fichier `.html` complet sur le disque.
 
@@ -26,7 +26,7 @@ Copier du HTML est idéal lorsque votre destination possède déjà sa propre fe
 
 **Enregistrer HTML** est idéal pour archiver, partager un fichier autonome ou ouvrir le résultat directement dans un navigateur.
 
-## Enregistrer les options HTML
+## Enregistrer les options HTML [save-html-options]
 
 La boîte de dialogue Enregistrer HTML comprend un sélecteur de profil d'exportation et ces options :
 
@@ -63,7 +63,7 @@ Les documents avec [CriticMarkup](CriticMarkup.html) peuvent choisir si l'export
 
 Sélectionnez un [Profil d'exportation](Exporting.html#export-profiles) enregistré pour restaurer vos paramètres d'exportation HTML préférés (styles intégrés, images, coloration syntaxique, mathématiques) en une seule étape.
 
-## Style avec des thèmes intégrés et personnalisés
+## Style avec des thèmes intégrés et personnalisés [styling-with-built-in-and-custom-themes]
 
 Le **style d'aperçu** détermine l'apparence HTML lorsque **Inclure le style dans la sortie** est coché :
 
@@ -77,7 +77,7 @@ I> Certains CSS en aperçu uniquement (positionnement fixe, astuces de fenêtre 
 
 Pour obtenir des conseils sur la création, voir [Écrire du CSS personnalisé](Writing_Custom_CSS.html).
 
-## En-têtes de métadonnées et MultiMarkdown
+## En-têtes de métadonnées et MultiMarkdown [metadata-and-multimarkdown-headers]
 
 Les métadonnées MultiMarkdown en haut de votre fichier source peuvent affecter l'exportation HTML :
 
@@ -87,11 +87,11 @@ Les métadonnées MultiMarkdown en haut de votre fichier source peuvent affecter
 
 Si vous utilisez des métadonnées pour les paramètres d'exportation mais que vous ne souhaitez pas que les clés soient visibles dans d'autres sorties, enveloppez-les dans des commentaires HTML : Marked recherche et traite les métadonnées commentées n'importe où dans le document. Voir [Paramètres par document](Per-Document_Settings.html).
 
-## Documents multi-fichiers
+## Documents multi-fichiers [multi-file-documents]
 
 Pour les compilations de livres et de chapitres, utilisez [Documents multi-fichiers](Multi-File_Documents.html). Marked prévisualise le document fusionné et exporte un fichier HTML à partir du résultat compilé. Les fichiers inclus sont marqués de commentaires HTML indiquant leurs chemins d'accès source, utiles pour vérifier quel chapitre a contribué à quelle section.
 
-## Coller dans d'autres applications
+## Coller dans d'autres applications [pasting-into-other-applications]
 
 | Destination | Approche suggérée |
 | :-- | :-- |
@@ -103,7 +103,7 @@ Pour les compilations de livres et de chapitres, utilisez [Documents multi-fichi
 
 [Copier le texte enrichi](Exporting.html#rtfexportoptions) (menu Action) est une alternative lorsque l'application cible accepte le texte formaté plutôt que la source HTML.
 
-## Sujets connexes
+## Sujets connexes [related-topics]
 
 * [Exportation](Exporting.html) : panneau d'exportation, profils et autres formats
 * [Exportation EPUB](EPUB_Export.html) : sortie ebook avec CSS intégré

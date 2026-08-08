@@ -2,9 +2,9 @@
 
 #<%= @title %>
 
-## Callout
+## Callout [callouts]
 
-## Orso/Ossidiana ##
+## Orso/Ossidiana ## [bearobsidian]
 
 Marked supporta i callout con la sintassi utilizzata da Obsidian e Bear, ovvero una citazione di blocco appositamente formattata:
 
@@ -35,7 +35,7 @@ Puoi utilizzare `+` o `-` per rendere il callout comprimibile. Un segno più (`+
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Parco giochi Xcode ###
+### Parco giochi Xcode ### [xcode-playground]
 
 Durante l'anteprima dei file Xcode Playground, Marked supporta la sintassi nativa del callout Xcode Playground:
 
@@ -96,7 +96,7 @@ Questi callout vengono automaticamente convertiti nel formato callout di Marked 
 > Questa funzione funziona solo durante l'anteprima dei file Xcode Playground (`.playground`). I normali file di markdown non elaboreranno questa sintassi.
 
 
-## Sommario
+## Sommario [tableofcontents]
 
 Puoi specificare dove nel documento deve apparire il sommario utilizzando `<!--TOC-->`. Se impostata, sovrascrive l'opzione nelle Preferenze e verrà sempre visualizzata nella finestra di anteprima, nonché durante il salvataggio e la stampa. Il sommario verrà visualizzato solo una volta, anche se nel contenuto sono presenti più specificatori `<!--TOC-->`.
 
@@ -108,7 +108,7 @@ Per impostazione predefinita, il sommario verrà stampato sulla prima pagina del
 
 I> È possibile specificare il tipo di numerazione o caratteri di ciascun livello di una gerarchia di sommario nidificata in {% prefspane Export %}.
 
-## La pagina si interrompe
+## La pagina si interrompe [pagebreaks]
 
 Puoi forzare un'interruzione di pagina per l'output di stampa/PDF utilizzando la sintassi:
 
@@ -120,7 +120,7 @@ Metti il token su una riga da sola e genererà markup che forzerà una nuova pag
 
 	{::interruzione di pagina /}
 
-## Lo scorrimento automatico fa una pausa [pausa]
+## Lo scorrimento automatico fa una pausa [pauses]
 
 Marked può funzionare come teleprompter utilizzando la funzione [Autoscroll](Autoscroll.html) (dovresti aggiungere lo [stile teleprompter](https://markedapp.com/styles/preview?style=teleprompter)). In questo caso può essere utile includere delle pause nel documento. Fallo usando:
 
@@ -130,7 +130,7 @@ Marked può funzionare come teleprompter utilizzando la funzione [Autoscroll](Au
 
 Dove `X` è il numero di secondi per i quali Marked dovrebbe fare una pausa. Quindi inserendo `<!--PAUSE:15-->` ti darebbe una pausa di 15 secondi quando quel punto del documento raggiunge il centro dello schermo.
 
-## Il file include
+## Il file include [file-includes]
 
 Il contenuto di file aggiuntivi può essere inserito utilizzando la sintassi:
 
@@ -146,7 +146,7 @@ Per ulteriori informazioni, vedere ["Documenti con più file"][ext].
 
 [ext]: Multi-File_Documents.html
 
-## Incluso il codice
+## Incluso il codice [includingcode]
 
 Contrassegnato può includere file esterni come codice utilizzando una sintassi simile a file include sopra:
 
@@ -158,7 +158,7 @@ Notare le parentesi invece delle parentesi quadre. Per compatibilità con la sin
 
 Il contenuto del file specificato verrà inserito all'interno di un blocco pre>codice nel documento e sarà disponibile per l'evidenziazione automatica della sintassi, se abilitata. I blocchi di codice non possono essere annidati e non verranno elaborati con MultiMarkdown. I processori personalizzati verranno comunque eseguiti sul blocco pre>codice creato.
 
-## Incluso testo o HTML non elaborato
+## Incluso testo o HTML non elaborato [includingunprocessedtextorhtml]
 
 E> **Nota:** questa funzionalità è riservata agli utenti avanzati.
 

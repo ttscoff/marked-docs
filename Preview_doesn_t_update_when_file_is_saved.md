@@ -2,7 +2,7 @@
 
 Previews not updating as expected?
 
-## Time Machine
+## Time Machine [time-machine]
 
 There have been some issues reported regarding slow (or non-existent) updates during a Time Machine run. The update capabilities of Marked may be impaired if Time Machine is using the portion of the drive where the file exists at the time. This will usually remedy itself when Time Machine finishes its run.
 

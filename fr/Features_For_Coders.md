@@ -1,6 +1,6 @@
 # <%= @title %>
 
-## Blocs de code clôturés
+## Blocs de code clôturés [fenced-code-blocks]
 
 Les blocs de code clôturés sont activés par défaut dans les deux processeurs inclus (MultiMarkdown et Discount). Les blocs de code clôturés sont délimités par au moins trois tildes (~) ou backticks (\`). Vous pouvez en utiliser plus de trois, mais les délimiteurs de début et de fin doivent avoir exactement le même nombre de caractères.
 
@@ -38,7 +38,7 @@ La coloration syntaxique intégrée reconnaîtra **256** spécificateurs de lang
 
 Consultez la section sur [Syntaxe spéciale de Marked](Special_Syntax.html#includingcode) pour savoir comment inclure des fichiers de code externes dans votre document.
 
-## Mise en évidence de la syntaxe
+## Mise en évidence de la syntaxe [syntax-highlighting]
 
 ![Surlignage automatique de la syntaxe][highlight]
 
@@ -58,7 +58,7 @@ L'option « Uniquement si la langue est spécifiée » à droite du sélecteur d
 
 La mise en évidence de la syntaxe apparaîtra dans l'aperçu et lors de l'impression et de l'exportation PDF. Si elle est activée dans les paramètres et que le thème est inclus lors de l'exportation HTML, la bibliothèque highlight.js utilisée par Marked sera intégrée dans la sortie HTML, permettant à votre HTML exporté d'apparaître comme il le fait dans Marked.
 
-### Langues prises en charge
+### Langues prises en charge [supported-languages]
 
 Marked est livré avec **highlight.js 11.11.1**, y compris toutes les langues principales ainsi que les grammaires tierces de la liste [langues prises en charge par highlight.js](https://highlightjs.readthedocs.io/en/latest/supported-languages.html). Spécifiez n'importe quel nom de langue principale ci-dessous (ou un alias documenté tel que `js` pour JavaScript) après la clôture d'ouverture.
 
@@ -88,7 +88,7 @@ Deux langages répertoriés sur le site highlight.js ne sont pas inclus dans le 
     vbscript-html, verilog, vhdl, vim, wasm, wren, x86asm, x86asmatt, xl, xml, xquery, xsharp,
     yaml, yul, zenscript, zephir
 
-### Thèmes de mise en évidence de la syntaxe
+### Thèmes de mise en évidence de la syntaxe [syntax-highlighting-themes]
 
 **239** thèmes de coloration syntaxique sont disponibles dans la liste déroulante {% prefspane Style %}. Les thèmes sont chargés automatiquement à partir des feuilles de style fournies par Marked ; les noms correspondent au nom du fichier CSS sans l'extension (par exemple, `github-dark` charge `github-dark.css`).
 
@@ -154,11 +154,11 @@ base16-3024, base16-apathy, base16-apprentice, base16-ashes, base16-atelier-cave
     base16-windows-nt, base16-windows-nt-light, base16-woodland, base16-xcode-dusk,
     base16-zenburn
 
-## Sauts de ligne GitHub
+## Sauts de ligne GitHub [github-line-breaks]
 
 Marked peut conserver les sauts de ligne dans vos paragraphes. Sélectionnez simplement le {% prefspane Processor %} et cochez la case pour conserver les sauts de ligne dans les paragraphes.
 
-## Cases à cocher GitHub
+## Cases à cocher GitHub [github-checkboxes]
 
 Répertoriez les éléments au format :
 
@@ -167,6 +167,6 @@ Répertoriez les éléments au format :
 
 apparaîtra dans l'aperçu sous forme d'éléments de case à cocher rendus. Il n'est pas possible d'interagir avec eux, mais leur état reflétera toute modification apportée au document source.
 
-## Emballage du bloc de code
+## Emballage du bloc de code [code-block-wrapping]
 
 Dans le {% prefspane Style %}, vous trouverez une option sous Mise en page et typographie : « Autoriser les thèmes à envelopper le texte dans des blocs de code. » La désactivation de cette option forcera tous les blocs de code à faire défiler le débordement horizontal plutôt que de l'envelopper, quel que soit le style d'aperçu actuel.

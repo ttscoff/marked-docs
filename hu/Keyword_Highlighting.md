@@ -4,13 +4,13 @@
 
 Zavarba ejtő igeragozás és fontos kifejezések kiemelése.
 
-## Kulcsszavak kiemelése
+## Kulcsszavak kiemelése [highlighting-keywords]
 
 A Megjelölt kulcsszókiemelés lehetővé teszi, hogy elkapja azokat a gyakori kifejezéseket, amelyeket érdemes elkerülni, alternatív kifejezéseket kereshet, vagy csak általános célból kiemelhet. Az egyes kategóriáknak megfelelő kulcsszavak listája a {% prefspane Proofing %} alatt szerkeszthető.
 
 Engedélyezze a kiemelést az {% kbd shift cmd H %} gombbal a fogaskerék menüből ({% appmenu {{gear}}, Highlight Keywords %}), vagy nyissa meg a kulcsszófiókot a bal alsó sarokban található kiemelő ikon segítségével (a fogaskerék menü közelében). A fiók a {% kbd shift cmd K %} billentyűkóddal is kinyitható. A kiemelés automatikusan engedélyezve van a fiók kinyitásakor, és a fiók bal oldalán található kapcsolóval be- és kikapcsolható.
 
-## A kulcsszófiók
+## A kulcsszófiók [the-keyword-drawer]
 
 ![Kulcsszófiók][kwd]
 
@@ -24,7 +24,7 @@ A billentyűzet segítségével gyorsan navigálhat a kiemelések között. A `[
 
 Ha rákattint egy kiemelt szóra vagy kifejezésre, az adott típus lesz a navigáció célpontja, és a `[` vagy `]` használatával navigál a dokumentumban erről a pontról.
 
-## Kulcsszavak szerkesztése
+## Kulcsszavak szerkesztése [editing-keywords]
 
 ![Lektorálási beállítások][proofprefs]
 
@@ -38,7 +38,7 @@ A reguláris kifejezések akkor használhatók, ha a kifejezést perjellel veszi
 
 A fentiek megfelelnek minden „ly”-re végződő szónak kiemelés céljából. A Marked kulcsszókiemelésénél a reguláris kifejezések szintaxisa [ugyanaz, mint a JavaScript](http://www.regular-expressions.info/javascript.html).
 
-## Ideiglenes kulcsszavak
+## Ideiglenes kulcsszavak [temporary-keywords]
 
 A jegyzettömb szerkesztésével ideiglenes kulcsszavakat is hozzáadhat a Kulcsszófiókhoz. Csakúgy, mint az {% prefspane Proofing %} mezőkben, soronként egy kulcsszót vagy kifejezést ad meg, a reguláris kifejezések megengedettek (előre perjelekkel körülvéve). Az ideiglenes kulcsszavak szerkesztése után feltétlenül kattintson a „Frissítés” gombra (vagy nyomja meg a {% kbd cmd return  %} gombot), hogy mentse a változtatásokat, és kiemelve jelenjen meg a dokumentumban.
 
@@ -50,7 +50,7 @@ Tekintse meg a ["Szóismétlés vizualizálása"][wordrep] parancsot is, hogy me
 
 [wordrep]: Document_Statistics.html#visualizewordrepetition
 
-## Passzív hang
+## Passzív hang [passive-voice]
 
 A megjelölve rámutat a „passzív hang” használatára az angol szövegben. Ahogy [a Wikipédia definiálja][passzív]:
 
@@ -61,6 +61,6 @@ A passzív hang nem gonosz, erről olvashatsz [Geoffrey K. Pullum nyelvész beje
 [passive]: https://en.wikipedia.org/wiki/Passive_voice
 [gkp]: http://languagelog.ldc.upenn.edu/nll/?cat=54
 
-## Megkettőzött szavak
+## Megkettőzött szavak [doubled-words]
 
 A kettős szavak (pl. "a") automatikusan narancssárga színnel vannak kiemelve, ha a kulcsszókiemelés engedélyezve van. Ez jelenleg nem konfigurálható, de korrektnek kell lennie lektoráláshoz.

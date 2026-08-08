@@ -6,7 +6,7 @@
 
 **Be sure to check out the growing collection of [Marked tutorial videos](https://www.youtube.com/playlist?list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ).**
 
-## What's Markdown?
+## What's Markdown? [whats-markdown]
 
 [daringfireball]: http://daringfireball.net/projects/markdown/basics
 [mmd5]: https://fletcher.github.io/MultiMarkdown-5/
@@ -19,7 +19,7 @@ Marked works with GitHub Flavored Markdown, CommonMark (GFM), Kramdown, and Mult
 
 You can use the [Markdown Dingus](x-marked-3://dingus) to experiment with the different flavors of Markdown that Marked supports.
 
-## What's Marked?
+## What's Marked? [whats-marked]
 
 Marked is a live Markdown preview app for macOS --- an editor-agnostic (Multi)Markdown Preview application which watches a file for changes, updating the preview every time you save. By separating and automating the details of formatting it allows you to concentrate more on writing and less on presentation, all while still keeping tabs on your final product.
 
@@ -31,7 +31,7 @@ Marked has additional features, including word count and other document statisti
 
 Oh yeah, and it works with a ton of your favorite apps: text editors ranging from Vim and Emacs to Sublime Text and TextMate, Markdown editors like MultiMarkdown Composer, Byword, and iA Writer, even apps you might not expect like Ulysses, Scrivener, VoodooPad, MarsEdit, and more.
 
-## Example Uses
+## Example Uses [example-uses]
 
 Marked turns any text editor into a Markdown-enabled editor. Your preview is always available and it updates as you work.
 

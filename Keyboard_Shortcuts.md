@@ -2,7 +2,7 @@
 
 A floating panel with a shortcut cheat sheet is available from the Help menu, or by pressing {{opt}}{{cmd}}K.
 
-### Shortcuts
+### Shortcuts [shortcuts]
 
 |                     Shortcut | Function                           |
 | ---------------------------: | :--------------------------------- |
@@ -30,11 +30,11 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |                 **{{cmd}}M** | Minimize                           |
 | **{{opt}}{{shift}}{{cmd}}F** | Keep on Top                        |
 |         **{{ctrl}}{{cmd}}B** | Show Boundaries of Included Files  |
-|         **{{ctrl}}{{cmd}}L** | Validate URLs                      |
+|         **{{ctrl}}{{cmd}}L** | Validate External Links            |
 |         **{{ctrl}}{{cmd}}W** | Visualize Word Repetition          |
 |         **{{ctrl}}{{opt}}S** | Toggle Speed Read                  |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Ask About Document (Apple Intelligence) |
-|          **{{opt}}{{cmd}}S** | Document Statistics                |
+|          **{{opt}}{{cmd}}S** | Basic Statistics                   |
 | **{{opt}}{{shift}}{{cmd}}S** | Readability Statistics             |
 |                 **{{cmd}}I** | Detailed Statistics                |
 |          **{{opt}}{{cmd}}C** | Toggle Custom Processor            |
@@ -44,8 +44,8 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |   **{{opt}}{{cmd}}{{left}}** | Collapse all sections              |
 |  **{{opt}}{{cmd}}{{right}}** | Expand all sections                |
 |        **{{shift}}{{cmd}}V** | Preview Clipboard                  |
-|                 **{{cmd}}K** | Extract from URL                   |
-|         **{{ctrl}}{{cmd}}S** | Save Transient Preview             |
+|                 **{{cmd}}K** | Markdownify URL                    |
+|         **{{ctrl}}{{cmd}}S** | Save Clipboard Preview             |
 |     **{{cmd}}\ (Backslash)** | Toggle Fountain/Scrivener Comments |
 |         **{{ctrl}}{{cmd}}C** | Toggle Comment Sidebar             |
 |          **{{opt}}{{cmd}}F** | Filter Scrivener Documents         |
@@ -55,7 +55,7 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 
 
 
-### Quick Toggles
+### Quick Toggles [quick-toggles]
 
 Extra keyboard shortcuts for toggling common global settings.
 
@@ -71,7 +71,7 @@ Extra keyboard shortcuts for toggling common global settings.
 | **{{ctrl}}{{opt}}{{shift}}H** | Process Inside HTML  |
 [Quick Toggles]
 
-### Preview Navigation
+### Preview Navigation [previewnavigation]
 
 Press "?" at any time to view the following shortcuts in the Preview window.
 
@@ -104,7 +104,7 @@ Press "?" at any time to view the following shortcuts in the Preview window.
 |        **{{shift}}{{cmd}}F** | Focus view                        |
 [Preview Navigation]
 
-### Table of Contents Navigation
+### Table of Contents Navigation [TableofContentsNavigation]
 
 When the Table of Contents is open, you can navigate via keyboard.
 

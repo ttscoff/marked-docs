@@ -2,7 +2,7 @@
 
 Marked fonctionne avec de nombreux éditeurs et applications d'écriture. Cette page couvre les **paramètres** partagés, l'**aperçu du presse-papiers**, des renvois vers l'**aperçu en continu**, ainsi que des ressources de script. Les guides détaillés pour les applications populaires se trouvent dans leurs propres rubriques d'aide (voir la section **Applications prises en charge** dans la barre latérale).
 
-## Guides par application
+## Guides par application [per-app-guides]
 
 Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.html) pour une vue d'ensemble du fonctionnement. Si vous utilisez Obsidian, consultez [Marked face à l'aperçu intégré d'Obsidian](Marked_vs_Obsidian_Preview.html) pour décider quand Marked ajoute de la valeur par rapport à l'aperçu intégré d'Obsidian.
 
@@ -33,7 +33,7 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
 | **Xcode Playgrounds** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
-## Paramètres de l'application
+## Paramètres de l'application [application-settings]
 
 I> Plusieurs intégrations exposent des bascules à l'intérieur de {% prefspane Apps %} et {% prefspane Preview %}.
 
@@ -41,17 +41,17 @@ I> Plusieurs intégrations exposent des bascules à l'intérieur de {% prefspane
 
 Utilisez ces volets pour les valeurs par défaut des liens wiki, le transfert vers Scrivener, les paramètres du presse-papiers en continu, les options d'intégration de cartes mentales pour OPML/OmniOutliner, les intégrations Obsidian, ou d'autres processeurs qui dépendent d'éditeurs coopératifs.
 
-## Aperçu du presse-papiers
+## Aperçu du presse-papiers [clipboard-preview]
 
 ![][ClipboardPreviewMenu]
 
 Le Markdown (ou le texte brut compatible) dans le presse-papiers s'ouvre avec {% appmenu File, New, Clipboard Preview %} ({% kbd shift cmd V %}). Si le presse-papiers contient **HTML ou RTF**, Marked le convertit en source de type Markdown avant l'aperçu, y compris la détection de titre approximatif lorsque les paragraphes RTF utilisent de grandes tailles de police de feuille de style.
 
-## Aperçu en continu
+## Aperçu en continu [streaming-preview]
 
 Bear, Curio, Drafts, The Archive, nvALT, nvUltra et plusieurs autres éditeurs peuvent envoyer du Markdown vers Marked au fil de la frappe grâce à l'**aperçu en continu**. Voir [Aperçu en continu](Streaming_Preview.html) pour la configuration et le dépannage.
 
-## Scripts et Bonus Pack
+## Scripts et Bonus Pack [scripts-and-bonus-pack]
 
 Des automatisations pour BBEdit, TextMate, DEVONthink, Emacs, Vim et d'autres sont fournies avec le [Marked Bonus Pack][bonus]. Installez ou adaptez ces scripts si vous voulez des macros de barre de menus ou d'éditeur au-delà des intégrations listées ci-dessus.
 

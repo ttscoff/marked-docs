@@ -6,7 +6,7 @@ Coloque una **carpeta** de notas de texto sin formato en Marcado. Marked abre un
 
 Las actualizaciones se ejecutan cada vez que se guarda un archivo observado: si el archivo más nuevo coincide con el anterior, Marcado se desplaza hacia la región de edición detectada; cuando cambia de documento, toda la vista previa cambia al archivo activo.
 
-## Funciona bien con nvUltra, nvALT y herramientas similares
+## Funciona bien con nvUltra, nvALT y herramientas similares [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Las aplicaciones de Notebook que dejan archivos individuales en el disco (las clásicas **nvALT**, **nvUltra**, bibliotecas de estilo **Notational Velocity**, carpetas Git sincronizadas, carpetas temporales de Dropbox, etc.) se combinan naturalmente con la observación de carpetas: escribes en una ventana y mantienes Marcado fijado junto a ella sin volver a abrir manualmente las vistas previas.
 

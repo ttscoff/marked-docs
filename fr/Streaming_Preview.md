@@ -4,7 +4,7 @@ En ouvrant {% appmenu File, New, Streaming Preview %}, Marked reçoit des mises 
 
 [Curio](Curio.html), [Drafts](Drafts.html) et [The Archive](The_Archive.html) documentent leurs propres options et commandes de menu. nvUltra, nvALT, Bear et d'autres utilisent le même canal : ouvrez l'aperçu en continu dans Marked, activez l'intégration dans votre éditeur, et commencez à taper ; les mises à jour arrivent quasiment en temps réel.
 
-## Développeurs
+## Développeurs [developers]
 
 Pour intégrer l'aperçu en continu à votre application, il vous suffit de placer le texte Markdown à prévisualiser sur un presse-papiers nommé. Utilisez le code suivant (Objective-C) pour effectuer la mise à jour, de préférence dans une méthode didEndEditing ou à intervalles limités :
 
@@ -16,7 +16,7 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Déclarer une URL de base pour les ressources relatives
+### Déclarer une URL de base pour les ressources relatives [declaring-a-base-url-for-relative-assets]
 
 Vous pouvez également fournir une URL de base pour l'aperçu en continu, afin que les URL relatives des images et autres ressources fonctionnent comme dans l'application source. Si l'URL de base inclut un nom de fichier, son nom et son extension seront mis à disposition des processeurs personnalisés, sans que cela soit obligatoire. Pour inclure l'URL de base, placez simplement un objet NSURL dans le presse-papiers :
 
@@ -40,7 +40,7 @@ pb.writeObjects([rawString, baseURL])
 
 Si la version Mac App Store de Marked est utilisée et que l'URL de base n'est pas accessible en raison du bac à sable, l'autorisation sera demandée la première fois que l'URL est chargée dans l'aperçu.
 
-### Déclarer l'application source
+### Déclarer l'application source [declaring-the-source-application]
 
 Les applications peuvent également se déclarer comme source du contenu de l'aperçu en incluant une ligne de métadonnées `source`. Cela se fait généralement au sein d'un commentaire HTML, afin d'assurer la compatibilité avec les processeurs GFM et MultiMarkdown. Il suffit d'indiquer le nom de l'application ou son identifiant de bundle :
 
@@ -50,6 +50,6 @@ source: Bear.app
 -->
 ```
 
-### Ouvrir l'aperçu en continu par programmation
+### Ouvrir l'aperçu en continu par programmation [opening-the-streaming-preview-programatically]
 
 Votre application peut ouvrir l'aperçu en continu par programmation à l'aide de la méthode du gestionnaire d'URL `x-marked-3://stream/`. Cette méthode accepte également un paramètre `x-success`, dans lequel vous pouvez transmettre l'identifiant de bundle d'une application à activer une fois l'opération terminée.

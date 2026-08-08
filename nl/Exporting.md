@@ -2,11 +2,11 @@
 
 Uw Markdown omzetten in een voltooid document.
 
-## Exporteren na voorbeeld
+## Exporteren na voorbeeld [export-after-preview]
 
 Het voorbeeld van Marked is de basis voor de export --- wat u ziet in het voorbeeldvenster is wat u krijgt in PDF, DOCX, EPUB en andere formaten (modulo exportspecifieke instellingen zoals marges, kopteksten en paginering). Stel uw stijl in en proeflees eerst in de voorbeeldweergave en exporteer vervolgens wanneer het document gereed is. Zie [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor de volledige voorbeeldworkflow.
 
-## Het exportpaneel [lade]
+## Het exportpaneel [drawer]
 
 ![Export Panel][export-panel]
 
@@ -16,13 +16,13 @@ Het **Exportpaneel** is een toetsenbordgestuurd paneel in spotlight-stijl dat sn
 
 Met het Exportpaneel kunt u uw document opslaan als HTML, PDF van één pagina, gepagineerd PDF, RTF pakket of een Microsoft Word DOC- of DOCX-bestand. U kunt ook opslaan in een nieuw Markdown bestand (Marked-specifieke functies worden weergegeven en de resultaten ervan inbegrepen), een Open Document (ODT), of als OPML voor gebruik in andere toepassingen.
 
-## Kopieer HTML
+## Kopieer HTML [copyhtml]
 
 Gebruik de functie HTML kopiëren om de HTML broncode voor uw voorbeeld probleemloos op uw klembord te plaatsen. Je kunt het selecteren in het tandwielmenu, of druk gewoon op {% kbd shift cmd C %}. De gekopieerde HTML zal een fragment zijn dat klaar is om in een blog, forum of HTML document te worden ingevoegd.
 
 U hoeft niet in de bronweergave te zijn om te kopiëren. Met de focus op het voorbeeld (klik erop), typt u gewoon {% kbd shift cmd C %} en u ziet een pop-upbericht waarin u wordt geïnformeerd dat de bron op uw klembord staat.
 
-## Opslaan HTML
+## Opslaan HTML [save-html]
 
 ![][exporthtmlaccessory]
 
@@ -34,7 +34,7 @@ U kunt optioneel een van de stijlen van Marked (of een van uw [custom styles][cu
 
 Bovendien kunt u ervoor kiezen om alle lokale afbeeldingen in het document in te sluiten in de geëxporteerde HTML, zodat u over een zelfstandig document beschikt dat overal kan worden gehost zonder dat u de afbeeldingen ermee hoeft te verplaatsen. Dit werkt alleen met afbeeldingen waarnaar op uw lokale schijf wordt verwezen met relatieve of absolute paden. Vermijd het gebruik van `file:///` paden als u van deze functie gebruik wilt maken.
 
-## Exporteer Markdown naar PDF op Mac
+## Exporteer Markdown naar PDF op Mac [export-markdown-to-pdf-on-mac]
 
 Print/PDF Preview ({% kbd cmd P %}) zal een standaard afdrukdialoogvenster openen. Elke voorbeeldstijl in Marked heeft zijn eigen bijbehorende afdrukstijlen die achtergronden verwijderen, lettergroottes wijzigen en randen aanbrengen. Het voorbeeld wordt afgedrukt op basis van de momenteel geselecteerde stijl.
 
@@ -50,7 +50,7 @@ Paginamarges kunnen worden ingesteld in {% prefspane Export %} en hebben invloed
 
 U kunt de marge-instellingen per document overschrijven met behulp van de metadatasleutel `Margins:`. Waarden worden geïnterpreteerd als punten; eenheidsachtervoegsels zoals `px`, `pt` en `em` worden genegeerd. Gebruik twee cijfers voor verticale en horizontale marges (`10 20`), of vier cijfers voor boven, rechts, onder en links (`10, 20, 10, 20` of `10 20 10 20`). Marges metagegevens overschrijven {% prefspane Export %} instellingen.
 
-### Kop- en voetteksten
+### Kop- en voetteksten [headers-and-footers]
 
 Kop- en voetteksten gedefinieerd in de {% prefspane Export %} verschijnen bovenaan en onderaan elke pagina die wordt afgedrukt of opgeslagen in gepagineerde PDF, en in DOCX export. U kunt elke gewenste tekst linksboven, middenboven, rechtsboven, linksonder, middenonder en rechtsonder plaatsen. Gecentreerde tekst wordt gecentreerd op de pagina uitgelijnd. De volgende variabelen worden bij gebruik in de strings vervangen:
 
@@ -97,7 +97,7 @@ Bovendien kunt u per document een lettergrootte voor de kop-/voettekst opgeven m
 
 Lettergrootte koptekst: 10
 
-### Datum- en tijdformaten
+### Datum- en tijdformaten [dateandtimeformats]
 
 De velden **Datumnotatie** en **Tijdnotatie** in de {% prefspane Export %} bepalen hoe `%date` en `%time` worden weergegeven in kop- en voetteksten. Beide velden gebruiken formatcodes in strftime-stijl: een `%` gevolgd door een letter. Letterlijke tekst (zoals `-`, `:` of spaties) wordt ongewijzigd gekopieerd.
 
@@ -137,7 +137,7 @@ De velden **Datumnotatie** en **Tijdnotatie** in de {% prefspane Export %} bepal
 
 Gebruik **Standaardformaten herstellen** in {% prefspane Export %} om te resetten naar `%m-%d-%Y` en `%I:%M %p`.
 
-### Kop- en voetteksten per document
+### Kop- en voetteksten per document [per-document-headers-and-footers]
 
 U kunt kop- en voetteksten per document opgeven met behulp van MultiMarkdown-metagegevens helemaal bovenaan het document:
 
@@ -155,23 +155,23 @@ Deze zullen alle instellingen in de voorkeuren overschrijven. Houd er rekening m
 
 -->
 
-## Opslaan PDF
+## Opslaan PDF [save-pdf]
 
 Met deze optie wordt uw voorbeeld rechtstreeks opgeslagen in een PDF bestand op uw schijf. Uw document wordt in zijn geheel weergegeven, zonder pagina-einden. Om paginering in uw uitvoer op te nemen, gebruikt u de Print/PDF opties in [Export Panel](#drawer).
 
-## RTF exportopties
+## RTF exportopties [rtfexportoptions]
 
 Marked kan RTF-gegevens (Rich Text Format) rechtstreeks naar uw klembord exporteren. Kies gewoon de opdracht Copy Rich Text in het tandwielmenu.
 
 Marked kan uw bestand ook opslaan als een **RTFD**-bestand (Rich Text Format). De RTFD-indeling is een bundelindeling die een RTF-bestand en eventuele afbeeldingen in het document bevat.
 
-## DOCX exporteren
+## DOCX exporteren [docx-export]
 
 Exporteren als DOCX zal een geldig Microsoft Word-document creëren, met elementen zoals koppen, kop-/voetteksten, nadruk, lijsten, enz., allemaal toegewezen aan geldige Word-stijlen. Hierdoor past u eenvoudig uw eigen thema toe in Word.
 
 Zie [Working with DOCX][DOCX] voor meer details over het importeren en exporteren van Word.
 
-## Exporteer Markdown naar EPUB
+## Exporteer Markdown naar EPUB [export-markdown-to-epub]
 
 Marked kan 100% geldige, 100% toegankelijke EPUB documenten exporteren. Selecteer het exporttype EPUB, specificeer metagegevens zoals titel, auteur en datum en voeg optioneel een omslagfoto toe. Het opgeslagen bestand is leesbaar in elke EPUB viewer.
 
@@ -189,7 +189,7 @@ Als de titel niet is ingesteld, wordt standaard de bestandsnaam van het originel
 
 De datum wordt altijd ingesteld op de huidige datum en kan momenteel niet worden gewijzigd met metagegevens. Het kan echter worden gewijzigd op het moment van opslaan, zolang de opmaak (ISO) intact blijft.
 
-### Publiceren op Amazon Kindle (KDP)
+### Publiceren op Amazon Kindle (KDP) [publishing-to-amazon-kindle-kdp]
 
 EPUB is een open indeling die door veel leesapps en -winkels (Apple Books, Kobo en anderen) wordt gebruikt, niet alleen door Kindle. Als je publiceert via [Kindle Direct Publishing (KDP)](https://kdp.amazon.com/), exporteer dan EPUB van Marked en upload dat bestand naar KDP. Amazon converteert het naar zijn eigen Kindle-bezorgformaat (KFX) voor lezers.
 
@@ -199,11 +199,11 @@ KDP accepteert verschillende manuscriptformaten, waaronder EPUB en DOCX (die Mar
 
 Voordat je gaat uploaden, wil je misschien controleren hoe je EPUB eruit zal zien op Kindle-apparaten met behulp van de gratis [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) van Amazon. Dat is optionele software van derden van Amazon, geen onderdeel van Marked.
 
-## Profielen exporteren
+## Profielen exporteren [export-profiles]
 
 Met exportprofielen kunt u verschillende sets exportvoorkeuren opslaan en snel schakelen tussen. Dit is vooral handig als u regelmatig documenten exporteert voor verschillende doeleinden, bijvoorbeeld één profiel voor afdrukklare PDFs met specifieke marges en kopteksten, en een ander voor webklare HTML met ingesloten stijlen.
 
-### Exportprofielen gebruiken
+### Exportprofielen gebruiken [using-export-profiles]
 
 Wanneer u Marked voor het eerst start, wordt er automatisch een 'Standaard'-profiel gemaakt met uw huidige exportinstellingen. U kunt profielen zien en selecteren in de exportdialoogvensters (PDF Exporteren, Opslaan HTML, enz.) met behulp van het profielpop-upmenu bovenaan het dialoogvenster.
 
@@ -234,7 +234,7 @@ Wanneer u Marked voor het eerst start, wordt er automatisch een 'Standaard'-prof
   - **Verwijder** profielen (het "Standaard" profiel kan niet worden verwijderd)
   - Bekijk alle beschikbare profielen in een lijst
 
-### Wat exportprofielen vastleggen
+### Wat exportprofielen vastleggen [what-export-profiles-capture]
 
 Exportprofielen slaan alle exportgerelateerde voorkeuren op, waaronder:
 
@@ -250,7 +250,7 @@ Exportprofielen slaan alle exportgerelateerde voorkeuren op, waaronder:
 
 Profielen werken voor alle exporttypen: Markdown, HTML, Continu PDF, Gepagineerd PDF, EPUB, DOCX, ODT, TextBundle, RTF en OPML.
 
-### Profielopslag
+### Profielopslag [profile-storage]
 
 Profielen worden opgeslagen in uw map Applicatieondersteuning op:
 
@@ -258,7 +258,7 @@ Profielen worden opgeslagen in uw map Applicatieondersteuning op:
 
 Dit betekent dat uw profielen blijven bestaan, zelfs als u de app-voorkeuren opnieuw instelt, en dat ze app-updates overleven. U kunt een back-up van dit bestand maken om uw profielen tijdens installaties te behouden.
 
-### Tips voor het gebruik van exportprofielen
+### Tips voor het gebruik van exportprofielen [tips-for-using-export-profiles]
 
 - **Maak profielen voor algemene workflows**: als u regelmatig exporteert voor print of web, maak dan voor elk afzonderlijk profielen aan
 - **Gebruik beschrijvende namen**: profielnamen zoals "Print - Letter" of "Web - Embedded Styles" maken duidelijk waar elk profiel voor is
@@ -266,7 +266,7 @@ Dit betekent dat uw profielen blijven bestaan, zelfs als u de app-voorkeuren opn
 - **Begin met bestaande profielen**: gebruik "Dupliceren" in het beheervenster om variaties op bestaande profielen te maken in plaats van helemaal opnieuw te beginnen
 
 [break]: Special_Syntax.html#pagebreaks
-[DOCX]: Working_with_DOCX.html
+[DOCX]: Working_With_DOCX.html
 [custom]: Custom_Styles.html
 [dropbox]: http://dropbox.com
 [expbut]: images/ExportButton.png @2x width=534px height=256px class=center

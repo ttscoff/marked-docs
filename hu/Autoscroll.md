@@ -4,7 +4,7 @@
 
 Az automatikus görgetés lassan mozgatja az előnézetet kihangosított olvasáshoz vagy lektoráláshoz. Különálló a [Tartalomjegyzék](Document_Navigation.html) és a [Mini térkép](Document_Navigation.html#minimap); automatikusan görgeti az aktuális nézetet.
 
-## Indítás és leállítás
+## Indítás és leállítás [starting-and-stopping]
 
 Indítsa el az automatikus görgetést a {% kbd s %} megnyomásával. Az előnézet az aktuális sebességgel gördül előre.
 

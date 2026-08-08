@@ -2,7 +2,7 @@
 
 [The Archive][archive] verwaltet Ihre Notizen als Dateien auf der Festplatte und kann die von Ihnen bearbeitete Notiz direkt in den **Streaming-Vorschau**-Kanal von Marked spiegeln.
 
-## Streaming-Vorschau zu Marked
+## Streaming-Vorschau zu Marked [stream-preview-to-marked]
 
 1. Öffnen Sie in Marked {% appmenu Ablage, Neu, Streaming-Vorschau %} (oder verwenden Sie ein vorhandenes Streaming-Vorschaufenster erneut).
 2. Wechseln Sie zu „The Archive“ und wählen Sie **Note → Stream Preview to Marked**, sodass „The Archive“ Marked aktiviert und mit dem Senden des vordersten Notiztexts beginnt.

@@ -8,7 +8,7 @@ Vous pouvez forcer le traitement de n'importe quel document en tant que Markdown
 
 Les en-têtes de section et de scène apparaîtront dans la table des matières pour une navigation rapide dans votre scénario.
 
-## Scrippets
+## Scrippets [scrippets]
 
 Vous pouvez également utiliser des « scripts » dans un document standard pour que des sections individuelles soient traitées et stylisées avec Fountain. Entourez simplement votre balisage Fountain à l'intérieur du document principal avec les balises `[scrippet]` :
 

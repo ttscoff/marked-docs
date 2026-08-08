@@ -2,7 +2,7 @@
 
 Turning your Markdown into a finished document.
 
-## Export after preview
+## Export after preview [export-after-preview]
 
 Marked's preview is the basis for export --- what you see in the preview window is what you get in PDF, DOCX, EPUB, and other formats (modulo export-specific settings such as margins, headers, and pagination). Set up your style and proofread in preview first, then export when the document is ready. See [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for the full preview workflow.
 
@@ -16,13 +16,13 @@ The **Export Panel** is a keyboard-driven, spotlight-style panel that provides q
 
 The Export Panel allows you to save your document as HTML, single-page PDF, paginated PDF, RTF package, or a Microsoft Word DOC or DOCX file. You can also save to a new Markdown file (Marked-specific features will be rendered and their results included), an Open Document (ODT), or as OPML for use in other applications.
 
-## Copy HTML
+## Copy HTML [copyhtml]
 
 Use the Copy HTML feature to put the HTML source code for your preview into your clipboard without any hassle. You can select it from the gear menu, or just hit {% kbd shift cmd C %}. The copied HTML will be a snippet ready for insertion into a blog, forum or HTML document.
 
 You don't need to be in the source view to copy. With the preview focused (click on it), just type {% kbd shift cmd C %} and you'll see a popup message letting you know that the source is in your clipboard.
 
-## Save HTML
+## Save HTML [save-html]
 
 ![][exporthtmlaccessory]
 
@@ -34,7 +34,7 @@ You can optionally include any of Marked's styles (or one of your [custom styles
 
 Additionally, you can choose to embed any local images included in the document within the exported HTML, allowing you to have a standalone document that can be hosted anywhere without needing to move the images with it. This only works with images referenced on your local drive with relative or absolute paths. Avoid using `file:///` paths if you want to make use of this feature.
 
-## Export Markdown to PDF on Mac
+## Export Markdown to PDF on Mac [export-markdown-to-pdf-on-mac]
 
 Print/PDF Preview ({% kbd cmd P %}) will bring up a standard print dialog. Each preview style in Marked has its own accompanying print styles which remove backgrounds, modify type sizes and provide borders. The preview will print based on the currently-selected style.
 
@@ -50,7 +50,7 @@ Page margins may be set in the {% prefspane Export %} and will affect Print and 
 
 You can override margin settings per document using the `Margins:` metadata key. Values are interpreted as points; unit suffixes such as `px`, `pt`, and `em` are ignored. Use two numbers for vertical and horizontal margins (`10 20`), or four numbers for top, right, bottom, and left (`10, 20, 10, 20` or `10 20 10 20`). Metadata margins override {% prefspane Export %} settings.
 
-### Headers and Footers
+### Headers and Footers [headers-and-footers]
 
 Headers and footers defined in the the {% prefspane Export %} will appear at the top and bottom of any page printed or saved to paginated PDF, and in DOCX export. You can put any text in the upper left, upper center, upper right, lower left, lower center, and lower right. Center text is center-aligned on the page. The following variables will be replaced in the strings if used:
 
@@ -97,7 +97,7 @@ Additionally, you can specify a per-document header/footer font size with the me
 
     Header Font Size: 10
 
-### Date and Time Formats
+### Date and Time Formats [dateandtimeformats]
 
 The **Date format** and **Time format** fields in the {% prefspane Export %} control how `%date` and `%time` are rendered in headers and footers. Both fields use strftime-style format codes: a `%` followed by a letter. Literal text (such as `-`, `:`, or spaces) is copied as-is.
 
@@ -137,7 +137,7 @@ The **Date format** and **Time format** fields in the {% prefspane Export %} con
 
 Use **Restore Default Formats** in {% prefspane Export %} to reset to `%m-%d-%Y` and `%I:%M %p`.
 
-### Per-Document Headers and Footers
+### Per-Document Headers and Footers [per-document-headers-and-footers]
 
 You can specify headers and footers on a per-document basis using MultiMarkdown metadata at the very top of the document:
 
@@ -155,23 +155,23 @@ These will override any settings in preferences. Note that if you're using a pro
 
     -->
 
-## Save PDF
+## Save PDF [save-pdf]
 
 This option saves your Preview directly to a PDF file on your drive. Your document will be rendered in its entirety, without page breaks. To include pagination in your output, use the Print/PDF options in the [Export Panel](#drawer).
 
-## RTF export options
+## RTF export options [rtfexportoptions]
 
 Marked can export RTF (Rich Text Format) data directly to your clipboard. Just choose the Copy Rich Text command from the gear menu.
 
 Marked can also save your file as an **RTFD** (Rich Text Format) file. The RTFD format is a bundle format that includes an RTF file and any images embedded in the document.
 
-## DOCX export
+## DOCX export [docx-export]
 
 Exporting as DOCX will create a valid Microsoft Word document, with elements like headlines, headers/footers, emphasis, lists, etc. all mapped to valid Word styles. This means you can easily apply your own theme in Word.
 
 See [Working with DOCX][DOCX] for more details about Word import and export.
 
-## Export Markdown to EPUB
+## Export Markdown to EPUB [export-markdown-to-epub]
 
 Marked can export 100% valid, 100% accessible EPUB documents. Select the EPUB export type, specify metadata like title, author, and date, and optionally add a cover photo. The saved file will be readable in any EPUB viewer.
 
@@ -189,7 +189,7 @@ If title is not set, it will default to the filename of the original document, a
 
 Date will always be set to the current date, and cannot currently be modified with metadata. It can be altered at the time of saving, though, as long as the formatting (ISO) remains intact.
 
-### Publishing to Amazon Kindle (KDP)
+### Publishing to Amazon Kindle (KDP) [publishing-to-amazon-kindle-kdp]
 
 EPUB is an open format used by many reading apps and stores (Apple Books, Kobo, and others), not only Kindle. If you are publishing through [Kindle Direct Publishing (KDP)](https://kdp.amazon.com/), export EPUB from Marked and upload that file to KDP. Amazon converts it to its own Kindle delivery format (KFX) for readers.
 
@@ -199,11 +199,11 @@ KDP accepts several manuscript formats, including EPUB and DOCX (which Marked ca
 
 Before uploading, you may want to check how your EPUB will look on Kindle devices using Amazon's free [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170). That is optional third-party software from Amazon, not part of Marked.
 
-## Export Profiles
+## Export Profiles [export-profiles]
 
 Export Profiles allow you to save and quickly switch between different sets of export preferences. This is especially useful if you regularly export documents for different purposes — for example, one profile for print-ready PDFs with specific margins and headers, and another for web-ready HTML with embedded styles.
 
-### Using Export Profiles
+### Using Export Profiles [using-export-profiles]
 
 When you first launch Marked, a "Default" profile is automatically created with your current export settings. You can see and select profiles in the export dialogs (PDF Export, Save HTML, etc.) using the profile popup menu at the top of the dialog.
 
@@ -234,7 +234,7 @@ When you first launch Marked, a "Default" profile is automatically created with 
   - **Delete** profiles (the "Default" profile cannot be deleted)
   - View all available profiles in a list
 
-### What Export Profiles Capture
+### What Export Profiles Capture [what-export-profiles-capture]
 
 Export Profiles save all export-related preferences, including:
 
@@ -250,7 +250,7 @@ Export Profiles save all export-related preferences, including:
 
 Profiles work across all export types: Markdown, HTML, Continuous PDF, Paginated PDF, EPUB, DOCX, ODT, TextBundle, RTF, and OPML.
 
-### Profile Storage
+### Profile Storage [profile-storage]
 
 Profiles are stored in your Application Support folder at:
 
@@ -258,7 +258,7 @@ Profiles are stored in your Application Support folder at:
 
 This means your profiles persist even if you reset app preferences, and they survive app updates. You can back up this file to preserve your profiles across installations.
 
-### Tips for Using Export Profiles
+### Tips for Using Export Profiles [tips-for-using-export-profiles]
 
 - **Create profiles for common workflows**: If you regularly export for print vs. web, create separate profiles for each
 - **Use descriptive names**: Profile names like "Print - Letter" or "Web - Embedded Styles" make it clear what each profile is for
@@ -266,7 +266,7 @@ This means your profiles persist even if you reset app preferences, and they sur
 - **Start from existing profiles**: Use "Duplicate" in the management window to create variations of existing profiles rather than starting from scratch
 
 [break]: Special_Syntax.html#pagebreaks
-[DOCX]: Working_with_DOCX.html
+[DOCX]: Working_With_DOCX.html
 [custom]: Custom_Styles.html
 [dropbox]: http://dropbox.com
 [expbut]: images/ExportButton.png @2x width=534px height=256px class=center

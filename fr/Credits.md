@@ -2,7 +2,7 @@
 
 Marked est construit avec beaucoup d'aide de la communauté open source. Cette page répertorie le code tiers fourni dans Marked. Le texte complet de la licence pour les processeurs Markdown est disponible sur les pages liées dans [À propos de Markdown](MultiMarkdown_Information.html).
 
-## Processeurs Markdown et conversion
+## Processeurs Markdown et conversion [markdown-processors-and-conversion]
 
 | Composant | Auteurs | Licence | Utilisé pour |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Marked est construit avec beaucoup d'aide de la communauté open source. Cette p
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Option de processeur Kramdown (Ruby fourni) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | Import PDF vers Markdown |
 
-## Code et frameworks natifs
+## Code et frameworks natifs [native-code-and-frameworks]
 
 | Composant | Auteurs | Licence | Utilisé pour |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Marked est construit avec beaucoup d'aide de la communauté open source. Cette p
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniel Jackson | Voir le projet | Indicateurs de progression |
 | [IAPManager](https://github.com/mruegenberg/IAPManager) | Marcel Ruegenberg | Voir le projet | Aides aux achats intégrés (ancienne version) |
 
-## JavaScript d'aperçu
+## JavaScript d'aperçu [preview-javascript]
 
 Ces bibliothèques sont concaténées dans le bundle de prévisualisation de Marked (`marked.min.js` et ressources associées) :
 
@@ -57,7 +57,7 @@ Ces bibliothèques sont concaténées dans le bundle de prévisualisation de Mar
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Détection du viewport |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | Mise en évidence de la recherche dans le document |
 
-## Localisation
+## Localisation [localization]
 
 Marked est disponible en plusieurs langues grâce à des traducteurs bénévoles :
 
@@ -75,6 +75,6 @@ Marked est disponible en plusieurs langues grâce à des traducteurs bénévoles
 - Yuki Tamari
 - 亮 王
 
-## Remerciements
+## Remerciements [acknowledgments]
 
 Merci également à Daniel Jalkut pour ses années de conseils et à Felippe van Eekhout pour l'icône Marked.

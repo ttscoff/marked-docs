@@ -2,7 +2,7 @@
 
 Marked vous donne un contrôle total avec des règles personnalisées, des transformations de texte et la possibilité d'exécuter vos propres commandes ou d'exécuter différents processeurs en fonction des propriétés de fichier correspondantes.
 
-## Utilisation de préprocesseurs/processeurs personnalisés
+## Utilisation de préprocesseurs/processeurs personnalisés [using-custom-preprocessorsprocessors]
 
 Pour ajouter des processeurs personnalisés, accédez au {% prefspane Processor %} et cliquez sur **Règles personnalisées**.
 
@@ -30,7 +30,7 @@ Processeur
 
 Tous les tableaux de l'éditeur de règles personnalisées peuvent être réorganisés en glisser-déposer, afin que vous puissiez modifier l'ordre dans lequel les règles sont exécutées, l'ordre des critères dans l'éditeur de prédicat et l'ordre des actions à exécuter en séquence.
 
-### Éditeur de prédicats
+### Éditeur de prédicats [predicate-editor]
 
 ![Éditeur de prédicat][predicate]
 
@@ -55,7 +55,7 @@ Pour faire correspondre tous les fichiers (c'est-à-dire un processeur personnal
 
 Cliquez sur le signe plus (+) sur la ligne du prédicat pour ajouter un autre prédicat. Maintenez Option enfoncée tout en cliquant sur le + pour ajouter un groupe booléen qui peut être défini sur Tous (ET) ou Au moins un (OU).
 
-### Actions
+### Actions [manuallyenabled]
 
 Utilisez le bouton *+ Action* pour ajouter des actions à la règle.
 
@@ -163,7 +163,7 @@ Exécuter le flux de travail Automator
 Continuer
 : Par défaut, une fois qu'une règle correspond, le traitement s'arrêtera (séparément pour les préprocesseurs et les processeurs, afin qu'un préprocesseur et un processeur puissent correspondre). Cette action forcera la correspondance des règles à continuer une fois que la règle aura effectué ses actions.
 
-### Update Hook
+### Update Hook [actions]
 
 Marked n'effectue pas une actualisation complète à chaque mise à jour, donc si vous avez des scripts qui restituent des parties du DOM, ils ont besoin d'exécuter leur fonction de rendu à l'aide de l'API Hooks de Marked.
 
@@ -181,11 +181,11 @@ Marked.hooks.register('update', function() {
 
 Cela entraînera l'exécution de `mermaid.run()` à chaque fois que Marked effectue une mise à jour partielle.
 
-### Règles de test
+### Règles de test [updatehook]
 
 Le bouton _Test Rules_ sous la liste des règles ouvrira une boîte de dialogue où vous pouvez sélectionner n'importe quel fichier Markdown et il sera testé par rapport à toutes vos règles. Les règles qui correspondent seront mises en évidence par un onglet vert sur le côté gauche. Lors de la correspondance contre un fichier, un bouton X apparaîtra qui peut être utilisé pour effacer le test et désélectionner les lignes.
 
-## Glisser-déposer
+## Glisser-déposer [drag-and-drop]
 
 La fenêtre Conductor prend en charge des capacités de glisser-déposer améliorées qui détectent intelligemment les types de fichiers et fournissent des actions appropriées en fonction du fichier déplacé. La mise en œuvre comprend un système de superposition divisée pour les fichiers texte qui permet aux utilisateurs de choisir entre tester le fichier contre les règles ou l'ajouter comme une action.
 
@@ -193,7 +193,7 @@ La fenêtre Conductor prend en charge des capacités de glisser-déposer amélio
 
 [drag]: images/draganddropconductor.jpg @2x width=800
 
-### Détection du type de fichier
+### Détection du type de fichier [file-type-detection]
 
 Le système détecte automatiquement différents types de fichiers et affiche les messages de superposition appropriés :
 
@@ -204,7 +204,7 @@ Le système détecte automatiquement différents types de fichiers et affiche le
 - **Fichiers exécutables** : affiche la superposition « Exécuter la commande »
 - **Extensions inconnues** : la valeur par défaut est le type « texte » et affiche la superposition divisée
 
-## Journal du processeur personnalisé
+## Journal du processeur personnalisé [customprocessorlog]
 
 Si vous obtenez des résultats étranges et souhaitez voir ce qui se passe, le journal des règles personnalisées vous montrera quelles règles sont exécutées dans quel ordre. Utilisez **Aide->Afficher le journal des règles personnalisées** pour l'ouvrir.
 
@@ -212,19 +212,19 @@ Si vous obtenez des résultats étranges et souhaitez voir ce qui se passe, le j
 
 [crlog]: images/CustomRulesLog.jpg @2x width=809
 
-## Exécuter plusieurs commandes
+## Exécuter plusieurs commandes [executing-multiple-commands]
 
 Une règle peut avoir plusieurs commandes en séquence. La sortie de chaque commande sera transmise à la suivante. Si vous voulez qu'une commande génère quelque chose en même temps que Marked prévisualise les mises à jour, assurez-vous de renvoyer le contenu original vers STDOUT pour traiter la commande suivante ou le processeur intégré.
 
 Par exemple, si vous souhaitez qu'une commande mette à jour un document PDF en utilisant Pandoc, transmettez simplement le chemin du fichier d'origine (à partir des variables d'environnement) vers Pandoc avec les options de ligne de commande, puis renvoyez le contenu STDIN vers STDOUT.
 
-## Contournement dynamique des processeurs personnalisés
+## Contournement dynamique des processeurs personnalisés [dynamically-bypassing-custom-processors]
 
 Si un processeur personnalisé renvoie "NOCUSTOM" sur STDOUT, Marked mettra fin au processeur personnalisé et reviendra au processeur interne par défaut. Cela vous permet de créer un processeur personnalisé qui peut décider s'il doit ou non s'exécuter en utilisant les [variables d'environnement](#environmentvariables) ci-dessous, le nom de fichier ou l'extension du document, la correspondance du contenu ou autre logique.
 
 Si au lieu de `NOCUSTOM` un processeur personnalisé renvoie `MULTIMARKDOWN` ou `DISCOUNT` (ou `GFM`), `KRAMDOWN`, ou `COMMONMARK`, alors ce processeur interne sera utilisé pour juste ce document. Ce changement n'affectera pas le processeur par défaut défini dans les Paramètres.
 
-## Variables d'environnement
+## Variables d'environnement [environmentvariables]
 
 L'action Exécuter la commande possède un éditeur d'environnement dans lequel vous pouvez définir vos propres variables d'environnement qui seront disponibles pour la commande ou le script. En plus de ces variables personnalisées, Marked en inclut certaines.
 
@@ -254,11 +254,11 @@ Marked exécute le processeur personnalisé dans son propre shell, ce qui signif
 **MARKED_CSS_PATH**
 : Le chemin complet vers la feuille de style actuelle
 
-### Variables d'environnement de métadonnées
+### Variables d'environnement de métadonnées [metadata-environment-variables]
 
 Lorsque l'action Exécuter la commande est exécutée dans l'espace de travail du système Conductor de Marked, les métadonnées du document sont automatiquement extraites et mises à disposition en tant que variables d'environnement pour la commande.
 
-#### Comment ça marche
+#### Comment ça marche [how-it-works]
 
 1. **Extraction de métadonnées** : le système extrait les métadonnées du document à l'aide de la méthode `extractMetaDataFromString:` existante, qui prend en charge :
    - YAML brut (blocs `---`)
@@ -276,7 +276,7 @@ Lorsque l'action Exécuter la commande est exécutée dans l'espace de travail d
    - `XHTML header` → `MD_xhtmlheader`
    - `Custom Processor` → `MD_customprocessor`
 
-#### Exemple
+#### Exemple [example]
 
 Étant donné un document avec ces métadonnées :
 
@@ -304,7 +304,7 @@ MD_status="Draft"
 MD_priority="High"
 ```
 
-#### Utilisation dans les commandes
+#### Utilisation dans les commandes [usage-in-commands]
 
 Vous pouvez désormais utiliser ces variables d'environnement dans vos actions Exécuter la commande :
 
@@ -332,7 +332,7 @@ else
 fi
 ```
 
-#### Actions prises en charge
+#### Actions prises en charge [supported-actions]
 
 Cette fonctionnalité de métadonnées à variable d'environnement est disponible dans :
 
@@ -341,13 +341,13 @@ Cette fonctionnalité de métadonnées à variable d'environnement est disponibl
 
 Les métadonnées sont automatiquement extraites du contenu du document et mises à la disposition de toute commande ou script qui utilise ces actions.
 
-## Activation et désactivation
+## Activation et désactivation [enabling-and-disabling]
 
 Les processeurs personnalisés peuvent être activés et désactivés pour des documents individuels en utilisant {% kbd opt cmd C %}. Vous pouvez également activer un préprocesseur ou un processeur pour un document automatiquement [à l'aide de métadonnées](#perdocument) en haut du document.
 
 Les statuts actuels des processeurs pour chaque document sont affichés sous forme de voyants (visibles uniquement lorsqu'un processeur est activé) à gauche des éléments de la barre d'outils en bas à droite de l'aperçu.
 
-### Préprocesseur
+### Préprocesseur [preprocessor]
 
 Si vous configurez des règles de préprocesseur, elles sont exécutées après que Marked gère toutes les tâches spécifiques à Marked, telles que l'inclusion de documents et de code, mais avant d'exécuter le processeur (interne ou personnalisé). Cela vous donne une chance de rendre des variables de modèle personnalisées, de gérer les substitutions ou d'injecter votre propre contenu par tout autre moyen.
 
@@ -357,7 +357,7 @@ Marked définit une variable d'environnement pour le répertoire (`MARKED_ORIGIN
 
 Lorsqu'il est activé, le préprocesseur personnalisé peut être activé et désactivé pour les documents individuels en utilisant {% kbd ctrl opt cmd C %}.
 
-#### Processeur/Pré-processeur par document [pardocument]
+#### Processeur/Pré-processeur par document [perdocument]
 
 Des processeurs personnalisés peuvent également être définis pour chaque document en utilisant le format de métadonnées pour les [paramètres par document](Per-Document_Settings.html).
 
@@ -375,7 +375,7 @@ Comme indiqué dans la page [Paramètres par document](Per-Document_Settings.htm
     Préprocesseur personnalisé : vrai
     -->
 
-## Utilisation d'un processeur Markdown alternatif
+## Utilisation d'un processeur Markdown alternatif [using-an-alternative-markdown-processor]
 
 Toute version de Markdown que vous pouvez exécuter depuis la ligne de commande peut être utilisée avec Marked. Elle doit pouvoir recevoir son entrée sur STDIN, ce qui revient à « transférer » votre Markdown vers sa ligne de commande, c'est-à-dire `cat myfile.md | myprocessor`. Elle doit renvoyer le HTML résultant sur STDOUT, ce que chaque processeur avec lequel j'ai déjà travaillé fait par défaut.
 
@@ -385,11 +385,11 @@ Si votre processeur nécessite des arguments sur la ligne de commande, vous devr
 
 J'ai testé la fonctionnalité Custom Processor avec Pandoc, Kramdown, markdown (Discount), MultiMarkdown 6, Maruku et diverses autres saveurs.
 
-### Une note sur Pandoc et le Sandboxing
+### Une note sur Pandoc et le Sandboxing [a-note-about-pandoc-and-sandboxing]
 
 Pandoc (et certains autres outils de ligne de commande) ne fonctionnera pas dans la version Mac App Store (sandbox) de Marked. Si vous devez exécuter Pandoc, utilisez **Aide->Crossgrade** pour obtenir une licence gratuite pour la version directe (Paddle). C'est vrai de tout processeur rencontrant des problèmes de sandboxing : si Marked ne peut pas l'exécuter en raison de problèmes d'autorisations MAS, il proposera les étapes de crossgrade. Si vous rencontrez des problèmes et que cela ne se produit pas, veuillez me contacter via le [site d'assistance](https://support.markedapp.com/questions/add).
 
-### Pandoc, le couteau suisse des processeurs Markdown
+### Pandoc, le couteau suisse des processeurs Markdown [pandoc-as-swiss-army-markdown-processor]
 
 [Pandoc](https://pandoc.org/) est de loin l'outil polyvalent le plus flexible pour gérer une gamme de formats de balisage. En ajoutant un argument `-f` avec l'un des éléments suivants, Pandoc peut être votre processeur personnalisé pour l'un des formats suivants :
 
@@ -411,7 +411,7 @@ Pandoc est parfait pour écrire un script qui utilise la variable d'environnemen
 
 Comme les aficionados de Pandoc le savent, Pandoc peut également gérer une bibliographie complète et des scénarios LaTeX. La plupart des fonctionnalités auxquelles vous pouvez accéder via la ligne de commande sont disponibles en utilisant simplement le passage d'arguments dans Marked.
 
-## Utilisation de Textile
+## Utilisation de Textile [using-textile]
 
 Quelques personnes ont demandé comment faire fonctionner Textile dans Marked. Vous devez disposer d'un convertisseur Textile disponible depuis la ligne de commande. Il existe quelques options, dont Pandoc (voir ci-dessus), mais si Pandoc n'est pas déjà installé, deux autres options sont RedCloth pour Ruby et Textile pour Perl (nécessite que les outils de développement soient installés). Installez l'un ou l'autre :
 
@@ -423,7 +423,7 @@ Quelques personnes ont demandé comment faire fonctionner Textile dans Marked. V
 
 Marked prévisualise maintenant Textile pour vous !
 
-## Utilisation d'AsciiDoc
+## Utilisation d'AsciiDoc [using-asciidoc]
 
 1. Installez [AsciiDoctor](http://asciidoctor.org/).
 2. Activez une règle personnalisée dans {% prefspane Processor %} pour correspondre à vos fichiers AsciiDoc.

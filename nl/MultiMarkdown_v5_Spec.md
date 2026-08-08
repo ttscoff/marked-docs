@@ -2,11 +2,11 @@
 
 Bekijk de [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) om te experimenteren met de MultiMarkdown processor.
 
-## Wat is MultiMarkdown?
+## Wat is MultiMarkdown? [what-is-multimarkdown]
 
 MultiMarkdown is een uitgebreide Markdown-processor die is ontworpen om met volledige documenten te werken in plaats van alleen met webpaginafragmenten. Het breidt de originele Markdown syntaxis uit met functies die conversie naar meerdere uitvoerformaten mogelijk maken, waaronder HTML, LaTeX, PDF, ODF en Microsoft Word-documenten.
 
-## Belangrijkste kenmerken
+## Belangrijkste kenmerken [key-characteristics]
 
 - **Documentgericht**: ontworpen voor volledige documenten, niet alleen voor webfragmenten
 - **Uitvoer in meerdere formaten**: converteert naar HTML, LaTeX, PDF, ODF, RTF en Word
@@ -15,15 +15,15 @@ MultiMarkdown is een uitgebreide Markdown-processor die is ontworpen om met voll
 - **Uitbreidbaar**: uitgebreide functieset voor complexe documentvereisten
 - **Versie 5**: volledig herschreven met verbeterde prestaties en betrouwbaarheid
 
-## Filosofie en ontwerpdoelen
+## Filosofie en ontwerpdoelen [philosophy-and-design-goals]
 
 MultiMarkdown volgt het principe dat **inhoud belangrijker is dan presentatie**. De nadruk ligt op het weergeven van de betekenis van documenten (dit is een lijst, dat is een tabel, enz.) in plaats van op het dicteren van lettertypen, kleuren of stijl.
 
 Het doel is om bruikbaar te zijn voor 80% van de documenten die 80% van de mensen schrijven, waardoor het geschikt wordt voor romans, scripties, technische documentatie en de meeste andere geschreven inhoud.
 
-## Belangrijkste functies en uitbreidingen
+## Belangrijkste functies en uitbreidingen [major-features-and-extensions]
 
-### 1. **Metadata-ondersteuning**
+### 1. **Metadata-ondersteuning** [1-metadata-support]
 
 - Documentmetagegevens bovenaan bestanden
 - Titel, auteur, datum en aangepaste variabelen
@@ -54,7 +54,7 @@ Author: [%author]
 Date: [%date]
 ```
 
-### 2. **Geavanceerde tabellen**
+### 2. **Geavanceerde tabellen** [2-advanced-tables]
 
 **Volledige tafelondersteuning**
 
@@ -78,7 +78,7 @@ Tabel: Voorbeeldtabel met uitlijning
 - Kruisverwijzingen met `[Table 1]`
 - Ondersteuning voor complexe tabelstructuren
 
-### 3. **Voetnoten en citaten**
+### 3. **Voetnoten en citaten** [3-footnotes-and-citations]
 
 **Voetnoten**
 
@@ -121,7 +121,7 @@ source[][#Doe:2006].
 
 Er zijn geen regels voor het citatiesleutelformaat dat u gebruikt (bijvoorbeeld Doe:2006), maar het moet worden voorafgegaan door een `#`, net zoals voetnoten `^` gebruiken.
 
-### 4. **Kruisverwijzingen**
+### 4. **Kruisverwijzingen** [4-cross-references]
 
 **Automatische kruisverwijzingen**
 
@@ -133,7 +133,7 @@ Er zijn geen regels voor het citatiesleutelformaat dat u gebruikt (bijvoorbeeld 
 Zie [Tabel 1] voor details.
 Raadpleeg [Paragraaf 2.1] voor meer informatie.
 
-## Sectie 2.1 [sectie-2-1]
+## Sectie 2.1
 ```
 
 **Referentietypen**
@@ -143,7 +143,7 @@ Raadpleeg [Paragraaf 2.1] voor meer informatie.
 - Cijfers: `[Figure 1]`, `[Figure: Caption]`
 - Vergelijkingen: `[Equation 1]`
 
-### 5. **Definitielijsten**
+### 5. **Definitielijsten** [5-definition-lists]
 
 **Termdefinitieparen**
 
@@ -160,7 +160,7 @@ Termijn 2
 : Definitie 2b
 ```
 
-### 6. **Omheinde codeblokken**
+### 6. **Omheinde codeblokken** [6-fenced-code-blocks]
 
 **Taalspecifieke codeblokken**
 
@@ -181,7 +181,7 @@ def hello():
 - Ondersteuning voor veel programmeertalen
 - Juiste HTML `<pre><code>` uitvoer
 
-### 7. **Wiskundige ondersteuning**
+### 7. **Wiskundige ondersteuning** [7-math-support]
 
 **Wiskundige uitdrukkingen**
 
@@ -199,7 +199,7 @@ $$
 $$
 ```
 
-### 8. **Afbeelding- en linkkenmerken**
+### 8. **Afbeelding- en linkkenmerken** [8-image-and-link-attributes]
 
 **Verbeterde links en afbeeldingen**
 
@@ -211,7 +211,7 @@ $$
 [Link text]: url.html title="Link title" class="external"
 ```
 
-### 9. **Transclusie**
+### 9. **Transclusie** [9-transclusion]
 
 **Bestandsopname**
 
@@ -231,7 +231,7 @@ $$
 - Geneste transclusieondersteuning
 - Manifestgeneratie voor opgenomen bestanden
 
-### 10. **CriticMarkup Integratie**
+### 10. **CriticMarkup Integratie** [10-criticmarkup-integration]
 
 **Wijzigingen bijhouden**
 
@@ -245,7 +245,7 @@ Dit is {>>verwijderde tekst<<} en dit is {++toegevoegde tekst++}.
 Dit is een {~~verwijdering~>vervanging~~}.
 ```
 
-### 11. **Inhoudsopgave**
+### 11. **Inhoudsopgave** [11-table-of-contents]
 
 **Automatische TOC-generatie**
 
@@ -265,7 +265,7 @@ Inhoud hier...
 Meer inhoud...
 ```
 
-### 12. **Afkortingen**
+### 12. **Afkortingen** [12-abbreviations]
 
 **HTML-Stijlafkortingen**
 
@@ -280,7 +280,7 @@ Meer inhoud...
 Dit maakt gebruik van HTML en CSS.
 ```
 
-## MultiMarkdown v5 versus andere Markdown smaken
+## MultiMarkdown v5 versus andere Markdown smaken [multimarkdown-v5-vs-other-markdown-flavors]
 
 | Kenmerk | MultiMarkdown v5 | CommonMark (GFM) | Korting | Kramdown | Standaard |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
@@ -301,7 +301,7 @@ Dit maakt gebruik van HTML en CSS.
 | Transclusie | Ja | Nee | Nee | Nee | Nee |
 | Metagegevens | Ja | Nee | Nee | Nee | Nee |
 
-## Belangrijkste voordelen van MultiMarkdown v5
+## Belangrijkste voordelen van MultiMarkdown v5 [key-advantages-of-multimarkdown-v5]
 
 1. **Documentgericht**: ontworpen voor volledige documenten, niet alleen voor webfragmenten
 2. **Uitvoer in meerdere formaten**: converteren naar HTML, LaTeX, PDF, ODF, RTF en Word
@@ -311,7 +311,7 @@ Dit maakt gebruik van HTML en CSS.
 6. **Toekomstbestendig**: het formaat voor platte tekst garandeert compatibiliteit op de lange termijn
 7. **Uitbreidbaar**: uitgebreide functieset voor complexe documentvereisten
 
-## Veelvoorkomende gebruiksscenario's
+## Veelvoorkomende gebruiksscenario's [common-use-cases]
 
 **Academisch schrijven**
 
@@ -337,7 +337,7 @@ Dit maakt gebruik van HTML en CSS.
 - Kennisbanken en wiki's
 - Gezamenlijke schrijfprojecten
 
-## Beste praktijken
+## Beste praktijken [best-practices]
 
 1. **Gebruik metadata**: gebruik YAML voorwerk voor documentinformatie
 2. **Structuur met koppen**: gebruik de juiste kophiërarchie voor het genereren van inhoudsopgaven
@@ -346,7 +346,7 @@ Dit maakt gebruik van HTML en CSS.
 5. **Testuitvoer**: Controleer de opmaak in verschillende uitvoerformaten
 6. **Gebruik citaten**: implementeer de juiste academische citatiepraktijken
 
-## Migratie van andere Markdown smaken
+## Migratie van andere Markdown smaken [migration-from-other-markdown-flavors]
 
 De meeste standaard Markdown werkt zonder wijzigingen met MultiMarkdown. Om te profiteren van de MMD-functies:
 
@@ -356,7 +356,7 @@ De meeste standaard Markdown werkt zonder wijzigingen met MultiMarkdown. Om te p
 4. **Structuur met transclusie**: Verdeel grote documenten in kleinere bestanden
 5. **Maak gebruik van tabellen**: gebruik geavanceerde tabelfuncties voor gegevenspresentatie
 
-## Bronnen
+## Bronnen [resources]
 
 - [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
 - [MultiMarkdown Syntax Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)

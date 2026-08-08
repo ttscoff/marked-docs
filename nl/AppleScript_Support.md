@@ -4,13 +4,13 @@ Marked bevat een AppleScript-woordenboek voor het automatiseren van voorbeeld-, 
 
 Voor op URL gebaseerde automatisering (shellscripts, `open` opdrachten en callbacks), zie [URL Handler](URL_Handler.html). AppleScript en de URL-handler vullen elkaar aan: gebruik AppleScript als u zich op een specifiek document of venster moet richten, en URL's als een simpele `open 'x-marked://...'`-aanroep voldoende is.
 
-## Het woordenboek bekijken
+## Het woordenboek bekijken [viewing-the-dictionary]
 
 In **Scripteditor** kiest u {% appmenu File, Open Dictionary... %} en selecteert u Marked. Het woordenboek bevat opdrachten voor de objecten **application**, **document** en **window**, plus exportopdrachten in de Marked suite.
 
 Op macOS kunt u door scriptdefinities bladeren met **Script Editor**.
 
-## Targeting Marked
+## Targeting Marked [targeting-marked]
 
 Voor de standaardinstallatie:
 
@@ -20,7 +20,7 @@ tell application "Marked"
 end tell
 ```
 
-## Documenten en vensters
+## Documenten en vensters [documents-and-windows]
 
 **Sollicitatie**
 
@@ -49,7 +49,7 @@ end tell
 
 Geef de voorkeur aan `tell document 1` of `tell window 1's document` wanneer u een specifiek voorbeeld exporteert. Exportopdrachten in de toepassing gebruiken het sleutelvenster of het huidige document als er geen ontvanger is opgegeven.
 
-### Voorbeeld: pad openen en lezen
+### Voorbeeld: pad openen en lezen [example-open-and-read-path]
 
 ```applescript
 tell application "Marked"
@@ -58,7 +58,7 @@ tell application "Marked"
 end tell
 ```
 
-### Voorbeeld: voorbeeldstijl wijzigen
+### Voorbeeld: voorbeeldstijl wijzigen [example-change-preview-style]
 
 ```applescript
 tell application "Marked"
@@ -72,7 +72,7 @@ Stijlnamen komen overeen met het voorbeeldstijlmenu (weergavenaam, CSS-bronnaam 
 
 Gebruik **`get preview style names`** op het toepassingsobject om de weergavenamen van ingeschakelde stijlen weer te geven.
 
-### Voorbeeld: processor en brontekst
+### Voorbeeld: processor en brontekst [example-processor-and-source-text]
 
 ```applescript
 tell application "Marked"
@@ -84,7 +84,7 @@ tell application "Marked"
 end tell
 ```
 
-## Applicatieopdrachten
+## Applicatieopdrachten [application-commands]
 
 Deze opdrachten zijn van toepassing op het **applicatie**-object (niet op een specifiek document).
 
@@ -107,7 +107,7 @@ tell application "Marked"
 end tell
 ```
 
-## Voorbeeldcontrole
+## Voorbeeldcontrole [preview-control]
 
 Beschikbaar op **document** en **venster**. De meeste hiervan vereisen een geladen preview-WebView.
 
@@ -134,7 +134,7 @@ tell application "Marked"
 end tell
 ```
 
-## Autoscroll en leessnelheid
+## Autoscroll en leessnelheid [autoscroll-and-speed-read]
 
 | Commando | Beschrijving |
 | --- | --- |
@@ -156,7 +156,7 @@ tell application "Marked"
 end tell
 ```
 
-## Statistieken
+## Statistieken [statistics]
 
 **`get statistics`** retourneert een `statistics_record` met numerieke waarden berekend op basis van de huidige Markdown bron (niet de opgemaakte tekenreeksen die worden weergegeven in de statistiekenlade).
 
@@ -184,7 +184,7 @@ tell application "Marked"
 end tell
 ```
 
-## Inhoudsopgave (werk in uitvoering)
+## Inhoudsopgave (werk in uitvoering) [table-of-contents-work-in-progress]
 
 {% note %}
 **WIP — nog niet betrouwbaar.** Het woordenboek bevat een eigenschap **`headings`** en een **`headings`** opdracht voor het lezen van geneste voorbeeldkoppen (`heading_item` records). Deze automatisering werkt **niet correct** in de huidige builds (lege resultaten, dwangfouten of "er is geen resultaat geretourneerd"). Het zal in een latere release worden opgelost. Geef tot die tijd de voorkeur aan **`scroll to heading`** met een bekende titel of ID.
@@ -211,7 +211,7 @@ end tell
 
 Gebruik `id` waarden met **`scroll to heading id "..."`** zodra de automatisering van de kopteksten stabiel is.
 
-## Afdrukken met profiel
+## Afdrukken met profiel [print-with-profile]
 
 **`print with profile`** past tijdelijk de afdrukinstellingen van een exportprofiel toe en drukt vervolgens het document af (dezelfde voorkeursbundel als exportprofielen van {% prefspane Export %}).
 
@@ -225,7 +225,7 @@ end tell
 
 Profielnamen zijn hoofdlettergevoelig. Na het afdrukken herstelt Marked het eerder actieve exportprofiel.
 
-## Profielen exporteren
+## Profielen exporteren [export-profiles]
 
 Exportprofielen slaan bundels export-/afdrukvoorkeuren op (marges, kopteksten, TOC-opties en soortgelijke instellingen van {% prefspane Export %}).
 
@@ -250,7 +250,7 @@ end tell
 
 Profielnamen zijn hoofdlettergevoelig en moeten exact overeenkomen met een opgeslagen profiel.
 
-## Exportopdrachten
+## Exportopdrachten [export-commands]
 
 Exportopdrachten zijn beschikbaar voor de objecten **application**, **document** en **window**. Elke opdracht vereist een parameter **`to`** met het uitvoerpad (POSIX-padtekenreeks of `file` object).
 
@@ -273,7 +273,7 @@ Exportopdrachten zijn beschikbaar voor de objecten **application**, **document**
 - HTML export gebruikt het **gerenderde voorbeeld** (wat u ziet in de WebView), niet het onbewerkte Markdown bronbestand.
 - Continu PDF legt de huidige preview-WebView-indeling vast.
 
-### Basisexport
+### Basisexport [basic-export]
 
 ```applescript
 tell application "Marked"
@@ -283,13 +283,13 @@ tell application "Marked"
 end tell
 ```
 
-### Paden exporteren en sandboxen
+### Paden exporteren en sandboxen [export-paths-and-sandboxing]
 
 - Gebruik een volledig POSIX-pad voor het doelbestand.
 - Marked kan tussenmappen maken als het exportpad **binnen de map van het geopende document** ligt (bijvoorbeeld exporteren naar `.../MyProject/build/output.pdf` terwijl u een voorbeeld van `.../MyProject/chapter.md` bekijkt).
 - Voor exporten buiten de map van het document is een beschrijfbaar pad nodig waartoe Marked toegang heeft (opgeslagen documentlocatie, bladwijzers met veiligheidsreikwijdte of mappen die u hebt toegekend via Open-dialoogvensters). Als het pad niet beschrijfbaar is, retourneert de opdracht een fout voordat het exporteren begint.
 
-## `with` opties (eigenschappenrecord)
+## `with` opties (eigenschappenrecord) [with-options-properties-record]
 
 In plaats van `with profile` kunt u een record met opties doorgeven met behulp van **`with`** of **`with properties`**:
 
@@ -314,7 +314,7 @@ Andere sleutels in de record kunnen overeenkomen met namen van **exportvoorkeur*
 
 Je kunt conflicterende bronnen niet achteloos combineren: als je `with profile` gebruikt, laad dan eerst dat profiel; als u een `with` record gebruikt, overschrijven profielsleutels in de record de huidige instellingen voor die export.
 
-### Marge afkorting
+### Marge afkorting [margin-shorthand]
 
 De `margins` waarde is een string met één tot vier metingen. Eenheden: `in`, `cm`, `mm`, `pt`, of `"` voor inches. Een getal zonder eenheid wordt behandeld als punten.
 
@@ -330,7 +330,7 @@ export paginated pdf to "/path/out.pdf" with {pageSize:"A4", margins:"1in 2in"}
 export paginated pdf to "/path/out.pdf" with {style:"Amblin", margins:"1in 2in 1in 2in"}
 ```
 
-### Gecombineerd voorbeeld
+### Gecombineerd voorbeeld [combined-example]
 
 ```applescript
 tell application "Marked"
@@ -340,7 +340,7 @@ tell application "Marked"
 end tell
 ```
 
-## `convert_to`
+## `convert_to` [convert_to]
 
 Het toepassingsobject geeft ook verouderde scriptopdrachten weer:
 
@@ -350,7 +350,7 @@ Het toepassingsobject geeft ook verouderde scriptopdrachten weer:
 
 `convert_to` blijft beschikbaar voor oudere workflows en automatisering met alleen AppleScript.
 
-## Foutopsporing
+## Foutopsporing [debugging]
 
 Schakel de **Debug-modus** in {% prefspane Advanced %} in (of de foutopsporingsvoorkeur in Instellingen). Marked registreert vervolgens de AppleScript-exportstappen op Info-niveau met het voorvoegsel `[AppleScript]` in Console.app en de logviewer van Marked.
 
@@ -363,7 +363,7 @@ Handige logregels bij het traceren van een gepagineerde PDF export:
 
 Bij lange exports (vooral gepagineerd PDF) wordt de AppleScript-gebeurtenis opgeschort tot voltooiing, zodat clients tijdens het exporteren geen time-out krijgen.
 
-## Fouten
+## Fouten [errors]
 
 Bij mislukte exports wordt de scriptfoutreeks voor de opdracht ingesteld (zichtbaar in Script Editor en `on error` handlers). Veel voorkomende berichten:
 
@@ -374,6 +374,6 @@ Bij mislukte exports wordt de scriptfoutreeks voor de opdracht ingesteld (zichtb
 - Er is een time-out opgetreden tijdens het wachten tot het voorbeeld opnieuw werd geladen na een stijlwijziging.
 - Gepagineerde PDF-export is verlopen of mislukt tijdens het genereren van pagina's.
 
-## Integratie met andere tools
+## Integratie met andere tools [integration-with-other-tools]
 
-Programma's kunnen het AppleScript-oppervlak van Marked gebruiken om metagegevens van documenten te lezen. Voor de Shortcuts-app, zie [Shortcuts Integration](Shortcuts_Integration.html). Voor shell-gestuurde workflows, mapwatchers en callbacks van editors is de [URL Handler](URL_Handler.html) vaak eenvoudiger. De [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) bevat aanvullende scripts en services.
+Programma's kunnen het AppleScript-oppervlak van Marked gebruiken om metagegevens van documenten te lezen. Voor shell-gestuurde workflows, mapwatchers en callbacks van editors is de [URL Handler](URL_Handler.html) vaak eenvoudiger. De [Marked Bonus Pack](Workflow_Integration.html#marked-bonus-pack) bevat aanvullende scripts en services.

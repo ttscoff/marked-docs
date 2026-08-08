@@ -2,7 +2,7 @@
 
 Il existe plusieurs façons d'intégrer des JavaScript supplémentaires dans Marked.
 
-## Inclure du JavaScript par document
+## Inclure du JavaScript par document [including-javascript-per-document]
 
 Vous pouvez inclure des scripts dans un seul document en utilisant les balises `<script>` dans le contenu lui-même. Cela peut être utile pour les bibliothèques comme [D3](https://d3js.org/) pour les visualisations de données dont vous n'avez besoin que dans des documents spécifiques :
 
@@ -16,7 +16,7 @@ Si vous utilisez MultiMarkdown comme processeur, vous pouvez inclure des scripts
 
 Pour actualiser les scripts inclus lorsque le contenu change, voir [Hooks](#hooks).
 
-## Inclure du JavaScript
+## Inclure du JavaScript [including-javascript]
 
 Vous pouvez inclure votre propre JavaScript à partir de fichiers locaux, de CDN ou en collant du code brut. Pour y accéder, ouvrez {% prefspane Style %} et cliquez sur le bouton *Règles personnalisées*.
 
@@ -33,9 +33,9 @@ Insérer du JavaScript à partir de l'URL
 Insérer du JavaScript
 : Ouvre un éditeur de code dans lequel vous pouvez écrire/coller votre propre code JavaScript
 
-Ces scripts seront insérés à la fin de l'aperçu, avant la balise du document. Si vous devez appeler une fonction init ou mettre à jour à chaque fois que l'aperçu est mis à jour, consultez [Inclure le JavaScript brut](#rawjs) et familiarisez-vous avec les [hooks](#hooks) de Marked.
+Ces scripts seront insérés à la fin de l'aperçu, avant la balise du document. Si vous devez appeler une fonction init ou mettre à jour à chaque fois que l'aperçu est mis à jour, consultez [Inclure le JavaScript brut](Embedding_Scripts.html#hooks) et familiarisez-vous avec les [hooks](#hooks) de Marked.
 
-## Mermaid et autres scripts {#mermaid}
+## Mermaid et autres scripts [mermaid]
 
 jQuery est inclus par défaut et vous pouvez l'utiliser dans tous les scripts que vous ajoutez à Marked en utilisant l'une des méthodes ci-dessous.
 

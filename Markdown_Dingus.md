@@ -14,7 +14,7 @@ like "GitHub newlines" and "GitHub checkboxes," so the
 result may differ from what you see in a normal Marked
 preview.
 
-## Custom Rules do not apply
+## Custom Rules do not apply [custom-rules-do-not-apply]
 
 The Dingus is a __processor sandbox__: your Markdown goes
 straight to the built-in processor you choose (MultiMarkdown,
@@ -41,14 +41,14 @@ Dingus will not re-apply rules as you type. To test Custom
 Rules, use a standard Marked preview, or save from the Dingus
 and open the file with __Open in Marked__.
 
-## What is a "Dingus"?
+## What is a "Dingus"? [what-is-a-dingus]
 
 A "dingus" is a term borrowed from web development that
 refers to a simple testing tool or sandbox environment. The
 Markdown Dingus lets you experiment with Markdown syntax and
 immediately see how different processors interpret it.
 
-## Accessing the Dingus
+## Accessing the Dingus [accessing-the-dingus]
 
 The Markdown Dingus can be accessed from
 [{% appmenu Help, Open Markdown Dingus %}][2]. It's particularly
@@ -60,13 +60,13 @@ useful when you're:
 * Writing documentation that needs to work across multiple
   systems
 
-## Three-Pane Layout
+## Three-Pane Layout [three-pane-layout]
 
 ![][1]
 
 The Dingus window is divided into three synchronized panes:
 
-### 1. Markdown Input (Left Pane)
+### 1. Markdown Input (Left Pane) [1-markdown-input-left-pane]
 
 * __Syntax Highlighting__: Your Markdown is highlighted with
   colors to make structure clear
@@ -99,14 +99,14 @@ editor, use **⌘G** for Find Next and **⇧⌘G** for Find
 Previous, and replace one or all matches. Press the close
 button or **⌘F** again to hide the find bar.
 
-### 2. HTML Source (Middle Pane)
+### 2. HTML Source (Middle Pane) [2-html-source-middle-pane]
 
 * __Generated HTML__: See exactly what HTML the selected
   processor creates
 * __Syntax Highlighted__: HTML is color-coded for easy
   reading
 
-### 3. Rendered Preview (Right Pane)
+### 3. Rendered Preview (Right Pane) [3-rendered-preview-right-pane]
 
 * __Live Preview__: See how your Markdown will look when
   rendered
@@ -115,12 +115,12 @@ button or **⌘F** again to hide the find bar.
 * __Auto-scrolling__: Automatically scrolls to show your
   current edit position
 
-## Editing in the Dingus
+## Editing in the Dingus [editing-in-the-dingus]
 
 The Markdown Input pane includes smart editing features to
 make writing Markdown faster and more natural.
 
-### Smart Newline (Return Key)
+### Smart Newline (Return Key) [smart-newline-return-key]
 
 Pressing Return adapts to the current line:
 
@@ -134,7 +134,7 @@ Pressing Return adapts to the current line:
   and closing fences.
 * __Other lines__: Inserts a normal newline.
 
-### Character Pairing
+### Character Pairing [character-pairing]
 
 When you type an opening character, the editor automatically
 inserts the closing character and places the cursor between
@@ -148,7 +148,7 @@ them. Supported pairs: `"` `'` `(` `[` `` ` `` `<` .
   it instead of inserting a duplicate.
 - __Space in empty pair__: If the cursor is between an empty pair (e.g. `(|)`), typing a space replaces the closing character with a space.
 
-### Shortcut Keys
+### Shortcut Keys [shortcut-keys]
 
 | Shortcut      | Action                                                                                                                                                                                                                             |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -178,7 +178,7 @@ selects the entire paragraph under the cursor (including its
 trailing newline), cuts it, and pastes it above or below the
 adjacent paragraph so paragraphs don't merge.
 
-### Magic links and footnotes (F6 / F7)
+### Magic links and footnotes (F6 / F7) [magic-links-and-footnotes-f6-f7]
 
 The Dingus editor can build __reference-style links__ and
 __footnotes__ for you, assigning the next available number
@@ -203,7 +203,7 @@ Reference and footnote numbers are chosen automatically so
 you do not have to track IDs by hand. Neither shortcut runs
 inside fenced or indented code blocks.
 
-### Smart URL paste
+### Smart URL paste [smart-url-paste]
 
 When you paste and the clipboard contains a URL of the form
 `protocol://...` with no spaces:
@@ -216,7 +216,7 @@ When you paste and the clipboard contains a URL of the form
 This makes it easy to turn copied URLs into links without
 manual typing.
 
-### Smart selection (⌥⌘↑ / ⌥⌘↓)
+### Smart selection (⌥⌘↑ / ⌥⌘↓) [smart-selection]
 
 The Dingus editor supports __semantic selection expansion__:
 
@@ -238,7 +238,7 @@ Each press always moves to a strictly larger or smaller
 selection, so you never get "no-op" key presses while
 expanding or contracting.
 
-## Using the Dingus as an Editor
+## Using the Dingus as an Editor [using-the-dingus-as-an-editor]
 
 The Dingus is not meant to replace a full-featured text
 editor, but it can be very handy for __quick edits with a
@@ -246,7 +246,7 @@ live preview__, especially when you want to see exactly how
 changes will render. All of the text-editing behavior
 described in [Editing in the Dingus][3] applies here.
 
-### Opening a file/creating a new file
+### Opening a file/creating a new file [opening-a-filecreating-a-new-file]
 
 * __Create a new file in the Dingus__
 	- Choose __{% appmenu File, New, New Markdown File %}__
@@ -270,7 +270,7 @@ described in [Editing in the Dingus][3] applies here.
    until you choose to save. Custom Rules are not applied in
    the Dingus; see [Custom Rules do not apply](#custom-rules-do-not-apply).
 
-### Saving a file
+### Saving a file [saving-a-file]
 
 * __Save changes to the current file__
 	- In the Dingus window, click __Save__ in the status bar,
@@ -285,7 +285,7 @@ described in [Editing in the Dingus][3] applies here.
    current Dingus contents to a new file without overwriting
    the original.
 
-### Previewing in Marked
+### Previewing in Marked [previewing-in-marked]
 
 * __Open the Dingus document as a full Marked preview__
 	- Click __Open in Marked__ in the Dingus status bar, or use
@@ -300,7 +300,7 @@ lightweight editor for quick fixes and experiments, then
 jump to a full Marked preview or your regular editor when
 you're ready for more extensive editing.
 
-## Processor Selection
+## Processor Selection [processor-selection]
 
 Use the dropdown at the top to switch between different
 Markdown processors:
@@ -314,9 +314,9 @@ Markdown processors:
 * __Kramdown__: Advanced processor with additional features
   like IALs and typography
 
-## Why Use the Dingus?
+## Why Use the Dingus? [why-use-the-dingus]
 
-### Understanding Processor Differences
+### Understanding Processor Differences [understanding-processor-differences]
 
 Different Markdown processors handle syntax differently. The
 Dingus helps you:
@@ -328,7 +328,7 @@ Dingus helps you:
 * __Learn Syntax__: Understand the subtle differences
   between processor implementations
 
-### Testing Before Writing
+### Testing Before Writing [testing-before-writing]
 
 Before committing to a particular Markdown style in your
 documents:
@@ -340,25 +340,25 @@ documents:
 * __Experiment Safely__: Try new syntax without affecting
   your actual documents
 
-## Common Use Cases
+## Common Use Cases [common-use-cases]
 
-### Table Syntax Differences
+### Table Syntax Differences [table-syntax-differences]
 
 Some processors handle table syntax differently. The Dingus
 lets you see which processor best supports your table
 formatting needs.
 
-### Footnote Support
+### Footnote Support [footnote-support]
 
 Not all processors support footnotes. Use the Dingus to
 verify footnote syntax works with your chosen processor.
 
-### Math and Special Characters
+### Math and Special Characters [math-and-special-characters]
 
 Test how different processors handle mathematical
 expressions and special typography characters.
 
-## Tips for Effective Use
+## Tips for Effective Use [tips-for-effective-use]
 
 1. __Start Simple__: Begin with basic Markdown and gradually
    add complexity

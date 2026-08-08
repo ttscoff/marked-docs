@@ -6,7 +6,7 @@
 
 Marked guarda il documento su disco e scambia l'anteprima quando cambi pagina all'interno di VoodooPad.
 
-## Immagini incorporate
+## Immagini incorporate [embedded-images]
 
 Quando fai riferimento a immagini con Markdown o HTML e il file binario risiede **all'interno** del database VoodooPad, Marked può estrarlo per l'anteprima. Le immagini che sono solo **alias** (file trascinati per riferimento) non vengono archiviate nel pacchetto: puntano a quelle con percorsi assoluti o percorsi relativi a `.vpdoc` sul disco in modo che Marked possa risolverle.
 

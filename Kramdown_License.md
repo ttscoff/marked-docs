@@ -1,4 +1,4 @@
-## Kramdown License
+## Kramdown License [kramdown-license]
 
 Copyright (c) 2010-2015 Carsten Bormann <cabo@tzi.org>
 

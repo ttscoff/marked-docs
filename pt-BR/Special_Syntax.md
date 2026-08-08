@@ -2,9 +2,9 @@
 
 # <%= @title %>
 
-## Chamadas
+## Chamadas [callouts]
 
-## Urso/Obsidiana ##
+## Urso/Obsidiana ## [bearobsidian]
 
 Marcado oferece suporte a textos explicativos com a sintaxe usada por Obsidian e Bear, que é uma citação em bloco especialmente formatada:
 
@@ -35,7 +35,7 @@ Você pode usar `+` ou `-` para tornar o texto explicativo recolhível. Um sinal
 
 [callouts]: images/callouts-800.jpg @2x width=800
 
-### Parque Xcode ###
+### Parque Xcode ### [xcode-playground]
 
 Ao visualizar arquivos do Xcode Playground, Marked oferece suporte à sintaxe de chamada nativa do Xcode Playground:
 
@@ -96,7 +96,7 @@ Essas frases de destaque são convertidas automaticamente para o formato de fras
 > Este recurso só funciona ao visualizar arquivos do Xcode Playground (`.playground`). Arquivos markdown regulares não processarão esta sintaxe.
 
 
-## Índice
+## Índice [tableofcontents]
 
 Você pode especificar onde no documento o Índice deve aparecer usando `<!--TOC-->`. Se estiver definido, ele substituirá a opção em Preferências e sempre será exibido na janela de visualização, bem como ao salvar e imprimir. O Índice será exibido apenas uma vez, mesmo se houver vários especificadores `<!--TOC-->` no conteúdo.
 
@@ -108,7 +108,7 @@ Por padrão, o Índice será impresso na primeira página do documento se "Impri
 
 I> Você pode especificar o tipo de numeração ou letras de cada nível de uma hierarquia de índice aninhado em {% prefspane Export %}.
 
-## Quebras de página
+## Quebras de página [pagebreaks]
 
 Você pode forçar uma quebra de página para saída impressa/PDF usando a sintaxe:
 
@@ -120,7 +120,7 @@ Coloque o token sozinho em uma linha e ele gerará uma marcação que forçará 
 
 	{::pagebreak /}
 
-## A rolagem automática pausa [pausa]
+## A rolagem automática pausa [pauses]
 
 Marked pode funcionar como um Teleprompter usando o recurso [Autoscroll](Autoscroll.html) (você deve adicionar o [estilo Teleprompter](https://markedapp.com/styles/preview?style=teleprompter)). Ao fazer isso, pode ser útil incluir pausas no documento. Faça isso usando:
 
@@ -130,7 +130,7 @@ Marked pode funcionar como um Teleprompter usando o recurso [Autoscroll](Autoscr
 
 Onde `X` é o número de segundos durante os quais Marcado deve pausar. Portanto, inserir `<!--PAUSE:15-->` proporcionaria uma pausa de 15 segundos quando esse ponto do documento atingir o meio da tela.
 
-## Arquivo inclui
+## Arquivo inclui [file-includes]
 
 O conteúdo de arquivos adicionais pode ser inserido usando a sintaxe:
 
@@ -146,7 +146,7 @@ Consulte ["Documentos com vários arquivos"][ext] para obter mais informações.
 
 [ext]: Multi-File_Documents.html
 
-## Incluindo código
+## Incluindo código [includingcode]
 
 Marcado pode incluir arquivos externos como código usando uma sintaxe semelhante ao arquivo inclui acima:
 
@@ -158,7 +158,7 @@ Observe os parênteses em vez dos colchetes. Para compatibilidade com a sintaxe 
 
 O conteúdo do arquivo especificado será inserido dentro de um bloco de pré-código em seu documento e estará disponível para realce automático de sintaxe se estiver habilitado. Os blocos de código não podem ser aninhados e não serão processados ​​com MultiMarkdown. Os processadores personalizados ainda serão executados no bloco de pré-código criado.
 
-## Incluindo texto ou HTML não processado
+## Incluindo texto ou HTML não processado [includingunprocessedtextorhtml]
 
 E> **Nota:** Este recurso é para usuários avançados.
 

@@ -4,7 +4,7 @@
 
 A Speed Read egy RSVP-stílusú olvasási mód, amely egy-egy szót jelenít meg fókuszált fedvényben.
 
-## Hogyan működik a Speed Read
+## Hogyan működik a Speed Read [how-speed-read-works]
 
 A Speed Read a **Rapid Serial Visual Presentation** (RSVP) nevű módszert használja. Ahelyett, hogy a szemét a szövegsorokon mozgatná, a szavak egy rögzített helyen jelennek meg. Ez csökkenti az olvasás során szokásosan előforduló szemmozgásokat, vonalváltásokat és visszalépéseket, ami hasznos lehet a lapozáshoz, az ismerős anyagok áttekintéséhez vagy a szövegben való gyors mozgáshoz anélkül, hogy elveszítené a helyét.
 
@@ -12,7 +12,7 @@ A módszer nem varázslat, és nem garantálja a jobb megértést nagyon nagy se
 
 A piros betű a szó vizuális rögzítési pontját jelöli, amelyet néha **optimális felismerési pontnak** is neveznek. Sok szóval az olvasók akkor azonosítják a szót a leghatékonyabban, ha tekintetük a középponttól kissé balra esik, nem pedig az első betűre. Azáltal, hogy a rögzítési pontot ugyanazon a helyen tartja, és kiemeli, a Speed ​​Read konzisztens célpontot biztosít a szemnek. Az eredmény kevésbé fókuszál a szavak között, és egyenletesebb a ritmus, miközben a szöveg halad előre.
 
-## Nyitási sebesség olvasás
+## Nyitási sebesség olvasás [opening-speed-read]
 
 Használja az **Előnézet > Gyorsolvasás** elemet, a **Gyorsolvasás** elemet az előnézeti ablak Fogaskerék menüjében, vagy nyomja meg a {% kbd ctrl opt S %} gombot. A menüelem akkor érhető el, ha a Markdown előnézeti dokumentumablak aktív (a nyers HTML-előnézeteknél le van tiltva, és ha nincs megnyitott dokumentum).
 
@@ -25,7 +25,7 @@ Amikor a Gyorsolvasás megnyílik, szüneteltetve indul el, így a lejátszás m
 </video>
 <p><em>Speed Read fedvény, amely a lejátszásvezérlőket, a szinkronizálási lehetőséget és a súgó elérését mutatja.</em></p>
 
-## Overlay vezérlők
+## Overlay vezérlők [overlay-controls]
 
 Ha a fedvény látható, a következő billentyűk állnak rendelkezésre:
 
@@ -44,11 +44,11 @@ Más normál előnézeti navigációs billentyűparancsok továbbra is működne
 
 A tartalomjegyzék gyorsolvasás közben is használható. Nyomja meg a {% kbd cmd t %} gombot a megnyitáshoz és a navigáláshoz, vagy nyomja meg a {% kbd f %} gombot a gyorskeresés azonnali fókuszálásához a dokumentumfejlécek navigálásához.
 
-## Kiválasztásból kiindulva
+## Kiválasztásból kiindulva [starting-from-a-selection]
 
 Ha a Speed Read indításakor szöveg van kiválasztva az előnézetben, a lejátszás a kiválasztott szöveget használja. Ha nincs aktív kijelölés, a Gyorsolvasás a dokumentum teljes szövegét használja.
 
-## Szinkronizálás görgetési pozícióval
+## Szinkronizálás görgetési pozícióval [syncing-with-scroll-position]
 
 Engedélyezze a **Szinkronizálja a gyorsolvasást a görgetési pozícióval** a {% prefspane Preview %} helyen, vagy használja a Gyorsolvasási fedvény jelölőnégyzetét, hogy az előnézet és a gyorsolvasási pozíció együtt maradjon.
 
@@ -56,6 +56,6 @@ Ha ez az opció be van kapcsolva, a gyorsolvasás a dokumentum eleje helyett az 
 
 Ha bezárja a Gyorsolvasást, görgeti az előnézetet, és újra megnyitja az átfedést, a lejátszás az új látható helyről indul. Ha bekapcsolja az átfedés jelölőnégyzetet, miután a Gyorsolvasás már nyitva van, a lejátszás visszaáll az aktuális görgetési pozícióba, és onnan folytatódik.
 
-## Emlékezett sebesség
+## Emlékezett sebesség [remembered-speed]
 
 A WPM értéke automatikusan mentésre kerül, ha a {% kbd ← %} és {% kbd → %} gombokkal módosítja. A kiválasztott sebesség visszaáll a következő alkalommal, amikor a Speed ​​Read funkciót használja.

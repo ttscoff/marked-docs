@@ -2,11 +2,11 @@
 
 [vim-marked][vimrepo] ist ein Vim-Plugin, das den aktuellen Markdown-Puffer in Marked öffnet. Es fügt `:MarkedOpen`, `:MarkedQuit`, `:MarkedToggle` und `:MarkedPreview` hinzu, sodass Sie die Datei (oder einen Bereich) an Marked senden können, ohne den Editor zu verlassen.
 
-## Einrichtung
+## Einrichtung [setup]
 
 Installieren Sie es mit Ihrem Plugin-Manager; siehe [Projekt-README][vimrepo] für `vim-plug` und andere Optionen. Der Standardwert `g:marked_filetypes` umfasst `markdown` und gängige Varianten. Erweitern Sie die Liste, wenn Sie einen benutzerdefinierten `filetype` verwenden.
 
-## macOS und App-Name
+## macOS und App-Name [macos-and-app-name]
 
 Marked ist nur für macOS verfügbar, daher wird das Plugin auf anderen Systemen nicht geladen. Der Standard-App-Name ist **Marked 2**. Wenn Ihre Kopie von Marked unter einem anderen Namen oder Pfad installiert ist, legen Sie `g:marked_app` entsprechend fest (z. B. auf einen vollständigen Pfad zum App-Bundle). Die README-Datei behandelt Beenden, automatisches Beenden und Fokusverhalten.
 

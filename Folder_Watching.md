@@ -4,7 +4,7 @@ Drop a **folder** of plain-text notes onto Marked. Marked opens a preview window
 
 Updates run whenever any watched file saves: if the newest file matches the previous one, Marked scrolls toward the detected edit region; when you switch documents, the entire preview swaps to the active file.
 
-## Works well with nvUltra, nvALT, and similar tools
+## Works well with nvUltra, nvALT, and similar tools [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Notebook apps that leave individual files on disk (classic **nvALT**, **nvUltra**, **Notational Velocity**-style libraries, synced Git folders, Dropbox scratch folders, etc.) pair naturally with folder watching — you write in one window and keep Marked pinned beside it without manually reopening previews.
 

@@ -2,7 +2,7 @@
 
 This page describes how to move around long previews: the [Table of Contents](#table-of-contents), [fast search](#fast-search), [bookmarks](#bookmarks-and-mini-map), and the [Mini Map](#minimap). For scrolling shortcuts that apply everywhere (such as {% kbd j %}/{% kbd k %}), see [Keyboard Navigation](Interface_Features.html#keyboardnavigation) under [Interface Features](Interface_Features.html).
 
-## Table of Contents
+## Table of Contents [table-of-contents]
 
 ![][8]
 
@@ -27,19 +27,19 @@ For a condensed list of keys, see [Keyboard Shortcuts](Keyboard_Shortcuts.html#T
 
 See also the [Document Navigation video on YouTube](https://www.youtube.com/watch?v=Z2p5BvBpbmA&list=PLNoOPRHOBV0ptk_ka386xltm3VyVw6QgZ&index=2).
 
-### Full-screen mode for the Table of Contents
+### Full-screen mode for the Table of Contents [full-screen-mode-for-the-table-of-contents]
 
 When a Marked preview window is full screen, the Table of Contents can stay fixed on the left for constant navigation. It still toggles with {% kbd cmd T %}; clicking outside the TOC often will not dismiss it while in this layout.
 
 In a normal window, click the icon at the bottom of the TOC panel to dock it as a sidebar; click the icon at the top of the sidebar to return it to popup mode.
 
-### Customizing where the TOC appears
+### Customizing where the TOC appears [customizing-where-the-toc-appears]
 
-The Table of Contents can be injected in the exported document using the [special syntax](Special_Syntax.html#tocplacement) `<!--TOC-->`.
+The Table of Contents can be injected in the exported document using the [special syntax](Special_Syntax.html#tableofcontents) `<!--TOC-->`.
 
 Add `max#` (for example `<!--TOC max2-->`) to limit how many heading levels appear.
 
-## Fast search
+## Fast search [fast-search]
 
 **Fast navigation** combines the Table of Contents with the filter focused so you can jump with minimal typing:
 
@@ -53,11 +53,11 @@ Add `max#` (for example `<!--TOC max2-->`) to limit how many heading levels appe
 
 (Earlier docs referred to this as "Fast Switcher"; it is the same feature.)
 
-## Bookmarks and Mini Map {#bookmarks-and-mini-map}
+## Bookmarks and Mini Map [bookmarks-and-mini-map]
 
 Use the {% appmenu Gear %} preview menu and {% kbd Tab %} ({% kbd ⇥ %}) focusing the document alongside [search](Interface_Features.html#search) to place and revisit bookmarks while you skim.
 
-### Setting bookmarks
+### Setting bookmarks [setting-bookmarks]
 
 Set bookmarks on scroll position using {% kbd shift 1 %}--{% kbd shift 9 %} and jump back using {% kbd 1 %}--{% kbd 9 %} alone. Use {% kbd n %} and {% kbd p %} for next/previous in **document order**; {% kbd shift n %} and {% kbd shift p %} for next/previous in **numeric** order.
 
@@ -73,7 +73,7 @@ Press {% kbd x %} twice ({% kbd xx %}) to clear all bookmarks.
 
 There are [more preview shortcuts](Keyboard_Shortcuts.html); press {% kbd h %} in the preview for a heads-up list, or {% kbd opt cmd K %} for the full reference.
 
-### Mini Map {#minimap}
+### Mini Map [minimap]
 
 If the Mini Map is enabled in the {% prefspane Preview %} settings, {% kbd 0 %} opens a scaled thumbnail of the whole document along the bookmarks strip. Click anywhere on the map to scroll the full preview there. Saved bookmarks appear as horizontal lines with numbers (and headings when relevant).
 
@@ -85,6 +85,6 @@ Press {% kbd 0 %} or Escape to close the Mini Map.
 
 **Performance note:** Generating the map can briefly pause the preview on huge documents; this only runs when the map is visible or after a resize.
 
-### Zoom overview (related)
+### Zoom overview (related) [zoom-overview-related]
 
 For a text-scale overview without the Mini Map, see [Zoom Overview](Zoom_Overview.html) ({% kbd z %}).

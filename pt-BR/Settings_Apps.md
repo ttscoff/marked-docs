@@ -10,7 +10,7 @@ Opções em {% prefspane Apps %}:
 
 [1]: images/screenshots/preferences-Apps.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Configurações gerais
+### Configurações gerais [general-settings]
 
 Editor de texto
 : selecione um editor de texto para receber o documento atual ao digitar {% kbd cmd E %}.
@@ -29,7 +29,7 @@ Editor de anotação/marcação de imagem
 
 Se nenhum editor for escolhido, Marcado apresenta um menu de aplicativos instalados quando você edita ou anota. O menu inclui ferramentas comuns de Markdown, imagem e anotação encontradas no seu Mac, uma opção **Outros…** para escolher qualquer aplicativo de `/Applications` e **Sempre usar este aplicativo** (ativado por padrão) para salvar sua escolha como padrão. Use o botão Limpar (círculo com um X) próximo a cada controle Escolher em {% prefspane Apps %} para remover uma seleção e retornar ao seletor.
 
-### Configurações específicas do aplicativo
+### Configurações específicas do aplicativo [application-specific-settings]
 
 Mostrar comentários e anotações por padrão
 : Se marcada, as anotações feitas nos documentos Scrivener, Fountain, Word e CriticMarkup aparecerão destacadas na visualização. Desmarque para ocultar completamente. Eles também podem ser alternados durante a leitura de um documento no menu {% appmenu Gear, Proofing ({{ctrl}}{{cmd}}C)%}.
@@ -45,7 +45,7 @@ Resolver referências de imagem DocC
 Resolver variantes de imagem escura e @2x
 : Para imagens locais com extensão de arquivo (`images/icon.png`), detecte os arquivos complementares `~dark` e `@2x` na mesma pasta e emita a marcação `<picture>` responsiva. Funciona em qualquer documento Markdown ou HTML, não apenas em catálogos DocC. Consulte [Variantes de imagem](Image_Variants.html).
 
-#### Marca de gancho
+#### Marca de gancho [docc]
 
 Resolva URLs hook:// em imagens e links
 : Marked pode ler URLs criados pelo Hookmark, resolvendo-os para seu caminho no disco.
@@ -58,12 +58,12 @@ Habilitar suporte Leanpub
 Habilite o suporte GitBook
 : Interpreta arquivos nomeados `SUMMARY.md` como arquivos de índice para documentação do GitBook.
 
-#### Markdownificador
+#### Markdownificador [hookmark]
 
 Use links embutidos
 : os documentos Markdown criados pelo Markdownifier usarão links embutidos em vez de links de referência.
 
-#### Marte
+#### Marte [leanpubgitbook]
 
 Incluir o título da postagem como cabeçalho Markdown (h1)
 : use o título da postagem selecionada como cabeçalho Markdown.
@@ -71,12 +71,12 @@ Incluir o título da postagem como cabeçalho Markdown (h1)
 Mostrar metadados como tabela
 : Quando ativado, metadados como categorias e títulos serão exibidos como uma tabela Markdown na visualização.
 
-#### Pastas
+#### Pastas [markdownifier]
 
 Visualize apenas essas extensões
 : Ao abrir uma pasta, Marcado procurará o documento alterado mais recentemente, padronizando extensões como `md`, `mmd` e `html`. A lista aqui substitui o padrão.
 
-#### Escriturário
+#### Escriturário [marsedit]
 
 [(Informações sobre suporte do Scrivener)](Scrivener_Support.html)
 
@@ -89,12 +89,12 @@ Adicionar metadados de compilação (título, autor) quando ausentes
 Abra arquivos .scriv no Scrivener quando abertos no Marked
 : quando um documento do Scrivener é aberto no Marked, abra-o automaticamente também no Scrivener.
 
-#### Palavra
+#### Palavra [folders]
 
 Converter controle de alterações <-> CriticMarkup
 : se ativado, o controle de alterações em documentos do Word será convertido em CriticMarkup quando importado, e o CriticMarkup será convertido em controle de alterações do Word ao exportar arquivos DOCX.
 
-#### Mapas Mentais/Esboços {#MindMapsOutlines}
+#### Mapas Mentais/Esboços [scrivener]
 
 Incorporar mapas mentais como sereia
 : cada caixa de seleção controla um formato incluído. Quando **ativado**, o arquivo incluído é convertido em um diagrama de mapa mental Mermaid (layout de árvore organizada). Quando **desativado**, Marcado usa a alternativa para esse formato.

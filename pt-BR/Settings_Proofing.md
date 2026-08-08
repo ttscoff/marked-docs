@@ -26,7 +26,7 @@ Incluir notas de rodapé na barra lateral de comentários
 Velocidade de leitura (ppm)
 : Este número (palavras por minuto) é usado para calcular o tempo de leitura em exibições de estatísticas de texto. A velocidade média de leitura para adultos é de 200 a 300 palavras por minuto.
 
-### Palavras-chave
+### Palavras-chave [keywords]
 
 [Defina listas de palavras-chave a serem destacadas](Keyword_Highlighting.html). Use as guias para editar cada lista:
 

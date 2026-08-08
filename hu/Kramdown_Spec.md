@@ -4,11 +4,11 @@
 
 Tekintse meg a [Markdown Dingus](x-marked-3://dingus?processor=kramdown)-t, hogy kísérletezzen a Kramdown processzorral.
 
-## Mi az a Kramdown?
+## Mi az a Kramdown? [what-is-kramdown]
 
 A Kramdown egy gyors, tiszta Ruby Markdown-szuperset konverter, amely kiterjeszti az eredeti Markdown szintaxist olyan funkciókkal, mint a Maruku, a PHP Markdown Extra és a Pandoc. Szigorú szintaxist biztosít határozott szabályokkal, miközben fenntartja a kompatibilitást a legtöbb Markdown dokumentummal.
 
-## Főbb jellemzők
+## Főbb jellemzők [key-characteristics]
 
 - **Gyors és tiszta Ruby**: Teljesen Ruby nyelven íródott a teljesítmény és a hordozhatóság érdekében
 - **Szigorú szintaxis**: Határozott szabályokat és egyértelmű előírásokat biztosít
@@ -16,9 +16,9 @@ A Kramdown egy gyors, tiszta Ruby Markdown-szuperset konverter, amely kiterjeszt
 - **Jekyll Integration**: Alapértelmezett Markdown processzor a Jekyll statikus helygenerátorhoz
 - **Átfogó**: Támogatja a blokkszintű és a span szintű elemeket is kiterjedt testreszabással
 
-## Főbb különbségek a szabványos leértékeléshez képest
+## Főbb különbségek a szabványos leértékeléshez képest [major-differences-from-standard-markdown]
 
-### 1. **Továbbfejlesztett blokkszintű elemek**
+### 1. **Továbbfejlesztett blokkszintű elemek** [1-enhanced-block-level-elements]
 
 **Definíciós listák**
 
@@ -60,7 +60,7 @@ $$
 $$
 ```
 
-### 2. **Speciális szövegjelölés**
+### 2. **Speciális szövegjelölés** [2-advanced-text-markup]
 
 **Lábjegyzetek**
 
@@ -95,7 +95,7 @@ This uses HTML and CSS.
 Even << guillemets >>
 ```
 
-### 3. **Attribútumlisták és bővítmények**
+### 3. **Attribútumlisták és bővítmények** [3-attribute-lists-and-extensions]
 
 **Attribútumlista-definíciók (ALD-k)**
 
@@ -132,7 +132,7 @@ This text is completely ignored by kramdown.
 {::options key="val" /}
 ```
 
-### 4. **Továbbfejlesztett kódblokk támogatás**
+### 4. **Továbbfejlesztett kódblokk támogatás** [4-enhanced-code-block-support]
 
 **Nyelv specifikáció**
 
@@ -150,7 +150,7 @@ This text is completely ignored by kramdown.
 - A behúzott kódblokkok jobb kezelése
 - Jobb integráció más blokk elemekkel
 
-### 5. **Szigorúbb elemzési szabályok**
+### 5. **Szigorúbb elemzési szabályok** [5-stricter-parsing-rules]
 
 **Vonal burkolása**
 
@@ -169,7 +169,7 @@ This text is completely ignored by kramdown.
 - Egyértelmű szabályok arra vonatkozóan, hogy az elemeknek mikor kell kezdődnie/végeznie a blokkhatárokon
 - Konzisztens viselkedés a különböző elemtípusok között
 
-### 6. **Speciális link- és képtámogatás**
+### 6. **Speciális link- és képtámogatás** [6-advanced-link-and-image-support]
 
 **Automatikus linkek**
 
@@ -190,7 +190,7 @@ This text is completely ignored by kramdown.
 ![Alt text](image.jpg){:width="300" height="200" class="responsive"}
 ```
 
-### 7. **HTML integráció**
+### 7. **HTML integráció** [7-html-integration]
 
 **HTML blokkok**
 
@@ -203,7 +203,7 @@ This text is completely ignored by kramdown.
 - Inline HTML attribútum támogatással
 - Jobb integráció a Markdown szintaxissal
 
-### 8. **Matematikai kifejezések**
+### 8. **Matematikai kifejezések** [8-mathematical-expressions]
 
 **Inline Math**
 
@@ -215,7 +215,7 @@ This text is completely ignored by kramdown.
 - `$$...$$` szintaxis blokk matematikai kifejezésekhez
 - Komplex egyenletek és képletek támogatása
 
-## Kramdown vs egyéb Markdown ízek
+## Kramdown vs egyéb Markdown ízek [kramdown-vs-other-markdown-flavors]
 
 | Funkció | Kramdown | CommonMark (GFM) | GitHub ízesítésű | MultiMarkdown | Standard |
 | ----------------- | -------- | ---------- | ---------------- | ------------- | -------- |
@@ -229,7 +229,7 @@ This text is completely ignored by kramdown.
 | Attribútumlisták | Igen | Nem | Nem | Nem | Nem |
 | Tipográfia | Igen | Nem | Nem | Igen | Nem |
 
-## A Kramdown legfontosabb előnyei
+## A Kramdown legfontosabb előnyei [key-advantages-of-kramdown]
 
 1. **Átfogó szolgáltatáskészlet**: Sok olyan bővítményt tartalmaz, amelyek más megvalósításokban nem találhatók meg
 2. **Jekyll integráció**: Zökkenőmentes integráció a Jekyll statikus helygenerátorral
@@ -239,7 +239,7 @@ This text is completely ignored by kramdown.
 6. **Matematikai támogatás**: A LaTeX matematikai kifejezések beépített támogatása
 7. **Szigorú elemzés**: Világos, egyértelmű elemzési szabályok
 
-## Általános használati esetek
+## Általános használati esetek [common-use-cases]
 
 **Jekyll webhelyek**
 
@@ -261,14 +261,14 @@ This text is completely ignored by kramdown.
 - Bővítmények az egyéni funkciókhoz
 - Attribútumlisták a metaadatokhoz és a stílushoz
 
-## Források
+## Források [resources]
 
 - [Kramdown szintaxis dokumentációja](https://kramdown.gettalong.org/syntax.html)
 - [Kramdown Converter dokumentáció](https://kramdown.gettalong.org/converter.html)
 - [Jekyll integrációs útmutató](https://jekyllrb.com/docs/configuration/markdown/)
 - [Kramdown GitHub Repository](https://github.com/gettalong/kramdown)
 
-## Áttérés a Standard Markdownból
+## Áttérés a Standard Markdownból [migration-from-standard-markdown]
 
 A legtöbb szabványos Markdown dokumentum módosítás nélkül működik a Kramdownnal. A Kramdown szolgáltatásainak kihasználásához:
 
@@ -276,7 +276,7 @@ A legtöbb szabványos Markdown dokumentum módosítás nélkül működik a Kra
 2. **Attribútumlisták használata**: Adjon hozzá azonosítókat, osztályokat és egyéni attribútumokat
 3. **Lábjegyzetek megvalósítása**: A zárójeles hivatkozások konvertálása
 
-## Bevált gyakorlatok
+## Bevált gyakorlatok [best-practices]
 
 1. **Kerülje a lusta szintaxist**: Ne hagyatkozzon a kemény csomagolásra az olvashatóság érdekében
 2. **Attribútumlisták használata**: Használja ki az IAL-t a stílus és a metaadatok létrehozásához

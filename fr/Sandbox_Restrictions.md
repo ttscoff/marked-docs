@@ -2,9 +2,9 @@
 
 La version Mac App Store (MAS) de Marked s'exécute dans un environnement sandbox qui restreint certaines opérations pour des raisons de sécurité. Cela peut affecter certaines fonctionnalités, en particulier lors de l'utilisation de processeurs personnalisés avec des binaires ou scripts externes.
 
-## Restrictions courantes du sandbox
+## Restrictions courantes du sandbox [common-sandbox-restrictions]
 
-### Binaires de la commande Exécuter
+### Binaires de la commande Exécuter [run-command-binaries]
 
 Le problème le plus courant rencontré par les utilisateurs est que les binaires externes ne peuvent pas être exécutés directement dans la version MAS. Cela affecte :
 
@@ -12,9 +12,9 @@ Le problème le plus courant rencontré par les utilisateurs est que les binaire
 - les **scripts personnalisés** qui dépendent de binaires externes
 - les **utilitaires système** qui ne sont pas accessibles depuis le sandbox
 
-### Solutions de contournement
+### Solutions de contournement [workarounds]
 
-#### Copier des binaires dans le bundle de l'application
+#### Copier des binaires dans le bundle de l'application [copying-binaries-to-the-app-bundle]
 
 Si vous devez utiliser des processeurs externes comme Pandoc dans la version MAS, vous pouvez copier le binaire dans le bundle de l'application :
 
@@ -31,7 +31,7 @@ Si vous devez utiliser des processeurs externes comme Pandoc dans la version MAS
 
 **Important** : vous devrez recopier les binaires après chaque mise à jour de l'application, car les mises à jour remplacent l'intégralité du bundle.
 
-#### Utiliser des scripts intégrés
+#### Utiliser des scripts intégrés [using-embedded-scripts]
 
 Plutôt que d'exécuter des commandes externes, vous pouvez utiliser l'action **Exécuter le script intégré** dans les Règles personnalisées. Cela vous permet d'écrire des scripts directement dans l'éditeur de code de Marked, qui peut accéder aux interpréteurs système disponibles dans le sandbox.
 
@@ -39,7 +39,7 @@ Plutôt que d'exécuter des commandes externes, vous pouvez utiliser l'action **
 
 Si vous avez fréquemment besoin d'utiliser des binaires externes ou si vous rencontrez d'autres limitations liées au sandboxing, vous pourriez vouloir passer à la version sans sandbox de Marked. La version sans sandbox n'a aucune de ces restrictions et peut exécuter n'importe quel outil ou script en ligne de commande que vous avez installé.
 
-### Pour les utilisateurs d'abonnement
+### Pour les utilisateurs d'abonnement [for-subscription-users]
 
 Si vous avez un abonnement Mac App Store actif :
 
@@ -49,7 +49,7 @@ Si vous avez un abonnement Mac App Store actif :
 
 La version Paddle offre les mêmes fonctionnalités sans les restrictions liées au sandboxing.
 
-### Pour les détenteurs d'un déverrouillage permanent
+### Pour les détenteurs d'un déverrouillage permanent [for-permanent-unlock-holders]
 
 Si vous avez acheté un déverrouillage permanent ou une licence à vie via le Mac App Store, veuillez [envoyer un e-mail au développeur](mailto:marked@brettterpstra.com?subject=Crossgrade%20de%20licence%20Marked&body=Veuillez%20inclure%20votre%20UUID%20%28Aide-%3ECopier%20l%27UUID%20dans%20Marked%29%20dans%20cet%20e-mail%20pour%20la%20v%C3%A9rification%20du%20re%C3%A7u.) pour demander une licence Paddle gratuite à vie.
 
@@ -60,10 +60,10 @@ Si vous avez acheté un déverrouillage permanent ou une licence à vie via le M
 
 Le Mac App Store ne communique pas votre adresse e-mail aux développeurs, donc nous vérifions les achats à l'aide des ID de transaction ou des identifiants utilisateur stockés sur notre serveur. Inclure ces informations nous aidera à vérifier rapidement votre achat et à générer votre licence Paddle gratuite.
 
-### Version Setapp
+### Version Setapp [setapp-version]
 
 Autrement, si vous avez un abonnement Setapp, vous pouvez utiliser la version Setapp de Marked, qui n'est également pas sandboxée et dispose d'un accès complet aux ressources système.
 
-## Ressources supplémentaires
+## Ressources supplémentaires [additional-resources]
 
 Pour plus d'informations sur les processeurs personnalisés et leurs capacités, voir [Processeur personnalisé](Custom_Processor.html).

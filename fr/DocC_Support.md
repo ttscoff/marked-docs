@@ -4,13 +4,13 @@ Marked comprend les catalogues de documentation [Apple DocC](https://www.swift.o
 
 Pour les documents Markdown normaux qui utilisent des **chemins avec des extensions de fichier** (`images/icon.png`), voir [Variantes d'images](Image_Variants.html). Cette fonctionnalité fonctionne partout ; la résolution DocC est spécifique au catalogue.
 
-## Activation de la résolution DocC
+## Activation de la résolution DocC [enabling-docc-resolution]
 
 Dans {% prefspane Apps %}, activez **Résoudre les références d'image DocC** (activé par défaut).
 
 La détection DocC s'exécute lorsque Marked trouve un ancêtre de catalogue `.docc` du document ouvert. Aucun schéma d'URL spécial ni intégration Xcode n'est requis : ouvrez le Markdown du catalogue de la même manière que n'importe quel autre fichier.
 
-## Références sans extension
+## Références sans extension [extensionless-references]
 
 Dans un catalogue DocC, les auteurs référencent généralement des images **sans chemin ni extension** :
 
@@ -22,7 +22,7 @@ Marked résout `OrderStateTransitions` en `Resources/OrderStateTransitions.png` 
 
 Les références qui incluent déjà un chemin et une extension (`images/chart.png`) sont laissées à [Variantes d'image](Image_Variants.html) et ne sont pas réécrites par la résolution DocC.
 
-## Mode sombre et variantes Retina
+## Mode sombre et variantes Retina [dark-mode-and-retina-variants]
 
 Les catalogues DocC contiennent souvent plusieurs fichiers par image :
 
@@ -35,7 +35,7 @@ Les catalogues DocC contiennent souvent plusieurs fichiers par image :
 
 Lorsqu'il existe plusieurs variantes, Marked émet le même balisage réactif `<picture>` décrit dans [Variantes d'image](Image_Variants.html). Une référence à un seul fichier se résout toujours en un chemin normal `<img>` ou `![](Resources/...)`.
 
-## HTML et Markdown
+## HTML et Markdown [html-and-markdown]
 
 La résolution DocC s'applique lors de la passe d'inclusion de Marked :
 
@@ -44,11 +44,11 @@ La résolution DocC s'applique lors de la passe d'inclusion de Marked :
 
 Les deux sont mis à jour avant le rendu de l'aperçu.
 
-## Surveillance de fichiers
+## Surveillance de fichiers [file-watching]
 
 Les images résolues dans le dossier du catalogue `Resources` sont ajoutées à la liste de surveillance de Marked. La modification d'un fichier de variantes en externe met à jour l'aperçu sans actualisation manuelle.
 
-## Sujets connexes
+## Sujets connexes [related-topics]
 
 - [Variantes d'image](Image_Variants.html) : détection des chemins `~dark` et `@2x` basés sur les extensions dans n'importe quel projet
 - [Xcode Playgrounds](Xcode_Playgrounds.html) : aperçu des commentaires Swift Playgrounds

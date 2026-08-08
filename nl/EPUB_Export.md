@@ -4,7 +4,7 @@ Marked exporteert volledig compatibele EPUB-bestanden vanuit uw Markdown-voorbee
 
 De typische workflow is **eerst een voorbeeld bekijken, EPUB seconde** exporteren: open of compileer uw document in Marked, kies een thema, proeflezen in de live preview en exporteer vervolgens wanneer het boek klaar is.
 
-## Een EPUB exporteren
+## Een EPUB exporteren [exporting-an-epub]
 
 Open de [Export Panel](Exporting.html#drawer) ({% kbd shift cmd e %}) of gebruik **Opslaan als** in het tandwielmenu en kies **EPUB**.
 
@@ -19,7 +19,7 @@ Marked sluit lokale afbeeldingen in de EPUB in en kan afbeeldingen op afstand do
 
 Zie [Export Profiles](Exporting.html#export-profiles) om EPUB metadata op te slaan en instellingen te exporteren voor herhaald gebruik.
 
-## Styling met ingebouwde thema's
+## Styling met ingebouwde thema's [styling-with-built-in-themes]
 
 De **voorbeeldstijl** die voor uw document is geselecteerd, bepaalt de weergave EPUB. Elk ingebouwd Marked thema --- Zwitsers, GitHub, Manuscript en de rest --- kan worden toegepast op EPUB export.
 
@@ -31,7 +31,7 @@ Marked past ook exportspecifieke CSS toe bovenop uw voorbeeldthema, zodat elemen
 
 I> EPUB lezers negeren bepaalde web-only CSS (vaste positionering, viewport-trucs, enz.). Wat u ziet in de preview van Marked is het doel, maar de layout-engines van e-readers kunnen de spatiëring en lettertypen vereenvoudigen. Test het in Apple Books of uw doellezer voordat u het publiceert.
 
-## Styling met aangepaste thema's
+## Styling met aangepaste thema's [styling-with-custom-themes]
 
 [Custom Styles](Custom_Styles.html) werkt op dezelfde manier voor EPUB als voor preview en PDF:
 
@@ -48,11 +48,11 @@ Tips voor EPUB-vriendelijke aangepaste CSS:
 
 Voor richtlijnen bij het schrijven, zie [Creating Custom CSS](Writing_Custom_CSS.html).
 
-## Syntaxisaccentuering en wiskunde
+## Syntaxisaccentuering en wiskunde [syntax-highlighting-and-math]
 
 Als **Inclusief syntaxisaccentuering in export** is ingeschakeld in {% prefspane Export %}, blokkeert code de export met dezelfde syntaxiskleuren als uw voorbeeld. Wiskunde weergegeven met [MathJax](MathJax.html) is opgenomen in de EPUB, zoals van toepassing voor ondersteuning van e-readers.
 
-## Metagegevens in uw bronbestand
+## Metagegevens in uw bronbestand [metadata-in-your-source-file]
 
 U kunt EPUB metadata instellen in het document in plaats van in het opslagdialoogvenster. Gebruik toetsen in MultiMarkdown-stijl bovenaan een Markdown-bestand (of op een Scrivener-metagegevenspagina):
 
@@ -64,29 +64,29 @@ cover image: path/to/image.jpg
 
 `cover image` accepteert een pad relatief aan het document of een absoluut pad. PNG en JPG worden ondersteund. Dialoogwaarden overschrijven of vullen ontbrekende metagegevens in tijdens het exporteren.
 
-## Boeken met meerdere bestanden
+## Boeken met meerdere bestanden [multi-file-books]
 
 Voor lange werken compileert u hoofdstukken met [Multi-File Documents](Multi-File_Documents.html) --- indexbestanden, Scrivener exports, Leanpub `Book.txt` of indexen in GitBook-stijl. Marked bekijkt de meegeleverde bestanden, bekijkt een voorbeeld van het volledige boek en exporteert één EPUB uit de gecompileerde HTML.
 
 Koppen in het gecompileerde document worden de EPUB [table of contents](Document_Navigation.html) voor navigatie in Apple Books en andere lezers.
 
-## Lezen en publiceren
+## Lezen en publiceren [reading-and-publishing]
 
 Geëxporteerde EPUBs worden rechtstreeks geopend in **Apple Books** (dubbelklik op het bestand of gebruik **Bestand → Toevoegen aan bibliotheek**). Ze werken ook in Kobo, Thorium, Calibre en de meeste EPUB 3-compatibele apps.
 
-### Apple-boeken
+### Apple-boeken [apple-books]
 
 Sleep een geëxporteerde `.epub` naar de Boeken-app of voeg deze toe via **Bestand → Importeren**. Custom typografie en albumhoezen uit uw Marked thema worden doorgevoerd. Gebruik Apple Books op Mac, iPad of iPhone om de lay-out te verifiëren voordat u deze deelt.
 
-### Kindle Direct Publishing (KDP)
+### Kindle Direct Publishing (KDP) [kindle-direct-publishing-kdp]
 
-EPUB is een geaccepteerd uploadformaat voor [Kindle Direct Publishing](https://kdp.amazon.com/). Exporteer vanuit Marked en upload het bestand `.epub`; Amazon converteert het voor Kindle-bezorging. KDP accepteert ook [DOCX](Working_with_DOCX.html). Zie Amazon's [supported eBook formats](https://kdp.amazon.com/en_US/help/topic/G200634390) voor de huidige vereisten.
+EPUB is een geaccepteerd uploadformaat voor [Kindle Direct Publishing](https://kdp.amazon.com/). Exporteer vanuit Marked en upload het bestand `.epub`; Amazon converteert het voor Kindle-bezorging. KDP accepteert ook [DOCX](Working_With_DOCX.html). Zie Amazon's [supported eBook formats](https://kdp.amazon.com/en_US/help/topic/G200634390) voor de huidige vereisten.
 
 **MOBI is niet vereist** voor nieuwe KDP-titels. Marked exporteert MOBI niet.
 
 Optioneel: bekijk een voorbeeld van de Kindle-indeling met de gratis [Kindle Previewer](https://kdp.amazon.com/help/topic/G202131170) van Amazon voordat je uploadt.
 
-## Verwant
+## Verwant [related]
 
 * [HTML Export](HTML_Export.html) --- standalone HTML met ingebedde stijlen en afbeeldingen
 * [Exporting](Exporting.html) --- exportpaneel, profielen en andere formaten

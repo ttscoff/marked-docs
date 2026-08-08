@@ -6,7 +6,7 @@ Options du panneau de préférences {% prefspane Style %} :
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
-### Mise en page et typographie
+### Mise en page et typographie [layout-and-typography]
 
 Limiter la largeur du texte dans l'aperçu
 : Définissez une largeur maximale pour le corps de l'aperçu à l'aide du curseur (en pixels).
@@ -41,7 +41,7 @@ Toujours retourner le code à la ligne
 Détecter et styliser le texte RTL
 : Détecte la langue de chaque élément du document et applique le style droite à gauche en conséquence.
 
-### Thème
+### Thème [theme]
 
 Gérer les styles
 : Ouvre la fenêtre du [Gestionnaire de styles](Style_Manager.html). Ajoutez des fichiers CSS depuis votre disque pour qu'ils apparaissent dans les menus du sélecteur de style. Utilisez le bouton `Ajouter un nouveau style` ou glissez des fichiers CSS dans cette fenêtre. Glissez pour réorganiser, et utilisez les cases à cocher pour activer ou désactiver les styles.
@@ -59,7 +59,7 @@ CSS supplémentaire
 : Le CSS ajouté ici sera inclus après la feuille de style normale, avec tous les thèmes. Vous pouvez notamment vous en servir pour remplacer des réglages de façon globale sans modifier les styles internes.
 : Ceci s'applique à tous les documents et à tous les styles. Si vous souhaitez appliquer du CSS personnalisé à des documents selon certaines conditions, utilisez les Règles personnalisées dans {% prefspane Processor %}.
 
-### Inclure des scripts
+### Inclure des scripts [include-scripts]
 
 Coloration syntaxique
 : Active la [coloration syntaxique](Syntax_Highlighting.html) highlight.js pour les blocs de code. Sélectionnez un thème dans le menu déroulant.
@@ -71,7 +71,7 @@ Activer MathJax
 : **Configuration avancée** ouvre une feuille pour une configuration MathJax personnalisée.
 
 Activer KaTeX
-: Charge [KaTeX](Mathjax.html#katex) comme alternative à MathJax. Un seul des deux peut être sélectionné à la fois.
+: Charge [KaTeX](MathJax.html#katex) comme alternative à MathJax. Un seul des deux peut être sélectionné à la fois.
 
 Numéroter les équations
 : Le cas échéant, Marked ajoutera des numéros de figure aux équations rendues. Choisissez **Côté gauche** ou **Côté droit** pour la numérotation. Avec MathJax, vous pouvez choisir **AMS uniquement** pour ne numéroter que les équations AMS.

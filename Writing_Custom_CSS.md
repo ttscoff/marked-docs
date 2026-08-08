@@ -4,7 +4,7 @@ Marked has a built-in style editor, and can apply custom CSS files.
 
 You can use the editor to create beautiful styles, or if you know just enough CSS to be dangerous, you can make Marked look however you like.
 
-## Getting started
+## Getting started [getting-started]
 
 There"s a gallery of Custom Styles created by the developer and by users at [markedapp.com/styles](https://markedapp.com/styles/). The gallery allows you to preview and install Styles directly in Marked. Any installed Style can be revealed in Finder for examination and modification. The gallery can be opened using an internal viewer with {% appmenu Style, Generate a Custom Style %}, or click the pencil (edit) icon next to any editable style in the Style Manager. If you want to edit a built-in style, you'll first need to duplicate it in the manager.
 
@@ -18,11 +18,11 @@ If you're designing for personal use, there are no rules. Turn on CSS tracking w
 
 If you're planning to share your CSS creation, there are a few points you need to cover. First, there are some body classes that need to have styles applied:
 
-## Body classes
+## Body classes [body-classes]
 
 The following styles must be included in any Marked CSS to be shared. The body classes allow you to target and modify any selector under different preference options.
 
-### Inverted
+### Inverted [inverted]
 
  When the user selects {% appmenu Preview, Dark Mode %}, a class of "inverted" is added to the body tag. You can use this to target the high-contrast, light on dark styles.
 
@@ -44,7 +44,7 @@ You only want inverted styles to apply to the preview, not to print, so use a me
 }
 ```
 
-### Poetry
+### Poetry [poetry]
 
 The user can choose whether tab-indented text is poetry or code. The only difference is that pre/code blocks are styled more, um, poetically if poetry mode is chosen. The "poetry" class is applied to the body tag.
 
@@ -61,7 +61,7 @@ Get as creative as you like with the formatting, but here's a basic snippet:
 }
 ```
 
-## Special cases
+## Special cases [special-cases]
 
 Tables, Figure/Figcaption, and the special case of `a.footnote` and `div.footnotes>a` also need to be considered. There are no set rules on how you handle them, but take a look at the default styles to get an idea what CSS rules Marked needs.
 
@@ -93,11 +93,11 @@ It's also a good idea to include a general rule for all images to keep them with
 
 If your theme has additional padding or a fixed width, modify the max-width to fit.
 
-## Print styles
+## Print styles [printstyles]
 
 Be sure to include print styles that remove any background colors, fixed scrolling, and preview-only UI. Marked gives you two ways to target print and PDF output.
 
-### `@media print`
+### `@media print` [media-print]
 
 Standard CSS print rules apply when printing from Marked or when PDF export uses print media:
 
@@ -108,7 +108,7 @@ Standard CSS print rules apply when printing from Marked or when PDF export uses
 }
 ```
 
-### The `.mkprinting` class
+### The `.mkprinting` class [the-mkprinting-class]
 
 When Marked prepares a document for **PDF export** or **Print/PDF Preview** ({% kbd cmd P %}), it adds the class `mkprinting` to the `<body>` tag (alongside export classes such as `bandw`, `breakAfterTOC`, and your style's `mkstyle--*` class). Marked's built-in themes use this class for most print-specific rules instead of relying on `@media print` alone.
 
@@ -152,17 +152,17 @@ Link-hiding in print is handled outside of the main theme, allowing users to cho
 
 So, have at it. Convert your blog theme, create a killer print style for PDF documents, or craft the perfect preview for the style of writing you do. If you make something awesome, [share it with the community](https://markedapp.com/styleshare/).
 
-## Additional CSS Settings
+## Additional CSS Settings [additional-css-settings]
 
 In the {% prefspane Style %}, you can edit additional CSS. These styles will be appended to any theme loaded, and can be used to make universal changes to all themes.
 
 Using [high specificity](#overridingspecificity), `@media` queries for print and screen, and `.mkprinting` selectors for PDF export, you can control just about every styling aspect with a bit of CSS knowledge.
 
-## WebKit Inspector
+## WebKit Inspector [webkitinspector]
 
 Safari's Web Inspector is the easiest way to see exactly what HTML and CSS Marked is generating, and to experiment with Custom Styles live.
 
-### Enabling the Develop menu in Safari
+### Enabling the Develop menu in Safari [enabling-the-develop-menu-in-safari]
 
 1. Open Safari and choose {% appmenu Safari, Settings… %}.
 2. Select the **Advanced** tab.
@@ -172,7 +172,7 @@ Once enabled, a **Develop** menu will appear in Safari's menu bar.
 
 ![Safari Develop menu showing Marked documents][develop-menu]
 
-### Inspecting a Marked document
+### Inspecting a Marked document [inspecting-a-marked-document]
 
 1. With a preview window open in Marked, switch to Safari.
 2. From the menu bar, choose **Develop → _\<your Mac name\>_ → Marked → _\<document title\>_**.
@@ -191,21 +191,21 @@ From here you can:
 
 ![Inspecting a Marked preview with Safari Web Inspector][inspecting]
 
-## Sharing Custom CSS
+## Sharing Custom CSS [sharing-custom-css]
 
 Use {% appmenu Style, Share a Custom Style %} to open the sharing app in your web browser. Drag your CSS to the drop zone (or click to select from disk) and upload the CSS for your Custom Style.
 
 Shared styles have to be approved by the developer before to they show up in the gallery, so you won't see immediate results.
 
-## Other tips
+## Other tips [other-tips]
 
-### Overriding specificity
+### Overriding specificity [overridingspecificity]
 
 Within the Marked preview, a body class based on the filename of the current style is added. If the preview is set to "Swiss", then there will be a class on the `<body>` tag called `mkstyle--swiss`. If your custom CSS is called MyCustom.css, then the body class will be `mkstyle--mycustom`. You can use this before rules defined in the base styles to override them. To get absolute specificity in a rule, use the #wrapper ID from the container div as well:
 
 	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Table of contents styling
+### Table of contents styling [table-of-contents-styling]
 
 If you use the `<!--toc-->` token to [insert a table of contents](Special_Syntax.html#tableofcontents), you can override the settings for Table of Contents level indicators in a Custom Style using the "#wrapper" to increase specificity:
 

@@ -1,0 +1,35 @@
+# Marked Gear Menu Localization
+# Locale: es (Spanish)
+# Generated: 2026-07-18
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in the empty string on each line: "key" = "your translation";
+# Keep ObjectID keys unchanged (e.g. 100335.title).
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, CriticMarkup, Fountain, etc.)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are machine translations for reference; edit before returning.
+#
+# Strings already translated in MarkdownDocument.strings, or matching an
+# existing MainMenu / PreviewContextMenu phrase translation, were omitted.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   Already translated / keep-English: 67
+#   Filled from MainMenu/PreviewContextMenu xref: 0
+#   MarkdownDocument.strings (gear gaps): 1
+
+=== BEGIN MarkdownDocument.strings (gear gaps) ===
+# Strings in this section: 1
+# Gear (Extras) popup titles still English or absent in Marked/es.lproj/MarkdownDocument.strings after cross-ref against MainMenu / MainMenuMAS / MainMenuSetapp / PreviewContextMenu. Translate in place; merge updates MarkdownDocument.strings.
+
+"VPx-Ei-Qh9.title" = "";
+# EN: Decimal
+
+
+=== END MarkdownDocument.strings (gear gaps) ===

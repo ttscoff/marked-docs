@@ -4,7 +4,7 @@
 
 Un pannello mobile con un foglietto illustrativo di scelta rapida è disponibile dal menu Aiuto o premendo {{opt}}{{cmd}}K.
 
-### Scorciatoie
+### Scorciatoie [shortcuts]
 
 |                     Scorciatoia | Funzione |
 | ----------------------------: | :--------------------------------- |
@@ -57,7 +57,7 @@ Un pannello mobile con un foglietto illustrativo di scelta rapida è disponibile
 
 
 
-### Commutatori rapidi
+### Commutatori rapidi [quick-toggles]
 
 Scorciatoie da tastiera aggiuntive per attivare/disattivare le impostazioni globali comuni.
 
@@ -73,7 +73,7 @@ Scorciatoie da tastiera aggiuntive per attivare/disattivare le impostazioni glob
 | **{{ctrl}}{{opt}}{{shift}}H** | Processo all'interno dell'HTML |
 [Commutazioni rapide]
 
-### Navigazione in anteprima
+### Navigazione in anteprima [previewnavigation]
 
 Premere "?" in qualsiasi momento per visualizzare i seguenti collegamenti nella finestra Anteprima.
 
@@ -106,7 +106,7 @@ Premere "?" in qualsiasi momento per visualizzare i seguenti collegamenti nella 
 |        **{{shift}}{{cmd}}F** | Vista focalizzata |
 [Navigazione in anteprima]
 
-### Navigazione del sommario
+### Navigazione del sommario [TableofContentsNavigation]
 
 Quando il sommario è aperto, è possibile navigare tramite tastiera.
 

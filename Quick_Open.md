@@ -2,7 +2,7 @@
 
 Quick Open provides fast access to your open documents and recent files.
 
-## Opening Quick Open
+## Opening Quick Open [opening-quick-open]
 
 Access the Quick Open panel using {% kbd shift cmd O %} or from the {% appmenu File, Quick Open %} menu. The panel appears as a floating window above your current document, allowing you to quickly switch between open documents or open recent files.
 
@@ -10,11 +10,11 @@ Access the Quick Open panel using {% kbd shift cmd O %} or from the {% appmenu F
 
 [qo]: images/quick-open-800.jpg @2x width=800
 
-## Document Sections
+## Document Sections [document-sections]
 
 The Quick Open panel organizes documents into clear sections:
 
-### Open Documents
+### Open Documents [open-documents]
 
 At the top of the list, you'll see all currently open documents. Documents are visually grouped by their window:
 
@@ -26,7 +26,7 @@ Each open document displays:
 - The window grouping information as the subtitle
 - A document icon
 
-### Recent Documents
+### Recent Documents [recent-documents]
 
 Below the open documents, a "Recent Documents" separator divides the list. The recent documents section shows up to 10 of your most recently opened files that are not currently open. Each recent document displays:
 
@@ -34,7 +34,7 @@ Below the open documents, a "Recent Documents" separator divides the list. The r
 - "Recent" as the subtitle
 - A document icon
 
-### Open Other
+### Open Other [open-other]
 
 At the bottom of the list, the "Open Other..." option allows you to open the standard macOS file picker to select any file. This option displays:
 
@@ -42,7 +42,7 @@ At the bottom of the list, the "Open Other..." option allows you to open the sta
 - "Open a file or folder" as the subtitle
 - A folder icon
 
-## Search and Filter
+## Search and Filter [search-and-filter]
 
 Type in the search field at the top of the panel to filter the list in real-time. The search matches against:
 
@@ -51,7 +51,7 @@ Type in the search field at the top of the panel to filter the list in real-time
 
 As you type, the list updates immediately to show only matching documents. The "Open Other..." option always remains visible at the bottom of filtered results.
 
-## Keyboard Navigation
+## Keyboard Navigation [keyboard-navigation]
 
 Navigate the Quick Open panel entirely with your keyboard:
 
@@ -60,13 +60,13 @@ Navigate the Quick Open panel entirely with your keyboard:
 - **Escape**: Close the Quick Open panel
 - **Command (⌘)**: Hold to reveal file paths (see below)
 
-## Viewing File Paths
+## Viewing File Paths [viewing-file-paths]
 
 Hold down the **Command (⌘)** key while the Quick Open panel is open to see the full file path for each document in the subtitle area. Paths in your home directory are displayed using the `~` shorthand (e.g., `~/Documents/file.md`). Release the Command key to return to the normal view showing window grouping or "Recent" information.
 
 This is particularly useful when you have multiple files with the same name open, or when you need to verify the exact location of a document.
 
-## Opening Documents
+## Opening Documents [opening-documents]
 
 - **Open Documents**: Selecting an open document brings its window to the foreground and switches to that document's tab if it's in a tabbed window
 - **Recent Documents**: Selecting a recent document opens it in a new window or adds it as a tab (depending on your "Open documents in tabs" preference in {% prefspane General %})

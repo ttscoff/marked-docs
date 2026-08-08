@@ -2,11 +2,11 @@
 
 Check out the [Markdown Dingus](x-marked-3://dingus?processor=multimarkdown) to experiment with the MultiMarkdown processor.
 
-## What is MultiMarkdown?
+## What is MultiMarkdown? [what-is-multimarkdown]
 
 MultiMarkdown is an extended Markdown processor designed to work with complete documents rather than just web page fragments. It extends the original Markdown syntax with features that enable conversion to multiple output formats including HTML, LaTeX, PDF, ODF, and Microsoft Word documents.
 
-## Key Characteristics
+## Key Characteristics [key-characteristics]
 
 - **Document-Focused**: Designed for complete documents, not just web snippets
 - **Multi-Format Output**: Converts to HTML, LaTeX, PDF, ODF, RTF, and Word
@@ -15,15 +15,15 @@ MultiMarkdown is an extended Markdown processor designed to work with complete d
 - **Extensible**: Rich feature set for complex document requirements
 - **Version 5**: Complete rewrite with improved performance and reliability
 
-## Philosophy and Design Goals
+## Philosophy and Design Goals [philosophy-and-design-goals]
 
 MultiMarkdown follows the principle that **content is more important than presentation**. The focus is on representing the meaning of documents (this is a list, that is a table, etc.) rather than dictating fonts, colors, or styling.
 
 The goal is to be usable for 80% of the documents that 80% of people write, making it suitable for novels, theses, technical documentation, and most other written content.
 
-## Major Features and Extensions
+## Major Features and Extensions [major-features-and-extensions]
 
-### 1. **Metadata Support**
+### 1. **Metadata Support** [1-metadata-support]
 
 - Document metadata at the top of files
 - Title, author, date, and custom variables
@@ -54,7 +54,7 @@ Author: [%author]
 Date: [%date]
 ```
 
-### 2. **Advanced Tables**
+### 2. **Advanced Tables** [2-advanced-tables]
 
 **Full Table Support**
 
@@ -78,7 +78,7 @@ Table: Sample Table with Alignment
 - Cross-references with `[Table 1]`
 - Support for complex table structures
 
-### 3. **Footnotes and Citations**
+### 3. **Footnotes and Citations** [3-footnotes-and-citations]
 
 **Footnotes**
 
@@ -121,7 +121,7 @@ source[][#Doe:2006].
 
 There are no rules on the citation key format that you use (e.g. Doe:2006), but it must be preceded by a `#`, just like footnotes use `^`.
 
-### 4. **Cross-References**
+### 4. **Cross-References** [4-cross-references]
 
 **Automatic Cross-References**
 
@@ -133,7 +133,7 @@ There are no rules on the citation key format that you use (e.g. Doe:2006), but 
 See [Table 1] for details.
 Refer to [Section 2.1] for more information.
 
-## Section 2.1 [section-2-1]
+## Section 2.1
 ```
 
 **Reference Types**
@@ -143,7 +143,7 @@ Refer to [Section 2.1] for more information.
 - Figures: `[Figure 1]`, `[Figure: Caption]`
 - Equations: `[Equation 1]`
 
-### 5. **Definition Lists**
+### 5. **Definition Lists** [5-definition-lists]
 
 **Term-Definition Pairs**
 
@@ -160,7 +160,7 @@ Term 2
 : Definition 2b
 ```
 
-### 6. **Fenced Code Blocks**
+### 6. **Fenced Code Blocks** [6-fenced-code-blocks]
 
 **Language-Specific Code Blocks**
 
@@ -181,7 +181,7 @@ def hello():
 - Support for many programming languages
 - Proper HTML `<pre><code>` output
 
-### 7. **Math Support**
+### 7. **Math Support** [7-math-support]
 
 **Mathematical Expressions**
 
@@ -199,7 +199,7 @@ $$
 $$
 ```
 
-### 8. **Image and Link Attributes**
+### 8. **Image and Link Attributes** [8-image-and-link-attributes]
 
 **Enhanced Links and Images**
 
@@ -211,7 +211,7 @@ $$
 [Link text]: url.html title="Link title" class="external"
 ```
 
-### 9. **Transclusion**
+### 9. **Transclusion** [9-transclusion]
 
 **File Inclusion**
 
@@ -231,7 +231,7 @@ $$
 - Nested transclusion support
 - Manifest generation for included files
 
-### 10. **CriticMarkup Integration**
+### 10. **CriticMarkup Integration** [10-criticmarkup-integration]
 
 **Change Tracking**
 
@@ -245,7 +245,7 @@ This is {>>deleted text<<} and this is {++added text++}.
 This is a {~~deletion~>replacement~~}.
 ```
 
-### 11. **Table of Contents**
+### 11. **Table of Contents** [11-table-of-contents]
 
 **Automatic TOC Generation**
 
@@ -265,7 +265,7 @@ Content here...
 More content...
 ```
 
-### 12. **Abbreviations**
+### 12. **Abbreviations** [12-abbreviations]
 
 **HTML-Style Abbreviations**
 
@@ -280,7 +280,7 @@ More content...
 This uses HTML and CSS.
 ```
 
-## MultiMarkdown v5 vs Other Markdown Flavors
+## MultiMarkdown v5 vs Other Markdown Flavors [multimarkdown-v5-vs-other-markdown-flavors]
 
 | Feature          | MultiMarkdown v5 | CommonMark (GFM) | Discount | Kramdown | Standard |
 | ---------------- | ---------------- | ---------- | ------------ | -------- | -------- |
@@ -301,7 +301,7 @@ This uses HTML and CSS.
 | Transclusion     | Yes              | No         | No           | No       | No       |
 | Metadata         | Yes              | No         | No           | No       | No       |
 
-## Key Advantages of MultiMarkdown v5
+## Key Advantages of MultiMarkdown v5 [key-advantages-of-multimarkdown-v5]
 
 1. **Document-Focused**: Designed for complete documents, not just web snippets
 2. **Multi-Format Output**: Convert to HTML, LaTeX, PDF, ODF, RTF, and Word
@@ -311,7 +311,7 @@ This uses HTML and CSS.
 6. **Future-Proof**: Plain text format ensures long-term compatibility
 7. **Extensible**: Rich feature set for complex document requirements
 
-## Common Use Cases
+## Common Use Cases [common-use-cases]
 
 **Academic Writing**
 
@@ -337,7 +337,7 @@ This uses HTML and CSS.
 - Knowledge bases and wikis
 - Collaborative writing projects
 
-## Best Practices
+## Best Practices [best-practices]
 
 1. **Use Metadata**: Leverage YAML front matter for document information
 2. **Structure with Headings**: Use proper heading hierarchy for TOC generation
@@ -346,7 +346,7 @@ This uses HTML and CSS.
 5. **Test Output**: Verify formatting across different output formats
 6. **Use Citations**: Implement proper academic citation practices
 
-## Migration from Other Markdown Flavors
+## Migration from Other Markdown Flavors [migration-from-other-markdown-flavors]
 
 Most standard Markdown works with MultiMarkdown without changes. To take advantage of MMD features:
 
@@ -356,7 +356,7 @@ Most standard Markdown works with MultiMarkdown without changes. To take advanta
 4. **Structure with Transclusion**: Break large documents into smaller files
 5. **Leverage Tables**: Use advanced table features for data presentation
 
-## Resources
+## Resources [resources]
 
 - [MultiMarkdown User's Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html)
 - [MultiMarkdown Syntax Guide](https://fletcher.github.io/MultiMarkdown-5/MMD_Users_Guide.html#syntax)

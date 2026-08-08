@@ -2,7 +2,7 @@
 
 Marked is gebouwd met veel hulp van de open source-gemeenschap. Op deze pagina vindt u code van derden die binnen Marked wordt verzonden. De volledige licentietekst voor de Markdown processors is beschikbaar op de gelinkte pagina's in [About Markdown](MultiMarkdown_Information.html).
 
-## Markdown processors en conversie
+## Markdown processors en conversie [markdown-processors-and-conversion]
 
 | Onderdeel | Auteurs | Licentie | Gebruikt voor |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Marked is gebouwd met veel hulp van de open source-gemeenschap. Op deze pagina v
 | [Kramdown](Kramdown_License.html) | [Carsten Bormann](https://github.com/gettalong) | MIT | Kramdown-processoroptie (gebundeld Ruby) |
 | [pdf22md](PDF22MD_License.html) | [Adam Twardoch](https://github.com/twardoch) | MIT | PDF naar Markdown importeren |
 
-## Native code en frameworks
+## Native code en frameworks [native-code-and-frameworks]
 
 | Onderdeel | Auteurs | Licentie | Gebruikt voor |
 | --- | --- | --- | --- |
@@ -35,7 +35,7 @@ Marked is gebouwd met veel hulp van de open source-gemeenschap. Op deze pagina v
 | [DJProgressHUD](https://github.com/DanielJackson-DJ/DJProgressHUD) | Daniël Jackson | Zie project | Voortgangsindicatoren |
 | [IAPManager](https://github.com/mruegenberg/IAPManager) | Marcel Rügenberg | Zie project | Helpers voor in-app-aankopen (verouderd) |
 
-## Voorbeeld van JavaScript
+## Voorbeeld van JavaScript [preview-javascript]
 
 Deze bibliotheken zijn samengevoegd in de previewbundel van Marked (`marked.min.js` en gerelateerde bronnen):
 
@@ -57,7 +57,7 @@ Deze bibliotheken zijn samengevoegd in de previewbundel van Marked (`marked.min.
 | [viewport.js](https://github.com/tuupola/jquery_viewport) | Mika Tuupola | MIT | Viewport-detectie |
 | [wordhighlight.js](https://github.com/bartaz/sandbox.js) | Bartek Szopka | MIT | Zoeken in documenten accentueren |
 
-## Lokalisatie
+## Lokalisatie [localization]
 
 Marked is beschikbaar in meerdere talen dankzij vrijwillige vertalers:
 
@@ -75,6 +75,6 @@ Marked is beschikbaar in meerdere talen dankzij vrijwillige vertalers:
 - Yuki Tamari
 - 亮王
 
-## Dankbetuigingen
+## Dankbetuigingen [acknowledgments]
 
 Dank ook aan Daniel Jalkut voor de jarenlange begeleiding, en aan Felippe van Eekhout voor het Marked icoon.

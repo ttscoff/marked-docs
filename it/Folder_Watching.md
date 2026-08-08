@@ -6,7 +6,7 @@ Rilascia una **cartella** di note di testo normale su Marked. Marked apre una fi
 
 Gli aggiornamenti vengono eseguiti ogni volta che viene salvato un file controllato: se il file più recente corrisponde a quello precedente, Marked scorre verso l'area di modifica rilevata; quando cambi documento, l'intera anteprima passa al file attivo.
 
-## Funziona bene con nvUltra, nvALT e strumenti simili
+## Funziona bene con nvUltra, nvALT e strumenti simili [works-well-with-nvultra-nvalt-and-similar-tools]
 
 Le app per notebook che lasciano singoli file sul disco (classiche **nvALT**, **nvUltra**, librerie in stile **Notational Velocity**, cartelle Git sincronizzate, cartelle scratch di Dropbox, ecc.) si accoppiano naturalmente con la visualizzazione delle cartelle: scrivi in una finestra e mantieni Marked bloccato accanto ad essa senza riaprire manualmente le anteprime.
 

@@ -10,7 +10,7 @@ A {% prefspane Export %} opciói:
 
 [1]: images/screenshots/preferences-Export.jpg @2x width=920px height=1031px class=preferencepane-scroll
 
-### Profil exportálása
+### Profil exportálása [export-profile]
 
 Profil exportálása
 : Válasszon ki egy mentett profilt a felugró menüből. A profilok az exportálási beállítások teljes készletét tárolják a munkafolyamatok közötti gyors váltáshoz (például a nyomtatott PDF vagy a webes HTML). Lásd: [Profilok exportálása](Exporting.html#export-profiles).
@@ -21,7 +21,7 @@ Profil exportálása
 Kezelése
 : Nyissa meg a profilkezelőt a profilok átnevezéséhez, másolásához vagy törléséhez.
 
-### Nyomtatás/PDF
+### Nyomtatás/PDF [printpdf]
 
 A hivatkozások/kiemelések letiltása PDF exportálásakor vagy nyomtatáskor
 : Nyomtatáskor eltávolítja a formázást (aláhúzás és színes) a hivatkozásokról.
@@ -68,11 +68,11 @@ Oldalszünet után
 Tartalomjegyzék szintjelzők
 : A legördülő menük segítségével állítsa be a listaelem-jelölőt a tartalomjegyzék minden egyes behúzási szintjéhez.
 
-### Fejlécek és láblécek
+### Fejlécek és láblécek [headers-and-footers]
 
 Konfigurálja a betűtípust, a logót, a fejléc/lábléc mezőket, a dátum- és időformátumokat, az első oldalra való felvételt, az oldalszámozási eltolást és a szegélyeket. A mezők helyőrzői a következők: `%title`, `%logo`, `%page`, `%total`, `%date`, `%time`, `%h1`, `%h2` és mások.
 
-Lásd: [Fejlécek és láblécek](Exporting.html#headersandfooters) az [Exportálás](Exporting.html) helyen a helyőrző hivatkozásokért és példákért. A `%date` és `%time` formátumkódokról lásd a [Dátum- és időformátumok](Exporting.html#dateandtimeformats) részt.
+Lásd: [Fejlécek és láblécek](Exporting.html#headers-and-footers) az [Exportálás](Exporting.html) helyen a helyőrző hivatkozásokért és példákért. A `%date` és `%time` formátumkódokról lásd a [Dátum- és időformátumok](Exporting.html#dateandtimeformats) részt.
 
 Szerepel az első oldalon
 : Ha a fejléc és/vagy lábléc nincs bejelölve, az első oldal nem a megadott típust nyomtatja ki.
