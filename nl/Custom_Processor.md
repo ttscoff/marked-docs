@@ -225,10 +225,14 @@ Converteer MMD-meta naar YAML
 
 Zoeken en vervangen
 : Voer een zoek- en vervangingsactie uit op de inhoud van het bestand.
-: Als de zoekreeks tussen schuine strepen staat (bijvoorbeeld `/Project \w+/`), wordt deze behandeld als een reguliere expressie. U kunt `$1`, `$2`, etc. gebruiken om overeenkomstgroepen op te nemen in de vervangende tekenreeks.
-: Het vervangingsveld ondersteunt enkele escape-reeksen (een backslash gevolgd door): `\n` voegt een nieuwe regel in, `\t` voegt een tabteken in, `\\` voegt een letterlijke backslash in, `\$` voegt een letterlijk dollarteken in (in plaats van een matchgroep)
-: Elke andere reeks `\X` wordt behandeld als slechts `X` (de backslash wordt verwijderd), dus `\e` wordt `e`. Een afsluitende \ zonder teken erna wordt bewaard als een letterlijke backslash.
-: Gebruik `[%key]` in de vervangende tekenreeks om een ​​waarde in te voegen uit documentmetagegevens, omgevingsvariabelen of context (bijvoorbeeld `[%title]`, `[%MARKED_PATH]`). Sleutels die zijn ingesteld door eerdere acties in dezelfde regel of door een voorgaande regel zijn beschikbaar. Ongeëvenaarde sleutels worden vervangen door een lege string.
+: Schakel het selectievakje **Regex** in om het Zoeken-veld als een ICU-reguliere expressie te behandelen. Wanneer Regex aan staat, komen `^` en `$` standaard overeen met het begin en einde van elke regel. Schuine strepen (`/`) hoeven niet te worden geëscaped. Als de zoekwaarde nog steeds in `/.../` staat, worden de buitenste schuine strepen eenmaal verwijderd.
+: Voeg inline vlaggen toe aan het begin van het patroon met `(?…)`, bijvoorbeeld `(?smi)pattern`. Veelgebruikte vlaggen: `i` hoofdletterongevoelig, `m` multiline (`^`/`$` per regel), `s` dotall (`.` komt overeen met newlines). Combineer elke subset (`(?i)`, `(?sm)`, `(?smi)`, …). Gebruik `-` binnen de groep om een vlag uit te schakelen (bijv. `(?-i)`).
+: Met Regex uit blijft het omringen van de zoekreeks met schuine strepen (bijv. `/Project \w+/`) regex-modus selecteren (legacy-vorm). Gebruik `$1`, `$2`, enz. voor overeenkomstgroepen in de vervangende tekenreeks.
+: Het vervangingsveld ondersteunt enkele escape-reeksen (een backslash gevolgd door): `\n` voegt een nieuwe regel in, `\t` voegt een tabteken in, `\\` voegt een letterlijke backslash in, `\$` voegt een letterlijk dollarteken in (in plaats van een overeenkomstgroep)
+: Elke andere `\X` reeks wordt behandeld als slechts `X` (de backslash wordt verwijderd), dus `\e` wordt `e`. Een afsluitende \ zonder teken erna wordt bewaard als een letterlijke backslash.
+: Gebruik `[%key]` in de vervangende tekenreeks om een waarde in te voegen uit documentmetagegevens, omgevingsvariabelen of context (bijvoorbeeld `[%title]`, `[%MARKED_PATH]`). Sleutels die zijn ingesteld door eerdere acties in dezelfde regel of door een voorgaande regel zijn beschikbaar. Ongeëvenaarde sleutels worden vervangen door een lege string.
+: Voorbeeld: om iA Writer-stijl `//` commentaarregels te verwijderen, schakel **Regex** en **All** in, stel Zoeken in op `^//.*$` en laat Vervangen leeg.
+
 
 Titel H1 invoegen
 : Voegt een H1 in het document in. Dit kan uit de metadata of de bestandsnaam worden gehaald.
