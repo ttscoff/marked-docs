@@ -225,10 +225,14 @@ Convertir MMD Meta a YAML
 
 Buscar y reemplazar
 : realice una búsqueda y reemplace el contenido del archivo.
-: Si la cadena de búsqueda está rodeada de barras diagonales (por ejemplo, `/Project \w+/`), se tratará como una expresión regular. Puede utilizar `$1`, `$2`, etc. para incluir grupos coincidentes en la cadena de reemplazo.
+: Active la casilla **Regex** para tratar el campo Buscar como una expresión regular ICU. Cuando Regex está activado, `^` y `$` coinciden con el inicio y el final de cada línea de forma predeterminada. Las barras diagonales (`/`) no necesitan escaparse. Si el valor de búsqueda sigue envuelto en `/.../`, las barras exteriores se eliminan una vez.
+: Agregue indicadores en línea al inicio del patrón con `(?…)`, por ejemplo `(?smi)pattern`. Indicadores comunes: `i` sin distinción de mayúsculas y minúsculas, `m` multilínea (`^`/`$` por línea), `s` dotall (`.` coincide con saltos de línea). Combine cualquier subconjunto (`(?i)`, `(?sm)`, `(?smi)`, …). Prefije con `-` dentro del grupo para desactivar un indicador (p. ej. `(?-i)`).
+: Con Regex desactivado, rodear la cadena de búsqueda con barras diagonales (p. ej. `/Project \w+/`) sigue seleccionando el modo regex (forma heredada). Use `$1`, `$2`, etc. para grupos de coincidencia en la cadena de reemplazo.
 : El campo de reemplazo admite algunas secuencias de escape (una barra invertida seguida de): `\n` inserta una nueva línea, `\t` inserta un carácter de tabulación, `\\` inserta una barra invertida literal, `\$` inserta un signo de dólar literal (en lugar de un grupo de coincidencia)
-: Cualquier otra secuencia `\X` se trata simplemente como `X` (la barra invertida se elimina), por lo que `\e` se convierte en `e`. Un \ final sin ningún carácter después se conserva como una barra invertida literal.
+: Cualquier otra secuencia `\X` se trata simplemente como `X` (la barra invertida se elimina), por lo que `\e` se convierte en `e`. Un \ final sin ningún caractere después se conserva como una barra invertida literal.
 : Utilice `[%key]` en la cadena de reemplazo para insertar un valor de los metadatos del documento, variables de entorno o contexto (por ejemplo, `[%title]`, `[%MARKED_PATH]`). Están disponibles las claves establecidas por acciones anteriores en la misma regla o por una regla anterior. Las claves no coincidentes se reemplazan por una cadena vacía.
+: Ejemplo: para eliminar líneas de comentario estilo iA Writer `//`, active **Regex** y **All**, establezca Buscar en `^//.*$` y deje Reemplazar vacío.
+
 
 Insertar título H1
 : Inserta un H1 en el documento. Esto se puede extraer de los metadatos o del nombre del archivo.
