@@ -1,0 +1,35 @@
+# Marked Localization Update
+# Locale: de (German)
+# Generated: 2026-08-10
+# Source: Custom Rules Search and Replace regex checkbox (Task 3)
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in the empty string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, $1, (?smi), /pattern/, and [%key].
+# Do not translate product names (Marked, Regex as loanword is fine).
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 3
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 3
+# Search and Replace regex checkbox and updated tooltips.
+
+"Regex" = "Regex";
+# EN: Regex
+# DRAFT: Regex
+
+"Enter the search string (smart case matching). Enable Regex for ICU patterns (^ and $ match each line; use (?smi) for flags), or wrap in /pattern/ when Regex is off." = "Suchzeichenkette eingeben (Smart Case). Regex aktivieren für ICU-Muster (^ und $ gelten pro Zeile; (?smi) für Flags verwenden), oder bei deaktiviertem Regex in /muster/ einschließen.";
+# EN: Enter the search string (smart case matching). Enable Regex for ICU patterns (^ and $ match each line; use (?smi) for flags), or wrap in /pattern/ when Regex is off.
+# DRAFT: Suchzeichenkette eingeben (Smart Case). Regex aktivieren für ICU-Muster (^ und $ gelten pro Zeile; (?smi) für Flags verwenden), oder bei deaktiviertem Regex in /muster/ einschließen.
+
+"Enter the replacement string (use $1, $2, etc. for backreferences, and use [%key] for metadata replacement)" = "Ersetzungszeichenkette eingeben ($1, $2 usw. für Rückverweise; [%key] für Metadaten-Ersetzung)";
+# EN: Enter the replacement string (use $1, $2, etc. for backreferences, and use [%key] for metadata replacement)
+# DRAFT: Ersetzungszeichenkette eingeben ($1, $2 usw. für Rückverweise; [%key] für Metadaten-Ersetzung)
+
+=== END SpecialWindows.strings ===
