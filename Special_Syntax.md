@@ -96,13 +96,13 @@ These callouts are automatically converted to Marked's callout format and styled
 
 ## Table of Contents [tableofcontents]
 
-You can specify where in the document the Table of Contents should appear using `<!--TOC-->`. If this is set, it overrides the option in Preferences and will always show in the preview window as well as when saving and printing. The Table of Contents will display only once, even if there are multiple `<!--TOC-->` specifiers in the content.
+You can specify where in the document the Table of Contents should appear using `<!--TOC-->`. Marked generates one Table of Contents at the first marker and includes only headings that appear after it. Additional markers are ignored. Markers work with both CommonMark and MultiMarkdown documents.
 
-If you add `max#` to the above tag (where # is a digit from 1-5) it will control the depth of the displayed Table of Contents. For example `<!--TOC max2-->` will only display first and second-level headers in the list. You can also specify a minimum header level with `<!--TOC min2-->`. Maximums and minimums are based on actual headline levels, not nesting levels. Maximum and minimum can be used together.
+If you add `max#` to the above tag (where # is a digit from 1-6) it will control the depth of the displayed Table of Contents. For example `<!--TOC max2-->` will only display first and second-level headers after the marker in the list. You can also specify a minimum header level with `<!--TOC min2-->`. Maximums and minimums are based on actual headline levels, not nesting levels. Maximum and minimum can be used together.
 
 Marked also recognizes MultiMarkdown-style `{{TOC}}`, and Pandoc-style `{{TOC:2-6}}`, where `2-6` is the range of minimum and maximum levels of headers to include.
 
-By default, the Table of Contents will print on the first page of the document if "Print Table of Contents" is enabled under the {% prefspane Export %}. If a marker exists in the document it will be placed at that point instead.
+By default, the Table of Contents will print on the first page of the document if "Print Table of Contents" is enabled under the {% prefspane Export %}. When a marker exists, Marked uses the in-document Table of Contents at that point and does not add a second print Table of Contents.
 
 I> You can specify the type of numbering or lettering of each level of a nested Table of Contents hierarchy in the {% prefspane Export %}.
 
