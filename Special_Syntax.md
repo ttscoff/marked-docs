@@ -120,7 +120,7 @@ Put the token on a line by itself and it will generate markup that will force a 
 
 When **Treat +++ as page breaks** is enabled under Settings → Processor → Rendering, a line of three or more `+` characters at the **beginning of a line** (iA Writer style) is treated the same as `<!--BREAK-->`.
 
-When **Convert // lines to comments** is enabled in the same settings section, a line beginning with `//` (column 0) is converted to a CriticMarkup comment (`{>>…<<}`) and rendered as an inline comment in the preview.
+When **Convert // lines to comments** is enabled in the same settings section, a line beginning with `//` (column 0) is converted to a CriticMarkup comment (`{>>…<<}`) attached to the preceding line, shown as a hover tooltip in the preview (or inline when **Show Comments** is toggled on).
 
 ## Autoscroll pauses [pauses]
 
