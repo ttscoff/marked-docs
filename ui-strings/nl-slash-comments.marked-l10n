@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: nl (Dutch)
+# Feature: convertSlashComments (Convert // lines to comments)
+# Generated: 2026-08-10
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer,
+# CriticMarkup) or the literal // unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertSlashComments" = "Converteer // regels naar commentaar";
+# EN: Convert // lines to comments
+# DRAFT: Converteer // regels naar commentaar
+
+"tooltip.convertSlashComments" = "Indien ingeschakeld, worden regels die beginnen met // geconverteerd naar CriticMarkup opmerkingen. Compatibel met iA Writer. Standaard uitgeschakeld.";
+# EN: When enabled, lines starting with // are converted to CriticMarkup comments. Compatible with iA Writer. Off by default.
+# DRAFT: Indien ingeschakeld, worden regels die beginnen met // geconverteerd naar CriticMarkup opmerkingen. Compatibel met iA Writer. Standaard uitgeschakeld.
+=== END Settings.strings ===

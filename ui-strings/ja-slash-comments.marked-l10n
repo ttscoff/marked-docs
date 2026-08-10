@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: convertSlashComments (Convert // lines to comments)
+# Generated: 2026-08-10
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer,
+# CriticMarkup) or the literal // unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertSlashComments" = "// 行をコメントに変換";
+# EN: Convert // lines to comments
+# DRAFT: // 行をコメントに変換
+
+"tooltip.convertSlashComments" = "有効にすると、// で始まる行が CriticMarkup コメントに変換されます。 iA Writer と互換性があります。デフォルトではオフです。";
+# EN: When enabled, lines starting with // are converted to CriticMarkup comments. Compatible with iA Writer. Off by default.
+# DRAFT: 有効にすると、// で始まる行が CriticMarkup コメントに変換されます。 iA Writer と互換性があります。デフォルトではオフです。
+=== END Settings.strings ===

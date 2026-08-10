@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: it (Italian)
+# Feature: convertSlashComments (Convert // lines to comments)
+# Generated: 2026-08-10
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer,
+# CriticMarkup) or the literal // unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertSlashComments" = "Converti // righe in commenti";
+# EN: Convert // lines to comments
+# DRAFT: Converti // righe in commenti
+
+"tooltip.convertSlashComments" = "Se abilitato, le righe che iniziano con // vengono convertite in commenti CriticMarkup. Compatibile con iA Writer. Disattivato per impostazione predefinita.";
+# EN: When enabled, lines starting with // are converted to CriticMarkup comments. Compatible with iA Writer. Off by default.
+# DRAFT: Se abilitato, le righe che iniziano con // vengono convertite in commenti CriticMarkup. Compatibile con iA Writer. Disattivato per impostazione predefinita.
+=== END Settings.strings ===

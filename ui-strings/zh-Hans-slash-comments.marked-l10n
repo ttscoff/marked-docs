@@ -1,0 +1,23 @@
+# Marked Localization Update
+# Locale: zh-Hans (Simplified Chinese)
+# Feature: convertSlashComments (Convert // lines to comments)
+# Generated: 2026-08-10
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, iA Writer,
+# CriticMarkup) or the literal // unless your locale normally does.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.convertSlashComments" = "将 // 行转换为注释";
+# EN: Convert // lines to comments
+# DRAFT: 将 // 行转换为注释
+
+"tooltip.convertSlashComments" = "启用后，以 // 开头的行将转换为 CriticMarkup 注释。与 iA Writer 兼容。默认关闭。";
+# EN: When enabled, lines starting with // are converted to CriticMarkup comments. Compatible with iA Writer. Off by default.
+# DRAFT: 启用后，以 // 开头的行将转换为 CriticMarkup 注释。与 iA Writer 兼容。默认关闭。
+=== END Settings.strings ===
