@@ -217,10 +217,13 @@ Convert MMD Meta to YAML
 
 Search and Replace
 : Perform a search and replace on the file's content.
-: If the search string is surrounded in forward slashes (e.g. `/Project \w+/`), it will be treated as a regular expression. You can use `$1`, `$2`, etc. to include match groups in the replacement string.
+: Enable the **Regex** checkbox to treat the Search field as an ICU regular expression. When Regex is on, `^` and `$` match the start and end of each line by default. Forward slashes (`/`) do not need to be escaped. If the search value is still wrapped in `/.../`, the outer slashes are stripped once.
+: Add inline flags at the start of the pattern with `(?…)`, for example `(?smi)pattern`. Common flags: `i` case-insensitive, `m` multiline (`^`/`$` per line), `s` dotall (`.` matches newlines). Combine any subset (`(?i)`, `(?sm)`, `(?smi)`, …). Prefix with `-` inside the group to turn a flag off (e.g. `(?-i)`).
+: With Regex off, surrounding the search string in forward slashes (e.g. `/Project \w+/`) still selects regex mode (legacy form). Use `$1`, `$2`, etc. for match groups in the replacement string.
 : The replacement field supports a few escape sequences (a backslash followed by): `\n` inserts a newline, `\t` inserts a tab character, `\\` inserts a literal backslash, `\$` inserts a literal dollar sign (instead of a match group)
 : Any other `\X` sequence is treated as just `X` (the backslash is dropped), so `\e` becomes `e`. A trailing \ with no character after it is preserved as a literal backslash.
 : Use `[%key]` in the replacement string to insert a value from document metadata, environment variables, or context (e.g. `[%title]`, `[%MARKED_PATH]`). Keys set by earlier actions in the same rule or by a preceding rule are available. Unmatched keys are replaced with an empty string.
+: Example: to remove iA Writer-style `//` comment lines, enable **Regex** and **All**, set Search to `^//.*$`, and leave Replace empty.
 
 Insert Title H1
 : Inserts an H1 in the document. This can either be pulled from metadata or the filename.
