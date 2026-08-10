@@ -6,4 +6,6 @@ Because the preview path matches the editor file, live updates behave like any o
 
 Marked understands most **include** workflows that rely on recognizable path patterns; advanced `/block`-style markers from iA Writer are interpreted when they match syntax Marked already supports for modular documents.
 
+Optional Processor settings improve compatibility: **Treat +++ as page breaks** and **Convert // lines to comments** (lines must start at column 0).
+
 [ia]: https://ia.net/writer
