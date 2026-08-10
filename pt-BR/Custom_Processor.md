@@ -225,10 +225,14 @@ Converter MMD Meta em YAML
 
 Pesquisar e substituir
 : faça uma pesquisa e substitua o conteúdo do arquivo.
-: Se a string de pesquisa estiver entre barras (por exemplo, `/Project \w+/`), ela será tratada como uma expressão regular. Você pode usar `$1`, `$2`, etc. para incluir grupos de correspondência na string de substituição.
+: Ative a caixa **Regex** para tratar o campo Pesquisar como uma expressão regular ICU. Com Regex ativado, `^` e `$` correspondem por padrão ao início e ao fim de cada linha. Barras (`/`) não precisam ser escapadas. Se o valor de pesquisa ainda estiver envolvido em `/.../`, as barras externas são removidas uma vez.
+: Adicione flags inline no início do padrão com `(?…)`, por exemplo `(?smi)pattern`. Flags comuns: `i` sem distinção de maiúsculas/minúsculas, `m` multilinha (`^`/`$` por linha), `s` dotall (`.` corresponde a quebras de linha). Combine qualquer subconjunto (`(?i)`, `(?sm)`, `(?smi)`, …). Use `-` dentro do grupo para desativar uma flag (ex.: `(?-i)`).
+: Com Regex desativado, envolver a string de pesquisa em barras (ex.: `/Project \w+/`) ainda seleciona o modo regex (forma legada). Use `$1`, `$2`, etc. para grupos de correspondência na string de substituição.
 : O campo de substituição suporta algumas sequências de escape (uma barra invertida seguida por): `\n` insere uma nova linha, `\t` insere um caractere de tabulação, `\\` insere uma barra invertida literal, `\$` insere um cifrão literal (em vez de um grupo de correspondência)
-: Qualquer outra sequência `\X` é tratada apenas como `X` (a barra invertida é eliminada), então `\e` torna-se `e`. Um \ final sem nenhum caractere depois de ser preservado como uma barra invertida literal.
-: use `[%key]` na string de substituição para inserir um valor de metadados de documento, variáveis ​​de ambiente ou contexto (por exemplo, `[%title]`, `[%MARKED_PATH]`). Estão disponíveis chaves definidas por ações anteriores na mesma regra ou por uma regra anterior. Chaves sem correspondência são substituídas por uma string vazia.
+: Qualquer outra sequência `\X` é tratada apenas como `X` (a barra invertida é eliminada), então `\e` torna-se `e`. Um \ final sem nenhum caractere depois é preservado como uma barra invertida literal.
+: use `[%key]` na string de substituição para inserir um valor de metadados de documento, variáveis de ambiente ou contexto (por exemplo, `[%title]`, `[%MARKED_PATH]`). Estão disponíveis chaves definidas por ações anteriores na mesma regra ou por uma regra anterior. Chaves sem correspondência são substituídas por uma string vazia.
+: Exemplo: para remover linhas de comentário estilo iA Writer `//`, ative **Regex** e **All**, defina Pesquisar como `^//.*$` e deixe Substituir vazio.
+
 
 Inserir título H1
 : Insere um H1 no documento. Isso pode ser obtido dos metadados ou do nome do arquivo.

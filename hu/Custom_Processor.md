@@ -91,7 +91,7 @@ Az összes fájl illeszkedéséhez (azaz egy egyéni processzorhoz, amely mindig
 fut), állítsa a _Fájlnév_ értéket `contains` `*` értékre. A csillag lesz
 helyettesítő karakterként működik, és minden fájlnak megfelel.
 
-[Add a predikátum][addpredicate]
+[Add a predikátum [add predicate]
 
 [addpredicate]: images/custom-rules-add-predicate-800.jpg @2x width=800
 
@@ -225,10 +225,14 @@ Az MMD Meta konvertálása YAML-re
 
 Keresés és csere
 : Végezzen keresést és cserélje le a fájl tartalmát.
-: Ha a keresési karakterláncot perjelek veszik körül (pl. `/Project \w+/`), akkor a rendszer reguláris kifejezésként kezeli. A `$1`, `$2` stb. használatával egyezési csoportokat is beilleszthet a helyettesítő karakterláncba.
+: Engedélyezze a **Regex** jelölőnégyzetet, ha a Keresés mezőt ICU reguláris kifejezésként szeretné kezelni. Regex bekapcsolásakor a `^` és `$` alapértelmezés szerint minden sor elejét és végét jelöli. A perjelek (`/`) nem igényelnek escape-elést. Ha a keresési érték továbbra is `/.../` között van, a külső perjelek egyszer el lesznek távolítva.
+: Adjon inline jelzőket a minta elején `(?…)` formában, például `(?smi)pattern`. Gyakori jelzők: `i` kis- és nagybetű érzéketlen, `m` többsoros (`^`/`$` soronként), `s` dotall (`.` illeszkedik sortörésekre). Kombináljon bármely részhalmazt (`(?i)`, `(?sm)`, `(?smi)`, …). A csoportban `-` előtaggal kapcsolhatja ki a jelzőt (pl. `(?-i)`).
+: Regex kikapcsolva a keresési karakterlánc perjelek közé tétele (pl. `/Project \w+/`) továbbra is regex módot választ (örökölt forma). A `$1`, `$2` stb. használatával egyezési csoportokat illeszthet be a helyettesítő karakterláncba.
 : A cseremező néhány escape szekvenciát támogat (a fordított perjel után): `\n` újsort szúr be, `\t` tabulátor karaktert, `\\` szó szerinti fordított perjelet, `\$` literális dollárjelet szúr be (egyezési csoport helyett)
 : Minden más `\X` sorozat csak `X`ként lesz kezelve (a fordított perjel el lesz távolítva), így a `\e` `e` lesz. Az utána karakter nélküli \ jelet a rendszer szó szerinti fordított perjelként megőrzi.
 : Használja a `[%key]` karakterláncot a dokumentum metaadataiból, környezeti változóiból vagy kontextusból származó érték beszúrásához (pl. `[%title]`, `[%MARKED_PATH]`). Elérhetők az ugyanazon szabály korábbi műveletei által vagy egy korábbi szabály által beállított kulcsok. A páratlan kulcsok helyére üres karakterlánc kerül.
+: Példa: iA Writer stílusú `//` megjegyzéssorok eltávolításához engedélyezze a **Regex** és **All** opciókat, állítsa a Keresés mezőt `^//.*$` értékre, és hagyja üresen a Csere mezőt.
+
 
 H1 cím beszúrása
 : H1-et szúr be a dokumentumba. Ez lekérhető a metaadatokból vagy a fájlnévből.

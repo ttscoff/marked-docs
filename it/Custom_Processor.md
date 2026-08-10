@@ -225,10 +225,14 @@ Converti MMD Meta in YAML
 
 Cerca e sostituisci
 : esegue una ricerca e sostituzione nel contenuto del file.
-: se la stringa di ricerca è racchiusa tra barre (ad esempio `/Project \w+/`), verrà trattata come un'espressione regolare. Puoi utilizzare `$1`, `$2`, ecc. per includere gruppi di corrispondenza nella stringa di sostituzione.
+: abilita la casella **Regex** per trattare il campo Cerca come un'espressione regolare ICU. Con Regex attivo, `^` e `$` corrispondono per impostazione predefinita all'inizio e alla fine di ogni riga. Le barre (`/`) non devono essere escapate. Se il valore di ricerca è ancora racchiuso in `/.../`, le barre esterne vengono rimosse una volta.
+: aggiungi flag inline all'inizio del pattern con `(?…)`, ad esempio `(?smi)pattern`. Flag comuni: `i` case-insensitive, `m` multilinea (`^`/`$` per riga), `s` dotall (`.` corrisponde ai newline). Combina qualsiasi sottoinsieme (`(?i)`, `(?sm)`, `(?smi)`, …). Prefissa con `-` all'interno del gruppo per disattivare un flag (es. `(?-i)`).
+: con Regex disattivato, racchiudere la stringa di ricerca tra barre (es. `/Project \w+/`) seleziona ancora la modalità regex (forma legacy). Usa `$1`, `$2`, ecc. per i gruppi di corrispondenza nella stringa di sostituzione.
 : Il campo di sostituzione supporta alcune sequenze di escape (una barra rovesciata seguita da): `\n` inserisce una nuova riga, `\t` inserisce un carattere di tabulazione, `\\` inserisce una barra rovesciata letterale, `\$` inserisce un simbolo di dollaro letterale (invece di un gruppo di corrispondenza)
 : Qualsiasi altra sequenza `\X` viene trattata solo come `X` (la barra rovesciata viene eliminata), quindi `\e` diventa `e`. Un \ finale senza alcun carattere viene conservato come una barra rovesciata letterale.
 : utilizzare `[%key]` nella stringa di sostituzione per inserire un valore dai metadati del documento, dalle variabili di ambiente o dal contesto (ad esempio `[%title]`, `[%MARKED_PATH]`). Sono disponibili le chiavi impostate da azioni precedenti nella stessa regola o da una regola precedente. Le chiavi non corrispondenti vengono sostituite con una stringa vuota.
+: Esempio: per rimuovere righe di commento in stile iA Writer `//`, abilita **Regex** e **All**, imposta Cerca su `^//.*$` e lascia vuoto Sostituisci.
+
 
 Inserisci il titolo H1
 : inserisce un H1 nel documento. Questo può essere estratto dai metadati o dal nome del file.

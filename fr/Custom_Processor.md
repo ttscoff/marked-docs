@@ -225,10 +225,14 @@ Convertir les méta MMD en YAML
 
 Rechercher et remplacer
 : Effectuez une recherche et un remplacement sur le contenu du fichier.
-: Si la chaîne de recherche est entourée de barres obliques (par exemple `/Project \w+/`), elle sera traitée comme une expression régulière. Vous pouvez utiliser `$1`, `$2`, etc. pour inclure des groupes de correspondance dans la chaîne de remplacement.
+: Cochez la case **Regex** pour traiter le champ Rechercher comme une expression régulière ICU. Lorsque Regex est activé, `^` et `$` correspondent par défaut au début et à la fin de chaque ligne. Les barres obliques (`/`) n'ont pas besoin d'être échappées. Si la valeur de recherche est encore entourée de `/.../`, les barres extérieures sont supprimées une fois.
+: Ajoutez des indicateurs inline au début du motif avec `(?…)`, par exemple `(?smi)pattern`. Indicateurs courants : `i` insensible à la casse, `m` multiligne (`^`/`$` par ligne), `s` dotall (`.` correspond aux sauts de ligne). Combinez n'importe quel sous-ensemble (`(?i)`, `(?sm)`, `(?smi)`, …). Préfixez avec `-` à l'intérieur du groupe pour désactiver un indicateur (p. ex. `(?-i)`).
+: Avec Regex désactivé, entourer la chaîne de recherche de barres obliques (p. ex. `/Project \w+/`) sélectionne toujours le mode regex (forme héritée). Utilisez `$1`, `$2`, etc. pour les groupes de correspondance dans la chaîne de remplacement.
 : Le champ de remplacement prend en charge quelques séquences d'échappement (une barre oblique inverse suivie de) : `\n` insère une nouvelle ligne, `\t` insère un caractère de tabulation, `\\` insère une barre oblique inverse littérale, `\$` insère un signe dollar littéral (au lieu d'un groupe de correspondance)
 : Toute autre séquence `\X` est traitée comme simplement `X` (la barre oblique inverse est supprimée), donc `\e` devient `e`. Un \ final sans caractère après est conservé sous la forme d'une barre oblique inverse littérale.
 : Utilisez `[%key]` dans la chaîne de remplacement pour insérer une valeur à partir des métadonnées du document, des variables d'environnement ou du contexte (par exemple `[%title]`, `[%MARKED_PATH]`). Les clés définies par des actions antérieures dans la même règle ou par une règle précédente sont disponibles. Les clés sans correspondance sont remplacées par une chaîne vide.
+: Exemple : pour supprimer les lignes de commentaire style iA Writer `//`, activez **Regex** et **All**, définissez Rechercher sur `^//.*$` et laissez Remplacer vide.
+
 
 Insérer le titre H1
 : Insère un H1 dans le document. Cela peut être extrait des métadonnées ou du nom du fichier.
