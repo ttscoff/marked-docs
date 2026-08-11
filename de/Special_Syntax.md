@@ -118,6 +118,10 @@ Steht das Token allein in einer Zeile, erzeugt es Markup, das an dieser Stelle e
 
 	{::pagebreak /}
 
+Ist **+++ als Seitenumbrüche behandeln** unter {% prefspane Processor %} im Abschnitt „Darstellung“ aktiviert, wird eine Zeile mit drei oder mehr `+`-Zeichen am **Zeilenanfang** (iA-Writer-Stil) genauso behandelt wie `<!--BREAK-->`.
+
+Ist **// Zeilen in Kommentare umwandeln** im selben Einstellungsabschnitt aktiviert, wird eine Zeile, die mit `//` beginnt (Spalte 0), in einen CriticMarkup-Kommentar (`{>>…<<}`) umgewandelt und der vorhergehenden Zeile zugeordnet. In der Vorschau erscheint er als Tooltip beim Daraufzeigen – oder inline, wenn **Kommentare anzeigen** aktiviert ist.
+
 ## Autoscroll-Pausen [pauses]
 
 Marked kann mit der [Autoscroll](Autoscroll.html)-Funktion als Teleprompter dienen (fügen Sie dazu den [Teleprompter-Stil](https://markedapp.com/styles/preview?style=teleprompter) hinzu). Dabei kann es nützlich sein, Pausen ins Dokument einzubauen. Das geht so:
