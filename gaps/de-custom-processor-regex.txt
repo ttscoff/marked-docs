@@ -1,0 +1,38 @@
+# Help translation gap — de — Custom_Processor.md
+# Feature: Search and Replace Regex checkbox + multiline ICU notes
+# Generated: 2026-08-10
+#
+# German help for this page is treated as finished. Do not machine-overwrite
+# the existing "Suchen und Ersetzen" section. Translate the ENGLISH TARGET
+# below and replace the CURRENT GERMAN block in de/Custom_Processor.md.
+#
+# Return: PR to ttscoff/marked-docs on a de/ branch, or reply with the
+# updated German definition list block only.
+
+=== LOCATION ===
+File: de/Custom_Processor.md
+Section heading: Suchen und Ersetzen
+
+=== CURRENT GERMAN (replace this block) ===
+Suchen und Ersetzen
+: Führt ein Suchen und Ersetzen im Inhalt der Datei durch.
+: Ist die Suchzeichenkette von Schrägstrichen umschlossen (z. B. `/Project \w+/`), wird sie als regulärer Ausdruck behandelt. Mit `$1`, `$2` usw. nehmen Sie Übereinstimmungsgruppen in die Ersetzung auf.
+: Das Ersetzungsfeld unterstützt einige Escape-Sequenzen (ein Backslash gefolgt von): `\n` fügt einen Zeilenumbruch ein, `\t` ein Tabulatorzeichen, `\\` einen wörtlichen Backslash, `\$` ein wörtliches Dollarzeichen (statt einer Übereinstimmungsgruppe).
+: Jede andere `\X`-Sequenz wird als bloßes `X` behandelt (der Backslash entfällt), aus `\e` wird also `e`. Ein abschließender `\` ohne folgendes Zeichen bleibt als wörtlicher Backslash erhalten.
+: Verwenden Sie `[%key]` in der Ersetzung, um einen Wert aus Dokumentmetadaten, Umgebungsvariablen oder Kontext einzufügen (z. B. `[%title]`, `[%MARKED_PATH]`). Schlüssel, die frühere Aktionen derselben Regel oder eine vorhergehende Regel gesetzt haben, stehen zur Verfügung. Nicht gefundene Schlüssel werden durch eine leere Zeichenkette ersetzt.
+
+=== ENGLISH TARGET (translate to German) ===
+Search and Replace
+: Perform a search and replace on the file's content.
+: Enable the **Regex** checkbox to treat the Search field as an ICU regular expression. When Regex is on, `^` and `$` match the start and end of each line by default. Forward slashes (`/`) do not need to be escaped. If the search value is still wrapped in `/.../`, the outer slashes are stripped once.
+: Add inline flags at the start of the pattern with `(?…)`, for example `(?smi)pattern`. Common flags: `i` case-insensitive, `m` multiline (`^`/`$` per line), `s` dotall (`.` matches newlines). Combine any subset (`(?i)`, `(?sm)`, `(?smi)`, …). Prefix with `-` inside the group to turn a flag off (e.g. `(?-i)`).
+: With Regex off, surrounding the search string in forward slashes (e.g. `/Project \w+/`) still selects regex mode (legacy form). Use `$1`, `$2`, etc. for match groups in the replacement string.
+: The replacement field supports a few escape sequences (a backslash followed by): `\n` inserts a newline, `\t` inserts a tab character, `\\` inserts a literal backslash, `\$` inserts a literal dollar sign (instead of a match group)
+: Any other `\X` sequence is treated as just `X` (the backslash is dropped), so `\e` becomes `e`. A trailing \ with no character after it is preserved as a literal backslash.
+: Use `[%key]` in the replacement string to insert a value from document metadata, environment variables, or context (e.g. `[%title]`, `[%MARKED_PATH]`). Keys set by earlier actions in the same rule or by a preceding rule are available. Unmatched keys are replaced with an empty string.
+: Example: to remove iA Writer-style `//` comment lines, enable **Regex** and **All**, set Search to `^//.*$`, and leave Replace empty.
+
+=== NOTES ===
+- Keep code/literals unchanged: `/Project \w+/`, `$1`, `\n`, `[%key]`, `^//.*$`, `//`, `(?smi)`, `(?-i)`
+- Prefer glossary terms already used on this page (Suchen und Ersetzen, regulärer Ausdruck)
+- UI label **Regex** may stay "Regex" to match SpecialWindows

@@ -145,10 +145,13 @@ MMD-Metadaten in YAML konvertieren
 
 Suchen und Ersetzen
 : Führt ein Suchen und Ersetzen im Inhalt der Datei durch.
-: Ist die Suchzeichenkette von Schrägstrichen umschlossen (z. B. `/Project \w+/`), wird sie als regulärer Ausdruck behandelt. Mit `$1`, `$2` usw. nehmen Sie Übereinstimmungsgruppen in die Ersetzung auf.
+: Aktivieren Sie das Kontrollkästchen **Regex**, damit das Feld **Suchen** als regulärer ICU-Ausdruck behandelt wird. Ist Regex aktiv, treffen `^` und `$` standardmäßig auf Anfang und Ende jeder Zeile zu. Schrägstriche (`/`) müssen nicht maskiert werden. Ist der Suchwert weiterhin in `/.../` eingeschlossen, werden die äußeren Schrägstriche einmalig entfernt.
+: Inline-Flags stellen Sie dem Muster mit `(?…)` voran, zum Beispiel `(?smi)pattern`. Gebräuchliche Flags: `i` ohne Berücksichtigung der Groß-/Kleinschreibung, `m` mehrzeilig (`^`/`$` je Zeile), `s` dotall (`.` erfasst auch Zeilenumbrüche). Beliebig kombinierbar (`(?i)`, `(?sm)`, `(?smi)`, …). Ein `-` innerhalb der Gruppe schaltet ein Flag ab (z. B. `(?-i)`).
+: Bei deaktiviertem Regex wählt eine von Schrägstrichen umschlossene Suchzeichenkette (z. B. `/Project \w+/`) weiterhin den Regex-Modus (alte Schreibweise). Mit `$1`, `$2` usw. nehmen Sie Übereinstimmungsgruppen in die Ersetzung auf.
 : Das Ersetzungsfeld unterstützt einige Escape-Sequenzen (ein Backslash gefolgt von): `\n` fügt einen Zeilenumbruch ein, `\t` ein Tabulatorzeichen, `\\` einen wörtlichen Backslash, `\$` ein wörtliches Dollarzeichen (statt einer Übereinstimmungsgruppe).
 : Jede andere `\X`-Sequenz wird als bloßes `X` behandelt (der Backslash entfällt), aus `\e` wird also `e`. Ein abschließender `\` ohne folgendes Zeichen bleibt als wörtlicher Backslash erhalten.
 : Verwenden Sie `[%key]` in der Ersetzung, um einen Wert aus Dokumentmetadaten, Umgebungsvariablen oder Kontext einzufügen (z. B. `[%title]`, `[%MARKED_PATH]`). Schlüssel, die frühere Aktionen derselben Regel oder eine vorhergehende Regel gesetzt haben, stehen zur Verfügung. Nicht gefundene Schlüssel werden durch eine leere Zeichenkette ersetzt.
+: Beispiel: Um Kommentarzeilen im iA-Writer-Stil (`//`) zu entfernen, aktivieren Sie **Regex** und **Alle**, tragen bei **Suchen** `^//.*$` ein und lassen **Ersetzen** leer.
 
 Titel H1 einfügen
 : Fügt ein H1 in das Dokument ein. Es kann entweder aus Metadaten oder aus dem Dateinamen stammen.
