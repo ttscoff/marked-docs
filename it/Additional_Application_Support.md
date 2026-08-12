@@ -10,30 +10,30 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 
 | Argomento | Pagina di aiuto |
 | :-- | :-- |
-| **Orso** | [Orso](Bear.html) |
-| **Curiosità** (anteprima in streaming) | [Curiosità](Curio.html) |
-| **Bozze** (anteprima in streaming + azioni) | [Bozze](Drafts.html) |
+| **Bear** | [Bear](Bear.html) |
+| **Curio** (anteprima in streaming) | [Curio](Curio.html) |
+| ** Drafts** (anteprima in streaming + azioni) | [Drafts](Drafts.html) |
 | **DEVONthink** (integrazione del menu Script) | [DEVONthink](DEVONthink.html) |
 | **Visualizzazione cartelle** (nvALT, nvUltra, ecc.) | [Visione cartella](Folder_Watching.html) |
-| **Altopiano** | [Highland](Highland.html) |
-| **Segno di riferimento** Risoluzione URL | [Segno](Hookmark.html) |
-| **iA Scrittore** | [iA Writer](iA_Writer.html) |
+| ** Highland** | [Highland](Highland.html) |
+| ** Hookmark** Risoluzione URL | [Hookmark](Hookmark.html) |
+| **iA Writer** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz` mappe | [iPensieriX](iThoughtsX.html) |
-| **MarsEdit** anteprima dal vivo | [MarteModifica](MarsEdit.html) |
+| **MarsEdit** anteprima dal vivo | [MarsEdit](MarsEdit.html) |
 | **MindNode** | [MindNode](MindNode.html) |
-| **Compositore MultiMarkdown** | [Compositore MultiMarkdown](MultiMarkdown_Composer.html) |
+| **MultiMarkdown_Composer** | [MultiMarkdown_Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
-| **Ossidiana** volte e didascalie | [Ossidiana](Obsidian.html) |
+| **Obsidian** | [Obsidian](Obsidian.html) |
 | **OmniOutliner/OPML** | [OmniOutliner e OPML](OmniOutliner_and_OPML.html) |
 | **RTF / RTFD** (Pagine, TextEdit, ecc.) | [Supporto RTF e RTFD](RTF_Support.html) |
-| **PDF** | [Supporto PDF](PDF_Support.html) |
+| **PDF_Support** | [PDF_Support](PDF_Support.html) |
 | **Scrivener 3** | [Supporto per Scrivener 3](Scrivener_Support.html) |
-| **L'Archivio** anteprima in streaming | [L'Archivio](The_Archive.html) |
-| Flusso di lavoro di esportazione di **Ulisse** | [Ulisse](Ulysses.html) |
+| **The_Archive** anteprima in streaming | [The_Archive](The_Archive.html) |
+| Flusso di lavoro di esportazione di **Ulysses** | [Ulysses](Ulysses.html) |
 | **Vim** (plugin contrassegnato con vim) | [Vim](Vim.html) |
-| **Codice VS** (Apri nell'estensione contrassegnata) | [Codice VS](VS_Code.html) |
+| **VS_Code** (Apri nell'estensione contrassegnata) | [VS_Code](VS_Code.html) |
 | **VoodooPad** | [VoodooPad](VoodooPad.html) |
-| **Parchi giochi Xcode** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
+| **Xcode Playgrounds** | [Xcode Playgrounds](Xcode_Playgrounds.html) |
 
 ## Impostazioni dell'applicazione [application-settings]
 
