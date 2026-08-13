@@ -1,0 +1,70 @@
+# Marked Settings Localization Patch
+# Locale: hu (Hungarian)
+# Generated: 2026-08-13
+# Feature: Scrivener Assume Markdown + Automatic returns
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# Applications → Scrivener settings:
+# 1) Checkbox: "Assume Markdown formatting" (default ON)
+# 2) Popup: "Treat Scrivener returns as" with options:
+#    Automatic (default) | Soft line breaks (join lines) | Paragraph breaks (keep separate)
+# Automatic follows the checkbox: ON → soft join; OFF → keep separate paragraphs.
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by the returns option.
+#
+# This replaces the older *-scrivener-linebreaks.marked-l10n handoff
+# (popup labels and tooltip were renamed / expanded).
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 7
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 7
+
+"setting.scrivenerAssumeMarkdown" = "Markdown formázás feltételezése";
+# EN: Assume Markdown formatting
+# DRAFT: Markdown formázás feltételezése
+
+"tooltip.scrivenerAssumeMarkdown" = "Kezelje az iratgyűjtő dokumentumokat Markdown Scrivener kifejezéssel (gépelt listák, táblázatok, kerítések, üres sorok a bekezdések között) a Scrivener rich-text szerkezet helyett.";
+# EN: Treat binder documents as Markdown authored in Scrivener (typed lists, tables, fences, blank lines between paragraphs) rather than Scrivener rich-text structure alone.
+# DRAFT: Kezelje az iratgyűjtő dokumentumokat Markdown Scrivener kifejezéssel (gépelt listák, táblázatok, kerítések, üres sorok a bekezdések között) a Scrivener rich-text szerkezet helyett.
+
+"setting.scrivenerLineBreaks" = "A Scrivener returneket kezelje így";
+# EN: Treat Scrivener returns as
+# DRAFT: A Scrivener returneket kezelje így
+
+"setting.scrivenerLineBreaks.automatic" = "Automatikus";
+# EN: Automatic
+# DRAFT: Automatikus
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Lágy sortörések (sorok összekapcsolása)";
+# EN: Soft line breaks (join lines)
+# DRAFT: Lágy sortörések (sorok összekapcsolása)
+
+"setting.scrivenerLineBreaks.paragraphs" = "Bekezdéstörések (külön tartani)";
+# EN: Paragraph breaks (keep separate)
+# DRAFT: Bekezdéstörések (külön tartani)
+
+"tooltip.scrivenerLineBreaks" = "A Return értelmezése a Scrivener kifejezésben Markdown kifejezésre való konvertáláskor. Automatikus követi Tételezzük fel a Markdown formázást: lágy sortörések, ha Markdown feltételezik, bekezdéstörések, ha nem. A lágy sortörések (sorok összeillesztése) egymás utáni összevonása Lágy törésekké tér vissza egy bekezdésen belül (egy üres sor új bekezdést kezd; a sortörések megőrzése a bekezdésekben). A bekezdéstörések (külön kell tartani) minden Return-t Markdown bekezdésként tartanak meg. A csőtáblák és az elkerített kódblokkok nincsenek hatással.";
+# EN: How to interpret Return in Scrivener when converting to Markdown. Automatic follows Assume Markdown formatting: soft line breaks when Markdown is assumed, paragraph breaks when it is not. Soft line breaks (join lines) merge consecutive Returns into soft breaks inside a paragraph (a blank line starts a new paragraph; subject to Retain line breaks in paragraphs). Pipe tables and fenced code blocks are unaffected.
+# DRAFT: A Return értelmezése a Scrivener kifejezésben Markdown kifejezésre való konvertáláskor. Automatikus követi Tételezzük fel a Markdown formázást: lágy sortörések, ha Markdown feltételezik, bekezdéstörések, ha nem. A lágy sortörések (sorok összeillesztése) egymás utáni összevonása Lágy törésekké tér vissza egy bekezdésen belül (egy üres sor új bekezdést kezd; a sortörések megőrzése a bekezdésekben). A bekezdéstörések (külön kell tartani) minden Return-t Markdown bekezdésként tartanak meg. A csőtáblák és az elkerített kódblokkok nincsenek hatással.
+
+=== END Settings.strings (gaps) ===
