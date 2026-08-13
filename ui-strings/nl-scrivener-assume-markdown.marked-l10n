@@ -1,0 +1,70 @@
+# Marked Settings Localization Patch
+# Locale: nl (Dutch)
+# Generated: 2026-08-13
+# Feature: Scrivener Assume Markdown + Automatic returns
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# Applications → Scrivener settings:
+# 1) Checkbox: "Assume Markdown formatting" (default ON)
+# 2) Popup: "Treat Scrivener returns as" with options:
+#    Automatic (default) | Soft line breaks (join lines) | Paragraph breaks (keep separate)
+# Automatic follows the checkbox: ON → soft join; OFF → keep separate paragraphs.
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by the returns option.
+#
+# This replaces the older *-scrivener-linebreaks.marked-l10n handoff
+# (popup labels and tooltip were renamed / expanded).
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 7
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 7
+
+"setting.scrivenerAssumeMarkdown" = "Uitgaan van Markdown-opmaak";
+# EN: Assume Markdown formatting
+# DRAFT: Uitgaan van Markdown-opmaak
+
+"tooltip.scrivenerAssumeMarkdown" = "Behandel binderdocumenten als Markdown geschreven in Scrivener (getypte lijsten, tabellen, hekjes, lege regels tussen alinea's) in plaats van alleen in de Scrivener rich-text-structuur.";
+# EN: Treat binder documents as Markdown authored in Scrivener (typed lists, tables, fences, blank lines between paragraphs) rather than Scrivener rich-text structure alone.
+# DRAFT: Behandel binderdocumenten als Markdown geschreven in Scrivener (getypte lijsten, tabellen, hekjes, lege regels tussen alinea's) in plaats van alleen in de Scrivener rich-text-structuur.
+
+"setting.scrivenerLineBreaks" = "Scrivener-returns behandelen als";
+# EN: Treat Scrivener returns as
+# DRAFT: Scrivener-returns behandelen als
+
+"setting.scrivenerLineBreaks.automatic" = "Automatisch";
+# EN: Automatic
+# DRAFT: Automatisch
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Zachte regeleinden (regels samenvoegen)";
+# EN: Soft line breaks (join lines)
+# DRAFT: Zachte regeleinden (regels samenvoegen)
+
+"setting.scrivenerLineBreaks.paragraphs" = "Alinea-einden (gescheiden houden)";
+# EN: Paragraph breaks (keep separate)
+# DRAFT: Alinea-einden (gescheiden houden)
+
+"tooltip.scrivenerLineBreaks" = "Hoe Return in Scrivener te interpreteren bij conversie naar Markdown. Automatisch volgt Ga uit van Markdown-opmaak: zachte regeleinden als Markdown wordt aangenomen, alinea-einden als dat niet het geval is. Zachte regeleinden (samenvoegregels) voegen opeenvolgende Returns samen tot zachte regeleinden binnen een alinea (een lege regel begint een nieuwe alinea; afhankelijk van Regeleinden behouden in alinea's). Alinea-einden (gescheiden houden) houden elke Return als een Markdown paragraaf. Pijptabellen en omheinde codeblokken blijven onaangetast.";
+# EN: How to interpret Return in Scrivener when converting to Markdown. Automatic follows Assume Markdown formatting: soft line breaks when Markdown is assumed, paragraph breaks when it is not. Soft line breaks (join lines) merge consecutive Returns into soft breaks inside a paragraph (a blank line starts a new paragraph; subject to Retain line breaks in paragraphs). Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Hoe Return in Scrivener te interpreteren bij conversie naar Markdown. Automatisch volgt Ga uit van Markdown-opmaak: zachte regeleinden als Markdown wordt aangenomen, alinea-einden als dat niet het geval is. Zachte regeleinden (samenvoegregels) voegen opeenvolgende Returns samen tot zachte regeleinden binnen een alinea (een lege regel begint een nieuwe alinea; afhankelijk van Regeleinden behouden in alinea's). Alinea-einden (gescheiden houden) houden elke Return als een Markdown paragraaf. Pijptabellen en omheinde codeblokken blijven onaangetast.
+
+=== END Settings.strings (gaps) ===
