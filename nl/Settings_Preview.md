@@ -42,6 +42,9 @@ Omgekeerde diff-volgorde
 Inhoudsopgave scrollpositie van tracks
 : Inhoudsopgave markeert het huidige gedeelte.
 
+Toon huidige koptekst bovenaan het voorbeeld
+: Toont een kleine broodkruimelkop boven het voorbeeld. Wordt bijgewerkt terwijl u scrollt. Klik op een kop in het pad om ernaartoe te springen.
+
 Pop-upstatistieken voor tekstselectie
 : Toon een pop-up voor het tellen van woorden voor de geselecteerde tekst wanneer er een selectie wordt gemaakt.
 

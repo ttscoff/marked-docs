@@ -44,6 +44,9 @@ Ordem de diferença reversa
 O índice rastreia a posição de rolagem
 : Índice destaca a seção atual.
 
+Mostrar o cabeçalho atual no topo da visualização
+: Mostra uma pequena trilha de título acima da visualização. Atualizações conforme você rola. Clique em um título no caminho para ir até ele.
+
 Estatísticas pop-up para seleção de texto
 : mostra um pop-up de contagem de palavras para o texto selecionado sempre que uma seleção é feita.
 

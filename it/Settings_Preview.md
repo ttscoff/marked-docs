@@ -44,6 +44,9 @@ Ordine differenziale inverso
 Il sommario tiene traccia della posizione di scorrimento
 : Il sommario evidenzia la sezione corrente.
 
+Mostra l'intestazione corrente nella parte superiore dell'anteprima
+: Mostra un piccolo breadcrumb dell'intestazione sopra l'anteprima. Aggiornamenti mentre scorri. Fare clic su un'intestazione nel percorso per passare ad essa.
+
 Statistiche popup per la selezione del testo
 : mostra un popup di conteggio delle parole per il testo selezionato ogni volta che viene effettuata una selezione.
 
