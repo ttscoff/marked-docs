@@ -1,0 +1,30 @@
+# Marked Localization Update
+# Locale: zh-Hans (Simplified Chinese)
+# Feature: showCurrentHeaderInPreview (Show current header at top of preview)
+# Generated: 2026-08-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate the product name Marked.
+# "header" here means the current heading breadcrumb above the preview,
+# not a print header/footer.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# New Preview → Features checkbox, next to "Table of Contents tracks scroll
+# position". Off by default. The bar shows Heading 1 > Heading 2 > … and
+# updates as you scroll; click a crumb to jump.
+
+=== BEGIN Settings.strings ===
+"setting.showCurrentHeaderInPreview" = "在预览顶部显示当前标题";
+# EN: Show current header at top of preview
+# DRAFT: 在预览顶部显示当前标题
+
+"tooltip.showCurrentHeaderInPreview" = "在预览上方显示一个小标题面包屑。滚动时更新。";
+# EN: Shows a small heading breadcrumb above the preview. Updates as you scroll.
+# DRAFT: 在预览上方显示一个小标题面包屑。滚动时更新。
+=== END Settings.strings ===
