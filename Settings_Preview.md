@@ -42,6 +42,9 @@ Reverse diff order
 Table of Contents tracks scroll position
 : Table of Contents highlights current section.
 
+Show current header at top of preview
+: Shows a small heading breadcrumb above the preview. Updates as you scroll. Click a heading in the path to jump to it.
+
 Popup stats for text selection
 : Show a word count popup for the selected text whenever a selection is made.
 
