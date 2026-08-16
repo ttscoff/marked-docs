@@ -1,0 +1,287 @@
+# Marked Localization Update
+# Locale: zh-Hant (Traditional Chinese)
+# Feature: Style Manager window
+# Generated: 2026-08-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, %lu, \n, HTML tags, and keyboard symbols.
+# Do not translate product names (Marked) unless your locale normally localizes them.
+#
+# DRAFT lines are machine-translated starting points for review.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 65
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 65
+# Style Manager window chrome, alerts, source badges, and preview sample copy.
+
+"Manage Styles" = "管理樣式";
+# EN: Manage Styles
+# DRAFT: 管理樣式
+
+"Styles" = "樣式";
+# EN: Styles
+# DRAFT: 樣式
+
+"Filter Styles" = "過濾器樣式";
+# EN: Filter Styles
+# DRAFT: 過濾器樣式
+
+"Preview" = "預覽";
+# EN: Preview
+# DRAFT: 預覽
+
+"Preview: —" = "預覽： -";
+# EN: Preview: —
+# DRAFT: 預覽： -
+
+"Preview: %@" = "預覽：%@";
+# EN: Preview: %@
+# DRAFT: 預覽：%@
+
+"Dark Mode" = "深色模式";
+# EN: Dark Mode
+# DRAFT: 深色模式
+
+"Add New Style" = "新增風格";
+# EN: Add New Style
+# DRAFT: 新增風格
+
+"Generate Style" = "產生樣式";
+# EN: Generate Style
+# DRAFT: 產生樣式
+
+"Style Gallery" = "風格畫廊";
+# EN: Style Gallery
+# DRAFT: 風格畫廊
+
+"Show disabled styles" = "顯示禁用樣式";
+# EN: Show disabled styles
+# DRAFT: 顯示禁用樣式
+
+"Restore built-in styles" = "恢復內建樣式";
+# EN: Restore built-in styles
+# DRAFT: 恢復內建樣式
+
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)" = "捷徑依序更新（⌘1-9、⌥⌘1-0、⌃⌘1-0、⇧⌘1-0）";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+# DRAFT: 捷徑依序更新（⌘1-9、⌥⌘1-0、⌃⌘1-0、⇧⌘1-0）
+
+"Order" = "命令";
+# EN: Order
+# DRAFT: 命令
+
+"Name" = "名稱";
+# EN: Name
+# DRAFT: 名稱
+
+"Source" = "來源";
+# EN: Source
+# DRAFT: 來源
+
+"Controls" = "控制";
+# EN: Controls
+# DRAFT: 控制
+
+"Builtin" = "內建";
+# EN: Builtin
+# DRAFT: 內建
+
+"Custom" = "__學期_0__";
+# EN: Custom
+# DRAFT: __學期_0__
+
+"Duplicated" = "重複的";
+# EN: Duplicated
+# DRAFT: 重複的
+
+"Duplicate" = "複製";
+# EN: Duplicate
+# DRAFT: 複製
+
+"Delete" = "刪除";
+# EN: Delete
+# DRAFT: 刪除
+
+"Reveal in Finder" = "在 Finder 中顯示";
+# EN: Reveal in Finder
+# DRAFT: 在 Finder 中顯示
+
+"Edit in default editor" = "在預設編輯器中編輯";
+# EN: Edit in default editor
+# DRAFT: 在預設編輯器中編輯
+
+"Style Preview" = "風格預覽";
+# EN: Style Preview
+# DRAFT: 風格預覽
+
+"Heading 1 styling" = "標題1樣式";
+# EN: Heading 1 styling
+# DRAFT: 標題1樣式
+
+"Heading 2 styling" = "標題 2 樣式";
+# EN: Heading 2 styling
+# DRAFT: 標題 2 樣式
+
+"Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing." = "段落樣式包括<strong>粗體文字</strong>、<em>斜體文字</em>、內聯<code>代碼文字</code>以及用於間距的可讀句子。";
+# EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
+# DRAFT: 段落樣式包括<strong>粗體文字</strong>、<em>斜體文字</em>、內聯<code>代碼文字</code>以及用於間距的可讀句子。
+
+"Move to Application Support" = "轉到應用程式支援";
+# EN: Move to Application Support
+# DRAFT: 轉到應用程式支援
+
+"Copy to Application Support" = "複製到應用程式支持";
+# EN: Copy to Application Support
+# DRAFT: 複製到應用程式支持
+
+"Do you want to copy this Style to Marked's Application Support folder?" = "您想將此樣式複製到 Marked 的應用程式支援資料夾嗎？";
+# EN: Do you want to copy this Style to Marked's Application Support folder?
+# DRAFT: 您想將此樣式複製到 Marked 的應用程式支援資料夾嗎？
+
+"Do you want to copy these Styles to Marked's Application Support folder?" = "您想將這些樣式複製到 Marked 的應用程式支援資料夾嗎？";
+# EN: Do you want to copy these Styles to Marked's Application Support folder?
+# DRAFT: 您想將這些樣式複製到 Marked 的應用程式支援資料夾嗎？
+
+"Styles will be stored in:
+%@" = "樣式將儲存在：
+%@";
+# EN: Styles will be stored in:\n%@
+# DRAFT: 樣式將儲存在：\n%@
+
+"Use from Current Location" = "從目前位置使用";
+# EN: Use from Current Location
+# DRAFT: 從目前位置使用
+
+"Remove original CSS file" = "刪除原來的CSS文件";
+# EN: Remove original CSS file
+# DRAFT: 刪除原來的CSS文件
+
+"Could not add the style file." = "無法新增樣式文件。";
+# EN: Could not add the style file.
+# DRAFT: 無法新增樣式文件。
+
+"Unknown error." = "未知錯誤。";
+# EN: Unknown error.
+# DRAFT: 未知錯誤。
+
+"Add a Custom Style" = "新增 Custom 樣式";
+# EN: Add a Custom Style
+# DRAFT: 新增 Custom 樣式
+
+"Add %lu Custom Styles" = "新增 %lu Custom 樣式";
+# EN: Add %lu Custom Styles
+# DRAFT: 新增 %lu Custom 樣式
+
+"Add Styles" = "新增樣式";
+# EN: Add Styles
+# DRAFT: 新增樣式
+
+"Add Custom Styles" = "新增 Custom 樣式";
+# EN: Add Custom Styles
+# DRAFT: 新增 Custom 樣式
+
+"Select one or more CSS files to add to your custom styles." = "選擇一個或多個 CSS 檔案以新增到您的自訂樣式。";
+# EN: Select one or more CSS files to add to your custom styles.
+# DRAFT: 選擇一個或多個 CSS 檔案以新增到您的自訂樣式。
+
+"Restore Default Styles" = "恢復預設樣式";
+# EN: Restore Default Styles
+# DRAFT: 恢復預設樣式
+
+"Built-in styles will be re-enabled. Restore the default built-in order as well?" = "內建樣式將重新啟用。也恢復預設的內建順序嗎？";
+# EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
+# DRAFT: 內建樣式將重新啟用。也恢復預設的內建順序嗎？
+
+"Keep Current Order" = "保持當前訂單";
+# EN: Keep Current Order
+# DRAFT: 保持當前訂單
+
+"Restore Default Order" = "恢復預設順序";
+# EN: Restore Default Order
+# DRAFT: 恢復預設順序
+
+"Remove “%@”?" = "刪除“%@”？";
+# EN: Remove “%@”?
+# DRAFT: 刪除“%@”？
+
+"Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk." = "選擇「刪除引用」以保留 CSS 文件，或選擇「移至廢紙簍」以從磁碟刪除該文件。";
+# EN: Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk.
+# DRAFT: 選擇「刪除引用」以保留 CSS 文件，或選擇「移至廢紙簍」以從磁碟刪除該文件。
+
+"The CSS file for this style cannot be found. Removing the reference will detach it from Marked." = "找不到此樣式的 CSS 檔案。刪除引用會將其與 Marked 分開。";
+# EN: The CSS file for this style cannot be found. Removing the reference will detach it from Marked.
+# DRAFT: 找不到此樣式的 CSS 檔案。刪除引用會將其與 Marked 分開。
+
+"Remove Reference" = "刪除參考";
+# EN: Remove Reference
+# DRAFT: 刪除參考
+
+"Move to Trash" = "移至垃圾箱";
+# EN: Move to Trash
+# DRAFT: 移至垃圾箱
+
+"The style file could not be found." = "找不到樣式文件。";
+# EN: The style file could not be found.
+# DRAFT: 找不到樣式文件。
+
+"Duplicate or re-import the style to recreate it." = "複製或重新匯入樣式以重新建立它。";
+# EN: Duplicate or re-import the style to recreate it.
+# DRAFT: 複製或重新匯入樣式以重新建立它。
+
+"Couldn’t move the CSS file to Trash." = "無法將 CSS 檔案移至廢紙簍。";
+# EN: Couldn’t move the CSS file to Trash.
+# DRAFT: 無法將 CSS 檔案移至廢紙簍。
+
+"Built-in styles are read-only." = "內建樣式是唯讀的。";
+# EN: Built-in styles are read-only.
+# DRAFT: 內建樣式是唯讀的。
+
+"Duplicate the style to create an editable copy." = "複製樣式以建立可編輯的副本。";
+# EN: Duplicate the style to create an editable copy.
+# DRAFT: 複製樣式以建立可編輯的副本。
+
+"This style has no editable file on disk." = "此樣式在磁碟上沒有可編輯的檔案。";
+# EN: This style has no editable file on disk.
+# DRAFT: 此樣式在磁碟上沒有可編輯的檔案。
+
+"Import or duplicate a style with a file path to edit its contents." = "匯入或複製帶有檔案路徑的樣式以編輯其內容。";
+# EN: Import or duplicate a style with a file path to edit its contents.
+# DRAFT: 匯入或複製帶有檔案路徑的樣式以編輯其內容。
+
+"Style file not found on disk." = "在磁碟上找不到樣式文件。";
+# EN: Style file not found on disk.
+# DRAFT: 在磁碟上找不到樣式文件。
+
+"Duplicate or import the style again to recreate the file before editing." = "再次複製或匯入樣式以在編輯之前重新建立文件。";
+# EN: Duplicate or import the style again to recreate the file before editing.
+# DRAFT: 再次複製或匯入樣式以在編輯之前重新建立文件。
+
+"Open style in…" = "開放式風格...";
+# EN: Open style in…
+# DRAFT: 開放式風格...
+
+"Choose how you want to edit this style's CSS." = "選擇您想要如何編輯此樣式的 CSS。";
+# EN: Choose how you want to edit this style's CSS.
+# DRAFT: 選擇您想要如何編輯此樣式的 CSS。
+
+"Style Generator" = "風格產生器";
+# EN: Style Generator
+# DRAFT: 風格產生器
+
+"Default Editor" = "預設編輯器";
+# EN: Default Editor
+# DRAFT: 預設編輯器
+
+"Marked Style" = "__學期_0__ 風格";
+# EN: Marked Style
+# DRAFT: __學期_0__ 風格
+
+=== END SpecialWindows.strings ===
