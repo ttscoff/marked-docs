@@ -44,6 +44,9 @@ Fordított különbségi sorrend
 A tartalomjegyzék követi a görgetés pozícióját
 : A tartalomjegyzék kiemeli az aktuális részt.
 
+Az aktuális fejléc megjelenítése az előnézet tetején
+: Megjelenít egy kis fejlécet az előnézet felett. Frissítések görgetés közben. Kattintson egy fejlécre az útvonalon, hogy ráugorjon.
+
 Felugró statisztika a szöveg kiválasztásához
 : A kiválasztott szöveg szószámláló előugró ablakának megjelenítése, amikor kijelölés történik.
 
