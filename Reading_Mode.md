@@ -6,7 +6,7 @@ Reading Mode keeps your place in long documents, focuses the current block, and 
 
 Choose **Preview > Reading Mode** or press {% kbd {{ctrl}}{{opt}}R %}. If Speed Read is running, Marked stops it before entering Reading Mode.
 
-The current paragraph, heading, list item, image, code block, table, or other reading unit receives a left rule and a soft background wash. Keyboard navigation keeps that unit near the upper third of the preview. Scrolling manually retargets the focus without snapping the page.
+The current paragraph, heading, list item, image, code block, table, or other reading unit receives a left marker. Keyboard navigation moves smoothly between blocks and keeps the current unit near the upper third of the preview. Scrolling manually retargets the focus without snapping the page.
 
 ## Navigation and resume [navigation-and-resume]
 
@@ -23,9 +23,23 @@ Marked saves the current reading position for each document. When a saved positi
 - **Resume** returns to the saved reading position.
 - **Start from Here** uses the reading unit currently visible in the preview.
 
+## Focus mode [focus-mode]
+
+Click the Focus mode tool at the top of the preview to dim every block except the current reading unit. Focus mode follows the current unit as you navigate. Click the tool again to restore the other blocks, or leave Reading Mode to clear Focus mode automatically.
+
 ## Creating and editing highlights [creating-and-editing-highlights]
 
 Select text and press {% kbd h %} to create an inline marker highlight. With no selection, press {% kbd h %} to highlight the entire current reading unit. The first highlight prompts for a signature, which Marked uses when creating CriticMarkup. You can change the signature in {% prefspane Preview %}.
+
+### Selection popup
+
+Select text to show the selection popup, then click its highlighter to create an inline highlight. The popup also includes the selection word count when **Show word count on selection** is enabled.
+
+### Automatic highlights
+
+Click the highlighter tool at the top of the preview to automatically highlight text as you select it. Click the highlighter in the selection popup to undo the last automatic highlight, or click the top highlighter tool again to turn automatic highlighting off.
+
+The {% kbd h %} shortcut remains available: it highlights selected text when there is a selection, or the current reading unit when there is not.
 
 Inline highlights display start and end handles when you point to or select them. Drag either handle to extend or contract the highlighted range. Changes are saved automatically and restored when the document is refreshed or reopened.
 
