@@ -14,7 +14,7 @@ While Reading Mode is active:
 
 - {% kbd j %} or {% kbd down %}: Move to the next reading unit.
 - {% kbd k %} or {% kbd up %}: Move to the previous reading unit.
-- {% kbd h %}: Highlight the selection, or the current unit when no text is selected.
+- {% kbd h %}: Highlight the selection, or toggle a highlight on the current unit when no text is selected.
 
 Marked saves the current reading position for each document. When a saved position differs from the current view, entering Reading Mode offers two choices:
 
@@ -27,7 +27,7 @@ Click the Focus mode tool at the top of the preview to dim every block except th
 
 ## Creating and editing highlights [creating-and-editing-highlights]
 
-Select text and press {% kbd h %} to create an inline marker highlight. With no selection, press {% kbd h %} to highlight the entire current reading unit. The first highlight prompts for a signature, which Marked uses when creating CriticMarkup. You can change the signature in {% prefspane Preview %}.
+Select text and press {% kbd h %} to create an inline marker highlight. With no selection, press {% kbd h %} to highlight the entire current reading unit, or press it again to remove that unit highlight. The first highlight prompts for a signature, which Marked uses when creating CriticMarkup. You can change the signature in {% prefspane Preview %}.
 
 ### Selection popup
 
