@@ -12,11 +12,9 @@ The current paragraph, heading, list item, image, code block, table, or other re
 
 While Reading Mode is active:
 
-| Shortcut | Function |
-| :-- | :-- |
-| {% kbd j %} or {% kbd down %} | Move to the next reading unit |
-| {% kbd k %} or {% kbd up %} | Move to the previous reading unit |
-| {% kbd h %} | Highlight the selection, or the current unit when no text is selected |
+- {% kbd j %} or {% kbd down %}: Move to the next reading unit.
+- {% kbd k %} or {% kbd up %}: Move to the previous reading unit.
+- {% kbd h %}: Highlight the selection, or the current unit when no text is selected.
 
 Marked saves the current reading position for each document. When a saved position differs from the current view, entering Reading Mode offers two choices:
 
@@ -38,8 +36,6 @@ Select text to show the selection popup, then click its highlighter to create an
 ### Automatic highlights
 
 Click the highlighter tool at the top of the preview to automatically highlight text as you select it. Click the highlighter in the selection popup to undo the last automatic highlight, or click the top highlighter tool again to turn automatic highlighting off.
-
-The {% kbd h %} shortcut remains available: it highlights selected text when there is a selection, or the current reading unit when there is not.
 
 Inline highlights display start and end handles when you point to or select them. Drag either handle to extend or contract the highlighted range. Changes are saved automatically and restored when the document is refreshed or reopened.
 
