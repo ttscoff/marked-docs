@@ -43,9 +43,25 @@ Click a highlight to focus it, then press Delete or Backspace to remove it. Cont
 
 The **Show highlights when Reading Mode is off** setting controls whether saved highlights remain visible after you leave the mode.
 
+## Exporting highlights [exporting-highlights]
+
+Choose **Preview > Export Highlights…** or click the Export highlights tool in the Reading Mode toolbar. Formats: Markdown, HTML (current preview style), plain text, CSV (Readwise-compatible, plus Signature), and JSON.
+
+The JSON format is Marked's interchange file. Save it beside a Markdown document as `Document.markedhighlights.json`, or include it automatically when exporting a TextBundle.
+
+## Importing highlights [importing-highlights]
+
+Choose **Preview > Import Highlights…** and select a Marked highlights JSON file. Highlights merge by id: new ids are added, matching ids update, and your existing highlights that are not in the file remain.
+
+When you open a TextBundle that contains `highlights.json`, Marked merges those highlights automatically.
+
+## TextBundle highlights [textbundle-highlights]
+
+On **Save TextBundle**, enable **Include Highlights** to embed `highlights.json` in the bundle (or TextPack). Share the bundle so collaborators can open it in Marked and keep a combined highlight set.
+
 ## CriticMarkup actions [criticmarkup-actions]
 
-The Preview menu provides two actions for saved highlights:
+Separate from highlight export and import, the Preview menu provides two CriticMarkup actions for saved highlights:
 
 - **Copy Highlights as CriticMarkup** copies every highlight in CriticMarkup format without changing the source file.
 - **Inject Highlights into Document...** asks for confirmation, then wraps unambiguous matching source text in CriticMarkup. Marked skips missing, duplicate, or overlapping matches and reports the result.
