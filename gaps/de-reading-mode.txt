@@ -1,3 +1,22 @@
+# Help translation gap — de — Reading_Mode.md
+# Feature: Reading Mode (new page)
+# Generated: 2026-08-21
+#
+# German help does not yet include Reading_Mode.md. Translate the ENGLISH
+# TARGET below into a new de/Reading_Mode.md (do not machine-overwrite other
+# polished German pages). Also add a Reading Mode entry to de/config.yaml
+# after Speed_Reading (see English HelpDocs/config.yaml).
+#
+# Return: PR to ttscoff/marked-docs, or reply with the German Markdown page.
+
+=== LOCATION ===
+File: de/Reading_Mode.md (new)
+Also update: de/config.yaml (add Reading_Mode page entry after Speed_Reading)
+
+=== CURRENT GERMAN (replace this block) ===
+(none — new page)
+
+=== ENGLISH TARGET (translate to German) ===
 # <%= @title %>
 
 Reading Mode keeps your place in long documents, focuses the current block, and lets you save persistent highlights.
@@ -86,3 +105,9 @@ With a signature and comment, generated markup uses <code>{=<span>=</span>highli
 ## Printing highlights [printing-highlights]
 
 Reading Mode highlights are included when printing or saving as PDF by default. Use **Include Reading Mode highlights** in the print sheet to change it for the current output. The matching setting in {% prefspane Export %} controls the default for future print and PDF jobs.
+
+=== NOTES ===
+- Keep help macros unchanged: {% appmenu %}, {% kbd %}, {% prefspane %}
+- Keep product/format names: Marked, CriticMarkup, TextBundle, TextPack, Readwise, JSON, CSV, HTML, PDF, Markdown
+- Keep heading anchors in brackets, e.g. [entering-reading-mode]
+- Prefer UI terms consistent with German Settings/MainMenu translations when available
