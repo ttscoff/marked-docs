@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: fr (French)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Afficher les surlignages lorsque le mode lecture est désactivé";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Afficher les surlignages lorsque le mode lecture est désactivé
+
+"tooltip.showReadingHighlightsWhenIdle" = "Garder visibles les surlignages de lecture enregistrés hors du mode lecture.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Garder visibles les surlignages de lecture enregistrés hors du mode lecture.
+
+"setting.readingHighlightSignature" = "Signature de surlignage";
+# EN: Highlight signature
+# DRAFT: Signature de surlignage
+
+"tooltip.readingHighlightSignature" = "Nom utilisé pour attribuer les surlignages de lecture exportés.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Nom utilisé pour attribuer les surlignages de lecture exportés.
+
+"setting.readingHighlightSignature.placeholder" = "Nom";
+# EN: Name
+# DRAFT: Nom
+
+"setting.includeReadingHighlightsInPrint" = "Inclure les surlignages du mode lecture";
+# EN: Include Reading Mode highlights
+# DRAFT: Inclure les surlignages du mode lecture
+
+"tooltip.includeReadingHighlightsInPrint" = "Inclure par défaut les surlignages de lecture enregistrés lors de l’impression ou de l’enregistrement en PDF.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Inclure par défaut les surlignages de lecture enregistrés lors de l’impression ou de l’enregistrement en PDF.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Mode lecture";
+# EN: Reading Mode
+# DRAFT: Mode lecture
+
+"MkHL-Export-Main.title" = "Exporter les surlignages…";
+# EN: Export Highlights…
+# DRAFT: Exporter les surlignages…
+
+"MkHL-Import-Main.title" = "Importer les surlignages…";
+# EN: Import Highlights…
+# DRAFT: Importer les surlignages…
+
+"MkCM-Copy-Main.title" = "Copier les surlignages en CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copier les surlignages en CriticMarkup
+
+"MkCM-Inject-Main.title" = "Injecter les surlignages dans le document…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injecter les surlignages dans le document…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Mode lecture";
+# EN: Reading Mode
+# DRAFT: Mode lecture
+
+"MkHL-Export-MAS.title" = "Exporter les surlignages…";
+# EN: Export Highlights…
+# DRAFT: Exporter les surlignages…
+
+"MkHL-Import-MAS.title" = "Importer les surlignages…";
+# EN: Import Highlights…
+# DRAFT: Importer les surlignages…
+
+"MkCM-Copy-MAS.title" = "Copier les surlignages en CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copier les surlignages en CriticMarkup
+
+"MkCM-Inject-MAS.title" = "Injecter les surlignages dans le document…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injecter les surlignages dans le document…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Mode lecture";
+# EN: Reading Mode
+# DRAFT: Mode lecture
+
+"MkHL-Export-Set.title" = "Exporter les surlignages…";
+# EN: Export Highlights…
+# DRAFT: Exporter les surlignages…
+
+"MkHL-Import-Set.title" = "Importer les surlignages…";
+# EN: Import Highlights…
+# DRAFT: Importer les surlignages…
+
+"MkCM-Copy-Set.title" = "Copier les surlignages en CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copier les surlignages en CriticMarkup
+
+"MkCM-Inject-Set.title" = "Injecter les surlignages dans le document…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injecter les surlignages dans le document…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Inclure les surlignages";
+# EN: Include Highlights
+# DRAFT: Inclure les surlignages
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Inclure les surlignages du mode lecture dans le TextBundle ou le TextPack";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Inclure les surlignages du mode lecture dans le TextBundle ou le TextPack
+
+=== END MarkdownDocument.strings ===

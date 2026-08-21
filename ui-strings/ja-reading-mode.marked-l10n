@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "リーディングモードがオフのときもハイライトを表示";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: リーディングモードがオフのときもハイライトを表示
+
+"tooltip.showReadingHighlightsWhenIdle" = "保存した読書ハイライトをリーディングモード外でも表示します。";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: 保存した読書ハイライトをリーディングモード外でも表示します。
+
+"setting.readingHighlightSignature" = "ハイライト署名";
+# EN: Highlight signature
+# DRAFT: ハイライト署名
+
+"tooltip.readingHighlightSignature" = "書き出した読書ハイライトの帰属に使う名前。";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: 書き出した読書ハイライトの帰属に使う名前。
+
+"setting.readingHighlightSignature.placeholder" = "名前";
+# EN: Name
+# DRAFT: 名前
+
+"setting.includeReadingHighlightsInPrint" = "リーディングモードのハイライトを含める";
+# EN: Include Reading Mode highlights
+# DRAFT: リーディングモードのハイライトを含める
+
+"tooltip.includeReadingHighlightsInPrint" = "印刷または PDF 保存時に、保存済みの読書ハイライトをデフォルトで含めます。";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: 印刷または PDF 保存時に、保存済みの読書ハイライトをデフォルトで含めます。
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "リーディングモード";
+# EN: Reading Mode
+# DRAFT: リーディングモード
+
+"MkHL-Export-Main.title" = "ハイライトを書き出す…";
+# EN: Export Highlights…
+# DRAFT: ハイライトを書き出す…
+
+"MkHL-Import-Main.title" = "ハイライトを取り込む…";
+# EN: Import Highlights…
+# DRAFT: ハイライトを取り込む…
+
+"MkCM-Copy-Main.title" = "ハイライトを CriticMarkup としてコピー";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: ハイライトを CriticMarkup としてコピー
+
+"MkCM-Inject-Main.title" = "ハイライトを書類に挿入…";
+# EN: Inject Highlights into Document…
+# DRAFT: ハイライトを書類に挿入…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "リーディングモード";
+# EN: Reading Mode
+# DRAFT: リーディングモード
+
+"MkHL-Export-MAS.title" = "ハイライトを書き出す…";
+# EN: Export Highlights…
+# DRAFT: ハイライトを書き出す…
+
+"MkHL-Import-MAS.title" = "ハイライトを取り込む…";
+# EN: Import Highlights…
+# DRAFT: ハイライトを取り込む…
+
+"MkCM-Copy-MAS.title" = "ハイライトを CriticMarkup としてコピー";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: ハイライトを CriticMarkup としてコピー
+
+"MkCM-Inject-MAS.title" = "ハイライトを書類に挿入…";
+# EN: Inject Highlights into Document…
+# DRAFT: ハイライトを書類に挿入…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "リーディングモード";
+# EN: Reading Mode
+# DRAFT: リーディングモード
+
+"MkHL-Export-Set.title" = "ハイライトを書き出す…";
+# EN: Export Highlights…
+# DRAFT: ハイライトを書き出す…
+
+"MkHL-Import-Set.title" = "ハイライトを取り込む…";
+# EN: Import Highlights…
+# DRAFT: ハイライトを取り込む…
+
+"MkCM-Copy-Set.title" = "ハイライトを CriticMarkup としてコピー";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: ハイライトを CriticMarkup としてコピー
+
+"MkCM-Inject-Set.title" = "ハイライトを書類に挿入…";
+# EN: Inject Highlights into Document…
+# DRAFT: ハイライトを書類に挿入…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "ハイライトを含める";
+# EN: Include Highlights
+# DRAFT: ハイライトを含める
+
+"MkHL-Include-TB.ibShadowedToolTip" = "リーディングモードのハイライトを TextBundle または TextPack に含める";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: リーディングモードのハイライトを TextBundle または TextPack に含める
+
+=== END MarkdownDocument.strings ===

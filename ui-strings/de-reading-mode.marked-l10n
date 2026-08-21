@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: de (German)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Hervorhebungen anzeigen, wenn der Lesemodus aus ist";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Hervorhebungen anzeigen, wenn der Lesemodus aus ist
+
+"tooltip.showReadingHighlightsWhenIdle" = "Gespeicherte Lesehervorhebungen auch außerhalb des Lesemodus sichtbar lassen.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Gespeicherte Lesehervorhebungen auch außerhalb des Lesemodus sichtbar lassen.
+
+"setting.readingHighlightSignature" = "Hervorhebungssignatur";
+# EN: Highlight signature
+# DRAFT: Hervorhebungssignatur
+
+"tooltip.readingHighlightSignature" = "Name zur Zuordnung exportierter Lesehervorhebungen.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Name zur Zuordnung exportierter Lesehervorhebungen.
+
+"setting.readingHighlightSignature.placeholder" = "Name";
+# EN: Name
+# DRAFT: Name
+
+"setting.includeReadingHighlightsInPrint" = "Lesemodus-Hervorhebungen einschließen";
+# EN: Include Reading Mode highlights
+# DRAFT: Lesemodus-Hervorhebungen einschließen
+
+"tooltip.includeReadingHighlightsInPrint" = "Gespeicherte Lesehervorhebungen standardmäßig beim Drucken oder Speichern als PDF einschließen.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Gespeicherte Lesehervorhebungen standardmäßig beim Drucken oder Speichern als PDF einschließen.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Lesemodus";
+# EN: Reading Mode
+# DRAFT: Lesemodus
+
+"MkHL-Export-Main.title" = "Hervorhebungen exportieren…";
+# EN: Export Highlights…
+# DRAFT: Hervorhebungen exportieren…
+
+"MkHL-Import-Main.title" = "Hervorhebungen importieren…";
+# EN: Import Highlights…
+# DRAFT: Hervorhebungen importieren…
+
+"MkCM-Copy-Main.title" = "Hervorhebungen als CriticMarkup kopieren";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Hervorhebungen als CriticMarkup kopieren
+
+"MkCM-Inject-Main.title" = "Hervorhebungen in Dokument einfügen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Hervorhebungen in Dokument einfügen…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Lesemodus";
+# EN: Reading Mode
+# DRAFT: Lesemodus
+
+"MkHL-Export-MAS.title" = "Hervorhebungen exportieren…";
+# EN: Export Highlights…
+# DRAFT: Hervorhebungen exportieren…
+
+"MkHL-Import-MAS.title" = "Hervorhebungen importieren…";
+# EN: Import Highlights…
+# DRAFT: Hervorhebungen importieren…
+
+"MkCM-Copy-MAS.title" = "Hervorhebungen als CriticMarkup kopieren";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Hervorhebungen als CriticMarkup kopieren
+
+"MkCM-Inject-MAS.title" = "Hervorhebungen in Dokument einfügen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Hervorhebungen in Dokument einfügen…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Lesemodus";
+# EN: Reading Mode
+# DRAFT: Lesemodus
+
+"MkHL-Export-Set.title" = "Hervorhebungen exportieren…";
+# EN: Export Highlights…
+# DRAFT: Hervorhebungen exportieren…
+
+"MkHL-Import-Set.title" = "Hervorhebungen importieren…";
+# EN: Import Highlights…
+# DRAFT: Hervorhebungen importieren…
+
+"MkCM-Copy-Set.title" = "Hervorhebungen als CriticMarkup kopieren";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Hervorhebungen als CriticMarkup kopieren
+
+"MkCM-Inject-Set.title" = "Hervorhebungen in Dokument einfügen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Hervorhebungen in Dokument einfügen…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Hervorhebungen einschließen";
+# EN: Include Highlights
+# DRAFT: Hervorhebungen einschließen
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Lesemodus-Hervorhebungen in das TextBundle oder TextPack einschließen";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Lesemodus-Hervorhebungen in das TextBundle oder TextPack einschließen
+
+=== END MarkdownDocument.strings ===

@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: nl (Dutch)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Markeringen tonen als de leesmodus uit staat";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Markeringen tonen als de leesmodus uit staat
+
+"tooltip.showReadingHighlightsWhenIdle" = "Bewaarde leesmarkeringen ook buiten de leesmodus zichtbaar houden.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Bewaarde leesmarkeringen ook buiten de leesmodus zichtbaar houden.
+
+"setting.readingHighlightSignature" = "Markeringshandtekening";
+# EN: Highlight signature
+# DRAFT: Markeringshandtekening
+
+"tooltip.readingHighlightSignature" = "Naam om geëxporteerde leesmarkeringen toe te schrijven.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Naam om geëxporteerde leesmarkeringen toe te schrijven.
+
+"setting.readingHighlightSignature.placeholder" = "Naam";
+# EN: Name
+# DRAFT: Naam
+
+"setting.includeReadingHighlightsInPrint" = "Leesmodusmarkeringen opnemen";
+# EN: Include Reading Mode highlights
+# DRAFT: Leesmodusmarkeringen opnemen
+
+"tooltip.includeReadingHighlightsInPrint" = "Bewaarde leesmarkeringen standaard opnemen bij afdrukken of opslaan als PDF.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Bewaarde leesmarkeringen standaard opnemen bij afdrukken of opslaan als PDF.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Leesmodus";
+# EN: Reading Mode
+# DRAFT: Leesmodus
+
+"MkHL-Export-Main.title" = "Markeringen exporteren…";
+# EN: Export Highlights…
+# DRAFT: Markeringen exporteren…
+
+"MkHL-Import-Main.title" = "Markeringen importeren…";
+# EN: Import Highlights…
+# DRAFT: Markeringen importeren…
+
+"MkCM-Copy-Main.title" = "Markeringen kopiëren als CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Markeringen kopiëren als CriticMarkup
+
+"MkCM-Inject-Main.title" = "Markeringen in document invoegen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Markeringen in document invoegen…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Leesmodus";
+# EN: Reading Mode
+# DRAFT: Leesmodus
+
+"MkHL-Export-MAS.title" = "Markeringen exporteren…";
+# EN: Export Highlights…
+# DRAFT: Markeringen exporteren…
+
+"MkHL-Import-MAS.title" = "Markeringen importeren…";
+# EN: Import Highlights…
+# DRAFT: Markeringen importeren…
+
+"MkCM-Copy-MAS.title" = "Markeringen kopiëren als CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Markeringen kopiëren als CriticMarkup
+
+"MkCM-Inject-MAS.title" = "Markeringen in document invoegen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Markeringen in document invoegen…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Leesmodus";
+# EN: Reading Mode
+# DRAFT: Leesmodus
+
+"MkHL-Export-Set.title" = "Markeringen exporteren…";
+# EN: Export Highlights…
+# DRAFT: Markeringen exporteren…
+
+"MkHL-Import-Set.title" = "Markeringen importeren…";
+# EN: Import Highlights…
+# DRAFT: Markeringen importeren…
+
+"MkCM-Copy-Set.title" = "Markeringen kopiëren als CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Markeringen kopiëren als CriticMarkup
+
+"MkCM-Inject-Set.title" = "Markeringen in document invoegen…";
+# EN: Inject Highlights into Document…
+# DRAFT: Markeringen in document invoegen…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Markeringen opnemen";
+# EN: Include Highlights
+# DRAFT: Markeringen opnemen
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Leesmodusmarkeringen opnemen in de TextBundle of TextPack";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Leesmodusmarkeringen opnemen in de TextBundle of TextPack
+
+=== END MarkdownDocument.strings ===

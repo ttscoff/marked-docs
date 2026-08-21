@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: it (Italian)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Mostra evidenziazioni quando la modalità lettura è disattivata";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Mostra evidenziazioni quando la modalità lettura è disattivata
+
+"tooltip.showReadingHighlightsWhenIdle" = "Mantieni visibili le evidenziazioni di lettura salvate fuori dalla modalità lettura.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Mantieni visibili le evidenziazioni di lettura salvate fuori dalla modalità lettura.
+
+"setting.readingHighlightSignature" = "Firma evidenziazione";
+# EN: Highlight signature
+# DRAFT: Firma evidenziazione
+
+"tooltip.readingHighlightSignature" = "Nome usato per attribuire le evidenziazioni di lettura esportate.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Nome usato per attribuire le evidenziazioni di lettura esportate.
+
+"setting.readingHighlightSignature.placeholder" = "Nome";
+# EN: Name
+# DRAFT: Nome
+
+"setting.includeReadingHighlightsInPrint" = "Includi evidenziazioni della modalità lettura";
+# EN: Include Reading Mode highlights
+# DRAFT: Includi evidenziazioni della modalità lettura
+
+"tooltip.includeReadingHighlightsInPrint" = "Includi per impostazione predefinita le evidenziazioni di lettura salvate in stampa o salvataggio PDF.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Includi per impostazione predefinita le evidenziazioni di lettura salvate in stampa o salvataggio PDF.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Modalità lettura";
+# EN: Reading Mode
+# DRAFT: Modalità lettura
+
+"MkHL-Export-Main.title" = "Esporta evidenziazioni…";
+# EN: Export Highlights…
+# DRAFT: Esporta evidenziazioni…
+
+"MkHL-Import-Main.title" = "Importa evidenziazioni…";
+# EN: Import Highlights…
+# DRAFT: Importa evidenziazioni…
+
+"MkCM-Copy-Main.title" = "Copia evidenziazioni come CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copia evidenziazioni come CriticMarkup
+
+"MkCM-Inject-Main.title" = "Inietta evidenziazioni nel documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inietta evidenziazioni nel documento…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Modalità lettura";
+# EN: Reading Mode
+# DRAFT: Modalità lettura
+
+"MkHL-Export-MAS.title" = "Esporta evidenziazioni…";
+# EN: Export Highlights…
+# DRAFT: Esporta evidenziazioni…
+
+"MkHL-Import-MAS.title" = "Importa evidenziazioni…";
+# EN: Import Highlights…
+# DRAFT: Importa evidenziazioni…
+
+"MkCM-Copy-MAS.title" = "Copia evidenziazioni come CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copia evidenziazioni come CriticMarkup
+
+"MkCM-Inject-MAS.title" = "Inietta evidenziazioni nel documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inietta evidenziazioni nel documento…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Modalità lettura";
+# EN: Reading Mode
+# DRAFT: Modalità lettura
+
+"MkHL-Export-Set.title" = "Esporta evidenziazioni…";
+# EN: Export Highlights…
+# DRAFT: Esporta evidenziazioni…
+
+"MkHL-Import-Set.title" = "Importa evidenziazioni…";
+# EN: Import Highlights…
+# DRAFT: Importa evidenziazioni…
+
+"MkCM-Copy-Set.title" = "Copia evidenziazioni come CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copia evidenziazioni come CriticMarkup
+
+"MkCM-Inject-Set.title" = "Inietta evidenziazioni nel documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inietta evidenziazioni nel documento…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Includi evidenziazioni";
+# EN: Include Highlights
+# DRAFT: Includi evidenziazioni
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Includi le evidenziazioni della modalità lettura nel TextBundle o TextPack";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Includi le evidenziazioni della modalità lettura nel TextBundle o TextPack
+
+=== END MarkdownDocument.strings ===

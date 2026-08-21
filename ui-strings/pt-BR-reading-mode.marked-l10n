@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: pt-BR (Brazilian Portuguese)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Mostrar destaques quando o modo de leitura estiver desativado";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Mostrar destaques quando o modo de leitura estiver desativado
+
+"tooltip.showReadingHighlightsWhenIdle" = "Manter visíveis os destaques de leitura salvos fora do modo de leitura.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Manter visíveis os destaques de leitura salvos fora do modo de leitura.
+
+"setting.readingHighlightSignature" = "Assinatura de destaque";
+# EN: Highlight signature
+# DRAFT: Assinatura de destaque
+
+"tooltip.readingHighlightSignature" = "Nome usado para atribuir os destaques de leitura exportados.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Nome usado para atribuir os destaques de leitura exportados.
+
+"setting.readingHighlightSignature.placeholder" = "Nome";
+# EN: Name
+# DRAFT: Nome
+
+"setting.includeReadingHighlightsInPrint" = "Incluir destaques do modo de leitura";
+# EN: Include Reading Mode highlights
+# DRAFT: Incluir destaques do modo de leitura
+
+"tooltip.includeReadingHighlightsInPrint" = "Incluir por padrão os destaques de leitura salvos ao imprimir ou salvar como PDF.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Incluir por padrão os destaques de leitura salvos ao imprimir ou salvar como PDF.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Modo de leitura";
+# EN: Reading Mode
+# DRAFT: Modo de leitura
+
+"MkHL-Export-Main.title" = "Exportar destaques…";
+# EN: Export Highlights…
+# DRAFT: Exportar destaques…
+
+"MkHL-Import-Main.title" = "Importar destaques…";
+# EN: Import Highlights…
+# DRAFT: Importar destaques…
+
+"MkCM-Copy-Main.title" = "Copiar destaques como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar destaques como CriticMarkup
+
+"MkCM-Inject-Main.title" = "Injetar destaques no documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injetar destaques no documento…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Modo de leitura";
+# EN: Reading Mode
+# DRAFT: Modo de leitura
+
+"MkHL-Export-MAS.title" = "Exportar destaques…";
+# EN: Export Highlights…
+# DRAFT: Exportar destaques…
+
+"MkHL-Import-MAS.title" = "Importar destaques…";
+# EN: Import Highlights…
+# DRAFT: Importar destaques…
+
+"MkCM-Copy-MAS.title" = "Copiar destaques como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar destaques como CriticMarkup
+
+"MkCM-Inject-MAS.title" = "Injetar destaques no documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injetar destaques no documento…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Modo de leitura";
+# EN: Reading Mode
+# DRAFT: Modo de leitura
+
+"MkHL-Export-Set.title" = "Exportar destaques…";
+# EN: Export Highlights…
+# DRAFT: Exportar destaques…
+
+"MkHL-Import-Set.title" = "Importar destaques…";
+# EN: Import Highlights…
+# DRAFT: Importar destaques…
+
+"MkCM-Copy-Set.title" = "Copiar destaques como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar destaques como CriticMarkup
+
+"MkCM-Inject-Set.title" = "Injetar destaques no documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Injetar destaques no documento…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Incluir destaques";
+# EN: Include Highlights
+# DRAFT: Incluir destaques
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Incluir destaques do modo de leitura no TextBundle ou TextPack";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Incluir destaques do modo de leitura no TextBundle ou TextPack
+
+=== END MarkdownDocument.strings ===

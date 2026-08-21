@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: zh-Hant (Traditional Chinese)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "關閉閱讀模式時仍顯示醒目標示";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: 關閉閱讀模式時仍顯示醒目標示
+
+"tooltip.showReadingHighlightsWhenIdle" = "在閱讀模式之外仍顯示已儲存的閱讀醒目標示。";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: 在閱讀模式之外仍顯示已儲存的閱讀醒目標示。
+
+"setting.readingHighlightSignature" = "醒目標示簽名";
+# EN: Highlight signature
+# DRAFT: 醒目標示簽名
+
+"tooltip.readingHighlightSignature" = "用於歸屬匯出閱讀醒目標示的名稱。";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: 用於歸屬匯出閱讀醒目標示的名稱。
+
+"setting.readingHighlightSignature.placeholder" = "名稱";
+# EN: Name
+# DRAFT: 名稱
+
+"setting.includeReadingHighlightsInPrint" = "包含閱讀模式醒目標示";
+# EN: Include Reading Mode highlights
+# DRAFT: 包含閱讀模式醒目標示
+
+"tooltip.includeReadingHighlightsInPrint" = "列印或儲存為 PDF 時預設包含已儲存的閱讀醒目標示。";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: 列印或儲存為 PDF 時預設包含已儲存的閱讀醒目標示。
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "閱讀模式";
+# EN: Reading Mode
+# DRAFT: 閱讀模式
+
+"MkHL-Export-Main.title" = "匯出醒目標示…";
+# EN: Export Highlights…
+# DRAFT: 匯出醒目標示…
+
+"MkHL-Import-Main.title" = "匯入醒目標示…";
+# EN: Import Highlights…
+# DRAFT: 匯入醒目標示…
+
+"MkCM-Copy-Main.title" = "將醒目標示複製為 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 將醒目標示複製為 CriticMarkup
+
+"MkCM-Inject-Main.title" = "將醒目標示注入文件…";
+# EN: Inject Highlights into Document…
+# DRAFT: 將醒目標示注入文件…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "閱讀模式";
+# EN: Reading Mode
+# DRAFT: 閱讀模式
+
+"MkHL-Export-MAS.title" = "匯出醒目標示…";
+# EN: Export Highlights…
+# DRAFT: 匯出醒目標示…
+
+"MkHL-Import-MAS.title" = "匯入醒目標示…";
+# EN: Import Highlights…
+# DRAFT: 匯入醒目標示…
+
+"MkCM-Copy-MAS.title" = "將醒目標示複製為 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 將醒目標示複製為 CriticMarkup
+
+"MkCM-Inject-MAS.title" = "將醒目標示注入文件…";
+# EN: Inject Highlights into Document…
+# DRAFT: 將醒目標示注入文件…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "閱讀模式";
+# EN: Reading Mode
+# DRAFT: 閱讀模式
+
+"MkHL-Export-Set.title" = "匯出醒目標示…";
+# EN: Export Highlights…
+# DRAFT: 匯出醒目標示…
+
+"MkHL-Import-Set.title" = "匯入醒目標示…";
+# EN: Import Highlights…
+# DRAFT: 匯入醒目標示…
+
+"MkCM-Copy-Set.title" = "將醒目標示複製為 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 將醒目標示複製為 CriticMarkup
+
+"MkCM-Inject-Set.title" = "將醒目標示注入文件…";
+# EN: Inject Highlights into Document…
+# DRAFT: 將醒目標示注入文件…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "包含醒目標示";
+# EN: Include Highlights
+# DRAFT: 包含醒目標示
+
+"MkHL-Include-TB.ibShadowedToolTip" = "在 TextBundle 或 TextPack 中包含閱讀模式醒目標示";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: 在 TextBundle 或 TextPack 中包含閱讀模式醒目標示
+
+=== END MarkdownDocument.strings ===

@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: hu (Hungarian)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Kiemelések megjelenítése, ha az olvasási mód ki van kapcsolva";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Kiemelések megjelenítése, ha az olvasási mód ki van kapcsolva
+
+"tooltip.showReadingHighlightsWhenIdle" = "A mentett olvasási kiemelések maradjanak láthatók az olvasási módon kívül is.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: A mentett olvasási kiemelések maradjanak láthatók az olvasási módon kívül is.
+
+"setting.readingHighlightSignature" = "Kiemelés aláírása";
+# EN: Highlight signature
+# DRAFT: Kiemelés aláírása
+
+"tooltip.readingHighlightSignature" = "A exportált olvasási kiemelések tulajdonításához használt név.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: A exportált olvasási kiemelések tulajdonításához használt név.
+
+"setting.readingHighlightSignature.placeholder" = "Név";
+# EN: Name
+# DRAFT: Név
+
+"setting.includeReadingHighlightsInPrint" = "Olvasási mód kiemeléseinek belefoglalása";
+# EN: Include Reading Mode highlights
+# DRAFT: Olvasási mód kiemeléseinek belefoglalása
+
+"tooltip.includeReadingHighlightsInPrint" = "Mentett olvasási kiemelések alapértelmezett belefoglalása nyomtatáskor vagy PDF mentéskor.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Mentett olvasási kiemelések alapértelmezett belefoglalása nyomtatáskor vagy PDF mentéskor.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Olvasási mód";
+# EN: Reading Mode
+# DRAFT: Olvasási mód
+
+"MkHL-Export-Main.title" = "Kiemelések exportálása…";
+# EN: Export Highlights…
+# DRAFT: Kiemelések exportálása…
+
+"MkHL-Import-Main.title" = "Kiemelések importálása…";
+# EN: Import Highlights…
+# DRAFT: Kiemelések importálása…
+
+"MkCM-Copy-Main.title" = "Kiemelések másolása CriticMarkupként";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Kiemelések másolása CriticMarkupként
+
+"MkCM-Inject-Main.title" = "Kiemelések beszúrása a dokumentumba…";
+# EN: Inject Highlights into Document…
+# DRAFT: Kiemelések beszúrása a dokumentumba…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Olvasási mód";
+# EN: Reading Mode
+# DRAFT: Olvasási mód
+
+"MkHL-Export-MAS.title" = "Kiemelések exportálása…";
+# EN: Export Highlights…
+# DRAFT: Kiemelések exportálása…
+
+"MkHL-Import-MAS.title" = "Kiemelések importálása…";
+# EN: Import Highlights…
+# DRAFT: Kiemelések importálása…
+
+"MkCM-Copy-MAS.title" = "Kiemelések másolása CriticMarkupként";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Kiemelések másolása CriticMarkupként
+
+"MkCM-Inject-MAS.title" = "Kiemelések beszúrása a dokumentumba…";
+# EN: Inject Highlights into Document…
+# DRAFT: Kiemelések beszúrása a dokumentumba…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Olvasási mód";
+# EN: Reading Mode
+# DRAFT: Olvasási mód
+
+"MkHL-Export-Set.title" = "Kiemelések exportálása…";
+# EN: Export Highlights…
+# DRAFT: Kiemelések exportálása…
+
+"MkHL-Import-Set.title" = "Kiemelések importálása…";
+# EN: Import Highlights…
+# DRAFT: Kiemelések importálása…
+
+"MkCM-Copy-Set.title" = "Kiemelések másolása CriticMarkupként";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Kiemelések másolása CriticMarkupként
+
+"MkCM-Inject-Set.title" = "Kiemelések beszúrása a dokumentumba…";
+# EN: Inject Highlights into Document…
+# DRAFT: Kiemelések beszúrása a dokumentumba…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Kiemelések belefoglalása";
+# EN: Include Highlights
+# DRAFT: Kiemelések belefoglalása
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Olvasási mód kiemeléseinek belefoglalása a TextBundle-be vagy TextPack-be";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Olvasási mód kiemeléseinek belefoglalása a TextBundle-be vagy TextPack-be
+
+=== END MarkdownDocument.strings ===
