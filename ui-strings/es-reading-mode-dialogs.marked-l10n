@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: es
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "Añadir comentario al resaltado";
+# EN: Add highlight comment
+# DRAFT: Añadir comentario al resaltado
+
+"rm.comment.body" = "Escribe una nota para este resaltado del modo de lectura.";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: Escribe una nota para este resaltado del modo de lectura.
+
+"rm.comment.editTitle" = "Editar comentario del resaltado";
+# EN: Edit highlight comment
+# DRAFT: Editar comentario del resaltado
+
+"rm.common.cancel" = "Cancelar";
+# EN: Cancel
+# DRAFT: Cancelar
+
+"rm.common.save" = "Guardar";
+# EN: Save
+# DRAFT: Guardar
+
+"rm.error.failedExportTextBundle" = "No se pudieron exportar los resaltados del modo de lectura.";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: No se pudieron exportar los resaltados del modo de lectura.
+
+"rm.export.baseSuffix" = "Resaltados";
+# EN: Highlights
+# DRAFT: Resaltados
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "Formato:";
+# EN: Format:
+# DRAFT: Formato:
+
+"rm.export.formatPlainText" = "Texto sin formato";
+# EN: Plain Text
+# DRAFT: Texto sin formato
+
+"rm.export.panelTitle" = "Exportar resaltados del modo de lectura";
+# EN: Export Reading Mode Highlights
+# DRAFT: Exportar resaltados del modo de lectura
+
+"rm.export.unableTitle" = "No se pueden exportar los resaltados";
+# EN: Unable to Export Highlights
+# DRAFT: No se pueden exportar los resaltados
+
+"rm.export.unknownError" = "Error desconocido.";
+# EN: Unknown error.
+# DRAFT: Error desconocido.
+
+"rm.import.invalidFile" = "El archivo no es válido.";
+# EN: The file is not valid.
+# DRAFT: El archivo no es válido.
+
+"rm.import.panelTitle" = "Importar resaltados del modo de lectura";
+# EN: Import Reading Mode Highlights
+# DRAFT: Importar resaltados del modo de lectura
+
+"rm.import.unableTitle" = "No se pueden importar los resaltados";
+# EN: Unable to Import Highlights
+# DRAFT: No se pueden importar los resaltados
+
+"rm.inject.bodyPlural" = "Esto modifica “%@” en disco, envolviendo el texto coincidente de %lu resaltados en CriticMarkup. Se omiten coincidencias faltantes o ambiguas. No se puede deshacer.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Esto modifica “%@” en disco, envolviendo el texto coincidente de %lu resaltados en CriticMarkup. Se omiten coincidencias faltantes o ambiguas. No se puede deshacer.
+
+"rm.inject.bodySingular" = "Esto modifica “%@” en disco, envolviendo el texto coincidente de %lu resaltado en CriticMarkup. Se omiten coincidencias faltantes o ambiguas. No se puede deshacer.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Esto modifica “%@” en disco, envolviendo el texto coincidente de %lu resaltado en CriticMarkup. Se omiten coincidencias faltantes o ambiguas. No se puede deshacer.
+
+"rm.inject.confirm" = "Modificar archivo";
+# EN: Modify File
+# DRAFT: Modificar archivo
+
+"rm.inject.title" = "¿Reescribir el archivo Markdown en disco?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: ¿Reescribir el archivo Markdown en disco?
+
+"rm.js.addComment" = "Añadir comentario";
+# EN: Add comment
+# DRAFT: Añadir comentario
+
+"rm.js.autoHighlight" = "Resaltar selecciones automáticamente";
+# EN: Automatically highlight selections
+# DRAFT: Resaltar selecciones automáticamente
+
+"rm.js.exportHighlights" = "Exportar resaltados";
+# EN: Export highlights
+# DRAFT: Exportar resaltados
+
+"rm.js.focusMode" = "Modo enfoque";
+# EN: Focus mode
+# DRAFT: Modo enfoque
+
+"rm.js.highlight" = "Resaltar";
+# EN: Highlight
+# DRAFT: Resaltar
+
+"rm.js.readingTools" = "Herramientas de lectura";
+# EN: Reading tools
+# DRAFT: Herramientas de lectura
+
+"rm.js.removeHighlight" = "Quitar resaltado";
+# EN: Remove highlight
+# DRAFT: Quitar resaltado
+
+"rm.menu.addComment" = "Añadir comentario…";
+# EN: Add Comment…
+# DRAFT: Añadir comentario…
+
+"rm.menu.deleteComment" = "Eliminar comentario";
+# EN: Delete Comment
+# DRAFT: Eliminar comentario
+
+"rm.menu.deleteHighlight" = "Eliminar resaltado";
+# EN: Delete Highlight
+# DRAFT: Eliminar resaltado
+
+"rm.menu.editComment" = "Editar comentario…";
+# EN: Edit Comment…
+# DRAFT: Editar comentario…
+
+"rm.menu.share" = "Compartir...";
+# EN: Share...
+# DRAFT: Compartir...
+
+"rm.print.includeTitle" = "Incluir resaltados del modo de lectura";
+# EN: Include Reading Mode highlights
+# DRAFT: Incluir resaltados del modo de lectura
+
+"rm.print.includeTooltip" = "Incluir resaltados del modo de lectura guardados al imprimir o exportar PDF.";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: Incluir resaltados del modo de lectura guardados al imprimir o exportar PDF.
+
+"rm.resume.body" = "Hay una posición de modo de lectura guardada en este documento.";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: Hay una posición de modo de lectura guardada en este documento.
+
+"rm.resume.confirm" = "Reanudar";
+# EN: Resume
+# DRAFT: Reanudar
+
+"rm.resume.startHere" = "Empezar desde aquí";
+# EN: Start from Here
+# DRAFT: Empezar desde aquí
+
+"rm.resume.title" = "¿Reanudar la lectura?";
+# EN: Resume reading?
+# DRAFT: ¿Reanudar la lectura?
+
+"rm.signature.body" = "Introduce el nombre que se usará para atribuir los resaltados del modo de lectura.";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: Introduce el nombre que se usará para atribuir los resaltados del modo de lectura.
+
+"rm.signature.placeholder" = "Nombre";
+# EN: Name
+# DRAFT: Nombre
+
+"rm.signature.title" = "Añadir firma de resaltado";
+# EN: Add a highlight signature
+# DRAFT: Añadir firma de resaltado
+
+"rm.status.couldntSaveTextBundle" = "No se pudieron guardar los resaltados en el TextBundle";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: No se pudieron guardar los resaltados en el TextBundle
+
+"rm.status.failed" = "No se pudo iniciar el modo de lectura";
+# EN: Reading Mode failed to start
+# DRAFT: No se pudo iniciar el modo de lectura
+
+"rm.status.injected" = "Insertados %lu, omitidos %lu";
+# EN: Injected %lu, skipped %lu
+# DRAFT: Insertados %lu, omitidos %lu
+
+"rm.status.savedTextBundle" = "Resaltados guardados en el TextBundle";
+# EN: Saved highlights to TextBundle
+# DRAFT: Resaltados guardados en el TextBundle
+
+"rm.status.unavailable" = "El modo de lectura no está disponible en esta vista previa";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: El modo de lectura no está disponible en esta vista previa
+
+=== END MarkdownDocument.strings ===

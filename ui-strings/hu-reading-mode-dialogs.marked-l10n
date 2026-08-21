@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: hu
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "Kiemelés megjegyzésének hozzáadása";
+# EN: Add highlight comment
+# DRAFT: Kiemelés megjegyzésének hozzáadása
+
+"rm.comment.body" = "Írjon megjegyzést ehhez az olvasási mód kiemeléshez.";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: Írjon megjegyzést ehhez az olvasási mód kiemeléshez.
+
+"rm.comment.editTitle" = "Kiemelés megjegyzésének szerkesztése";
+# EN: Edit highlight comment
+# DRAFT: Kiemelés megjegyzésének szerkesztése
+
+"rm.common.cancel" = "Mégsem";
+# EN: Cancel
+# DRAFT: Mégsem
+
+"rm.common.save" = "Mentés";
+# EN: Save
+# DRAFT: Mentés
+
+"rm.error.failedExportTextBundle" = "Az olvasási mód kiemeléseinek exportálása sikertelen.";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: Az olvasási mód kiemeléseinek exportálása sikertelen.
+
+"rm.export.baseSuffix" = "Kiemelések";
+# EN: Highlights
+# DRAFT: Kiemelések
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "Formátum:";
+# EN: Format:
+# DRAFT: Formátum:
+
+"rm.export.formatPlainText" = "Egyszerű szöveg";
+# EN: Plain Text
+# DRAFT: Egyszerű szöveg
+
+"rm.export.panelTitle" = "Olvasási mód kiemeléseinek exportálása";
+# EN: Export Reading Mode Highlights
+# DRAFT: Olvasási mód kiemeléseinek exportálása
+
+"rm.export.unableTitle" = "A kiemelések nem exportálhatók";
+# EN: Unable to Export Highlights
+# DRAFT: A kiemelések nem exportálhatók
+
+"rm.export.unknownError" = "Ismeretlen hiba.";
+# EN: Unknown error.
+# DRAFT: Ismeretlen hiba.
+
+"rm.import.invalidFile" = "A fájl érvénytelen.";
+# EN: The file is not valid.
+# DRAFT: A fájl érvénytelen.
+
+"rm.import.panelTitle" = "Olvasási mód kiemeléseinek importálása";
+# EN: Import Reading Mode Highlights
+# DRAFT: Olvasási mód kiemeléseinek importálása
+
+"rm.import.unableTitle" = "A kiemelések nem importálhatók";
+# EN: Unable to Import Highlights
+# DRAFT: A kiemelések nem importálhatók
+
+"rm.inject.bodyPlural" = "Ez módosítja a(z) „%@” fájlt a lemezen, és CriticMarkupba csomagolja a %lu kiemelés egyező forrásszövegét. A hiányzó vagy többértelmű találatok kimaradnak. Ez nem vonható vissza.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Ez módosítja a(z) „%@” fájlt a lemezen, és CriticMarkupba csomagolja a %lu kiemelés egyező forrásszövegét. A hiányzó vagy többértelmű találatok kimaradnak. Ez nem vonható vissza.
+
+"rm.inject.bodySingular" = "Ez módosítja a(z) „%@” fájlt a lemezen, és CriticMarkupba csomagolja a %lu kiemelés egyező forrásszövegét. A hiányzó vagy többértelmű találatok kimaradnak. Ez nem vonható vissza.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Ez módosítja a(z) „%@” fájlt a lemezen, és CriticMarkupba csomagolja a %lu kiemelés egyező forrásszövegét. A hiányzó vagy többértelmű találatok kimaradnak. Ez nem vonható vissza.
+
+"rm.inject.confirm" = "Fájl módosítása";
+# EN: Modify File
+# DRAFT: Fájl módosítása
+
+"rm.inject.title" = "Felülírja a Markdown fájlt a lemezen?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: Felülírja a Markdown fájlt a lemezen?
+
+"rm.js.addComment" = "Megjegyzés hozzáadása";
+# EN: Add comment
+# DRAFT: Megjegyzés hozzáadása
+
+"rm.js.autoHighlight" = "Kijelölések automatikus kiemelése";
+# EN: Automatically highlight selections
+# DRAFT: Kijelölések automatikus kiemelése
+
+"rm.js.exportHighlights" = "Kiemelések exportálása";
+# EN: Export highlights
+# DRAFT: Kiemelések exportálása
+
+"rm.js.focusMode" = "Fókuszmód";
+# EN: Focus mode
+# DRAFT: Fókuszmód
+
+"rm.js.highlight" = "Kiemelés";
+# EN: Highlight
+# DRAFT: Kiemelés
+
+"rm.js.readingTools" = "Olvasási eszközök";
+# EN: Reading tools
+# DRAFT: Olvasási eszközök
+
+"rm.js.removeHighlight" = "Kiemelés eltávolítása";
+# EN: Remove highlight
+# DRAFT: Kiemelés eltávolítása
+
+"rm.menu.addComment" = "Megjegyzés hozzáadása…";
+# EN: Add Comment…
+# DRAFT: Megjegyzés hozzáadása…
+
+"rm.menu.deleteComment" = "Megjegyzés törlése";
+# EN: Delete Comment
+# DRAFT: Megjegyzés törlése
+
+"rm.menu.deleteHighlight" = "Kiemelés törlése";
+# EN: Delete Highlight
+# DRAFT: Kiemelés törlése
+
+"rm.menu.editComment" = "Megjegyzés szerkesztése…";
+# EN: Edit Comment…
+# DRAFT: Megjegyzés szerkesztése…
+
+"rm.menu.share" = "Megosztás...";
+# EN: Share...
+# DRAFT: Megosztás...
+
+"rm.print.includeTitle" = "Olvasási mód kiemeléseinek belefoglalása";
+# EN: Include Reading Mode highlights
+# DRAFT: Olvasási mód kiemeléseinek belefoglalása
+
+"rm.print.includeTooltip" = "Mentett olvasási mód kiemelések belefoglalása nyomtatáskor vagy PDF exportáláskor.";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: Mentett olvasási mód kiemelések belefoglalása nyomtatáskor vagy PDF exportáláskor.
+
+"rm.resume.body" = "Ehhez a dokumentumhoz mentett olvasási mód pozíció tartozik.";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: Ehhez a dokumentumhoz mentett olvasási mód pozíció tartozik.
+
+"rm.resume.confirm" = "Folytatás";
+# EN: Resume
+# DRAFT: Folytatás
+
+"rm.resume.startHere" = "Indítás innen";
+# EN: Start from Here
+# DRAFT: Indítás innen
+
+"rm.resume.title" = "Folytatja az olvasást?";
+# EN: Resume reading?
+# DRAFT: Folytatja az olvasást?
+
+"rm.signature.body" = "Adja meg a nevet, amellyel az olvasási mód kiemeléseit tulajdonítja.";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: Adja meg a nevet, amellyel az olvasási mód kiemeléseit tulajdonítja.
+
+"rm.signature.placeholder" = "Név";
+# EN: Name
+# DRAFT: Név
+
+"rm.signature.title" = "Kiemelés aláírásának hozzáadása";
+# EN: Add a highlight signature
+# DRAFT: Kiemelés aláírásának hozzáadása
+
+"rm.status.couldntSaveTextBundle" = "A kiemeléseket nem sikerült menteni a TextBundle-be";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: A kiemeléseket nem sikerült menteni a TextBundle-be
+
+"rm.status.failed" = "Az olvasási mód indítása sikertelen";
+# EN: Reading Mode failed to start
+# DRAFT: Az olvasási mód indítása sikertelen
+
+"rm.status.injected" = "%lu beszúrva, %lu kihagyva";
+# EN: Injected %lu, skipped %lu
+# DRAFT: %lu beszúrva, %lu kihagyva
+
+"rm.status.savedTextBundle" = "Kiemelések mentve a TextBundle-be";
+# EN: Saved highlights to TextBundle
+# DRAFT: Kiemelések mentve a TextBundle-be
+
+"rm.status.unavailable" = "Az olvasási mód nem érhető el ebben az előnézetben";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: Az olvasási mód nem érhető el ebben az előnézetben
+
+=== END MarkdownDocument.strings ===

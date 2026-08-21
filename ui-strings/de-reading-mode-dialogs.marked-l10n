@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: de
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "Hervorhebungskommentar hinzufügen";
+# EN: Add highlight comment
+# DRAFT: Hervorhebungskommentar hinzufügen
+
+"rm.comment.body" = "Geben Sie eine Notiz zu dieser Lesemodus-Hervorhebung ein.";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: Geben Sie eine Notiz zu dieser Lesemodus-Hervorhebung ein.
+
+"rm.comment.editTitle" = "Hervorhebungskommentar bearbeiten";
+# EN: Edit highlight comment
+# DRAFT: Hervorhebungskommentar bearbeiten
+
+"rm.common.cancel" = "Abbrechen";
+# EN: Cancel
+# DRAFT: Abbrechen
+
+"rm.common.save" = "Sichern";
+# EN: Save
+# DRAFT: Sichern
+
+"rm.error.failedExportTextBundle" = "Lesemodus-Hervorhebungen konnten nicht exportiert werden.";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: Lesemodus-Hervorhebungen konnten nicht exportiert werden.
+
+"rm.export.baseSuffix" = "Hervorhebungen";
+# EN: Highlights
+# DRAFT: Hervorhebungen
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "Format:";
+# EN: Format:
+# DRAFT: Format:
+
+"rm.export.formatPlainText" = "Klartext";
+# EN: Plain Text
+# DRAFT: Klartext
+
+"rm.export.panelTitle" = "Lesemodus-Hervorhebungen exportieren";
+# EN: Export Reading Mode Highlights
+# DRAFT: Lesemodus-Hervorhebungen exportieren
+
+"rm.export.unableTitle" = "Hervorhebungen können nicht exportiert werden";
+# EN: Unable to Export Highlights
+# DRAFT: Hervorhebungen können nicht exportiert werden
+
+"rm.export.unknownError" = "Unbekannter Fehler.";
+# EN: Unknown error.
+# DRAFT: Unbekannter Fehler.
+
+"rm.import.invalidFile" = "Die Datei ist ungültig.";
+# EN: The file is not valid.
+# DRAFT: Die Datei ist ungültig.
+
+"rm.import.panelTitle" = "Lesemodus-Hervorhebungen importieren";
+# EN: Import Reading Mode Highlights
+# DRAFT: Lesemodus-Hervorhebungen importieren
+
+"rm.import.unableTitle" = "Hervorhebungen können nicht importiert werden";
+# EN: Unable to Import Highlights
+# DRAFT: Hervorhebungen können nicht importiert werden
+
+"rm.inject.bodyPlural" = "Dies ändert „%@“ auf dem Datenträger und umschließt passenden Quelltext für %lu Hervorhebungen mit CriticMarkup. Fehlende oder mehrdeutige Treffer werden übersprungen. Dies kann nicht rückgängig gemacht werden.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Dies ändert „%@“ auf dem Datenträger und umschließt passenden Quelltext für %lu Hervorhebungen mit CriticMarkup. Fehlende oder mehrdeutige Treffer werden übersprungen. Dies kann nicht rückgängig gemacht werden.
+
+"rm.inject.bodySingular" = "Dies ändert „%@“ auf dem Datenträger und umschließt passenden Quelltext für %lu Hervorhebung mit CriticMarkup. Fehlende oder mehrdeutige Treffer werden übersprungen. Dies kann nicht rückgängig gemacht werden.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Dies ändert „%@“ auf dem Datenträger und umschließt passenden Quelltext für %lu Hervorhebung mit CriticMarkup. Fehlende oder mehrdeutige Treffer werden übersprungen. Dies kann nicht rückgängig gemacht werden.
+
+"rm.inject.confirm" = "Datei ändern";
+# EN: Modify File
+# DRAFT: Datei ändern
+
+"rm.inject.title" = "Markdown-Datei auf dem Datenträger überschreiben?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: Markdown-Datei auf dem Datenträger überschreiben?
+
+"rm.js.addComment" = "Kommentar hinzufügen";
+# EN: Add comment
+# DRAFT: Kommentar hinzufügen
+
+"rm.js.autoHighlight" = "Auswahlen automatisch hervorheben";
+# EN: Automatically highlight selections
+# DRAFT: Auswahlen automatisch hervorheben
+
+"rm.js.exportHighlights" = "Hervorhebungen exportieren";
+# EN: Export highlights
+# DRAFT: Hervorhebungen exportieren
+
+"rm.js.focusMode" = "Fokusmodus";
+# EN: Focus mode
+# DRAFT: Fokusmodus
+
+"rm.js.highlight" = "Hervorheben";
+# EN: Highlight
+# DRAFT: Hervorheben
+
+"rm.js.readingTools" = "Lesewerkzeuge";
+# EN: Reading tools
+# DRAFT: Lesewerkzeuge
+
+"rm.js.removeHighlight" = "Hervorhebung entfernen";
+# EN: Remove highlight
+# DRAFT: Hervorhebung entfernen
+
+"rm.menu.addComment" = "Kommentar hinzufügen…";
+# EN: Add Comment…
+# DRAFT: Kommentar hinzufügen…
+
+"rm.menu.deleteComment" = "Kommentar löschen";
+# EN: Delete Comment
+# DRAFT: Kommentar löschen
+
+"rm.menu.deleteHighlight" = "Hervorhebung löschen";
+# EN: Delete Highlight
+# DRAFT: Hervorhebung löschen
+
+"rm.menu.editComment" = "Kommentar bearbeiten…";
+# EN: Edit Comment…
+# DRAFT: Kommentar bearbeiten…
+
+"rm.menu.share" = "Teilen...";
+# EN: Share...
+# DRAFT: Teilen...
+
+"rm.print.includeTitle" = "Lesemodus-Hervorhebungen einschließen";
+# EN: Include Reading Mode highlights
+# DRAFT: Lesemodus-Hervorhebungen einschließen
+
+"rm.print.includeTooltip" = "Gespeicherte Lesemodus-Hervorhebungen beim Drucken oder PDF-Export einschließen.";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: Gespeicherte Lesemodus-Hervorhebungen beim Drucken oder PDF-Export einschließen.
+
+"rm.resume.body" = "Für dieses Dokument ist eine gespeicherte Lesemodus-Position vorhanden.";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: Für dieses Dokument ist eine gespeicherte Lesemodus-Position vorhanden.
+
+"rm.resume.confirm" = "Fortsetzen";
+# EN: Resume
+# DRAFT: Fortsetzen
+
+"rm.resume.startHere" = "Hier starten";
+# EN: Start from Here
+# DRAFT: Hier starten
+
+"rm.resume.title" = "Lesen fortsetzen?";
+# EN: Resume reading?
+# DRAFT: Lesen fortsetzen?
+
+"rm.signature.body" = "Geben Sie den Namen ein, der für die Zuordnung von Lesemodus-Hervorhebungen verwendet wird.";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: Geben Sie den Namen ein, der für die Zuordnung von Lesemodus-Hervorhebungen verwendet wird.
+
+"rm.signature.placeholder" = "Name";
+# EN: Name
+# DRAFT: Name
+
+"rm.signature.title" = "Hervorhebungssignatur hinzufügen";
+# EN: Add a highlight signature
+# DRAFT: Hervorhebungssignatur hinzufügen
+
+"rm.status.couldntSaveTextBundle" = "Hervorhebungen konnten nicht im TextBundle gesichert werden";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: Hervorhebungen konnten nicht im TextBundle gesichert werden
+
+"rm.status.failed" = "Lesemodus konnte nicht gestartet werden";
+# EN: Reading Mode failed to start
+# DRAFT: Lesemodus konnte nicht gestartet werden
+
+"rm.status.injected" = "%lu eingefügt, %lu übersprungen";
+# EN: Injected %lu, skipped %lu
+# DRAFT: %lu eingefügt, %lu übersprungen
+
+"rm.status.savedTextBundle" = "Hervorhebungen im TextBundle gesichert";
+# EN: Saved highlights to TextBundle
+# DRAFT: Hervorhebungen im TextBundle gesichert
+
+"rm.status.unavailable" = "Lesemodus ist in dieser Vorschau nicht verfügbar";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: Lesemodus ist in dieser Vorschau nicht verfügbar
+
+=== END MarkdownDocument.strings ===

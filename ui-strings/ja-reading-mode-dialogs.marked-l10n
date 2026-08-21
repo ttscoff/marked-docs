@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: ja
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "ハイライトのコメントを追加";
+# EN: Add highlight comment
+# DRAFT: ハイライトのコメントを追加
+
+"rm.comment.body" = "このリーディングモードのハイライトへのメモを入力します。";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: このリーディングモードのハイライトへのメモを入力します。
+
+"rm.comment.editTitle" = "ハイライトのコメントを編集";
+# EN: Edit highlight comment
+# DRAFT: ハイライトのコメントを編集
+
+"rm.common.cancel" = "キャンセル";
+# EN: Cancel
+# DRAFT: キャンセル
+
+"rm.common.save" = "保存";
+# EN: Save
+# DRAFT: 保存
+
+"rm.error.failedExportTextBundle" = "リーディングモードのハイライトの書き出しに失敗しました。";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: リーディングモードのハイライトの書き出しに失敗しました。
+
+"rm.export.baseSuffix" = "ハイライト";
+# EN: Highlights
+# DRAFT: ハイライト
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "フォーマット:";
+# EN: Format:
+# DRAFT: フォーマット:
+
+"rm.export.formatPlainText" = "プレーンテキスト";
+# EN: Plain Text
+# DRAFT: プレーンテキスト
+
+"rm.export.panelTitle" = "リーディングモードのハイライトを書き出す";
+# EN: Export Reading Mode Highlights
+# DRAFT: リーディングモードのハイライトを書き出す
+
+"rm.export.unableTitle" = "ハイライトを書き出せません";
+# EN: Unable to Export Highlights
+# DRAFT: ハイライトを書き出せません
+
+"rm.export.unknownError" = "不明なエラー。";
+# EN: Unknown error.
+# DRAFT: 不明なエラー。
+
+"rm.import.invalidFile" = "ファイルが有効ではありません。";
+# EN: The file is not valid.
+# DRAFT: ファイルが有効ではありません。
+
+"rm.import.panelTitle" = "リーディングモードのハイライトを取り込む";
+# EN: Import Reading Mode Highlights
+# DRAFT: リーディングモードのハイライトを取り込む
+
+"rm.import.unableTitle" = "ハイライトを取り込めません";
+# EN: Unable to Import Highlights
+# DRAFT: ハイライトを取り込めません
+
+"rm.inject.bodyPlural" = "これはディスク上の “%@” を変更し、%lu 件のハイライトに一致する原文を CriticMarkup で囲みます。見つからない、または曖昧な一致はスキップされます。元に戻せません。";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: これはディスク上の “%@” を変更し、%lu 件のハイライトに一致する原文を CriticMarkup で囲みます。見つからない、または曖昧な一致はスキップされます。元に戻せません。
+
+"rm.inject.bodySingular" = "これはディスク上の “%@” を変更し、%lu 件のハイライトに一致する原文を CriticMarkup で囲みます。見つからない、または曖昧な一致はスキップされます。元に戻せません。";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: これはディスク上の “%@” を変更し、%lu 件のハイライトに一致する原文を CriticMarkup で囲みます。見つからない、または曖昧な一致はスキップされます。元に戻せません。
+
+"rm.inject.confirm" = "ファイルを変更";
+# EN: Modify File
+# DRAFT: ファイルを変更
+
+"rm.inject.title" = "ディスク上の Markdown ファイルを書き換えますか?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: ディスク上の Markdown ファイルを書き換えますか?
+
+"rm.js.addComment" = "コメントを追加";
+# EN: Add comment
+# DRAFT: コメントを追加
+
+"rm.js.autoHighlight" = "選択範囲を自動ハイライト";
+# EN: Automatically highlight selections
+# DRAFT: 選択範囲を自動ハイライト
+
+"rm.js.exportHighlights" = "ハイライトを書き出す";
+# EN: Export highlights
+# DRAFT: ハイライトを書き出す
+
+"rm.js.focusMode" = "フォーカスモード";
+# EN: Focus mode
+# DRAFT: フォーカスモード
+
+"rm.js.highlight" = "ハイライト";
+# EN: Highlight
+# DRAFT: ハイライト
+
+"rm.js.readingTools" = "読書ツール";
+# EN: Reading tools
+# DRAFT: 読書ツール
+
+"rm.js.removeHighlight" = "ハイライトを削除";
+# EN: Remove highlight
+# DRAFT: ハイライトを削除
+
+"rm.menu.addComment" = "コメントを追加…";
+# EN: Add Comment…
+# DRAFT: コメントを追加…
+
+"rm.menu.deleteComment" = "コメントを削除";
+# EN: Delete Comment
+# DRAFT: コメントを削除
+
+"rm.menu.deleteHighlight" = "ハイライトを削除";
+# EN: Delete Highlight
+# DRAFT: ハイライトを削除
+
+"rm.menu.editComment" = "コメントを編集…";
+# EN: Edit Comment…
+# DRAFT: コメントを編集…
+
+"rm.menu.share" = "共有...";
+# EN: Share...
+# DRAFT: 共有...
+
+"rm.print.includeTitle" = "リーディングモードのハイライトを含める";
+# EN: Include Reading Mode highlights
+# DRAFT: リーディングモードのハイライトを含める
+
+"rm.print.includeTooltip" = "印刷または PDF 書き出し時に、保存済みのリーディングモードのハイライトを含めます。";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: 印刷または PDF 書き出し時に、保存済みのリーディングモードのハイライトを含めます。
+
+"rm.resume.body" = "この書類には保存済みのリーディングモード位置があります。";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: この書類には保存済みのリーディングモード位置があります。
+
+"rm.resume.confirm" = "再開";
+# EN: Resume
+# DRAFT: 再開
+
+"rm.resume.startHere" = "ここから開始";
+# EN: Start from Here
+# DRAFT: ここから開始
+
+"rm.resume.title" = "読書を再開しますか?";
+# EN: Resume reading?
+# DRAFT: 読書を再開しますか?
+
+"rm.signature.body" = "リーディングモードのハイライトの帰属に使う名前を入力してください。";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: リーディングモードのハイライトの帰属に使う名前を入力してください。
+
+"rm.signature.placeholder" = "名前";
+# EN: Name
+# DRAFT: 名前
+
+"rm.signature.title" = "ハイライト署名を追加";
+# EN: Add a highlight signature
+# DRAFT: ハイライト署名を追加
+
+"rm.status.couldntSaveTextBundle" = "ハイライトを TextBundle に保存できませんでした";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: ハイライトを TextBundle に保存できませんでした
+
+"rm.status.failed" = "リーディングモードを開始できませんでした";
+# EN: Reading Mode failed to start
+# DRAFT: リーディングモードを開始できませんでした
+
+"rm.status.injected" = "%lu 件を挿入、%lu 件をスキップ";
+# EN: Injected %lu, skipped %lu
+# DRAFT: %lu 件を挿入、%lu 件をスキップ
+
+"rm.status.savedTextBundle" = "ハイライトを TextBundle に保存しました";
+# EN: Saved highlights to TextBundle
+# DRAFT: ハイライトを TextBundle に保存しました
+
+"rm.status.unavailable" = "このプレビューではリーディングモードを使用できません";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: このプレビューではリーディングモードを使用できません
+
+=== END MarkdownDocument.strings ===

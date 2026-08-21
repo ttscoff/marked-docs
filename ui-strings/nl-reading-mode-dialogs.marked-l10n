@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: nl
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "Opmerking bij markering toevoegen";
+# EN: Add highlight comment
+# DRAFT: Opmerking bij markering toevoegen
+
+"rm.comment.body" = "Voer een notitie in voor deze leesmodusmarkering.";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: Voer een notitie in voor deze leesmodusmarkering.
+
+"rm.comment.editTitle" = "Opmerking bij markering bewerken";
+# EN: Edit highlight comment
+# DRAFT: Opmerking bij markering bewerken
+
+"rm.common.cancel" = "Annuleer";
+# EN: Cancel
+# DRAFT: Annuleer
+
+"rm.common.save" = "Bewaar";
+# EN: Save
+# DRAFT: Bewaar
+
+"rm.error.failedExportTextBundle" = "Exporteren van leesmodusmarkeringen mislukt.";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: Exporteren van leesmodusmarkeringen mislukt.
+
+"rm.export.baseSuffix" = "Markeringen";
+# EN: Highlights
+# DRAFT: Markeringen
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "Formaat:";
+# EN: Format:
+# DRAFT: Formaat:
+
+"rm.export.formatPlainText" = "Platte tekst";
+# EN: Plain Text
+# DRAFT: Platte tekst
+
+"rm.export.panelTitle" = "Leesmodusmarkeringen exporteren";
+# EN: Export Reading Mode Highlights
+# DRAFT: Leesmodusmarkeringen exporteren
+
+"rm.export.unableTitle" = "Kan markeringen niet exporteren";
+# EN: Unable to Export Highlights
+# DRAFT: Kan markeringen niet exporteren
+
+"rm.export.unknownError" = "Onbekende fout.";
+# EN: Unknown error.
+# DRAFT: Onbekende fout.
+
+"rm.import.invalidFile" = "Het bestand is niet geldig.";
+# EN: The file is not valid.
+# DRAFT: Het bestand is niet geldig.
+
+"rm.import.panelTitle" = "Leesmodusmarkeringen importeren";
+# EN: Import Reading Mode Highlights
+# DRAFT: Leesmodusmarkeringen importeren
+
+"rm.import.unableTitle" = "Kan markeringen niet importeren";
+# EN: Unable to Import Highlights
+# DRAFT: Kan markeringen niet importeren
+
+"rm.inject.bodyPlural" = "Dit wijzigt “%@” op schijf en sluit overeenkomende brontekst voor %lu markeringen in CriticMarkup. Ontbrekende of dubbelzinnige overeenkomsten worden overgeslagen. Dit kan niet ongedaan worden gemaakt.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Dit wijzigt “%@” op schijf en sluit overeenkomende brontekst voor %lu markeringen in CriticMarkup. Ontbrekende of dubbelzinnige overeenkomsten worden overgeslagen. Dit kan niet ongedaan worden gemaakt.
+
+"rm.inject.bodySingular" = "Dit wijzigt “%@” op schijf en sluit overeenkomende brontekst voor %lu markering in CriticMarkup. Ontbrekende of dubbelzinnige overeenkomsten worden overgeslagen. Dit kan niet ongedaan worden gemaakt.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Dit wijzigt “%@” op schijf en sluit overeenkomende brontekst voor %lu markering in CriticMarkup. Ontbrekende of dubbelzinnige overeenkomsten worden overgeslagen. Dit kan niet ongedaan worden gemaakt.
+
+"rm.inject.confirm" = "Bestand wijzigen";
+# EN: Modify File
+# DRAFT: Bestand wijzigen
+
+"rm.inject.title" = "Markdown-bestand op schijf herschrijven?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: Markdown-bestand op schijf herschrijven?
+
+"rm.js.addComment" = "Opmerking toevoegen";
+# EN: Add comment
+# DRAFT: Opmerking toevoegen
+
+"rm.js.autoHighlight" = "Selecties automatisch markeren";
+# EN: Automatically highlight selections
+# DRAFT: Selecties automatisch markeren
+
+"rm.js.exportHighlights" = "Markeringen exporteren";
+# EN: Export highlights
+# DRAFT: Markeringen exporteren
+
+"rm.js.focusMode" = "Focusmodus";
+# EN: Focus mode
+# DRAFT: Focusmodus
+
+"rm.js.highlight" = "Markeren";
+# EN: Highlight
+# DRAFT: Markeren
+
+"rm.js.readingTools" = "Leeshulpmiddelen";
+# EN: Reading tools
+# DRAFT: Leeshulpmiddelen
+
+"rm.js.removeHighlight" = "Markering verwijderen";
+# EN: Remove highlight
+# DRAFT: Markering verwijderen
+
+"rm.menu.addComment" = "Opmerking toevoegen…";
+# EN: Add Comment…
+# DRAFT: Opmerking toevoegen…
+
+"rm.menu.deleteComment" = "Opmerking verwijderen";
+# EN: Delete Comment
+# DRAFT: Opmerking verwijderen
+
+"rm.menu.deleteHighlight" = "Markering verwijderen";
+# EN: Delete Highlight
+# DRAFT: Markering verwijderen
+
+"rm.menu.editComment" = "Opmerking bewerken…";
+# EN: Edit Comment…
+# DRAFT: Opmerking bewerken…
+
+"rm.menu.share" = "Deel...";
+# EN: Share...
+# DRAFT: Deel...
+
+"rm.print.includeTitle" = "Leesmodusmarkeringen opnemen";
+# EN: Include Reading Mode highlights
+# DRAFT: Leesmodusmarkeringen opnemen
+
+"rm.print.includeTooltip" = "Opgeslagen leesmodusmarkeringen opnemen bij afdrukken of PDF-export.";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: Opgeslagen leesmodusmarkeringen opnemen bij afdrukken of PDF-export.
+
+"rm.resume.body" = "Er is een opgeslagen leesmoduspositie in dit document.";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: Er is een opgeslagen leesmoduspositie in dit document.
+
+"rm.resume.confirm" = "Hervatten";
+# EN: Resume
+# DRAFT: Hervatten
+
+"rm.resume.startHere" = "Hier beginnen";
+# EN: Start from Here
+# DRAFT: Hier beginnen
+
+"rm.resume.title" = "Lezen hervatten?";
+# EN: Resume reading?
+# DRAFT: Lezen hervatten?
+
+"rm.signature.body" = "Voer de naam in die wordt gebruikt om leesmodusmarkeringen toe te schrijven.";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: Voer de naam in die wordt gebruikt om leesmodusmarkeringen toe te schrijven.
+
+"rm.signature.placeholder" = "Naam";
+# EN: Name
+# DRAFT: Naam
+
+"rm.signature.title" = "Markeringshandtekening toevoegen";
+# EN: Add a highlight signature
+# DRAFT: Markeringshandtekening toevoegen
+
+"rm.status.couldntSaveTextBundle" = "Kan markeringen niet in TextBundle bewaren";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: Kan markeringen niet in TextBundle bewaren
+
+"rm.status.failed" = "Leesmodus starten mislukt";
+# EN: Reading Mode failed to start
+# DRAFT: Leesmodus starten mislukt
+
+"rm.status.injected" = "%lu ingevoegd, %lu overgeslagen";
+# EN: Injected %lu, skipped %lu
+# DRAFT: %lu ingevoegd, %lu overgeslagen
+
+"rm.status.savedTextBundle" = "Markeringen bewaard in TextBundle";
+# EN: Saved highlights to TextBundle
+# DRAFT: Markeringen bewaard in TextBundle
+
+"rm.status.unavailable" = "Leesmodus is niet beschikbaar in dit voorbeeld";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: Leesmodus is niet beschikbaar in dit voorbeeld
+
+=== END MarkdownDocument.strings ===

@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: fr
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "Ajouter un commentaire de surlignage";
+# EN: Add highlight comment
+# DRAFT: Ajouter un commentaire de surlignage
+
+"rm.comment.body" = "Saisissez une note pour ce surlignage du mode lecture.";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: Saisissez une note pour ce surlignage du mode lecture.
+
+"rm.comment.editTitle" = "Modifier le commentaire de surlignage";
+# EN: Edit highlight comment
+# DRAFT: Modifier le commentaire de surlignage
+
+"rm.common.cancel" = "Annuler";
+# EN: Cancel
+# DRAFT: Annuler
+
+"rm.common.save" = "Enregistrer";
+# EN: Save
+# DRAFT: Enregistrer
+
+"rm.error.failedExportTextBundle" = "Échec de l’export des surlignages du mode lecture.";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: Échec de l’export des surlignages du mode lecture.
+
+"rm.export.baseSuffix" = "Surlignages";
+# EN: Highlights
+# DRAFT: Surlignages
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "Format :";
+# EN: Format:
+# DRAFT: Format :
+
+"rm.export.formatPlainText" = "Texte brut";
+# EN: Plain Text
+# DRAFT: Texte brut
+
+"rm.export.panelTitle" = "Exporter les surlignages du mode lecture";
+# EN: Export Reading Mode Highlights
+# DRAFT: Exporter les surlignages du mode lecture
+
+"rm.export.unableTitle" = "Impossible d’exporter les surlignages";
+# EN: Unable to Export Highlights
+# DRAFT: Impossible d’exporter les surlignages
+
+"rm.export.unknownError" = "Erreur inconnue.";
+# EN: Unknown error.
+# DRAFT: Erreur inconnue.
+
+"rm.import.invalidFile" = "Le fichier n’est pas valide.";
+# EN: The file is not valid.
+# DRAFT: Le fichier n’est pas valide.
+
+"rm.import.panelTitle" = "Importer les surlignages du mode lecture";
+# EN: Import Reading Mode Highlights
+# DRAFT: Importer les surlignages du mode lecture
+
+"rm.import.unableTitle" = "Impossible d’importer les surlignages";
+# EN: Unable to Import Highlights
+# DRAFT: Impossible d’importer les surlignages
+
+"rm.inject.bodyPlural" = "Cela modifie « %@ » sur le disque en entourant le texte source correspondant pour %lu surlignages avec CriticMarkup. Les correspondances manquantes ou ambiguës sont ignorées. Cette action est irréversible.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Cela modifie « %@ » sur le disque en entourant le texte source correspondant pour %lu surlignages avec CriticMarkup. Les correspondances manquantes ou ambiguës sont ignorées. Cette action est irréversible.
+
+"rm.inject.bodySingular" = "Cela modifie « %@ » sur le disque en entourant le texte source correspondant pour %lu surlignage avec CriticMarkup. Les correspondances manquantes ou ambiguës sont ignorées. Cette action est irréversible.";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: Cela modifie « %@ » sur le disque en entourant le texte source correspondant pour %lu surlignage avec CriticMarkup. Les correspondances manquantes ou ambiguës sont ignorées. Cette action est irréversible.
+
+"rm.inject.confirm" = "Modifier le fichier";
+# EN: Modify File
+# DRAFT: Modifier le fichier
+
+"rm.inject.title" = "Réécrire le fichier Markdown sur le disque ?";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: Réécrire le fichier Markdown sur le disque ?
+
+"rm.js.addComment" = "Ajouter un commentaire";
+# EN: Add comment
+# DRAFT: Ajouter un commentaire
+
+"rm.js.autoHighlight" = "Surligner automatiquement les sélections";
+# EN: Automatically highlight selections
+# DRAFT: Surligner automatiquement les sélections
+
+"rm.js.exportHighlights" = "Exporter les surlignages";
+# EN: Export highlights
+# DRAFT: Exporter les surlignages
+
+"rm.js.focusMode" = "Mode focus";
+# EN: Focus mode
+# DRAFT: Mode focus
+
+"rm.js.highlight" = "Surligner";
+# EN: Highlight
+# DRAFT: Surligner
+
+"rm.js.readingTools" = "Outils de lecture";
+# EN: Reading tools
+# DRAFT: Outils de lecture
+
+"rm.js.removeHighlight" = "Supprimer le surlignage";
+# EN: Remove highlight
+# DRAFT: Supprimer le surlignage
+
+"rm.menu.addComment" = "Ajouter un commentaire…";
+# EN: Add Comment…
+# DRAFT: Ajouter un commentaire…
+
+"rm.menu.deleteComment" = "Supprimer le commentaire";
+# EN: Delete Comment
+# DRAFT: Supprimer le commentaire
+
+"rm.menu.deleteHighlight" = "Supprimer le surlignage";
+# EN: Delete Highlight
+# DRAFT: Supprimer le surlignage
+
+"rm.menu.editComment" = "Modifier le commentaire…";
+# EN: Edit Comment…
+# DRAFT: Modifier le commentaire…
+
+"rm.menu.share" = "Partager...";
+# EN: Share...
+# DRAFT: Partager...
+
+"rm.print.includeTitle" = "Inclure les surlignages du mode lecture";
+# EN: Include Reading Mode highlights
+# DRAFT: Inclure les surlignages du mode lecture
+
+"rm.print.includeTooltip" = "Inclure les surlignages du mode lecture enregistrés lors de l’impression ou de l’export PDF.";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: Inclure les surlignages du mode lecture enregistrés lors de l’impression ou de l’export PDF.
+
+"rm.resume.body" = "Ce document contient une position de mode lecture enregistrée.";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: Ce document contient une position de mode lecture enregistrée.
+
+"rm.resume.confirm" = "Reprendre";
+# EN: Resume
+# DRAFT: Reprendre
+
+"rm.resume.startHere" = "Commencer ici";
+# EN: Start from Here
+# DRAFT: Commencer ici
+
+"rm.resume.title" = "Reprendre la lecture ?";
+# EN: Resume reading?
+# DRAFT: Reprendre la lecture ?
+
+"rm.signature.body" = "Saisissez le nom utilisé pour attribuer les surlignages du mode lecture.";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: Saisissez le nom utilisé pour attribuer les surlignages du mode lecture.
+
+"rm.signature.placeholder" = "Nom";
+# EN: Name
+# DRAFT: Nom
+
+"rm.signature.title" = "Ajouter une signature de surlignage";
+# EN: Add a highlight signature
+# DRAFT: Ajouter une signature de surlignage
+
+"rm.status.couldntSaveTextBundle" = "Impossible d’enregistrer les surlignages dans le TextBundle";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: Impossible d’enregistrer les surlignages dans le TextBundle
+
+"rm.status.failed" = "Échec du démarrage du mode lecture";
+# EN: Reading Mode failed to start
+# DRAFT: Échec du démarrage du mode lecture
+
+"rm.status.injected" = "%lu injecté(s), %lu ignoré(s)";
+# EN: Injected %lu, skipped %lu
+# DRAFT: %lu injecté(s), %lu ignoré(s)
+
+"rm.status.savedTextBundle" = "Surlignages enregistrés dans le TextBundle";
+# EN: Saved highlights to TextBundle
+# DRAFT: Surlignages enregistrés dans le TextBundle
+
+"rm.status.unavailable" = "Le mode lecture n’est pas disponible dans cet aperçu";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: Le mode lecture n’est pas disponible dans cet aperçu
+
+=== END MarkdownDocument.strings ===

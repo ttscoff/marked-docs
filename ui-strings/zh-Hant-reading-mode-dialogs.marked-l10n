@@ -1,0 +1,195 @@
+# Marked Localization Update
+# Locale: zh-Hant
+# Feature: Reading Mode dialogs, context menu, status, JS tool labels
+# Generated: 2026-08-21
+#
+# Keep placeholders %@ and %lu unchanged.
+# Do not translate CriticMarkup, TextBundle, Readwise, Markdown, PDF.
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MarkdownDocument.strings ===
+"rm.comment.addTitle" = "加入醒目標示註解";
+# EN: Add highlight comment
+# DRAFT: 加入醒目標示註解
+
+"rm.comment.body" = "為此閱讀模式醒目標示輸入備註。";
+# EN: Enter a note for this Reading Mode highlight.
+# DRAFT: 為此閱讀模式醒目標示輸入備註。
+
+"rm.comment.editTitle" = "編輯醒目標示註解";
+# EN: Edit highlight comment
+# DRAFT: 編輯醒目標示註解
+
+"rm.common.cancel" = "取消";
+# EN: Cancel
+# DRAFT: 取消
+
+"rm.common.save" = "儲存";
+# EN: Save
+# DRAFT: 儲存
+
+"rm.error.failedExportTextBundle" = "匯出閱讀模式醒目標示失敗。";
+# EN: Failed to export Reading Mode highlights.
+# DRAFT: 匯出閱讀模式醒目標示失敗。
+
+"rm.export.baseSuffix" = "醒目標示";
+# EN: Highlights
+# DRAFT: 醒目標示
+
+"rm.export.formatCSVReadwise" = "CSV (Readwise)";
+# EN: CSV (Readwise)
+# DRAFT: CSV (Readwise)
+
+"rm.export.formatLabel" = "格式：";
+# EN: Format:
+# DRAFT: 格式：
+
+"rm.export.formatPlainText" = "純文字";
+# EN: Plain Text
+# DRAFT: 純文字
+
+"rm.export.panelTitle" = "匯出閱讀模式醒目標示";
+# EN: Export Reading Mode Highlights
+# DRAFT: 匯出閱讀模式醒目標示
+
+"rm.export.unableTitle" = "無法匯出醒目標示";
+# EN: Unable to Export Highlights
+# DRAFT: 無法匯出醒目標示
+
+"rm.export.unknownError" = "未知錯誤。";
+# EN: Unknown error.
+# DRAFT: 未知錯誤。
+
+"rm.import.invalidFile" = "檔案無效。";
+# EN: The file is not valid.
+# DRAFT: 檔案無效。
+
+"rm.import.panelTitle" = "匯入閱讀模式醒目標示";
+# EN: Import Reading Mode Highlights
+# DRAFT: 匯入閱讀模式醒目標示
+
+"rm.import.unableTitle" = "無法匯入醒目標示";
+# EN: Unable to Import Highlights
+# DRAFT: 無法匯入醒目標示
+
+"rm.inject.bodyPlural" = "這會修改磁碟上的「%@」，並為 %lu 處醒目標示的相符原文包上 CriticMarkup。缺少或模糊的相符項會被略過。此操作無法復原。";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlights in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: 這會修改磁碟上的「%@」，並為 %lu 處醒目標示的相符原文包上 CriticMarkup。缺少或模糊的相符項會被略過。此操作無法復原。
+
+"rm.inject.bodySingular" = "這會修改磁碟上的「%@」，並為 %lu 處醒目標示的相符原文包上 CriticMarkup。缺少或模糊的相符項會被略過。此操作無法復原。";
+# EN: This modifies “%@” on disk, wrapping matching source text for %lu highlight in CriticMarkup. Missing or ambiguous matches are skipped. This cannot be undone.
+# DRAFT: 這會修改磁碟上的「%@」，並為 %lu 處醒目標示的相符原文包上 CriticMarkup。缺少或模糊的相符項會被略過。此操作無法復原。
+
+"rm.inject.confirm" = "修改檔案";
+# EN: Modify File
+# DRAFT: 修改檔案
+
+"rm.inject.title" = "覆寫磁碟上的 Markdown 檔案？";
+# EN: Rewrite the Markdown file on disk?
+# DRAFT: 覆寫磁碟上的 Markdown 檔案？
+
+"rm.js.addComment" = "加入註解";
+# EN: Add comment
+# DRAFT: 加入註解
+
+"rm.js.autoHighlight" = "自動醒目標示所選內容";
+# EN: Automatically highlight selections
+# DRAFT: 自動醒目標示所選內容
+
+"rm.js.exportHighlights" = "匯出醒目標示";
+# EN: Export highlights
+# DRAFT: 匯出醒目標示
+
+"rm.js.focusMode" = "專注模式";
+# EN: Focus mode
+# DRAFT: 專注模式
+
+"rm.js.highlight" = "醒目標示";
+# EN: Highlight
+# DRAFT: 醒目標示
+
+"rm.js.readingTools" = "閱讀工具";
+# EN: Reading tools
+# DRAFT: 閱讀工具
+
+"rm.js.removeHighlight" = "移除醒目標示";
+# EN: Remove highlight
+# DRAFT: 移除醒目標示
+
+"rm.menu.addComment" = "加入註解…";
+# EN: Add Comment…
+# DRAFT: 加入註解…
+
+"rm.menu.deleteComment" = "刪除註解";
+# EN: Delete Comment
+# DRAFT: 刪除註解
+
+"rm.menu.deleteHighlight" = "刪除醒目標示";
+# EN: Delete Highlight
+# DRAFT: 刪除醒目標示
+
+"rm.menu.editComment" = "編輯註解…";
+# EN: Edit Comment…
+# DRAFT: 編輯註解…
+
+"rm.menu.share" = "分享...";
+# EN: Share...
+# DRAFT: 分享...
+
+"rm.print.includeTitle" = "包含閱讀模式醒目標示";
+# EN: Include Reading Mode highlights
+# DRAFT: 包含閱讀模式醒目標示
+
+"rm.print.includeTooltip" = "列印或匯出 PDF 時包含已儲存的閱讀模式醒目標示。";
+# EN: Include saved Reading Mode highlights when printing or exporting PDF.
+# DRAFT: 列印或匯出 PDF 時包含已儲存的閱讀模式醒目標示。
+
+"rm.resume.body" = "此文件中有已儲存的閱讀模式位置。";
+# EN: You have a saved Reading Mode position in this document.
+# DRAFT: 此文件中有已儲存的閱讀模式位置。
+
+"rm.resume.confirm" = "繼續";
+# EN: Resume
+# DRAFT: 繼續
+
+"rm.resume.startHere" = "從這裡開始";
+# EN: Start from Here
+# DRAFT: 從這裡開始
+
+"rm.resume.title" = "繼續閱讀？";
+# EN: Resume reading?
+# DRAFT: 繼續閱讀？
+
+"rm.signature.body" = "輸入用於歸屬閱讀模式醒目標示的名稱。";
+# EN: Enter the name to use when attributing Reading Mode highlights.
+# DRAFT: 輸入用於歸屬閱讀模式醒目標示的名稱。
+
+"rm.signature.placeholder" = "名稱";
+# EN: Name
+# DRAFT: 名稱
+
+"rm.signature.title" = "加入醒目標示簽名";
+# EN: Add a highlight signature
+# DRAFT: 加入醒目標示簽名
+
+"rm.status.couldntSaveTextBundle" = "無法將醒目標示儲存到 TextBundle";
+# EN: Couldn't save highlights to TextBundle
+# DRAFT: 無法將醒目標示儲存到 TextBundle
+
+"rm.status.failed" = "無法啟動閱讀模式";
+# EN: Reading Mode failed to start
+# DRAFT: 無法啟動閱讀模式
+
+"rm.status.injected" = "已注入 %lu，略過 %lu";
+# EN: Injected %lu, skipped %lu
+# DRAFT: 已注入 %lu，略過 %lu
+
+"rm.status.savedTextBundle" = "已將醒目標示儲存到 TextBundle";
+# EN: Saved highlights to TextBundle
+# DRAFT: 已將醒目標示儲存到 TextBundle
+
+"rm.status.unavailable" = "此預覽中無法使用閱讀模式";
+# EN: Reading Mode is unavailable in this preview
+# DRAFT: 此預覽中無法使用閱讀模式
+
+=== END MarkdownDocument.strings ===
