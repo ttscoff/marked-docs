@@ -1,0 +1,33 @@
+# Help translation gap — de — Settings_Preview.md
+# Feature: Show current header at top of preview
+# Generated: 2026-08-16
+#
+# German help for this page is treated as finished. Do not machine-overwrite
+# the existing "Zusätzliche Funktionen" section. Translate the ENGLISH TARGET
+# below and insert it immediately after the CURRENT GERMAN TOC-tracks block
+# in de/Settings_Preview.md.
+#
+# Return: PR to ttscoff/marked-docs on a de/ branch, or reply with the
+# updated German definition-list item only.
+#
+# UI draft (already in de.lproj/Settings.strings; please align help with it):
+#   setting.showCurrentHeaderInPreview = Aktuelle Überschrift oben in der Vorschau anzeigen
+#   tooltip.showCurrentHeaderInPreview = Zeigt über der Vorschau einen kleinen Überschriften-Breadcrumb an. Aktualisierungen beim Scrollen.
+
+=== LOCATION ===
+File: de/Settings_Preview.md
+Section heading: Zusätzliche Funktionen [additional-features]
+Insert after the "Das Inhaltsverzeichnis verfolgt die Scrollposition" item.
+
+=== CURRENT GERMAN (keep this block; insert after it) ===
+Das Inhaltsverzeichnis verfolgt die Scrollposition
+: Das Inhaltsverzeichnis hebt den aktuellen Abschnitt hervor.
+
+=== ENGLISH TARGET (translate to German and insert after the block above) ===
+Show current header at top of preview
+: Shows a small heading breadcrumb above the preview. Updates as you scroll. Click a heading in the path to jump to it.
+
+=== NOTES ===
+- Match Settings.strings terminology: heading/headline = **Überschrift**, never Kopfzeile (print header/footer).
+- The English UI label says "header" but means the current heading breadcrumb above the preview.
+- Keep the definition-list syntax (`Title` then `: body`).

@@ -42,6 +42,9 @@ Diff-Reihenfolge umkehren
 Das Inhaltsverzeichnis verfolgt die Scrollposition
 : Das Inhaltsverzeichnis hebt den aktuellen Abschnitt hervor.
 
+Aktuelle Überschrift oben in der Vorschau anzeigen
+: Zeigt über der Vorschau einen kleinen Überschriften-Pfad. Er wird beim Scrollen aktualisiert. Ein Klick auf eine Überschrift im Pfad springt dorthin.
+
 Popup-Statistiken zur Textauswahl
 : Zeigt bei jeder Auswahl ein Popup mit der Wortanzahl für den ausgewählten Text an.
 
