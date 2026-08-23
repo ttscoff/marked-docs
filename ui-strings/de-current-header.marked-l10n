@@ -24,7 +24,7 @@
 # EN: Show current header at top of preview
 # DRAFT: Aktuelle Überschrift oben in der Vorschau anzeigen
 
-"tooltip.showCurrentHeaderInPreview" = "Zeigt über der Vorschau einen kleinen Überschriften-Breadcrumb an. Aktualisierungen beim Scrollen.";
+"tooltip.showCurrentHeaderInPreview" = "Zeigt über der Vorschau einen kleinen Überschriften-Pfad an. Er wird beim Scrollen aktualisiert.";
 # EN: Shows a small heading breadcrumb above the preview. Updates as you scroll.
 # DRAFT: Zeigt über der Vorschau einen kleinen Überschriften-Breadcrumb an. Aktualisierungen beim Scrollen.
 === END Settings.strings ===
