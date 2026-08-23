@@ -38,9 +38,9 @@
 # EN: Preview
 # DRAFT: 預覽
 
-"Preview: —" = "預覽： -";
+"Preview: —" = "預覽：—";
 # EN: Preview: —
-# DRAFT: 預覽： -
+# DRAFT: 預覽：—
 
 "Preview: %@" = "預覽：%@";
 # EN: Preview: %@
@@ -74,9 +74,9 @@
 # EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
 # DRAFT: 捷徑依序更新（⌘1-9、⌥⌘1-0、⌃⌘1-0、⇧⌘1-0）
 
-"Order" = "命令";
+"Order" = "順序";
 # EN: Order
-# DRAFT: 命令
+# DRAFT: 順序
 
 "Name" = "名稱";
 # EN: Name
@@ -94,9 +94,9 @@
 # EN: Builtin
 # DRAFT: 內建
 
-"Custom" = "__學期_0__";
+"Custom" = "自訂";
 # EN: Custom
-# DRAFT: __學期_0__
+# DRAFT: 自訂
 
 "Duplicated" = "重複的";
 # EN: Duplicated
@@ -138,9 +138,9 @@
 # EN: Move to Application Support
 # DRAFT: 轉到應用程式支援
 
-"Copy to Application Support" = "複製到應用程式支持";
+"Copy to Application Support" = "複製到應用程式支援";
 # EN: Copy to Application Support
-# DRAFT: 複製到應用程式支持
+# DRAFT: 複製到應用程式支援
 
 "Do you want to copy this Style to Marked's Application Support folder?" = "您想將此樣式複製到 Marked 的應用程式支援資料夾嗎？";
 # EN: Do you want to copy this Style to Marked's Application Support folder?
@@ -160,9 +160,9 @@
 # EN: Use from Current Location
 # DRAFT: 從目前位置使用
 
-"Remove original CSS file" = "刪除原來的CSS文件";
+"Remove original CSS file" = "移除原始 CSS 檔案";
 # EN: Remove original CSS file
-# DRAFT: 刪除原來的CSS文件
+# DRAFT: 移除原始 CSS 檔案
 
 "Could not add the style file." = "無法新增樣式文件。";
 # EN: Could not add the style file.
@@ -172,21 +172,21 @@
 # EN: Unknown error.
 # DRAFT: 未知錯誤。
 
-"Add a Custom Style" = "新增 Custom 樣式";
+"Add a Custom Style" = "新增自訂樣式";
 # EN: Add a Custom Style
-# DRAFT: 新增 Custom 樣式
+# DRAFT: 新增自訂樣式
 
-"Add %lu Custom Styles" = "新增 %lu Custom 樣式";
+"Add %lu Custom Styles" = "新增 %lu 個自訂樣式";
 # EN: Add %lu Custom Styles
-# DRAFT: 新增 %lu Custom 樣式
+# DRAFT: 新增 %lu 個自訂樣式
 
 "Add Styles" = "新增樣式";
 # EN: Add Styles
 # DRAFT: 新增樣式
 
-"Add Custom Styles" = "新增 Custom 樣式";
+"Add Custom Styles" = "新增自訂樣式";
 # EN: Add Custom Styles
-# DRAFT: 新增 Custom 樣式
+# DRAFT: 新增自訂樣式
 
 "Select one or more CSS files to add to your custom styles." = "選擇一個或多個 CSS 檔案以新增到您的自訂樣式。";
 # EN: Select one or more CSS files to add to your custom styles.
@@ -200,9 +200,9 @@
 # EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
 # DRAFT: 內建樣式將重新啟用。也恢復預設的內建順序嗎？
 
-"Keep Current Order" = "保持當前訂單";
+"Keep Current Order" = "保持目前順序";
 # EN: Keep Current Order
-# DRAFT: 保持當前訂單
+# DRAFT: 保持目前順序
 
 "Restore Default Order" = "恢復預設順序";
 # EN: Restore Default Order
@@ -264,9 +264,9 @@
 # EN: Duplicate or import the style again to recreate the file before editing.
 # DRAFT: 再次複製或匯入樣式以在編輯之前重新建立文件。
 
-"Open style in…" = "開放式風格...";
+"Open style in…" = "以…開啟樣式";
 # EN: Open style in…
-# DRAFT: 開放式風格...
+# DRAFT: 以…開啟樣式
 
 "Choose how you want to edit this style's CSS." = "選擇您想要如何編輯此樣式的 CSS。";
 # EN: Choose how you want to edit this style's CSS.
@@ -280,8 +280,8 @@
 # EN: Default Editor
 # DRAFT: 預設編輯器
 
-"Marked Style" = "__學期_0__ 風格";
+"Marked Style" = "Marked 樣式";
 # EN: Marked Style
-# DRAFT: __學期_0__ 風格
+# DRAFT: Marked 樣式
 
 === END SpecialWindows.strings ===
