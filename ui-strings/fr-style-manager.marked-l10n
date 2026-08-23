@@ -74,7 +74,7 @@
 # EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
 # DRAFT: Mise à jour des raccourcis en fonction de l'ordre (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
 
-"Order" = "Commande";
+"Order" = "Ordre";
 # EN: Order
 # DRAFT: Commande
 
