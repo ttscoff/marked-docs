@@ -5,7 +5,7 @@
 
 ## 进入阅读模式 [entering-reading-mode]
 
-选择{% appmenu Preview, Reading Mode %}或按{% kbd ctrl opt r %}。如果快速阅读正在运行，Marked 在进入阅读模式之前将其停止。
+选择{% appmenu Preview, Reading Mode %}或按{% kbd {{ctrl}}{{opt}}R %}。如果速读正在运行，Marked 在进入阅读模式之前将其停止。
 
 当前段落、标题、列表项、图像、代码块、表格或其他阅读单元接收左标记。键盘导航在块之间平滑移动，并将当前单元保持在预览的上三分之一附近。手动滚动可重新定位焦点，而无需捕捉页面。
 
