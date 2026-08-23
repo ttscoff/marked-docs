@@ -33,6 +33,7 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |         **{{ctrl}}{{cmd}}L** | Validate External Links            |
 |         **{{ctrl}}{{cmd}}W** | Visualize Word Repetition          |
 |         **{{ctrl}}{{opt}}S** | Toggle Speed Read                  |
+|         **{{ctrl}}{{opt}}R** | Toggle Reading Mode                |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Ask About Document (Apple Intelligence) |
 |          **{{opt}}{{cmd}}S** | Basic Statistics                   |
 | **{{opt}}{{shift}}{{cmd}}S** | Readability Statistics             |

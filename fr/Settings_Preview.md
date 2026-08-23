@@ -42,6 +42,9 @@ Ordre inversé des différences
 La table des matières suit la position de défilement
 : La table des matières met en évidence la section actuelle.
 
+Afficher l'en-tête actuel en haut de l'aperçu
+: Affiche un petit fil d'Ariane au-dessus de l'aperçu. Mises à jour au fur et à mesure que vous faites défiler. Cliquez sur un en-tête du chemin pour y accéder.
+
 Statistiques contextuelles pour la sélection de texte
 : Affiche une info-bulle avec le nombre de mots pour le texte sélectionné dès qu'une sélection est effectuée.
 

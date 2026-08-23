@@ -44,6 +44,9 @@ Orden de diferenciación inverso
 La tabla de contenido rastrea la posición de desplazamiento
 : La tabla de contenido destaca la sección actual.
 
+Mostrar el encabezado actual en la parte superior de la vista previa
+: Muestra una pequeña ruta de navegación de encabezado encima de la vista previa. Se actualiza a medida que te desplazas. Haga clic en un encabezado en la ruta para saltar a él.
+
 Estadísticas emergentes para selección de texto
 : muestra una ventana emergente de recuento de palabras para el texto seleccionado cada vez que se realiza una selección.
 

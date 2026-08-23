@@ -1,0 +1,283 @@
+# Marked Localization Update
+# Locale: de (German)
+# Generated: 2026-08-16
+# Source: Style Manager window strings
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in the empty string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, %lu, \n, HTML tags, and keyboard symbols.
+# Do not translate product names (Marked) unless your locale normally localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 65
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 65
+# Style Manager window chrome, alerts, source badges, and preview sample copy.
+
+"Manage Styles" = "Stile verwalten";
+# EN: Manage Styles
+# DRAFT: Stile verwalten
+
+"Styles" = "Stile";
+# EN: Styles
+# DRAFT: Stile
+
+"Filter Styles" = "Stile filtern";
+# EN: Filter Styles
+# DRAFT: Stile filtern
+
+"Preview" = "Vorschau";
+# EN: Preview
+# DRAFT: Vorschau
+
+"Preview: —" = "Vorschau: —";
+# EN: Preview: —
+# DRAFT: Vorschau: —
+
+"Preview: %@" = "Vorschau: %@";
+# EN: Preview: %@
+# DRAFT: Vorschau: %@
+
+"Dark Mode" = "Dunkelmodus";
+# EN: Dark Mode
+# DRAFT: Dunkelmodus
+
+"Add New Style" = "Neuen Stil hinzufügen";
+# EN: Add New Style
+# DRAFT: Neuen Stil hinzufügen
+
+"Generate Style" = "Stil erzeugen";
+# EN: Generate Style
+# DRAFT: Stil erzeugen
+
+"Style Gallery" = "Stilgalerie";
+# EN: Style Gallery
+# DRAFT: Stilgalerie
+
+"Show disabled styles" = "Deaktivierte Stile anzeigen";
+# EN: Show disabled styles
+# DRAFT: Deaktivierte Stile anzeigen
+
+"Restore built-in styles" = "Integrierte Stile wiederherstellen";
+# EN: Restore built-in styles
+# DRAFT: Integrierte Stile wiederherstellen
+
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)" = "Kurzbefehle richten sich nach der Reihenfolge (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+# DRAFT: Kurzbefehle richten sich nach der Reihenfolge (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+
+"Order" = "Reihenfolge";
+# EN: Order
+# DRAFT: Reihenfolge
+
+"Name" = "Name";
+# EN: Name
+# DRAFT: Name
+
+"Source" = "Quelle";
+# EN: Source
+# DRAFT: Quelle
+
+"Controls" = "Aktionen";
+# EN: Controls
+# DRAFT: Aktionen
+
+"Builtin" = "Integriert";
+# EN: Builtin
+# DRAFT: Integriert
+
+"Custom" = "Eigene";
+# EN: Custom
+# DRAFT: Eigene
+
+"Duplicated" = "Dupliziert";
+# EN: Duplicated
+# DRAFT: Dupliziert
+
+"Duplicate" = "Duplizieren";
+# EN: Duplicate
+# DRAFT: Duplizieren
+
+"Delete" = "Löschen";
+# EN: Delete
+# DRAFT: Löschen
+
+"Reveal in Finder" = "Im Finder anzeigen";
+# EN: Reveal in Finder
+# DRAFT: Im Finder anzeigen
+
+"Edit in default editor" = "Im Standardeditor bearbeiten";
+# EN: Edit in default editor
+# DRAFT: Im Standardeditor bearbeiten
+
+"Style Preview" = "Stilvorschau";
+# EN: Style Preview
+# DRAFT: Stilvorschau
+
+"Heading 1 styling" = "Gestaltung von Überschrift 1";
+# EN: Heading 1 styling
+# DRAFT: Gestaltung von Überschrift 1
+
+"Heading 2 styling" = "Gestaltung von Überschrift 2";
+# EN: Heading 2 styling
+# DRAFT: Gestaltung von Überschrift 2
+
+"Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing." = "Absatzgestaltung umfasst <strong>fetten Text</strong>, <em>kursiven Text</em>, <code>Code</code> im Fließtext und einen lesbaren Satz für den Zeilenabstand.";
+# EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
+# DRAFT: Absatzgestaltung umfasst <strong>fetten Text</strong>, <em>kursiven Text</em>, <code>Code</code> im Fließtext und einen lesbaren Satz für den Zeilenabstand.
+
+"Move to Application Support" = "In Application Support verschieben";
+# EN: Move to Application Support
+# DRAFT: In Application Support verschieben
+
+"Copy to Application Support" = "In Application Support kopieren";
+# EN: Copy to Application Support
+# DRAFT: In Application Support kopieren
+
+"Do you want to copy this Style to Marked's Application Support folder?" = "Möchten Sie diesen Stil in Markeds Application Support-Ordner kopieren?";
+# EN: Do you want to copy this Style to Marked's Application Support folder?
+# DRAFT: Möchten Sie diesen Stil in Markeds Application Support-Ordner kopieren?
+
+"Do you want to copy these Styles to Marked's Application Support folder?" = "Möchten Sie diese Stile in Markeds Application Support-Ordner kopieren?";
+# EN: Do you want to copy these Styles to Marked's Application Support folder?
+# DRAFT: Möchten Sie diese Stile in Markeds Application Support-Ordner kopieren?
+
+"Styles will be stored in:\n%@" = "Die Stile werden gespeichert in:\n%@";
+# EN: Styles will be stored in:\n%@
+# DRAFT: Die Stile werden gespeichert in:\n%@
+
+"Use from Current Location" = "Am aktuellen Ort belassen";
+# EN: Use from Current Location
+# DRAFT: Am aktuellen Ort belassen
+
+"Remove original CSS file" = "Original-CSS-Datei entfernen";
+# EN: Remove original CSS file
+# DRAFT: Original-CSS-Datei entfernen
+
+"Could not add the style file." = "Die Stildatei konnte nicht hinzugefügt werden.";
+# EN: Could not add the style file.
+# DRAFT: Die Stildatei konnte nicht hinzugefügt werden.
+
+"Unknown error." = "Unbekannter Fehler.";
+# EN: Unknown error.
+# DRAFT: Unbekannter Fehler.
+
+"Add a Custom Style" = "Eigenen Stil hinzufügen";
+# EN: Add a Custom Style
+# DRAFT: Eigenen Stil hinzufügen
+
+"Add %lu Custom Styles" = "%lu eigene Stile hinzufügen";
+# EN: Add %lu Custom Styles
+# DRAFT: %lu eigene Stile hinzufügen
+
+"Add Styles" = "Stile hinzufügen";
+# EN: Add Styles
+# DRAFT: Stile hinzufügen
+
+"Add Custom Styles" = "Eigene Stile hinzufügen";
+# EN: Add Custom Styles
+# DRAFT: Eigene Stile hinzufügen
+
+"Select one or more CSS files to add to your custom styles." = "Wählen Sie eine oder mehrere CSS-Dateien aus, die zu Ihren eigenen Stilen hinzugefügt werden sollen.";
+# EN: Select one or more CSS files to add to your custom styles.
+# DRAFT: Wählen Sie eine oder mehrere CSS-Dateien aus, die zu Ihren eigenen Stilen hinzugefügt werden sollen.
+
+"Restore Default Styles" = "Standardstile wiederherstellen";
+# EN: Restore Default Styles
+# DRAFT: Standardstile wiederherstellen
+
+"Built-in styles will be re-enabled. Restore the default built-in order as well?" = "Integrierte Stile werden wieder aktiviert. Soll auch die Standardreihenfolge wiederhergestellt werden?";
+# EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
+# DRAFT: Integrierte Stile werden wieder aktiviert. Soll auch die Standardreihenfolge wiederhergestellt werden?
+
+"Keep Current Order" = "Aktuelle Reihenfolge beibehalten";
+# EN: Keep Current Order
+# DRAFT: Aktuelle Reihenfolge beibehalten
+
+"Restore Default Order" = "Standardreihenfolge wiederherstellen";
+# EN: Restore Default Order
+# DRAFT: Standardreihenfolge wiederherstellen
+
+"Remove “%@”?" = "„%@“ entfernen?";
+# EN: Remove “%@”?
+# DRAFT: „%@“ entfernen?
+
+"Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk." = "Wählen Sie „Verweis entfernen“, um die CSS-Datei zu behalten, oder „In den Papierkorb legen“, um die Datei zu löschen.";
+# EN: Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk.
+# DRAFT: Wählen Sie „Verweis entfernen“, um die CSS-Datei zu behalten, oder „In den Papierkorb legen“, um die Datei zu löschen.
+
+"The CSS file for this style cannot be found. Removing the reference will detach it from Marked." = "Die CSS-Datei für diesen Stil wurde nicht gefunden. Wenn Sie den Verweis entfernen, wird er von Marked getrennt.";
+# EN: The CSS file for this style cannot be found. Removing the reference will detach it from Marked.
+# DRAFT: Die CSS-Datei für diesen Stil wurde nicht gefunden. Wenn Sie den Verweis entfernen, wird er von Marked getrennt.
+
+"Remove Reference" = "Verweis entfernen";
+# EN: Remove Reference
+# DRAFT: Verweis entfernen
+
+"Move to Trash" = "In den Papierkorb legen";
+# EN: Move to Trash
+# DRAFT: In den Papierkorb legen
+
+"The style file could not be found." = "Die Stildatei wurde nicht gefunden.";
+# EN: The style file could not be found.
+# DRAFT: Die Stildatei wurde nicht gefunden.
+
+"Duplicate or re-import the style to recreate it." = "Duplizieren oder importieren Sie den Stil erneut, um ihn neu anzulegen.";
+# EN: Duplicate or re-import the style to recreate it.
+# DRAFT: Duplizieren oder importieren Sie den Stil erneut, um ihn neu anzulegen.
+
+"Couldn’t move the CSS file to Trash." = "Die CSS-Datei konnte nicht in den Papierkorb gelegt werden.";
+# EN: Couldn’t move the CSS file to Trash.
+# DRAFT: Die CSS-Datei konnte nicht in den Papierkorb gelegt werden.
+
+"Built-in styles are read-only." = "Integrierte Stile sind schreibgeschützt.";
+# EN: Built-in styles are read-only.
+# DRAFT: Integrierte Stile sind schreibgeschützt.
+
+"Duplicate the style to create an editable copy." = "Duplizieren Sie den Stil, um eine bearbeitbare Kopie zu erstellen.";
+# EN: Duplicate the style to create an editable copy.
+# DRAFT: Duplizieren Sie den Stil, um eine bearbeitbare Kopie zu erstellen.
+
+"This style has no editable file on disk." = "Für diesen Stil gibt es keine bearbeitbare Datei.";
+# EN: This style has no editable file on disk.
+# DRAFT: Für diesen Stil gibt es keine bearbeitbare Datei.
+
+"Import or duplicate a style with a file path to edit its contents." = "Importieren oder duplizieren Sie einen Stil mit Dateipfad, um den Inhalt zu bearbeiten.";
+# EN: Import or duplicate a style with a file path to edit its contents.
+# DRAFT: Importieren oder duplizieren Sie einen Stil mit Dateipfad, um den Inhalt zu bearbeiten.
+
+"Style file not found on disk." = "Stildatei auf der Festplatte nicht gefunden.";
+# EN: Style file not found on disk.
+# DRAFT: Stildatei auf der Festplatte nicht gefunden.
+
+"Duplicate or import the style again to recreate the file before editing." = "Duplizieren oder importieren Sie den Stil erneut, um die Datei vor dem Bearbeiten neu anzulegen.";
+# EN: Duplicate or import the style again to recreate the file before editing.
+# DRAFT: Duplizieren oder importieren Sie den Stil erneut, um die Datei vor dem Bearbeiten neu anzulegen.
+
+"Open style in…" = "Stil öffnen in …";
+# EN: Open style in…
+# DRAFT: Stil öffnen in …
+
+"Choose how you want to edit this style's CSS." = "Wählen Sie, wie Sie das CSS dieses Stils bearbeiten möchten.";
+# EN: Choose how you want to edit this style's CSS.
+# DRAFT: Wählen Sie, wie Sie das CSS dieses Stils bearbeiten möchten.
+
+"Style Generator" = "Stilgenerator";
+# EN: Style Generator
+# DRAFT: Stilgenerator
+
+"Default Editor" = "Standardeditor";
+# EN: Default Editor
+# DRAFT: Standardeditor
+
+"Marked Style" = "Marked-Stil";
+# EN: Marked Style
+# DRAFT: Marked-Stil
+
+=== END SpecialWindows.strings ===
