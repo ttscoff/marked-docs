@@ -134,11 +134,11 @@
 # EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
 # DRAFT: Le style des paragraphes comprend <strong>texte en gras</strong>, <em>texte en italique</em>, en ligne <code>texte de code</code> et une phrase lisible pour l'espacement.
 
-"Move to Application Support" = "Passer au support applicatif";
+"Move to Application Support" = "Déplacer vers Application Support";
 # EN: Move to Application Support
 # DRAFT: Passer au support applicatif
 
-"Copy to Application Support" = "Copier vers le support d'application";
+"Copy to Application Support" = "Copier vers Application Support";
 # EN: Copy to Application Support
 # DRAFT: Copier vers le support d'application
 
