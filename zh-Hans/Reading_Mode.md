@@ -1,7 +1,7 @@
 <!-- MT draft for zh-Hans — Reading Mode help. Review before publishing. -->
 # <%= @title %>
 
-阅读模式可以保留您在长文档中的位置，聚焦当前块，并让您保存持久的亮点。
+阅读模式可以保留您在长文档中的位置，聚焦当前块，并让您保存持久的高亮。
 
 ## 进入阅读模式 [entering-reading-mode]
 
@@ -26,7 +26,7 @@ Marked 保存每个文档的当前阅读位置。当保存的位置与当前视�
 
 单击预览顶部的“聚焦模式”工具可以使除当前阅读单位之外的每个块变暗。导航时，焦点模式会跟随当前单位。再次单击该工具可恢复其他块，或离开阅读模式以自动清除焦点模式。
 
-## 创建和编辑亮点 [creating-and-editing-highlights]
+## 创建和编辑高亮 [creating-and-editing-highlights]
 
 选择文本并按 {% kbd h %} 创建内嵌标记突出显示。在没有选择的情况下，按 {% kbd h %} 突出显示整个当前读数单位，或再次按下以删除该单位突出显示。第一个突出显示提示输入签名，Marked 在创建 CriticMarkup 时使用该签名。您可以在{% prefspane Preview %}中更改签名。
 
@@ -41,7 +41,7 @@ Marked 保存每个文档的当前阅读位置。当保存的位置与当前视�
 
 ### 突出显示评论 [highlight-comments]
 
-评论与签名是分开的。签名是亮点；评论是您对此的注释。
+评论与签名是分开的。签名是高亮；评论是您对此的注释。
 
 从选择弹出评论图标添加或编辑评论，或按住 Control 键单击突出显示并选择 **添加评论...** 或 **编辑评论...**。选择 **删除注释** 以删除注释而不删除突出显示。
 
@@ -57,7 +57,7 @@ Marked 保存每个文档的当前阅读位置。当保存的位置与当前视�
 
 **阅读模式关闭时显示突出显示**设置控制在离开该模式后保存的突出显示是否仍然可见。
 
-## 导出亮点 [exporting-highlights]
+## 导出高亮 [exporting-highlights]
 
 选择 **预览 > 导出突出显示...** 或单击阅读模式工具栏中的导出突出显示工具。格式：Markdown、HTML（当前预览样式）、纯文本、CSV（Readwise 兼容，**注释** 列中包含注释，**签名** 中包含签名）和 JSON（每个突出显示上包含一个 `comment` 字段）。
 
@@ -65,13 +65,13 @@ HTML 导出嵌套将注释突出显示为每个突出显示的段落下方的块
 
 JSON 格式是 Marked 的交换文件。将其保存在 Markdown 文档旁边作为 `Document.markedhighlights.json`，或在导出 TextBundle 时自动包含它。
 
-## 导入亮点 [importing-highlights]
+## 导入高亮 [importing-highlights]
 
 选择 **预览 > 导入突出显示...** 并选择 Marked 突出显示 JSON 文件。按 ID 合并高亮显示：添加新的 ID，更新匹配的 ID，并且保留文件中不存在的现有高亮显示。
 
 当您打开包含 `highlights.json` 的 TextBundle 时，Marked 会自动合并这些突出显示。当 TextBundle 打开时，Marked 还会将突出显示和注释更改保存回包中的 `highlights.json`（不修改 `text.md`）。
 
-## TextBundle 亮点 [textbundle-highlights]
+## TextBundle 高亮 [textbundle-highlights]
 
 在 **保存 TextBundle** 上，启用 **包括突出显示** 以将 `highlights.json` 嵌入到捆绑包（或 TextPack）中。共享该捆绑包，以便协作者可以在 Marked 中打开它并保留组合的突出显示集。
 
@@ -84,6 +84,6 @@ JSON 格式是 Marked 的交换文件。将其保存在 Markdown 文档旁边作
 
 通过签名和注释，生成的标记使用<code>{=<span>=</span>highlighted text==}{&gt;&gt;signature: comment&lt;&lt;}</code>。仅使用注释，Marked 使用 <code>{=<span>=</span>highlighted text==}{&gt;&gt;comment&lt;&lt;}</code>。只有签名时，它使用<code>{=<span>=</span>highlighted text==}{&gt;&gt;signature&lt;&lt;}</code>。如果没有其中任何一个，Marked 只会创建 <code>{=<span>=</span>highlighted text==}</code> 标记。
 
-## 印刷亮点 [printing-highlights]
+## 打印高亮 [printing-highlights]
 
 默认情况下，打印或另存为 PDF 时会包含阅读模式突出显示。使用打印表中的 **包括阅读模式突出显示** 将其更改为当前输出。 {% prefspane Export %} 中的匹配设置控制未来打印和 PDF 作业的默认值。
