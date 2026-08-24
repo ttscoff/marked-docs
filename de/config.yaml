@@ -288,17 +288,17 @@ Sections:
     - overlay
     - shortcuts
     wiki_keywords: [speed read, speed reading, rsvp mode]
-  - title: Reading Mode
+  - title: Lesemodus
     file: Reading_Mode
-    description: Reading Mode keeps your place in long documents, focuses the current block, and saves persistent highlights you can comment on, export, or share.
+    description: Der Lesemodus merkt sich Ihre Position in langen Dokumenten, hebt den aktuellen Block hervor und speichert dauerhafte Hervorhebungen zum Kommentieren, Exportieren oder Teilen.
     keywords:
-    - reading mode
-    - highlights
-    - focus mode
-    - resume reading
-    - criticmarkup
-    - export highlights
-    wiki_keywords: [reading mode, highlights, focus mode]
+    - Lesemodus
+    - Hervorhebungen
+    - Fokusmodus
+    - Lesen fortsetzen
+    - CriticMarkup
+    - Hervorhebungen exportieren
+    wiki_keywords: [Lesemodus, Hervorhebungen, Fokusmodus]
   - title: Ask About Document
     file: AI_Ask_About_Document
     description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
@@ -989,10 +989,12 @@ Sections:
     - headlines
     - table of contents
     - toc
+    - current header
+    - aktuelle Überschrift
     - validate
     - validation
     - urls
-    wiki_keywords: [preview settings]
+    wiki_keywords: [preview settings, aktuelle Überschrift]
   - title: 'Settings: Style'
     file: Settings_Style
     description: "Options in the : Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels)."
