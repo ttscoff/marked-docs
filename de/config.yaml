@@ -100,16 +100,17 @@ Sections:
     - send to marked
   - title: Veröffentlichen auf Marked Share
     file: Marked_Share_Publish
-    description: Mit Marked Share verbinden und Dokumente als TextPacks mit optionalen Markierungen veröffentlichen. Veröffentlichte Dokumente verwalten, Links kopieren und bestehende Freigaben aktualisieren.
+    description: Mit Marked Share verbinden und Dokumente als TextPacks mit optionalen Hervorhebungen veröffentlichen. Veröffentlichte Dokumente verwalten, Links kopieren und bestehende Veröffentlichungen aktualisieren.
     keywords:
     - marked share
     - veröffentlichen
     - textpack
-    - link
+    - share-link
     - konto verbinden
     - veröffentlichte dokumente
     - nicht gelistet
-    - markierungen
+    - hervorhebungen
+    - lesestil
     wiki_keywords:
     - marked share
     - auf share veröffentlichen
