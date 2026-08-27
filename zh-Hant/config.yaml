@@ -95,6 +95,19 @@ Sections:
     - 剪貼簿預覽
     - 系統設定
     wiki_keywords:
+  - title: 發佈到 Marked Share
+    file: Marked_Share_Publish
+    description: 連接 Marked Share，將文件發佈為 TextPack，並可選包含醒目標示。管理已發佈文件、複製連結並更新現有分享。
+    keywords:
+    - marked share
+    - 發佈
+    - textpack
+    - 連結
+    - 連接帳號
+    - 已發佈文件
+    - 未公開
+    - 醒目標示
+    wiki_keywords: [marked share, 發佈到 share, 已發佈文件]
     - 共享延伸功能
     - 共享選單 marked
     - 傳送到 marked
