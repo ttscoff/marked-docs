@@ -98,6 +98,22 @@ Sections:
     - share extension
     - share menu marked
     - send to marked
+  - title: Veröffentlichen auf Marked Share
+    file: Marked_Share_Publish
+    description: Mit Marked Share verbinden und Dokumente als TextPacks mit optionalen Markierungen veröffentlichen. Veröffentlichte Dokumente verwalten, Links kopieren und bestehende Freigaben aktualisieren.
+    keywords:
+    - marked share
+    - veröffentlichen
+    - textpack
+    - link
+    - konto verbinden
+    - veröffentlichte dokumente
+    - nicht gelistet
+    - markierungen
+    wiki_keywords:
+    - marked share
+    - auf share veröffentlichen
+    - veröffentlichte dokumente
   - title: Marked Quick Look
     file: Quick_Look
     description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
