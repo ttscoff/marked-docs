@@ -95,6 +95,19 @@ Sections:
     - clipboard preview
     - system settings
     wiki_keywords:
+  - title: Publiceren naar Marked Share
+    file: Marked_Share_Publish
+    description: Verbind Marked Share en publiceer documenten als TextPacks met optionele markeringen. Beheer gepubliceerde documenten, kopieer links en werk bestaande shares bij.
+    keywords:
+    - marked share
+    - publiceren
+    - textpack
+    - link
+    - account verbinden
+    - gepubliceerde documenten
+    - niet openbaar
+    - markeringen
+    wiki_keywords: [marked share, publiceren naar share, gepubliceerde documenten]
     - share extension
     - share menu marked
     - send to marked
