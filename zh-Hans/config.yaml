@@ -95,6 +95,19 @@ Sections:
     - 剪贴板预览
     - 系统设置
     wiki_keywords:
+  - title: 发布到 Marked Share
+    file: Marked_Share_Publish
+    description: 连接 Marked Share，将文档发布为 TextPack，并可选包含高亮。管理已发布文档、复制链接并更新现有分享。
+    keywords:
+    - marked share
+    - 发布
+    - textpack
+    - 链接
+    - 连接账户
+    - 已发布文档
+    - 未公开
+    - 高亮
+    wiki_keywords: [marked share, 发布到 share, 已发布文档]
     - 共享扩展
     - 共享菜单 marked
     - 发送到 marked
