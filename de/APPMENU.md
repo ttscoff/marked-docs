@@ -29,6 +29,21 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 | `File, Export, Paginated PDF` | `Ablage, Exportieren als, PDF speichern (paginiert)` (EN-Tag „Export“ = Menü „Exportieren als“) |
 | `File, Open Dictionary...` | — Menüpunkt existiert nicht (in der App bestätigt); EN-Tag veraltet, bereits gemeldet |
 
+## File → Ablage / Publish → Veröffentlichen
+
+⚠ Marked Share ist in 3.1.27 noch nicht enthalten — diese Pfade stammen aus dem PR, nicht aus `de.lproj`. Vor der Veröffentlichung in der App gegenprüfen.
+
+| English | German |
+|---|---|
+| `File, Publish` | `Ablage, Veröffentlichen` |
+| `File, Publish, Publish…` | `Ablage, Veröffentlichen, Veröffentlichen…` |
+| `File, Publish, Update Published Document` | `Ablage, Veröffentlichen, Veröffentlichtes Dokument aktualisieren` |
+| `File, Publish, Copy Share Link` | `Ablage, Veröffentlichen, Share-Link kopieren` |
+| `File, Publish, Open on Web` | `Ablage, Veröffentlichen, Im Web öffnen` |
+| `File, Publish, Published Documents…` | `Ablage, Veröffentlichen, Veröffentlichte Dokumente…` |
+| `File, Publish, Connect Account…` | `Ablage, Veröffentlichen, Konto verbinden…` |
+| `File, Publish, Disconnect Account…` | `Ablage, Veröffentlichen, Konto trennen…` |
+
 ## Preview → Vorschau
 
 | English | German |
