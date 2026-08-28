@@ -95,6 +95,19 @@ Sections:
     - anteprima appunti
     - impostazioni di sistema
     wiki_keywords:
+  - title: Pubblicazione su Marked Share
+    file: Marked_Share_Publish
+    description: Collega Marked Share e pubblica documenti come TextPack con evidenziazioni opzionali. Gestisci i documenti pubblicati, copia i link e aggiorna le condivisioni esistenti.
+    keywords:
+    - marked share
+    - pubblicare
+    - textpack
+    - link
+    - collega account
+    - documenti pubblicati
+    - non elencato
+    - evidenziazioni
+    wiki_keywords: [marked share, pubblicare su share, documenti pubblicati]
     - estensione condividi
     - menu condividi marked
     - inviare a marked
