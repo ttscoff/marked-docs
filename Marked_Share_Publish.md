@@ -24,6 +24,7 @@ The first time you publish a document, Marked shows a small options sheet:
 
 - **Title** — shown on Share (defaults to the document name without its extension).
 - **Visibility** — Private, Unlisted, or Public. New publishes default to **Unlisted** (reachable by link, not listed publicly).
+- **Reading style** — Editorial, Manuscript, Swiss, Contrast, Typewriter, or **None**. Defaults from the document preview style when possible. Share uses this as a suggestion; readers can override it. Choose **None** to publish without a suggested style.
 - **Include highlights and comments** — embeds Reading Mode highlights in the TextPack. Defaults to on when the document has highlights.
 - **Allow others to remix** — when enabled, viewers can fork the document on Share.
 
