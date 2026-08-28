@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → File / Publish → Pubblica
 
-| English | Localized |
+| English | Italian |
 |---|---|
 | `File, Publish` | `File, Pubblica` |
 | `File, Publish, Publish…` | `File, Pubblica, Pubblica…` |

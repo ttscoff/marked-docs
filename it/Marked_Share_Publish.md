@@ -5,7 +5,7 @@
 
 Questa funzionalità è separata dall'**estensione Condividi** di macOS (menu Condividi di sistema). Vedi [Using the Share Extension](Share_Extension.html) per inviare file o selezioni a Marked da altre app.
 
-## Collega il tuo account [collega-il-tuo-account]
+## Collega il tuo account [connect-your-account]
 
 Prima della prima pubblicazione, collega Marked al tuo account Share:
 
@@ -17,7 +17,7 @@ Marked memorizza il token API e la chiave del dispositivo nel portachiavi macOS 
 
 Per disconnettersi, scegliere {% appmenu File, Pubblica, Scollega account… %}. I documenti pubblicati rimangono online; revocare l'accesso in qualsiasi momento su share.markedapp.com, se necessario.
 
-## Pubblicare un documento [pubblica-un-documento]
+## Pubblica un documento [publish-a-document]
 
 Con un documento aperto nell'anteprima, scegli {% appmenu File, Pubblica, Pubblica… %}.
 
@@ -25,6 +25,7 @@ La prima volta che pubblichi un documento, Marked mostra un piccolo foglio di op
 
 - **Titolo**: mostrato su Condividi (per impostazione predefinita è il nome del documento senza la sua estensione).
 - **Visibilità**: privato, non elencato o pubblico. Per impostazione predefinita le nuove pubblicazioni sono **Non in elenco** (raggiungibile tramite collegamento, non elencato pubblicamente).
+- **Stile di lettura**: Editoriale, Manoscritto, Svizzero, Contrasto, Macchina da scrivere o **Nessuno**. Predefiniti dallo stile di anteprima del documento quando possibile. Condividi lo usa come suggerimento; i lettori possono sovrascriverlo. Scegli **Nessuno** per pubblicare senza uno stile suggerito.
 - **Includi evidenziazioni e commenti**: incorpora le evidenziazioni della modalità di lettura nel TextPack. Per impostazione predefinita è attivo quando il documento presenta evidenziazioni.
 - **Consenti ad altri di remixare**: se abilitato, gli spettatori possono eseguire il fork del documento su Condividi.
 
@@ -36,7 +37,7 @@ Dopo aver collegato un documento a Condividi, la voce di menu riporta **Aggiorna
 
 Se qualcun altro ha aggiornato prima il documento su Condividi, Marked chiede se **Sovrascrivere** con la versione di questo Mac, **Apri sul Web** o **Annulla**.
 
-## Dopo la pubblicazione [dopo la pubblicazione]
+## Dopo la pubblicazione [after-publishing]
 
 Al termine della pubblicazione, Marked conferma il successo e offre:
 
@@ -45,7 +46,7 @@ Al termine della pubblicazione, Marked conferma il successo e offre:
 
 Questi comandi si applicano al documento iniziale quando ha un record di pubblicazione collegato.
 
-## Finestra Documenti pubblicati [finestra-documenti-pubblicati]
+## Finestra Documenti pubblicati [published-documents-window]
 
 Scegli {% appmenu File, Pubblica, Documenti pubblicati… %} per aprire un elenco di documenti pubblicati da questo Mac e sincronizzati dal tuo account Share.
 
@@ -59,7 +60,7 @@ Per ogni voce puoi:
 
 L'elenco si aggiorna da Condividi quando sei connesso. Se sei offline o disconnesso, Marked mostra i record memorizzati nella cache e potrebbe chiederti di riconnetterti.
 
-## Cosa puoi pubblicare [cosa-puoi-pubblicare]
+## Cosa puoi pubblicare [what-you-can-publish]
 
 Puoi pubblicare qualsiasi documento che Marked possa visualizzare, tra cui:
 
@@ -69,7 +70,7 @@ Puoi pubblicare qualsiasi documento che Marked possa visualizzare, tra cui:
 
 Viene eseguita una sola operazione di pubblicazione alla volta per finestra del documento; la voce di menu è disabilitata mentre è in corso un caricamento.
 
-## Suggerimenti [suggerimenti]
+## Suggerimenti [tips]
 
 - La pubblicazione include le immagini a cui fa riferimento l'anteprima. I pacchetti molto grandi potrebbero essere rifiutati prima del caricamento; riduci le risorse incorporate se raggiungi un limite di dimensione.
 - I momenti salienti esportati in TextPack utilizzano il formato JSON dei momenti salienti di Marked. Vedi [Reading Mode](Reading_Mode.html) per creare ed esportare i momenti salienti.
