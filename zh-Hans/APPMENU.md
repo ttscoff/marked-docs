@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → 文件 / Publish → 发布
 
-| English | Localized |
+| English | Simplified Chinese |
 |---|---|
 | `File, Publish` | `文件, 发布` |
 | `File, Publish, Publish…` | `文件, 发布, 发布…` |
