@@ -95,6 +95,19 @@ Sections:
     - visualização área de transferência
     - ajustes do sistema
     wiki_keywords:
+  - title: Publicar no Marked Share
+    file: Marked_Share_Publish
+    description: Conecte o Marked Share e publique documentos como TextPacks com destaques opcionais. Gerencie documentos publicados, copie links e atualize compartilhamentos existentes.
+    keywords:
+    - marked share
+    - publicar
+    - textpack
+    - link
+    - conectar conta
+    - documentos publicados
+    - não listado
+    - destaques
+    wiki_keywords: [marked share, publicar no share, documentos publicados]
     - extensão compartilhar
     - menu compartilhar marked
     - enviar para marked
