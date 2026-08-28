@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → 檔案 / Publish → 發佈
 
-| English | Localized |
+| English | Traditional Chinese |
 |---|---|
 | `File, Publish` | `檔案, 發佈` |
 | `File, Publish, Publish…` | `檔案, 發佈, 發佈…` |
