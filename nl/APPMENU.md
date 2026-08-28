@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → Archief / Publish → Publiceren
 
-| English | Localized |
+| English | Dutch |
 |---|---|
 | `File, Publish` | `Archief, Publiceren` |
 | `File, Publish, Publish…` | `Archief, Publiceren, Publiceren…` |

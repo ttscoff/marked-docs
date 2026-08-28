@@ -17,7 +17,7 @@ Marked slaat het API-token en de apparaatsleutel op in de macOS-sleutelhanger op
 
 Om de verbinding te verbreken, kiest u {% appmenu Archief, Publiceren, Account loskoppelen… %}. Gepubliceerde documenten blijven online; indien nodig kunt u de toegang op elk gewenst moment intrekken op share.markedapp.com.
 
-## Een document publiceren [publiceer-een-document]
+## Publiceer een document [publish-a-document]
 
 Terwijl een document geopend is in het voorbeeld, kiest u {% appmenu Archief, Publiceren, Publiceren… %}.
 
@@ -25,6 +25,7 @@ De eerste keer dat u een document publiceert, toont Marked een klein optieblad:
 
 - **Titel** — weergegeven op Share (standaard de documentnaam zonder de extensie).
 - **Zichtbaarheid** — Privé, verborgen of openbaar. Nieuwe publicaties zijn standaard **Niet vermeld** (bereikbaar via een link, niet openbaar vermeld).
+- **Leesstijl** — Redactioneel, Manuscript, Zwitsers, Contrast, Typemachine of **Geen**. Standaardwaarden van de documentvoorbeeldstijl indien mogelijk. Share gebruikt dit als suggestie; lezers kunnen het overschrijven. Kies **Geen** om te publiceren zonder een voorgestelde stijl.
 - **Voeg hoogtepunten en opmerkingen toe** — sluit hoogtepunten van de Leesmodus in de TextPack in. Staat standaard aan wanneer het document hoogtepunten bevat.
 - **Anderen toestaan ​​om te remixen**: indien ingeschakeld kunnen kijkers het document op Share splitsen.
 
@@ -36,7 +37,7 @@ Nadat een document is gekoppeld aan Delen, luidt het menu-item **Gepubliceerd do
 
 Als iemand anders het document eerst op Share heeft bijgewerkt, vraagt ​​Marked of u wilt **Overschrijven** met de versie van deze Mac, **Openen op internet** of **Annuleren**.
 
-## Na publicatie [na publicatie]
+## Na publicatie [after-publishing]
 
 Wanneer een publicatie is voltooid, bevestigt Marked succes en biedt het:
 
@@ -45,13 +46,13 @@ Wanneer een publicatie is voltooid, bevestigt Marked succes en biedt het:
 
 Deze opdrachten zijn van toepassing op het voordocument als het een gekoppeld publicatierecord heeft.
 
-## Venster gepubliceerde documenten [venster gepubliceerde documenten]
+## Venster Gepubliceerde documenten [published-documents-window]
 
 Kies {% appmenu Archief, Publiceren, Gepubliceerde documenten… %} om een ​​lijst met documenten te openen die vanaf deze Mac zijn gepubliceerd en zijn gesynchroniseerd vanuit uw Share-account.
 
 Voor elke inzending kunt u:
 
-- **Open** het lokale bestand wanneer Marked nog steeds een link ernaar op schijf heeft.
+- **Open** het lokale bestand als Marked nog een link ernaar op schijf heeft.
 - **Importeer** een TextPack als er geen lokaal bestand is (sla het ergens op en open het in Marked).
 - **Openen op internet** of **Kopieer link** voor de deel-URL.
 - **Onthulling in Finder** wanneer een lokaal pad bekend is.
@@ -59,7 +60,7 @@ Voor elke inzending kunt u:
 
 De lijst wordt vernieuwd vanuit Share wanneer u verbonden bent. Als u offline bent of de verbinding niet is verbroken, toont Marked gegevens in de cache en wordt u mogelijk gevraagd opnieuw verbinding te maken.
 
-## Wat je kunt publiceren [wat-je-kan-publiceren]
+## Wat u kunt publiceren [what-you-can-publish]
 
 Je kunt elk document publiceren dat Marked kan weergeven, waaronder:
 
