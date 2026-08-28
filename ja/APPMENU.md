@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → ファイル / Publish → 公開
 
-| English | Localized |
+| English | Japanese |
 |---|---|
 | `File, Publish` | `ファイル, 公開` |
 | `File, Publish, Publish…` | `ファイル, 公開, 公開…` |
