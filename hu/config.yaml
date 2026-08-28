@@ -95,6 +95,19 @@ Sections:
     - vágólap előnézet
     - rendszerbeállítások
     wiki_keywords:
+  - title: Közzététel a Marked Share-en
+    file: Marked_Share_Publish
+    description: Csatlakozzon a Marked Share-hez, és tegyen közzé dokumentumokat TextPack formátumban, opcionális kiemelésekkel. Kezelje a közzétett dokumentumokat, másoljon linkeket, és frissítse a meglévő megosztásokat.
+    keywords:
+    - marked share
+    - közzététel
+    - textpack
+    - link
+    - fiók csatlakoztatása
+    - közzétett dokumentumok
+    - nem listázott
+    - kiemelések
+    wiki_keywords: [marked share, közzététel share-en, közzétett dokumentumok]
     - megosztás bővítmény
     - megosztás menü marked
     - küldés markednek
