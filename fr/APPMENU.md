@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → Fichier / Publish → Publier
 
-| English | Localized |
+| English | French |
 |---|---|
 | `File, Publish` | `Fichier, Publier` |
 | `File, Publish, Publish…` | `Fichier, Publier, Publier…` |

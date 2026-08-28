@@ -17,7 +17,7 @@ Marked stocke le jeton API et la clé de périphérique dans le trousseau macOS 
 
 Pour vous déconnecter, choisissez {% appmenu Fichier, Publier, Déconnecter le compte… %}. Les documents publiés restent en ligne ; révoquer l'accès à tout moment sur share.markedapp.com si nécessaire.
 
-## Publier un document [publier-un-document]
+## Publier un document [publish-a-document]
 
 Avec un document ouvert dans l'aperçu, choisissez {% appmenu Fichier, Publier, Publier… %}.
 
@@ -25,6 +25,7 @@ La première fois que vous publiez un document, Marked affiche une petite feuill
 
 - **Titre** — affiché sur le partage (par défaut, le nom du document sans son extension).
 - **Visibilité** — Privé, non répertorié ou public. Les nouvelles publications sont par défaut **Non répertoriées** (accessibles par lien, non répertoriées publiquement).
+- **Style de lecture** — Éditorial, Manuscrit, Suisse, Contraste, Machine à écrire ou **Aucun**. Par défaut, le style d'aperçu du document est utilisé lorsque cela est possible. Share l'utilise comme suggestion ; les lecteurs peuvent l’ignorer. Choisissez **Aucun** pour publier sans style suggéré.
 - **Inclure les surlignages et les commentaires** — intègre les surlignages du mode lecture dans le TextPack. La valeur par défaut est activée lorsque le document comporte des surlignages.
 - **Autoriser les autres à remixer** : lorsque cette option est activée, les spectateurs peuvent partager le document sur Partager.
 
@@ -36,7 +37,7 @@ Une fois qu'un document est lié à Partager, l'élément de menu indique **Mett
 
 Si quelqu'un d'autre a d'abord mis à jour le document sur Partager, Marked demande s'il faut **Ecraser** avec la version de ce Mac, **Ouvrir sur le Web** ou **Annuler**.
 
-## Après la publication [après-publication]
+## Après la publication [after-publishing]
 
 Lorsqu'une publication est terminée, Marked confirme le succès et propose :
 
@@ -59,7 +60,7 @@ Pour chaque entrée, vous pouvez :
 
 La liste est actualisée à partir de Partager lorsque vous êtes connecté. Si vous êtes hors ligne ou déconnecté, Marked affiche les enregistrements mis en cache et peut vous inviter à vous reconnecter.
 
-## Ce que vous pouvez publier [ce que vous pouvez publier]
+## Ce que vous pouvez publier [what-you-can-publish]
 
 Vous pouvez publier n'importe quel document que Marked peut restituer, notamment :
 
@@ -69,7 +70,7 @@ Vous pouvez publier n'importe quel document que Marked peut restituer, notamment
 
 Une seule opération de publication s'exécute à la fois par fenêtre de document ; l'élément de menu est désactivé pendant qu'un téléchargement est en cours.
 
-## Conseils [conseils]
+## Conseils [tips]
 
 - La publication inclut les images référencées par l'aperçu. Les lots très volumineux peuvent être rejetés avant le téléchargement ; réduisez les actifs intégrés si vous atteignez une limite de taille.
 - Les faits saillants exportés dans TextPack utilisent le format JSON de surbrillance de Marked. Voir [Reading Mode](Reading_Mode.html) pour créer et exporter des faits saillants.
