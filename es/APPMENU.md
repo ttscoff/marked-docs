@@ -19,7 +19,7 @@ Verify each path in the running Spanish Marked app before publishing.
 
 ## File → Archivo / Publish → Publicar
 
-| English | Localized |
+| English | Spanish |
 |---|---|
 | `File, Publish` | `Archivo, Publicar` |
 | `File, Publish, Publish…` | `Archivo, Publicar, Publicar…` |
@@ -29,6 +29,7 @@ Verify each path in the running Spanish Marked app before publishing.
 | `File, Publish, Published Documents…` | `Archivo, Publicar, Documentos publicados…` |
 | `File, Publish, Connect Account…` | `Archivo, Publicar, Conectar cuenta…` |
 | `File, Publish, Disconnect Account…` | `Archivo, Publicar, Desconectar cuenta…` |
+
 ## Preview → Vista previa
 
 | English | Spanish |

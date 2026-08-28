@@ -5,7 +5,7 @@
 
 Esta función es independiente de la **extensión Compartir** de macOS (menú Compartir del sistema). Consulte [Using the Share Extension](Share_Extension.html) para enviar archivos o selecciones a Marked desde otras aplicaciones.
 
-## Conecta tu cuenta [conecta-tu-cuenta]
+## Conecta tu cuenta [connect-your-account]
 
 Antes de su primera publicación, conecte Marked a su cuenta Share:
 
@@ -17,7 +17,7 @@ Marked almacena el token de API y la clave del dispositivo en el llavero de macO
 
 Para desconectarse, elija {% appmenu Archivo, Publicar, Desconectar cuenta… %}. Los documentos publicados permanecen en línea; revocar el acceso en cualquier momento en share.markedapp.com si es necesario.
 
-## Publicar un documento [publicar-un-documento]
+## Publicar un documento [publish-a-document]
 
 Con un documento abierto en la vista previa, elija {% appmenu Archivo, Publicar, Publicar… %}.
 
@@ -25,18 +25,19 @@ La primera vez que publicas un documento, Marked muestra una pequeña hoja de op
 
 - **Título**: se muestra en Compartir (el valor predeterminado es el nombre del documento sin su extensión).
 - **Visibilidad**: privado, no listado o público. Las nuevas publicaciones tienen el valor predeterminado **No listado** (accesible mediante enlace, no listado públicamente).
+- **Estilo de lectura**: editorial, manuscrito, suizo, contraste, máquina de escribir o **Ninguno**. Valores predeterminados del estilo de vista previa del documento cuando sea posible. Share usa esto como una sugerencia; los lectores pueden anularlo. Elija **Ninguno** para publicar sin un estilo sugerido.
 - **Incluir aspectos destacados y comentarios**: incorpora aspectos destacados del modo de lectura en TextPack. El valor predeterminado es activado cuando el documento tiene resaltados.
 - **Permitir que otros hagan remezclas**: cuando está habilitado, los espectadores pueden bifurcar el documento en Compartir.
 
 Marked crea un TextPack en segundo plano (Markdown, activos y `highlights.json` opcional), lo carga y registra la URL compartida en esta Mac.
 
-### Actualizar una publicación existente [actualizar-una-publicación-existente]
+### Actualizar una publicación existente [update-an-existing-publish]
 
 Después de vincular un documento a Compartir, el elemento del menú dice **Actualizar documento publicado** en lugar de **Publicar…**. Elíjalo para cargar una nueva versión TextPack. Marked envía el hash de contenido del servidor para que se detecten ediciones simultáneas desde otra Mac o la web.
 
 Si alguien más actualizó el documento en Compartir primero, Marked pregunta si desea **Sobrescribir** con la versión de esta Mac, **Abrir en Web** o **Cancelar**.
 
-## Después de la publicación [después de la publicación]
+## Después de publicar [after-publishing]
 
 Cuando finaliza una publicación, Marked confirma el éxito y ofrece:
 
@@ -45,7 +46,7 @@ Cuando finaliza una publicación, Marked confirma el éxito y ofrece:
 
 Estos comandos se aplican al documento frontal cuando tiene un registro de publicación vinculado.
 
-## Ventana Documentos publicados [ventana-documentos-publicados]
+## Ventana Documentos publicados [published-documents-window]
 
 Elija {% appmenu Archivo, Publicar, Documentos publicados… %} para abrir una lista de documentos publicados desde esta Mac y sincronizados desde su cuenta Share.
 
@@ -59,7 +60,7 @@ Para cada entrada puedes:
 
 La lista se actualiza desde Compartir cuando estás conectado. Si está desconectado o sin conexión, Marked muestra registros almacenados en caché y puede solicitarle que se vuelva a conectar.
 
-## Lo que puedes publicar [lo-que-puedes-publicar]
+## Lo que puedes publicar [what-you-can-publish]
 
 Puede publicar cualquier documento que Marked pueda representar, incluido:
 
@@ -69,7 +70,7 @@ Puede publicar cualquier documento que Marked pueda representar, incluido:
 
 Sólo se ejecuta una operación de publicación a la vez por ventana de documento; el elemento del menú está deshabilitado mientras se realiza una carga.
 
-## Consejos [consejos]
+## Consejos [tips]
 
 - La publicación incluye imágenes a las que hace referencia la vista previa. Es posible que los paquetes muy grandes se rechacen antes de cargarlos; reduzca los activos integrados si alcanza un límite de tamaño.
 - Los aspectos destacados exportados en TextPack utilizan el formato JSON de resaltado de Marked. Consulte [Reading Mode](Reading_Mode.html) para crear y exportar aspectos destacados.
