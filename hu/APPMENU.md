@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → Fájl / Publish → Közzététel
 
-| English | Localized |
+| English | Hungarian |
 |---|---|
 | `File, Publish` | `Fájl, Közzététel` |
 | `File, Publish, Publish…` | `Fájl, Közzététel, Közzététel…` |

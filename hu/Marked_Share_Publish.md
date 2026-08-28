@@ -17,7 +17,7 @@ A Marked az API-tokkent és az eszközkulcsot a macOS-kulcstartóban tárolja ez
 
 A kapcsolat bontásához válassza a {% appmenu Fájl, Közzététel, Fiók leválasztása… %} lehetőséget. A közzétett dokumentumok online maradnak; szükség esetén bármikor visszavonhatja a hozzáférést a share.markedapp.com oldalon.
 
-## Dokumentum közzététele [public-a-document]
+## Dokumentum közzététele [publish-a-document]
 
 Amikor egy dokumentum meg van nyitva az előnézetben, válassza a {% appmenu Fájl, Közzététel, Közzététel… %} lehetőséget.
 
@@ -25,6 +25,7 @@ Amikor először tesz közzé egy dokumentumot, a Marked egy kis beállítási l
 
 - **Cím** – a Megosztásban látható (alapértelmezésben a dokumentum neve, kiterjesztése nélkül).
 - **Láthatóság** – Privát, Nem listázott vagy Nyilvános. Az új közzétételek alapértelmezett értéke **Nem listázott** (linken keresztül elérhető, nyilvánosan nem szerepel).
+- **Olvasási stílus** – Szerkesztői, Kéziratos, Svájci, Kontraszt, Írógép vagy **Nincs**. Alapértelmezés szerint a dokumentum előnézeti stílusa, amikor lehetséges. A Share ezt javaslatként használja; az olvasók felülbírálhatják. A javasolt stílus nélküli közzétételhez válassza a **Nincs** lehetőséget.
 - **Kiemelések és megjegyzések szerepeltetése** – Az olvasási mód kiemelései beágyazása a TextPack kifejezésbe. Alapértelmezés szerint be van kapcsolva, ha a dokumentumban vannak kiemelések.
 - **Engedélyezze másoknak az újrakeverést** – ha engedélyezve van, a megtekintők a Megosztás funkcióval bővíthetik a dokumentumot.
 
@@ -36,7 +37,7 @@ Miután egy dokumentumot összekapcsolt a Megosztással, a menüben a **Közzét
 
 Ha valaki más frissítette először a dokumentumot a Share funkcióval, a Marked megkérdezi, hogy **Felülírja** ezen Mac verzióval, **Megnyitás a weben** vagy **Mégse**.
 
-## Közzététel után [közzététel után]
+## A [after-publishing] közzététele után
 
 Amikor a közzététel befejeződik, a Marked megerősíti a sikerességet, és felajánlja:
 
@@ -59,7 +60,7 @@ Minden bejegyzésnél a következőket teheti:
 
 Amikor csatlakozik, a lista frissül a Megosztástól. Ha offline állapotban van, vagy nincs kapcsolat, a Marked megjeleníti a gyorsítótárazott rekordokat, és felkérheti az újbóli csatlakozásra.
 
-## Amit közzétehetsz [mit-tehetsz közzé]
+## Mit tehet közzé [what-you-can-publish]
 
 A Marked által megjeleníthető bármely dokumentumot közzéteheti, beleértve a következőket:
 
@@ -69,7 +70,7 @@ A Marked által megjeleníthető bármely dokumentumot közzéteheti, beleértve
 
 Egyszerre csak egy közzétételi művelet fut le dokumentumablakonként; feltöltés közben a menüpont le van tiltva.
 
-## Tippek [tippek]
+## Tippek [tips]
 
 - A közzététel tartalmazza az előnézet által hivatkozott képeket. A nagyon nagy kötegeket feltöltés előtt visszautasíthatjuk; csökkentse a beágyazott eszközök számát, ha eléri a méretkorlátot.
 - A TextPack formátumban exportált kiemelések a Marked kiemelt JSON formátumát használják. A kiemelések létrehozásához és exportálásához lásd a [Reading Mode](Reading_Mode.html) részt.
