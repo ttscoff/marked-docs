@@ -31,12 +31,15 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 
 ## File → Ablage / Publish → Veröffentlichen
 
-⚠ Marked Share ist in 3.1.27 noch nicht enthalten — diese Pfade stammen aus dem PR, nicht aus `de.lproj`. Vor der Veröffentlichung in der App gegenprüfen.
-
 | English | German |
 |---|---|
 | `File, Publish` | `Ablage, Veröffentlichen` |
 | `File, Publish, Publish…` | `Ablage, Veröffentlichen, Veröffentlichen…` |
+| `File, Publish, Publish to Collection` | `Ablage, Veröffentlichen, In Sammlung veröffentlichen` |
+| `File, Publish, Post to Micro.blog…` | `Ablage, Veröffentlichen, Auf Micro.blog veröffentlichen…` |
+| `File, Publish, Create New Collection…` | `Ablage, Veröffentlichen, Neue Sammlung erstellen…` |
+| `File, Publish, Manage Collections…` | `Ablage, Veröffentlichen, Sammlungen verwalten…` |
+| `File, Publish, Manage Domains…` | `Ablage, Veröffentlichen, Domains verwalten…` |
 | `File, Publish, Update Published Document` | `Ablage, Veröffentlichen, Veröffentlichtes Dokument aktualisieren` |
 | `File, Publish, Copy Share Link` | `Ablage, Veröffentlichen, Share-Link kopieren` |
 | `File, Publish, Open on Web` | `Ablage, Veröffentlichen, Im Web öffnen` |

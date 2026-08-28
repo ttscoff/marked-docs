@@ -2,6 +2,8 @@
 
 **Marked Share** is Marked's online publishing service at [share.markedapp.com](https://share.markedapp.com). Connect your Mac once, then publish the front document as a **TextPack** with images and optional Reading Mode highlights. Anyone with the link can view the document on the web.
 
+For full web documentation, including highlight sets, reader reviews, passwords, and API reference, see the [Marked Share Documentation](https://share.markedapp.com/docs).
+
 This feature is separate from the macOS **Share extension** (system Share menu). See [Using the Share Extension](Share_Extension.html) for sending files or selections into Marked from other apps.
 
 ## Connect your account [connect-your-account]
@@ -20,21 +22,41 @@ To disconnect, choose {% appmenu File, Publish, Disconnect Account… %}. Publis
 
 With a document open in the preview, choose {% appmenu File, Publish, Publish… %}.
 
-The first time you publish a document, Marked shows a small options sheet:
+The first time you publish a document, Marked shows an options sheet:
 
 - **Title** — shown on Share (defaults to the document name without its extension).
-- **Visibility** — Private, Unlisted, or Public. New publishes default to **Unlisted** (reachable by link, not listed publicly).
+- **Visibility** — Private, Unlisted, or Public. New publishes default to **Unlisted** (reachable by link, not listed publicly). Documents added to public collections are automatically set to **Public**.
+- **Collection** — choose an existing collection to publish directly to it, or select **Create New Collection…** to create one in your browser.
 - **Reading style** — Editorial, Manuscript, Swiss, Contrast, Typewriter, or **None**. Defaults from the document preview style when possible. Share uses this as a suggestion; readers can override it. Choose **None** to publish without a suggested style.
 - **Include highlights and comments** — embeds Reading Mode highlights in the TextPack. Defaults to on when the document has highlights.
 - **Allow others to remix** — when enabled, viewers can fork the document on Share.
 
 Marked builds a TextPack in the background (Markdown, assets, and optional `highlights.json`), uploads it, and records the share URL on this Mac.
 
+### Publish to Collection [publish-to-collection]
+
+To publish directly to a specific collection, choose {% appmenu File, Publish, Publish to Collection ▸ %} and select your collection from the submenu.
+
+You can also choose **Create New Collection…**, **Manage Collections…**, or **Manage Domains…** directly from the menu to configure your collections on [share.markedapp.com](https://share.markedapp.com).
+
 ### Update an existing publish [update-an-existing-publish]
 
 After a document is linked to Share, the menu item reads **Update Published Document** instead of **Publish…**. Choose it to upload a new TextPack version. Marked sends the server's content hash so concurrent edits from another Mac or the web are detected.
 
 If someone else updated the document on Share first, Marked asks whether to **Overwrite** with this Mac's version, **Open on Web**, or **Cancel**.
+
+## Post to Micro.blog [post-to-microblog]
+
+If you have connected your Micro.blog account in [Marked Share Settings](https://share.markedapp.com/settings), you can syndicate published documents directly to Micro.blog:
+
+1. Publish the document to Marked Share first.
+2. Choose {% appmenu File, Publish, Post to Micro.blog… %}.
+3. Select your post format:
+   - **Full Document** — publishes the complete Markdown content to your blog.
+   - **Summary Excerpt with Link** — publishes a summary snippet linking back to your Marked Share document.
+4. Click **Post**. Marked publishes the post and lets you immediately copy the link or open the post in your browser.
+
+You can also post previously published documents to Micro.blog by right-clicking them in the **Published Documents** window.
 
 ## After publishing [after-publishing]
 
@@ -49,13 +71,12 @@ These commands apply to the front document when it has a linked publish record.
 
 Choose {% appmenu File, Publish, Published Documents… %} to open a list of documents published from this Mac and synced from your Share account.
 
-For each entry you can:
-
-- **Open** the local file when Marked still has a link to it on disk.
-- **Import** a TextPack when there is no local file (save it anywhere and open it in Marked).
-- **Open on Web** or **Copy Link** for the Share URL.
-- **Reveal in Finder** when a local path is known.
-- **Forget** removes the record from this Mac without deleting the online document.
+- **Search** — Use the search field at the top of the window to search across your published titles, local file paths, and document content with live snippets.
+- **Open** — Opens the local file when Marked still has a link to it on disk.
+- **Import from Marked Share…** — Downloads the TextPack when there is no local file so you can save and edit it locally.
+- **Open on Web** or **Copy Share Link** — View or share the document's web link.
+- **Post to Micro.blog…** / **Open on Micro.blog** — Syndicate the document to Micro.blog or open an existing syndicated post.
+- **Forget** — Removes the local link from this Mac without deleting the online document.
 
 The list refreshes from Share when you are connected. If you are offline or disconnected, Marked shows cached records and may prompt you to reconnect.
 
