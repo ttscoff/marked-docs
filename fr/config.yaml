@@ -95,6 +95,19 @@ Sections:
     - aperçu presse-papiers
     - réglages système
     wiki_keywords:
+  - title: Publication sur Marked Share
+    file: Marked_Share_Publish
+    description: Connectez Marked Share et publiez des documents en TextPacks avec surlignages optionnels. Gérez les documents publiés, copiez les liens et mettez à jour les partages existants.
+    keywords:
+    - marked share
+    - publier
+    - textpack
+    - lien
+    - connecter le compte
+    - documents publiés
+    - non répertorié
+    - surlignages
+    wiki_keywords: [marked share, publier sur share, documents publiés]
     - extension partage
     - menu partager marked
     - envoyer à marked
