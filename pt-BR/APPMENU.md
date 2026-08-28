@@ -6,7 +6,7 @@ Verify each path in the running localized Marked app before publishing.
 
 ## File → Arquivo / Publish → Publicar
 
-| English | Localized |
+| English | Portuguese (Brazil) |
 |---|---|
 | `File, Publish` | `Arquivo, Publicar` |
 | `File, Publish, Publish…` | `Arquivo, Publicar, Publicar…` |
