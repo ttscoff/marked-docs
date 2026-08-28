@@ -16,6 +16,20 @@ Verify each path in the running Spanish Marked app before publishing.
 | `File, New ({{cmd}}N)` | `Archivo, Nuevo ({{cmd}}N)` |
 | `File, Export` | `Archivo, Exportar…` |
 
+
+## File → Archivo / Publish → Publicar
+
+| English | Spanish |
+|---|---|
+| `File, Publish` | `Archivo, Publicar` |
+| `File, Publish, Publish…` | `Archivo, Publicar, Publicar…` |
+| `File, Publish, Update Published Document` | `Archivo, Publicar, Actualizar documento publicado` |
+| `File, Publish, Copy Share Link` | `Archivo, Publicar, Copiar enlace de Share` |
+| `File, Publish, Open on Web` | `Archivo, Publicar, Abrir en la web` |
+| `File, Publish, Published Documents…` | `Archivo, Publicar, Documentos publicados…` |
+| `File, Publish, Connect Account…` | `Archivo, Publicar, Conectar cuenta…` |
+| `File, Publish, Disconnect Account…` | `Archivo, Publicar, Desconectar cuenta…` |
+
 ## Preview → Vista previa
 
 | English | Spanish |
