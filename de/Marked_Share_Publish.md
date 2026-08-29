@@ -2,7 +2,7 @@
 
 **Marked Share** ist Markeds Online-Veröffentlichungsdienst unter [share.markedapp.com](https://share.markedapp.com). Sie verbinden Ihren Mac einmalig und veröffentlichen anschließend das vorderste Dokument als **TextPack** mit Bildern und wahlweise den Hervorhebungen aus dem Lesemodus. Wer den Link hat, kann das Dokument im Web ansehen.
 
-Die vollständige Web-Dokumentation mit Details zu Hervorhebungs-Sets, Leser-Reviews, Passwörtern und der API-Referenz finden Sie in der [Marked Share-Dokumentation](https://share.markedapp.com/docs).
+Die vollständige Web-Dokumentation mit Details zu Hervorhebungs-Sets, Leser-Rezensionen, Passwörtern und der API-Referenz finden Sie in der [Marked Share-Dokumentation](https://share.markedapp.com/docs).
 
 Diese Funktion ist etwas anderes als die macOS-**Share-Erweiterung** (das Teilen-Menü des Systems). Wie Sie Dateien oder Textauswahlen aus anderen Apps an Marked senden, steht unter [Share-Erweiterung](Share_Extension.html).
 
@@ -26,7 +26,7 @@ Beim ersten Veröffentlichen eines Dokuments zeigt Marked ein Dialogblatt mit Op
 
 - **Titel** – erscheint auf Share (standardmäßig der Dokumentname ohne Dateiendung).
 - **Sichtbarkeit** – Privat, Nicht gelistet oder Öffentlich. Neue Veröffentlichungen sind standardmäßig **Nicht gelistet** (über den Link erreichbar, aber nicht öffentlich aufgeführt). Dokumente, die zu öffentlichen Sammlungen hinzugefügt werden, werden automatisch auf **Öffentlich** gesetzt.
-- **Sammlung** – wählen Sie eine vorhandene Sammlung aus oder klicken Sie auf **Neue Sammlung erstellen…**, um eine im Browser anzulegen.
+- **Sammlung** – wählt eine vorhandene Sammlung, in der das Dokument erscheinen soll; mit **Neue Sammlung erstellen…** legen Sie eine im Browser an.
 - **Lesestil** – Editorial, Manuscript, Swiss, Contrast, Typewriter oder **Keine**. Wenn möglich, übernimmt Marked den Vorschaustil des Dokuments. Share behandelt die Angabe als Vorschlag; Lesende können sie überschreiben. Mit **Keine** veröffentlichen Sie ohne Stilvorschlag.
 - **Hervorhebungen und Kommentare einschließen** – bettet die Hervorhebungen des Lesemodus in das TextPack ein. Standardmäßig aktiv, wenn das Dokument Hervorhebungen enthält.
 - **Remix durch andere erlauben** – ist die Option aktiv, können Lesende auf Share eine eigene Fassung des Dokuments anlegen.
@@ -35,7 +35,7 @@ Marked baut das TextPack im Hintergrund (Markdown, Assets und optional `highligh
 
 ### In Sammlung veröffentlichen [publish-to-collection]
 
-Um ein Dokument direkt in einer bestimmten Sammlung zu veröffentlichen, wählen Sie {% appmenu Ablage, Veröffentlichen, In Sammlung veröffentlichen %} und wählen Sie Ihre Sammlung im Untermenü aus.
+Um ein Dokument direkt in einer bestimmten Sammlung zu veröffentlichen, wählen Sie {% appmenu Ablage, Veröffentlichen, In Sammlung veröffentlichen %} und darin Ihre Sammlung aus dem Untermenü.
 
 Über das Menü können Sie auch direkt **Neue Sammlung erstellen…**, **Sammlungen verwalten…** oder **Domains verwalten…** aufrufen, um Ihre Sammlungen auf [share.markedapp.com](https://share.markedapp.com) zu konfigurieren.
 
@@ -69,14 +69,14 @@ Diese Befehle gelten für das vorderste Dokument, sofern dafür eine Veröffentl
 
 ## Fenster „Veröffentlichte Dokumente“ [published-documents-window]
 
-Mit {% appmenu Ablage, Veröffentlichen, Veröffentlichte Dokumente… %} öffnen Sie eine Liste der Dokumente, die von diesem Mac veröffentlicht und aus Ihrem Share-Konto synchronisiert wurden.
+Mit {% appmenu Ablage, Veröffentlichen, Veröffentlichte Dokumente… %} öffnen Sie eine Liste der Dokumente, die von diesem Mac veröffentlicht und aus Ihrem Share-Konto synchronisiert wurden. Zu jedem Eintrag stehen Ihnen zur Verfügung:
 
-- **Suchen** – Durchsuchen Sie Titel, lokale Dateipfade und Server-Inhalte mit Live-Textauszügen über das Suchfeld oben im Fenster.
-- **Öffnen** – Ruft die lokale Datei auf, solange Marked sie noch auf dem Datenträger findet.
-- **Aus Marked Share importieren…** – Lädt das TextPack herunter, wenn keine lokale Datei existiert, um sie lokal zu bearbeiten.
-- **Im Web öffnen** oder **Share-Link kopieren** – Öffnet oder kopiert die Web-URL.
-- **Auf Micro.blog veröffentlichen…** / **Auf Micro.blog öffnen** – Überträgt das Dokument auf Micro.blog oder öffnet einen bestehenden syndizierten Beitrag.
-- **Vergessen** – Entfernt die lokale Verknüpfung von diesem Mac, ohne das Dokument online zu löschen.
+- **Suchen** – durchsucht Titel, lokale Dateipfade und Dokumentinhalte über das Suchfeld oben im Fenster, mit Textauszügen während der Eingabe.
+- **Öffnen** – ruft die lokale Datei auf, solange Marked sie noch auf dem Datenträger findet.
+- **Aus Marked Share importieren…** – lädt das TextPack herunter, wenn keine lokale Datei existiert, damit Sie es lokal sichern und bearbeiten können.
+- **Im Web öffnen** oder **Share-Link kopieren** – öffnet den Web-Link des Dokuments oder kopiert ihn.
+- **Auf Micro.blog veröffentlichen…** / **Auf Micro.blog öffnen** – überträgt das Dokument auf Micro.blog oder öffnet einen bestehenden syndizierten Beitrag.
+- **Vergessen** – entfernt die lokale Verknüpfung von diesem Mac, ohne das Dokument online zu löschen.
 
 Solange Sie verbunden sind, aktualisiert sich die Liste aus Share. Sind Sie offline oder nicht verbunden, zeigt Marked die zwischengespeicherten Einträge und fordert Sie gegebenenfalls auf, die Verbindung wiederherzustellen.
 

@@ -1,21 +1,21 @@
 # Help translation gap — de — Marked_Share_Publish.md
-# Feature: Marked Share publish (new page)
+# Feature: Marked Share publish — Collections and Micro.blog (page already translated)
 # Generated: 2026-08-28
 #
-# German help does not yet include Marked_Share_Publish.md. Translate the ENGLISH
-# TARGET below into a new de/Marked_Share_Publish.md. Also add a config entry
-# to de/config.yaml after Share_Extension (see English HelpDocs/content/config.yaml).
-# APPMENU: add Publish rows under the File section (see de/APPMENU.md Publish block
-# in the English maintainer script or copy from translate/de-marked-share-publish branch).
+# STALE HEADER CORRECTED BY THE GERMAN LEAD, 29.08.2026:
+# de/Marked_Share_Publish.md ALREADY EXISTS — translated and merged in PR #90.
+# Do NOT create it from the target below; that would overwrite the reviewed page.
+# The German additions for Collections and Micro.blog are already in PR #91.
+# The ENGLISH TARGET below is kept only as a reference copy of the source page.
 #
 # Return: PR to ttscoff/marked-docs, or reply with the German Markdown page.
 
 === LOCATION ===
-File: de/Marked_Share_Publish.md (new)
-Also update: de/config.yaml (add Marked_Share_Publish page entry after Share_Extension)
+File: de/Marked_Share_Publish.md (exists — edit in place, do not recreate)
+Also update: de/config.yaml (entry already added in PR #90)
 
-=== CURRENT GERMAN (replace this block) ===
-(none — new page)
+=== CURRENT GERMAN (already translated — see de/Marked_Share_Publish.md on main) ===
+(page exists; do not replace wholesale)
 
 === ENGLISH TARGET (translate to German) ===
 # <%= @title %>
