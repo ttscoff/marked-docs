@@ -35,7 +35,7 @@ Marked builds a TextPack in the background (Markdown, assets, and optional `high
 
 ### Publish to Collection [publish-to-collection]
 
-To publish directly to a specific collection, choose {% appmenu File, Publish, Publish to Collection ▸ %} and select your collection from the submenu.
+To publish directly to a specific collection, choose {% appmenu File, Publish, Publish to Collection %} and select your collection from the submenu.
 
 You can also choose **Create New Collection…**, **Manage Collections…**, or **Manage Domains…** directly from the menu to configure your collections on [share.markedapp.com](https://share.markedapp.com).
 
@@ -69,7 +69,7 @@ These commands apply to the front document when it has a linked publish record.
 
 ## Published Documents window [published-documents-window]
 
-Choose {% appmenu File, Publish, Published Documents… %} to open a list of documents published from this Mac and synced from your Share account.
+Choose {% appmenu File, Publish, Published Documents… %} to open a list of documents published from this Mac and synced from your Share account. For each entry you can:
 
 - **Search** — Use the search field at the top of the window to search across your published titles, local file paths, and document content with live snippets.
 - **Open** — Opens the local file when Marked still has a link to it on disk.
