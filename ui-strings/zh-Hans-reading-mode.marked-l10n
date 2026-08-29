@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: zh-Hans (Simplified Chinese)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "关闭阅读模式时仍显示高亮";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: 关闭阅读模式时仍显示高亮
+
+"tooltip.showReadingHighlightsWhenIdle" = "在阅读模式之外仍显示已保存的阅读高亮。";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: 在阅读模式之外仍显示已保存的阅读高亮。
+
+"setting.readingHighlightSignature" = "高亮签名";
+# EN: Highlight signature
+# DRAFT: 高亮签名
+
+"tooltip.readingHighlightSignature" = "用于归属导出阅读高亮的名称。";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: 用于归属导出阅读高亮的名称。
+
+"setting.readingHighlightSignature.placeholder" = "名称";
+# EN: Name
+# DRAFT: 名称
+
+"setting.includeReadingHighlightsInPrint" = "包含阅读模式高亮";
+# EN: Include Reading Mode highlights
+# DRAFT: 包含阅读模式高亮
+
+"tooltip.includeReadingHighlightsInPrint" = "打印或存储为 PDF 时默认包含已保存的阅读高亮。";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: 打印或存储为 PDF 时默认包含已保存的阅读高亮。
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "阅读模式";
+# EN: Reading Mode
+# DRAFT: 阅读模式
+
+"MkHL-Export-Main.title" = "导出高亮…";
+# EN: Export Highlights…
+# DRAFT: 导出高亮…
+
+"MkHL-Import-Main.title" = "导入高亮…";
+# EN: Import Highlights…
+# DRAFT: 导入高亮…
+
+"MkCM-Copy-Main.title" = "将高亮复制为 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 将高亮复制为 CriticMarkup
+
+"MkCM-Inject-Main.title" = "将高亮注入文档…";
+# EN: Inject Highlights into Document…
+# DRAFT: 将高亮注入文档…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "阅读模式";
+# EN: Reading Mode
+# DRAFT: 阅读模式
+
+"MkHL-Export-MAS.title" = "导出高亮…";
+# EN: Export Highlights…
+# DRAFT: 导出高亮…
+
+"MkHL-Import-MAS.title" = "导入高亮…";
+# EN: Import Highlights…
+# DRAFT: 导入高亮…
+
+"MkCM-Copy-MAS.title" = "将高亮复制为 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 将高亮复制为 CriticMarkup
+
+"MkCM-Inject-MAS.title" = "将高亮注入文档…";
+# EN: Inject Highlights into Document…
+# DRAFT: 将高亮注入文档…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "阅读模式";
+# EN: Reading Mode
+# DRAFT: 阅读模式
+
+"MkHL-Export-Set.title" = "导出高亮…";
+# EN: Export Highlights…
+# DRAFT: 导出高亮…
+
+"MkHL-Import-Set.title" = "导入高亮…";
+# EN: Import Highlights…
+# DRAFT: 导入高亮…
+
+"MkCM-Copy-Set.title" = "将高亮复制为 CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: 将高亮复制为 CriticMarkup
+
+"MkCM-Inject-Set.title" = "将高亮注入文档…";
+# EN: Inject Highlights into Document…
+# DRAFT: 将高亮注入文档…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "包含高亮";
+# EN: Include Highlights
+# DRAFT: 包含高亮
+
+"MkHL-Include-TB.ibShadowedToolTip" = "在 TextBundle 或 TextPack 中包含阅读模式高亮";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: 在 TextBundle 或 TextPack 中包含阅读模式高亮
+
+=== END MarkdownDocument.strings ===

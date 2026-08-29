@@ -1,0 +1,124 @@
+# Marked Localization Update
+# Locale: es (Spanish)
+# Feature: Reading Mode (menus, settings, TextBundle include highlights)
+# Generated: 2026-08-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, CriticMarkup,
+# TextBundle, TextPack, PDF) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.showReadingHighlightsWhenIdle" = "Mostrar resaltados cuando el modo de lectura está desactivado";
+# EN: Show highlights when Reading Mode is off
+# DRAFT: Mostrar resaltados cuando el modo de lectura está desactivado
+
+"tooltip.showReadingHighlightsWhenIdle" = "Mantener visibles los resaltados de lectura guardados fuera del modo de lectura.";
+# EN: Keep saved reading highlights visible outside Reading Mode.
+# DRAFT: Mantener visibles los resaltados de lectura guardados fuera del modo de lectura.
+
+"setting.readingHighlightSignature" = "Firma de resaltado";
+# EN: Highlight signature
+# DRAFT: Firma de resaltado
+
+"tooltip.readingHighlightSignature" = "Nombre usado para atribuir los resaltados de lectura exportados.";
+# EN: Name used to attribute exported reading highlights.
+# DRAFT: Nombre usado para atribuir los resaltados de lectura exportados.
+
+"setting.readingHighlightSignature.placeholder" = "Nombre";
+# EN: Name
+# DRAFT: Nombre
+
+"setting.includeReadingHighlightsInPrint" = "Incluir resaltados del modo de lectura";
+# EN: Include Reading Mode highlights
+# DRAFT: Incluir resaltados del modo de lectura
+
+"tooltip.includeReadingHighlightsInPrint" = "Incluir por defecto los resaltados de lectura guardados al imprimir o guardar como PDF.";
+# EN: Include saved reading highlights by default when printing or saving as PDF.
+# DRAFT: Incluir por defecto los resaltados de lectura guardados al imprimir o guardar como PDF.
+
+=== END Settings.strings ===
+
+=== BEGIN MainMenu.strings ===
+"MkRM-Pvw-Main.title" = "Modo de lectura";
+# EN: Reading Mode
+# DRAFT: Modo de lectura
+
+"MkHL-Export-Main.title" = "Exportar resaltados…";
+# EN: Export Highlights…
+# DRAFT: Exportar resaltados…
+
+"MkHL-Import-Main.title" = "Importar resaltados…";
+# EN: Import Highlights…
+# DRAFT: Importar resaltados…
+
+"MkCM-Copy-Main.title" = "Copiar resaltados como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar resaltados como CriticMarkup
+
+"MkCM-Inject-Main.title" = "Inyectar resaltados en el documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inyectar resaltados en el documento…
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkRM-Pvw-MAS.title" = "Modo de lectura";
+# EN: Reading Mode
+# DRAFT: Modo de lectura
+
+"MkHL-Export-MAS.title" = "Exportar resaltados…";
+# EN: Export Highlights…
+# DRAFT: Exportar resaltados…
+
+"MkHL-Import-MAS.title" = "Importar resaltados…";
+# EN: Import Highlights…
+# DRAFT: Importar resaltados…
+
+"MkCM-Copy-MAS.title" = "Copiar resaltados como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar resaltados como CriticMarkup
+
+"MkCM-Inject-MAS.title" = "Inyectar resaltados en el documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inyectar resaltados en el documento…
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkRM-Pvw-Set.title" = "Modo de lectura";
+# EN: Reading Mode
+# DRAFT: Modo de lectura
+
+"MkHL-Export-Set.title" = "Exportar resaltados…";
+# EN: Export Highlights…
+# DRAFT: Exportar resaltados…
+
+"MkHL-Import-Set.title" = "Importar resaltados…";
+# EN: Import Highlights…
+# DRAFT: Importar resaltados…
+
+"MkCM-Copy-Set.title" = "Copiar resaltados como CriticMarkup";
+# EN: Copy Highlights as CriticMarkup
+# DRAFT: Copiar resaltados como CriticMarkup
+
+"MkCM-Inject-Set.title" = "Inyectar resaltados en el documento…";
+# EN: Inject Highlights into Document…
+# DRAFT: Inyectar resaltados en el documento…
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN MarkdownDocument.strings ===
+"MkHL-Include-Cell.title" = "Incluir resaltados";
+# EN: Include Highlights
+# DRAFT: Incluir resaltados
+
+"MkHL-Include-TB.ibShadowedToolTip" = "Incluir resaltados del modo de lectura en el TextBundle o TextPack";
+# EN: Include Reading Mode highlights in the TextBundle or TextPack
+# DRAFT: Incluir resaltados del modo de lectura en el TextBundle o TextPack
+
+=== END MarkdownDocument.strings ===
