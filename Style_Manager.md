@@ -138,12 +138,14 @@ styles. When unchecked, only enabled styles are displayed, making it easier to
 focus on and reorder your active styles. When checked, all styles (enabled and disabled)
 are shown, allowing you to manage your complete style collection.
 
-## Restoring Built‑in Styles [restoring-builtin-styles]
+## Restoring Built-in Styles [restoring-builtin-styles]
 
-The **Restore All Built‑in Styles** button at the bottom of the window
-restores all built‑in styles to their default state. This is useful if you've
-disabled built‑in styles and want to re‑enable them, or if you want to reset
-any modifications made to built‑in styles.
+The **Restore built-in styles** button at the bottom of the window opens a
+confirmation that re-enables built-in styles. The alert title is **Restore
+Default Styles**. Choose **Keep Current Order** to leave the Style menu order
+as-is, or **Restore Default Order** to reset built-in ordering as well. Use
+this if you have disabled built-in styles and want them back, or if you want
+to undo modifications to built-in styles.
 
 ## Tips [tips]
 
