@@ -31,7 +31,7 @@ Entries marked ⚠ could not be confirmed 1:1 in the string tables — check the
 
 ## File → Ablage / Publish → Veröffentlichen
 
-⚠ Marked Share ist in 3.1.27 noch nicht enthalten — diese Pfade stammen aus den PRs #90/#91, nicht aus `de.lproj`. Vor der Veröffentlichung in der App gegenprüfen.
+⚠ Marked Share ist auch in 3.2.3 noch nicht enthalten (geprüft 04.09.2026) — diese Pfade stammen aus den PRs #90/#91, nicht aus `de.lproj`. Vor der Veröffentlichung in der App gegenprüfen.
 
 | English | German |
 |---|---|
