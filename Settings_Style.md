@@ -56,8 +56,9 @@ Track CSS changes
 : When this is enabled, Marked will watch the current Style for disk changes, aiding in custom style editing and web development.
 
 Additional CSS
-: CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles.
-: This applies to all documents and all styles. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
+: CSS added here is appended after the normal stylesheet for every theme. It is a partial overlay, not a full theme substitute.
+: Marked rewrites selectors in this field (for example, print rules should use `body.mkprinting #wrapper …`). There is no size or validity gate --- see [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+: This applies to all documents and all styles, including HTML export when styles are included. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
 
 ### Include Scripts [include-scripts]
 
