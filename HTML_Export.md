@@ -73,6 +73,8 @@ The **preview style** drives HTML appearance when **Include style in output** is
 
 Every built-in Marked theme --- Swiss, GitHub, Manuscript, and the rest --- can be embedded. [Custom Styles](Custom_Styles.html) and styles from the [Style Manager](Custom_Styles.html) work the same way.
 
+**Additional CSS** from {% prefspane Style %} is included with HTML export when styles are embedded. The exported `<body>` gets the `mk-has-additional-css` class so Marked's rewritten Additional CSS selectors match. See [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+
 I> Some preview-only CSS (fixed positioning, viewport tricks, Dark Mode `@media screen` inversion) may not translate one-to-one outside Marked. Open the saved file in a browser to verify before publishing.
 
 For authoring guidance, see [Creating Custom CSS](Writing_Custom_CSS.html).
