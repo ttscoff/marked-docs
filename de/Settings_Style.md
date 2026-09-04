@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Optionen im {% prefspane Style %}:
+Optionen unter {% prefspane Style %}:
 
 ![Einstellungen: Stil][1]
 
@@ -9,76 +9,75 @@ Optionen im {% prefspane Style %}:
 ### Layout und Typografie [layout-and-typography]
 
 Textbreite in der Vorschau begrenzen
-: Legt mit dem Schieberegler eine maximale Breite für den Vorschau-Text fest (in Pixel).
+: Legt mit dem Schieberegler eine maximale Breite (in Pixeln) für den Textbereich der Vorschau fest.
 
 Automatische Silbentrennung in Absätzen
-: Erlaubt es, Wörter automatisch durch Silbentrennung umzubrechen.
+: Erlaubt die automatische Silbentrennung von Wörtern.
 
 Hurenkinder in Überschriften und Absätzen verhindern
-: Erzwingt ein geschütztes Leerzeichen zwischen den letzten beiden Wörtern von Überschriften und Absätzen, damit kein einzelnes Wort in eine neue Zeile umbricht.
+: Erzwingt ein geschütztes Leerzeichen zwischen den letzten beiden Wörtern von Überschriften und Absätzen, damit einzelne Wörter nicht in eine neue Zeile umbrechen.
 
-Typografisch korrekte Anführungszeichen und Interpunktion erzeugen
+Typografisch korrekte Anführungszeichen und Zeichensetzung generieren
 : Verwendet SmartyPants für typografische Anführungszeichen, die Umwandlung von Auslassungspunkten und weitere Typografie-Funktionen (MultiMarkdown).
 
-Fußnotenmarker in eckige Klammern setzen
-: Wenn aktiviert, wird die MultiMarkdown-Standardformatierung für Fußnotenmarker verwendet ([1]). Deaktivieren Sie die Option, um die eckigen Klammern zu entfernen.
+Fußnotenmarkierungen mit eckigen Klammern umgeben
+: Ist dies aktiviert, wird die Standard-MultiMarkdown-Formatierung für Fußnotenmarkierungen ([1]) verwendet. Deaktivieren, um die eckigen Klammern zu entfernen.
 
-Gliederungsmodus für Dateierweiterungen aktivieren
+Gliederung für Erweiterungen aktivieren
 : Aktiviert den Gliederungsmodus automatisch für Dateien mit den aufgeführten Erweiterungen.
 
 APA-Stil verwenden
-: Verwendet Gliederungen im APA-Stil anstelle des standardmäßigen Dezimalformats.
+: Verwendet APA-Gliederungen statt des standardmäßigen Dezimalformats.
 
-Wörtliche (Code-)Blöcke als Gedicht darstellen
-: Wenn aktiviert, werden tab-eingerückter, abgegrenzter oder eingebundener Code als Gedicht statt als Codeblock dargestellt (keine Syntaxhervorhebung, spezielles Styling je nach Stil).
+Wörtliche (Code-)Blöcke als Poesie stilisieren
+: Ist dies aktiviert, wird per Tab eingerückter, abgegrenzter oder eingebundener Code als Poesie statt als Codeblock dargestellt (ohne Syntaxhervorhebung und mit je nach Stil besonderer Formatierung).
 
 Stilen erlauben, Text in Codeblöcken umzubrechen
-: Wenn aktiviert, dürfen Stile einen Zeilenumbruch innerhalb von `pre>code`-Blöcken bewirken. Wenn deaktiviert, wird bei horizontalem Überlauf immer gescrollt.
+: Ist dies aktiviert, dürfen Stile innerhalb von `pre>code`-Blöcken Umbrüche erzeugen. Ist es deaktiviert, wird bei horizontalem Überlauf immer gescrollt.
 
 Code immer umbrechen
-: Erzwingt den Zeilenumbruch in Codeblöcken unabhängig von den Stil-Einstellungen (überschreibt das Umbruchverhalten des Stils).
+: Erzwingt den Umbruch von Codeblöcken unabhängig von den Stileinstellungen (überschreibt das Umbruchverhalten des Stils).
 
 RTL-Text erkennen und formatieren
-: Erkennt die Sprache für jedes Element im Dokument und formatiert sie bei Bedarf von rechts nach links (RTL).
+: Erkennt die Sprache je Element im Dokument und formatiert Rechts-nach-links-Text entsprechend.
 
 ### Stil [theme]
 
 Stile verwalten
-: Öffnet das Fenster [Stil-Manager](Style_Manager.html). Fügen Sie CSS-Dateien von Ihrer Festplatte hinzu, damit sie in den Stilauswahlmenüs erscheinen. Verwenden Sie die Schaltfläche `Add New Style` oder ziehen Sie CSS-Dateien in dieses Fenster. Ziehen Sie zum Umsortieren, und verwenden Sie die Kontrollkästchen, um Stile zu aktivieren oder zu deaktivieren.
+: Öffnet das Fenster [Stil-Manager](Style_Manager.html). Fügen Sie CSS-Dateien von Ihrem Laufwerk hinzu, damit sie in den Stilauswahl-Menüs erscheinen. Verwenden Sie die Schaltfläche „Neuen Stil hinzufügen“ oder ziehen Sie CSS-Dateien in dieses Fenster. Ziehen Sie zum Umsortieren, und aktivieren oder deaktivieren Sie Stile über die Kontrollkästchen.
 
 Weitere Stile
-: Öffnet die Online-Stilgalerie, um zusätzliche Stile zu durchsuchen und zu installieren.
+: Öffnet die Online-Stil-Galerie, um weitere Stile zu durchsuchen und zu installieren.
 
 Standardstil
-: Der hier ausgewählte Stil wird für alle neuen Fenster geladen, sofern nicht [in den Metadaten ein dokumentspezifischer Stil angegeben ist](Per-Document_Settings.html) (z. B. „Marked Style: Grump“).
+: Der hier ausgewählte Stil wird für alle neuen Fenster geladen, sofern nicht in den Metadaten ein [dokumentspezifischer Stil angegeben ist](Per-Document_Settings.html) (z. B. „Marked Style: Grump“).
 
 CSS-Änderungen verfolgen
-: Wenn aktiviert, überwacht Marked den aktuellen Stil auf Änderungen auf der Festplatte, was die Bearbeitung eigener Stile und die Webentwicklung erleichtert.
+: Ist dies aktiviert, überwacht Marked den aktuellen Stil auf Änderungen auf der Festplatte, was beim Bearbeiten eigener Stile und in der Webentwicklung hilft.
 
 Zusätzliches CSS
-: Hier hinzugefügtes CSS wird nach dem normalen Stylesheet jedes Stils angehängt. Es handelt sich um eine partielle Ergänzung, keinen vollständigen Ersatzstil.
-: Marked schreibt Selektoren in diesem Feld um (Druckregeln sollten beispielsweise `body.mkprinting #wrapper …` verwenden). Es gibt keine Größen- oder Gültigkeitsprüfung – siehe [Eigenes CSS erstellen](Writing_Custom_CSS.html#additional-css-settings).
-: Dies gilt für alle Dokumente und alle Stile, einschließlich des HTML-Exports, wenn Stile eingeschlossen werden. Wenn Sie eigenes CSS abhängig von Bedingungen auf Dokumente anwenden möchten, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
+: Hier hinzugefügtes CSS wird bei allen Stilen nach dem normalen Stylesheet eingebunden. Unter anderem können Sie damit Einstellungen flächendeckend überschreiben, ohne interne Stile zu bearbeiten.
+: Das gilt für alle Dokumente und alle Stile. Wollen Sie eigenes CSS je nach Bedingung auf Dokumente anwenden, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
 
-### Skripte laden [include-scripts]
+### Skripte einbinden [include-scripts]
 
 Syntaxhervorhebung
-: Aktiviert die highlight.js-[Syntaxhervorhebung](Syntax_Highlighting.html) für Codeblöcke. Wählen Sie einen Stil aus dem Einblendmenü.
-: Wenn **Nur bei angegebener Sprache** aktiviert ist, wird die Syntaxhervorhebung nur auf abgegrenzte Codeblöcke mit angegebener Sprache angewendet.
+: Aktiviert die highlight.js-[Syntaxhervorhebung](Syntax_Highlighting.html) für Codeblöcke. Wählen Sie einen Stil aus dem Dropdown-Menü.
+: Ist **Nur wenn Sprache angegeben** aktiviert, wird die Syntaxhervorhebung nur auf abgegrenzte Codeblöcke mit angegebener Sprache angewendet.
 
 MathJax aktivieren
-: Lädt [MathJax](MathJax.html) zur Anzeige von MathML-Gleichungen. Wählen Sie **Lokal** (im Programm enthalten) oder **CDN** aus dem Einblendmenü.
-: **Zusätzliche Pakete** öffnet ein Sheet, um weitere MathJax-Pakete einzubinden (zum Beispiel Physics und Chemistry).
-: **Erweiterte Konfiguration** öffnet ein Sheet für eine benutzerdefinierte MathJax-Konfiguration.
+: Lädt [MathJax](MathJax.html) zur Darstellung von MathML-Gleichungen. Wählen Sie **Lokal** (mitgeliefert) oder **CDN** aus dem Dropdown-Menü.
+: **Zusätzliche Pakete** öffnet ein Blatt, um weitere MathJax-Pakete einzubinden (zum Beispiel Physics und Chemistry).
+: **Erweiterte Konfiguration** öffnet ein Blatt für eine eigene MathJax-Konfiguration.
 
 KaTeX aktivieren
-: Lädt [KaTeX](MathJax.html#katex) als Alternative zu MathJax. Es kann jeweils nur eines von beiden ausgewählt werden.
+: Lädt [KaTeX](MathJax.html#katex) als Alternative zu MathJax. Es kann nur eines von beiden ausgewählt werden.
 
 Gleichungen nummerieren
-: Falls zutreffend, fügt Marked den gerenderten Gleichungen Abbildungsnummern hinzu. Wählen Sie für die Nummerierung **Linke Seite** oder **Rechte Seite**. Bei Verwendung von MathJax können Sie **Nur AMS** wählen, um nur AMS-Gleichungen zu nummerieren.
+: Sofern zutreffend, ergänzt Marked gerenderte Gleichungen um Formelnummern. Wählen Sie **Linke Seite** oder **Rechte Seite** für die Nummerierung. Mit MathJax können Sie **Nur AMS** wählen, um nur AMS-Gleichungen zu nummerieren.
 
 Mermaid
-: Lädt [mermaid.js](https://mermaid.js) von einem CDN, um Markdown-artiges Diagrammzeichnen zu ermöglichen. Der für die Darstellung von Mermaid-Diagrammen bei jeder Dokumentaktualisierung erforderliche Hook wird automatisch eingebunden.
+: Lädt [mermaid.js](https://mermaid.js) von einem CDN, um Diagramme im Markdown-Stil zu ermöglichen. Der Hook, der zum Rendern von Mermaid-Diagrammen bei jeder Dokumentaktualisierung nötig ist, wird automatisch eingebunden.
 
-Diagramme verschieben und zoomen
-: Wenn Mermaid-Diagramme vorhanden sind, aktiviert dies das Zoomen per {% kbd cmd %}-Scrollen und das Verschieben durch Klicken und Ziehen.
+Diagramme schwenken und zoomen
+: Sind Mermaid-Diagramme vorhanden, aktiviert dies das Zoomen mit {% kbd cmd %}-Scrollen und das Verschieben durch Klicken und Ziehen.
