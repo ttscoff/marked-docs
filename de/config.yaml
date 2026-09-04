@@ -360,7 +360,7 @@ Sections:
     wiki_keywords:
     - fog index
     - readability
-  - title: Mehrdateien-Dokumente
+  - title: Dokumente aus mehreren Dateien
     file: Multi-File_Documents
     description: Marked erlaubt mehrere Schreibweisen, um eine Datei in eine andere einzubinden. Externe Dateien nehmen Sie in ein einzelnes Vorschaudokument auf, indem Sie ...
     keywords:
@@ -537,9 +537,9 @@ Sections:
     - code
     - highlight
     wiki_keywords: [github tasks, github checkboxes, hard line breaks, syntax highlighting]
-  - title: Marked beim agentischen Programmieren
+  - title: Marked beim agentenbasierten Programmieren
     file: Using_Marked_with_Agentic_Coding
-    description: Marked ist ein guter Begleiter für moderne Abläufe beim agentischen Programmieren, bei denen KI-Werkzeuge Pläne entwerfen, Code umbauen und die Dokumentation fortlaufend aktualisieren. ...
+    description: Marked ist ein guter Begleiter für moderne Abläufe beim agentenbasierten Programmieren, bei denen KI-Werkzeuge Pläne entwerfen, Code umbauen und die Dokumentation fortlaufend aktualisieren. ...
     keywords:
     - agentic
     - coding
@@ -1090,9 +1090,9 @@ Sections:
     - file
     - save
     wiki_keywords: []
-  - title: Gesamtleistung
+  - title: Gesamt-Performance
     file: Overall_Performance
-    description: Markeds Darstellungsgeschwindigkeit und Gesamtleistung hängen stark von Ihren Einstellungen und der Art des Dokumentinhalts ab. Es gibt ...
+    description: Markeds Darstellungsgeschwindigkeit und Gesamt-Performance hängen stark von Ihren Einstellungen und der Art des Dokumentinhalts ab. Es gibt ...
     keywords:
     - performance
     - speed
