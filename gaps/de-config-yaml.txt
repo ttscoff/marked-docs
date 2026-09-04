@@ -26,13 +26,13 @@
 #   - Prefer multi-word phrases that appear in translated prose
 #   - Rebuild for German — do not copy English phrases that never appear in DE text
 #
-Product / format names that usually stay English (do not invent German search
-equivalents unless German users truly type them):
-  Marked, Markdown, MultiMarkdown, CommonMark, CriticMarkup, MathJax, KaTeX,
-  Scrivener, Obsidian, Bear, Drafts, Ulysses, iA Writer, VS Code, Fountain,
-  EPUB, DOCX, PDF, HTML, RTF, RTFD, YAML, JSON, CSV, LaTeX, Pandoc, GitHub,
-  Safari, Chrome, Firefox, macOS, Finder, AppleScript, TextBundle, TextPack,
-  KaTeX, MathJax, Mermaid, Quick Look
+# Product / format names that usually stay English (do not invent German search
+# equivalents unless German users truly type them):
+#   Marked, Markdown, MultiMarkdown, CommonMark, CriticMarkup, MathJax, KaTeX,
+#   Scrivener, Obsidian, Bear, Drafts, Ulysses, iA Writer, VS Code, Fountain,
+#   EPUB, DOCX, PDF, HTML, RTF, RTFD, YAML, JSON, CSV, LaTeX, Pandoc, GitHub,
+#   Safari, Chrome, Firefox, macOS, Finder, AppleScript, TextBundle, TextPack,
+#   Mermaid, Quick Look
 
 # ===========================================================================
 # GLOBAL
