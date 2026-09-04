@@ -93,7 +93,7 @@ Ein Kontrollkästchen am unteren Fensterrand steuert die Anzeige deaktivierter S
 
 ## Integrierte Stile wiederherstellen [restoring-builtin-styles]
 
-Die Schaltfläche **Alle integrierten Stile wiederherstellen** am unteren Fensterrand setzt alle integrierten Stile auf ihren Standardzustand zurück. Das ist nützlich, wenn Sie integrierte Stile deaktiviert haben und sie wieder aktivieren möchten, oder wenn Sie Änderungen an integrierten Stilen zurücksetzen wollen.
+Die Schaltfläche **Integrierte Stile wiederherstellen** am unteren Fensterrand öffnet eine Rückfrage, die integrierte Stile wieder aktiviert. Der Hinweis trägt den Titel **Standardstile wiederherstellen**. Mit **Aktuelle Reihenfolge beibehalten** bleibt die Reihenfolge im Stil-Menü unverändert; mit **Standardreihenfolge wiederherstellen** wird auch die Reihenfolge der integrierten Stile zurückgesetzt. Nutzen Sie das, wenn Sie integrierte Stile deaktiviert haben und sie zurückhaben möchten, oder wenn Sie Änderungen an integrierten Stilen rückgängig machen wollen.
 
 ## Tipps [tips]
 
