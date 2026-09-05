@@ -1,116 +1,117 @@
 # <%= @title %>
 
-Marked exporteert HTML vanuit uw **live preview** --- dezelfde weergegeven uitvoer die u op het scherm ziet. Gebruik HTML export als je een fragment nodig hebt om in een blog of CMS te plakken, of een op zichzelf staand `.html` bestand met ingesloten stijlen en afbeeldingen die je in elke browser of host waar dan ook kunt openen.
+Marked exporteert HTML vanuit je **live voorvertoning** --- dezelfde weergave die je op het scherm ziet. Gebruik HTML-export wanneer je een fragment nodig hebt om in een blog of CMS te plakken, of een op zichzelf staand `.html`-bestand met ingesloten stijlen en afbeeldingen dat je in elke browser kunt openen of overal kunt hosten.
 
-De typische workflow is **eerst een voorbeeld bekijken, HTML seconde** exporteren: open of compileer uw document in Marked, kies een thema, proeflezen in de live preview en exporteer vervolgens wanneer de opmaak er goed uitziet.
+De gebruikelijke werkwijze is **eerst voorvertonen, dan HTML exporteren**: open of compileer je document in Marked, kies een stijl, controleer het resultaat in de live voorvertoning en exporteer pas wanneer de opmaak klopt.
 
 ## Twee manieren om HTML te krijgen [two-ways-to-get-html]
 
-### Kopieer HTML (fragment) [copy-html-snippet]
+### HTML kopiëren (fragment) [copy-html-snippet]
 
-**Kopieer HTML** plaatst de HTML bron van het voorbeeld op het klembord --- klaar om te plakken in WordPress, Ghost, Squarespace, een forum, een e-mailsjabloon of elke app die HTML fragmenten accepteert.
+**HTML kopiëren** zet de HTML-broncode van de voorvertoning op het klembord --- klaar om te plakken in WordPress, Ghost, Squarespace, een forum, een e-mailsjabloon of elke andere app die HTML-fragmenten accepteert.
 
-* Tandwielmenu → **Kopieer HTML**, of {% kbd shift cmd C %} met de focus op het voorbeeld
-* Kopieert de **gerenderde hoofdtekst HTML** (geen volledig document met `<html>` wrapper)
-* Optioneel: schakel **Afbeeldingen insluiten bij het kopiëren van HTML** in {% prefspane Export %} naar Base64-codering van lokale afbeeldingen als `data:` URL's in de geplakte broncode
+* Gear-menu → **HTML kopiëren**, of {% kbd shift cmd C %} terwijl de voorvertoning actief is
+* Kopieert de **gerenderde HTML van de inhoud** (geen volledig document met `<html>`-wrapper)
+* Optioneel: schakel **Afbeeldingen insluiten bij HTML kopiëren** in bij {% prefspane Export %} om lokale afbeeldingen als Base64-`data:`-URL's in de geplakte broncode te coderen
 
-Kopieer HTML is ideaal wanneer uw bestemming al een eigen stylesheet heeft en u alleen de inhoudsopmaak nodig heeft.
+HTML kopiëren is ideaal wanneer je bestemming al een eigen stylesheet heeft en je alleen de inhoudsmarkup nodig hebt.
 
-### Opslaan HTML (bestand) [save-html-file]
+### HTML opslaan (bestand) [save-html-file]
 
-**Opslaan HTML** schrijft een compleet `.html` bestand naar schijf.
+**HTML opslaan** schrijft een volledig `.html`-bestand naar schijf.
 
-* Exporteren → **Opslaan HTML**, {% kbd cmd S %} of **HTML** uit de [Export Panel](Exporting.html#drawer) ({% kbd shift cmd e %})
-* Kies de bestandsnaam en locatie in het dialoogvenster Opslaan
-* Configureer exportopties in het dialoogvensteraccessoire (zie hieronder)
+* Exporteren → **HTML opslaan**, {% kbd cmd S %}, of **HTML** vanuit het [exportpaneel](Exporting.html#drawer) ({% kbd shift cmd e %})
+* Kies bestandsnaam en locatie in het opslagvenster
+* Configureer exportopties in het accessoirevenster (zie hieronder)
 
-Opslaan HTML is ideaal voor archivering, het delen van een zelfstandig bestand of het rechtstreeks openen van het resultaat in een browser.
+HTML opslaan is ideaal voor archivering, het delen van een op zichzelf staand bestand, of het rechtstreeks openen van het resultaat in een browser.
 
-## Bewaar HTML opties [save-html-options]
+## Opties voor HTML opslaan [save-html-options]
 
-Het dialoogvenster Save HTML bevat een exportprofielkiezer en deze opties:
+Het dialoogvenster HTML opslaan bevat een keuzemenu voor exportprofielen en de volgende opties:
 
-![Save HTML options][savehtml]
+![Opties voor HTML opslaan][savehtml]
 
 **Stijl opnemen in uitvoer**
 
-Indien aangevinkt, sluit Marked de CSS van het geselecteerde voorbeeldthema in een `<style>` blok in het geëxporteerde bestand in. Kies een ingebouwd thema of [Custom Style](Custom_Styles.html) uit het stijlmenu naast het selectievakje. De uitvoer is een compleet HTML document met `<!DOCTYPE html>`, `<head>` en een `#wrapper` div rond uw inhoud --- passend bij wat u hebt bekeken.
+Indien aangevinkt, sluit Marked de CSS van de geselecteerde voorvertoningsstijl in als `<style>`-blok in het geëxporteerde bestand. Kies een ingebouwde stijl of een [aangepaste stijl](Custom_Styles.html) uit het stijlmenu naast het selectievakje. De uitvoer is een compleet HTML-document met `<!DOCTYPE html>`, `<head>` en een `#wrapper`-div rond je inhoud --- overeenkomend met wat je in de voorvertoning zag.
 
-Indien uitgeschakeld, slaat Marked een minimaal HTML document op met alleen uw weergegeven inhoud (geen Marked thema-CSS). Gebruik dit als u ruwe HTML wilt plakken of importeren in een ander systeem dat zijn eigen stijl levert.
+Indien niet aangevinkt, slaat Marked een minimaal HTML-document op met alleen je gerenderde inhoud (zonder de themastijl van Marked). Gebruik dit wanneer je onbewerkte HTML wilt plakken of importeren in een ander systeem dat zijn eigen opmaak levert.
 
-**Lokale afbeeldingen insluiten voor standalone HTML**
+**Lokale afbeeldingen insluiten voor op zichzelf staande HTML**
 
-Wanneer **Stijl opnemen in uitvoer** is ingeschakeld, kunt u ook lokale afbeeldingen insluiten als Base64 `data:` URL's in het HTML bestand. Het resultaat is één enkel bestand dat u kunt e-mailen, uploaden of hosten zonder een aparte `images/` map.
+Wanneer **Stijl opnemen in uitvoer** is ingeschakeld, kun je ook lokale afbeeldingen insluiten als Base64-`data:`-URL's binnen het HTML-bestand. Het resultaat is één bestand dat je kunt e-mailen, uploaden of hosten zonder aparte `images/`-map.
 
-* Werkt met afbeeldingen waarnaar wordt verwezen door **relatieve of absolute paden** op uw lokale schijf
-* Vermijd `file:///` URL's --- deze kunnen niet betrouwbaar worden ingesloten
-* Externe afbeeldingen (http/https) blijven als externe URL's, tenzij u ze eerst downloadt
-* Base64-inbedding kan grote bestanden produceren; gebruik het wanneer draagbaarheid belangrijker is dan de bestandsgrootte
+* Werkt met afbeeldingen die via **relatieve of absolute paden** op je lokale schijf worden aangeroepen
+* Vermijd `file:///`-URL's --- deze kunnen niet betrouwbaar worden ingesloten
+* Externe afbeeldingen (http/https) blijven externe URL's, tenzij je ze eerst downloadt
+* Base64-insluiting kan grote bestanden opleveren; gebruik dit wanneer overdraagbaarheid belangrijker is dan bestandsgrootte
 
-**Inclusief syntaxisaccentuering van JavaScript**
+**Syntax highlighting-JavaScript opnemen**
 
-Wanneer syntaxisaccentuering is ingeschakeld in {% prefspane Preview %}, voegt deze optie highlight.js CSS en JavaScript uit een CDN toe, zodat codeblokken hun kleuren in het geëxporteerde bestand behouden. De geëxporteerde HTML heeft een internetverbinding nodig om de CDN-bronnen te kunnen laden.
+Wanneer syntax highlighting is ingeschakeld in {% prefspane Preview %}, voegt deze optie CSS en JavaScript van highlight.js toe vanaf een CDN, zodat codeblokken hun kleuren behouden in het geëxporteerde bestand. De geëxporteerde HTML heeft internetverbinding nodig om de CDN-bronnen te laden.
 
-**Inclusief MathJax of KaTeX CDN-link**
+**CDN-link voor MathJax of KaTeX opnemen**
 
-Wanneer [MathJax](MathJax.html) of KaTeX is ingeschakeld voor voorbeeldweergave, kunt u de overeenkomende CDN-scripts opnemen in de opgeslagen HTML, zodat vergelijkingen in een browser worden weergegeven. Net als syntaxisaccentuering vereist dit netwerktoegang bij het bekijken van het bestand, tenzij u de scripts zelf host.
+Wanneer [MathJax](MathJax.html) of KaTeX is ingeschakeld voor de voorvertoning, kun je de bijbehorende CDN-scripts opnemen in de opgeslagen HTML, zodat vergelijkingen in een browser worden weergegeven. Net als bij syntax highlighting is hiervoor netwerktoegang nodig bij het bekijken van het bestand, tenzij je de scripts zelf host.
 
-**CriticMarkup exporttype**
+**Exporttype voor CriticMarkup**
 
-Documenten met [CriticMarkup](CriticMarkup.html) kunnen kiezen of de export bewerkte tekst, originele tekst of volledige markup toont.
+Bij documenten met [CriticMarkup](CriticMarkup.html) kun je kiezen of de export de bewerkte tekst, de oorspronkelijke tekst of de volledige markup toont.
 
-**Profiel exporteren**
+**Exportprofiel**
 
-Selecteer een opgeslagen [Export Profile](Exporting.html#export-profiles) om uw favoriete HTML exportinstellingen (ingesloten stijlen, afbeeldingen, syntaxisaccentuering, wiskunde) in één stap te herstellen.
+Selecteer een opgeslagen [exportprofiel](Exporting.html#export-profiles) om in één stap je gewenste HTML-exportinstellingen (ingesloten stijlen, afbeeldingen, syntax highlighting, wiskunde) te herstellen.
 
-## Styling met ingebouwde en aangepaste thema's [styling-with-built-in-and-custom-themes]
+## Opmaken met ingebouwde en aangepaste stijlen [styling-with-built-in-and-custom-themes]
 
-De **voorbeeldstijl** bepaalt de weergave van HTML wanneer **Stijl opnemen in uitvoer** is aangevinkt:
+De **voorvertoningsstijl** bepaalt het uiterlijk van de HTML wanneer **Stijl opnemen in uitvoer** is aangevinkt:
 
-1. Kies een stijl uit het stijlmenu van het voorbeeldvenster (of stel een standaard in {% prefspane Style %}).
-2. Bekijk typografie, koppen, codeblokken en afbeeldingen in de live preview.
-3. Sla HTML op met dezelfde stijl als geselecteerd in het exportdialoogvenster.
+1. Kies een stijl uit het stijlmenu van het voorvertoningsvenster (of stel een standaard in bij {% prefspane Style %}).
+2. Controleer typografie, koppen, codeblokken en afbeeldingen in de live voorvertoning.
+3. Sla de HTML op met dezelfde stijl geselecteerd in het exportvenster.
 
-Elk ingebouwd Marked thema --- Zwitsers, GitHub, Manuscript en de rest --- kan worden ingesloten. [Custom Styles](Custom_Styles.html) en stijlen uit [Style Manager](Custom_Styles.html) werken op dezelfde manier.
+Elke ingebouwde Marked-stijl --- Swiss, GitHub, Manuscript en de rest --- kan worden ingesloten. [Aangepaste stijlen](Custom_Styles.html) en stijlen uit de [stijlbeheerder](Custom_Styles.html) werken op dezelfde manier.
 
-I> Sommige CSS-voorbeelden (vaste positionering, viewport-trucs, donkere modus `@media screen` inversie) worden mogelijk niet één-op-één vertaald buiten Marked. Open het opgeslagen bestand in een browser om het te verifiëren voordat u het publiceert.
+**Extra CSS** uit {% prefspane Style %} wordt meegenomen bij HTML-export wanneer stijlen worden ingesloten. Het geëxporteerde `<body>` krijgt de `mk-has-additional-css`-klasse, zodat de door Marked herschreven selectors voor Extra CSS overeenkomen. Zie [Aangepaste CSS maken](Writing_Custom_CSS.html#additional-css-settings).
 
-Voor richtlijnen bij het schrijven, zie [Creating Custom CSS](Writing_Custom_CSS.html).
+I> Sommige CSS die alleen voor de voorvertoning bedoeld is (fixed positioning, viewport-trucs, omkering van de `@media screen` voor Dark Mode) vertaalt zich mogelijk niet één-op-één buiten Marked. Open het opgeslagen bestand in een browser om dit te controleren voordat je het publiceert.
 
-## Metagegevens en MultiMarkdown headers [metadata-and-multimarkdown-headers]
+Zie [Aangepaste CSS maken](Writing_Custom_CSS.html) voor schrijfrichtlijnen.
 
-MeerdereMarkdown metadata bovenaan uw bronbestand kunnen de export van HTML beïnvloeden:
+## Metadata en MultiMarkdown-headers [metadata-and-multimarkdown-headers]
 
-* **`Title:`** --- gebruikt voor het `<title>` element bij het opslaan van een volledig HTML document
-* **`XHTML Header:`** / **`HTML Header:`** --- injecteert extra tags in de geëxporteerde `<head>` (scripts, linktags, metatags)
-* Andere metadatasleutels worden verwerkt volgens uw [Markdown processor](Choosing_a_Processor.html)
+MultiMarkdown-metadata bovenaan je bronbestand kan de HTML-export beïnvloeden:
 
-Als u metagegevens gebruikt voor exportinstellingen, maar niet wilt dat sleutels zichtbaar zijn in andere uitvoer, verpak ze dan in HTML opmerkingen --- Marked vindt en verwerkt metagegevens met commentaar waar dan ook in het document. Zie [Per-Document Settings](Per-Document_Settings.html).
+* **`Title:`** --- wordt gebruikt voor het `<title>`-element bij het opslaan van een volledig HTML-document
+* **`XHTML Header:`** / **`HTML Header:`** --- voegt extra tags toe aan de geëxporteerde `<head>` (scripts, link-tags, meta-tags)
+* Andere metadatasleutels worden verwerkt volgens je [Markdown-processor](Choosing_a_Processor.html)
+
+Als je metadata gebruikt voor exportinstellingen maar de sleutels niet zichtbaar wilt hebben in andere uitvoer, plaats ze dan tussen HTML-commentaartags --- Marked vindt en verwerkt becommentarieerde metadata overal in het document. Zie [Instellingen per document](Per-Document_Settings.html).
 
 ## Documenten met meerdere bestanden [multi-file-documents]
 
-Voor boeken- en hoofdstukcompilaties gebruikt u [Multi-File Documents](Multi-File_Documents.html). Marked geeft een voorbeeld van het samengevoegde document weer en exporteert één HTML bestand uit het gecompileerde resultaat. Inbegrepen bestanden zijn gemarkeerd met HTML opmerkingen die hun bronpaden tonen --- handig bij het controleren van welk hoofdstuk aan welke sectie heeft bijgedragen.
+Gebruik voor boeken en hoofdstukcompilaties [documenten met meerdere bestanden](Multi-File_Documents.html). Marked toont een voorvertoning van het samengevoegde document en exporteert één HTML-bestand vanuit het gecompileerde resultaat. Opgenomen bestanden worden gemarkeerd met HTML-commentaar dat hun bronpad toont --- handig wanneer je wilt controleren welk hoofdstuk welk onderdeel heeft aangeleverd.
 
-## Plakken in andere applicaties [pasting-into-other-applications]
+## Plakken in andere toepassingen [pasting-into-other-applications]
 
-| Bestemming | Voorgestelde aanpak |
+| Bestemming | Aanbevolen aanpak |
 | :-- | :-- |
-| Blog / CMS met een eigen thema | **Kopieer HTML** (fragment, geen ingesloten Marked CSS) |
-| Statische site of archief | **Opslaan HTML** met **Stijl opnemen in uitvoer** |
-| E-mail of bestandsdeling (één bijlage) | **Opslaan HTML** met **Lokale afbeeldingen insluiten** |
-| WordPress, Ghost, Notion, enz. | **Kopieer HTML**; enable **Afbeeldingen insluiten bij het kopiëren van HTML** als de editor de lokale paden niet omzet |
-| Verder bewerken in een code-editor | **Opslaan HTML** zonder ingesloten stijl, of fragment kopiëren en handmatig inpakken |
+| Blog/CMS met eigen thema | **HTML kopiëren** (fragment, zonder ingesloten Marked-CSS) |
+| Statische site of archief | **HTML opslaan** met **Stijl opnemen in uitvoer** |
+| E-mail of bestandsdeling (één bijlage) | **HTML opslaan** met **Lokale afbeeldingen insluiten** |
+| WordPress, Ghost, Notion, enz. | **HTML kopiëren**; schakel **Afbeeldingen insluiten bij HTML kopiëren** in als de editor lokale paden niet kan omzetten |
+| Verdere bewerking in een code-editor | **HTML opslaan** zonder ingesloten stijl, of kopieer het fragment en verpak het handmatig |
 
-[Copy Rich Text](Exporting.html#rtfexportoptions) (tandwielmenu) is een alternatief wanneer de doelapp opgemaakte tekst accepteert in plaats van de HTML bron.
+[Rich Text kopiëren](Exporting.html#rtfexportoptions) (gear-menu) is een alternatief wanneer de doeltoepassing opgemaakte tekst accepteert in plaats van HTML-broncode.
 
 ## Gerelateerde onderwerpen [related-topics]
 
-* [Exporting](Exporting.html) --- exportpaneel, profielen en andere formaten
-* [EPUB Export](EPUB_Export.html) --- e-boekuitvoer met ingebouwde CSS
-* [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) --- bekijk een voorbeeld van de workflow vóór het exporteren
-* [Custom Styles](Custom_Styles.html) en [Settings: Export](Settings_Export.html)
-* [HTML Specific Settings](HTML_Specific_Settings.html) --- processoropties voor HTML uitvoer
-* [AppleScript export](AppleScript_Support.html) --- automatiseer HTML kopiëren en opslaan
+* [Exporteren](Exporting.html) --- exportpaneel, profielen en andere formaten
+* [EPUB-export](EPUB_Export.html) --- e-bookuitvoer met ingesloten CSS
+* [Live Markdown-voorvertoning op de Mac](Live_Markdown_Preview_on_Mac.html) --- voorvertoningsworkflow vóór export
+* [Aangepaste stijlen](Custom_Styles.html) en [Instellingen: Exporteren](Settings_Export.html)
+* [HTML-specifieke instellingen](HTML_Specific_Settings.html) --- processoropties voor HTML-uitvoer
+* [AppleScript-export](AppleScript_Support.html) --- HTML kopiëren en opslaan automatiseren
 
-[savehtml]: images/SaveHTML.png @2x width=740px height=229px 
-r
+[savehtml]: images/SaveHTML.png @2x width=740px height=229px
