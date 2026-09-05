@@ -41,7 +41,11 @@ Unter {% prefspane Style %} finden Sie die Option „Zusätzliches CSS“ mit ei
 
     #wrapper img { width: 100%; height: auto; }
 
-CSS in diesem Feld wird auf jedes Dokument angewendet, egal welchen Stil es verwendet. Wollen Sie eigenes CSS anhand von Bedingungen anwenden, verwenden Sie die Aktionen „Stil festlegen“, „CSS-Datei einfügen“ oder „CSS einfügen“ in den Eigenen Regeln unter {% prefspane Processor %}.
+CSS in diesem Feld wird **an das aktive Design angehängt**. Es ersetzt keinen vollwertigen eigenen Stil: Ein Stylesheet, das nur für dieses Feld geschrieben ist, bleibt bewusst unvollständig, und über den Stil-Manager als Design geladen ließe es alles ungestaltet, was es nicht abdeckt.
+
+Marked **schreibt die Selektoren** aus Zusätzliches CSS vor dem Einfügen um. Führende body-Klassen wie `.mkprinting` werden mit `body` zusammengeführt statt unter `#wrapper` verschachtelt; Druckregeln sollten in diesem Feld deshalb `body.mkprinting #wrapper …` verwenden (die vollständigen Regeln zum Umschreiben stehen unter [Eigenes CSS schreiben](Writing_Custom_CSS.html#additional-css-settings)). Eine Größenbeschränkung oder Gültigkeitsprüfung gibt es für das Feld nicht – ungültiges CSS bleibt schlicht wirkungslos.
+
+CSS in diesem Feld wird auf jedes Dokument angewendet, egal welchen Stil es verwendet – auch beim HTML-Export, sofern die Stile eingebettet werden. Wollen Sie eigenes CSS anhand von Bedingungen anwenden, verwenden Sie die Aktionen „Stil festlegen“, „CSS-Datei einfügen“ oder „CSS einfügen“ in den Eigenen Regeln unter {% prefspane Processor %}.
 
 ## Drucken und PDF-Export [print-and-pdf-export]
 
@@ -49,7 +53,7 @@ Marked fügt bei jeder Vorschau einen integrierten `@media print`-Block (`mkprin
 
 Der PDF-Export kann auf dem versteckten WebView, das zur Erzeugung dient, **print**- oder **screen**-Medien verwenden. Integrierte Designs nutzen typischerweise print-Medien; **eigene Stile** und [Fountain](Fountain_for_Screenwriters.html)-Dokumente verwenden oft screen-Medien, damit das Layout der Vorschau entspricht. Das heißt, `@media print { ... }`-Regeln werden beim PDF-Export nicht immer angewendet.
 
-Für zuverlässiges Styling bei PDF und Druck-/PDF-Vorschau stellen Sie den Selektoren die Klasse `mkprinting` voran, die Marked beim Export dem `<body>` hinzufügt (Einzelheiten und Beispiele unter [Eigenes CSS schreiben](Writing_Custom_CSS.html#printstyles)). Sie können `.mkprinting` allein verwenden oder es mit `@media print` kombinieren, wenn Sie beide Wege abdecken müssen.
+Für zuverlässiges Styling bei PDF und Druck-/PDF-Vorschau stellen Sie den Selektoren die Klasse `mkprinting` voran, die Marked beim Export dem `<body>` hinzufügt (Einzelheiten und Beispiele unter [Eigenes CSS schreiben](Writing_Custom_CSS.html#printstyles)). In einer Datei für einen **eigenen Stil** genügt `.mkprinting` allein. In **Zusätzliches CSS** verwenden Sie die body-qualifizierte Form `body.mkprinting #wrapper …`, weil dieses Feld die Selektoren umschreibt. Beide Formen lassen sich mit `@media print` kombinieren, wenn Sie beide Wege abdecken müssen.
 
 Um Größen festzulegen, die von Markeds Druckstandards abweichen, fügen Sie explizite Regeln in Ihr eigenes CSS (oder in „Zusätzliches CSS“) ein. Verwenden Sie `!important`, wenn Sie Markeds eingefügte Druckstile überschreiben müssen – zum Beispiel:
 
@@ -67,6 +71,7 @@ Um Größen festzulegen, die von Markeds Druckstandards abweichen, fügen Sie ex
   }
 }
 
+/* Eigener Stil (und die meisten Design-Stylesheets) */
 .mkprinting #wrapper p,
 .mkprinting body p,
 .mkprinting p {
@@ -77,9 +82,21 @@ Um Größen festzulegen, die von Markeds Druckstandards abweichen, fügen Sie ex
 .mkprinting h1 {
   font-size: 16pt !important;
 }
+
+/* Feld „Zusätzliches CSS“ (Selektoren werden umgeschrieben) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
+}
 ```
 
-Regeln ohne `!important` können gegen spätere Regeln in `mkprintstyles` oder gegen andere unqualifizierte Selektoren in Ihrem Stylesheet verlieren, die im Druck ebenfalls gelten. Druck-spezifische Anpassungen in `@media print`- und/oder `.mkprinting`-Regeln (statt nur in Bildschirm-Regeln) unterzubringen, macht das Vorschau- und Exportverhalten leichter nachvollziehbar.
+Regeln ohne `!important` können gegen spätere Regeln in `mkprintstyles` oder gegen andere unqualifizierte Selektoren in Ihrem Stylesheet verlieren, die im Druck ebenfalls gelten. Druck-spezifische Anpassungen in `@media print`- und/oder `.mkprinting`- bzw. `body.mkprinting`-Regeln (statt nur in Bildschirm-Regeln) unterzubringen, macht das Vorschau- und Exportverhalten leichter nachvollziehbar.
 
 ## CSS-Änderungen überwachen [watching-css-changes]
 
