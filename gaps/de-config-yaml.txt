@@ -1,0 +1,5179 @@
+# Help translation gap — de — config.yaml
+# Feature: Localize German help search index / sidebar metadata
+# Generated: 2026-09-04
+# Scope snapshot: 111 pages; ~109 titles and ~109 descriptions still English;
+# ~513 English keyword entries and ~208 wiki_keywords to rebuild for German search/auto-link.
+# Estimate from lead translator: 7–8 hours (keywords are the real work).
+#
+#
+# German help pages are largely translated, but de/config.yaml is still
+# almost entirely English. Search, sidebar descriptions, and wiki auto-links
+# all read from this file — e.g. searching for "Veröffentlichen" or
+# "Hervorhebungen" finds nothing while titles stay English.
+#
+# This is NOT a prose MT job. Keywords are the terms a German user would
+# actually type. Prefer glossary / app UI wording (de/GLOSSARY.md, de.lproj).
+#
+# Return: PR to ttscoff/marked-docs updating de/config.yaml only
+#   (branch translate/de-config-yaml), or reply with the filled YAML.
+#
+# DO NOT CHANGE: page `file`, MDIndex, build paths, Version, Dependencies
+# DO TRANSLATE / REBUILD: Title, MetaDescriptions, section title + folder,
+#   page title, sidebar_title (if present), description, keywords, wiki_keywords
+#
+# wiki_keywords rules (from README):
+#   - One page per phrase across the whole file (no duplicates)
+#   - Prefer multi-word phrases that appear in translated prose
+#   - Rebuild for German — do not copy English phrases that never appear in DE text
+#
+# Product / format names that usually stay English (do not invent German search
+# equivalents unless German users truly type them):
+#   Marked, Markdown, MultiMarkdown, CommonMark, CriticMarkup, MathJax, KaTeX,
+#   Scrivener, Obsidian, Bear, Drafts, Ulysses, iA Writer, VS Code, Fountain,
+#   EPUB, DOCX, PDF, HTML, RTF, RTFD, YAML, JSON, CSV, LaTeX, Pandoc, GitHub,
+#   Safari, Chrome, Firefox, macOS, Finder, AppleScript, TextBundle, TextPack,
+#   Mermaid, Quick Look
+
+# ===========================================================================
+# GLOBAL
+# ===========================================================================
+
+=== LOCATION ===
+File: de/config.yaml — document Title
+=== ENGLISH ===
+Title: Marked Help
+=== CURRENT GERMAN ===
+Title: Marked Help
+=== TARGET (fill German) ===
+Title: 
+
+=== LOCATION ===
+File: de/config.yaml — MetaDescriptions
+=== ENGLISH ===
+  Search: Search Marked help documentation by keyword or topic.
+  Ask: Ask questions about Marked features with the built-in help assistant.
+  Changelog: Release notes and version history for Marked.
+  Contents: Full alphabetical keyword index of Marked help topics.
+=== CURRENT GERMAN ===
+  Search: Search Marked help documentation by keyword or topic.
+  Ask: Ask questions about Marked features with the built-in help assistant.
+  Changelog: Release notes and version history for Marked.
+  Contents: Full alphabetical keyword index of Marked help topics.
+=== TARGET (fill German) ===
+  Search: 
+  Ask: 
+  Changelog: 
+  Contents: 
+
+# ===========================================================================
+# SECTIONS (sidebar group headings + folder slugs)
+# folder: ASCII letters/numbers/underscores only (e.g. Getting_Started → Erste_Schritte)
+# ===========================================================================
+
+=== LOCATION ===
+Section index matching English title 'Getting Started'
+=== ENGLISH ===
+  title: Getting Started
+  folder: Getting_Started
+=== CURRENT GERMAN ===
+  title: Getting Started
+  folder: Getting_Started
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Comparisons & FAQ'
+=== ENGLISH ===
+  title: Comparisons & FAQ
+  folder: Comparisons_FAQ
+=== CURRENT GERMAN ===
+  title: Comparisons & FAQ
+  folder: Comparisons_FAQ
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Reading Features'
+=== ENGLISH ===
+  title: Reading Features
+  folder: Reading_Features
+=== CURRENT GERMAN ===
+  title: Reading Features
+  folder: Reading_Features
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Writing Features'
+=== ENGLISH ===
+  title: Writing Features
+  folder: Just_for_Writers
+=== CURRENT GERMAN ===
+  title: Writing Features
+  folder: Just_for_Writers
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Supported Apps'
+=== ENGLISH ===
+  title: Supported Apps
+  folder: Supported_Apps
+=== CURRENT GERMAN ===
+  title: Supported Apps
+  folder: Supported_Apps
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Advanced Features'
+=== ENGLISH ===
+  title: Advanced Features
+  folder: Special_Features
+=== CURRENT GERMAN ===
+  title: Advanced Features
+  folder: Special_Features
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Settings'
+=== ENGLISH ===
+  title: Settings
+  folder: Settings
+=== CURRENT GERMAN ===
+  title: Settings
+  folder: Settings
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Troubleshooting'
+=== ENGLISH ===
+  title: Troubleshooting
+  folder: Troubleshooting
+=== CURRENT GERMAN ===
+  title: Troubleshooting
+  folder: Troubleshooting
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'About Markdown'
+=== ENGLISH ===
+  title: About Markdown
+  folder: About_Markdown
+=== CURRENT GERMAN ===
+  title: About Markdown
+  folder: About_Markdown
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+=== LOCATION ===
+Section index matching English title 'Credits'
+=== ENGLISH ===
+  title: Credits
+  folder: Credits
+=== CURRENT GERMAN ===
+  title: Credits
+  folder: Credits
+=== TARGET (fill German) — STILL ENGLISH ===
+  title: 
+  folder: 
+
+# ===========================================================================
+# PAGES
+# For each page: translate title + description; rebuild keywords / wiki_keywords.
+# Already-localized titles are marked DONE (still review keywords/descriptions).
+# ===========================================================================
+
+# ----- Section: Getting Started -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Overview
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords empty
+=== ENGLISH ===
+  title: Overview
+  description: Markdown is a basic markup language using simple symbols, allowing you to write HTML (and export to other formats) with simple syntax like italics and bold. ...
+  keywords: []
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Overview
+  description: Markdown is a basic markup language using simple symbols, allowing you to write HTML (and export to other formats) with simple syntax like italics and bold. ...
+  keywords: []
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Live_Markdown_Preview_on_Mac
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Live Markdown Preview on Mac
+  description: Marked 3 watches your Markdown files and updates a live preview as you save while you keep writing in VS Code, Obsidian, Scrivener, or any editor.
+  keywords:
+    - live preview
+    - markdown preview
+    - mac
+    - workflow
+    - hub
+  wiki_keywords:
+    - live markdown preview
+    - preview markdown mac
+    - best markdown preview app
+=== CURRENT GERMAN ===
+  title: Live Markdown Preview on Mac
+  description: Marked 3 watches your Markdown files and updates a live preview as you save while you keep writing in VS Code, Obsidian, Scrivener, or any editor.
+  keywords:
+    - live preview
+    - markdown preview
+    - mac
+    - workflow
+    - hub
+  wiki_keywords:
+    - live markdown preview
+    - preview markdown mac
+    - best markdown preview app
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - live preview
+    # - markdown preview
+    # - mac
+    # - workflow
+    # - hub
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: live markdown preview
+    # EN: preview markdown mac
+    # EN: best markdown preview app
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Whats_New
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: What's New
+  description: Recent Marked releases: new features, improvements, and fixes. See the full changelog for version history.
+  keywords:
+    - changelog
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: What's New
+  description: Recent Marked releases: new features, improvements, and fixes. See the full changelog for version history.
+  keywords:
+    - changelog
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - changelog
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Opening_Files
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Opening Files
+  description: Marked gives you options. See Live Markdown Preview on Mac for vault watching, streaming preview, and editor-specific guides.
+  keywords:
+    - open
+    - files
+    - recent
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Opening Files
+  description: Marked gives you options. See Live Markdown Preview on Mac for vault watching, streaming preview, and editor-specific guides.
+  keywords:
+    - open
+    - files
+    - recent
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - open
+    # - files
+    # - recent
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Using_the_Browser_Extensions
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Using the Browser Extensions
+  description: Install Marked browser extensions for Safari, Chrome, and Firefox to send pages and selections to Marked.
+  keywords:
+    - browser extension
+    - extensions
+    - markdownify
+    - selection
+    - url
+    - safari
+    - chrome
+    - firefox
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Using the Browser Extensions
+  description: Install Marked browser extensions for Safari, Chrome, and Firefox to send pages and selections to Marked.
+  keywords:
+    - browser extension
+    - extensions
+    - markdownify
+    - selection
+    - url
+    - safari
+    - chrome
+    - firefox
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - browser extension
+    # - extensions
+    # - markdownify
+    # - selection
+    # - url
+    # - safari
+    # - chrome
+    # - firefox
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Share_Extension
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Using the Share Extension
+  description: Send files and selected text to Marked from the macOS Share menu. Enable Marked in System Settings if it does not appear.
+  keywords:
+    - share extension
+    - share sheet
+    - share menu
+    - finder
+    - text
+    - paste
+    - clipboard preview
+    - system settings
+  wiki_keywords:
+    - share extension
+    - share menu marked
+    - send to marked
+=== CURRENT GERMAN ===
+  title: Using the Share Extension
+  description: Send files and selected text to Marked from the macOS Share menu. Enable Marked in System Settings if it does not appear.
+  keywords:
+    - share extension
+    - share sheet
+    - share menu
+    - finder
+    - text
+    - paste
+    - clipboard preview
+    - system settings
+  wiki_keywords:
+    - share extension
+    - share menu marked
+    - send to marked
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - share extension
+    # - share sheet
+    # - share menu
+    # - finder
+    # - text
+    # - paste
+    # - clipboard preview
+    # - system settings
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: share extension
+    # EN: share menu marked
+    # EN: send to marked
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Marked_Share_Publish
+Section: Getting Started
+Status: title DONE, description differs, keywords differ
+=== ENGLISH ===
+  title: Publishing to Marked Share
+  description: Connect to Marked Share and publish documents as TextPacks with optional highlights. Manage published documents, copy links, and update existing shares.
+  keywords:
+    - marked share
+    - publish
+    - textpack
+    - share link
+    - connect account
+    - published documents
+    - unlisted
+    - highlights
+  wiki_keywords:
+    - marked share
+    - publish to share
+    - published documents
+=== CURRENT GERMAN ===
+  title: Veröffentlichen auf Marked Share
+  description: Mit Marked Share verbinden und Dokumente als TextPacks mit optionalen Hervorhebungen veröffentlichen. Veröffentlichte Dokumente verwalten, Links kopieren und bestehende Veröffentlichungen aktualisieren.
+  keywords:
+    - marked share
+    - veröffentlichen
+    - textpack
+    - share-link
+    - konto verbinden
+    - veröffentlichte dokumente
+    - nicht gelistet
+    - hervorhebungen
+    - lesestil
+  wiki_keywords:
+    - marked share
+    - auf share veröffentlichen
+    - veröffentlichte dokumente
+=== TARGET (fill German) ===
+  title: Veröffentlichen auf Marked Share
+  description: 
+    # current DE already differs; revise if needed:
+    # Mit Marked Share verbinden und Dokumente als TextPacks mit optionalen Hervorhebungen veröffentlichen. Veröffentlichte Dokumente verwalten, Links kopieren und bestehende Veröffentlichungen aktualisieren.
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - marked share
+    # - publish
+    # - textpack
+    # - share link
+    # - connect account
+    # - published documents
+    # - unlisted
+    # - highlights
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: marked share
+    # EN: publish to share
+    # EN: published documents
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Quick_Look
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Marked Quick Look
+  description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+  keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+  wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
+=== CURRENT GERMAN ===
+  title: Marked Quick Look
+  description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
+  keywords:
+    - quick look
+    - quicklook
+    - ql
+    - preview extension
+    - finder
+    - spacebar
+    - apex
+    - pluginkit
+    - qlmarkdown
+    - peek
+  wiki_keywords:
+    - quick look markdown
+    - marked quick look
+    - qlmarkdown conflict
+    - peek quick look
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - quick look
+    # - quicklook
+    # - ql
+    # - preview extension
+    # - finder
+    # - spacebar
+    # - apex
+    # - pluginkit
+    # - qlmarkdown
+    # - peek
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: quick look markdown
+    # EN: marked quick look
+    # EN: qlmarkdown conflict
+    # EN: peek quick look
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Quick_Open
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Quick Open
+  description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...
+  keywords:
+    - quick
+    - open
+    - files
+    - recent
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Quick Open
+  description: Quick Open provides fast access to your open documents and recent files. Access the Quick Open panel using Shift-Cmd-O or from the File menu, Quick Open...
+  keywords:
+    - quick
+    - open
+    - files
+    - recent
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - quick
+    # - open
+    # - files
+    # - recent
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Quick_Actions
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Quick Actions
+  description: The Quick Actions palette is a searchable command launcher for Marked. It collects actions from the main menu bar and the preview gear menu, plus...
+  keywords:
+    - quick
+    - actions
+    - palette
+    - command
+    - launcher
+    - menu
+    - keyboard
+  wiki_keywords:
+    - quick actions
+    - action palette
+    - command palette
+    - spotlight
+=== CURRENT GERMAN ===
+  title: Quick Actions
+  description: The Quick Actions palette is a searchable command launcher for Marked. It collects actions from the main menu bar and the preview gear menu, plus...
+  keywords:
+    - quick
+    - actions
+    - palette
+    - command
+    - launcher
+    - menu
+    - keyboard
+  wiki_keywords:
+    - quick actions
+    - action palette
+    - command palette
+    - spotlight
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - quick
+    # - actions
+    # - palette
+    # - command
+    # - launcher
+    # - menu
+    # - keyboard
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: quick actions
+    # EN: action palette
+    # EN: command palette
+    # EN: spotlight
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Choosing_a_Processor
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Choosing a Processor
+  description: Marked can preview the same file with several built-in Markdown processors. Each one makes different tradeoffs between writing workflow (books, blogs,...
+  keywords:
+    - processor
+    - multimarkdown
+    - kramdown
+    - commonmark
+    - discount
+    - gfm
+    - markdown
+  wiki_keywords:
+    - which processor
+    - markdown processor
+    - choose processor
+=== CURRENT GERMAN ===
+  title: Choosing a Processor
+  description: Marked can preview the same file with several built-in Markdown processors. Each one makes different tradeoffs between writing workflow (books, blogs,...
+  keywords:
+    - processor
+    - multimarkdown
+    - kramdown
+    - commonmark
+    - discount
+    - gfm
+    - markdown
+  wiki_keywords:
+    - which processor
+    - markdown processor
+    - choose processor
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - processor
+    # - multimarkdown
+    # - kramdown
+    # - commonmark
+    # - discount
+    # - gfm
+    # - markdown
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: which processor
+    # EN: markdown processor
+    # EN: choose processor
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Previewing
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Previewing
+  sidebar_title: Preview Appearance
+  description: Customize Marked preview appearance with built-in and custom styles, typography, and window settings.
+  keywords:
+    - preview
+    - live
+    - update
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Previewing
+  sidebar_title: Preview Appearance
+  description: Customize Marked preview appearance with built-in and custom styles, typography, and window settings.
+  keywords:
+    - preview
+    - live
+    - update
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  sidebar_title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - preview
+    # - live
+    # - update
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Interface_Features
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Interface Features
+  description: Flexibility is key. The Gear menu provides most of the features found in the menubar, plus some preview-specific functions. Just click the gear in the lower ...
+  keywords:
+    - scroll
+    - source
+    - search
+    - find
+    - collapse
+    - headlines
+    - headers
+    - sections
+    - links
+    - zoom
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Interface Features
+  description: Flexibility is key. The Gear menu provides most of the features found in the menubar, plus some preview-specific functions. Just click the gear in the lower ...
+  keywords:
+    - scroll
+    - source
+    - search
+    - find
+    - collapse
+    - headlines
+    - headers
+    - sections
+    - links
+    - zoom
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - scroll
+    # - source
+    # - search
+    # - find
+    # - collapse
+    # - headlines
+    # - headers
+    # - sections
+    # - links
+    # - zoom
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Exporting
+Section: Getting Started
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Exporting
+  description: Turning your Markdown into a finished document. Marked's preview is the basis for export --- what you see in the preview window is what you get in PDF,...
+  keywords:
+    - pdf
+    - rtf
+    - word
+    - html
+    - print
+    - opml
+    - export
+    - word repetition
+  wiki_keywords:
+    - export as
+    - save as
+=== CURRENT GERMAN ===
+  title: Exporting
+  description: Turning your Markdown into a finished document. Marked's preview is the basis for export --- what you see in the preview window is what you get in PDF,...
+  keywords:
+    - pdf
+    - rtf
+    - word
+    - html
+    - print
+    - opml
+    - export
+    - word repetition
+  wiki_keywords:
+    - export as
+    - save as
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - pdf
+    # - rtf
+    # - word
+    # - html
+    # - print
+    # - opml
+    # - export
+    # - word repetition
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: export as
+    # EN: save as
+    - 
+
+# ----- Section: Comparisons & FAQ -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Marked_vs_Obsidian_Preview
+Section: Comparisons & FAQ
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Marked vs Obsidian Preview
+  description: Obsidian includes a built-in Markdown preview. Marked 3 is a dedicated preview and publishing app that works with Obsidian and many other editors. This page ...
+  keywords:
+    - obsidian
+    - comparison
+    - preview
+    - vs
+  wiki_keywords:
+    - obsidian preview
+    - marked vs obsidian
+=== CURRENT GERMAN ===
+  title: Marked vs Obsidian Preview
+  description: Obsidian includes a built-in Markdown preview. Marked 3 is a dedicated preview and publishing app that works with Obsidian and many other editors. This page ...
+  keywords:
+    - obsidian
+    - comparison
+    - preview
+    - vs
+  wiki_keywords:
+    - obsidian preview
+    - marked vs obsidian
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - obsidian
+    # - comparison
+    # - preview
+    # - vs
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: obsidian preview
+    # EN: marked vs obsidian
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Markdown_Preview_FAQ
+Section: Comparisons & FAQ
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Markdown Preview FAQ
+  description: Answers to common questions about using Marked for Markdown preview, export, editors, and workflows on Mac.
+  keywords:
+    - faq
+    - preview
+    - markdown
+    - questions
+  wiki_keywords:
+    - markdown preview faq
+    - preview questions
+=== CURRENT GERMAN ===
+  title: Markdown Preview FAQ
+  description: Answers to common questions about using Marked for Markdown preview, export, editors, and workflows on Mac.
+  keywords:
+    - faq
+    - preview
+    - markdown
+    - questions
+  wiki_keywords:
+    - markdown preview faq
+    - preview questions
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - faq
+    # - preview
+    # - markdown
+    # - questions
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: markdown preview faq
+    # EN: preview questions
+    - 
+
+# ----- Section: Reading Features -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Document_Navigation
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Document Navigation
+  description: This page describes how to move around long previews: the Table of Contents, fast search, bookmarks, and the Mini Map. For scrolling shortcuts that apply...
+  keywords:
+    - toc
+    - table of contents
+    - contents
+    - navigation
+    - bookmarks
+    - bookmark
+    - minimap
+    - mini map
+    - fast search
+    - filter
+    - headlines
+    - headers
+  wiki_keywords:
+    - table of contents
+    - bookmarks
+    - mini map
+    - fast search
+    - TOC filter
+=== CURRENT GERMAN ===
+  title: Document Navigation
+  description: This page describes how to move around long previews: the Table of Contents, fast search, bookmarks, and the Mini Map. For scrolling shortcuts that apply...
+  keywords:
+    - toc
+    - table of contents
+    - contents
+    - navigation
+    - bookmarks
+    - bookmark
+    - minimap
+    - mini map
+    - fast search
+    - filter
+    - headlines
+    - headers
+  wiki_keywords:
+    - table of contents
+    - bookmarks
+    - mini map
+    - fast search
+    - TOC filter
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - toc
+    # - table of contents
+    # - contents
+    # - navigation
+    # - bookmarks
+    # - bookmark
+    # - minimap
+    # - mini map
+    # - fast search
+    # - filter
+    # - headlines
+    # - headers
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: table of contents
+    # EN: bookmarks
+    # EN: mini map
+    # EN: fast search
+    # EN: TOC filter
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Wiki_Navigation
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Wiki Navigation
+  description: Marked includes a wiki navigation system that allows you to quickly jump between related text files using simple [[wiki]] links. This system is designed for ...
+  keywords:
+    - wiki
+    - links
+    - navigation
+    - files
+  wiki_keywords:
+    - wiki links
+    - wiki linking
+=== CURRENT GERMAN ===
+  title: Wiki Navigation
+  description: Marked includes a wiki navigation system that allows you to quickly jump between related text files using simple [[wiki]] links. This system is designed for ...
+  keywords:
+    - wiki
+    - links
+    - navigation
+    - files
+  wiki_keywords:
+    - wiki links
+    - wiki linking
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - wiki
+    # - links
+    # - navigation
+    # - files
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: wiki links
+    # EN: wiki linking
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Zoom_Overview
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Zoom Overview
+  description: Zoom Overview shrinks the preview text so you can see more of the document at once&#8212;useful for spotting structure, scanning for a section, or judging...
+  keywords:
+    - zoom
+    - word repetition
+    - navigation
+  wiki_keywords:
+    - zoom overview
+    - preview zoom
+=== CURRENT GERMAN ===
+  title: Zoom Overview
+  description: Zoom Overview shrinks the preview text so you can see more of the document at once&#8212;useful for spotting structure, scanning for a section, or judging...
+  keywords:
+    - zoom
+    - word repetition
+    - navigation
+  wiki_keywords:
+    - zoom overview
+    - preview zoom
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - zoom
+    # - word repetition
+    # - navigation
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: zoom overview
+    # EN: preview zoom
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Autoscroll
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Autoscroll
+  description: Autoscroll slowly moves the preview for hands-free reading or proofing. It is separate from the Table of Contents and Mini Map; it scrolls the current view...
+  keywords:
+    - autoscroll
+    - scroll
+    - teleprompter
+    - reading
+    - proofread
+  wiki_keywords:
+    - autoscroll
+    - hands free scrolling
+=== CURRENT GERMAN ===
+  title: Autoscroll
+  description: Autoscroll slowly moves the preview for hands-free reading or proofing. It is separate from the Table of Contents and Mini Map; it scrolls the current view...
+  keywords:
+    - autoscroll
+    - scroll
+    - teleprompter
+    - reading
+    - proofread
+  wiki_keywords:
+    - autoscroll
+    - hands free scrolling
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - autoscroll
+    # - scroll
+    # - teleprompter
+    # - reading
+    # - proofread
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: autoscroll
+    # EN: hands free scrolling
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Speed_Reading
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Speed Reading
+  description: Speed Read is an RSVP-style reading mode that displays one word at a time in a focused overlay.
+  keywords:
+    - speed read
+    - speed reading
+    - rsvp
+    - wpm
+    - reading
+    - overlay
+    - shortcuts
+  wiki_keywords:
+    - speed read
+    - speed reading
+    - rsvp mode
+=== CURRENT GERMAN ===
+  title: Speed Reading
+  description: Speed Read is an RSVP-style reading mode that displays one word at a time in a focused overlay.
+  keywords:
+    - speed read
+    - speed reading
+    - rsvp
+    - wpm
+    - reading
+    - overlay
+    - shortcuts
+  wiki_keywords:
+    - speed read
+    - speed reading
+    - rsvp mode
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - speed read
+    # - speed reading
+    # - rsvp
+    # - wpm
+    # - reading
+    # - overlay
+    # - shortcuts
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: speed read
+    # EN: speed reading
+    # EN: rsvp mode
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Reading_Mode
+Section: Reading Features
+Status: title DONE, description differs, keywords differ
+=== ENGLISH ===
+  title: Reading Mode
+  description: Reading Mode keeps your place in long documents, focuses the current block, and saves persistent highlights you can comment on, export, or share.
+  keywords:
+    - reading mode
+    - highlights
+    - focus mode
+    - resume reading
+    - criticmarkup
+    - export highlights
+  wiki_keywords:
+    - reading mode
+    - highlights
+    - focus mode
+=== CURRENT GERMAN ===
+  title: Lesemodus
+  description: Der Lesemodus merkt sich Ihre Position in langen Dokumenten, hebt den aktuellen Block hervor und speichert dauerhafte Hervorhebungen zum Kommentieren, Exportieren oder Teilen.
+  keywords:
+    - Lesemodus
+    - Hervorhebungen
+    - Fokusmodus
+    - Lesen fortsetzen
+    - CriticMarkup
+    - Hervorhebungen exportieren
+  wiki_keywords:
+    - Lesemodus
+    - Hervorhebungen
+    - Fokusmodus
+=== TARGET (fill German) ===
+  title: Lesemodus
+  description: 
+    # current DE already differs; revise if needed:
+    # Der Lesemodus merkt sich Ihre Position in langen Dokumenten, hebt den aktuellen Block hervor und speichert dauerhafte Hervorhebungen zum Kommentieren, Exportieren oder Teilen.
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - reading mode
+    # - highlights
+    # - focus mode
+    # - resume reading
+    # - criticmarkup
+    # - export highlights
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: reading mode
+    # EN: highlights
+    # EN: focus mode
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: AI_Ask_About_Document
+Section: Reading Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Ask About Document
+  description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
+  keywords:
+    - apple intelligence
+    - ai
+    - ask about document
+    - summarize
+    - summary
+    - outline
+    - key points
+    - question
+    - on-device
+    - foundation models
+    - reading
+  wiki_keywords:
+    - ask about document
+    - apple intelligence
+    - document summary
+    - ai summary
+=== CURRENT GERMAN ===
+  title: Ask About Document
+  description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
+  keywords:
+    - apple intelligence
+    - ai
+    - ask about document
+    - summarize
+    - summary
+    - outline
+    - key points
+    - question
+    - on-device
+    - foundation models
+    - reading
+  wiki_keywords:
+    - ask about document
+    - apple intelligence
+    - document summary
+    - ai summary
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - apple intelligence
+    # - ai
+    # - ask about document
+    # - summarize
+    # - summary
+    # - outline
+    # - key points
+    # - question
+    # - on-device
+    # - foundation models
+    # - reading
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: ask about document
+    # EN: apple intelligence
+    # EN: document summary
+    # EN: ai summary
+    - 
+
+# ----- Section: Writing Features -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Layout_and_Typography
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Layout and Typography
+  description: Marked provides defaults for improving typography and export layout, as well as offering finite control over the options if you need more customization.
+  keywords:
+    - widows
+    - hyphen
+    - punctuation
+    - style
+    - poetry
+  wiki_keywords:
+    - typography
+=== CURRENT GERMAN ===
+  title: Layout and Typography
+  description: Marked provides defaults for improving typography and export layout, as well as offering finite control over the options if you need more customization.
+  keywords:
+    - widows
+    - hyphen
+    - punctuation
+    - style
+    - poetry
+  wiki_keywords:
+    - typography
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - widows
+    # - hyphen
+    # - punctuation
+    # - style
+    # - poetry
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: typography
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Document_Statistics
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Document Statistics
+  description: Keep track as you write. Word count is located in the bottom status bar and can be enabled and disabled from the under Status Bar. You can view further...
+  keywords:
+    - readability
+    - stats
+    - statistics
+  wiki_keywords:
+    - fog index
+    - readability
+=== CURRENT GERMAN ===
+  title: Document Statistics
+  description: Keep track as you write. Word count is located in the bottom status bar and can be enabled and disabled from the under Status Bar. You can view further...
+  keywords:
+    - readability
+    - stats
+    - statistics
+  wiki_keywords:
+    - fog index
+    - readability
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - readability
+    # - stats
+    # - statistics
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: fog index
+    # EN: readability
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Multi-File_Documents
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Multi-file Documents
+  description: Marked allows several different syntaxes for including one file within another. You can include external files in a single preview document by using the...
+  keywords:
+    - book
+    - writing
+  wiki_keywords:
+    - multiple files
+    - merge documents
+    - index files
+    - leanpub
+    - mmd_merge
+    - gitbook
+=== CURRENT GERMAN ===
+  title: Multi-file Documents
+  description: Marked allows several different syntaxes for including one file within another. You can include external files in a single preview document by using the...
+  keywords:
+    - book
+    - writing
+  wiki_keywords:
+    - multiple files
+    - merge documents
+    - index files
+    - leanpub
+    - mmd_merge
+    - gitbook
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - book
+    # - writing
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: multiple files
+    # EN: merge documents
+    # EN: index files
+    # EN: leanpub
+    # EN: mmd_merge
+    # EN: gitbook
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Fountain_for_Screenwriters
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Fountain for Screenwriters
+  description: Opening any file with a ".fountain" extension will automatically enable Fountain support for the window. A default Fountain stylesheet will be applied for...
+  keywords:
+    - fountain
+    - screenplay
+    - screenwriting
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Fountain for Screenwriters
+  description: Opening any file with a ".fountain" extension will automatically enable Fountain support for the window. A default Fountain stylesheet will be applied for...
+  keywords:
+    - fountain
+    - screenplay
+    - screenwriting
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - fountain
+    # - screenplay
+    # - screenwriting
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Keyword_Highlighting
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Keyword Highlighting
+  description: Catching troublesome verbiage and spotlighting important phrases. Keyword highlighting in Marked allows you to catch common phrases that you might want to...
+  keywords:
+    - passive
+    - voice
+    - avoid
+    - writing
+  wiki_keywords:
+    - passive voice
+    - doubled words
+    - keyword density
+=== CURRENT GERMAN ===
+  title: Keyword Highlighting
+  description: Catching troublesome verbiage and spotlighting important phrases. Keyword highlighting in Marked allows you to catch common phrases that you might want to...
+  keywords:
+    - passive
+    - voice
+    - avoid
+    - writing
+  wiki_keywords:
+    - passive voice
+    - doubled words
+    - keyword density
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - passive
+    # - voice
+    # - avoid
+    # - writing
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: passive voice
+    # EN: doubled words
+    # EN: keyword density
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Spelling_Grammar
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Spelling and Grammar
+  description: You can use the gear menu->Proofing submenu to start checking spelling Cmd-;, and opt to also check for grammar suggestions Shift-Cmd-;.
+  keywords:
+    - spelling
+    - grammar
+    - proofreading
+    - proofing
+  wiki_keywords:
+    - spellcheck
+=== CURRENT GERMAN ===
+  title: Spelling and Grammar
+  description: You can use the gear menu->Proofing submenu to start checking spelling Cmd-;, and opt to also check for grammar suggestions Shift-Cmd-;.
+  keywords:
+    - spelling
+    - grammar
+    - proofreading
+    - proofing
+  wiki_keywords:
+    - spellcheck
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - spelling
+    # - grammar
+    # - proofreading
+    # - proofing
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: spellcheck
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: CriticMarkup
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: CriticMarkup
+  description: You can toggle CriticMarkup support for any document from the gear menu or using Ctrl-Shift-C.
+  keywords:
+    - proofing
+    - proofreading
+    - collaboration
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: CriticMarkup
+  description: You can toggle CriticMarkup support for any document from the gear menu or using Ctrl-Shift-C.
+  keywords:
+    - proofing
+    - proofreading
+    - collaboration
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - proofing
+    # - proofreading
+    # - collaboration
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MathJax
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MathJax
+  description: Numbers matter just as much as words. By turning on MathJax in the , the necessary scripts and CSS will be included in the preview. Then MultiMarkdown math...
+  keywords:
+    - math
+    - mathml
+    - latex
+    - katex
+    - equation
+  wiki_keywords:
+    - equation
+    - formula
+=== CURRENT GERMAN ===
+  title: MathJax
+  description: Numbers matter just as much as words. By turning on MathJax in the , the necessary scripts and CSS will be included in the preview. Then MultiMarkdown math...
+  keywords:
+    - math
+    - mathml
+    - latex
+    - katex
+    - equation
+  wiki_keywords:
+    - equation
+    - formula
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - math
+    # - mathml
+    # - latex
+    # - katex
+    # - equation
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: equation
+    # EN: formula
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Working_With_DOCX
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Working with DOCX
+  description: Marked has extensive support for working with Microsoft Word files. The typical workflow is preview first, export DOCX second: open or watch your Markdown...
+  keywords:
+    - docx
+    - word
+    - import
+    - export
+  wiki_keywords:
+    - docx
+    - microsoft word
+=== CURRENT GERMAN ===
+  title: Working with DOCX
+  description: Marked has extensive support for working with Microsoft Word files. The typical workflow is preview first, export DOCX second: open or watch your Markdown...
+  keywords:
+    - docx
+    - word
+    - import
+    - export
+  wiki_keywords:
+    - docx
+    - microsoft word
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - docx
+    # - word
+    # - import
+    # - export
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: docx
+    # EN: microsoft word
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: HTML_Export
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: HTML Export
+  description: Marked exports HTML from your live preview --- the same rendered output you see on screen. Use HTML export when you need a snippet to paste into a blog or...
+  keywords:
+    - html
+    - export
+    - clipboard
+    - paste
+    - styles
+    - embed
+    - copy
+  wiki_keywords:
+    - html export
+    - export html
+    - copy html
+    - save html
+    - embed images
+    - embedded styles
+    - base64 images
+=== CURRENT GERMAN ===
+  title: HTML Export
+  description: Marked exports HTML from your live preview --- the same rendered output you see on screen. Use HTML export when you need a snippet to paste into a blog or...
+  keywords:
+    - html
+    - export
+    - clipboard
+    - paste
+    - styles
+    - embed
+    - copy
+  wiki_keywords:
+    - html export
+    - export html
+    - copy html
+    - save html
+    - embed images
+    - embedded styles
+    - base64 images
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - html
+    # - export
+    # - clipboard
+    # - paste
+    # - styles
+    # - embed
+    # - copy
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: html export
+    # EN: export html
+    # EN: copy html
+    # EN: save html
+    # EN: embed images
+    # EN: embedded styles
+    # EN: base64 images
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: EPUB_Export
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: EPUB Export
+  description: Marked exports fully compliant EPUB files from your Markdown preview --- styled with the same built-in and custom themes you use on screen, and readable in...
+  keywords:
+    - epub
+    - ebook
+    - apple books
+    - export
+    - kindle
+    - ibooks
+  wiki_keywords:
+    - epub export
+    - apple books
+    - ebook export
+    - export epub
+    - epub
+=== CURRENT GERMAN ===
+  title: EPUB Export
+  description: Marked exports fully compliant EPUB files from your Markdown preview --- styled with the same built-in and custom themes you use on screen, and readable in...
+  keywords:
+    - epub
+    - ebook
+    - apple books
+    - export
+    - kindle
+    - ibooks
+  wiki_keywords:
+    - epub export
+    - apple books
+    - ebook export
+    - export epub
+    - epub
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - epub
+    # - ebook
+    # - apple books
+    # - export
+    # - kindle
+    # - ibooks
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: epub export
+    # EN: apple books
+    # EN: ebook export
+    # EN: export epub
+    # EN: epub
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: RTF_Support
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: RTF and RTFD Support
+  sidebar_title: RTF / RTFD
+  description: Marked can open Rich Text Format (.rtf) and RTFD (.rtfd) documents directly. Drag a file to Marked or use File menu, Open... (O). The document is converted...
+  keywords:
+    - rtf
+    - rtfd
+    - rich text
+    - pages
+    - textedit
+    - import
+    - open
+  wiki_keywords:
+    - rtf
+    - rtfd
+    - rich text format
+    - pages
+=== CURRENT GERMAN ===
+  title: RTF and RTFD Support
+  sidebar_title: RTF / RTFD
+  description: Marked can open Rich Text Format (.rtf) and RTFD (.rtfd) documents directly. Drag a file to Marked or use File menu, Open... (O). The document is converted...
+  keywords:
+    - rtf
+    - rtfd
+    - rich text
+    - pages
+    - textedit
+    - import
+    - open
+  wiki_keywords:
+    - rtf
+    - rtfd
+    - rich text format
+    - pages
+=== TARGET (fill German) ===
+  title: 
+  sidebar_title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - rtf
+    # - rtfd
+    # - rich text
+    # - pages
+    # - textedit
+    # - import
+    # - open
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: rtf
+    # EN: rtfd
+    # EN: rich text format
+    # EN: pages
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: PDF_Support
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: PDF Import and Export
+  sidebar_title: PDF
+  description: Marked can open PDF documents (.pdf) directly. Drag a file to Marked or use File menu, Open... (O). The document is converted to Markdown for preview and...
+  keywords:
+    - pdf
+    - import
+    - export
+    - print
+    - open
+    - ocr
+    - scan
+    - conversion
+  wiki_keywords:
+    - pdf
+    - portable document format
+    - pdf import
+    - pdf export
+    - export pdf
+=== CURRENT GERMAN ===
+  title: PDF Import and Export
+  sidebar_title: PDF
+  description: Marked can open PDF documents (.pdf) directly. Drag a file to Marked or use File menu, Open... (O). The document is converted to Markdown for preview and...
+  keywords:
+    - pdf
+    - import
+    - export
+    - print
+    - open
+    - ocr
+    - scan
+    - conversion
+  wiki_keywords:
+    - pdf
+    - portable document format
+    - pdf import
+    - pdf export
+    - export pdf
+=== TARGET (fill German) ===
+  title: 
+  sidebar_title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - pdf
+    # - import
+    # - export
+    # - print
+    # - open
+    # - ocr
+    # - scan
+    # - conversion
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: pdf
+    # EN: portable document format
+    # EN: pdf import
+    # EN: pdf export
+    # EN: export pdf
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Image_Variants
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Image Variants
+  description: Marked can automatically build responsive <picture> elements for local images when companion dark mode and Retina files sit next to the image you reference. ...
+  keywords:
+    - image
+    - dark mode
+    - retina
+    - 2x
+    - picture
+    - srcset
+    - variants
+  wiki_keywords:
+    - image variants
+    - dark mode image variants
+    - retina image
+    - retina images
+    - @2x images
+    - dark mode images
+=== CURRENT GERMAN ===
+  title: Image Variants
+  description: Marked can automatically build responsive <picture> elements for local images when companion dark mode and Retina files sit next to the image you reference. ...
+  keywords:
+    - image
+    - dark mode
+    - retina
+    - 2x
+    - picture
+    - srcset
+    - variants
+  wiki_keywords:
+    - image variants
+    - dark mode image variants
+    - retina image
+    - retina images
+    - @2x images
+    - dark mode images
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - image
+    # - dark mode
+    # - retina
+    # - 2x
+    # - picture
+    # - srcset
+    # - variants
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: image variants
+    # EN: dark mode image variants
+    # EN: retina image
+    # EN: retina images
+    # EN: @2x images
+    # EN: dark mode images
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Link_Validation
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Link Validation
+  description: Link validation pings the destination of a URL and tests for errors. This helps avoid broken and invalid links in your published document, and is especially ...
+  keywords:
+    - link
+    - url
+    - validate
+  wiki_keywords:
+    - validate links
+    - validate urls
+=== CURRENT GERMAN ===
+  title: Link Validation
+  description: Link validation pings the destination of a URL and tests for errors. This helps avoid broken and invalid links in your published document, and is especially ...
+  keywords:
+    - link
+    - url
+    - validate
+  wiki_keywords:
+    - validate links
+    - validate urls
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - link
+    # - url
+    # - validate
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: validate links
+    # EN: validate urls
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Comments_and_Annotations
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Comments and Annotations
+  description: Marked has special handling for comments and annotations. Marked recognizes comments coming from: All annotations are shown in a sidebar and hidden in the...
+  keywords:
+    - comments
+    - annotations
+    - proofing
+    - footnotes
+    - sidebar
+  wiki_keywords:
+    - Word comments
+    - Word annotations
+    - Scrivener comments
+    - Scrivener annotations
+    - CriticMarkup comments
+=== CURRENT GERMAN ===
+  title: Comments and Annotations
+  description: Marked has special handling for comments and annotations. Marked recognizes comments coming from: All annotations are shown in a sidebar and hidden in the...
+  keywords:
+    - comments
+    - annotations
+    - proofing
+    - footnotes
+    - sidebar
+  wiki_keywords:
+    - Word comments
+    - Word annotations
+    - Scrivener comments
+    - Scrivener annotations
+    - CriticMarkup comments
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - comments
+    # - annotations
+    # - proofing
+    # - footnotes
+    # - sidebar
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: Word comments
+    # EN: Word annotations
+    # EN: Scrivener comments
+    # EN: Scrivener annotations
+    # EN: CriticMarkup comments
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Features_For_Coders
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Features for Coders
+  description: Fenced code blocks are enabled in both included processors by default (MultiMarkdown and Discount). Fenced code blocks are delimited by three or more tildes ...
+  keywords:
+    - github
+    - task
+    - checkbox
+    - newline
+    - break
+    - syntax
+    - fenced
+    - code
+    - highlight
+  wiki_keywords:
+    - github tasks
+    - github checkboxes
+    - hard line breaks
+    - syntax highlighting
+=== CURRENT GERMAN ===
+  title: Features for Coders
+  description: Fenced code blocks are enabled in both included processors by default (MultiMarkdown and Discount). Fenced code blocks are delimited by three or more tildes ...
+  keywords:
+    - github
+    - task
+    - checkbox
+    - newline
+    - break
+    - syntax
+    - fenced
+    - code
+    - highlight
+  wiki_keywords:
+    - github tasks
+    - github checkboxes
+    - hard line breaks
+    - syntax highlighting
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - github
+    # - task
+    # - checkbox
+    # - newline
+    # - break
+    # - syntax
+    # - fenced
+    # - code
+    # - highlight
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: github tasks
+    # EN: github checkboxes
+    # EN: hard line breaks
+    # EN: syntax highlighting
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Using_Marked_with_Agentic_Coding
+Section: Writing Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Using Marked with Agentic Coding
+  description: Marked is a great companion for modern "agentic coding" workflows where AI tools generate plans, refactor code, and keep updating documentation as you work. ...
+  keywords:
+    - agentic
+    - coding
+    - ai
+    - cursor
+    - claude
+    - copilot
+    - github
+    - automation
+  wiki_keywords:
+    - agentic coding
+    - ai coding assistant
+    - ai code assistant
+    - cursor
+    - claude
+    - copilot
+=== CURRENT GERMAN ===
+  title: Using Marked with Agentic Coding
+  description: Marked is a great companion for modern "agentic coding" workflows where AI tools generate plans, refactor code, and keep updating documentation as you work. ...
+  keywords:
+    - agentic
+    - coding
+    - ai
+    - cursor
+    - claude
+    - copilot
+    - github
+    - automation
+  wiki_keywords:
+    - agentic coding
+    - ai coding assistant
+    - ai code assistant
+    - cursor
+    - claude
+    - copilot
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - agentic
+    # - coding
+    # - ai
+    # - cursor
+    # - claude
+    # - copilot
+    # - github
+    # - automation
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: agentic coding
+    # EN: ai coding assistant
+    # EN: ai code assistant
+    # EN: cursor
+    # EN: claude
+    # EN: copilot
+    - 
+
+# ----- Section: Supported Apps -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Bear
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Bear
+  description: In Bear choose Preview in Marked from the View menu (wording may vary slightly by Bear version). Marked receives a TextBundle, so embedded images and assets ...
+  keywords:
+    - bear
+    - bear notes
+    - textbundle
+  wiki_keywords:
+    - bear app marked
+=== CURRENT GERMAN ===
+  title: Bear
+  description: In Bear choose Preview in Marked from the View menu (wording may vary slightly by Bear version). Marked receives a TextBundle, so embedded images and assets ...
+  keywords:
+    - bear
+    - bear notes
+    - textbundle
+  wiki_keywords:
+    - bear app marked
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - bear
+    # - bear notes
+    # - textbundle
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: bear app marked
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Curio
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Curio
+  description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
+  keywords:
+    - curio
+    - zengobi
+    - brainstorming
+    - streaming preview
+  wiki_keywords:
+    - curio
+=== CURRENT GERMAN ===
+  title: Curio
+  description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
+  keywords:
+    - curio
+    - zengobi
+    - brainstorming
+    - streaming preview
+  wiki_keywords:
+    - curio
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - curio
+    # - zengobi
+    # - brainstorming
+    # - streaming preview
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: curio
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: DEVONthink
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: DEVONthink
+  description: Use this script in DEVONthink to send the current selection to Marked. It checks that you selected something, confirms it is Markdown, then opens it using...
+  keywords:
+    - devonthink
+    - applescript
+    - scripts menu
+    - contextual menu
+  wiki_keywords:
+    - devonthink
+=== CURRENT GERMAN ===
+  title: DEVONthink
+  description: Use this script in DEVONthink to send the current selection to Marked. It checks that you selected something, confirms it is Markdown, then opens it using...
+  keywords:
+    - devonthink
+    - applescript
+    - scripts menu
+    - contextual menu
+  wiki_keywords:
+    - devonthink
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - devonthink
+    # - applescript
+    # - scripts menu
+    # - contextual menu
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: devonthink
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Drafts
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Drafts
+  description: When this option is on, Drafts pushes Markdown to Marked via the integration Marked exposes for streaming previews (rather than relying on watching a file...
+  keywords:
+    - drafts
+    - agile tortoise
+    - streaming preview
+  wiki_keywords:
+    - drafts
+    - drafts streaming preview
+=== CURRENT GERMAN ===
+  title: Drafts
+  description: When this option is on, Drafts pushes Markdown to Marked via the integration Marked exposes for streaming previews (rather than relying on watching a file...
+  keywords:
+    - drafts
+    - agile tortoise
+    - streaming preview
+  wiki_keywords:
+    - drafts
+    - drafts streaming preview
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - drafts
+    # - agile tortoise
+    # - streaming preview
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: drafts
+    # EN: drafts streaming preview
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Folder_Watching
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Folder Watching
+  description: Drop a folder of plain-text notes onto Marked. Marked opens a preview window that always tracks the most recently edited eligible file inside that folder...
+  keywords:
+    - folder
+    - nvalt
+    - nvultra
+    - nv alt
+    - notational velocity
+    - watch folder
+  wiki_keywords:
+    - folder preview
+    - notebook folder
+    - folder watching
+=== CURRENT GERMAN ===
+  title: Folder Watching
+  description: Drop a folder of plain-text notes onto Marked. Marked opens a preview window that always tracks the most recently edited eligible file inside that folder...
+  keywords:
+    - folder
+    - nvalt
+    - nvultra
+    - nv alt
+    - notational velocity
+    - watch folder
+  wiki_keywords:
+    - folder preview
+    - notebook folder
+    - folder watching
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - folder
+    # - nvalt
+    # - nvultra
+    # - nv alt
+    # - notational velocity
+    # - watch folder
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: folder preview
+    # EN: notebook folder
+    # EN: folder watching
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Highland
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Highland
+  description: Marked updates the preview when the file changes on disk, just like a normal Markdown file.
+  keywords:
+    - highland
+    - fountain
+    - screenplay
+  wiki_keywords:
+    - highland
+    - fountain
+    - screenplay
+=== CURRENT GERMAN ===
+  title: Highland
+  description: Marked updates the preview when the file changes on disk, just like a normal Markdown file.
+  keywords:
+    - highland
+    - fountain
+    - screenplay
+  wiki_keywords:
+    - highland
+    - fountain
+    - screenplay
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - highland
+    # - fountain
+    # - screenplay
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: highland
+    # EN: fountain
+    # EN: screenplay
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Hookmark
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Hookmark
+  description: Marked can resolve hook:// links for images and other assets in a file when Hookmark integration is enabled.
+  keywords:
+    - hookmark
+    - hook
+    - hook url
+    - hook://
+  wiki_keywords:
+    - hookmark
+    - hookmark image urls
+=== CURRENT GERMAN ===
+  title: Hookmark
+  description: Marked can resolve hook:// links for images and other assets in a file when Hookmark integration is enabled.
+  keywords:
+    - hookmark
+    - hook
+    - hook url
+    - hook://
+  wiki_keywords:
+    - hookmark
+    - hookmark image urls
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - hookmark
+    # - hook
+    # - hook url
+    # - hook://
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: hookmark
+    # EN: hookmark image urls
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: iA_Writer
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: iA Writer
+  description: Because the preview path matches the editor file, live updates behave like any other watched Markdown document.
+  keywords:
+    - ia writer
+    - iawriter
+  wiki_keywords:
+    - ia writer
+=== CURRENT GERMAN ===
+  title: iA Writer
+  description: Because the preview path matches the editor file, live updates behave like any other watched Markdown document.
+  keywords:
+    - ia writer
+    - iawriter
+  wiki_keywords:
+    - ia writer
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - ia writer
+    # - iawriter
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: ia writer
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: iThoughtsX
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: iThoughtsX
+  description: In iThoughtsX preferences, under Advanced, set Markdown Preview (wording may read "Markdown" or "Markdown Preview" depending on version), then pick whether...
+  keywords:
+    - ithoughts
+    - mind map
+    - itmz
+  wiki_keywords:
+    - ithoughts
+    - mind map
+=== CURRENT GERMAN ===
+  title: iThoughtsX
+  description: In iThoughtsX preferences, under Advanced, set Markdown Preview (wording may read "Markdown" or "Markdown Preview" depending on version), then pick whether...
+  keywords:
+    - ithoughts
+    - mind map
+    - itmz
+  wiki_keywords:
+    - ithoughts
+    - mind map
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - ithoughts
+    # - mind map
+    # - itmz
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: ithoughts
+    # EN: mind map
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MarsEdit
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MarsEdit
+  description: Choose File menu, New menu, MarsEdit Preview. Marked asks AppleScript to read the front post in MarsEdit (Red Sweater's bundle IDs for direct, Mac App...
+  keywords:
+    - marsedit
+    - blog
+    - wordpress
+  wiki_keywords:
+    - marsedit
+=== CURRENT GERMAN ===
+  title: MarsEdit
+  description: Choose File menu, New menu, MarsEdit Preview. Marked asks AppleScript to read the front post in MarsEdit (Red Sweater's bundle IDs for direct, Mac App...
+  keywords:
+    - marsedit
+    - blog
+    - wordpress
+  wiki_keywords:
+    - marsedit
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - marsedit
+    # - blog
+    # - wordpress
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: marsedit
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MindNode
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MindNode
+  description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
+  keywords:
+    - mindnode
+    - mind map
+  wiki_keywords:
+    - mindnode
+=== CURRENT GERMAN ===
+  title: MindNode
+  description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
+  keywords:
+    - mindnode
+    - mind map
+  wiki_keywords:
+    - mindnode
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - mindnode
+    # - mind map
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: mindnode
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MultiMarkdown_Composer
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MultiMarkdown Composer
+  description: Open Composer's Preview preferences and choose Marked as the preview application, or press Opt-Cmd-P Open in Marked from the active document whenever you...
+  keywords:
+    - composer
+    - multimarkdown composer
+  wiki_keywords:
+    - multimarkdown composer
+=== CURRENT GERMAN ===
+  title: MultiMarkdown Composer
+  description: Open Composer's Preview preferences and choose Marked as the preview application, or press Opt-Cmd-P Open in Marked from the active document whenever you...
+  keywords:
+    - composer
+    - multimarkdown composer
+  wiki_keywords:
+    - multimarkdown composer
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - composer
+    # - multimarkdown composer
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: multimarkdown composer
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: nvUltra
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: nvUltra
+  description: In nvUltra's Folder Navigator (or wherever you browse notes), control-click file(s) to open the contextual menu and choose Preview File(s) in Marked.
+  keywords:
+    - nvultra
+    - nv ultra
+    - nvalt
+    - notes
+  wiki_keywords:
+    - nvultra
+=== CURRENT GERMAN ===
+  title: nvUltra
+  description: In nvUltra's Folder Navigator (or wherever you browse notes), control-click file(s) to open the contextual menu and choose Preview File(s) in Marked.
+  keywords:
+    - nvultra
+    - nv ultra
+    - nvalt
+    - notes
+  wiki_keywords:
+    - nvultra
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - nvultra
+    # - nv ultra
+    # - nvalt
+    # - notes
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: nvultra
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Obsidian
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Obsidian
+  description: Marked works with [Obsidian][obsidian-app] notes in two ways: open a vault folder for automatic following, or use the community plugin for tighter sync.
+  keywords:
+    - obsidian
+    - vault
+    - wiki links
+    - backlinks
+  wiki_keywords:
+    - obsidian vault
+    - obsidian plugin
+=== CURRENT GERMAN ===
+  title: Obsidian
+  description: Marked works with [Obsidian][obsidian-app] notes in two ways: open a vault folder for automatic following, or use the community plugin for tighter sync.
+  keywords:
+    - obsidian
+    - vault
+    - wiki links
+    - backlinks
+  wiki_keywords:
+    - obsidian vault
+    - obsidian plugin
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - obsidian
+    # - vault
+    # - wiki links
+    # - backlinks
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: obsidian vault
+    # EN: obsidian plugin
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: OmniOutliner_and_OPML
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: OmniOutliner and OPML
+  description: Any OPML outline [OmniOutliner][oo] exports can be dragged into Marked just like Markdown. Marked converts the outline into readable Markdown headings and...
+  keywords:
+    - opml
+    - omnioutliner
+    - outline
+    - mermaid
+  wiki_keywords:
+    - opml
+    - omnioutliner
+=== CURRENT GERMAN ===
+  title: OmniOutliner and OPML
+  description: Any OPML outline [OmniOutliner][oo] exports can be dragged into Marked just like Markdown. Marked converts the outline into readable Markdown headings and...
+  keywords:
+    - opml
+    - omnioutliner
+    - outline
+    - mermaid
+  wiki_keywords:
+    - opml
+    - omnioutliner
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - opml
+    # - omnioutliner
+    # - outline
+    # - mermaid
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: opml
+    # EN: omnioutliner
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Scrivener_Support
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Scrivener 3 Support
+  sidebar_title: Scrivener 3
+  description: Use your two favorite writing tools together. Drag a Scrivener project (.scriv) to Marked and it will be compiled and previewed. If you choose the option to ...
+  keywords:
+    - scrivener
+  wiki_keywords:
+    - scrivener
+=== CURRENT GERMAN ===
+  title: Scrivener 3 Support
+  sidebar_title: Scrivener 3
+  description: Use your two favorite writing tools together. Drag a Scrivener project (.scriv) to Marked and it will be compiled and previewed. If you choose the option to ...
+  keywords:
+    - scrivener
+  wiki_keywords:
+    - scrivener
+=== TARGET (fill German) ===
+  title: 
+  sidebar_title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - scrivener
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: scrivener
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: The_Archive
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: The Archive
+  description: Marked updates as you type in The Archive, following the same mkStreamingPreview clipboard contract as other integrated apps&#8212;see Technical details...
+  keywords:
+    - the archive
+    - archive
+    - streaming preview
+    - zettelkasten
+  wiki_keywords:
+    - the archive
+=== CURRENT GERMAN ===
+  title: The Archive
+  description: Marked updates as you type in The Archive, following the same mkStreamingPreview clipboard contract as other integrated apps&#8212;see Technical details...
+  keywords:
+    - the archive
+    - archive
+    - streaming preview
+    - zettelkasten
+  wiki_keywords:
+    - the archive
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - the archive
+    # - archive
+    # - streaming preview
+    # - zettelkasten
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: the archive
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Ulysses
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Ulysses
+  description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
+  keywords:
+    - ulysses
+    - export
+    - textbundle
+  wiki_keywords:
+    - ulysses
+=== CURRENT GERMAN ===
+  title: Ulysses
+  description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
+  keywords:
+    - ulysses
+    - export
+    - textbundle
+  wiki_keywords:
+    - ulysses
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - ulysses
+    # - export
+    # - textbundle
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: ulysses
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Vim
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Vim
+  description: Install with your plugin manager; see the [project README][vimrepo] for vim-plug and other options. The default g:marked_filetypes includes markdown and...
+  keywords:
+    - vim
+    - neovim
+  wiki_keywords:
+    - vim
+=== CURRENT GERMAN ===
+  title: Vim
+  description: Install with your plugin manager; see the [project README][vimrepo] for vim-plug and other options. The default g:marked_filetypes includes markdown and...
+  keywords:
+    - vim
+    - neovim
+  wiki_keywords:
+    - vim
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - vim
+    # - neovim
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: vim
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: VS_Code
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: VS Code
+  description: The [Open in Marked extension][ext] (Visual Studio Marketplace) adds an Open in Marked action: editor title button, Shift-Cmd-M, context menus in the editor ...
+  keywords:
+    - vscode
+    - visual studio code
+    - extension
+  wiki_keywords:
+    - vscode
+=== CURRENT GERMAN ===
+  title: VS Code
+  description: The [Open in Marked extension][ext] (Visual Studio Marketplace) adds an Open in Marked action: editor title button, Shift-Cmd-M, context menus in the editor ...
+  keywords:
+    - vscode
+    - visual studio code
+    - extension
+  wiki_keywords:
+    - vscode
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - vscode
+    # - visual studio code
+    # - extension
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: vscode
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: VoodooPad
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: VoodooPad
+  description: Marked watches the document on disk and swaps the preview when you change pages inside VoodooPad.
+  keywords:
+    - voodoopad
+  wiki_keywords:
+    - voodoopad
+=== CURRENT GERMAN ===
+  title: VoodooPad
+  description: Marked watches the document on disk and swaps the preview when you change pages inside VoodooPad.
+  keywords:
+    - voodoopad
+  wiki_keywords:
+    - voodoopad
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - voodoopad
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: voodoopad
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Xcode_Playgrounds
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Xcode Playgrounds
+  description: Open a Swift .playground package in Marked. Marked reads contents.swift (and related pages in multi-page playgrounds) and separates Markdown comments from...
+  keywords:
+    - playground
+    - swift
+    - xcode
+  wiki_keywords:
+    - swift playground
+    - xcode playground
+=== CURRENT GERMAN ===
+  title: Xcode Playgrounds
+  description: Open a Swift .playground package in Marked. Marked reads contents.swift (and related pages in multi-page playgrounds) and separates Markdown comments from...
+  keywords:
+    - playground
+    - swift
+    - xcode
+  wiki_keywords:
+    - swift playground
+    - xcode playground
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - playground
+    # - swift
+    # - xcode
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: swift playground
+    # EN: xcode playground
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: DocC_Support
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: DocC Support
+  sidebar_title: DocC
+  description: Marked understands Apple DocC documentation catalogs (.docc bundles). When you preview Markdown that lives inside or beside a catalog, Marked can resolve...
+  keywords:
+    - docc
+    - documentation
+    - catalog
+    - xcode
+    - swift
+    - resources
+    - dark mode
+    - retina
+  wiki_keywords:
+    - docc
+    - apple docc
+    - documentation catalog
+=== CURRENT GERMAN ===
+  title: DocC Support
+  sidebar_title: DocC
+  description: Marked understands Apple DocC documentation catalogs (.docc bundles). When you preview Markdown that lives inside or beside a catalog, Marked can resolve...
+  keywords:
+    - docc
+    - documentation
+    - catalog
+    - xcode
+    - swift
+    - resources
+    - dark mode
+    - retina
+  wiki_keywords:
+    - docc
+    - apple docc
+    - documentation catalog
+=== TARGET (fill German) ===
+  title: 
+  sidebar_title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - docc
+    # - documentation
+    # - catalog
+    # - xcode
+    # - swift
+    # - resources
+    # - dark mode
+    # - retina
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: docc
+    # EN: apple docc
+    # EN: documentation catalog
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Additional_Application_Support
+Section: Supported Apps
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Additional app integrations
+  description: Marked works with many editors and writing apps. This page covers shared settings, the clipboard preview, pointers to streaming preview, and scripting...
+  keywords:
+    - clipboard
+    - apps preferences
+    - bonus pack
+  wiki_keywords:
+    - integrations
+=== CURRENT GERMAN ===
+  title: Additional app integrations
+  description: Marked works with many editors and writing apps. This page covers shared settings, the clipboard preview, pointers to streaming preview, and scripting...
+  keywords:
+    - clipboard
+    - apps preferences
+    - bonus pack
+  wiki_keywords:
+    - integrations
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - clipboard
+    # - apps preferences
+    # - bonus pack
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: integrations
+    - 
+
+# ----- Section: Advanced Features -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Custom_Styles
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Custom Styles
+  description: View your documents your way. The easiest way to explore Custom Styles is through the available styles in action, install them with the click of a button,...
+  keywords:
+    - custom
+    - style
+    - styling
+    - theme
+    - css
+  wiki_keywords:
+    - custom styles
+    - custom css
+    - style generator
+=== CURRENT GERMAN ===
+  title: Custom Styles
+  description: View your documents your way. The easiest way to explore Custom Styles is through the available styles in action, install them with the click of a button,...
+  keywords:
+    - custom
+    - style
+    - styling
+    - theme
+    - css
+  wiki_keywords:
+    - custom styles
+    - custom css
+    - style generator
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - custom
+    # - style
+    # - styling
+    # - theme
+    # - css
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: custom styles
+    # EN: custom css
+    # EN: style generator
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Writing_Custom_CSS
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Creating Custom Styles
+  description: Marked has a built-in style editor, and can apply custom CSS files. You can use the editor to create beautiful styles, or if you know just enough CSS to be...
+  keywords:
+    - custom
+    - theme
+    - style
+    - css
+  wiki_keywords:
+    - write your own
+=== CURRENT GERMAN ===
+  title: Creating Custom Styles
+  description: Marked has a built-in style editor, and can apply custom CSS files. You can use the editor to create beautiful styles, or if you know just enough CSS to be...
+  keywords:
+    - custom
+    - theme
+    - style
+    - css
+  wiki_keywords:
+    - write your own
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - custom
+    # - theme
+    # - style
+    # - css
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: write your own
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Custom_Style_Generator
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Custom Style Generator
+  description: The Custom Style Generator is a web-based tool that lets you create custom styles for Marked without writing CSS by hand. It provides a visual interface...
+  keywords:
+    - style generator
+    - generator
+    - create style
+    - visual editor
+    - style builder
+    - typography
+    - colors
+    - fonts
+    - google fonts
+    - dark mode
+  wiki_keywords:
+    - style generator
+    - create custom style
+    - visual style editor
+=== CURRENT GERMAN ===
+  title: Custom Style Generator
+  description: The Custom Style Generator is a web-based tool that lets you create custom styles for Marked without writing CSS by hand. It provides a visual interface...
+  keywords:
+    - style generator
+    - generator
+    - create style
+    - visual editor
+    - style builder
+    - typography
+    - colors
+    - fonts
+    - google fonts
+    - dark mode
+  wiki_keywords:
+    - style generator
+    - create custom style
+    - visual style editor
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - style generator
+    # - generator
+    # - create style
+    # - visual editor
+    # - style builder
+    # - typography
+    # - colors
+    # - fonts
+    # - google fonts
+    # - dark mode
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: style generator
+    # EN: create custom style
+    # EN: visual style editor
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Style_Manager
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Style Manager
+  description: The Style Manager provides a centralized interface for managing all of your built‑in and Custom Styles. It gives you complete control over which Styles...
+  keywords:
+    - style
+    - manager
+    - manage
+    - styles
+    - custom
+    - built-in
+    - enable
+    - disable
+    - duplicate
+    - preview
+  wiki_keywords:
+    - manage custom styles
+    - manage custom css
+=== CURRENT GERMAN ===
+  title: Style Manager
+  description: The Style Manager provides a centralized interface for managing all of your built‑in and Custom Styles. It gives you complete control over which Styles...
+  keywords:
+    - style
+    - manager
+    - manage
+    - styles
+    - custom
+    - built-in
+    - enable
+    - disable
+    - duplicate
+    - preview
+  wiki_keywords:
+    - manage custom styles
+    - manage custom css
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - style
+    # - manager
+    # - manage
+    # - styles
+    # - custom
+    # - built-in
+    # - enable
+    # - disable
+    # - duplicate
+    # - preview
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: manage custom styles
+    # EN: manage custom css
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Style_Stealer
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Style Stealer
+  description: Extract and steal styles from any website. The Style Stealer is a tool that allows you to extract CSS styles from any website and apply them to your...
+  keywords:
+    - style
+    - stealer
+    - extract
+    - css
+    - website
+    - scrape
+    - design
+  wiki_keywords:
+    - style extraction
+    - style extractor
+    - extract styles
+=== CURRENT GERMAN ===
+  title: Style Stealer
+  description: Extract and steal styles from any website. The Style Stealer is a tool that allows you to extract CSS styles from any website and apply them to your...
+  keywords:
+    - style
+    - stealer
+    - extract
+    - css
+    - website
+    - scrape
+    - design
+  wiki_keywords:
+    - style extraction
+    - style extractor
+    - extract styles
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - style
+    # - stealer
+    # - extract
+    # - css
+    # - website
+    # - scrape
+    # - design
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: style extraction
+    # EN: style extractor
+    # EN: extract styles
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Markdownifier
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Markdownifier
+  description: The Markdownifier is a tool that automatically extracts content from web pages and converts it to clean Markdown format. It intelligently processes web...
+  keywords:
+    - markdownifier
+    - content
+    - extractor
+    - web
+    - scrape
+    - url
+    - article
+    - extract
+  wiki_keywords:
+    - import a url
+    - from a url
+=== CURRENT GERMAN ===
+  title: Markdownifier
+  description: The Markdownifier is a tool that automatically extracts content from web pages and converts it to clean Markdown format. It intelligently processes web...
+  keywords:
+    - markdownifier
+    - content
+    - extractor
+    - web
+    - scrape
+    - url
+    - article
+    - extract
+  wiki_keywords:
+    - import a url
+    - from a url
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - markdownifier
+    # - content
+    # - extractor
+    # - web
+    # - scrape
+    # - url
+    # - article
+    # - extract
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: import a url
+    # EN: from a url
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Custom_Processor
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Custom Processor
+  description: Marked gives you full control with Custom Rules, text transforms, and the ability to run your own commands or run different processors based on matching...
+  keywords:
+    - custom
+    - script
+    - scripting
+  wiki_keywords:
+    - conductor
+    - run a script
+=== CURRENT GERMAN ===
+  title: Custom Processor
+  description: Marked gives you full control with Custom Rules, text transforms, and the ability to run your own commands or run different processors based on matching...
+  keywords:
+    - custom
+    - script
+    - scripting
+  wiki_keywords:
+    - conductor
+    - run a script
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - custom
+    # - script
+    # - scripting
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: conductor
+    # EN: run a script
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Sandbox_Restrictions
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Sandbox Restrictions
+  description: The Mac App Store (MAS) version of Marked runs in a sandboxed environment that restricts certain operations for security reasons. This can affect some...
+  keywords:
+    - sandbox
+    - mas
+    - restrictions
+    - crossgrade
+  wiki_keywords:
+    - sandbox limitations
+=== CURRENT GERMAN ===
+  title: Sandbox Restrictions
+  description: The Mac App Store (MAS) version of Marked runs in a sandboxed environment that restricts certain operations for security reasons. This can affect some...
+  keywords:
+    - sandbox
+    - mas
+    - restrictions
+    - crossgrade
+  wiki_keywords:
+    - sandbox limitations
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - sandbox
+    # - mas
+    # - restrictions
+    # - crossgrade
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: sandbox limitations
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Per-Document_Settings
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Per-Document Settings
+  description: Marked will allow certain attributes of a document to be set in MultiMarkdown metadata format (detailed below). You can use these to define characteristics...
+  keywords:
+    - processor
+    - style
+  wiki_keywords:
+    - per-file settings
+    - per-document style
+    - per-file style
+    - per-document configuration
+    - per-file settings
+=== CURRENT GERMAN ===
+  title: Per-Document Settings
+  description: Marked will allow certain attributes of a document to be set in MultiMarkdown metadata format (detailed below). You can use these to define characteristics...
+  keywords:
+    - processor
+    - style
+  wiki_keywords:
+    - per-file settings
+    - per-document style
+    - per-file style
+    - per-document configuration
+    - per-file settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - processor
+    # - style
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: per-file settings
+    # EN: per-document style
+    # EN: per-file style
+    # EN: per-document configuration
+    # EN: per-file settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Special_Syntax
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Marked Special Syntax
+  description: Marked supports callouts with the syntax used by Obsidian and Bear, which is a specially formatted block quote: The "NOTE" in [!NOTE] is case-insensitive....
+  keywords:
+    - syntax
+    - table
+    - contents
+    - break
+    - include
+  wiki_keywords:
+    - callouts
+    - autoscroll pauses
+    - special syntax
+=== CURRENT GERMAN ===
+  title: Marked Special Syntax
+  description: Marked supports callouts with the syntax used by Obsidian and Bear, which is a specially formatted block quote: The "NOTE" in [!NOTE] is case-insensitive....
+  keywords:
+    - syntax
+    - table
+    - contents
+    - break
+    - include
+  wiki_keywords:
+    - callouts
+    - autoscroll pauses
+    - special syntax
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - syntax
+    # - table
+    # - contents
+    # - break
+    # - include
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: callouts
+    # EN: autoscroll pauses
+    # EN: special syntax
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Creating_Tables_using_CSV_files
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Creating Tables Using CSV Files
+  description: If a file included via [Marked's include syntax or IA Writer block syntax][include] has a CSV or TSV extension, Marked will attempt to parse it and convert...
+  keywords:
+    - tables
+    - csv
+  wiki_keywords:
+    - from a csv file
+=== CURRENT GERMAN ===
+  title: Creating Tables Using CSV Files
+  description: If a file included via [Marked's include syntax or IA Writer block syntax][include] has a CSV or TSV extension, Marked will attempt to parse it and convert...
+  keywords:
+    - tables
+    - csv
+  wiki_keywords:
+    - from a csv file
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - tables
+    # - csv
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: from a csv file
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Embedding_Mind_Maps_and_Outlines
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Embedding Mind Maps and Outlines
+  description: Mind maps and outlines can be embedded in your Markdown preview using [Marked's include syntax][include] or the [IA Writer block syntax][ia]. The behavior...
+  keywords:
+    - mind map
+    - outline
+    - opml
+    - ithoughts
+    - mindmanager
+    - mermaid
+  wiki_keywords:
+    - embed mind map
+    - embed outline
+    - opml include
+=== CURRENT GERMAN ===
+  title: Embedding Mind Maps and Outlines
+  description: Mind maps and outlines can be embedded in your Markdown preview using [Marked's include syntax][include] or the [IA Writer block syntax][ia]. The behavior...
+  keywords:
+    - mind map
+    - outline
+    - opml
+    - ithoughts
+    - mindmanager
+    - mermaid
+  wiki_keywords:
+    - embed mind map
+    - embed outline
+    - opml include
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - mind map
+    # - outline
+    # - opml
+    # - ithoughts
+    # - mindmanager
+    # - mermaid
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: embed mind map
+    # EN: embed outline
+    # EN: opml include
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Keyboard_Shortcuts
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Keyboard Shortcuts
+  description: A floating panel with a shortcut cheat sheet is available from the Help menu, or by pressing K.
+  keywords:
+    - navigation
+    - keyboard
+    - hotkey
+  wiki_keywords:
+    - shortcuts
+    - hotkey
+    - hotkeys
+=== CURRENT GERMAN ===
+  title: Keyboard Shortcuts
+  description: A floating panel with a shortcut cheat sheet is available from the Help menu, or by pressing K.
+  keywords:
+    - navigation
+    - keyboard
+    - hotkey
+  wiki_keywords:
+    - shortcuts
+    - hotkey
+    - hotkeys
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - navigation
+    # - keyboard
+    # - hotkey
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: shortcuts
+    # EN: hotkey
+    # EN: hotkeys
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Workflow_Integration
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Workflow Integration
+  description: Marked includes a full AppleScript dictionary for opening files, controlling the preview (reload, scroll, highlights, autoscroll, speed read), reading...
+  keywords:
+    - scripting
+    - applescript
+    - automation
+  wiki_keywords:
+    - workflow
+    - automation
+=== CURRENT GERMAN ===
+  title: Workflow Integration
+  description: Marked includes a full AppleScript dictionary for opening files, controlling the preview (reload, scroll, highlights, autoscroll, speed read), reading...
+  keywords:
+    - scripting
+    - applescript
+    - automation
+  wiki_keywords:
+    - workflow
+    - automation
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - scripting
+    # - applescript
+    # - automation
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: workflow
+    # EN: automation
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: URL_Handler
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: URL Handler
+  description: Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that...
+  keywords:
+    - url
+    - scheme
+    - handler
+  wiki_keywords:
+    - url handler
+    - url scheme
+=== CURRENT GERMAN ===
+  title: URL Handler
+  description: Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that...
+  keywords:
+    - url
+    - scheme
+    - handler
+  wiki_keywords:
+    - url handler
+    - url scheme
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - url
+    # - scheme
+    # - handler
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: url handler
+    # EN: url scheme
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: AppleScript_Support
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: AppleScript Support
+  description: Marked includes an AppleScript dictionary for automating preview, export, and workflow integration. You can open documents, control the preview (reload,...
+  keywords:
+    - applescript
+    - scripting
+    - automation
+    - export
+    - dictionary
+  wiki_keywords:
+    - applescript
+    - applescript export
+    - scripted export
+    - automated export
+=== CURRENT GERMAN ===
+  title: AppleScript Support
+  description: Marked includes an AppleScript dictionary for automating preview, export, and workflow integration. You can open documents, control the preview (reload,...
+  keywords:
+    - applescript
+    - scripting
+    - automation
+    - export
+    - dictionary
+  wiki_keywords:
+    - applescript
+    - applescript export
+    - scripted export
+    - automated export
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - applescript
+    # - scripting
+    # - automation
+    # - export
+    # - dictionary
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: applescript
+    # EN: applescript export
+    # EN: scripted export
+    # EN: automated export
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Command_Line_Utility
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Command Line Utility
+  description: The mk command-line tool provides easy access to Marked's features from the terminal, enabling workflow automation and integration with shell scripts and...
+  keywords:
+    - command
+    - line
+    - cli
+    - terminal
+    - shell
+    - script
+    - automation
+    - mkmarked
+  wiki_keywords:
+    - marked cli
+    - mk
+    - command line utility
+=== CURRENT GERMAN ===
+  title: Command Line Utility
+  description: The mk command-line tool provides easy access to Marked's features from the terminal, enabling workflow automation and integration with shell scripts and...
+  keywords:
+    - command
+    - line
+    - cli
+    - terminal
+    - shell
+    - script
+    - automation
+    - mkmarked
+  wiki_keywords:
+    - marked cli
+    - mk
+    - command line utility
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - command
+    # - line
+    # - cli
+    # - terminal
+    # - shell
+    # - script
+    # - automation
+    # - mkmarked
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: marked cli
+    # EN: mk
+    # EN: command line utility
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Streaming_Preview
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Streaming Preview
+  description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
+  keywords:
+    - integration
+    - automation
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Streaming Preview
+  description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
+  keywords:
+    - integration
+    - automation
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - integration
+    # - automation
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: HTML_Specific_Settings
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: HTML Specific Settings
+  description: Marked includes an option to disable automatic header ID generation. You can find this option in the .
+  keywords:
+    - footnotes
+    - id
+    - html
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: HTML Specific Settings
+  description: Marked includes an option to disable automatic header ID generation. You can find this option in the .
+  keywords:
+    - footnotes
+    - id
+    - html
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - footnotes
+    # - id
+    # - html
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Embedding_Scripts
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Embedding JavaScript
+  description: There are several ways to embed additional JavaScripts in Marked. You can include scripts in a single document using <script> tags in the content itself....
+  keywords:
+    - script
+    - scripting
+    - javascript
+    - mermaid
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Embedding JavaScript
+  description: There are several ways to embed additional JavaScripts in Marked. You can include scripts in a single document using <script> tags in the content itself....
+  keywords:
+    - script
+    - scripting
+    - javascript
+    - mermaid
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - script
+    # - scripting
+    # - javascript
+    # - mermaid
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: (external)
+External: True
+URL: /help/jsapi/
+Section: Advanced Features
+Status: title NEEDS DE, description NEEDS DE, keywords empty
+=== ENGLISH ===
+  title: JavaScript API Docs
+  description: External documentation for the Marked JavaScript API used by custom preview scripts and automation.
+  keywords: []
+  wiki_keywords:
+    - javascript api
+=== CURRENT GERMAN ===
+  title: JavaScript API Docs
+  description: External documentation for the Marked JavaScript API used by custom preview scripts and automation.
+  keywords: []
+  wiki_keywords:
+    - javascript api
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: javascript api
+    - 
+
+# ----- Section: Settings -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_General
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: General
+  description: General Marked preferences for new documents, updates, bookmarks, and default window behavior.
+  keywords:
+    - general
+    - settings
+    - window
+    - status
+    - bar
+  wiki_keywords:
+    - general settings
+=== CURRENT GERMAN ===
+  title: Settings: General
+  description: General Marked preferences for new documents, updates, bookmarks, and default window behavior.
+  keywords:
+    - general
+    - settings
+    - window
+    - status
+    - bar
+  wiki_keywords:
+    - general settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - general
+    # - settings
+    # - window
+    # - status
+    # - bar
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: general settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Preview
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords differ
+=== ENGLISH ===
+  title: Settings: Preview
+  description: Options in the : Enable Mini Map navigation : Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when...
+  keywords:
+    - preview
+    - collapse
+    - headlines
+    - table of contents
+    - toc
+    - current header
+    - validate
+    - validation
+    - urls
+  wiki_keywords:
+    - preview settings
+    - current header
+=== CURRENT GERMAN ===
+  title: Settings: Preview
+  description: Options in the : Enable Mini Map navigation : Generate a visual map of the document which shows up when "0" is pressed. May cause short delays when...
+  keywords:
+    - preview
+    - collapse
+    - headlines
+    - table of contents
+    - toc
+    - current header
+    - aktuelle Überschrift
+    - validate
+    - validation
+    - urls
+  wiki_keywords:
+    - preview settings
+    - aktuelle Überschrift
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - preview
+    # - collapse
+    # - headlines
+    # - table of contents
+    # - toc
+    # - current header
+    # - validate
+    # - validation
+    # - urls
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: preview settings
+    # EN: current header
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Style
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Style
+  description: Options in the : Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels).
+  keywords:
+    - style
+    - theme
+    - css
+  wiki_keywords:
+    - style settings
+=== CURRENT GERMAN ===
+  title: Settings: Style
+  description: Options in the : Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels).
+  keywords:
+    - style
+    - theme
+    - css
+  wiki_keywords:
+    - style settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - style
+    # - theme
+    # - css
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: style settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Processor
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Processor
+  description: Options in the : Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and...
+  keywords:
+    - processor
+    - commonmark
+    - discount
+    - kramdown
+    - multimarkdown
+  wiki_keywords:
+    - processor settings
+=== CURRENT GERMAN ===
+  title: Settings: Processor
+  description: Options in the : Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and...
+  keywords:
+    - processor
+    - commonmark
+    - discount
+    - kramdown
+    - multimarkdown
+  wiki_keywords:
+    - processor settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - processor
+    # - commonmark
+    # - discount
+    # - kramdown
+    # - multimarkdown
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: processor settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Apps
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Applications
+  description: Options in the : (See Additional App Support) Text Editor : Select a text editor to receive the current document when you type Cmd-E.
+  keywords:
+    - scrivener
+    - fountain
+    - criticmarkup
+    - comments
+    - tags
+    - docc
+    - image variants
+    - dark mode
+  wiki_keywords:
+    - apps settings
+=== CURRENT GERMAN ===
+  title: Settings: Applications
+  description: Options in the : (See Additional App Support) Text Editor : Select a text editor to receive the current document when you type Cmd-E.
+  keywords:
+    - scrivener
+    - fountain
+    - criticmarkup
+    - comments
+    - tags
+    - docc
+    - image variants
+    - dark mode
+  wiki_keywords:
+    - apps settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - scrivener
+    # - fountain
+    # - criticmarkup
+    # - comments
+    # - tags
+    # - docc
+    # - image variants
+    # - dark mode
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: apps settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Proofing
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Proofing
+  description: Options in the : Always open new documents in proofing mode : New documents will default to showing keyword highlights.
+  keywords:
+    - proofing
+    - comments
+    - footnotes
+    - tags
+  wiki_keywords:
+    - proofing settings
+    - proofreading settings
+=== CURRENT GERMAN ===
+  title: Settings: Proofing
+  description: Options in the : Always open new documents in proofing mode : New documents will default to showing keyword highlights.
+  keywords:
+    - proofing
+    - comments
+    - footnotes
+    - tags
+  wiki_keywords:
+    - proofing settings
+    - proofreading settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - proofing
+    # - comments
+    # - footnotes
+    # - tags
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: proofing settings
+    # EN: proofreading settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Export
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Export
+  description: Options in the : (See Exporting for more info) Export Profile : Select a saved profile from the popup menu. Profiles store a complete set of export...
+  keywords:
+    - export
+    - pdf
+    - rtf
+    - html
+    - opml
+    - epub
+  wiki_keywords:
+    - export settings
+=== CURRENT GERMAN ===
+  title: Settings: Export
+  description: Options in the : (See Exporting for more info) Export Profile : Select a saved profile from the popup menu. Profiles store a complete set of export...
+  keywords:
+    - export
+    - pdf
+    - rtf
+    - html
+    - opml
+    - epub
+  wiki_keywords:
+    - export settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - export
+    # - pdf
+    # - rtf
+    # - html
+    # - opml
+    # - epub
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: export settings
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Settings_Advanced
+Section: Settings
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Settings: Advanced
+  description: Options in the : YAML and Pandoc Metadata : - __Ignore:__ Leaves it exactly as it exists in the document, useful if your processor or preprocessor actually...
+  keywords:
+    - advanced
+    - settings
+    - window
+    - status
+    - bar
+    - yaml
+    - frontmatter
+  wiki_keywords:
+    - advanced settings
+=== CURRENT GERMAN ===
+  title: Settings: Advanced
+  description: Options in the : YAML and Pandoc Metadata : - __Ignore:__ Leaves it exactly as it exists in the document, useful if your processor or preprocessor actually...
+  keywords:
+    - advanced
+    - settings
+    - window
+    - status
+    - bar
+    - yaml
+    - frontmatter
+  wiki_keywords:
+    - advanced settings
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - advanced
+    # - settings
+    # - window
+    # - status
+    # - bar
+    # - yaml
+    # - frontmatter
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: advanced settings
+    - 
+
+# ----- Section: Troubleshooting -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Preview_doesn_t_update_when_file_is_saved
+Section: Troubleshooting
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Preview Not Updating
+  description: Previews not updating as expected? There have been some issues reported regarding slow (or non-existent) updates during a Time Machine run. The update...
+  keywords:
+    - preview
+    - update
+    - file
+    - save
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Preview Not Updating
+  description: Previews not updating as expected? There have been some issues reported regarding slow (or non-existent) updates during a Time Machine run. The update...
+  keywords:
+    - preview
+    - update
+    - file
+    - save
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - preview
+    # - update
+    # - file
+    # - save
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Overall_Performance
+Section: Troubleshooting
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Overall Performance
+  description: Marked's overall rendering speed and performance can vary greatly based on your settings and the type of content you have in your document. There are...
+  keywords:
+    - performance
+    - speed
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Overall Performance
+  description: Marked's overall rendering speed and performance can vary greatly based on your settings and the type of content you have in your document. There are...
+  keywords:
+    - performance
+    - speed
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - performance
+    # - speed
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Troubleshooting
+Section: Troubleshooting
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Debugging
+  description: You can enable debug logging by opening and checking the Debug Mode checkbox at the bottom of the pane. This will display a dropdown menu where you can set...
+  keywords:
+    - debug
+    - debugging
+    - console
+    - errors
+    - custom
+    - processor
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Debugging
+  description: You can enable debug logging by opening and checking the Debug Mode checkbox at the bottom of the pane. This will display a dropdown menu where you can set...
+  keywords:
+    - debug
+    - debugging
+    - console
+    - errors
+    - custom
+    - processor
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - debug
+    # - debugging
+    # - console
+    # - errors
+    # - custom
+    # - processor
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Additional_Help
+Section: Troubleshooting
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Additional Help
+  description: If you have any other issues with Marked, you can search the Marked Support Site for answers to questions posed by other users. If you're unable to find an...
+  keywords:
+    - help
+    - support
+    - additional
+    - resources
+  wiki_keywords:
+    - support resources
+    - additional resources
+=== CURRENT GERMAN ===
+  title: Additional Help
+  description: If you have any other issues with Marked, you can search the Marked Support Site for answers to questions posed by other users. If you're unable to find an...
+  keywords:
+    - help
+    - support
+    - additional
+    - resources
+  wiki_keywords:
+    - support resources
+    - additional resources
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - help
+    # - support
+    # - additional
+    # - resources
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: support resources
+    # EN: additional resources
+    - 
+
+# ----- Section: About Markdown -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Processor_Selection
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Processor Selection
+  description: There's a Markdown Syntax guide under the help menu, or you can refer to John Gruber's original documentation.
+  keywords:
+    - multimarkdown
+    - kramdown
+    - commonmark
+    - discount
+    - processor
+    - selection
+    - markdown syntax
+  wiki_keywords:
+    - markdown syntax
+=== CURRENT GERMAN ===
+  title: Processor Selection
+  description: There's a Markdown Syntax guide under the help menu, or you can refer to John Gruber's original documentation.
+  keywords:
+    - multimarkdown
+    - kramdown
+    - commonmark
+    - discount
+    - processor
+    - selection
+    - markdown syntax
+  wiki_keywords:
+    - markdown syntax
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - multimarkdown
+    # - kramdown
+    # - commonmark
+    # - discount
+    # - processor
+    # - selection
+    # - markdown syntax
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: markdown syntax
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Markdown_Tutorial
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Markdown Overview
+  description: Markdown is a lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally...
+  keywords:
+    - markdown
+    - syntax
+    - tutorial
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Markdown Overview
+  description: Markdown is a lightweight markup language that allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally...
+  keywords:
+    - markdown
+    - syntax
+    - tutorial
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - markdown
+    # - syntax
+    # - tutorial
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Markdown_Dingus
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Markdown Dingus
+  description: The Markdown Dingus is a specialized testing tool that helps you understand how different Markdown processors handle your content. It provides a three-pane...
+  keywords:
+    - dingus
+    - testing
+    - processor
+    - comparison
+    - debug
+    - syntax
+    - html
+    - preview
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Markdown Dingus
+  description: The Markdown Dingus is a specialized testing tool that helps you understand how different Markdown processors handle your content. It provides a three-pane...
+  keywords:
+    - dingus
+    - testing
+    - processor
+    - comparison
+    - debug
+    - syntax
+    - html
+    - preview
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - dingus
+    # - testing
+    # - processor
+    # - comparison
+    # - debug
+    # - syntax
+    # - html
+    # - preview
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MultiMarkdown_v5_Spec
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MultiMarkdown v5 Specification
+  description: Check out the Markdown Dingus to experiment with the MultiMarkdown processor. MultiMarkdown is an extended Markdown processor designed to work with complete ...
+  keywords:
+    - multimarkdown
+    - specification
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: MultiMarkdown v5 Specification
+  description: Check out the Markdown Dingus to experiment with the MultiMarkdown processor. MultiMarkdown is an extended Markdown processor designed to work with complete ...
+  keywords:
+    - multimarkdown
+    - specification
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - multimarkdown
+    # - specification
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: CommonMark_Spec
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: CommonMark Specification
+  description: Check out the Markdown Dingus to experiment with the CommonMark (GFM) processor.
+  keywords:
+    - commonmark
+    - specification
+  wiki_keywords:
+    - commonmark syntax
+=== CURRENT GERMAN ===
+  title: CommonMark Specification
+  description: Check out the Markdown Dingus to experiment with the CommonMark (GFM) processor.
+  keywords:
+    - commonmark
+    - specification
+  wiki_keywords:
+    - commonmark syntax
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - commonmark
+    # - specification
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: commonmark syntax
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Kramdown_Spec
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Kramdown Specification
+  description: Check out the Markdown Dingus to experiment with the Kramdown processor. Kramdown is a fast, pure-Ruby Markdown-superset converter that extends the original ...
+  keywords:
+    - kramdown
+    - specification
+  wiki_keywords:
+    - kramdown syntax
+=== CURRENT GERMAN ===
+  title: Kramdown Specification
+  description: Check out the Markdown Dingus to experiment with the Kramdown processor. Kramdown is a fast, pure-Ruby Markdown-superset converter that extends the original ...
+  keywords:
+    - kramdown
+    - specification
+  wiki_keywords:
+    - kramdown syntax
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - kramdown
+    # - specification
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: kramdown syntax
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Discount_GFM_Spec
+Section: About Markdown
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Discount GFM Specification
+  description: Check out the Markdown Dingus to experiment with the Discount processor. Discount GFM (GitHub Flavored Markdown) is a C-based Markdown processor that...
+  keywords:
+    - discount
+    - gfm
+    - specification
+  wiki_keywords:
+    - discount syntax
+    - gfm syntax
+=== CURRENT GERMAN ===
+  title: Discount GFM Specification
+  description: Check out the Markdown Dingus to experiment with the Discount processor. Discount GFM (GitHub Flavored Markdown) is a C-based Markdown processor that...
+  keywords:
+    - discount
+    - gfm
+    - specification
+  wiki_keywords:
+    - discount syntax
+    - gfm syntax
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - discount
+    # - gfm
+    # - specification
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: discount syntax
+    # EN: gfm syntax
+    - 
+
+# ----- Section: Credits -----
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Credits
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Credits
+  description: Marked is built with a lot of help from the open source community. This page lists third-party code that ships inside Marked. Full license text for the...
+  keywords:
+    - credits
+    - open source
+    - license
+    - acknowledgments
+    - third party
+  wiki_keywords:
+    - open source
+    - third party libraries
+    - acknowledgments
+=== CURRENT GERMAN ===
+  title: Credits
+  description: Marked is built with a lot of help from the open source community. This page lists third-party code that ships inside Marked. Full license text for the...
+  keywords:
+    - credits
+    - open source
+    - license
+    - acknowledgments
+    - third party
+  wiki_keywords:
+    - open source
+    - third party libraries
+    - acknowledgments
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - credits
+    # - open source
+    # - license
+    # - acknowledgments
+    # - third party
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    # EN: open source
+    # EN: third party libraries
+    # EN: acknowledgments
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: MultiMarkdown_License
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: MultiMarkdown License
+  description: Original Markdown Code Copyright (c) 2003-2007 John Gruber All rights reserved.<br> MultiMarkdown changes Copyright (c) 2005-2009 Fletcher T. Penney All...
+  keywords:
+    - multimarkdown
+    - license
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: MultiMarkdown License
+  description: Original Markdown Code Copyright (c) 2003-2007 John Gruber All rights reserved.<br> MultiMarkdown changes Copyright (c) 2005-2009 Fletcher T. Penney All...
+  keywords:
+    - multimarkdown
+    - license
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - multimarkdown
+    # - license
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Discount_License
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Discount License
+  description: Copyright &copy; 2007 David Loren Parsons.<br/> All rights reserved. Permission is hereby granted, free of charge, to any person obtaining a copy of this...
+  keywords:
+    - discount
+    - license
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Discount License
+  description: Copyright &copy; 2007 David Loren Parsons.<br/> All rights reserved. Permission is hereby granted, free of charge, to any person obtaining a copy of this...
+  keywords:
+    - discount
+    - license
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - discount
+    # - license
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: Kramdown_License
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: Kramdown License
+  description: Copyright (c) 2010-2015 Carsten Bormann <cabo@tzi.org> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and...
+  keywords:
+    - kramdown
+    - license
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: Kramdown License
+  description: Copyright (c) 2010-2015 Carsten Bormann <cabo@tzi.org> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and...
+  keywords:
+    - kramdown
+    - license
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - kramdown
+    # - license
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: CommonMark_License
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: CommonMark License
+  description: The CommonMark spec (spec.txt) and DTD (CommonMark.dtd) are Copyright (C) 2014-16 John MacFarlane Released under the Creative Commons CC-BY-SA 4.0 license:...
+  keywords:
+    - commonmark
+    - license
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: CommonMark License
+  description: The CommonMark spec (spec.txt) and DTD (CommonMark.dtd) are Copyright (C) 2014-16 John MacFarlane Released under the Creative Commons CC-BY-SA 4.0 license:...
+  keywords:
+    - commonmark
+    - license
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - commonmark
+    # - license
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
+=== LOCATION ===
+File: de/config.yaml
+Page file: PDF22MD_License
+Section: Credits
+Status: title NEEDS DE, description NEEDS DE, keywords still English list
+=== ENGLISH ===
+  title: pdf22md License
+  description: Marked's PDF import feature uses components from pdf22md (PDF22MD Swift package).
+  keywords:
+    - pdf22md
+    - license
+    - mit
+  wiki_keywords: []
+=== CURRENT GERMAN ===
+  title: pdf22md License
+  description: Marked's PDF import feature uses components from pdf22md (PDF22MD Swift package).
+  keywords:
+    - pdf22md
+    - license
+    - mit
+  wiki_keywords: []
+=== TARGET (fill German) ===
+  title: 
+  description: 
+  keywords:
+    # Rebuild for German search. English source for reference:
+    # - pdf22md
+    # - license
+    # - mit
+    - 
+  wiki_keywords:
+    # Phrases that appear in translated DE help prose (unique across file):
+    - 
+
