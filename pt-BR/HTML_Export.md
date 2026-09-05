@@ -1,118 +1,117 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marcado exporta HTML da sua **visualização ao vivo** --- a mesma saída renderizada que você vê na tela. Use a exportação HTML quando precisar de um snippet para colar em um blog ou CMS, ou um arquivo `.html` independente com estilos e imagens incorporados que você pode abrir em qualquer navegador ou host em qualquer lugar.
+O Marked exporta HTML a partir da sua **preview ao vivo** --- a mesma saída renderizada que você vê na tela. Use a exportação em HTML quando precisar de um trecho para colar em um blog ou CMS, ou de um arquivo `.html` autocontido, com estilos e imagens incorporados, que possa ser aberto em qualquer navegador ou hospedado em qualquer lugar.
 
-O fluxo de trabalho típico é **visualizar primeiro, depois exportar HTML**: abrir ou compilar seu documento no Marked, escolher um tema, revisar na visualização ao vivo e exportar quando a marcação estiver correta.
+O fluxo de trabalho típico é **primeiro a preview, depois a exportação em HTML**: abra ou compile seu documento no Marked, escolha um tema, revise na preview ao vivo e então exporte quando a formatação estiver correta.
 
-## Duas maneiras de obter HTML [two-ways-to-get-html]
+## Duas formas de obter HTML [two-ways-to-get-html]
 
-### Copiar HTML (snippet) [copy-html-snippet]
+### Copiar HTML (trecho) [copy-html-snippet]
 
-**Copiar HTML** coloca o código-fonte HTML da visualização na área de transferência --- pronto para colar no WordPress, Ghost, Squarespace, um fórum, um modelo de e-mail ou qualquer aplicativo que aceite fragmentos de HTML.
+**Copiar HTML** coloca o código HTML da preview na área de transferência --- pronto para colar no WordPress, Ghost, Squarespace, um fórum, um modelo de e-mail ou qualquer app que aceite fragmentos de HTML.
 
-* Menu de engrenagem → **Copiar HTML** ou {% kbd shift cmd C %} com a visualização em foco
-* Copia o **HTML do corpo renderizado** (não um documento completo com wrapper `<html>`)
-* Opcional: habilite **Incorporar imagens ao copiar HTML** em {% prefspane Export %} para imagens locais codificadas em Base64 como `data:` URLs na fonte colada
+* Menu de engrenagem → **Copiar HTML**, ou {% kbd shift cmd C %} com a preview em foco
+* Copia o **HTML do corpo renderizado** (não um documento completo com o wrapper `<html>`)
+* Opcional: ative **Incorporar imagens ao copiar HTML** em {% prefspane Export %} para codificar imagens locais em Base64 como URLs `data:` no código colado
 
-Copiar HTML é ideal quando seu destino já possui sua própria folha de estilo e você só precisa da marcação do conteúdo.
+Copiar HTML é ideal quando o destino já tem sua própria folha de estilos e você só precisa da formatação do conteúdo.
 
 ### Salvar HTML (arquivo) [save-html-file]
 
 **Salvar HTML** grava um arquivo `.html` completo no disco.
 
-* Exportar → **Salvar HTML**, {% kbd cmd S %} ou **HTML** no [Painel de exportação](Exporting.html#drawer) ({% kbd shift cmd e %})
-* Escolha o nome do arquivo e o local na caixa de diálogo salvar
-* Configure as opções de exportação no acessório de diálogo (veja abaixo)
+* Exportar → **Salvar HTML**, {% kbd cmd S %}, ou **HTML** a partir do [Painel de Exportação](Exporting.html#drawer) ({% kbd shift cmd e %})
+* Escolha o nome do arquivo e o local na caixa de diálogo de salvamento
+* Configure as opções de exportação no acessório da caixa de diálogo (veja abaixo)
 
-Salvar HTML é ideal para arquivar, compartilhar um arquivo independente ou abrir o resultado diretamente em um navegador.
+Salvar HTML é ideal para arquivamento, para compartilhar um arquivo independente ou para abrir o resultado diretamente em um navegador.
 
-## Salvar opções de HTML [save-html-options]
+## Opções de Salvar HTML [save-html-options]
 
 A caixa de diálogo Salvar HTML inclui um seletor de perfil de exportação e estas opções:
 
-![Opções de salvar HTML][savehtml]
+![Opções de Salvar HTML][savehtml]
 
 **Incluir estilo na saída**
 
-Quando marcado, Marcado incorpora o CSS do tema de visualização selecionado em um bloco `<style>` dentro do arquivo exportado. Escolha qualquer tema integrado ou [Estilo personalizado](Custom_Styles.html) no menu de estilo próximo à caixa de seleção. A saída é um documento HTML completo com `<!DOCTYPE html>`, `<head>` e um `#wrapper` div em torno do seu conteúdo --- correspondendo ao que você visualizou.
+Quando marcada, o Marked incorpora o CSS do tema de preview selecionado em um bloco `<style>` dentro do arquivo exportado. Escolha qualquer tema integrado ou [Estilo Personalizado](Custom_Styles.html) no menu de estilos ao lado da caixa de seleção. A saída é um documento HTML completo com `<!DOCTYPE html>`, `<head>` e uma div `#wrapper` envolvendo seu conteúdo --- igual ao que você viu na preview.
 
-Quando desmarcado, Marcado salva um documento HTML mínimo apenas com seu conteúdo renderizado (sem CSS de tema Marcado). Use isto quando desejar que o HTML bruto seja colado ou importado para outro sistema que forneça seu próprio estilo.
+Quando desmarcada, o Marked salva um documento HTML mínimo contendo apenas o conteúdo renderizado (sem o CSS de tema do Marked). Use essa opção quando quiser HTML bruto para colar ou importar em outro sistema que forneça sua própria estilização.
 
-**Incorpore imagens locais para HTML independente**
+**Incorporar imagens locais para HTML autocontido**
 
-Quando **Incluir estilo na saída** está ativado, você também pode incorporar imagens locais como URLs Base64 `data:` dentro do arquivo HTML. O resultado é um único arquivo que você pode enviar por e-mail, fazer upload ou hospedar sem uma pasta `images/` separada.
+Quando **Incluir estilo na saída** está ativada, você também pode incorporar imagens locais como URLs Base64 `data:` dentro do arquivo HTML. O resultado é um único arquivo que pode ser enviado por e-mail, publicado ou hospedado sem uma pasta `images/` separada.
 
 * Funciona com imagens referenciadas por **caminhos relativos ou absolutos** na sua unidade local
-* Evite `file:///` URLs --- eles não podem ser incorporados de forma confiável
-* Imagens remotas (http/https) permanecem como URLs externos, a menos que você as baixe primeiro
-* A incorporação Base64 pode produzir arquivos grandes; use-o quando a portabilidade for mais importante do que o tamanho do arquivo
+* Evite URLs `file:///` --- elas não podem ser incorporadas de forma confiável
+* Imagens remotas (http/https) permanecem como URLs externas, a menos que você as baixe antes
+* A incorporação em Base64 pode gerar arquivos grandes; use-a quando a portabilidade for mais importante do que o tamanho do arquivo
 
-**Incluir JavaScript de realce de sintaxe**
+**Incluir JavaScript de Realce de Sintaxe**
 
-Quando o realce de sintaxe está habilitado em {% prefspane Preview %}, esta opção adiciona CSS e JavaScript destaque.js de um CDN para que os blocos de código mantenham suas cores no arquivo exportado. O HTML exportado precisa de uma conexão com a Internet para que os recursos CDN sejam carregados.
+Quando o realce de sintaxe está ativado em {% prefspane Preview %}, essa opção adiciona o CSS e o JavaScript do highlight.js a partir de uma CDN, para que os blocos de código mantenham as cores no arquivo exportado. O HTML exportado precisa de conexão com a internet para carregar os recursos da CDN.
 
-**Incluir link MathJax ou KaTeX CDN**
+**Incluir link de CDN do MathJax ou KaTeX**
 
-Quando [MathJax](MathJax.html) ou KaTeX está ativado para visualização, você pode incluir os scripts CDN correspondentes no HTML salvo para que as equações sejam renderizadas em um navegador. Assim como o realce de sintaxe, isso requer acesso à rede ao visualizar o arquivo, a menos que você mesmo hospede os scripts.
+Quando o [MathJax](MathJax.html) ou o KaTeX está ativado na preview, você pode incluir os scripts de CDN correspondentes no HTML salvo para que as equações sejam renderizadas em um navegador. Assim como o realce de sintaxe, isso exige acesso à rede ao visualizar o arquivo, a menos que você hospede os scripts por conta própria.
 
-**Tipo de exportação CriticMarkup**
+**Tipo de exportação do CriticMarkup**
 
-Documentos com [CriticMarkup](CriticMarkup.html) podem escolher se a exportação mostra texto editado, texto original ou marcação completa.
+Documentos com [CriticMarkup](CriticMarkup.html) podem escolher se a exportação mostra o texto editado, o texto original ou a marcação completa.
 
-**Exportar perfil**
+**Perfil de exportação**
 
-Selecione um [Perfil de exportação](Exporting.html#export-profiles) salvo para restaurar suas configurações de exportação HTML preferidas (estilos incorporados, imagens, realce de sintaxe, matemática) em uma única etapa.
+Selecione um [Perfil de Exportação](Exporting.html#export-profiles) salvo para restaurar suas configurações preferidas de exportação em HTML (estilos incorporados, imagens, realce de sintaxe, fórmulas matemáticas) em uma única etapa.
 
-## Estilo com temas integrados e personalizados [styling-with-built-in-and-custom-themes]
+## Estilização com temas integrados e personalizados [styling-with-built-in-and-custom-themes]
 
-O **estilo de visualização** gera a aparência do HTML quando **Incluir estilo na saída** está marcado:
+O **estilo de preview** determina a aparência do HTML quando **Incluir estilo na saída** está marcada:
 
-1. Escolha um estilo no menu de estilos da janela de visualização (ou defina um padrão em {% prefspane Style %}).
-2. Revise tipografia, títulos, blocos de código e imagens na visualização ao vivo.
+1. Escolha um estilo no menu de estilos da janela de preview (ou defina um padrão em {% prefspane Style %}).
+2. Revise a tipografia, os títulos, os blocos de código e as imagens na preview ao vivo.
 3. Salve o HTML com o mesmo estilo selecionado na caixa de diálogo de exportação.
 
-Cada tema marcado integrado --- Swiss, GitHub, Manuscript e o resto --- pode ser incorporado. [Estilos personalizados](Custom_Styles.html) e estilos do [Gerenciador de estilos](Custom_Styles.html) funcionam da mesma maneira.
+Todo tema integrado do Marked --- Swiss, GitHub, Manuscript e os demais --- pode ser incorporado. [Estilos Personalizados](Custom_Styles.html) e estilos do [Gerenciador de Estilos](Custom_Styles.html) funcionam da mesma forma.
 
-I> Alguns CSS somente de visualização (posicionamento fixo, truques de janela de visualização, modo escuro `@media screen` inversão) podem não ser traduzidos um para um fora do Marcado. Abra o arquivo salvo em um navegador para verificar antes de publicar.
+O **CSS Adicional** de {% prefspane Style %} é incluído na exportação em HTML quando os estilos são incorporados. O `<body>` exportado recebe a classe `mk-has-additional-css` para que os seletores de CSS Adicional reescritos pelo Marked correspondam corretamente. Veja [Criando CSS Personalizado](Writing_Custom_CSS.html#additional-css-settings).
 
-Para orientação de autoria, consulte [Criando CSS personalizado](Writing_Custom_CSS.html).
+I> Alguns CSS exclusivos da preview (posicionamento fixo, truques de viewport, inversão do Modo Escuro `@media screen`) podem não se traduzir perfeitamente fora do Marked. Abra o arquivo salvo em um navegador para conferir antes de publicar.
+
+Para orientações sobre criação, veja [Criando CSS Personalizado](Writing_Custom_CSS.html).
 
 ## Metadados e cabeçalhos MultiMarkdown [metadata-and-multimarkdown-headers]
 
-Os metadados MultiMarkdown na parte superior do seu arquivo de origem podem afetar a exportação de HTML:
+Metadados do MultiMarkdown no topo do arquivo de origem podem afetar a exportação em HTML:
 
-* **`Title:`** --- usado para o elemento `<title>` ao salvar um documento HTML completo
-* **`XHTML Header:`** / **`HTML Header:`** --- injeta tags adicionais no `<head>` exportado (scripts, tags de link, meta tags)
-* Outras chaves de metadados são processadas de acordo com seu [processador Markdown](Choosing_a_Processor.html)
+* **`Title:`** --- usado no elemento `<title>` ao salvar um documento HTML completo
+* **`XHTML Header:`** / **`HTML Header:`** --- injeta tags adicionais no `<head>` exportado (scripts, tags link, meta tags)
+* Outras chaves de metadados são processadas de acordo com o seu [processador Markdown](Choosing_a_Processor.html)
 
-Se você usa metadados para configurações de exportação, mas não deseja que as chaves fiquem visíveis em outras saídas, envolva-as em comentários HTML --- Marcado localiza e processa metadados comentados em qualquer lugar do documento. Consulte [Configurações por documento](Per-Document_Settings.html).
+Se você usa metadados para configurações de exportação, mas não quer que as chaves fiquem visíveis em outras saídas, envolva-as em comentários HTML --- o Marked encontra e processa metadados comentados em qualquer parte do documento. Veja [Configurações por Documento](Per-Document_Settings.html).
 
-## Documentos com vários arquivos [multi-file-documents]
+## Documentos com múltiplos arquivos [multi-file-documents]
 
-Para compilações de livros e capítulos, use [Documentos de vários arquivos](Multi-File_Documents.html). Marcado visualiza o documento mesclado e exporta um arquivo HTML do resultado compilado. Os arquivos incluídos são marcados com comentários HTML mostrando seus caminhos de origem – útil ao auditar qual capítulo contribuiu com qual seção.
+Para livros e compilações de capítulos, use [Documentos com Múltiplos Arquivos](Multi-File_Documents.html). O Marked visualiza o documento combinado e exporta um único arquivo HTML a partir do resultado compilado. Os arquivos incluídos são marcados com comentários HTML mostrando seus caminhos de origem --- útil para verificar qual capítulo contribuiu com qual seção.
 
 ## Colando em outros aplicativos [pasting-into-other-applications]
 
 | Destino | Abordagem sugerida |
 | :-- | :-- |
-| Blog/CMS com tema próprio | **Copiar HTML** (snippet, sem CSS marcado incorporado) |
-| Site estático ou arquivo | **Salve HTML** com **Incluir estilo na saída** |
-| E-mail ou compartilhamento de arquivo (um anexo) | **Salve HTML** com **Incorpore imagens locais** |
-| WordPress, Ghost, Noção, etc. | **Copiar HTML**; habilite **Incorporar imagens ao copiar HTML** se o editor não resolver caminhos locais |
-| Edição adicional em um editor de código | **Salve HTML** sem estilo incorporado ou copie o snippet e ajuste manualmente |
+| Blog / CMS com tema próprio | **Copiar HTML** (trecho, sem CSS do Marked incorporado) |
+| Site estático ou arquivamento | **Salvar HTML** com **Incluir estilo na saída** |
+| E-mail ou compartilhamento de arquivo (um anexo) | **Salvar HTML** com **Incorporar imagens locais** |
+| WordPress, Ghost, Notion, etc. | **Copiar HTML**; ative **Incorporar imagens ao copiar HTML** se o editor não resolver caminhos locais |
+| Edição adicional em um editor de código | **Salvar HTML** sem estilo incorporado, ou copie o trecho e envolva manualmente |
 
-[Copiar Rich Text](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o aplicativo de destino aceita texto formatado em vez de fonte HTML.
+[Copiar Texto Formatado](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o app de destino aceita texto formatado em vez de código HTML.
 
 ## Tópicos relacionados [related-topics]
 
 * [Exportando](Exporting.html) --- painel de exportação, perfis e outros formatos
-* [Exportação de EPUB](EPUB_Export.html) --- saída de e-book com CSS incorporado
-* [Live Markdown Preview no Mac](Live_Markdown_Preview_on_Mac.html) --- visualizar o fluxo de trabalho antes de exportar
-* [Estilos personalizados](Custom_Styles.html) e [Configurações: Exportar](Settings_Export.html)
-* [Configurações específicas de HTML](HTML_Specific_Settings.html) --- opções de processador para saída HTML
-* [Exportação AppleScript](AppleScript_Support.html) --- automatizar cópia e salvar HTML
+* [Exportação em EPUB](EPUB_Export.html) --- saída em e-book com CSS incorporado
+* [Preview de Markdown ao Vivo no Mac](Live_Markdown_Preview_on_Mac.html) --- fluxo de trabalho de preview antes da exportação
+* [Estilos Personalizados](Custom_Styles.html) e [Configurações: Exportar](Settings_Export.html)
+* [Configurações Específicas de HTML](HTML_Specific_Settings.html) --- opções do processador para saída em HTML
+* [Exportação via AppleScript](AppleScript_Support.html) --- automatize a cópia e o salvamento em HTML
 
-[savehtml]: images/SaveHTML.png @2x width=740px height=229px 
-R
+[savehtml]: images/SaveHTML.png @2x width=740px height=229px
