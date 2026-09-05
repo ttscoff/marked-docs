@@ -1,7 +1,7 @@
 # <%= @title %>
 
 The Style Manager provides a centralized interface for managing all of your
-built‑in and Custom Styles. It gives you complete control over which
+built-in and Custom Styles. It gives you complete control over which
 Styles appear in menus, their order, keyboard shortcuts, and more.
 
 ## Opening the Style Manager [opening-the-style-manager]
@@ -18,14 +18,14 @@ you.
 ## The Style Table [the-style-table]
 
 The Style Manager displays all of your styles in a sortable table that mixes
-built‑in and custom styles seamlessly. Each row in the table contains several
+built-in and custom styles seamlessly. Each row in the table contains several
 columns:
 
 ### Enabled Checkbox [enabled-checkbox]
 
 The **Enabled** checkbox immediately adds or removes the style from the Style
 menu, Default Style popup, and keyboard shortcuts. When you disable a style,
-it's hidden from menus but remains in the Style Manager for easy re‑enablement.
+it's hidden from menus but remains in the Style Manager for easy re-enablement.
 
 If you disable the currently active style, Marked automatically switches to the
 next available enabled style.
@@ -37,41 +37,41 @@ inline by clicking directly on it; changes persist and propagate to every menu
 where the style appears. This is especially useful for custom styles where you
 might want a more descriptive name than the filename.
 
-Built‑in styles have locked names that cannot be edited. To customize a
-built‑in style's name, duplicate it first to create an editable copy.
+Built-in styles have locked names that cannot be edited. To customize a
+built-in style's name, duplicate it first to create an editable copy.
 
 ### Source Column [source-column]
 
 The **Source** column indicates where the style comes from:
 
-- **Built‑in**: Styles that come with Marked and are stored in the application
+- **Built-in**: Styles that come with Marked and are stored in the application
   bundle
 - **Custom**: Styles you've added from CSS files on your drive
-- **Duplicated**: Styles created by duplicating another Style (either built‑in
+- **Duplicated**: Styles created by duplicating another Style (either built-in
   or custom)
 
 ### Actions Column [actions-column]
 
 Each row includes an **Actions** stack with buttons for managing that Style:
 
-**Edit**: Opens the CSS file in your default editor. Built‑in styles cannot be
+**Edit**: Opens the CSS file in your default editor. Built-in styles cannot be
 edited directly -- you'll need to duplicate them first to create an editable copy.
 
 **Duplicate**: Creates a copy of the style and a new CSS file on disk. The
 duplicate appears immediately below the original style in the table. This is
-the recommended way to customize built‑in styles.
+the recommended way to customize built-in styles.
 
 **Reveal**: Shows the CSS file in Finder, making it easy to locate the file on
 your drive. This button is only available for custom styles with a file path.
 
 **Delete**: Removes the style from Marked. For custom styles, you'll be given
 the option to either remove just the reference (keeping the CSS file) or move
-the CSS file to the Trash. Built‑in styles cannot be deleted, but they can be
+the CSS file to the Trash. Built-in styles cannot be deleted, but they can be
 disabled.
 
-**Restore**: For built‑in styles, this button restores the style to its
+**Restore**: For built-in styles, this button restores the style to its
 default state if it has been modified. This button is only visible for
-built‑in styles.
+built-in styles.
 
 ## Reordering Styles [reordering-styles]
 
@@ -149,7 +149,7 @@ to undo modifications to built-in styles.
 
 ## Tips [tips]
 
-- **Organize by frequency**: Drag your most‑used styles to the top to give
+- **Organize by frequency**: Drag your most-used styles to the top to give
   them the easiest keyboard shortcuts ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)
 
 - **Disable instead of delete**: Rather than deleting styles you're not using,

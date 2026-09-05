@@ -16,7 +16,7 @@ Abilita la navigazione sulla minimappa
 I titoli comprimono le sezioni
 : facendo clic su un elemento del titolo si comprime la sezione tra esso e il titolo successivo.
 
-Richiede {% kbd cmd %}‑clic
+Richiede {% kbd cmd %}&#8209;clic
 : se questa opzione è selezionata, i titoli verranno compressi/espansi solo quando si fa clic tenendo premuto il tasto Comando.
 
 Sincronizza l'anteprima e lo scorrimento della sorgente

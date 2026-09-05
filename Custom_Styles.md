@@ -31,7 +31,7 @@ pane.
 
 ## Managing styles with the Style Manager [managing-styles-with-the-style-manager]
 
-Launching the Style Manager gives you a single place to curate every built‑in
+Launching the Style Manager gives you a single place to curate every built-in
 and custom theme. Click the **Manage Styles…** button in the {% prefspane Style %}
 pane,
 or simply drop CSS files onto the preferences window --- Marked will import them,
@@ -42,7 +42,7 @@ you're importing a batch.
 
 ![][img-style-manager]
 
-Inside the Style Manager you'll find a sortable table that mixes built‑in and
+Inside the Style Manager you'll find a sortable table that mixes built-in and
 custom styles. Each row offers:
 
 - An **Enabled** checkbox that immediately adds/removes the style from the Style
@@ -50,7 +50,7 @@ custom styles. Each row offers:
   active style automatically switches to the next available entry.
 - A **Name** column you can edit inline; changes persist and propagate to every
   menu. Click on the Style's name to edit it in place.
-- A **Source** column that calls out Built‑in, Custom, or Duplicated.
+- A **Source** column that calls out Built-in, Custom, or Duplicated.
 - An **Actions** stack with buttons to **Edit** (opens the CSS file in your
   editor), **Duplicate** (creates a copy and a new CSS file on disk), **Reveal**
   (shows the file in Finder), and **Delete** (with options to remove the reference or

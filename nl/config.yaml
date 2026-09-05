@@ -742,7 +742,7 @@ Sections:
     - styling
     - theme
     - css
-    wiki_keywords: [custom styles, custom css, style generator]
+    wiki_keywords: [custom styles, custom css]
   - title: Creating Custom Styles
     file: Writing_Custom_CSS
     description: Marked has a built-in style editor, and can apply custom CSS files. You can use the editor to create beautiful styles, or if you know just enough CSS to be...
@@ -770,7 +770,7 @@ Sections:
     wiki_keywords: [style generator, create custom style, visual style editor]
   - title: Style Manager
     file: Style_Manager
-    description: The Style Manager provides a centralized interface for managing all of your built‑in and Custom Styles. It gives you complete control over which Styles...
+    description: The Style Manager provides a centralized interface for managing all of your built-in and Custom Styles. It gives you complete control over which Styles...
     keywords:
     - style
     - manager
@@ -844,7 +844,6 @@ Sections:
     - per-document style
     - per-file style
     - per-document configuration
-    - per-file settings
   - title: Marked Special Syntax
     file: Special_Syntax
     description: "Marked supports callouts with the syntax used by Obsidian and Bear, which is a specially formatted block quote: The \"NOTE\" in [!NOTE] is case-insensitive...."

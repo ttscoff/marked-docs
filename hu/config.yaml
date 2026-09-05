@@ -742,7 +742,7 @@ Sections:
     - stílus
     - téma
     - css
-    wiki_keywords: [custom styles, custom css, style generator]
+    wiki_keywords: [custom styles, custom css]
   - title: Egyedi stílusok létrehozása
     file: Writing_Custom_CSS
     description: A Marked beépített stílusszerkesztővel rendelkezik, és egyéni CSS-fájlokat is tud alkalmazni. A szerkesztővel gyönyörű stílusokat hozhat létre, vagy ha csak annyi CSS-t ismer, hogy...

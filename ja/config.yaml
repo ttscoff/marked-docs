@@ -737,7 +737,7 @@ Sections:
     - スタイリング
     - テーマ
     - css
-    wiki_keywords: [custom styles, custom css, style generator]
+    wiki_keywords: [custom styles, custom css]
   - title: カスタムスタイルの作成
     file: Writing_Custom_CSS
     description: Marked にはスタイル エディターが組み込まれており、カスタム CSS ファイルを適用できます。エディターを使用して美しいスタイルを作成することも、CSS について十分な知識がある場合は...

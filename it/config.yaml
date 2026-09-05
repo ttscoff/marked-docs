@@ -742,7 +742,7 @@ Sections:
     - stile
     - tema
     - css
-    wiki_keywords: [custom styles, custom css, style generator]
+    wiki_keywords: [custom styles, custom css]
   - title: Creazione di stili personalizzati
     file: Writing_Custom_CSS
     description: Marked ha un editor di stile integrato e può applicare file CSS personalizzati. Puoi utilizzare l'editor per creare bellissimi stili o, se conosci abbastanza CSS per essere...
