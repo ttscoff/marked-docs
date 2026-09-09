@@ -1,0 +1,70 @@
+# Marked Settings Localization Patch
+# Locale: pt-BR (Brazilian Portuguese)
+# Generated: 2026-08-13
+# Feature: Scrivener Assume Markdown + Automatic returns
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# Applications → Scrivener settings:
+# 1) Checkbox: "Assume Markdown formatting" (default ON)
+# 2) Popup: "Treat Scrivener returns as" with options:
+#    Automatic (default) | Soft line breaks (join lines) | Paragraph breaks (keep separate)
+# Automatic follows the checkbox: ON → soft join; OFF → keep separate paragraphs.
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by the returns option.
+#
+# This replaces the older *-scrivener-linebreaks.marked-l10n handoff
+# (popup labels and tooltip were renamed / expanded).
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 7
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 7
+
+"setting.scrivenerAssumeMarkdown" = "Assumir formatação Markdown";
+# EN: Assume Markdown formatting
+# DRAFT: Assumir formatação Markdown
+
+"tooltip.scrivenerAssumeMarkdown" = "Trate os documentos fichários como Markdown criados em Scrivener (listas digitadas, tabelas, limites, linhas em branco entre parágrafos) em vez de apenas na estrutura de rich text Scrivener.";
+# EN: Treat binder documents as Markdown authored in Scrivener (typed lists, tables, fences, blank lines between paragraphs) rather than Scrivener rich-text structure alone.
+# DRAFT: Trate os documentos fichários como Markdown criados em Scrivener (listas digitadas, tabelas, limites, linhas em branco entre parágrafos) em vez de apenas na estrutura de rich text Scrivener.
+
+"setting.scrivenerLineBreaks" = "Tratar retornos do Scrivener como";
+# EN: Treat Scrivener returns as
+# DRAFT: Tratar retornos do Scrivener como
+
+"setting.scrivenerLineBreaks.automatic" = "Automático";
+# EN: Automatic
+# DRAFT: Automático
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Quebras de linha suaves (unir linhas)";
+# EN: Soft line breaks (join lines)
+# DRAFT: Quebras de linha suaves (unir linhas)
+
+"setting.scrivenerLineBreaks.paragraphs" = "Quebras de parágrafo (manter separados)";
+# EN: Paragraph breaks (keep separate)
+# DRAFT: Quebras de parágrafo (manter separados)
+
+"tooltip.scrivenerLineBreaks" = "Como interpretar Return em Scrivener ao converter para Markdown. Automático segue Assumir formatação Markdown: quebras de linha suaves quando Markdown é assumido, quebras de parágrafo quando não é. Quebras de linha suaves (juntar linhas) mesclam retornos consecutivos em quebras suaves dentro de um parágrafo (uma linha em branco inicia um novo parágrafo; sujeita a Reter quebras de linha em parágrafos). Quebras de parágrafo (manter separadas) mantêm cada Return como um parágrafo Markdown. Tabelas de tubos e blocos de código protegidos não são afetados.";
+# EN: How to interpret Return in Scrivener when converting to Markdown. Automatic follows Assume Markdown formatting: soft line breaks when Markdown is assumed, paragraph breaks when it is not. Soft line breaks (join lines) merge consecutive Returns into soft breaks inside a paragraph (a blank line starts a new paragraph; subject to Retain line breaks in paragraphs). Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Como interpretar Return em Scrivener ao converter para Markdown. Automático segue Assumir formatação Markdown: quebras de linha suaves quando Markdown é assumido, quebras de parágrafo quando não é. Quebras de linha suaves (juntar linhas) mesclam retornos consecutivos em quebras suaves dentro de um parágrafo (uma linha em branco inicia um novo parágrafo; sujeita a Reter quebras de linha em parágrafos). Quebras de parágrafo (manter separadas) mantêm cada Return como um parágrafo Markdown. Tabelas de tubos e blocos de código protegidos não são afetados.
+
+=== END Settings.strings (gaps) ===
