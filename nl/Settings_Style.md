@@ -1,6 +1,4 @@
-# <%= @title %>
-
-Opties in de {% prefspane Style %}:
+Opties in {% prefspane Style %}:
 
 ![Settings: Style][1]
 
@@ -8,76 +6,77 @@ Opties in de {% prefspane Style %}:
 
 ### Lay-out en typografie [layout-and-typography]
 
-Beperk de tekstbreedte in Voorvertoning
-: stel een maximale breedte in voor de hoofdtekst van het voorbeeld met behulp van de schuifregelaar (in pixels).
+Tekstbreedte in Preview beperken
+: Stel met de schuifregelaar een maximale breedte in (in pixels) voor de hoofdtekst van de preview.
 
 Automatisch afbreken in alinea's
-: toestaan dat woorden automatisch worden afgebroken met woordafbreking.
+: Sta toe dat woorden automatisch worden afgebroken met koppeltekens.
 
-Voorkom weduwen in koppen en paragrafen
-: Forceert een niet-afbrekende spatie tussen de laatste twee woorden van koppen en alinea's om te voorkomen dat afzonderlijke woorden op een nieuwe regel terechtkomen.
+Weduwen in kopregels en alinea's voorkomen
+: Dwingt een niet-afbrekende spatie af tussen de laatste twee woorden van kopregels en alinea's, zodat losse woorden niet naar een nieuwe regel afbreken.
 
-Genereer typografisch correcte aanhalingstekens en interpunctie
-: Gebruik SmartyPants voor slimme aanhalingstekens, conversie van ellipsen en andere typografische functies (MultiMarkdown).
+Typografisch correcte aanhalingstekens en interpunctie genereren
+: Gebruik SmartyPants voor slimme aanhalingstekens, omzetting van beletseltekens en andere typografische functies (MultiMarkdown).
 
-Omring voetnotenmarkeringen met vierkante haakjes
-: Indien aangevinkt, gebruik dan de standaard MultiMarkdown opmaak voor voetnootmarkeringen ([1]). Haal het vinkje weg om vierkante haakjes te verwijderen.
+Voetnootmarkeringen omringen met vierkante haken
+: Indien aangevinkt, wordt de standaard MultiMarkdown-opmaak voor voetnootmarkeringen gebruikt ([1]). Schakel uit om de vierkante haken te verwijderen.
 
-Schakel Overzicht in voor extensies
-: automatisch de overzichtsmodus inschakelen voor bestanden met de vermelde extensies.
+Outline inschakelen voor extensies
+: Schakelt de Outline-modus automatisch in voor bestanden met de vermelde extensies.
 
-Gebruik APA-stijl
-: Gebruik APA-stijlcontouren in plaats van het standaard decimale formaat.
+APA-stijl gebruiken
+: Gebruik APA-stijl outlines in plaats van de standaard decimale indeling.
 
-Stijl letterlijke (code)blokken als poëzie
-: Indien aangevinkt, wordt met tabs ingesprongen, omheinde of opgenomen code weergegeven als poëzie in plaats van een codeblok (geen syntaxisaccentuering en speciale stijl afhankelijk van het thema).
+Verbatim (code)blokken opmaken als poëzie
+: Indien aangevinkt, worden tab-ingesprongen, omheinde of ingesloten code weergegeven als poëzie in plaats van als codeblok (geen syntax highlighting, en speciale opmaak afhankelijk van het thema).
 
-Sta toe dat thema's tekst binnen codeblokken laten lopen
-: Indien aangevinkt, mogen thema's een terugloop veroorzaken binnen `pre>code` blokken. Als dit niet is aangevinkt, zal de horizontale overloop altijd scrollen.
+Thema's toestaan tekst binnen codeblokken te laten omslaan
+: Indien aangevinkt, mogen thema's tekstomloop binnen `pre>code`-blokken veroorzaken. Indien uitgeschakeld, zal horizontale overloop altijd scrollen.
 
-Wrap-code altijd
-: Forceer codeblokken om terug te lopen, ongeacht de thema-instellingen (overschrijft het gedrag van thema-inloop).
+Code altijd laten omslaan
+: Dwingt codeblokken af om te omslaan, ongeacht de themainstellingen (overschrijft het omloopgedrag van het thema).
 
-RTL-tekst detecteren en stylen
-: Detecteer de taal per element in het document en de stijl van rechts naar links dienovereenkomstig.
+RTL-tekst detecteren en opmaken
+: Detecteert de taal per element in het document en past de opmaak dienovereenkomstig van rechts naar links (RTL) toe.
 
 ### Thema [theme]
 
-Beheer stijlen
-: Opent het [Style Manager](Style_Manager.html) venster. Voeg CSS-bestanden van uw schijf toe om ze te laten verschijnen in de stijlkiezermenu's. Gebruik de knop `Add New Style` of sleep CSS-bestanden naar dit venster. Sleep om de volgorde te wijzigen en gebruik de selectievakjes om stijlen in of uit te schakelen.
+Stijlen beheren
+: Opent het venster [Stijlbeheer](Style_Manager.html). Voeg CSS-bestanden van uw schijf toe om ze te laten verschijnen in de Stijl-keuzemenu's. Gebruik de knop `Add New Style` of sleep CSS-bestanden naar dit venster. Sleep om de volgorde te wijzigen en gebruik de selectievakjes om Stijlen in of uit te schakelen.
 
 Meer thema's
-: Open de online themagalerij om door aanvullende stijlen te bladeren en deze te installeren.
+: Open de online themagalerij om extra stijlen te bekijken en te installeren.
 
 Standaardstijl
-: De hier geselecteerde stijl wordt voor alle nieuwe vensters geladen, tenzij een [document-specific style is indicated in metadata](Per-Document_Settings.html) (bijvoorbeeld "Marked Stijl: Grump").
+: De hier geselecteerde stijl wordt geladen voor alle nieuwe vensters, tenzij [in de metadata een documentspecifieke stijl is opgegeven](Per-Document_Settings.html) (bijvoorbeeld "Marked Style: Grump").
 
-Houd CSS-wijzigingen bij
-: Wanneer dit is ingeschakeld, zal Marked de huidige stijl controleren op schijfwijzigingen, wat helpt bij het bewerken van aangepaste stijl en webontwikkeling.
+CSS-wijzigingen volgen
+: Wanneer dit is ingeschakeld, houdt Marked de huidige Stijl in de gaten voor wijzigingen op schijf, wat helpt bij het bewerken van aangepaste stijlen en webontwikkeling.
 
 Extra CSS
-: CSS die hier wordt toegevoegd, wordt opgenomen na het normale stylesheet met alle thema's. U kunt het onder andere gebruiken om instellingen over de hele linie te overschrijven zonder interne stijlen te bewerken.
-: Dit geldt voor alle documenten en alle stijlen. Als u aangepaste CSS wilt toepassen op documenten op basis van voorwaarden, gebruikt u Custom Regels onder {% prefspane Processor %}.
+: CSS die hier wordt toegevoegd, wordt na het normale stijlblad van elk thema toegevoegd. Het is een gedeeltelijke overlay, geen volledige vervanging van een thema.
+: Marked herschrijft selectors in dit veld (afdrukregels moeten bijvoorbeeld `body.mkprinting #wrapper …` gebruiken). Er is geen grootte- of geldigheidscontrole --- zie [Aangepaste CSS maken](Writing_Custom_CSS.html#additional-css-settings).
+: Dit geldt voor alle documenten en alle stijlen, inclusief HTML-export wanneer stijlen zijn inbegrepen. Als u aangepaste CSS wilt toepassen op documenten op basis van voorwaarden, gebruik dan Aangepaste Regels onder {% prefspane Processor %}.
 
-### Scripts opnemen [include-scripts]
+### Scripts insluiten [include-scripts]
 
-Syntaxisaccentuering
-: Schakel highlight.js [syntax highlighting](Syntax_Highlighting.html) in voor codeblokken. Selecteer een thema in de vervolgkeuzelijst.
-: Als **Alleen als taal is opgegeven** is aangevinkt, wordt syntaxisaccentuering alleen toegepast op afgeschermde codeblokken met een opgegeven taal.
+Syntax highlighting
+: Schakel highlight.js [syntax highlighting](Syntax_Highlighting.html) voor codeblokken in. Kies een thema uit het uitklapmenu.
+: Als **Alleen indien taal opgegeven** is aangevinkt, wordt syntax highlighting alleen toegepast op omheinde codeblokken waarvoor een taal is opgegeven.
 
-Schakel MathJax in
-: Laadt [MathJax](MathJax.html) voor het weergeven van MathML-vergelijkingen. Kies **Lokaal** (gebundeld) of **CDN** in de vervolgkeuzelijst.
-: **Aanvullende pakketten** opent een blad met extra MathJax pakketten (bijvoorbeeld natuurkunde en scheikunde).
-: **Geavanceerde configuratie** opent een blad voor aangepaste MathJax configuratie.
+MathJax inschakelen
+: Laadt [MathJax](MathJax.html) voor het weergeven van MathML-vergelijkingen. Kies **Lokaal** (meegeleverd) of **CDN** uit het uitklapmenu.
+: **Extra pakketten** opent een paneel om extra MathJax-pakketten toe te voegen (bijvoorbeeld Physics en Chemistry).
+: **Geavanceerde configuratie** opent een paneel voor aangepaste MathJax-configuratie.
 
-Schakel KaTeX in
-: Laadt [KaTeX](MathJax.html#katex) als alternatief voor MathJax. Er kan slechts het een of het ander worden geselecteerd.
+KaTeX inschakelen
+: Laadt [KaTeX](MathJax.html#katex) als alternatief voor MathJax. Er kan slechts één van beide worden geselecteerd.
 
-Getalvergelijkingen
-: Indien van toepassing zal Marked cijfernummers toevoegen aan weergegeven vergelijkingen. Kies **Linkerzijde** of **Rechterzijde** voor nummering. Als u MathJax gebruikt, kunt u **Alleen AMS** kiezen om alleen AMS-vergelijkingen te nummeren.
+Vergelijkingen nummeren
+: Indien van toepassing voegt Marked figuurnummers toe aan weergegeven vergelijkingen. Kies **Links** of **Rechts** voor de nummering. Bij gebruik van MathJax kunt u **Alleen AMS** kiezen om alleen AMS-vergelijkingen te nummeren.
 
-Zeemeermin
-: Laadt [mermaid.js](https://mermaid.js) van een CDN om diagrammen in Markdown-stijl mogelijk te maken. De hook die nodig is om zeemeermindiagrammen weer te geven bij elke documentupdate wordt automatisch meegeleverd.
+Mermaid
+: Laadt [mermaid.js](https://mermaid.js) van een CDN om Markdown-achtige diagrammen mogelijk te maken. De hook die nodig is om Mermaid-diagrammen bij elke documentupdate weer te geven, wordt automatisch meegeleverd.
 
-Pan- en zoomdiagrammen
-: Als zeemeermindiagrammen aanwezig zijn, schakelt u zoom in met {% kbd cmd %}-scroll en pan door te klikken en te slepen.
+Diagrammen pannen en zoomen
+: Wanneer Mermaid-diagrammen aanwezig zijn, schakelt u zoomen in met {% kbd cmd %}-scroll en pannen door te klikken en te slepen.
