@@ -283,6 +283,17 @@ Sections:
     - cubrir
     - atajos
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Modo de lectura
+    file: Reading_Mode
+    description: El modo de lectura enfoca el bloque actual, recuerda tu lugar en documentos largos y guarda resaltados para compartir, CriticMarkup e impresión.
+    keywords:
+    - modo de lectura
+    - enfoque
+    - resaltados
+    - reanudar
+    - criticmarkup
+    - atajos
+    wiki_keywords: [modo de lectura, resaltados de lectura, reanudar lectura]
   - title: Preguntar sobre el documento
     file: AI_Ask_About_Document
     description: Ask About Document utiliza Apple Intelligence y el modelo de lenguaje del dispositivo integrado en versiones recientes de macOS para resumir su vista previa de Markdown y...
