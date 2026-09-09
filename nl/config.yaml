@@ -288,6 +288,17 @@ Sections:
     - overlay
     - shortcuts
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Leesmodus
+    file: Reading_Mode
+    description: Leesmodus focust het huidige blok, onthoudt je plek in lange documenten en bewaart markeringen voor delen, CriticMarkup en afdrukken.
+    keywords:
+    - leesmodus
+    - focus
+    - markeringen
+    - hervatten
+    - criticmarkup
+    - sneltoetsen
+    wiki_keywords: [leesmodus, leesmarkeringen, lezen hervatten]
   - title: Ask About Document
     file: AI_Ask_About_Document
     description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
