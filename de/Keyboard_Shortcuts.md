@@ -33,6 +33,7 @@
 | **{{ctrl}}{{cmd}}L** | Externe Links prüfen |
 | **{{ctrl}}{{cmd}}W** | Wortwiederholungen visualisieren |
 | **{{ctrl}}{{opt}}S** | Schnelllesen umschalten |
+| **{{ctrl}}{{opt}}R** | Lesemodus ein-/ausschalten |
 | **{{shift}}{{ctrl}}{{cmd}}I** | Dokument befragen… (Apple Intelligence) |
 | **{{opt}}{{cmd}}S** | Basisstatistik |
 | **{{opt}}{{shift}}{{cmd}}S** | Lesbarkeitsstatistik |
@@ -107,7 +108,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 
 ### Lesemodus [readingmode]
 
-Im Lesemodus bewegen `j`/`k` die aktuelle Leseeinheit statt zu scrollen, und `h` hebt hervor statt dieses HUD zu öffnen (für das HUD **?** drücken).
+Im Lesemodus springen `j`/`k` von Leseeinheit zu Leseeinheit statt zu scrollen, und `h` hebt hervor, statt dieses HUD zu öffnen (für das HUD **?** drücken).
 
 | Tastenkürzel | Funktion |
 | ---: | :--- |
