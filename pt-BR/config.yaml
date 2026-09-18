@@ -1153,7 +1153,7 @@ Sections:
     wiki_keywords: [discount syntax, gfm syntax]
   - title: Apex (beta)
     file: Apex
-    description: Apex is a unified Markdown processor. Marked support is in beta.
+    description: Apex é um processador de Markdown unificado. O suporte no Marked está em beta.
     keywords:
     - apex
     wiki_keywords: [apex, apex markdown, unified markdown]
@@ -1162,7 +1162,7 @@ Sections:
     description: Opções da folha Configurar Apex.
     keywords:
     - apex
-    - configuration
+    - configuração
     wiki_keywords: [Configurar Apex, Configuração do Apex]
 - title: Créditos
   folder: Créditos

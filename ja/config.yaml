@@ -1148,16 +1148,16 @@ Sections:
     wiki_keywords: [discount syntax, gfm syntax]
   - title: Apex（ベータ）
     file: Apex
-    description: Apex is a unified Markdown processor. Marked support is in beta.
+    description: Apex は統合型の Markdown プロセッサです。Marked でのサポートはベータ版です。
     keywords:
     - apex
     wiki_keywords: [apex, apex markdown, unified markdown]
   - title: Apex の設定
     file: Apex_Configuration
-    description: Configure Apex シートのオプション。
+    description: Apex を設定シートのオプション。
     keywords:
     - apex
-    - configuration
+    - 設定
     wiki_keywords: [Apex を設定, Apex の設定]
 - title: クレジット
   folder: クレジット
