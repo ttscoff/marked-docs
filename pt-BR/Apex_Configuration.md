@@ -33,22 +33,22 @@ Notas de rodapé
 : Notas de referência (`[^id]`) e notas inline.
 
 Listas de definição
-: Listas de termo e definição (`: definição`).
+: Listas de termo e definição (`: definition`).
 
 Sobrescrito / subscrito
 : `^super^` e `~sub~`. Desligue se um til sozinho não deve significar subscrito. O ajuste do Marked **Renderizar ~text~ como sublinhado** é separado e conflita com o subscrito.
 
 Riscado
-: `~~removido~~`.
+: `~~deleted~~`.
 
 Autolink de URLs e e-mails
 : URLs `https://` e endereços de e-mail soltos viram links.
 
 Divs cercados
-: Blocos `::: nome` que envolvem uma seção em um `<div>`.
+: Blocos `::: name` que envolvem uma seção em um `<div>`.
 
 Spans entre colchetes
-: Spans de atributo inline, como `[texto]{.class}`.
+: Spans de atributo inline, como `[text]{.class}`.
 
 Listas alfabéticas
 : Listas que começam com `a.` ou `A.`, além dos números.
@@ -82,7 +82,7 @@ Somente legendas de título
 ## Links e índices [links-and-indexes]
 
 Links wiki
-: O Apex converte `[[links wiki]]`. Desligado por padrão. Quando está ligado, o Marked pula a própria passagem de prévia "Converter links wiki" nesse documento, e o Apex pode resolver o arquivo de destino de um jeito diferente do Marked. A extensão padrão vem dos ajustes de links wiki do Marked.
+: O Apex converte `[[wiki links]]`. Desligado por padrão. Quando está ligado, o Marked pula a própria passagem de prévia "Converter links wiki" nesse documento, e o Apex pode resolver o arquivo de destino de um jeito diferente do Marked. A extensão padrão vem dos ajustes de links wiki do Marked.
 
 Sanear URLs de links wiki
 : As URLs geradas ficam em minúsculas, apóstrofos são removidos e outros caracteres que não são letras nem números são substituídos. Desligado por padrão. Disponível só quando **Links wiki** está ligado.

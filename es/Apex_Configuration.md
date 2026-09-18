@@ -33,22 +33,22 @@ Notas al pie
 : Notas de referencia (`[^id]`) y notas en línea.
 
 Listas de definiciones
-: Listas de término y definición (`: definición`).
+: Listas de término y definición (`: definition`).
 
 Superíndice / subíndice
 : `^super^` y `~sub~`. Desactívelo si una tilde simple no debe significar subíndice. El ajuste **Representar ~text~ como subrayado** de Marked es independiente y entra en conflicto con el subíndice.
 
 Tachado
-: `~~eliminado~~`.
+: `~~deleted~~`.
 
 Enlazar automáticamente URL y correos
 : Las URL `https://` y las direcciones de correo sueltas se convierten en enlaces.
 
 Divs delimitados
-: Bloques `::: nombre` que envuelven una sección en un `<div>`.
+: Bloques `::: name` que envuelven una sección en un `<div>`.
 
 Spans entre corchetes
-: Spans de atributos en línea, como `[texto]{.class}`.
+: Spans de atributos en línea, como `[text]{.class}`.
 
 Listas alfabéticas
 : Listas que empiezan por `a.` o `A.`, además de los números.
@@ -82,7 +82,7 @@ Solo pies de título
 ## Enlaces e índices [links-and-indexes]
 
 Enlaces wiki
-: Apex convierte `[[enlaces wiki]]`. Desactivado de forma predeterminada. Si está activado, Marked omite su propio paso de vista previa «Convertir enlaces wiki» en ese documento, y Apex puede resolver el archivo de destino de forma distinta a Marked. La extensión predeterminada sale de los ajustes de enlaces wiki de Marked.
+: Apex convierte `[[wiki links]]`. Desactivado de forma predeterminada. Si está activado, Marked omite su propio paso de vista previa «Convertir enlaces wiki» en ese documento, y Apex puede resolver el archivo de destino de forma distinta a Marked. La extensión predeterminada sale de los ajustes de enlaces wiki de Marked.
 
 Sanear URL de enlaces wiki
 : Las URL generadas se pasan a minúsculas, se quitan los apóstrofos y se sustituyen los caracteres que no son letras ni números. Desactivado de forma predeterminada. Solo está disponible si **Enlaces wiki** está activado.

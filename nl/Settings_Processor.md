@@ -61,6 +61,8 @@ Geef `==highlight==` en `~~delete~~` weer
 Geef `~text~` weer als onderstrepingsteken
 : Als deze optie is ingeschakeld, wordt `~text~` omgeven door enkele tildes onderstreept weergegeven. Dit is in strijd met de MultiMarkdown-syntaxis voor subscript en is standaard uitgeschakeld.
 
+iA Writer-annotaties verwijderen
+: Als dit aan staat, verwijdert Marked het iA Writer-annotatieblok aan het einde van een bestand vóór het voorbeeld. Dat blok is een `Annotations:`-regel met een SHA-256-hash, daarna `@naam`- en `&naam`-bereikregels, vaak met een losse `---` er net boven. Standaard uit. Als gewone tekst de `Annotations:`-regel volgt, blijft het bestand ongewijzigd.
 
 ### Apex [apex]
 
@@ -68,6 +70,3 @@ Geef `~text~` weer als onderstrepingsteken
 
 Apex configureren
 : Wanneer **Apex (bèta)** de standaardprocessor is, opent **Configure Apex** het optieblad. Zie [Apex-configuratie](Apex_Configuration.html).
-
-iA Writer-annotaties verwijderen
-: Als dit aan staat, verwijdert Marked het iA Writer-annotatieblok aan het einde van een bestand vóór het voorbeeld. Dat blok is een `Annotations:`-regel met een SHA-256-hash, daarna `@naam`- en `&naam`-bereikregels, vaak met een losse `---` er net boven. Standaard uit. Als gewone tekst de `Annotations:`-regel volgt, blijft het bestand ongewijzigd.

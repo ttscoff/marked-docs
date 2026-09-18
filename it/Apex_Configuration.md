@@ -33,22 +33,22 @@ Note a piè di pagina
 : Note di riferimento (`[^id]`) e note in linea.
 
 Elenchi di definizioni
-: Elenchi termine e definizione (`: definizione`).
+: Elenchi termine e definizione (`: definition`).
 
 Apice / pedice
 : `^super^` e `~sub~`. Disattivalo se una tilde singola non deve significare pedice. L'impostazione di Marked **Rendi ~text~ come sottolineatura** è separata e va in conflitto con il pedice.
 
 Barrato
-: `~~eliminato~~`.
+: `~~deleted~~`.
 
 Collegamenti automatici a URL e email
 : Gli URL `https://` e gli indirizzi email nudi diventano collegamenti.
 
 Div delimitati
-: Blocchi `::: nome` che racchiudono una sezione in un `<div>`.
+: Blocchi `::: name` che racchiudono una sezione in un `<div>`.
 
 Span tra parentesi
-: Span di attributi in linea, come `[testo]{.class}`.
+: Span di attributi in linea, come `[text]{.class}`.
 
 Elenchi alfabetici
 : Elenchi che iniziano con `a.` o `A.`, oltre ai numeri.
@@ -82,7 +82,7 @@ Solo didascalie dal titolo
 ## Collegamenti e indici [links-and-indexes]
 
 Collegamenti wiki
-: Apex converte `[[collegamenti wiki]]`. Disattivo per impostazione predefinita. Se è attivo, Marked salta il proprio passaggio di anteprima «Converti collegamenti wiki» per quel documento, e Apex può risolvere il file di destinazione in modo diverso da Marked. L'estensione predefinita arriva dalle impostazioni dei collegamenti wiki di Marked.
+: Apex converte `[[wiki links]]`. Disattivo per impostazione predefinita. Se è attivo, Marked salta il proprio passaggio di anteprima «Converti collegamenti wiki» per quel documento, e Apex può risolvere il file di destinazione in modo diverso da Marked. L'estensione predefinita arriva dalle impostazioni dei collegamenti wiki di Marked.
 
 Ripulisci gli URL dei collegamenti wiki
 : Gli URL generati vengono messi in minuscolo, gli apostrofi vengono rimossi e gli altri caratteri che non sono lettere o numeri vengono sostituiti. Disattivo per impostazione predefinita. Disponibile solo se **Collegamenti wiki** è attivo.

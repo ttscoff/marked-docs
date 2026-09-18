@@ -33,22 +33,22 @@ Notes de bas de page
 : Notes de référence (`[^id]`) et notes en ligne.
 
 Listes de définitions
-: Listes terme et définition (`: définition`).
+: Listes terme et définition (`: definition`).
 
 Exposant / indice
 : `^super^` et `~sub~`. Désactivez cette option si un seul tilde ne doit pas signifier un indice. Le réglage Marked **Rendre ~texte~ comme du texte souligné** est distinct et entre en conflit avec l'indice.
 
 Barré
-: `~~supprimé~~`.
+: `~~deleted~~`.
 
 Liens automatiques URL et e-mails
 : Les URL `https://` et les adresses e-mail nues deviennent des liens.
 
 Divs délimités
-: Blocs `::: nom` qui entourent une section d'un `<div>`.
+: Blocs `::: name` qui entourent une section d'un `<div>`.
 
 Spans entre crochets
-: Spans d'attributs en ligne, comme `[texte]{.class}`.
+: Spans d'attributs en ligne, comme `[text]{.class}`.
 
 Listes alphabétiques
 : Listes qui commencent par `a.` ou `A.`, en plus des nombres.
@@ -82,7 +82,7 @@ Légendes de titre seulement
 ## Liens et index [links-and-indexes]
 
 Liens wiki
-: Apex convertit `[[liens wiki]]`. Désactivé par défaut. Lorsqu'il est activé, Marked saute sa propre passe d'aperçu « Convertir les liens wiki » pour ce document, et Apex peut résoudre le fichier cible autrement que Marked. L'extension par défaut vient des réglages de liens wiki de Marked.
+: Apex convertit `[[wiki links]]`. Désactivé par défaut. Lorsqu'il est activé, Marked saute sa propre passe d'aperçu « Convertir les liens wiki » pour ce document, et Apex peut résoudre le fichier cible autrement que Marked. L'extension par défaut vient des réglages de liens wiki de Marked.
 
 Assainir les URL de liens wiki
 : Les URL générées sont mises en minuscules, les apostrophes sont retirées, et les autres caractères qui ne sont ni des lettres ni des chiffres sont remplacés. Désactivé par défaut. Disponible seulement si **Liens wiki** est activé.

@@ -63,6 +63,8 @@ Renderizar `==highlight==` e `~~delete~~`
 Renderize `~text~` como sublinhado
 : Se esta opção estiver habilitada, `~text~` cercado por tis únicos será renderizado como sublinhado. Isso entra em conflito com a sintaxe MultiMarkdown para subscrito e está desabilitado por padrão.
 
+Remover anotações do iA Writer
+: Quando ativado, o Marked remove o bloco de anotações do iA Writer no fim do arquivo antes da prévia. Esse bloco é uma linha `Annotations:` com um hash SHA-256, depois linhas de intervalos `@nome` e `&nome`, muitas vezes com um `---` sozinho logo acima. Desligado por padrão. Se houver prosa comum depois da linha `Annotations:`, o arquivo não é alterado.
 
 ### Apex [apex]
 
@@ -70,6 +72,3 @@ Renderize `~text~` como sublinhado
 
 Configurar Apex
 : Quando **Apex (beta)** é o processador padrão, **Configurar Apex** abre a folha de opções. Veja [Configuração do Apex](Apex_Configuration.html).
-
-Remover anotações do iA Writer
-: Quando ativado, o Marked remove o bloco de anotações do iA Writer no fim do arquivo antes da prévia. Esse bloco é uma linha `Annotations:` com um hash SHA-256, depois linhas de intervalos `@nome` e `&nome`, muitas vezes com um `---` sozinho logo acima. Desligado por padrão. Se houver prosa comum depois da linha `Annotations:`, o arquivo não é alterado.

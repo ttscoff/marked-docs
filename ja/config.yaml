@@ -1158,7 +1158,7 @@ Sections:
     keywords:
     - apex
     - configuration
-    wiki_keywords: [configure apex, apex options, apex configuration]
+    wiki_keywords: [Apex を設定, Apex の設定]
 - title: クレジット
   folder: クレジット
   pages:

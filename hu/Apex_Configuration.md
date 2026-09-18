@@ -33,22 +33,22 @@ Lábjegyzetek
 : Hivatkozó lábjegyzetek (`[^id]`) és soron belüli lábjegyzetek.
 
 Definíciós listák
-: Kifejezés és definíció listák (`: definíció`).
+: Kifejezés és definíció listák (`: definition`).
 
 Felső index / alsó index
 : `^super^` és `~sub~`. Kapcsolja ki, ha az egyszeres hullámvonal ne jelentsen alsó indexet. A Marked **~text~ aláhúzásként** beállítása külön van, és ütközik az alsó indexszel.
 
 Áthúzás
-: `~~törölve~~`.
+: `~~deleted~~`.
 
 URL-ek és e-mailek automatikus linkelése
 : A csupasz `https://` URL-ek és e-mail-címek linkké válnak.
 
 Kerített div-ek
-: `::: név` blokkok, amelyek egy szakaszt `<div>` elembe csomagolnak.
+: `::: name` blokkok, amelyek egy szakaszt `<div>` elembe csomagolnak.
 
 Szögletes span-ek
-: Soron belüli attribútumspanek, például `[szöveg]{.class}`.
+: Soron belüli attribútumspanek, például `[text]{.class}`.
 
 Betűs listák
 : `a.` vagy `A.` kezdetű listák, a számozottakon kívül.
@@ -82,7 +82,7 @@ Csak címfelirat
 ## Hivatkozások és tárgymutatók [links-and-indexes]
 
 Wikihivatkozások
-: Az Apex átalakítja a `[[wikihivatkozásokat]]`. Alapértelmezés szerint ki. Ha be van kapcsolva, a Marked kihagyja a saját „wikihivatkozások átalakítása” előnézeti lépését, és az Apex másképp oldhatja fel a célfájlt, mint a Marked. Az alapértelmezett kiterjesztés a Marked wikihivatkozás-beállításaiból jön.
+: Az Apex átalakítja a `[[wiki links]]`. Alapértelmezés szerint ki. Ha be van kapcsolva, a Marked kihagyja a saját „wikihivatkozások átalakítása” előnézeti lépését, és az Apex másképp oldhatja fel a célfájlt, mint a Marked. Az alapértelmezett kiterjesztés a Marked wikihivatkozás-beállításaiból jön.
 
 Wikihivatkozás-URL-ek tisztítása
 : A generált URL-eket kisbetűsíti, eltávolítja az aposztrófokat, és a nem betű vagy szám karaktereket lecseréli. Alapértelmezés szerint ki. Csak akkor érhető el, ha a **Wikihivatkozások** be van kapcsolva.

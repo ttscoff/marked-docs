@@ -33,22 +33,22 @@ Voetnoten
 : Verwijzende voetnoten (`[^id]`) en inline voetnoten.
 
 Definitielijsten
-: Term-en-definitielijsten (`: definitie`).
+: Term-en-definitielijsten (`: definition`).
 
 Superscript / subscript
 : `^super^` en `~sub~`. Zet dit uit als een enkele tilde geen subscript mag betekenen. De Marked-instelling **~text~ als onderstreping weergeven** staat los en botst met subscript.
 
 Doorhalen
-: `~~verwijderd~~`.
+: `~~deleted~~`.
 
 URL's en e-mail automatisch linken
 : Kale `https://`-URL's en e-mailadressen worden links.
 
 Omheinde divs
-: `::: naam`-blokken die een sectie in een `<div>` wikkelen.
+: `::: name`-blokken die een sectie in een `<div>` wikkelen.
 
 Spans tussen haakjes
-: Inline attribuutspans, zoals `[tekst]{.class}`.
+: Inline attribuutspans, zoals `[text]{.class}`.
 
 Alfabetische lijsten
 : Lijsten die met `a.` of `A.` beginnen, naast getallen.
@@ -82,7 +82,7 @@ Alleen titelbijschriften
 ## Koppelingen en indexen [links-and-indexes]
 
 Wikikoppelingen
-: Apex zet `[[wikikoppelingen]]` om. Standaard uit. Staat dit aan, dan slaat Marked de eigen voorvertoningsstap "Wikikoppelingen omzetten" voor dat document over, en Apex kan het doelbestand anders oplossen dan Marked. De standaardextensie komt uit de wikikoppelingsinstellingen van Marked.
+: Apex zet `[[wiki links]]` om. Standaard uit. Staat dit aan, dan slaat Marked de eigen voorvertoningsstap "Wikikoppelingen omzetten" voor dat document over, en Apex kan het doelbestand anders oplossen dan Marked. De standaardextensie komt uit de wikikoppelingsinstellingen van Marked.
 
 Wikikoppeling-URL's opschonen
 : Gegenereerde URL's worden kleine letters, apostroffen verdwijnen, en andere tekens die geen letter of cijfer zijn worden vervangen. Standaard uit. Alleen beschikbaar als **Wikikoppelingen** aan staat.
