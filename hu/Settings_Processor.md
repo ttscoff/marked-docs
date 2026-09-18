@@ -62,3 +62,14 @@ Stíluscímkék
 
 Jelenítse meg a `~text~`-t aláhúzásként
 : Ha ez az opció be van kapcsolva, a `~text~` egyedi hullámokkal körülvéve aláhúzottként jelenik meg. Ez ütközik az alsó index MultiMarkdown szintaxisával, és alapértelmezés szerint le van tiltva.
+
+
+### Apex [apex]
+
+Az **Apex (béta)** az egyik beépített processzor. Lefedi azokat a funkciókat, amelyekért általában a CommonMarkot, a GitHub Flavored Markdownt, a MultiMarkdownt vagy a Kramdownt választják. Lásd: [Apex (béta)](Apex.html).
+
+Apex beállítása
+: Ha az **Apex (béta)** az alapértelmezett processzor, a **Configure Apex** megnyitja a beállítási lapot. Lásd: [Apex beállítások](Apex_Configuration.html).
+
+iA Writer-jegyzetek eltávolítása
+: Ha be van kapcsolva, a Marked az előnézet előtt eltávolítja a fájl végén lévő iA Writer-jegyzetblokkot. A blokk egy SHA-256 kivonatot tartalmazó `Annotations:` sor, majd `@név` és `&név` tartománysorok, gyakran egy magában álló `---` felettük. Alapértelmezés szerint ki. Ha az `Annotations:` sor után közönséges szöveg következik, a fájl változatlan marad.

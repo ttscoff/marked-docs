@@ -62,3 +62,14 @@ GitHub をレンダリングします:絵文字:
 
 `~text~` をアンダースコアとしてレンダリングします
 : このオプションが有効な場合、単一のチルダで囲まれた `~text~` が下線付きでレンダリングされます。これは添え字の MultiMarkdown 構文と競合するため、デフォルトでは無効になっています。
+
+
+### Apex [apex]
+
+**Apex（ベータ）** は組み込みプロセッサのひとつです。ふだん CommonMark、GitHub Flavored Markdown、MultiMarkdown、Kramdown を選ぶ理由になる機能をまとめて扱います。[Apex（ベータ）](Apex.html) を参照してください。
+
+Apex を設定
+: **Apex（ベータ）** が既定のプロセッサのとき、**Configure Apex** でオプションシートを開きます。[Apex の設定](Apex_Configuration.html) を参照してください。
+
+iA Writer の注釈を取り除く
+: オンにすると、プレビューの前にファイル末尾の iA Writer 注釈ブロックを取り除きます。そのブロックは SHA-256 ハッシュを含む `Annotations:` 行と、そのあとの `@名前` および `&名前` の範囲行で、直前に単独の `---` があることが多いです。既定ではオフです。`Annotations:` 行のあとに普通の本文が続く場合、ファイルは変更しません。

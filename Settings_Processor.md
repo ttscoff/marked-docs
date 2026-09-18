@@ -8,7 +8,7 @@ Options in the {% prefspane Processor %}:
 
 ### Process Markdown with [process-markdown-with]
 
-Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and Kramdown have specialized purposes. Marked compensates for some differences between syntax. See __Help->Markdown Reference__ for additional information.
+Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and Kramdown have specialized purposes. **Apex (beta)** covers the features people usually pick CommonMark, GitHub Flavored Markdown, MultiMarkdown, or Kramdown for. See [Apex (beta)](Apex.html). Marked compensates for some differences between syntax. See __Help->Markdown Reference__ for additional information.
 
 Custom Rules
 : Click the Custom Rules button to open the Rules Editor, where you can specify different processors and document transformations to run based on matching criteria. See [Custom Processor](Custom_Processor.html) for details.
@@ -18,6 +18,9 @@ New documents use custom
 
 Full Disk Access
 : Click **Grant** to give Marked permission to read files outside its sandbox when using custom processors or other features that need broader file access.
+
+Configure Apex
+: When **Apex (beta)** is the default processor, click **Configure Apex** to set syntax, citation files, and index options. See [Apex configuration](Apex_Configuration.html).
 
 To explore the differences between the processors, check out the [Markdown Dingus](Markdown_Dingus.html).
 
@@ -63,3 +66,6 @@ Render `~text~` as underscore
 
 Treat +++ as page breaks
 : When enabled, a line of three or more `+` characters is treated as a page break (same as `<!--BREAK-->`). Compatible with iA Writer. Off by default.
+
+Remove iA Writer annotations
+: When enabled, Marked removes the iA Writer annotations block at the end of a file before preview. That block is an `Annotations:` line containing a SHA-256 hash, then `@name` and `&name` range lines, often with a lone `---` just above it. Off by default. If ordinary prose follows the `Annotations:` line, the file is left unchanged.
