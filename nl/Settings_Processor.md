@@ -69,4 +69,4 @@ iA Writer-annotaties verwijderen
 **Apex (bèta)** is een van de ingebouwde processors. Het dekt de functies waarvoor mensen meestal CommonMark, GitHub Flavored Markdown, MultiMarkdown of Kramdown kiezen. Zie [Apex (bèta)](Apex.html).
 
 Apex configureren
-: Wanneer **Apex (bèta)** de standaardprocessor is, opent **Configure Apex** het optieblad. Zie [Apex-configuratie](Apex_Configuration.html).
+: Wanneer **Apex (bèta)** de standaardprocessor is, opent **Apex configureren** het optieblad. Zie [Apex-configuratie](Apex_Configuration.html).

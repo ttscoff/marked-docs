@@ -71,4 +71,4 @@ iA Writer の注釈を取り除く
 **Apex（ベータ）** は組み込みプロセッサのひとつです。ふだん CommonMark、GitHub Flavored Markdown、MultiMarkdown、Kramdown を選ぶ理由になる機能をまとめて扱います。[Apex（ベータ）](Apex.html) を参照してください。
 
 Apex を設定
-: **Apex（ベータ）** が既定のプロセッサのとき、**Configure Apex** でオプションシートを開きます。[Apex の設定](Apex_Configuration.html) を参照してください。
+: **Apex（ベータ）** が既定のプロセッサのとき、**Apex を設定** でオプションシートを開きます。[Apex の設定](Apex_Configuration.html) を参照してください。

@@ -1154,7 +1154,7 @@ Sections:
     wiki_keywords: [apex, apex markdown, unified markdown]
   - title: Apex の設定
     file: Apex_Configuration
-    description: Apex を設定シートのオプション。
+    description: 「Apex を設定」シートのオプション。
     keywords:
     - apex
     - 設定

@@ -71,4 +71,4 @@ iA Writer-jegyzetek eltávolítása
 Az **Apex (béta)** az egyik beépített processzor. Lefedi azokat a funkciókat, amelyekért általában a CommonMarkot, a GitHub Flavored Markdownt, a MultiMarkdownt vagy a Kramdownt választják. Lásd: [Apex (béta)](Apex.html).
 
 Apex beállítása
-: Ha az **Apex (béta)** az alapértelmezett processzor, a **Configure Apex** megnyitja a beállítási lapot. Lásd: [Apex beállítások](Apex_Configuration.html).
+: Ha az **Apex (béta)** az alapértelmezett processzor, az **Apex beállítása** megnyitja a beállítási lapot. Lásd: [Apex beállítások](Apex_Configuration.html).
