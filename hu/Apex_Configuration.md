@@ -14,10 +14,10 @@ CSL
 : Citation Style Language fájl (`.csl`), amelyet az Apex a bibliográfia formázásához használ. Hagyja üresen, ha a dokumentumban vagy a metaadatfájlban megadott stílust szeretné használni.
 
 Bibliográfia
-: Egy vagy több bibliográfiai fájl. Elfogadott típusok: BibTeX (`.bib`), CSL JSON (`.json`) és CSL YAML (`.yml`, `.yaml`). További fájlhoz kattintson az **Add** gombra. Az Apex ezekben keresi a hivatkozásokat.
+: Egy vagy több bibliográfiai fájl. Elfogadott típusok: BibTeX (`.bib`), CSL JSON (`.json`) és CSL YAML (`.yml`, `.yaml`). További fájlhoz kattintson az **Hozzáadás** gombra. Az Apex ezekben keresi a hivatkozásokat.
 
 Konkordancia
-: Egy vagy több konkordanciafájl (`.tsv`, `.txt` vagy `.csv`) a tárgymutató készítéséhez. További fájlhoz kattintson az **Add** gombra.
+: Egy vagy több konkordanciafájl (`.tsv`, `.txt` vagy `.csv`) a tárgymutató készítéséhez. További fájlhoz kattintson az **Hozzáadás** gombra.
 
 Metaadatfájl
 : Külső metaadatfájl (`.yml`, `.yaml`, `.txt` vagy `.md`), amelyet az Apex futása előtt egyesít a dokumentummal. Ha a dokumentum és a fájl ugyanazt a kulcsot adja meg, a dokumentum metaadata az erősebb. A lap jelölőnégyzetei felülírják a metaadatfájl értékeit.

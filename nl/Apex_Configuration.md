@@ -14,10 +14,10 @@ CSL
 : Een Citation Style Language-bestand (`.csl`) dat Apex gebruikt bij het opmaken van een bibliografie. Laat dit leeg om de stijl uit het document of het metadatabestand te gebruiken.
 
 Bibliografie
-: Een of meer bibliografiebestanden. Toegestane typen zijn BibTeX (`.bib`), CSL JSON (`.json`) en CSL YAML (`.yml`, `.yaml`). Klik op **Add** voor nog een bestand. Apex zoekt hierin bij het oplossen van citaties.
+: Een of meer bibliografiebestanden. Toegestane typen zijn BibTeX (`.bib`), CSL JSON (`.json`) en CSL YAML (`.yml`, `.yaml`). Klik op **Toevoegen** voor nog een bestand. Apex zoekt hierin bij het oplossen van citaties.
 
 Concordantie
-: Een of meer concordantiebestanden (`.tsv`, `.txt` of `.csv`) voor het maken van een index. Klik op **Add** voor nog een bestand.
+: Een of meer concordantiebestanden (`.tsv`, `.txt` of `.csv`) voor het maken van een index. Klik op **Toevoegen** voor nog een bestand.
 
 Metadatabestand
 : Een extern metadatabestand (`.yml`, `.yaml`, `.txt` of `.md`) dat wordt samengevoegd voordat Apex draait. Als het document en het bestand dezelfde sleutel zetten, winnen de metadata van het document. Selectievakjes in dit blad winnen van waarden in het metadatabestand.

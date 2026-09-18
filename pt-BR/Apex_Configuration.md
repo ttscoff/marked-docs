@@ -14,10 +14,10 @@ CSL
 : Um arquivo Citation Style Language (`.csl`) usado quando o Apex formata uma bibliografia. Deixe vazio para usar o estilo indicado no documento ou no arquivo de metadados.
 
 Bibliografia
-: Um ou mais arquivos de bibliografia. Tipos aceitos: BibTeX (`.bib`), CSL JSON (`.json`) e CSL YAML (`.yml`, `.yaml`). Clique em **Add** para outro arquivo. O Apex os consulta ao resolver citações.
+: Um ou mais arquivos de bibliografia. Tipos aceitos: BibTeX (`.bib`), CSL JSON (`.json`) e CSL YAML (`.yml`, `.yaml`). Clique em **Adicionar** para outro arquivo. O Apex os consulta ao resolver citações.
 
 Concordância
-: Um ou mais arquivos de concordância (`.tsv`, `.txt` ou `.csv`) usados ao montar um índice. Clique em **Add** para outro arquivo.
+: Um ou mais arquivos de concordância (`.tsv`, `.txt` ou `.csv`) usados ao montar um índice. Clique em **Adicionar** para outro arquivo.
 
 Arquivo de metadados
 : Um arquivo externo de metadados (`.yml`, `.yaml`, `.txt` ou `.md`) mesclado antes de o Apex rodar. Se o documento e o arquivo definirem a mesma chave, os metadados do documento prevalecem. As caixas desta folha prevalecem sobre os valores do arquivo de metadados.
