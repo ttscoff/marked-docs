@@ -97,7 +97,7 @@ Tárgymutató kimenet elrejtése
 
 Mindkettő alapértelmezés szerint ki van kapcsolva. Az Obsidian- és Bear-figyelmeztetéseket (`> [!NOTE]`) a Marked az Apex előtt kezeli, itt nem állíthatók.
 
-Python-Markdown figyelmeztetések (!!!)
+Python-Markdown figyelmeztetések
 : `!!! note` stílusú figyelmeztetések.
 
 Quarto figyelmeztetések

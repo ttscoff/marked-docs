@@ -97,7 +97,7 @@ Supprimer la sortie de l'index
 
 Les deux sont désactivés par défaut. Les encadrés Obsidian et Bear (`> [!NOTE]`) sont traités par Marked avant Apex et ne se règlent pas ici.
 
-Encadrés Python-Markdown (!!!)
+Encadrés Python-Markdown
 : Encadrés de style `!!! note`.
 
 Encadrés Quarto

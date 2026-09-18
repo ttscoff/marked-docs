@@ -97,7 +97,7 @@ Sopprimi l'output dell'indice
 
 Entrambi sono disattivati per impostazione predefinita. I riquadri di Obsidian e Bear (`> [!NOTE]`) sono gestiti da Marked prima di Apex e non si controllano qui.
 
-Riquadri Python-Markdown (!!!)
+Riquadri Python-Markdown
 : Riquadri in stile `!!! note`.
 
 Riquadri Quarto

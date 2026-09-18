@@ -14,7 +14,8 @@ While Reading Mode is active:
 
 - {% kbd j %} or {% kbd down %}: Move to the next reading unit.
 - {% kbd k %} or {% kbd up %}: Move to the previous reading unit.
-- {% kbd h %}: Highlight the selection, or toggle a highlight on the current unit when no text is selected.
+- {% kbd h %}: Highlight the selection, or toggle a highlight on the current unit when no text is selected. Press {% kbd ? %} to open the Help HUD (`h` does not open it while Reading Mode is on).
+- {% kbd c %} or {% kbd C %}: Cycle comments and footnotes, including highlight comments, CriticMarkup comments, annotations, and footnote references.
 
 Marked saves the current reading position for each document. When a saved position differs from the current view, entering Reading Mode offers two choices:
 

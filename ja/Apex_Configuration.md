@@ -97,7 +97,7 @@ Wiki リンク URL を正規化
 
 どちらも既定ではオフです。Obsidian と Bear のコールアウト（`> [!NOTE]`）は Apex の前に Marked が処理するため、ここでは制御しません。
 
-Python-Markdown コールアウト (!!!)
+Python-Markdown コールアウト
 : `!!! note` 形式のコールアウト。
 
 Quarto コールアウト

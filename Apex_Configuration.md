@@ -95,7 +95,7 @@ Suppress index output
 
 Both are off by default. Obsidian and Bear callouts (`> [!NOTE]`) are handled by Marked before Apex and are not controlled here.
 
-Python-Markdown callouts (!!!)
+Python-Markdown callouts
 : `!!! note` style callouts.
 
 Quarto callouts

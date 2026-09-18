@@ -97,7 +97,7 @@ Suprimir la salida del índice
 
 Ambos están desactivados de forma predeterminada. Los avisos de Obsidian y Bear (`> [!NOTE]`) los trata Marked antes de Apex y no se controlan aquí.
 
-Avisos de Python-Markdown (!!!)
+Avisos de Python-Markdown
 : Avisos del estilo `!!! note`.
 
 Avisos de Quarto

@@ -97,7 +97,7 @@ Suprimir a saída do índice
 
 As duas ficam desligadas por padrão. Chamadas do Obsidian e do Bear (`> [!NOTE]`) são tratadas pelo Marked antes do Apex e não se controlam aqui.
 
-Chamadas Python-Markdown (!!!)
+Chamadas Python-Markdown
 : Chamadas no estilo `!!! note`.
 
 Chamadas Quarto

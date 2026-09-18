@@ -91,6 +91,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **,**/**.** | Nächste Überschrift |
 | **&lt;**/**&gt;** | Nächste H1/H2-Überschrift |
 | **e** | Nächste Bearbeitungsmarkierung |
+| **c**/**C** | Kommentare und Fußnoten durchlaufen |
 | **s** | Automatisches Scrollen |
 | **S** | Automatisches Scrollen umkehren |
 | **{{shift}}{{l}}**/**{{r}}** | Automatisches Scrollen verlangsamen/beschleunigen |
@@ -103,6 +104,18 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **h**/**?** | Hilfe-HUD ein-/ausblenden |
 | **{{shift}}{{cmd}}F** | Sichtbaren Bereich fokussieren |
 [Vorschau-Navigation]
+
+### Lesemodus [readingmode]
+
+Im Lesemodus bewegen `j`/`k` die aktuelle Leseeinheit statt zu scrollen, und `h` hebt hervor statt dieses HUD zu öffnen (für das HUD **?** drücken).
+
+| Tastenkürzel | Funktion |
+| ---: | :--- |
+| **{{ctrl}}{{opt}}R** | Lesemodus ein-/ausschalten |
+| **j**/**k** oder **{{d}}**/**{{u}}** | Nächste/vorherige Leseeinheit |
+| **h** | Auswahl hervorheben oder aktuelle Einheit umschalten |
+| **c**/**C** | Kommentare und Fußnoten durchlaufen |
+[Lesemodus]
 
 ### Inhaltsverzeichnis-Navigation [TableofContentsNavigation]
 

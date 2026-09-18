@@ -97,7 +97,7 @@ Indexuitvoer onderdrukken
 
 Beide staan standaard uit. Obsidian- en Bear-callouts (`> [!NOTE]`) worden door Marked vóór Apex afgehandeld en worden hier niet ingesteld.
 
-Python-Markdown-callouts (!!!)
+Python-Markdown-callouts
 : Callouts in de stijl `!!! note`.
 
 Quarto-callouts

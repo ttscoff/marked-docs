@@ -14,7 +14,8 @@ Solange der Lesemodus aktiv ist:
 
 - {% kbd j %} oder {% kbd down %}: zur nächsten Leseeinheit.
 - {% kbd k %} oder {% kbd up %}: zur vorherigen Leseeinheit.
-- {% kbd h %}: hebt die Auswahl hervor oder schaltet die Hervorhebung der aktuellen Einheit um, wenn nichts ausgewählt ist.
+- {% kbd h %}: hebt die Auswahl hervor oder schaltet die Hervorhebung der aktuellen Einheit um, wenn nichts ausgewählt ist. {% kbd ? %} öffnet die Hilfe-HUD (`h` tut das im Lesemodus nicht).
+- {% kbd c %} oder {% kbd C %}: springt durch Kommentare und Fußnoten, einschließlich Hervorhebungskommentaren, CriticMarkup-Kommentaren, Anmerkungen und Fußnotenverweisen.
 
 Marked speichert die Leseposition für jedes Dokument. Weicht eine gespeicherte Position von der aktuellen Ansicht ab, bietet der Lesemodus beim Start zwei Möglichkeiten:
 
