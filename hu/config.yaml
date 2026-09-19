@@ -1151,6 +1151,19 @@ Sections:
     - gfm
     - specifikáció
     wiki_keywords: [discount syntax, gfm syntax]
+  - title: Apex (béta)
+    file: Apex
+    description: Az Apex egy egységes Markdown-processzor. A Marked támogatása béta állapotú.
+    keywords:
+    - apex
+    wiki_keywords: [apex, apex markdown, unified markdown]
+  - title: Apex beállítások
+    file: Apex_Configuration
+    description: Az Apex beállítása lap beállításai.
+    keywords:
+    - apex
+    - beállítások
+    wiki_keywords: [Apex beállítása, Apex beállítások]
 - title: Kredit
   folder: Kredit
   pages:

@@ -1146,6 +1146,19 @@ Sections:
     - GFM
     - 仕様
     wiki_keywords: [discount syntax, gfm syntax]
+  - title: Apex（ベータ）
+    file: Apex
+    description: Apex は統合型の Markdown プロセッサです。Marked でのサポートはベータ版です。
+    keywords:
+    - apex
+    wiki_keywords: [apex, apex markdown, unified markdown]
+  - title: Apex の設定
+    file: Apex_Configuration
+    description: 「Apex を設定」シートのオプション。
+    keywords:
+    - apex
+    - 設定
+    wiki_keywords: [Apex を設定, Apex の設定]
 - title: クレジット
   folder: クレジット
   pages:
