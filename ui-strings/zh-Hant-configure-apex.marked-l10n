@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: zh-Hant (Traditional Chinese)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "ARIA 標籤";
+# EN: ARIA labels
+# DRAFT: ARIA 標籤
+
+"setting.apexOptAlphaLists" = "字母列表";
+# EN: Alphabetic lists
+# DRAFT: 字母列表
+
+"setting.apexOptAutolink" = "自動連結 URL 與電子郵件";
+# EN: Autolink URLs and emails
+# DRAFT: 自動連結 URL 與電子郵件
+
+"setting.apexOptBibliographyPaths" = "參考文獻";
+# EN: Bibliography
+# DRAFT: 參考文獻
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "對照索引";
+# EN: Concordance
+# DRAFT: 對照索引
+
+"setting.apexOptDefinitionLists" = "定義列表";
+# EN: Definition lists
+# DRAFT: 定義列表
+
+"setting.apexOptDivs" = "圍欄 div";
+# EN: Fenced divs
+# DRAFT: 圍欄 div
+
+"setting.apexOptFootnotes" = "註腳";
+# EN: Footnotes
+# DRAFT: 註腳
+
+"setting.apexOptGridTables" = "網格表格";
+# EN: Grid tables
+# DRAFT: 網格表格
+
+"setting.apexOptHeaderAnchors" = "標題 <a> 錨點";
+# EN: Header <a> anchors
+# DRAFT: 標題 <a> 錨點
+
+"setting.apexOptImageCaptions" = "圖片說明";
+# EN: Image captions
+# DRAFT: 圖片說明
+
+"setting.apexOptIndices" = "索引處理";
+# EN: Index processing
+# DRAFT: 索引處理
+
+"setting.apexOptMarkdownInHTML" = "HTML 中的 Markdown";
+# EN: Markdown in HTML
+# DRAFT: HTML 中的 Markdown
+
+"setting.apexOptMetaFilePath" = "中繼資料檔案";
+# EN: Metadata file
+# DRAFT: 中繼資料檔案
+
+"setting.apexOptMetadataTransforms" = "中繼資料轉換";
+# EN: Metadata transforms
+# DRAFT: 中繼資料轉換
+
+"setting.apexOptMixedListMarkers" = "混合列表標記";
+# EN: Mixed list markers
+# DRAFT: 混合列表標記
+
+"setting.apexOptPerCellAlignment" = "逐儲存格對齊";
+# EN: Per-cell alignment
+# DRAFT: 逐儲存格對齊
+
+"setting.apexOptPyCallouts" = "Python-Markdown 標註 (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Python-Markdown 標註 (!!!)
+
+"setting.apexOptQuartoCallouts" = "Quarto 標註";
+# EN: Quarto callouts
+# DRAFT: Quarto 標註
+
+"setting.apexOptRelaxedTables" = "寬鬆表格";
+# EN: Relaxed tables
+# DRAFT: 寬鬆表格
+
+"setting.apexOptSpans" = "方括號 span";
+# EN: Bracketed spans
+# DRAFT: 方括號 span
+
+"setting.apexOptStrikethrough" = "刪除線";
+# EN: Strikethrough
+# DRAFT: 刪除線
+
+"setting.apexOptSupSub" = "上標 / 下標";
+# EN: Superscript / subscript
+# DRAFT: 上標 / 下標
+
+"setting.apexOptSuppressIndex" = "抑制索引輸出";
+# EN: Suppress index output
+# DRAFT: 抑制索引輸出
+
+"setting.apexOptTables" = "表格";
+# EN: Tables
+# DRAFT: 表格
+
+"setting.apexOptTitleCaptionsOnly" = "僅標題說明";
+# EN: Title-only captions
+# DRAFT: 僅標題說明
+
+"setting.apexOptWikiLinks" = "Wiki 連結";
+# EN: Wiki links
+# DRAFT: Wiki 連結
+
+"setting.apexOptWikiSanitize" = "清理 Wiki 連結 URL";
+# EN: Sanitize wiki link URLs
+# DRAFT: 清理 Wiki 連結 URL
+
+"setting.configureApex" = "Apex 選項";
+# EN: Apex options
+# DRAFT: Apex 選項
+
+"setting.configureApex.button" = "設定 Apex";
+# EN: Configure Apex
+# DRAFT: 設定 Apex
+
+"setting.configureApex.done" = "完成";
+# EN: Done
+# DRAFT: 完成
+
+"setting.configureApex.files.add" = "加入";
+# EN: Add
+# DRAFT: 加入
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "為 Apex 選擇檔案。";
+# EN: Choose a file for Apex.
+# DRAFT: 為 Apex 選擇檔案。
+
+"setting.configureApex.files.browseTooltip" = "選擇檔案";
+# EN: Choose a file
+# DRAFT: 選擇檔案
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "清除此檔案路徑";
+# EN: Clear this file path
+# DRAFT: 清除此檔案路徑
+
+"setting.configureApex.files.pathPlaceholder" = "檔案路徑";
+# EN: File path
+# DRAFT: 檔案路徑
+
+"setting.configureApex.files.statusAvailable" = "檔案可用";
+# EN: File is available
+# DRAFT: 檔案可用
+
+"setting.configureApex.files.statusMissing" = "檔案不存在";
+# EN: The file does not exist
+# DRAFT: 檔案不存在
+
+"setting.configureApex.files.statusPermission" = "Marked 沒有讀取此檔案的權限";
+# EN: Marked does not have permission to read this file
+# DRAFT: Marked 沒有讀取此檔案的權限
+
+"setting.configureApex.files.statusUnavailable" = "檔案不可用";
+# EN: File is unavailable
+# DRAFT: 檔案不可用
+
+"setting.configureApex.group.accessibility" = "輔助使用";
+# EN: Accessibility
+# DRAFT: 輔助使用
+
+"setting.configureApex.group.callouts" = "標註 (extra)";
+# EN: Callouts (extra)
+# DRAFT: 標註 (extra)
+
+"setting.configureApex.group.files" = "檔案";
+# EN: Files
+# DRAFT: 檔案
+
+"setting.configureApex.group.linksIndexes" = "連結與索引";
+# EN: Links & indexes
+# DRAFT: 連結與索引
+
+"setting.configureApex.group.syntax" = "語法";
+# EN: Syntax
+# DRAFT: 語法
+
+"setting.configureApex.group.tablesImages" = "表格與圖片";
+# EN: Tables & images
+# DRAFT: 表格與圖片
+
+"setting.configureApex.intro" = "這些選項僅影響 Apex。數學、CriticMarkup、主題標籤、檔案包含與標題 ID 仍保留在 Marked 的其他設定中。啟用 Apex Wiki 連結時，Apex 會轉換 [[wiki]] 連結，並略過 Marked 預覽的「Convert [[Wiki Links]]」步驟；Apex 的檔案解析可能與 Marked 不同。";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: 這些選項僅影響 Apex。數學、CriticMarkup、主題標籤、檔案包含與標題 ID 仍保留在 Marked 的其他設定中。啟用 Apex Wiki 連結時，Apex 會轉換 [[wiki]] 連結，並略過 Marked 預覽的「Convert [[Wiki Links]]」步驟；Apex 的檔案解析可能與 Marked 不同。
+
+"setting.configureApex.sheetTitle" = "設定 Apex";
+# EN: Configure Apex
+# DRAFT: 設定 Apex
+
+"setting.processor.apexBeta" = "Apex (測試版)";
+# EN: Apex (beta)
+# DRAFT: Apex (測試版)
+
+"setting.removeIAWriterAnnotations" = "移除 iA Writer 註解";
+# EN: Remove iA Writer annotations
+# DRAFT: 移除 iA Writer 註解
+
+"tooltip.configureApex" = "選用的 Apex 語法與輸出功能（僅 Apex 處理器）。";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: 選用的 Apex 語法與輸出功能（僅 Apex 處理器）。
+
+"tooltip.removeIAWriterAnnotations" = "啟用後，會在預覽前移除檔案末尾的 iA Writer 註解區塊。預設為關閉。";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: 啟用後，會在預覽前移除檔案末尾的 iA Writer 註解區塊。預設為關閉。
+
+=== END Settings.strings ===

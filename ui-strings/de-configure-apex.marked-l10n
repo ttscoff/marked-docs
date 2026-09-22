@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: de (German)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "ARIA-Etiketten";
+# EN: ARIA labels
+# DRAFT: ARIA-Etiketten
+
+"setting.apexOptAlphaLists" = "Alphabetische Listen";
+# EN: Alphabetic lists
+# DRAFT: Alphabetische Listen
+
+"setting.apexOptAutolink" = "Autolink-URLs und E-Mails";
+# EN: Autolink URLs and emails
+# DRAFT: Autolink-URLs und E-Mails
+
+"setting.apexOptBibliographyPaths" = "Bibliographie";
+# EN: Bibliography
+# DRAFT: Bibliographie
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "Konkordanz";
+# EN: Concordance
+# DRAFT: Konkordanz
+
+"setting.apexOptDefinitionLists" = "Definitionslisten";
+# EN: Definition lists
+# DRAFT: Definitionslisten
+
+"setting.apexOptDivs" = "Eingezäunte Divs";
+# EN: Fenced divs
+# DRAFT: Eingezäunte Divs
+
+"setting.apexOptFootnotes" = "Fußnoten";
+# EN: Footnotes
+# DRAFT: Fußnoten
+
+"setting.apexOptGridTables" = "Rastertabellen";
+# EN: Grid tables
+# DRAFT: Rastertabellen
+
+"setting.apexOptHeaderAnchors" = "Überschriften-<a>-Anker";
+# EN: Header <a> anchors
+# DRAFT: Überschriften-<a>-Anker
+
+"setting.apexOptImageCaptions" = "Bildunterschriften";
+# EN: Image captions
+# DRAFT: Bildunterschriften
+
+"setting.apexOptIndices" = "Indexverarbeitung";
+# EN: Index processing
+# DRAFT: Indexverarbeitung
+
+"setting.apexOptMarkdownInHTML" = "Markdown in HTML";
+# EN: Markdown in HTML
+# DRAFT: Markdown in HTML
+
+"setting.apexOptMetaFilePath" = "Metadatendatei";
+# EN: Metadata file
+# DRAFT: Metadatendatei
+
+"setting.apexOptMetadataTransforms" = "Metadatentransformationen";
+# EN: Metadata transforms
+# DRAFT: Metadatentransformationen
+
+"setting.apexOptMixedListMarkers" = "Gemischte Listenmarkierungen";
+# EN: Mixed list markers
+# DRAFT: Gemischte Listenmarkierungen
+
+"setting.apexOptPerCellAlignment" = "Ausrichtung pro Zelle";
+# EN: Per-cell alignment
+# DRAFT: Ausrichtung pro Zelle
+
+"setting.apexOptPyCallouts" = "Python-Markdown-Callouts (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Python-Markdown-Callouts (!!!)
+
+"setting.apexOptQuartoCallouts" = "Quarto-Callouts";
+# EN: Quarto callouts
+# DRAFT: Quarto-Callouts
+
+"setting.apexOptRelaxedTables" = "Entspannte Tabellen";
+# EN: Relaxed tables
+# DRAFT: Entspannte Tabellen
+
+"setting.apexOptSpans" = "Spans in eckigen Klammern";
+# EN: Bracketed spans
+# DRAFT: Spans in eckigen Klammern
+
+"setting.apexOptStrikethrough" = "Durchgestrichen";
+# EN: Strikethrough
+# DRAFT: Durchgestrichen
+
+"setting.apexOptSupSub" = "Hoch- / Tiefstellung";
+# EN: Superscript / subscript
+# DRAFT: Hoch- / Tiefstellung
+
+"setting.apexOptSuppressIndex" = "Indexausgabe unterdrücken";
+# EN: Suppress index output
+# DRAFT: Indexausgabe unterdrücken
+
+"setting.apexOptTables" = "Tabellen";
+# EN: Tables
+# DRAFT: Tabellen
+
+"setting.apexOptTitleCaptionsOnly" = "Nur Titel-Beschriftungen";
+# EN: Title-only captions
+# DRAFT: Nur Titel-Beschriftungen
+
+"setting.apexOptWikiLinks" = "Wiki-Links";
+# EN: Wiki links
+# DRAFT: Wiki-Links
+
+"setting.apexOptWikiSanitize" = "Wiki-Link-URLs bereinigen";
+# EN: Sanitize wiki link URLs
+# DRAFT: Wiki-Link-URLs bereinigen
+
+"setting.configureApex" = "Apex-Optionen";
+# EN: Apex options
+# DRAFT: Apex-Optionen
+
+"setting.configureApex.button" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.configureApex.done" = "Fertig";
+# EN: Done
+# DRAFT: Fertig
+
+"setting.configureApex.files.add" = "Hinzufügen";
+# EN: Add
+# DRAFT: Hinzufügen
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "Wählen Sie eine Datei für Apex.";
+# EN: Choose a file for Apex.
+# DRAFT: Wählen Sie eine Datei für Apex.
+
+"setting.configureApex.files.browseTooltip" = "Datei auswählen";
+# EN: Choose a file
+# DRAFT: Datei auswählen
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "Diesen Dateipfad löschen";
+# EN: Clear this file path
+# DRAFT: Diesen Dateipfad löschen
+
+"setting.configureApex.files.pathPlaceholder" = "Dateipfad";
+# EN: File path
+# DRAFT: Dateipfad
+
+"setting.configureApex.files.statusAvailable" = "Datei ist verfügbar";
+# EN: File is available
+# DRAFT: Datei ist verfügbar
+
+"setting.configureApex.files.statusMissing" = "Die Datei existiert nicht";
+# EN: The file does not exist
+# DRAFT: Die Datei existiert nicht
+
+"setting.configureApex.files.statusPermission" = "Marked hat keine Berechtigung, diese Datei zu lesen";
+# EN: Marked does not have permission to read this file
+# DRAFT: Marked hat keine Berechtigung, diese Datei zu lesen
+
+"setting.configureApex.files.statusUnavailable" = "Datei ist nicht verfügbar";
+# EN: File is unavailable
+# DRAFT: Datei ist nicht verfügbar
+
+"setting.configureApex.group.accessibility" = "Barrierefreiheit";
+# EN: Accessibility
+# DRAFT: Barrierefreiheit
+
+"setting.configureApex.group.callouts" = "Callouts (extra)";
+# EN: Callouts (extra)
+# DRAFT: Callouts (extra)
+
+"setting.configureApex.group.files" = "Dateien";
+# EN: Files
+# DRAFT: Dateien
+
+"setting.configureApex.group.linksIndexes" = "Links & Indizes";
+# EN: Links & indexes
+# DRAFT: Links & Indizes
+
+"setting.configureApex.group.syntax" = "Syntax";
+# EN: Syntax
+# DRAFT: Syntax
+
+"setting.configureApex.group.tablesImages" = "Tabellen & Bilder";
+# EN: Tables & images
+# DRAFT: Tabellen & Bilder
+
+"setting.configureApex.intro" = "Diese Optionen betreffen nur Apex. Mathe, CriticMarkup, Hashtags, Datei-Includes und Überschriften-IDs verbleiben in den anderen Einstellungen von Marked. Wenn Apex-Wiki-Links aktiviert sind, konvertiert Apex [[wiki]]-Links und der Vorschau-Pass „[[Wiki-Links]] konvertieren“ von Marked wird übersprungen; die Dateiauflösung von Apex kann von der von Marked abweichen.";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: Diese Optionen betreffen nur Apex. Mathe, CriticMarkup, Hashtags, Datei-Includes und Überschriften-IDs verbleiben in den anderen Einstellungen von Marked. Wenn Apex-Wiki-Links aktiviert sind, konvertiert Apex [[wiki]]-Links und der Vorschau-Pass „[[Wiki-Links]] konvertieren“ von Marked wird übersprungen; die Dateiauflösung von Apex kann von der von Marked abweichen.
+
+"setting.configureApex.sheetTitle" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.processor.apexBeta" = "Apex (Beta)";
+# EN: Apex (beta)
+# DRAFT: Apex (Beta)
+
+"setting.removeIAWriterAnnotations" = "iA Writer-Anmerkungen entfernen";
+# EN: Remove iA Writer annotations
+# DRAFT: iA Writer-Anmerkungen entfernen
+
+"tooltip.configureApex" = "Optionale Apex-Syntax- und Ausgabe-Funktionen (nur Apex-Prozessor).";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: Optionale Apex-Syntax- und Ausgabe-Funktionen (nur Apex-Prozessor).
+
+"tooltip.removeIAWriterAnnotations" = "Wenn aktiviert, wird der iA Writer-Anmerkungsblock am Ende einer Datei vor der Vorschau entfernt. Standardmäßig aus.";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: Wenn aktiviert, wird der iA Writer-Anmerkungsblock am Ende einer Datei vor der Vorschau entfernt. Standardmäßig aus.
+
+=== END Settings.strings ===
