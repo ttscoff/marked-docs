@@ -1,34 +1,32 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Marked tiene un editor de estilo incorporado y puede aplicar archivos CSS personalizados.
+Marked incluye un editor de estilos integrado y puede aplicar archivos CSS personalizados.
 
-Puedes usar el editor para crear hermosos estilos, o si conoces suficiente CSS como para ser peligroso, puedes hacer que Marked se vea como quieras.
+Puedes usar el editor para crear estilos preciosos, o si sabes lo justo de CSS como para ser peligroso, puedes hacer que Marked luzca como quieras.
 
-## Empezando [getting-started]
+## Primeros pasos [getting-started]
 
-Hay una galería de estilos personalizados creada por el desarrollador y por los usuarios en [markedapp.com/styles](https://markedapp.com/styles/). La galería le permite obtener una vista previa e instalar estilos directamente en Marked. Cualquier estilo instalado se puede revelar en el Finder para examinarlo y modificarlo. La galería se puede abrir usando un visor interno con {% appmenu Style, Generate a Custom Style %}, o hacer clic en el ícono de lápiz (editar) al lado de cualquier estilo editable en el Administrador de estilos. Si desea editar un estilo incorporado, deberá Primero hay que duplicarlo en el administrador.
+Existe una galería de Estilos personalizados creados por el desarrollador y por los usuarios en [markedapp.com/styles](https://markedapp.com/styles/). La galería te permite previsualizar e instalar Estilos directamente en Marked. Cualquier Estilo instalado se puede mostrar en Finder para examinarlo y modificarlo. La galería se puede abrir usando un visor interno con {% appmenu Style, Generate a Custom Style %}, o haciendo clic en el icono del lápiz (editar) junto a cualquier estilo editable en el Gestor de estilos. Si quieres editar un estilo integrado, primero tendrás que duplicarlo en el gestor.
 
-También hay un [repositorio de estilos personalizados](https://github.com/ttscoff/MarkedCustomStyles) en GitHub con ejemplos. Siéntete libre de navegar, utilizar y contribuir allí. Si distribuye su tema basándose en uno de los temas básicos, no dude en agregarse a los créditos como colaborador.
+También hay un [repositorio de Estilos personalizados](https://github.com/ttscoff/MarkedCustomStyles) en GitHub con ejemplos. Siéntete libre de explorarlo, usarlo y contribuir allí. Si distribuyes tu tema basado en uno de los temas base, no dudes en añadirte a los créditos como colaborador.
 
-Con la capacidad de Marked para usar archivos CSS personalizados, el cielo es el límite al personalizar su Vista previa. Todas las opciones de CSS3 que funcionan en Safari funcionarán en Marked. Con los archivos Markdown predeterminados en Marked, solo hay que manejar unos pocos elementos HTML; todo el contenido está en un div con la identificación de "contenedor", todo lo demás está determinado por el marcado del documento.
+Con la capacidad de Marked de usar archivos CSS personalizados, no hay límites a la hora de personalizar tu vista previa. Todas las opciones de CSS3 que funcionan en Safari funcionarán en Marked. Con los archivos Markdown predeterminados en Marked, solo hay unos pocos elementos HTML que necesitas gestionar; todo el contenido está dentro de un div con el id "wrapper", y el resto depende del marcado de tu documento.
 
-Si estás diseñando para uso personal, no hay reglas. Active el seguimiento de CSS con la casilla de verificación debajo del selector de CSS personalizado y cuando edite y guarde su CSS personalizado, se actualizará la vista previa.
+Si estás diseñando para uso personal, no hay reglas. Activa el seguimiento de CSS con la casilla debajo del selector de CSS personalizado y, cuando edites y guardes tu CSS personalizado, la vista previa se actualizará.
 
-**Hay un [tema de esqueleto disponible](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) para comenzar.**
+**Hay disponible un [tema esqueleto](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) para empezar.**
 
-Si planeas compartir tu creación de CSS, hay algunos puntos que debes cubrir. Primero, hay algunas clases de cuerpo a las que se les debe aplicar estilos:
+Si planeas compartir tu creación CSS, hay algunos puntos que debes cubrir. En primer lugar, hay ciertas clases del body que necesitan tener estilos aplicados:
 
-## Clases de cuerpo [body-classes]
+## Clases del body [body-classes]
 
-Los siguientes estilos deben incluirse en cualquier CSS marcado que se vaya a compartir. Las clases de cuerpo le permiten apuntar y modificar cualquier selector bajo diferentes opciones de preferencia.
+Los siguientes estilos deben incluirse en cualquier CSS de Marked que se vaya a compartir. Las clases del body te permiten apuntar y modificar cualquier selector según las distintas opciones de preferencias.
 
 ### Invertido [inverted]
 
- Cuando el usuario selecciona {% appmenu Preview, Dark Mode %}, se agrega una clase de "invertido" a la etiqueta del cuerpo. Puede utilizar esto para apuntar a estilos claros sobre oscuros de alto contraste.
+Cuando el usuario selecciona {% appmenu Preview, Dark Mode %}, se añade una clase "inverted" a la etiqueta body. Puedes usar esto para apuntar a los estilos de alto contraste, claro sobre oscuro.
 
-Solo desea que los estilos invertidos se apliquen a la vista previa, no a la impresión, así que use una consulta de medios (@media screen) para restringirlo. El código siguiente es bastante multiusos y en la mayoría de los casos puede simplemente colocarlo en su hoja de estilo para compatibilidad, pero siéntase libre de modificarlo.
+Solo quieres que los estilos invertidos se apliquen a la vista previa, no a la impresión, así que usa una consulta de medios (@media screen) para restringirlo. El siguiente código es bastante genérico y en la mayoría de los casos puedes simplemente incluirlo en tu hoja de estilos para garantizar la compatibilidad, pero siéntete libre de ajustarlo.
 
 ```css
 @media screen {
@@ -48,9 +46,9 @@ Solo desea que los estilos invertidos se apliquen a la vista previa, no a la imp
 
 ### Poesía [poetry]
 
-El usuario puede elegir si el texto con tabulación es poesía o código. La única diferencia es que los bloques pre/código tienen un estilo más poético si se elige el modo poesía. La clase "poesía" se aplica a la etiqueta del cuerpo.
+El usuario puede elegir si el texto con sangría de tabulación es poesía o código. La única diferencia es que los bloques pre/code se estilizan de forma más, digamos, poética si se elige el modo poesía. La clase "poetry" se aplica a la etiqueta body.
 
-Sea tan creativo como quiera con el formato, pero aquí tiene un fragmento básico:
+Ponte tan creativo como quieras con el formato, pero aquí tienes un fragmento básico:
 
 ```css
 .poetry pre code {
@@ -65,11 +63,11 @@ Sea tan creativo como quiera con el formato, pero aquí tiene un fragmento bási
 
 ## Casos especiales [special-cases]
 
-También se deben considerar las tablas, la figura/pie de figura y el caso especial de `a.footnote` y `div.footnotes>a`. No hay reglas establecidas sobre cómo manejarlos, pero eche un vistazo a los estilos predeterminados para tener una idea de qué reglas CSS necesita Marked.
+Las tablas, Figure/Figcaption y el caso especial de `a.footnote` y `div.footnotes>a` también deben tenerse en cuenta. No hay reglas fijas sobre cómo gestionarlos, pero echa un vistazo a los estilos predeterminados para hacerte una idea de qué reglas CSS necesita Marked.
 
-El estilo de tabla estándar en todos los estilos predeterminados utiliza transparencia en las filas alternas para que se combine suavemente con cualquier fondo. Puedes copiar esos estilos o seguir tu propio camino, ¡solo asegúrate de haberlos diseñado! Lo mismo para figura y leyenda de figura; agregue una imagen a un documento con texto alternativo para ver cómo quedará el marcado y el estilo adecuado.
+El estilo de tabla estándar en todos los estilos predeterminados usa transparencia en las filas alternas para que se integre suavemente con cualquier fondo. Puedes copiar esos estilos, o seguir tu propio camino, ¡solo asegúrate de haberles dado estilo! Lo mismo aplica para figure y figcaption; añade una imagen a un documento con texto alternativo para ver cómo queda el marcado y aplícale el estilo correspondiente.
 
-Las notas al pie incluidas en un documento mostrarán un enlace dentro del contenido (a.footnote) y un div al final con el texto al que se hace referencia (div.footnotes). Nuevamente, consulte los estilos predeterminados como referencia. Para evitar cambiar la altura de la línea en líneas que contienen un número de referencia de nota al pie, asegúrese de incluir algo como:
+Las notas al pie incluidas en un documento generarán un enlace dentro del contenido (a.footnote), y un div al final con el texto referenciado (div.footnotes). De nuevo, consulta los estilos predeterminados como referencia. Para evitar cambiar el interlineado en las líneas que contienen un número de referencia de nota al pie, asegúrate de incluir algo como:
 
 ```css
 sup,sub,a.footnote {
@@ -81,23 +79,23 @@ sup,sub,a.footnote {
 }
 ```
 
-Para mantener la flecha de retorno en la misma línea, incluya:
+Para mantener la flecha de retorno en la misma línea, incluye:
 
 ```css
 .footnotes p {display:inline}
 ```
 
-También es una buena idea incluir una regla general para que todas las imágenes se mantengan dentro del ancho de la página. Algo como:
+También es buena idea incluir una regla general para todas las imágenes, de modo que se mantengan dentro del ancho de la página. Algo como:
 
 ```css
 #wrapper img { max-width: 100% }
 ```
 
-Si su tema tiene relleno adicional o un ancho fijo, modifique el ancho máximo para que se ajuste.
+Si tu tema tiene relleno adicional o un ancho fijo, ajusta el max-width según corresponda.
 
 ## Estilos de impresión [printstyles]
 
-Asegúrese de incluir estilos de impresión que eliminen colores de fondo, desplazamiento fijo y la interfaz solo de vista previa. Marked ofrece dos formas de orientar la salida de impresión y PDF.
+Asegúrate de incluir estilos de impresión que eliminen cualquier color de fondo, desplazamiento fijo y elementos de interfaz exclusivos de la vista previa. Marked te ofrece dos formas de dirigirte a la salida de impresión y PDF.
 
 ### `@media print` [media-print]
 
@@ -112,9 +110,9 @@ Las reglas CSS de impresión estándar se aplican al imprimir desde Marked o cua
 
 ### La clase `.mkprinting` [the-mkprinting-class]
 
-Cuando Marked prepara un documento para **exportación a PDF** o **vista previa de impresión/PDF** ({% kbd cmd P %}), añade la clase `mkprinting` a la etiqueta `<body>` (junto con clases de exportación como `bandw`, `breakAfterTOC` y la clase `mkstyle--*` de su estilo). Los temas integrados de Marked usan esta clase para la mayoría de las reglas específicas de impresión, en lugar de depender solo de `@media print`.
+Cuando Marked prepara un documento para **exportación a PDF** o **Vista previa de impresión/PDF** ({% kbd cmd P %}), añade la clase `mkprinting` a la etiqueta `<body>` (junto con clases de exportación como `bandw`, `breakAfterTOC`, y la clase `mkstyle--*` de tu estilo). Los temas integrados de Marked usan esta clase para la mayoría de las reglas específicas de impresión, en lugar de depender únicamente de `@media print`.
 
-La exportación a PDF a menudo carga el WebView de renderizado oculto con medios de **pantalla** (sobre todo con estilos personalizados y documentos [Fountain](Fountain_for_Screenwriters.html)), de modo que los bloques `@media print` de su hoja de estilo **pueden no** aplicarse a la salida PDF. Las reglas con el prefijo `.mkprinting` sí se aplican durante la exportación porque son selectores de clase normales, no consultas de medios.
+La exportación a PDF a menudo carga el WebView de renderizado oculto con medios **screen** (especialmente para estilos personalizados y documentos [Fountain](Fountain_for_Screenwriters.html)), por lo que los bloques `@media print` de tu hoja de estilos pueden **no** aplicarse a la salida en PDF. Las reglas con el prefijo `.mkprinting` siempre se aplican durante la exportación porque son selectores de clase normales, no consultas de medios.
 
 ```css
 /* Hide preview UI during print/PDF */
@@ -136,7 +134,7 @@ La exportación a PDF a menudo carga el WebView de renderizado oculto con medios
 }
 ```
 
-Para estilos que deben funcionar **tanto** al imprimir desde el navegador como al exportar PDF desde Marked, duplique las reglas críticas o combine selectores:
+Para estilos que deben funcionar tanto en impresión desde el navegador como en la exportación a PDF de Marked, duplica las reglas críticas o combina selectores:
 
 ```css
 @media print {
@@ -148,68 +146,102 @@ Para estilos que deben funcionar **tanto** al imprimir desde el navegador como a
 }
 ```
 
-Al depurar CSS de impresión personalizado, abra la vista previa de impresión/PDF o exporte a PDF y use el [Web Inspector de Safari](#webkitinspector) para inspeccionar el documento: el `<body>` tendrá la clase `mkprinting` mientras el diseño de impresión esté activo.
+**Estilo personalizado frente a CSS adicional.** En una hoja de estilos de Estilo personalizado, escribe `.mkprinting #wrapper …` como se muestra arriba. En el campo **CSS adicional**, Marked reescribe los selectores antes de la inyección; usa en su lugar la forma calificada con body:
 
-La ocultación de enlaces en la impresión se maneja fuera del tema principal, lo que permite a los usuarios elegir que los resaltados y subrayados de enlaces queden ocultos en la impresión. Mientras tenga un estilo base para el texto, no necesita preocuparse por esto.
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
 
-Así que manos a la obra. Convierta el tema de su blog, cree un estilo de impresión excelente para PDF o prepare la vista previa perfecta para su forma de escribir. Si crea algo genial, [compártalo con la comunidad](https://markedapp.com/styleshare/).
+Consulta [Ajustes de CSS adicional](#additional-css-settings) para saber cómo funciona la reescritura y por qué `.mkprinting #wrapper …` por sí solo no coincide ahí.
 
-## Configuraciones CSS adicionales [additional-css-settings]
+Al depurar CSS de impresión personalizado, abre la Vista previa de impresión/PDF o exporta a PDF, y luego usa el [Inspector web de Safari](#webkitinspector) para inspeccionar el documento; el `<body>` tendrá la clase `mkprinting` mientras el diseño de impresión esté activo.
 
-En {% prefspane Style %} puede editar CSS adicional. Estos estilos se añaden a cualquier tema cargado y sirven para aplicar cambios universales a todos los temas.
+Ocultar enlaces en la impresión se gestiona fuera del tema principal, lo que permite a los usuarios elegir si quieren ocultar los resaltados y subrayados de los enlaces en la impresión. Mientras tengas definido un estilo base para el texto, no necesitas preocuparte por esto.
 
-Con [alta especificidad](#overridingspecificity), consultas `@media` para impresión y pantalla, y selectores `.mkprinting` para la exportación a PDF, puede controlar casi todos los aspectos del estilo con un poco de conocimiento de CSS.
+Así que, adelante. Convierte el tema de tu blog, crea un estilo de impresión excelente para documentos PDF, o diseña la vista previa perfecta para el tipo de escritura que haces. Si creas algo genial, [compártelo con la comunidad](https://markedapp.com/styleshare/).
 
-## Inspector de WebKit [webkitinspector]
+## Ajustes de CSS adicional [additional-css-settings]
 
-El inspector web de Safari es la forma más sencilla de ver exactamente qué HTML y CSS marcado se generan y de experimentar con estilos personalizados en vivo.
+En {% prefspane Style %}, puedes editar **CSS adicional**. Estas reglas se **añaden al tema que esté cargado**, sea cual sea. Son una superposición parcial deliberada, no un tema completo. Si pegas una hoja de estilos completa en este campo —o importas esa misma hoja parcial a través del [Gestor de estilos](Custom_Styles.html) como si fuera un tema—, todo lo que la hoja no cubra quedará sin estilo.
 
-### Habilitar el menú Desarrollar en Safari [enabling-the-develop-menu-in-safari]
+### Reescritura de selectores [additional-css-selector-rewriting]
 
-1. Abra Safari y elija {% appmenu Safari, Settings… %}.
-2. Seleccione la pestaña **Avanzado**.
-3. Habilite **Mostrar funciones para desarrolladores web** (o **Mostrar menú Desarrollar en la barra de menú** en versiones anteriores de macOS).
+Marked reescribe los selectores del CSS adicional antes de inyectarlos (como `body.mk-has-additional-css …`) para que las reglas permanezcan delimitadas a la vista previa:
 
-Una vez habilitado, aparecerá un menú **Desarrollar** en la barra de menú de Safari.
+- Una parte de selector que ya empiece por `body` o `#wrapper` recibe el prefijo `body.mk-has-additional-css`, con las clases del body combinadas en lugar de anidadas.
+- Cualquier otra parte del selector queda delimitada bajo `body.mk-has-additional-css #wrapper …`.
+- Las clases del body iniciales que Marked establece en `<body>` —incluyendo `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC` y `.mkstyle--*`— se tratan como `body` y se combinan con el selector body en lugar de anidarse bajo `#wrapper`.
 
-![Menú Desarrollo de Safari que muestra documentos marcados][develop-menu]
+| Introducido en CSS adicional | Resultado |
+| :-- | :-- |
+| `#wrapper h2` | Coincide (correctamente delimitado) |
+| `body.mkprinting #wrapper p` | Coincide durante impresión/PDF |
+| `.mkprinting #wrapper p` | **No** coincide (requeriría un `#wrapper` anidado) |
+| `:root { --x: 1; }` | **No** coincide (se prefiere `body` o `#wrapper` para propiedades personalizadas) |
 
-### Inspeccionar un documento marcado [inspecting-a-marked-document]
+Para las reglas de impresión en este campo, se prefiere `body.mkprinting #wrapper …`. La misma intención visual en un archivo de Estilo personalizado puede mantener la forma más corta `.mkprinting #wrapper …`.
 
-1. Con una ventana de vista previa abierta en Marcado, cambie a Safari.
-2. En la barra de menú, elija **Desarrollar → _\<nombre de su Mac\>_ → Marcado → _\<título del documento\>_**.
-3. Safari abrirá una ventana del Inspector web adjunta a la vista previa marcada seleccionada.
+No hay **límite de tamaño ni comprobación de validez CSS** en el CSS adicional. Marked almacena e inyecta lo que introduzcas; el CSS no válido simplemente no tiene efecto en la vista previa.
+
+### HTML y otras exportaciones [additional-css-exports]
+
+El CSS adicional se aplica en la vista previa en vivo, la Vista previa de impresión/PDF, la exportación a PDF y la **exportación a HTML** cuando se incluyen los estilos; el `<body>` exportado recibe la clase `mk-has-additional-css` para que los selectores reescritos coincidan. DOCX, ODT y EPUB usan sus propias rutas de estilo y no aplican el CSS adicional de la misma manera.
+
+Usando [alta especificidad](#overridingspecificity), consultas `@media` para impresión y pantalla, y selectores `body.mkprinting` (en este campo) o selectores `.mkprinting` (en Estilos personalizados), puedes controlar prácticamente todos los aspectos de estilo con un poco de conocimiento de CSS.
+
+## Inspector web de WebKit [webkitinspector]
+
+El Inspector web de Safari es la forma más sencilla de ver exactamente qué HTML y CSS está generando Marked, y de experimentar con Estilos personalizados en vivo.
+
+### Habilitar el menú Desarrollo en Safari [enabling-the-develop-menu-in-safari]
+
+1. Abre Safari y elige {% appmenu Safari, Settings… %}.
+2. Selecciona la pestaña **Avanzado**.
+3. Activa **Mostrar funciones para desarrolladores web** (o **Mostrar el menú Desarrollo en la barra de menús** en versiones anteriores de macOS).
+
+Una vez activado, aparecerá un menú **Desarrollo** en la barra de menús de Safari.
+
+![Menú Desarrollo de Safari mostrando documentos de Marked][develop-menu]
+
+### Inspeccionar un documento de Marked [inspecting-a-marked-document]
+
+1. Con una ventana de vista previa abierta en Marked, cambia a Safari.
+2. En la barra de menús, elige **Desarrollo → _\<nombre de tu Mac\>_ → Marked → _\<título del documento\>_**.
+3. Safari abrirá una ventana del Inspector web conectada a la vista previa de Marked seleccionada.
 
 Desde aquí puedes:
 
-- Utilice la pestaña **Elementos** para inspeccionar el DOM dentro del `#wrapper` div y ver qué reglas CSS se aplican.
-- Pase el cursor sobre los elementos en el árbol DOM para resaltarlos en la ventana Marcada.
-- Utilice la barra lateral **Estilos** para modificar las reglas en vivo, luego copie los fragmentos de trabajo nuevamente en un estilo personalizado o **CSS adicional**.
-    - Después de editar CSS en la pestaña Elementos, puede obtener un resumen de sus ediciones seleccionando la pestaña Cambios
+- Usar la pestaña **Elementos** para inspeccionar el DOM dentro del div `#wrapper` y ver qué reglas CSS se aplican.
+- Pasar el cursor sobre los elementos en el árbol DOM para resaltarlos en la ventana de Marked.
+- Usar la barra lateral **Estilos** para ajustar reglas en vivo, y luego copiar los fragmentos que funcionen de vuelta a un Estilo personalizado o a **CSS adicional**.
+    - Después de editar CSS en la pestaña Elementos, puedes obtener un resumen de tus ediciones seleccionando la pestaña Cambios
 
 	![Cambios][css-changes]
-- Utilice la pestaña **Consola** para ejecutar JavaScript en la vista previa en vivo. La [API JavaScript marcada](https://markedapp.com/help/jsapi/) completa está disponible en esta consola.
-- Explore otras pestañas como **Red** al depurar recursos cargados por su documento.
+- Usar la pestaña **Consola** para ejecutar JavaScript contra la vista previa en vivo. La [API de JavaScript de Marked](https://markedapp.com/help/jsapi/) completa está disponible en esta consola.
+- Explorar otras pestañas como **Red** al depurar recursos cargados por tu documento.
 
-![Inspeccionar una vista previa marcada con Safari Web Inspector][inspecting]
+![Inspeccionando una vista previa de Marked con el Inspector web de Safari][inspecting]
 
 ## Compartir CSS personalizado [sharing-custom-css]
 
-Utilice {% appmenu Style, Share a Custom Style %} para abrir la aplicación para compartir en su navegador web. Arrastre su CSS a la zona de colocación (o haga clic para seleccionar desde el disco) y cargue el CSS para su estilo personalizado.
+Usa {% appmenu Style, Share a Custom Style %} para abrir la aplicación de compartir en tu navegador web. Arrastra tu CSS a la zona de destino (o haz clic para seleccionarlo desde el disco) y sube el CSS de tu Estilo personalizado.
 
-Los estilos compartidos deben ser aprobados por el desarrollador antes de que aparezcan en la galería, por lo que no verás resultados inmediatos.
+Los estilos compartidos deben ser aprobados por el desarrollador antes de aparecer en la galería, así que no verás resultados inmediatos.
 
 ## Otros consejos [other-tips]
 
-### Especificidad primordial [overridingspecificity]
+### Anular la especificidad [overridingspecificity]
 
-Dentro de la vista previa marcada, se agrega una clase de cuerpo basada en el nombre de archivo del estilo actual. Si la vista previa está configurada en "Suizo", habrá una clase en la etiqueta `<body>` llamada `mkstyle--swiss`. Si su CSS personalizado se llama MyCustom.css, entonces la clase del cuerpo será `mkstyle--mycustom`. Puede usar esto antes de las reglas definidas en los estilos base para anularlas. Para obtener especificidad absoluta en una regla, use también el ID #wrapper del div contenedor:
+Dentro de la vista previa de Marked, se añade una clase de body basada en el nombre de archivo del estilo actual. Si la vista previa está configurada en "Swiss", habrá una clase en la etiqueta `<body>` llamada `mkstyle--swiss`. Si tu CSS personalizado se llama MyCustom.css, la clase del body será `mkstyle--mycustom`. Puedes usar esto antes de las reglas definidas en los estilos base para anularlas. Para obtener especificidad absoluta en una regla, usa también el ID #wrapper del div contenedor:
 
-	.mkstyle--mycustom #wrapper p+p {...}
+	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Estilo del índice [table-of-contents-styling]
+### Estilo de la tabla de contenidos [table-of-contents-styling]
 
-Si usa el token `<!--toc-->` para [insertar una tabla de contenido](Special_Syntax.html#tableofcontents), puede anular la configuración de los indicadores de nivel de la tabla de contenido en un estilo personalizado usando el "#wrapper" para aumentar la especificidad:
+Si usas el token `<!--toc-->` para [insertar una tabla de contenidos](Special_Syntax.html#tableofcontents), puedes anular los ajustes de los indicadores de nivel de la Tabla de contenidos en un Estilo personalizado usando "#wrapper" para aumentar la especificidad:
 
 ```css
 #wrapper #mkreplaced-toc li {
@@ -217,7 +249,7 @@ Si usa el token `<!--toc-->` para [insertar una tabla de contenido](Special_Synt
 }
 ```
 
-Esto haría que todos los elementos de la lista en la Tabla de contenido usen una viñeta cuadrada en lugar de lo que se definió en Configuración cuando su Estilo personalizado está activo.
+Esto haría que todos los elementos de lista de la Tabla de contenidos usaran una viñeta cuadrada en lugar de lo definido en Ajustes cuando tu Estilo personalizado esté activo.
 
 [develop-menu]: images/develop-menu-600.jpg @2x width=600px height=273px "Safari Develop menu" class=center
 [inspecting]: images/inspecting-600.jpg @2x width=600px height=367px "Inspecting a Marked document in Safari" class=center
