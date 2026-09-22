@@ -18,6 +18,7 @@ Use the Export palette to generate a DOCX file from your
 Markdown. In the save dialog you can specify a built-in
 styles --- this style can easily be changed in Word just by
 opening the theme selector and selecting a new theme.
+The **Add blank lines between paragraphs** checkbox (also in {% prefspane Apps %} under Word) controls whether Marked inserts extra empty paragraphs between body paragraphs; when off, spacing comes from the Word style only.
 
 ### Headers and footers [headers-and-footers]
 
