@@ -1,0 +1,70 @@
+# Marked Settings Localization Patch
+# Locale: ja (Japanese)
+# Generated: 2026-08-13
+# Feature: Scrivener Assume Markdown + Automatic returns
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# Applications → Scrivener settings:
+# 1) Checkbox: "Assume Markdown formatting" (default ON)
+# 2) Popup: "Treat Scrivener returns as" with options:
+#    Automatic (default) | Soft line breaks (join lines) | Paragraph breaks (keep separate)
+# Automatic follows the checkbox: ON → soft join; OFF → keep separate paragraphs.
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by the returns option.
+#
+# This replaces the older *-scrivener-linebreaks.marked-l10n handoff
+# (popup labels and tooltip were renamed / expanded).
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 7
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 7
+
+"setting.scrivenerAssumeMarkdown" = "Markdown 形式を想定する";
+# EN: Assume Markdown formatting
+# DRAFT: Markdown 形式を想定する
+
+"tooltip.scrivenerAssumeMarkdown" = "バインダー ドキュメントを、Scrivener リッチテキスト構造単独ではなく、Scrivener (型付きリスト、テーブル、フェンス、段落間の空白行) で作成された Markdown として扱います。";
+# EN: Treat binder documents as Markdown authored in Scrivener (typed lists, tables, fences, blank lines between paragraphs) rather than Scrivener rich-text structure alone.
+# DRAFT: バインダー ドキュメントを、Scrivener リッチテキスト構造単独ではなく、Scrivener (型付きリスト、テーブル、フェンス、段落間の空白行) で作成された Markdown として扱います。
+
+"setting.scrivenerLineBreaks" = "Scrivener の改行を次として扱う";
+# EN: Treat Scrivener returns as
+# DRAFT: Scrivener の改行を次として扱う
+
+"setting.scrivenerLineBreaks.automatic" = "自動";
+# EN: Automatic
+# DRAFT: 自動
+
+"setting.scrivenerLineBreaks.lineBreaks" = "ソフト改行（行を結合）";
+# EN: Soft line breaks (join lines)
+# DRAFT: ソフト改行（行を結合）
+
+"setting.scrivenerLineBreaks.paragraphs" = "段落区切り（分けたまま）";
+# EN: Paragraph breaks (keep separate)
+# DRAFT: 段落区切り（分けたまま）
+
+"tooltip.scrivenerLineBreaks" = "Markdownに変換する場合のScrivenerのReturnの解釈方法。自動は Markdown 書式設定を想定します: Markdown が想定される場合はソフト改行、そうでない場合は段落が分割されます。ソフト改行 (行の結合) は、段落内の連続した改行をソフト ブレークにマージします (空白行で新しい段落が始まります。段落内の改行を保持することが条件となります)。段落区切り (別々に保つ) では、各 Return を Markdown 段落として保持します。パイプ テーブルとフェンスで囲まれたコード ブロックは影響を受けません。";
+# EN: How to interpret Return in Scrivener when converting to Markdown. Automatic follows Assume Markdown formatting: soft line breaks when Markdown is assumed, paragraph breaks when it is not. Soft line breaks (join lines) merge consecutive Returns into soft breaks inside a paragraph (a blank line starts a new paragraph; subject to Retain line breaks in paragraphs). Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Markdownに変換する場合のScrivenerのReturnの解釈方法。自動は Markdown 書式設定を想定します: Markdown が想定される場合はソフト改行、そうでない場合は段落が分割されます。ソフト改行 (行の結合) は、段落内の連続した改行をソフト ブレークにマージします (空白行で新しい段落が始まります。段落内の改行を保持することが条件となります)。段落区切り (別々に保つ) では、各 Return を Markdown 段落として保持します。パイプ テーブルとフェンスで囲まれたコード ブロックは影響を受けません。
+
+=== END Settings.strings (gaps) ===
