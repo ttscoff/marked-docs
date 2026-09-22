@@ -1,85 +1,84 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
 Opções em {% prefspane Style %}:
 
-![Configurações: Estilo][1]
+![Settings: Style][1]
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
 ### Layout e tipografia [layout-and-typography]
 
-Limitar a largura do texto na visualização
-: defina uma largura máxima para o corpo da visualização usando o controle deslizante (em pixels).
+Limitar largura do texto na visualização
+: Define uma largura máxima para o corpo da visualização usando o controle deslizante (em pixels).
 
-Hifenização automática em parágrafos
-: permite que as palavras sejam quebradas com hifenização automaticamente.
+Hifenizar automaticamente nos parágrafos
+: Permite que as palavras sejam divididas automaticamente com hifenização.
 
-Evite viúvas em manchetes e parágrafos
-: força um espaço ininterrupto entre as duas últimas palavras dos títulos e dos parágrafos para evitar que palavras únicas passem para uma nova linha.
+Impedir palavras viúvas em títulos e parágrafos
+: Força um espaço inseparável entre as duas últimas palavras de títulos e parágrafos para impedir que uma palavra isolada passe para a linha seguinte.
 
-Gere citações e pontuação tipograficamente corretas
-: use SmartyPants para citações inteligentes, conversão de reticências e outros recursos de tipografia (MultiMarkdown).
+Gerar aspas e pontuação tipograficamente corretas
+: Usa o SmartyPants para aspas inteligentes, conversão de reticências e outros recursos tipográficos (MultiMarkdown).
 
-Coloque marcadores de notas de rodapé com colchetes
-: se marcado, use a formatação MultiMarkdown padrão para marcadores de notas de rodapé ([1]). Desmarque para retirar os colchetes.
+Envolver marcadores de notas de rodapé em colchetes
+: Se marcado, usa a formatação padrão do MultiMarkdown para marcadores de notas de rodapé ([1]). Desmarque para remover os colchetes.
 
-Ativar Outline para extensões
-: ativa automaticamente o modo Outline para arquivos com extensões listadas.
+Ativar Estrutura de Tópicos para extensões
+: Ativa automaticamente o modo Estrutura de Tópicos para arquivos com as extensões listadas.
 
-Use o estilo APA
-: use contornos de estilo APA em vez do formato decimal padrão.
+Usar Estilo APA
+: Usa estruturas de tópicos no estilo APA em vez do formato Decimal padrão.
 
-Estilize blocos textuais (código) como poesia
-: Se marcado, o código recuado por tabulação, cercado ou incluído é exibido como poesia em vez de um bloco de código (sem realce de sintaxe e estilo especial dependendo do tema).
+Estilizar blocos verbatim (código) como poesia
+: Se marcado, código com indentação por tabulação, delimitado por cercas ou incluído é exibido como poesia em vez de bloco de código (sem destaque de sintaxe, com estilo especial dependendo do tema).
 
-Permitir que os temas envolvam texto dentro de blocos de código
-: Se marcado, os temas podem causar quebra automática dentro de `pre>code` blocos. Se desmarcado, o estouro horizontal sempre rolará.
+Permitir que os temas quebrem o texto dentro de blocos de código
+: Se marcado, os temas podem causar quebra de linha dentro de blocos `pre>code`. Se desmarcado, o excesso horizontal sempre será rolável.
 
-Sempre quebrar o código
-: força o agrupamento dos blocos de código, independentemente das configurações do tema (substitui o comportamento do agrupamento do tema).
+Sempre quebrar linha no código
+: Força a quebra de linha nos blocos de código independentemente das configurações do tema (substitui o comportamento de quebra definido pelo tema).
 
 Detectar e estilizar texto RTL
-: Detecte o idioma por elemento no documento e estilize da direita para a esquerda de acordo.
+: Detecta o idioma de cada elemento do documento e aplica o estilo da direita para a esquerda (RTL) conforme necessário.
 
 ### Tema [theme]
 
-Gerenciar estilos
-: Abre a janela [Gerenciador de Estilo](Style_Manager.html). Adicione arquivos CSS da sua unidade para que apareçam nos menus do seletor de estilo. Use o botão `Add New Style` ou arraste os arquivos CSS para esta janela. Arraste para reordenar e use as caixas de seleção para ativar ou desativar Estilos.
+Gerenciar Estilos
+: Abre a janela do [Gerenciador de Estilos](Style_Manager.html). Adicione arquivos CSS do seu disco para que apareçam nos menus de seleção de Estilo. Use o botão `Add New Style` ou arraste arquivos CSS para esta janela. Arraste para reordenar e use as caixas de seleção para ativar ou desativar Estilos.
 
-Mais temas
-: abra a galeria de temas online para navegar e instalar estilos adicionais.
+Mais Temas
+: Abre a galeria de temas on-line para procurar e instalar estilos adicionais.
 
 Estilo padrão
-: O estilo selecionado aqui será carregado para todas as novas janelas, a menos que um [estilo específico do documento seja indicado nos metadados](Per-Document_Settings.html) (por exemplo, "Estilo Marcado: Grump").
+: O estilo selecionado aqui será carregado em todas as novas janelas, a menos que um [estilo específico do documento seja indicado nos metadados](Per-Document_Settings.html) (por exemplo, "Marked Style: Grump").
 
-Rastreie alterações de CSS
-: quando ativado, Marked observará o estilo atual em busca de alterações no disco, auxiliando na edição de estilo personalizado e no desenvolvimento web.
+Monitorar alterações no CSS
+: Quando ativado, o Marked observa o Estilo atual em busca de alterações no disco, o que ajuda na edição de estilos personalizados e no desenvolvimento web.
 
 CSS adicional
-: CSS adicionado aqui será incluído após a folha de estilo normal com todos os temas. Entre outras coisas, você pode usá-lo para substituir configurações gerais sem editar estilos internos.
-: Isso se aplica a todos os documentos e estilos. Se você deseja aplicar CSS personalizado a documentos com base em condições, use Regras Personalizadas em {% prefspane Processor %}.
+: O CSS adicionado aqui é anexado após a folha de estilo normal de cada tema. É uma sobreposição parcial, não um substituto completo do tema.
+: O Marked reescreve os seletores neste campo (por exemplo, regras de impressão devem usar `body.mkprinting #wrapper …`). Não há limite de tamanho nem verificação de validade --- veja [Criando CSS Personalizado](Writing_Custom_CSS.html#additional-css-settings).
+: Isso se aplica a todos os documentos e todos os estilos, incluindo exportação em HTML quando os estilos estão incluídos. Se quiser aplicar CSS personalizado a documentos com base em condições, use Regras Personalizadas em {% prefspane Processor %}.
 
-### Incluir scripts [include-scripts]
+### Incluir Scripts [include-scripts]
 
-Destaque de sintaxe
-: Ative destaque.js [destaque de sintaxe](Syntax_Highlighting.html) para blocos de código. Selecione um tema no menu suspenso.
-: Se **Somente se o idioma especificado** estiver marcado, o realce de sintaxe só será aplicado a blocos de código protegidos com um idioma especificado.
+Destaque de Sintaxe
+: Ativa o [destaque de sintaxe](Syntax_Highlighting.html) do highlight.js para blocos de código. Selecione um tema no menu suspenso.
+: Se **Apenas se a linguagem for especificada** estiver marcado, o destaque de sintaxe só será aplicado a blocos de código delimitados por cercas com uma linguagem especificada.
 
-Habilitar MathJax
-: Carrega [MathJax](MathJax.html) para exibir equações MathML. Escolha **Local** (empacotado) ou **CDN** no menu suspenso.
-: **Pacotes Adicionais** abre uma planilha para incluir pacotes MathJax extras (por exemplo Física e Química).
-: **Configuração avançada** abre uma planilha para configuração personalizada do MathJax.
+Ativar MathJax
+: Carrega o [MathJax](MathJax.html) para exibir equações MathML. Escolha **Local** (incluído) ou **CDN** no menu suspenso.
+: **Pacotes Adicionais** abre uma folha para incluir pacotes extras do MathJax (por exemplo, Física e Química).
+: **Configuração Avançada** abre uma folha para configuração personalizada do MathJax.
 
-Habilitar KaTeX
-: Carrega [KaTeX](MathJax.html#katex) como uma alternativa ao MathJax. Apenas um ou outro pode ser selecionado.
+Ativar KaTeX
+: Carrega o [KaTeX](MathJax.html#katex) como alternativa ao MathJax. Apenas um dos dois pode ser selecionado.
 
-Equações numéricas
-: Se aplicável, Marcado adicionará números de figuras às equações renderizadas. Escolha **Lado Esquerdo** ou **Lado Direito** para numeração. Se estiver usando MathJax, você pode escolher **AMS apenas** para numerar apenas equações AMS.
+Numerar equações
+: Quando aplicável, o Marked adiciona numeração às equações renderizadas. Escolha **Lado Esquerdo** ou **Lado Direito** para a numeração. Se estiver usando o MathJax, você pode escolher **Somente AMS** para numerar apenas as equações AMS.
 
-Sereia
-: carrega [mermaid.js](https://mermaid.js) de um CDN para ativar a diagramação no estilo Markdown. O gancho necessário para renderizar diagramas Mermaid em cada atualização de documento é incluído automaticamente.
+Mermaid
+: Carrega o [mermaid.js](https://mermaid.js) de uma CDN para habilitar a criação de diagramas em estilo Markdown. O hook necessário para renderizar diagramas Mermaid a cada atualização do documento é incluído automaticamente.
 
-Diagramas de panorâmica e zoom
-: quando diagramas Mermaid estiverem presentes, ative o zoom com {% kbd cmd %}-rolagem e panorâmica clicando e arrastando.
+Diagramas com pan e zoom
+: Quando há diagramas Mermaid presentes, ative o zoom com {% kbd cmd %}-scroll e a movimentação (pan) clicando e arrastando.
