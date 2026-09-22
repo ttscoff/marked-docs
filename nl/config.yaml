@@ -1150,6 +1150,19 @@ Sections:
     - gfm
     - specification
     wiki_keywords: [discount syntax, gfm syntax]
+  - title: Apex (bèta)
+    file: Apex
+    description: Apex is een uniforme Markdown-processor. Ondersteuning in Marked is bèta.
+    keywords:
+    - apex
+    wiki_keywords: [apex, apex markdown, unified markdown]
+  - title: Apex-configuratie
+    file: Apex_Configuration
+    description: Opties in het blad Apex configureren.
+    keywords:
+    - apex
+    - configuratie
+    wiki_keywords: [Apex configureren, Apex-configuratie]
 - title: Credits
   folder: Credits
   pages:

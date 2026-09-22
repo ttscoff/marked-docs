@@ -1,0 +1,189 @@
+# Help translation gap — de — Apex configuration
+# Feature: Apex configuration help page, Processor page notes, wiki keyword apex
+# Generated: 2026-09-18
+#
+# German help is treated as finished. Do not machine-overwrite polished German
+# pages. Translate the ENGLISH TARGET blocks below.
+#
+# Return: PR to ttscoff/marked-docs, or reply with:
+#   - a new de/Apex_Configuration.md
+#   - the added section for de/Settings_Processor.md
+#   - the YAML entries for de/config.yaml
+
+=== LOCATION ===
+File: de/Apex_Configuration.md (new)
+Also update: de/Settings_Processor.md (append)
+Also update: de/config.yaml (add Apex and Apex configuration after Discount_GFM_Spec, before Danksagungen)
+Also update: de/config.yaml Apex page wiki_keywords must include the bare keyword apex
+
+=== CURRENT GERMAN (replace this block) ===
+(none — new page de/Apex_Configuration.md)
+
+de/Settings_Processor.md currently ends with:
+
+`~text~` als Unterstreichung rendern
+: Ist diese Option aktiviert, wird `~text~` in einzelnen Tilden als unterstrichen gerendert. Das steht im Konflikt mit der MultiMarkdown-Syntax für Tiefstellung und ist standardmäßig deaktiviert.
+
+de/config.yaml has no Apex page yet. Insert the new pages after Discount_GFM_Spec.
+
+=== ENGLISH TARGET (translate to German) ===
+
+--- de/Apex_Configuration.md ---
+
+# <%= @title %>
+
+These options are in the **Configure Apex** sheet. Open it from {% prefspane Processor %} when the default processor is **Apex (beta)**. Every option here applies only to Apex. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked's other settings.
+
+See [Apex (beta)](Apex.html) for what Apex is and the syntax it covers.
+
+Checkboxes in the sheet override the same settings in an Apex metadata file. File paths are optional. A path Marked cannot read is skipped, and the preview still runs.
+
+## Files [files]
+
+CSL
+: A Citation Style Language file (`.csl`) used when Apex formats a bibliography. Leave this empty to use the style named in the document or in the metadata file.
+
+Bibliography
+: One or more bibliography files. Accepted types are BibTeX (`.bib`), CSL JSON (`.json`), and CSL YAML (`.yml`, `.yaml`). Click **Add** for another file. Apex looks in these files when resolving citations.
+
+Concordance
+: One or more concordance files (`.tsv`, `.txt`, or `.csv`) used when building an index. Click **Add** for another file.
+
+Metadata file
+: An external metadata file (`.yml`, `.yaml`, `.txt`, or `.md`) merged before Apex runs. Document metadata still takes precedence where both set the same key. Checkbox options in this sheet win over values in the metadata file.
+
+## Syntax [syntax]
+
+On by default unless noted.
+
+Tables
+: Pipe tables, including a header row and a separator row.
+
+Footnotes
+: Reference footnotes (`[^id]`) and inline footnotes.
+
+Definition lists
+: Term-and-definition lists (`: definition`).
+
+Superscript / subscript
+: `^super^` and `~sub~`. Turn this off if single tildes should not mean subscript. Marked's **Render ~text~ as underscore** setting is separate and conflicts with subscript.
+
+Strikethrough
+: `~~deleted~~`.
+
+Autolink URLs and emails
+: Bare `https://` URLs and email addresses become links.
+
+Fenced divs
+: `::: name` blocks that wrap a section in a `<div>`.
+
+Bracketed spans
+: Inline attribute spans such as `[text]{.class}`.
+
+Alphabetic lists
+: Lists that start with `a.` or `A.` as well as numbers.
+
+Mixed list markers
+: A list may mix `*`, `+`, and `-` markers and still be one list.
+
+Markdown in HTML
+: Markdown inside HTML block tags is processed. Some markup can still break.
+
+Metadata transforms
+: `[%key]` placeholders are replaced from document metadata.
+
+## Tables and images [tables-and-images]
+
+Grid tables
+: Grid-style tables drawn with `+` and `|`. Off by default.
+
+Relaxed tables
+: Pipe tables may omit the leading and trailing pipes. On by default.
+
+Per-cell alignment
+: Alignment markers in a table cell override the column alignment. On by default.
+
+Image captions
+: An image title, or the alt text when there is no title, becomes a visible caption. On by default.
+
+Title-only captions
+: Only the image title is used as the caption. Alt text is ignored. Off by default. Has no effect unless **Image captions** is on.
+
+## Links and indexes [links-and-indexes]
+
+Wiki links
+: Apex converts `[[wiki links]]`. Off by default. When this is on, Marked skips its own Preview "Convert wiki links" pass for that document, and Apex may resolve the target file differently than Marked does. The default extension comes from Marked's wiki link settings.
+
+Sanitize wiki link URLs
+: Generated wiki-link URLs are lowercased, apostrophes are removed, and other characters that are not letters or numbers are replaced. Off by default. Available only when **Wiki links** is on.
+
+Index processing
+: Recognize index markers (MultiMarkdown, mmark, Leanpub, and textindex styles). On by default.
+
+Suppress index output
+: Still read index markers, but do not print the generated index. Off by default.
+
+## Callouts (extra) [callouts-extra]
+
+Both are off by default. Obsidian and Bear callouts (`> [!NOTE]`) are handled by Marked before Apex and are not controlled here.
+
+Python-Markdown callouts
+: `!!! note` style callouts.
+
+Quarto callouts
+: Quarto `::: {.callout-note}` blocks.
+
+## Accessibility [accessibility]
+
+Both are off by default.
+
+ARIA labels
+: Add ARIA attributes that describe the structure of the HTML Apex emits.
+
+Header anchors
+: Emit an `<a>` anchor on each heading instead of only an `id` on the heading.
+
+--- de/Settings_Processor.md (add to the processor section, and append the annotations item) ---
+
+Default Markdown processor sentence, add Apex and link to the main Apex page:
+
+**Apex (beta)** covers the features people usually pick CommonMark, GitHub Flavored Markdown, MultiMarkdown, or Kramdown for. See [Apex (beta)](Apex.html).
+
+After Full Disk Access:
+
+Configure Apex
+: When **Apex (beta)** is the default processor, click **Configure Apex** to set syntax, citation files, and index options. See [Apex configuration](Apex_Configuration.html).
+
+At the end of the Rendering section:
+
+Remove iA Writer annotations
+: When enabled, Marked removes the iA Writer annotations block at the end of a file before preview. That block is an `Annotations:` line containing a SHA-256 hash, then `@name` and `&name` range lines, often with a lone `---` just above it. Off by default. If ordinary prose follows the `Annotations:` line, the file is left unchanged.
+
+--- de/config.yaml (insert before the Danksagungen section) ---
+
+  - title: Apex (beta)
+    file: Apex
+    description: Apex is a unified Markdown processor that consolidates CommonMark, GFM, MultiMarkdown, and Kramdown features. Marked support is in beta.
+    keywords:
+    - apex
+    - unified
+    - beta
+    - processor
+    - markdown
+    wiki_keywords: [apex, apex markdown, unified markdown]
+  - title: Apex configuration
+    file: Apex_Configuration
+    description: Options in the Configure Apex sheet, including syntax switches, citation and bibliography files, indexes, callouts, and accessibility.
+    keywords:
+    - apex
+    - configuration
+    - citations
+    - bibliography
+    - csl
+    wiki_keywords: [configure apex, apex options, apex configuration]
+
+=== NOTES ===
+- Keep code and literals unchanged: `[^id]`, `^super^`, `~sub~`, `~~deleted~~`, `::: name`, `[text]{.class}`, `[%key]`, `> [!NOTE]`, `!!! note`, `::: {.callout-note}`, `.csl`, `.bib`, SHA-256, `Annotations:`, `@name`, `&name`, `---`
+- The wiki keyword on the Apex page must include the bare word apex so other pages can link mentions of Apex
+- UI labels **Configure Apex**, **Apex (beta)**, **Add**, **Grant** should match the German Settings.strings if a translation already exists; otherwise keep the English label and add the German in parentheses
+- Do not machine-overwrite other German pages

@@ -1250,6 +1250,30 @@ Sections:
     - spezifikation
     wiki_keywords:
     - discount-gfm-spezifikation
+  - title: Apex (Beta)
+    file: Apex
+    description: Apex ist ein vereinheitlichter Markdown-Prozessor, der die Funktionen von CommonMark, GFM, MultiMarkdown und Kramdown zusammenführt. Die Unterstützung in Marked ist in der Beta-Phase.
+    keywords:
+    - apex
+    - vereinheitlicht
+    - beta
+    - prozessor
+    - markdown
+    wiki_keywords:
+    - apex
+  - title: Apex-Konfiguration
+    file: Apex_Configuration
+    description: Die Optionen im Dialogblatt „Configure Apex“ – Syntaxschalter, Zitations- und Bibliografiedateien, Indexe, Callouts und Barrierefreiheit.
+    keywords:
+    - apex
+    - konfiguration
+    - zitate
+    - literaturverzeichnis
+    - bibliografie
+    - csl
+    wiki_keywords:
+    - apex konfigurieren
+    - apex-konfiguration
 - title: Danksagungen
   folder: Credits
   pages:

@@ -92,6 +92,7 @@ Press "?" at any time to view the following shortcuts in the Preview window.
 |                  **,**/**.** | Navigate All Headers              |
 |            **&lt;**/**&gt;** | Navigate H1/H2 Headers            |
 |                        **e** | Jump to Most Recent Edit Point    |
+|                  **c**/**C** | Cycle comments and footnotes      |
 |                        **s** | Auto-scroll                       |
 |                        **S** | Reverse Auto-scroll               |
 | **{{shift}}{{l}}**/**{{r}}** | Speed up/Slow down auto-scroll    |
@@ -104,6 +105,18 @@ Press "?" at any time to view the following shortcuts in the Preview window.
 |                  **h**/**?** | Show/Hide Help HUD                |
 |        **{{shift}}{{cmd}}F** | Focus view                        |
 [Preview Navigation]
+
+### Reading Mode [readingmode]
+
+While Reading Mode is active, `j`/`k` move by reading unit instead of scrolling, and `h` highlights instead of opening this HUD (press `?` for the HUD).
+
+|                     Shortcut | Function                                      |
+| ---------------------------: | :-------------------------------------------- |
+|         **{{ctrl}}{{opt}}R** | Toggle Reading Mode                           |
+| **j**/**k** or **{{d}}**/**{{u}}** | Next/Previous reading unit              |
+|                        **h** | Highlight selection or toggle current unit    |
+|                  **c**/**C** | Cycle comments and footnotes                  |
+[Reading Mode]
 
 ### Table of Contents Navigation [TableofContentsNavigation]
 

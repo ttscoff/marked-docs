@@ -62,3 +62,13 @@ Rendering `==highlight==` e `~~delete~~`
 
 Rendi `~text~` come carattere di sottolineatura
 : Se questa opzione è abilitata, `~text~` circondato da singole tilde verrà visualizzato come sottolineato. Ciò è in conflitto con la sintassi MultiMarkdown per il pedice ed è disabilitato per impostazione predefinita.
+
+Rimuovi le annotazioni di iA Writer
+: Se è attivo, Marked rimuove il blocco di annotazioni di iA Writer alla fine del file prima dell'anteprima. Quel blocco è una riga `Annotations:` con un hash SHA-256, poi righe di intervalli `@nome` e `&nome`, spesso con un `---` da solo subito sopra. Disattivo per impostazione predefinita. Se dopo la riga `Annotations:` c'è prosa normale, il file non viene modificato.
+
+### Apex [apex]
+
+**Apex (beta)** è uno dei processori integrati. Copre le funzioni per cui di solito si sceglie CommonMark, GitHub Flavored Markdown, MultiMarkdown o Kramdown. Vedi [Apex (beta)](Apex.html).
+
+Configura Apex
+: Quando **Apex (beta)** è il processore predefinito, **Configura Apex** apre il foglio delle opzioni. Vedi [Configurazione di Apex](Apex_Configuration.html).
