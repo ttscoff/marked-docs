@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: hu (Hungarian)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "ARIA-címkék";
+# EN: ARIA labels
+# DRAFT: ARIA-címkék
+
+"setting.apexOptAlphaLists" = "Betűrendes listák";
+# EN: Alphabetic lists
+# DRAFT: Betűrendes listák
+
+"setting.apexOptAutolink" = "URL-ek és e-mailek automatikus hivatkozása";
+# EN: Autolink URLs and emails
+# DRAFT: URL-ek és e-mailek automatikus hivatkozása
+
+"setting.apexOptBibliographyPaths" = "Bibliográfia";
+# EN: Bibliography
+# DRAFT: Bibliográfia
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "Konkordancia";
+# EN: Concordance
+# DRAFT: Konkordancia
+
+"setting.apexOptDefinitionLists" = "Definíciólisták";
+# EN: Definition lists
+# DRAFT: Definíciólisták
+
+"setting.apexOptDivs" = "Keretezett divek";
+# EN: Fenced divs
+# DRAFT: Keretezett divek
+
+"setting.apexOptFootnotes" = "Lábjegyzetek";
+# EN: Footnotes
+# DRAFT: Lábjegyzetek
+
+"setting.apexOptGridTables" = "Rácstáblázatok";
+# EN: Grid tables
+# DRAFT: Rácstáblázatok
+
+"setting.apexOptHeaderAnchors" = "Címsor-<a>-horgonyok";
+# EN: Header <a> anchors
+# DRAFT: Címsor-<a>-horgonyok
+
+"setting.apexOptImageCaptions" = "Képaláírások";
+# EN: Image captions
+# DRAFT: Képaláírások
+
+"setting.apexOptIndices" = "Indexfeldolgozás";
+# EN: Index processing
+# DRAFT: Indexfeldolgozás
+
+"setting.apexOptMarkdownInHTML" = "Markdown HTML-ben";
+# EN: Markdown in HTML
+# DRAFT: Markdown HTML-ben
+
+"setting.apexOptMetaFilePath" = "Metaadatfájl";
+# EN: Metadata file
+# DRAFT: Metaadatfájl
+
+"setting.apexOptMetadataTransforms" = "Metaadat-átalakítások";
+# EN: Metadata transforms
+# DRAFT: Metaadat-átalakítások
+
+"setting.apexOptMixedListMarkers" = "Vegyes listajelek";
+# EN: Mixed list markers
+# DRAFT: Vegyes listajelek
+
+"setting.apexOptPerCellAlignment" = "Cellánkénti igazítás";
+# EN: Per-cell alignment
+# DRAFT: Cellánkénti igazítás
+
+"setting.apexOptPyCallouts" = "Python-Markdown hívások (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Python-Markdown hívások (!!!)
+
+"setting.apexOptQuartoCallouts" = "Quarto hívások";
+# EN: Quarto callouts
+# DRAFT: Quarto hívások
+
+"setting.apexOptRelaxedTables" = "Lazább táblázatok";
+# EN: Relaxed tables
+# DRAFT: Lazább táblázatok
+
+"setting.apexOptSpans" = "Zárójelezett spanek";
+# EN: Bracketed spans
+# DRAFT: Zárójelezett spanek
+
+"setting.apexOptStrikethrough" = "Áthúzás";
+# EN: Strikethrough
+# DRAFT: Áthúzás
+
+"setting.apexOptSupSub" = "Felső / alsó index";
+# EN: Superscript / subscript
+# DRAFT: Felső / alsó index
+
+"setting.apexOptSuppressIndex" = "Indexkimenet elnyomása";
+# EN: Suppress index output
+# DRAFT: Indexkimenet elnyomása
+
+"setting.apexOptTables" = "Táblázatok";
+# EN: Tables
+# DRAFT: Táblázatok
+
+"setting.apexOptTitleCaptionsOnly" = "Csak címaláírások";
+# EN: Title-only captions
+# DRAFT: Csak címaláírások
+
+"setting.apexOptWikiLinks" = "Wiki-hivatkozások";
+# EN: Wiki links
+# DRAFT: Wiki-hivatkozások
+
+"setting.apexOptWikiSanitize" = "Wiki-hivatkozás URL-ek tisztítása";
+# EN: Sanitize wiki link URLs
+# DRAFT: Wiki-hivatkozás URL-ek tisztítása
+
+"setting.configureApex" = "Apex beállítások";
+# EN: Apex options
+# DRAFT: Apex beállítások
+
+"setting.configureApex.button" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.configureApex.done" = "Kész";
+# EN: Done
+# DRAFT: Kész
+
+"setting.configureApex.files.add" = "Hozzáadás";
+# EN: Add
+# DRAFT: Hozzáadás
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "Válasszon fájlt az Apexhez.";
+# EN: Choose a file for Apex.
+# DRAFT: Válasszon fájlt az Apexhez.
+
+"setting.configureApex.files.browseTooltip" = "Fájl kiválasztása";
+# EN: Choose a file
+# DRAFT: Fájl kiválasztása
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "Fájlútvonal törlése";
+# EN: Clear this file path
+# DRAFT: Fájlútvonal törlése
+
+"setting.configureApex.files.pathPlaceholder" = "Fájlútvonal";
+# EN: File path
+# DRAFT: Fájlútvonal
+
+"setting.configureApex.files.statusAvailable" = "A fájl elérhető";
+# EN: File is available
+# DRAFT: A fájl elérhető
+
+"setting.configureApex.files.statusMissing" = "A fájl nem létezik";
+# EN: The file does not exist
+# DRAFT: A fájl nem létezik
+
+"setting.configureApex.files.statusPermission" = "A Markednek nincs jogosultsága a fájl olvasásához";
+# EN: Marked does not have permission to read this file
+# DRAFT: A Markednek nincs jogosultsága a fájl olvasásához
+
+"setting.configureApex.files.statusUnavailable" = "A fájl nem elérhető";
+# EN: File is unavailable
+# DRAFT: A fájl nem elérhető
+
+"setting.configureApex.group.accessibility" = "Akadálymentesség";
+# EN: Accessibility
+# DRAFT: Akadálymentesség
+
+"setting.configureApex.group.callouts" = "Hívások (extra)";
+# EN: Callouts (extra)
+# DRAFT: Hívások (extra)
+
+"setting.configureApex.group.files" = "Fájlok";
+# EN: Files
+# DRAFT: Fájlok
+
+"setting.configureApex.group.linksIndexes" = "Hivatkozások és indexek";
+# EN: Links & indexes
+# DRAFT: Hivatkozások és indexek
+
+"setting.configureApex.group.syntax" = "Szintaxis";
+# EN: Syntax
+# DRAFT: Szintaxis
+
+"setting.configureApex.group.tablesImages" = "Táblázatok és képek";
+# EN: Tables & images
+# DRAFT: Táblázatok és képek
+
+"setting.configureApex.intro" = "Ezek a beállítások csak az Apexre vonatkoznak. A matematika, a CriticMarkup, a címkék, a fájlbeillesztések és a címsor-azonosítók a Marked többi beállításában maradnak. Ha az Apex wiki-hivatkozások be vannak kapcsolva, az Apex konvertálja a [[wiki]] hivatkozásokat, és a Marked Előnézet „Wiki-hivatkozások konvertálása” lépése kimarad; az Apex fájlfeloldása eltérhet a Markedétől.";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: Ezek a beállítások csak az Apexre vonatkoznak. A matematika, a CriticMarkup, a címkék, a fájlbeillesztések és a címsor-azonosítók a Marked többi beállításában maradnak. Ha az Apex wiki-hivatkozások be vannak kapcsolva, az Apex konvertálja a [[wiki]] hivatkozásokat, és a Marked Előnézet „Wiki-hivatkozások konvertálása” lépése kimarad; az Apex fájlfeloldása eltérhet a Markedétől.
+
+"setting.configureApex.sheetTitle" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.processor.apexBeta" = "Apex (béta)";
+# EN: Apex (beta)
+# DRAFT: Apex (béta)
+
+"setting.removeIAWriterAnnotations" = "iA Writer-jegyzetek eltávolítása";
+# EN: Remove iA Writer annotations
+# DRAFT: iA Writer-jegyzetek eltávolítása
+
+"tooltip.configureApex" = "Opcionális Apex szintaxis- és kimeneti funkciók (csak Apex processzor).";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: Opcionális Apex szintaxis- és kimeneti funkciók (csak Apex processzor).
+
+"tooltip.removeIAWriterAnnotations" = "Ha be van kapcsolva, a fájl végén lévő iA Writer-jegyzetblokk az előnézet előtt eltávolításra kerül. Alapértelmezés szerint ki.";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: Ha be van kapcsolva, a fájl végén lévő iA Writer-jegyzetblokk az előnézet előtt eltávolításra kerül. Alapértelmezés szerint ki.
+
+=== END Settings.strings ===
