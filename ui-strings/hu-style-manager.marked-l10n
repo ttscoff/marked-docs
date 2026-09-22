@@ -1,0 +1,286 @@
+# Marked Localization Update
+# Locale: hu (Hungarian)
+# Feature: Style Manager window
+# Generated: 2026-08-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, %lu, \n, HTML tags, and keyboard symbols.
+# Do not translate product names (Marked) unless your locale normally localizes them.
+#
+# DRAFT lines are machine-translated starting points for review.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 65
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 65
+# Style Manager window chrome, alerts, source badges, and preview sample copy.
+
+"Manage Styles" = "Stílusok kezelése";
+# EN: Manage Styles
+# DRAFT: Stílusok kezelése
+
+"Styles" = "Stílusok";
+# EN: Styles
+# DRAFT: Stílusok
+
+"Filter Styles" = "Szűrési stílusok";
+# EN: Filter Styles
+# DRAFT: Szűrési stílusok
+
+"Preview" = "Előnézet";
+# EN: Preview
+# DRAFT: Előnézet
+
+"Preview: —" = "Előnézet: —";
+# EN: Preview: —
+# DRAFT: Előnézet: —
+
+"Preview: %@" = "Előnézet: %@";
+# EN: Preview: %@
+# DRAFT: Előnézet: %@
+
+"Dark Mode" = "Sötét mód";
+# EN: Dark Mode
+# DRAFT: Sötét mód
+
+"Add New Style" = "Új stílus hozzáadása";
+# EN: Add New Style
+# DRAFT: Új stílus hozzáadása
+
+"Generate Style" = "Stílus generálása";
+# EN: Generate Style
+# DRAFT: Stílus generálása
+
+"Style Gallery" = "Stílusgaléria";
+# EN: Style Gallery
+# DRAFT: Stílusgaléria
+
+"Show disabled styles" = "Letiltott stílusok megjelenítése";
+# EN: Show disabled styles
+# DRAFT: Letiltott stílusok megjelenítése
+
+"Restore built-in styles" = "A beépített stílusok visszaállítása";
+# EN: Restore built-in styles
+# DRAFT: A beépített stílusok visszaállítása
+
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)" = "Parancsikonok frissítése sorrend alapján (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+# DRAFT: Parancsikonok frissítése sorrend alapján (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+
+"Order" = "Rendelés";
+# EN: Order
+# DRAFT: Rendelés
+
+"Name" = "Név";
+# EN: Name
+# DRAFT: Név
+
+"Source" = "Forrás";
+# EN: Source
+# DRAFT: Forrás
+
+"Controls" = "Vezérlők";
+# EN: Controls
+# DRAFT: Vezérlők
+
+"Builtin" = "Beépített";
+# EN: Builtin
+# DRAFT: Beépített
+
+"Custom" = "Custom";
+# EN: Custom
+
+"Duplicated" = "Megkettőzött";
+# EN: Duplicated
+# DRAFT: Megkettőzött
+
+"Duplicate" = "Másolat";
+# EN: Duplicate
+# DRAFT: Másolat
+
+"Delete" = "Töröl";
+# EN: Delete
+# DRAFT: Töröl
+
+"Reveal in Finder" = "Fedezd fel a Finderben";
+# EN: Reveal in Finder
+# DRAFT: Fedezd fel a Finderben
+
+"Edit in default editor" = "Szerkesztés az alapértelmezett szerkesztőben";
+# EN: Edit in default editor
+# DRAFT: Szerkesztés az alapértelmezett szerkesztőben
+
+"Style Preview" = "Stílus előnézete";
+# EN: Style Preview
+# DRAFT: Stílus előnézete
+
+"Heading 1 styling" = "Címsor 1 stílus";
+# EN: Heading 1 styling
+# DRAFT: Címsor 1 stílus
+
+"Heading 2 styling" = "2. címsor stílusa";
+# EN: Heading 2 styling
+# DRAFT: 2. címsor stílusa
+
+"Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing." = "A bekezdésstílus <strong>félkövér szöveget</strong>, <em>dőlt szöveget</em>, sorközi <code>kódszöveget</code> és egy olvasható mondatot tartalmaz a térközhöz.";
+# EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
+# DRAFT: A bekezdésstílus <strong>félkövér szöveget</strong>, <em>dőlt szöveget</em>, sorközi <code>kódszöveget</code> és egy olvasható mondatot tartalmaz a térközhöz.
+
+"Move to Application Support" = "Lépjen az Alkalmazástámogatás oldalra";
+# EN: Move to Application Support
+# DRAFT: Lépjen az Alkalmazástámogatás oldalra
+
+"Copy to Application Support" = "Másolás az alkalmazástámogatásba";
+# EN: Copy to Application Support
+# DRAFT: Másolás az alkalmazástámogatásba
+
+"Do you want to copy this Style to Marked's Application Support folder?" = "Szeretné átmásolni ezt a stílust Marked Alkalmazástámogatás mappájába?";
+# EN: Do you want to copy this Style to Marked's Application Support folder?
+# DRAFT: Szeretné átmásolni ezt a stílust Marked Alkalmazástámogatás mappájába?
+
+"Do you want to copy these Styles to Marked's Application Support folder?" = "Szeretné átmásolni ezeket a stílusokat Marked alkalmazástámogatási mappájába?";
+# EN: Do you want to copy these Styles to Marked's Application Support folder?
+# DRAFT: Szeretné átmásolni ezeket a stílusokat Marked alkalmazástámogatási mappájába?
+
+"Styles will be stored in:
+%@" = "A stílusok a következő helyen lesznek tárolva:
+%@";
+# EN: Styles will be stored in:\n%@
+# DRAFT: A stílusok a következő helyen lesznek tárolva:\n%@
+
+"Use from Current Location" = "Használja a jelenlegi helyről";
+# EN: Use from Current Location
+# DRAFT: Használja a jelenlegi helyről
+
+"Remove original CSS file" = "Távolítsa el az eredeti CSS-fájlt";
+# EN: Remove original CSS file
+# DRAFT: Távolítsa el az eredeti CSS-fájlt
+
+"Could not add the style file." = "Nem sikerült hozzáadni a stílusfájlt.";
+# EN: Could not add the style file.
+# DRAFT: Nem sikerült hozzáadni a stílusfájlt.
+
+"Unknown error." = "Ismeretlen hiba.";
+# EN: Unknown error.
+# DRAFT: Ismeretlen hiba.
+
+"Add a Custom Style" = "Adjon hozzá egy Custom stílust";
+# EN: Add a Custom Style
+# DRAFT: Adjon hozzá egy Custom stílust
+
+"Add %lu Custom Styles" = "%lu Custom Stílusok hozzáadása";
+# EN: Add %lu Custom Styles
+# DRAFT: %lu Custom Stílusok hozzáadása
+
+"Add Styles" = "Stílusok hozzáadása";
+# EN: Add Styles
+# DRAFT: Stílusok hozzáadása
+
+"Add Custom Styles" = "Adjon hozzá Custom stílusokat";
+# EN: Add Custom Styles
+# DRAFT: Adjon hozzá Custom stílusokat
+
+"Select one or more CSS files to add to your custom styles." = "Válasszon ki egy vagy több CSS-fájlt, amelyet hozzáadhat egyéni stílusaihoz.";
+# EN: Select one or more CSS files to add to your custom styles.
+# DRAFT: Válasszon ki egy vagy több CSS-fájlt, amelyet hozzáadhat egyéni stílusaihoz.
+
+"Restore Default Styles" = "Alapértelmezett stílusok visszaállítása";
+# EN: Restore Default Styles
+# DRAFT: Alapértelmezett stílusok visszaállítása
+
+"Built-in styles will be re-enabled. Restore the default built-in order as well?" = "A beépített stílusok újra engedélyezve lesznek. Visszaállítja az alapértelmezett beépített sorrendet is?";
+# EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
+# DRAFT: A beépített stílusok újra engedélyezve lesznek. Visszaállítja az alapértelmezett beépített sorrendet is?
+
+"Keep Current Order" = "Tartsa meg az aktuális sorrendet";
+# EN: Keep Current Order
+# DRAFT: Tartsa meg az aktuális sorrendet
+
+"Restore Default Order" = "Alapértelmezett sorrend visszaállítása";
+# EN: Restore Default Order
+# DRAFT: Alapértelmezett sorrend visszaállítása
+
+"Remove “%@”?" = "Eltávolítja a következőt: „%@”?";
+# EN: Remove “%@”?
+# DRAFT: Eltávolítja a következőt: „%@”?
+
+"Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk." = "Válassza a „Remove Reference” (Hivatkozás eltávolítása) lehetőséget a CSS-fájl megtartásához, vagy az „Áthelyezés a kukába” lehetőséget a fájl lemezről való törléséhez.";
+# EN: Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk.
+# DRAFT: Válassza a „Remove Reference” (Hivatkozás eltávolítása) lehetőséget a CSS-fájl megtartásához, vagy az „Áthelyezés a kukába” lehetőséget a fájl lemezről való törléséhez.
+
+"The CSS file for this style cannot be found. Removing the reference will detach it from Marked." = "Az ehhez a stílushoz tartozó CSS-fájl nem található. A hivatkozás eltávolítása leválasztja a Marked kifejezésről.";
+# EN: The CSS file for this style cannot be found. Removing the reference will detach it from Marked.
+# DRAFT: Az ehhez a stílushoz tartozó CSS-fájl nem található. A hivatkozás eltávolítása leválasztja a Marked kifejezésről.
+
+"Remove Reference" = "Referencia eltávolítása";
+# EN: Remove Reference
+# DRAFT: Referencia eltávolítása
+
+"Move to Trash" = "Áthelyezés a Kukába";
+# EN: Move to Trash
+# DRAFT: Áthelyezés a Kukába
+
+"The style file could not be found." = "A stílusfájl nem található.";
+# EN: The style file could not be found.
+# DRAFT: A stílusfájl nem található.
+
+"Duplicate or re-import the style to recreate it." = "Másolja vagy importálja újra a stílust az újbóli létrehozásához.";
+# EN: Duplicate or re-import the style to recreate it.
+# DRAFT: Másolja vagy importálja újra a stílust az újbóli létrehozásához.
+
+"Couldn’t move the CSS file to Trash." = "A CSS-fájlt nem sikerült a kukába helyezni.";
+# EN: Couldn’t move the CSS file to Trash.
+# DRAFT: A CSS-fájlt nem sikerült a kukába helyezni.
+
+"Built-in styles are read-only." = "A beépített stílusok csak olvashatók.";
+# EN: Built-in styles are read-only.
+# DRAFT: A beépített stílusok csak olvashatók.
+
+"Duplicate the style to create an editable copy." = "A stílus megkettőzése szerkeszthető másolat létrehozásához.";
+# EN: Duplicate the style to create an editable copy.
+# DRAFT: A stílus megkettőzése szerkeszthető másolat létrehozásához.
+
+"This style has no editable file on disk." = "Ennek a stílusnak nincs szerkeszthető fájlja a lemezen.";
+# EN: This style has no editable file on disk.
+# DRAFT: Ennek a stílusnak nincs szerkeszthető fájlja a lemezen.
+
+"Import or duplicate a style with a file path to edit its contents." = "A tartalom szerkesztéséhez importáljon vagy duplikáljon egy stílust egy fájl elérési úttal.";
+# EN: Import or duplicate a style with a file path to edit its contents.
+# DRAFT: A tartalom szerkesztéséhez importáljon vagy duplikáljon egy stílust egy fájl elérési úttal.
+
+"Style file not found on disk." = "A stílusfájl nem található a lemezen.";
+# EN: Style file not found on disk.
+# DRAFT: A stílusfájl nem található a lemezen.
+
+"Duplicate or import the style again to recreate the file before editing." = "Másolja meg vagy importálja újra a stílust a fájl újbóli létrehozásához a szerkesztés előtt.";
+# EN: Duplicate or import the style again to recreate the file before editing.
+# DRAFT: Másolja meg vagy importálja újra a stílust a fájl újbóli létrehozásához a szerkesztés előtt.
+
+"Open style in…" = "Nyitott stílus…";
+# EN: Open style in…
+# DRAFT: Nyitott stílus…
+
+"Choose how you want to edit this style's CSS." = "Válassza ki, hogyan szeretné szerkeszteni a stílus CSS-jét.";
+# EN: Choose how you want to edit this style's CSS.
+# DRAFT: Válassza ki, hogyan szeretné szerkeszteni a stílus CSS-jét.
+
+"Style Generator" = "Stílusgenerátor";
+# EN: Style Generator
+# DRAFT: Stílusgenerátor
+
+"Default Editor" = "Alapértelmezett szerkesztő";
+# EN: Default Editor
+# DRAFT: Alapértelmezett szerkesztő
+
+"Marked Style" = "Marked Stílus";
+# EN: Marked Style
+# DRAFT: Marked Stílus
+
+=== END SpecialWindows.strings ===
