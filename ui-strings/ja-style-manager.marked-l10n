@@ -1,0 +1,287 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: Style Manager window
+# Generated: 2026-08-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, %lu, \n, HTML tags, and keyboard symbols.
+# Do not translate product names (Marked) unless your locale normally localizes them.
+#
+# DRAFT lines are machine-translated starting points for review.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 65
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 65
+# Style Manager window chrome, alerts, source badges, and preview sample copy.
+
+"Manage Styles" = "スタイルの管理";
+# EN: Manage Styles
+# DRAFT: スタイルの管理
+
+"Styles" = "スタイル";
+# EN: Styles
+# DRAFT: スタイル:
+
+"Filter Styles" = "フィルタースタイル";
+# EN: Filter Styles
+# DRAFT: フィルタースタイル
+
+"Preview" = "プレビュー";
+# EN: Preview
+# DRAFT: プレビュー
+
+"Preview: —" = "プレビュー: —";
+# EN: Preview: —
+# DRAFT: プレビュー: —
+
+"Preview: %@" = "プレビュー: %@";
+# EN: Preview: %@
+# DRAFT: プレビュー: %@
+
+"Dark Mode" = "ダークモード";
+# EN: Dark Mode
+# DRAFT: ダークモード
+
+"Add New Style" = "新しいスタイルを追加";
+# EN: Add New Style
+# DRAFT: 新しいスタイルを追加
+
+"Generate Style" = "スタイルの生成";
+# EN: Generate Style
+# DRAFT: スタイルの生成
+
+"Style Gallery" = "スタイルギャラリー";
+# EN: Style Gallery
+# DRAFT: スタイルギャラリー
+
+"Show disabled styles" = "無効なスタイルを表示";
+# EN: Show disabled styles
+# DRAFT: 無効なスタイルを表示
+
+"Restore built-in styles" = "組み込みスタイルを復元する";
+# EN: Restore built-in styles
+# DRAFT: 組み込みスタイルを復元する
+
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)" = "ショートカットは順序に基づいて更新されます (⌘1-9、⌥⌘1-0、⌃⌘1-0、⇧⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+# DRAFT: ショートカットは順序に基づいて更新されます (⌘1-9、⌥⌘1-0、⌃⌘1-0、⇧⌘1-0)
+
+"Order" = "注文";
+# EN: Order
+# DRAFT: 注文
+
+"Name" = "名前";
+# EN: Name
+# DRAFT: 名前
+
+"Source" = "ソース";
+# EN: Source
+# DRAFT: ソース
+
+"Controls" = "コントロール";
+# EN: Controls
+# DRAFT: コントロール
+
+"Builtin" = "内蔵";
+# EN: Builtin
+# DRAFT: 内蔵
+
+"Custom" = "カスタム";
+# EN: Custom
+# DRAFT: カスタム
+
+"Duplicated" = "重複しました";
+# EN: Duplicated
+# DRAFT: 重複しました
+
+"Duplicate" = "重複";
+# EN: Duplicate
+# DRAFT: 重複
+
+"Delete" = "消去";
+# EN: Delete
+# DRAFT: 消去
+
+"Reveal in Finder" = "Finder に表示";
+# EN: Reveal in Finder
+# DRAFT: Finder に表示
+
+"Edit in default editor" = "デフォルトのエディタで編集する";
+# EN: Edit in default editor
+# DRAFT: デフォルトのエディタで編集する
+
+"Style Preview" = "スタイルのプレビュー";
+# EN: Style Preview
+# DRAFT: スタイルのプレビュー
+
+"Heading 1 styling" = "見出し 1 のスタイル";
+# EN: Heading 1 styling
+# DRAFT: 見出し 1 のスタイル
+
+"Heading 2 styling" = "見出し 2 のスタイル";
+# EN: Heading 2 styling
+# DRAFT: 見出し 2 のスタイル
+
+"Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing." = "段落スタイルには<strong>太字テキスト</strong>、<em>斜体テキスト</em>、インラインの<code>コードテキスト</code>、および間隔を示す読みやすい文が含まれます。";
+# EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
+# DRAFT: 段落スタイルには<strong>太字テキスト</strong>、<em>斜体テキスト</em>、インラインの<code>コードテキスト</code>、および間隔を示す読みやすい文が含まれます。
+
+"Move to Application Support" = "アプリケーションサポートに移動";
+# EN: Move to Application Support
+# DRAFT: アプリケーションサポートに移動
+
+"Copy to Application Support" = "アプリケーションサポートにコピー";
+# EN: Copy to Application Support
+# DRAFT: アプリケーションサポートにコピー
+
+"Do you want to copy this Style to Marked's Application Support folder?" = "このスタイルを Marked の Application Support フォルダーにコピーしますか?";
+# EN: Do you want to copy this Style to Marked's Application Support folder?
+# DRAFT: このスタイルを Marked の Application Support フォルダーにコピーしますか?
+
+"Do you want to copy these Styles to Marked's Application Support folder?" = "これらのスタイルを Marked の Application Support フォルダーにコピーしますか?";
+# EN: Do you want to copy these Styles to Marked's Application Support folder?
+# DRAFT: これらのスタイルを Marked の Application Support フォルダーにコピーしますか?
+
+"Styles will be stored in:
+%@" = "スタイルは次の場所に保存されます。
+%@";
+# EN: Styles will be stored in:\n%@
+# DRAFT: スタイルは次の場所に保存されます。\n%@
+
+"Use from Current Location" = "現在地から利用する";
+# EN: Use from Current Location
+# DRAFT: 現在地から利用する
+
+"Remove original CSS file" = "元のCSSファイルを削除する";
+# EN: Remove original CSS file
+# DRAFT: 元のCSSファイルを削除する
+
+"Could not add the style file." = "スタイルファイルを追加できませんでした。";
+# EN: Could not add the style file.
+# DRAFT: スタイルファイルを追加できませんでした。
+
+"Unknown error." = "不明なエラー。";
+# EN: Unknown error.
+# DRAFT: 不明なエラー。
+
+"Add a Custom Style" = "Custom スタイルを追加する";
+# EN: Add a Custom Style
+# DRAFT: Custom スタイルを追加する
+
+"Add %lu Custom Styles" = "%lu Custom スタイルを追加";
+# EN: Add %lu Custom Styles
+# DRAFT: %lu Custom スタイルを追加
+
+"Add Styles" = "スタイルの追加";
+# EN: Add Styles
+# DRAFT: スタイルの追加
+
+"Add Custom Styles" = "Custom スタイルの追加";
+# EN: Add Custom Styles
+# DRAFT: Custom スタイルの追加
+
+"Select one or more CSS files to add to your custom styles." = "カスタム スタイルに追加する 1 つ以上の CSS ファイルを選択します。";
+# EN: Select one or more CSS files to add to your custom styles.
+# DRAFT: カスタム スタイルに追加する 1 つ以上の CSS ファイルを選択します。
+
+"Restore Default Styles" = "デフォルトのスタイルを復元する";
+# EN: Restore Default Styles
+# DRAFT: デフォルトのスタイルを復元する
+
+"Built-in styles will be re-enabled. Restore the default built-in order as well?" = "組み込みスタイルが再び有効になります。デフォルトの組み込み順序も復元しますか?";
+# EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
+# DRAFT: 組み込みスタイルが再び有効になります。デフォルトの組み込み順序も復元しますか?
+
+"Keep Current Order" = "現在の順序を維持";
+# EN: Keep Current Order
+# DRAFT: 現在の順序を維持
+
+"Restore Default Order" = "デフォルトの順序に戻す";
+# EN: Restore Default Order
+# DRAFT: デフォルトの順序に戻す
+
+"Remove “%@”?" = "「%@」を削除しますか?";
+# EN: Remove “%@”?
+# DRAFT: 「%@」を削除しますか?
+
+"Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk." = "CSS ファイルを保持するには「参照の削除」を選択し、ディスクからファイルを削除するには「ゴミ箱に移動」を選択します。";
+# EN: Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk.
+# DRAFT: CSS ファイルを保持するには「参照の削除」を選択し、ディスクからファイルを削除するには「ゴミ箱に移動」を選択します。
+
+"The CSS file for this style cannot be found. Removing the reference will detach it from Marked." = "このスタイルの CSS ファイルが見つかりません。参照を削除すると、Marked から切り離されます。";
+# EN: The CSS file for this style cannot be found. Removing the reference will detach it from Marked.
+# DRAFT: このスタイルの CSS ファイルが見つかりません。参照を削除すると、Marked から切り離されます。
+
+"Remove Reference" = "参照の削除";
+# EN: Remove Reference
+# DRAFT: 参照の削除
+
+"Move to Trash" = "ゴミ箱に移動";
+# EN: Move to Trash
+# DRAFT: ゴミ箱に移動
+
+"The style file could not be found." = "スタイルファイルが見つかりませんでした。";
+# EN: The style file could not be found.
+# DRAFT: スタイルファイルが見つかりませんでした。
+
+"Duplicate or re-import the style to recreate it." = "スタイルを複製または再インポートして再作成します。";
+# EN: Duplicate or re-import the style to recreate it.
+# DRAFT: スタイルを複製または再インポートして再作成します。
+
+"Couldn’t move the CSS file to Trash." = "CSS ファイルをゴミ箱に移動できませんでした。";
+# EN: Couldn’t move the CSS file to Trash.
+# DRAFT: CSS ファイルをゴミ箱に移動できませんでした。
+
+"Built-in styles are read-only." = "組み込みスタイルは読み取り専用です。";
+# EN: Built-in styles are read-only.
+# DRAFT: 組み込みスタイルは読み取り専用です。
+
+"Duplicate the style to create an editable copy." = "スタイルを複製して、編集可能なコピーを作成します。";
+# EN: Duplicate the style to create an editable copy.
+# DRAFT: スタイルを複製して、編集可能なコピーを作成します。
+
+"This style has no editable file on disk." = "このスタイルには、ディスク上に編集可能なファイルがありません。";
+# EN: This style has no editable file on disk.
+# DRAFT: このスタイルには、ディスク上に編集可能なファイルがありません。
+
+"Import or duplicate a style with a file path to edit its contents." = "ファイル パスを使用してスタイルをインポートまたは複製して、その内容を編集します。";
+# EN: Import or duplicate a style with a file path to edit its contents.
+# DRAFT: ファイル パスを使用してスタイルをインポートまたは複製して、その内容を編集します。
+
+"Style file not found on disk." = "スタイル ファイルがディスク上に見つかりません。";
+# EN: Style file not found on disk.
+# DRAFT: スタイル ファイルがディスク上に見つかりません。
+
+"Duplicate or import the style again to recreate the file before editing." = "スタイルを再度複製またはインポートして、編集前にファイルを再作成します。";
+# EN: Duplicate or import the style again to recreate the file before editing.
+# DRAFT: スタイルを再度複製またはインポートして、編集前にファイルを再作成します。
+
+"Open style in…" = "オープンスタイルで…";
+# EN: Open style in…
+# DRAFT: オープンスタイルで…
+
+"Choose how you want to edit this style's CSS." = "このスタイルの CSS を編集する方法を選択します。";
+# EN: Choose how you want to edit this style's CSS.
+# DRAFT: このスタイルの CSS を編集する方法を選択します。
+
+"Style Generator" = "スタイルジェネレーター";
+# EN: Style Generator
+# DRAFT: スタイルジェネレーター
+
+"Default Editor" = "デフォルトのエディター";
+# EN: Default Editor
+# DRAFT: デフォルトのエディター
+
+"Marked Style" = "Marked スタイル";
+# EN: Marked Style
+# DRAFT: Marked スタイル
+
+=== END SpecialWindows.strings ===
