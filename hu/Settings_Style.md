@@ -1,85 +1,84 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-A {% prefspane Style %} opciói:
+A {% prefspane Style %} beállításai:
 
-![Beállítások: Stílus][1]
+![Settings: Style][1]
 
 [1]: images/screenshots/preferences-Style.jpg @2x width=689px height=1031px class=preferencepane-scroll
 
 ### Elrendezés és tipográfia [layout-and-typography]
 
-Korlátozza a szöveg szélességét az Előnézetben
-: Állítsa be az előnézet törzsének maximális szélességét a csúszkával (pixelben).
+Szöveg szélességének korlátozása az előnézetben
+: A csúszka segítségével (pixelben) megadhatja az előnézet törzsének maximális szélességét.
 
-Automatikus elválasztás a bekezdésekben
-: A szavak automatikus elválasztásának engedélyezése.
+Automatikus elválasztás bekezdésekben
+: Engedélyezi a szavak automatikus elválasztását szótagolással.
 
-Akadályozza meg az özvegyek megjelenését a címsorokban és a bekezdésekben
-: Nem törő szóközt kényszerít a címsorok és bekezdések utolsó két szava közé, hogy megakadályozza az egyes szavak új sorba tördelését.
+Árvasorok megelőzése címsorokban és bekezdésekben
+: Nem törhető szóközt kényszerít a címsorok és bekezdések utolsó két szava közé, hogy egyetlen szó se kerüljön új sorba.
 
-Nyomdailag helyes idézőjelek és írásjelek létrehozása
-: A SmartyPants használata intelligens idézőjelekhez, ellipszisek konvertálásához és egyéb tipográfiai funkciókhoz (MultiMarkdown).
+Tipográfiailag helyes idézőjelek és írásjelek létrehozása
+: A SmartyPants használata az intelligens idézőjelekhez, a hármaspont-átalakításhoz és más tipográfiai funkciókhoz (MultiMarkdown).
 
-A lábjegyzetek jelölőit szögletes zárójelben helyezze el
-: Ha be van jelölve, használja az alapértelmezett MultiMarkdown formázást a lábjegyzetjelölőkhöz ([1]). Törölje a jelet a szögletes zárójelek eltávolításához.
+Lábjegyzetjelölők szögletes zárójelbe foglalása
+: Ha be van jelölve, a lábjegyzetjelölők az alapértelmezett MultiMarkdown formázást használják ([1]). Kapcsolja ki a szögletes zárójelek eltávolításához.
 
-Az Outline engedélyezése a bővítményekhez
-: A Vázlat mód automatikus bekapcsolása a felsorolt kiterjesztésű fájloknál.
+Outline engedélyezése kiterjesztésekhez
+: A felsorolt kiterjesztésű fájloknál automatikusan bekapcsolja az Outline módot.
 
-Használja az APA stílust
-: Használjon APA-stílusú körvonalakat az alapértelmezett decimális formátum helyett.
+APA stílus használata
+: APA stílusú vázlatok használata az alapértelmezett decimális formátum helyett.
 
-Stílus szó szerinti (kód) blokkok költészet
-: Ha be van jelölve, a tabulátoros behúzású, bekerített vagy beépített kód költészetként jelenik meg kódblokk helyett (nincs szintaktikai kiemelés, és speciális stílus a témától függően).
+Szó szerinti (kód) blokkok stílusa versként
+: Ha be van jelölve, a tabulátorral behúzott, keretezett vagy beillesztett kód versként jelenik meg kódblokk helyett (szintaxiskiemelés nélkül, a témától függő speciális stílussal).
 
-Engedélyezze a témáknak, hogy szöveget kódblokkokba burkoljanak
-: Ha be van jelölve, a témák `pre>code` blokkon belüli tördelést okozhatnak. Ha nincs bejelölve, a vízszintes túlcsordulás mindig gördül.
+Témák engedélyezése a szöveg tördelésére kódblokkokon belül
+: Ha be van jelölve, a témák tördelhetik a szöveget a `pre>code` blokkokon belül. Ha nincs bejelölve, a vízszintes túlcsordulás mindig görgethető marad.
 
-Mindig csomagolja be a kódot
-: Kényszeríti a kódblokkok tördelését a témabeállításoktól függetlenül (felülbírálja a téma tördelési viselkedését).
+Kód mindig tördelése
+: A kódblokkok tördelésének kikényszerítése a téma beállításaitól függetlenül (felülírja a téma tördelési viselkedését).
 
-RTL-szöveg észlelése és stílusa
-: Nyelv érzékelése elemenként a dokumentumban és a stílusnak megfelelően jobbról balra.
+RTL szöveg felismerése és stílusa
+: A dokumentum egyes elemeinek nyelvét felismeri, és ennek megfelelően jobbról balra íródó (RTL) stílust alkalmaz rájuk.
 
 ### Téma [theme]
 
 Stílusok kezelése
-: Megnyitja a [Style Manager](Style_Manager.html) ablakot. Adjon hozzá CSS-fájlokat a meghajtóról, hogy megjelenjenek a Stílusválasztó menükben. Használja az `Add New Style` gombot, vagy húzza a CSS-fájlokat ebbe az ablakba. Húzza át az átrendezéshez, és használja a jelölőnégyzeteket a stílusok engedélyezéséhez vagy letiltásához.
+: Megnyitja a [Stíluskezelő](Style_Manager.html) ablakot. Adjon hozzá CSS-fájlokat a meghajtójáról, hogy megjelenjenek a stílusválasztó menükben. Használja a `Add New Style` gombot, vagy húzza a CSS-fájlokat erre az ablakra. Húzással átrendezheti, a jelölőnégyzetekkel pedig ki- és bekapcsolhatja a stílusokat.
 
 További témák
-: Nyissa meg az online témagalériát további stílusok böngészéséhez és telepítéséhez.
+: Megnyitja az online témagalériát, ahol további stílusokat böngészhet és telepíthet.
 
 Alapértelmezett stílus
-: Az itt kiválasztott stílus minden új ablakhoz betöltődik, kivéve, ha [dokumentum-specifikus stílus szerepel a metaadatokban](Per-Document_Settings.html) (pl. "Megjelölt stílus: Grump").
+: Az itt kiválasztott stílus töltődik be minden új ablakhoz, kivéve ha [a dokumentum metaadataiban dokumentumspecifikus stílus van megadva](Per-Document_Settings.html) (például „Marked Style: Grump").
 
-Kövesse nyomon a CSS-módosításokat
-: Ha ez be van kapcsolva, a Marked figyeli az aktuális stílust a lemezmódosításokhoz, segítve az egyéni stílusszerkesztést és a webfejlesztést.
+CSS-módosítások követése
+: Ha ez be van kapcsolva, a Marked figyeli az aktuális stílus lemezen történő változásait, ami segít az egyéni stílusok szerkesztésében és a webfejlesztésben.
 
 További CSS
-: Az ide hozzáadott CSS a normál stíluslap után fog megjelenni az összes témával. Többek között a belső stílusok szerkesztése nélkül is felülírhatja a beállításokat.
-: Ez minden dokumentumra és minden stílusra vonatkozik. Ha egyéni CSS-t szeretne alkalmazni a dokumentumokra a feltételek alapján, használja az Egyéni szabályokat az {% prefspane Processor %} alatt.
+: Az itt megadott CSS minden téma normál stíluslapja után kerül hozzáfűzésre. Ez egy részleges átfedő réteg, nem pedig teljes témahelyettesítő.
+: A Marked átírja a mezőben szereplő szelektorokat (például a nyomtatási szabályoknak a `body.mkprinting #wrapper …`-t kell használniuk). Nincs méret- vagy érvényességi korlátozás — lásd az [Egyéni CSS létrehozása](Writing_Custom_CSS.html#additional-css-settings) című részt.
+: Ez minden dokumentumra és minden stílusra vonatkozik, beleértve a HTML-exportot is, ha a stílusok be vannak illesztve. Ha feltételek alapján szeretne egyéni CSS-t alkalmazni a dokumentumokra, használja az Egyéni szabályokat a {% prefspane Processor %} alatt.
 
-### Szkriptek szerepeltetése [include-scripts]
+### Szkriptek beillesztése [include-scripts]
 
-Szintaxis kiemelés
-: A highlight.js [szintaxiskiemelés](Syntax_Highlighting.html) bekapcsolása kódblokkokhoz. Válasszon ki egy témát a legördülő menüből.
-: Ha a **Csak ha a nyelv megadva** be van jelölve, a szintaktikai kiemelés csak a megadott nyelvű elkerített kódblokkokra vonatkozik.
+Szintaxiskiemelés
+: Bekapcsolja a highlight.js [szintaxiskiemelést](Syntax_Highlighting.html) a kódblokkokhoz. Válasszon témát a legördülő menüből.
+: Ha a **Csak ha a nyelv meg van adva** be van jelölve, a szintaxiskiemelés csak azokra a keretezett kódblokkokra vonatkozik, amelyeknél meg van adva a nyelv.
 
-Engedélyezze a MathJaxot
-: A [MathJax](MathJax.html) betöltése a MathML egyenletek megjelenítéséhez. Válassza a **Helyi** (csomagolt) vagy a **CDN** lehetőséget a legördülő menüből.
-: **További csomagok** megnyit egy lapot, ahol további MathJax-csomagokat is tartalmazhat (például fizika és kémia).
-: A **Speciális konfiguráció** megnyit egy lapot az egyéni MathJax konfigurációhoz.
+MathJax engedélyezése
+: Betölti a [MathJax](MathJax.html)-ot a MathML-egyenletek megjelenítéséhez. Válasszon a legördülő menüből **Helyi** (beépített) vagy **CDN** opciót.
+: A **További csomagok** gombra kattintva egy panel nyílik meg, ahol további MathJax-csomagokat (például Physics és Chemistry) adhat hozzá.
+: A **Speciális konfiguráció** gombra kattintva egy panel nyílik meg az egyéni MathJax-konfigurációhoz.
 
-Engedélyezze a KaTeX-et
-: A [KaTeX](MathJax.html#katex) betöltése a MathJax alternatívájaként. Csak az egyik vagy a másik választható.
+KaTeX engedélyezése
+: Betölti a [KaTeX](MathJax.html#katex)-et a MathJax alternatívájaként. Csak az egyik választható a kettő közül.
 
-Számegyenletek
-: Ha alkalmazható, a Marked számokat ad hozzá a renderelt egyenletekhez. A számozáshoz válassza a **Bal oldal** vagy a **Jobb oldal** lehetőséget. Ha MathJaxot használ, válassza a **Csak AMS** lehetőséget, ha csak az AMS-egyenleteket szeretné számozni.
+Egyenletek számozása
+: Ha alkalmazható, a Marked ábraszámokat ad a megjelenített egyenletekhez. A számozáshoz válasszon **Bal oldal** vagy **Jobb oldal** opciót. MathJax használata esetén választhatja a **Csak AMS** opciót, amely csak az AMS-egyenleteket számozza.
 
-Sellő
-: Betölti a [mermaid.js](https://mermaid.js) fájlt egy CDN-ről a Markdown-stílusú diagramkészítés engedélyezéséhez. A Mermaid diagramok megjelenítéséhez szükséges horgot minden dokumentumfrissítéskor automatikusan tartalmazza.
+Mermaid
+: Betölti a [mermaid.js](https://mermaid.js)-t egy CDN-ről a Markdown-stílusú diagramkészítés engedélyezéséhez. A Mermaid-diagramok minden dokumentumfrissítéskor történő megjelenítéséhez szükséges hook automatikusan bekerül.
 
-Pásztázási és nagyítási diagramok
-: Ha vannak sellődiagramok, engedélyezze a nagyítást a {% kbd cmd %} gombos görgetéssel és pásztázással kattintással és húzással.
+Diagramok mozgatása és nagyítása
+: Ha Mermaid-diagramok vannak jelen, engedélyezi a nagyítást a {% kbd cmd %}-görgetéssel, valamint a mozgatást kattintással és húzással.
