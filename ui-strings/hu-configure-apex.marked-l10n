@@ -234,4 +234,14 @@
 # EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
 # DRAFT: Ha be van kapcsolva, a fájl végén lévő iA Writer-jegyzetblokk az előnézet előtt eltávolításra kerül. Alapértelmezés szerint ki.
 
+
+# --- Not part of the Apex handoff, but same file and shipping in 3.2.6 ---
+# The processor picker in Settings shows the Discount processor as "Kedvezmény"
+# (Kedvezmény is a price-discount word). It is a product name and must stay
+# "Discount" in every locale. Same bug in de/es/fr/ja/nl/pt-BR/hu.
+
+"setting.processor.discount" = "Discount";
+# EN: Discount
+# DRAFT: Kedvezmény
+
 === END Settings.strings ===
