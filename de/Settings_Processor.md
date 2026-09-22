@@ -8,7 +8,7 @@ Optionen unter {% prefspane Processor %}:
 
 ### Markdown verarbeiten mit [process-markdown-with]
 
-Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. **Apex (beta)** deckt die Funktionen ab, für die man sonst CommonMark, GitHub Flavored Markdown, MultiMarkdown oder Kramdown wählt. Siehe [Apex (beta)](Apex.html). Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
+Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. **Apex (Beta)** deckt die Funktionen ab, für die man sonst CommonMark, GitHub Flavored Markdown, MultiMarkdown oder Kramdown wählt. Siehe [Apex (Beta)](Apex.html). Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
 
 Eigene Regeln
 : Klicken Sie auf die Schaltfläche „Eigene Regeln“, um den Editor für Eigene Regeln zu öffnen. Dort legen Sie je nach passenden Kriterien verschiedene Prozessoren und Dokumenttransformationen fest. Einzelheiten unter [Eigene Regeln](Custom_Processor.html).
@@ -19,8 +19,8 @@ Neue Dokumente verwenden eigene
 Vollständiger Festplattenzugriff
 : Klicken Sie auf **Gewähren**, um Marked die Berechtigung zu geben, beim Einsatz benutzerdefinierter Prozessoren oder anderer Funktionen mit erweitertem Dateizugriff auch Dateien außerhalb seiner Sandbox zu lesen.
 
-Configure Apex (Apex konfigurieren)
-: Ist **Apex (beta)** der Standardprozessor, klicken Sie auf **Configure Apex**, um Syntax, Zitationsdateien und Indexoptionen festzulegen. Siehe [Apex-Konfiguration](Apex_Configuration.html).
+Apex konfigurieren
+: Ist **Apex (Beta)** der Standardprozessor, klicken Sie auf **Apex konfigurieren**, um Syntax, Zitationsdateien und Indexoptionen festzulegen. Siehe [Apex-Konfiguration](Apex_Configuration.html).
 
 Um die Unterschiede zwischen den Prozessoren zu erkunden, schauen Sie sich den [Markdown-Dingus](Markdown_Dingus.html) an.
 

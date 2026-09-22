@@ -1,8 +1,8 @@
 # <%= @title %>
 
-Diese Optionen finden Sie im Dialogblatt **Configure Apex** (Apex konfigurieren). Sie öffnen es unter {% prefspane Processor %}, wenn **Apex (beta)** der Standardprozessor ist. Alle Optionen hier gelten ausschließlich für Apex. Mathematik, CriticMarkup, Hashtags, Dateieinbindungen und Überschriften-IDs bleiben in Markeds übrigen Einstellungen.
+Diese Optionen finden Sie im Dialogblatt **Apex konfigurieren**. Sie öffnen es unter {% prefspane Processor %}, wenn **Apex (beta)** der Standardprozessor ist. Alle Optionen hier gelten ausschließlich für Apex. Mathematik, CriticMarkup, Hashtags, Dateieinbindungen und Überschriften-IDs bleiben in Markeds übrigen Einstellungen.
 
-Was Apex ist und welche Syntax es abdeckt, steht unter [Apex (beta)](Apex.html).
+Was Apex ist und welche Syntax es abdeckt, steht unter [Apex (Beta)](Apex.html).
 
 Die Kontrollkästchen im Dialogblatt überschreiben dieselben Einstellungen in einer Apex-Metadatendatei. Dateipfade sind optional. Einen Pfad, den Marked nicht lesen kann, überspringt es; die Vorschau läuft trotzdem.
 
@@ -11,11 +11,11 @@ Die Kontrollkästchen im Dialogblatt überschreiben dieselben Einstellungen in e
 CSL
 : Eine Citation-Style-Language-Datei (`.csl`), die Apex beim Formatieren eines Literaturverzeichnisses verwendet. Bleibt das Feld leer, gilt der Stil, der im Dokument oder in der Metadatendatei angegeben ist.
 
-Literaturverzeichnis
-: Eine oder mehrere Bibliografiedateien. Zulässig sind BibTeX (`.bib`), CSL JSON (`.json`) und CSL YAML (`.yml`, `.yaml`). Mit **Add** (Hinzufügen) ergänzen Sie eine weitere Datei. Apex sucht in diesen Dateien, wenn es Zitate auflöst.
+Bibliografie
+: Eine oder mehrere Bibliografiedateien. Zulässig sind BibTeX (`.bib`), CSL JSON (`.json`) und CSL YAML (`.yml`, `.yaml`). Mit **Hinzufügen** ergänzen Sie eine weitere Datei. Apex sucht in diesen Dateien, wenn es Zitate auflöst.
 
 Konkordanz
-: Eine oder mehrere Konkordanzdateien (`.tsv`, `.txt` oder `.csv`), die beim Erstellen eines Index verwendet werden. Mit **Add** (Hinzufügen) ergänzen Sie eine weitere Datei.
+: Eine oder mehrere Konkordanzdateien (`.tsv`, `.txt` oder `.csv`), die beim Erstellen eines Index verwendet werden. Mit **Hinzufügen** ergänzen Sie eine weitere Datei.
 
 Metadatendatei
 : Eine externe Metadatendatei (`.yml`, `.yaml`, `.txt` oder `.md`), die vor dem Apex-Lauf eingebunden wird. Setzen beide denselben Schlüssel, haben die Dokumentmetadaten weiterhin Vorrang. Die Kontrollkästchen in diesem Dialogblatt gehen den Werten der Metadatendatei vor.
@@ -39,7 +39,7 @@ Hoch-/Tiefstellung
 Durchstreichung
 : `~~deleted~~`.
 
-URLs und E-Mail-Adressen automatisch verlinken
+URLs und E-Mails automatisch verlinken
 : Nackte `https://`-URLs und E-Mail-Adressen werden zu Links.
 
 Abgegrenzte Divs
@@ -57,7 +57,7 @@ Gemischte Listenzeichen
 Markdown in HTML
 : Markdown innerhalb von HTML-Block-Tags wird verarbeitet. Manches Markup kann trotzdem brechen.
 
-Metadaten-Transformationen
+Metadatentransformationen
 : `[%key]`-Platzhalter werden aus den Dokumentmetadaten ersetzt.
 
 ## Tabellen und Bilder [tables-and-images]
@@ -68,7 +68,7 @@ Gittertabellen
 Lockere Tabellen
 : Pipe-Tabellen dürfen die Pipes am Zeilenanfang und -ende weglassen. Standardmäßig aktiviert.
 
-Ausrichtung je Zelle
+Ausrichtung pro Zelle
 : Ausrichtungsmarker in einer Tabellenzelle überschreiben die Spaltenausrichtung. Standardmäßig aktiviert.
 
 Bildunterschriften
@@ -77,7 +77,7 @@ Bildunterschriften
 Nur Titel als Bildunterschrift
 : Ausschließlich der Bildtitel wird als Bildunterschrift verwendet, der Alternativtext bleibt unberücksichtigt. Standardmäßig deaktiviert. Wirkt nur, wenn **Bildunterschriften** aktiviert ist.
 
-## Links und Indexe [links-and-indexes]
+## Links und Indizes [links-and-indexes]
 
 Wiki-Links
 : Apex wandelt `[[wiki links]]` um. Standardmäßig deaktiviert. Ist die Option aktiv, überspringt Marked für dieses Dokument seinen eigenen Durchlauf „Wiki-Links umwandeln" aus den Vorschau-Einstellungen, und Apex löst die Zieldatei unter Umständen anders auf als Marked. Die Standard-Dateiendung stammt aus Markeds Wiki-Link-Einstellungen.
@@ -91,7 +91,7 @@ Indexverarbeitung
 Indexausgabe unterdrücken
 : Indexmarker werden weiterhin gelesen, der erzeugte Index aber nicht ausgegeben. Standardmäßig deaktiviert.
 
-## Callouts (zusätzlich) [callouts-extra]
+## Callouts (extra) [callouts-extra]
 
 Beide standardmäßig deaktiviert. Callouts von Obsidian und Bear (`> [!NOTE]`) verarbeitet Marked vor Apex; sie werden hier nicht gesteuert.
 
@@ -108,5 +108,5 @@ Beide standardmäßig deaktiviert.
 ARIA-Labels
 : Fügt ARIA-Attribute hinzu, die die Struktur des von Apex erzeugten HTML beschreiben.
 
-Überschriftenanker
+Überschriften-<a>-Anker
 : Gibt an jeder Überschrift einen `<a>`-Anker aus statt nur einer `id` an der Überschrift.
