@@ -14,7 +14,7 @@
 # We merge with: python3 scripts/merge_localization_updates.py <this-file>
 
 === BEGIN Settings.strings ===
-"setting.apexOptARIA" = "ARIA-Etiketten";
+"setting.apexOptARIA" = "ARIA-Labels";
 # EN: ARIA labels
 # DRAFT: ARIA-Etiketten
 
@@ -22,11 +22,11 @@
 # EN: Alphabetic lists
 # DRAFT: Alphabetische Listen
 
-"setting.apexOptAutolink" = "Autolink-URLs und E-Mails";
+"setting.apexOptAutolink" = "URLs und E-Mails automatisch verlinken";
 # EN: Autolink URLs and emails
 # DRAFT: Autolink-URLs und E-Mails
 
-"setting.apexOptBibliographyPaths" = "Bibliographie";
+"setting.apexOptBibliographyPaths" = "Bibliografie";
 # EN: Bibliography
 # DRAFT: Bibliographie
 
@@ -42,7 +42,7 @@
 # EN: Definition lists
 # DRAFT: Definitionslisten
 
-"setting.apexOptDivs" = "Eingezäunte Divs";
+"setting.apexOptDivs" = "Abgegrenzte Divs";
 # EN: Fenced divs
 # DRAFT: Eingezäunte Divs
 
@@ -50,7 +50,7 @@
 # EN: Footnotes
 # DRAFT: Fußnoten
 
-"setting.apexOptGridTables" = "Rastertabellen";
+"setting.apexOptGridTables" = "Gittertabellen";
 # EN: Grid tables
 # DRAFT: Rastertabellen
 
@@ -78,7 +78,7 @@
 # EN: Metadata transforms
 # DRAFT: Metadatentransformationen
 
-"setting.apexOptMixedListMarkers" = "Gemischte Listenmarkierungen";
+"setting.apexOptMixedListMarkers" = "Gemischte Listenzeichen";
 # EN: Mixed list markers
 # DRAFT: Gemischte Listenmarkierungen
 
@@ -94,7 +94,7 @@
 # EN: Quarto callouts
 # DRAFT: Quarto-Callouts
 
-"setting.apexOptRelaxedTables" = "Entspannte Tabellen";
+"setting.apexOptRelaxedTables" = "Lockere Tabellen";
 # EN: Relaxed tables
 # DRAFT: Entspannte Tabellen
 
@@ -102,11 +102,11 @@
 # EN: Bracketed spans
 # DRAFT: Spans in eckigen Klammern
 
-"setting.apexOptStrikethrough" = "Durchgestrichen";
+"setting.apexOptStrikethrough" = "Durchstreichung";
 # EN: Strikethrough
 # DRAFT: Durchgestrichen
 
-"setting.apexOptSupSub" = "Hoch- / Tiefstellung";
+"setting.apexOptSupSub" = "Hoch-/Tiefstellung";
 # EN: Superscript / subscript
 # DRAFT: Hoch- / Tiefstellung
 
@@ -118,7 +118,7 @@
 # EN: Tables
 # DRAFT: Tabellen
 
-"setting.apexOptTitleCaptionsOnly" = "Nur Titel-Beschriftungen";
+"setting.apexOptTitleCaptionsOnly" = "Nur Titel als Bildunterschrift";
 # EN: Title-only captions
 # DRAFT: Nur Titel-Beschriftungen
 
@@ -134,7 +134,7 @@
 # EN: Apex options
 # DRAFT: Apex-Optionen
 
-"setting.configureApex.button" = "Configure Apex";
+"setting.configureApex.button" = "Apex konfigurieren";
 # EN: Configure Apex
 # DRAFT: Configure Apex
 
@@ -174,7 +174,7 @@
 # EN: File is available
 # DRAFT: Datei ist verfügbar
 
-"setting.configureApex.files.statusMissing" = "Die Datei existiert nicht";
+"setting.configureApex.files.statusMissing" = "Datei existiert nicht";
 # EN: The file does not exist
 # DRAFT: Die Datei existiert nicht
 
@@ -210,11 +210,11 @@
 # EN: Tables & images
 # DRAFT: Tabellen & Bilder
 
-"setting.configureApex.intro" = "Diese Optionen betreffen nur Apex. Mathe, CriticMarkup, Hashtags, Datei-Includes und Überschriften-IDs verbleiben in den anderen Einstellungen von Marked. Wenn Apex-Wiki-Links aktiviert sind, konvertiert Apex [[wiki]]-Links und der Vorschau-Pass „[[Wiki-Links]] konvertieren“ von Marked wird übersprungen; die Dateiauflösung von Apex kann von der von Marked abweichen.";
+"setting.configureApex.intro" = "Diese Optionen betreffen nur Apex. Mathematik, CriticMarkup, Hashtags, Dateieinbindungen und Überschriften-IDs bleiben in Markeds übrigen Einstellungen. Sind Apex-Wiki-Links aktiviert, wandelt Apex [[wiki]]-Links um und Markeds Vorschau-Durchlauf „[[Wiki-Links]] konvertieren\" wird übersprungen; Apex löst Dateien unter Umständen anders auf als Marked.";
 # EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
 # DRAFT: Diese Optionen betreffen nur Apex. Mathe, CriticMarkup, Hashtags, Datei-Includes und Überschriften-IDs verbleiben in den anderen Einstellungen von Marked. Wenn Apex-Wiki-Links aktiviert sind, konvertiert Apex [[wiki]]-Links und der Vorschau-Pass „[[Wiki-Links]] konvertieren“ von Marked wird übersprungen; die Dateiauflösung von Apex kann von der von Marked abweichen.
 
-"setting.configureApex.sheetTitle" = "Configure Apex";
+"setting.configureApex.sheetTitle" = "Apex konfigurieren";
 # EN: Configure Apex
 # DRAFT: Configure Apex
 
@@ -222,16 +222,25 @@
 # EN: Apex (beta)
 # DRAFT: Apex (Beta)
 
-"setting.removeIAWriterAnnotations" = "iA Writer-Anmerkungen entfernen";
+"setting.removeIAWriterAnnotations" = "iA-Writer-Anmerkungen entfernen";
 # EN: Remove iA Writer annotations
 # DRAFT: iA Writer-Anmerkungen entfernen
 
-"tooltip.configureApex" = "Optionale Apex-Syntax- und Ausgabe-Funktionen (nur Apex-Prozessor).";
+"tooltip.configureApex" = "Optionale Apex-Syntax- und Ausgabefunktionen (nur Apex-Prozessor).";
 # EN: Optional Apex syntax and output features (Apex processor only).
 # DRAFT: Optionale Apex-Syntax- und Ausgabe-Funktionen (nur Apex-Prozessor).
 
-"tooltip.removeIAWriterAnnotations" = "Wenn aktiviert, wird der iA Writer-Anmerkungsblock am Ende einer Datei vor der Vorschau entfernt. Standardmäßig aus.";
+"tooltip.removeIAWriterAnnotations" = "Wenn aktiviert, wird der iA-Writer-Anmerkungsblock am Ende einer Datei vor der Vorschau entfernt. Standardmäßig deaktiviert.";
 # EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
 # DRAFT: Wenn aktiviert, wird der iA Writer-Anmerkungsblock am Ende einer Datei vor der Vorschau entfernt. Standardmäßig aus.
+
+# --- Not part of the Apex handoff, but same file and shipping in 3.2.6 ---
+# The processor picker in Settings shows the Discount processor as "Rabatt"
+# (German for a price discount). Product name, must not be translated.
+# Same in es (Descuento), fr (Promo), ja, nl (Korting), pt-BR (Desconto).
+
+"setting.processor.discount" = "Discount";
+# EN: Discount
+# DRAFT: Rabatt
 
 === END Settings.strings ===
