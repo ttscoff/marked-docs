@@ -1,0 +1,286 @@
+# Marked Localization Update
+# Locale: nl (Dutch)
+# Feature: Style Manager window
+# Generated: 2026-08-16
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve %@, %lu, \n, HTML tags, and keyboard symbols.
+# Do not translate product names (Marked) unless your locale normally localizes them.
+#
+# DRAFT lines are machine-translated starting points for review.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# SUMMARY
+# -------
+#   SpecialWindows.strings: 65
+
+=== BEGIN SpecialWindows.strings ===
+# Strings in this section: 65
+# Style Manager window chrome, alerts, source badges, and preview sample copy.
+
+"Manage Styles" = "Beheer stijlen";
+# EN: Manage Styles
+# DRAFT: Beheer stijlen
+
+"Styles" = "Stijlen";
+# EN: Styles
+# DRAFT: Stijlen:
+
+"Filter Styles" = "Filterstijlen";
+# EN: Filter Styles
+# DRAFT: Filterstijlen
+
+"Preview" = "Voorbeeld";
+# EN: Preview
+# DRAFT: Voorbeeld
+
+"Preview: —" = "Voorbeeld: —";
+# EN: Preview: —
+# DRAFT: Voorbeeld: —
+
+"Preview: %@" = "Voorbeeld: %@";
+# EN: Preview: %@
+# DRAFT: Voorbeeld: %@
+
+"Dark Mode" = "Donkere modus";
+# EN: Dark Mode
+# DRAFT: Donkere modus
+
+"Add New Style" = "Nieuwe stijl toevoegen";
+# EN: Add New Style
+# DRAFT: Nieuwe stijl toevoegen
+
+"Generate Style" = "Stijl genereren";
+# EN: Generate Style
+# DRAFT: Stijl genereren
+
+"Style Gallery" = "Stijlgalerij";
+# EN: Style Gallery
+# DRAFT: Stijlgalerij
+
+"Show disabled styles" = "Uitgeschakelde stijlen weergeven";
+# EN: Show disabled styles
+# DRAFT: Uitgeschakelde stijlen weergeven
+
+"Restore built-in styles" = "Herstel ingebouwde stijlen";
+# EN: Restore built-in styles
+# DRAFT: Herstel ingebouwde stijlen
+
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)" = "Snelkoppelingen worden bijgewerkt op basis van volgorde (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+# DRAFT: Snelkoppelingen worden bijgewerkt op basis van volgorde (⌘1-9, ⌥⌘1-0, ⌃⌘1-0, ⇧⌘1-0)
+
+"Order" = "Volgorde";
+# EN: Order
+# DRAFT: Volgorde
+
+"Name" = "Naam";
+# EN: Name
+# DRAFT: Naam
+
+"Source" = "Bron";
+# EN: Source
+# DRAFT: Bron
+
+"Controls" = "Controles";
+# EN: Controls
+# DRAFT: Controles
+
+"Builtin" = "Ingebouwd";
+# EN: Builtin
+# DRAFT: Ingebouwd
+
+"Custom" = "Custom";
+# EN: Custom
+
+"Duplicated" = "Gedupliceerd";
+# EN: Duplicated
+# DRAFT: Gedupliceerd
+
+"Duplicate" = "Duplicaat";
+# EN: Duplicate
+# DRAFT: Duplicaat
+
+"Delete" = "Verwijderen";
+# EN: Delete
+# DRAFT: Verwijderen
+
+"Reveal in Finder" = "Toon in Finder";
+# EN: Reveal in Finder
+# DRAFT: Toon in Finder
+
+"Edit in default editor" = "Bewerken in standaardeditor";
+# EN: Edit in default editor
+# DRAFT: Bewerken in standaardeditor
+
+"Style Preview" = "Stijlvoorbeeld";
+# EN: Style Preview
+# DRAFT: Stijlvoorbeeld
+
+"Heading 1 styling" = "Kop 1-stijl";
+# EN: Heading 1 styling
+# DRAFT: Kop 1-stijl
+
+"Heading 2 styling" = "Kop 2-styling";
+# EN: Heading 2 styling
+# DRAFT: Kop 2-styling
+
+"Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing." = "De alineastijl omvat <strong>vetgedrukte tekst</strong>, <em>cursieve tekst</em>, inline <code>codetekst</code> en een leesbare zin voor de spatiëring.";
+# EN: Paragraph styling includes <strong>bold text</strong>, <em>italic text</em>, inline <code>code text</code>, and a readable sentence for spacing.
+# DRAFT: De alineastijl omvat <strong>vetgedrukte tekst</strong>, <em>cursieve tekst</em>, inline <code>codetekst</code> en een leesbare zin voor de spatiëring.
+
+"Move to Application Support" = "Ga naar Applicatieondersteuning";
+# EN: Move to Application Support
+# DRAFT: Ga naar Applicatieondersteuning
+
+"Copy to Application Support" = "Kopieer naar Applicatieondersteuning";
+# EN: Copy to Application Support
+# DRAFT: Kopieer naar Applicatieondersteuning
+
+"Do you want to copy this Style to Marked's Application Support folder?" = "Wilt u deze stijl kopiëren naar de map Application Support van Marked?";
+# EN: Do you want to copy this Style to Marked's Application Support folder?
+# DRAFT: Wilt u deze stijl kopiëren naar de map Application Support van Marked?
+
+"Do you want to copy these Styles to Marked's Application Support folder?" = "Wilt u deze stijlen kopiëren naar de map Application Support van Marked?";
+# EN: Do you want to copy these Styles to Marked's Application Support folder?
+# DRAFT: Wilt u deze stijlen kopiëren naar de map Application Support van Marked?
+
+"Styles will be stored in:
+%@" = "Stijlen worden opgeslagen in:
+%@";
+# EN: Styles will be stored in:\n%@
+# DRAFT: Stijlen worden opgeslagen in:\n%@
+
+"Use from Current Location" = "Gebruik vanaf huidige locatie";
+# EN: Use from Current Location
+# DRAFT: Gebruik vanaf huidige locatie
+
+"Remove original CSS file" = "Verwijder het originele CSS-bestand";
+# EN: Remove original CSS file
+# DRAFT: Verwijder het originele CSS-bestand
+
+"Could not add the style file." = "Kan het stijlbestand niet toevoegen.";
+# EN: Could not add the style file.
+# DRAFT: Kan het stijlbestand niet toevoegen.
+
+"Unknown error." = "Onbekende fout.";
+# EN: Unknown error.
+# DRAFT: Onbekende fout.
+
+"Add a Custom Style" = "Voeg een Custom stijl toe";
+# EN: Add a Custom Style
+# DRAFT: Voeg een Custom stijl toe
+
+"Add %lu Custom Styles" = "Voeg %lu Custom stijlen toe";
+# EN: Add %lu Custom Styles
+# DRAFT: Voeg %lu Custom stijlen toe
+
+"Add Styles" = "Stijlen toevoegen";
+# EN: Add Styles
+# DRAFT: Stijlen toevoegen
+
+"Add Custom Styles" = "Voeg Custom stijlen toe";
+# EN: Add Custom Styles
+# DRAFT: Voeg Custom stijlen toe
+
+"Select one or more CSS files to add to your custom styles." = "Selecteer een of meer CSS-bestanden om toe te voegen aan uw aangepaste stijlen.";
+# EN: Select one or more CSS files to add to your custom styles.
+# DRAFT: Selecteer een of meer CSS-bestanden om toe te voegen aan uw aangepaste stijlen.
+
+"Restore Default Styles" = "Standaardstijlen herstellen";
+# EN: Restore Default Styles
+# DRAFT: Standaardstijlen herstellen
+
+"Built-in styles will be re-enabled. Restore the default built-in order as well?" = "Ingebouwde stijlen worden opnieuw ingeschakeld. Ook de standaard ingebouwde volgorde herstellen?";
+# EN: Built-in styles will be re-enabled. Restore the default built-in order as well?
+# DRAFT: Ingebouwde stijlen worden opnieuw ingeschakeld. Ook de standaard ingebouwde volgorde herstellen?
+
+"Keep Current Order" = "Behoud huidige bestelling";
+# EN: Keep Current Order
+# DRAFT: Behoud huidige bestelling
+
+"Restore Default Order" = "Standaardvolgorde herstellen";
+# EN: Restore Default Order
+# DRAFT: Standaardvolgorde herstellen
+
+"Remove “%@”?" = "“%@” verwijderen?";
+# EN: Remove “%@”?
+# DRAFT: “%@” verwijderen?
+
+"Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk." = "Kies “Remove Reference” om het CSS-bestand te behouden, of “Move to Trash” om het bestand van schijf te verwijderen.";
+# EN: Choose “Remove Reference” to keep the CSS file, or “Move to Trash” to delete the file from disk.
+# DRAFT: Kies “Remove Reference” om het CSS-bestand te behouden, of “Move to Trash” om het bestand van schijf te verwijderen.
+
+"The CSS file for this style cannot be found. Removing the reference will detach it from Marked." = "Het CSS-bestand voor deze stijl kan niet worden gevonden. Als u de referentie verwijdert, wordt deze losgemaakt van Marked.";
+# EN: The CSS file for this style cannot be found. Removing the reference will detach it from Marked.
+# DRAFT: Het CSS-bestand voor deze stijl kan niet worden gevonden. Als u de referentie verwijdert, wordt deze losgemaakt van Marked.
+
+"Remove Reference" = "Referentie verwijderen";
+# EN: Remove Reference
+# DRAFT: Referentie verwijderen
+
+"Move to Trash" = "Verplaatsen naar prullenbak";
+# EN: Move to Trash
+# DRAFT: Verplaatsen naar prullenbak
+
+"The style file could not be found." = "Het stijlbestand kon niet worden gevonden.";
+# EN: The style file could not be found.
+# DRAFT: Het stijlbestand kon niet worden gevonden.
+
+"Duplicate or re-import the style to recreate it." = "Dupliceer of importeer de stijl opnieuw om deze opnieuw te maken.";
+# EN: Duplicate or re-import the style to recreate it.
+# DRAFT: Dupliceer of importeer de stijl opnieuw om deze opnieuw te maken.
+
+"Couldn’t move the CSS file to Trash." = "Kan het CSS-bestand niet naar de prullenbak verplaatsen.";
+# EN: Couldn’t move the CSS file to Trash.
+# DRAFT: Kan het CSS-bestand niet naar de prullenbak verplaatsen.
+
+"Built-in styles are read-only." = "Ingebouwde stijlen zijn alleen-lezen.";
+# EN: Built-in styles are read-only.
+# DRAFT: Ingebouwde stijlen zijn alleen-lezen.
+
+"Duplicate the style to create an editable copy." = "Dupliceer de stijl om een ​​bewerkbare kopie te maken.";
+# EN: Duplicate the style to create an editable copy.
+# DRAFT: Dupliceer de stijl om een ​​bewerkbare kopie te maken.
+
+"This style has no editable file on disk." = "Deze stijl heeft geen bewerkbaar bestand op schijf.";
+# EN: This style has no editable file on disk.
+# DRAFT: Deze stijl heeft geen bewerkbaar bestand op schijf.
+
+"Import or duplicate a style with a file path to edit its contents." = "Importeer of dupliceer een stijl met een bestandspad om de inhoud ervan te bewerken.";
+# EN: Import or duplicate a style with a file path to edit its contents.
+# DRAFT: Importeer of dupliceer een stijl met een bestandspad om de inhoud ervan te bewerken.
+
+"Style file not found on disk." = "Stijlbestand niet gevonden op schijf.";
+# EN: Style file not found on disk.
+# DRAFT: Stijlbestand niet gevonden op schijf.
+
+"Duplicate or import the style again to recreate the file before editing." = "Dupliceer of importeer de stijl opnieuw om het bestand opnieuw te maken voordat u het gaat bewerken.";
+# EN: Duplicate or import the style again to recreate the file before editing.
+# DRAFT: Dupliceer of importeer de stijl opnieuw om het bestand opnieuw te maken voordat u het gaat bewerken.
+
+"Open style in…" = "Open stijl in…";
+# EN: Open style in…
+# DRAFT: Open stijl in…
+
+"Choose how you want to edit this style's CSS." = "Kies hoe u de CSS van deze stijl wilt bewerken.";
+# EN: Choose how you want to edit this style's CSS.
+# DRAFT: Kies hoe u de CSS van deze stijl wilt bewerken.
+
+"Style Generator" = "Stijlgenerator";
+# EN: Style Generator
+# DRAFT: Stijlgenerator
+
+"Default Editor" = "Standaardeditor";
+# EN: Default Editor
+# DRAFT: Standaardeditor
+
+"Marked Style" = "Marked Stijl";
+# EN: Marked Style
+# DRAFT: Marked Stijl
+
+=== END SpecialWindows.strings ===
