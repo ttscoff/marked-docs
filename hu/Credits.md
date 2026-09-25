@@ -46,6 +46,7 @@ Ezek a könyvtárak a Marked előnézeti csomagjában vannak összefűzve (`mark
 | [jQuery](https://jquery.com/) | jQuery Foundation | MIT | DOM és rendezvény segédprogramok |
 | [Hammer.js](https://hammerjs.github.io/) | Jorik Tangelder | MIT | Érintés- és gesztuskezelés |
 | [Highlight.js](https://highlightjs.org/) | Josh Goebel és közreműködők | BSD-3-Clause | Szintaxis kiemelés |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | A MathJax Konzorcium | Apache-2.0 | Matematikai megjelenítés (helyi csomag) |
 | [KaTeX](https://katex.org/) | Khan Academy és közreműködők | MIT | Matematikai renderelés (KaTeX opció) |
 | [Hableány](https://mermaid.js.org/) | Mermaid közreműködők | MIT | Diagram renderelés |

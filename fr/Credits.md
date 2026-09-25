@@ -44,6 +44,7 @@ Ces bibliothèques sont concaténées dans le bundle de prévisualisation de Mar
 | [jQuery](https://jquery.com/) | jQuery Foundation | MIT | DOM et utilitaires d'événements |
 | [Hammer.js](https://hammerjs.github.io/) | Jorik Tangelder | MIT | Gestion du toucher et des gestes |
 | [Highlight.js](https://highlightjs.org/) | Josh Goebel et contributeurs | BSD-3-Clause | Coloration syntaxique |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | The MathJax Consortium | Apache-2.0 | Rendu mathématique (bundle local) |
 | [KaTeX](https://katex.org/) | Khan Academy et contributeurs | MIT | Rendu mathématique (option KaTeX) |
 | [Mermaid](https://mermaid.js.org/) | Mermaid contributors | MIT | Rendu de diagrammes |
