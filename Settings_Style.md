@@ -65,6 +65,7 @@ Additional CSS
 Syntax Highlighting
 : Turn on highlight.js [syntax highlighting](Syntax_Highlighting.html) for code blocks. Select a theme from the dropdown.
 : If **Only if language specified** is checked, syntax highlighting will only be applied to fenced code blocks with a language specified.
+: **Show line numbers in code blocks** — when syntax highlighting is on, display line numbers on highlighted blocks (with per-block `linenums` / `nolinenums` overrides).
 
 Enable MathJax
 : Loads [MathJax](MathJax.html) for displaying MathML equations. Choose **Local** (bundled) or **CDN** from the dropdown.
