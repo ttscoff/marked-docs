@@ -64,6 +64,7 @@ Extra CSS
 Syntaxisaccentuering
 : Schakel highlight.js [syntax highlighting](Syntax_Highlighting.html) in voor codeblokken. Selecteer een thema in de vervolgkeuzelijst.
 : Als **Alleen als taal is opgegeven** is aangevinkt, wordt syntaxisaccentuering alleen toegepast op afgeschermde codeblokken met een opgegeven taal.
+: **Toon regelnummers in codeblokken** — wanneer syntaxisaccentuering is ingeschakeld, worden regelnummers op gemarkeerde blokken weergegeven (met per blok `linenums` / `nolinenums` overschrijvingen).
 
 Schakel MathJax in
 : Laadt [MathJax](MathJax.html) voor het weergeven van MathML-vergelijkingen. Kies **Lokaal** (gebundeld) of **CDN** in de vervolgkeuzelijst.

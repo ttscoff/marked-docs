@@ -10,6 +10,9 @@ Opções em {% prefspane General %}:
 
 ### Janela [window]
 
+Restaurar documentos abertos ao iniciar Marked
+: Quando ativado, Marked reabre os documentos que estavam abertos quando você saiu pela última vez. Desligue isso para começar sem janelas. Esta configuração é específica de Marked e independente da opção Dock **Fechar janelas ao sair de um aplicativo**.
+
 Mantenha as novas janelas no topo
 : define automaticamente novas janelas para "flutuar" acima de outros aplicativos.
 

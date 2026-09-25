@@ -8,6 +8,9 @@ Options in the {% prefspane General %}:
 
 ### Window [window]
 
+Restore open documents when launching Marked
+: When enabled, Marked reopens the documents that were open when you last quit. Turn this off to start with no windows. This setting is Marked-specific and independent of the Dock option **Close windows when quitting an application**.
+
 Keep new windows on top
 : Automatically set new windows to "float" above other applications.
 

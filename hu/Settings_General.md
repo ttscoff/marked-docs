@@ -10,6 +10,9 @@ A {% prefspane General %} opciói:
 
 ### Ablak [window]
 
+A megnyitott dokumentumok visszaállítása a Marked indításakor
+: Ha engedélyezve van, a Marked újra megnyitja azokat a dokumentumokat, amelyek a legutóbbi kilépéskor nyitva voltak. Kapcsolja ki ezt a funkciót, ha ablakok nélkül szeretne kezdeni. Ez a beállítás Marked-specifikus és független a **Zárja be az ablakokat, amikor kilép egy alkalmazásból** dokkolási lehetőségtől.
+
 Tartsa felül az új ablakokat
 : Az új ablakok automatikus beállítása úgy, hogy „lebegjen” a többi alkalmazás felett.
 

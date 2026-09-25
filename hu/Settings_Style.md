@@ -66,6 +66,7 @@ További CSS
 Szintaxis kiemelés
 : A highlight.js [szintaxiskiemelés](Syntax_Highlighting.html) bekapcsolása kódblokkokhoz. Válasszon ki egy témát a legördülő menüből.
 : Ha a **Csak ha a nyelv megadva** be van jelölve, a szintaktikai kiemelés csak a megadott nyelvű elkerített kódblokkokra vonatkozik.
+: **Sorszámok megjelenítése kódblokkban** — ha a szintaxis kiemelés be van kapcsolva, a sorszámok megjelenítése a kiemelt blokkon (blokkonkénti `linenums` / `nolinenums` felülírással).
 
 Engedélyezze a MathJaxot
 : A [MathJax](MathJax.html) betöltése a MathML egyenletek megjelenítéséhez. Válassza a **Helyi** (csomagolt) vagy a **CDN** lehetőséget a legördülő menüből.

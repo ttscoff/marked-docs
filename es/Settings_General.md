@@ -10,6 +10,9 @@ Opciones en el {% prefspane General %}:
 
 ### Ventana [window]
 
+Restaurar documentos abiertos al iniciar Marked
+: Cuando está habilitado, Marked vuelve a abrir los documentos que estaban abiertos la última vez que salió. Desactive esto para comenzar sin ventanas. Esta configuración es específica de Marked e independiente de la opción Dock **Cerrar ventanas al salir de una aplicación**.
+
 Mantenga nuevas ventanas en la parte superior
 : configura automáticamente nuevas ventanas para que "floten" sobre otras aplicaciones.
 

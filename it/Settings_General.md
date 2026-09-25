@@ -10,6 +10,9 @@ Opzioni in {% prefspane General %}:
 
 ### Finestra [window]
 
+Ripristina i documenti aperti all'avvio di Marked
+: Se abilitato, Marked riapre i documenti che erano aperti l'ultima volta che sei uscito. Disattiva questa opzione per iniziare senza finestre. Questa impostazione è Marked specifica e indipendente dall'opzione Dock **Chiudi le finestre quando esci da un'applicazione**.
+
 Mantieni le nuove finestre in primo piano
 : imposta automaticamente le nuove finestre in modo che "fluttuino" sopra altre applicazioni.
 

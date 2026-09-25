@@ -8,6 +8,9 @@ Opties in de {% prefspane General %}:
 
 ### Raam [window]
 
+Herstel geopende documenten bij het starten van Marked
+: Indien ingeschakeld, opent Marked de documenten die open waren toen u de laatste keer stopte. Schakel dit uit om zonder vensters te starten. Deze instelling is Marked-specifiek en onafhankelijk van de Dock-optie **Sluit vensters wanneer u een toepassing afsluit**.
+
 Houd nieuwe vensters bovenaan
 : automatisch instellen dat nieuwe vensters boven andere toepassingen zweven.
 

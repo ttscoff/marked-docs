@@ -66,6 +66,7 @@ CSS adicional
 Destaque de sintaxe
 : Ative destaque.js [destaque de sintaxe](Syntax_Highlighting.html) para blocos de código. Selecione um tema no menu suspenso.
 : Se **Somente se o idioma especificado** estiver marcado, o realce de sintaxe só será aplicado a blocos de código protegidos com um idioma especificado.
+: **Mostrar números de linha em blocos de código** — quando o realce de sintaxe está ativado, exibe os números das linhas nos blocos destacados (com substituições `linenums` / `nolinenums` por bloco).
 
 Habilitar MathJax
 : Carrega [MathJax](MathJax.html) para exibir equações MathML. Escolha **Local** (empacotado) ou **CDN** no menu suspenso.

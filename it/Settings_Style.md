@@ -66,6 +66,7 @@ CSS aggiuntivi
 Evidenziazione della sintassi
 : attiva highlight.js [evidenziazione della sintassi](Syntax_Highlighting.html) per i blocchi di codice. Seleziona un tema dal menu a discesa.
 : Se è selezionato **Solo se la lingua specificata**, l'evidenziazione della sintassi verrà applicata solo ai blocchi di codice protetti con una lingua specificata.
+: **Mostra i numeri di riga nei blocchi di codice** — quando l'evidenziazione della sintassi è attiva, visualizza i numeri di riga sui blocchi evidenziati (con sostituzioni `linenums` / `nolinenums` per blocco).
 
 Abilita MathJax
 : Carica [MathJax](MathJax.html) per visualizzare le equazioni MathML. Scegli **Locale** (in bundle) o **CDN** dal menu a discesa.
