@@ -234,4 +234,14 @@
 # EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
 # DRAFT: Als dit aan staat, wordt het iA Writer-annotatieblok aan het einde van het bestand vóór het voorbeeld verwijderd. Standaard uit.
 
+
+# --- Not part of the Apex handoff, but same file and shipping in 3.2.6 ---
+# The processor picker in Settings shows the Discount processor as "Korting"
+# (Korting is a price-discount word). It is a product name and must stay
+# "Discount" in every locale. Same bug in de/es/fr/ja/nl/pt-BR/hu.
+
+"setting.processor.discount" = "Discount";
+# EN: Discount
+# DRAFT: Korting
+
 === END Settings.strings ===
