@@ -87,7 +87,7 @@ MultiMarkdown metadata at the top of your source file can affect HTML export:
 * **`XHTML Header:`** / **`HTML Header:`** --- injects additional tags into the exported `<head>` (scripts, link tags, meta tags)
 * Other metadata keys are processed according to your [Markdown processor](Choosing_a_Processor.html)
 
-If you use metadata for export settings but do not want keys visible in other outputs, wrap them in HTML comments --- Marked finds and processes commented metadata anywhere in the document. See [Per-Document Settings](Per-Document_Settings.html).
+If you use metadata for export settings but do not want keys visible in other outputs, wrap them in an HTML comment at the top of the document --- Marked reads commented metadata there. See [Per-Document Settings](Per-Document_Settings.html).
 
 ## Multi-file documents [multi-file-documents]
 

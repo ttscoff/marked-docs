@@ -201,7 +201,7 @@ Run Embedded Script
 
 Set Metadata
 : Adds or sets metadata. Provide a key and a value. If the key exists, its value will be updated, if not, it will be added. The type of metadata used will be automatically determined by the file's contents (or the result of a metadata conversion action).
-: If no existing metadata is found, the metadata will be added in MultiMarkdown format inside of an HTML comment. Marked can read this metadata, but it won't appear in your preview no matter what processor is used.
+: If no existing metadata is found, the metadata will be added in MultiMarkdown format inside of an HTML comment at the top of the document (for example, `<!-- Marked Style: Swiss -->`). Later Set Metadata actions add to or update those comments. Marked reads this metadata (including Marked Style and Processor keys), but it won't appear in your preview no matter what processor is used.
 
 Delete Metadata
 : Delete a metadata based on its key.
