@@ -69,3 +69,6 @@ Treat +++ as page breaks
 
 Remove iA Writer annotations
 : When enabled, Marked removes the iA Writer annotations block at the end of a file before preview. That block is an `Annotations:` line containing a SHA-256 hash, then `@name` and `&name` range lines, often with a lone `---` just above it. Off by default. If ordinary prose follows the `Annotations:` line, the file is left unchanged.
+
+iA Writer compatibility
+: When enabled, Marked supports iA Writer content blocks. A line that starts with `/` followed by a file path (up to three leading spaces allowed) includes that file: text and Markdown files are inserted, code files become code blocks, and images are displayed. An optional title can follow the path in quotes or parentheses. A line containing only an image URL displays the image. Lines inside fenced code blocks and `<pre>` blocks are never converted. Turn this off if lines that begin with a path are being replaced unexpectedly. On by default.
