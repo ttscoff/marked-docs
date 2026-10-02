@@ -1,0 +1,102 @@
+# Help translation gap — de
+# Features_For_Coders.md, Settings_Style.md, Settings_General.md, Working_With_DOCX.md
+# Generated: 2026-10-02
+#
+# Four commits on marked-docs main (35ca513, b7a4675, 7b8c6c0, fd3a588)
+# updated English and the machine-translated locales and left German untouched.
+# Nothing writes a German gap file on its own. Pull requests only include one
+# when it is committed by hand, and these landed as direct commits.
+# An earlier draft of locations 2 and 3 was written to the Marked app repo
+# (docs/help_gaps_de_restore_windows_and_line_numbers.txt) and was not copied
+# into gaps/. This file replaces that draft and adds the two missing pages.
+#
+# German pages are finished. Do not machine-overwrite them. Translate the
+# ENGLISH TARGET blocks and insert them where described.
+#
+# Return: PR to ttscoff/marked-docs on a de/ branch, or reply with the
+# updated German snippets only.
+#
+# UI strings already in de.lproj/Settings.strings (align the help with these):
+#   setting.restoreWindowsOnLaunch = Offene Dokumente beim Start von Marked wiederherstellen
+#   tooltip.restoreWindowsOnLaunch = Wenn aktiviert, öffnet Marked die Dokumente erneut, die beim letzten Beenden geöffnet waren. Deaktivieren, um ohne Fenster zu starten. Diese Einstellung gilt nur für Marked und ist unabhängig von der Dock-Option „Fenster beim Beenden einer App schließen“.
+#   setting.syntaxLineNumbers = Zeilennummern in Codeblöcken anzeigen
+#   tooltip.syntaxLineNumbers = Zeilennummern zu syntaxhervorgehobenen Codeblöcken hinzufügen. Mit linenums oder numberLines an einem Fence die Nummerierung für einen Block erzwingen; mit nolinenums überspringen.
+#
+# The DOCX checkbox title is still English in the nib
+# ("Add blank lines between paragraphs") and is not in Settings.strings yet.
+
+=== LOCATION 1 ===
+File: de/Features_For_Coders.md
+Section: Syntaxhervorhebung [syntax-highlighting]
+Insert a new ### section after the fenced ```js example and before
+"Die Syntaxhervorhebung erscheint in der Vorschau sowie beim Drucken und im PDF-Export."
+
+=== CURRENT GERMAN (keep this; insert the new section between the two blocks) ===
+Die Option „Nur wenn Sprache angegeben“ rechts neben der Auswahl für den Syntaxstil gilt für abgegrenzte Codeblöcke. Ist sie aktiviert, wird die Syntaxhervorhebung nur auf Codeblöcke angewendet, bei denen nach dem öffnenden Trennzeichen eine Sprache angegeben ist, zum Beispiel:
+
+    ```js
+    code
+    ```
+
+Die Syntaxhervorhebung erscheint in der Vorschau sowie beim Drucken und im PDF-Export.
+
+=== ENGLISH TARGET (translate to German and insert between the blocks above) ===
+### Line numbers
+
+Enable **Show line numbers in code blocks** in Settings > Style to number every syntax-highlighted block.
+
+To force numbers on a single block (even when the preference is off), add `linenums` or `numberLines` to the fence info string:
+
+    ```python linenums
+    def hello():
+        pass
+    ```
+
+To skip numbering for one block when the preference is on, add `nolinenums` (or `nohljsln`).
+
+These force/skip tokens are preserved by Marked as classes on the `<code>` element during preview. If your Markdown processor emits `data-ln-start-from="N"` on the `<code>` element (for example Pandoc), numbering starts at `N`. Full Pandoc brace attributes such as `{.numberLines startFrom="100"}` are only honored when those classes or attributes appear on the HTML.
+
+=== LOCATION 2 ===
+File: de/Settings_Style.md
+Section heading: Skripte einbinden [include-scripts]
+Append one definition line under the existing "Syntaxhervorhebung" item, after the "Nur wenn Sprache angegeben" line.
+
+=== CURRENT GERMAN (keep this block; append the new line after it) ===
+Syntaxhervorhebung
+: Aktiviert die highlight.js-[Syntaxhervorhebung](Syntax_Highlighting.html) für Codeblöcke. Wählen Sie einen Stil aus dem Dropdown-Menü.
+: Ist **Nur wenn Sprache angegeben** aktiviert, wird die Syntaxhervorhebung nur auf abgegrenzte Codeblöcke mit angegebener Sprache angewendet.
+
+=== ENGLISH TARGET (translate to German and append after the block above) ===
+: **Show line numbers in code blocks** — when syntax highlighting is on, display line numbers on highlighted blocks (with per-block `linenums` / `nolinenums` overrides).
+
+=== LOCATION 3 ===
+File: de/Settings_General.md
+Section heading: Fenster [window]
+Insert as the first definition-list item in that section, before "Neue Fenster im Vordergrund halten".
+
+=== CURRENT GERMAN (keep this block; insert the new item before it) ===
+Neue Fenster im Vordergrund halten
+: Stellt neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.
+
+=== ENGLISH TARGET (translate to German and insert before the block above) ===
+Restore open documents when launching Marked
+: When enabled, Marked reopens the documents that were open when you last quit. Turn this off to start with no windows. This setting is Marked-specific and independent of the Dock option **Close windows when quitting an application**.
+
+=== LOCATION 4 ===
+File: de/Working_With_DOCX.md
+Section: DOCX-Dateien exportieren [exporting-docx-files]
+Append one sentence at the end of the opening paragraph, before "### Kopf- und Fußzeilen".
+
+=== CURRENT GERMAN (keep this paragraph; append the new sentence after it) ===
+Über das Export-Panel erzeugen Sie aus Ihrem Markdown eine DOCX-Datei. Im Speicherdialog können Sie einen integrierten Stil angeben – dieser Stil lässt sich in Word ganz einfach ändern, indem Sie die Designauswahl öffnen und ein neues Design wählen.
+
+=== ENGLISH TARGET (translate to German and append after the paragraph above) ===
+The **Add blank lines between paragraphs** checkbox (also in {% prefspane Apps %} under Word) controls whether Marked inserts extra empty paragraphs between body paragraphs; when off, spacing comes from the Word style only.
+
+=== NOTES ===
+- Keep help macros unchanged: {% prefspane %}, {% kbd %}, {% appmenu %}
+- Keep product and format names: Marked, highlight.js, Pandoc, Word, DOCX
+- Keep inline code: `linenums`, `numberLines`, `nolinenums`, `nohljsln`, `data-ln-start-from`, `{.numberLines startFrom="100"}`
+- Prefer the Settings.strings labels above for the two preferences
+- Glossary: fenced code block = abgegrenzter Codeblock; syntax highlighting = Syntaxhervorhebung; Settings = Einstellungen
+- Keep definition-list syntax (`Title` then `: body`, or a bare `: body` continuation line)
