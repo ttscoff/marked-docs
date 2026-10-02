@@ -66,7 +66,7 @@ Grid tables
 : Grid-style tables drawn with `+` and `|`. Off by default.
 
 Relaxed tables
-: Pipe tables may omit the leading and trailing pipes. On by default.
+: Consecutive lines containing pipes become a table even without a separator row. Off by default, because lines that merely contain `|` characters can turn into unexpected tables.
 
 Per-cell alignment
 : Alignment markers in a table cell override the column alignment. On by default.
