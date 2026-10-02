@@ -971,7 +971,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Beállítások: Előnézet'
     file: Settings_Preview
-    description: 'Lehetőségek a következőben: Minitérképes navigáció engedélyezése: Készítsen vizuális térképet a dokumentumról, amely akkor jelenik meg, ha megnyomja a \\"0\\" gombot. Rövid késéseket okozhat, ha...'
+    description: 'Az Előnézet opciói: Minitérképes navigáció engedélyezése: Készítsen vizuális térképet a dokumentumról, amely akkor jelenik meg, ha megnyomja a \\"0\\" gombot. Rövid késéseket okozhat, ha...'
     keywords:
     - között
     - összeomlás
@@ -984,7 +984,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Beállítások: Stílus'
     file: Settings_Style
-    description: 'Opciók a : Szövegszélesség korlátozása az Előnézetben : Állítsa be az előnézet törzsének maximális szélességét a csúszkával (pixelben).'
+    description: 'A Stílus opciói: Szövegszélesség korlátozása az Előnézetben : Állítsa be az előnézet törzsének maximális szélességét a csúszkával (pixelben).'
     keywords:
     - stílus
     - téma
@@ -992,7 +992,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Beállítások: Processzor'
     file: Settings_Processor
-    description: 'Opciók a : Alapértelmezett Markdown processzorban. A CommonMark processzort részesítik előnyben a GitHub-felhasználók, a MultiMarkdown ideális az íróknak, a Discount és...'
+    description: 'A Feldolgozó opciói: Alapértelmezett Markdown processzorban. A CommonMark processzort részesítik előnyben a GitHub-felhasználók, a MultiMarkdown ideális az íróknak, a Discount és...'
     keywords:
     - processzor
     - közjegy
@@ -1002,7 +1002,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: 'Beállítások: Alkalmazások'
     file: Settings_Apps
-    description: 'Opciók a : (Lásd: További alkalmazástámogatás) Szövegszerkesztő : Válasszon ki egy szövegszerkesztőt, amely a Cmd-E beírása közben fogadja az aktuális dokumentumot.'
+    description: 'Az Alkalmazások opciói: (Lásd: További alkalmazástámogatás) Szövegszerkesztő : Válasszon ki egy szövegszerkesztőt, amely a Cmd-E beírása közben fogadja az aktuális dokumentumot.'
     keywords:
     - írnok
     - szökőkút
@@ -1015,7 +1015,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Beállítások: Proofing'
     file: Settings_Proofing
-    description: 'Lehetőségek a következőben: Mindig nyissa meg az új dokumentumokat lektorálási módban : Az új dokumentumok alapértelmezés szerint kulcsszókiemeléseket jelenítenek meg.'
+    description: 'A Lektorálás opciói: Mindig nyissa meg az új dokumentumokat lektorálási módban : Az új dokumentumok alapértelmezés szerint kulcsszókiemeléseket jelenítenek meg.'
     keywords:
     - bizonyítást
     - megjegyzéseket
@@ -1024,7 +1024,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Beállítások: Exportálás'
     file: Settings_Export
-    description: 'Opciók a : (További információért lásd: Exportálás) Profil exportálása: Válasszon ki egy mentett profilt a felugró menüből. A profilok az exportálás teljes készletét tárolják...'
+    description: 'Az Exportálás opciói: (További információért lásd: Exportálás) Profil exportálása: Válasszon ki egy mentett profilt a felugró menüből. A profilok az exportálás teljes készletét tárolják...'
     keywords:
     - export
     - pdf
@@ -1035,7 +1035,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Beállítások: Speciális'
     file: Settings_Advanced
-    description: 'Opciók a : YAML és Pandoc metaadatokban: - __Ignore:__ Pontosan úgy hagyja meg, ahogy a dokumentumban van, hasznos, ha a processzor vagy az előfeldolgozó valójában...'
+    description: 'A Speciális opciói: YAML és Pandoc metaadatokban: - __Ignore:__ Pontosan úgy hagyja meg, ahogy a dokumentumban van, hasznos, ha a processzor vagy az előfeldolgozó valójában...'
     keywords:
     - fejlett
     - beállításokat

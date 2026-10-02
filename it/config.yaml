@@ -971,7 +971,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Impostazioni: Anteprima'
     file: Settings_Preview
-    description: 'Opzioni in: Abilita navigazione mini mappa: Genera una mappa visiva del documento che viene visualizzata quando si preme \\"0\\". Potrebbe causare brevi ritardi quando...'
+    description: 'Opzioni in Anteprima: Abilita navigazione mini mappa: Genera una mappa visiva del documento che viene visualizzata quando si preme \\"0\\". Potrebbe causare brevi ritardi quando...'
     keywords:
     - anteprima
     - crollo
@@ -984,7 +984,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Impostazioni: Stile'
     file: Settings_Style
-    description: 'Opzioni in: Limita la larghezza del testo nell\'anteprima: Imposta una larghezza massima per il corpo dell\'anteprima utilizzando il cursore (in pixel).'
+    description: 'Opzioni in Stile: Limita la larghezza del testo nell\'anteprima: Imposta una larghezza massima per il corpo dell\'anteprima utilizzando il cursore (in pixel).'
     keywords:
     - stile
     - tema
@@ -992,7 +992,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Impostazioni: Processore'
     file: Settings_Processor
-    description: 'Opzioni in: Processore Markdown predefinito. Il processore CommonMark è preferito per gli utenti GitHub, MultiMarkdown è l\'ideale per gli scrittori e Discount e...'
+    description: 'Opzioni in Processore: Processore Markdown predefinito. Il processore CommonMark è preferito per gli utenti GitHub, MultiMarkdown è l\'ideale per gli scrittori e Discount e...'
     keywords:
     - processore
     - segno comune
@@ -1002,7 +1002,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: 'Impostazioni: Applicazioni'
     file: Settings_Apps
-    description: 'Opzioni in: (Vedi Supporto app aggiuntivo) Editor di testo: seleziona un editor di testo per ricevere il documento corrente quando digiti Cmd-E.'
+    description: 'Opzioni in Applicazioni: (Vedi Supporto app aggiuntivo) Editor di testo: seleziona un editor di testo per ricevere il documento corrente quando digiti Cmd-E.'
     keywords:
     - scrivano
     - fontana
@@ -1015,7 +1015,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Impostazioni: correzione'
     file: Settings_Proofing
-    description: 'Opzioni in : Apri sempre i nuovi documenti in modalità di prova : I nuovi documenti mostreranno per impostazione predefinita le evidenziazioni delle parole chiave.'
+    description: 'Opzioni in Correzione bozze: Apri sempre i nuovi documenti in modalità di prova : I nuovi documenti mostreranno per impostazione predefinita le evidenziazioni delle parole chiave.'
     keywords:
     - prove
     - commenti
@@ -1024,7 +1024,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Impostazioni: Esporta'
     file: Settings_Export
-    description: 'Opzioni in: (Vedi Esportazione per maggiori informazioni) Esporta profilo: seleziona un profilo salvato dal menu a comparsa. I profili memorizzano un set completo di esportazioni...'
+    description: 'Opzioni in Esporta: (Vedi Esportazione per maggiori informazioni) Esporta profilo: seleziona un profilo salvato dal menu a comparsa. I profili memorizzano un set completo di esportazioni...'
     keywords:
     - esportare
     - pdf
@@ -1035,7 +1035,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Impostazioni: Avanzate'
     file: Settings_Advanced
-    description: 'Opzioni in: Metadati YAML e Pandoc: - __Ignora:__ Lascia esattamente come esiste nel documento, utile se il tuo processore o preprocessore in realtà...'
+    description: 'Opzioni in Avanzate: Metadati YAML e Pandoc: - __Ignora:__ Lascia esattamente come esiste nel documento, utile se il tuo processore o preprocessore in realtà...'
     keywords:
     - avanzato
     - impostazioni

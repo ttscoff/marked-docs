@@ -970,7 +970,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Settings: Preview'
     file: Settings_Preview
-    description: "Options in the : Enable Mini Map navigation : Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when..."
+    description: "Options in the Marked Settings > Preview pane: Enable Mini Map navigation : Generate a visual map of the document which shows up when \"0\" is pressed. May cause short delays when..."
     keywords:
     - preview
     - collapse
@@ -983,7 +983,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Settings: Style'
     file: Settings_Style
-    description: "Options in the : Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels)."
+    description: "Options in the Marked Settings > Style pane: Limit text width in Preview : Set a maximum width for the body of the preview using the slider (in pixels)."
     keywords:
     - style
     - theme
@@ -991,7 +991,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Settings: Processor'
     file: Settings_Processor
-    description: "Options in the : Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and..."
+    description: "Options in the Marked Settings > Processor pane: Default Markdown processor. The CommonMark processor is preferred for GitHub users, MultiMarkdown is ideal for writers, and Discount and..."
     keywords:
     - processor
     - commonmark
@@ -1001,7 +1001,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: 'Settings: Applications'
     file: Settings_Apps
-    description: "Options in the : (See Additional App Support) Text Editor : Select a text editor to receive the current document when you type Cmd-E."
+    description: "Options in the Marked Settings > Apps pane: (See Additional App Support) Text Editor : Select a text editor to receive the current document when you type Cmd-E."
     keywords:
     - scrivener
     - fountain
@@ -1014,7 +1014,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Settings: Proofing'
     file: Settings_Proofing
-    description: "Options in the : Always open new documents in proofing mode : New documents will default to showing keyword highlights."
+    description: "Options in the Marked Settings > Proofing pane: Always open new documents in proofing mode : New documents will default to showing keyword highlights."
     keywords:
     - proofing
     - comments
@@ -1023,7 +1023,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Settings: Export'
     file: Settings_Export
-    description: "Options in the : (See Exporting for more info) Export Profile : Select a saved profile from the popup menu. Profiles store a complete set of export..."
+    description: "Options in the Marked Settings > Export pane: (See Exporting for more info) Export Profile : Select a saved profile from the popup menu. Profiles store a complete set of export..."
     keywords:
     - export
     - pdf
@@ -1034,7 +1034,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Settings: Advanced'
     file: Settings_Advanced
-    description: "Options in the : YAML and Pandoc Metadata : - __Ignore:__ Leaves it exactly as it exists in the document, useful if your processor or preprocessor actually..."
+    description: "Options in the Marked Settings > Advanced pane: YAML and Pandoc Metadata : - __Ignore:__ Leaves it exactly as it exists in the document, useful if your processor or preprocessor actually..."
     keywords:
     - advanced
     - settings

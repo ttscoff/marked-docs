@@ -1056,7 +1056,7 @@ Sections:
     - 'einstellungen: allgemein'
   - title: 'Einstellungen: Vorschau'
     file: Settings_Preview
-    description: "Optionen in diesem Bereich: Mini-Map-Navigation aktivieren : Erzeugt eine visuelle Karte des Dokuments, die auf Druck der Taste „0\" erscheint. Kann zu kurzen Verzögerungen führen, wenn ..."
+    description: "Optionen unter Vorschau: Mini-Map-Navigation aktivieren : Erzeugt eine visuelle Karte des Dokuments, die auf Druck der Taste „0\" erscheint. Kann zu kurzen Verzögerungen führen, wenn ..."
     keywords:
     - vorschau
     - einklappen
@@ -1071,7 +1071,7 @@ Sections:
     - aktuelle überschrift
   - title: 'Einstellungen: Stil'
     file: Settings_Style
-    description: "Optionen in diesem Bereich: Textbreite in der Vorschau begrenzen : Legt über den Schieberegler eine Höchstbreite für den Textkörper der Vorschau fest (in Pixeln)."
+    description: "Optionen unter Stil: Textbreite in der Vorschau begrenzen : Legt über den Schieberegler eine Höchstbreite für den Textkörper der Vorschau fest (in Pixeln)."
     keywords:
     - stil
     - design
@@ -1080,7 +1080,7 @@ Sections:
     - 'einstellungen: stil'
   - title: 'Einstellungen: Prozessor'
     file: Settings_Processor
-    description: "Optionen in diesem Bereich: Standard-Markdown-Prozessor. CommonMark empfiehlt sich für GitHub-Nutzer, MultiMarkdown eignet sich für Schreibende, und Discount sowie ..."
+    description: "Optionen unter Verarbeitung: Standard-Markdown-Prozessor. CommonMark empfiehlt sich für GitHub-Nutzer, MultiMarkdown eignet sich für Schreibende, und Discount sowie ..."
     keywords:
     - prozessor
     - commonmark
@@ -1091,7 +1091,7 @@ Sections:
     - 'einstellungen: prozessor'
   - title: 'Einstellungen: Apps'
     file: Settings_Apps
-    description: "Optionen in diesem Bereich: (siehe Weitere App-Integrationen) Texteditor : Wählen Sie einen Texteditor, der das aktuelle Dokument erhält, wenn Sie Befehl-E drücken."
+    description: "Optionen unter Anwendungen: (siehe Weitere App-Integrationen) Texteditor : Wählen Sie einen Texteditor, der das aktuelle Dokument erhält, wenn Sie Befehl-E drücken."
     keywords:
     - scrivener
     - fountain
@@ -1105,7 +1105,7 @@ Sections:
     - 'einstellungen: apps'
   - title: 'Einstellungen: Korrekturlesen'
     file: Settings_Proofing
-    description: "Optionen in diesem Bereich: Neue Dokumente immer im Korrekturmodus öffnen : Neue Dokumente zeigen dann standardmäßig Schlüsselwort-Hervorhebungen."
+    description: "Optionen unter Korrekturlesen: Neue Dokumente immer im Korrekturmodus öffnen : Neue Dokumente zeigen dann standardmäßig Schlüsselwort-Hervorhebungen."
     keywords:
     - korrekturlesen
     - kommentare
@@ -1115,7 +1115,7 @@ Sections:
     - 'einstellungen: korrekturlesen'
   - title: 'Einstellungen: Export'
     file: Settings_Export
-    description: "Optionen in diesem Bereich: (Näheres unter Exportieren) Exportprofil : Wählen Sie ein gespeichertes Profil aus dem Einblendmenü. Profile sichern einen vollständigen Satz an Export- ..."
+    description: "Optionen unter Export: (Näheres unter Exportieren) Exportprofil : Wählen Sie ein gespeichertes Profil aus dem Einblendmenü. Profile sichern einen vollständigen Satz an Export- ..."
     keywords:
     - export
     - pdf
@@ -1127,7 +1127,7 @@ Sections:
     - 'einstellungen: export'
   - title: 'Einstellungen: Erweitert'
     file: Settings_Advanced
-    description: "Optionen in diesem Bereich: YAML- und Pandoc-Metadaten : - __Ignorieren:__ Belässt sie exakt so, wie sie im Dokument stehen – nützlich, wenn Ihr Prozessor oder Präprozessor sie tatsächlich ..."
+    description: "Optionen unter Erweitert: YAML- und Pandoc-Metadaten : - __Ignorieren:__ Belässt sie exakt so, wie sie im Dokument stehen – nützlich, wenn Ihr Prozessor oder Präprozessor sie tatsächlich ..."
     keywords:
     - erweitert
     - einstellungen
