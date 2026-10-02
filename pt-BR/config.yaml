@@ -971,7 +971,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Configurações: Visualização'
     file: Settings_Preview
-    description: 'Opções em: Habilitar navegação no minimapa: gera um mapa visual do documento que aparece quando "0" é pressionado. Pode causar pequenos atrasos quando...'
+    description: 'Opções em Pré-visualização: Habilitar navegação no minimapa: gera um mapa visual do documento que aparece quando "0" é pressionado. Pode causar pequenos atrasos quando...'
     keywords:
     - visualização
     - colapso
@@ -984,7 +984,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Configurações: Estilo'
     file: Settings_Style
-    description: 'Opções em: Limitar a largura do texto na visualização: defina uma largura máxima para o corpo da visualização usando o controle deslizante (em pixels).'
+    description: 'Opções em Estilo: Limitar a largura do texto na visualização: defina uma largura máxima para o corpo da visualização usando o controle deslizante (em pixels).'
     keywords:
     - estilo
     - tema
@@ -992,7 +992,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Configurações: Processador'
     file: Settings_Processor
-    description: 'Opções em: Processador Markdown padrão. O processador CommonMark é preferido para usuários do GitHub, MultiMarkdown é ideal para escritores e Discount and...'
+    description: 'Opções em Processador: Processador Markdown padrão. O processador CommonMark é preferido para usuários do GitHub, MultiMarkdown é ideal para escritores e Discount and...'
     keywords:
     - processador
     - marca comum
@@ -1002,7 +1002,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: 'Configurações: Aplicativos'
     file: Settings_Apps
-    description: 'Opções em: (Consulte Suporte adicional ao aplicativo) Editor de texto: selecione um editor de texto para receber o documento atual quando você digitar Cmd-E.'
+    description: 'Opções em Aplicativos: (Consulte Suporte adicional ao aplicativo) Editor de texto: selecione um editor de texto para receber o documento atual quando você digitar Cmd-E.'
     keywords:
     - escrivão
     - fonte
@@ -1015,7 +1015,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Configurações: revisão'
     file: Settings_Proofing
-    description: 'Opções em: Sempre abrir novos documentos no modo de revisão: Novos documentos exibirão destaques de palavras-chave por padrão.'
+    description: 'Opções em Revisão: Sempre abrir novos documentos no modo de revisão: Novos documentos exibirão destaques de palavras-chave por padrão.'
     keywords:
     - revisão
     - comentários
@@ -1024,7 +1024,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Configurações: Exportar'
     file: Settings_Export
-    description: 'Opções em: (Consulte Exportação para obter mais informações) Exportar perfil: Selecione um perfil salvo no menu pop-up. Os perfis armazenam um conjunto completo de arquivos de exportação...'
+    description: 'Opções em Exportar: (Consulte Exportação para obter mais informações) Exportar perfil: Selecione um perfil salvo no menu pop-up. Os perfis armazenam um conjunto completo de arquivos de exportação...'
     keywords:
     - exportar
     - pdf
@@ -1035,7 +1035,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Configurações: Avançado'
     file: Settings_Advanced
-    description: 'Opções em: Metadados YAML e Pandoc: - __Ignore:__ Deixa exatamente como existe no documento, útil se o seu processador ou pré-processador realmente ...'
+    description: 'Opções em Avançado: Metadados YAML e Pandoc: - __Ignore:__ Deixa exatamente como existe no documento, útil se o seu processador ou pré-processador realmente ...'
     keywords:
     - avançado
     - configurações

@@ -971,7 +971,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: 'Paramètres : Aperçu'
     file: Settings_Preview
-    description: "Options dans : Activer la navigation sur la mini-carte : Générez une carte visuelle du document qui apparaît lorsque vous appuyez sur \"0\". Peut entraîner de courts retards lorsque..."
+    description: "Options du panneau Aperçu : Activer la navigation sur la mini-carte : Générez une carte visuelle du document qui apparaît lorsque vous appuyez sur \"0\". Peut entraîner de courts retards lorsque..."
     keywords:
     - aperçu
     - effondrement
@@ -984,7 +984,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: 'Paramètres : Style'
     file: Settings_Style
-    description: "Options dans : Limiter la largeur du texte dans l'aperçu : Définissez une largeur maximale pour le corps de l'aperçu à l'aide du curseur (en pixels)."
+    description: "Options du panneau Style : Limiter la largeur du texte dans l'aperçu : Définissez une largeur maximale pour le corps de l'aperçu à l'aide du curseur (en pixels)."
     keywords:
     - style
     - thème
@@ -992,7 +992,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: 'Paramètres : Processeur'
     file: Settings_Processor
-    description: "Options dans le processeur Markdown par défaut. Le processeur CommonMark est préféré pour les utilisateurs de GitHub, MultiMarkdown est idéal pour les rédacteurs, et Discount et..."
+    description: "Options du panneau Processeur : Processeur Markdown par défaut. Le processeur CommonMark est préféré pour les utilisateurs de GitHub, MultiMarkdown est idéal pour les rédacteurs, et Discount et..."
     keywords:
     - processeur
     - commonmark
@@ -1002,7 +1002,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: 'Paramètres : Applications'
     file: Settings_Apps
-    description: "Options dans : (Voir Prise en charge supplémentaire de l'application) Éditeur de texte : Sélectionnez un éditeur de texte pour recevoir le document actuel lorsque vous tapez Cmd-E."
+    description: "Options du panneau Applications : (Voir Prise en charge supplémentaire de l'application) Éditeur de texte : Sélectionnez un éditeur de texte pour recevoir le document actuel lorsque vous tapez Cmd-E."
     keywords:
     - scribe
     - fontaine
@@ -1015,7 +1015,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: 'Paramètres : Vérification'
     file: Settings_Proofing
-    description: "Options dans : Toujours ouvrir les nouveaux documents en mode de vérification linguistique : Les nouveaux documents afficheront par défaut les surlignages des mots clés."
+    description: "Options du panneau Relecture : Toujours ouvrir les nouveaux documents en mode de vérification linguistique : Les nouveaux documents afficheront par défaut les surlignages des mots clés."
     keywords:
     - vérification
     - commentaires
@@ -1024,7 +1024,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: 'Paramètres : Exporter'
     file: Settings_Export
-    description: "Options dans : (Voir Exporter pour plus d'informations) Exporter le profil : Sélectionnez un profil enregistré dans le menu contextuel. Les profils stockent un ensemble complet d'exportations..."
+    description: "Options du panneau Export : (Voir Exporter pour plus d'informations) Exporter le profil : Sélectionnez un profil enregistré dans le menu contextuel. Les profils stockent un ensemble complet d'exportations..."
     keywords:
     - exportateur
     - pdf
@@ -1035,7 +1035,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: 'Paramètres : Avancé'
     file: Settings_Advanced
-    description: "Options dans les : Métadonnées YAML et Pandoc : - __Ignore:__ Le laisse exactement tel qu'il existe dans le document, utile si votre processeur ou préprocesseur en fait..."
+    description: "Options du panneau Avancé : Métadonnées YAML et Pandoc : - __Ignore:__ Le laisse exactement tel qu'il existe dans le document, utile si votre processeur ou préprocesseur en fait..."
     keywords:
     - avancé
     - paramètres

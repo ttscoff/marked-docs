@@ -966,7 +966,7 @@ Sections:
     wiki_keywords: [general settings]
   - title: '設定: プレビュー'
     file: Settings_Preview
-    description: 'のオプション: ミニマップ ナビゲーションを有効にする: \\"0\\" を押したときに表示されるドキュメントのビジュアル マップを生成します。次の場合、短期間の遅延が発生する可能性があります...'
+    description: 'プレビューのオプション: ミニマップ ナビゲーションを有効にする: \\"0\\" を押したときに表示されるドキュメントのビジュアル マップを生成します。次の場合、短期間の遅延が発生する可能性があります...'
     keywords:
     - プレビュー
     - 崩壊
@@ -979,7 +979,7 @@ Sections:
     wiki_keywords: [preview settings]
   - title: '設定: スタイル'
     file: Settings_Style
-    description: 'のオプション: プレビューのテキスト幅を制限する: スライダーを使用してプレビュー本文の最大幅を設定します (ピクセル単位)。'
+    description: 'スタイルのオプション: プレビューのテキスト幅を制限する: スライダーを使用してプレビュー本文の最大幅を設定します (ピクセル単位)。'
     keywords:
     - スタイル
     - テーマ
@@ -987,7 +987,7 @@ Sections:
     wiki_keywords: [style settings]
   - title: '設定: プロセッサー'
     file: Settings_Processor
-    description: 'のオプション: デフォルトの Markdown プロセッサ。 CommonMark プロセッサは GitHub ユーザーに好まれ、MultiMarkdown はライターに最適で、Discount と...'
+    description: 'プロセッサのオプション: デフォルトの Markdown プロセッサ。 CommonMark プロセッサは GitHub ユーザーに好まれ、MultiMarkdown はライターに最適で、Discount と...'
     keywords:
     - プロセッサー
     - コモンマーク
@@ -997,7 +997,7 @@ Sections:
     wiki_keywords: [processor settings]
   - title: '設定: アプリケーション'
     file: Settings_Apps
-    description: 'のオプション: (追加のアプリのサポートを参照) テキスト エディター: Cmd-E を入力したときに現在のドキュメントを受け取るテキスト エディターを選択します。'
+    description: 'Applicationsのオプション: (追加のアプリのサポートを参照) テキスト エディター: Cmd-E を入力したときに現在のドキュメントを受け取るテキスト エディターを選択します。'
     keywords:
     - 行政書士
     - 噴水
@@ -1010,7 +1010,7 @@ Sections:
     wiki_keywords: [apps settings]
   - title: '設定: 校正'
     file: Settings_Proofing
-    description: 'のオプション: 新しいドキュメントを常に校正モードで開きます: 新しいドキュメントでは、デフォルトでキーワードのハイライトが表示されます。'
+    description: '校正のオプション: 新しいドキュメントを常に校正モードで開きます: 新しいドキュメントでは、デフォルトでキーワードのハイライトが表示されます。'
     keywords:
     - 校正
     - コメント
@@ -1019,7 +1019,7 @@ Sections:
     wiki_keywords: [proofing settings, proofreading settings]
   - title: '設定: エクスポート'
     file: Settings_Export
-    description: 'のオプション: (詳細については、「エクスポート」を参照) プロファイルのエクスポート: ポップアップ メニューから保存されたプロファイルを選択します。プロファイルにはエクスポートの完全なセットが保存されます...'
+    description: '書き出しのオプション: (詳細については、「エクスポート」を参照) プロファイルのエクスポート: ポップアップ メニューから保存されたプロファイルを選択します。プロファイルにはエクスポートの完全なセットが保存されます...'
     keywords:
     - 輸出
     - pdf
@@ -1030,7 +1030,7 @@ Sections:
     wiki_keywords: [export settings]
   - title: '設定: 詳細設定'
     file: Settings_Advanced
-    description: 'YAML および Pandoc メタデータのオプション: - __Ignore:__ ドキュメント内に存在するものをそのまま残します。プロセッサまたはプリプロセッサが実際に...'
+    description: '詳細のオプション: YAML および Pandoc メタデータ: - __Ignore:__ ドキュメント内に存在するものをそのまま残します。プロセッサまたはプリプロセッサが実際に...'
     keywords:
     - 高度な
     - 設定
