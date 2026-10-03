@@ -65,6 +65,7 @@ Zusätzliches CSS
 Syntaxhervorhebung
 : Aktiviert die highlight.js-[Syntaxhervorhebung](Syntax_Highlighting.html) für Codeblöcke. Wählen Sie einen Stil aus dem Dropdown-Menü.
 : Ist **Nur wenn Sprache angegeben** aktiviert, wird die Syntaxhervorhebung nur auf abgegrenzte Codeblöcke mit angegebener Sprache angewendet.
+: Ist **Zeilennummern in Codeblöcken anzeigen** aktiviert, erhalten syntaxhervorgehobene Blöcke Zeilennummern; je Block lässt sich das mit `linenums` bzw. `nolinenums` überschreiben.
 
 MathJax aktivieren
 : Lädt [MathJax](MathJax.html) zur Darstellung von MathML-Gleichungen. Wählen Sie **Lokal** (mitgeliefert) oder **CDN** aus dem Dropdown-Menü.
