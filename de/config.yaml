@@ -377,7 +377,7 @@ Sections:
     - leanpub
   - title: Fountain für Drehbuchautoren
     file: Fountain_for_Screenwriters
-    description: Öffnen Sie eine Datei mit der Endung „.fountain", aktiviert Marked die Fountain-Unterstützung für dieses Fenster automatisch. Dabei wird ein Standard-Stylesheet für Fountain angewendet ...
+    description: Öffnen Sie eine Datei mit der Endung „.fountain“, aktiviert Marked die Fountain-Unterstützung für dieses Fenster automatisch. Dabei wird ein Standard-Stylesheet für Fountain angewendet ...
     keywords:
     - fountain
     - drehbuch
@@ -576,7 +576,7 @@ Sections:
   pages:
   - title: Bear
     file: Bear
-    description: Wählen Sie in Bear im Menü „Ansicht" den Eintrag Preview in Marked (der Wortlaut kann je nach Bear-Version leicht abweichen). Marked erhält ein TextBundle, sodass eingebettete Bilder und Assets ...
+    description: Wählen Sie in Bear im Menü „Ansicht“ den Eintrag Preview in Marked (der Wortlaut kann je nach Bear-Version leicht abweichen). Marked erhält ein TextBundle, sodass eingebettete Bilder und Assets ...
     keywords:
     - bear
     - bear notes
@@ -653,7 +653,7 @@ Sections:
     - ia writer
   - title: iThoughtsX
     file: iThoughtsX
-    description: Stellen Sie in den iThoughtsX-Einstellungen unter „Advanced" die Option Markdown Preview ein (je nach Version steht dort „Markdown" oder „Markdown Preview") und wählen Sie dann, ob ...
+    description: Stellen Sie in den iThoughtsX-Einstellungen unter „Advanced“ die Option Markdown Preview ein (je nach Version steht dort „Markdown“ oder „Markdown Preview“) und wählen Sie dann, ob ...
     keywords:
     - ithoughts
     - mindmap
@@ -754,7 +754,7 @@ Sections:
     - vim
   - title: VS Code
     file: VS_Code
-    description: "Die [Erweiterung „Open in Marked\"][ext] (Visual Studio Marketplace) ergänzt eine Aktion Open in Marked: als Schaltfläche in der Editorleiste, mit Umschalt-Befehl-M und über Kontextmenüs im Editor ..."
+    description: "Die [Erweiterung „Open in Marked“][ext] (Visual Studio Marketplace) ergänzt eine Aktion Open in Marked: als Schaltfläche in der Editorleiste, mit Umschalt-Befehl-M und über Kontextmenüs im Editor ..."
     keywords:
     - vscode
     - visual studio code
@@ -919,7 +919,7 @@ Sections:
     - metadaten
   - title: Marked-Spezialsyntax
     file: Special_Syntax
-    description: Marked unterstützt Callouts in der Syntax von Obsidian und Bear – ein besonders formatiertes Blockzitat. Die Angabe „NOTE" in [!NOTE] beachtet keine Groß- und Kleinschreibung. ...
+    description: Marked unterstützt Callouts in der Syntax von Obsidian und Bear – ein besonders formatiertes Blockzitat. Die Angabe „NOTE“ in [!NOTE] beachtet keine Groß- und Kleinschreibung. ...
     keywords:
     - syntax
     - inhaltsverzeichnis
@@ -954,7 +954,7 @@ Sections:
     - gliederungen
   - title: Tastaturkurzbefehle
     file: Keyboard_Shortcuts
-    description: Über das Menü „Hilfe" oder mit K öffnen Sie ein schwebendes Fenster mit einer Übersicht aller Kurzbefehle.
+    description: Über das Menü „Hilfe“ oder mit K öffnen Sie ein schwebendes Fenster mit einer Übersicht aller Kurzbefehle.
     keywords:
     - navigation
     - tastatur
@@ -1046,7 +1046,7 @@ Sections:
   pages:
   - title: 'Einstellungen: Allgemein'
     file: Settings_General
-    description: Allgemeine Marked-Einstellungen für neue Dokumente, Updates, Lesezeichen und das voreingestellte Fensterverhalten.
+    description: "Einstellungen im Bereich Allgemein: neue Dokumente, Updates, Lesezeichen und das Verhalten der Fenster."
     keywords:
     - allgemein
     - einstellungen
@@ -1056,7 +1056,7 @@ Sections:
     - 'einstellungen: allgemein'
   - title: 'Einstellungen: Vorschau'
     file: Settings_Preview
-    description: "Optionen unter Vorschau: Mini-Map-Navigation aktivieren : Erzeugt eine visuelle Karte des Dokuments, die auf Druck der Taste „0\" erscheint. Kann zu kurzen Verzögerungen führen, wenn ..."
+    description: "Einstellungen im Bereich Vorschau: Navigation und Scrollverhalten, Zum Bearbeiten scrollen, Diff-Markierungen, Wiki-Verlinkung und das Aussehen des Vorschaufensters."
     keywords:
     - vorschau
     - einklappen
@@ -1071,16 +1071,16 @@ Sections:
     - aktuelle überschrift
   - title: 'Einstellungen: Stil'
     file: Settings_Style
-    description: "Optionen unter Stil: Textbreite in der Vorschau begrenzen : Legt über den Schieberegler eine Höchstbreite für den Textkörper der Vorschau fest (in Pixeln)."
+    description: "Einstellungen im Bereich Stil: Layout und Typografie, Standardstil, zusätzliches CSS, Syntaxhervorhebung und eingebundene Skripte."
     keywords:
     - stil
     - design
     - css
     wiki_keywords:
     - 'einstellungen: stil'
-  - title: 'Einstellungen: Prozessor'
+  - title: 'Einstellungen: Verarbeitung'
     file: Settings_Processor
-    description: "Optionen unter Verarbeitung: Standard-Markdown-Prozessor. CommonMark empfiehlt sich für GitHub-Nutzer, MultiMarkdown eignet sich für Schreibende, und Discount sowie ..."
+    description: "Einstellungen im Bereich Verarbeitung: Wahl des Markdown-Prozessors, Eigene Regeln, HTML-Ausgabe und die Darstellung zusätzlicher Syntax."
     keywords:
     - prozessor
     - commonmark
@@ -1089,9 +1089,9 @@ Sections:
     - multimarkdown
     wiki_keywords:
     - 'einstellungen: prozessor'
-  - title: 'Einstellungen: Apps'
+  - title: 'Einstellungen: Anwendungen'
     file: Settings_Apps
-    description: "Optionen unter Anwendungen: (siehe Weitere App-Integrationen) Texteditor : Wählen Sie einen Texteditor, der das aktuelle Dokument erhält, wenn Sie Befehl-E drücken."
+    description: "Einstellungen im Bereich Anwendungen: Text- und Bildeditor, Kommentare aus anderen Apps sowie die Anbindung von DocC, Hookmark, Leanpub und GitBook."
     keywords:
     - scrivener
     - fountain
@@ -1105,7 +1105,7 @@ Sections:
     - 'einstellungen: apps'
   - title: 'Einstellungen: Korrekturlesen'
     file: Settings_Proofing
-    description: "Optionen unter Korrekturlesen: Neue Dokumente immer im Korrekturmodus öffnen : Neue Dokumente zeigen dann standardmäßig Schlüsselwort-Hervorhebungen."
+    description: "Einstellungen im Bereich Korrekturlesen: Korrekturmodus, CriticMarkup, Kommentar-Seitenleiste, Lesegeschwindigkeit und die Schlüsselwortlisten."
     keywords:
     - korrekturlesen
     - kommentare
@@ -1115,7 +1115,7 @@ Sections:
     - 'einstellungen: korrekturlesen'
   - title: 'Einstellungen: Export'
     file: Settings_Export
-    description: "Optionen unter Export: (Näheres unter Exportieren) Exportprofil : Wählen Sie ein gespeichertes Profil aus dem Einblendmenü. Profile sichern einen vollständigen Satz an Export- ..."
+    description: "Einstellungen im Bereich Export: Exportprofile, Drucken und PDF sowie Kopf- und Fußzeilen."
     keywords:
     - export
     - pdf
@@ -1127,7 +1127,7 @@ Sections:
     - 'einstellungen: export'
   - title: 'Einstellungen: Erweitert'
     file: Settings_Advanced
-    description: "Optionen unter Erweitert: YAML- und Pandoc-Metadaten : - __Ignorieren:__ Belässt sie exakt so, wie sie im Dokument stehen – nützlich, wenn Ihr Prozessor oder Präprozessor sie tatsächlich ..."
+    description: "Einstellungen im Bereich Erweitert: Metadaten, Zwischenspeicher für gehostete Bilder, Lesbarkeitsstatistik, Suche, Debug-Modus und Sicherung der Einstellungen."
     keywords:
     - erweitert
     - einstellungen
@@ -1162,7 +1162,7 @@ Sections:
     wiki_keywords: []
   - title: Fehlersuche
     file: Troubleshooting
-    description: Sie können die Debug-Protokollierung einschalten, indem Sie das Feld „Debug-Modus" unten im Bereich aktivieren. Daraufhin erscheint ein Einblendmenü, in dem Sie ...
+    description: Sie können die Debug-Protokollierung einschalten, indem Sie das Feld „Debug-Modus“ unten im Bereich aktivieren. Daraufhin erscheint ein Einblendmenü, in dem Sie ...
     keywords:
     - debug
     - fehlersuche

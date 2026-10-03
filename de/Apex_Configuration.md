@@ -80,7 +80,7 @@ Nur Titel als Bildunterschrift
 ## Links und Indizes [links-and-indexes]
 
 Wiki-Links
-: Apex wandelt `[[wiki links]]` um. Standardmäßig deaktiviert. Ist die Option aktiv, überspringt Marked für dieses Dokument seinen eigenen Durchlauf „Wiki-Links umwandeln" aus den Vorschau-Einstellungen, und Apex löst die Zieldatei unter Umständen anders auf als Marked. Die Standard-Dateiendung stammt aus Markeds Wiki-Link-Einstellungen.
+: Apex wandelt `[[wiki links]]` um. Standardmäßig deaktiviert. Ist die Option aktiv, überspringt Marked für dieses Dokument seinen eigenen Durchlauf „[[Wiki-Links]] konvertieren“ aus den Vorschau-Einstellungen, und Apex löst die Zieldatei unter Umständen anders auf als Marked. Die Standard-Dateiendung stammt aus Markeds Wiki-Link-Einstellungen.
 
 Wiki-Link-URLs bereinigen
 : Erzeugte Wiki-Link-URLs werden in Kleinbuchstaben umgewandelt, Apostrophe entfernt und alle übrigen Zeichen, die weder Buchstaben noch Ziffern sind, ersetzt. Standardmäßig deaktiviert. Nur verfügbar, wenn **Wiki-Links** aktiviert ist.
