@@ -68,5 +68,5 @@ Wenn Marked Varianten erkennt, fügt es **jede vorhandene Variantendatei** zusam
 ## Verwandte Themen [related-topics]
 
 - [DocC-Unterstützung](DocC_Support.html) – Bildnamen ohne Erweiterung in `.docc`-Katalogen
-- [Einstellungen: Apps](Settings_Apps.html) – Einstellungen für DocC- und Bildvarianten
+- [Einstellungen: Anwendungen](Settings_Apps.html) – Einstellungen für DocC- und Bildvarianten
 - [Vorschau](Previewing.html) – Live-Vorschau und Dateiaktualisierungen
