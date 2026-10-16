@@ -82,7 +82,7 @@ Separate from highlight export and import, the Preview menu provides two CriticM
 - **Copy Highlights as CriticMarkup** copies every highlight in CriticMarkup format without changing the source file.
 - **Inject Highlights into Document...** asks for confirmation, then wraps unambiguous matching source text in CriticMarkup. Marked skips missing, duplicate, or overlapping matches and reports the result.
 
-With a signature and comment, generated markup uses <code>{=<span>=</span>highlighted text==}{&gt;&gt;signature: comment&lt;&lt;}</code>. With only a comment, Marked uses <code>{=<span>=</span>highlighted text==}{&gt;&gt;comment&lt;&lt;}</code>. With only a signature, it uses <code>{=<span>=</span>highlighted text==}{&gt;&gt;signature&lt;&lt;}</code>. Without either, Marked creates only the <code>{=<span>=</span>highlighted text==}</code> marker.
+With a signature and comment, generated markup uses `{==highlighted text==}{>>signature: comment<<}`. With only a comment, Marked uses `{==highlighted text==}{>>comment<<}`. With only a signature, it uses `{==highlighted text==}{>>signature<<}`. Without either, Marked creates only the `{==highlighted text==}` marker.
 
 ## Printing highlights [printing-highlights]
 
