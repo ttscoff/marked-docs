@@ -39,7 +39,7 @@ Always wrap code
 : Force code blocks to wrap regardless of theme settings (overrides theme wrapping behavior).
 
 Detect and style RTL text
-: Detect language per element in document and style Right To Left accordingly.
+: Detect the language of each element and set its text direction to right-to-left (RTL) when needed.
 
 ### Theme [theme]
 
