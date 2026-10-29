@@ -39,7 +39,7 @@ Code immer umbrechen
 : Erzwingt den Umbruch von Codeblöcken unabhängig von den Stileinstellungen (überschreibt das Umbruchverhalten des Stils).
 
 RTL-Text erkennen und formatieren
-: Erkennt die Sprache je Element im Dokument und formatiert Rechts-nach-links-Text entsprechend.
+: Erkennt die Sprache jedes Elements und stellt die Textrichtung bei Bedarf auf rechts nach links (RTL).
 
 ### Stil [theme]
 
