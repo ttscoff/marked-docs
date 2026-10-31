@@ -8,6 +8,9 @@ Options du panneau de préférences {% prefspane General %} :
 
 ### Fenêtre [window]
 
+Restaurer les documents ouverts au lancement de Marked
+: Lorsqu'il est activé, Marked rouvre les documents qui étaient ouverts lorsque vous avez quitté pour la dernière fois. Désactivez cette option pour commencer sans fenêtre. Ce paramètre est spécifique à Marked et indépendant de l'option Dock **Fermer les fenêtres lors de la fermeture d'une application**.
+
 Conserver les nouvelles fenêtres au premier plan
 : Configure automatiquement les nouvelles fenêtres pour qu'elles « flottent » au-dessus des autres applications.
 

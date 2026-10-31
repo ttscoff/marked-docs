@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: it (Italian)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "Etichette ARIA";
+# EN: ARIA labels
+# DRAFT: Etichette ARIA
+
+"setting.apexOptAlphaLists" = "Elenchi alfabetici";
+# EN: Alphabetic lists
+# DRAFT: Elenchi alfabetici
+
+"setting.apexOptAutolink" = "Collega automaticamente URL ed e-mail";
+# EN: Autolink URLs and emails
+# DRAFT: Collega automaticamente URL ed e-mail
+
+"setting.apexOptBibliographyPaths" = "Bibliografia";
+# EN: Bibliography
+# DRAFT: Bibliografia
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "Concordanza";
+# EN: Concordance
+# DRAFT: Concordanza
+
+"setting.apexOptDefinitionLists" = "Elenchi di definizioni";
+# EN: Definition lists
+# DRAFT: Elenchi di definizioni
+
+"setting.apexOptDivs" = "Div delimitati";
+# EN: Fenced divs
+# DRAFT: Div delimitati
+
+"setting.apexOptFootnotes" = "Note a piè di pagina";
+# EN: Footnotes
+# DRAFT: Note a piè di pagina
+
+"setting.apexOptGridTables" = "Tabelle a griglia";
+# EN: Grid tables
+# DRAFT: Tabelle a griglia
+
+"setting.apexOptHeaderAnchors" = "Ancore <a> delle intestazioni";
+# EN: Header <a> anchors
+# DRAFT: Ancore <a> delle intestazioni
+
+"setting.apexOptImageCaptions" = "Didascalie delle immagini";
+# EN: Image captions
+# DRAFT: Didascalie delle immagini
+
+"setting.apexOptIndices" = "Elaborazione indici";
+# EN: Index processing
+# DRAFT: Elaborazione indici
+
+"setting.apexOptMarkdownInHTML" = "Markdown in HTML";
+# EN: Markdown in HTML
+# DRAFT: Markdown in HTML
+
+"setting.apexOptMetaFilePath" = "File di metadati";
+# EN: Metadata file
+# DRAFT: File di metadati
+
+"setting.apexOptMetadataTransforms" = "Trasformazioni dei metadati";
+# EN: Metadata transforms
+# DRAFT: Trasformazioni dei metadati
+
+"setting.apexOptMixedListMarkers" = "Marcatori di elenco misti";
+# EN: Mixed list markers
+# DRAFT: Marcatori di elenco misti
+
+"setting.apexOptPerCellAlignment" = "Allineamento per cella";
+# EN: Per-cell alignment
+# DRAFT: Allineamento per cella
+
+"setting.apexOptPyCallouts" = "Callout Python-Markdown (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Callout Python-Markdown (!!!)
+
+"setting.apexOptQuartoCallouts" = "Callout Quarto";
+# EN: Quarto callouts
+# DRAFT: Callout Quarto
+
+"setting.apexOptRelaxedTables" = "Tabelle flessibili";
+# EN: Relaxed tables
+# DRAFT: Tabelle flessibili
+
+"setting.apexOptSpans" = "Span tra parentesi";
+# EN: Bracketed spans
+# DRAFT: Span tra parentesi
+
+"setting.apexOptStrikethrough" = "Barrato";
+# EN: Strikethrough
+# DRAFT: Barrato
+
+"setting.apexOptSupSub" = "Apice / pedice";
+# EN: Superscript / subscript
+# DRAFT: Apice / pedice
+
+"setting.apexOptSuppressIndex" = "Sopprimi output dell’indice";
+# EN: Suppress index output
+# DRAFT: Sopprimi output dell’indice
+
+"setting.apexOptTables" = "Tabelle";
+# EN: Tables
+# DRAFT: Tabelle
+
+"setting.apexOptTitleCaptionsOnly" = "Solo didascalie del titolo";
+# EN: Title-only captions
+# DRAFT: Solo didascalie del titolo
+
+"setting.apexOptWikiLinks" = "Collegamenti wiki";
+# EN: Wiki links
+# DRAFT: Collegamenti wiki
+
+"setting.apexOptWikiSanitize" = "Ripulisci URL dei collegamenti wiki";
+# EN: Sanitize wiki link URLs
+# DRAFT: Ripulisci URL dei collegamenti wiki
+
+"setting.configureApex" = "Opzioni Apex";
+# EN: Apex options
+# DRAFT: Opzioni Apex
+
+"setting.configureApex.button" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.configureApex.done" = "Fine";
+# EN: Done
+# DRAFT: Fine
+
+"setting.configureApex.files.add" = "Aggiungi";
+# EN: Add
+# DRAFT: Aggiungi
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "Scegli un file per Apex.";
+# EN: Choose a file for Apex.
+# DRAFT: Scegli un file per Apex.
+
+"setting.configureApex.files.browseTooltip" = "Scegli un file";
+# EN: Choose a file
+# DRAFT: Scegli un file
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "Cancella questo percorso file";
+# EN: Clear this file path
+# DRAFT: Cancella questo percorso file
+
+"setting.configureApex.files.pathPlaceholder" = "Percorso file";
+# EN: File path
+# DRAFT: Percorso file
+
+"setting.configureApex.files.statusAvailable" = "Il file è disponibile";
+# EN: File is available
+# DRAFT: Il file è disponibile
+
+"setting.configureApex.files.statusMissing" = "Il file non esiste";
+# EN: The file does not exist
+# DRAFT: Il file non esiste
+
+"setting.configureApex.files.statusPermission" = "Marked non ha l’autorizzazione per leggere questo file";
+# EN: Marked does not have permission to read this file
+# DRAFT: Marked non ha l’autorizzazione per leggere questo file
+
+"setting.configureApex.files.statusUnavailable" = "Il file non è disponibile";
+# EN: File is unavailable
+# DRAFT: Il file non è disponibile
+
+"setting.configureApex.group.accessibility" = "Accessibilità";
+# EN: Accessibility
+# DRAFT: Accessibilità
+
+"setting.configureApex.group.callouts" = "Callout (extra)";
+# EN: Callouts (extra)
+# DRAFT: Callout (extra)
+
+"setting.configureApex.group.files" = "File";
+# EN: Files
+# DRAFT: File
+
+"setting.configureApex.group.linksIndexes" = "Collegamenti e indici";
+# EN: Links & indexes
+# DRAFT: Collegamenti e indici
+
+"setting.configureApex.group.syntax" = "Sintassi";
+# EN: Syntax
+# DRAFT: Sintassi
+
+"setting.configureApex.group.tablesImages" = "Tabelle e immagini";
+# EN: Tables & images
+# DRAFT: Tabelle e immagini
+
+"setting.configureApex.intro" = "Queste opzioni riguardano solo Apex. Matematica, CriticMarkup, hashtag, inclusioni di file e ID delle intestazioni restano nelle altre impostazioni di Marked. Quando i collegamenti wiki di Apex sono attivi, Apex converte i collegamenti [[wiki]] e il passaggio Anteprima «Converti collegamenti wiki» di Marked viene saltato; la risoluzione dei file di Apex può differire da quella di Marked.";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: Queste opzioni riguardano solo Apex. Matematica, CriticMarkup, hashtag, inclusioni di file e ID delle intestazioni restano nelle altre impostazioni di Marked. Quando i collegamenti wiki di Apex sono attivi, Apex converte i collegamenti [[wiki]] e il passaggio Anteprima «Converti collegamenti wiki» di Marked viene saltato; la risoluzione dei file di Apex può differire da quella di Marked.
+
+"setting.configureApex.sheetTitle" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.processor.apexBeta" = "Apex (beta)";
+# EN: Apex (beta)
+# DRAFT: Apex (beta)
+
+"setting.removeIAWriterAnnotations" = "Rimuovi le annotazioni di iA Writer";
+# EN: Remove iA Writer annotations
+# DRAFT: Rimuovi le annotazioni di iA Writer
+
+"tooltip.configureApex" = "Funzioni opzionali di sintassi e output Apex (solo processore Apex).";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: Funzioni opzionali di sintassi e output Apex (solo processore Apex).
+
+"tooltip.removeIAWriterAnnotations" = "Se è attivo, il blocco di annotazioni di iA Writer alla fine del file viene rimosso prima dell’anteprima. Disattivo per impostazione predefinita.";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: Se è attivo, il blocco di annotazioni di iA Writer alla fine del file viene rimosso prima dell’anteprima. Disattivo per impostazione predefinita.
+
+=== END Settings.strings ===

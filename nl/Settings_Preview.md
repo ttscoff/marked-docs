@@ -14,7 +14,7 @@ Minikaartnavigatie inschakelen
 Koppen samenvouwen secties
 : Als u op een kopelement klikt, wordt het gedeelte tussen dit kopelement en de volgende kop samengevouwen.
 
-Vereist {% kbd cmd %}‑klik
+Vereist {% kbd cmd %}&#8209;klik
 : Als dit is aangevinkt, worden de koppen alleen samengevouwen/uitgevouwen wanneer erop wordt geklikt terwijl de Command-toets ingedrukt wordt gehouden.
 
 Synchronisatievoorbeeld en bronscrollen

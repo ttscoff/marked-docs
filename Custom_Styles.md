@@ -31,7 +31,7 @@ pane.
 
 ## Managing styles with the Style Manager [managing-styles-with-the-style-manager]
 
-Launching the Style Manager gives you a single place to curate every built‑in
+Launching the Style Manager gives you a single place to curate every built-in
 and custom theme. Click the **Manage Styles…** button in the {% prefspane Style %}
 pane,
 or simply drop CSS files onto the preferences window --- Marked will import them,
@@ -42,7 +42,7 @@ you're importing a batch.
 
 ![][img-style-manager]
 
-Inside the Style Manager you'll find a sortable table that mixes built‑in and
+Inside the Style Manager you'll find a sortable table that mixes built-in and
 custom styles. Each row offers:
 
 - An **Enabled** checkbox that immediately adds/removes the style from the Style
@@ -50,7 +50,7 @@ custom styles. Each row offers:
   active style automatically switches to the next available entry.
 - A **Name** column you can edit inline; changes persist and propagate to every
   menu. Click on the Style's name to edit it in place.
-- A **Source** column that calls out Built‑in, Custom, or Duplicated.
+- A **Source** column that calls out Built-in, Custom, or Duplicated.
 - An **Actions** stack with buttons to **Edit** (opens the CSS file in your
   editor), **Duplicate** (creates a copy and a new CSS file on disk), **Reveal**
   (shows the file in Finder), and **Delete** (with options to remove the reference or
@@ -86,8 +86,22 @@ overrides, e.g.:
 
     #wrapper img { width: 100%; height: auto; }
 
+CSS in this field is **appended to the active theme**. It is not a
+substitute for a full Custom Style: a stylesheet written only for this
+field is deliberately partial, and loading it through Style Manager as a
+theme would leave everything it does not cover unstyled.
+
+Marked **rewrites** Additional CSS selectors before injection. Leading
+body classes such as `.mkprinting` are merged onto `body` rather than
+nested under `#wrapper`, so print rules in this field should use
+`body.mkprinting #wrapper …` (see [Creating Custom
+CSS](Writing_Custom_CSS.html#additional-css-settings) for the full
+rewriting rules). There is no size limit or validity check on the field
+--- invalid CSS simply has no effect.
+
 CSS in this field will be applied to every document, no
-matter what Style it"s using. If you want to apply custom
+matter what Style it's using --- including HTML export when styles are
+included. If you want to apply custom
 CSS based on conditional matches, use the Set Style, Insert
 CSS File, or Insert CSS actions in {% prefspane Processor %}
 Custom Rules.
@@ -110,9 +124,11 @@ always applied during PDF export.
 
 For reliable PDF and Print/PDF Preview styling, prefix selectors with the
 `mkprinting` class Marked adds to `<body>` during export (see [Writing Custom
-CSS](Writing_Custom_CSS.html#printstyles) for details and examples). You can use
-`.mkprinting` alone, or combine it with `@media print` when you need both paths
-covered.
+CSS](Writing_Custom_CSS.html#printstyles) for details and examples). In a
+**Custom Style** file you can use `.mkprinting` alone. In **Additional CSS**,
+use the body-qualified form `body.mkprinting #wrapper …` because that field
+rewrites selectors. You can also combine either form with `@media print` when
+you need both paths covered.
 
 To set sizes that differ from Marked's print defaults, add explicit rules in
 your custom CSS (or in Additional CSS). Use `!important` when you need to
@@ -132,6 +148,7 @@ override Marked's injected print styles --- for example:
   }
 }
 
+/* Custom Style (and most theme stylesheets) */
 .mkprinting #wrapper p,
 .mkprinting body p,
 .mkprinting p {
@@ -142,13 +159,25 @@ override Marked's injected print styles --- for example:
 .mkprinting h1 {
   font-size: 16pt !important;
 }
+
+/* Additional CSS field (selector rewriting) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
+}
 ```
 
 Rules without `!important` may lose to later rules in `mkprintstyles` or to
 other unqualified selectors in your sheet that still apply in print. Putting
-print-only tweaks in `@media print` and/or `.mkprinting` rules (rather than
-only in screen rules) keeps the preview and export behavior easier to reason
-about.
+print-only tweaks in `@media print` and/or `.mkprinting` / `body.mkprinting`
+rules (rather than only in screen rules) keeps the preview and export behavior
+easier to reason about.
 
 ## Watching CSS changes [watching-css-changes]
 
