@@ -146,6 +146,17 @@ Für Stile, die **sowohl** beim Drucken über den Browser als auch beim PDF-Expo
 }
 ```
 
+**Eigener Stil vs. Zusätzliches CSS.** In einem Stylesheet für einen eigenen Stil schreiben Sie `.mkprinting #wrapper …` wie oben gezeigt. Im Feld **Zusätzliches CSS** schreibt Marked die Selektoren vor dem Einfügen um – verwenden Sie dort stattdessen die body-qualifizierte Form:
+
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+Wie das Umschreiben funktioniert und warum `.mkprinting #wrapper …` dort allein nicht greift, steht unter [Zusätzliche CSS-Einstellungen](#additional-css-settings).
+
 Beim Debuggen von eigenem Druck-CSS öffnen Sie die Druck-/PDF-Vorschau oder exportieren nach PDF und untersuchen das Dokument dann mit [Safaris Web Inspector](#webkitinspector) – während das Drucklayout aktiv ist, trägt der `<body>` die Klasse `mkprinting`.
 
 Das Ausblenden von Links im Druck wird außerhalb des Haupt-Designs gehandhabt, sodass Nutzer wählen können, ob Hervorhebungen und Unterstreichungen von Links im Ausdruck ausgeblendet werden. Solange Sie einen Basisstil für den Text gesetzt haben, müssen Sie sich darum nicht kümmern.
@@ -154,9 +165,32 @@ Also los. Verwandeln Sie Ihr Blog-Design, erstellen Sie einen erstklassigen Druc
 
 ## Zusätzliche CSS-Einstellungen [additional-css-settings]
 
-Unter {% prefspane Style %} können Sie zusätzliches CSS bearbeiten. Diese Stile werden an jedes geladene Design angehängt und lassen sich für universelle Änderungen an allen Designs nutzen.
+Unter {% prefspane Style %} bearbeiten Sie **Zusätzliches CSS**. Diese Regeln werden **an das jeweils geladene Design angehängt**. Sie sind eine bewusst partielle Ergänzung, kein vollständiges Design. Fügen Sie hier ein komplettes Stylesheet ein – oder importieren Sie dasselbe partielle Stylesheet über den [Stil-Manager](Custom_Styles.html), als wäre es ein Design –, bleibt alles ungestaltet, was das Stylesheet nicht abdeckt.
 
-Mit [hoher Spezifität](#overridingspecificity), `@media`-Abfragen für Druck und Bildschirm sowie `.mkprinting`-Selektoren für den PDF-Export steuern Sie mit etwas CSS-Wissen nahezu jeden Gestaltungsaspekt.
+### Umschreiben von Selektoren [additional-css-selector-rewriting]
+
+Marked schreibt die Selektoren aus Zusätzliches CSS vor dem Einfügen um (zu `body.mk-has-additional-css …`), damit die Regeln auf die Vorschau beschränkt bleiben:
+
+- Ein Selektorteil, der bereits mit `body` oder `#wrapper` beginnt, erhält das Präfix `body.mk-has-additional-css`; die body-Klassen werden dabei zusammengeführt statt verschachtelt.
+- Jeder andere Selektorteil wird unter `body.mk-has-additional-css #wrapper …` eingeordnet.
+- Führende body-Klassen, die Marked am `<body>` setzt – darunter `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC` und `.mkstyle--*` –, behandelt Marked wie `body` und führt sie mit dem body-Selektor zusammen, statt sie unter `#wrapper` zu verschachteln.
+
+| In Zusätzliches CSS eingegeben | Ergebnis |
+| :-- | :-- |
+| `#wrapper h2` | greift (korrekt eingegrenzt) |
+| `body.mkprinting #wrapper p` | greift bei Druck und PDF |
+| `.mkprinting #wrapper p` | greift **nicht** (setzte ein verschachteltes `#wrapper` voraus) |
+| `:root { --x: 1; }` | greift **nicht** (für eigene Eigenschaften besser `body` oder `#wrapper`) |
+
+Für Druckregeln in diesem Feld ist `body.mkprinting #wrapper …` die richtige Form. Dieselbe gestalterische Absicht darf in einer Datei für einen eigenen Stil bei der kürzeren Schreibweise `.mkprinting #wrapper …` bleiben.
+
+Für Zusätzliches CSS gibt es **weder eine Größenbeschränkung noch eine Gültigkeitsprüfung**. Marked speichert und injiziert, was Sie eingeben; ungültiges CSS bleibt in der Vorschau schlicht wirkungslos.
+
+### HTML- und andere Exporte [additional-css-exports]
+
+Zusätzliches CSS greift in der Live-Vorschau, in der Druck-/PDF-Vorschau, beim PDF-Export und beim **HTML-Export**, sofern die Stile eingebettet werden – der exportierte `<body>` erhält die Klasse `mk-has-additional-css`, damit die umgeschriebenen Selektoren greifen. DOCX, ODT und EPUB nutzen eigene Gestaltungswege und wenden Zusätzliches CSS nicht auf dieselbe Weise an.
+
+Mit [hoher Spezifität](#overridingspecificity), `@media`-Abfragen für Druck und Bildschirm sowie `body.mkprinting`-Selektoren (in diesem Feld) oder `.mkprinting`-Selektoren (in eigenen Stilen) steuern Sie mit etwas CSS-Wissen nahezu jeden Gestaltungsaspekt.
 
 ## WebKit-Inspektor [webkitinspector]
 

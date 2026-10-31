@@ -13,7 +13,7 @@ Anstatt eine einzelne Datei zu öffnen, können Sie Marked auf einen gesamten Or
 
 Sobald Marked einen Ordner überwacht, wird automatisch die **zuletzt geänderte Datei** angezeigt. Während Ihr Agent Markdown-Dateien erstellt oder aktualisiert – unabhängig davon, ob es sich um einen neuen Implementierungsplan oder ein aktualisiertes Fortschrittsprotokoll handelt – wechselt Marked zum neuen oder geänderten Dokument und aktualisiert die Vorschau sofort.
 
-Das funktioniert besonders gut mit agentischen Werkzeugen wie Cursor, Claude und Copilot, die Spezifikationen, Aufgabenlisten oder Architekturnotizen während der Arbeit an einer Funktion fortlaufend neu erstellen.
+Das funktioniert besonders gut mit agentenbasierten Werkzeugen wie Cursor, Claude und Copilot, die Spezifikationen, Aufgabenlisten oder Architekturnotizen während der Arbeit an einer Funktion fortlaufend neu erstellen.
 
 ## Scrollen zur ersten Änderung [scrolling-to-the-first-change]
 
@@ -42,13 +42,13 @@ flowchart TD
 
 wandelt Marked ihn automatisch in ein gestaltetes, interaktives Diagramm um. So erhalten Sie eine visuelle Darstellung komplexer Arbeitsabläufe, Datenflüsse oder Systementwürfe, die mit Cursor, Claude, Copilot oder anderen Coding-Agenten erstellt wurden.
 
-## Beispiele für agentische Coding-Workflows [example-agentic-coding-workflows]
+## Beispiele für agentenbasierte Coding-Workflows [example-agentic-coding-workflows]
 
 - **Cursor + Marked**: Verwenden Sie in Ihrem Repository einen Ordner `plans/` oder `notes/`, in den Cursor schrittweise Implementierungspläne schreibt. Lassen Sie Marked diesen Ordner überwachen, damit Sie immer den neuesten, sauber gerenderten Plan sehen, während Sie Änderungen im Editor annehmen und anwenden.
 
 - **Claude + Marked**: Lassen Sie Claude Designdokumente, ADRs und Refactoring-Pläne in einem gemeinsamen Projektordner erstellen. Marked öffnet automatisch die neueste Markdown-Ausgabe, sodass Sie sie wie eine fortlaufend aktualisierte Spezifikation lesen und mit Anmerkungen versehen können.
 
-- **Copilot und andere KI-Coding-Assistenten + Marked**: Ob Sie GitHub Copilot, Copilot Workspace, ChatGPT oder andere agentische Werkzeuge verwenden, die Markdown schreiben – speichern diese ihre Ausgabe in einem überwachten Ordner, zeigt Marked stets eine aktuelle, hochwertige Vorschau.
+- **Copilot und andere KI-Coding-Assistenten + Marked**: Ob Sie GitHub Copilot, Copilot Workspace, ChatGPT oder andere agentenbasierte Werkzeuge verwenden, die Markdown schreiben – speichern diese ihre Ausgabe in einem überwachten Ordner, zeigt Marked stets eine aktuelle, hochwertige Vorschau.
 
-Durch die Kombination der Ordnerüberwachung mit *Zum Bearbeiten scrollen* macht Marked KI-generierte Pläne und Notizen zu einer schnellen, übersichtlichen Schaltzentrale für Ihre Coding-Sitzungen – besonders bei agentischen Workflows und fortlaufender Unterstützung durch Werkzeuge wie Cursor, Claude und Copilot.
+Durch die Kombination der Ordnerüberwachung mit *Zum Bearbeiten scrollen* macht Marked KI-generierte Pläne und Notizen zu einer schnellen, übersichtlichen Schaltzentrale für Ihre Coding-Sitzungen – besonders bei agentenbasierten Workflows und fortlaufender Unterstützung durch Werkzeuge wie Cursor, Claude und Copilot.
 

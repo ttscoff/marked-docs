@@ -44,6 +44,7 @@ Deze bibliotheken zijn samengevoegd in de previewbundel van Marked (`marked.min.
 | [jQuery](https://jquery.com/) | jQuery-stichting | MIT | DOM- en evenementenhulpprogramma's |
 | [Hammer.js](https://hammerjs.github.io/) | Jorik Tangelder | MIT | Aanraak- en gebarenbediening |
 | [Highlight.js](https://highlightjs.org/) | Josh Goebel en medewerkers | BSD-3-clausule | Syntaxisaccentuering |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | Het MathJax Consortium | Apache-2.0 | Wiskundige weergave (lokale bundel) |
 | [KaTeX](https://katex.org/) | Khan Academy en medewerkers | MIT | Wiskundige weergave (optie KaTeX) |
 | [Mermaid](https://mermaid.js.org/) | Zeemeerminbijdragers | MIT | Diagramweergave |

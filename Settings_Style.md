@@ -39,7 +39,7 @@ Always wrap code
 : Force code blocks to wrap regardless of theme settings (overrides theme wrapping behavior).
 
 Detect and style RTL text
-: Detect language per element in document and style Right To Left accordingly.
+: Detect the language of each element and set its text direction to right-to-left (RTL) when needed.
 
 ### Theme [theme]
 
@@ -56,14 +56,16 @@ Track CSS changes
 : When this is enabled, Marked will watch the current Style for disk changes, aiding in custom style editing and web development.
 
 Additional CSS
-: CSS added here will be included after the normal stylesheet with all themes. Among other things, you can use it to override settings across the board without editing internal styles.
-: This applies to all documents and all styles. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
+: CSS added here is appended after the normal stylesheet for every theme. It is a partial overlay, not a full theme substitute.
+: Marked rewrites selectors in this field (for example, print rules should use `body.mkprinting #wrapper …`). There is no size or validity gate --- see [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+: This applies to all documents and all styles, including HTML export when styles are included. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
 
 ### Include Scripts [include-scripts]
 
 Syntax Highlighting
 : Turn on highlight.js [syntax highlighting](Syntax_Highlighting.html) for code blocks. Select a theme from the dropdown.
 : If **Only if language specified** is checked, syntax highlighting will only be applied to fenced code blocks with a language specified.
+: **Show line numbers in code blocks** — when syntax highlighting is on, display line numbers on highlighted blocks (with per-block `linenums` / `nolinenums` overrides).
 
 Enable MathJax
 : Loads [MathJax](MathJax.html) for displaying MathML equations. Choose **Local** (bundled) or **CDN** from the dropdown.

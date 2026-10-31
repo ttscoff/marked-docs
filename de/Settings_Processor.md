@@ -8,7 +8,7 @@ Optionen unter {% prefspane Processor %}:
 
 ### Markdown verarbeiten mit [process-markdown-with]
 
-Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
+Standard-Markdown-Prozessor. Der CommonMark-Prozessor empfiehlt sich für GitHub-Nutzer, MultiMarkdown ist ideal für Schreibende, und Discount und Kramdown haben spezielle Einsatzzwecke. **Apex (Beta)** deckt die Funktionen ab, für die man sonst CommonMark, GitHub Flavored Markdown, MultiMarkdown oder Kramdown wählt. Siehe [Apex (Beta)](Apex.html). Marked gleicht einige Syntax-Unterschiede aus. Weitere Informationen unter __Hilfe → Markdown-Referenz__.
 
 Eigene Regeln
 : Klicken Sie auf die Schaltfläche „Eigene Regeln“, um den Editor für Eigene Regeln zu öffnen. Dort legen Sie je nach passenden Kriterien verschiedene Prozessoren und Dokumenttransformationen fest. Einzelheiten unter [Eigene Regeln](Custom_Processor.html).
@@ -18,6 +18,9 @@ Neue Dokumente verwenden eigene
 
 Vollständiger Festplattenzugriff
 : Klicken Sie auf **Gewähren**, um Marked die Berechtigung zu geben, beim Einsatz benutzerdefinierter Prozessoren oder anderer Funktionen mit erweitertem Dateizugriff auch Dateien außerhalb seiner Sandbox zu lesen.
+
+Apex konfigurieren
+: Ist **Apex (Beta)** der Standardprozessor, klicken Sie auf **Apex konfigurieren**, um Syntax, Zitationsdateien und Indexoptionen festzulegen. Siehe [Apex-Konfiguration](Apex_Configuration.html).
 
 Um die Unterschiede zwischen den Prozessoren zu erkunden, schauen Sie sich den [Markdown-Dingus](Markdown_Dingus.html) an.
 
@@ -60,3 +63,9 @@ Tags formatieren
 
 `~text~` als Unterstreichung rendern
 : Ist diese Option aktiviert, wird `~text~` in einzelnen Tilden als unterstrichen gerendert. Das steht im Konflikt mit der MultiMarkdown-Syntax für Tiefstellung und ist standardmäßig deaktiviert.
+
++++ als Seitenumbrüche behandeln
+: Ist diese Option aktiviert, wird eine Zeile mit drei oder mehr `+`-Zeichen als Seitenumbruch behandelt (wie `<!--BREAK-->`). Kompatibel mit iA Writer. Standardmäßig deaktiviert.
+
+iA-Writer-Anmerkungen entfernen
+: Ist diese Option aktiviert, entfernt Marked vor der Vorschau den Anmerkungsblock von iA Writer am Dateiende. Dieser Block besteht aus einer `Annotations:`-Zeile mit einem SHA-256-Hash, gefolgt von `@name`- und `&name`-Bereichszeilen, oft mit einem einzelnen `---` direkt darüber. Standardmäßig deaktiviert. Folgt auf die `Annotations:`-Zeile gewöhnlicher Fließtext, bleibt die Datei unverändert.
