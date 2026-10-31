@@ -4,7 +4,7 @@
 
 Ao abrir {% appmenu File, New, Streaming Preview %}, Marked recebe atualizações ao vivo em uma área de trabalho nomeada em vez de assistir a um arquivo no disco. O aplicativo de origem deve ser integrado ao Marked.
 
-[Curio](Curio.html), [Drafts](Drafts.html) e [The Archive](The_Archive.html) documentam seus próprios botões de alternância e comandos de menu. nvUltra, nvALT, Bear e outros usam o mesmo canal: abra a visualização do streaming no Marked, habilite a integração em seu editor e comece a digitar; as atualizações chegam quase em tempo real.
+[Curio](Curio.html), [Drafts](Drafts.html) e [The Archive](The_Archive.html) e [Traverse](Traverse.html) documentam seus próprios botões de alternância e comandos de menu. nvUltra, nvALT, Bear e outros usam o mesmo canal: abra a visualização do streaming no Marked, habilite a integração em seu editor e comece a digitar; as atualizações chegam quase em tempo real.
 
 ## Desenvolvedores [developers]
 
