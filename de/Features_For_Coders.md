@@ -56,6 +56,21 @@ Die Option „Nur wenn Sprache angegeben“ rechts neben der Auswahl für den Sy
     code
     ```
 
+### Zeilennummern [line-numbers]
+
+Aktivieren Sie **Zeilennummern in Codeblöcken anzeigen** unter Einstellungen > Stil, um jeden syntaxhervorgehobenen Block zu nummerieren.
+
+Um die Nummerierung für einen einzelnen Block zu erzwingen (auch wenn die Einstellung aus ist), ergänzen Sie hinter dem öffnenden Trennzeichen `linenums` oder `numberLines`:
+
+    ```python linenums
+    def hello():
+        pass
+    ```
+
+Um die Nummerierung für einen Block zu überspringen, während die Einstellung aktiv ist, ergänzen Sie `nolinenums` (oder `nohljsln`).
+
+Diese Angaben übernimmt Marked in der Vorschau als Klassen am `<code>`-Element. Gibt Ihr Markdown-Prozessor `data-ln-start-from="N"` am `<code>`-Element aus (zum Beispiel Pandoc), beginnt die Nummerierung bei `N`. Vollständige Pandoc-Attribute in geschweiften Klammern wie `{.numberLines startFrom="100"}` werden nur berücksichtigt, wenn diese Klassen oder Attribute im HTML erscheinen.
+
 Die Syntaxhervorhebung erscheint in der Vorschau sowie beim Drucken und im PDF-Export. Ist sie in den Einstellungen aktiviert und wird der Stil beim HTML-Export eingebunden, bettet Marked die verwendete highlight.js-Bibliothek in die HTML-Ausgabe ein. Dadurch sieht das exportierte HTML genauso aus wie in Marked.
 
 ### Unterstützte Sprachen [supported-languages]

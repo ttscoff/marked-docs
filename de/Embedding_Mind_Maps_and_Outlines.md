@@ -73,7 +73,7 @@ Pfade können relativ zum Hauptdokument oder absolut sein (beginnend mit `/` ode
 
 ## OPML-Konvertierung [opml-conversion]
 
-OPML-Dateien verwenden verschachtelte `<outline>`-Elemente mit einem `text`-Attribut. Ist **OPML-Dateien** unter **Als Mermaid-Mindmaps einbetten:** aktiviert (siehe [Einstellungen: Apps](Settings_Apps.html)), erzeugt die Konvertierung eine Mermaid-Mindmap im gleichen Format wie iThoughts und MindManager:
+OPML-Dateien verwenden verschachtelte `<outline>`-Elemente mit einem `text`-Attribut. Ist **OPML-Dateien** unter **Als Mermaid-Mindmaps einbetten:** aktiviert (siehe [Einstellungen: Anwendungen](Settings_Apps.html)), erzeugt die Konvertierung eine Mermaid-Mindmap im gleichen Format wie iThoughts und MindManager:
 
 - Untergeordnete Gliederungen von `<body>` werden zur obersten Ebene (oder zu Kindern eines „Outline“-Stamms, wenn es mehrere Elemente der obersten Ebene gibt)
 - Verschachtelte Gliederungen definieren die Hierarchie

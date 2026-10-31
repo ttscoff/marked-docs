@@ -8,6 +8,9 @@ Optionen unter {% prefspane General %}:
 
 ### Fenster [window]
 
+Offene Dokumente beim Start von Marked wiederherstellen
+: Ist dies aktiviert, öffnet Marked die Dokumente erneut, die beim letzten Beenden geöffnet waren. Deaktivieren Sie die Option, um ohne Fenster zu starten. Diese Einstellung gilt nur für Marked und ist unabhängig von der Dock-Option **Fenster beim Beenden einer App schließen**.
+
 Neue Fenster im Vordergrund halten
 : Stellt neue Fenster automatisch so ein, dass sie über anderen Anwendungen schweben.
 
