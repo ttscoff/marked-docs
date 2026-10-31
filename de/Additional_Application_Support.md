@@ -9,6 +9,7 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | Thema | Hilfeseite |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
+| **Bike** `.bike`-Gliederungen | [Bike](Bike.html) |
 | **Curio** (Streaming-Vorschau) | [Curio](Curio.html) |
 | **Drafts** (Streaming-Vorschau + Aktionen) | [Drafts](Drafts.html) |
 | **DEVONthink** (Integration des Skriptmenüs) | [DEVONthink](DEVONthink.html) |
@@ -18,6 +19,7 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | **iA Writer** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz`-Maps | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit**-Live-Vorschau | [MarsEdit](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **MindNode** | [MindNode](MindNode.html) |
 | **MultiMarkdown Composer** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -27,6 +29,8 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | **PDF** | [PDF-Unterstützung](PDF_Support.html) |
 | **Scrivener 3** | [Scrivener-3-Unterstützung](Scrivener_Support.html) |
 | **The Archive**-Streaming-Vorschau | [The Archive](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | **Ulysses**-Export-Workflow | [Ulysses](Ulysses.html) |
 | **Vim** (vim-marked-Plugin) | [Vim](Vim.html) |
 | **VS Code** (Öffnen in der Erweiterung Marked) | [VS Code](VS_Code.html) |
@@ -49,7 +53,7 @@ Markdown (oder kompatibler Klartext) in der Zwischenablage wird mit {% appmenu A
 
 ## Streaming-Vorschau [streaming-preview]
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra und mehrere andere Editoren können Markdown während der Eingabe über die **Streaming-Vorschau** an Marked senden. Informationen zur Einrichtung und Fehlerbehebung finden Sie unter [Streaming-Vorschau](Streaming_Preview.html).
+Bear, Curio, Drafts, The Archive, Traverse, nvALT, nvUltra und mehrere andere Editoren können Markdown während der Eingabe über die **Streaming-Vorschau** an Marked senden. Informationen zur Einrichtung und Fehlerbehebung finden Sie unter [Streaming-Vorschau](Streaming_Preview.html).
 
 ## Skripte und Bonuspaket [scripts-and-bonus-pack]
 
