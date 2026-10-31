@@ -4,7 +4,7 @@
 
 {% appmenu File, New, Streaming Preview %} を開くと、Marked はディスク上のファイルを監視する代わりに、名前付きペーストボードを介してライブ更新を受け取ります。ソース アプリは Marked と統合する必要があります。
 
-[Curio](Curio.html)、[Drafts](Drafts.html)、および [The Archive](The_Archive.html) では、独自のトグルとメニュー コマンドが文書化されています。 nvUltra、nvALT、Bear などは同じチャネルを使用します。Marked でストリーミング プレビューを開き、エディターで統合を有効にして、入力を開始します。更新はほぼリアルタイムで届きます。
+[Curio](Curio.html)、[Drafts](Drafts.html)、および [The Archive](The_Archive.html) と [Traverse](Traverse.html) では、独自のトグルとメニュー コマンドが文書化されています。 nvUltra、nvALT、Bear などは同じチャネルを使用します。Marked でストリーミング プレビューを開き、エディターで統合を有効にして、入力を開始します。更新はほぼリアルタイムで届きます。
 
 ## 開発者 [developers]
 
