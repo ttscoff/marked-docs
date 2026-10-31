@@ -89,8 +89,17 @@ Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
 
 #### Word [word]
 
+[(Info zu Microsoft Word)](Microsoft_Word.html)
+
 Änderungsverfolgung <-> CriticMarkup konvertieren
 : Ist dies aktiviert, wird die Änderungsverfolgung in Word-Dokumenten beim Import in CriticMarkup umgewandelt, und CriticMarkup wird beim Export von DOCX-Dateien in die Word-Änderungsverfolgung umgewandelt.
+
+#### Tree Outliner [tree-outliner]
+
+[(Info zu Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: Der Dokumenttitel ist Überschrift 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden verschachtelte Listen. Notizen werden Absätze. Wird verwendet, wenn **Tree Outliner outlines** unter **Als Mermaid-Mindmaps einbetten** aus ist.
 
 #### Mindmaps/Gliederungen [MindMapsOutlines]
 
@@ -99,4 +108,5 @@ Als Mermaid-Mindmaps einbetten
 : **Mindmaps** – iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ein: Mermaid-Mindmap. Aus: iThoughts bindet sein Vorschaubild ein; MindManager und FreeMind werden in verschachtelte Markdown-Listen umgewandelt.
 : **OPML-Dateien** (.opml). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
 : **OmniOutliner-Gliederungen** (.ooutline). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste (oder Checkliste, wo zutreffend).
-: **Bike-Gliederungen**. Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
+: **Bike-Gliederungen**. Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste. Siehe [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Ein: Mermaid-Mindmap. Aus: Markdown-Überschriften und -Listen. Siehe [Tree Outliner](Tree_Outliner.html).

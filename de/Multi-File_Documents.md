@@ -85,11 +85,12 @@ Binden Sie bestimmte Dateitypen mit `<<[path]` oder der IA-Writer-Block-Syntax e
 | **OPML** | .opml | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **OmniOutliner** | .ooutline | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **Bike** | .bike | Mermaid-Mindmap (Dateiname als Wurzelknoten) | Verschachtelte Markdown-Liste (kein Dokumenttitel) |
+| **Tree Outliner** | .treeoutline | Mermaid-Mindmap (Dokumenttitel als Stamm) | Überschriften und Listen ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV / TSV** | .csv, .tsv | Markdown-Tabelle ||
 | **RTF / RTFD** | .rtf, .rtfd | Markdown über RTF-Konvertierung (siehe [RTF- und RTFD-Unterstützung](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown über PDF-Konvertierung beim Öffnen als Hauptdokument (siehe [PDF-Unterstützung](PDF_Support.html)) ||
 
-Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen). Schalten Sie ein Format aus, gilt das „Aus“-Verhalten nur für diesen Typ. Formatdetails finden Sie unter [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html), und unter [Einstellungen: Apps][mindmaps] ändern Sie diese Optionen. Einzelheiten zur CSV-Konvertierung unter [Tabellen aus CSV-Dateien erstellen][csv].
+Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen, Tree Outliner outlines). Schalten Sie ein Format aus, gilt das „Aus“-Verhalten nur für diesen Typ. Formatdetails finden Sie unter [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html), und unter [Einstellungen: Apps][mindmaps] ändern Sie diese Optionen. Einzelheiten zur CSV-Konvertierung unter [Tabellen aus CSV-Dateien erstellen][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

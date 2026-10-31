@@ -25,11 +25,15 @@ OPML (Outline Processor Markup Language) ist ein XML-Format für hierarchische G
 
 ### Bike (.bike) [bike-bike]
 
-Bike.app-Gliederungen werden als proprietäre HTML-Dateien (`.bike`) gespeichert. Sie können eine `.bike`-Datei direkt in Marked öffnen: Das Dokument wird als Markdown mit dem Dateinamen (ohne Erweiterung) als Hauptüberschrift (H1), Überschriftenelementen der obersten Ebene als H2, verschachtelten Überschriften als fett gedruckten Listenelementen und Aufgaben als Kontrollkästchen im GitHub-Stil gerendert. Wenn eine `.bike`-Datei über die Include-Syntax eingebunden wird, steuert das Kontrollkästchen **Bike-Gliederungen** unter **Als Mermaid-Mindmaps einbetten:**, ob daraus eine Mermaid-Mindmap (mit dem Dateinamen als Stammknoten) oder eine verschachtelte Markdown-Liste (kein H1) wird.
+Siehe [Bike](Bike.html) zum Öffnen einer `.bike`-Datei. Eingebundene Bike-Gliederungen folgen dem Kontrollkästchen **Bike-Gliederungen**: Ein rendert eine Mermaid-Mindmap (der Dateiname ohne `.bike` ist der Stammknoten); Aus rendert eine verschachtelte Markdown-Liste ohne Dokumenttitel.
 
 ### OmniOutliner (.ooutline) [omnioutliner-ooutline]
 
-OmniOutliner-Gliederungen lassen sich genauso einbinden. Das Kontrollkästchen **OmniOutliner-Gliederungen** unter **Als Mermaid-Mindmaps einbetten:** steuert, ob als Mermaid oder als Markdown-Liste gerendert wird.
+OmniOutliner-Gliederungen lassen sich genauso einbinden. Das Kontrollkästchen **OmniOutliner-Gliederungen** unter **Als Mermaid-Mindmaps einbetten:** steuert, ob als Mermaid oder als Markdown-Liste gerendert wird. Das Öffnen einer OmniOutliner-Datei ist unter [OmniOutliner und OPML](OmniOutliner_and_OPML.html) beschrieben.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Siehe [Tree Outliner](Tree_Outliner.html). Das Kontrollkästchen **Tree Outliner outlines** steuert sowohl das Öffnen einer `.treeoutline`-Datei als auch das Einbinden. Ein rendert eine Mermaid-Mindmap mit dem Dokumenttitel als Stamm. Aus kompiliert Überschriften und Listen; **Headings through level** in der Gruppe *Tree Outliner* legt fest, wie tief die Überschriften reichen.
 
 ## Als Mermaid-Mindmaps einbetten [embed-as-mermaid-mind-maps]
 
@@ -39,10 +43,11 @@ Unter {% prefspane Apps %} gibt es bei *Mind Maps and Outlines* die Gruppe **Als
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
 - **OPML-Dateien**
 - **OmniOutliner-Gliederungen**
+- **Tree Outliner outlines**
 
 Ist das Kontrollkästchen eines Formats **aktiviert** (Standard bei den unterstützten Formaten), wandelt Marked eingebundene Dateien dieses Typs in [Mermaid](https://mermaid.js.org/)-Diagramme um:
 
-**iThoughts, MindManager, FreeMind, OPML, Bike & OmniOutliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
+**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stamm. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 **Einschränkung:** Das Einbetten von Mindmaps (Mermaid-Diagramme) funktioniert nicht mit dem Discount-Parser. Verwenden Sie MultiMarkdown, CommonMark (GFM) oder Kramdown für Mindmap-Vorschauen.
 
@@ -52,7 +57,8 @@ Ist das Kontrollkästchen eines Formats **deaktiviert**:
 - **MindManager** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **FreeMind** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **OPML** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (keine Mindmap).
-- **Bike** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (kein H1); Überschriftenelemente der obersten Ebene werden zu H2, verschachtelte Überschriften werden fett dargestellt und Aufgaben werden zu GitHub-Kontrollkästchen.
+- **Bike** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (ohne Dokumenttitel). Überschriftszeilen sind fett, und Aufgaben werden GitHub-Kontrollkästchen. Siehe [Bike](Bike.html).
+- **Tree Outliner** – Die Gliederung wird zu Markdown-Überschriften und -Listen kompiliert. Der Dokumenttitel ist Überschrift 1, und **Headings through level** legt fest, wie weit Überschriften reichen. Siehe [Tree Outliner](Tree_Outliner.html).
 - **OmniOutliner** – Die Gliederung ist als verschachtelte Markdown-Liste bzw. Checkliste eingebettet.
 
 ## Include-Syntax [include-syntax]
@@ -64,6 +70,7 @@ Verwenden Sie die gleiche Syntax wie für andere Datei-Includes:
 	<<[path/to/map.mm]
 	<<[path/to/outline.opml]
 	<<[path/to/outline.bike]
+	<<[path/to/outline.treeoutline]
 
 Oder mit iA Writer-Blocksyntax:
 
@@ -82,4 +89,4 @@ OPML-Dateien verwenden verschachtelte `<outline>`-Elemente mit einem `text`-Attr
 
 ## Bike-Konvertierung [bike-conversion]
 
-Bike-`.bike`-Dateien sind HTML mit einem Stammelement `<ul>` und `<li>`. Elemente können `data-type="heading"` (oberste Ebene → H2 beim Öffnen oder im Listenmodus; verschachtelt → fett) oder `data-type="task"` (GitHub-Kontrollkästchen; abgeschlossen, wenn `data-done` einen Zeitstempel hat oder `data-checked` / `data-completed` wahr ist). Inline-Formatierungen und Links im Knotentext werden in Markdown konvertiert. Beim Einbetten als Mermaid-Mindmap wird der Dateiname (ohne Erweiterung) als einzelner Stammknoten verwendet und die Beschriftungen sind als einfacher Text für die Mermaid-Mindmap-Syntax formatiert.
+Bike-`.bike`-Dateien sind HTML mit einem Stammelement `<ul>` und `<li>`. Im Listenmodus ist jede Zeile ein Listeneintrag: Zeilen mit `data-type="heading"` sind fett, Zeilen mit `data-type="task"` sind GitHub-Kontrollkästchen (abgeschlossen, wenn `data-done` einen Zeitstempel hat oder `data-checked` / `data-completed` wahr ist). Inline-Formatierungen und Links im Knotentext werden in Markdown konvertiert. Eine geöffnete `.bike`-Datei verwendet immer diese Liste. Wird eine eingebundene Datei als Mermaid-Mindmap dargestellt, ist der Dateiname (ohne Erweiterung) der einzige Stammknoten, und die Beschriftungen sind einfacher Text in der Mermaid-Mindmap-Syntax.

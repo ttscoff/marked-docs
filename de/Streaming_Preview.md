@@ -2,7 +2,7 @@
 
 Durch Öffnen von {% appmenu Ablage, Neu, Streaming-Vorschau %} erhält Marked Live-Updates über eine benannte Zwischenablage, anstatt eine Datei auf der Festplatte zu überwachen. Die Quell-App muss in Marked integriert werden.
 
-[Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) dokumentieren ihre eigenen Einstellungen und Menübefehle. nvUltra, nvALT, Bear und andere nutzen einen gemeinsamen Weg: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
+[Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) und [Traverse](Traverse.html) dokumentieren ihre eigenen Einstellungen und Menübefehle. nvUltra, nvALT, Bear und andere nutzen einen gemeinsamen Weg: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
 
 ## Entwickler [developers]
 

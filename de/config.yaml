@@ -583,6 +583,16 @@ Sections:
     - textbundle
     wiki_keywords:
     - bear
+  - title: Bike
+    file: Bike
+    description: "Ziehen Sie eine Bike-Gliederung (.bike) auf Marked, um sie als verschachtelte Markdown-Liste zu sehen, mit Überschriftszeilen in fett und Aufgaben als Kontrollkästchen."
+    keywords:
+    - bike
+    - gliederung
+    - outline
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curio
     file: Curio
     description: Sobald Sie in Curio eine Abbildung, Notiz, Liste oder ein anderes Element per Doppelklick bearbeiten, fließt dessen Markdown in die Streaming-Vorschau und aktualisiert sich beim Schreiben.
@@ -669,6 +679,15 @@ Sections:
     - wordpress
     wiki_keywords:
     - marsedit
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked öffnet Microsoft-Word-Dateien (.docx) als Markdown und kann dieses Markdown wieder als DOCX exportieren."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Ziehen Sie ein [MindNode][mn]-Dokument auf Marked (oder nutzen Sie je nach MindNode-Version den Befehl Open in Marked bzw. die Vorschaufunktion). Marked behandelt die Datei wie ...
@@ -735,6 +754,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: "Traverse enthält den Befehl Stream to Marked. Er erscheint im Exportmenü, wenn Marked 2 oder Marked 3 installiert ist."
+    keywords:
+    - traverse
+    - streaming-vorschau
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Ziehen Sie ein Tree-Outliner-Dokument (.treeoutline) auf Marked, um es als Überschriften und Listen oder als Mermaid-Diagramm zu sehen."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - gliederung
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: Nach der ersten Einrichtung genügt oft Befehl-6 gefolgt von Return, um die Marked-Vorschau für das aktive Blatt (oder die ausgewählten Blätter) zu aktualisieren.
