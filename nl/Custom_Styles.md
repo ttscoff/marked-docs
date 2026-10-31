@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Bekijk uw documenten *op uw* manier.
+Bekijk je documenten op *jouw* manier.
 
 ## Aangepaste stijlen gebruiken [using-custom-styles]
 
@@ -8,165 +8,237 @@ Bekijk uw documenten *op uw* manier.
 
   [img1]: images/custom_styles.jpg @2x width=544px height=196px class=center
 
-De eenvoudigste manier om Custom Stijlen te verkennen is via de
-[Custom Style Gallery][2]. Van daaruit kunt u bladeren door de
-beschikbare stijlen in actie, installeer ze met een klik op a
-knop, en zelfs [submit your own creations][6] voor
-inclusie.
+De eenvoudigste manier om Aangepaste stijlen te verkennen is via de
+[Custom Style Gallery][2]. Daar kun je de beschikbare stijlen in
+actie bekijken, ze met één klik installeren en zelfs
+[je eigen creaties insturen][6] voor opname in de galerij.
 
-Om aangepaste stylesheets van uw lokale schijf toe te voegen aan Marked,
-gebruik de {% prefspane Style %}. Er zullen nieuwe stijlen worden toegevoegd
-de vervolgkeuzemenu's in Vensterinstellingen en in elk venster,
-en krijgt een naam op basis van de basisbestandsnaam van het CSS-bestand
-toegevoegd. Bewaar uw aangepaste CSS-bestanden op een veilige plaats op uw computer
-rijden. Als ze zich op uw schijf verplaatsen, worden ze verwijderd
-Marked totdat je ze opnieuw toevoegt vanaf de nieuwe locatie. Het is
-een goed idee om geopende documenten te sluiten en de stijl te verwijderen
-uit Instellingen voordat u een CSS-bestand verwijdert of hernoemt dat wordt gebruikt door
-Marked. Als je het niet doet, gaat er niets kapot, maar het bespaart wel
-enige verwarring.
+Om aangepaste stylesheets vanaf je lokale schijf aan Marked toe te
+voegen, gebruik je {% prefspane Style %}. Nieuwe stijlen worden toegevoegd aan de
+vervolgkeuzemenu's in de Vensterinstellingen en in elk venster, en
+krijgen een naam op basis van de bestandsnaam van het toegevoegde
+CSS-bestand. Bewaar je aangepaste CSS-bestanden op een veilige plek
+op je schijf. Als ze op je schijf worden verplaatst, worden ze uit
+Marked verwijderd totdat je ze opnieuw vanaf de nieuwe locatie
+toevoegt. Het is verstandig om geopende documenten te sluiten en de
+stijl in Instellingen te verwijderen voordat je een CSS-bestand dat
+door Marked wordt gebruikt, verwijdert of hernoemt. Als je dat niet
+doet, gaat er niets stuk, maar het voorkomt verwarring.
 
-Voeg Custom Stijlen toe met behulp van de Stijlmanager met de knop Toevoegen, of door een of meer CSS-bestanden naar de Instellingen te slepen
-venster.
+Voeg Aangepaste stijlen toe via de Stijlbeheerder met de knop
+Toevoegen, of door een of meer CSS-bestanden naar het
+instellingenvenster te slepen.
 
-## Stijlen beheren met de Stijlmanager [managing-styles-with-the-style-manager]
+## Stijlen beheren met de Stijlbeheerder [managing-styles-with-the-style-manager]
 
-Door de Style Manager te starten, beschikt u over één plek waar u alle ingebouwde apparaten kunt beheren
-en aangepast thema. Klik op de knop **Stijlen beheren…** in de {% prefspane Style %}
-ruit,
-of zet gewoon CSS-bestanden neer in het voorkeurenvenster --- Marked zal ze importeren,
-open de Stijlmanager en selecteer de nieuw toegevoegde rij voor u. CSS slepen
-bestanden rechtstreeks naar het Style Manager-venster werken ook; wanneer meerdere bestanden
-worden gesleept, ziet u de overlay-update naar "N Custom stijlen toevoegen", dus het is duidelijk
-u importeert een batch.
+Als je de Stijlbeheerder opent, heb je op één plek overzicht over
+alle ingebouwde en aangepaste thema's. Klik op de knop **Stijlen
+beheren…** in het paneel {% prefspane Style %},
+of sleep gewoon CSS-bestanden naar het instellingenvenster --- Marked
+importeert ze, opent de Stijlbeheerder en selecteert automatisch de
+nieuw toegevoegde rij. Je kunt CSS-bestanden ook rechtstreeks naar
+het venster van de Stijlbeheerder slepen; wanneer je meerdere
+bestanden tegelijk sleept, verandert de overlay in "N aangepaste
+stijlen toevoegen", zodat duidelijk is dat je een batch importeert.
 
 ![][img-style-manager]
 
-In de Style Manager vindt u een sorteerbare tabel met een mix van ingebouwde en
-aangepaste stijlen. Elke rij biedt:
+In de Stijlbeheerder vind je een sorteerbare tabel met zowel
+ingebouwde als aangepaste stijlen. Elke rij biedt:
 
-- Een **Ingeschakeld** selectievakje dat de stijl onmiddellijk aan de stijl toevoegt/verwijdert
-  menu, pop-up Standaardstijl en sneltoetsen. Het uitschakelen van de huidige
-  actieve stijl schakelt automatisch over naar het volgende beschikbare item.
-- Een kolom **Naam** die u inline kunt bewerken; veranderingen blijven bestaan en verspreiden zich naar iedereen
-  menukaart. Klik op de naam van de stijl om deze op zijn plaats te bewerken.
-- Een kolom **Bron** die Ingebouwd, Custom of Gedupliceerd aanroept.
-- Een **Acties**-stapel met knoppen voor **Bewerken** (opent het CSS-bestand in uw
-  editor), **Dupliceren** (maakt een kopie en een nieuw CSS-bestand op schijf), **Onthullen**
-  (toont het bestand in Finder) en **Verwijderen** (met opties om de verwijzing te verwijderen of
-  verplaats het CSS-bestand naar de prullenmand).
+- Een selectievakje **Ingeschakeld** dat de stijl direct toevoegt aan
+  of verwijdert uit het Stijlmenu, het pop-upmenu Standaardstijl en
+  de sneltoetsen. Als je de momenteel actieve stijl uitschakelt,
+  schakelt Marked automatisch over naar de eerstvolgende beschikbare
+  stijl.
+- Een kolom **Naam** die je direct kunt bewerken; wijzigingen worden
+  opgeslagen en doorgevoerd in alle menu's. Klik op de naam van de
+  stijl om deze ter plekke te bewerken.
+- Een kolom **Bron** die aangeeft of een stijl Ingebouwd, Aangepast
+  of Gedupliceerd is.
+- Een groep **Acties** met knoppen voor **Bewerken** (opent het
+  CSS-bestand in je editor), **Dupliceren** (maakt een kopie en een
+  nieuw CSS-bestand op schijf), **Onthullen** (toont het bestand in
+  de Finder) en **Verwijderen** (met de mogelijkheid om alleen de
+  verwijzing te verwijderen of het CSS-bestand naar de Prullenbak te
+  verplaatsen).
 
-De volgorde van rijen wordt gewijzigd via slepen en neerzetten, en de volgorde bepaalt ook het menu Stijl
-de `⌘/#` snelkoppelingen, zodat je stijlen letterlijk naar de slots kunt slepen
-jij wilt. Je kunt ook externe CSS-bestanden naar specifieke posities slepen; de druppel
-indicator bepaalt waar de nieuwe stijl wordt ingevoegd.
+Rijen kun je herschikken door ze te slepen, en die volgorde bepaalt
+zowel het Stijlmenu als de sneltoetstoewijzingen voor `⌘/#`, zodat
+je stijlen letterlijk naar de gewenste plek kunt slepen. Je kunt ook
+externe CSS-bestanden naar specifieke posities slepen; de
+sleepindicator bepaalt waar de nieuwe stijl wordt ingevoegd.
 
-### Livevoorbeeld [live-preview]
+### Live voorbeeld [live-preview]
 
-Het rechterdeelvenster bevat een voorbeeld dat de geselecteerde stijl weergeeft
-in een volledig HTML document met een uitgebreide reeks koppen, lijsten, tabellen, codeblokken, enz. De
-preview gebruikt de daadwerkelijke CSS op schijf, dus bewerkingen die u in uw externe editor aanbrengt, worden onmiddellijk bijgewerkt. Een selectievakje schakelt het voorbeeld van de donkere modus in of uit.
+Het rechterpaneel toont een voorbeeld waarin de geselecteerde stijl
+wordt weergegeven binnen een volledig HTML-document met een
+uitgebreide set koppen, lijsten, tabellen, codeblokken, enzovoort.
+Het voorbeeld gebruikt de daadwerkelijke CSS op schijf, dus
+wijzigingen die je in je externe editor aanbrengt, worden direct
+bijgewerkt. Een selectievakje schakelt het voorbeeld in Donkere
+modus in of uit.
 
-U kunt aanvullende stijlen vinden voor gebruik (of als voorbeelden voor
-uw eigen maken) [on GitHub][1] (zie de [examples][2] voor
-een snelle blik op wat er is). Zie [Creating Custom CSS][3]
-voor details en tips.
+Extra stijlen om te gebruiken (of als voorbeeld voor het maken van
+je eigen stijlen) vind je [op GitHub][1] (bekijk de
+[voorbeelden][2] voor een snelle blik op wat daar te vinden is). Zie
+[Aangepaste CSS maken][3] voor details en tips.
 
 ## Extra CSS [additional-css]
 
-Onder de {% prefspane Style %} vindt u een optie
-getiteld Extra CSS met een knop met het label 'CSS bewerken'.
-Als u op deze knop klikt, wordt een venster geopend waarin u kunt toevoegen
-universele CSS-regels die op alle stijlen worden toegepast. Let op
-die specificiteit van de regels kan daarbij belangrijk zijn
-waarbij een deel van de standaardstijlen van Marked wordt overschreven. Het hoofdlichaam
-van het document is verpakt in een div met de id "#wrapper".
-Het kan eenvoudiger zijn om een selector hiermee vooraf te laten gaan
-overschrijvingen, bijvoorbeeld:
+Onder {% prefspane Style %} vind je een optie met de naam Extra CSS, met een knop
+met het label "CSS bewerken". Als je op deze knop klikt, opent een
+venster waarin je universele CSS-regels kunt toevoegen die op alle
+stijlen worden toegepast. Let op: de specificiteit van de regels kan
+belangrijk zijn wanneer je een deel van Markeds standaardstijl wilt
+overschrijven. De hoofdtekst van het document wordt omsloten door
+een div met de id "#wrapper". Door een selector hiermee te laten
+voorafgaan, kun je overschrijvingen eenvoudiger maken, bijvoorbeeld:
 
-#wrapper img { breedte: 100%; hoogte: automatisch; }
+    #wrapper img { width: 100%; height: auto; }
 
-CSS in dit veld wordt op elk document toegepast, nee
-het maakt niet uit welke stijl het gebruikt. Als u aangepast wilt toepassen
-CSS gebaseerd op voorwaardelijke overeenkomsten, gebruik Set Style, Insert
-CSS-bestand, of CSS-acties invoegen in {% prefspane Processor %}
-Custom Regels.
+CSS in dit veld wordt **toegevoegd aan het actieve thema**. Het is
+geen vervanging voor een volledige Aangepaste stijl: een stylesheet
+die alleen voor dit veld is geschreven, is bewust onvolledig, en als
+je deze via de Stijlbeheerder als thema zou laden, zou alles wat
+niet wordt behandeld zonder opmaak blijven.
 
-## Afdrukken en PDF exporteren [print-and-pdf-export]
+Marked **herschrijft** selectors in Extra CSS voordat ze worden
+toegepast. Voorloop-body-classes zoals `.mkprinting` worden samengevoegd
+met `body` in plaats van genest onder `#wrapper`, dus printregels in
+dit veld moeten `body.mkprinting #wrapper …` gebruiken (zie [Aangepaste CSS
+maken](Writing_Custom_CSS.html#additional-css-settings) voor de
+volledige herschrijfregels). Er is geen limiet aan de grootte en er
+wordt niet gecontroleerd of de CSS geldig is --- ongeldige CSS heeft
+simpelweg geen effect.
 
-Marked injecteert een ingebouwd `@media print` blok (`mkprintstyles`) op elke
-voorbeeld. Het stelt standaardinstellingen in, zoals een **10pt**-basis op `html`, `body`, en
-`#wrapper` (of de grootte van **Custom lettergrootte voor exporteren/afdrukken** in
-{% prefspane Export %} wanneer die optie is ingeschakeld), en normaliseert de alinea
-tekst met `p { font-size: 1em; }` en `li p { font-size: 1em; }` dus
-Regels voor alleen scherm, zoals `p { font-size: 1.1429em; }` blazen de hoofdtekst niet op
-in PDFs en afgedrukte uitvoer.
+CSS in dit veld wordt toegepast op elk document, ongeacht welke
+stijl er wordt gebruikt --- inclusief HTML-export wanneer stijlen
+worden meegenomen. Als je aangepaste CSS wilt toepassen op basis van
+voorwaardelijke overeenkomsten, gebruik dan de acties Stijl
+instellen, CSS-bestand invoegen of CSS invoegen in {% prefspane Processor %}
+Aangepaste regels.
 
-PDF export maakt gebruik van gedrukte media op de verborgen WebView die wordt gebruikt voor het genereren, dus
-`@media print { ... }` regels in uw stylesheet zijn op dezelfde manier van toepassing als voor
-afdrukken.
+## Afdrukken en pdf-export [print-and-pdf-export]
 
-Voeg expliciete regels toe om formaten in te stellen die afwijken van de afdrukstandaarden van Marked
-binnen `@media print` in uw aangepaste CSS (of in aanvullende CSS). Gebruik
-`!important` wanneer u de geïnjecteerde afdrukstijlen van Marked moet overschrijven --- voor
-voorbeeld:
+Marked voegt in elk voorbeeld een ingebouwd blok `@media print` toe
+(`mkprintstyles`). Dit blok stelt standaardwaarden in, zoals een
+basisgrootte van **10pt** op `html`, `body` en `#wrapper` (of de
+grootte uit **Aangepaste lettergrootte voor export/afdrukken** in
+{% prefspane Export %} wanneer die optie is ingeschakeld), en normaliseert
+alineatekst met `p { font-size: 1em; }` en `li p { font-size: 1em; }`, zodat schermspecifieke regels
+zoals `p { font-size: 1.1429em; }` de hoofdtekst in pdf's en afdrukken niet groter maken.
+
+Pdf-export kan gebruikmaken van **print**- of **screen**-media op de
+verborgen WebView die voor het genereren wordt gebruikt. Ingebouwde
+thema's gebruiken doorgaans printmedia; **aangepaste stijlen** en
+[Fountain](Fountain_for_Screenwriters.html)-documenten gebruiken
+vaak screenmedia, zodat de opmaak overeenkomt met het voorbeeld. Dat
+betekent dat `@media print { ... }`-regels niet altijd worden toegepast tijdens
+pdf-export.
+
+Voor betrouwbare opmaak bij pdf en Afdrukken/pdf-voorbeeld laat je
+selectors vooraf gaan door de klasse `mkprinting` die Marked tijdens het
+exporteren toevoegt aan `<body>` (zie [Aangepaste CSS
+schrijven](Writing_Custom_CSS.html#printstyles) voor details en
+voorbeelden). In een **Aangepaste stijl**-bestand kun je `.mkprinting`
+los gebruiken. In **Extra CSS** gebruik je de aan body gekoppelde
+vorm `body.mkprinting #wrapper …`, omdat dat veld selectors herschrijft. Je kunt beide
+vormen ook combineren met `@media print` wanneer je beide paden wilt
+afdekken.
+
+Om groottes in te stellen die afwijken van Markeds standaardwaarden
+voor afdrukken, voeg je expliciete regels toe aan je aangepaste CSS
+(of aan Extra CSS). Gebruik `!important` wanneer je de door Marked
+geïnjecteerde printstijlen wilt overschrijven --- bijvoorbeeld:
 
 ```css
-@media afdrukken {
-  #wikkel p,
-  lichaam p,
+@media print {
+  #wrapper p,
+  body p,
   p {
-    lettergrootte: 9pt !belangrijk;
-    lijnhoogte: 1,4 !belangrijk;
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
   }
 
-h1 {
-    lettergrootte: 16pt !belangrijk;
+  h1 {
+    font-size: 16pt !important;
   }
+}
+
+/* Custom Style (and most theme stylesheets) */
+.mkprinting #wrapper p,
+.mkprinting body p,
+.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+.mkprinting h1 {
+  font-size: 16pt !important;
+}
+
+/* Additional CSS field (selector rewriting) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
 }
 ```
 
-Regels zonder `!important` kunnen verliezen van latere regels in `mkprintstyles` of van
-andere niet-gekwalificeerde selectors in uw blad die nog steeds van toepassing zijn in gedrukte vorm. Zetten
-Alleen print-aanpassingen in `@media print` (in plaats van alleen in schermregels) blijven behouden
-het voorbeeld- en exportgedrag is gemakkelijker om over te redeneren.
+Regels zonder `!important` kunnen het afleggen tegen latere regels in
+`mkprintstyles` of tegen andere ongekwalificeerde selectors in je
+stylesheet die nog steeds van toepassing zijn bij het afdrukken.
+Door print-specifieke aanpassingen in `@media print` en/of `.mkprinting` /
+`body.mkprinting`-regels te plaatsen (in plaats van alleen in screen-regels),
+blijven het gedrag van het voorbeeld en de export makkelijker te
+doorgronden.
 
-## CSS-wijzigingen bekijken [watching-css-changes]
+## CSS-wijzigingen volgen [watching-css-changes]
 
-U kunt een vakje aanvinken in de sectie Custom Stijlen van de {% prefspane Style %}
-om Marked het actieve CSS-bestand te laten bekijken
-naast het Markdown bestand dat je aan het bewerken bent. Wanneer
-Als er wijzigingen in beide bestanden worden gedetecteerd, wordt het voorbeeld weergegeven
-bijwerken. Dit is handig voor het bewerken van aangepaste stijlen zonder
-voortdurend verfrissend en kan ook worden gebruikt voor eenvoudig internet
-ontwikkelingstaken.
+Je kunt in het gedeelte Aangepaste stijlen van {% prefspane Style %} een
+selectievakje inschakelen zodat Marked, naast het Markdown-bestand
+dat je bewerkt, ook het actieve CSS-bestand in de gaten houdt. Zodra
+er wijzigingen in een van beide bestanden worden gedetecteerd, wordt
+het voorbeeld bijgewerkt. Dit is handig om aangepaste stijlen te
+bewerken zonder steeds te hoeven verversen, en kan ook worden
+gebruikt voor eenvoudige webontwikkeltaken.
 
-Dit is ook handig voor wat basiswerk voor webontwerp en CSS
-experimenteren (zoals het maken van aangepaste stijlen). Laad een
-Markdown bestand met alle markeringen die u wilt opmaken
-Maak bijvoorbeeld een aangepaste stijl en bekijk de preview live
-verandert terwijl u het bewerkt.
+Dit is ook handig voor eenvoudig webdesignwerk en CSS-experimenten
+(zoals het maken van aangepaste stijlen). Laad een Markdown-bestand
+met alle opmaak waarvoor je een stijl wilt maken, maak een
+aangepaste stijl aan en bekijk het voorbeeld live terwijl je de
+stijl bewerkt.
 
 ## Aangepaste CSS schrijven [writing-custom-css]
 
-Als u bekend bent met CSS, kunt u uw eigen stijl creëren
-bladen voor gebruik in Marked. Zie [Writing Custom CSS][3] voor
-details. Overweeg elke keer dat u iets nieuws creëert
-[submitting it][6] naar de [gallery][2] om te delen met anderen
-gebruikers. Zorg ervoor dat u de basisbeginselen behandelt die in de gids worden vermeld, en
-voeg de metadata-opmerking bovenaan toe.
+Als je bekend bent met CSS, kun je je eigen stylesheets maken voor
+gebruik in Marked. Zie [Aangepaste CSS schrijven][3] voor details.
+Overweeg om, wanneer je iets nieuws maakt, [dit in te sturen][6]
+naar de [galerij][2] om het met andere gebruikers te delen. Zorg
+ervoor dat je de basisprincipes uit de handleiding volgt en neem de
+metadata-opmerking bovenaan op.
 
-### Automatische Custom Stijlen met StyleStealer [automatic-custom-styles-with-stylestealer]
+### Automatische aangepaste stijlen met StyleStealer [automatic-custom-styles-with-stylestealer]
 
-U kunt zelfs automatisch een stijl genereren op basis van een
-bestaande website met behulp van de [Style Stealer][4]. Hierdoor kunt u een webpagina laden en de berekende stijlen ophalen voor alle belangrijke elementen gevonden in Markdown, en deze vervolgens opslaan in een aangepaste stijl.
+Je kunt zelfs automatisch een stijl genereren op basis van een
+bestaande website met behulp van de [Style Stealer][4]. Hiermee kun
+je een webpagina laden en de berekende stijlen ophalen voor alle
+belangrijke elementen die in Markdown voorkomen, en deze vervolgens
+opslaan als aangepaste stijl.
 
 ![Style Stealer][stylestealer]
 
   [stylestealer]: images/style-stealer-800.jpg @2x width=800
 
 
-Beheer Custom Stijlen (hernoemen, opnieuw ordenen, dupliceren en verwijderen) vanuit de [Style Manager](Style_Manager.html).
+Beheer Aangepaste stijlen (hernoemen, herschikken, dupliceren en
+verwijderen) via de [Stijlbeheerder](Style_Manager.html).
 
 [1]: https://github.com/ttscoff/MarkedCustomStyles
 [2]: https://markedapp.com/styles/
@@ -174,4 +246,3 @@ Beheer Custom Stijlen (hernoemen, opnieuw ordenen, dupliceren en verwijderen) va
 [4]: Style_Stealer.html
 [6]: https://markedapp.com/styleshare/
 [img-style-manager]: images/screenshots/style-manager.jpg @2x width=1009px height=517px class=center
-

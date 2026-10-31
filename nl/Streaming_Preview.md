@@ -2,7 +2,7 @@
 
 Door {% appmenu File, New, Streaming Preview %} te openen, ontvangt Marked live updates via een benoemd plakbord in plaats van een bestand op schijf te bekijken. De bron-app moet integreren met Marked.
 
-[Curio](Curio.html), [Drafts](Drafts.html) en [The Archive](The_Archive.html) documenteren hun eigen schakelaars en menuopdrachten. nvUltra, nvALT, Bear en anderen gebruiken hetzelfde kanaal: open streaming preview in Marked, schakel integratie in uw editor in en begin met typen; updates arriveren bijna in realtime.
+[Curio](Curio.html), [Drafts](Drafts.html) en [The Archive](The_Archive.html) en [Traverse](Traverse.html) documenteren hun eigen schakelaars en menuopdrachten. nvUltra, nvALT, Bear en anderen gebruiken hetzelfde kanaal: open streaming preview in Marked, schakel integratie in uw editor in en begin met typen; updates arriveren bijna in realtime.
 
 ## Ontwikkelaars [developers]
 

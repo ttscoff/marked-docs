@@ -2,31 +2,31 @@
 
 Marked heeft een ingebouwde stijleditor en kan aangepaste CSS-bestanden toepassen.
 
-Je kunt de editor gebruiken om prachtige stijlen te maken, of als je net genoeg CSS kent om gevaarlijk te zijn, kun je Marked er zo uit laten zien als je wilt.
+Je kunt de editor gebruiken om prachtige stijlen te maken, of als je net genoeg CSS kent om gevaarlijk te zijn, kun je Marked eruit laten zien zoals jij dat wilt.
 
 ## Aan de slag [getting-started]
 
-Er is een galerij met Custom stijlen gemaakt door de ontwikkelaar en door gebruikers op [markedapp.com/styles](https://markedapp.com/styles/). In de galerij kunt u stijlen direct in Marked bekijken en installeren. Elke geïnstalleerde stijl kan in Finder worden weergegeven voor onderzoek en aanpassing. De galerij kan worden geopend met behulp van een interne viewer met {% appmenu Style, Generate a Custom Style %}, of klik op het potloodpictogram (bewerken) naast een bewerkbare stijl in de Stijlmanager. Als u wilt bewerken een ingebouwde stijl heeft, moet u deze eerst dupliceren in de manager.
+Er is een galerij met Custom Styles, gemaakt door de ontwikkelaar en door gebruikers, op [markedapp.com/styles](https://markedapp.com/styles/). In de galerij kun je stijlen rechtstreeks in Marked bekijken en installeren. Elke geïnstalleerde stijl kan in de Finder worden getoond voor onderzoek en aanpassing. De galerij kan worden geopend met een interne viewer via {% appmenu Style, Generate a Custom Style %}, of klik op het potlood- (bewerk-)icoon naast een bewerkbare stijl in de Style Manager. Als je een ingebouwde stijl wilt bewerken, moet je deze eerst dupliceren in de manager.
 
-Er is ook een [repository for Custom Styles](https://github.com/ttscoff/MarkedCustomStyles) op GitHub met voorbeelden. Voel je vrij om daar te bladeren, te gebruiken en bij te dragen. Als u uw thema distribueert op basis van een van de basisthema's, kunt u uzelf als bijdrager aan de aftiteling toevoegen.
+Er is ook een [repository voor Custom Styles](https://github.com/ttscoff/MarkedCustomStyles) op GitHub met voorbeelden. Kijk gerust rond, gebruik ze, en draag er iets aan bij. Als je jouw thema verspreidt op basis van een van de basisthema's, voeg jezelf dan gerust toe aan de credits als bijdrager.
 
-Met de mogelijkheid van Marked om aangepaste CSS-bestanden te gebruiken, zijn de mogelijkheden eindeloos bij het aanpassen van uw voorbeeld. Alle CSS3-opties die in Safari werken, werken ook in Marked. Met standaard Markdown bestanden in Marked zijn er slechts een paar HTML elementen die u moet verwerken; alle inhoud bevindt zich in een div met de id "wrapper", al het andere wordt bepaald door uw documentopmaak.
+Met de mogelijkheid van Marked om aangepaste CSS-bestanden te gebruiken, zijn de mogelijkheden om je Preview aan te passen vrijwel onbeperkt. Alle CSS3-opties die in Safari werken, werken ook in Marked. Bij standaard Markdown-bestanden in Marked hoef je maar met een paar HTML-elementen rekening te houden; alle inhoud staat in een div met de id "wrapper", de rest wordt bepaald door je documentopmaak.
 
-Als u ontwerpt voor persoonlijk gebruik, zijn er geen regels. Schakel CSS-tracking in met het selectievakje onder de aangepaste CSS-kiezer. Wanneer u uw aangepaste CSS bewerkt en opslaat, wordt het voorbeeld bijgewerkt.
+Als je voor persoonlijk gebruik ontwerpt, gelden er geen regels. Schakel CSS-tracking in met het selectievakje onder de aangepaste CSS-selector, en wanneer je je aangepaste CSS bewerkt en opslaat, wordt de preview bijgewerkt.
 
-**Een [skeleton theme is available](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) om aan de slag te gaan.**
+**Er is een [skeletonthema beschikbaar](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) om mee te beginnen.**
 
-Als u van plan bent uw CSS-creatie te delen, zijn er een paar punten die u moet bespreken. Ten eerste zijn er enkele lichaamsklassen waarop stijlen moeten worden toegepast:
+Als je van plan bent je CSS-creatie te delen, zijn er een paar punten waar je rekening mee moet houden. Ten eerste zijn er enkele body-classes waar stijlen op toegepast moeten worden:
 
-## Lichaamslessen [body-classes]
+## Body-classes [body-classes]
 
-De volgende stijlen moeten worden opgenomen in elke Marked CSS die kan worden gedeeld. Met de lichaamsklassen kunt u elke selector onder verschillende voorkeursopties targeten en wijzigen.
+De volgende stijlen moeten worden opgenomen in elke CSS die je met Marked wilt delen. Met de body-classes kun je elke selector onder verschillende voorkeursopties targeten en aanpassen.
 
-### Omgekeerd [inverted]
+### Geïnverteerd [inverted]
 
-Wanneer de gebruiker {% appmenu Preview, Dark Mode %} selecteert, wordt een klasse "geïnverteerd" toegevoegd aan de body-tag. U kunt dit gebruiken om de contrastrijke, licht op donkere stijlen te targeten.
+Wanneer de gebruiker {% appmenu Preview, Dark Mode %} selecteert, wordt de class "inverted" toegevoegd aan de body-tag. Hiermee kun je de hoogcontrast-stijlen (licht op donker) targeten.
 
-U wilt alleen omgekeerde stijlen toepassen op het voorbeeld en niet op afdrukken. Gebruik daarom een ​​mediaquery (@media screen) om deze te beperken. De onderstaande code is redelijk universeel en in de meeste gevallen kunt u deze gewoon in uw stylesheet plaatsen voor compatibiliteit, maar u kunt deze gerust aanpassen.
+Je wilt geïnverteerde stijlen alleen op de preview toepassen, niet op afdrukken, dus gebruik een media query (@media screen) om dit te beperken. Onderstaande code is redelijk algemeen bruikbaar en in de meeste gevallen kun je hem gewoon in je stylesheet plakken voor compatibiliteit, maar pas hem gerust aan naar wens.
 
 ```css
 @media screen {
@@ -46,9 +46,9 @@ U wilt alleen omgekeerde stijlen toepassen op het voorbeeld en niet op afdrukken
 
 ### Poëzie [poetry]
 
-De gebruiker kan kiezen of de met tabs ingesprongen tekst poëzie of code is. Het enige verschil is dat pre/code-blokken poëtischer worden vormgegeven als de poëziemodus wordt gekozen. De klasse 'poëzie' wordt toegepast op de body-tag.
+De gebruiker kan kiezen of tekst met tab-inspringing als poëzie of als code wordt behandeld. Het enige verschil is dat pre/code-blokken wat, laten we zeggen, poëtischer worden vormgegeven wanneer de poëziemodus is gekozen. De class "poetry" wordt toegepast op de body-tag.
 
-Wees zo creatief als je wilt met de opmaak, maar hier is een basisfragment:
+Wees zo creatief als je wilt met de opmaak, maar hier is een basissnippet:
 
 ```css
 .poetry pre code {
@@ -63,11 +63,11 @@ Wees zo creatief als je wilt met de opmaak, maar hier is een basisfragment:
 
 ## Speciale gevallen [special-cases]
 
-Tabellen, figuur/figuurbijschrift en het speciale geval van `a.footnote` en `div.footnotes>a` moeten ook in overweging worden genomen. Er zijn geen vaste regels voor hoe je ermee omgaat, maar kijk eens naar de standaardstijlen om een ​​idee te krijgen welke CSS-regels Marked nodig hebben.
+Ook tabellen, Figure/Figcaption, en het speciale geval van `a.footnote` en `div.footnotes>a` verdienen aandacht. Er zijn geen vaste regels voor hoe je hiermee omgaat, maar bekijk de standaardstijlen voor een idee van welke CSS-regels Marked nodig heeft.
 
-De standaardtabelstijl voor alle standaardstijlen maakt gebruik van transparantie op de afwisselende rijen, zodat deze zacht overvloeit in elke achtergrond. Je kunt die stijlen kopiëren, of je eigen route volgen, zorg er wel voor dat je ze hebt gestyled! Hetzelfde voor figuur en bijschrift; voeg een afbeelding toe aan een document met alternatieve tekst om te zien hoe de opmaak eruit zal zien en op de juiste manier zal worden vormgegeven.
+De standaard tabelopmaak in alle standaardstijlen gebruikt transparantie op de afwisselende rijen, zodat de tabel zacht overloopt in elke achtergrond. Je kunt die stijlen overnemen, of je eigen weg gaan — zorg er in elk geval voor dat je ze hebt gestileerd! Hetzelfde geldt voor figure en figcaption; voeg een afbeelding met alt-tekst toe aan een document om te zien hoe de opmaak eruitziet, en stem de stijl daarop af.
 
-Voetnoten in een document geven een link binnen de inhoud weer (a.footnote) en een div aan het einde met de tekst waarnaar wordt verwezen (div.footnotes). Zie nogmaals de standaardstijlen ter referentie. Om te voorkomen dat de regelhoogte wordt gewijzigd op regels die een voetnootreferentienummer bevatten, moet u iets opnemen als:
+Voetnoten in een document renderen een link binnen de inhoud (a.footnote), en een div aan het einde met de bijbehorende tekst (div.footnotes). Kijk ook hier weer naar de standaardstijlen ter referentie. Om te voorkomen dat de regelhoogte verandert op regels met een voetnootverwijzingsnummer, zorg dat je iets als het volgende opneemt:
 
 ```css
 sup,sub,a.footnote {
@@ -79,27 +79,27 @@ sup,sub,a.footnote {
 }
 ```
 
-Om de retourpijl op dezelfde lijn te houden, voegt u het volgende toe:
+Om de terugkeerpijl op dezelfde regel te houden, neem het volgende op:
 
 ```css
 .footnotes p {display:inline}
 ```
 
-Het is ook een goed idee om voor alle afbeeldingen een algemene regel op te nemen, zodat ze binnen de breedte van de pagina blijven. Zoiets als:
+Het is ook verstandig om een algemene regel voor alle afbeeldingen op te nemen, zodat ze binnen de breedte van de pagina blijven. Iets als:
 
 ```css
 #wrapper img { max-width: 100% }
 ```
 
-Als uw thema extra opvulling of een vaste breedte heeft, past u de maximale breedte aan zodat deze past.
+Als je thema extra padding of een vaste breedte heeft, pas de max-width daarop aan.
 
 ## Afdrukstijlen [printstyles]
 
-Neem afdrukstijlen op die achtergrondkleuren, vast scrollen en alleen-voor-voorbeeld-UI verwijderen. Marked biedt twee manieren om afdruk- en PDF-uitvoer te targeten.
+Zorg dat je afdrukstijlen opneemt die achtergrondkleuren, vaste scrolling en preview-only UI-elementen verwijderen. Marked biedt twee manieren om afdrukken en PDF-uitvoer te targeten.
 
 ### `@media print` [media-print]
 
-Standaard CSS-afdrukregels gelden bij afdrukken vanuit Marked of wanneer PDF-export printmedia gebruikt:
+Standaard CSS-afdrukregels gelden wanneer je vanuit Marked afdrukt, of wanneer PDF-export print-media gebruikt:
 
 ```css
 @media print {
@@ -108,11 +108,11 @@ Standaard CSS-afdrukregels gelden bij afdrukken vanuit Marked of wanneer PDF-exp
 }
 ```
 
-### De klasse `.mkprinting` [the-mkprinting-class]
+### De class `.mkprinting` [the-mkprinting-class]
 
-Wanneer Marked een document voorbereidt voor **PDF-export** of **Afdruk-/PDF-voorbeeld** ({% kbd cmd P %}), voegt het de klasse `mkprinting` toe aan de `<body>`-tag (naast exportklassen zoals `bandw`, `breakAfterTOC` en de `mkstyle--*`-klasse van je stijl). De ingebouwde thema's van Marked gebruiken deze klasse voor de meeste afdrukspecifieke regels in plaats van alleen op `@media print` te vertrouwen.
+Wanneer Marked een document voorbereidt voor **PDF-export** of **Afdrukken/PDF-preview** ({% kbd cmd P %}), voegt het de class `mkprinting` toe aan de `<body>`-tag (naast exportclasses zoals `bandw`, `breakAfterTOC`, en de `mkstyle--*`-class van je stijl). De ingebouwde thema's van Marked gebruiken deze class voor de meeste afdrukspecifieke regels, in plaats van uitsluitend op `@media print` te vertrouwen.
 
-PDF-export laadt de verborgen render-WebView vaak met **screen**-media (vooral bij aangepaste stijlen en [Fountain](Fountain_for_Screenwriters.html)-documenten), waardoor `@media print`-blokken in je stylesheet **mogelijk niet** op PDF-uitvoer worden toegepast. Regels met het voorvoegsel `.mkprinting` gelden tijdens export altijd, omdat het gewone klasseselectoren zijn en geen mediaqueries.
+Bij PDF-export wordt de verborgen render-WebView vaak geladen met **screen**-media (met name bij aangepaste stijlen en [Fountain](Fountain_for_Screenwriters.html)-documenten), waardoor `@media print`-blokken in je stylesheet mogelijk **niet** van toepassing zijn op PDF-uitvoer. Regels met het voorvoegsel `.mkprinting` gelden altijd tijdens export, omdat het gewone class-selectors zijn en geen media queries.
 
 ```css
 /* Hide preview UI during print/PDF */
@@ -134,7 +134,7 @@ PDF-export laadt de verborgen render-WebView vaak met **screen**-media (vooral b
 }
 ```
 
-Voor stijlen die **zowel** bij browserafdrukken als bij Marked PDF-export moeten werken, verdubbel je kritieke regels of combineer je selectoren:
+Voor stijlen die zowel bij afdrukken vanuit de browser **als** bij PDF-export vanuit Marked moeten werken, dupliceer je de belangrijkste regels of combineer je selectors:
 
 ```css
 @media print {
@@ -146,68 +146,102 @@ Voor stijlen die **zowel** bij browserafdrukken als bij Marked PDF-export moeten
 }
 ```
 
-Bij het debuggen van aangepaste afdruk-CSS open je Afdruk-/PDF-voorbeeld of exporteer je naar PDF en gebruik je [Safari's Web Inspector](#webkitinspector) om het document te inspecteren — de `<body>` heeft de klasse `mkprinting` zolang de afdruklay-out actief is.
+**Custom Style versus Additional CSS.** Schrijf in een Custom Style-stylesheet `.mkprinting #wrapper …` zoals hierboven getoond. In het veld **Additional CSS** herschrijft Marked selectors vóór injectie — gebruik daar in plaats daarvan de op body gebaseerde vorm:
 
-Het verbergen van links bij afdrukken gebeurt buiten het hoofdthema, zodat gebruikers kunnen kiezen of linkaccenten en onderstrepingen op de afdruk verborgen blijven. Zolang je een basisstijl voor tekst hebt, hoef je je daar geen zorgen over te maken.
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
 
-Ga ervoor. Converteer je blogthema, maak een sterke afdrukstijl voor PDF's of de perfecte preview voor jouw schrijfstijl. Als je iets geweldigs maakt, [deel het met de community](https://markedapp.com/styleshare/).
+Zie [Instellingen voor Additional CSS](#additional-css-settings) voor hoe dat herschrijven werkt en waarom `.mkprinting #wrapper …` alleen daar niet matcht.
 
-## Aanvullende CSS-instellingen [additional-css-settings]
+Gebruik bij het debuggen van aangepaste afdruk-CSS Afdrukken/PDF-preview of exporteer naar PDF, en gebruik dan [Safari's Web Inspector](#webkitinspector) om het document te inspecteren — de `<body>` heeft dan de class `mkprinting` zolang de afdruklay-out actief is.
 
-In {% prefspane Style %} kun je aanvullende CSS bewerken. Deze stijlen worden aan elk geladen thema toegevoegd en kunnen universele wijzigingen voor alle thema's doorvoeren.
+Het verbergen van links bij het afdrukken wordt buiten het hoofdthema om afgehandeld, zodat gebruikers kunnen kiezen om linkmarkeringen en onderstrepingen in de afdruk te verbergen. Zolang je een basisstijl voor de tekst hebt ingesteld, hoef je je hier geen zorgen over te maken.
 
-Met [hoge specificiteit](#overridingspecificity), `@media`-query's voor afdrukken en scherm, en `.mkprinting`-selectoren voor PDF-export kun je met een beetje CSS-kennis vrijwel elk stijlaspect beheersen.
+Dus, aan de slag. Zet je bloglay-out om, maak een geweldige afdrukstijl voor PDF-documenten, of ontwerp de perfecte preview voor het type schrijfwerk dat jij doet. Als je iets moois maakt, [deel het dan met de community](https://markedapp.com/styleshare/).
 
-## WebKit-inspecteur [webkitinspector]
+## Instellingen voor Additional CSS [additional-css-settings]
 
-Safari's Web Inspector is de gemakkelijkste manier om precies te zien wat HTML en CSS Marked genereert, en om live met Custom Stijlen te experimenteren.
+In het {% prefspane Style %} kun je **Additional CSS** bewerken. Deze regels worden **toegevoegd aan het thema dat al geladen is**. Het is bewust een gedeeltelijke overlay, geen volledig thema. Als je een complete stylesheet in dit veld plakt — of dezelfde partiële sheet via [Style Manager](Custom_Styles.html) importeert alsof het een thema was — blijft alles wat de sheet niet dekt ongestyled.
 
-### Het ontwikkelmenu inschakelen in Safari [enabling-the-develop-menu-in-safari]
+### Herschrijven van selectors [additional-css-selector-rewriting]
+
+Marked herschrijft Additional CSS-selectors vóór injectie (als `body.mk-has-additional-css …`), zodat regels binnen de scope van de preview blijven:
+
+- Een selectoronderdeel dat al begint met `body` of `#wrapper` krijgt het voorvoegsel `body.mk-has-additional-css`, waarbij body-classes worden samengevoegd in plaats van genest.
+- Elk ander selectoronderdeel krijgt de scope onder `body.mk-has-additional-css #wrapper …`.
+- Voorafgaande body-classes die Marked instelt op `<body>` — waaronder `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC` en `.mkstyle--*` — worden behandeld als `body` en samengevoegd met de body-selector, in plaats van genest onder `#wrapper`.
+
+| Ingevoerd in Additional CSS | Resultaat |
+| :-- | :-- |
+| `#wrapper h2` | Matcht (correct binnen scope) |
+| `body.mkprinting #wrapper p` | Matcht tijdens afdrukken/PDF |
+| `.mkprinting #wrapper p` | Matcht **niet** (zou een geneste `#wrapper` vereisen) |
+| `:root { --x: 1; }` | Matcht **niet** (gebruik liever `body` of `#wrapper` voor custom properties) |
+
+Geef voor afdrukregels in dit veld de voorkeur aan `body.mkprinting #wrapper …`. Dezelfde visuele bedoeling kan in een Custom Style-bestand de kortere vorm `.mkprinting #wrapper …` blijven gebruiken.
+
+Er is **geen maximumgrootte en geen controle op geldige CSS** voor Additional CSS. Marked slaat op en injecteert precies wat je invoert; ongeldige CSS heeft simpelweg geen effect in de preview.
+
+### HTML en andere exports [additional-css-exports]
+
+Additional CSS geldt in de live preview, Afdrukken/PDF-preview, PDF-export en **HTML-export** wanneer stijlen worden meegenomen — de geëxporteerde `<body>` krijgt de class `mk-has-additional-css`, zodat herschreven selectors matchen. DOCX, ODT en EPUB gebruiken hun eigen stylingtrajecten en passen Additional CSS niet op dezelfde manier toe.
+
+Met [hoge specificiteit](#overridingspecificity), `@media`-queries voor afdrukken en scherm, en `body.mkprinting`-selectors (in dit veld) of `.mkprinting`-selectors (in Custom Styles), kun je met een beetje CSS-kennis vrijwel elk aspect van de styling bepalen.
+
+## WebKit Inspector [webkitinspector]
+
+Safari's Web Inspector is de gemakkelijkste manier om precies te zien welke HTML en CSS Marked genereert, en om live met Custom Styles te experimenteren.
+
+### Het Develop-menu inschakelen in Safari [enabling-the-develop-menu-in-safari]
 
 1. Open Safari en kies {% appmenu Safari, Settings… %}.
-2. Selecteer het tabblad **Geavanceerd**.
-3. Schakel **Functies tonen voor webontwikkelaars** in (of **Toon ontwikkelmenu in menubalk** op oudere macOS-versies).
+2. Selecteer het tabblad **Advanced**.
+3. Schakel **Show features for web developers** in (of **Show Develop menu in menu bar** op oudere versies van macOS).
 
-Eenmaal ingeschakeld, verschijnt er een **Ontwikkel**-menu in de menubalk van Safari.
+Zodra dit is ingeschakeld, verschijnt er een **Develop**-menu in de menubalk van Safari.
 
-![Safari Develop menu showing Marked documents][develop-menu]
+![Safari Develop-menu met Marked-documenten][develop-menu]
 
-### Een Marked document inspecteren [inspecting-a-marked-document]
+### Een Marked-document inspecteren [inspecting-a-marked-document]
 
-1. Schakel over naar Safari terwijl er een voorbeeldvenster geopend is in Marked.
-2. Kies in de menubalk **Ontwikkelen → _\<uw Mac-naam\>_ → Marked → _\<documenttitel\>_**.
-3. Safari opent een Web Inspector-venster dat is gekoppeld aan het geselecteerde Marked voorbeeld.
+1. Zorg dat er een previewvenster open staat in Marked en schakel over naar Safari.
+2. Kies in de menubalk **Develop → _\<naam van je Mac\>_ → Marked → _\<documenttitel\>_**.
+3. Safari opent een Web Inspector-venster gekoppeld aan de geselecteerde Marked-preview.
 
-Vanaf hier kunt u:
+Van hieruit kun je:
 
-- Gebruik het tabblad **Elementen** om de DOM binnen de `#wrapper` div te inspecteren en te zien welke CSS-regels worden toegepast.
-- Beweeg de muis over elementen in de DOM-structuur om ze in het venster Marked te markeren.
-- Gebruik de zijbalk **Stijlen** om de regels live aan te passen en kopieer vervolgens de werkfragmenten terug naar een Custom stijl of **Aanvullende CSS**.
-    - Nadat u CSS op het tabblad Elementen hebt bewerkt, kunt u een samenvatting van uw bewerkingen krijgen door het tabblad Wijzigingen te selecteren
+- Het tabblad **Elements** gebruiken om de DOM binnen de `#wrapper`-div te inspecteren en te zien welke CSS-regels worden toegepast.
+- Elementen in de DOM-boomstructuur aanwijzen om ze in het Marked-venster te markeren.
+- De **Styles**-zijbalk gebruiken om regels live aan te passen, en werkende snippets vervolgens terug te kopiëren naar een Custom Style of **Additional CSS**.
+    - Na het bewerken van CSS in het tabblad Elements kun je een overzicht van je wijzigingen krijgen via het tabblad Changes
 
-![Changes][css-changes]
-- Gebruik het tabblad **Console** om JavaScript uit te voeren op de live preview. De volledige [Marked JavaScript API](https://markedapp.com/help/jsapi/) is beschikbaar in deze console.
-- Verken andere tabbladen zoals **Netwerk** bij het opsporen van fouten in bronnen die door uw document zijn geladen.
+	![Wijzigingen][css-changes]
+- Het tabblad **Console** gebruiken om JavaScript uit te voeren tegen de live preview. De volledige [Marked JavaScript API](https://markedapp.com/help/jsapi/) is beschikbaar in deze console.
+- Andere tabbladen zoals **Network** verkennen bij het debuggen van bronnen die door je document worden geladen.
 
-![Inspecting a Marked preview with Safari Web Inspector][inspecting]
+![Een Marked-preview inspecteren met Safari Web Inspector][inspecting]
 
-## Custom CSS delen [sharing-custom-css]
+## Aangepaste CSS delen [sharing-custom-css]
 
-Gebruik {% appmenu Style, Share a Custom Style %} om de deelapp in uw webbrowser te openen. Sleep uw CSS naar de neerzetzone (of klik om te selecteren vanaf schijf) en upload de CSS voor uw Custom stijl.
+Gebruik {% appmenu Style, Share a Custom Style %} om de deel-app in je webbrowser te openen. Sleep je CSS naar de dropzone (of klik om een bestand van schijf te selecteren) en upload de CSS voor je Custom Style.
 
-Gedeelde stijlen moeten door de ontwikkelaar worden goedgekeurd voordat ze in de galerij verschijnen, dus je ziet geen onmiddellijke resultaten.
+Gedeelde stijlen moeten eerst door de ontwikkelaar worden goedgekeurd voordat ze in de galerij verschijnen, dus je ziet niet meteen resultaat.
 
-## Andere tips [other-tips]
+## Overige tips [other-tips]
 
-### Overschrijvende specificiteit [overridingspecificity]
+### Specificiteit overschrijven [overridingspecificity]
 
-Binnen de Marked preview wordt een body-klasse toegevoegd, gebaseerd op de bestandsnaam van de huidige stijl. Als het voorbeeld is ingesteld op "Swiss", dan zal er een klasse op de `<body>` tag staan ​​met de naam `mkstyle--swiss`. Als uw aangepaste CSS MyCustom.css heet, is de body-klasse `mkstyle--mycustom`. U kunt dit gebruiken vóór de regels die in de basisstijlen zijn gedefinieerd, om deze te overschrijven. Om absolute specificiteit in een regel te krijgen, gebruikt u ook de #wrapper ID uit de container-div:
+Binnen de Marked-preview wordt een body-class toegevoegd op basis van de bestandsnaam van de huidige stijl. Als de preview is ingesteld op "Swiss", dan komt er op de `<body>`-tag een class te staan genaamd `mkstyle--swiss`. Als je aangepaste CSS MyCustom.css heet, dan is de body-class `mkstyle--mycustom`. Je kunt dit vóór de regels uit de basisstijlen gebruiken om ze te overschrijven. Voor absolute specificiteit in een regel gebruik je ook de #wrapper-ID van de container-div:
 
-.mkstyle--mycustom #wrapper p+p { ... }
+	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Inhoudsopgave styling [table-of-contents-styling]
+### Opmaak van de inhoudsopgave [table-of-contents-styling]
 
-Als u het token `<!--toc-->` gebruikt voor [insert a table of contents](Special_Syntax.html#tableofcontents), kunt u de instellingen voor niveau-indicatoren voor de inhoudsopgave in een Custom stijl overschrijven met behulp van de "#wrapper" om de specificiteit te vergroten:
+Als je het token `<!--toc-->` gebruikt om [een inhoudsopgave in te voegen](Special_Syntax.html#tableofcontents), kun je de instellingen voor de niveau-indicatoren van de inhoudsopgave in een Custom Style overschrijven door "#wrapper" te gebruiken voor extra specificiteit:
 
 ```css
 #wrapper #mkreplaced-toc li {
@@ -215,7 +249,7 @@ Als u het token `<!--toc-->` gebruikt voor [insert a table of contents](Special_
 }
 ```
 
-Dit zou ervoor zorgen dat alle lijstitems in de inhoudsopgave een vierkante opsommingsteken gebruiken in plaats van wat is gedefinieerd in Instellingen wanneer uw Custom stijl actief is.
+Hierdoor gebruiken alle lijstitems in de inhoudsopgave een vierkant opsommingsteken in plaats van wat in Settings is ingesteld, zolang je Custom Style actief is.
 
 [develop-menu]: images/develop-menu-600.jpg @2x width=600px height=273px "Safari Develop menu" class=center
 [inspecting]: images/inspecting-600.jpg @2x width=600px height=367px "Inspecting a Marked document in Safari" class=center

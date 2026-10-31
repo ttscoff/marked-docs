@@ -533,6 +533,15 @@ Sections:
     - bear notes
     - textbundle
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Sleep een Bike-overzicht (.bike) naar Marked om het als geneste Markdown-lijst te bekijken, met kopregels vet en taken als selectievakjes."
+    keywords:
+    - bike
+    - overzicht
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curio
     file: Curio
     description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
@@ -612,6 +621,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked opent Microsoft Word-bestanden (.docx) als Markdown en kan die Markdown weer naar DOCX exporteren."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
@@ -671,6 +689,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: "Traverse bevat de opdracht Stream to Marked. Die verschijnt in het exportmenu wanneer Marked 2 of Marked 3 is geïnstalleerd."
+    keywords:
+    - traverse
+    - streaming
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Sleep een Tree Outliner-document (.treeoutline) naar Marked om het als koppen en lijsten te bekijken, of als een Mermaid-diagram."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - overzicht
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
