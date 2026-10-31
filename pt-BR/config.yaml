@@ -533,6 +533,15 @@ Sections:
     - notas de urso
     - pacote de texto
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Arraste um esboço do Bike (.bike) para o Marked para vê-lo como uma lista Markdown aninhada, com as linhas de título em negrito e as tarefas como caixas de seleção."
+    keywords:
+    - bike
+    - esboço
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curiosidade
     file: Curio
     description: Quando você clica duas vezes para editar uma figura, nota, lista ou outro item no Curio, seu Markdown flui para a visualização de streaming e é atualizado conforme você escreve.
@@ -612,6 +621,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "O Marked abre arquivos do Microsoft Word (.docx) como Markdown e pode exportar esse Markdown de volta para DOCX."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Arraste um documento [MindNode][mn] para Marked (ou use o comando Open in Marked / preview do MindNode, dependendo da versão do MindNode). Marcado trata o arquivo como...
@@ -671,6 +689,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - o arquivo
+  - title: Traverse
+    file: Traverse
+    description: "O Traverse inclui o comando Stream to Marked. Ele aparece no menu de exportação quando o Marked 2 ou o Marked 3 está instalado."
+    keywords:
+    - traverse
+    - visualização
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Arraste um documento do Tree Outliner (.treeoutline) para o Marked para vê-lo como títulos e listas, ou como um diagrama Mermaid."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - esboço
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulisses
     file: Ulysses
     description: Após a primeira configuração, Cmd-6 seguido de Return geralmente é suficiente para atualizar a visualização marcada da planilha ativa (ou das planilhas que você selecionou).
