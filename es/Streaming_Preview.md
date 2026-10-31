@@ -4,7 +4,7 @@
 
 Al abrir {% appmenu File, New, Streaming Preview %}, Marked recibe actualizaciones en vivo a través de un portapapeles con nombre en lugar de mirar un archivo en el disco. La aplicación fuente debe integrarse con Marked.
 
-[Curio](Curio.html), [Borradores](Drafts.html) y [The Archive](The_Archive.html) documentan sus propios cambios y comandos de menú. nvUltra, nvALT, Bear y otros usan el mismo canal: abra la vista previa de la transmisión en Marked, habilite la integración en su editor y comience a escribir; Las actualizaciones llegan casi en tiempo real.
+[Curio](Curio.html), [Borradores](Drafts.html) y [The Archive](The_Archive.html) y [Traverse](Traverse.html) documentan sus propios cambios y comandos de menú. nvUltra, nvALT, Bear y otros usan el mismo canal: abra la vista previa de la transmisión en Marked, habilite la integración en su editor y comience a escribir; Las actualizaciones llegan casi en tiempo real.
 
 ## Desarrolladores [developers]
 
