@@ -533,6 +533,15 @@ Sections:
     - bear notes
     - textbundle
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "把 Bike 大綱 (.bike) 拖到 Marked 上，即可預覽為巢狀 Markdown 清單，標題列用粗體，工作項目用核取方塊。"
+    keywords:
+    - bike
+    - 大綱
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curio
     file: Curio
     description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
@@ -612,6 +621,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked 把 Microsoft Word (.docx) 檔案當成 Markdown 開啟，也可以把這份 Markdown 再匯出為 DOCX。"
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
@@ -671,6 +689,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: "Traverse 內建 Stream to Marked 指令。安裝了 Marked 2 或 Marked 3 時，它會出現在匯出選單裡。"
+    keywords:
+    - traverse
+    - 串流預覽
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "把 Tree Outliner 文稿 (.treeoutline) 拖到 Marked 上，即可預覽為標題和清單，或預覽為 Mermaid 圖。"
+    keywords:
+    - tree outliner
+    - treeoutline
+    - 大綱
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
