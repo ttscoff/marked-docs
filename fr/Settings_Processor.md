@@ -60,3 +60,13 @@ Rendre `==surlignage==` et `~~suppression~~`
 
 Rendre `~texte~` comme du texte souligné
 : Si cette option est activée, `~texte~` entouré de tildes simples sera affiché souligné. Cela entre en conflit avec la syntaxe MultiMarkdown pour l'indice, et est désactivé par défaut.
+
+Retirer les annotations iA Writer
+: Si l'option est activée, Marked retire le bloc d'annotations iA Writer à la fin du fichier avant l'aperçu. Ce bloc est une ligne `Annotations:` contenant un hachage SHA-256, puis des lignes de plages `@nom` et `&nom`, souvent précédées d'un `---` seul. Désactivé par défaut. Si du texte ordinaire suit la ligne `Annotations:`, le fichier n'est pas modifié.
+
+### Apex [apex]
+
+**Apex (bêta)** est l'un des processeurs intégrés. Il couvre les fonctions pour lesquelles on choisit d'habitude CommonMark, GitHub Flavored Markdown, MultiMarkdown ou Kramdown. Voir [Apex (bêta)](Apex.html).
+
+Configurer Apex
+: Lorsque **Apex (bêta)** est le processeur par défaut, **Configurer Apex** ouvre la feuille d'options. Voir [Configuration d'Apex](Apex_Configuration.html).

@@ -4,8 +4,8 @@
 
 Because the preview path matches the editor file, live updates behave like any other watched Markdown document.
 
-Marked understands most **include** workflows that rely on recognizable path patterns; advanced `/block`-style markers from iA Writer are interpreted when they match syntax Marked already supports for modular documents.
+iA Writer content blocks (a line starting with `/` and a file path) are converted to Marked includes when **iA Writer compatibility** is enabled in Processor settings, which it is by default. Text files are inserted, code files become code blocks, and images are displayed. Lines inside code blocks are left alone. Turn the setting off if you write lines that begin with paths and don't want them treated as includes.
 
-Optional Processor settings improve compatibility: **Treat +++ as page breaks** and **Convert // lines to comments** (lines must start at column 0).
+Other optional Processor settings improve compatibility: **Treat +++ as page breaks**, **Convert // lines to comments** (lines must start at column 0), and **Remove iA Writer annotations**.
 
 [ia]: https://ia.net/writer

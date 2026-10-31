@@ -62,3 +62,13 @@ Renderizar `==highlight==` y `~~delete~~`
 
 Renderizar `~text~` como guión bajo
 : Si esta opción está habilitada, `~text~` rodeado de tildes simples se mostrará subrayado. Esto entra en conflicto con la sintaxis de MultiMarkdown para el subíndice y está deshabilitado de forma predeterminada.
+
+Quitar anotaciones de iA Writer
+: Si está activado, Marked quita el bloque de anotaciones de iA Writer al final del archivo antes de la vista previa. Ese bloque es una línea `Annotations:` con un hash SHA-256, y luego líneas de rangos `@nombre` y `&nombre`, a menudo con un `---` solo justo encima. Desactivado de forma predeterminada. Si después de la línea `Annotations:` hay prosa normal, el archivo no se modifica.
+
+### Apex [apex]
+
+**Apex (beta)** es uno de los procesadores integrados. Cubre las funciones para las que la gente suele elegir CommonMark, GitHub Flavored Markdown, MultiMarkdown o Kramdown. Consulte [Apex (beta)](Apex.html).
+
+Configurar Apex
+: Cuando **Apex (beta)** es el procesador predeterminado, **Configurar Apex** abre la hoja de opciones. Consulte [Configuración de Apex](Apex_Configuration.html).

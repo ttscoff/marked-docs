@@ -16,7 +16,7 @@ Ativar navegação no minimapa
 Manchetes recolhem seções
 : clicar em um elemento de título recolhe a seção entre ele e o próximo título.
 
-Requer {% kbd cmd %}‑clique
+Requer {% kbd cmd %}&#8209;clique
 : se esta opção estiver marcada, os títulos só serão recolhidos/expandidos quando clicados com a tecla Command pressionada.
 
 Visualização de sincronização e rolagem de origem
