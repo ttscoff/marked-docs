@@ -533,6 +533,15 @@ Sections:
     - medve jegyzetek
     - textbundle
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Húzzon egy Bike-vázlatot (.bike) a Markedre, hogy beágyazott Markdown-listaként jelenjen meg, a címsorokkal félkövéren és a feladatokkal jelölőnégyzetként."
+    keywords:
+    - bike
+    - vázlat
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Ritka műalkotás
     file: Curio
     description: Ha duplán kattint egy ábra, jegyzet, lista vagy más elem szerkesztéséhez a Curio alkalmazásban, a jelölés a streaming előnézetéhez folyik, és írás közben frissül.
@@ -612,6 +621,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "A Marked a Microsoft Word (.docx) fájlokat Markdownként nyitja meg, és ezt a Markdownt vissza tudja exportálni DOCX-be."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Húzzon egy [MindNode][mn] dokumentumot a Marked-re (vagy használja a MindNode Megnyitás Markedben / előnézetben parancsát, a MindNode verziójától függően). A Megjelölve úgy kezeli a fájlt, mint...
@@ -671,6 +689,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - az archívum
+  - title: Traverse
+    file: Traverse
+    description: "A Traverse tartalmazza a Stream to Marked parancsot. Az exportmenüben jelenik meg, ha a Marked 2 vagy a Marked 3 telepítve van."
+    keywords:
+    - traverse
+    - előnézet
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Húzzon egy Tree Outliner-dokumentumot (.treeoutline) a Markedre, hogy címsorokként és listákként, vagy Mermaid-diagramként jelenjen meg."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - vázlat
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: Az első beállítás után a Cmd-6 és a Return gyakran elegendő az aktív lap (vagy a kiválasztott lapok) Marked előnézetének frissítéséhez.

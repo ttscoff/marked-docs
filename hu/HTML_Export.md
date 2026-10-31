@@ -1,118 +1,117 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-A megjelölt HTML-t exportál az **élő előnézetből** --- ugyanaz a renderelt kimenet, amelyet a képernyőn lát. Használja a HTML-exportálást, ha egy részletet szeretne beilleszteni egy blogba vagy CMS-be, vagy egy önálló `.html` fájlra van szüksége beágyazott stílusokkal és képekkel, amelyeket bármely böngészőben vagy gazdagépen bárhol megnyithat.
+A Marked a **élő előnézetből** exportál HTML-t --- ugyanabból a megjelenített kimenetből, amit a képernyőn látsz. Akkor használd a HTML-exportot, ha egy blogba vagy CMS-be beilleszthető részletre van szükséged, vagy egy önálló `.html` fájlra beágyazott stílusokkal és képekkel, amelyet bármelyik böngészőben megnyithatsz, vagy bárhol kiszolgálhatsz.
 
-A tipikus munkafolyamat az **előzetes előnézet, a második a HTML-exportálás**: nyissa meg vagy fordítsa le a dokumentumot a Marked alkalmazásban, válasszon témát, lektorálja az élő előnézetben, majd exportálja, amikor a jelölés megfelelőnek tűnik.
+A megszokott munkafolyamat: **először előnézet, aztán HTML-export**: nyisd meg vagy fordítsd le a dokumentumot a Markedben, válassz egy témát, ellenőrizd az élő előnézetben, majd exportálj, amikor a jelölőnyelv megfelelőnek tűnik.
 
-## A HTML beszerzésének két módja [two-ways-to-get-html]
+## Kétféleképpen szerezhetsz HTML-t [two-ways-to-get-html]
 
-### HTML (kódrészlet) másolása [copy-html-snippet]
+### HTML másolása (részlet) [copy-html-snippet]
 
-**A HTML másolása** az előnézet HTML-forrását a vágólapra helyezi -- készen áll arra, hogy beillessze a WordPressbe, a Ghostba, a Squarespace-be, egy fórumba, egy e-mail-sablonba vagy bármely olyan alkalmazásba, amely elfogadja a HTML-töredékeket.
+A **HTML másolása** az előnézet HTML-forráskódját a vágólapra helyezi --- készen arra, hogy beilleszd WordPressbe, Ghostba, Squarespace-be, egy fórumba, egy e-mail sablonba, vagy bármely olyan alkalmazásba, amely HTML-részleteket fogad.
 
-* Fogaskerék menü → **HTML másolás**, vagy {% kbd shift cmd C %} az előnézetre fókuszálva
-* Másolja a **megjelenített törzs-HTML-t** (nem teljes dokumentum `<html>` burkolóval)
-* Nem kötelező: engedélyezze a **Képek beágyazása HTML másolásakor** az {% prefspane Export %}-be, hogy Base64-kódolású helyi képeket `data:` URL-ként a beillesztett forrásban
+* Gear menü → **HTML másolása**, vagy {% kbd shift cmd C %} az előnézetre fókuszálva
+* A **megjelenített törzs HTML-t** másolja (nem egy teljes dokumentumot `<html>` csomagolással)
+* Opcionális: kapcsold be a **Képek beágyazása HTML másolásakor** funkciót itt: {% prefspane Export %}, hogy a helyi képeket Base64 kódolással `data:` URL-ként ágyazza be a beillesztett forráskódba
 
-A HTML másolása akkor ideális, ha a célhelynek már van saját stíluslapja, és csak a tartalomjelölésre van szüksége.
+A HTML másolása akkor ideális, ha a célhely már rendelkezik saját stíluslappal, és csak a tartalmi jelölőnyelvre van szükséged.
 
 ### HTML mentése (fájl) [save-html-file]
 
-A **Save HTML** egy teljes `.html` fájlt ír a lemezre.
+A **HTML mentése** egy teljes `.html` fájlt ír a lemezre.
 
-* Exportálás → **HTML mentése**, {% kbd cmd S %} vagy **HTML** az [Exportálási panelről](Exporting.html#drawer) ({% kbd shift cmd e %})
-* Válassza ki a fájlnevet és a helyet a mentési párbeszédpanelen
-* Konfigurálja az exportálási beállításokat a párbeszédablakban (lásd alább)
+* Export → **HTML mentése**, {% kbd cmd S %}, vagy **HTML** az [Exportálás panelről](Exporting.html#drawer) ({% kbd shift cmd e %})
+* Válaszd ki a fájlnevet és a helyet a mentési párbeszédpanelen
+* Állítsd be az exportálási beállításokat a párbeszédpanel kiegészítőjében (lásd lent)
 
-A HTML mentése ideális archiválásához, önálló fájlok megosztásához vagy az eredmény közvetlen böngészőben való megnyitásához.
+A HTML mentése akkor ideális, ha archiválsz, önálló fájlt osztasz meg, vagy közvetlenül böngészőben szeretnéd megnyitni az eredményt.
 
-## HTML beállítások mentése [save-html-options]
+## HTML mentése beállítások [save-html-options]
 
-A HTML mentése párbeszédpanel exportálási profilválasztót és a következő beállításokat tartalmaz:
+A HTML mentése párbeszédpanel tartalmaz egy exportprofil-választót és a következő beállításokat:
 
 ![Save HTML options][savehtml]
 
-**Stílus szerepeltetése a kimenetben**
+**Stílus belefoglalása a kimenetbe**
 
-Ha be van jelölve, a Megjelölve beágyazza a kiválasztott előnézeti téma CSS-jét egy `<style>` blokkba az exportált fájlban. A jelölőnégyzet melletti stílusmenüből válasszon bármilyen beépített témát vagy [Custom Style](Custom_Styles.html)-t. A kimenet egy teljes HTML-dokumentum, `<!DOCTYPE html>`, `<head>` és egy `#wrapper` div karakterrel a tartalom körül --- megfelel az előnézeti képnek.
+Ha be van jelölve, a Marked beágyazza a kiválasztott előnézeti téma CSS-ét egy `<style>` blokkba az exportált fájlon belül. Válassz bármelyik beépített témát vagy [Egyéni stílust](Custom_Styles.html) a jelölőnégyzet melletti stílusmenüből. A kimenet egy teljes HTML-dokumentum `<!DOCTYPE html>`, `<head>` és a tartalmadat körülvevő `#wrapper` div elemmel --- pontosan úgy, ahogy az előnézetben láttad.
 
-Ha nincs bejelölve, a Marked egy minimális HTML-dokumentumot ment el, amely csak a megjelenített tartalmat tartalmazza (nincs megjelölt téma CSS). Ezt akkor használja, ha a nyers HTML-t be szeretné illeszteni vagy importálni egy másik rendszerbe, amely saját stílust biztosít.
+Ha nincs bejelölve, a Marked egy minimális HTML-dokumentumot ment, csak a megjelenített tartalommal (Marked-témájú CSS nélkül). Ezt akkor használd, ha nyers HTML-re van szükséged, amelyet beilleszthetsz vagy importálhatsz egy másik rendszerbe, amely saját stílust biztosít.
 
-**Helyi képek beágyazása az önálló HTML-hez**
+**Helyi képek beágyazása önálló HTML-hez**
 
-Ha a **Stílus szerepeltetése a kimenetben** engedélyezve van, a helyi képeket Base64 `data:` URL-ként is beágyazhatja a HTML-fájlba. Az eredmény egy olyan fájl, amelyet e-mailben elküldhet, feltölthet vagy tárolhat külön `images/` mappa nélkül.
+Ha a **Stílus belefoglalása a kimenetbe** be van kapcsolva, a helyi képeket is beágyazhatod Base64-es `data:` URL-ként a HTML-fájlba. Az eredmény egyetlen fájl lesz, amelyet e-mailben elküldhetsz, feltölthetsz vagy kiszolgálhatsz külön `images/` mappa nélkül.
 
-* A helyi meghajtón található **relatív vagy abszolút elérési utak** által hivatkozott képekkel működik
-* Kerülje a `file:///` URL-eket --- ezeket nem lehet megbízhatóan beágyazni
-* A távoli képek (http/https) külső URL-ként maradnak, kivéve, ha először letölti őket
-* A Base64 beágyazás nagy fájlokat tud előállítani; akkor használja, ha a hordozhatóság fontosabb, mint a fájlméret
+* Működik a helyi meghajtón **relatív vagy abszolút elérési úttal** hivatkozott képekkel
+* Kerüld a `file:///` URL-eket --- ezek nem ágyazhatók be megbízhatóan
+* A távoli (http/https) képek külső URL-ként maradnak, hacsak nem töltöd le őket előbb
+* A Base64-es beágyazás nagy fájlokat eredményezhet; akkor használd, ha a hordozhatóság fontosabb a fájlméretnél
 
-**Include Syntax Highlighting JavaScript**
+**Szintaxiskiemelő JavaScript belefoglalása**
 
-Ha a szintaktikai kiemelés engedélyezve van a {% prefspane Preview %}-ben, ez a beállítás hozzáadja a highlight.js CSS-t és a JavaScriptet a CDN-ből, így a kódblokkok megtartják színeiket az exportált fájlban. Az exportált HTML-nek internetkapcsolatra van szüksége a CDN-erőforrások betöltéséhez.
+Ha a szintaxiskiemelés be van kapcsolva itt: {% prefspane Preview %}, ez a beállítás hozzáadja a highlight.js CSS-t és JavaScriptet egy CDN-ről, hogy a kódblokkok megtartsák a színeiket az exportált fájlban. Az exportált HTML-nek internetkapcsolatra van szüksége a CDN-erőforrások betöltéséhez.
 
-** Tartalmazza a MathJax vagy a KaTeX CDN linket**
+**MathJax vagy KaTeX CDN-hivatkozás belefoglalása**
 
-Ha a [MathJax](MathJax.html) vagy a KaTeX engedélyezve van az előnézethez, akkor a megfelelő CDN-szkripteket belefoglalhatja a mentett HTML-kódba, hogy az egyenletek megjelenjenek a böngészőben. A szintaktikai kiemeléshez hasonlóan ehhez hálózati hozzáférésre van szükség a fájl megtekintésekor, hacsak nem saját maga tárolja a szkripteket.
+Ha a [MathJax](MathJax.html) vagy a KaTeX be van kapcsolva az előnézethez, a mentett HTML-be belefoglalhatod a megfelelő CDN-szkripteket, hogy a képletek megjelenjenek egy böngészőben. A szintaxiskiemeléshez hasonlóan ehhez is hálózati hozzáférés szükséges a fájl megtekintésekor, hacsak nem magad üzemelteted a szkripteket.
 
-**CriticMarkup exportálási típusa**
+**CriticMarkup exporttípus**
 
-A [CriticMarkup](CriticMarkup.html)-kal rendelkező dokumentumok kiválaszthatják, hogy az exportálás szerkesztett szöveget, eredeti szöveget vagy teljes jelölést jelenítsen-e meg.
+A [CriticMarkup](CriticMarkup.html)-ot tartalmazó dokumentumoknál kiválasztható, hogy az export a szerkesztett szöveget, az eredeti szöveget vagy a teljes jelölést mutassa.
 
-**Profil exportálása**
+**Exportprofil**
 
-Válasszon ki egy mentett [Exportálási profilt](Exporting.html#export-profiles) a preferált HTML-exportálási beállítások (beágyazott stílusok, képek, szintaxiskiemelés, matematika) egy lépésben történő visszaállításához.
+Válassz egy mentett [Exportprofilt](Exporting.html#export-profiles), hogy egy lépésben visszaállítsd a preferált HTML-exportbeállításokat (beágyazott stílusok, képek, szintaxiskiemelés, matematika).
 
-## Stílus kialakítása beépített és egyedi témákkal [styling-with-built-in-and-custom-themes]
+## Stílusozás beépített és egyéni témákkal [styling-with-built-in-and-custom-themes]
 
-Az **előnézeti stílus** elősegíti a HTML megjelenését, ha a **Stílus szerepeltetése a kimenetben** be van jelölve:
+Az **előnézeti stílus** vezérli a HTML megjelenését, amikor a **Stílus belefoglalása a kimenetbe** be van jelölve:
 
-1. Válasszon egy stílust az előnézeti ablak stílusmenüjéből (vagy állítsa be az alapértelmezettet az {% prefspane Style %} alatt).
-2. Tekintse át a tipográfiát, a címsorokat, a kódblokkokat és a képeket az élő előnézetben.
-3. Mentse el a HTML-t az exportálási párbeszédpanelen kiválasztott stílussal.
+1. Válassz egy stílust az előnézeti ablak stílusmenüjéből (vagy állíts be egy alapértelmezettet itt: {% prefspane Style %}).
+2. Ellenőrizd a tipográfiát, a címsorokat, a kódblokkokat és a képeket az élő előnézetben.
+3. Mentsd a HTML-t ugyanazzal a stílussal, amelyet az exportpárbeszédpanelen kiválasztottál.
 
-Minden beépített Marked téma --- Swiss, GitHub, Manuscript és a többi --- beágyazható. Az [Egyéni stílusok](Custom_Styles.html) és a [Stíluskezelő](Custom_Styles.html) stílusok ugyanúgy működnek.
+Minden beépített Marked-téma --- a Swiss, a GitHub, a Manuscript és a többi --- beágyazható. Az [Egyéni stílusok](Custom_Styles.html) és a [Stíluskezelőből](Custom_Styles.html) származó stílusok ugyanígy működnek.
 
-I> Előfordulhat, hogy egyes csak előnézeti CSS-ek (rögzített pozicionálás, nézetablak-trükkök, Sötét mód `@media screen` inverzió) nem fordítják le egy az egybe a Megjelölve kívül. Nyissa meg a mentett fájlt egy böngészőben, hogy ellenőrizze a közzététel előtt.
+A {% prefspane Style %} **kiegészítő CSS** szerepel a HTML-exportban, ha a stílusok be vannak ágyazva. Az exportált `<body>` megkapja a `mk-has-additional-css` osztályt, hogy a Marked átírt kiegészítő CSS-szelektorai illeszkedjenek. Lásd: [Egyéni CSS létrehozása](Writing_Custom_CSS.html#additional-css-settings).
 
-A szerzői útmutatásért lásd: [Egyéni CSS létrehozása](Writing_Custom_CSS.html).
+I> Egyes csak előnézetre vonatkozó CSS-ek (fix pozicionálás, viewport-trükkök, Sötét mód `@media screen` invertálás) a Markeden kívül esetleg nem ültethetők át egy az egyben. Nyisd meg a mentett fájlt egy böngészőben, hogy ellenőrizd, mielőtt közzéteszed.
+
+Szerkesztési útmutatásért lásd: [Egyéni CSS létrehozása](Writing_Custom_CSS.html).
 
 ## Metaadatok és MultiMarkdown fejlécek [metadata-and-multimarkdown-headers]
 
-A forrásfájl tetején található MultiMarkdown metaadatok befolyásolhatják a HTML-exportálást:
+A forrásfájlod tetején lévő MultiMarkdown metaadatok befolyásolhatják a HTML-exportot:
 
-* **`Title:`** --- a `<title>` elemhez használatos teljes HTML dokumentum mentésekor
-* **`XHTML Header:`** / **`HTML Header:`** --- további címkéket szúr be az exportált `<head>`-be (szkriptek, linkcímkék, metacímkék)
-* A többi metaadatkulcs feldolgozása a [Markdown processzor] szerint történik(Choosing_a_Processor.html)
+* **`Title:`** --- a `<title>` elemhez használt, amikor egy teljes HTML-dokumentumot mentesz
+* **`XHTML Header:`** / **`HTML Header:`** --- további címkéket illeszt az exportált `<head>`-ba (szkriptek, link címkék, meta címkék)
+* A többi metaadatkulcsot a [Markdown-feldolgozód](Choosing_a_Processor.html) szerint dolgozza fel a program
 
-Ha metaadatokat használ az exportálási beállításokhoz, de nem szeretné, hogy a kulcsok megjelenjenek más kimenetekben, csomagolja be őket HTML-megjegyzésekbe --- A Marked megkeresi és feldolgozza a megjegyzésekkel ellátott metaadatokat a dokumentumban bárhol. Lásd: [Dokumentumonkénti beállítások](Per-Document_Settings.html).
+Ha metaadatokat használsz exportbeállításokhoz, de nem szeretnéd, hogy a kulcsok láthatók legyenek más kimenetekben, csomagold őket HTML-megjegyzésekbe --- a Marked bárhol megtalálja és feldolgozza a megjegyzésbe rejtett metaadatokat a dokumentumban. Lásd: [Dokumentumonkénti beállítások](Per-Document_Settings.html).
 
 ## Több fájlból álló dokumentumok [multi-file-documents]
 
-Könyvekhez és fejezet-összeállításokhoz használja a [Többfájlos dokumentumok](Multi-File_Documents.html) lehetőséget. A Marked megtekinti az egyesített dokumentum előnézetét, és exportál egy HTML-fájlt a lefordított eredményből. A mellékelt fájlok HTML-megjegyzésekkel vannak megjelölve, amelyek a forrás elérési útját mutatják --- hasznosak lehetnek annak ellenőrzéséhez, hogy melyik fejezet melyik szakaszhoz járult hozzá.
+Könyvekhez és fejezetgyűjteményekhez használd a [Több fájlból álló dokumentumokat](Multi-File_Documents.html). A Marked az egyesített dokumentumot jeleníti meg előnézetben, és egyetlen HTML-fájlt exportál az összeállított eredményből. A beillesztett fájlokat HTML-megjegyzések jelzik, amelyek megmutatják a forrás elérési útját --- hasznos, ha ellenőrizni akarod, melyik fejezet melyik részhez adott hozzá tartalmat.
 
 ## Beillesztés más alkalmazásokba [pasting-into-other-applications]
 
-| Úticél | Javasolt megközelítés |
+| Célhely | Javasolt megközelítés |
 | :-- | :-- |
-| Blog / CMS saját témával | **HTML másolás** (részlet, nincs beágyazott megjelölt CSS) |
-| Statikus webhely vagy archívum | **Mentsd el a HTML-t** a **Stílus szerepeltetésével a kimenetben** |
-| E-mail vagy fájlmegosztás (egy melléklet) | **HTML mentése** a **helyi képek beágyazásával** |
-| WordPress, Ghost, Notion stb. | **HTML másolás**; engedélyezze a **Képek beágyazását HTML másolásakor**, ha a szerkesztő nem oldja fel a helyi elérési utakat |
-| További szerkesztés kódszerkesztőben | **Mentse el a HTML-t** beágyazott stílus nélkül, vagy másolja ki a kódrészletet és csomagolja be kézzel |
+| Blog / CMS saját témával | **HTML másolása** (részlet, beágyazott Marked CSS nélkül) |
+| Statikus webhely vagy archívum | **HTML mentése** a **Stílus belefoglalása a kimenetbe** beállítással |
+| E-mail vagy fájlmegosztás (egy melléklet) | **HTML mentése** a **Helyi képek beágyazása** beállítással |
+| WordPress, Ghost, Notion stb. | **HTML másolása**; kapcsold be a **Képek beágyazása HTML másolásakor** funkciót, ha a szerkesztő nem oldja fel a helyi elérési utakat |
+| További szerkesztés kódszerkesztőben | **HTML mentése** beágyazott stílus nélkül, vagy másold a részletet és csomagold be kézzel |
 
-A [Copy Rich Text](Exporting.html#rtfexportoptions) (fogaskerék menü) egy alternatíva, amikor a célalkalmazás formázott szöveget fogad el HTML-forrás helyett.
+A [Formázott szöveg másolása](Exporting.html#rtfexportoptions) (gear menü) egy alternatíva, ha a célalkalmazás formázott szöveget fogad HTML-forrás helyett.
 
 ## Kapcsolódó témák [related-topics]
 
-* [Exportálás](Exporting.html) --- panel, profilok és egyéb formátumok exportálása
-* [EPUB Export](EPUB_Export.html) --- ebook kimenet beágyazott CSS-sel
-* [Élő Markdown előnézet Macen](Live_Markdown_Preview_on_Mac.html) --- a munkafolyamat előnézete az exportálás előtt
-* [Egyéni stílusok](Custom_Styles.html) és [Beállítások: Exportálás](Settings_Export.html)
-* [HTML-specifikus beállítások](HTML_Specific_Settings.html) --- processzorbeállítások a HTML-kimenethez
-* [AppleScript export](AppleScript_Support.html) --- automatizálja a HTML-másolást és mentést
+* [Exportálás](Exporting.html) --- exportpanel, profilok és egyéb formátumok
+* [EPUB-export](EPUB_Export.html) --- e-könyv kimenet beágyazott CSS-sel
+* [Élő Markdown-előnézet Macen](Live_Markdown_Preview_on_Mac.html) --- előnézeti munkafolyamat exportálás előtt
+* [Egyéni stílusok](Custom_Styles.html) és [Beállítások: Export](Settings_Export.html)
+* [HTML-specifikus beállítások](HTML_Specific_Settings.html) --- feldolgozási beállítások HTML-kimenethez
+* [AppleScript-export](AppleScript_Support.html) --- HTML másolás és mentés automatizálása
 
-[savehtml]: images/SaveHTML.png @2x width=740px height=229px 
-r
+[savehtml]: images/SaveHTML.png @2x width=740px height=229px

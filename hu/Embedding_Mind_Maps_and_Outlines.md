@@ -27,7 +27,11 @@ Az OPML (Outline Processor Markup Language) egy XML-formátum hierarchikus körv
 
 ### Kerékpár (.bike) [bike-bike]
 
-A Bike.app körvonalait a rendszer védett HTML-fájlokként tárolja (`.bike`). A `.bike` fájlt közvetlenül a Marked alkalmazásban nyithatja meg: a dokumentum Markdownként jelenik meg, a fájlnévvel (mínusz kiterjesztéssel) a fő fejlécként (H1), a legfelső szintű címsorelemeket H2ként, a beágyazott címsorokat félkövér listaelemként, a feladatokat pedig GitHub-stílusú jelölőnégyzetként. Ha egy `.bike` fájl szerepel az include szintaxison keresztül, a Bike „Beágyazás sellődiagramként” beállítása (az Alkalmazások → Mind Maps/Outlines részben) szabályozza, hogy Mermaid gondolattérkép legyen (a fájlnév gyökércsomópontként) vagy beágyazott Markdown lista (nincs H1).
+`.bike` fájl megnyitása: [Bike](Bike.html). A beillesztett Bike-vázlatok a **Bike outlines** jelölőnégyzetet követik. Be: Mermaid-gondolattérkép (a fájlnév `.bike` nélkül a gyökér). Ki: beágyazott Markdown-lista dokumentumcím nélkül.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Lásd: [Tree Outliner](Tree_Outliner.html). A **Tree Outliner outlines** jelölőnégyzet a `.treeoutline` fájl megnyitását és beillesztését is vezérli. Be: Mermaid-gondolattérkép, a dokumentum címével mint gyökérrel. Ki: címsorok és listák; a *Tree Outliner* csoport **Headings through level** beállítása szabja meg, meddig tartanak a címsorok.
 
 ## Térképek beágyazása sellődiagramként [embed-maps-as-mermaid-diagrams]
 
@@ -54,6 +58,7 @@ Használja ugyanazt a szintaxist, mint a többi fájl esetében:
 	<<[útvonal/térkép.mm]
 	<<[path/to/outline.opml]
 	<<[path/to/outline.bike]
+	<<[path/to/outline.treeoutline]
 
 Vagy iA Writer blokk szintaxissal:
 
@@ -72,4 +77,4 @@ Az OPML-fájlok beágyazott `<outline>` elemeket használnak `text` attribútumm
 
 ## Bike átalakítás [bike-conversion]
 
-A kerékpáros `.bike` fájlok HTML formátumúak, `<ul>` és `<li>` elemekkel. Az elemeken lehet `data-type="heading"` (legfelső szint → H2 megnyitott vagy lista módban; beágyazott → félkövér) vagy `data-type="task"` (GitHub jelölőnégyzetek; kitöltve, ha a `data-done` időbélyeggel rendelkezik, vagy a `data-checked` / `data-completed` igaz). A szövegközi formázás és a csomópontszövegben lévő hivatkozások Markdown formátumba konvertálódnak. Mermaid gondolattérképként történő beágyazáskor a fájlnév (mínusz kiterjesztés) egyetlen gyökércsomópontként használatos, a címkék pedig egyszerű szöveges formázásúak a Mermaid gondolattérkép szintaxisához.
+A Bike `.bike` fájljai HTML-ek, gyökér-`<ul>` elemmel és `<li>` elemekkel. Lista módban minden sor listaelem: a `data-type="heading"` sorok félkövérek, a `data-type="task"` sorok GitHub-jelölőnégyzetek (kész, ha a `data-done` időbélyeget tartalmaz, vagy a `data-checked` / `data-completed` igaz). A csomópont szövegének formázása és hivatkozásai Markdownná alakulnak. Egy `.bike` fájl megnyitása mindig ezt a listát használja. Ha egy beillesztett fájl Mermaid-gondolattérképként ágyazódik be, a fájlnév (kiterjesztés nélkül) az egyetlen gyökércsomópont, a címkék pedig egyszerű szöveg a Mermaid mindmap szintaxisához.

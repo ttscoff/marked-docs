@@ -1,8 +1,6 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Tekintse meg a dokumentumokat *a maga* módján.
+Tekintse meg dokumentumait *az Ön* stílusában.
 
 ## Egyéni stílusok használata [using-custom-styles]
 
@@ -10,115 +8,153 @@ Tekintse meg a dokumentumokat *a maga* módján.
 
   [img1]: images/custom_styles.jpg @2x width=544px height=196px class=center
 
-Az egyéni stílusok felfedezésének legegyszerűbb módja a
-[Egyedi stílusú galéria][2]. Innen böngészhet a
-elérhető stílusok működés közben, telepítse őket a kattintással
-gombot, és még [küldje be saját alkotásait][6]
-befogadás.
+Az egyéni stílusok felfedezésének legegyszerűbb módja az
+[Egyéni stílusgaléria][2]. Itt böngészhet az elérhető stílusok
+között működés közben, egyetlen kattintással telepítheti őket,
+sőt akár [beküldheti saját alkotásait][6] is, hogy bekerüljenek
+a gyűjteménybe.
 
-Egyéni stíluslapok hozzáadásához a helyi meghajtóról a Markedhez,
-használja a {% prefspane Style %}-t. Új stílusok kerülnek hozzáadásra
-a legördülő menük az Ablakbeállításokban és az egyes ablakokban,
-és a CSS-fájl alapfájlneve alapján lesz elnevezve
-tette hozzá. Tárolja egyéni CSS-fájljait biztonságos helyen
-meghajtó. Ha a meghajtón mozognak, eltávolítják őket
-Megjelölve, amíg újból hozzá nem adja őket az új helyről. ez van
-jó ötlet a megnyitott dokumentumok bezárása és a stílus eltávolítása
-által használt CSS-fájl törlése vagy átnevezése előtt a Beállítások menüből
-Megjelölve. Nem tör el semmit, ha nem, de megment
-némi zavartság.
+Ahhoz, hogy saját meghajtójáról egyéni stíluslapokat adjon a
+Markedhez, használja a {% prefspane Style %}. Az új stílusok bekerülnek a
+Window (Ablak) beállítások és az egyes ablakok legördülő
+menüibe, és a hozzáadott CSS-fájl alap fájlnevéről kapják a
+nevüket. A saját CSS-fájljait tárolja a meghajtó egy biztonságos
+helyén. Ha később áthelyezi őket, a Marked eltávolítja azokat
+mindaddig, amíg újra hozzá nem adja őket az új helyükről. Érdemes
+bezárni a nyitott dokumentumokat, és eltávolítani a stílust a
+Beállításokból, mielőtt törölne vagy átnevezne egy Marked által
+használt CSS-fájlt. Ha ezt elmulasztja, semmi nem törik el tőle,
+de elkerülhető vele némi zavar.
 
-Adjon hozzá egyéni stílusokat a Stíluskezelővel a Hozzáadás gombbal, vagy húzzon egy vagy több CSS-fájlt a Beállításokba
-ablaktáblát.
+Egyéni stílusokat a Stíluskezelőn keresztül, a Hozzáadás gombbal,
+vagy egy vagy több CSS-fájl Beállítások panelre húzásával adhat
+hozzá.
 
 ## Stílusok kezelése a Stíluskezelővel [managing-styles-with-the-style-manager]
 
-A Stíluskezelő elindítása egyetlen helyen kínál minden beépített elemet
-és egyéni téma. Kattintson a **Stílusok kezelése…** gombra az {% prefspane Style %}
-ablaktábla,
-vagy egyszerűen dobja be a CSS fájlokat a beállítások ablakba --- A Megjelölve importálja őket,
-nyissa meg a Stíluskezelőt, és válassza ki az újonnan hozzáadott sort. CSS húzása
-fájlok közvetlenül a Stíluskezelő ablakban is működnek; amikor több fájl
-elhúzva látni fogja a fedvényfrissítést az „N egyéni stílus hozzáadása” értékre, így egyértelmű
-tételt importál.
+A Stíluskezelő megnyitásával egyetlen helyen gondozhatja az összes
+beépített és egyéni témát. Kattintson a **Stílusok kezelése…**
+gombra a {% prefspane Style %} panelen, vagy egyszerűen húzzon CSS-fájlokat a
+beállítások ablakára — a Marked importálja őket, megnyitja a
+Stíluskezelőt, és kijelöli az újonnan hozzáadott sort. A CSS-fájlok
+közvetlenül a Stíluskezelő ablakára húzása is működik; ha több
+fájlt húz egyszerre, az átfedő felirat "N egyéni stílus hozzáadása"
+szövegre változik, hogy egyértelmű legyen: köteges importálás
+történik.
 
 ![][img-style-manager]
 
-A Stíluskezelőben talál egy rendezhető táblázatot, amely keveri a beépített és a
-egyedi stílusok. Minden sor a következőket kínálja:
+A Stíluskezelőn belül egy rendezhető táblázatot talál, amely a
+beépített és az egyéni stílusokat együtt jeleníti meg. Minden sor
+a következőket kínálja:
 
-- Egy **Engedélyezve** jelölőnégyzet, amely azonnal hozzáadja/eltávolítja a stílust a Stílusból
-  menüt, az Alapértelmezett stílus előugró ablakot és a billentyűparancsokat. Az aktuális letiltása
-  aktív stílus automatikusan átvált a következő elérhető bejegyzésre.
-- Egy **Név** oszlop, amelyet soron belül szerkeszthet; a változások továbbra is fennállnak, és mindenkire kiterjednek
-  menüt. Kattintson a stílus nevére a helyén való szerkesztéshez.
-- Egy **Forrás** oszlop, amely a Beépített, Egyéni vagy Duplikált elemeket hívja meg.
-- Egy **Műveletek** verem a **Szerkesztés** gombokkal (megnyitja a CSS-fájlt a
-  szerkesztő), **Duplikálás** (másolat és új CSS-fájl létrehozása a lemezen), **Reveal**
-  (megjeleníti a fájlt a Finderben), és a **Törlés** (a hivatkozás eltávolításának lehetőségeivel vagy
-  helyezze át a CSS-fájlt a kukába).
+- Egy **Engedélyezve** jelölőnégyzet, amely azonnal hozzáadja vagy
+  eltávolítja a stílust a Stílus menüből, az Alapértelmezett stílus
+  felugró menüből és a billentyűparancsokból. Ha letiltja az éppen
+  aktív stílust, a Marked automatikusan a következő elérhető
+  bejegyzésre vált.
+- Egy **Név** oszlop, amelyet a helyszínen szerkeszthet; a
+  változtatások megmaradnak, és minden menüben érvényesülnek.
+  Kattintson a stílus nevére a helyszíni szerkesztéshez.
+- Egy **Forrás** oszlop, amely megjelöli, hogy a stílus Beépített,
+  Egyéni vagy Duplikált.
+- Egy **Műveletek** gombcsoport a **Szerkesztés** (megnyitja a
+  CSS-fájlt a szerkesztőjében), a **Duplikálás** (másolatot és új
+  CSS-fájlt hoz létre a lemezen), a **Megjelenítés** (megmutatja a
+  fájlt a Finderben) és a **Törlés** (a hivatkozás eltávolításának
+  vagy a CSS-fájl Kukába helyezésének lehetőségével) gombokkal.
 
-A sorok húzással átrendeződnek, és a sorrend a Stílus menüt is irányítja
-a `⌘/#` parancsikon-hozzárendeléseket, így szó szerint áthúzhatja a stílusokat a helyekre
-akarod. A külső CSS-fájlokat adott pozíciókba is húzhatja; a csepp
-indikátor határozza meg, hogy hova kerül az új stílus.
+A sorok fogd és vidd módszerrel átrendezhetők, és a sorrend
+határozza meg a Stílus menüt, valamint a `⌘/#` billentyűparancs-
+hozzárendeléseket is, így a stílusokat szó szerint a kívánt
+helyekre húzhatja. Külső CSS-fájlokat is húzhat konkrét pozíciókba;
+az ejtési jelző mutatja, hova kerül majd az új stílus.
 
 ### Élő előnézet [live-preview]
 
-A jobb oldali ablaktábla egy előnézetet tartalmaz, amely megjeleníti a kiválasztott stílust
-egy teljes HTML-dokumentum belsejében címsorok, listák, táblázatok, kódblokkok stb. átfogó készletével.
-Az előnézet a tényleges CSS-t használja a lemezen, így a külső szerkesztőben végzett szerkesztések azonnal frissülnek. Egy jelölőnégyzet váltja a Sötét mód előnézetét.
+A jobb oldali panel egy előnézetet tartalmaz, amely a kiválasztott
+stílust egy teljes HTML-dokumentumban jeleníti meg, benne a
+címsorok, listák, táblázatok, kódblokkok stb. átfogó gyűjteményével.
+Az előnézet a lemezen lévő tényleges CSS-t használja, így a külső
+szerkesztőjében végzett módosítások azonnal megjelennek. Egy
+jelölőnégyzettel be- és kikapcsolható a Sötét mód előnézete.
 
-További használati stílusokat találhat (vagy példákat a
-saját létrehozása) [a GitHubon][1] (lásd a [példák][2] részt
-egy gyors pillantás, mi van ott). Lásd: [Egyéni CSS létrehozása][3]
-részletekért és tippekért.
+További stílusokat találhat (vagy mintaként használhatja saját
+stílusai elkészítéséhez) a [GitHubon][1] (lásd a [példákat][2] egy
+gyors betekintésért). Részletekért és tippekért lásd az
+[Egyéni CSS létrehozása][3] című részt.
 
 ## További CSS [additional-css]
 
-A {% prefspane Style %} alatt talál egy lehetőséget
-További CSS címmel a "CSS szerkesztése" gombbal.
-Erre a gombra kattintva megnyílik egy ablak, ahol hozzáadhat
-univerzális CSS-szabályok, amelyek minden stílusra vonatkoznak. Megjegyzés
-hogy a szabályok sajátossága akkor lehet fontos
-felülírja a Marked néhány alapértelmezett stílusát. A fő test
-A dokumentum „#wrapper” azonosítójú div-be van csomagolva.
-A választó előtagja ezzel könnyebbé teheti
-felülírja, pl.:
+A {% prefspane Style %} alatt talál egy További CSS nevű beállítást, "CSS
+szerkesztése" feliratú gombbal. A gombra kattintva egy ablak
+nyílik meg, ahol univerzális CSS-szabályokat adhat hozzá, amelyek
+minden stílusra alkalmazásra kerülnek. Vegye figyelembe, hogy a
+szabályok specificitása fontos lehet, amikor a Marked
+alapértelmezett stílusainak egy részét felülírja. A dokumentum
+törzse egy "#wrapper" azonosítójú div-be van csomagolva. Ha egy
+szelektor elé ezt teszi, könnyebben felülírhatja a stílusokat,
+például:
 
-    #wrapper img { szélesség: 100%; magasság: auto; }
+    #wrapper img { width: 100%; height: auto; }
 
-Ebben a mezőben a CSS minden dokumentumra érvényes lesz, nem
-mindegy, hogy milyen stílust használ. Ha egyéni stílust szeretne alkalmazni
-Feltételes egyezéseken alapuló CSS, használja a Stílus beállítása, Beszúrás parancsot
-CSS-fájl vagy CSS-műveletek beszúrása a {% prefspane Processor %}-ban
-Egyéni szabályok.
+Az ebben a mezőben lévő CSS **hozzáfűződik az aktív témához**. Ez
+nem helyettesíti a teljes egyéni stílust: a kizárólag ehhez a
+mezőhöz írt stíluslap szándékosan hiányos, és ha témaként töltené
+be a Stíluskezelőn keresztül, minden, amit nem fed le, formázatlan
+maradna.
 
-## Nyomtatás és PDF exportálás [print-and-pdf-export]
+A Marked **átírja** a További CSS szelektorait beillesztés előtt.
+A vezető body-osztályok, mint például a `.mkprinting`, a `body`-ra
+kerülnek egyesítésre, nem pedig a `#wrapper` alá ágyazva, ezért az
+ebben a mezőben lévő nyomtatási szabályoknak a `body.mkprinting #wrapper …` formát kell
+használniuk (a teljes átírási szabályokért lásd az [Egyéni CSS
+létrehozása](Writing_Custom_CSS.html#additional-css-settings)
+című részt). A mezőnek nincs mérethatára vagy érvényességi
+ellenőrzése — az érvénytelen CSS egyszerűen nem fejt ki hatást.
 
-A megjelölt beépített `@media print` blokkot (`mkprintstyles`) szúr be minden
-előnézet. Alapértelmezéseket állít be, például **10pt** alapot a `html`, `body` és
-`#wrapper` (vagy a méret az **Egyéni betűméret exportáláshoz/nyomtatáshoz** in
-{% prefspane Export %}, ha ez az opció engedélyezve van), és normalizálja a bekezdést
-szöveget `p { font-size: 1em; }` és `li p { font-size: 1em; }` karakterekkel, tehát
-A csak képernyőre vonatkozó szabályok, mint például a `p { font-size: 1.1429em; }`, nem növelik fel a szövegtörzset
-PDF-ben és nyomtatott formában.
+Az ebben a mezőben lévő CSS minden dokumentumra alkalmazásra
+kerül, függetlenül attól, hogy melyik stílust használja — beleértve
+a HTML-exportot is, ha a stílusok be vannak vonva. Ha feltételekhez
+kötött CSS-t szeretne alkalmazni, használja a Stílus beállítása,
+CSS-fájl beszúrása vagy CSS beszúrása műveleteket a {% prefspane Processor %}
+Egyéni szabályokban.
 
-A PDF-exportálás **nyomtatási** vagy **képernyős** médiát használhat a rejtett WebView-n
-generáció. A beépített témák általában nyomtatott médiát használnak; **egyedi stílusok** és
-[Fountain](Fountain_for_Screenwriters.html) dokumentumok gyakran használnak képernyős médiát, így
-elrendezése megegyezik az előnézettel. Ez azt jelenti, hogy a `@media print { ... }` szabályok nem
-mindig alkalmazva a PDF-exportálás során.
+## Nyomtatás és PDF-exportálás [print-and-pdf-export]
 
-A megbízható PDF és Print/PDF Preview stílus érdekében az előtagválasztókat a
-A `mkprinting` osztály megjelölve hozzáadja a `<body>` elemet az exportálás során (lásd [Egyéni írás
-CSS](Writing_Custom_CSS.html#printstyles) részletekért és példákért). Használhatod
-`.mkprinting` egyedül, vagy kombinálja a `@media print`-al, ha mindkét útra van szüksége
-fedett.
+A Marked minden előnézetbe beilleszt egy beépített `@media print`
+blokkot (`mkprintstyles`). Ez olyan alapértelmezéseket állít be, mint a
+**10pt** alapméret a `html`, `body` és `#wrapper` elemeken (vagy az
+**Egyéni betűméret exportáláshoz/nyomtatáshoz** beállításban
+megadott méretet, a {% prefspane Export %} panelen, ha ez az opció engedélyezve
+van), és a `p { font-size: 1em; }` és `li p { font-size: 1em; }` segítségével normalizálja a
+bekezdésszöveget, hogy a csak képernyőn érvényes szabályok, mint a
+`p { font-size: 1.1429em; }`, ne növeljék meg a törzsszöveget a PDF-ekben és a
+nyomtatott kimenetben.
 
-A Marked nyomtatási alapértelmezéseitől eltérő méretek beállításához adjon hozzá explicit szabályokat
-egyéni CSS-jét (vagy a További CSS-ben). Használja a `!important`-t, amikor szükséges
-felülírja Marked beszúrt nyomtatási stílusait --- például:
+A PDF-exportálás a generáláshoz használt rejtett WebView-n
+**print** vagy **screen** médiatípust használhat. A beépített
+témák jellemzően a print médiát használják; az **egyéni stílusok**
+és a [Fountain](Fountain_for_Screenwriters.html) dokumentumok
+gyakran a screen médiát használják, hogy az elrendezés megegyezzen
+az előnézettel. Ez azt jelenti, hogy a `@media print { ... }` szabályok nem
+mindig érvényesülnek PDF-exportálás közben.
+
+A megbízható PDF- és Nyomtatás/PDF-előnézet stílusához lássa el a
+szelektorokat a `mkprinting` osztállyal, amelyet a Marked exportáláskor
+ad hozzá a `<body>`-hoz (lásd az [Egyéni CSS
+létrehozása](Writing_Custom_CSS.html#printstyles) című részt a
+részletekért és példákért). Egy **egyéni stílus** fájlban
+önmagában is használhatja a `.mkprinting`-ot. A **További CSS**
+mezőben a body-minősítésű `body.mkprinting #wrapper …` formát használja, mivel ez a
+mező átírja a szelektorokat. A két formát kombinálhatja is a
+`@media print`-val, ha mindkét útvonalat le kell fednie.
+
+Ha a Marked nyomtatási alapértelmezéseitől eltérő méreteket
+szeretne beállítani, adjon hozzá kifejezett szabályokat a saját
+CSS-éhez (vagy a További CSS mezőhöz). Használja a `!important`-t,
+amikor felül kell írnia a Marked által beillesztett nyomtatási
+stílusokat — például:
 
 ```css
 @media print {
@@ -134,6 +170,7 @@ felülírja Marked beszúrt nyomtatási stílusait --- például:
   }
 }
 
+/* Custom Style (and most theme stylesheets) */
 .mkprinting #wrapper p,
 .mkprinting body p,
 .mkprinting p {
@@ -144,50 +181,67 @@ felülírja Marked beszúrt nyomtatási stílusait --- például:
 .mkprinting h1 {
   font-size: 16pt !important;
 }
+
+/* Additional CSS field (selector rewriting) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
+}
 ```
 
-A `!important` nélküli szabályok elveszhetnek a `mkprintstyles` későbbi szabályaival szemben, vagy
-egyéb minősíthetetlen válogatók a lapon, amelyek továbbra is érvényesek a nyomtatásban. Elhelyezés
-csak nyomtatásra vonatkozó módosítások a `@media print` és/vagy a `.mkprinting` szabályokban (ahelyett
-csak a képernyőszabályokban) megkönnyíti az előnézeti és exportálási viselkedést
-kb.
+A `!important` nélküli szabályok alulmaradhatnak a `mkprintstyles`-ben lévő
+későbbi szabályokkal szemben, vagy a stíluslapban lévő más,
+minősítés nélküli szelektorokkal szemben, amelyek nyomtatáskor is
+érvényesülnek. Ha a csak nyomtatásra vonatkozó finomhangolásokat
+a `@media print`-ba és/vagy `.mkprinting` / `body.mkprinting` szabályokba teszi
+(nem csak a screen szabályokba), az előnézet és az exportálás
+viselkedése könnyebben átlátható marad.
 
 ## CSS-változások figyelése [watching-css-changes]
 
-Bejelölhet egy négyzetet az {% prefspane Style %} Egyéni stílusok szakaszában.
-hogy a Megjelölt figyelje az aktív CSS-fájlt
-a szerkesztett Markdown fájlon kívül. Mikor
-bármelyik fájlban változást észlel, az előnézet megtörténik
-frissítés. Ez hasznos egyéni stílusok szerkesztéséhez anélkül
-folyamatosan frissül, és egyszerű webre is használható
-fejlesztési feladatokat.
+A {% prefspane Style %} Egyéni stílusok részében bejelölhet egy jelölőnégyzetet,
+hogy a Marked figyelje az aktív CSS-fájlt a szerkesztett
+Markdown-fájl mellett. Amikor bármelyik fájlon változást észlel, az
+előnézet frissül. Ez hasznos egyéni stílusok szerkesztéséhez
+anélkül, hogy folyamatosan frissítenie kellene, és egyszerű
+webfejlesztési feladatokhoz is használható.
 
-Ez bizonyos alapvető webtervezési munkákhoz és CSS-hez is hasznos
-kísérletezés (például egyéni stílusok létrehozása). Töltés a
-Markdown fájl, amely tartalmazza az összes stílusozni kívánt jelölést
-hozzon létre egyéni stílust, és nézze meg az előnézetet élőben
-szerkesztés közben változik.
+Ez néhány alapvető webdesign-munkához és CSS-kísérletezéshez
+(például egyéni stílusok készítéséhez) is hasznos. Töltsön be egy
+Markdown-fájlt, amely tartalmazza az összes formázást, amelyre
+stílust szeretne készíteni, hozzon létre egy egyéni stílust, és
+figyelje az előnézetet, ahogy élőben változik szerkesztés közben.
 
 ## Egyéni CSS írása [writing-custom-css]
 
-Ha ismeri a CSS-t, létrehozhatja saját stílusát
-lapok használatához Marked. Lásd: [Egyéni CSS írása][3]
-részleteket. Bármikor, amikor valami újat alkot, fontolja meg
-[beküldése][6] a [galériába][2], hogy megosszák másokkal
-felhasználókat. Feltétlenül ismerje meg az útmutatóban felsorolt alapokat, és
-tartalmazza a metaadat megjegyzést a tetején.
+Ha jártas a CSS-ben, saját stíluslapokat is készíthet a Markedhez
+való használatra. Részletekért lásd az [Egyéni CSS írása][3] című
+részt. Amikor valami újat hoz létre, fontolja meg, hogy [beküldi][6]
+a [galériába][2], hogy megoszthassa más felhasználókkal. Ügyeljen
+arra, hogy lefedje az útmutatóban felsorolt alapokat, és illessze
+be a metaadat-megjegyzést a tetejére.
 
-### Automatikus egyéni stílusok a StyleStealer segítségével [automatic-custom-styles-with-stylestealer]
+### Automatikus egyéni stílusok a StyleStealerrel [automatic-custom-styles-with-stylestealer]
 
-Akár automatikusan is generálhat stílust egy alapján
-meglévő webhely a [Style Stealer][4] segítségével. Ez lehetővé teszi, hogy betöltsön egy weboldalt, és megragadja a számított stílusokat a Markdownban található összes fő elemhez, majd elmentse egy egyéni stílusba.
+Akár automatikusan is generálhat stílust egy létező weboldal
+alapján a [Style Stealer][4] segítségével. Ez lehetővé teszi, hogy
+betöltsön egy weboldalt, és lekérje a Markdownban előforduló összes
+fontosabb elem kiszámított stílusát, majd elmentse egyéni
+stílusként.
 
-![Stíluslopó][stíluslopó]
+![Style Stealer][stylestealer]
 
-[stylestealer]: images/style-stealer-800.jpg @2x width=800
+  [stylestealer]: images/style-stealer-800.jpg @2x width=800
 
 
-Egyéni stílusok kezelése (átnevezés, átrendezés, másolás és törlés) a [Stíluskezelő](Style_Manager.html) segítségével.
+Az egyéni stílusok kezelése (átnevezés, átrendezés, duplikálás és
+törlés) a [Stíluskezelőben](Style_Manager.html) történik.
 
 [1]: https://github.com/ttscoff/MarkedCustomStyles
 [2]: https://markedapp.com/styles/
