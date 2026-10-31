@@ -85,11 +85,12 @@ Wanneer u bepaalde bestandstypen opneemt met `<<[path]` of IA Writer-bloksyntaxi
 | **OPML** | .opml | Zeemeermin mindmapdiagram | Geneste Markdown lijst |
 | **OmniOutliner** | .ooverzicht | Zeemeermin mindmapdiagram | Geneste Markdown lijst |
 | **Fiets** | .fiets | Zeemeermin mindmap (bestandsnaam als rootnode) | Geneste Markdown lijst (geen documenttitel) |
+| **Tree Outliner** | .treeoutline | Mermaid-mindmap (documenttitel als hoofdknoop) | Koppen en lijsten ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV/TSV** | .csv, .tsv | Markdown tabel ||
 | **RTF / RTFD** | .rtf, .rtfd | Markdown via RTF conversie (zie [RTF and RTFD Support](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via PDF conversie wanneer geopend als hoofddocument (zie [PDF Support](PDF_Support.html)) ||
 
-Elk overzichts-/mindmapformaat heeft zijn eigen selectievakje onder *Mind Maps/Outlines* (Mindmaps, OPML bestanden, Fietsoverzichten, OmniOutliner-overzichten). Als u een indeling uitschakelt, wordt alleen het 'uit'-gedrag voor dat type gebruikt. Zie [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) voor formaatdetails en [Settings: Apps][mindmaps] om deze opties te wijzigen. Zie [Creating Tables using CSV files][csv] voor details over CSV-conversie.
+Elk overzichts-/mindmapformaat heeft zijn eigen selectievakje onder *Mind Maps/Outlines* (Mindmaps, OPML bestanden, Bike-overzichten, OmniOutliner-overzichten, Tree Outliner outlines). Als u een indeling uitschakelt, wordt alleen het 'uit'-gedrag voor dat type gebruikt. Zie [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) voor formaatdetails en [Settings: Apps][mindmaps] om deze opties te wijzigen. Zie [Creating Tables using CSV files][csv] voor details over CSV-conversie.
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

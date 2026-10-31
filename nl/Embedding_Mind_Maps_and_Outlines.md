@@ -25,7 +25,11 @@ OPML (Outline Processor Markup Language) is een XML-formaat voor hiërarchische 
 
 ### Fiets (.bike) [bike-bike]
 
-Bike.app-overzichten worden opgeslagen als eigen HTML-bestanden (`.bike`). U kunt een `.bike` bestand rechtstreeks in Marked openen: het document wordt weergegeven als Markdown met de bestandsnaam (minus extensie) als de hoofdkop (H1), kopitems op het hoogste niveau als H2, geneste koppen als vetgedrukte lijstitems en taken als selectievakjes in de stijl van GitHub. Wanneer een `.bike` bestand wordt opgenomen via de include-syntaxis, bepaalt de instelling "Insluiten als Zeemeermindiagram" voor Fiets (in Apps → Mindmaps/Overzichten) of het een Zeemeermin-mindmap wordt (met de bestandsnaam als hoofdknooppunt) of een geneste Markdown-lijst (geen H1).
+Zie [Bike](Bike.html) voor het openen van een `.bike`-bestand. Ingevoegde Bike-overzichten volgen het selectievakje **Bike outlines**: aan tekent een Mermaid-mindmap (de bestandsnaam zonder `.bike` is de hoofdknoop); uit tekent een geneste Markdown-lijst zonder documenttitel.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Zie [Tree Outliner](Tree_Outliner.html). Het selectievakje **Tree Outliner outlines** regelt zowel het openen als het invoegen van een `.treeoutline`-bestand. Aan tekent een Mermaid-mindmap met de documenttitel als hoofdknoop. Uit stelt koppen en lijsten samen; **Headings through level** in de groep *Tree Outliner* bepaalt hoe diep de koppen gaan.
 
 ## Kaarten insluiten als zeemeermindiagrammen [embed-maps-as-mermaid-diagrams]
 
@@ -52,6 +56,7 @@ Gebruik dezelfde syntaxis als voor andere bestandsindelingen:
 	<<[pad/naar/kaart.mm]
 	<<[pad/naar/overzicht.opml]
 	<<[pad/naar/overzicht.fiets]
+	<<[path/to/outline.treeoutline]
 
 Of met iA Writer-bloksyntaxis:
 
@@ -70,4 +75,4 @@ OPML bestanden gebruiken geneste `<outline>` elementen met een `text` attribuut.
 
 ## Fietsconversie [bike-conversion]
 
-Fiets `.bike` bestanden zijn HTML met een root `<ul>` en `<li>` items. Items kunnen `data-type="heading"` hebben (hoogste niveau → H2 wanneer geopend of in lijstmodus; genest → vetgedrukt) of `data-type="task"` (GitHub selectievakjes; voltooid wanneer `data-done` een tijdstempel heeft, of `data-checked` / `data-completed` waar is). Inline-opmaak en links in knooppunttekst worden geconverteerd naar Markdown. Bij het insluiten als een Mermaid-mindmap wordt de bestandsnaam (minus extensie) gebruikt als het enkele hoofdknooppunt en zijn de labels in platte tekst opgemaakt voor de Mermaid-mindmap-syntaxis.
+Bike-bestanden `.bike` zijn HTML met een hoofd-`<ul>` en `<li>`-items. In de lijstmodus is elke regel een lijstonderdeel: regels met `data-type="heading"` zijn vet, en regels met `data-type="task"` zijn GitHub-selectievakjes (voltooid wanneer `data-done` een tijdstempel heeft, of wanneer `data-checked` / `data-completed` waar is). Opmaak en koppelingen in de knooptekst worden Markdown. Een geopend `.bike`-bestand gebruikt altijd deze lijst. Wanneer een ingevoegd bestand als Mermaid-mindmap wordt ingesloten, is de bestandsnaam (zonder extensie) de enige hoofdknoop en zijn de labels platte tekst voor de Mermaid-mindmap-syntaxis.
