@@ -9,6 +9,7 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | Sujet | Page d'aide |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
+| **Bike** plans `.bike` | [Bike](Bike.html) |
 | **Curio** (aperçu en continu) | [Curio](Curio.html) |
 | **Drafts** (aperçu en continu + actions) | [Drafts](Drafts.html) |
 | **DEVONthink** (intégration au menu Scripts) | [DEVONthink](DEVONthink.html) |
@@ -18,6 +19,7 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | **iA Writer** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** cartes `.itmz` | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** aperçu en direct | [MarsEdit](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **MindNode** | [MindNode](MindNode.html) |
 | **MultiMarkdown Composer** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -27,6 +29,8 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | **PDF** | [Prise en charge de PDF](PDF_Support.html) |
 | **Scrivener 3** | [Prise en charge de Scrivener 3](Scrivener_Support.html) |
 | **The Archive** aperçu en continu | [The Archive](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | **Ulysses** flux d'export | [Ulysses](Ulysses.html) |
 | **Vim** (plugin vim-marked) | [Vim](Vim.html) |
 | **VS Code** (extension Open in Marked) | [VS Code](VS_Code.html) |
@@ -49,7 +53,7 @@ Le Markdown (ou le texte brut compatible) dans le presse-papiers s'ouvre avec {%
 
 ## Aperçu en continu [streaming-preview]
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra et plusieurs autres éditeurs peuvent envoyer du Markdown vers Marked au fil de la frappe grâce à l'**aperçu en continu**. Voir [Aperçu en continu](Streaming_Preview.html) pour la configuration et le dépannage.
+Bear, Curio, Drafts, The Archive, Traverse, nvALT, nvUltra et plusieurs autres éditeurs peuvent envoyer du Markdown vers Marked au fil de la frappe grâce à l'**aperçu en continu**. Voir [Aperçu en continu](Streaming_Preview.html) pour la configuration et le dépannage.
 
 ## Scripts et Bonus Pack [scripts-and-bonus-pack]
 

@@ -85,11 +85,12 @@ Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path
 | **OPML** | .opml | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
 | **OmniOutliner** | .ooutline | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
 | **Bike** | .bike | Carte mentale Mermaid (nom de fichier en tant que nœud racine) | Liste Markdown imbriquée (pas de titre du document) |
+| **Tree Outliner** | .treeoutline | Carte mentale Mermaid (titre du document comme racine) | Titres et listes ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV/TSV** | .csv, .tsv | Tableau Markdown ||
 | **RTF/RTFD** | .rtf, .rtfd | Markdown via la conversion RTF (voir [Support RTF et RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via la conversion PDF lors de l'ouverture en tant que document principal (voir [Support PDF](PDF_Support.html)) ||
 
-Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, fichiers OPML, contours Bike, contours OmniOutliner). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][mindmaps] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
+Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, fichiers OPML, contours Bike, contours OmniOutliner, Tree Outliner outlines). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][mindmaps] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
