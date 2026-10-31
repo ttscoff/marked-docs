@@ -22,7 +22,7 @@ Multiple metadata entries should be on their own lines, but without any line bre
 
 ### Hiding metadata for other processors [hidingmeta]
 
-**Note:** If you're using a custom processor or posting you Markdown directly to a source that doesn't process this metadata, you can still use it by adding HTML comment markers before and after the Metadata. Unlike MultiMarkdown and other processors, Marked will locate these tags anywhere in the document and process/remove them from the output. Thus, the following in the header will provide the results you want in Marked, but not show up elsewhere:
+**Note:** If you're using a custom processor or posting you Markdown directly to a source that doesn't process this metadata, you can still use it by adding HTML comment markers before and after the Metadata. Place the comment at the top of the document (it can follow YAML front matter, a Pandoc title block, or MultiMarkdown metadata). Marked reads it and removes it from the output. Thus, the following in the header will provide the results you want in Marked, but not show up elsewhere:
 
 	<!--
 	Marked Style: My Custom Style
@@ -30,6 +30,8 @@ Multiple metadata entries should be on their own lines, but without any line bre
 	-->
 
 *Just make sure that the metadata key begins at the start of the line with no spaces or tabs, and don't put anything else on the line after the value.*
+
+Every line inside the comment must be a `key: value` pair. The Marked Style, Processor, and Preprocessor keys (with or without a "Marked" or "Custom" prefix) also work in comments placed anywhere in the document, as long as the comment starts at the beginning of a line and contains only those keys. All other HTML comments, such as `<!-- TODO: fix this -->` in the middle of a document, are left in the output untouched.
 
 ### Per-document styles [per-document-styles]
 

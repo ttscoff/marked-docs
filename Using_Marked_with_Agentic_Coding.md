@@ -13,7 +13,7 @@ Instead of opening a single file, you can point Marked at an entire folder that 
 
 Once Marked is watching a folder, it will automatically display the **most recently modified file**. As your agent creates or updates Markdown files --- whether that's a fresh implementation plan or an updated progress log --- Marked switches to the new or changed document and refreshes the preview instantly.
 
-This works especially well with agentic tools like Cursor, Claude, and Copilot that continuously regenerate specs, to‑do lists, or architecture notes while you iterate on a feature.
+This works especially well with agentic tools like Cursor, Claude, and Copilot that continuously regenerate specs, to-do lists, or architecture notes while you iterate on a feature.
 
 ## Scrolling to the first change [scrolling-to-the-first-change]
 
@@ -44,11 +44,11 @@ Marked will automatically turn it into a styled, interactive diagram, giving you
 
 ## Example agentic coding workflows [example-agentic-coding-workflows]
 
-- **Cursor + Marked**: Keep a `plans/` or `notes/` folder in your repo where Cursor writes step‑by‑step implementation plans. Point Marked at that folder to always see the latest plan, rendered cleanly, as you accept and apply edits in the editor.
+- **Cursor + Marked**: Keep a `plans/` or `notes/` folder in your repo where Cursor writes step-by-step implementation plans. Point Marked at that folder to always see the latest plan, rendered cleanly, as you accept and apply edits in the editor.
 
 - **Claude + Marked**: Use Claude to generate design documents, ADRs, and refactoring plans in a shared project folder. Marked automatically opens the newest Markdown output so you can read and annotate it like a living spec.
 
-- **Copilot and other AI coding assistants + Marked**: Whether you're using GitHub Copilot, Copilot Workspace, ChatGPT, or other agentic tools that write Markdown, saving their output into a watched folder gives you an always‑up‑to‑date, high‑quality preview in Marked.
+- **Copilot and other AI coding assistants + Marked**: Whether you're using GitHub Copilot, Copilot Workspace, ChatGPT, or other agentic tools that write Markdown, saving their output into a watched folder gives you an always-up-to-date, high-quality preview in Marked.
 
-By combining folder watching with *Scroll to Edit*, Marked turns AI‑generated plans and notes into a fast, readable control center for your coding sessions — especially when you lean on agentic workflows and continuous assistance from tools like Cursor, Claude, and Copilot.
+By combining folder watching with *Scroll to Edit*, Marked turns AI-generated plans and notes into a fast, readable control center for your coding sessions — especially when you lean on agentic workflows and continuous assistance from tools like Cursor, Claude, and Copilot.
 

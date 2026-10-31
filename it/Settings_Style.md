@@ -66,6 +66,7 @@ Syntax Highlighting
 : Attiva l'evidenziazione della sintassi di highlight.js per i [blocchi di codice](Syntax_Highlighting.html). Seleziona un tema dal menu a comparsa.
 : Se l'opzione **Only if language specified** è selezionata, l'evidenziazione della sintassi verrà applicata solo ai blocchi di codice delimitati (fenced) per cui è stato specificato un linguaggio.
 
+: **Mostra i numeri di riga nei blocchi di codice** — quando l'evidenziazione della sintassi è attiva, visualizza i numeri di riga sui blocchi evidenziati (con sostituzioni `linenums` / `nolinenums` per blocco).
 Abilita MathJax
 : Carica [MathJax](MathJax.html) per visualizzare le equazioni MathML. Scegli **Locale** (incluso) o **CDN** dal menu a comparsa.
 : **Pacchetti aggiuntivi** apre un foglio per includere pacchetti MathJax extra (ad esempio Fisica e Chimica).
