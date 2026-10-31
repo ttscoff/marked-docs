@@ -85,11 +85,12 @@ When you include certain file types with `<<[path]` or IA Writer block syntax, M
 | **OPML** | .opml | Mermaid mindmap diagram | Nested Markdown list |
 | **OmniOutliner** | .ooutline | Mermaid mindmap diagram | Nested Markdown list |
 | **Bike** | .bike | Mermaid mindmap (filename as root node) | Nested Markdown list (no document title) |
+| **Tree Outliner** | .treeoutline | Mermaid mindmap (document title as root) | Headings and lists ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV / TSV** | .csv, .tsv | Markdown table ||
 | **RTF / RTFD** | .rtf, .rtfd | Markdown via RTF conversion (see [RTF and RTFD Support](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via PDF conversion when opened as the main document (see [PDF Support](PDF_Support.html)) ||
 
-Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mind maps, OPML files, Bike outlines, OmniOutliner outlines). Toggling a format off uses the "off" behavior for that type only. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) for format details and [Settings: Apps][mindmaps] to change these options. For CSV conversion details, see [Creating Tables using CSV files][csv].
+Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mind maps, OPML files, Bike outlines, OmniOutliner outlines, Tree Outliner outlines). Toggling a format off uses the "off" behavior for that type only. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) for format details and [Settings: Apps][mindmaps] to change these options. For CSV conversion details, see [Creating Tables using CSV files][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

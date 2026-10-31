@@ -2,7 +2,7 @@
 
 By opening {% appmenu File, New, Streaming Preview %}, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app must integrate with Marked.
 
-[Curio](Curio.html), [Drafts](Drafts.html), and [The Archive](The_Archive.html) document their own toggles and menu commands. nvUltra, nvALT, Bear, and others use the same channel: open streaming preview in Marked, enable integration in your editor, and start typing; updates arrive in near real time.
+[Curio](Curio.html), [Drafts](Drafts.html), [The Archive](The_Archive.html), and [Traverse](Traverse.html) document their own toggles and menu commands. nvUltra, nvALT, Bear, and others use the same channel: open streaming preview in Marked, enable integration in your editor, and start typing; updates arrive in near real time.
 
 ## Developers [developers]
 

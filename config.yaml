@@ -549,6 +549,15 @@ Sections:
     - bear notes
     - textbundle
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: Drag a Bike outline (.bike) onto Marked to preview it as a nested Markdown list, with heading rows in bold and tasks as checkboxes.
+    keywords:
+    - bike
+    - outline
+    - hog bay
+    - mermaid
+    wiki_keywords: [bike, bike outline]
   - title: Curio
     file: Curio
     description: When you double-click to edit a figure, note, list, or other item in Curio, its Markdown flows to the streaming preview and updates as you write.
@@ -628,6 +637,14 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: Marked opens Microsoft Word (.docx) files as Markdown, and can export that Markdown back to DOCX.
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords: [microsoft word, word docx]
   - title: MindNode
     file: MindNode
     description: Drag a [MindNode][mn] document onto Marked (or use MindNode's Open in Marked / preview command, depending on MindNode version). Marked treats the file like...
@@ -687,6 +704,23 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: Traverse includes a built-in Stream to Marked command. It appears in the export menu when Marked 2 or Marked 3 is installed.
+    keywords:
+    - traverse
+    - streaming preview
+    - fountain
+    wiki_keywords: [traverse, stream to marked]
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: Drag a Tree Outliner document (.treeoutline) onto Marked to preview it as headings and lists, or as a Mermaid diagram.
+    keywords:
+    - tree outliner
+    - treeoutline
+    - outline
+    - mermaid
+    wiki_keywords: [tree outliner, treeoutline]
   - title: Ulysses
     file: Ulysses
     description: After the first setup, Cmd-6 followed by Return is often enough to refresh the Marked preview for the active sheet (or the sheets you selected).
