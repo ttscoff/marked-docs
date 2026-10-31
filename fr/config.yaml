@@ -288,6 +288,17 @@ Sections:
     - recouvrir
     - raccourcis
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Mode lecture
+    file: Reading_Mode
+    description: Le mode lecture concentre le bloc actuel, mémorise votre place dans les longs documents et enregistre les surlignages pour le partage, CriticMarkup et l’impression.
+    keywords:
+    - mode lecture
+    - focus
+    - surlignages
+    - reprendre
+    - criticmarkup
+    - raccourcis
+    wiki_keywords: [mode lecture, surlignages de lecture, reprendre la lecture]
   - title: Renseignez-vous sur le document
     file: AI_Ask_About_Document
     description: Ask About Document utilise Apple Intelligence et le modèle de langage intégré aux versions récentes de macOS pour résumer votre aperçu Markdown et...
