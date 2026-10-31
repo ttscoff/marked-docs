@@ -64,6 +64,7 @@ Coloration syntaxique
 : Active la [coloration syntaxique](Syntax_Highlighting.html) highlight.js pour les blocs de code. Sélectionnez un thème dans le menu déroulant.
 : Si **Uniquement si le langage est spécifié** est coché, la coloration syntaxique ne s'appliquera qu'aux blocs de code en clôture avec un langage spécifié.
 
+: **Afficher les numéros de ligne dans les blocs de code** — lorsque la coloration syntaxique est activée, affiche les numéros de ligne sur les blocs en surbrillance (avec des remplacements `linenums` / `nolinenums` par bloc).
 Activer MathJax
 : Charge [MathJax](MathJax.html) pour afficher les équations MathML. Choisissez **Local** (intégré) ou **CDN** dans le menu déroulant.
 : **Paquets additionnels** ouvre une feuille pour inclure des paquets MathJax supplémentaires (par exemple Physics et Chemistry).

@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: nl (Dutch)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "ARIA-labels";
+# EN: ARIA labels
+# DRAFT: ARIA-labels
+
+"setting.apexOptAlphaLists" = "Alfabetische lijsten";
+# EN: Alphabetic lists
+# DRAFT: Alfabetische lijsten
+
+"setting.apexOptAutolink" = "URL’s en e-mails automatisch koppelen";
+# EN: Autolink URLs and emails
+# DRAFT: URL’s en e-mails automatisch koppelen
+
+"setting.apexOptBibliographyPaths" = "Bibliografie";
+# EN: Bibliography
+# DRAFT: Bibliografie
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "Concordantie";
+# EN: Concordance
+# DRAFT: Concordantie
+
+"setting.apexOptDefinitionLists" = "Definielijsten";
+# EN: Definition lists
+# DRAFT: Definielijsten
+
+"setting.apexOptDivs" = "Omheinde divs";
+# EN: Fenced divs
+# DRAFT: Omheinde divs
+
+"setting.apexOptFootnotes" = "Voetnoten";
+# EN: Footnotes
+# DRAFT: Voetnoten
+
+"setting.apexOptGridTables" = "Roostertabellen";
+# EN: Grid tables
+# DRAFT: Roostertabellen
+
+"setting.apexOptHeaderAnchors" = "Kop-<a>-ankers";
+# EN: Header <a> anchors
+# DRAFT: Kop-<a>-ankers
+
+"setting.apexOptImageCaptions" = "Bijschriften";
+# EN: Image captions
+# DRAFT: Bijschriften
+
+"setting.apexOptIndices" = "Indexverwerking";
+# EN: Index processing
+# DRAFT: Indexverwerking
+
+"setting.apexOptMarkdownInHTML" = "Markdown in HTML";
+# EN: Markdown in HTML
+# DRAFT: Markdown in HTML
+
+"setting.apexOptMetaFilePath" = "Metadatabestand";
+# EN: Metadata file
+# DRAFT: Metadatabestand
+
+"setting.apexOptMetadataTransforms" = "Metadatatransformaties";
+# EN: Metadata transforms
+# DRAFT: Metadatatransformaties
+
+"setting.apexOptMixedListMarkers" = "Gemengde lijstmarkeringen";
+# EN: Mixed list markers
+# DRAFT: Gemengde lijstmarkeringen
+
+"setting.apexOptPerCellAlignment" = "Uitlijning per cel";
+# EN: Per-cell alignment
+# DRAFT: Uitlijning per cel
+
+"setting.apexOptPyCallouts" = "Python-Markdown-callouts (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Python-Markdown-callouts (!!!)
+
+"setting.apexOptQuartoCallouts" = "Quarto-callouts";
+# EN: Quarto callouts
+# DRAFT: Quarto-callouts
+
+"setting.apexOptRelaxedTables" = "Losse tabellen";
+# EN: Relaxed tables
+# DRAFT: Losse tabellen
+
+"setting.apexOptSpans" = "Spans tussen haakjes";
+# EN: Bracketed spans
+# DRAFT: Spans tussen haakjes
+
+"setting.apexOptStrikethrough" = "Doorhalen";
+# EN: Strikethrough
+# DRAFT: Doorhalen
+
+"setting.apexOptSupSub" = "Superscript / subscript";
+# EN: Superscript / subscript
+# DRAFT: Superscript / subscript
+
+"setting.apexOptSuppressIndex" = "Indexuitvoer onderdrukken";
+# EN: Suppress index output
+# DRAFT: Indexuitvoer onderdrukken
+
+"setting.apexOptTables" = "Tabellen";
+# EN: Tables
+# DRAFT: Tabellen
+
+"setting.apexOptTitleCaptionsOnly" = "Alleen titelbijschriften";
+# EN: Title-only captions
+# DRAFT: Alleen titelbijschriften
+
+"setting.apexOptWikiLinks" = "Wiki-koppelingen";
+# EN: Wiki links
+# DRAFT: Wiki-koppelingen
+
+"setting.apexOptWikiSanitize" = "Wiki-koppeling-URL’s opschonen";
+# EN: Sanitize wiki link URLs
+# DRAFT: Wiki-koppeling-URL’s opschonen
+
+"setting.configureApex" = "Apex-opties";
+# EN: Apex options
+# DRAFT: Apex-opties
+
+"setting.configureApex.button" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.configureApex.done" = "Klaar";
+# EN: Done
+# DRAFT: Klaar
+
+"setting.configureApex.files.add" = "Toevoegen";
+# EN: Add
+# DRAFT: Toevoegen
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "Kies een bestand voor Apex.";
+# EN: Choose a file for Apex.
+# DRAFT: Kies een bestand voor Apex.
+
+"setting.configureApex.files.browseTooltip" = "Bestand kiezen";
+# EN: Choose a file
+# DRAFT: Bestand kiezen
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "Dit bestandspad wissen";
+# EN: Clear this file path
+# DRAFT: Dit bestandspad wissen
+
+"setting.configureApex.files.pathPlaceholder" = "Bestandspad";
+# EN: File path
+# DRAFT: Bestandspad
+
+"setting.configureApex.files.statusAvailable" = "Bestand is beschikbaar";
+# EN: File is available
+# DRAFT: Bestand is beschikbaar
+
+"setting.configureApex.files.statusMissing" = "Het bestand bestaat niet";
+# EN: The file does not exist
+# DRAFT: Het bestand bestaat niet
+
+"setting.configureApex.files.statusPermission" = "Marked heeft geen toestemming om dit bestand te lezen";
+# EN: Marked does not have permission to read this file
+# DRAFT: Marked heeft geen toestemming om dit bestand te lezen
+
+"setting.configureApex.files.statusUnavailable" = "Bestand is niet beschikbaar";
+# EN: File is unavailable
+# DRAFT: Bestand is niet beschikbaar
+
+"setting.configureApex.group.accessibility" = "Toegankelijkheid";
+# EN: Accessibility
+# DRAFT: Toegankelijkheid
+
+"setting.configureApex.group.callouts" = "Callouts (extra)";
+# EN: Callouts (extra)
+# DRAFT: Callouts (extra)
+
+"setting.configureApex.group.files" = "Bestanden";
+# EN: Files
+# DRAFT: Bestanden
+
+"setting.configureApex.group.linksIndexes" = "Koppelingen en indexen";
+# EN: Links & indexes
+# DRAFT: Koppelingen en indexen
+
+"setting.configureApex.group.syntax" = "Syntax";
+# EN: Syntax
+# DRAFT: Syntax
+
+"setting.configureApex.group.tablesImages" = "Tabellen en afbeeldingen";
+# EN: Tables & images
+# DRAFT: Tabellen en afbeeldingen
+
+"setting.configureApex.intro" = "Deze opties gelden alleen voor Apex. Wiskunde, CriticMarkup, hashtags, bestandsincludes en kop-ID’s blijven in de andere instellingen van Marked. Als Apex-wiki-koppelingen aan staan, zet Apex [[wiki]]-koppelingen om en wordt de Marked-voorbeeldstap «Wiki-koppelingen omzetten» overgeslagen; de bestandsresolutie van Apex kan afwijken van die van Marked.";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: Deze opties gelden alleen voor Apex. Wiskunde, CriticMarkup, hashtags, bestandsincludes en kop-ID’s blijven in de andere instellingen van Marked. Als Apex-wiki-koppelingen aan staan, zet Apex [[wiki]]-koppelingen om en wordt de Marked-voorbeeldstap «Wiki-koppelingen omzetten» overgeslagen; de bestandsresolutie van Apex kan afwijken van die van Marked.
+
+"setting.configureApex.sheetTitle" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.processor.apexBeta" = "Apex (bèta)";
+# EN: Apex (beta)
+# DRAFT: Apex (bèta)
+
+"setting.removeIAWriterAnnotations" = "iA Writer-annotaties verwijderen";
+# EN: Remove iA Writer annotations
+# DRAFT: iA Writer-annotaties verwijderen
+
+"tooltip.configureApex" = "Optionele Apex-syntax- en uitvoerfuncties (alleen Apex-processor).";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: Optionele Apex-syntax- en uitvoerfuncties (alleen Apex-processor).
+
+"tooltip.removeIAWriterAnnotations" = "Als dit aan staat, wordt het iA Writer-annotatieblok aan het einde van het bestand vóór het voorbeeld verwijderd. Standaard uit.";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: Als dit aan staat, wordt het iA Writer-annotatieblok aan het einde van het bestand vóór het voorbeeld verwijderd. Standaard uit.
+
+=== END Settings.strings ===
