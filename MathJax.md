@@ -89,7 +89,7 @@ Note that using the MultiMarkdown processor with non-standard delimiters, charac
 Marked performs a bit of magic when either MathJax or KaTeX are enabled, converting math syntax to ensure its as compatible as possible with the current processor (MultiMarkdown or Discount). This should be great in all circumstances, but if you find it causing issues, [contact support](https://support.markedapp.com/questions/add)!
 
 
-## KaTeX [katex]
+## KaTeX
 
 [katex]: https://katex.org/
 
