@@ -89,8 +89,17 @@ Open .scriv files in Scrivener when opened in Marked
 
 #### Word [word]
 
+[(Info on Microsoft Word)](Microsoft_Word.html)
+
 Convert change tracking <-> CriticMarkup
 : If enabled, change tracking in Word documents will be converted to CriticMarkup when imported, and CriticMarkup will be converted to Word change tracking when exporting DOCX files.
+
+#### Tree Outliner [tree-outliner]
+
+[(Info on Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: The document title is heading 1. Outline levels continue as headings through this level, and deeper nodes become nested lists. Notes become paragraphs. Used when **Tree Outliner outlines** is off under **Embed as Mermaid mind maps**.
 
 #### Mind Maps/Outlines [MindMapsOutlines]
 
@@ -99,4 +108,5 @@ Embed as Mermaid mind maps
 : **Mind maps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). If on: Mermaid mind map. If off: iThoughts embeds its preview image; MindManager and FreeMind convert to nested Markdown lists.
 : **OPML files** (.opml). If on: Mermaid mind map. If off: nested Markdown list.
 : **OmniOutliner outlines** (.ooutline). If on: Mermaid mind map. If off: nested Markdown list (or checklist where applicable).
-: **Bike outlines**. If on: Mermaid mind map. If off: nested Markdown list.
+: **Bike outlines**. If on: Mermaid mind map. If off: nested Markdown list. See [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). If on: Mermaid mind map. If off: Markdown headings and lists. See [Tree Outliner](Tree_Outliner.html).

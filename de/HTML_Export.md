@@ -73,6 +73,8 @@ Der **Vorschaustil** bestimmt das Erscheinungsbild des HTML-Dokuments, wenn **St
 
 Jeder integrierte Marked-Stil – Swiss, GitHub, Manuscript und alle weiteren – kann eingebettet werden. [Eigene Stile](Custom_Styles.html) und Stile aus dem [Stil-Manager](Custom_Styles.html) funktionieren genauso.
 
+**Zusätzliches CSS** aus {% prefspane Style %} wird beim HTML-Export mit übernommen, sofern die Stile eingebettet werden. Der exportierte `<body>` erhält die Klasse `mk-has-additional-css`, damit Markeds umgeschriebene Selektoren für Zusätzliches CSS greifen. Siehe [Eigenes CSS schreiben](Writing_Custom_CSS.html#additional-css-settings).
+
 I> Manche CSS-Regeln, die nur für die Vorschau gedacht sind (feste Positionierung, Viewport-Techniken, Dunkelmodus-Invertierung mit `@media screen`), lassen sich außerhalb von Marked nicht immer unverändert darstellen. Prüfen Sie die gespeicherte Datei vor der Veröffentlichung in einem Browser.
 
 Hinweise zur Erstellung finden Sie unter [Eigenes CSS erstellen](Writing_Custom_CSS.html).

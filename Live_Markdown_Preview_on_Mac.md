@@ -23,8 +23,9 @@ Marked 3 is a native macOS app that watches your Markdown files and updates a li
 | Obsidian | [Obsidian](Obsidian.html) |
 | Scrivener | [Scrivener 3 Support](Scrivener_Support.html) |
 | Bear, nvUltra, Drafts, The Archive | [Streaming Preview](Streaming_Preview.html) |
+| Traverse | [Traverse](Traverse.html) |
 | Ulysses | [Ulysses](Ulysses.html) |
-| Word / DOCX | [Working with DOCX](Working_With_DOCX.html) |
+| Word / DOCX | [Microsoft Word](Microsoft_Word.html) |
 | MarsEdit | [MarsEdit](MarsEdit.html) |
 | Vim / Emacs / terminal editors | [Vim](Vim.html) or [Opening Files](Opening_Files.html) |
 | Anything else | [Opening Files](Opening_Files.html) |

@@ -1,0 +1,334 @@
+# Help translation gap — de — Additional CSS / print selector rewriting
+# Feature: Additional CSS selector rewriting, body.mkprinting spellings, HTML export class
+# Generated: 2026-09-04
+#
+# German Writing_Custom_CSS.md and Custom_Styles.md were rebuilt from scratch in July
+# and are treated as finished. Do NOT machine-overwrite those pages. Translate only the
+# ENGLISH TARGET blocks below into the CURRENT GERMAN locations.
+#
+# HTML_Export.md and Settings_Style.md have no fenced code blocks, but their new lines
+# carry inline literals that must stay byte-identical (see NOTES).
+#
+# Return: PR to ttscoff/marked-docs updating the four de/ pages from these gaps only,
+# or reply with the German replacement blocks.
+
+# ---------------------------------------------------------------------------
+# 1) Writing_Custom_CSS.md — insert after the dual @media / .mkprinting example
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Writing_Custom_CSS.md
+Section: after the dual browser-print / PDF example (before the Web Inspector debug paragraph)
+Insert: new "Custom Style vs Additional CSS" note + code fence (English has this between the dual example and the debug paragraph)
+
+=== CURRENT GERMAN (context — keep; insert NEW block after the closing ``` of the dual example) ===
+Für Stile, die **sowohl** beim Drucken über den Browser als auch beim PDF-Export von Marked funktionieren müssen, verdoppeln Sie die entscheidenden Regeln oder kombinieren Sie die Selektoren:
+
+```css
+@media print {
+  #wrapper img { max-width: 100%; }
+}
+
+.mkprinting #wrapper img {
+  max-width: 100%;
+}
+```
+
+Beim Debuggen von eigenem Druck-CSS öffnen Sie die Druck-/PDF-Vorschau oder exportieren nach PDF und untersuchen das Dokument dann mit [Safaris Web Inspector](#webkitinspector) – während das Drucklayout aktiv ist, trägt der `<body>` die Klasse `mkprinting`.
+
+=== ENGLISH TARGET (translate to German; insert between the ``` block and the debug paragraph) ===
+**Custom Style vs Additional CSS.** In a Custom Style stylesheet, write `.mkprinting #wrapper …` as shown above. In the **Additional CSS** field, Marked rewrites selectors before injection --- use the body-qualified form instead:
+
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+See [Additional CSS Settings](#additional-css-settings) for how rewriting works and why `.mkprinting #wrapper …` alone does not match there.
+
+=== NOTES ===
+- Keep every code span / fence byte-identical: `.mkprinting #wrapper …`, `body.mkprinting #wrapper p`, `#additional-css-settings`
+- Anchor `#additional-css-settings` stays English
+
+# ---------------------------------------------------------------------------
+# 2) Writing_Custom_CSS.md — replace Additional CSS Settings section
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Writing_Custom_CSS.md
+Section heading: Zusätzliche CSS-Einstellungen [additional-css-settings]
+Replace: entire section through the paragraph that ends before ## WebKit-Inspektor
+
+=== CURRENT GERMAN (replace this block) ===
+## Zusätzliche CSS-Einstellungen [additional-css-settings]
+
+Unter {% prefspane Style %} können Sie zusätzliches CSS bearbeiten. Diese Stile werden an jedes geladene Design angehängt und lassen sich für universelle Änderungen an allen Designs nutzen.
+
+Mit [hoher Spezifität](#overridingspecificity), `@media`-Abfragen für Druck und Bildschirm sowie `.mkprinting`-Selektoren für den PDF-Export steuern Sie mit etwas CSS-Wissen nahezu jeden Gestaltungsaspekt.
+
+=== ENGLISH TARGET (translate to German) ===
+## Additional CSS Settings [additional-css-settings]
+
+In the {% prefspane Style %}, you can edit **Additional CSS**. These rules are **appended to whatever theme is loaded**. They are a deliberate partial overlay, not a full theme. If you paste a complete stylesheet into this field --- or import that same partial sheet through [Style Manager](Custom_Styles.html) as if it were a theme --- anything the sheet does not cover will be left unstyled.
+
+### Selector rewriting [additional-css-selector-rewriting]
+
+Marked rewrites Additional CSS selectors before injecting them (as `body.mk-has-additional-css …`) so rules stay scoped to the preview:
+
+- A selector part that already begins with `body` or `#wrapper` gets the `body.mk-has-additional-css` prefix, with body classes merged rather than nested.
+- Any other selector part is scoped under `body.mk-has-additional-css #wrapper …`.
+- Leading body classes Marked sets on `<body>` --- including `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC`, and `.mkstyle--*` --- are treated like `body` and merged onto the body selector instead of being nested under `#wrapper`.
+
+| Entered in Additional CSS | Result |
+| :-- | :-- |
+| `#wrapper h2` | Matches (scoped correctly) |
+| `body.mkprinting #wrapper p` | Matches during print/PDF |
+| `.mkprinting #wrapper p` | Does **not** match (would require a nested `#wrapper`) |
+| `:root { --x: 1; }` | Does **not** match (prefer `body` or `#wrapper` for custom properties) |
+
+For print rules in this field, prefer `body.mkprinting #wrapper …`. The same visual intent in a Custom Style file can keep the shorter `.mkprinting #wrapper …` form.
+
+There is **no size limit and no CSS validity check** on Additional CSS. Marked stores and injects what you enter; invalid CSS simply has no effect in the preview.
+
+### HTML and other exports [additional-css-exports]
+
+Additional CSS applies in the live preview, Print/PDF Preview, PDF export, and **HTML export** when styles are included --- the exported `<body>` receives the `mk-has-additional-css` class so rewritten selectors match. DOCX, ODT, and EPUB use their own styling paths and do not apply Additional CSS the same way.
+
+Using [high specificity](#overridingspecificity), `@media` queries for print and screen, and `body.mkprinting` selectors (in this field) or `.mkprinting` selectors (in Custom Styles), you can control just about every styling aspect with a bit of CSS knowledge.
+
+=== NOTES ===
+- Keep literals unchanged: `body.mk-has-additional-css`, `body.mkprinting #wrapper …`, `.mkprinting #wrapper …`, `#wrapper h2`, `body.mkprinting #wrapper p`, `.mkprinting #wrapper p`, `:root { --x: 1; }`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC`, `.mkstyle--*`, `mk-has-additional-css`
+- Keep heading anchors: `[additional-css-settings]`, `[additional-css-selector-rewriting]`, `[additional-css-exports]`
+- Prefer existing glossary: Zusätzliches CSS, Eigener Stil / Eigene Stile, Stil-Manager
+
+# ---------------------------------------------------------------------------
+# 3) Custom_Styles.md — Additional CSS section (partial overlay + rewriting)
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Custom_Styles.md
+Section heading: Zusätzliches CSS [additional-css]
+Replace: paragraphs after the `#wrapper img` example through end of section (before ## Drucken und PDF-Export)
+
+=== CURRENT GERMAN (replace this block) ===
+## Zusätzliches CSS [additional-css]
+
+Unter {% prefspane Style %} finden Sie die Option „Zusätzliches CSS“ mit einer Schaltfläche „CSS bearbeiten“. Ein Klick darauf öffnet ein Fenster, in dem Sie universelle CSS-Regeln hinzufügen, die auf alle Stile angewendet werden. Beachten Sie, dass die Spezifität der Regeln wichtig sein kann, wenn Sie einen Teil von Markeds Standardformatierung überschreiben. Der Hauptteil des Dokuments ist in ein `div` mit der ID „#wrapper“ eingeschlossen. Stellen Sie diese einem Selektor voran, gelingen Überschreibungen leichter, z. B.:
+
+    #wrapper img { width: 100%; height: auto; }
+
+CSS in diesem Feld wird auf jedes Dokument angewendet, egal welchen Stil es verwendet. Wollen Sie eigenes CSS anhand von Bedingungen anwenden, verwenden Sie die Aktionen „Stil festlegen“, „CSS-Datei einfügen“ oder „CSS einfügen“ in den Eigenen Regeln unter {% prefspane Processor %}.
+
+=== ENGLISH TARGET (translate to German) ===
+## Additional CSS [additional-css]
+
+In the {% prefspane Style %} you'll find an option
+titled Additional CSS with a button labeled "Edit CSS."
+Clicking this will open a window where you can add
+universal CSS rules that will be applied to every Style.
+Note that specificity of the rules can be important if
+you're overriding part of Marked's default formatting.
+The main body of the document is enclosed in a `div` with
+the id of "#wrapper". Prefacing a selector with this will
+make overrides easier, e.g.:
+
+    #wrapper img { width: 100%; height: auto; }
+
+CSS in this field is **appended to the active theme**. It is not a
+substitute for a full Custom Style: a stylesheet written only for this
+field is deliberately partial, and loading it through Style Manager as a
+theme would leave everything it does not cover unstyled.
+
+Marked **rewrites** Additional CSS selectors before injection. Leading
+body classes such as `.mkprinting` are merged onto `body` rather than
+nested under `#wrapper`, so print rules in this field should use
+`body.mkprinting #wrapper …` (see [Creating Custom
+CSS](Writing_Custom_CSS.html#additional-css-settings) for the full
+rewriting rules). There is no size limit or validity check on the field
+--- invalid CSS simply has no effect.
+
+CSS in this field will be applied to every document, no
+matter what Style it's using --- including HTML export when styles are
+included. If you want to apply custom
+CSS based on conditional matches, use the Set Style, Insert
+CSS File, or Insert CSS actions in {% prefspane Processor %}
+Custom Rules.
+
+=== NOTES ===
+- Keep literals: `#wrapper`, `.mkprinting`, `body.mkprinting #wrapper …`, `#additional-css-settings`
+- Opening paragraphs already exist in German — you may keep the CURRENT German lead-in through the `#wrapper img` example and only add/translate the new middle paragraphs if preferred
+
+# ---------------------------------------------------------------------------
+# 4) Custom_Styles.md — Print / PDF .mkprinting vs body.mkprinting
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Custom_Styles.md
+Section heading: Drucken und PDF-Export [print-and-pdf-export]
+Replace: the "Für zuverlässiges Styling…" paragraph through the end of the section (including the example fence)
+
+=== CURRENT GERMAN (replace this block) ===
+Für zuverlässiges Styling bei PDF und Druck-/PDF-Vorschau stellen Sie den Selektoren die Klasse `mkprinting` voran, die Marked beim Export dem `<body>` hinzufügt (Einzelheiten und Beispiele unter [Eigenes CSS schreiben](Writing_Custom_CSS.html#printstyles)). Sie können `.mkprinting` allein verwenden oder es mit `@media print` kombinieren, wenn Sie beide Wege abdecken müssen.
+
+Um Größen festzulegen, die von Markeds Druckstandards abweichen, fügen Sie explizite Regeln in Ihr eigenes CSS (oder in „Zusätzliches CSS“) ein. Verwenden Sie `!important`, wenn Sie Markeds eingefügte Druckstile überschreiben müssen – zum Beispiel:
+
+```css
+@media print {
+  #wrapper p,
+  body p,
+  p {
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
+  }
+
+  h1 {
+    font-size: 16pt !important;
+  }
+}
+
+.mkprinting #wrapper p,
+.mkprinting body p,
+.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+.mkprinting h1 {
+  font-size: 16pt !important;
+}
+```
+
+Regeln ohne `!important` können gegen spätere Regeln in `mkprintstyles` oder gegen andere unqualifizierte Selektoren in Ihrem Stylesheet verlieren, die im Druck ebenfalls gelten. Druck-spezifische Anpassungen in `@media print`- und/oder `.mkprinting`-Regeln (statt nur in Bildschirm-Regeln) unterzubringen, macht das Vorschau- und Exportverhalten leichter nachvollziehbar.
+
+=== ENGLISH TARGET (translate to German) ===
+For reliable PDF and Print/PDF Preview styling, prefix selectors with the
+`mkprinting` class Marked adds to `<body>` during export (see [Writing Custom
+CSS](Writing_Custom_CSS.html#printstyles) for details and examples). In a
+**Custom Style** file you can use `.mkprinting` alone. In **Additional CSS**,
+use the body-qualified form `body.mkprinting #wrapper …` because that field
+rewrites selectors. You can also combine either form with `@media print` when
+you need both paths covered.
+
+To set sizes that differ from Marked's print defaults, add explicit rules in
+your custom CSS (or in Additional CSS). Use `!important` when you need to
+override Marked's injected print styles --- for example:
+
+```css
+@media print {
+  #wrapper p,
+  body p,
+  p {
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
+  }
+
+  h1 {
+    font-size: 16pt !important;
+  }
+}
+
+/* Custom Style (and most theme stylesheets) */
+.mkprinting #wrapper p,
+.mkprinting body p,
+.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+.mkprinting h1 {
+  font-size: 16pt !important;
+}
+
+/* Additional CSS field (selector rewriting) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
+}
+```
+
+Rules without `!important` may lose to later rules in `mkprintstyles` or to
+other unqualified selectors in your sheet that still apply in print. Putting
+print-only tweaks in `@media print` and/or `.mkprinting` / `body.mkprinting`
+rules (rather than only in screen rules) keeps the preview and export behavior
+easier to reason about.
+
+=== NOTES ===
+- Fenced CSS must stay byte-identical (18+ selector lines). Do not translate comments inside the fence either if you keep them in English as in the source, or translate only the `/* … */` comments while leaving selectors untouched.
+
+# ---------------------------------------------------------------------------
+# 5) HTML_Export.md — one new paragraph (flag inline literals)
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/HTML_Export.md
+Section: Gestaltung mit integrierten und eigenen Stilen
+Insert: new paragraph after the "Jeder integrierte Marked-Stil…" paragraph, before the I> callout
+
+=== CURRENT GERMAN (context — keep; insert NEW paragraph after this) ===
+Jeder integrierte Marked-Stil – Swiss, GitHub, Manuscript und alle weiteren – kann eingebettet werden. [Eigene Stile](Custom_Styles.html) und Stile aus dem [Stil-Manager](Custom_Styles.html) funktionieren genauso.
+
+=== ENGLISH TARGET (translate to German; insert before the I> callout) ===
+**Additional CSS** from {% prefspane Style %} is included with HTML export when styles are embedded. The exported `<body>` gets the `mk-has-additional-css` class so Marked's rewritten Additional CSS selectors match. See [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+
+=== NOTES ===
+- INLINE LITERALS (do not translate): `mk-has-additional-css`, `<body>`, `#additional-css-settings`
+- Prefer „Zusätzliches CSS“ for the UI term Additional CSS
+
+# ---------------------------------------------------------------------------
+# 6) Settings_Style.md — Additional CSS definition list
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Settings_Style.md
+Section: Zusätzliches CSS (definition list under Style pane)
+Replace: the two definition lines under Zusätzliches CSS
+
+=== CURRENT GERMAN (replace this block) ===
+Zusätzliches CSS
+: Hier hinzugefügtes CSS wird bei allen Stilen nach dem normalen Stylesheet eingebunden. Unter anderem können Sie damit Einstellungen flächendeckend überschreiben, ohne interne Stile zu bearbeiten.
+: Das gilt für alle Dokumente und alle Stile. Wollen Sie eigenes CSS je nach Bedingung auf Dokumente anwenden, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
+
+=== ENGLISH TARGET (translate to German) ===
+Additional CSS
+: CSS added here is appended after the normal stylesheet for every theme. It is a partial overlay, not a full theme substitute.
+: Marked rewrites selectors in this field (for example, print rules should use `body.mkprinting #wrapper …`). There is no size or validity gate --- see [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+: This applies to all documents and all styles, including HTML export when styles are included. If you want to apply custom CSS to documents based on conditions, use Custom Rules under {% prefspane Processor %}.
+
+=== NOTES ===
+- INLINE LITERALS (do not translate): `body.mkprinting #wrapper …`, `#additional-css-settings`
+- Keep term „Eigene Regeln“ for Custom Rules (matches menu)
+
+# ---------------------------------------------------------------------------
+# 7) Style_Manager.md — restore button names (English source corrected)
+# ---------------------------------------------------------------------------
+
+=== LOCATION ===
+File: de/Style_Manager.md
+Section heading: Integrierte Stile wiederherstellen (or equivalent Restoring section)
+Replace: paragraph that names **Alle integrierten Stile wiederherstellen**
+
+=== CURRENT GERMAN (replace this block) ===
+## Integrierte Stile wiederherstellen [restoring-builtin-styles]
+
+Die Schaltfläche **Alle integrierten Stile wiederherstellen** am unteren Fensterrand setzt alle integrierten Stile auf ihren Standardzustand zurück. Das ist nützlich, wenn Sie integrierte Stile deaktiviert haben und sie wieder aktivieren möchten, oder wenn Sie Änderungen an integrierten Stilen zurücksetzen wollen.
+
+=== ENGLISH TARGET (translate to German; match SpecialWindows.strings) ===
+## Restoring Built-in Styles [restoring-builtin-styles]
+
+The **Restore built-in styles** button at the bottom of the window opens a confirmation that re-enables built-in styles. The alert title is **Restore Default Styles**. Choose **Keep Current Order** to leave the Style menu order as-is, or **Restore Default Order** to reset built-in ordering as well. Use this if you have disabled built-in styles and want them back, or if you want to undo modifications to built-in styles.
+
+=== NOTES ===
+- UI strings already localized in SpecialWindows.strings:
+  - "Restore built-in styles" → "Integrierte Stile wiederherstellen"
+  - "Restore Default Styles" → "Standardstile wiederherstellen"
+  - "Keep Current Order" → "Aktuelle Reihenfolge beibehalten"
+  - "Restore Default Order" → "Standardreihenfolge wiederherstellen"
+- Use a normal hyphen in the heading anchor text (not a non-breaking hyphen) so search finds it

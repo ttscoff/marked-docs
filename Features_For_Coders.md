@@ -56,6 +56,21 @@ The "Only if language specified" option to the right of the syntax style selecto
     code
     ```
 
+### Line numbers
+
+Enable **Show line numbers in code blocks** in Settings > Style to number every syntax-highlighted block.
+
+To force numbers on a single block (even when the preference is off), add `linenums` or `numberLines` to the fence info string:
+
+    ```python linenums
+    def hello():
+        pass
+    ```
+
+To skip numbering for one block when the preference is on, add `nolinenums` (or `nohljsln`).
+
+These force/skip tokens are preserved by Marked as classes on the `<code>` element during preview. If your Markdown processor emits `data-ln-start-from="N"` on the `<code>` element (for example Pandoc), numbering starts at `N`. Full Pandoc brace attributes such as `{.numberLines startFrom="100"}` are only honored when those classes or attributes appear on the HTML.
+
 Syntax highlighting will show up in the preview and in print and PDF export. If enabled in settings and the theme is included when exporting HTML, the highlight.js library used by Marked will be embedded in the HTML output, allowing your exported HTML to appear as it does in Marked.
 
 ### Supported languages [supported-languages]

@@ -146,6 +146,17 @@ For styles that must work in **both** browser printing and Marked PDF export, du
 }
 ```
 
+**Custom Style vs Additional CSS.** In a Custom Style stylesheet, write `.mkprinting #wrapper …` as shown above. In the **Additional CSS** field, Marked rewrites selectors before injection --- use the body-qualified form instead:
+
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
+
+See [Additional CSS Settings](#additional-css-settings) for how rewriting works and why `.mkprinting #wrapper …` alone does not match there.
+
 When debugging custom print CSS, open Print/PDF Preview or export to PDF, then use [Safari's Web Inspector](#webkitinspector) to inspect the document --- the `<body>` will have the `mkprinting` class while print layout is active.
 
 Link-hiding in print is handled outside of the main theme, allowing users to choose to have link highlights and underlines hidden in printout. As long as you have a base style set for the text, you don't need to worry about this.
@@ -154,9 +165,32 @@ So, have at it. Convert your blog theme, create a killer print style for PDF doc
 
 ## Additional CSS Settings [additional-css-settings]
 
-In the {% prefspane Style %}, you can edit additional CSS. These styles will be appended to any theme loaded, and can be used to make universal changes to all themes.
+In the {% prefspane Style %}, you can edit **Additional CSS**. These rules are **appended to whatever theme is loaded**. They are a deliberate partial overlay, not a full theme. If you paste a complete stylesheet into this field --- or import that same partial sheet through [Style Manager](Custom_Styles.html) as if it were a theme --- anything the sheet does not cover will be left unstyled.
 
-Using [high specificity](#overridingspecificity), `@media` queries for print and screen, and `.mkprinting` selectors for PDF export, you can control just about every styling aspect with a bit of CSS knowledge.
+### Selector rewriting [additional-css-selector-rewriting]
+
+Marked rewrites Additional CSS selectors before injecting them (as `body.mk-has-additional-css …`) so rules stay scoped to the preview:
+
+- A selector part that already begins with `body` or `#wrapper` gets the `body.mk-has-additional-css` prefix, with body classes merged rather than nested.
+- Any other selector part is scoped under `body.mk-has-additional-css #wrapper …`.
+- Leading body classes Marked sets on `<body>` --- including `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC`, and `.mkstyle--*` --- are treated like `body` and merged onto the body selector instead of being nested under `#wrapper`.
+
+| Entered in Additional CSS | Result |
+| :-- | :-- |
+| `#wrapper h2` | Matches (scoped correctly) |
+| `body.mkprinting #wrapper p` | Matches during print/PDF |
+| `.mkprinting #wrapper p` | Does **not** match (would require a nested `#wrapper`) |
+| `:root { --x: 1; }` | Does **not** match (prefer `body` or `#wrapper` for custom properties) |
+
+For print rules in this field, prefer `body.mkprinting #wrapper …`. The same visual intent in a Custom Style file can keep the shorter `.mkprinting #wrapper …` form.
+
+There is **no size limit and no CSS validity check** on Additional CSS. Marked stores and injects what you enter; invalid CSS simply has no effect in the preview.
+
+### HTML and other exports [additional-css-exports]
+
+Additional CSS applies in the live preview, Print/PDF Preview, PDF export, and **HTML export** when styles are included --- the exported `<body>` receives the `mk-has-additional-css` class so rewritten selectors match. DOCX, ODT, and EPUB use their own styling paths and do not apply Additional CSS the same way.
+
+Using [high specificity](#overridingspecificity), `@media` queries for print and screen, and `body.mkprinting` selectors (in this field) or `.mkprinting` selectors (in Custom Styles), you can control just about every styling aspect with a bit of CSS knowledge.
 
 ## WebKit Inspector [webkitinspector]
 

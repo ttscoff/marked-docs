@@ -66,6 +66,7 @@ Szintaxiskiemelés
 : Bekapcsolja a highlight.js [szintaxiskiemelést](Syntax_Highlighting.html) a kódblokkokhoz. Válasszon témát a legördülő menüből.
 : Ha a **Csak ha a nyelv meg van adva** be van jelölve, a szintaxiskiemelés csak azokra a keretezett kódblokkokra vonatkozik, amelyeknél meg van adva a nyelv.
 
+: **Sorszámok megjelenítése kódblokkban** — ha a szintaxis kiemelés be van kapcsolva, a sorszámok megjelenítése a kiemelt blokkon (blokkonkénti `linenums` / `nolinenums` felülírással).
 MathJax engedélyezése
 : Betölti a [MathJax](MathJax.html)-ot a MathML-egyenletek megjelenítéséhez. Válasszon a legördülő menüből **Helyi** (beépített) vagy **CDN** opciót.
 : A **További csomagok** gombra kattintva egy panel nyílik meg, ahol további MathJax-csomagokat (például Physics és Chemistry) adhat hozzá.
