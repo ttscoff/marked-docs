@@ -528,6 +528,15 @@ Sections:
     - notas de oso
     - paquete de texto
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Arrastre un esquema de Bike (.bike) a Marked para verlo como una lista Markdown anidada, con las filas de título en negrita y las tareas como casillas."
+    keywords:
+    - bike
+    - esquema
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curiosidad
     file: Curio
     description: Cuando haces doble clic para editar una figura, nota, lista u otro elemento en Curio, su Markdown fluye a la vista previa de transmisión y se actualiza a medida que escribes.
@@ -607,6 +616,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked abre archivos de Microsoft Word (.docx) como Markdown y puede exportar ese Markdown de nuevo a DOCX."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: Nodo mental
     file: MindNode
     description: Arrastre un documento [MindNode][mn] a Marcado (o utilice el comando Abrir en Marcado/vista previa de MindNode, según la versión de MindNode). Marcado trata el archivo como...
@@ -666,6 +684,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - el archivo
+  - title: Traverse
+    file: Traverse
+    description: "Traverse incluye el comando Stream to Marked. Aparece en el menú de exportación cuando Marked 2 o Marked 3 está instalado."
+    keywords:
+    - traverse
+    - vista previa
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Arrastre un documento de Tree Outliner (.treeoutline) a Marked para verlo como títulos y listas, o como un diagrama Mermaid."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - esquema
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulises
     file: Ulysses
     description: Después de la primera configuración, Cmd-6 seguido de Retorno suele ser suficiente para actualizar la vista previa marcada de la hoja activa (o las hojas que seleccionó).

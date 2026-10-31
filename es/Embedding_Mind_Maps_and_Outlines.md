@@ -27,7 +27,11 @@ OPML (lenguaje de marcado del procesador de esquemas) es un formato XML para esq
 
 ### Bicicleta (.bicicleta) [bike-bike]
 
-Los esquemas de Bike.app se almacenan como archivos HTML propietarios (`.bike`). Puede abrir un archivo `.bike` directamente en Marked: el documento se representa como Markdown con el nombre del archivo (menos la extensión) como encabezado principal (H1), elementos de encabezado de nivel superior como H2, encabezados anidados como elementos de lista en negrita y tareas como casillas de verificación estilo GitHub. Cuando se incluye un archivo `.bike` mediante la sintaxis de inclusión, la configuración "Incrustar como diagrama de sirena" para Bike (en Aplicaciones → Mapas mentales/Contornos) controla si se convierte en un mapa mental de sirena (con el nombre del archivo como nodo raíz) o en una lista Markdown anidada (sin H1).
+Consulte [Bike](Bike.html) para abrir un archivo `.bike`. Los esquemas de Bike incluidos siguen la casilla **Bike outlines**: activada dibuja un mapa mental Mermaid (el nombre del archivo, sin `.bike`, es el nodo raíz); desactivada dibuja una lista Markdown anidada sin título de documento.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Consulte [Tree Outliner](Tree_Outliner.html). La casilla **Tree Outliner outlines** controla tanto abrir un archivo `.treeoutline` como incluirlo. Activada dibuja un mapa mental Mermaid con el título del documento como raíz. Desactivada compila títulos y listas; **Headings through level** en el grupo *Tree Outliner* fija hasta qué nivel llegan los títulos.
 
 ## Insertar mapas como diagramas de sirena [embed-maps-as-mermaid-diagrams]
 
@@ -54,6 +58,7 @@ Utilice la misma sintaxis que para otros archivos, incluidos:
 	<<[ruta/hacia/mapa.mm]
 	<<[ruta/hacia/esquema.opml]
 	<<[ruta/hacia/esquema.bicicleta]
+	<<[path/to/outline.treeoutline]
 
 O con la sintaxis del bloque iA Writer:
 
@@ -72,4 +77,4 @@ Los archivos OPML utilizan elementos `<outline>` anidados con un atributo `text`
 
 ## Conversión de bicicletas [bike-conversion]
 
-Los archivos Bike `.bike` son HTML con elementos raíz `<ul>` y `<li>`. Los elementos pueden tener `data-type="heading"` (nivel superior → H2 cuando están abiertos o en modo de lista; anidados → negrita) o `data-type="task"` (casillas de verificación de GitHub; completado cuando `data-done` tiene una marca de tiempo, o `data-checked` / `data-completed` es verdadero). El formato en línea y los enlaces en el texto del nodo se convierten a Markdown. Al incrustarlo como un mapa mental de Mermaid, el nombre del archivo (menos la extensión) se utiliza como nodo raíz único y las etiquetas tienen formato de texto sin formato para la sintaxis del mapa mental de Mermaid.
+Los archivos `.bike` de Bike son HTML con una `<ul>` raíz y elementos `<li>`. En el modo de lista, cada fila es un elemento de lista: las filas `data-type="heading"` van en negrita, y las filas `data-type="task"` son casillas de GitHub (marcadas cuando `data-done` tiene una marca de tiempo, o cuando `data-checked` / `data-completed` es verdadero). El formato en línea y los enlaces del texto del nodo se convierten a Markdown. Abrir un archivo `.bike` usa siempre esta lista. Cuando un archivo incluido se incrusta como mapa mental Mermaid, el nombre del archivo (sin la extensión) es el único nodo raíz y las etiquetas son texto sin formato para la sintaxis mindmap de Mermaid.
