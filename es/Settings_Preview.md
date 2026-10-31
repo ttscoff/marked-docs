@@ -16,7 +16,7 @@ Habilitar la navegación del minimapa
 Los titulares colapsan secciones
 : Al hacer clic en un elemento de título, se contrae la sección entre este y el siguiente título.
 
-Requerir {% kbd cmd %}‑clic
+Requerir {% kbd cmd %}&#8209;clic
 : Si esto está marcado, los titulares solo se contraerán/expandirán cuando se haga clic con la tecla Comando presionada.
 
 Sincronización de vista previa y desplazamiento de fuente

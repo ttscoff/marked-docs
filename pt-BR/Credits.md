@@ -46,6 +46,7 @@ Essas bibliotecas são concatenadas no pacote de visualização do Marked (`mark
 | [jQuery](https://jquery.com/) | Fundação jQuery | MIT | DOM e utilitários de eventos |
 | [Martelo.js](https://hammerjs.github.io/) | Jorik Tangelder | MIT | Manipulação de toque e gestos |
 | [Destaque.js](https://highlightjs.org/) | Josh Goebel e colaboradores | Cláusula BSD-3 | Destaque de sintaxe |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | O Consórcio MathJax | Apache-2.0 | Renderização matemática (pacote local) |
 | [KateX](https://katex.org/) | Khan Academy e colaboradores | MIT | Renderização matemática (opção KaTeX) |
 | [Sereia](https://mermaid.js.org/) | Contribuidores da sereia | MIT | Renderização de diagrama |

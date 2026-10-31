@@ -56,8 +56,9 @@ CSS-Änderungen verfolgen
 : Ist dies aktiviert, überwacht Marked den aktuellen Stil auf Änderungen auf der Festplatte, was beim Bearbeiten eigener Stile und in der Webentwicklung hilft.
 
 Zusätzliches CSS
-: Hier hinzugefügtes CSS wird bei allen Stilen nach dem normalen Stylesheet eingebunden. Unter anderem können Sie damit Einstellungen flächendeckend überschreiben, ohne interne Stile zu bearbeiten.
-: Das gilt für alle Dokumente und alle Stile. Wollen Sie eigenes CSS je nach Bedingung auf Dokumente anwenden, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
+: Hier hinzugefügtes CSS wird bei jedem Design nach dem normalen Stylesheet angehängt. Es ist eine bewusst partielle Ergänzung, kein vollwertiger Ersatz für ein Design.
+: Marked schreibt die Selektoren in diesem Feld um – Druckregeln sollten deshalb `body.mkprinting #wrapper …` verwenden. Es gibt weder eine Größenbeschränkung noch eine Gültigkeitsprüfung; siehe [Eigenes CSS schreiben](Writing_Custom_CSS.html#additional-css-settings).
+: Das gilt für alle Dokumente und alle Stile, auch für den HTML-Export, sofern die Stile eingebettet werden. Wollen Sie eigenes CSS je nach Bedingung auf Dokumente anwenden, verwenden Sie Eigene Regeln unter {% prefspane Processor %}.
 
 ### Skripte einbinden [include-scripts]
 

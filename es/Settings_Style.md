@@ -63,6 +63,7 @@ CSS adicional
 Resaltado de sintaxis
 : Activa el [resaltado de sintaxis](Syntax_Highlighting.html) de highlight.js para los bloques de código. Selecciona un estilo en el menú desplegable.
 : Si **Solo si se especifica el idioma** está activado, el resaltado de sintaxis solo se aplicará a los bloques de código delimitados con un idioma especificado.
+: **Mostrar números de línea en bloques de código** — cuando el resaltado de sintaxis está activado, muestra los números de línea en los bloques resaltados (con anulaciones por bloque `linenums` / `nolinenums`).
 
 Activar MathJax
 : Carga [MathJax](MathJax.html) para mostrar ecuaciones MathML. Elige **Local** (incluido) o **CDN** en el menú desplegable.

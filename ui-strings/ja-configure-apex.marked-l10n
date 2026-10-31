@@ -1,0 +1,237 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: Configure Apex sheet + Remove iA Writer annotations
+# Generated: 2026-09-21
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Do not translate product names (Marked, Apex,
+# iA Writer, CriticMarkup, Markdown, HTML, ARIA, CSL, Quarto,
+# Python-Markdown) unless your locale already localizes them.
+#
+# Return this file with translations filled in (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.apexOptARIA" = "ARIA ラベル";
+# EN: ARIA labels
+# DRAFT: ARIA ラベル
+
+"setting.apexOptAlphaLists" = "アルファベット順リスト";
+# EN: Alphabetic lists
+# DRAFT: アルファベット順リスト
+
+"setting.apexOptAutolink" = "URL とメールを自動リンク";
+# EN: Autolink URLs and emails
+# DRAFT: URL とメールを自動リンク
+
+"setting.apexOptBibliographyPaths" = "文献一覧";
+# EN: Bibliography
+# DRAFT: 文献一覧
+
+"setting.apexOptCSLPath" = "CSL";
+# EN: CSL
+# DRAFT: CSL
+
+"setting.apexOptConcordancePaths" = "コンコーダンス";
+# EN: Concordance
+# DRAFT: コンコーダンス
+
+"setting.apexOptDefinitionLists" = "定義リスト";
+# EN: Definition lists
+# DRAFT: 定義リスト
+
+"setting.apexOptDivs" = "囲み div";
+# EN: Fenced divs
+# DRAFT: 囲み div
+
+"setting.apexOptFootnotes" = "脚注";
+# EN: Footnotes
+# DRAFT: 脚注
+
+"setting.apexOptGridTables" = "グリッド表";
+# EN: Grid tables
+# DRAFT: グリッド表
+
+"setting.apexOptHeaderAnchors" = "見出しの <a> アンカー";
+# EN: Header <a> anchors
+# DRAFT: 見出しの <a> アンカー
+
+"setting.apexOptImageCaptions" = "画像キャプション";
+# EN: Image captions
+# DRAFT: 画像キャプション
+
+"setting.apexOptIndices" = "索引処理";
+# EN: Index processing
+# DRAFT: 索引処理
+
+"setting.apexOptMarkdownInHTML" = "HTML 内の Markdown";
+# EN: Markdown in HTML
+# DRAFT: HTML 内の Markdown
+
+"setting.apexOptMetaFilePath" = "メタデータファイル";
+# EN: Metadata file
+# DRAFT: メタデータファイル
+
+"setting.apexOptMetadataTransforms" = "メタデータ変換";
+# EN: Metadata transforms
+# DRAFT: メタデータ変換
+
+"setting.apexOptMixedListMarkers" = "混在リスト記号";
+# EN: Mixed list markers
+# DRAFT: 混在リスト記号
+
+"setting.apexOptPerCellAlignment" = "セル単位の配置";
+# EN: Per-cell alignment
+# DRAFT: セル単位の配置
+
+"setting.apexOptPyCallouts" = "Python-Markdown コールアウト (!!!)";
+# EN: Python-Markdown callouts (!!!)
+# DRAFT: Python-Markdown コールアウト (!!!)
+
+"setting.apexOptQuartoCallouts" = "Quarto コールアウト";
+# EN: Quarto callouts
+# DRAFT: Quarto コールアウト
+
+"setting.apexOptRelaxedTables" = "柔軟な表";
+# EN: Relaxed tables
+# DRAFT: 柔軟な表
+
+"setting.apexOptSpans" = "括弧付きスパン";
+# EN: Bracketed spans
+# DRAFT: 括弧付きスパン
+
+"setting.apexOptStrikethrough" = "取り消し線";
+# EN: Strikethrough
+# DRAFT: 取り消し線
+
+"setting.apexOptSupSub" = "上付き / 下付き";
+# EN: Superscript / subscript
+# DRAFT: 上付き / 下付き
+
+"setting.apexOptSuppressIndex" = "索引出力を抑制";
+# EN: Suppress index output
+# DRAFT: 索引出力を抑制
+
+"setting.apexOptTables" = "表";
+# EN: Tables
+# DRAFT: 表
+
+"setting.apexOptTitleCaptionsOnly" = "タイトルのみのキャプション";
+# EN: Title-only captions
+# DRAFT: タイトルのみのキャプション
+
+"setting.apexOptWikiLinks" = "Wiki リンク";
+# EN: Wiki links
+# DRAFT: Wiki リンク
+
+"setting.apexOptWikiSanitize" = "Wiki リンク URL をサニタイズ";
+# EN: Sanitize wiki link URLs
+# DRAFT: Wiki リンク URL をサニタイズ
+
+"setting.configureApex" = "Apex オプション";
+# EN: Apex options
+# DRAFT: Apex オプション
+
+"setting.configureApex.button" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.configureApex.done" = "完了";
+# EN: Done
+# DRAFT: 完了
+
+"setting.configureApex.files.add" = "追加";
+# EN: Add
+# DRAFT: 追加
+
+"setting.configureApex.files.browse" = "…";
+# EN: …
+# DRAFT: …
+
+"setting.configureApex.files.browseMessage" = "Apex 用のファイルを選択します。";
+# EN: Choose a file for Apex.
+# DRAFT: Apex 用のファイルを選択します。
+
+"setting.configureApex.files.browseTooltip" = "ファイルを選択";
+# EN: Choose a file
+# DRAFT: ファイルを選択
+
+"setting.configureApex.files.clear" = "×";
+# EN: ×
+# DRAFT: ×
+
+"setting.configureApex.files.clearTooltip" = "このファイルパスを消去";
+# EN: Clear this file path
+# DRAFT: このファイルパスを消去
+
+"setting.configureApex.files.pathPlaceholder" = "ファイルパス";
+# EN: File path
+# DRAFT: ファイルパス
+
+"setting.configureApex.files.statusAvailable" = "ファイルは利用可能です";
+# EN: File is available
+# DRAFT: ファイルは利用可能です
+
+"setting.configureApex.files.statusMissing" = "ファイルが存在しません";
+# EN: The file does not exist
+# DRAFT: ファイルが存在しません
+
+"setting.configureApex.files.statusPermission" = "Marked はこのファイルを読む権限がありません";
+# EN: Marked does not have permission to read this file
+# DRAFT: Marked はこのファイルを読む権限がありません
+
+"setting.configureApex.files.statusUnavailable" = "ファイルを利用できません";
+# EN: File is unavailable
+# DRAFT: ファイルを利用できません
+
+"setting.configureApex.group.accessibility" = "アクセシビリティ";
+# EN: Accessibility
+# DRAFT: アクセシビリティ
+
+"setting.configureApex.group.callouts" = "コールアウト（追加）";
+# EN: Callouts (extra)
+# DRAFT: コールアウト（追加）
+
+"setting.configureApex.group.files" = "ファイル";
+# EN: Files
+# DRAFT: ファイル
+
+"setting.configureApex.group.linksIndexes" = "リンクと索引";
+# EN: Links & indexes
+# DRAFT: リンクと索引
+
+"setting.configureApex.group.syntax" = "構文";
+# EN: Syntax
+# DRAFT: 構文
+
+"setting.configureApex.group.tablesImages" = "表と画像";
+# EN: Tables & images
+# DRAFT: 表と画像
+
+"setting.configureApex.intro" = "これらのオプションは Apex だけに影響します。数式、CriticMarkup、ハッシュタグ、ファイルの取り込み、見出し ID は Marked のほかの設定のままです。Apex の Wiki リンクが有効なとき、Apex が [[wiki]] リンクを変換し、Marked のプレビュー「Wiki リンクを変換」処理はスキップされます。Apex のファイル解決は Marked と異なる場合があります。";
+# EN: These options affect Apex only. Math, Critic Markup, hashtags, file includes, and header IDs stay in Marked’s other settings. When Apex wiki links are enabled, Apex converts [[wiki]] links and Marked’s Preview “Convert wiki links” pass is skipped; Apex file resolution may differ from Marked’s.
+# DRAFT: これらのオプションは Apex だけに影響します。数式、CriticMarkup、ハッシュタグ、ファイルの取り込み、見出し ID は Marked のほかの設定のままです。Apex の Wiki リンクが有効なとき、Apex が [[wiki]] リンクを変換し、Marked のプレビュー「Wiki リンクを変換」処理はスキップされます。Apex のファイル解決は Marked と異なる場合があります。
+
+"setting.configureApex.sheetTitle" = "Configure Apex";
+# EN: Configure Apex
+# DRAFT: Configure Apex
+
+"setting.processor.apexBeta" = "Apex（ベータ）";
+# EN: Apex (beta)
+# DRAFT: Apex（ベータ）
+
+"setting.removeIAWriterAnnotations" = "iA Writer の注釈を取り除く";
+# EN: Remove iA Writer annotations
+# DRAFT: iA Writer の注釈を取り除く
+
+"tooltip.configureApex" = "Apex の構文と出力のオプション機能（Apex プロセッサのみ）。";
+# EN: Optional Apex syntax and output features (Apex processor only).
+# DRAFT: Apex の構文と出力のオプション機能（Apex プロセッサのみ）。
+
+"tooltip.removeIAWriterAnnotations" = "オンにすると、ファイル末尾の iA Writer 注釈ブロックをプレビューの前に取り除きます。既定ではオフです。";
+# EN: When enabled, the iA Writer annotations block at the end of a file is removed before preview. Off by default.
+# DRAFT: オンにすると、ファイル末尾の iA Writer 注釈ブロックをプレビューの前に取り除きます。既定ではオフです。
+
+=== END Settings.strings ===
