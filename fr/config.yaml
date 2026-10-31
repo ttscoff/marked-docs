@@ -533,6 +533,15 @@ Sections:
     - bear notes
     - paquet de texte
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Faites glisser un plan Bike (.bike) sur Marked pour l'afficher comme une liste Markdown imbriquée, avec les lignes de titre en gras et les tâches comme cases à cocher."
+    keywords:
+    - bike
+    - plan
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curio
     file: Curio
     description: Lorsque vous double-cliquez pour modifier une figure, une note, une liste ou un autre élément dans Curio, son Markdown est transmis à l'aperçu en streaming et se met à jour au fur et à mesure que vous écrivez.
@@ -612,6 +621,15 @@ Sections:
     - blogueur
     - WordPress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked ouvre les fichiers Microsoft Word (.docx) en Markdown, et peut réexporter ce Markdown en DOCX."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Faites glisser un document [MindNode][mn] sur Marked (ou utilisez la commande Ouvrir dans Marked/preview de MindNode, selon la version de MindNode). Marked traite le fichier comme...
@@ -671,6 +689,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: "Traverse comprend la commande Stream to Marked. Elle apparaît dans le menu d'export lorsque Marked 2 ou Marked 3 est installé."
+    keywords:
+    - traverse
+    - aperçu en continu
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Faites glisser un document Tree Outliner (.treeoutline) sur Marked pour l'afficher comme des titres et des listes, ou comme un diagramme Mermaid."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - plan
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: Après la première configuration, Cmd-6 suivi de Retour suffisent souvent pour actualiser l'aperçu Marked de la feuille active (ou des feuilles que vous avez sélectionnées).
