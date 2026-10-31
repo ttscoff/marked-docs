@@ -89,16 +89,26 @@ Aggiungi i metadati di compilazione (titolo, autore) quando mancano
 Apri i file .scriv in Scrivener quando vengono aperti in Marked
 : quando un documento Scrivener viene aperto in Marked, lo apre automaticamente anche in Scrivener.
 
-#### Parola [scrivener]
+#### Word [word]
+
+[(Informazioni su Microsoft Word)](Microsoft_Word.html)
 
 Converti il rilevamento delle modifiche <-> CriticMarkup
 : se abilitato, il rilevamento delle modifiche nei documenti Word verrà convertito in CriticMarkup al momento dell'importazione e CriticMarkup verrà convertito nel rilevamento delle modifiche di Word durante l'esportazione di file DOCX.
 
-#### Mappe mentali/Contorni [word]
+#### Tree Outliner [tree-outliner]
+
+[(Informazioni su Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: Il titolo del documento è il titolo di livello 1. I livelli della struttura restano titoli fino a questo livello, e i nodi più profondi diventano elenchi annidati. Le note diventano paragrafi. Si usa quando **Tree Outliner outlines** è disattivo sotto **Embed as Mermaid mind maps**.
+
+#### Mappe mentali/Contorni [MindMapsOutlines]
 
 Incorpora come mappe mentali della Sirena
 : ciascuna casella di controllo controlla un formato incluso. Quando **attivo**, il file incluso viene convertito in un diagramma della mappa mentale della sirena (layout ad albero ordinato). Quando **disattivato**, Marked utilizza l'alternativa per quel formato.
 : **Mappe mentali** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Se attivo: mappa mentale della sirena. Se disattivato: iThoughts incorpora la sua immagine di anteprima; MindManager e FreeMind si convertono in elenchi Markdown nidificati.
 : **File OPML** (.opml). Se attivo: mappa mentale della sirena. Se disattivato: elenco Markdown nidificato.
 : **Contorni OmniOutliner** (.ooutline). Se attivo: mappa mentale della sirena. Se disattivato: elenco Markdown nidificato (o elenco di controllo, ove applicabile).
-: **Profili della bicicletta**. Se attivo: mappa mentale della sirena. Se disattivato: elenco Markdown nidificato.
+: **Bike outlines**. Se attivo: mappa mentale Mermaid. Se disattivato: elenco Markdown nidificato. Vedi [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Se attivo: mappa mentale Mermaid. Se disattivato: titoli ed elenchi Markdown. Vedi [Tree Outliner](Tree_Outliner.html).
