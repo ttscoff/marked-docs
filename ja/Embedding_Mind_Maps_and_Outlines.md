@@ -27,7 +27,11 @@ OPML (Outline Processor Markup Language) は、アウトライナーやフィー
 
 ### バイク (.bike) [bike-bike]
 
-Bike.app のアウトラインは独自の HTML ファイルとして保存されます (`.bike`)。 `.bike` ファイルを Marked で直接開くことができます。ドキュメントは、メイン見出し (H1) としてファイル名 (拡張子を除く)、トップレベルの見出し項目を H2 として、ネストされた見出しを太字のリスト項目として、タスクを GitHub スタイルのチェックボックスとしてマークダウンとしてレンダリングされます。 `.bike` ファイルが include 構文を介してインクルードされる場合、Bike の「マーメイド図として埋め込む」設定 (アプリ → マインド マップ/アウトライン内) によって、ファイルがマーメイド マインド マップ (ルート ノードとしてファイル名を持つ) になるか、ネストされたマークダウン リスト (H1 なし) になるかが制御されます。
+`.bike` ファイルの開き方は [Bike](Bike.html) を参照してください。取り込んだ Bike アウトラインは **Bike outlines** チェックボックスに従います。オンでは Mermaid マインドマップ（`.bike` を除いたファイル名がルート）。オフでは文書タイトルのない入れ子の Markdown リストです。
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+[Tree Outliner](Tree_Outliner.html) を参照してください。**Tree Outliner outlines** チェックボックスは、`.treeoutline` ファイルを開くときと取り込むときの両方を制御します。オンでは文書タイトルをルートにした Mermaid マインドマップです。オフでは見出しとリストにまとめ、*Tree Outliner* グループの **Headings through level** が見出しの深さを決めます。
 
 ## 地図を人魚図として埋め込む [embed-maps-as-mermaid-diagrams]
 
@@ -54,6 +58,7 @@ Bike.app のアウトラインは独自の HTML ファイルとして保存さ�
 	<<[パス/to/map.mm]
 	<<[パス/to/outline.opml]
 	<<[パス/to/outline.bike]
+	<<[path/to/outline.treeoutline]
 
 または、iA Writer ブロック構文を使用します。
 
@@ -72,4 +77,4 @@ OPML ファイルは、`text` 属性を持つネストされた `<outline>` 要�
 
 ## バイクの変換 [bike-conversion]
 
-Bike `.bike` ファイルは、ルート `<ul>` および `<li>` 項目を含む HTML です。項目には、`data-type="heading"` (開いたときまたはリストモードでトップレベル→ H2、ネスト→太字) または `data-type="task"` (GitHub チェックボックス、`data-done` にタイムスタンプがあるか、`data-checked` / `data-completed` が true のときに完了) を含めることができます。ノードテキスト内のインライン書式設定とリンクはマークダウンに変換されます。 Mermaid マインドマップとして埋め込む場合、ファイル名 (拡張子を除く) が単一のルート ノードとして使用され、ラベルは Mermaid マインドマップ構文用にフォーマットされたプレーン テキストになります。
+Bike の `.bike` ファイルは、ルートの `<ul>` と `<li>` からなる HTML です。リストモードでは各行がリスト項目です。`data-type="heading"` の行は太字、`data-type="task"` の行は GitHub のチェックボックスです（`data-done` に時刻があるか、`data-checked` / `data-completed` が true のとき完了）。ノードテキストのインライン書式とリンクは Markdown に変換されます。`.bike` ファイルを開くときは常にこのリストです。取り込んだファイルを Mermaid マインドマップとして埋め込むとき、拡張子を除いたファイル名が単一のルートノードになり、ラベルは Mermaid の mindmap 構文向けのプレーンテキストです。

@@ -89,10 +89,19 @@ GitBook サポートを有効にする
 Marked で開かれた .scriv ファイルを Scrivener で開く
 : Scrivener ドキュメントを Marked で開くと、自動的に Scrivener でも開きます。
 
-#### 単語 [word]
+#### Word [word]
+
+[(Microsoft Word について)](Microsoft_Word.html)
 
 変更追跡を変換 <-> CriticMarkup
 : 有効にすると、Word ドキュメントの変更追跡はインポート時に CriticMarkup に変換され、DOCX ファイルのエクスポート時に CriticMarkup が Word の変更追跡に変換されます。
+
+#### Tree Outliner [tree-outliner]
+
+[(Tree Outliner について)](Tree_Outliner.html)
+
+Headings through level
+: 文書タイトルは見出し 1 です。アウトラインの階層はこのレベルまで見出しのまま続き、それより深いノードは入れ子のリストになります。ノートは段落になります。**Embed as Mermaid mind maps** で **Tree Outliner outlines** がオフのときに使います。
 
 #### マインド マップ/アウトライン [MindMapsOutlines]
 
@@ -101,4 +110,5 @@ Marked で開かれた .scriv ファイルを Scrivener で開く
 : **マインド マップ** — iThoughts X (.itmz)、MindManager (.mmap)、FreeMind (.mm)。オンの場合: マーメイド マインド マップ。オフの場合: iThoughts はプレビュー画像を埋め込みます。 MindManager と FreeMind は、ネストされた Markdown リストに変換されます。
 : **OPML ファイル** (.opml)。オンの場合: マーメイド マインド マップ。オフの場合: ネストされたマークダウン リスト。
 : **OmniOutliner のアウトライン** (.ooutline)。オンの場合: マーメイド マインド マップ。オフの場合: ネストされたマークダウン リスト (または該当する場合はチェックリスト)。
-: **自転車の概要**。オンの場合: マーメイド マインド マップ。オフの場合: ネストされたマークダウン リスト。
+: **Bike outlines**。オンの場合: Mermaid マインドマップ。オフの場合: 入れ子の Markdown リスト。[Bike](Bike.html) を参照。
+: **Tree Outliner outlines** (.treeoutline)。オンの場合: Mermaid マインドマップ。オフの場合: Markdown の見出しとリスト。[Tree Outliner](Tree_Outliner.html) を参照。

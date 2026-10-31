@@ -528,6 +528,15 @@ Sections:
     - クマのメモ
     - テキストバンドル
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Bike のアウトライン (.bike) を Marked にドラッグすると、見出し行は太字、タスクはチェックボックスの入れ子の Markdown リストとしてプレビューできます。"
+    keywords:
+    - bike
+    - アウトライン
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: 骨董
     file: Curio
     description: ダブルクリックして Curio 内の図、メモ、リスト、またはその他の項目を編集すると、そのマークダウンがストリーミング プレビューに流れ、書き込み中に更新されます。
@@ -607,6 +616,15 @@ Sections:
     - ブログ
     - ワードプレス
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked は Microsoft Word (.docx) ファイルを Markdown として開き、その Markdown を再び DOCX に書き出せます。"
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: マインドノード
     file: MindNode
     description: [MindNode][mn] ドキュメントをマーク上にドラッグします (または、MindNode のバージョンに応じて、MindNode の [マーク済みで開く/プレビュー] コマンドを使用します)。マークはファイルを次のように扱います...
@@ -666,6 +684,25 @@ Sections:
     - ゼッテルカステン
     wiki_keywords:
     - アーカイブ
+  - title: Traverse
+    file: Traverse
+    description: "Traverse には Stream to Marked コマンドがあります。Marked 2 または Marked 3 が入っていると、書き出しメニューに表示されます。"
+    keywords:
+    - traverse
+    - ストリーミング
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Tree Outliner の文書 (.treeoutline) を Marked にドラッグすると、見出しとリスト、または Mermaid 図としてプレビューできます。"
+    keywords:
+    - tree outliner
+    - treeoutline
+    - アウトライン
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: ユリシーズ
     file: Ulysses
     description: 最初のセットアップの後、多くの場合、Cmd-6 に続いて Return キーを押すだけで、アクティブなシート (または選択したシート) のマーク付きプレビューを更新できます。
