@@ -288,6 +288,17 @@ Sections:
     - overlay
     - shortcuts
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: 阅读模式
+    file: Reading_Mode
+    description: 阅读模式聚焦当前块，记住长文档中的位置，并保存高亮以供分享、CriticMarkup 和打印。
+    keywords:
+    - 阅读模式
+    - 专注
+    - 高亮
+    - 继续阅读
+    - criticmarkup
+    - 快捷键
+    wiki_keywords: [阅读模式, 阅读高亮, 继续阅读]
   - title: Ask About Document
     file: AI_Ask_About_Document
     description: Ask About Document uses Apple Intelligence and the on-device language model built into recent versions of macOS to summarize your Markdown preview and...
