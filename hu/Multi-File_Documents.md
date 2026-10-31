@@ -87,11 +87,12 @@ Ha bizonyos fájltípusokat `<<[path]` vagy IA Writer blokkszintaxissal vesz fel
 | **OPML** | .opml | Mermaid gondolattérkép diagram | Beágyazott leértékelési lista |
 | **OmniOutliner** | .ooutline | Mermaid gondolattérkép diagram | Beágyazott leértékelési lista |
 | **Kerékpár** | .bicikli | Mermaid mindmap (fájlnév gyökércsomópontként) | Beágyazott leértékelési lista (nincs dokumentum címe) |
+| **Tree Outliner** | .treeoutline | Mermaid-gondolattérkép (a dokumentum címe a gyökér) | Címsorok és listák ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV / TSV** | .csv, .tsv | Leértékelési táblázat ||
 | **RTF / RTFD** | .rtf, .rtfd | Leértékelés RTF-konverzión keresztül (lásd [RTF- és RTFD-támogatás](RTF_Support.html)) ||
 | **PDF** | .pdf | Lejelölés PDF-konverzión keresztül, amikor fő dokumentumként van megnyitva (lásd [PDF támogatás](PDF_Support.html)) ||
 
-Minden körvonal-/elmetérkép-formátumnak saját jelölőnégyzete van a *Mind Maps/Outlines* alatt (elmetérképek, OPML-fájlok, kerékpáros körvonalak, OmniOutliner körvonalak). A formátum kikapcsolása csak az adott típusnál használja a „ki” viselkedést. A formátum részleteiért lásd: [Mindtérképek és körvonalak beágyazása](Embedding_Mind_Maps_and_Outlines.html), a beállítások módosításához pedig a [Beállítások: Alkalmazások][gondolattérképek]. A CSV-konverzió részleteiért lásd a [Táblázatok létrehozása CSV-fájlok használatával][csv] című részt.
+Minden körvonal-/elmetérkép-formátumnak saját jelölőnégyzete van a *Mind Maps/Outlines* alatt (elmetérképek, OPML-fájlok, Bike-vázlatok, OmniOutliner-vázlatok, Tree Outliner outlines). A formátum kikapcsolása csak az adott típusnál használja a „ki” viselkedést. A formátum részleteiért lásd: [Mindtérképek és körvonalak beágyazása](Embedding_Mind_Maps_and_Outlines.html), a beállítások módosításához pedig a [Beállítások: Alkalmazások][gondolattérképek]. A CSV-konverzió részleteiért lásd a [Táblázatok létrehozása CSV-fájlok használatával][csv] című részt.
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

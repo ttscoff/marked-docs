@@ -4,7 +4,7 @@
 
 A {% appmenu File, New, Streaming Preview %} megnyitásával a Marked élő frissítéseket kap egy elnevezett kartonon keresztül, ahelyett, hogy egy fájlt nézne a lemezen. A forrásalkalmazásnak integrálnia kell a Marked alkalmazást.
 
-[Curio](Curio.html), [Piszkozatok](Drafts.html) és [Az archívum](The_Archive.html) dokumentálják saját kapcsolóit és menüparancsaikat. Az nvUltra, nvALT, Bear és mások ugyanazt a csatornát használják: nyissa meg a streaming előnézetét a Marked alkalmazásban, engedélyezze az integrációt a szerkesztőben, és kezdjen el gépelni; a frissítések közel valós időben érkeznek.
+[Curio](Curio.html), [Piszkozatok](Drafts.html) és [Az archívum](The_Archive.html) és a [Traverse](Traverse.html) dokumentálják saját kapcsolóit és menüparancsaikat. Az nvUltra, nvALT, Bear és mások ugyanazt a csatornát használják: nyissa meg a streaming előnézetét a Marked alkalmazásban, engedélyezze az integrációt a szerkesztőben, és kezdjen el gépelni; a frissítések közel valós időben érkeznek.
 
 ## Fejlesztők [developers]
 
