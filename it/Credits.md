@@ -46,6 +46,7 @@ Queste librerie sono concatenate nel bundle di anteprima di Marked (`marked.min.
 | [jQuery](https://jquery.com/) | Fondazione jQuery | MIT | DOM e utilità per eventi |
 | [Hammer.js](https://hammerjs.github.io/) | Jorik Tangelder | MIT | Gestione del tocco e dei gesti |
 | [Highlight.js](https://highlightjs.org/) | Josh Goebel e collaboratori | Clausola BSD-3 | Evidenziazione della sintassi |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | Il Consorzio MathJax | Apache-2.0 | Rendering matematico (pacchetto locale) |
 | [KaTeX](https://katex.org/) | Khan Academy e collaboratori | MIT | Rendering matematico (opzione KaTeX) |
 | [Sirena](https://mermaid.js.org/) | Collaboratori della sirena | MIT | Rappresentazione del diagramma |

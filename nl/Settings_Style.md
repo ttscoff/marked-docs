@@ -64,6 +64,7 @@ Syntax highlighting
 : Schakel highlight.js [syntax highlighting](Syntax_Highlighting.html) voor codeblokken in. Kies een thema uit het uitklapmenu.
 : Als **Alleen indien taal opgegeven** is aangevinkt, wordt syntax highlighting alleen toegepast op omheinde codeblokken waarvoor een taal is opgegeven.
 
+: **Toon regelnummers in codeblokken** — wanneer syntaxisaccentuering is ingeschakeld, worden regelnummers op gemarkeerde blokken weergegeven (met per blok `linenums` / `nolinenums` overschrijvingen).
 MathJax inschakelen
 : Laadt [MathJax](MathJax.html) voor het weergeven van MathML-vergelijkingen. Kies **Lokaal** (meegeleverd) of **CDN** uit het uitklapmenu.
 : **Extra pakketten** opent een paneel om extra MathJax-pakketten toe te voegen (bijvoorbeeld Physics en Chemistry).

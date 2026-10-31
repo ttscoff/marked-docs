@@ -46,6 +46,7 @@ Marked は、オープンソース コミュニティからの多大な支援を
 | [jQuery](https://jquery.com/) | jQuery財団 |マサチューセッツ工科大学 | DOM およびイベント ユーティリティ |
 | [Hammer.js](https://hammerjs.github.io/) |ジョリック・タンゲルダー |マサチューセッツ工科大学 |タッチとジェスチャーの処理 |
 | [ハイライト.js](https://highlightjs.org/) | Josh Goebel と寄稿者 | BSD-3 条項 |構文の強調表示 |
+| [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) | [Yauheni Pakala](https://github.com/wcoder) | [MIT](https://github.com/wcoder/highlightjs-line-numbers.js/blob/master/LICENSE) | Line numbers for Highlight.js code blocks |
 | [MathJax](MathJax.html) | MathJax コンソーシアム | Apache-2.0 |数学レンダリング (ローカルバンドル) |
 | [KaTeX](https://katex.org/) |カーンアカデミーと貢献者 |マサチューセッツ工科大学 |数式レンダリング (KaTeX オプション) |
 | [人魚](https://mermaid.js.org/) |人魚の寄稿者 |マサチューセッツ工科大学 |ダイアグラムのレンダリング |

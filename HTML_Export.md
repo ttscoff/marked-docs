@@ -73,6 +73,8 @@ The **preview style** drives HTML appearance when **Include style in output** is
 
 Every built-in Marked theme --- Swiss, GitHub, Manuscript, and the rest --- can be embedded. [Custom Styles](Custom_Styles.html) and styles from the [Style Manager](Custom_Styles.html) work the same way.
 
+**Additional CSS** from {% prefspane Style %} is included with HTML export when styles are embedded. The exported `<body>` gets the `mk-has-additional-css` class so Marked's rewritten Additional CSS selectors match. See [Creating Custom CSS](Writing_Custom_CSS.html#additional-css-settings).
+
 I> Some preview-only CSS (fixed positioning, viewport tricks, Dark Mode `@media screen` inversion) may not translate one-to-one outside Marked. Open the saved file in a browser to verify before publishing.
 
 For authoring guidance, see [Creating Custom CSS](Writing_Custom_CSS.html).
@@ -85,7 +87,7 @@ MultiMarkdown metadata at the top of your source file can affect HTML export:
 * **`XHTML Header:`** / **`HTML Header:`** --- injects additional tags into the exported `<head>` (scripts, link tags, meta tags)
 * Other metadata keys are processed according to your [Markdown processor](Choosing_a_Processor.html)
 
-If you use metadata for export settings but do not want keys visible in other outputs, wrap them in HTML comments --- Marked finds and processes commented metadata anywhere in the document. See [Per-Document Settings](Per-Document_Settings.html).
+If you use metadata for export settings but do not want keys visible in other outputs, wrap them in an HTML comment at the top of the document --- Marked reads commented metadata there. See [Per-Document Settings](Per-Document_Settings.html).
 
 ## Multi-file documents [multi-file-documents]
 
