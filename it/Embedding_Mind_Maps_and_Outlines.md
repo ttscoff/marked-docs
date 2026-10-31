@@ -25,9 +25,13 @@ I file delle mappe mentali di FreeMind utilizzano l'estensione `.mm` e memorizza
 
 OPML (Outline Processor Markup Language) è un formato XML per profili gerarchici, ampiamente utilizzato da delineatori e lettori di feed. iThoughts e altre app possono esportare in OPML. Le conversioni contrassegnate includevano file OPML in diagrammi della mappa mentale della sirena.
 
-### Bicicletta (.bici) [opml-opml]
+### Bike (.bike) [bike-bike]
 
-I contorni di Bike.app sono archiviati come file HTML proprietari (`.bike`). Puoi aprire un file `.bike` direttamente in Marked: il documento viene visualizzato come Markdown con il nome file (meno l'estensione) come intestazione principale (H1), elementi di intestazione di livello superiore come H2, intestazioni nidificate come elementi di elenco in grassetto e attività come caselle di controllo in stile GitHub. Quando un file `.bike` viene incluso tramite la sintassi di inclusione, l'impostazione "Incorpora come diagramma della sirena" per Bici (in App → Mappe mentali/Contorni) controlla se diventa una mappa mentale della sirena (con il nome del file come nodo radice) o un elenco Markdown nidificato (senza H1).
+Vedi [Bike](Bike.html) per aprire un file `.bike`. Le strutture Bike incluse seguono la casella **Bike outlines**: attiva, una mappa mentale Mermaid (il nome del file, senza `.bike`, è il nodo radice); disattiva, un elenco Markdown nidificato senza titolo del documento.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Vedi [Tree Outliner](Tree_Outliner.html). La casella **Tree Outliner outlines** controlla sia l'apertura di un file `.treeoutline` sia l'inclusione. Attiva, disegna una mappa mentale Mermaid con il titolo del documento come radice. Disattiva, compila titoli ed elenchi; **Headings through level** nel gruppo *Tree Outliner* stabilisce fino a che livello arrivano i titoli.
 
 ## Incorpora mappe come diagrammi della sirena [embed-maps-as-mermaid-diagrams]
 
@@ -54,6 +58,7 @@ Utilizzare la stessa sintassi degli altri file include:
 	<<[percorso/alla/mappa.mm]
 	<<[percorso/al/profilo.opml]
 	<<[percorso/verso/profilo.bici]
+	<<[path/to/outline.treeoutline]
 
 Oppure con la sintassi del blocco iA Writer:
 
@@ -72,4 +77,4 @@ I file OPML utilizzano elementi `<outline>` nidificati con un attributo `text`. 
 
 ## Conversione bici [bike-conversion]
 
-I file Bike `.bike` sono HTML con elementi root `<ul>` e `<li>`. Gli elementi possono avere `data-type="heading"` (livello superiore → H2 quando aperto o in modalità elenco; nidificato → grassetto) o `data-type="task"` (caselle di controllo GitHub; completato quando `data-done` ha un timestamp, o `data-checked` / `data-completed` è vero). La formattazione in linea e i collegamenti nel testo del nodo vengono convertiti in Markdown. Quando si incorpora come mappa mentale della Sirena, il nome del file (meno l'estensione) viene utilizzato come singolo nodo radice e le etichette sono testo semplice formattato per la sintassi della mappa mentale della Sirena.
+I file Bike `.bike` sono HTML con una `<ul>` radice ed elementi `<li>`. In modalità elenco, ogni riga è un elemento di elenco: le righe `data-type="heading"` sono in grassetto e le righe `data-type="task"` sono caselle GitHub (spuntate quando `data-done` ha un orario, o quando `data-checked` / `data-completed` è vero). La formattazione e i link nel testo del nodo diventano Markdown. Aprire un file `.bike` usa sempre questo elenco. Quando un file incluso è incorporato come mappa mentale Mermaid, il nome del file (senza estensione) è l'unico nodo radice e le etichette sono testo semplice per la sintassi mindmap di Mermaid.
