@@ -11,7 +11,7 @@
 Traverse が送る内容はアウトラインによって変わります。
 
 - **Type** 属性を追加している場合、Traverse は Markdown 書き出しと同じ Markdown を送ります。
-- アウトラインが **[Fountain](Fountain_for_Screenwriters.html)** の場合、Traverse はそのテキストをプレビュー用に送ります。
+- アウトラインが **[Fountain](Fountain_for_Screenwriters.html)** の場合、Traverse はそのテキストをプレビュー用に送り、先頭に `<!--format:fountain-->` を付けて、Marked がストリームを脚本として扱うようにします。[Streaming Preview](Streaming_Preview.html) を参照してください。
 - どちらでもない場合、Traverse は簡単な Markdown リストを送ります。
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
