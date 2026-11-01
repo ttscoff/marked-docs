@@ -11,7 +11,7 @@
 Traverse 送出的內容取決於大綱：
 
 - 如果加入了 **Type** 屬性，Traverse 會送出與 Markdown 匯出相同的 Markdown。
-- 如果大綱使用 **[Fountain](Fountain_for_Screenwriters.html)**，Traverse 會送出那段文字供預覽，並在開頭加上 `<!--format:fountain-->`，讓 Marked 把這段串流內容當作劇本處理。參見 [Streaming Preview](Streaming_Preview.html)。
+- 如果在 Traverse 中把格式設為 **[Fountain](Fountain_for_Screenwriters.html)**，預覽會自動啟用 Fountain 處理。Traverse 會在送出文字的開頭加上 `<!--format:fountain-->`，正是這條註解啟用該處理。參見 [Streaming Preview](Streaming_Preview.html)。
 - 如果兩者都沒有，Traverse 會送出一份簡單的 Markdown 清單。
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
