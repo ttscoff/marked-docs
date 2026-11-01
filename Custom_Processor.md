@@ -67,6 +67,20 @@ the predicate.
 - _File includes_ tests whether the file contains included
   files (using any of [Marked's include
   syntaxes](Multi-File_Documents.html)).
+- _Streaming preview source_ matches the origin app named by a
+  `source` HTML comment on a [Streaming Preview](Streaming_Preview.html),
+  such as `<!--source:Bear.app-->`. The value is free-form. Marked
+  uses `Bear.app` and `Drafts.app` for those apps' own preview
+  behavior, and any other name is available here so a rule can add
+  handling for that app. A space after the colon is optional.
+  Comparators are **is**, **is not**, **contains**, and **does not
+  contain**. This matches only a Streaming Preview window.
+- _Streaming preview format_ matches the `format` HTML comment on a
+  Streaming Preview, such as `<!--format:fountain-->`. The value is
+  free-form. `fountain` turns on Fountain handling, and any other
+  value can be matched by a rule without changing the processor. It
+  uses the same comparators as _Streaming preview source_, and it
+  matches only a Streaming Preview window.
 - _Metadata type_ tests whether the file includes YAML,
   MultiMarkdown, or Pandoc metadata
 - _Metadata:_ fields (for example _Metadata: Author_,
