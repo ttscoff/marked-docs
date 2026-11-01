@@ -18,37 +18,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Alap URL deklarálása a relatív eszközökhöz [declaring-a-base-url-for-relative-assets]
+### A forrásalkalmazás és a formátum megadása [declaring-the-origin-app-and-format]
 
-Megadhat egy alap URL-t is a streaming előnézetéhez, lehetővé téve, hogy a képekben és más elemekben lévő relatív URL-ek úgy működjenek, mint a forrásalkalmazásban. Ha az alap URL fájlnevet tartalmaz, akkor annak neve és kiterjesztése elérhető lesz az egyéni processzorok számára, de ez nem kötelező. Az alap URL megadásához egyszerűen helyezzen el egy NSURL objektumot a vágólapra:
+Tegyen egy `source` vagy `format` kulcsszót egy HTML-megjegyzésbe a küldött szöveg elejére. A Marked beolvassa a megjegyzést, és kiveszi az előnézetből, így a jegyzet kompatibilis marad a GFM és MultiMarkdown processzorokkal. A kettőspont utáni szóköz nem kötelező (`source:Bear.app` és `source: Bear.app` ugyanaz), és a kulcsszó nem különbözteti meg a kis- és nagybetűket.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Mindkét érték szabad szöveg. Néhányhoz a Marked beépített viselkedést ad, és minden érték elérhető a [Custom Processor](Custom_Processor.html) (Conductor) feltételei között **Streaming-előnézet forrása** és **Streaming-előnézet formátuma** néven. Ezek a feltételek az **egyenlő**, **nem egyenlő**, **tartalmazza** és **nem tartalmazza** összehasonlítót fogadják.
+
+A **`source: APP_NAME`** megnevezi a forrásalkalmazást, az app nevével vagy a bundle id-jével. A Marked ezzel ad külön kezelést annak az appnak. A `source: Bear.app` és a `source: Drafts.app` bekapcsolja ezeknek az appoknak az előnézeti viselkedését. Bármely más név is összevethető egy Conductor-szabállyal, így saját műveleteket futtathat ahhoz az apphoz:
+
+```html
+<!--source:Bear.app-->
 ```
 
-Vagy Swiftben:
+A **`format: fountain`** bekapcsolja a [Fountain](Fountain_for_Screenwriters.html) kezelését, így a folyam forgatókönyvként jelenik meg, nem Markdownként. Bármely más formátumérték nem változtatja a processzort. Arra való, hogy egy Conductor-szabály összevesse, például **Streaming-előnézet formátuma** `egyenlő` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Ha a Marked Mac App Store-verzióját használja, és a baseURL nem érhető el sandboxon keresztül, akkor engedélyt kér az URL első betöltésekor az előnézetbe.
-
-### A forrásalkalmazás deklarálása [declaring-the-source-application]
-
-Az alkalmazások egy `source` metaadatsor hozzáadásával is megjelölhetik magukat az előnézeti tartalom forrásaként. Ez általában egy HTML megjegyzésben történik, hogy lehetővé tegye a GFM és a MultiMarkdown processzorokkal való kompatibilitást. Egyszerűen adja meg az alkalmazás nevét vagy csomagazonosítóját:
+Egy megjegyzés mindkét kulcsszót tartalmazhatja:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 

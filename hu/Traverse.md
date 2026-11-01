@@ -11,7 +11,7 @@ Nyissa meg az exportmenüt (a felfelé mutató nyilas gombot), és válassza a *
 A Traverse attól függően küld tartalmat, hogy milyen a vázlat:
 
 - Ha hozzáadta a **Type** attribútumot, a Traverse ugyanazt a Markdownt küldi, amelyet a Markdown-exporthoz használ.
-- Ha a vázlat **[Fountain](Fountain_for_Screenwriters.html)** formátumú, a Traverse ezt a szöveget küldi előnézetre.
+- Ha a vázlat **[Fountain](Fountain_for_Screenwriters.html)** formátumú, a Traverse ezt a szöveget küldi előnézetre, és `<!--format:fountain-->` jelzéssel kezdi, hogy a Marked forgatókönyvként kezelje a folyamot. Lásd: [Streaming Preview](Streaming_Preview.html).
 - Ha egyik sincs kiválasztva, a Traverse egy egyszerű Markdown-listát küld.
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
