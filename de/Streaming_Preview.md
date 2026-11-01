@@ -2,7 +2,7 @@
 
 Durch Öffnen von {% appmenu Ablage, Neu, Streaming-Vorschau %} erhält Marked Live-Updates über eine benannte Zwischenablage, anstatt eine Datei auf der Festplatte zu überwachen. Die Quell-App muss in Marked integriert werden.
 
-[Curio](Curio.html), [Drafts](Drafts.html) und [The Archive](The_Archive.html) dokumentieren ihre eigenen Einstellungen und Menübefehle. nvUltra, nvALT, Bear und andere nutzen einen gemeinsamen Weg: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
+[Curio](Curio.html), [Drafts](Drafts.html), [The Archive](The_Archive.html) und [Traverse](Traverse.html) dokumentieren ihre eigenen Einstellungen und Menübefehle. nvUltra, nvALT, Bear und andere nutzen einen gemeinsamen Weg: Öffnen Sie die Streaming-Vorschau in Marked, aktivieren Sie die Integration in Ihrem Editor und beginnen Sie mit der Eingabe; Aktualisierungen kommen nahezu in Echtzeit an.
 
 ## Entwickler [developers]
 
@@ -40,13 +40,30 @@ pb.writeObjects([rawString, baseURL])
 
 Wenn die Mac App Store-Version von Marked verwendet wird und die Basis-URL nicht über Sandboxing zugänglich ist, wird beim ersten Laden der URL in der Vorschau eine Berechtigung angefordert.
 
-### Deklarieren der Quellanwendung [declaring-the-source-application]
+### Herkunfts-App und Format deklarieren [declaring-the-origin-app-and-format]
 
-Apps können sich auch selbst als Quelle des Vorschauinhalts deklarieren, indem sie eine `source`-Metadatenzeile einfügen. Dies erfolgt normalerweise innerhalb eines HTML-Kommentars, um die Kompatibilität mit GFM- und MultiMarkdown-Prozessoren zu gewährleisten. Geben Sie einfach den Namen oder die Bundle-ID der App an:
+Setzen Sie ein Schlüsselwort `source` oder `format` in einen HTML-Kommentar an den Anfang des gestreamten Textes. Marked liest den Kommentar und entfernt ihn aus der Vorschau, damit die Notiz mit GFM- und MultiMarkdown-Prozessoren kompatibel bleibt. Ein Leerzeichen nach dem Doppelpunkt ist optional (`source:Bear.app` und `source: Bear.app` sind gleich), und die Schlüsselwörter werden ohne Rücksicht auf Groß- und Kleinschreibung erkannt.
+
+Beide Werte sind frei wählbar. Für einige Werte hat Marked ein eingebautes Verhalten, und jeder Wert steht im [Benutzerdefinierten Prozessor](Custom_Processor.html) (Conductor) als **Streaming-Vorschau-Quelle** und **Streaming-Vorschau-Format** zur Verfügung. Diese Kriterien akzeptieren **ist**, **ist nicht**, **enthält** und **enthält nicht**.
+
+**`source: APP_NAME`** nennt die Herkunfts-App, per App-Name oder Bundle-ID. Darüber kann Marked diese App gesondert behandeln. `source: Bear.app` und `source: Drafts.app` schalten das Vorschauverhalten dieser Apps ein. Auf jeden anderen Namen kann eine Conductor-Regel reagieren, sodass Sie für diese App eigene Aktionen ausführen können:
+
+```html
+<!--source:Bear.app-->
+```
+
+**`format: fountain`** schaltet die [Fountain](Fountain_for_Screenwriters.html)-Verarbeitung ein, sodass der Stream als Drehbuch statt als Markdown angezeigt wird. Andere Formatwerte ändern den Prozessor nicht; sie sind für Conductor-Regeln gedacht, zum Beispiel **Streaming-Vorschau-Format** `ist` `fountain`.
+
+```html
+<!--format:fountain-->
+```
+
+Ein Kommentar kann beide Schlüsselwörter enthalten:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
