@@ -16,37 +16,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Deklarieren einer Basis-URL für relative Assets [declaring-a-base-url-for-relative-assets]
+### Herkunfts-App und Format deklarieren [declaring-the-origin-app-and-format]
 
-Sie können auch eine Basis-URL für die Streaming-Vorschau bereitstellen, sodass relative URLs in Bildern und anderen Assets wie in der Quell-App funktionieren. Wenn die Basis-URL einen Dateinamen enthält, werden dessen Name und Dateiendung benutzerdefinierten Prozessoren zur Verfügung gestellt, dies ist jedoch nicht erforderlich. Um die Basis-URL einzuschließen, fügen Sie einfach ein NSURL-Objekt in die Zwischenablage ein:
+Setzen Sie ein Schlüsselwort `source` oder `format` in einen HTML-Kommentar an den Anfang des gestreamten Textes. Marked liest den Kommentar und entfernt ihn aus der Vorschau, damit die Notiz mit GFM- und MultiMarkdown-Prozessoren kompatibel bleibt. Ein Leerzeichen nach dem Doppelpunkt ist optional (`source:Bear.app` und `source: Bear.app` sind gleich), und die Schlüsselwörter werden ohne Rücksicht auf Groß- und Kleinschreibung erkannt.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Beide Werte sind frei wählbar. Für einige davon hat Marked ein festes Verhalten, und jeder Wert steht im [Custom Processor](Custom_Processor.html) (Conductor) als **Streaming-Vorschau-Quelle** und **Streaming-Vorschau-Format** zur Verfügung. Diese Kriterien akzeptieren **ist**, **ist nicht**, **enthält** und **enthält nicht**.
+
+**`source: APP_NAME`** nennt die Herkunfts-App, als App-Name oder Bundle-ID. Marked nutzt das, um eine besondere Behandlung für diese App hinzuzufügen. `source: Bear.app` und `source: Drafts.app` schalten das Vorschauverhalten dieser Apps ein. Jeder andere Name lässt sich weiterhin mit einer Conductor-Regel abgleichen, sodass Sie eigene Aktionen für diese App ausführen können:
+
+```html
+<!--source:Bear.app-->
 ```
 
-Oder in Swift:
+**`format: fountain`** schaltet die [Fountain](Fountain_for_Screenwriters.html)-Verarbeitung ein, sodass der Stream als Drehbuch statt als Markdown angezeigt wird. Jeder andere Formatwert ändert den Prozessor nicht. Er dient dazu, dass eine Conductor-Regel ihn abgleichen kann, zum Beispiel **Streaming-Vorschau-Format** `ist` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Wenn die Mac App Store-Version von Marked verwendet wird und die Basis-URL nicht über Sandboxing zugänglich ist, wird beim ersten Laden der URL in der Vorschau eine Berechtigung angefordert.
-
-### Deklarieren der Quellanwendung [declaring-the-source-application]
-
-Apps können sich auch selbst als Quelle des Vorschauinhalts deklarieren, indem sie eine `source`-Metadatenzeile einfügen. Dies erfolgt normalerweise innerhalb eines HTML-Kommentars, um die Kompatibilität mit GFM- und MultiMarkdown-Prozessoren zu gewährleisten. Geben Sie einfach den Namen oder die Bundle-ID der App an:
+Ein Kommentar kann beide Schlüsselwörter enthalten:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
