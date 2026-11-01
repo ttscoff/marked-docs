@@ -439,7 +439,6 @@ Sections:
     - export
     wiki_keywords:
     - docx
-    - microsoft word
   - title: HTML-Export
     file: HTML_Export
     description: Marked exportiert HTML aus Ihrer Live-Vorschau – dieselbe Darstellung, die Sie auf dem Bildschirm sehen. Nutzen Sie den HTML-Export, wenn Sie einen Ausschnitt für ein Blog brauchen oder ...
@@ -585,7 +584,7 @@ Sections:
     - bear
   - title: Bike
     file: Bike
-    description: "Ziehen Sie eine Bike-Gliederung (.bike) auf Marked, um sie als verschachtelte Markdown-Liste zu sehen, mit Überschriftszeilen in fett und Aufgaben als Kontrollkästchen."
+    description: "Ziehen Sie eine Bike-Gliederung (.bike) auf Marked, um sie als verschachtelte Markdown-Liste in der Vorschau zu sehen. Überschriftszeilen erscheinen fett, Aufgaben als Kontrollkästchen."
     keywords:
     - bike
     - gliederung
@@ -593,6 +592,7 @@ Sections:
     - mermaid
     wiki_keywords:
     - bike
+    - bike-gliederung
   - title: Curio
     file: Curio
     description: Sobald Sie in Curio eine Abbildung, Notiz, Liste oder ein anderes Element per Doppelklick bearbeiten, fließt dessen Markdown in die Streaming-Vorschau und aktualisiert sich beim Schreiben.
@@ -756,13 +756,14 @@ Sections:
     - the archive
   - title: Traverse
     file: Traverse
-    description: "Traverse enthält den Befehl Stream to Marked. Er erscheint im Exportmenü, wenn Marked 2 oder Marked 3 installiert ist."
+    description: "Traverse bringt den Befehl Stream to Marked mit. Er erscheint im Exportmenü, wenn Marked 2 oder Marked 3 installiert ist."
     keywords:
     - traverse
     - streaming-vorschau
     - fountain
     wiki_keywords:
     - traverse
+    - stream to marked
   - title: Tree Outliner
     file: Tree_Outliner
     description: "Ziehen Sie ein Tree-Outliner-Dokument (.treeoutline) auf Marked, um es als Überschriften und Listen oder als Mermaid-Diagramm zu sehen."
@@ -773,6 +774,7 @@ Sections:
     - mermaid
     wiki_keywords:
     - tree outliner
+    - treeoutline
   - title: Ulysses
     file: Ulysses
     description: Nach der ersten Einrichtung genügt oft Befehl-6 gefolgt von Return, um die Marked-Vorschau für das aktive Blatt (oder die ausgewählten Blätter) zu aktualisieren.

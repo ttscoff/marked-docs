@@ -5,7 +5,7 @@
 
 === BEGIN Settings.strings ===
 "group.apps.treeOutliner" = "Tree Outliner";
-"setting.embedTreeOutlinerAsMermaid" = "Tree Outliner-Gliederungen";
+"setting.embedTreeOutlinerAsMermaid" = "Tree-Outliner-Gliederungen";
 "setting.treeOutlinerHeadingLevel" = "Überschriften bis Ebene";
 "setting.treeOutlinerHeadingLevel.1" = "1";
 "setting.treeOutlinerHeadingLevel.2" = "2";
@@ -13,8 +13,8 @@
 "setting.treeOutlinerHeadingLevel.4" = "4";
 "setting.treeOutlinerHeadingLevel.5" = "5";
 "setting.treeOutlinerHeadingLevel.6" = "6";
-"tooltip.embedTreeOutlinerAsMermaid" = "Bettet Tree Outliner-Dateien (.treeoutline) als Mermaid-Mindmaps ein. Wenn diese Option deaktiviert ist, werden sie als Markdown-Überschriften und -Listen umgesetzt.";
-"tooltip.treeOutlinerHeadingLevel" = "Der Dokumenttitel ist Überschrift 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden verschachtelte Listen. Notizen werden zu Absätzen. Gilt, wenn „Als Mermaid-Mindmap einbetten“ für Tree Outliner ausgeschaltet ist.";
+"tooltip.embedTreeOutlinerAsMermaid" = "Bettet Tree-Outliner-Dateien (.treeoutline) als Mermaid-Mindmaps ein. Wenn diese Option deaktiviert ist, werden sie als Markdown-Überschriften und -Listen gerendert.";
+"tooltip.treeOutlinerHeadingLevel" = "Der Dokumenttitel wird zur Überschrift der Ebene 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden zu verschachtelten Listen, Notizen zu Absätzen. Gilt, wenn „Tree-Outliner-Gliederungen“ unter „Als Mermaid-Mindmaps einbetten“ deaktiviert ist.";
 
 === BEGIN SpecialWindows.strings ===
 "Streaming preview source" = "Streaming-Vorschau-Quelle";

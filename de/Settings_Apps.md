@@ -99,7 +99,7 @@ Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
 [(Info zu Tree Outliner)](Tree_Outliner.html)
 
 Headings through level
-: Der Dokumenttitel ist Überschrift 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden verschachtelte Listen. Notizen werden Absätze. Wird verwendet, wenn **Tree Outliner outlines** unter **Als Mermaid-Mindmaps einbetten** aus ist.
+: Der Dokumenttitel ist eine Überschrift der Ebene 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden zu verschachtelten Listen, Notizen zu Absätzen. Gilt, wenn **Tree Outliner outlines** unter **Als Mermaid-Mindmaps einbetten** deaktiviert ist.
 
 #### Mindmaps/Gliederungen [MindMapsOutlines]
 

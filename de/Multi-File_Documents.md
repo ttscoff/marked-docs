@@ -84,8 +84,8 @@ Binden Sie bestimmte Dateitypen mit `<<[path]` oder der IA-Writer-Block-Syntax e
 | **FreeMind** | .mm | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **OPML** | .opml | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **OmniOutliner** | .ooutline | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
-| **Bike** | .bike | Mermaid-Mindmap (Dateiname als Wurzelknoten) | Verschachtelte Markdown-Liste (kein Dokumenttitel) |
-| **Tree Outliner** | .treeoutline | Mermaid-Mindmap (Dokumenttitel als Stamm) | Überschriften und Listen ([Tree Outliner](Tree_Outliner.html)) |
+| **Bike** | .bike | Mermaid-Mindmap (Dateiname als Stammknoten) | Verschachtelte Markdown-Liste (kein Dokumenttitel) |
+| **Tree Outliner** | .treeoutline | Mermaid-Mindmap (Dokumenttitel als Stammknoten) | Überschriften und Listen ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV / TSV** | .csv, .tsv | Markdown-Tabelle ||
 | **RTF / RTFD** | .rtf, .rtfd | Markdown über RTF-Konvertierung (siehe [RTF- und RTFD-Unterstützung](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown über PDF-Konvertierung beim Öffnen als Hauptdokument (siehe [PDF-Unterstützung](PDF_Support.html)) ||

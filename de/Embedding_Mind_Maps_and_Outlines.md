@@ -25,7 +25,7 @@ OPML (Outline Processor Markup Language) ist ein XML-Format für hierarchische G
 
 ### Bike (.bike) [bike-bike]
 
-Siehe [Bike](Bike.html) zum Öffnen einer `.bike`-Datei. Eingebundene Bike-Gliederungen folgen dem Kontrollkästchen **Bike-Gliederungen**: Ein rendert eine Mermaid-Mindmap (der Dateiname ohne `.bike` ist der Stammknoten); Aus rendert eine verschachtelte Markdown-Liste ohne Dokumenttitel.
+Wie Sie eine `.bike`-Datei öffnen, steht unter [Bike](Bike.html). Für eingebundene Bike-Gliederungen gilt das Kontrollkästchen **Bike-Gliederungen**: Ist es aktiviert, entsteht eine Mermaid-Mindmap (der Dateiname ohne `.bike` ist der Stammknoten), ist es deaktiviert, eine verschachtelte Markdown-Liste ohne Dokumenttitel.
 
 ### OmniOutliner (.ooutline) [omnioutliner-ooutline]
 
@@ -33,11 +33,11 @@ OmniOutliner-Gliederungen lassen sich genauso einbinden. Das Kontrollkästchen *
 
 ### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
 
-Siehe [Tree Outliner](Tree_Outliner.html). Das Kontrollkästchen **Tree Outliner outlines** steuert sowohl das Öffnen einer `.treeoutline`-Datei als auch das Einbinden. Ein rendert eine Mermaid-Mindmap mit dem Dokumenttitel als Stamm. Aus kompiliert Überschriften und Listen; **Headings through level** in der Gruppe *Tree Outliner* legt fest, wie tief die Überschriften reichen.
+Siehe [Tree Outliner](Tree_Outliner.html). Das Kontrollkästchen **Tree Outliner outlines** gilt sowohl beim Öffnen einer `.treeoutline`-Datei als auch beim Einbinden. Ist es aktiviert, entsteht eine Mermaid-Mindmap mit dem Dokumenttitel als Stammknoten. Ist es deaktiviert, kompiliert Marked Überschriften und Listen; wie tief die Überschriften reichen, legt **Headings through level** in der Gruppe *Tree Outliner* fest.
 
 ## Als Mermaid-Mindmaps einbetten [embed-as-mermaid-mind-maps]
 
-Unter {% prefspane Apps %} gibt es bei *Mind Maps and Outlines* die Gruppe **Als Mermaid-Mindmaps einbetten:** mit einem Kontrollkästchen pro Format:
+Unter {% prefspane Apps %} gibt es im Abschnitt *Mindmaps und Gliederungen* die Gruppe **Als Mermaid-Mindmaps einbetten:** mit einem Kontrollkästchen pro Format:
 
 - **Bike-Gliederungen**
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
@@ -47,7 +47,7 @@ Unter {% prefspane Apps %} gibt es bei *Mind Maps and Outlines* die Gruppe **Als
 
 Ist das Kontrollkästchen eines Formats **aktiviert** (Standard bei den unterstützten Formaten), wandelt Marked eingebundene Dateien dieses Typs in [Mermaid](https://mermaid.js.org/)-Diagramme um:
 
-**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stamm. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
+**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 **Einschränkung:** Das Einbetten von Mindmaps (Mermaid-Diagramme) funktioniert nicht mit dem Discount-Parser. Verwenden Sie MultiMarkdown, CommonMark (GFM) oder Kramdown für Mindmap-Vorschauen.
 
@@ -58,7 +58,7 @@ Ist das Kontrollkästchen eines Formats **deaktiviert**:
 - **FreeMind** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **OPML** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (keine Mindmap).
 - **Bike** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (ohne Dokumenttitel). Überschriftszeilen sind fett, und Aufgaben werden GitHub-Kontrollkästchen. Siehe [Bike](Bike.html).
-- **Tree Outliner** – Die Gliederung wird zu Markdown-Überschriften und -Listen kompiliert. Der Dokumenttitel ist Überschrift 1, und **Headings through level** legt fest, wie weit Überschriften reichen. Siehe [Tree Outliner](Tree_Outliner.html).
+- **Tree Outliner** – Die Gliederung wird zu Markdown-Überschriften und -Listen kompiliert. Der Dokumenttitel ist eine Überschrift der Ebene 1, und **Headings through level** legt fest, wie tief die Überschriften reichen. Siehe [Tree Outliner](Tree_Outliner.html).
 - **OmniOutliner** – Die Gliederung ist als verschachtelte Markdown-Liste bzw. Checkliste eingebettet.
 
 ## Include-Syntax [include-syntax]
