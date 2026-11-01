@@ -11,7 +11,7 @@ Open the export menu (the button with an upward arrow) and choose **Stream to Ma
 What Traverse sends depends on the outline:
 
 - If you have added the **Type** attribute, Traverse sends the same Markdown it uses for Markdown export.
-- If the outline uses **[Fountain](Fountain_for_Screenwriters.html)**, Traverse sends that text for preview and starts it with `<!--format:fountain-->` so Marked treats the stream as a screenplay. See [Streaming Preview](Streaming_Preview.html).
+- If the format in Traverse is set to **[Fountain](Fountain_for_Screenwriters.html)**, the preview automatically enables Fountain rendering. Traverse starts the streamed text with `<!--format:fountain-->`, which is what turns that rendering on. See [Streaming Preview](Streaming_Preview.html).
 - If neither is selected, Traverse sends a simple Markdown list.
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
