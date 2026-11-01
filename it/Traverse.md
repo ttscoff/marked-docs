@@ -11,7 +11,7 @@ Apri il menu di esportazione (il pulsante con la freccia verso l'alto) e scegli 
 Ciò che Traverse invia dipende dalla struttura:
 
 - Se hai aggiunto l'attributo **Type**, Traverse invia lo stesso Markdown usato per l'esportazione Markdown.
-- Se la struttura usa **[Fountain](Fountain_for_Screenwriters.html)**, Traverse invia quel testo per l'anteprima.
+- Se la struttura usa **[Fountain](Fountain_for_Screenwriters.html)**, Traverse invia quel testo per l'anteprima e lo fa iniziare con `<!--format:fountain-->`, così Marked tratta il flusso come una sceneggiatura. Vedi [Streaming Preview](Streaming_Preview.html).
 - Se non è selezionato nessuno dei due, Traverse invia un semplice elenco Markdown.
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
