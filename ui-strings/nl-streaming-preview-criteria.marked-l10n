@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: nl
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "Tree Outliner-overzichten";
+"setting.treeOutlinerHeadingLevel" = "Koppen tot en met niveau";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "Sluit Tree Outliner-bestanden (.treeoutline) in als Mermaid-mindmaps. Uitgeschakeld worden ze Markdown-koppen en -lijsten.";
+"tooltip.treeOutlinerHeadingLevel" = "De documenttitel is kop 1. Overzichtsniveaus blijven koppen tot en met dit niveau, diepere knopen worden geneste lijsten. Notities worden alinea's. Wordt gebruikt als Insluiten als Mermaid-mindmap uit staat voor Tree Outliner.";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "Bron van streamingvoorbeeld";
+"Streaming preview format" = "Formaat van streamingvoorbeeld";

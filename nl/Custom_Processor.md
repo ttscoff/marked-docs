@@ -75,6 +75,8 @@ het predikaat.
 - _Bestand bevat_ test of het bestand opgenomen bevat
   bestanden (met behulp van een van [Marked's include
   syntaxis](Multi-File_Documents.html)).
+- _Bron van streamingvoorbeeld_ vergelijkt de herkomst-app uit een `source`-HTML-commentaar in een [streamingvoorbeeld](Streaming_Preview.html), zoals `<!--source:Bear.app-->`. De waarde is vrije tekst. Marked gebruikt `Bear.app` en `Drafts.app` voor het voorbeeldgedrag van die apps, en elke andere naam is hier beschikbaar zodat een regel een behandeling voor die app kan toevoegen. Een spatie na de dubbele punt is optioneel. Vergelijkers zijn **is**, **is niet**, **bevat** en **bevat niet**. Dit geldt alleen voor een streamingvoorbeeldvenster.
+- _Formaat van streamingvoorbeeld_ vergelijkt het `format`-HTML-commentaar van een streamingvoorbeeld, zoals `<!--format:fountain-->`. De waarde is vrije tekst. `fountain` zet de Fountain-behandeling aan, en elke andere waarde kan door een regel worden vergeleken zonder de processor te wijzigen. Het gebruikt dezelfde vergelijkers als _Bron van streamingvoorbeeld_ en geldt alleen voor een streamingvoorbeeldvenster.
 - _Metadata type_ test of het bestand YAML bevat,
   MultiMarkdown- of Pandoc-metagegevens
 - _Metadata:_ velden (bijvoorbeeld _Metadata: Auteur_,

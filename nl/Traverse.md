@@ -11,7 +11,7 @@ Open het exportmenu (de knop met een pijl omhoog) en kies **Stream to Marked**.
 Wat Traverse stuurt, hangt van het overzicht af:
 
 - Hebt u het kenmerk **Type** toegevoegd, dan stuurt Traverse dezelfde Markdown als bij Markdown-export.
-- Gebruikt het overzicht **[Fountain](Fountain_for_Screenwriters.html)**, dan stuurt Traverse die tekst voor het voorbeeld.
+- Gebruikt het overzicht **[Fountain](Fountain_for_Screenwriters.html)**, dan stuurt Traverse die tekst voor het voorbeeld en zet `<!--format:fountain-->` ervoor, zodat Marked de stroom als een scenario behandelt. Zie [Streaming Preview](Streaming_Preview.html).
 - Is geen van beide gekozen, dan stuurt Traverse een eenvoudige Markdown-lijst.
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center

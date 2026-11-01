@@ -16,37 +16,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Een basis-URL declareren voor relatieve assets [declaring-a-base-url-for-relative-assets]
+### De herkomst-app en de indeling aangeven [declaring-the-origin-app-and-format]
 
-U kunt ook een basis-URL opgeven voor het streamingvoorbeeld, zodat relatieve URL's in afbeeldingen en andere elementen kunnen functioneren zoals in de bron-app. Als de basis-URL een bestandsnaam bevat, worden de naam en extensie ervan beschikbaar gemaakt voor aangepaste verwerkers, maar dit is niet verplicht. Om de basis-URL op te nemen, plaatst u eenvoudigweg een NSURL-object op het klembord:
+Zet een trefwoord `source` of `format` in een HTML-commentaar bovenaan de verstuurde tekst. Marked leest het commentaar en haalt het uit het voorbeeld, zodat de notitie compatibel blijft met GFM- en MultiMarkdown-processors. Een spatie na de dubbele punt is optioneel (`source:Bear.app` en `source: Bear.app` zijn hetzelfde), en het trefwoord negeert hoofdletters.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Beide waarden zijn vrije tekst. Voor een paar ervan heeft Marked ingebouwd gedrag, en elke waarde is beschikbaar in de [Custom Processor](Custom_Processor.html) (Conductor) als **Bron van streamingvoorbeeld** en **Formaat van streamingvoorbeeld**. Die criteria accepteren **is**, **is niet**, **bevat** en **bevat niet**.
+
+**`source: APP_NAME`** noemt de herkomst-app, met de appnaam of de bundle id. Marked gebruikt dat om een speciale behandeling voor die app toe te voegen. `source: Bear.app` en `source: Drafts.app` zetten het voorbeeldgedrag van die apps aan. Elke andere naam kan nog steeds door een Conductor-regel worden vergeleken, zodat je je eigen acties voor die app kunt uitvoeren:
+
+```html
+<!--source:Bear.app-->
 ```
 
-Of in Swift:
+**`format: fountain`** zet de [Fountain](Fountain_for_Screenwriters.html)-behandeling aan, zodat de stroom als een scenario wordt getoond in plaats van als Markdown. Elke andere formaatwaarde verandert de processor niet. Die is er zodat een Conductor-regel hem kan vergelijken, bijvoorbeeld **Formaat van streamingvoorbeeld** `is` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Als de Mac App Store-versie van Marked wordt gebruikt en de baseURL niet toegankelijk is via sandboxing, wordt om toestemming gevraagd de eerste keer dat de URL in de preview wordt geladen.
-
-### De brontoepassing declareren [declaring-the-source-application]
-
-Apps kunnen zichzelf ook aangeven als de bron van de voorbeeldinhoud door een `source` metadataregel op te nemen. Dit wordt doorgaans gedaan binnen een HTML opmerking om compatibiliteit met zowel GFM- als MultiMarkdown-processors mogelijk te maken. Vermeld eenvoudig de naam van de app of het bundel-ID:
+Eén commentaar kan beide trefwoorden bevatten:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
