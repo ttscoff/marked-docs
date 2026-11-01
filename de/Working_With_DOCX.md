@@ -10,7 +10,7 @@ Marked kann eine DOCX-Datei lesen und in sauberes Markdown umwandeln. Gültige S
 
 ## DOCX-Dateien exportieren [exporting-docx-files]
 
-Über das Export-Panel erzeugen Sie aus Ihrem Markdown eine DOCX-Datei. Im Speicherdialog können Sie einen integrierten Stil angeben – dieser Stil lässt sich in Word ganz einfach ändern, indem Sie die Designauswahl öffnen und ein neues Design wählen.
+Über das Export-Panel erzeugen Sie aus Ihrem Markdown eine DOCX-Datei. Im Speicherdialog können Sie einen integrierten Stil angeben – dieser Stil lässt sich in Word ganz einfach ändern, indem Sie die Designauswahl öffnen und ein neues Design wählen. Das Kontrollkästchen **Add blank lines between paragraphs** (Leerzeilen zwischen Absätzen einfügen) legt fest, ob Marked zwischen Textabsätzen zusätzliche leere Absätze einfügt; es findet sich auch unter {% prefspane Apps %} im Abschnitt Word. Ist es deaktiviert, ergibt sich der Abstand allein aus der Word-Formatvorlage.
 
 ### Kopf- und Fußzeilen [headers-and-footers]
 

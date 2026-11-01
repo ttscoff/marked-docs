@@ -104,6 +104,6 @@ Für **pixelgenaue Übereinstimmung mit dem heutigen github.com** nehmen Sie **C
 
 ## Siehe auch [see-also]
 
-- [Einstellungen: Prozessor](Settings_Processor.html) – Standardprozessor und zugehörige Optionen
+- [Einstellungen: Verarbeitung](Settings_Processor.html) – Standardprozessor und zugehörige Optionen
 - [Markdown Dingus](Markdown_Dingus.html) – Prozessoren in Marked nebeneinander ausprobieren
 - [Benutzerdefinierter Prozessor](Custom_Processor.html) – bei Bedarf Ihre eigene Toolchain einbinden

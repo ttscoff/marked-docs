@@ -84,7 +84,7 @@ Dieses Beispiel passt die TeX-Trennzeichen an, fügt ein `\tr`-Makro hinzu und a
 
 Die zusätzliche Konfiguration erweitert das bestehende Objekt, sodass nur die angegebenen Eigenschaften überschrieben werden. Nicht angegebene Optionen behalten den Standardwert des aktuellen Presets.
 
-Beachten Sie: Beim MultiMarkdown-Prozessor mit nicht standardmäßigen Trennzeichen werden Zeichen innerhalb des Ausdrucks interpretiert, sodass Symbole wie `*` und `^` typografische Änderungen auslösen, die den MathJax-Prozessor durcheinanderbringen. Am besten verwenden Sie in solchen Fällen den Discount-Prozessor in den [Prozessor-Einstellungen](x-marked-3://pref/processor).
+Beachten Sie: Beim MultiMarkdown-Prozessor mit nicht standardmäßigen Trennzeichen werden Zeichen innerhalb des Ausdrucks interpretiert, sodass Symbole wie `*` und `^` typografische Änderungen auslösen, die den MathJax-Prozessor durcheinanderbringen. Am besten verwenden Sie in solchen Fällen den Discount-Prozessor in den [Einstellungen unter Verarbeitung](x-marked-3://pref/processor).
 
 Marked vollführt etwas Magie, sobald MathJax oder KaTeX aktiviert ist, und wandelt die Mathe-Syntax so um, dass sie möglichst gut mit dem aktuellen Prozessor (MultiMarkdown oder Discount) verträglich ist. Das sollte in allen Fällen gut klappen; falls es doch Probleme macht, [kontaktieren Sie den Support](https://support.markedapp.com/questions/add)!
 

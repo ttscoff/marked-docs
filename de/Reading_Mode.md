@@ -82,7 +82,7 @@ Unabhängig von Export und Import bietet das Vorschau-Menü zwei CriticMarkup-Ak
 - **Hervorhebungen als CriticMarkup kopieren** kopiert alle Hervorhebungen im CriticMarkup-Format, ohne die Quelldatei zu ändern.
 - **Hervorhebungen in Dokument einfügen…** fragt nach einer Bestätigung und umschließt dann eindeutig zuordenbaren Quelltext mit CriticMarkup. Fehlende, doppelte oder überlappende Treffer überspringt Marked und meldet das Ergebnis.
 
-Mit Signatur und Kommentar entsteht <code>{=<span>=</span>hervorgehobener Text==}{&gt;&gt;Signatur: Kommentar&lt;&lt;}</code>. Nur mit Kommentar verwendet Marked <code>{=<span>=</span>hervorgehobener Text==}{&gt;&gt;Kommentar&lt;&lt;}</code>. Nur mit Signatur entsteht <code>{=<span>=</span>hervorgehobener Text==}{&gt;&gt;Signatur&lt;&lt;}</code>. Ohne beides legt Marked lediglich die Markierung <code>{=<span>=</span>hervorgehobener Text==}</code> an.
+Mit Signatur und Kommentar entsteht `{==hervorgehobener Text==}{>>Signatur: Kommentar<<}`. Nur mit Kommentar verwendet Marked `{==hervorgehobener Text==}{>>Kommentar<<}`. Nur mit Signatur entsteht `{==hervorgehobener Text==}{>>Signatur<<}`. Ohne beides legt Marked lediglich die Markierung `{==hervorgehobener Text==}` an.
 
 ## Hervorhebungen drucken [printing-highlights]
 

@@ -52,4 +52,4 @@ Aufgelöste Bilder im Katalogordner `Resources` werden zur Beobachtungsliste von
 
 - [Bildvarianten](Image_Variants.html) – `~dark`- und `@2x`-Erkennung für Pfade mit Dateierweiterungen in jedem Projekt
 - [Xcode-Playgrounds](Xcode_Playgrounds.html) – Vorschau von Swift-Playground-Kommentaren
-- [Einstellungen: Apps](Settings_Apps.html) – DocC- und Bildvarianteneinstellungen
+- [Einstellungen: Anwendungen](Settings_Apps.html) – DocC- und Bildvarianteneinstellungen
