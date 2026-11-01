@@ -11,7 +11,7 @@
 Traverse 发送的内容取决于大纲：
 
 - 如果添加了 **Type** 属性，Traverse 会发送与 Markdown 导出相同的 Markdown。
-- 如果大纲使用 **[Fountain](Fountain_for_Screenwriters.html)**，Traverse 会发送那段文字供预览，并在开头加上 `<!--format:fountain-->`，让 Marked 把这段流式内容当作剧本处理。参见 [Streaming Preview](Streaming_Preview.html)。
+- 如果在 Traverse 中把格式设为 **[Fountain](Fountain_for_Screenwriters.html)**，预览会自动启用 Fountain 处理。Traverse 会在发送文本的开头加上 `<!--format:fountain-->`，正是这条注释启用该处理。参见 [Streaming Preview](Streaming_Preview.html)。
 - 如果两者都没有，Traverse 会发送一份简单的 Markdown 列表。
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
