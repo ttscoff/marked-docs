@@ -11,7 +11,7 @@
 Was Traverse sendet, hängt von der Gliederung ab:
 
 - Haben Sie das Attribut **Type** hinzugefügt, sendet Traverse dasselbe Markdown wie beim Markdown-Export.
-- Verwendet die Gliederung **[Fountain](Fountain_for_Screenwriters.html)**, sendet Traverse diesen Text für die Vorschau und stellt `<!--format:fountain-->` voran, damit Marked den Stream als Drehbuch behandelt. Siehe [Streaming-Vorschau](Streaming_Preview.html).
+- Wenn das Format in Traverse auf **[Fountain](Fountain_for_Screenwriters.html)** gestellt ist, aktiviert die Vorschau die Fountain-Verarbeitung automatisch. Traverse stellt dem gestreamten Text `<!--format:fountain-->` voran, und dieser Kommentar schaltet die Verarbeitung ein. Siehe [Streaming-Vorschau](Streaming_Preview.html).
 - Ist keines von beiden gewählt, sendet Traverse eine einfache Markdown-Liste.
 
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
