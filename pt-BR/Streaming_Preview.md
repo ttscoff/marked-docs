@@ -18,37 +18,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Declarando um URL base para ativos relativos [declaring-a-base-url-for-relative-assets]
+### Declarar o app de origem e o formato [declaring-the-origin-app-and-format]
 
-Você também pode fornecer um URL base para a visualização do streaming, permitindo que URLs relativos em imagens e outros ativos funcionem como funcionariam no aplicativo de origem. Se o URL base incluir um nome de arquivo, seu nome e extensão serão disponibilizados para processadores personalizados, mas isso não é obrigatório. Para incluir a URL base, basta colocar um objeto NSURL na área de transferência:
+Coloque uma palavra-chave `source` ou `format` em um comentário HTML no início do texto enviado. O Marked lê o comentário e o remove da visualização, então a nota continua compatível com os processadores GFM e MultiMarkdown. O espaço depois dos dois-pontos é opcional (`source:Bear.app` e `source: Bear.app` são iguais), e a palavra-chave ignora maiúsculas e minúsculas.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Os dois valores são livres. O Marked tem um comportamento embutido para alguns deles, e todo valor fica disponível no [Custom Processor](Custom_Processor.html) (Conductor) como **Origem da visualização em streaming** e **Formato da visualização em streaming**. Esses critérios aceitam **é**, **não é**, **contém** e **não contém**.
+
+**`source: APP_NAME`** nomeia o app de origem, pelo nome do app ou pelo bundle id. O Marked usa isso para acrescentar um tratamento especial para esse app. `source: Bear.app` e `source: Drafts.app` ligam o comportamento de visualização desses apps. Qualquer outro nome ainda pode ser comparado por uma regra do Conductor, para você executar suas próprias ações para esse app:
+
+```html
+<!--source:Bear.app-->
 ```
 
-Ou em Swift:
+**`format: fountain`** liga o tratamento de [Fountain](Fountain_for_Screenwriters.html), então o fluxo é visualizado como um roteiro em vez de Markdown. Qualquer outro valor de formato não muda o processador. Ele existe para uma regra do Conductor comparar, por exemplo **Formato da visualização em streaming** `é` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Se a versão do Marked da Mac App Store estiver sendo usada e o baseURL não estiver acessível por meio de sandbox, a permissão será solicitada na primeira vez que o URL for carregado na visualização.
-
-### Declarando o aplicativo de origem [declaring-the-source-application]
-
-Os aplicativos também podem se declarar como a fonte do conteúdo de visualização incluindo uma linha de metadados `source`. Isso geralmente será feito em um comentário HTML para permitir compatibilidade com processadores GFM e MultiMarkdown. Basta indicar o nome do aplicativo ou o ID do pacote:
+Um comentário pode levar as duas palavras-chave:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
