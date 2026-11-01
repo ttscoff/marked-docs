@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: fr
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "plans Tree Outliner";
+"setting.treeOutlinerHeadingLevel" = "Titres jusqu'au niveau";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "Intègre les fichiers Tree Outliner (.treeoutline) comme cartes mentales Mermaid. Si l'option est désactivée, ils sont convertis en titres et listes Markdown.";
+"tooltip.treeOutlinerHeadingLevel" = "Le titre du document est le titre 1. Les niveaux du plan restent des titres jusqu'à ce niveau, et les nœuds plus profonds deviennent des listes imbriquées. Les notes deviennent des paragraphes. Utilisé lorsque l'intégration en carte mentale Mermaid est désactivée pour Tree Outliner.";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "Source de l'aperçu en continu";
+"Streaming preview format" = "Format de l'aperçu en continu";

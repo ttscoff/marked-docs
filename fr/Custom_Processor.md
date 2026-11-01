@@ -75,6 +75,8 @@ le prédicat.
 - _File include_ teste si le fichier contient des éléments inclus
   fichiers (en utilisant l'un des [Marked's include
   syntaxes](Multi-File_Documents.html)).
+- _Source de l'aperçu en continu_ compare l'app d'origine nommée par un commentaire HTML `source` dans un [aperçu en continu](Streaming_Preview.html), par exemple `<!--source:Bear.app-->`. La valeur est libre. Marked utilise `Bear.app` et `Drafts.app` pour le comportement d'aperçu de ces apps, et tout autre nom est disponible ici pour qu'une règle ajoute un traitement pour cette app. L'espace après les deux-points est facultatif. Les comparateurs sont **est**, **n'est pas**, **contient** et **ne contient pas**. Cela ne correspond qu'à une fenêtre d'aperçu en continu.
+- _Format de l'aperçu en continu_ compare le commentaire HTML `format` d'un aperçu en continu, par exemple `<!--format:fountain-->`. La valeur est libre. `fountain` active le traitement Fountain, et toute autre valeur peut être comparée par une règle sans changer le processeur. Il utilise les mêmes comparateurs que _Source de l'aperçu en continu_, et ne correspond qu'à une fenêtre d'aperçu en continu.
 - _Metadata type_ teste si le fichier inclut YAML,
   Métadonnées MultiMarkdown ou Pandoc
 - Champs _Metadata:_ (par exemple _Metadata: Author_,
