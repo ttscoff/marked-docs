@@ -40,13 +40,30 @@ pb.writeObjects([rawString, baseURL])
 
 If the Mac App Store version of Marked is being used and the baseURL isn't accessible via sandboxing, permission will be requested the first time the URL is loaded in the preview.
 
-### Declaring the Source Application [declaring-the-source-application]
+### Declaring the origin app and format [declaring-the-origin-app-and-format]
 
-Apps can also declare themselves as the source of the preview content by including a `source` metadata line. This will usually be accomplished within an HTML comment to allow compatibility with both GFM and MultiMarkdown processors. Simply state the app's name or bundle id:
+Put a `source` or `format` keyword in an HTML comment at the top of the streamed text. Marked reads the comment and removes it from the preview, so the note stays compatible with GFM and MultiMarkdown processors. A space after the colon is optional (`source:Bear.app` and `source: Bear.app` are the same), and the keyword match ignores case.
+
+Both values are free-form. Marked has built-in behavior for a few of them, and every value is available in the [Custom Processor](Custom_Processor.html) (Conductor) as **Streaming preview source** and **Streaming preview format**. Those criteria accept **is**, **is not**, **contains**, and **does not contain**.
+
+**`source: APP_NAME`** names the origin app, by app name or bundle id. Marked uses it to add special handling for that app. `source: Bear.app` and `source: Drafts.app` turn on those apps' preview behaviors. Any other name is still matched by a Conductor rule, so you can run your own actions for that app:
+
+```html
+<!--source:Bear.app-->
+```
+
+**`format: fountain`** turns on [Fountain](Fountain_for_Screenwriters.html) handling, so the stream is previewed as a screenplay instead of Markdown. Any other format value does not change the processor. It is there for a Conductor rule to match, for example **Streaming preview format** `is` `fountain`.
+
+```html
+<!--format:fountain-->
+```
+
+One comment can carry both keywords:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
