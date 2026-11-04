@@ -33,7 +33,7 @@ OmniOutliner-Gliederungen lassen sich genauso einbinden. Das Kontrollkästchen *
 
 ### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
 
-Siehe [Tree Outliner](Tree_Outliner.html). Das Kontrollkästchen **Tree Outliner outlines** gilt sowohl beim Öffnen einer `.treeoutline`-Datei als auch beim Einbinden. Ist es aktiviert, entsteht eine Mermaid-Mindmap mit dem Dokumenttitel als Stammknoten. Ist es deaktiviert, kompiliert Marked Überschriften und Listen; wie tief die Überschriften reichen, legt **Headings through level** in der Gruppe *Tree Outliner* fest.
+Siehe [Tree Outliner](Tree_Outliner.html). Das Kontrollkästchen **Tree-Outliner-Gliederungen** gilt sowohl beim Öffnen einer `.treeoutline`-Datei als auch beim Einbinden. Ist es aktiviert, entsteht eine Mermaid-Mindmap mit dem Dokumenttitel als Stammknoten. Ist es deaktiviert, kompiliert Marked Überschriften und Listen; wie tief die Überschriften reichen, legt **Überschriften bis Ebene** in der Gruppe *Tree Outliner* fest.
 
 ## Als Mermaid-Mindmaps einbetten [embed-as-mermaid-mind-maps]
 
@@ -43,7 +43,7 @@ Unter {% prefspane Apps %} gibt es im Abschnitt *Mindmaps und Gliederungen* die 
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
 - **OPML-Dateien**
 - **OmniOutliner-Gliederungen**
-- **Tree Outliner outlines**
+- **Tree-Outliner-Gliederungen**
 
 Ist das Kontrollkästchen eines Formats **aktiviert** (Standard bei den unterstützten Formaten), wandelt Marked eingebundene Dateien dieses Typs in [Mermaid](https://mermaid.js.org/)-Diagramme um:
 
@@ -58,7 +58,7 @@ Ist das Kontrollkästchen eines Formats **deaktiviert**:
 - **FreeMind** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **OPML** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (keine Mindmap).
 - **Bike** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (ohne Dokumenttitel). Überschriftszeilen sind fett, und Aufgaben werden GitHub-Kontrollkästchen. Siehe [Bike](Bike.html).
-- **Tree Outliner** – Die Gliederung wird zu Markdown-Überschriften und -Listen kompiliert. Der Dokumenttitel ist eine Überschrift der Ebene 1, und **Headings through level** legt fest, wie tief die Überschriften reichen. Siehe [Tree Outliner](Tree_Outliner.html).
+- **Tree Outliner** – Die Gliederung wird zu Markdown-Überschriften und -Listen kompiliert. Der Dokumenttitel ist eine Überschrift der Ebene 1, und die Option **Überschriften bis Ebene** legt fest, wie tief die Überschriften reichen. Siehe [Tree Outliner](Tree_Outliner.html).
 - **OmniOutliner** – Die Gliederung ist als verschachtelte Markdown-Liste bzw. Checkliste eingebettet.
 
 ## Include-Syntax [include-syntax]
