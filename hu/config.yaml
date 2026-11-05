@@ -288,6 +288,17 @@ Sections:
     - átfedés
     - parancsikonokat
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Olvasási mód
+    file: Reading_Mode
+    description: Az olvasási mód a aktuális blokkra fókuszál, megjegyzi a helyét hosszú dokumentumokban, és mentett kiemeléseket biztosít megosztáshoz, CriticMarkuphoz és nyomtatáshoz.
+    keywords:
+    - olvasási mód
+    - fókusz
+    - kiemelések
+    - folytatás
+    - criticmarkup
+    - billentyűparancsok
+    wiki_keywords: [olvasási mód, olvasási kiemelések, olvasás folytatása]
   - title: Kérdezzen a dokumentumról
     file: AI_Ask_About_Document
     description: Az Ask About Document az Apple Intelligence-t és a macOS legújabb verzióiba beépített, az eszközön lévő nyelvi modellt használja a Markdown előnézetének összefoglalására és...
