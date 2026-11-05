@@ -288,6 +288,17 @@ Sections:
     - sovrapposizione
     - scorciatoie
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Modalità lettura
+    file: Reading_Mode
+    description: La modalità lettura mette a fuoco il blocco corrente, ricorda la posizione nei documenti lunghi e salva le evidenziazioni per condivisione, CriticMarkup e stampa.
+    keywords:
+    - modalità lettura
+    - focus
+    - evidenziazioni
+    - riprendi
+    - criticmarkup
+    - scorciatoie
+    wiki_keywords: [modalità lettura, evidenziazioni di lettura, riprendi lettura]
   - title: Chiedi informazioni sul documento
     file: AI_Ask_About_Document
     description: Chiedi informazioni sul documento utilizza Apple Intelligence e il modello linguistico integrato nel dispositivo integrato nelle versioni recenti di macOS per riepilogare l'anteprima Markdown e...
