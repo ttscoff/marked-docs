@@ -964,6 +964,21 @@ Sections:
     - automatizálás
     - mkmarked
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: AI-integráció
+    file: AI_Integration
+    description: A Marked összekapcsolása egy LLM-ügynökkel. Töltsön le egy skillfájlt, amely megtanítja az ügynöknek a fájlok megnyitását és a beállítások módosítását.
+    keywords:
+    - ai
+    - llm
+    - ügynök
+    - skill
+    - cursor
+    - automatizálás
+    - url-séma
+    wiki_keywords:
+    - llm-ügynök
+    - skillfájl
+    - ai-integráció
   - title: Streaming előnézet
     file: Streaming_Preview
     description: A Fájl menü Új menü Streaming előnézetének megnyitásával a Marked élő frissítéseket kap egy elnevezett kartonon, ahelyett, hogy egy fájlt nézne meg a lemezen. A forrás alkalmazás...

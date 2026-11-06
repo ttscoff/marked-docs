@@ -53,3 +53,5 @@ A Megjelölt automatikusan stílusos, interaktív diagrammá alakítja, így viz
 - **Copilot és más mesterséges intelligencia kódolási asszisztensek + Marked**: Akár GitHub Copilotot, Copilot Workspace-t, ChatGPT-t vagy más, Markdown-t író ügynöki eszközt használ, a kimenetüket egy figyelt mappába mentve mindig naprakész, kiváló minőségű előnézetet kaphat a Marked alkalmazásban.
 
 A mappafigyelés és a *Görgessen a Szerkesztéshez* kombinálásával a Marked a mesterséges intelligencia által generált terveket és jegyzeteket gyors, olvasható vezérlőközponttá alakítja a kódolási munkamenetekhez – különösen akkor, ha az ügynöki munkafolyamatokra és az olyan eszközök folyamatos segítségére támaszkodik, mint a Cursor, Claude és Copilot.
+
+Ha azt szeretné, hogy az ügynök maga nyissa meg ezeket a fájlokat, telepítse az [AI-integráció](AI_Integration.md) oldalon leírt skillt.
