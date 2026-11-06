@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-El controlador de URL de Marked proporciona capacidades adicionales de secuencias de comandos y flujo de trabajo. Puedes incluir una URL en las notas de otra aplicación, por ejemplo, que abrirá un archivo en Marcado al hacer clic. Puede realizar varias acciones, como se enumeran a continuación.
+El controlador de URL de Marked proporciona capacidades adicionales de secuencias de comandos y flujo de trabajo. Puedes incluir una URL en las notas de otra aplicación, por ejemplo, que abrirá un archivo en Marcado al hacer clic. Puede realizar varias acciones, como se enumeran a continuación. Para entregar los mismos comandos a un agente LLM, consulta [Integración con IA](AI_Integration.md).
 
 ## El esquema de URL [the-url-scheme]
 
