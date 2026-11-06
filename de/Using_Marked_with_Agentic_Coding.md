@@ -52,3 +52,5 @@ wandelt Marked ihn automatisch in ein gestaltetes, interaktives Diagramm um. So 
 
 Durch die Kombination der Ordnerüberwachung mit *Zum Bearbeiten scrollen* macht Marked KI-generierte Pläne und Notizen zu einer schnellen, übersichtlichen Schaltzentrale für Ihre Coding-Sitzungen – besonders bei agentenbasierten Workflows und fortlaufender Unterstützung durch Werkzeuge wie Cursor, Claude und Copilot.
 
+
+Damit der Agent diese Dateien selbst öffnet, installieren Sie den Skill unter [KI-Integration](AI_Integration.md).
