@@ -963,6 +963,21 @@ Sections:
     - automation
     - mkmarked
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: AI-integratie
+    file: AI_Integration
+    description: Marked koppelen aan een LLM-agent. Download een skillbestand dat een agent leert bestanden te openen en voorkeuren te wijzigen.
+    keywords:
+    - ai
+    - llm
+    - agent
+    - skill
+    - cursor
+    - automatisering
+    - url-schema
+    wiki_keywords:
+    - llm-agent
+    - skillbestand
+    - ai-integratie
   - title: Streaming Preview
     file: Streaming_Preview
     description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
