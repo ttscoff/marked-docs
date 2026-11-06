@@ -959,6 +959,21 @@ Sections:
     - オートメーション
     - マーク付き
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: AI 連携
+    file: AI_Integration
+    description: Marked を LLM エージェントと連携する。ファイルを開き、環境設定を変更する方法をエージェントに教える skill ファイルをダウンロードする。
+    keywords:
+    - ai
+    - llm
+    - エージェント
+    - skill
+    - cursor
+    - 自動化
+    - url スキーム
+    wiki_keywords:
+    - llm エージェント
+    - skill ファイル
+    - ai 連携
   - title: ストリーミングプレビュー
     file: Streaming_Preview
     description: [ファイル] メニュー、[新規] メニュー、[ストリーミング プレビュー] を開くと、Marked はディスク上のファイルを監視する代わりに、名前付きペーストボードを介してライブ更新を受け取ります。ソースアプリは...
