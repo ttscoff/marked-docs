@@ -964,6 +964,21 @@ Sections:
     - automação
     - marcado
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: Integração com IA
+    file: AI_Integration
+    description: Integrar o Marked a um agente de LLM. Baixe um arquivo de skill que ensina o agente a abrir arquivos e alterar preferências.
+    keywords:
+    - ia
+    - llm
+    - agente
+    - skill
+    - cursor
+    - automação
+    - esquema url
+    wiki_keywords:
+    - agente de llm
+    - arquivo de skill
+    - integração com ia
   - title: Visualização de streaming
     file: Streaming_Preview
     description: Ao abrir o menu Arquivo, menu Novo, Visualização de streaming, Marcado recebe atualizações ao vivo em uma área de transferência nomeada em vez de assistir a um arquivo no disco. O aplicativo de origem...
