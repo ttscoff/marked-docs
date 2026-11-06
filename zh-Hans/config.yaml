@@ -963,6 +963,21 @@ Sections:
     - automation
     - mkmarked
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: AI 集成
+    file: AI_Integration
+    description: 将 Marked 与 LLM 代理集成。下载一份 skill 文件，用来告诉代理如何打开文件和更改偏好设置。
+    keywords:
+    - ai
+    - llm
+    - 代理
+    - skill
+    - cursor
+    - 自动化
+    - url 方案
+    wiki_keywords:
+    - llm 代理
+    - skill 文件
+    - ai 集成
   - title: Streaming Preview
     file: Streaming_Preview
     description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
