@@ -53,3 +53,5 @@ Marked lo trasformerà automaticamente in un diagramma interattivo con stile, of
 - **Copilot e altri assistenti di codifica AI + Marked**: che tu stia utilizzando GitHub Copilot, Copilot Workspace, ChatGPT o altri strumenti di agenti che scrivono Markdown, il salvataggio dell'output in una cartella controllata ti offre un'anteprima sempre aggiornata e di alta qualità in Marked.
 
 Combinando la visualizzazione delle cartelle con *Scorri per modificare*, Marked trasforma i piani e le note generati dall'intelligenza artificiale in un centro di controllo veloce e leggibile per le tue sessioni di codifica, soprattutto quando ti affidi a flussi di lavoro agenti e all'assistenza continua di strumenti come Cursor, Claude e Copilot.
+
+Per fare in modo che l'agente apra questi file da solo, installa lo skill descritto in [Integrazione con l'IA](AI_Integration.md).

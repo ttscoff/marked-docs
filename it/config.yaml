@@ -964,6 +964,21 @@ Sections:
     - automazione
     - mkmarked
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: Integrazione con l'IA
+    file: AI_Integration
+    description: Integrare Marked con un agente LLM. Scarica un file skill che insegna all'agente ad aprire file e cambiare le preferenze.
+    keywords:
+    - ia
+    - llm
+    - agente
+    - skill
+    - cursor
+    - automazione
+    - schema url
+    wiki_keywords:
+    - agente llm
+    - file skill
+    - integrazione con l'ia
   - title: Anteprima in streaming
     file: Streaming_Preview
     description: Aprendo il menu File, il menu Nuovo, Anteprima streaming, Marked riceve aggiornamenti in tempo reale su un tavolo di montaggio con nome invece di guardare un file su disco. L'app di origine...
