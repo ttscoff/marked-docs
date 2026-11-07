@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-A Marked URL-kezelője további szkriptelési és munkafolyamat-képességeket biztosít. Felvehet egy URL-t egy másik alkalmazás jegyzeteibe, például, amely kattintásra megnyit egy fájlt a Megjelölt mappában. Több műveletet is végrehajthat az alábbiak szerint. Ha ugyanezeket a parancsokat egy LLM-ügynöknek szeretné átadni, lásd: [AI-integráció](AI_Integration.md).
+A Marked URL-kezelője további szkriptelési és munkafolyamat-képességeket biztosít. Felvehet egy URL-t egy másik alkalmazás jegyzeteibe, például, amely kattintásra megnyit egy fájlt a Megjelölt mappában. Több műveletet is végrehajthat az alábbiak szerint. Ha ugyanezeket a parancsokat egy LLM-ügynöknek szeretné átadni, lásd: [AI-integráció](AI_Integration.html).
 
 ## Az URL-séma [the-url-scheme]
 

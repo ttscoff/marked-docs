@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Adjon egy LLM-ügynöknek egy skillfájlt, hogy fájlokat és mappákat nyisson meg a Markedben, egy Beállítások-szakaszra ugorjon, és módosítsa a beállításokat. Az ügynök a Marked [URL-kezelőjét](URL_Handler.md) használja. Külön bővítmény vagy kiszolgáló nem kell.
+Adjon egy LLM-ügynöknek egy skillfájlt, hogy fájlokat és mappákat nyisson meg a Markedben, egy Beállítások-szakaszra ugorjon, és módosítsa a beállításokat. Az ügynök a Marked [URL-kezelőjét](URL_Handler.html) használja. Külön bővítmény vagy kiszolgáló nem kell.
 
 ## A skill letöltése [download-the-skill]
 
@@ -31,7 +31,7 @@ A telepítés után kérje meg az ügynököt, hogy nyisson meg egy fájlt vagy 
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Egy mappa ugyanazt a parancsot használja. Az útvonalnak léteznie kell, a szóközöket és a többi foglalt karaktert pedig százalékosan kódolni kell. A teljes sémát, a refresh parancsot, a Streaming Previewt és a visszahívásokat is, az [URL-kezelő](URL_Handler.md) írja le.
+Egy mappa ugyanazt a parancsot használja. Az útvonalnak léteznie kell, a szóközöket és a többi foglalt karaktert pedig százalékosan kódolni kell. A teljes sémát, a refresh parancsot, a Streaming Previewt és a visszahívásokat is, az [URL-kezelő](URL_Handler.html) írja le.
 
 ## Beállítások [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Kapcsolódó [related]
 
-Az [Ügynöki kódolással jelölt használata](Using_Marked_with_Agentic_Coding.md) azt írja le, hogyan figyelhet egy terveket és jegyzeteket tartalmazó mappát, miközben egy ügynök írja őket. A [Command Line Utility](Command_Line_Utility.md) ugyanilyen hozzáférést ad a parancssorból, ügynök nélkül.
+Az [Ügynöki kódolással jelölt használata](Using_Marked_with_Agentic_Coding.html) azt írja le, hogyan figyelhet egy terveket és jegyzeteket tartalmazó mappát, miközben egy ügynök írja őket. A [Command Line Utility](Command_Line_Utility.html) ugyanilyen hozzáférést ad a parancssorból, ügynök nélkül.
