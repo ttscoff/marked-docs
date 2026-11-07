@@ -14,6 +14,8 @@ The typical workflow is **preview first, export HTML second**: open or compile y
 * Copies the **rendered body HTML** (not a full document with `<html>` wrapper)
 * Optional: enable **Embed images when copying HTML** in {% prefspane Export %} to Base64-encode local images as `data:` URLs in the pasted source
 
+Select text in the preview to copy only that fragment. With nothing selected, Copy HTML still copies the whole preview. To copy the Markdown behind the preview, including a page opened with [Markdownify URL](Markdownifier.html) that you have not saved, use [Copy Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). A selection is converted to Markdown, and code blocks and diagrams are restored to their source. See [Copying a selection](Exporting.html#copying-a-selection).
+
 Copy HTML is ideal when your destination already has its own stylesheet and you only need the content markup.
 
 ### Save HTML (file) [save-html-file]
@@ -102,8 +104,9 @@ For books and chapter compilations, use [Multi-File Documents](Multi-File_Docume
 | Email or file share (one attachment) | **Save HTML** with **Embed local images** |
 | WordPress, Ghost, Notion, etc. | **Copy HTML**; enable **Embed images when copying HTML** if the editor does not resolve local paths |
 | Further editing in a code editor | **Save HTML** without embedded style, or copy snippet and wrap manually |
+| Markdown editor, or a Markdownified page | **Copy Markdown** |
 
-[Copy Rich Text](Exporting.html#rtfexportoptions) (gear menu) is an alternative when the target app accepts formatted text rather than HTML source.
+[Copy Rich Text](Exporting.html#rtfexportoptions) (gear menu) is an alternative when the target app accepts formatted text rather than HTML source. [Copy Markdown](Exporting.html#copymarkdown) copies the Markdown itself.
 
 ## Related topics [related-topics]
 
