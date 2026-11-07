@@ -29,6 +29,8 @@ Pour accéder au Markdownifier, ouvrez {% appmenu File, New, Markdownify URL (@~
 3. **Cliquez sur "Automatique"** ou appuyez sur `Retour` pour extraire le contenu
 4. Le contenu extrait s'ouvrira **automatiquement** dans un nouveau document Marked
 
+Le nouvel aperçu conserve ce Markdown jusqu'à ce que vous l'enregistriez. Choisissez **Copier le Markdown** ({% kbd shift opt cmd C %}) pour le placer dans le presse-papiers. Voir [Copier le Markdown](Exporting.html#copymarkdown).
+
 ### Sélection manuelle du contenu [manual-content-selection]
 
 Si l'extraction automatique ne capture pas le contenu souhaité :

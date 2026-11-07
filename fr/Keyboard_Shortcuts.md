@@ -18,6 +18,8 @@ Un panneau flottant avec une aide-mémoire de raccourci est disponible dans le m
 |        **{{shift}}{{cmd}}S** | Enregistrer RTF |
 |                 **{{cmd}}C** | Copier |
 |        **{{shift}}{{cmd}}C** | Copier la source HTML dans le presse-papiers |
+|          **{{opt}}{{cmd}}C** | Copier le texte enrichi dans le presse-papiers |
+| **{{opt}}{{shift}}{{cmd}}C** | Copier le Markdown dans le presse-papiers |
 |                 **{{cmd}}U** | Basculer la vue source |
 |                 **{{cmd}}T** | Basculer la table des matières |
 |                 **{{cmd}}R** | Recharger l'aperçu |

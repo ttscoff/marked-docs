@@ -37,7 +37,7 @@
 #   Settings.strings (gaps): 96
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "Ouvrir Récent";
@@ -171,6 +171,12 @@
 
 "610.title" = "Rouvrir le dernier fichier";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Copie la source Markdown dans le presse-papiers";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Copier Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Copie la source HTML dans le presse-papiers";
 # EN: Copy HTML source to the clipboard
@@ -555,7 +561,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "Caractères :";
@@ -1056,6 +1062,9 @@
 
 "WQz-kW-hnP.title" = "Aller à l'erreur précédente";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "Copier Markdown";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "Copier HTML";
 # EN: Copy HTML
@@ -3480,7 +3489,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 25
+# Strings in this section: 26
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "Annoter avec %@";
@@ -3488,6 +3497,9 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "menu.copyHTML" = "Copier HTML";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "Copier Markdown";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "Copier RTF";
 # EN: Copy Rich Text
@@ -3762,7 +3774,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 199
+# Strings in this section: 200
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "Aperçu du presse-papiers";
@@ -3782,6 +3794,9 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "kbs.action.copyHTMLSource" = "Copier la source HTML";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "Copier Markdown";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "Copier au format RTF";
 # EN: Copy Rich Text
@@ -4365,7 +4380,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "Gérer les styles";
@@ -4494,6 +4509,12 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "610.title" = "Rouvrir le dernier fichier";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Copie la source Markdown dans le presse-papiers";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Copier Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Copie la source HTML dans le presse-papiers";
 # EN: Copy HTML source to the clipboard
@@ -4854,7 +4875,7 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/fr.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "Éléments de l'historique";
@@ -4977,6 +4998,12 @@ Write all responses in %@." = "Tu assistes quelqu'un pour la relecture d'un docu
 
 "610.title" = "Rouvrir le dernier fichier";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Copie la source Markdown dans le presse-papiers";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Copier Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Copie la source HTML dans le presse-papiers";
 # EN: Copy HTML source to the clipboard

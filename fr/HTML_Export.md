@@ -12,6 +12,8 @@ Le flux de travail habituel est le suivant : **aperçu d'abord, export HTML ensu
 * Copie le **HTML du corps rendu** (pas un document complet avec l'enveloppe `<html>`)
 * Optionnel : activez **Intégrer les images lors de la copie du HTML** dans {% prefspane Export %} pour encoder en Base64 les images locales sous forme d'URL `data:` dans le code source collé
 
+Sélectionnez du texte dans l'aperçu pour ne copier que ce fragment. Sans sélection, Copier HTML copie toujours tout l'aperçu. Pour copier le Markdown qui est derrière l'aperçu, y compris une page ouverte avec [Markdownify URL](Markdownifier.html) que vous n'avez pas enregistrée, utilisez [Copier le Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Une sélection est convertie en Markdown, et les blocs de code et les diagrammes sont restaurés dans leur source. Voir [Copier une sélection](Exporting.html#copying-a-selection).
+
 Copier le HTML est idéal lorsque votre destination possède déjà sa propre feuille de style et que vous n'avez besoin que du balisage du contenu.
 
 ### Enregistrer le HTML (fichier) [save-html-file]
@@ -100,8 +102,9 @@ Pour les livres et les compilations de chapitres, utilisez [Documents multi-fich
 | E-mail ou partage de fichier (une seule pièce jointe) | **Enregistrer le HTML** avec **Intégrer les images locales** |
 | WordPress, Ghost, Notion, etc. | **Copier le HTML** ; activez **Intégrer les images lors de la copie du HTML** si l'éditeur ne résout pas les chemins locaux |
 | Édition ultérieure dans un éditeur de code | **Enregistrer le HTML** sans style intégré, ou copier l'extrait et l'encadrer manuellement |
+| Éditeur Markdown, ou une page convertie par Markdownify | **Copier le Markdown** |
 
-[Copier le texte enrichi](Exporting.html#rtfexportoptions) (menu Action) est une alternative lorsque l'application cible accepte du texte formaté plutôt que du code source HTML.
+[Copier le texte enrichi](Exporting.html#rtfexportoptions) (menu Action) est une alternative lorsque l'application cible accepte du texte formaté plutôt que du code source HTML. [Copier le Markdown](Exporting.html#copymarkdown) copie le Markdown lui-même.
 
 ## Sujets connexes [related-topics]
 
