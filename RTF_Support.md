@@ -47,4 +47,4 @@ For a one-off paste without saving a file, use [Clipboard Preview](Opening_Files
 - [PDF Support](PDF_Support.html) -- open PDF documents as Markdown sources
 - [Working with DOCX](Working_With_DOCX.html) -- Word documents with change tracking and comments
 - [Opening Files](Opening_Files.html) -- drag and drop, Open Recent, clipboard
-- [Exporting](Exporting.html) -- Copy Rich Text and save RTFD (export), distinct from opening RTF as a source file
+- [Exporting](Exporting.html) -- Copy Rich Text (the whole preview, or just the selection) and save RTFD (export), distinct from opening RTF as a source file

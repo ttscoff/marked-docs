@@ -37,7 +37,7 @@
 #   Settings.strings (gaps): 84
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "Zuletzt geöffnet";
@@ -174,6 +174,12 @@
 
 "610.title" = "Letzte Datei erneut öffnen";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown-Quelltext in die Zwischenablage kopieren";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML-Quelltext in die Zwischenablage kopieren";
 # EN: Copy HTML source to the clipboard
@@ -558,7 +564,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "Zeichen:";
@@ -1054,6 +1060,9 @@
 
 "WQz-kW-hnP.title" = "Zum vorherigen Fehler";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "HTML kopieren";
 # EN: Copy HTML
@@ -3518,7 +3527,7 @@ Schreibe alle Antworten auf %@.";
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 25
+# Strings in this section: 26
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "Mit %@ annotieren";
@@ -3526,6 +3535,9 @@ Schreibe alle Antworten auf %@.";
 
 "menu.copyHTML" = "HTML kopieren";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "Rich-Text kopieren";
 # EN: Copy Rich Text
@@ -3800,7 +3812,7 @@ Schreibe alle Antworten auf %@.";
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 199
+# Strings in this section: 200
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "Zwischenablage-Vorschau";
@@ -3820,6 +3832,9 @@ Schreibe alle Antworten auf %@.";
 
 "kbs.action.copyHTMLSource" = "HTML-Quelltext kopieren";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "Rich Text kopieren";
 # EN: Copy Rich Text
@@ -4404,7 +4419,7 @@ Schreibe alle Antworten auf %@.";
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "Stile verwalten";
@@ -4535,6 +4550,12 @@ Schreibe alle Antworten auf %@.";
 
 "610.title" = "Letzte Datei erneut öffnen";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown-Quelltext in die Zwischenablage kopieren";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML-Quelltext in die Zwischenablage kopieren";
 # EN: Copy HTML source to the clipboard
@@ -4896,7 +4917,7 @@ Schreibe alle Antworten auf %@.";
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/de.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "Verlaufseinträge";
@@ -5021,6 +5042,12 @@ Schreibe alle Antworten auf %@.";
 
 "610.title" = "Letzte Datei erneut öffnen";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown-Quelltext in die Zwischenablage kopieren";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown kopieren";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML-Quelltext in die Zwischenablage kopieren";
 # EN: Copy HTML source to the clipboard
