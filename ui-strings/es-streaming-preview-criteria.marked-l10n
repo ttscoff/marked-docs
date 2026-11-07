@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: es
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "esquemas de Tree Outliner";
+"setting.treeOutlinerHeadingLevel" = "Encabezados hasta el nivel";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "Incrusta archivos de Tree Outliner (.treeoutline) como mapas mentales de Mermaid. Si está desactivado, se convierten en títulos y listas de Markdown.";
+"tooltip.treeOutlinerHeadingLevel" = "El título del documento es el encabezado 1. Los niveles del esquema siguen como encabezados hasta este nivel, y los nodos más profundos pasan a ser listas anidadas. Las notas se convierten en párrafos. Se usa cuando Incrustar como mapa mental de Mermaid está desactivado para Tree Outliner.";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "Origen de la vista previa en streaming";
+"Streaming preview format" = "Formato de la vista previa en streaming";

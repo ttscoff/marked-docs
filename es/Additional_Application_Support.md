@@ -11,6 +11,7 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | Tema | Página de ayuda |
 | :-- | :-- |
 | **Oso** | [Oso](Bear.html) |
+| **Bike** esquemas `.bike` | [Bike](Bike.html) |
 | **Curio** (vista previa de transmisión) | [Curiosidad](Curio.html) |
 | **Borradores** (vista previa del streaming + acciones) | [Borradores](Drafts.html) |
 | **DEVONthink** (Integración del menú Script) | [DEVONthink](DEVONthink.html) |
@@ -20,6 +21,7 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | **iA escritor** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz` mapas | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** vista previa en vivo | [MarteEditar](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **Nodo mental** | [NodoMente](MindNode.html) |
 | **Compositor de MultiMarkdown** | [Compositor de MultiMarkdown](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -29,6 +31,8 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | **PDF** | [Soporte PDF](PDF_Support.html) |
 | **escribiente 3** | [Soporte de Scrivener 3](Scrivener_Support.html) |
 | **El Archivo** vista previa de transmisión | [El Archivo](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | **Ulises** flujo de trabajo de exportación | [Ulises](Ulysses.html) |
 | **Vim** (complemento marcado con vim) | [Vim](Vim.html) |
 | **Código VS** (Abrir en extensión marcada) | [Código VS](VS_Code.html) |
@@ -51,7 +55,7 @@ Markdown (o texto sin formato compatible) en el portapapeles se abre con {% appm
 
 ## Vista previa de transmisión [streaming-preview]
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra y varios otros editores pueden insertar Markdown en Marked mientras escribe a través de **Vista previa de transmisión**. Consulte [Vista previa de transmisión](Streaming_Preview.html) para configuración y solución de problemas.
+Bear, Curio, Drafts, The Archive, Traverse, nvALT, nvUltra y varios otros editores pueden insertar Markdown en Marked mientras escribe a través de **Vista previa de transmisión**. Consulte [Vista previa de transmisión](Streaming_Preview.html) para configuración y solución de problemas.
 
 ## Guiones y paquete de bonificación [scripts-and-bonus-pack]
 

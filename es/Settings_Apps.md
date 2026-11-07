@@ -89,10 +89,19 @@ Agregue metadatos de compilación (título, autor) cuando falten
 Abra archivos .scriv en Scrivener cuando se abran en Marked
 : Cuando se abre un documento de Scrivener en Marked, también se abre automáticamente en Scrivener.
 
-#### Palabra [word]
+#### Word [word]
+
+[(Información sobre Microsoft Word)](Microsoft_Word.html)
 
 Convertir seguimiento de cambios <-> CriticMarkup
 : Si está habilitado, el seguimiento de cambios en documentos de Word se convertirá a CriticMarkup cuando se importen, y CriticMarkup se convertirá a seguimiento de cambios de Word al exportar archivos DOCX.
+
+#### Tree Outliner [tree-outliner]
+
+[(Información sobre Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: El título del documento es el título 1. Los niveles del esquema siguen como títulos hasta este nivel, y los nodos más profundos pasan a ser listas anidadas. Las notas pasan a ser párrafos. Se usa cuando **Tree Outliner outlines** está desactivado en **Embed as Mermaid mind maps**.
 
 #### Mapas mentales/esquemas [MindMapsOutlines]
 
@@ -101,4 +110,5 @@ Insertar como mapas mentales de sirena
 : **Mapas mentales** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Si está activado: mapa mental de sirena. Si está desactivado: iThoughts incorpora su imagen de vista previa; MindManager y FreeMind se convierten en listas Markdown anidadas.
 : **archivos OPML** (.opml). Si está activado: mapa mental de sirena. Si está desactivado: lista Markdown anidada.
 : **Contornos OmniOutliner** (.ooutline). Si está activado: mapa mental de sirena. Si está desactivado: lista Markdown anidada (o lista de verificación cuando corresponda).
-: **Contornos de bicicletas**. Si está activado: mapa mental de sirena. Si está desactivado: lista Markdown anidada.
+: **Bike outlines**. Si está activado: mapa mental Mermaid. Si está desactivado: lista Markdown anidada. Consulte [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Si está activado: mapa mental Mermaid. Si está desactivado: títulos y listas Markdown. Consulte [Tree Outliner](Tree_Outliner.html).

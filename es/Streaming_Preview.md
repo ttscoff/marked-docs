@@ -4,7 +4,7 @@
 
 Al abrir {% appmenu File, New, Streaming Preview %}, Marked recibe actualizaciones en vivo a través de un portapapeles con nombre en lugar de mirar un archivo en el disco. La aplicación fuente debe integrarse con Marked.
 
-[Curio](Curio.html), [Borradores](Drafts.html) y [The Archive](The_Archive.html) documentan sus propios cambios y comandos de menú. nvUltra, nvALT, Bear y otros usan el mismo canal: abra la vista previa de la transmisión en Marked, habilite la integración en su editor y comience a escribir; Las actualizaciones llegan casi en tiempo real.
+[Curio](Curio.html), [Borradores](Drafts.html) y [The Archive](The_Archive.html) y [Traverse](Traverse.html) documentan sus propios cambios y comandos de menú. nvUltra, nvALT, Bear y otros usan el mismo canal: abra la vista previa de la transmisión en Marked, habilite la integración en su editor y comience a escribir; Las actualizaciones llegan casi en tiempo real.
 
 ## Desarrolladores [developers]
 
@@ -18,37 +18,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Declarar una URL base para activos relativos [declaring-a-base-url-for-relative-assets]
+### Declarar la app de origen y el formato [declaring-the-origin-app-and-format]
 
-También puede proporcionar una URL base para la vista previa de la transmisión, lo que permite que las URL relativas en imágenes y otros recursos funcionen como lo harían en la aplicación de origen. Si la URL base incluye un nombre de archivo, su nombre y extensión estarán disponibles para los procesadores personalizados, pero no es obligatorio hacerlo. Para incluir la URL base, simplemente coloque un objeto NSURL en el portapapeles:
+Pon una palabra clave `source` o `format` en un comentario HTML al principio del texto enviado. Marked lee el comentario y lo quita de la vista previa, así que la nota sigue siendo compatible con los procesadores GFM y MultiMarkdown. El espacio después de los dos puntos es opcional (`source:Bear.app` y `source: Bear.app` son lo mismo) y la palabra clave no distingue mayúsculas.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Los dos valores son de forma libre. Marked tiene un comportamiento integrado para algunos, y todos están disponibles en el [Custom Processor](Custom_Processor.html) (Conductor) como **Origen de la vista previa en streaming** y **Formato de la vista previa en streaming**. Esos criterios aceptan **es**, **no es**, **contiene** y **no contiene**.
+
+**`source: APP_NAME`** nombra la app de origen, con el nombre de la app o el bundle id. Marked lo usa para añadir un tratamiento especial para esa app. `source: Bear.app` y `source: Drafts.app` activan el comportamiento de vista previa de esas apps. Cualquier otro nombre se puede comparar con una regla de Conductor, para ejecutar tus propias acciones para esa app:
+
+```html
+<!--source:Bear.app-->
 ```
 
-O en Swift:
+**`format: fountain`** activa el tratamiento de [Fountain](Fountain_for_Screenwriters.html), así que el envío se previsualiza como un guion en lugar de Markdown. Cualquier otro valor de formato no cambia el procesador. Sirve para que una regla de Conductor lo compare, por ejemplo **Formato de la vista previa en streaming** `es` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Si se utiliza la versión de Marked para Mac App Store y no se puede acceder a la URL base a través del espacio aislado, se solicitará permiso la primera vez que se cargue la URL en la vista previa.
-
-### Declaración de la aplicación fuente [declaring-the-source-application]
-
-Las aplicaciones también pueden declararse como fuente del contenido de la vista previa al incluir una línea de metadatos `source`. Por lo general, esto se logrará dentro de un comentario HTML para permitir la compatibilidad con los procesadores GFM y MultiMarkdown. Simplemente indique el nombre de la aplicación o la identificación del paquete:
+Un comentario puede llevar las dos palabras clave:
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
