@@ -24,6 +24,30 @@ A HTML másolása funkcióval gond nélkül elhelyezheti az előnézet HTML-forr
 
 A másoláshoz nem kell a forrás nézetben lennie. Az előnézetre fókuszálva (kattintson rá), csak írja be a {% kbd shift cmd C %} parancsot, és megjelenik egy felugró üzenet, amely tájékoztatja, hogy a forrás a vágólapon van.
 
+Ha nincs kijelölés, a HTML másolása a teljes előnézetet másolja. Jelöljön ki szöveget az előnézetben, ha csak azt a kijelölést szeretné másolni. A [Rich Text másolása](#rtfexportoptions) és a [Markdown másolása](#copymarkdown) ugyanezt a szabályt követi. Lásd: [Kijelölés másolása](#copying-a-selection).
+
+## Markdown másolása [copymarkdown]
+
+A **Markdown másolása** a dokumentum Markdownját a vágólapra helyezi. A Marked azt a Markdown-forrást másolja, amelyből az előnézet készült. Nem alakítja vissza az előnézet HTML-jét Markdownná.
+
+A Szerkesztés menüből, a fogaskerék menüből vagy az előnézet helyi menüjéből választhatja, illetve megnyomhatja a {% kbd shift opt cmd C %} billentyűkombinációt.
+
+Akkor használja, ha a Markdown csak az előnézetben létezik, és még nincs elmentve, például a [Markdownify URL](Markdownifier.html) után.
+
+Ha nincs kijelölés, a Marked ezt a Markdown-forrást másolja. HTML-fájlnál a Markdown másolása csak akkor érhető el, ha szöveg van kijelölve, mert a fájlnak nincs Markdown-forrása.
+
+## Kijelölés másolása [copying-a-selection]
+
+A HTML másolása, a Rich Text másolása és a Markdown másolása az előnézet kijelölését követi.
+
+* Nincs kijelölés: a parancs a teljes dokumentumot másolja.
+* Van kijelölt szöveg: a parancs csak azt a kijelölést másolja.
+    * A **HTML másolása** a kijelölés HTML-jét másolja, a szintaxiskiemeléssel együtt, ahogyan az előnézet mutatja.
+    * A **Rich Text másolása** ({% kbd opt cmd C %}) ezt a HTML-töredéket formázott szöveggé alakítja.
+    * A **Markdown másolása** a kijelölést Markdownná alakítja. A kód az eredeti forrásként másolódik, a nyelv nevével a nyitó sorban, nem a kiemelés span elemeiként. Egy kódblokkon belüli kijelölés csak a kijelölt sorokat másolja, továbbra is kódblokkban. Egy megjelenített ábra belsejében a kijelölés a teljes ábraforrást másolja, például egy Mermaid-blokkot, nem az SVG-t.
+
+Ha szöveg van kijelölve, a három parancs a helyi menüben a Másolás mellett jelenik meg.
+
 ## HTML mentése [save-html]
 
 ![][exporthtmltartozék]
@@ -163,7 +187,7 @@ Ezzel a lehetőséggel az előnézetet közvetlenül egy PDF-fájlba menti a meg
 
 ## RTF exportálási lehetőségek [rtfexportoptions]
 
-A Megjelölt RTF (Rich Text Format) adatokat közvetlenül a vágólapra exportálhat. Csak válassza ki a Rich Text másolása parancsot a fogaskerék menüből.
+A Marked RTF (Rich Text Format) adatokat közvetlenül a vágólapra exportálhat. Válassza a **Rich Text másolása** parancsot a fogaskerék menüből, vagy nyomja meg a {% kbd opt cmd C %} billentyűkombinációt. Ha nincs kijelölés, a teljes előnézetet másolja. Előbb jelöljön ki szöveget, ha csak azt a kijelölést szeretné formázott szövegként másolni. Lásd: [Kijelölés másolása](#copying-a-selection).
 
 A Megjelölt **RTFD** (Rich Text Format) fájlként is mentheti a fájlt. Az RTFD formátum egy csomagformátum, amely egy RTF fájlt és a dokumentumba ágyazott képeket tartalmaz.
 

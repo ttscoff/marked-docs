@@ -11,6 +11,7 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | Téma | Súgó oldal |
 | :-- | :-- |
 | **Medve** | [Medve](Bear.html) |
+| **Bike** `.bike` vázlatok | [Bike](Bike.html) |
 | **Curio** (streaming előnézet) | [Curio](Curio.html) |
 | **Piszkozatok** (streaming előnézet + műveletek) | [Piszkozatok](Drafts.html) |
 | **DEVONthink** (Script menü integráció) | [DEVONthink](DEVONthink.html) |
@@ -20,6 +21,7 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | **iA Writer** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz` térképek | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** élő előnézet | [MarsEdit](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **MindNode** | [MindNode](MindNode.html) |
 | **MultiMarkdown Composer** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -29,6 +31,8 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | **PDF** | [PDF támogatás](PDF_Support.html) |
 | **Scrivener 3** | [Scrivener 3 támogatás](Scrivener_Support.html) |
 | **The Archive** streaming előnézet | [Az archívum](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | **Ulysses** export munkafolyamat | [Ulysses](Ulysses.html) |
 | **Vim** (vim-jelölésű bővítmény) | [Vim](Vim.html) |
 | **VS Code** (Megjelölt bővítményben nyitva) | [VS kód](VS_Code.html) |
@@ -51,7 +55,7 @@ A Markdown (vagy kompatibilis egyszerű szöveg) a vágólapon a {% appmenu File
 
 ## Streaming előnézet [streaming-preview]
 
-A Bear, a Curio, a Drafts, az Archive, az nvALT, az nvUltra és számos más szerkesztő a **Streaming előnézet** segítségével beírhatja a Markdownt a Markedbe, miközben gépel. A beállításhoz és a hibaelhárításhoz lásd: [Streaming előnézet](Streaming_Preview.html).
+A Bear, a Curio, a Drafts, az Archive, a Traverse, az nvALT, az nvUltra és számos más szerkesztő a **Streaming előnézet** segítségével beírhatja a Markdownt a Markedbe, miközben gépel. A beállításhoz és a hibaelhárításhoz lásd: [Streaming előnézet](Streaming_Preview.html).
 
 ## Szkriptek és bónuszcsomag [scripts-and-bonus-pack]
 

@@ -25,8 +25,9 @@ A Marked 3 egy natív macOS-alkalmazás, amely figyeli Markdown fájljait, és m
 | Obszidián | [Obszidián](Obsidian.html) |
 | Scrivener | [Scrivener 3 támogatás](Scrivener_Support.html) |
 | Medve, nvUltra, Piszkozatok, Az archívum | [Streaming előnézet](Streaming_Preview.html) |
+| Traverse | [Traverse](Traverse.html) |
 | Ulysses | [Ulysses](Ulysses.html) |
-| Word / DOCX | [DOCX használata](Working_With_DOCX.html) |
+| Word / DOCX | [Microsoft Word](Microsoft_Word.html) |
 | MarsEdit | [MarsEdit](MarsEdit.html) |
 | Vim / Emacs / terminálszerkesztők | [Vim](Vim.html) vagy [Fájlok megnyitása](Opening_Files.html) |
 | Bármi más | [Fájlok megnyitása](Opening_Files.html) |

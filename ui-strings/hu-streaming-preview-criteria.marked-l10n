@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: hu
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "Tree Outliner vázlatok";
+"setting.treeOutlinerHeadingLevel" = "Címsorok eddig a szintig";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "A Tree Outliner-fájlokat (.treeoutline) Mermaid gondolattérképként ágyazza be. Kikapcsolva Markdown-címsorok és listák lesznek.";
+"tooltip.treeOutlinerHeadingLevel" = "A dokumentum címe az 1. címsor. A vázlatszintek eddig a szintig címsorok maradnak, a mélyebb csomópontok beágyazott listák lesznek. A jegyzetek bekezdések. Akkor érvényes, ha a Mermaid gondolattérképként való beágyazás ki van kapcsolva a Tree Outlinerhez.";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "Streaming-előnézet forrása";
+"Streaming preview format" = "Streaming-előnézet formátuma";

@@ -75,6 +75,8 @@ az állítmány.
 - A _Fájl tartalmazza_ azt teszteli, hogy a fájl tartalmazza-e a benne foglaltakat
   fájlok (a [Marked's include
   szintaxisok](Multi-File_Documents.html)).
+- A _Streaming-előnézet forrása_ a forrásalkalmazást veti össze, amelyet egy `source` HTML-megjegyzés nevez meg egy [streaming előnézetben](Streaming_Preview.html), például `<!--source:Bear.app-->`. Az érték szabad szöveg. A Marked a `Bear.app` és `Drafts.app` neveket használja ezeknek az appoknak az előnézeti viselkedéséhez, és bármely más név is elérhető itt, hogy egy szabály kezelést adjon ahhoz az apphoz. A kettőspont utáni szóköz nem kötelező. Az összehasonlítók: **egyenlő**, **nem egyenlő**, **tartalmazza** és **nem tartalmazza**. Csak streaming előnézeti ablakra illeszkedik.
+- A _Streaming-előnézet formátuma_ a streaming előnézet `format` HTML-megjegyzését veti össze, például `<!--format:fountain-->`. Az érték szabad szöveg. A `fountain` bekapcsolja a Fountain kezelését, és bármely más értéket összevethet egy szabály a processzor megváltoztatása nélkül. Ugyanazokat az összehasonlítókat használja, mint a _Streaming-előnézet forrása_, és csak streaming előnézeti ablakra illeszkedik.
 - A _Metadata type_ teszteli, hogy a fájl tartalmaz-e YAML-t,
   MultiMarkdown vagy Pandoc metaadatok
 - _Metadata:_ mezők (például _Metaadatok: Szerző_,
