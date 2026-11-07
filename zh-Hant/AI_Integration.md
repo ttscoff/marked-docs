@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-把一份 skill 檔案交給 LLM 代理，它就可以在 Marked 中開啟檔案和檔案夾、跳到設定的某個部分，並更改偏好設定。代理使用 Marked 的 [URL Handler](URL_Handler.md)。不需要另外的外掛或伺服器。
+把一份 skill 檔案交給 LLM 代理，它就可以在 Marked 中開啟檔案和檔案夾、跳到設定的某個部分，並更改偏好設定。代理使用 Marked 的 [URL Handler](URL_Handler.html)。不需要另外的外掛或伺服器。
 
 ## 下載 skill [download-the-skill]
 
@@ -31,7 +31,7 @@
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-檔案夾使用同一條指令。路徑必須已經存在，空格和其他保留字元必須百分號編碼。完整方案，包括 refresh、Streaming Preview 和回呼，見 [URL Handler](URL_Handler.md)。
+檔案夾使用同一條指令。路徑必須已經存在，空格和其他保留字元必須百分號編碼。完整方案，包括 refresh、Streaming Preview 和回呼，見 [URL Handler](URL_Handler.html)。
 
 ## 偏好設定 [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## 相關內容 [related]
 
-[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) 說明如何在代理撰寫計畫和筆記時監看那個檔案夾。[Command Line Utility](Command_Line_Utility.md) 是從 shell 進行的同類操作，不經過代理。
+[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.html) 說明如何在代理撰寫計畫和筆記時監看那個檔案夾。[Command Line Utility](Command_Line_Utility.html) 是從 shell 進行的同類操作，不經過代理。
