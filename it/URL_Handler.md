@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-Il gestore URL di Marked fornisce ulteriori funzionalità di scripting e flusso di lavoro. Puoi includere un URL nelle note di un'altra applicazione, ad esempio, che aprirà un file in Contrassegnato quando viene cliccato. È possibile eseguire diverse azioni, come elencato di seguito. Per affidare gli stessi comandi a un agente LLM, vedi [Integrazione con l'IA](AI_Integration.md).
+Il gestore URL di Marked fornisce ulteriori funzionalità di scripting e flusso di lavoro. Puoi includere un URL nelle note di un'altra applicazione, ad esempio, che aprirà un file in Contrassegnato quando viene cliccato. È possibile eseguire diverse azioni, come elencato di seguito. Per affidare gli stessi comandi a un agente LLM, vedi [Integrazione con l'IA](AI_Integration.html).
 
 ## Lo schema URL [the-url-scheme]
 

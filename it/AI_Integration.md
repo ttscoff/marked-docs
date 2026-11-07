@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Consegna a un agente LLM un file skill, così può aprire file e cartelle in Marked, passare a una sezione delle Impostazioni e cambiare le preferenze. L'agente usa il [gestore dell'URL](URL_Handler.md) di Marked. Non serve un plugin né un server separato.
+Consegna a un agente LLM un file skill, così può aprire file e cartelle in Marked, passare a una sezione delle Impostazioni e cambiare le preferenze. L'agente usa il [gestore dell'URL](URL_Handler.html) di Marked. Non serve un plugin né un server separato.
 
 ## Scaricare lo skill [download-the-skill]
 
@@ -31,7 +31,7 @@ Dopo l'installazione, chiedi all'agente di aprire un file o una cartella in Mark
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Una cartella usa lo stesso comando. Il percorso deve esistere, e gli spazi e gli altri caratteri riservati vanno codificati in percentuale. Vedi il [gestore dell'URL](URL_Handler.md) per lo schema completo, inclusi refresh, Streaming Preview e i callback.
+Una cartella usa lo stesso comando. Il percorso deve esistere, e gli spazi e gli altri caratteri riservati vanno codificati in percentuale. Vedi il [gestore dell'URL](URL_Handler.html) per lo schema completo, inclusi refresh, Streaming Preview e i callback.
 
 ## Preferenze [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Vedi anche [related]
 
-[Utilizzo di Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) spiega come tenere d'occhio una cartella di piani e note mentre un agente li scrive. L'[utilità della riga di comando](Command_Line_Utility.md) offre lo stesso tipo di accesso dalla shell, senza un agente.
+[Utilizzo di Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.html) spiega come tenere d'occhio una cartella di piani e note mentre un agente li scrive. L'[utilità della riga di comando](Command_Line_Utility.html) offre lo stesso tipo di accesso dalla shell, senza un agente.
