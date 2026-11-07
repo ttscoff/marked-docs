@@ -54,4 +54,4 @@ Marked lo convertirá automáticamente en un diagrama interactivo con estilo, br
 
 Al combinar la visualización de carpetas con *Desplazarse para editar*, Marked convierte los planes y notas generados por IA en un centro de control rápido y legible para sus sesiones de codificación, especialmente cuando se apoya en flujos de trabajo agentes y asistencia continua de herramientas como Cursor, Claude y Copilot.
 
-Para que el agente abra esos archivos por sí mismo, instala el skill descrito en [Integración con IA](AI_Integration.md).
+Para que el agente abra esos archivos por sí mismo, instala el skill descrito en [Integración con IA](AI_Integration.html).

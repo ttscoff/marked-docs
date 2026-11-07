@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Entrega a un agente LLM un archivo de skill para que pueda abrir archivos y carpetas en Marked, ir a una sección de Ajustes y cambiar preferencias. El agente usa el [controlador de URL](URL_Handler.md) de Marked. No hace falta un plugin ni un servidor aparte.
+Entrega a un agente LLM un archivo de skill para que pueda abrir archivos y carpetas en Marked, ir a una sección de Ajustes y cambiar preferencias. El agente usa el [controlador de URL](URL_Handler.html) de Marked. No hace falta un plugin ni un servidor aparte.
 
 ## Descargar el skill [download-the-skill]
 
@@ -31,7 +31,7 @@ Cuando esté instalado, pide al agente que abra un archivo o una carpeta en Mark
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Una carpeta usa el mismo comando. La ruta tiene que existir, y los espacios y otros caracteres reservados deben ir codificados con porcentaje. Consulta el [controlador de URL](URL_Handler.md) para el esquema completo, incluidos refresh, Streaming Preview y las devoluciones de llamada.
+Una carpeta usa el mismo comando. La ruta tiene que existir, y los espacios y otros caracteres reservados deben ir codificados con porcentaje. Consulta el [controlador de URL](URL_Handler.html) para el esquema completo, incluidos refresh, Streaming Preview y las devoluciones de llamada.
 
 ## Preferencias [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Relacionado [related]
 
-[Uso de marcado con codificación agente](Using_Marked_with_Agentic_Coding.md) explica cómo vigilar una carpeta de planes y notas mientras un agente las escribe. La [utilidad de línea de comando](Command_Line_Utility.md) ofrece el mismo tipo de acceso desde la shell, sin un agente.
+[Uso de marcado con codificación agente](Using_Marked_with_Agentic_Coding.html) explica cómo vigilar una carpeta de planes y notas mientras un agente las escribe. La [utilidad de línea de comando](Command_Line_Utility.html) ofrece el mismo tipo de acceso desde la shell, sin un agente.
