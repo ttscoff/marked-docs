@@ -49,4 +49,4 @@ Para colar uma única vez sem salvar um arquivo, use [Pré-visualização da ár
 - [Suporte PDF](PDF_Support.html) - abra documentos PDF como fontes Markdown
 - [Trabalhando com DOCX](Working_With_DOCX.html) -- Documentos Word com controle de alterações e comentários
 - [Abrindo arquivos](Opening_Files.html) -- arrastar e soltar, Abrir recente, área de transferência
-- [Exportando](Exporting.html) -- Copie Rich Text e salve RTFD (exportação), diferente de abrir RTF como arquivo de origem
+- [Exportando](Exporting.html) -- Copie Rich Text (a visualização inteira, ou só a seleção) e salve RTFD (exportação), diferente de abrir RTF como arquivo de origem

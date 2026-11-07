@@ -14,6 +14,8 @@ O fluxo de trabalho típico é **primeiro a preview, depois a exportação em HT
 * Copia o **HTML do corpo renderizado** (não um documento completo com o wrapper `<html>`)
 * Opcional: ative **Incorporar imagens ao copiar HTML** em {% prefspane Export %} para codificar imagens locais em Base64 como URLs `data:` no código colado
 
+Selecione texto na visualização para copiar só esse fragmento. Se nada estiver selecionado, Copiar HTML ainda copia a visualização inteira. Para copiar o Markdown por trás da visualização, inclusive uma página aberta com [Markdownify URL](Markdownifier.html) que você não salvou, use [Copiar Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Uma seleção é convertida em Markdown, e blocos de código e diagramas voltam à fonte original. Consulte [Copiar uma seleção](Exporting.html#copying-a-selection).
+
 Copiar HTML é ideal quando o destino já tem sua própria folha de estilos e você só precisa da formatação do conteúdo.
 
 ### Salvar HTML (arquivo) [save-html-file]
@@ -102,8 +104,9 @@ Para livros e compilações de capítulos, use [Documentos com Múltiplos Arquiv
 | E-mail ou compartilhamento de arquivo (um anexo) | **Salvar HTML** com **Incorporar imagens locais** |
 | WordPress, Ghost, Notion, etc. | **Copiar HTML**; ative **Incorporar imagens ao copiar HTML** se o editor não resolver caminhos locais |
 | Edição adicional em um editor de código | **Salvar HTML** sem estilo incorporado, ou copie o trecho e envolva manualmente |
+| Editor Markdown, ou uma página convertida com Markdownify | **Copiar Markdown** |
 
-[Copiar Texto Formatado](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o app de destino aceita texto formatado em vez de código HTML.
+[Copiar Texto Formatado](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o app de destino aceita texto formatado em vez de código HTML. [Copiar Markdown](Exporting.html#copymarkdown) copia o próprio Markdown.
 
 ## Tópicos relacionados [related-topics]
 

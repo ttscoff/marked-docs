@@ -20,6 +20,8 @@ Um painel flutuante com uma folha de dicas de atalho está disponível no menu A
 |        **{{shift}}{{cmd}}S** | Salvar RTF |
 |                 **{{cmd}}C** | Copiar |
 |        **{{shift}}{{cmd}}C** | Copiar fonte HTML para a área de transferência |
+|          **{{opt}}{{cmd}}C** | Copiar Rich Text para a área de transferência |
+| **{{opt}}{{shift}}{{cmd}}C** | Copiar Markdown para a área de transferência |
 |                 **{{cmd}}U** | Alternar visualização de origem |
 |                 **{{cmd}}T** | Alternar índice |
 |                 **{{cmd}}R** | Pré-visualização de recarga |
