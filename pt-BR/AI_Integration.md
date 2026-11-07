@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Entregue a um agente de LLM um arquivo de skill para que ele abra arquivos e pastas no Marked, vá a uma seção dos Ajustes e altere preferências. O agente usa o [manipulador de URL](URL_Handler.md) do Marked. Não é preciso um plugin nem um servidor separado.
+Entregue a um agente de LLM um arquivo de skill para que ele abra arquivos e pastas no Marked, vá a uma seção dos Ajustes e altere preferências. O agente usa o [manipulador de URL](URL_Handler.html) do Marked. Não é preciso um plugin nem um servidor separado.
 
 ## Baixar o skill [download-the-skill]
 
@@ -31,7 +31,7 @@ Depois de instalado, peça ao agente que abra um arquivo ou uma pasta no Marked.
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Uma pasta usa o mesmo comando. O caminho precisa existir, e espaços e outros caracteres reservados precisam ser codificados com porcentagem. Veja o [manipulador de URL](URL_Handler.md) para o esquema completo, inclusive refresh, Streaming Preview e callbacks.
+Uma pasta usa o mesmo comando. O caminho precisa existir, e espaços e outros caracteres reservados precisam ser codificados com porcentagem. Veja o [manipulador de URL](URL_Handler.html) para o esquema completo, inclusive refresh, Streaming Preview e callbacks.
 
 ## Preferências [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Relacionado [related]
 
-[Usando o Marked com codificação agentiva](Using_Marked_with_Agentic_Coding.md) explica como acompanhar uma pasta de planos e notas enquanto um agente as escreve. O [utilitário de linha de comando](Command_Line_Utility.md) oferece o mesmo tipo de acesso a partir do shell, sem um agente.
+[Usando o Marked com codificação agentiva](Using_Marked_with_Agentic_Coding.html) explica como acompanhar uma pasta de planos e notas enquanto um agente as escreve. O [utilitário de linha de comando](Command_Line_Utility.html) oferece o mesmo tipo de acesso a partir do shell, sem um agente.

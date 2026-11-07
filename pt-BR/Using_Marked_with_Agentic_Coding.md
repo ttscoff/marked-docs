@@ -54,4 +54,4 @@ Marcado irá transformá-lo automaticamente em um diagrama interativo e estiliza
 
 Ao combinar a observação de pastas com *Scroll to Edit*, o Marked transforma planos e notas gerados por IA em um centro de controle rápido e legível para suas sessões de codificação, especialmente quando você conta com fluxos de trabalho de agente e assistência contínua de ferramentas como Cursor, Claude e Copilot.
 
-Para o agente abrir esses arquivos por conta própria, instale o skill descrito em [Integração com IA](AI_Integration.md).
+Para o agente abrir esses arquivos por conta própria, instale o skill descrito em [Integração com IA](AI_Integration.html).
