@@ -14,6 +14,8 @@ Il flusso di lavoro tipico è **prima l'anteprima, poi l'esportazione HTML**: ap
 * Copia l'**HTML del corpo renderizzato** (non un documento completo con wrapper `<html>`)
 * Opzionale: attiva **Incorpora immagini durante la copia HTML** in {% prefspane Export %} per codificare in Base64 le immagini locali come URL `data:` nel sorgente incollato
 
+Seleziona del testo nell'anteprima per copiare solo quel frammento. Se non è selezionato nulla, Copia HTML copia comunque l'intera anteprima. Per copiare il Markdown che sta dietro l'anteprima, inclusa una pagina aperta con [Markdownify URL](Markdownifier.html) che non hai salvato, usa [Copia Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Una selezione viene convertita in Markdown, e i blocchi di codice e i diagrammi vengono ripristinati alla loro sorgente. Vedi [Copiare una selezione](Exporting.html#copying-a-selection).
+
 Copia HTML è ideale quando la destinazione ha già un proprio foglio di stile e ti serve solo il markup del contenuto.
 
 ### Salva HTML (file) [save-html-file]
@@ -102,8 +104,9 @@ Per libri e raccolte di capitoli, usa i [Documenti multi-file](Multi-File_Docume
 | Email o condivisione file (un allegato) | **Salva HTML** con **Incorpora immagini locali** |
 | WordPress, Ghost, Notion, ecc. | **Copia HTML**; attiva **Incorpora immagini durante la copia HTML** se l'editor non risolve i percorsi locali |
 | Ulteriore modifica in un editor di codice | **Salva HTML** senza stile incorporato, oppure copia lo snippet e racchiudilo manualmente |
+| Editor Markdown, o una pagina convertita con Markdownify | **Copia Markdown** |
 
-[Copia testo formattato](Exporting.html#rtfexportoptions) (menu Gear) è un'alternativa quando l'app di destinazione accetta testo formattato invece del sorgente HTML.
+[Copia testo formattato](Exporting.html#rtfexportoptions) (menu Gear) è un'alternativa quando l'app di destinazione accetta testo formattato invece del sorgente HTML. [Copia Markdown](Exporting.html#copymarkdown) copia il Markdown stesso.
 
 ## Argomenti correlati [related-topics]
 
