@@ -31,6 +31,8 @@ A Markdownifier eléréséhez nyissa meg a {% appmenu File, New, Markdownify URL
 3. **Kattintson az „Automatikus”** lehetőségre, vagy nyomja meg a `Return` gombot a tartalom kibontásához
 4. A kivont tartalom **automatikusan megnyílik** egy új megjelölt dokumentumban
 
+Az új előnézet addig őrzi ezt a Markdown-forrást, amíg el nem menti. A vágólapra helyezéshez válassza a **Markdown másolása** parancsot ({% kbd shift opt cmd C %}). Lásd: [Markdown másolása](Exporting.html#copymarkdown).
+
 ### Manuális tartalomválasztás [manual-content-selection]
 
 Ha az automatikus kibontás nem rögzíti a kívánt tartalmat:

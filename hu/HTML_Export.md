@@ -14,6 +14,8 @@ A **HTML másolása** az előnézet HTML-forráskódját a vágólapra helyezi -
 * A **megjelenített törzs HTML-t** másolja (nem egy teljes dokumentumot `<html>` csomagolással)
 * Opcionális: kapcsold be a **Képek beágyazása HTML másolásakor** funkciót itt: {% prefspane Export %}, hogy a helyi képeket Base64 kódolással `data:` URL-ként ágyazza be a beillesztett forráskódba
 
+Jelölj ki szöveget az előnézetben, ha csak azt a töredéket szeretnéd másolni. Ha nincs kijelölés, a HTML másolása továbbra is a teljes előnézetet másolja. Az előnézet mögötti Markdown másolásához, beleértve a [Markdownify URL](Markdownifier.html) paranccsal megnyitott, még el nem mentett oldalt, használd a [Markdown másolása](Exporting.html#copymarkdown) parancsot ({% kbd shift opt cmd C %}). A kijelölés Markdownná alakul, a kódblokkok és az ábrák pedig visszakerülnek a forrásukra. Lásd: [Kijelölés másolása](Exporting.html#copying-a-selection).
+
 A HTML másolása akkor ideális, ha a célhely már rendelkezik saját stíluslappal, és csak a tartalmi jelölőnyelvre van szükséged.
 
 ### HTML mentése (fájl) [save-html-file]
@@ -102,8 +104,9 @@ Könyvekhez és fejezetgyűjteményekhez használd a [Több fájlból álló dok
 | E-mail vagy fájlmegosztás (egy melléklet) | **HTML mentése** a **Helyi képek beágyazása** beállítással |
 | WordPress, Ghost, Notion stb. | **HTML másolása**; kapcsold be a **Képek beágyazása HTML másolásakor** funkciót, ha a szerkesztő nem oldja fel a helyi elérési utakat |
 | További szerkesztés kódszerkesztőben | **HTML mentése** beágyazott stílus nélkül, vagy másold a részletet és csomagold be kézzel |
+| Markdown-szerkesztő, vagy Markdownify oldal | **Markdown másolása** |
 
-A [Formázott szöveg másolása](Exporting.html#rtfexportoptions) (gear menü) egy alternatíva, ha a célalkalmazás formázott szöveget fogad HTML-forrás helyett.
+A [Formázott szöveg másolása](Exporting.html#rtfexportoptions) (gear menü) egy alternatíva, ha a célalkalmazás formázott szöveget fogad HTML-forrás helyett. A [Markdown másolása](Exporting.html#copymarkdown) magát a Markdown-forrást másolja.
 
 ## Kapcsolódó témák [related-topics]
 
