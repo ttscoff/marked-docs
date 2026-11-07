@@ -1,8 +1,6 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-Visualize seus documentos do seu jeito.
+Veja seus documentos *do seu jeito*.
 
 ## Usando estilos personalizados [using-custom-styles]
 
@@ -10,108 +8,130 @@ Visualize seus documentos do seu jeito.
 
   [img1]: images/custom_styles.jpg @2x width=544px height=196px class=center
 
-A maneira mais fácil de explorar estilos personalizados é através do
-[Galeria de estilos personalizados][2]. A partir daí você pode navegar
-estilos disponíveis em ação, instale-os com o clique de um
-botão e até [envie suas próprias criações] [6] para
+A maneira mais fácil de explorar os Estilos Personalizados é através da
+[Galeria de Estilos Personalizados][2]. Lá você pode navegar pelos
+estilos disponíveis em ação, instalá-los com um clique de
+botão, e até [enviar suas próprias criações][6] para
 inclusão.
 
-Para adicionar folhas de estilo personalizadas da sua unidade local ao Marcado,
-use o {% prefspane Style %}. Novos estilos serão adicionados a
-os menus suspensos nas configurações da janela e em cada janela,
-e será nomeado com base no nome do arquivo base do arquivo CSS
-adicionado. Armazene seus arquivos CSS personalizados em um local seguro no seu
-dirigir. Se eles se moverem na sua unidade, serão removidos do
-Marcado até que você os adicione novamente a partir do novo local. É
-uma boa ideia fechar documentos abertos e remover o estilo
-em Configurações antes de excluir ou renomear um arquivo CSS usado por
-Marcado. Não vai quebrar nada se você não fizer isso, mas salva
+Para adicionar folhas de estilo personalizadas do seu disco local ao Marked,
+use o {% prefspane Style %}. Os novos estilos serão adicionados aos
+menus suspensos nas configurações de Janela e em cada janela,
+e serão nomeados com base no nome do arquivo CSS
+adicionado. Guarde seus arquivos CSS personalizados em um local seguro no
+disco. Se eles forem movidos, serão removidos do
+Marked até que você os adicione novamente a partir do novo local. É
+uma boa ideia fechar os documentos abertos e remover o estilo
+das Configurações antes de excluir ou renomear um arquivo CSS usado
+pelo Marked. Nada será quebrado se você não fizer isso, mas evita
 alguma confusão.
 
-Adicione estilos personalizados usando o Gerenciador de estilos com o botão Adicionar ou arrastando um ou mais arquivos CSS para as configurações
-painel.
+Adicione Estilos Personalizados usando o Gerenciador de Estilos com o botão Adicionar, ou arrastando um ou mais arquivos CSS para o painel de Configurações.
 
-## Gerenciando estilos com o Style Manager [managing-styles-with-the-style-manager]
+## Gerenciando estilos com o Gerenciador de Estilos [managing-styles-with-the-style-manager]
 
-Iniciar o Style Manager oferece um único local para selecionar todos os estilos integrados.
-e tema personalizado. Clique no botão **Gerenciar estilos…** em {% prefspane Style %}
-painel,
-ou simplesmente solte os arquivos CSS na janela de preferências --- Marcado irá importá-los,
-abra o Gerenciador de estilos e selecione a linha recém-adicionada para você. Arrastar CSS
-arquivos diretamente na janela do Style Manager também funcionam; quando vários arquivos
-são arrastados, você verá a atualização da sobreposição para "Adicionar N estilos personalizados", para que fique claro
-você está importando um lote.
+Ao abrir o Gerenciador de Estilos, você tem um único lugar para organizar todos os temas
+integrados e personalizados. Clique no botão **Gerenciar Estilos…** no painel
+{% prefspane Style %},
+ou simplesmente solte arquivos CSS na janela de preferências --- o Marked vai importá-los,
+abrir o Gerenciador de Estilos e selecionar a linha recém-adicionada para você. Arrastar
+arquivos CSS diretamente para a janela do Gerenciador de Estilos também funciona; quando vários arquivos
+são arrastados, a sobreposição é atualizada para "Adicionar N Estilos Personalizados", deixando claro
+que você está importando um lote.
 
-![][gerenciador de estilo img]
+![][img-style-manager]
 
-Dentro do Style Manager você encontrará uma tabela classificável que mistura recursos integrados e
-estilos personalizados. Cada linha oferece:
+Dentro do Gerenciador de Estilos você encontrará uma tabela ordenável que combina estilos
+integrados e personalizados. Cada linha oferece:
 
-- Uma caixa de seleção **Ativada** que adiciona/remove imediatamente o estilo do Estilo
-  menu, pop-up Estilo padrão e atalhos de teclado. Desativando o atualmente
-  o estilo ativo muda automaticamente para a próxima entrada disponível.
-- Uma coluna **Nome** que você pode editar inline; as mudanças persistem e se propagam para todos
-  menu. Clique no nome do estilo para editá-lo no lugar.
+- Uma caixa de seleção **Ativado** que adiciona/remove imediatamente o estilo do menu
+  Estilo, do popup de Estilo Padrão e dos atalhos de teclado. Desativar o estilo
+  atualmente ativo alterna automaticamente para o próximo item disponível.
+- Uma coluna **Nome** que você pode editar diretamente; as alterações persistem e se propagam para todos
+  os menus. Clique no nome do estilo para editá-lo no local.
 - Uma coluna **Origem** que indica Integrado, Personalizado ou Duplicado.
-- Uma pilha de **Ações** com botões para **Editar** (abre o arquivo CSS em seu
+- Uma pilha de **Ações** com botões para **Editar** (abre o arquivo CSS no seu
   editor), **Duplicar** (cria uma cópia e um novo arquivo CSS no disco), **Revelar**
-  (mostra o arquivo no Finder) e **Excluir** (com opções para remover a referência ou
-  mova o arquivo CSS para a Lixeira).
+  (mostra o arquivo no Finder), e **Excluir** (com opções para remover a referência ou
+  mover o arquivo CSS para a Lixeira).
 
-As linhas são reordenadas arrastando e soltando, e a ordem direciona o menu Estilo, bem como
-as atribuições de atalho `⌘/#`, para que você possa literalmente arrastar estilos para os slots
-você quer. Você também pode arrastar arquivos CSS externos para posições específicas; a gota
-indicador determina onde o novo estilo será inserido.
+As linhas são reordenadas por arrastar e soltar, e a ordem determina o menu Estilo, assim como
+as atribuições de atalho `⌘/#`, então você pode literalmente arrastar estilos para os lugares
+que quiser. Você também pode arrastar arquivos CSS externos para posições específicas; o indicador
+de soltura determina onde o novo estilo será inserido.
 
-### Visualização ao vivo [live-preview]
+### Pré-visualização ao vivo [live-preview]
 
-O painel direito contém uma visualização que renderiza o estilo selecionado
-dentro de um documento HTML completo com um conjunto abrangente de títulos, listas, tabelas, blocos de código, etc.
-a visualização usa o CSS real no disco, portanto, as edições feitas em seu editor externo são atualizadas instantaneamente. Uma caixa de seleção alterna a visualização do Modo Escuro.
+O painel direito contém uma pré-visualização que renderiza o estilo selecionado
+dentro de um documento HTML completo, com um conjunto abrangente de títulos, listas, tabelas, blocos de código etc. A
+pré-visualização usa o CSS real no disco, então as edições feitas no seu editor externo são atualizadas instantaneamente. Uma caixa de seleção alterna a pré-visualização do Modo Escuro.
 
-Você pode encontrar estilos adicionais para uso (ou como exemplos para
-criando o seu próprio) [no GitHub][1] (veja os [exemplos][2] para
-uma rápida olhada no que está lá). Consulte [Criando CSS personalizado][3]
+Você pode encontrar estilos adicionais para usar (ou como exemplos para
+criar os seus próprios) [no GitHub][1] (veja os [exemplos][2] para
+uma olhada rápida no que há disponível). Veja [Criando CSS Personalizado][3]
 para detalhes e dicas.
 
-## CSS adicional [additional-css]
+## CSS Adicional [additional-css]
 
-Abaixo de {% prefspane Style %}, você encontrará uma opção
-intitulado CSS adicional com um botão denominado "Editar CSS".
-Clicar neste botão abre uma janela onde você pode adicionar
-regras CSS universais que serão aplicadas a todos os estilos. Nota
-que a especificidade das regras pode ser importante quando
-substituindo alguns dos estilos padrão do Marked. O corpo principal
-do documento é agrupado em uma div com o id "#wrapper".
-Prefixar um seletor com isso pode facilitar
-substituições, por exemplo:
+No {% prefspane Style %}, você encontrará uma opção
+chamada CSS Adicional com um botão rotulado "Editar CSS".
+Clicar nesse botão abre uma janela onde você pode adicionar
+regras CSS universais que serão aplicadas a todos os estilos. Observe
+que a especificidade das regras pode ser importante ao
+sobrescrever parte da estilização padrão do Marked. O corpo principal
+do documento é envolvido em uma div com o id "#wrapper".
+Prefixar um seletor com isso pode facilitar as
+sobrescritas, por exemplo:
 
-    #wrapper img { largura: 100%; altura: automático; }
+    #wrapper img { width: 100%; height: auto; }
 
-CSS neste campo será aplicado a todos os documentos, não
-não importa o estilo que ele está usando. Se você deseja aplicar personalizado
-CSS baseado em correspondências condicionais, use Set Style, Insert
-Arquivo CSS ou Inserir ações CSS em {% prefspane Processor %}
-Regras personalizadas.
+O CSS nesse campo é **anexado ao tema ativo**. Não é um
+substituto para um Estilo Personalizado completo: uma folha de estilo escrita apenas para esse
+campo é deliberadamente parcial, e carregá-la pelo Gerenciador de Estilos como
+tema deixaria sem estilo tudo o que ela não cobre.
 
-## Impressão e exportação de PDF [print-and-pdf-export]
+O Marked **reescreve** os seletores de CSS Adicional antes da injeção. Classes de
+body iniciais como `.mkprinting` são mescladas em `body` em vez de
+aninhadas sob `#wrapper`, então as regras de impressão nesse campo devem usar
+`body.mkprinting #wrapper …` (veja [Criando CSS
+Personalizado](Writing_Custom_CSS.html#additional-css-settings) para as regras completas
+de reescrita). Não há limite de tamanho nem verificação de validade nesse campo
+--- CSS inválido simplesmente não tem efeito.
 
-Marcado injeta um bloco `@media print` integrado (`mkprintstyles`) em cada
-visualização. Ele define padrões como **10pt** com base em `html`, `body` e
-`#wrapper` (ou o tamanho de **Tamanho de fonte personalizado para exportação/impressão** em
-{% prefspane Export %} quando essa opção está habilitada) e normaliza o parágrafo
-texto com `p { font-size: 1em; }` e `li p { font-size: 1em; }` então
-regras somente de tela como `p { font-size: 1.1429em; }` não aumentam a cópia do corpo
-em PDFs e saída impressa.
+O CSS nesse campo será aplicado a todo documento, independentemente
+do Estilo que estiver sendo usado --- incluindo exportação em HTML quando os estilos são
+incluídos. Se você quiser aplicar CSS personalizado
+com base em correspondências condicionais, use as ações Definir Estilo, Inserir
+Arquivo CSS ou Inserir CSS em {% prefspane Processor %}
+Regras Personalizadas.
 
-A exportação de PDF usa mídia impressa no WebView oculto usado para geração, portanto
-`@media print { ... }` as regras em sua folha de estilo se aplicam da mesma forma que para
-impressão.
+## Exportação para impressão e PDF [print-and-pdf-export]
 
-Para definir tamanhos diferentes dos padrões de impressão do Marked, adicione regras explícitas
-dentro de `@media print` em seu CSS personalizado (ou em CSS adicional). Usar
-`!important` quando você precisar substituir os estilos de impressão injetados do Marked --- para
-exemplo:
+O Marked injeta um bloco `@media print` integrado (`mkprintstyles`) em toda
+pré-visualização. Ele define padrões como uma base de **10pt** em `html`, `body` e
+`#wrapper` (ou o tamanho definido em **Tamanho de fonte personalizado para exportação/impressão** em
+{% prefspane Export %} quando essa opção está ativada), e normaliza o texto de parágrafos
+com `p { font-size: 1em; }` e `li p { font-size: 1em; }`, para que regras exclusivas de tela como
+`p { font-size: 1.1429em; }` não aumentem o corpo do texto
+em PDFs e material impresso.
+
+A exportação em PDF pode usar mídia **print** ou **screen** na WebView oculta usada para
+a geração. Os temas integrados normalmente usam mídia de impressão; **estilos personalizados** e
+documentos [Fountain](Fountain_for_Screenwriters.html) costumam usar mídia de tela, para que o
+layout corresponda à pré-visualização. Isso significa que as regras `@media print { ... }` nem sempre
+são aplicadas durante a exportação em PDF.
+
+Para uma estilização confiável em PDF e na Pré-visualização de Impressão/PDF, prefixe os seletores com a
+classe `mkprinting` que o Marked adiciona a `<body>` durante a exportação (veja [Escrevendo CSS
+Personalizado](Writing_Custom_CSS.html#printstyles) para detalhes e exemplos). Em um
+arquivo de **Estilo Personalizado**, você pode usar apenas `.mkprinting`. Em **CSS Adicional**,
+use a forma qualificada pelo body `body.mkprinting #wrapper …`, porque esse campo
+reescreve os seletores. Você também pode combinar qualquer uma das formas com `@media print` quando
+precisar cobrir os dois caminhos.
+
+Para definir tamanhos diferentes dos padrões de impressão do Marked, adicione regras explícitas no
+seu CSS personalizado (ou em CSS Adicional). Use `!important` quando precisar
+sobrescrever os estilos de impressão injetados pelo Marked --- por exemplo:
 
 ```css
 @media print {
@@ -126,49 +146,74 @@ exemplo:
     font-size: 16pt !important;
   }
 }
+
+/* Custom Style (and most theme stylesheets) */
+.mkprinting #wrapper p,
+.mkprinting body p,
+.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+.mkprinting h1 {
+  font-size: 16pt !important;
+}
+
+/* Additional CSS field (selector rewriting) */
+body.mkprinting #wrapper p,
+body.mkprinting p {
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+
+body.mkprinting #wrapper h1,
+body.mkprinting h1 {
+  font-size: 16pt !important;
+}
 ```
 
 Regras sem `!important` podem perder para regras posteriores em `mkprintstyles` ou para
-outros seletores não qualificados em sua planilha que ainda se aplicam na impressão. Colocando
-ajustes somente para impressão em `@media print` (em vez de apenas nas regras da tela) mantêm
-o comportamento de visualização e exportação é mais fácil de raciocinar.
+outros seletores não qualificados na sua folha de estilo que ainda se aplicam na impressão. Colocar
+ajustes exclusivos de impressão em `@media print` e/ou em regras `.mkprinting` / `body.mkprinting`
+(em vez de somente em regras de tela) mantém o comportamento da pré-visualização e da exportação
+mais fácil de entender.
 
-## Observando alterações de CSS [watching-css-changes]
+## Observando alterações no CSS [watching-css-changes]
 
 Você pode marcar uma caixa na seção Estilos Personalizados do {% prefspane Style %}
-para marcar o arquivo CSS ativo
+para que o Marked observe o arquivo CSS ativo,
 além do arquivo Markdown que você está editando. Quando
-alterações forem detectadas em qualquer arquivo, a visualização será
-atualizar. Isto é útil para editar estilos personalizados sem
-constantemente atualizado e também pode ser usado para web simples
-tarefas de desenvolvimento.
+alterações forem detectadas em qualquer um dos arquivos, a pré-visualização será
+atualizada. Isso é útil para editar estilos personalizados sem
+precisar atualizar constantemente, e também pode ser usado para tarefas simples de
+desenvolvimento web.
 
-Isso também é útil para alguns trabalhos básicos de web design e CSS
-experimentação (como criar estilos personalizados). Carregue um
-Arquivo Markdown contendo toda a marcação que você deseja estilizar
-para, crie um estilo personalizado e assista à prévia ao vivo
-muda à medida que você o edita.
+Isso também é útil para algum trabalho básico de design web e
+experimentação com CSS (como criar estilos personalizados). Carregue um
+arquivo Markdown contendo toda a marcação que você deseja estilizar,
+crie um estilo personalizado e observe a pré-visualização mudar ao vivo
+enquanto você edita.
 
 ## Escrevendo CSS personalizado [writing-custom-css]
 
-Se você estiver familiarizado com CSS, poderá criar seu próprio estilo
-folhas para uso em Marcado. Consulte [Escrever CSS personalizado][3] para
-detalhes. Sempre que você criar algo novo, considere
-[enviando] [6] para a [galeria] [2] para compartilhar com outros
-usuários. Certifique-se de cobrir os princípios básicos listados no guia e
-inclua o comentário de metadados na parte superior.
+Se você já conhece CSS, pode criar suas próprias folhas de
+estilo para usar no Marked. Veja [Escrevendo CSS Personalizado][3] para
+detalhes. Sempre que criar algo novo, considere
+[enviá-lo][6] para a [galeria][2] e compartilhar com outros
+usuários. Não deixe de cobrir os itens básicos listados no guia, e
+inclua o comentário de metadados no topo.
 
-### Estilos personalizados automáticos com StyleStealer [automatic-custom-styles-with-stylestealer]
+### Estilos Personalizados automáticos com o StyleStealer [automatic-custom-styles-with-stylestealer]
 
-Você pode até gerar automaticamente um estilo baseado em um
-site existente usando o [Style Stealer][4]. Isso permite que você carregue uma página da web e obtenha os estilos calculados para todos os principais elementos encontrados no Markdown e, em seguida, salve-os em um estilo personalizado.
+Você pode até gerar um estilo automaticamente com base em um
+site existente usando o [Style Stealer][4]. Isso permite carregar uma página web e capturar os estilos calculados de todos os elementos principais encontrados no Markdown, e então salvá-los como um estilo personalizado.
 
-![Ladrão de estilo][ladrão de estilo]
+![Style Stealer][stylestealer]
 
   [stylestealer]: images/style-stealer-800.jpg @2x width=800
 
 
-Gerencie estilos personalizados (renomeie, reordene, duplique e exclua) no [Style Manager](Style_Manager.html).
+Gerencie os Estilos Personalizados (renomear, reordenar, duplicar e excluir) pelo [Gerenciador de Estilos](Style_Manager.html).
 
 [1]: https://github.com/ttscoff/MarkedCustomStyles
 [2]: https://markedapp.com/styles/

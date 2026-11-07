@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-O manipulador de URL do Marked fornece recursos adicionais de script e fluxo de trabalho. Você pode incluir uma url nas notas de outro aplicativo, por exemplo, que abrirá um arquivo em Marcado ao ser clicado. Você pode realizar diversas ações, conforme listado abaixo.
+O manipulador de URL do Marked fornece recursos adicionais de script e fluxo de trabalho. Você pode incluir uma url nas notas de outro aplicativo, por exemplo, que abrirá um arquivo em Marcado ao ser clicado. Você pode realizar diversas ações, conforme listado abaixo. Para entregar os mesmos comandos a um agente de LLM, consulte [Integração com IA](AI_Integration.html).
 
 ## O esquema de URL [the-url-scheme]
 
