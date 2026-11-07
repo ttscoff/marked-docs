@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Give an LLM agent a skill file so it can open files and folders in Marked, jump to a Settings section, and change preferences. The agent uses Marked's [URL handler](URL_Handler.md). You do not need a separate plugin or server.
+Give an LLM agent a skill file so it can open files and folders in Marked, jump to a Settings section, and change preferences. The agent uses Marked's [URL handler](URL_Handler.html). You do not need a separate plugin or server.
 
 ## Download the skill [download-the-skill]
 
@@ -30,7 +30,7 @@ After it is installed, ask the agent to open a file or folder in Marked. It shou
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-A folder uses the same command. The path has to exist, and spaces and other reserved characters must be percent-encoded. See [URL Handler](URL_Handler.md) for the full scheme, including refresh, Streaming Preview, and callbacks.
+A folder uses the same command. The path has to exist, and spaces and other reserved characters must be percent-encoded. See [URL Handler](URL_Handler.html) for the full scheme, including refresh, Streaming Preview, and callbacks.
 
 ## Preferences [preferences]
 
@@ -49,4 +49,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Related [related]
 
-[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) covers watching a folder of plans and notes while an agent writes them. The [command line utility](Command_Line_Utility.md) is the same kind of access from a shell, without an agent.
+[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.html) covers watching a folder of plans and notes while an agent writes them. The [command line utility](Command_Line_Utility.html) is the same kind of access from a shell, without an agent.

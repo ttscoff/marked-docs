@@ -52,5 +52,5 @@ Marked will automatically turn it into a styled, interactive diagram, giving you
 
 By combining folder watching with *Scroll to Edit*, Marked turns AI-generated plans and notes into a fast, readable control center for your coding sessions — especially when you lean on agentic workflows and continuous assistance from tools like Cursor, Claude, and Copilot.
 
-To have the agent open those files itself, install the skill described in [AI Integration](AI_Integration.md).
+To have the agent open those files itself, install the skill described in [AI Integration](AI_Integration.html).
 

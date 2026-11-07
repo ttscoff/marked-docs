@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that will open a file in Marked when clicked. You can perform several actions, as listed below. To hand the same commands to an LLM agent, see [AI Integration](AI_Integration.md).
+Marked's URL handler provides additional scripting and workflow capabilities. You can include a url in the notes of another application, for example, that will open a file in Marked when clicked. You can perform several actions, as listed below. To hand the same commands to an LLM agent, see [AI Integration](AI_Integration.html).
 
 ## The URL scheme [the-url-scheme]
 
