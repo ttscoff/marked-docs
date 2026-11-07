@@ -112,5 +112,6 @@ The new preview holds that Markdown until you save it. Choose **Copy Markdown** 
 === de/config.yaml (keywords only) ===
 Exporting keywords: add zwischenablage, markdown, auswahl if they are not already there.
 Exporting wiki_keywords: add markdown kopieren.
-HTML_Export wiki_keywords: add markdown kopieren.
+HTML_Export keywords: add markdown kopieren.
+Do not add markdown kopieren to HTML_Export wiki_keywords. That phrase auto-links to Exporting only.
 Do not retitle pages. Anchors and file keys stay English.

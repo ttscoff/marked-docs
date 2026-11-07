@@ -433,11 +433,11 @@ Sections:
     - styles
     - embed
     - copy
+    - copy markdown
     wiki_keywords:
     - html export
     - export html
     - copy html
-    - copy markdown
     - save html
     - embed images
     - embedded styles
