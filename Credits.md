@@ -73,6 +73,7 @@ Marked is available in multiple languages thanks to volunteer translators:
 - PG Neuromonaco
 - Richard Kranendonk
 - Sébastien Gaïde
+- [Thomas Heinrichsdobler](https://github.com/fucx)
 - Yuki Tamari
 - 亮 王
 

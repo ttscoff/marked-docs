@@ -73,6 +73,7 @@ Marked ist dank freiwilliger Übersetzer in mehreren Sprachen verfügbar:
 - PG Neuromonaco
 - Richard Kranendonk
 - Sébastien Gaïde
+- [Thomas Heinrichsdobler](https://github.com/fucx)
 - Yuki Tamari
 - 亮 王
 
