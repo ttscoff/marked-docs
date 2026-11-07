@@ -14,6 +14,8 @@ De gebruikelijke werkwijze is **eerst voorvertonen, dan HTML exporteren**: open 
 * Kopieert de **gerenderde HTML van de inhoud** (geen volledig document met `<html>`-wrapper)
 * Optioneel: schakel **Afbeeldingen insluiten bij HTML kopiëren** in bij {% prefspane Export %} om lokale afbeeldingen als Base64-`data:`-URL's in de geplakte broncode te coderen
 
+Selecteer tekst in het voorbeeld om alleen dat fragment te kopiëren. Als er niets is geselecteerd, kopieert HTML kopiëren nog steeds het hele voorbeeld. Om de Markdown achter het voorbeeld te kopiëren, ook een pagina die je met [Markdownify URL](Markdownifier.html) hebt geopend en nog niet hebt opgeslagen, gebruik je [Kopieer Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Een selectie wordt omgezet naar Markdown, en codeblokken en diagrammen worden teruggezet naar hun bron. Zie [Een selectie kopiëren](Exporting.html#copying-a-selection).
+
 HTML kopiëren is ideaal wanneer je bestemming al een eigen stylesheet heeft en je alleen de inhoudsmarkup nodig hebt.
 
 ### HTML opslaan (bestand) [save-html-file]
@@ -102,8 +104,9 @@ Gebruik voor boeken en hoofdstukcompilaties [documenten met meerdere bestanden](
 | E-mail of bestandsdeling (één bijlage) | **HTML opslaan** met **Lokale afbeeldingen insluiten** |
 | WordPress, Ghost, Notion, enz. | **HTML kopiëren**; schakel **Afbeeldingen insluiten bij HTML kopiëren** in als de editor lokale paden niet kan omzetten |
 | Verdere bewerking in een code-editor | **HTML opslaan** zonder ingesloten stijl, of kopieer het fragment en verpak het handmatig |
+| Markdown-editor, of een pagina via Markdownify | **Kopieer Markdown** |
 
-[Rich Text kopiëren](Exporting.html#rtfexportoptions) (gear-menu) is een alternatief wanneer de doeltoepassing opgemaakte tekst accepteert in plaats van HTML-broncode.
+[Rich Text kopiëren](Exporting.html#rtfexportoptions) (gear-menu) is een alternatief wanneer de doeltoepassing opgemaakte tekst accepteert in plaats van HTML-broncode. [Kopieer Markdown](Exporting.html#copymarkdown) kopieert de Markdown zelf.
 
 ## Gerelateerde onderwerpen [related-topics]
 

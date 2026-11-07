@@ -47,4 +47,4 @@ Voor een eenmalige plakactie zonder een bestand op te slaan, gebruikt u in plaat
 - [PDF Support](PDF_Support.html) -- open PDF documenten als Markdown bronnen
 - [Working with DOCX](Working_With_DOCX.html) -- Word-documenten met het bijhouden van wijzigingen en opmerkingen
 - [Opening Files](Opening_Files.html) -- slepen en neerzetten, Recent openen, klembord
-- [Exporting](Exporting.html) -- Kopieer Rich Text en sla RTFD op (exporteren), anders dan het openen van RTF als bronbestand
+- [Exporting](Exporting.html) -- Kopieer Rich Text (het hele voorbeeld, of alleen de selectie) en sla RTFD op (exporteren), anders dan het openen van RTF als bronbestand

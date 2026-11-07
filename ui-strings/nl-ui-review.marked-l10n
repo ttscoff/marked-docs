@@ -37,7 +37,7 @@
 #   Settings.strings (gaps): 89
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "Recent geopend";
@@ -172,6 +172,12 @@
 
 "610.title" = "Heropen het laatste bestand";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Kopieer de Markdown bron naar het klembord";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Kopieer Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Kopieer de HTML bron naar het klembord";
 # EN: Copy HTML source to the clipboard
@@ -551,7 +557,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "Karakters:";
@@ -1045,6 +1051,9 @@
 
 "WQz-kW-hnP.title" = "Ga naar Vorige fout";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "Kopieer Markdown";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "Kopieer HTML";
 # EN: Copy HTML
@@ -3476,7 +3485,7 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 25
+# Strings in this section: 26
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "Annoteren met %@";
@@ -3484,6 +3493,9 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "menu.copyHTML" = "HTML kopiëren";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "Markdown kopiëren";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "Rich text kopiëren";
 # EN: Copy Rich Text
@@ -3758,7 +3770,7 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 199
+# Strings in this section: 200
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "Klembordvoorbeeld";
@@ -3778,6 +3790,9 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "kbs.action.copyHTMLSource" = "Kopieer HTML bron";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "Kopieer Markdown";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "Kopieer Rich Text";
 # EN: Copy Rich Text
@@ -4254,7 +4269,7 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "Beheer stijlen";
@@ -4383,6 +4398,12 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "610.title" = "Heropen het laatste bestand";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Kopieer de Markdown bron naar het klembord";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Kopieer Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Kopieer de HTML bron naar het klembord";
 # EN: Copy HTML source to the clipboard
@@ -4740,7 +4761,7 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/nl.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "Geschiedenis items";
@@ -4863,6 +4884,12 @@ Write all responses in %@." = "You help someone review a document open in Marked
 
 "610.title" = "Heropen het laatste bestand";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Kopieer de Markdown bron naar het klembord";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Kopieer Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Kopieer de HTML bron naar het klembord";
 # EN: Copy HTML source to the clipboard
