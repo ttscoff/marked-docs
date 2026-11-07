@@ -11,6 +11,7 @@
 |トピック |ヘルプページ |
 | :-- | :-- |
 | **クマ** | [クマ](Bear.html) |
+| **Bike** `.bike` アウトライン | [Bike](Bike.html) |
 | **キュリオ** (ストリーミング プレビュー) | [骨董品](Curio.html) |
 | **下書き** (ストリーミング プレビュー + アクション) | [下書き](Drafts.html) |
 | **DEVONthink** (スクリプト メニュー統合) | [デボン考える](DEVONthink.html) |
@@ -20,6 +21,7 @@
 | **iA ライター** | [iAライター](iA_Writer.html) |
 | **iThoughtsX** `.itmz` マップ | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** ライブ プレビュー | [マーズ編集](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **マインドノード** | [マインドノード](MindNode.html) |
 | **MultiMarkdown Composer** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvウルトラ](nvUltra.html) |
@@ -29,6 +31,8 @@
 | **PDF** | [PDFサポート](PDF_Support.html) |
 | **書士 3** | [Scrivener 3 サポート](Scrivener_Support.html) |
 | **アーカイブ** ストリーミング プレビュー | [アーカイブ](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse**（Stream to Marked） | [Traverse](Traverse.html) |
 | **Ulysses** エクスポート ワークフロー | [ユリシーズ](Ulysses.html) |
 | **Vim** (vim マークのプラグイン) | [ヴィム](Vim.html) |
 | **VS Code** (マークされた拡張機能で開く) | 【VSコード】(VS_Code.html) |
@@ -51,7 +55,7 @@ I> いくつかの統合では、{% prefspane Apps %} と {% prefspane Preview %
 
 ## ストリーミングプレビュー [streaming-preview]
 
-Bear、Curio、Drafts、The Archive、nvALT、nvUltra、およびその他のいくつかのエディターは、**ストリーミング プレビュー** を介して入力時に Markdown を Marked にプッシュできます。セットアップとトラブルシューティングについては、[ストリーミング プレビュー](Streaming_Preview.html) を参照してください。
+Bear、Curio、Drafts、The Archive、Traverse、nvALT、nvUltra、およびその他のいくつかのエディターは、**ストリーミング プレビュー** を介して入力時に Markdown を Marked にプッシュできます。セットアップとトラブルシューティングについては、[ストリーミング プレビュー](Streaming_Preview.html) を参照してください。
 
 ## スクリプトとボーナス パック [scripts-and-bonus-pack]
 

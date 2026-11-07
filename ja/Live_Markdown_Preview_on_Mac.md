@@ -25,8 +25,9 @@ Marked 3 は、Markdown ファイルを監視し、保存時にライブ プレ�
 |黒曜石 | 【黒曜石】(Obsidian.html) |
 |行政書士 | [Scrivener 3 サポート](Scrivener_Support.html) |
 | Bear、nvUltra、ドラフト、アーカイブ | 【ストリーミングプレビュー】(Streaming_Preview.html) |
+| Traverse | [Traverse](Traverse.html) |
 |ユリシーズ | [ユリシーズ](Ulysses.html) |
-| Word / DOCX | [DOCX との連携](Working_With_DOCX.html) |
+| Word / DOCX | [Microsoft Word](Microsoft_Word.html) |
 |火星編集 | [マーズ編集](MarsEdit.html) |
 | Vim / Emacs / ターミナルエディタ | [Vim](Vim.html) または [ファイルを開く](Opening_Files.html) |
 |その他 | [ファイルを開く](Opening_Files.html) |

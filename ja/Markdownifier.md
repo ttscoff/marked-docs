@@ -31,6 +31,8 @@ Markdownifier にアクセスするには、{% appmenu File, New, Markdownify UR
 3. **[自動]** をクリックするか、`Return` を押してコンテンツを抽出します
 4. 抽出されたコンテンツは、新しいマーク付きドキュメントで **自動的に開きます**
 
+新しいプレビューは、保存するまでその Markdown を保持します。クリップボードに置くには **Markdown をコピー** ({% kbd shift opt cmd C %}) を選びます。[Markdown をコピー](Exporting.html#copymarkdown) を参照してください。
+
 ### マニュアルコンテンツの選択 [manual-content-selection]
 
 自動抽出で必要なコンテンツがキャプチャされない場合:

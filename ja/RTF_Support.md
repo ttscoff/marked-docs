@@ -49,4 +49,4 @@ Marked は、画像ファイル名を代替テキストまたは MultiMarkdown �
 - [PDF サポート](PDF_Support.html) -- PDF ドキュメントを Markdown ソースとして開きます
 - [DOCX の使用](Working_With_DOCX.html) -- 変更追跡とコメントを含む Word ドキュメント
 - [ファイルを開く](Opening_Files.html) -- ドラッグ アンド ドロップ、最近使ったファイルを開く、クリップボード
-- [エクスポート](Exporting.html) -- RTF をソース ファイルとして開くのとは異なり、リッチ テキストをコピーして RTFD を保存します (エクスポート)。
+- [エクスポート](Exporting.html) -- リッチ テキストをコピー（プレビュー全体、または選択範囲だけ）して RTFD を保存します (エクスポート)。RTF をソース ファイルとして開くのとは異なります。
