@@ -37,7 +37,7 @@
 #   Settings.strings (gaps): 95
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "最近使った項目を開く";
@@ -174,6 +174,12 @@
 
 "610.title" = "最後のファイルを開き直す";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown をクリップボードにコピーします。";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
 # EN: Copy HTML source to the clipboard
@@ -561,7 +567,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "文字数:";
@@ -1063,6 +1069,9 @@
 
 "WQz-kW-hnP.title" = "前のエラーへ移動";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "HTML をコピー";
 # EN: Copy HTML
@@ -3515,7 +3524,7 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 25
+# Strings in this section: 26
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "%@ で注釈";
@@ -3523,6 +3532,9 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 "menu.copyHTML" = "HTML をコピー";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "リッチテキストをコピー";
 # EN: Copy Rich Text
@@ -3799,7 +3811,7 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 199
+# Strings in this section: 200
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "クリップボードのプレビュー";
@@ -3819,6 +3831,9 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 "kbs.action.copyHTMLSource" = "HTML ソースをコピー";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "リッチテキストのコピー";
 # EN: Copy Rich Text
@@ -4404,7 +4419,7 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "スタイルを管理";
@@ -4535,6 +4550,12 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 "610.title" = "最後のファイルを開き直す";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown をクリップボードにコピーします。";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
 # EN: Copy HTML source to the clipboard
@@ -4899,7 +4920,7 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/ja.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "履歴項目";
@@ -5024,6 +5045,12 @@ Write all responses in %@." = "あなたは、Markdown プレビューアプリ 
 
 "610.title" = "最後のファイルを開き直す";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Markdown をクリップボードにコピーします。";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown をコピー";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "HTML ソースをクリップボードにコピーします。";
 # EN: Copy HTML source to the clipboard

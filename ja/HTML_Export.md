@@ -14,6 +14,8 @@ Marked は**ライブプレビュー**からHTMLを書き出します --- 画面
 * **レンダリングされたbodyのHTML**をコピーします(`<html>`ラッパー付きの完全なドキュメントではありません)
 * オプション: {% prefspane Export %}で**HTMLコピー時に画像を埋め込む**を有効にすると、ローカル画像をBase64エンコードして貼り付けたソース内で`data:` URLにできます
 
+プレビュー内のテキストを選択すると、その断片だけをコピーします。何も選択していない場合、HTML のコピーはこれまでどおりプレビュー全体をコピーします。プレビューの元になっている Markdown をコピーするには、まだ保存していない [Markdownify URL](Markdownifier.html) で開いたページを含めて、[Markdown をコピー](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}) を使います。選択範囲は Markdown に変換され、コードブロックと図はソースに戻されます。[選択範囲のコピー](Exporting.html#copying-a-selection) を参照してください。
+
 貼り付け先にすでに独自のスタイルシートがあり、コンテンツのマークアップだけが必要な場合は、HTMLをコピーが最適です。
 
 ### HTMLを保存(ファイル) [save-html-file]
@@ -102,8 +104,9 @@ I> プレビュー専用のCSS(固定配置、ビューポートを使ったト�
 | メールやファイル共有(添付ファイル1つ) | **ローカル画像を埋め込む**を有効にして**HTMLを保存** |
 | WordPress、Ghost、Notionなど | **HTMLをコピー**。エディタがローカルパスを解決できない場合は**HTMLコピー時に画像を埋め込む**を有効にする |
 | コードエディタでのさらなる編集 | スタイルを埋め込まずに**HTMLを保存**するか、スニペットをコピーして手動でラップする |
+| Markdown エディタ、または Markdownify したページ | **Markdown をコピー** |
 
-貼り付け先のアプリがHTMLソースではなく書式付きテキストを受け付ける場合は、[リッチテキストをコピー](Exporting.html#rtfexportoptions)(ギアメニュー)が代わりの選択肢になります。
+貼り付け先のアプリがHTMLソースではなく書式付きテキストを受け付ける場合は、[リッチテキストをコピー](Exporting.html#rtfexportoptions)(ギアメニュー)が代わりの選択肢になります。[Markdown をコピー](Exporting.html#copymarkdown) は Markdown そのものをコピーします。
 
 ## 関連トピック [related-topics]
 
