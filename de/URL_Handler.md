@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Markeds URL-Handler bietet zusätzliche Skripting- und Workflow-Möglichkeiten. Sie können zum Beispiel in den Notizen einer anderen App eine URL hinterlegen, die beim Klick eine Datei in Marked öffnet. Es stehen mehrere Aktionen zur Verfügung, wie unten aufgeführt.
+Markeds URL-Handler bietet zusätzliche Skripting- und Workflow-Möglichkeiten. Sie können zum Beispiel in den Notizen einer anderen App eine URL hinterlegen, die beim Klick eine Datei in Marked öffnet. Es stehen mehrere Aktionen zur Verfügung, wie unten aufgeführt. Wie Sie dieselben Befehle einem LLM-Agenten übergeben, steht unter [KI-Integration](AI_Integration.html).
 
 ## Das URL-Schema [the-url-scheme]
 

@@ -1048,6 +1048,21 @@ Sections:
     wiki_keywords:
     - befehlsreferenz
     - befehlszeile
+  - title: KI-Integration
+    file: AI_Integration
+    description: Marked mit einem LLM-Agenten verbinden. Eine Skill-Datei herunterladen, die einem Agenten zeigt, wie er Dateien öffnet und Einstellungen ändert.
+    keywords:
+    - ki
+    - llm
+    - agent
+    - skill
+    - cursor
+    - automatisierung
+    - url-schema
+    wiki_keywords:
+    - llm-agenten
+    - skill-datei
+    - ki-integration
   - title: Streaming-Vorschau
     file: Streaming_Preview
     description: Über Ablage > Neu > Streaming-Vorschau erhält Marked Live-Aktualisierungen über eine benannte Zwischenablage, statt eine Datei auf dem Datenträger zu überwachen. Die sendende App ...

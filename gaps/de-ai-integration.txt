@@ -1,0 +1,97 @@
+# Help translation gap — de — AI Integration
+# Feature: AI Integration (new page) plus two sentences
+# Generated: 2026-11-06
+#
+# An initial German draft is already in this branch for review. Please
+# post-edit it. Do not machine-overwrite the rest of de/URL_Handler.md or
+# de/Using_Marked_with_Agentic_Coding.md. Those pages are finished; only the
+# new sentence at the end of each intro (URL handler) or the new final
+# paragraph (agentic coding) is in scope.
+#
+# SKILL.md stays English. It is an instruction file for the agent, not a
+# help page. The download target stays SKILL.md.
+#
+# Keep in English: Marked, Cursor, Markdown, Streaming Preview as a command
+# name where it is the URL command, and every URL token (pref, defaults,
+# refresh, Preview, Style, syntaxHighlight, x-marked-3, file paths).
+# Anchors in [brackets] stay English. Translate the {% download %} description;
+# do not translate the URL.
+
+=== LOCATION ===
+File: de/AI_Integration.md (new)
+Also update: de/config.yaml (page entry after Kommandozeilenwerkzeug)
+Also update: de/URL_Handler.md (one sentence at the end of the opening paragraph)
+Also update: de/Using_Marked_with_Agentic_Coding.md (one new paragraph at the end)
+
+=== CURRENT GERMAN (URL handler opening paragraph; keep it, sentence added) ===
+Markeds URL-Handler bietet zusätzliche Skripting- und Workflow-Möglichkeiten. Sie können zum Beispiel in den Notizen einer anderen App eine URL hinterlegen, die beim Klick eine Datei in Marked öffnet. Es stehen mehrere Aktionen zur Verfügung, wie unten aufgeführt.
+
+=== ENGLISH TARGET (append to that paragraph) ===
+To hand the same commands to an LLM agent, see [AI Integration](AI_Integration.md).
+
+=== CURRENT GERMAN (agentic coding; keep the page, paragraph added at the end) ===
+Durch die Kombination der Ordnerüberwachung mit *Zum Bearbeiten scrollen* macht Marked KI-generierte Pläne und Notizen zu einer schnellen, übersichtlichen Schaltzentrale für Ihre Coding-Sitzungen – besonders bei agentenbasierten Workflows und fortlaufender Unterstützung durch Werkzeuge wie Cursor, Claude und Copilot.
+
+=== ENGLISH TARGET (new paragraph after that one) ===
+To have the agent open those files itself, install the skill described in [AI Integration](AI_Integration.md).
+
+=== ENGLISH TARGET (new page, de/AI_Integration.md) ===
+# <%= @title %>
+
+Give an LLM agent a skill file so it can open files and folders in Marked, jump to a Settings section, and change preferences. The agent uses Marked's [URL handler](URL_Handler.md). You do not need a separate plugin or server.
+
+## Download the skill [download-the-skill]
+
+{% download "SKILL.md" "Agent skill for opening files in Marked and changing preferences. Save it as SKILL.md." %}
+
+The file is plain Markdown with a short header your agent reads before it acts. Hand the same file to any agent that accepts a skill or a standing instruction.
+
+## Install it [install-it]
+
+Put the file in a folder named for the skill, and keep the filename `SKILL.md`.
+
+For Cursor, either location works:
+
+```
+~/.cursor/skills/open-in-marked/SKILL.md
+```
+
+```
+.cursor/skills/open-in-marked/SKILL.md
+```
+
+The first is available in every project. The second applies only to that project. Other agents can use the same text as a project instruction if they do not have a skills folder.
+
+After it is installed, ask the agent to open a file or folder in Marked. It should run a command like:
+
+```bash
+open "x-marked-3://open?file=/Users/me/Notes/draft.md"
+```
+
+A folder uses the same command. The path has to exist, and spaces and other reserved characters must be percent-encoded. See [URL Handler](URL_Handler.md) for the full scheme, including refresh, Streaming Preview, and callbacks.
+
+## Preferences [preferences]
+
+The skill also covers two preference commands:
+
+`pref`
+: Opens Settings to a named section, such as Preview or Style. It does not change a value.
+
+`defaults`
+: Sets a preference Marked already stores, then reloads open previews. Pass `refresh=0` to leave the previews alone. The agent should read the current preferences before it writes one, because an unknown key is ignored.
+
+```bash
+open "x-marked-3://pref?page=Preview"
+open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
+```
+
+## Related [related]
+
+[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) covers watching a folder of plans and notes while an agent writes them. The [command line utility](Command_Line_Utility.md) is the same kind of access from a shell, without an agent.
+
+=== NOTES ===
+- Page title in the index: KI-Integration. Link text in the two edited pages uses that title.
+- Settings pane names in the URL stay `Preview` and `Style`. The draft says the URL name stays English.
+- `pref` and `defaults` are command names. Do not translate them.
+- Sie for instructions. Control-style captions can stay infinitive or third person.
+- Product names stay English: Marked, Cursor, Claude, Copilot.
