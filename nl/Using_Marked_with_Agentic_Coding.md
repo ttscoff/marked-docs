@@ -53,4 +53,4 @@ Marked verandert het automatisch in een opgemaakt, interactief diagram, waardoor
 Door het bekijken van mappen te combineren met *Scroll naar Bewerken*, verandert Marked door AI gegenereerde plannen en notities in een snel, leesbaar controlecentrum voor uw codeersessies, vooral als u vertrouwt op agentische workflows en voortdurende hulp van tools als Cursor, Claude en Copilot.
 
 
-Om de agent die bestanden zelf te laten openen, installeert u de skill uit [AI-integratie](AI_Integration.md).
+Om de agent die bestanden zelf te laten openen, installeert u de skill uit [AI-integratie](AI_Integration.html).

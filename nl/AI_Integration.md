@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Geef een LLM-agent een skillbestand, zodat die bestanden en mappen in Marked kan openen, naar een onderdeel van Instellingen kan gaan en voorkeuren kan wijzigen. De agent gebruikt de [URL Handler](URL_Handler.md) van Marked. Een extra plug-in of server is niet nodig.
+Geef een LLM-agent een skillbestand, zodat die bestanden en mappen in Marked kan openen, naar een onderdeel van Instellingen kan gaan en voorkeuren kan wijzigen. De agent gebruikt de [URL Handler](URL_Handler.html) van Marked. Een extra plug-in of server is niet nodig.
 
 ## De skill downloaden [download-the-skill]
 
@@ -31,7 +31,7 @@ Vraag de agent daarna om een bestand of map in Marked te openen. Die hoort een o
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Een map gebruikt dezelfde opdracht. Het pad moet bestaan, en spaties en andere gereserveerde tekens moeten procentgecodeerd zijn. Zie [URL Handler](URL_Handler.md) voor het volledige schema, inclusief refresh, Streaming Preview en callbacks.
+Een map gebruikt dezelfde opdracht. Het pad moet bestaan, en spaties en andere gereserveerde tekens moeten procentgecodeerd zijn. Zie [URL Handler](URL_Handler.html) voor het volledige schema, inclusief refresh, Streaming Preview en callbacks.
 
 ## Voorkeuren [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Verwant [related]
 
-[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) beschrijft hoe u een map met plannen en notities volgt terwijl een agent die schrijft. De [Command Line Utility](Command_Line_Utility.md) biedt dezelfde soort toegang vanuit de shell, zonder agent.
+[Using Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.html) beschrijft hoe u een map met plannen en notities volgt terwijl een agent die schrijft. De [Command Line Utility](Command_Line_Utility.html) biedt dezelfde soort toegang vanuit de shell, zonder agent.
