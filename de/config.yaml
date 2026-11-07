@@ -439,6 +439,7 @@ Sections:
     - export
     wiki_keywords:
     - docx
+    - microsoft word
   - title: HTML-Export
     file: HTML_Export
     description: Marked exportiert HTML aus Ihrer Live-Vorschau – dieselbe Darstellung, die Sie auf dem Bildschirm sehen. Nutzen Sie den HTML-Export, wenn Sie einen Ausschnitt für ein Blog brauchen oder ...
@@ -685,8 +686,6 @@ Sections:
     keywords:
     - word
     - docx
-    - microsoft word
-    wiki_keywords:
     - microsoft word
   - title: MindNode
     file: MindNode
