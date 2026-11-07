@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: zh-Hant
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "Tree Outliner 大綱";
+"setting.treeOutlinerHeadingLevel" = "標題到層級";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "將 Tree Outliner（.treeoutline）檔案嵌入為 Mermaid 心智圖。關閉時，會編成 Markdown 標題和清單。";
+"tooltip.treeOutlinerHeadingLevel" = "文件標題是第 1 級標題。大綱在這個層級以內維持標題，更深的節點變成巢狀清單。筆記變成段落。在 Tree Outliner 的「嵌入為 Mermaid 心智圖」關閉時使用。";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "串流預覽來源";
+"Streaming preview format" = "串流預覽格式";
