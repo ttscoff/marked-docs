@@ -49,4 +49,4 @@ Para pegar una sola vez sin guardar un archivo, utilice [Vista previa del portap
 - [Soporte PDF](PDF_Support.html): abre documentos PDF como fuentes de Markdown
 - [Trabajar con DOCX](Working_With_DOCX.html) -- Documentos de Word con seguimiento de cambios y comentarios
 - [Abrir archivos](Opening_Files.html): arrastrar y soltar, Abrir recientes, portapapeles
-- [Exportar](Exporting.html) -- Copiar texto enriquecido y guardar RTFD (exportar), distinto de abrir RTF como archivo fuente
+- [Exportar](Exporting.html) -- Copiar texto enriquecido (toda la vista previa, o solo la selección) y guardar RTFD (exportar), distinto de abrir RTF como archivo fuente

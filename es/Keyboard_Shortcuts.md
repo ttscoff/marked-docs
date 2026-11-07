@@ -20,6 +20,8 @@ Un panel flotante con una hoja de trucos de acceso directo está disponible en e
 |        **{{shift}}{{cmd}}S** | Guardar RTF |
 |                 **{{cmd}}C** | Copiar |
 |        **{{shift}}{{cmd}}C** | Copiar fuente HTML al portapapeles |
+|          **{{opt}}{{cmd}}C** | Copiar texto enriquecido al portapapeles |
+| **{{opt}}{{shift}}{{cmd}}C** | Copiar Markdown al portapapeles |
 |                 **{{cmd}}U** | Alternar vista de código fuente |
 |                 **{{cmd}}T** | Alternar tabla de contenidos |
 |                 **{{cmd}}R** | Recargar vista previa |
