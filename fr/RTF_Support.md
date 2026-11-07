@@ -47,4 +47,4 @@ Pour un collage ponctuel sans enregistrer de fichier, utilisez plutôt [Aperçu 
 - [Support PDF](PDF_Support.html) : ouvrir des documents PDF comme sources Markdown
 - [Travailler avec DOCX](Working_With_DOCX.html) : documents Word avec suivi des modifications et commentaires
 - [Ouverture de fichiers](Opening_Files.html) : glisser-déposer, Ouvrir récent, presse-papiers
-- [Exportation](Exporting.html) : Copier le texte enrichi et enregistrer en RTFD (exportation), différent de l'ouverture d'un RTF comme fichier source
+- [Exportation](Exporting.html) : Copier le texte enrichi (tout l'aperçu, ou seulement la sélection) et enregistrer en RTFD (exportation), différent de l'ouverture d'un RTF comme fichier source

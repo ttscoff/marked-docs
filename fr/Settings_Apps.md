@@ -89,8 +89,17 @@ Ouvrir les fichiers .scriv dans Scrivener lorsqu'ils sont ouverts dans Marked
 
 #### Word [word]
 
+[(Informations sur Microsoft Word)](Microsoft_Word.html)
+
 Convertir le suivi des modifications <-> CriticMarkup
 : Si cette option est activée, le suivi des modifications des documents Word sera converti en CriticMarkup lors de l'importation, et CriticMarkup sera converti en suivi des modifications Word lors de l'exportation de fichiers DOCX.
+
+#### Tree Outliner [tree-outliner]
+
+[(Informations sur Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: Le titre du document est le titre de niveau 1. Les niveaux du plan restent des titres jusqu'à ce niveau, et les nœuds plus profonds deviennent des listes imbriquées. Les notes deviennent des paragraphes. Utilisé lorsque **Tree Outliner outlines** est désactivé sous **Embed as Mermaid mind maps**.
 
 #### Cartes mentales/Plans [MindMapsOutlines]
 
@@ -99,4 +108,5 @@ Intégrer sous forme de cartes mentales Mermaid
 : **Cartes mentales** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Si activé : carte mentale Mermaid. Si désactivé : iThoughts intègre son image d'aperçu ; MindManager et FreeMind sont convertis en listes Markdown imbriquées.
 : **Fichiers OPML** (.opml). Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée.
 : **Plans OmniOutliner** (.ooutline). Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée (ou liste de tâches le cas échéant).
-: **Plans Bike**. Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée.
+: **Plans Bike**. Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée. Voir [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Si activé : carte mentale Mermaid. Si désactivé : titres et listes Markdown. Voir [Tree Outliner](Tree_Outliner.html).

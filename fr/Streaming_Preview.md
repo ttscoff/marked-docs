@@ -2,7 +2,7 @@
 
 En ouvrant {% appmenu File, New, Streaming Preview %}, Marked reçoit des mises à jour en direct via un presse-papiers nommé, plutôt qu'en surveillant un fichier sur le disque. L'application source doit s'intégrer avec Marked.
 
-[Curio](Curio.html), [Drafts](Drafts.html) et [The Archive](The_Archive.html) documentent leurs propres options et commandes de menu. nvUltra, nvALT, Bear et d'autres utilisent le même canal : ouvrez l'aperçu en continu dans Marked, activez l'intégration dans votre éditeur, et commencez à taper ; les mises à jour arrivent quasiment en temps réel.
+[Curio](Curio.html), [Drafts](Drafts.html) et [The Archive](The_Archive.html) et [Traverse](Traverse.html) documentent leurs propres options et commandes de menu. nvUltra, nvALT, Bear et d'autres utilisent le même canal : ouvrez l'aperçu en continu dans Marked, activez l'intégration dans votre éditeur, et commencez à taper ; les mises à jour arrivent quasiment en temps réel.
 
 ## Développeurs [developers]
 
@@ -16,37 +16,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### Déclarer une URL de base pour les ressources relatives [declaring-a-base-url-for-relative-assets]
+### Déclarer l'app d'origine et le format [declaring-the-origin-app-and-format]
 
-Vous pouvez également fournir une URL de base pour l'aperçu en continu, afin que les URL relatives des images et autres ressources fonctionnent comme dans l'application source. Si l'URL de base inclut un nom de fichier, son nom et son extension seront mis à disposition des processeurs personnalisés, sans que cela soit obligatoire. Pour inclure l'URL de base, placez simplement un objet NSURL dans le presse-papiers :
+Placez un mot-clé `source` ou `format` dans un commentaire HTML au début du texte envoyé. Marked lit le commentaire et le retire de l'aperçu, donc la note reste compatible avec les processeurs GFM et MultiMarkdown. L'espace après les deux-points est facultatif (`source:Bear.app` et `source: Bear.app` sont identiques), et le mot-clé ignore la casse.
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+Les deux valeurs sont libres. Marked a un comportement intégré pour certaines d'entre elles, et chaque valeur est disponible dans le [Custom Processor](Custom_Processor.html) (Conductor) sous **Source de l'aperçu en continu** et **Format de l'aperçu en continu**. Ces critères acceptent **est**, **n'est pas**, **contient** et **ne contient pas**.
+
+**`source: APP_NAME`** nomme l'app d'origine, par son nom ou son bundle id. Marked s'en sert pour ajouter un traitement particulier à cette app. `source: Bear.app` et `source: Drafts.app` activent le comportement d'aperçu de ces apps. Tout autre nom peut encore être comparé par une règle Conductor, pour lancer vos propres actions pour cette app :
+
+```html
+<!--source:Bear.app-->
 ```
 
-Ou en Swift :
+**`format: fountain`** active le traitement [Fountain](Fountain_for_Screenwriters.html), donc le flux est affiché comme un scénario plutôt que comme du Markdown. Toute autre valeur de format ne change pas le processeur. Elle sert à une règle Conductor, par exemple **Format de l'aperçu en continu** `est` `fountain`.
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Si la version Mac App Store de Marked est utilisée et que l'URL de base n'est pas accessible en raison du bac à sable, l'autorisation sera demandée la première fois que l'URL est chargée dans l'aperçu.
-
-### Déclarer l'application source [declaring-the-source-application]
-
-Les applications peuvent également se déclarer comme source du contenu de l'aperçu en incluant une ligne de métadonnées `source`. Cela se fait généralement au sein d'un commentaire HTML, afin d'assurer la compatibilité avec les processeurs GFM et MultiMarkdown. Il suffit d'indiquer le nom de l'application ou son identifiant de bundle :
+Un commentaire peut porter les deux mots-clés :
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 

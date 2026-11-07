@@ -25,7 +25,11 @@ OPML (Outline Processor Markup Language) est un format XML pour les plans hiéra
 
 ### Bike (.bike) [bike-bike]
 
-Les contours Bike.app sont stockés sous forme de fichiers HTML propriétaires (`.bike`). Vous pouvez ouvrir un fichier `.bike` directement dans Marked : le document est rendu au format Markdown avec le nom de fichier (moins l'extension) comme titre principal (H1), les éléments de titre de niveau supérieur comme H2, les titres imbriqués comme éléments de liste en gras et les tâches comme cases à cocher de style GitHub. Lorsqu'un fichier `.bike` est inclus via la syntaxe d'inclusion, le paramètre « Intégrer les cartes en tant que diagrammes Mermaid » pour Bike (dans Applications → Cartes mentales/Contours) contrôle s'il devient une carte mentale Mermaid (avec le nom de fichier comme nœud racine) ou une liste Markdown imbriquée (pas de H1).
+Voir [Bike](Bike.html) pour ouvrir un fichier `.bike`. Les plans Bike inclus suivent la case **Bike outlines** : activée, une carte mentale Mermaid (le nom du fichier, sans `.bike`, est le nœud racine) ; désactivée, une liste Markdown imbriquée sans titre de document.
+
+### Tree Outliner (.treeoutline) [tree-outliner-treeoutline]
+
+Voir [Tree Outliner](Tree_Outliner.html). La case **Tree Outliner outlines** régit l'ouverture d'un fichier `.treeoutline` et son inclusion. Activée, elle dessine une carte mentale Mermaid dont la racine est le titre du document. Désactivée, elle compile des titres et des listes ; **Headings through level** dans le groupe *Tree Outliner* fixe la profondeur des titres.
 
 ## Intégrer des cartes sous forme de diagrammes Mermaid [embed-maps-as-mermaid-diagrams]
 
@@ -52,6 +56,7 @@ Utilisez la même syntaxe que pour les autres fichiers inclus :
 	<<[path/to/outline.mm]
 	<<[path/to/outline.opml]
 	<<[path/to/outline.bike]
+	<<[path/to/outline.treeoutline]
 
 Ou avec la syntaxe de bloc iA Writer :
 
@@ -70,4 +75,4 @@ Les fichiers OPML utilisent des éléments `<outline>` imbriqués avec un attrib
 
 ## Conversion de Bike [bike-conversion]
 
-Les fichiers Bike `.bike` sont au format HTML avec les éléments racine `<ul>` et `<li>`. Les éléments peuvent avoir `data-type="heading"` (niveau supérieur → H2 lorsqu'ils sont ouverts ou en mode liste ; imbriqués → gras) ou `data-type="task"` (cases à cocher GitHub ; complétées lorsque `data-done` a un horodatage, ou `data-checked` / `data-completed` est vrai). Le formatage en ligne et les liens dans le texte du nœud sont convertis en Markdown. Lors de l'intégration en tant que carte mentale Mermaid, le nom du fichier (sans l'extension) est utilisé comme nœud racine unique et les étiquettes sont en texte brut formaté pour la syntaxe de la carte mentale Mermaid.
+Les fichiers Bike `.bike` sont du HTML avec une `<ul>` racine et des éléments `<li>`. En mode liste, chaque ligne est un élément de liste : les lignes `data-type="heading"` sont en gras, et les lignes `data-type="task"` sont des cases GitHub (cochées lorsque `data-done` a un horodatage, ou lorsque `data-checked` / `data-completed` est vrai). La mise en forme et les liens dans le texte du nœud sont convertis en Markdown. Ouvrir un fichier `.bike` utilise toujours cette liste. Lorsqu'un fichier inclus est intégré comme carte mentale Mermaid, le nom du fichier (sans l'extension) est l'unique nœud racine et les étiquettes sont du texte brut pour la syntaxe mindmap de Mermaid.
