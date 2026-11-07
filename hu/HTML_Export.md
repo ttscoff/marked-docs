@@ -16,6 +16,8 @@ A tipikus munkafolyamat az **előzetes előnézet, a második a HTML-exportálá
 * Másolja a **megjelenített törzs-HTML-t** (nem teljes dokumentum `<html>` burkolóval)
 * Nem kötelező: engedélyezze a **Képek beágyazása HTML másolásakor** az {% prefspane Export %}-be, hogy Base64-kódolású helyi képeket `data:` URL-ként a beillesztett forrásban
 
+Jelöljön ki szöveget az előnézetben, ha csak azt a töredéket szeretné másolni. Ha nincs kijelölés, a HTML másolása továbbra is a teljes előnézetet másolja. Az előnézet mögötti Markdown másolásához, beleértve a [Markdownify URL](Markdownifier.html) paranccsal megnyitott, még el nem mentett oldalt, használja a [Markdown másolása](Exporting.html#copymarkdown) parancsot ({% kbd shift opt cmd C %}). A kijelölés Markdownná alakul, a kódblokkok és az ábrák pedig visszakerülnek a forrásukra. Lásd: [Kijelölés másolása](Exporting.html#copying-a-selection).
+
 A HTML másolása akkor ideális, ha a célhelynek már van saját stíluslapja, és csak a tartalomjelölésre van szüksége.
 
 ### HTML mentése (fájl) [save-html-file]
@@ -102,8 +104,9 @@ Könyvekhez és fejezet-összeállításokhoz használja a [Többfájlos dokumen
 | E-mail vagy fájlmegosztás (egy melléklet) | **HTML mentése** a **helyi képek beágyazásával** |
 | WordPress, Ghost, Notion stb. | **HTML másolás**; engedélyezze a **Képek beágyazását HTML másolásakor**, ha a szerkesztő nem oldja fel a helyi elérési utakat |
 | További szerkesztés kódszerkesztőben | **Mentse el a HTML-t** beágyazott stílus nélkül, vagy másolja ki a kódrészletet és csomagolja be kézzel |
+| Markdown-szerkesztő, vagy Markdownify oldal | **Markdown másolása** |
 
-A [Copy Rich Text](Exporting.html#rtfexportoptions) (fogaskerék menü) egy alternatíva, amikor a célalkalmazás formázott szöveget fogad el HTML-forrás helyett.
+A [Rich Text másolása](Exporting.html#rtfexportoptions) (fogaskerék menü) egy alternatíva, amikor a célalkalmazás formázott szöveget fogad el HTML-forrás helyett. A [Markdown másolása](Exporting.html#copymarkdown) magát a Markdown-forrást másolja.
 
 ## Kapcsolódó témák [related-topics]
 

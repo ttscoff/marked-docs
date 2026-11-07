@@ -24,6 +24,30 @@ Utilice la función Copiar HTML para colocar el código fuente HTML para su vist
 
 No es necesario estar en la vista de código fuente para copiar. Con la vista previa enfocada (haga clic en ella), simplemente escriba {% kbd shift cmd C %} y verá un mensaje emergente que le informará que la fuente está en su portapapeles.
 
+Si no hay nada seleccionado, Copiar HTML copia toda la vista previa. Seleccione texto en la vista previa para copiar solo esa selección. [Copiar texto enriquecido](#rtfexportoptions) y [Copiar Markdown](#copymarkdown) siguen la misma regla. Consulte [Copiar una selección](#copying-a-selection).
+
+## Copiar Markdown [copymarkdown]
+
+**Copiar Markdown** coloca el Markdown del documento en el portapapeles. Marked copia el Markdown que usó para crear la vista previa. No convierte el HTML de la vista previa de nuevo en Markdown.
+
+Puede elegirlo en el menú Edición, en el menú de ajustes o en el menú contextual de la vista previa, o pulsar {% kbd shift opt cmd C %}.
+
+Úselo cuando el Markdown solo existe en la vista previa y todavía no se ha guardado, por ejemplo después de [Markdownify URL](Markdownifier.html).
+
+Si no hay nada seleccionado, Marked copia ese Markdown. En un archivo HTML, Copiar Markdown solo está disponible cuando hay texto seleccionado, porque el archivo no tiene una fuente Markdown.
+
+## Copiar una selección [copying-a-selection]
+
+Copiar HTML, Copiar texto enriquecido y Copiar Markdown siguen la selección de la vista previa.
+
+* Nada seleccionado: el comando copia todo el documento.
+* Texto seleccionado: el comando copia solo esa selección.
+    * **Copiar HTML** copia el HTML de la selección, incluido el resaltado de sintaxis tal como se ve en la vista previa.
+    * **Copiar texto enriquecido** ({% kbd opt cmd C %}) convierte ese fragmento HTML en texto enriquecido.
+    * **Copiar Markdown** convierte la selección en Markdown. El código se copia como la fuente original, con el lenguaje en la apertura del bloque, y no como los spans del resaltado. Una selección dentro de un bloque de código copia solo las líneas seleccionadas, dentro de un bloque. Una selección dentro de un diagrama ya renderizado copia toda la fuente del diagrama, por ejemplo un bloque Mermaid, y no el SVG.
+
+Cuando hay texto seleccionado, los tres comandos aparecen en el menú contextual junto a Copiar.
+
 ## Guardar HTML [save-html]
 
 ![][exportarhtmlaccesorio]
@@ -163,7 +187,7 @@ Esta opción guarda su vista previa directamente en un archivo PDF en su disco. 
 
 ## Opciones de exportación RTF [rtfexportoptions]
 
-Marked puede exportar datos RTF (formato de texto enriquecido) directamente a su portapapeles. Simplemente elija el comando Copiar texto enriquecido en el menú de ajustes.
+Marked puede exportar datos RTF (formato de texto enriquecido) directamente a su portapapeles. Elija **Copiar texto enriquecido** en el menú de ajustes, o pulse {% kbd opt cmd C %}. Si no hay nada seleccionado, se copia toda la vista previa. Seleccione texto primero para copiar solo esa selección como texto enriquecido. Consulte [Copiar una selección](#copying-a-selection).
 
 Marked también puede guardar su archivo como un archivo **RTFD** (formato de texto enriquecido). El formato RTFD es un formato de paquete que incluye un archivo RTF y cualquier imagen incrustada en el documento.
 

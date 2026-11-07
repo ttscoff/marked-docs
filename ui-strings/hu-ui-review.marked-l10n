@@ -36,7 +36,7 @@
 #   MainMenuSetapp.strings: 156
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "Nyissa meg a Legutóbbi lehetőséget";
@@ -173,6 +173,12 @@
 
 "610.title" = "Nyissa meg újra az utolsó fájlt";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Másolja a Markdown forrást a vágólapra";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown másolása";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Másolja a HTML forrást a vágólapra";
 # EN: Copy HTML source to the clipboard
@@ -554,7 +560,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "Karakterek:";
@@ -1050,6 +1056,9 @@
 
 "WQz-kW-hnP.title" = "Lépjen az Előző hiba elemre";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "Markdown másolása";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "Másolás HTML";
 # EN: Copy HTML
@@ -3504,7 +3513,7 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 28
+# Strings in this section: 29
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "Jegyzet a következővel: %@";
@@ -3512,6 +3521,9 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 "menu.copyHTML" = "Másolás HTML";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "Markdown másolása";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "Rich Text másolása";
 # EN: Copy Rich Text
@@ -3806,7 +3818,7 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 201
+# Strings in this section: 202
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "Vágólap előnézete";
@@ -3826,6 +3838,9 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 "kbs.action.copyHTMLSource" = "HTML Forrás másolása";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "Markdown másolása";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "Rich Text másolása";
 # EN: Copy Rich Text
@@ -4415,7 +4430,7 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "Stílusok kezelése";
@@ -4546,6 +4561,12 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 "610.title" = "Nyissa meg újra az utolsó fájlt";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Másolja a Markdown forrást a vágólapra";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown másolása";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Másolja a HTML forrást a vágólapra";
 # EN: Copy HTML source to the clipboard
@@ -4913,7 +4934,7 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/hu.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "Történeti elemek";
@@ -5038,6 +5059,12 @@ Ha a szöveg nem tartalmaz elegendő információt, mondja el röviden.
 
 "610.title" = "Nyissa meg újra az utolsó fájlt";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "Másolja a Markdown forrást a vágólapra";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "Markdown másolása";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "Másolja a HTML forrást a vágólapra";
 # EN: Copy HTML source to the clipboard

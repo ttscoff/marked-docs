@@ -438,6 +438,7 @@ Sections:
     - html export
     - export html
     - copy html
+    - copy markdown
     - save html
     - embed images
     - embedded styles

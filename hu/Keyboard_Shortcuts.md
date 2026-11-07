@@ -20,6 +20,8 @@ A súgó menüből vagy a {{opt}}{{cmd}}K gomb megnyomásával elérhető egy le
 |        **{{shift}}{{cmd}}S** | RTF mentése |
 |                 **{{cmd}}C** | Másolás |
 |        **{{shift}}{{cmd}}C** | HTML-forrás másolása a vágólapra |
+|          **{{opt}}{{cmd}}C** | Rich Text másolása a vágólapra |
+| **{{opt}}{{shift}}{{cmd}}C** | Markdown másolása a vágólapra |
 |                 **{{cmd}}U** | Forrásnézet váltása |
 |                 **{{cmd}}T** | Tartalomjegyzék |
 |                 **{{cmd}}R** | Előnézet újratöltése |

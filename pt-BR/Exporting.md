@@ -24,6 +24,30 @@ Use o recurso Copiar HTML para colocar o código-fonte HTML da sua visualizaçã
 
 Você não precisa estar na visualização de origem para copiar. Com a visualização focada (clique nela), basta digitar {% kbd shift cmd C %} e você verá uma mensagem pop-up informando que a fonte está na sua área de transferência.
 
+Se nada estiver selecionado, Copiar HTML copia a visualização inteira. Selecione texto na visualização para copiar apenas essa seleção. [Copiar Rich Text](#rtfexportoptions) e [Copiar Markdown](#copymarkdown) seguem a mesma regra. Consulte [Copiar uma seleção](#copying-a-selection).
+
+## Copiar Markdown [copymarkdown]
+
+**Copiar Markdown** coloca o Markdown do documento na área de transferência. O Marked copia o Markdown que usou para montar a visualização. Ele não converte o HTML da visualização de volta em Markdown.
+
+Escolha o comando no menu Editar, no menu de engrenagem ou no menu contextual da visualização, ou pressione {% kbd shift opt cmd C %}.
+
+Use-o quando o Markdown existe só na visualização e ainda não foi salvo, por exemplo depois de [Markdownify URL](Markdownifier.html).
+
+Se nada estiver selecionado, o Marked copia esse Markdown. Em um arquivo HTML, Copiar Markdown só fica disponível quando há texto selecionado, porque o arquivo não tem uma fonte Markdown.
+
+## Copiar uma seleção [copying-a-selection]
+
+Copiar HTML, Copiar Rich Text e Copiar Markdown seguem a seleção na visualização.
+
+* Nada selecionado: o comando copia o documento inteiro.
+* Texto selecionado: o comando copia só essa seleção.
+    * **Copiar HTML** copia o HTML da seleção, inclusive o realce de sintaxe como a visualização o mostra.
+    * **Copiar Rich Text** ({% kbd opt cmd C %}) converte esse fragmento de HTML em texto formatado.
+    * **Copiar Markdown** converte a seleção em Markdown. O código é copiado como a fonte original, com a linguagem na linha de abertura, e não como os spans do realce. Uma seleção dentro de um bloco de código copia só as linhas selecionadas, ainda dentro de um bloco. Uma seleção dentro de um diagrama renderizado copia a fonte inteira do diagrama, como um bloco Mermaid, e não o SVG.
+
+Quando há texto selecionado, os três comandos aparecem no menu contextual ao lado de Copiar.
+
 ## Salvar HTML [save-html]
 
 ![][exportarhtmlacessório]
@@ -163,7 +187,7 @@ Esta opção salva sua visualização diretamente em um arquivo PDF em sua unida
 
 ## Opções de exportação RTF [rtfexportoptions]
 
-Marcado pode exportar dados RTF (Rich Text Format) diretamente para sua área de transferência. Basta escolher o comando Copiar Rich Text no menu de engrenagem.
+O Marked pode exportar dados RTF (Rich Text Format) diretamente para sua área de transferência. Escolha **Copiar Rich Text** no menu de engrenagem, ou pressione {% kbd opt cmd C %}. Se nada estiver selecionado, isso copia a visualização inteira. Selecione o texto antes para copiar só essa seleção como texto formatado. Consulte [Copiar uma seleção](#copying-a-selection).
 
 Marcado também pode salvar seu arquivo como um arquivo **RTFD** (Rich Text Format). O formato RTFD é um formato de pacote que inclui um arquivo RTF e quaisquer imagens incorporadas no documento.
 

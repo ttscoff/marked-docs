@@ -16,6 +16,8 @@ Il flusso di lavoro tipico è **prima l'anteprima, poi l'esportazione dell'HTML*
 * Copia il **HTML del corpo renderizzato** (non un documento completo con wrapper `<html>`)
 * Facoltativo: attiva **Incorpora immagini durante la copia di HTML** in {% prefspane Export %} per codificare in Base64 le immagini locali come URL `data:` nell'origine incollata
 
+Seleziona del testo nell'anteprima per copiare solo quel frammento. Se non è selezionato nulla, Copia HTML copia comunque l'intera anteprima. Per copiare il Markdown che sta dietro l'anteprima, inclusa una pagina aperta con [Markdownify URL](Markdownifier.html) che non hai salvato, usa [Copia Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Una selezione viene convertita in Markdown, e i blocchi di codice e i diagrammi vengono ripristinati alla loro sorgente. Vedi [Copiare una selezione](Exporting.html#copying-a-selection).
+
 Copia HTML è l'ideale quando la tua destinazione ha già un proprio foglio di stile e hai solo bisogno del markup del contenuto.
 
 ### Salva HTML (file) [save-html-file]
@@ -102,8 +104,9 @@ Per libri e raccolte di capitoli, utilizzare [Documenti multi-file](Multi-File_D
 | E-mail o condivisione di file (un allegato) | **Salva HTML** con **Incorpora immagini locali** |
 | WordPress, Ghost, Nozione, ecc. | **Copia HTML**; abilitare **Incorpora immagini durante la copia di HTML** se l'editor non risolve i percorsi locali |
 | Ulteriore modifica in un editor di codice | **Salva HTML** senza stile incorporato oppure copia lo snippet e inseriscilo manualmente |
+| Editor Markdown, o una pagina convertita con Markdownify | **Copia Markdown** |
 
-[Copia Rich Text](Exporting.html#rtfexportoptions) (menu a forma di ingranaggio) è un'alternativa quando l'app di destinazione accetta testo formattato anziché origine HTML.
+[Copia Rich Text](Exporting.html#rtfexportoptions) (menu a forma di ingranaggio) è un'alternativa quando l'app di destinazione accetta testo formattato anziché origine HTML. [Copia Markdown](Exporting.html#copymarkdown) copia il Markdown stesso.
 
 ## Argomenti correlati [related-topics]
 

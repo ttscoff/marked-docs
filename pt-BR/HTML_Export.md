@@ -16,6 +16,8 @@ O fluxo de trabalho típico é **visualizar primeiro, depois exportar HTML**: ab
 * Copia o **HTML do corpo renderizado** (não um documento completo com wrapper `<html>`)
 * Opcional: habilite **Incorporar imagens ao copiar HTML** em {% prefspane Export %} para imagens locais codificadas em Base64 como `data:` URLs na fonte colada
 
+Selecione texto na visualização para copiar só esse fragmento. Se nada estiver selecionado, Copiar HTML ainda copia a visualização inteira. Para copiar o Markdown por trás da visualização, inclusive uma página aberta com [Markdownify URL](Markdownifier.html) que você não salvou, use [Copiar Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Uma seleção é convertida em Markdown, e blocos de código e diagramas voltam à fonte original. Consulte [Copiar uma seleção](Exporting.html#copying-a-selection).
+
 Copiar HTML é ideal quando seu destino já possui sua própria folha de estilo e você só precisa da marcação do conteúdo.
 
 ### Salvar HTML (arquivo) [save-html-file]
@@ -102,8 +104,9 @@ Para compilações de livros e capítulos, use [Documentos de vários arquivos](
 | E-mail ou compartilhamento de arquivo (um anexo) | **Salve HTML** com **Incorpore imagens locais** |
 | WordPress, Ghost, Noção, etc. | **Copiar HTML**; habilite **Incorporar imagens ao copiar HTML** se o editor não resolver caminhos locais |
 | Edição adicional em um editor de código | **Salve HTML** sem estilo incorporado ou copie o snippet e ajuste manualmente |
+| Editor Markdown, ou uma página convertida com Markdownify | **Copiar Markdown** |
 
-[Copiar Rich Text](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o aplicativo de destino aceita texto formatado em vez de fonte HTML.
+[Copiar Rich Text](Exporting.html#rtfexportoptions) (menu de engrenagem) é uma alternativa quando o aplicativo de destino aceita texto formatado em vez de fonte HTML. [Copiar Markdown](Exporting.html#copymarkdown) copia o próprio Markdown.
 
 ## Tópicos relacionados [related-topics]
 

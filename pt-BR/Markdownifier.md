@@ -31,6 +31,8 @@ Para acessar o Markdownifier, abra {% appmenu File, New, Markdownify URL (@~k) %
 3. **Clique em "Automático"** ou pressione `Return` para extrair o conteúdo
 4. O conteúdo extraído será **aberto automaticamente** em um novo documento marcado
 
+A nova visualização guarda esse Markdown até você salvá-lo. Escolha **Copiar Markdown** ({% kbd shift opt cmd C %}) para colocá-lo na área de transferência. Consulte [Copiar Markdown](Exporting.html#copymarkdown).
+
 ### Seleção manual de conteúdo [manual-content-selection]
 
 Se a extração automática não capturar o conteúdo desejado:

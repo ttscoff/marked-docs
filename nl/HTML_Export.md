@@ -14,6 +14,8 @@ De typische workflow is **eerst een voorbeeld bekijken, HTML seconde** exportere
 * Kopieert de **gerenderde hoofdtekst HTML** (geen volledig document met `<html>` wrapper)
 * Optioneel: schakel **Afbeeldingen insluiten bij het kopiëren van HTML** in {% prefspane Export %} naar Base64-codering van lokale afbeeldingen als `data:` URL's in de geplakte broncode
 
+Selecteer tekst in het voorbeeld om alleen dat fragment te kopiëren. Als er niets is geselecteerd, kopieert Kopieer HTML nog steeds het hele voorbeeld. Om de Markdown achter het voorbeeld te kopiëren, ook een pagina die u met [Markdownify URL](Markdownifier.html) hebt geopend en nog niet hebt opgeslagen, gebruikt u [Kopieer Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Een selectie wordt omgezet naar Markdown, en codeblokken en diagrammen worden teruggezet naar hun bron. Zie [Een selectie kopiëren](Exporting.html#copying-a-selection).
+
 Kopieer HTML is ideaal wanneer uw bestemming al een eigen stylesheet heeft en u alleen de inhoudsopmaak nodig heeft.
 
 ### Opslaan HTML (bestand) [save-html-file]
@@ -100,8 +102,9 @@ Voor boeken- en hoofdstukcompilaties gebruikt u [Multi-File Documents](Multi-Fil
 | E-mail of bestandsdeling (één bijlage) | **Opslaan HTML** met **Lokale afbeeldingen insluiten** |
 | WordPress, Ghost, Notion, enz. | **Kopieer HTML**; enable **Afbeeldingen insluiten bij het kopiëren van HTML** als de editor de lokale paden niet omzet |
 | Verder bewerken in een code-editor | **Opslaan HTML** zonder ingesloten stijl, of fragment kopiëren en handmatig inpakken |
+| Markdown-editor, of een pagina via Markdownify | **Kopieer Markdown** |
 
-[Copy Rich Text](Exporting.html#rtfexportoptions) (tandwielmenu) is een alternatief wanneer de doelapp opgemaakte tekst accepteert in plaats van de HTML bron.
+[Kopieer Rich Text](Exporting.html#rtfexportoptions) (tandwielmenu) is een alternatief wanneer de doelapp opgemaakte tekst accepteert in plaats van de HTML bron. [Kopieer Markdown](Exporting.html#copymarkdown) kopieert de Markdown zelf.
 
 ## Gerelateerde onderwerpen [related-topics]
 

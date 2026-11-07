@@ -16,6 +16,8 @@ El flujo de trabajo típico es **primero obtener una vista previa, luego exporta
 * Copia el **HTML del cuerpo renderizado** (no es un documento completo con el contenedor `<html>`)
 * Opcional: habilite **Incrustar imágenes al copiar HTML** en {% prefspane Export %} para codificar imágenes locales en Base64 como `data:` URL en la fuente pegada
 
+Seleccione texto en la vista previa para copiar solo ese fragmento. Si no hay nada seleccionado, Copiar HTML sigue copiando toda la vista previa. Para copiar el Markdown que hay detrás de la vista previa, incluida una página abierta con [Markdownify URL](Markdownifier.html) que no haya guardado, use [Copiar Markdown](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}). Una selección se convierte a Markdown, y los bloques de código y los diagramas se restauran a su fuente. Consulte [Copiar una selección](Exporting.html#copying-a-selection).
+
 Copiar HTML es ideal cuando tu destino ya tiene su propia hoja de estilo y solo necesitas el marcado del contenido.
 
 ### Guardar HTML (archivo) [save-html-file]
@@ -102,8 +104,9 @@ Para compilaciones de libros y capítulos, utilice [Documentos de archivos múlt
 | Correo electrónico o archivo compartido (un archivo adjunto) | **Guarde HTML** con **Incrustar imágenes locales** |
 | WordPress, Ghost, Noción, etc. | **Copiar HTML**; habilitar **Incrustar imágenes al copiar HTML** si el editor no resuelve las rutas locales |
 | Edición adicional en un editor de código | **Guarde HTML** sin estilo incrustado o copie el fragmento y ajuste manualmente |
+| Editor Markdown, o una página convertida con Markdownify | **Copiar Markdown** |
 
-[Copiar texto enriquecido](Exporting.html#rtfexportoptions) (menú de ajustes) es una alternativa cuando la aplicación de destino acepta texto formateado en lugar de fuente HTML.
+[Copiar texto enriquecido](Exporting.html#rtfexportoptions) (menú de ajustes) es una alternativa cuando la aplicación de destino acepta texto formateado en lugar de fuente HTML. [Copiar Markdown](Exporting.html#copymarkdown) copia el propio Markdown.
 
 ## Temas relacionados [related-topics]
 

@@ -37,7 +37,7 @@
 #   Settings.strings (gaps): 89
 
 === BEGIN MainMenu.strings ===
-# Strings in this section: 173
+# Strings in this section: 175
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "124.title" = "打开最近使用";
@@ -174,6 +174,12 @@
 
 "610.title" = "重新打开上一个文件";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "将 Markdown 拷贝到剪贴板";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "拷贝 Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "将 HTML 源码拷贝到剪贴板";
 # EN: Copy HTML source to the clipboard
@@ -561,7 +567,7 @@
 
 
 === BEGIN MarkdownDocument.strings ===
-# Strings in this section: 322
+# Strings in this section: 323
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0Bh-Jn-V4B.title" = "字符数：";
@@ -1075,6 +1081,9 @@
 
 "WQz-kW-hnP.title" = "转到上一个错误";
 # EN: Go to Previous Error
+
+"MkC-Gr-001.title" = "复制 Markdown";
+# EN: Copy Markdown
 
 "WSS-hA-Vi9.title" = "复制 HTML";
 # EN: Copy HTML
@@ -3078,7 +3087,7 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 
 === BEGIN PreviewContextMenu.strings ===
-# Strings in this section: 25
+# Strings in this section: 26
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "menu.annotateWithApp" = "用 %@ 批注";
@@ -3086,6 +3095,9 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 "menu.copyHTML" = "拷贝 HTML";
 # EN: Copy HTML
+
+"menu.copyMarkdown" = "拷贝 Markdown";
+# EN: Copy Markdown
 
 "menu.copyRichText" = "拷贝富文本";
 # EN: Copy Rich Text
@@ -3362,7 +3374,7 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 
 === BEGIN KBShortcuts.strings ===
-# Strings in this section: 199
+# Strings in this section: 200
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "kbs.action.clipboardPreview" = "剪贴板预览";
@@ -3382,6 +3394,9 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 "kbs.action.copyHTMLSource" = "拷贝 HTML 源码";
 # EN: Copy HTML Source
+
+"kbs.action.copyMarkdown" = "拷贝 Markdown";
+# EN: Copy Markdown
 
 "kbs.action.copyRichText" = "拷贝富文本";
 # EN: Copy Rich Text
@@ -3967,7 +3982,7 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 
 === BEGIN MainMenuMAS.strings ===
-# Strings in this section: 166
+# Strings in this section: 168
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0iO-Jd-3vX.title" = "管理样式";
@@ -4098,6 +4113,12 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 "610.title" = "重新打开上一个文件";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "将 Markdown 拷贝到剪贴板";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "拷贝 Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "将 HTML 源码拷贝到剪贴板";
 # EN: Copy HTML source to the clipboard
@@ -4462,7 +4483,7 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 
 === BEGIN MainMenuSetapp.strings ===
-# Strings in this section: 156
+# Strings in this section: 158
 # Pre-filled from Marked/zh-Hans.lproj. Edit values to fix inconsistencies; unchanged entries are left as-is on merge.
 
 "0KX-4L-z6e.title" = "历史项目";
@@ -4587,6 +4608,12 @@ Write all responses in %@." = "你帮助用户审阅在 Marked 这个 Markdown �
 
 "610.title" = "重新打开上一个文件";
 # EN: Reopen Last File
+
+"MkC-Ed-001.ibShadowedToolTip" = "将 Markdown 拷贝到剪贴板";
+# EN: Copy Markdown source to the clipboard
+
+"MkC-Ed-001.title" = "拷贝 Markdown";
+# EN: Copy Markdown
 
 "625.ibShadowedToolTip" = "将 HTML 源码拷贝到剪贴板";
 # EN: Copy HTML source to the clipboard

@@ -22,6 +22,30 @@ Utilisez la fonction Copier HTML pour placer le code source HTML de votre aperç
 
 Vous n'avez pas besoin d'être dans la vue source pour copier. Avec l'aperçu concentré (cliquez dessus), tapez simplement {% kbd shift cmd C %} et vous verrez un message contextuel vous informant que la source est dans votre presse-papiers.
 
+Sans sélection, Copier HTML copie tout l'aperçu. Sélectionnez du texte dans l'aperçu pour ne copier que cette sélection. [Copier le texte enrichi](#rtfexportoptions) et [Copier le Markdown](#copymarkdown) suivent la même règle. Voir [Copier une sélection](#copying-a-selection).
+
+## Copier le Markdown [copymarkdown]
+
+**Copier le Markdown** place le Markdown du document dans le presse-papiers. Marked copie le Markdown qui a servi à construire l'aperçu. Il ne reconvertit pas le HTML de l'aperçu en Markdown.
+
+Choisissez-le dans le menu Édition, le menu Action ou le menu contextuel de l'aperçu, ou appuyez sur {% kbd shift opt cmd C %}.
+
+Utilisez-le lorsque le Markdown n'existe que dans l'aperçu et n'a pas encore été enregistré, par exemple après [Markdownify URL](Markdownifier.html).
+
+Sans sélection, Marked copie ce Markdown. Pour un fichier HTML, Copier le Markdown n'est disponible que lorsqu'un texte est sélectionné, car le fichier n'a pas de source Markdown.
+
+## Copier une sélection [copying-a-selection]
+
+Copier le HTML, Copier le texte enrichi et Copier le Markdown suivent la sélection de l'aperçu.
+
+* Rien de sélectionné : la commande copie tout le document.
+* Texte sélectionné : la commande ne copie que cette sélection.
+    * **Copier le HTML** copie le HTML de la sélection, y compris la coloration syntaxique telle que l'aperçu l'affiche.
+    * **Copier le texte enrichi** ({% kbd opt cmd C %}) convertit ce fragment HTML en texte enrichi.
+    * **Copier le Markdown** convertit la sélection en Markdown. Le code est copié comme source d'origine, avec son langage sur la ligne d'ouverture, et non comme les balises de coloration. Une sélection à l'intérieur d'un bloc de code ne copie que les lignes sélectionnées, toujours dans un bloc. Une sélection à l'intérieur d'un diagramme rendu copie toute la source du diagramme, par exemple un bloc Mermaid, et non le SVG.
+
+Lorsque du texte est sélectionné, les trois commandes apparaissent dans le menu contextuel à côté de Copier.
+
 ## Enregistrer le code HTML [save-html]
 
 ![][exporthtmlaccessory]
@@ -159,7 +183,7 @@ Cette option enregistre votre aperçu directement dans un fichier PDF sur votre 
 
 ## Options d'exportation RTF [rtfexportoptions]
 
-Marked peut exporter des données RTF (Rich Text Format) directement dans votre presse-papiers. Choisissez simplement la commande Copier le texte enrichi dans le menu Action.
+Marked peut exporter des données RTF (Rich Text Format) directement dans votre presse-papiers. Choisissez **Copier le texte enrichi** dans le menu Action, ou appuyez sur {% kbd opt cmd C %}. Sans sélection, cela copie tout l'aperçu. Sélectionnez d'abord du texte pour ne copier que cette sélection en texte enrichi. Voir [Copier une sélection](#copying-a-selection).
 
 Marked peut également enregistrer votre fichier en tant que fichier **RTFD** (Rich Text Format). Le format RTFD est un format groupé qui comprend un fichier RTF et toutes les images intégrées dans le document.
 

@@ -16,6 +16,8 @@
 * **レンダリングされた本文 HTML** をコピーします (`<html>` ラッパーを含む完全なドキュメントではありません)
 * オプション: {% prefspane Export %} で **HTML をコピーするときに画像を埋め込む** を有効にして、貼り付けたソース内のローカル画像を `data:` URL として Base64 エンコードします。
 
+プレビュー内のテキストを選択すると、その断片だけをコピーします。何も選択していない場合、HTML のコピーはこれまでどおりプレビュー全体をコピーします。プレビューの元になっている Markdown をコピーするには、まだ保存していない [Markdownify URL](Markdownifier.html) で開いたページを含めて、[Markdown をコピー](Exporting.html#copymarkdown) ({% kbd shift opt cmd C %}) を使います。選択範囲は Markdown に変換され、コードブロックと図はソースに戻されます。[選択範囲のコピー](Exporting.html#copying-a-selection) を参照してください。
+
 HTML のコピーは、コピー先にすでに独自のスタイルシートがあり、コンテンツ マークアップのみが必要な場合に最適です。
 
 ### HTML (ファイル) を保存する [save-html-file]
@@ -102,8 +104,9 @@ I> 一部のプレビュー専用 CSS (固定位置、ビューポート トリ�
 |電子メールまたはファイル共有 (添付ファイル 1 つ) | **ローカル画像を埋め込んで** HTMLを保存** |
 | WordPress、Ghost、Notion など | **HTML をコピー**;エディターがローカル パスを解決しない場合は、**HTML のコピー時に画像を埋め込む** を有効にします。
 |コードエディターでさらに編集する | **HTML を埋め込みスタイルなしで保存**するか、スニペットをコピーして手動で折り返す |
+| Markdown エディタ、または Markdownify したページ | **Markdown をコピー** |
 
-[リッチ テキストのコピー](Exporting.html#rtfexportoptions) (歯車メニュー) は、ターゲット アプリが HTML ソースではなくフォーマットされたテキストを受け入れる場合の代替手段です。
+[リッチ テキストのコピー](Exporting.html#rtfexportoptions) (歯車メニュー) は、ターゲット アプリが HTML ソースではなくフォーマットされたテキストを受け入れる場合の代替手段です。[Markdown をコピー](Exporting.html#copymarkdown) は Markdown そのものをコピーします。
 
 ## 関連トピック [related-topics]
 

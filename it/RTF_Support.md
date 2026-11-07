@@ -49,4 +49,4 @@ Per incollare una volta senza salvare un file, utilizza invece [Anteprima Appunt
 - [Supporto PDF](PDF_Support.html) -- apre documenti PDF come origini Markdown
 - [Lavorare con DOCX](Working_With_DOCX.html) -- Documenti Word con rilevamento delle modifiche e commenti
 - [Apertura file](Opening_Files.html) -- trascina e rilascia, Apri recenti, appunti
-- [Esportazione](Exporting.html) -- Copia Rich Text e salva RTFD (esportazione), distinto dall'apertura di RTF come file sorgente
+- [Esportazione](Exporting.html) -- Copia Rich Text (l'intera anteprima, oppure solo la selezione) e salva RTFD (esportazione), distinto dall'apertura di RTF come file sorgente

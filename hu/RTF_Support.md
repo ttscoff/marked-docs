@@ -49,4 +49,4 @@ A fájl mentése nélküli egyszeri beillesztéshez használja helyette a [Vág�
 - [PDF támogatás](PDF_Support.html) -- PDF dokumentumok megnyitása Markdown forrásként
 - [DOCX használata](Working_With_DOCX.html) -- Word-dokumentumok változáskövetéssel és megjegyzésekkel
 - [Fájlok megnyitása](Opening_Files.html) -- fogd és vidd, Nyissa meg a Legutóbbit, vágólap
-- [Exportálás](Exporting.html) -- Rich Text másolása és RTFD mentése (exportálás), eltérve az RTF forrásfájlként való megnyitásától
+- [Exportálás](Exporting.html) -- Rich Text másolása (a teljes előnézet, vagy csak a kijelölés) és RTFD mentése (exportálás), eltérve az RTF forrásfájlként való megnyitásától
