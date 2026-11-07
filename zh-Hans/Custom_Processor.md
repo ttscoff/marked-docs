@@ -75,6 +75,8 @@
 -_Fileincludes_测试文件是否包含includes
   文件（使用任何[标记的包括
   语法](Multi-File_Documents.html)）。
+- _流式预览来源_ 比对[流式预览](Streaming_Preview.html)里 `source` HTML 注释所写的来源应用，例如 `<!--source:Bear.app-->`。这个值是自由格式。Marked 用 `Bear.app` 和 `Drafts.app` 启用这些应用自己的预览行为，其他名称也可以在这里用规则为该应用添加处理。冒号后面的空格可以省略。比较方式是**是**、**不是**、**包含**和**不包含**。只匹配流式预览窗口。
+- _流式预览格式_ 比对流式预览里的 `format` HTML 注释，例如 `<!--format:fountain-->`。这个值是自由格式。`fountain` 会启用 Fountain 处理，其他值可以由规则匹配，而不改变处理器。比较方式和 _流式预览来源_ 相同，并且只匹配流式预览窗口。
 -_元数据类型_测试文件是否包含YAML，
   MultiMarkdown 或 Pandoc 元数据
 - _元数据：_字段（例如_元数据：作者_，
