@@ -22,6 +22,30 @@ Gebruik de functie HTML kopiëren om de HTML broncode voor uw voorbeeld probleem
 
 U hoeft niet in de bronweergave te zijn om te kopiëren. Met de focus op het voorbeeld (klik erop), typt u gewoon {% kbd shift cmd C %} en u ziet een pop-upbericht waarin u wordt geïnformeerd dat de bron op uw klembord staat.
 
+Als er niets is geselecteerd, kopieert Kopieer HTML het hele voorbeeld. Selecteer tekst in het voorbeeld om alleen die selectie te kopiëren. [Kopieer Rich Text](#rtfexportoptions) en [Kopieer Markdown](#copymarkdown) volgen dezelfde regel. Zie [Een selectie kopiëren](#copying-a-selection).
+
+## Kopieer Markdown [copymarkdown]
+
+**Kopieer Markdown** zet de Markdown van het document op het klembord. Marked kopieert de Markdown waarmee het voorbeeld is opgebouwd. Het zet de HTML van het voorbeeld niet terug om in Markdown.
+
+Kies het commando in het menu Wijzig, het tandwielmenu of het contextmenu van het voorbeeld, of druk op {% kbd shift opt cmd C %}.
+
+Gebruik het wanneer de Markdown alleen in het voorbeeld staat en nog niet is opgeslagen, bijvoorbeeld na [Markdownify URL](Markdownifier.html).
+
+Als er niets is geselecteerd, kopieert Marked die Markdown. Voor een HTML-bestand is Kopieer Markdown alleen beschikbaar wanneer tekst is geselecteerd, omdat het bestand geen Markdown-bron heeft.
+
+## Een selectie kopiëren [copying-a-selection]
+
+Kopieer HTML, Kopieer Rich Text en Kopieer Markdown volgen de selectie in het voorbeeld.
+
+* Niets geselecteerd: het commando kopieert het hele document.
+* Tekst geselecteerd: het commando kopieert alleen die selectie.
+    * **Kopieer HTML** kopieert de HTML van de selectie, inclusief syntaxiskleuring zoals het voorbeeld die toont.
+    * **Kopieer Rich Text** ({% kbd opt cmd C %}) zet dat HTML-fragment om in opgemaakte tekst.
+    * **Kopieer Markdown** zet de selectie om in Markdown. Code wordt gekopieerd als de oorspronkelijke bron, met de taal op de openingsregel, en niet als de spans van de syntaxiskleuring. Een selectie binnen een codeblok kopieert alleen de geselecteerde regels, nog steeds in een codeblok. Een selectie binnen een gerenderd diagram kopieert de hele diagrambron, bijvoorbeeld een Mermaid-blok, en niet de SVG.
+
+Wanneer tekst is geselecteerd, staan de drie commando's in het contextmenu naast Kopieer.
+
 ## Opslaan HTML [save-html]
 
 ![][exporthtmlaccessory]
@@ -161,7 +185,7 @@ Met deze optie wordt uw voorbeeld rechtstreeks opgeslagen in een PDF bestand op 
 
 ## RTF exportopties [rtfexportoptions]
 
-Marked kan RTF-gegevens (Rich Text Format) rechtstreeks naar uw klembord exporteren. Kies gewoon de opdracht Copy Rich Text in het tandwielmenu.
+Marked kan RTF-gegevens (Rich Text Format) rechtstreeks naar uw klembord exporteren. Kies **Kopieer Rich Text** in het tandwielmenu, of druk op {% kbd opt cmd C %}. Als er niets is geselecteerd, kopieert dit het hele voorbeeld. Selecteer eerst tekst om alleen die selectie als opgemaakte tekst te kopiëren. Zie [Een selectie kopiëren](#copying-a-selection).
 
 Marked kan uw bestand ook opslaan als een **RTFD**-bestand (Rich Text Format). De RTFD-indeling is een bundelindeling die een RTF-bestand en eventuele afbeeldingen in het document bevat.
 

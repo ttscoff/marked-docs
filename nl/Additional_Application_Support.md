@@ -9,6 +9,7 @@ Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor
 | Onderwerp | Helppagina |
 | :-- | :-- |
 | **Beer** | [Bear](Bear.html) |
+| **Bike** `.bike`-overzichten | [Bike](Bike.html) |
 | **Curio** (streamingvoorbeeld) | [Curio](Curio.html) |
 | **Concepten** (streamingvoorbeeld + acties) | [Drafts](Drafts.html) |
 | **DEVONthink** (integratie van scriptmenu's) | [DEVONthink](DEVONthink.html) |
@@ -18,6 +19,7 @@ Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor
 | **iA-schrijver** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz` kaarten | [iThoughtsX](iThoughtsX.html) |
 | **MarsEdit** livevoorbeeld | [MarsEdit](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **MindNode** | [MindNode](MindNode.html) |
 | **MultiMarkdown Componist** | [MultiMarkdown Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -27,6 +29,8 @@ Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor
 | **PDF** | [PDF Support](PDF_Support.html) |
 | **Scrivener 3** | [Scrivener 3 Support](Scrivener_Support.html) |
 | **Het Archief** streamingvoorbeeld | [The Archive](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | **Ulysses** exportworkflow | [Ulysses](Ulysses.html) |
 | **Vim** (vim-gemarkeerde plug-in) | [Vim](Vim.html) |
 | **VS-code** (openen in Marked extensie) | [VS Code](VS_Code.html) |
@@ -49,7 +53,7 @@ Markdown (of compatibele platte tekst) op het klembord wordt geopend met {% appm
 
 ## Streamingvoorbeeld [streaming-preview]
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra en verschillende andere editors kunnen Markdown in Marked pushen terwijl je typt via **Streaming Preview**. Zie [Streaming Preview](Streaming_Preview.html) voor installatie en probleemoplossing.
+Bear, Curio, Drafts, The Archive, Traverse, nvALT, nvUltra en verschillende andere editors kunnen Markdown in Marked pushen terwijl je typt via **Streaming Preview**. Zie [Streaming Preview](Streaming_Preview.html) voor installatie en probleemoplossing.
 
 ## Scripts en bonuspakket [scripts-and-bonus-pack]
 

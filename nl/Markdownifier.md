@@ -29,6 +29,8 @@ Om toegang te krijgen tot de Markdownifier, open je {% appmenu File, New, Markdo
 3. **Klik op "Automatisch"** of druk op `Return` om inhoud te extraheren
 4. De geëxtraheerde inhoud wordt **automatisch geopend** in een nieuw Marked document
 
+Het nieuwe voorbeeld bewaart die Markdown totdat u hem opslaat. Kies **Kopieer Markdown** ({% kbd shift opt cmd C %}) om hem op het klembord te zetten. Zie [Kopieer Markdown](Exporting.html#copymarkdown).
+
 ### Handmatige inhoudselectie [manual-content-selection]
 
 Als automatische extractie niet de gewenste inhoud vastlegt:

@@ -1,6 +1,6 @@
 # <%= @title %>
 
-De URL-handler van Marked biedt aanvullende script- en workflowmogelijkheden. U kunt bijvoorbeeld een URL opnemen in de notities van een andere applicatie, die een bestand opent in Marked wanneer erop wordt geklikt. U kunt verschillende acties uitvoeren, zoals hieronder vermeld.
+De URL-handler van Marked biedt aanvullende script- en workflowmogelijkheden. U kunt bijvoorbeeld een URL opnemen in de notities van een andere applicatie, die een bestand opent in Marked wanneer erop wordt geklikt. U kunt verschillende acties uitvoeren, zoals hieronder vermeld. Om dezelfde opdrachten aan een LLM-agent te geven, zie [AI-integratie](AI_Integration.html).
 
 ## Het URL-schema [the-url-scheme]
 

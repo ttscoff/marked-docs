@@ -18,6 +18,8 @@ Een zwevend paneel met een spiekbriefje voor snelkoppelingen is beschikbaar via 
 |        **{{shift}}{{cmd}}S** | Opslaan RTF |
 |                 **{{cmd}}C** | Kopieer |
 |        **{{shift}}{{cmd}}C** | Kopieer HTML Bron naar klembord |
+|          **{{opt}}{{cmd}}C** | Kopieer Rich Text naar klembord |
+| **{{opt}}{{shift}}{{cmd}}C** | Kopieer Markdown naar klembord |
 |                 **{{cmd}}U** | Bronweergave in-/uitschakelen |
 |                 **{{cmd}}T** | Toggle Inhoudsopgave |
 |                 **{{cmd}}R** | Voorbeeld opnieuw laden |
