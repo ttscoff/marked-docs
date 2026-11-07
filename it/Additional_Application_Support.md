@@ -11,6 +11,7 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | Argomento | Pagina di aiuto |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
+| **Bike** strutture `.bike` | [Bike](Bike.html) |
 | **Curio** (anteprima in streaming) | [Curio](Curio.html) |
 | ** Drafts** (anteprima in streaming + azioni) | [Drafts](Drafts.html) |
 | **DEVONthink** (integrazione del menu Script) | [DEVONthink](DEVONthink.html) |
@@ -20,6 +21,7 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | **iA Writer** | [iA Writer](iA_Writer.html) |
 | **iThoughtsX** `.itmz` mappe | [iPensieriX](iThoughtsX.html) |
 | **MarsEdit** anteprima dal vivo | [MarsEdit](MarsEdit.html) |
+| **Microsoft Word** | [Microsoft Word](Microsoft_Word.html) |
 | **MindNode** | [MindNode](MindNode.html) |
 | **MultiMarkdown_Composer** | [MultiMarkdown_Composer](MultiMarkdown_Composer.html) |
 | **nvUltra** | [nvUltra](nvUltra.html) |
@@ -29,6 +31,8 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | **PDF_Support** | [PDF_Support](PDF_Support.html) |
 | **Scrivener 3** | [Supporto per Scrivener 3](Scrivener_Support.html) |
 | **The_Archive** anteprima in streaming | [The_Archive](The_Archive.html) |
+| **Tree Outliner** `.treeoutline` | [Tree Outliner](Tree_Outliner.html) |
+| **Traverse** (Stream to Marked) | [Traverse](Traverse.html) |
 | Flusso di lavoro di esportazione di **Ulysses** | [Ulysses](Ulysses.html) |
 | **Vim** (plugin contrassegnato con vim) | [Vim](Vim.html) |
 | **VS_Code** (Apri nell'estensione contrassegnata) | [VS_Code](VS_Code.html) |
@@ -51,7 +55,7 @@ Markdown (o testo normale compatibile) negli appunti si apre con {% appmenu File
 
 ## Anteprima in streaming [streaming-preview]
 
-Bear, Curio, Drafts, The Archive, nvALT, nvUltra e molti altri editor possono inserire Markdown in Marked durante la digitazione tramite **Anteprima streaming**. Vedi [Anteprima streaming](Streaming_Preview.html) per la configurazione e la risoluzione dei problemi.
+Bear, Curio, Drafts, The Archive, Traverse, nvALT, nvUltra e molti altri editor possono inserire Markdown in Marked durante la digitazione tramite **Anteprima streaming**. Vedi [Anteprima streaming](Streaming_Preview.html) per la configurazione e la risoluzione dei problemi.
 
 ## Script e pacchetto bonus [scripts-and-bonus-pack]
 

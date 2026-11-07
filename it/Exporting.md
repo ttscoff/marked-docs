@@ -24,6 +24,30 @@ Utilizza la funzione Copia HTML per inserire il codice sorgente HTML per la tua 
 
 Non è necessario essere nella vista sorgente per copiare. Con l'anteprima focalizzata (fai clic su di essa), digita semplicemente {% kbd shift cmd C %} e vedrai un messaggio popup che ti informa che la fonte è negli appunti.
 
+Se non è selezionato nulla, Copia HTML copia l'intera anteprima. Seleziona del testo nell'anteprima per copiare solo quella selezione. [Copia Rich Text](#rtfexportoptions) e [Copia Markdown](#copymarkdown) seguono la stessa regola. Vedi [Copiare una selezione](#copying-a-selection).
+
+## Copia Markdown [copymarkdown]
+
+**Copia Markdown** mette il Markdown del documento negli appunti. Marked copia il Markdown usato per costruire l'anteprima. Non riconverte l'HTML dell'anteprima in Markdown.
+
+Sceglilo dal menu Modifica, dal menu a forma di ingranaggio o dal menu contestuale dell'anteprima, oppure premi {% kbd shift opt cmd C %}.
+
+Usalo quando il Markdown esiste solo nell'anteprima e non è ancora stato salvato, per esempio dopo [Markdownify URL](Markdownifier.html).
+
+Se non è selezionato nulla, Marked copia quel Markdown. Per un file HTML, Copia Markdown è disponibile solo quando è selezionato del testo, perché il file non ha una sorgente Markdown.
+
+## Copiare una selezione [copying-a-selection]
+
+Copia HTML, Copia Rich Text e Copia Markdown seguono la selezione nell'anteprima.
+
+* Niente di selezionato: il comando copia l'intero documento.
+* Testo selezionato: il comando copia solo quella selezione.
+    * **Copia HTML** copia l'HTML della selezione, inclusa l'evidenziazione della sintassi come appare nell'anteprima.
+    * **Copia Rich Text** ({% kbd opt cmd C %}) converte quel frammento HTML in testo formattato.
+    * **Copia Markdown** converte la selezione in Markdown. Il codice viene copiato come sorgente originale, con il linguaggio sulla riga di apertura, e non come gli span dell'evidenziazione. Una selezione dentro un blocco di codice copia solo le righe selezionate, sempre dentro un blocco. Una selezione dentro un diagramma già renderizzato copia l'intera sorgente del diagramma, per esempio un blocco Mermaid, e non l'SVG.
+
+Quando è selezionato del testo, i tre comandi compaiono nel menu contestuale accanto a Copia.
+
 ## Salva HTML [save-html]
 
 ![][exporthtmlaccessorio]
@@ -163,7 +187,7 @@ Questa opzione salva l'anteprima direttamente in un file PDF sul tuo disco. Il t
 
 ## Opzioni di esportazione RTF [rtfexportoptions]
 
-Marked può esportare dati RTF (Rich Text Format) direttamente negli appunti. Basta scegliere il comando Copia Rich Text dal menu a forma di ingranaggio.
+Marked può esportare dati RTF (Rich Text Format) direttamente negli appunti. Scegli **Copia Rich Text** dal menu a forma di ingranaggio, oppure premi {% kbd opt cmd C %}. Se non è selezionato nulla, viene copiata l'intera anteprima. Seleziona prima del testo per copiare solo quella selezione come testo formattato. Vedi [Copiare una selezione](#copying-a-selection).
 
 Marked può anche salvare il file come file **RTFD** (Rich Text Format). Il formato RTFD è un formato bundle che include un file RTF e tutte le immagini incorporate nel documento.
 

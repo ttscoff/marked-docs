@@ -75,6 +75,8 @@ il predicato.
 - _Il file include_ verifica se il file contiene inclusi
   file (utilizzando uno qualsiasi dei file [Marked's include
   sintassi](Multi-File_Documents.html)).
+- _Origine dell'anteprima in streaming_ confronta l'app di origine indicata da un commento HTML `source` in un'[anteprima in streaming](Streaming_Preview.html), per esempio `<!--source:Bear.app-->`. Il valore è libero. Marked usa `Bear.app` e `Drafts.app` per il comportamento di anteprima di quelle app, e qualsiasi altro nome è disponibile qui perché una regola aggiunga una gestione per quell'app. Lo spazio dopo i due punti è facoltativo. I comparatori sono **è**, **non è**, **contiene** e **non contiene**. Corrisponde solo a una finestra di anteprima in streaming.
+- _Formato dell'anteprima in streaming_ confronta il commento HTML `format` di un'anteprima in streaming, per esempio `<!--format:fountain-->`. Il valore è libero. `fountain` attiva la gestione Fountain, e qualsiasi altro valore può essere confrontato da una regola senza cambiare il processore. Usa gli stessi comparatori di _Origine dell'anteprima in streaming_ e corrisponde solo a una finestra di anteprima in streaming.
 - _Tipo di metadati_ verifica se il file include YAML,
   Metadati MultiMarkdown o Pandoc
 - Campi _Metadati:_ (ad esempio _Metadati: Autore_,

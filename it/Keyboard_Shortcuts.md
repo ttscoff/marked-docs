@@ -20,6 +20,8 @@ Un pannello mobile con un foglietto illustrativo di scelta rapida è disponibile
 |        **{{shift}}{{cmd}}S** | Salva RTF |
 |                 **{{cmd}}C** | Copia |
 |        **{{shift}}{{cmd}}C** | Copia sorgente HTML negli appunti |
+|          **{{opt}}{{cmd}}C** | Copia testo RTF negli appunti |
+| **{{opt}}{{shift}}{{cmd}}C** | Copia Markdown negli appunti |
 |                 **{{cmd}}U** | Attiva/disattiva la visualizzazione sorgente |
 |                 **{{cmd}}T** | Attiva/disattiva Sommario |
 |                 **{{cmd}}R** | Ricarica anteprima |

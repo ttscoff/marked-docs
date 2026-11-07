@@ -87,11 +87,12 @@ Quando includi determinati tipi di file con la sintassi del blocco `<<[path]` o 
 | **OPML** | .opml | Diagramma della mappa mentale della sirena | Elenco Markdown nidificato |
 | **OmniOutliner** | .oschema | Diagramma della mappa mentale della sirena | Elenco Markdown nidificato |
 | **Bici** | .bici | Mappa mentale della sirena (nome del file come nodo radice) | Elenco Markdown nidificato (nessun titolo del documento) |
+| **Tree Outliner** | .treeoutline | Mappa mentale Mermaid (titolo del documento come radice) | Titoli ed elenchi ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV/TSV** | .csv, .tsv | Tabella di ribasso ||
 | **RTF/RTFD** | .rtf, .rtfd | Ribasso tramite conversione RTF (vedi [Supporto RTF e RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown tramite conversione PDF quando aperto come documento principale (vedi [Supporto PDF](PDF_Support.html)) ||
 
-Ogni formato di contorno/mappa mentale ha la propria casella di controllo sotto *Mappe mentali/contorni* (mappe mentali, file OPML, contorni bici, contorni OmniOutliner). La disattivazione di un formato utilizza il comportamento "disattivato" solo per quel tipo. Vedi [Incorporamento di mappe mentali e contorni](Embedding_Mind_Maps_and_Outlines.html) per i dettagli sul formato e [Impostazioni: App][Mappe mentali] per modificare queste opzioni. Per i dettagli sulla conversione CSV, vedere [Creazione di tabelle utilizzando file CSV][csv].
+Ogni formato di contorno/mappa mentale ha la propria casella di controllo sotto *Mappe mentali/contorni* (mappe mentali, file OPML, strutture Bike, strutture OmniOutliner, Tree Outliner outlines). La disattivazione di un formato utilizza il comportamento "disattivato" solo per quel tipo. Vedi [Incorporamento di mappe mentali e contorni](Embedding_Mind_Maps_and_Outlines.html) per i dettagli sul formato e [Impostazioni: App][Mappe mentali] per modificare queste opzioni. Per i dettagli sulla conversione CSV, vedere [Creazione di tabelle utilizzando file CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
