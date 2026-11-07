@@ -1,7 +1,7 @@
 <!-- MT-DRAFT: machine translation; human review required -->
 # <%= @title %>
 
-Donnez à un agent LLM un fichier skill pour qu'il puisse ouvrir des fichiers et des dossiers dans Marked, afficher une section des Réglages et modifier des préférences. L'agent utilise le [gestionnaire d'URL](URL_Handler.md) de Marked. Aucun module ni serveur supplémentaire n'est nécessaire.
+Donnez à un agent LLM un fichier skill pour qu'il puisse ouvrir des fichiers et des dossiers dans Marked, afficher une section des Réglages et modifier des préférences. L'agent utilise le [gestionnaire d'URL](URL_Handler.html) de Marked. Aucun module ni serveur supplémentaire n'est nécessaire.
 
 ## Télécharger le skill [download-the-skill]
 
@@ -31,7 +31,7 @@ Une fois le skill installé, demandez à l'agent d'ouvrir un fichier ou un dossi
 open "x-marked-3://open?file=/Users/me/Notes/draft.md"
 ```
 
-Un dossier utilise la même commande. Le chemin doit exister, et les espaces comme les autres caractères réservés doivent être encodés en pourcent. Voir le [gestionnaire d'URL](URL_Handler.md) pour le schéma complet, y compris refresh, Streaming Preview et les rappels.
+Un dossier utilise la même commande. Le chemin doit exister, et les espaces comme les autres caractères réservés doivent être encodés en pourcent. Voir le [gestionnaire d'URL](URL_Handler.html) pour le schéma complet, y compris refresh, Streaming Preview et les rappels.
 
 ## Préférences [preferences]
 
@@ -50,4 +50,4 @@ open "x-marked-3://defaults?syntaxHighlight=0&refresh=0"
 
 ## Voir aussi [related]
 
-[Utilisation de Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.md) explique comment surveiller un dossier de plans et de notes pendant qu'un agent les rédige. L'[utilitaire de ligne de commande](Command_Line_Utility.md) offre le même type d'accès depuis le shell, sans agent.
+[Utilisation de Marked with Agentic Coding](Using_Marked_with_Agentic_Coding.html) explique comment surveiller un dossier de plans et de notes pendant qu'un agent les rédige. L'[utilitaire de ligne de commande](Command_Line_Utility.html) offre le même type d'accès depuis le shell, sans agent.

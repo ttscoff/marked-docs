@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Le gestionnaire d'URL de Marked offre des possibilités supplémentaires de script et d'automatisation de flux de travail. Vous pouvez par exemple inclure une URL dans les notes d'une autre application, qui ouvrira un fichier dans Marked lorsqu'on cliquera dessus. Plusieurs actions sont possibles, comme indiqué ci-dessous. Pour confier les mêmes commandes à un agent LLM, voir [Intégration IA](AI_Integration.md).
+Le gestionnaire d'URL de Marked offre des possibilités supplémentaires de script et d'automatisation de flux de travail. Vous pouvez par exemple inclure une URL dans les notes d'une autre application, qui ouvrira un fichier dans Marked lorsqu'on cliquera dessus. Plusieurs actions sont possibles, comme indiqué ci-dessous. Pour confier les mêmes commandes à un agent LLM, voir [Intégration IA](AI_Integration.html).
 
 ## Le schéma d'URL [the-url-scheme]
 

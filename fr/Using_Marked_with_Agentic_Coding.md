@@ -52,4 +52,4 @@ Marked le transformera automatiquement en un diagramme stylé et interactif, vou
 
 En combinant la surveillance de dossier avec le *défilement vers la modification*, Marked transforme les plans et notes générés par l'IA en un centre de contrôle rapide et lisible pour vos sessions de code, en particulier lorsque vous vous appuyez sur des flux de travail agentiques et l'assistance continue d'outils comme Cursor, Claude et Copilot.
 
-Pour que l'agent ouvre lui-même ces fichiers, installez le skill décrit dans [Intégration IA](AI_Integration.md).
+Pour que l'agent ouvre lui-même ces fichiers, installez le skill décrit dans [Intégration IA](AI_Integration.html).
