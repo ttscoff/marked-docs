@@ -990,7 +990,6 @@ Sections:
     wiki_keywords:
     - llm agent
     - agent skill
-    - open in marked
   - title: Streaming Preview
     file: Streaming_Preview
     description: By opening File menu, New menu, Streaming Preview, Marked receives live updates over a named pasteboard instead of watching a file on disk. The source app...
