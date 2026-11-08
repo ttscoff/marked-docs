@@ -17,7 +17,7 @@ Den URL-Handler rufen Sie über die Befehlszeile oder ein Skript mit dem macOS-[
 
 ### Aufruf im Hintergrund [calling-in-the-background]
 
-`open -g` weist Launch Services an, Marked nicht zu aktivieren. Marked kommt beim Öffnen eines Dokuments trotzdem nach vorne, sofern die URL nicht zusätzlich `activate=0` enthält.
+`open -g` weist Launch Services an, Marked nicht zu aktivieren. Beim Öffnen eines Dokuments kommt Marked trotzdem nach vorne, es sei denn, die URL enthält zusätzlich `activate=0`.
 
 	open -g 'x-marked-3://open?file=filename.md&activate=0'
 
@@ -31,7 +31,7 @@ Jeder Befehl kann einen **x-success**-Abfrageparameter mitgeben. Setzen Sie ihn 
 
 ### activate [activate]
 
-Optional bei `open`. Setzen Sie `activate=0`, um die Vorschau zu zeigen, ohne Marked zur aktiven App zu machen. Kombinieren Sie es mit `open -g`, wie im Beispiel oben. Jeder andere Wert oder das Weglassen des Parameters aktiviert Marked.
+Optionaler Parameter für `open`. Mit `activate=0` zeigt Marked die Vorschau, ohne zur aktiven App zu werden. Kombinieren Sie den Parameter mit `open -g` wie im Beispiel oben. Bei jedem anderen Wert und ohne den Parameter wird Marked aktiviert.
 
 ### raise [raise]
 
