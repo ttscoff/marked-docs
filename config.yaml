@@ -198,7 +198,10 @@ Sections:
     - opml
     - export
     - word repetition
-    wiki_keywords: [export as, save as]
+    - clipboard
+    - markdown
+    - selection
+    wiki_keywords: [export as, save as, copy markdown]
 - title: Comparisons & FAQ
   folder: Comparisons_FAQ
   pages:
@@ -430,6 +433,7 @@ Sections:
     - styles
     - embed
     - copy
+    - copy markdown
     wiki_keywords:
     - html export
     - export html

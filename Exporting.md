@@ -22,6 +22,30 @@ Use the Copy HTML feature to put the HTML source code for your preview into your
 
 You don't need to be in the source view to copy. With the preview focused (click on it), just type {% kbd shift cmd C %} and you'll see a popup message letting you know that the source is in your clipboard.
 
+With nothing selected, Copy HTML copies the whole preview. Select text in the preview to copy only that selection. [Copy Rich Text](#rtfexportoptions) and [Copy Markdown](#copymarkdown) follow the same rule. See [Copying a selection](#copying-a-selection).
+
+## Copy Markdown [copymarkdown]
+
+**Copy Markdown** puts the document's Markdown on the clipboard. Marked copies the Markdown it used to build the preview. It does not convert the preview HTML back into Markdown.
+
+Choose it from the Edit menu, the gear menu, or the preview's contextual menu, or press {% kbd shift opt cmd C %}.
+
+Use it when the Markdown exists only in the preview and has not been saved yet, for example after [Markdownify URL](Markdownifier.html).
+
+With nothing selected, Marked copies that Markdown. For an HTML file, Copy Markdown is available only when text is selected, because the file has no Markdown source.
+
+## Copying a selection [copying-a-selection]
+
+Copy HTML, Copy Rich Text, and Copy Markdown each follow the preview selection.
+
+* Nothing selected: the command copies the whole document.
+* Text selected: the command copies only that selection.
+    * **Copy HTML** copies the selection's HTML, including syntax highlighting as the preview shows it.
+    * **Copy Rich Text** ({% kbd opt cmd C %}) converts that HTML fragment to rich text.
+    * **Copy Markdown** converts the selection to Markdown. Code is copied as the original source, with its language on the fence, rather than as highlighting spans. A selection inside a code block copies only the selected lines, still inside a fence. A selection inside a rendered diagram copies the whole diagram source, such as a Mermaid block, rather than the SVG.
+
+When text is selected, the three commands appear in the contextual menu next to Copy.
+
 ## Save HTML [save-html]
 
 ![][exporthtmlaccessory]
@@ -161,7 +185,7 @@ This option saves your Preview directly to a PDF file on your drive. Your docume
 
 ## RTF export options [rtfexportoptions]
 
-Marked can export RTF (Rich Text Format) data directly to your clipboard. Just choose the Copy Rich Text command from the gear menu.
+Marked can export RTF (Rich Text Format) data directly to your clipboard. Choose **Copy Rich Text** from the gear menu, or press {% kbd opt cmd C %}. With nothing selected, this copies the whole preview. Select text first to copy only that selection as rich text. See [Copying a selection](#copying-a-selection).
 
 Marked can also save your file as an **RTFD** (Rich Text Format) file. The RTFD format is a bundle format that includes an RTF file and any images embedded in the document.
 

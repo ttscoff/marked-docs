@@ -18,6 +18,8 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |        **{{shift}}{{cmd}}S** | Save RTF                           |
 |                 **{{cmd}}C** | Copy                               |
 |        **{{shift}}{{cmd}}C** | Copy HTML Source to clipboard      |
+|          **{{opt}}{{cmd}}C** | Copy Rich Text to clipboard        |
+| **{{opt}}{{shift}}{{cmd}}C** | Copy Markdown to clipboard         |
 |                 **{{cmd}}U** | Toggle Source View                 |
 |                 **{{cmd}}T** | Toggle Table of Contents           |
 |                 **{{cmd}}R** | Reload Preview                     |

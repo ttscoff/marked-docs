@@ -18,6 +18,8 @@
 | **{{shift}}{{cmd}}S** | RTF speichern |
 | **{{cmd}}C** | Kopieren |
 | **{{shift}}{{cmd}}C** | HTML-Quelltext kopieren |
+| **{{opt}}{{cmd}}C** | Rich Text kopieren |
+| **{{opt}}{{shift}}{{cmd}}C** | Markdown kopieren |
 | **{{cmd}}U** | Quelltextansicht umschalten |
 | **{{cmd}}T** | Inhaltsverzeichnis umschalten |
 | **{{cmd}}R** | Aktualisieren |

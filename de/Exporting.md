@@ -22,6 +22,30 @@ Mit der Funktion „HTML kopieren“ legen Sie den HTML-Quelltext Ihrer Vorschau
 
 Zum Kopieren müssen Sie nicht in der Quelltextansicht sein. Tippen Sie bei fokussierter Vorschau (klicken Sie hinein) einfach {% kbd shift cmd C %}, und eine Popup-Meldung bestätigt Ihnen, dass der Quelltext in der Zwischenablage liegt.
 
+Ist nichts ausgewählt, kopiert „HTML kopieren“ die gesamte Vorschau. Haben Sie vorher Text in der Vorschau ausgewählt, kopiert der Befehl nur diese Auswahl. [Rich Text kopieren](#rtfexportoptions) und [Markdown kopieren](#copymarkdown) verhalten sich genauso. Siehe [Auswahl kopieren](#copying-a-selection).
+
+## Markdown kopieren [copymarkdown]
+
+**Markdown kopieren** legt das Markdown des Dokuments in die Zwischenablage. Marked kopiert genau das Markdown, aus dem es die Vorschau erzeugt hat. Das HTML der Vorschau wird dabei nicht in Markdown zurückverwandelt.
+
+Sie finden den Befehl im Menü „Bearbeiten“, im Zahnradmenü und im Kontextmenü der Vorschau, oder Sie drücken {% kbd shift opt cmd C %}.
+
+Das hilft, wenn das Markdown nur in der Vorschau existiert und noch nicht gespeichert ist, etwa nach [URL in Markdown umwandeln](Markdownifier.html).
+
+Ohne Auswahl kopiert Marked dieses Markdown vollständig. Bei einer HTML-Datei steht „Markdown kopieren“ nur zur Verfügung, wenn Text ausgewählt ist, denn die Datei hat keine Markdown-Quelle.
+
+## Auswahl kopieren [copying-a-selection]
+
+„HTML kopieren“, „Rich Text kopieren“ und „Markdown kopieren“ richten sich alle drei nach der Auswahl in der Vorschau.
+
+* Nichts ausgewählt: Der Befehl kopiert das gesamte Dokument.
+* Text ausgewählt: Der Befehl kopiert nur diese Auswahl.
+    * **HTML kopieren** kopiert das HTML der Auswahl, samt Syntaxhervorhebung, wie die Vorschau sie zeigt.
+    * **Rich Text kopieren** ({% kbd opt cmd C %}) wandelt dieses HTML-Fragment in Rich Text um.
+    * **Markdown kopieren** wandelt die Auswahl in Markdown um. Code landet als ursprünglicher Quelltext in einem abgegrenzten Codeblock mit Sprachangabe, ohne das Markup der Syntaxhervorhebung. Liegt die Auswahl innerhalb eines Codeblocks, werden nur die ausgewählten Zeilen kopiert, ebenfalls als abgegrenzter Codeblock. Liegt sie in einem gerenderten Diagramm, kopiert Marked den gesamten Quelltext des Diagramms, etwa einen Mermaid-Block, und nicht die SVG-Grafik.
+
+Ist Text ausgewählt, stehen die drei Befehle im Kontextmenü neben „Kopieren“.
+
 ## HTML speichern [save-html]
 
 ![][exporthtmlaccessory]
@@ -161,7 +185,7 @@ Diese Option speichert Ihre Vorschau direkt als PDF-Datei auf Ihrem Laufwerk. Ih
 
 ## RTF-Exportoptionen [rtfexportoptions]
 
-Marked kann RTF-Daten (Rich Text Format) direkt in Ihre Zwischenablage exportieren. Wählen Sie dazu einfach den Befehl „Rich Text kopieren“ aus dem Zahnradmenü.
+Marked kann RTF-Daten (Rich Text Format) direkt in Ihre Zwischenablage exportieren. Wählen Sie dazu **Rich Text kopieren** aus dem Zahnradmenü oder drücken Sie {% kbd opt cmd C %}. Ist nichts ausgewählt, wird die gesamte Vorschau kopiert. Wählen Sie vorher Text aus, um nur diese Auswahl als Rich Text zu kopieren. Siehe [Auswahl kopieren](#copying-a-selection).
 
 Marked kann Ihre Datei auch als **RTFD**-Datei (Rich Text Format) speichern. Das RTFD-Format ist ein Bundle-Format, das eine RTF-Datei und alle im Dokument eingebetteten Bilder enthält.
 
