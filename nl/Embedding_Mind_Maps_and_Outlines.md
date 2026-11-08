@@ -37,8 +37,6 @@ Indien **ingeschakeld** (standaard), converteert Marked de meegeleverde mindmaps
 
 **iThoughts, MindManager, FreeMind, OPML & Bike** — Weergegeven als Mermaid-mindmapdiagrammen met de overzichtelijke boomstructuur. Voor iThoughts en MindManager wordt vorminformatie (rond, rechthoekig, zeshoek, etc.) behouden waar beschikbaar. FreeMind (`.mm`) en OPML gebruiken hetzelfde mindmapformaat. Fietscontouren (`.bike`) gebruiken de meegeleverde bestandsnaam (minus extensie) als het hoofdknooppunt van de mindmap. Knooppuntlabels zijn platte tekst (koppelingen worden koppelingstekst; taken worden weergegeven als voorvoegsels ☐ / ☑). Zeemeermin is standaard opgenomen in elk Markdown voorbeeld.
 
-**Beperking:** Het insluiten van mindmaps (zeemeermindiagrammen) werkt niet met de kortingsparser. Gebruik MultiMarkdown, CommonMark (GFM) of Kramdown voor previews van mindmaps.
-
 Wanneer **uitgeschakeld**:
 
 - **iThoughts** — De ingebouwde voorbeeldafbeelding (`preview.png`) van het .itmz-bestand is ingesloten als een base64-afbeelding. De alt-tekst van de afbeelding gebruikt de bestandsnaam.

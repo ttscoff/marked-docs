@@ -16,6 +16,4 @@ Zet in {% prefspane Apps %}, onder *Mind Maps and Outlines*, **Tree Outliner out
 
 **Headings through level** wordt alleen gebruikt wanneer die schakelaar uit staat.
 
-Mermaid-diagrammen hebben MultiMarkdown, CommonMark (GFM) of Kramdown nodig. Ze worden niet getekend met de Discount-processor.
-
 [tree]: https://noteifyapp.com/tree-outliner/
