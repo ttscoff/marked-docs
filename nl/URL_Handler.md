@@ -17,15 +17,21 @@ open 'x-gemarkeerd://open?file=bestandsnaam.md'
 
 ### Bellen op de achtergrond [calling-in-the-background]
 
-U kunt de opdracht `open` aanroepen met de vlag `-g` om het resultaat op de achtergrond uit te voeren zonder de focus te wijzigen. Om de opdracht op de achtergrond uit te voeren en het venster naar boven te brengen zonder de focus te stelen:
+`open -g` geeft Launch Services de opdracht Marked niet te activeren. Marked komt bij het openen van een document toch naar voren, tenzij de URL ook `activate=0` bevat.
 
-open -g 'x-marked://open?file=bestandsnaam.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+Het voorbeeldvenster verschijnt voor de andere vensters. De toetsenbordfocus blijft in de app die u gebruikte. Zonder `activate`, of met `activate=1`, wordt Marked zoals gebruikelijk de actieve app.
 
 ## Optionele parameters [optional-parameters]
 
 ### x-succes [x-success]
 
 Elke opdracht kan een queryparameter **x-success** leveren. Stel dit in op een url die moet worden aangeroepen na het uitvoeren van de opdracht. Bijvoorbeeld: `x-marked://open/?file=filename.md&x-success=ithoughts:`. U kunt ook een bundel-ID opgeven (zoals `com.googlecode.iterm`) om een ​​toepassing te openen die geen URL-schema heeft.
+
+### activate [activate]
+
+Optioneel bij `open`. Stel `activate=0` in om het voorbeeld te tonen zonder van Marked de actieve app te maken. Combineer dit met `open -g`, zoals in het voorbeeld hierboven. Elke andere waarde, of het weglaten van de parameter, activeert Marked.
 
 ### salarisverhoging [raise]
 
@@ -259,6 +265,8 @@ x-marked://open?file=/Users/gebruikersnaam/Desktop/report.md
 **bestand** *(vereist)*: het volledige POSIX-pad naar het te openen document, of een door komma's gescheiden lijst met paden
 
 **speedread** *(optioneel)*: Stel in op `1` om Speed ​​Read automatisch te starten na het openen.
+
+**activate** *(optioneel)*: Stel in op `0` om het voorbeeld te openen zonder van Marked de actieve app te maken. Gebruik dit samen met `open -g`. Standaard wordt Marked geactiveerd.
 
 `open` accepteert ook een pad waarvan de componenten in één enkele URL worden gecombineerd
 
