@@ -19,15 +19,21 @@ Se puede llamar al controlador de URL desde la línea de comando o desde un scri
 
 ### Llamando en segundo plano [calling-in-the-background]
 
-Puede llamar al comando `open` con la bandera `-g` para realizar el resultado en segundo plano sin cambiar el foco. Para ejecutar el comando en segundo plano y elevar la ventana a la parte superior sin robar el foco:
+`open -g` indica a Launch Services que no active Marked. Marked igualmente pasa al frente al abrir un documento, a menos que la URL incluya también `activate=0`.
 
-	open -g 'marcado con x://open?file=nombre de archivo.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+La ventana de vista previa aparece delante de las demás ventanas. El foco del teclado permanece en la app que estaba usando. Si omite `activate`, o lo define como `activate=1`, Marked se convierte en la app activa, como de costumbre.
 
 ## Parámetros opcionales [optional-parameters]
 
 ### x-éxito [x-success]
 
 Cualquier comando puede proporcionar un parámetro de consulta **x-success**. Establezca esto en una URL a la que se llamará después de ejecutar el comando. Por ejemplo: `x-marked://open/?file=filename.md&x-success=ithoughts:`. También puedes proporcionar un identificador de paquete (como `com.googlecode.iterm`) para abrir una aplicación que no tiene un esquema de URL.
+
+### activate [activate]
+
+Opcional en `open`. Defina `activate=0` para mostrar la vista previa sin convertir a Marked en la aplicación activa. Combínelo con `open -g`, como en el ejemplo anterior. Cualquier otro valor, o omitir el parámetro, activa Marked.
 
 ### aumentar [raise]
 
@@ -261,6 +267,8 @@ Abre el documento especificado en Marcado.
 **archivo** *(obligatorio)*: la ruta POSIX completa al documento que se va a abrir, o una lista de rutas separadas por comas
 
 **speedread** *(opcional)*: configúrelo en `1` para iniciar la lectura rápida automáticamente después de abrir.
+
+**activate** *(opcional)*: Defínalo como `0` para abrir la vista previa sin convertir a Marked en la app activa. Úselo con `open -g`. De forma predeterminada, Marked se activa.
 
 `open` también acepta una ruta cuyos componentes se combinarán en una única URL
 
