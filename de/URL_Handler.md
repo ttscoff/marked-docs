@@ -21,7 +21,7 @@ Den URL-Handler rufen Sie über die Befehlszeile oder ein Skript mit dem macOS-[
 
 	open -g 'x-marked-3://open?file=filename.md&activate=0'
 
-Das Vorschaufenster erscheint vor den anderen Fenstern. Der Tastaturfokus bleibt in der App, die Sie gerade verwendet haben. Ohne `activate`, oder mit `activate=1`, wird Marked wie gewohnt zur aktiven App.
+Das Vorschaufenster erscheint vor den anderen Fenstern. Der Tastaturfokus bleibt in der App, die Sie gerade verwendet haben. Ohne `activate` oder mit `activate=1` wird Marked wie gewohnt zur aktiven App.
 
 ## Optionale Parameter [optional-parameters]
 
