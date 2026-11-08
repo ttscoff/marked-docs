@@ -535,9 +535,11 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: "Arraste um esboço do Bike (.bike) para o Marked para vê-lo como uma lista Markdown aninhada, com as linhas de título em negrito e as tarefas como caixas de seleção."
+    description: "Arraste um esboço do Bike (.bike ou .biked) para o Marked para vê-lo como uma lista Markdown aninhada. O Bike 2 grava um pacote .biked quando o esboço contém imagens incorporadas, e o Marked abre esse pacote diretamente."
     keywords:
     - bike
+    - biked
+    - textbundle
     - esboço
     - mermaid
     wiki_keywords:

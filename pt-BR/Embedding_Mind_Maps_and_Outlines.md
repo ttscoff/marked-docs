@@ -39,8 +39,6 @@ Quando **ativado** (o padrão), as conversões marcadas incluem mapas mentais e 
 
 **iThoughts, MindManager, FreeMind, OPML e Bike** — Renderizados como diagramas de mapa mental Mermaid com layout de árvore organizada. Para iThoughts e MindManager, as informações de forma (arredondado, retângulo, hexágono, etc.) são preservadas quando disponíveis. FreeMind (`.mm`) e OPML usam o mesmo formato de mapa mental. Os contornos da bicicleta (`.bike`) usam o nome do arquivo incluído (menos a extensão) como o nó raiz do mapa mental. Os rótulos dos nós são texto simples (os links se tornam texto do link; as tarefas são mostradas como prefixos ☐ / ☑). Mermaid está incluída por padrão em todas as visualizações do Markdown.
 
-**Limitação:** A incorporação de mapas mentais (diagramas de sereia) não funciona com o analisador de desconto. Use MultiMarkdown, CommonMark (GFM) ou Kramdown para visualizações de mapas mentais.
-
 Quando **desativado**:
 
 - **iThoughts** — A imagem de visualização integrada (`preview.png`) do arquivo .itmz é incorporada como uma imagem base64. O texto alternativo da imagem usa o nome do arquivo.
