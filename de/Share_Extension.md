@@ -84,6 +84,7 @@ Gehen Sie diese Schritte der Reihe nach durch:
 
 ## Tipps [tips]
 
+- [nvALT](nvALT.html) hat ein Teilen-Menü in der oberen rechten Ecke des Editors. Wählen Sie dort **Marked**, um die aktuelle Notiz aus der Datei zu öffnen.
 - Die Share-Erweiterung eignet sich für schnelle Vorschauen von Web-Ausschnitten, E-Mail-Absätzen oder Notizen ohne neue Datei.
 - Für ganze Seiten oder komplexe Browser-Auswahlen bieten die [Browsererweiterungen](Using_the_Browser_Extensions.html) oft mehr Kontrolle (Abschnittsauswahl, Markdownify URL usw.).
 - Geteilte Dateien öffnen sich wie normale Marked-Dokumente mit Dateiüberwachung. Geteilter Text öffnet sich als temporäre Vorschau, bis Sie speichern.

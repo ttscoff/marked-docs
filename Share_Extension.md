@@ -82,6 +82,7 @@ Try these steps in order:
 
 ## Tips [tips]
 
+- [nvALT](nvALT.html) puts a Share menu in the upper right corner of the editor. Choose **Marked** there to open the current note from the file.
 - The Share extension is ideal for quick previews of web snippets, email paragraphs, or notes without creating a file first.
 - For whole pages or complex selections from a browser, the [browser extensions](Using_the_Browser_Extensions.html) may give more control (section selection, Markdownify URL, and so on).
 - Shared files open as normal Marked documents with file watching enabled. Shared text opens as a transient preview until you save it.

@@ -590,9 +590,12 @@ Sections:
     - bear
   - title: Bike
     file: Bike
-    description: "Ziehen Sie eine Bike-Gliederung (.bike) auf Marked, um sie als verschachtelte Markdown-Liste in der Vorschau zu sehen. Überschriftszeilen erscheinen fett, Aufgaben als Kontrollkästchen."
+    description: "Ziehen Sie eine Bike-Gliederung (.bike oder .biked) auf Marked, um sie als verschachtelte Markdown-Liste in der Vorschau zu sehen. Bike 2 speichert ein .biked-Paket, wenn die Gliederung eingebettete Bilder enthält, und Marked öffnet dieses Paket direkt."
     keywords:
     - bike
+    - biked
+    - textbundle
+    - eingebettete bilder
     - gliederung
     - outline
     - mermaid
@@ -708,13 +711,26 @@ Sections:
     - multimarkdown composer
     wiki_keywords:
     - multimarkdown composer
+  - title: nvALT
+    file: nvALT
+    description: nvALT beginnt mit dem Streaming, sobald es geöffnet ist. Das Teilen-Menü oben rechts im Editor kann die aktuelle Notiz auch direkt in Marked öffnen, wenn die Share-Erweiterung aktiviert ist.
+    keywords:
+    - nvalt
+    - nv alt
+    - notational velocity
+    - streaming-vorschau
+    - teilen
+    - share-erweiterung
+    - notizen
+    wiki_keywords:
+    - nvalt
   - title: nvUltra
     file: nvUltra
-    description: Klicken Sie im Ordner-Navigator von nvUltra (oder wo immer Sie Ihre Notizen durchsehen) bei gedrückter Control-Taste auf eine oder mehrere Dateien und wählen Sie im Kontextmenü Preview File(s) in Marked.
+    description: Klicken Sie im Ordnernavigator von nvUltra bei gedrückter Control-Taste auf Notizen und wählen Sie Preview File(s) in Marked. Über Enable Marked Streaming Preview im Menü View sendet nvUltra die bearbeitete Notiz während der Eingabe an Marked.
     keywords:
     - nvultra
     - nv ultra
-    - nvalt
+    - streaming-vorschau
     - notizen
     wiki_keywords:
     - nvultra

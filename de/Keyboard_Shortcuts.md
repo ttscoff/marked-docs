@@ -101,7 +101,7 @@ Drücken Sie jederzeit „?“, um die folgenden Kurzbefehle im Vorschaufenster 
 | **f** | Schnellwechsler öffnen |
 | **I** | Namen der aktuell eingebundenen Datei anzeigen |
 | **z** | Zoom-Übersicht umschalten |
-| **\[** / **\]** | Durch Zielhervorhebungen navigieren |
+| **[** / **]** | Durch Zielhervorhebungen navigieren |
 | **{** / **}** | Durch alle Hervorhebungen navigieren |
 | **Escape ({{esc}})** | Überlagerung schließen/Text abwählen |
 | **h**/**?** | Hilfe-HUD ein-/ausblenden |

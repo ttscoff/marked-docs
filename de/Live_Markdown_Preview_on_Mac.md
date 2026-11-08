@@ -22,7 +22,9 @@ Marked 3 ist eine native macOS-App, die Ihre Markdown-Dateien überwacht und ein
 | VS Code | [VS Code](VS_Code.html) |
 | Obsidian | [Obsidian](Obsidian.html) |
 | Scrivener | [Scrivener 3-Unterstützung](Scrivener_Support.html) |
-| Bear, nvUltra, Drafts, The Archive | [Streaming-Vorschau](Streaming_Preview.html) |
+| Bear, Drafts, The Archive | [Streaming-Vorschau](Streaming_Preview.html) |
+| nvALT | [nvALT](nvALT.html) |
+| nvUltra | [nvUltra](nvUltra.html) |
 | Traverse | [Traverse](Traverse.html) |
 | Ulysses | [Ulysses](Ulysses.html) |
 | Word / DOCX | [Microsoft Word](Microsoft_Word.html) |

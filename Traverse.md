@@ -2,6 +2,8 @@
 
 [Traverse][traverse] includes a built-in **Stream to Marked** command. It appears in the export menu when Marked 2 or Marked 3 is installed.
 
+[Learn how to use Traverse with Marked][traverse-guide].
+
 ## Stream to Marked [stream-to-marked]
 
 Open the export menu (the button with an upward arrow) and choose **Stream to Marked**.
@@ -17,3 +19,4 @@ What Traverse sends depends on the outline:
 [stream]: images/traverse-stream-to-marked.jpg @2x width=368px height=297px class=center
 
 [traverse]: https://apps.shakingthehabitual.com/traverse/
+[traverse-guide]: https://shakingthehabitual.com/blog/traverse-using-marked/

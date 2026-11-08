@@ -4,7 +4,7 @@ Give an LLM agent a skill file so it can open files and folders in Marked, jump 
 
 ## Download the skill [download-the-skill]
 
-{% download "SKILL.md" "Agent skill for opening files in Marked and changing preferences. Save it as SKILL.md." %}
+{% download "https://markedapp.com/help/md/SKILL.md" "Agent skill for opening files in Marked and changing preferences. Save it as SKILL.md." %}
 
 The file is plain Markdown with a short header your agent reads before it acts. Hand the same file to any agent that accepts a skill or a standing instruction.
 

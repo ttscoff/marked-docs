@@ -4,7 +4,7 @@
 
 ## Skill herunterladen [download-the-skill]
 
-{% download "SKILL.md" "Agenten-Skill zum Öffnen von Dateien in Marked und zum Ändern von Einstellungen. Speichern Sie die Datei als SKILL.md." %}
+{% download "https://markedapp.com/help/md/SKILL.md" "Agenten-Skill zum Öffnen von Dateien in Marked und zum Ändern von Einstellungen. Speichern Sie die Datei als SKILL.md." %}
 
 Die Datei besteht aus reinem Markdown mit einem kurzen Kopfbereich, den der Agent liest, bevor er tätig wird. Sie können dieselbe Datei jedem Agenten geben, der Skills oder dauerhafte Anweisungen annimmt.
 

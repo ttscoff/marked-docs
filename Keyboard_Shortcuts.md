@@ -101,7 +101,7 @@ Press "?" at any time to view the following shortcuts in the Preview window.
 |                        **f** | Open "fast switcher"              |
 |                        **I** | Display current included filename |
 |                        **z** | Zoom Overview toggle              |
-|              **\[** / **\]** | Navigate target highlights        |
+|              **[** / **]** | Navigate target highlights        |
 |                **{** / **}** | Navigate all highlights           |
 |         **Escape ({{esc}})** | Close Overlay/Deselect Text       |
 |                  **h**/**?** | Show/Hide Help HUD                |

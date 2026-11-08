@@ -68,6 +68,6 @@ Alternate views are not available for unsaved documents,
 clipboard previews, streaming previews, or folder-based
 projects that do not map to a single file on disk.
 
-## Quick Open ## [quick-open]
+## Quick Open [quick-open]
 
 You can quickly switch between open documents, open recent documents, or open the File->Open dialog with the [Quick Open panel](Quick_Open.html) ({% kbd cmd shift o %}).

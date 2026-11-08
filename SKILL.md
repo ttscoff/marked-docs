@@ -26,6 +26,12 @@ Add `raise=1` to bring the window forward:
 open "x-marked-3://open?file=/Users/me/Notes/draft.md&raise=1"
 ```
 
+Add `activate=0` to show the preview without making Marked the active app. Pair it with `open -g` so Launch Services does not activate Marked either. Keyboard focus stays in the current app. The preview window still appears in front.
+
+```bash
+open -g "x-marked-3://open?file=/Users/me/Notes/draft.md&activate=0"
+```
+
 Several files go in one `file` parameter, separated by commas. A comma separates paths only when it follows an extension (`.md,`) or the next path starts with `/` or `~`. That leaves commas inside a name like `report, draft.md` alone.
 
 ```bash

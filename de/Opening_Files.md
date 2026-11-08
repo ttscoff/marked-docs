@@ -52,6 +52,6 @@ Sind mehrere Ansichten einer Datei geöffnet, enthält der Fenstertitel **Ansich
 
 Alternative Ansichten sind nicht verfügbar für ungespeicherte Dokumente, Vorschauen aus der Zwischenablage, Streaming-Vorschauen oder ordnerbasierte Projekte, die keiner einzelnen Datei auf der Festplatte entsprechen.
 
-## Schnell öffnen ## [quick-open]
+## Schnell öffnen [quick-open]
 
 Mit dem [Schnell-öffnen-Panel](Quick_Open.html) ({% kbd cmd shift o %}) wechseln Sie schnell zwischen offenen Dokumenten, rufen zuletzt geöffnete Dokumente auf oder öffnen den Öffnen-Dialog.
