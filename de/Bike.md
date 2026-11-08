@@ -21,6 +21,4 @@ Die Option **Bike-Gliederungen** unter {% prefspane Apps %} im Abschnitt *Mindma
 - **Ein** (Standard) – ein Mermaid-Diagramm. Der Dateiname ohne `.bike` ist der Stammknoten.
 - **Aus** – dieselbe verschachtelte Markdown-Liste wie beim Öffnen der Datei, ohne Dokumenttitel.
 
-Mermaid-Diagramme brauchen MultiMarkdown, CommonMark (GFM) oder Kramdown. Mit dem Discount-Prozessor werden sie nicht gerendert.
-
 [bike]: https://www.hogbaysoftware.com/bike/

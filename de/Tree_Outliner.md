@@ -16,6 +16,4 @@ Schalten Sie unter {% prefspane Apps %} im Abschnitt *Mindmaps und Gliederungen*
 
 **Headings through level** gilt nur, wenn dieser Schalter aus ist.
 
-Mermaid-Diagramme brauchen MultiMarkdown, CommonMark (GFM) oder Kramdown. Mit dem Discount-Prozessor werden sie nicht gerendert.
-
 [tree]: https://noteifyapp.com/tree-outliner/

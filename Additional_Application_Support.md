@@ -9,7 +9,7 @@ Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for
 | Topic | Help page |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
-| **Bike** `.bike` outlines | [Bike](Bike.html) |
+| **Bike** `.bike` and `.biked` outlines | [Bike](Bike.html) |
 | **Curio** (streaming preview) | [Curio](Curio.html) |
 | **Drafts** (streaming preview + actions) | [Drafts](Drafts.html) |
 | **DEVONthink** (Script menu integration) | [DEVONthink](DEVONthink.html) |

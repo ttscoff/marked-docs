@@ -49,8 +49,6 @@ When a format's checkbox is **enabled** (the default for supported formats), Mar
 
 **iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner, and Tree Outliner** — Rendered as Mermaid mindmap diagrams with the tidy-tree layout. For iThoughts and MindManager, shape information (rounded, rectangle, hexagon, etc.) is preserved where available. FreeMind (`.mm`) and OPML use the same mind map format. Bike (`.bike`) outlines use the included filename (minus extension) as the mind map root node. Tree Outliner uses the document title as the root. Node labels are plain text (links become link text; tasks show as ☐ / ☑ prefixes). Mermaid is included by default in every Markdown preview.
 
-**Limitation:** Mind map embedding (Mermaid diagrams) does not work with the Discount parser. Use MultiMarkdown, CommonMark (GFM), or Kramdown for mind map previews.
-
 When a format's checkbox is **disabled**:
 
 - **iThoughts** — The built-in preview image (`preview.png`) from the .itmz file is embedded as a base64 image. The image alt text uses the filename.

@@ -551,10 +551,13 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: Drag a Bike outline (.bike) onto Marked to preview it as a nested Markdown list, with heading rows in bold and tasks as checkboxes.
+    description: Drag a Bike outline (.bike or .biked) onto Marked to preview it as a nested Markdown list. Bike 2 saves a .biked package when the outline contains embedded images, and Marked opens that package directly.
     keywords:
     - bike
     - outline
+    - biked
+    - textbundle
+    - embedded images
     - hog bay
     - mermaid
     wiki_keywords: [bike, bike outline]
