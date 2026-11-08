@@ -530,9 +530,11 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: "Arrastre un esquema de Bike (.bike) a Marked para verlo como una lista Markdown anidada, con las filas de título en negrita y las tareas como casillas."
+    description: "Arrastre un esquema de Bike (.bike o .biked) a Marked para verlo como una lista Markdown anidada. Bike 2 guarda un paquete .biked cuando el esquema contiene imágenes incrustadas, y Marked abre ese paquete directamente."
     keywords:
     - bike
+    - biked
+    - textbundle
     - esquema
     - mermaid
     wiki_keywords:

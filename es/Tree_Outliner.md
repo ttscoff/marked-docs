@@ -16,6 +16,4 @@ En {% prefspane Apps %}, en *Mind Maps and Outlines*, active **Tree Outliner out
 
 **Headings through level** solo se usa cuando ese interruptor está desactivado.
 
-Los diagramas Mermaid necesitan MultiMarkdown, CommonMark (GFM) o Kramdown. No se muestran con el procesador Discount.
-
 [tree]: https://noteifyapp.com/tree-outliner/

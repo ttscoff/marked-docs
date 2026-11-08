@@ -39,8 +39,6 @@ Cuando está **habilitado** (el valor predeterminado), Marked convierte mapas me
 
 **iThoughts, MindManager, FreeMind, OPML y Bike**: renderizados como diagramas de mapas mentales de sirena con un diseño de árbol ordenado. Para iThoughts y MindManager, la información de forma (redondeada, rectangular, hexágono, etc.) se conserva cuando esté disponible. FreeMind (`.mm`) y OPML utilizan el mismo formato de mapa mental. Los esquemas de bicicletas (`.bike`) utilizan el nombre de archivo incluido (menos la extensión) como nodo raíz del mapa mental. Las etiquetas de los nodos son texto sin formato (los enlaces se convierten en texto de enlace; las tareas se muestran como prefijos ☐ / ☑). Mermaid se incluye de forma predeterminada en cada vista previa de Markdown.
 
-**Limitación:** La incrustación de mapas mentales (diagramas de sirena) no funciona con el analizador de descuentos. Utilice MultiMarkdown, CommonMark (GFM) o Kramdown para obtener vistas previas de mapas mentales.
-
 Cuando **deshabilitado**:
 
 - **iThoughts**: la imagen de vista previa incorporada (`preview.png`) del archivo .itmz está incrustada como una imagen base64. El texto alternativo de la imagen utiliza el nombre del archivo.

@@ -11,7 +11,7 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | Tema | Página de ayuda |
 | :-- | :-- |
 | **Oso** | [Oso](Bear.html) |
-| **Bike** esquemas `.bike` | [Bike](Bike.html) |
+| **Bike** esquemas `.bike` y `.biked` | [Bike](Bike.html) |
 | **Curio** (vista previa de transmisión) | [Curiosidad](Curio.html) |
 | **Borradores** (vista previa del streaming + acciones) | [Borradores](Drafts.html) |
 | **DEVONthink** (Integración del menú Script) | [DEVONthink](DEVONthink.html) |
