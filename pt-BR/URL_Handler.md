@@ -19,15 +19,21 @@ Chamar o manipulador de URL a partir da linha de comando ou de um script pode se
 
 ### Chamando em segundo plano [calling-in-the-background]
 
-Você pode chamar o comando `open` com o sinalizador `-g` para executar o resultado em segundo plano sem mudar o foco. Para executar o comando em segundo plano e elevar a janela ao topo sem roubar o foco:
+`open -g` pede ao Launch Services que não ative o Marked. O Marked ainda vem para a frente ao abrir um documento, a menos que a URL também inclua `activate=0`.
 
-	open -g 'marcado com x://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+A janela de visualização aparece à frente das outras janelas. O foco do teclado permanece no app que você estava usando. Sem `activate`, ou com `activate=1`, o Marked se torna o app ativo, como de costume.
 
 ## Parâmetros opcionais [optional-parameters]
 
 ### x-sucesso [x-success]
 
 Qualquer comando pode fornecer um parâmetro de consulta **x-success**. Defina isso como um URL a ser chamado após executar o comando. Por exemplo: `x-marked://open/?file=filename.md&x-success=ithoughts:`. Você também pode fornecer um identificador de pacote (como `com.googlecode.iterm`) para abrir um aplicativo que não possui um esquema de URL.
+
+### activate [activate]
+
+Opcional em `open`. Defina `activate=0` para mostrar a visualização sem tornar o Marked o aplicativo ativo. Combine com `open -g`, como no exemplo acima. Qualquer outro valor, ou a omissão do parâmetro, ativa o Marked.
 
 ### aumentar [raise]
 
@@ -261,6 +267,8 @@ Abre o documento especificado em Marcado.
 **arquivo** *(obrigatório)*: O caminho POSIX completo para o documento a ser aberto ou uma lista de caminhos separados por vírgula
 
 **speedread** *(opcional)*: Defina como `1` para iniciar a leitura rápida automaticamente após a abertura.
+
+**activate** *(opcional)*: Defina como `0` para abrir a visualização sem tornar o Marked o app ativo. Use com `open -g`. Por padrão, o Marked é ativado.
 
 `open` também aceita um caminho cujos componentes serão combinados em uma única URL
 
