@@ -1,0 +1,43 @@
+# Help translation gap — de — URL_Handler.md
+# Feature: open a preview without activating Marked (activate=0)
+# Generated: 2026-11-08
+#
+# An initial German draft is already in this branch for review. Please
+# post-edit it. Do not machine-overwrite the rest of de/URL_Handler.md.
+# That page is finished. Only the "Aufruf im Hintergrund" section, the new
+# activate subsection, and the activate line under the open command are in
+# scope.
+#
+# Keep in English: Marked, Launch Services, activate, open, open -g,
+# x-marked-3, and every URL token. Anchors in [brackets] stay English.
+
+=== LOCATION ===
+File: de/URL_Handler.md
+Section heading: Aufruf im Hintergrund
+Also add: subsection activate, before raise
+Also add: one parameter line under the open command, after speedread
+
+=== CURRENT GERMAN (replaced) ===
+Sie können den `open`-Befehl mit dem Flag `-g` aufrufen, um das Ergebnis im Hintergrund auszuführen, ohne den Fokus zu wechseln. Um den Befehl im Hintergrund auszuführen und das Fenster nach vorne zu holen, ohne den Fokus zu stehlen:
+
+	open -g 'x-marked://open?file=filename.md&raise=true'
+
+=== ENGLISH TARGET (replace that section) ===
+`open -g` tells Launch Services not to activate Marked. Marked still comes forward when it opens a document, unless the URL also passes `activate=0`.
+
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+The preview window is shown in front of other windows. Keyboard focus stays in the app you were using. Omit `activate`, or set `activate=1`, and Marked becomes the active app as usual.
+
+=== ENGLISH TARGET (new subsection before raise) ===
+### activate [activate]
+
+Optional on `open`. Set `activate=0` to show the preview without making Marked the active application. Pair it with `open -g`, as in the example above. Any other value, or leaving it off, activates Marked.
+
+=== ENGLISH TARGET (new line under the open command, after speedread) ===
+**activate** *(optional)*: Set to `0` to open the preview without making Marked the active app. Use with `open -g`. Defaults to activating Marked.
+
+=== NOTES ===
+- The old example used `raise=true` and claimed `-g` alone kept focus. That was incorrect. `raise` is unchanged and still raises windows above other apps.
+- `activate=0` shows the preview and leaves the other app active. It has to be combined with `open -g`.
+- Keep the command examples exactly as written, including `x-marked-3` and `activate=0`.
