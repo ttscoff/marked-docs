@@ -535,9 +535,11 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: "Faites glisser un plan Bike (.bike) sur Marked pour l'afficher comme une liste Markdown imbriquée, avec les lignes de titre en gras et les tâches comme cases à cocher."
+    description: "Faites glisser un plan Bike (.bike ou .biked) sur Marked pour l'afficher comme une liste Markdown imbriquée. Bike 2 enregistre un paquet .biked lorsque le plan contient des images intégrées, et Marked ouvre ce paquet directement."
     keywords:
     - bike
+    - biked
+    - textbundle
     - plan
     - mermaid
     wiki_keywords:

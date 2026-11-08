@@ -37,8 +37,6 @@ Lorsqu'il est **activé** (valeur par défaut), Marked convertit les cartes ment
 
 **iThoughts, MindManager, FreeMind, OPML & Bike** : Rendus sous forme de diagrammes mindmap Mermaid avec la disposition en arbre bien rangé. Pour iThoughts et MindManager, les informations de forme (arrondi, rectangle, hexagone, etc.) sont conservées lorsqu'elles sont disponibles. FreeMind (`.mm`) et OPML utilisent le même format de carte mentale. Les contours Bike (`.bike`) utilisent le nom de fichier inclus (moins l'extension) comme nœud racine de la carte mentale. Les étiquettes de nœud sont en texte brut (les liens deviennent du texte de lien ; les tâches s'affichent sous la forme de préfixes ☐/☑). Mermaid est incluse par défaut dans chaque aperçu Markdown.
 
-**Limitation :** L'intégration de cartes mentales (diagrammes Mermaid) ne fonctionne pas avec l'analyseur Discount. Utilisez MultiMarkdown, CommonMark (GFM) ou Kramdown pour les aperçus de cartes mentales.
-
 Lorsque **désactivé** :
 
 - **iThoughts** : L'image d'aperçu intégrée (`preview.png`) du fichier .itmz est intégrée en tant qu'image base64. Le texte alternatif de l'image utilise le nom du fichier.

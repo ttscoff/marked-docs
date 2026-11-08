@@ -9,7 +9,7 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | Sujet | Page d'aide |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
-| **Bike** plans `.bike` | [Bike](Bike.html) |
+| **Bike** plans `.bike` et `.biked` | [Bike](Bike.html) |
 | **Curio** (aperçu en continu) | [Curio](Curio.html) |
 | **Drafts** (aperçu en continu + actions) | [Drafts](Drafts.html) |
 | **DEVONthink** (intégration au menu Scripts) | [DEVONthink](DEVONthink.html) |
