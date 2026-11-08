@@ -207,8 +207,12 @@ Sections:
     - export
     - exportieren
     - wortwiederholung
+    - zwischenablage
+    - markdown
+    - auswahl
     wiki_keywords:
     - exportieren als
+    - markdown kopieren
 - title: Vergleiche und FAQ
   folder: Comparisons_FAQ
   pages:
@@ -451,6 +455,7 @@ Sections:
     - stile
     - einbetten
     - kopieren
+    - markdown kopieren
     wiki_keywords:
     - html-export
     - eingebettete stile

@@ -47,4 +47,4 @@ Für ein einmaliges Einfügen ohne Speichern einer Datei verwenden Sie stattdess
 - [PDF-Unterstützung](PDF_Support.html) – PDF-Dokumente als Markdown-Quellen öffnen
 - [Arbeiten mit DOCX](Working_With_DOCX.html) – Word-Dokumente mit Änderungsverfolgung und Kommentaren
 - [Dateien öffnen](Opening_Files.html) – Drag & Drop, Zuletzt geöffnet, Zwischenablage
-- [Export](Exporting.html) – Kopieren Sie Rich Text und speichern Sie RTFD (Export), im Gegensatz zum Öffnen von RTF als Quelldatei
+- [Export](Exporting.html) – Rich Text kopieren (die gesamte Vorschau oder nur die Auswahl) und RTFD speichern (Export), im Gegensatz zum Öffnen von RTF als Quelldatei

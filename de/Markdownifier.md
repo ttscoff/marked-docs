@@ -29,6 +29,8 @@ Um auf den Markdownifier zuzugreifen, öffnen Sie {% appmenu Ablage, Neu, URL in
 3. **Klicken Sie auf „Automatisch“** oder drücken Sie `Return`, um Inhalte zu extrahieren
 4. Der extrahierte Inhalt wird **automatisch** in einem neuen Marked-Dokument geöffnet
 
+Bis Sie das neue Dokument speichern, existiert sein Markdown nur in der Vorschau. Mit **Markdown kopieren** ({% kbd shift opt cmd C %}) legen Sie es in die Zwischenablage. Siehe [Markdown kopieren](Exporting.html#copymarkdown).
+
 ### Manuelle Inhaltsauswahl [manual-content-selection]
 
 Wenn die automatische Extraktion nicht den gewünschten Inhalt erfasst:

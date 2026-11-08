@@ -3539,7 +3539,7 @@ Schreibe alle Antworten auf %@.";
 "menu.copyMarkdown" = "Markdown kopieren";
 # EN: Copy Markdown
 
-"menu.copyRichText" = "Rich-Text kopieren";
+"menu.copyRichText" = "Rich Text kopieren";
 # EN: Copy Rich Text
 
 "menu.copyURL" = "URL kopieren";
