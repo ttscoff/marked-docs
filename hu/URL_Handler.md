@@ -19,15 +19,21 @@ Az URL-kezelő parancssorból vagy szkriptből hívható a macOS [`open` parancs
 
 ### Hívás a háttérben [calling-in-the-background]
 
-Meghívhatja a `open` parancsot a `-g` jelzővel, hogy az eredményt a háttérben, fókuszváltás nélkül hajtsa végre. A parancs végrehajtása a háttérben, és az ablak felemelése a fókusz ellopása nélkül:
+Az `open -g` arra utasítja a Launch Services szolgáltatást, hogy ne aktiválja a Markedet. A Marked dokumentum megnyitásakor így is előtérbe kerül, hacsak az URL nem tartalmazza az `activate=0` paramétert is.
 
-	open -g 'x-marked://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+Az előnézeti ablak a többi ablak elé kerül. A billentyűzetfókusz abban az appban marad, amelyet éppen használt. Ha kihagyja az `activate` paramétert, vagy `activate=1` értéket ad meg, a Marked a szokott módon az aktív app lesz.
 
 ## Választható paraméterek [optional-parameters]
 
 ### x-siker [x-success]
 
 Bármely parancs megadhat egy **x-success** lekérdezési paramétert. Állítsa be a parancs végrehajtása után meghívandó URL-t. Például: `x-marked://open/?file=filename.md&x-success=ithoughts:`. Megadhat egy csomagazonosítót is (például `com.googlecode.iterm`) olyan alkalmazás megnyitásához, amely nem rendelkezik URL-sémával.
+
+### activate [activate]
+
+Az `open` parancsnál opcionális. Az `activate=0` beállítással az előnézet megjelenik anélkül, hogy a Marked lenne az aktív app. Használja együtt az `open -g` kapcsolóval, ahogy a fenti példában. Bármely más érték, vagy a paraméter elhagyása, aktiválja a Markedet.
 
 ### emelni [raise]
 
@@ -261,6 +267,8 @@ Megnyitja a megadott dokumentumot a Megjelölve.
 **fájl** *(kötelező)*: A megnyitandó dokumentum teljes POSIX elérési útja vagy az elérési utak vesszővel elválasztott listája
 
 **speedread** *(opcionális)*: Állítsa `1` értékre a Speed Read automatikus elindításához a megnyitás után.
+
+**activate** *(opcionális)*: Állítsa `0` értékre, ha az előnézetet úgy szeretné megnyitni, hogy a Marked ne legyen az aktív app. Használja az `open -g` kapcsolóval. Alapértelmezés szerint a Marked aktiválódik.
 
 Az `open` olyan elérési utat is elfogad, amelynek összetevői egyetlen URL-be kerülnek
 
