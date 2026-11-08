@@ -98,8 +98,8 @@ Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
 
 [(Info zu Tree Outliner)](Tree_Outliner.html)
 
-Headings through level
-: Der Dokumenttitel ist eine Überschrift der Ebene 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden zu verschachtelten Listen, Notizen zu Absätzen. Gilt, wenn **Tree Outliner outlines** unter **Als Mermaid-Mindmaps einbetten** deaktiviert ist.
+Überschriften bis Ebene
+: Der Dokumenttitel ist eine Überschrift der Ebene 1. Gliederungsebenen bleiben bis zu dieser Ebene Überschriften, tiefere Knoten werden zu verschachtelten Listen, Notizen zu Absätzen. Gilt, wenn **Tree-Outliner-Gliederungen** unter **Als Mermaid-Mindmaps einbetten** deaktiviert ist.
 
 #### Mindmaps/Gliederungen [MindMapsOutlines]
 
@@ -109,4 +109,4 @@ Als Mermaid-Mindmaps einbetten
 : **OPML-Dateien** (.opml). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
 : **OmniOutliner-Gliederungen** (.ooutline). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste (oder Checkliste, wo zutreffend).
 : **Bike-Gliederungen**. Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste. Siehe [Bike](Bike.html).
-: **Tree Outliner outlines** (.treeoutline). Ein: Mermaid-Mindmap. Aus: Markdown-Überschriften und -Listen. Siehe [Tree Outliner](Tree_Outliner.html).
+: **Tree-Outliner-Gliederungen** (.treeoutline). Ein: Mermaid-Mindmap. Aus: Markdown-Überschriften und -Listen. Siehe [Tree Outliner](Tree_Outliner.html).
