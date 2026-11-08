@@ -17,15 +17,21 @@ Den URL-Handler rufen Sie über die Befehlszeile oder ein Skript mit dem macOS-[
 
 ### Aufruf im Hintergrund [calling-in-the-background]
 
-Sie können den `open`-Befehl mit dem Flag `-g` aufrufen, um das Ergebnis im Hintergrund auszuführen, ohne den Fokus zu wechseln. Um den Befehl im Hintergrund auszuführen und das Fenster nach vorne zu holen, ohne den Fokus zu stehlen:
+`open -g` weist Launch Services an, Marked nicht zu aktivieren. Beim Öffnen eines Dokuments kommt Marked trotzdem nach vorne, es sei denn, die URL enthält zusätzlich `activate=0`.
 
-	open -g 'x-marked://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+Das Vorschaufenster erscheint vor den anderen Fenstern. Der Tastaturfokus bleibt in der App, die Sie gerade verwendet haben. Ohne `activate` oder mit `activate=1` wird Marked wie gewohnt zur aktiven App.
 
 ## Optionale Parameter [optional-parameters]
 
 ### x-success [x-success]
 
 Jeder Befehl kann einen **x-success**-Abfrageparameter mitgeben. Setzen Sie ihn auf eine URL, die nach der Ausführung des Befehls aufgerufen wird. Zum Beispiel: `x-marked://open/?file=filename.md&x-success=ithoughts:`. Sie können auch eine Bundle-ID (etwa `com.googlecode.iterm`) angeben, um eine App ohne eigenes URL-Schema zu öffnen.
+
+### activate [activate]
+
+Optionaler Parameter für `open`. Mit `activate=0` zeigt Marked die Vorschau, ohne zur aktiven App zu werden. Kombinieren Sie den Parameter mit `open -g` wie im Beispiel oben. Bei jedem anderen Wert und ohne den Parameter wird Marked aktiviert.
 
 ### raise [raise]
 
@@ -259,6 +265,8 @@ Extrahiert Inhalte von einer Web-URL und öffnet sie als neues Dokument in Marke
 **file** *(erforderlich)*: Der vollständige POSIX-Pfad zum zu öffnenden Dokument oder eine kommagetrennte Liste von Pfaden
 
 **speedread** *(optional)*: Auf `1` setzen, um nach dem Öffnen automatisch Speed Read zu starten.
+
+**activate** *(optional)*: Auf `0` setzen, um die Vorschau zu öffnen, ohne Marked zur aktiven App zu machen. Zusammen mit `open -g` verwenden. Standardmäßig wird Marked aktiviert.
 
 `open` akzeptiert auch einen Pfad, dessen Komponenten zu einer einzigen URL zusammengesetzt werden
 

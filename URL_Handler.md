@@ -17,15 +17,21 @@ Calling the url handler from the command line or a script can be done using the 
 
 ### Calling in the background [calling-in-the-background]
 
-You can call the `open` command with the `-g` flag to perform the result in the background without switching focus. To perform the command in the background and raise the window to the top without stealing focus:
+`open -g` tells Launch Services not to activate Marked. Marked still comes forward when it opens a document, unless the URL also passes `activate=0`.
 
-	open -g 'x-marked://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+The preview window is shown in front of other windows. Keyboard focus stays in the app you were using. Omit `activate`, or set `activate=1`, and Marked becomes the active app as usual.
 
 ## Optional parameters [optional-parameters]
 
 ### x-success [x-success]
 
 Any command can provide an **x-success** query parameter. Set this to a url to be called after performing the command. For example: `x-marked://open/?file=filename.md&x-success=ithoughts:`. You can also provide a bundle identifier (such as `com.googlecode.iterm`) to open an application that doesn't have a URL scheme.
+
+### activate [activate]
+
+Optional on `open`. Set `activate=0` to show the preview without making Marked the active application. Pair it with `open -g`, as in the example above. Any other value, or leaving it off, activates Marked.
 
 ### raise [raise]
 
@@ -259,6 +265,8 @@ Opens the specified document in Marked.
 **file** *(required)*: The full POSIX path to the document to be opened, or a comma-separated list of paths. Commas inside a filename are allowed; Marked only treats a comma as a multi-file separator when it follows a file extension (for example `.md,`) or when the next path starts with `/` or `~`.
 
 **speedread** *(optional)*: Set to `1` to start Speed Read automatically after opening.
+
+**activate** *(optional)*: Set to `0` to open the preview without making Marked the active app. Use with `open -g`. Defaults to activating Marked.
 
 `open` also accepts a path whose components will be combined into a single url
 
