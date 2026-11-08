@@ -19,15 +19,21 @@ Puoi prendere di mira specificamente Marked 3 usando `x-marked-3` invece di `x-m
 
 ### Chiamata in sottofondo [calling-in-the-background]
 
-Puoi chiamare il comando `open` con il flag `-g` per eseguire il risultato in background senza cambiare focus. Per eseguire il comando in background e alzare la finestra in alto senza togliere il focus:
+`open -g` indica a Launch Services di non attivare Marked. Marked viene comunque in primo piano quando apre un documento, a meno che l'URL non contenga anche `activate=0`.
 
-	open -g 'x-marked://open?file=nomefile.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+La finestra di anteprima compare davanti alle altre finestre. Il focus della tastiera resta nell'app che stavi usando. Senza `activate`, oppure con `activate=1`, Marked diventa l'app attiva come di consueto.
 
 ## Parametri facoltativi [optional-parameters]
 
 ### x-successo [x-success]
 
 Qualsiasi comando può fornire un parametro di query **x-success**. Impostalo su un URL da chiamare dopo aver eseguito il comando. Ad esempio: `x-marked://open/?file=filename.md&x-success=ithoughts:`. Puoi anche fornire un identificatore del bundle (come `com.googlecode.iterm`) per aprire un'applicazione che non dispone di uno schema URL.
+
+### activate [activate]
+
+Facoltativo con `open`. Imposta `activate=0` per mostrare l'anteprima senza rendere Marked l'applicazione attiva. Abbinalo a `open -g`, come nell'esempio sopra. Qualsiasi altro valore, oppure omettere il parametro, attiva Marked.
 
 ### rilanciare [raise]
 
@@ -261,6 +267,8 @@ Apre il documento specificato in Contrassegnato.
 **file** *(obbligatorio)*: il percorso POSIX completo del documento da aprire o un elenco di percorsi separati da virgole
 
 **speedread** *(opzionale)*: imposta su `1` per avviare automaticamente la lettura veloce dopo l'apertura.
+
+**activate** *(opzionale)*: imposta su `0` per aprire l'anteprima senza rendere Marked l'app attiva. Da usare con `open -g`. Per impostazione predefinita Marked viene attivato.
 
 `open` accetta anche un percorso i cui componenti verranno combinati in un unico URL
 
