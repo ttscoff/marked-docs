@@ -16,6 +16,4 @@
 
 **Headings through level** が使われるのは、そのスイッチがオフのときだけです。
 
-Mermaid 図には MultiMarkdown、CommonMark (GFM)、または Kramdown が必要です。Discount プロセッサでは描画されません。
-
 [tree]: https://noteifyapp.com/tree-outliner/

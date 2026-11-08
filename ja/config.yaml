@@ -530,9 +530,11 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: "Bike のアウトライン (.bike) を Marked にドラッグすると、見出し行は太字、タスクはチェックボックスの入れ子の Markdown リストとしてプレビューできます。"
+    description: "Bike のアウトライン (.bike または .biked) を Marked にドラッグすると、入れ子の Markdown リストとしてプレビューできます。Bike 2 は、アウトラインに埋め込み画像があるとき .biked パッケージを保存し、Marked はそのパッケージを直接開きます。"
     keywords:
     - bike
+    - biked
+    - textbundle
     - アウトライン
     - mermaid
     wiki_keywords:

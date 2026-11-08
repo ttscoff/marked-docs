@@ -1,6 +1,6 @@
 # <%= @title %>
 
-[Bike][bike] のアウトライン (`.bike`) を Marked にドラッグすると、見出し行は太字、タスクはチェックボックスの入れ子の Markdown リストとしてプレビューできます。
+[Bike][bike] のアウトラインを Marked にドラッグすると、見出し行は太字、タスクはチェックボックスの入れ子の Markdown リストとしてプレビューできます。単独のアウトラインは `.bike` ファイルです。Bike 2 は、アウトラインに埋め込み画像があるとき `.biked` パッケージを保存します。
 
 ## Bike のアウトラインを開く [opening-a-bike-outline]
 
@@ -10,7 +10,7 @@
 - タスクは GitHub 形式のチェックボックスになります。Bike が完了時刻を保存しているか、チェック済みになっているとき、タスクはオンになります。
 - 行のテキストにあるリンクとインラインの書式は Markdown のまま残ります。
 
-`.bike` ファイルを開いたときは、常にこのリストになります。アウトラインは Mermaid 図にはなりません。
+`.bike` ファイルを開いたときは、常にこのリストになります。アウトラインは Mermaid 図にはなりません。`.biked` パッケージは、下で説明する **Bike outlines** の設定に従います。
 
 ## Bike のアウトラインを取り込む [including-a-bike-outline]
 
@@ -21,6 +21,10 @@
 - **オン**（既定）— Mermaid 図。`.bike` を除いたファイル名がルートノードになります。
 - **オフ** — ファイルを開いたときと同じ入れ子の Markdown リスト。文書タイトルは付きません。
 
-Mermaid 図には MultiMarkdown、CommonMark (GFM)、または Kramdown が必要です。Discount プロセッサでは描画されません。
+## 画像を含むアウトライン [outlines-with-images]
+
+Bike 2 は、アウトラインに埋め込み画像があるとき `.biked` パッケージを保存します。パッケージは TextBundle です。中身は `text.bike` と `assets` フォルダです。`.biked` ファイル自体を開いてください。Marked は中のアウトラインを読み、ウィンドウのタイトルにはパッケージ名を使います。
+
+画像を残すには **Bike outlines** をオフにします。プレビューは入れ子のリストになります。**オン**にすると、アウトラインは Mermaid 図になります。
 
 [bike]: https://www.hogbaysoftware.com/bike/

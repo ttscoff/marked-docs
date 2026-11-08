@@ -39,8 +39,6 @@ OPML (Outline Processor Markup Language) は、アウトライナーやフィー
 
 **iThoughts、MindManager、FreeMind、OPML、Bike** — 整ったツリー レイアウトを使用してマーメイド マインドマップ図としてレンダリングされます。 iThoughts および MindManager の場合、形状情報 (円形、長方形、六角形など) が利用可能な場合には保存されます。 FreeMind (`.mm`) と OPML は同じマインド マップ形式を使用します。 Bike (`.bike`) のアウトラインでは、含まれているファイル名 (拡張子を除く) がマインド マップのルート ノードとして使用されます。ノード ラベルはプレーン テキストです (リンクはリンク テキストになり、タスクは ☐ / ☑ プレフィックスとして表示されます)。 Mermaid は、すべての Markdown プレビューにデフォルトで含まれています。
 
-**制限事項:** マインド マップの埋め込み (人魚図) は、Discount パーサーでは機能しません。マインド マップのプレビューには、MultiMarkdown、CommonMark (GFM)、または Kramdown を使用します。
-
 **無効**の場合:
 
 - **iThoughts** — .itmz ファイルの組み込みプレビュー イメージ (`preview.png`) は、base64 イメージとして埋め込まれます。画像の代替テキストにはファイル名が使用されます。

@@ -11,7 +11,7 @@
 |トピック |ヘルプページ |
 | :-- | :-- |
 | **クマ** | [クマ](Bear.html) |
-| **Bike** `.bike` アウトライン | [Bike](Bike.html) |
+| **Bike** `.bike` と `.biked` のアウトライン | [Bike](Bike.html) |
 | **キュリオ** (ストリーミング プレビュー) | [骨董品](Curio.html) |
 | **下書き** (ストリーミング プレビュー + アクション) | [下書き](Drafts.html) |
 | **DEVONthink** (スクリプト メニュー統合) | [デボン考える](DEVONthink.html) |
