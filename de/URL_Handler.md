@@ -31,7 +31,7 @@ Jeder Befehl kann einen **x-success**-Abfrageparameter mitgeben. Setzen Sie ihn 
 
 ### activate [activate]
 
-Optional bei `open`. Setzen Sie `activate=0`, um die Vorschau zu zeigen, ohne Marked zur aktiven App zu machen. Kombinieren Sie es mit `open -g`, wie im Beispiel oben. Jeder andere Wert, oder das Weglassen des Parameters, aktiviert Marked.
+Optional bei `open`. Setzen Sie `activate=0`, um die Vorschau zu zeigen, ohne Marked zur aktiven App zu machen. Kombinieren Sie es mit `open -g`, wie im Beispiel oben. Jeder andere Wert oder das Weglassen des Parameters aktiviert Marked.
 
 ### raise [raise]
 
