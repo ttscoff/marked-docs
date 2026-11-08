@@ -9,7 +9,7 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | Thema | Hilfeseite |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
-| **Bike** `.bike`-Gliederungen | [Bike](Bike.html) |
+| **Bike** `.bike`- und `.biked`-Gliederungen | [Bike](Bike.html) |
 | **Curio** (Streaming-Vorschau) | [Curio](Curio.html) |
 | **Drafts** (Streaming-Vorschau + Aktionen) | [Drafts](Drafts.html) |
 | **DEVONthink** (Integration des Skriptmenüs) | [DEVONthink](DEVONthink.html) |

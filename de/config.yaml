@@ -585,9 +585,12 @@ Sections:
     - bear
   - title: Bike
     file: Bike
-    description: "Ziehen Sie eine Bike-Gliederung (.bike) auf Marked, um sie als verschachtelte Markdown-Liste in der Vorschau zu sehen. Überschriftszeilen erscheinen fett, Aufgaben als Kontrollkästchen."
+    description: "Ziehen Sie eine Bike-Gliederung (.bike oder .biked) auf Marked, um sie als verschachtelte Markdown-Liste in der Vorschau zu sehen. Bike 2 speichert ein .biked-Paket, wenn die Gliederung eingebettete Bilder enthält, und Marked öffnet dieses Paket direkt."
     keywords:
     - bike
+    - biked
+    - textbundle
+    - eingebettete bilder
     - gliederung
     - outline
     - mermaid
