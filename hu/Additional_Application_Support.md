@@ -11,7 +11,7 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | Téma | Súgó oldal |
 | :-- | :-- |
 | **Medve** | [Medve](Bear.html) |
-| **Bike** `.bike` vázlatok | [Bike](Bike.html) |
+| **Bike** `.bike` és `.biked` vázlatok | [Bike](Bike.html) |
 | **Curio** (streaming előnézet) | [Curio](Curio.html) |
 | **Piszkozatok** (streaming előnézet + műveletek) | [Piszkozatok](Drafts.html) |
 | **DEVONthink** (Script menü integráció) | [DEVONthink](DEVONthink.html) |

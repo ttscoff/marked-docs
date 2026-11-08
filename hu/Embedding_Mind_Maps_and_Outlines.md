@@ -39,8 +39,6 @@ Ha **engedélyezve** (alapértelmezett), a megjelölt konvertálások gondolatt�
 
 **iThoughts, MindManager, FreeMind, OPML & Bike** – Mermaid gondolattérkép-diagramok formájában renderelt fa elrendezéssel. Az iThoughts és a MindManager esetében az alakinformációk (lekerekített, téglalap, hatszög stb.) megőrződnek, ahol rendelkezésre állnak. A FreeMind (`.mm`) és az OPML ugyanazt a gondolattérkép-formátumot használja. A kerékpáros (`.bike`) körvonalai a mellékelt fájlnevet (mínusz kiterjesztést) használják gondolattérkép gyökércsomópontként. A csomópontcímkék egyszerű szövegesek (a hivatkozások hivatkozásszöveggé válnak; a feladatok ☐ / ☑ előtagként jelennek meg). A Mermaid alapértelmezés szerint minden Markdown előnézetben szerepel.
 
-**Korlátozás:** A gondolattérkép-beágyazás (Hableány diagramok) nem működik a Discount elemzővel. Használja a MultiMarkdown-t, a CommonMark-ot (GFM) vagy a Kramdownt a gondolattérkép-előnézetekhez.
-
 Ha **letiltva**:
 
 - **iThoughts** — Az .itmz fájl beépített előnézeti képe (`preview.png`) base64 képként van beágyazva. A kép alternatív szövege a fájlnevet használja.

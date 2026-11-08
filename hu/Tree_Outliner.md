@@ -16,6 +16,4 @@ A {% prefspane Apps %} *Mind Maps and Outlines* csoportjában kapcsolja be a **T
 
 A **Headings through level** csak akkor érvényes, ha ez a kapcsoló ki van kapcsolva.
 
-A Mermaid-diagramokhoz MultiMarkdown, CommonMark (GFM) vagy Kramdown kell. A Discount processzorral nem jelennek meg.
-
 [tree]: https://noteifyapp.com/tree-outliner/
