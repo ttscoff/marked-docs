@@ -535,9 +535,11 @@ Sections:
     wiki_keywords: [bear app marked]
   - title: Bike
     file: Bike
-    description: "把 Bike 大綱 (.bike) 拖到 Marked 上，即可預覽為巢狀 Markdown 清單，標題列用粗體，工作項目用核取方塊。"
+    description: "把 Bike 大綱 (.bike 或 .biked) 拖到 Marked 上，即可預覽為巢狀 Markdown 清單。大綱含有嵌入圖片時，Bike 2 會儲存 .biked 套件，Marked 會直接開啟這個套件。"
     keywords:
     - bike
+    - biked
+    - textbundle
     - 大綱
     - mermaid
     wiki_keywords:

@@ -16,6 +16,4 @@
 
 只有這個開關關閉時，才會用到 **Headings through level**。
 
-Mermaid 圖需要 MultiMarkdown、CommonMark (GFM) 或 Kramdown。Discount 處理器不會繪製它們。
-
 [tree]: https://noteifyapp.com/tree-outliner/
