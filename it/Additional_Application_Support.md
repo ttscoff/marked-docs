@@ -11,7 +11,7 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | Argomento | Pagina di aiuto |
 | :-- | :-- |
 | **Bear** | [Bear](Bear.html) |
-| **Bike** strutture `.bike` | [Bike](Bike.html) |
+| **Bike** strutture `.bike` e `.biked` | [Bike](Bike.html) |
 | **Curio** (anteprima in streaming) | [Curio](Curio.html) |
 | ** Drafts** (anteprima in streaming + azioni) | [Drafts](Drafts.html) |
 | **DEVONthink** (integrazione del menu Script) | [DEVONthink](DEVONthink.html) |

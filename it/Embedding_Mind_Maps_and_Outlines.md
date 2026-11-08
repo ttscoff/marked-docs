@@ -39,8 +39,6 @@ Quando **abilitato** (impostazione predefinita), le conversioni contrassegnate i
 
 **iThoughts, MindManager, FreeMind, OPML e Bike** — Resi come diagrammi di mappe mentali a forma di sirena con il layout ad albero ordinato. Per iThoughts e MindManager, le informazioni sulla forma (arrotondato, rettangolo, esagono, ecc.) vengono conservate ove disponibili. FreeMind (`.mm`) e OPML utilizzano lo stesso formato di mappa mentale. I contorni della bici (`.bike`) utilizzano il nome file incluso (meno l'estensione) come nodo radice della mappa mentale. Le etichette dei nodi sono testo semplice (i collegamenti diventano testo del collegamento; le attività vengono visualizzate come prefissi ☐ / ☑). La sirena è inclusa per impostazione predefinita in ogni anteprima di Markdown.
 
-**Limitazione:** L'incorporamento della mappa mentale (diagrammi Sirena) non funziona con il parser Discount. Utilizza MultiMarkdown, CommonMark (GFM) o Kramdown per le anteprime delle mappe mentali.
-
 Quando **disabilitato**:
 
 - **iThoughts**: l'immagine di anteprima incorporata (`preview.png`) dal file .itmz è incorporata come immagine base64. Il testo alternativo dell'immagine utilizza il nome del file.
