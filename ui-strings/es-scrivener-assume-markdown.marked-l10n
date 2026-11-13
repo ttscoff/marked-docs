@@ -1,0 +1,70 @@
+# Marked Settings Localization Patch
+# Locale: es (Spanish)
+# Generated: 2026-08-13
+# Feature: Scrivener Assume Markdown + Automatic returns
+#
+# HOW TO TRANSLATE
+# ----------------
+# Review or revise the DRAFT translations below.
+# Fill/edit the string on each line: "key" = "your translation";
+# Keep keys unchanged.
+# Preserve %@, %ld, %1$@, %2$ld, \n, and keyboard symbols.
+# Do not translate product names (Marked, Scrivener, Markdown, MultiMarkdown)
+# unless your locale normally localizes them.
+#
+# DRAFT lines are starting translations applied to Settings.strings;
+# please correct tone/terminology to match your locale UI glossary.
+#
+# Return this file with translations finalized (same filename).
+# We merge with: python3 scripts/merge_localization_updates.py <this-file>
+#
+# CONTEXT
+# -------
+# Applications → Scrivener settings:
+# 1) Checkbox: "Assume Markdown formatting" (default ON)
+# 2) Popup: "Treat Scrivener returns as" with options:
+#    Automatic (default) | Soft line breaks (join lines) | Paragraph breaks (keep separate)
+# Automatic follows the checkbox: ON → soft join; OFF → keep separate paragraphs.
+# The tooltip mentions the existing "Retain line breaks in paragraphs"
+# preference (githubNewlines); use that setting's localized title in your locale.
+# Pipe tables and fenced code blocks must remain unaffected by the returns option.
+#
+# This replaces the older *-scrivener-linebreaks.marked-l10n handoff
+# (popup labels and tooltip were renamed / expanded).
+#
+# SUMMARY
+# -------
+#   Settings.strings keys: 7
+
+=== BEGIN Settings.strings (gaps) ===
+# Strings in this section: 7
+
+"setting.scrivenerAssumeMarkdown" = "Asumir formato Markdown";
+# EN: Assume Markdown formatting
+# DRAFT: Asumir formato Markdown
+
+"tooltip.scrivenerAssumeMarkdown" = "Trate los documentos de carpeta como Markdown escritos en Scrivener (listas escritas, tablas, vallas, líneas en blanco entre párrafos) en lugar de Scrivener estructura de texto enriquecido únicamente.";
+# EN: Treat binder documents as Markdown authored in Scrivener (typed lists, tables, fences, blank lines between paragraphs) rather than Scrivener rich-text structure alone.
+# DRAFT: Trate los documentos de carpeta como Markdown escritos en Scrivener (listas escritas, tablas, vallas, líneas en blanco entre párrafos) en lugar de Scrivener estructura de texto enriquecido únicamente.
+
+"setting.scrivenerLineBreaks" = "Tratar los retornos de Scrivener como";
+# EN: Treat Scrivener returns as
+# DRAFT: Tratar los retornos de Scrivener como
+
+"setting.scrivenerLineBreaks.automatic" = "Automático";
+# EN: Automatic
+# DRAFT: Automático
+
+"setting.scrivenerLineBreaks.lineBreaks" = "Saltos de línea suaves (unir líneas)";
+# EN: Soft line breaks (join lines)
+# DRAFT: Saltos de línea suaves (unir líneas)
+
+"setting.scrivenerLineBreaks.paragraphs" = "Saltos de párrafo (mantener separados)";
+# EN: Paragraph breaks (keep separate)
+# DRAFT: Saltos de párrafo (mantener separados)
+
+"tooltip.scrivenerLineBreaks" = "Cómo interpretar el retorno en Scrivener al convertir a Markdown. Automático sigue el formato Asumir Markdown: saltos de línea suaves cuando se asume Markdown, saltos de párrafo cuando no lo es. Los saltos de línea suaves (unir líneas) fusionan retornos consecutivos en saltos suaves dentro de un párrafo (una línea en blanco comienza un nuevo párrafo; sujeto a Conservar saltos de línea en los párrafos). Los saltos de párrafo (manténgalos separados) mantienen cada declaración como un párrafo Markdown. Las tablas de tuberías y los bloques de códigos delimitados no se ven afectados.";
+# EN: How to interpret Return in Scrivener when converting to Markdown. Automatic follows Assume Markdown formatting: soft line breaks when Markdown is assumed, paragraph breaks when it is not. Soft line breaks (join lines) merge consecutive Returns into soft breaks inside a paragraph (a blank line starts a new paragraph; subject to Retain line breaks in paragraphs). Pipe tables and fenced code blocks are unaffected.
+# DRAFT: Cómo interpretar el retorno en Scrivener al convertir a Markdown. Automático sigue el formato Asumir Markdown: saltos de línea suaves cuando se asume Markdown, saltos de párrafo cuando no lo es. Los saltos de línea suaves (unir líneas) fusionan retornos consecutivos en saltos suaves dentro de un párrafo (una línea en blanco comienza un nuevo párrafo; sujeto a Conservar saltos de línea en los párrafos). Los saltos de párrafo (manténgalos separados) mantienen cada declaración como un párrafo Markdown. Las tablas de tuberías y los bloques de códigos delimitados no se ven afectados.
+
+=== END Settings.strings (gaps) ===
