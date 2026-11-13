@@ -90,6 +90,19 @@ Sections:
     - vista previa portapapeles
     - ajustes del sistema
     wiki_keywords:
+  - title: Publicar en Marked Share
+    file: Marked_Share_Publish
+    description: Conecta Marked Share y publica documentos como TextPacks con resaltados opcionales. Gestiona documentos publicados, copia enlaces y actualiza publicaciones existentes.
+    keywords:
+    - marked share
+    - publicar
+    - textpack
+    - enlace
+    - conectar cuenta
+    - documentos publicados
+    - no listado
+    - resaltados
+    wiki_keywords: [marked share, publicar en share, documentos publicados]
     - extensión compartir
     - menú compartir marked
     - enviar a marked
