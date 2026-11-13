@@ -288,6 +288,17 @@ Sections:
     - sobreposição
     - atalhos
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: Modo de leitura
+    file: Reading_Mode
+    description: O modo de leitura foca o bloco atual, lembra seu lugar em documentos longos e salva destaques para compartilhar, CriticMarkup e impressão.
+    keywords:
+    - modo de leitura
+    - foco
+    - destaques
+    - retomar
+    - criticmarkup
+    - atalhos
+    wiki_keywords: [modo de leitura, destaques de leitura, retomar leitura]
   - title: Pergunte sobre o documento
     file: AI_Ask_About_Document
     description: Ask About Document usa Apple Intelligence e o modelo de linguagem no dispositivo integrado em versões recentes do macOS para resumir sua visualização do Markdown e...
