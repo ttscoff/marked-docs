@@ -89,10 +89,19 @@ Ha hiányzik, adja hozzá a fordítási metaadatokat (cím, szerző).
 Nyissa meg a .scriv fájlokat a Scrivenerben, amikor a Marked alkalmazásban van megnyitva
 : Ha egy Scrivener dokumentumot a Marked alkalmazásban nyit meg, akkor automatikusan nyissa meg a Scrivenerben is.
 
-#### Szó [word]
+#### Word [word]
+
+[(Tudnivalók a Microsoft Wordről)](Microsoft_Word.html)
 
 Változáskövetés átalakítása <-> CriticMarkup
 : Ha engedélyezve van, a Word dokumentumok változáskövetése importáláskor CriticMarkup formátumba, a DOCX fájlok exportálásakor pedig a CriticMarkup Word változáskövetéssé.
+
+#### Tree Outliner [tree-outliner]
+
+[(Tudnivalók a Tree Outlinerről)](Tree_Outliner.html)
+
+Headings through level
+: A dokumentum címe az 1. címsor. A vázlat szintjei eddig a szintig címsorok maradnak, a mélyebb csomópontok beágyazott listák lesznek. A jegyzetek bekezdések lesznek. Akkor használatos, ha a **Tree Outliner outlines** ki van kapcsolva az **Embed as Mermaid mind maps** alatt.
 
 #### Mind Maps/Outlines [MindMapsOutlines]
 
@@ -101,4 +110,5 @@ Beágyazás sellő gondolattérképként
 : **Mind maps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki van kapcsolva: az iThoughts beágyazza előnézeti képét; A MindManager és a FreeMind beágyazott Markdown listákká konvertál.
 : **OPML fájlok** (.opml). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki: beágyazott Markdown lista.
 : **OmniOutliner körvonalai** (.ooutline). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki van kapcsolva: beágyazott Markdown lista (vagy ellenőrző lista, ahol van).
-: **Kerékpár körvonalai**. Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki: beágyazott Markdown lista.
+: **Bike outlines**. Ha be van kapcsolva: Mermaid-gondolattérkép. Ha ki: beágyazott Markdown-lista. Lásd: [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Ha be van kapcsolva: Mermaid-gondolattérkép. Ha ki: Markdown-címsorok és -listák. Lásd: [Tree Outliner](Tree_Outliner.html).

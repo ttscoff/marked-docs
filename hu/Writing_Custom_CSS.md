@@ -1,34 +1,32 @@
-<!-- MT-DRAFT: machine translation; human review required -->
-
 # <%= @title %>
 
-A Marked beépített stílusszerkesztővel rendelkezik, és egyéni CSS-fájlokat is tud alkalmazni.
+A Markednek van egy beépített stílusszerkesztője, és egyéni CSS-fájlokat is tud alkalmazni.
 
-A szerkesztővel gyönyörű stílusokat hozhat létre, vagy ha éppen elég CSS-t ismer ahhoz, hogy veszélyes legyen, a Megjelölt megjelenést tetszés szerint alakíthatja.
+A szerkesztő segítségével gyönyörű stílusokat hozhatsz létre, vagy ha éppen annyira ismered a CSS-t, hogy az már veszélyes, a Markedet tetszés szerint testre szabhatod.
 
 ## Első lépések [getting-started]
 
-A [markedapp.com/styles] (https://markedapp.com/styles/) oldalon található a fejlesztő és a felhasználók által létrehozott egyéni stílusok galériája. A galéria lehetővé teszi a stílusok előnézetét és telepítését közvetlenül a Marked alkalmazásban. Bármely telepített stílus megjeleníthető a Finderben vizsgálat és módosítás céljából. A galéria megnyitható belső megjelenítővel a ⟧, vagy kattintson a következő ikonra ⟧, vagy kattintson a következő ikonra. a Stíluskezelő Ha szerkeszteni szeretne egy beépített stílust, először meg kell másolnia azt a kezelőben.
+A fejlesztő és a felhasználók által készített Egyéni stílusokból galéria érhető el a [markedapp.com/styles](https://markedapp.com/styles/) oldalon. A galéria lehetővé teszi, hogy a stílusokat közvetlenül a Markedben nézd meg előnézetben, és telepítsd őket. Bármelyik telepített stílus megjeleníthető a Finderben vizsgálat és módosítás céljából. A galéria megnyitható egy belső nézegetővel {% appmenu Style, Generate a Custom Style %} paranccsal, vagy kattints a ceruza (szerkesztés) ikonra bármelyik szerkeszthető stílus mellett a Stíluskezelőben. Ha egy beépített stílust szeretnél szerkeszteni, először duplikálnod kell azt a kezelőben.
 
-A GitHubon egy [egyéni stílusok tárháza](https://github.com/ttscoff/MarkedCustomStyles) is található példákkal. Nyugodtan böngészhet, használhat, és hozzájárulhat ott. Ha a témáját az egyik alaptéma alapján terjeszti, kérjük, bátran adja hozzá magát a kreditekhez közreműködőként.
+Van egy [tárhely az Egyéni stílusoknak](https://github.com/ttscoff/MarkedCustomStyles) is a GitHubon, példákkal. Nyugodtan böngészd, használd, és járulj hozzá te is. Ha az alapstílusok egyikére épülő témát terjesztesz, szívesen látjuk, ha közreműködőként feltünteted magad a köszönetnyilvánításban.
 
-Mivel a Marked képes egyéni CSS-fájlok használatára, az előnézet testreszabásakor az ég szab határt. A Safariban működő összes CSS3-beállítás a Megjelölt módban is működik. A Marked alapértelmezett Markdown fájljaival csak néhány HTML-elemet kell kezelnie; az összes tartalom egy divben van, "wrapper" azonosítóval, minden mást a dokumentum jelölése határoz meg.
+A Marked azon képességével, hogy egyéni CSS-fájlokat használjon, az Előnézet testre szabásának szinte nincs határa. Minden CSS3-lehetőség, ami a Safariban működik, a Markedben is működni fog. Az alapértelmezett Markdown-fájlokkal a Markedben csak néhány HTML-elemet kell kezelned; a teljes tartalom egy "wrapper" azonosítójú div-ben van, minden más a dokumentum jelölésétől függ.
 
-Ha személyes használatra tervez, nincsenek szabályok. Kapcsolja be a CSS-követést az egyéni CSS-választó alatti jelölőnégyzet segítségével, és amikor szerkeszti és menti az egyéni CSS-t, az frissíti az előnézetet.
+Ha saját használatra tervezel, nincsenek szabályok. Kapcsold be a CSS-követést az egyéni CSS-választó alatti jelölőnégyzettel, és amikor szerkeszted és mented az egyéni CSS-t, az frissíti az előnézetet.
 
-**Egy [csontváz téma áll rendelkezésre](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) a kezdéshez.**
+**Egy [alapsablon-téma elérhető](https://github.com/ttscoff/MarkedCustomStyles/blob/master/Custom.css) a kezdéshez.**
 
-Ha azt tervezi, hogy megosztja CSS-alkotását, néhány pontra ki kell térnie. Először is, van néhány testosztály, amelyekhez stílusokat kell alkalmazni:
+Ha a CSS-alkotásodat meg szeretnéd osztani, van néhány pont, amit érdemes lefedned. Először is, vannak bizonyos body-osztályok, amelyeket stílusokkal kell ellátni:
 
-## Testórák [body-classes]
+## Body-osztályok [body-classes]
 
-A következő stílusoknak szerepelniük kell minden megjelölt CSS-ben a megosztáshoz. A törzsosztályok lehetővé teszik bármely választó megcélzását és módosítását különböző preferencia-beállítások mellett.
+A következő stílusokat minden megosztásra szánt Marked CSS-nek tartalmaznia kell. A body-osztályok lehetővé teszik, hogy különböző beállítási opciók alatt célozz meg és módosíts bármely szelektort.
 
-### Megfordítva [inverted]
+### Invertált [inverted]
 
- Amikor a felhasználó kiválasztja az {% appmenu Preview, Dark Mode %} értéket, egy "fordított" osztály kerül hozzáadásra a törzscímkéhez. Ezzel megcélozhatja a nagy kontrasztú, világos és sötét stílusokat.
+Amikor a felhasználó a {% appmenu Preview, Dark Mode %} opciót választja, egy "inverted" osztály kerül a body tagre. Ezzel célozhatod meg a magas kontrasztú, sötét alapon világos stílusokat.
 
-Csak azt szeretné, hogy a fordított stílusok az előnézetre vonatkozzanak, a nyomtatásra nem, ezért használjon médialekérdezést (@media screen) a korlátozásához. Az alábbi kód meglehetősen univerzális, és a legtöbb esetben a kompatibilitás érdekében egyszerűen bedobhatja a stíluslapjába, de nyugodtan módosíthatja.
+Az invertált stílusokat csak az előnézetre szeretnéd alkalmazni, nyomtatásra nem, ezért használj media query-t (@media screen) a korlátozáshoz. Az alábbi kód meglehetősen univerzális, és a legtöbb esetben egyszerűen beillesztheted a stíluslapodba a kompatibilitás érdekében, de nyugodtan alakítsd át.
 
 ```css
 @media screen {
@@ -46,11 +44,11 @@ Csak azt szeretné, hogy a fordított stílusok az előnézetre vonatkozzanak, a
 }
 ```
 
-### Költészet [poetry]
+### Vers (Poetry) [poetry]
 
-A felhasználó kiválaszthatja, hogy a tabulátorral behúzott szöveg vers vagy kód legyen. Az egyetlen különbség az, hogy a pre/code blokkok stílusosabbak, hm, költőibbek, ha a költői módot választjuk. A "költészet" osztályt alkalmazzák a törzscímkére.
+A felhasználó kiválaszthatja, hogy a tabulátorral behúzott szöveg versként vagy kódként jelenjen-e meg. Az egyetlen különbség, hogy a pre/code blokkok stílusa "költőibb", ha a vers mód van kiválasztva. A "poetry" osztály kerül a body tagre.
 
-Legyen olyan kreatív a formázással, amennyit csak akar, de itt van egy alaprészlet:
+Legyél annyira kreatív a formázással, amennyire csak szeretnél, de itt egy alapszintű részlet:
 
 ```css
 .poetry pre code {
@@ -63,13 +61,13 @@ Legyen olyan kreatív a formázással, amennyit csak akar, de itt van egy alapr�
 }
 ```
 
-## Különleges esetek [special-cases]
+## Speciális esetek [special-cases]
 
-A táblázatokat, az ábrákat/ábrafeliratokat, valamint a `a.footnote` és `div.footnotes>a` speciális esetét is figyelembe kell venni. Nincsenek meghatározott szabályok a kezelésükre, de vessen egy pillantást az alapértelmezett stílusokra, hogy megtudja, milyen CSS-szabályokra van szüksége a Markednek.
+A táblázatokat, a Figure/Figcaption elemeket, valamint a `a.footnote` és `div.footnotes>a` speciális esetét is figyelembe kell venni. Nincsenek rögzített szabályok arra, hogyan kezeld ezeket, de nézd meg az alapértelmezett stílusokat, hogy képet kapj arról, milyen CSS-szabályokra van szüksége a Markednek.
 
-A szabványos táblázatstílus az összes alapértelmezett stílusban átlátszóságot használ a váltakozó sorokon, hogy lágyan illeszkedjen bármilyen háttérhez. Másolhatja ezeket a stílusokat, vagy a saját útját járhatja, csak győződjön meg arról, hogy stílust alakított ki! Ugyanez az ábra és a képfelirat esetében; adjon hozzá egy képet a dokumentumhoz alternatív szöveggel, hogy megtudja, hogyan fog kijönni a jelölés és a megfelelő stílus.
+Az alapértelmezett stílusok mindegyikében a szabványos táblázatstílus áttetszőséget alkalmaz a váltakozó sorokon, hogy lágyan illeszkedjen bármilyen háttérhez. Átveheted ezeket a stílusokat, vagy mehetsz saját utadon, csak ügyelj rá, hogy mindenképp stílusozd őket! Ugyanez érvényes a figure és figcaption elemekre is; adj egy képet alt szöveggel egy dokumentumhoz, hogy lásd, hogyan alakul ki a jelölés, és stílusozd megfelelően.
 
-A dokumentumban található lábjegyzetek hivatkozást jelenítenek meg a tartalomban (a.footnote), a végén pedig egy div-t a hivatkozott szöveggel (div.footnotes). Ismét lásd az alapértelmezett stílusokat referenciaként. A lábjegyzet hivatkozási számot tartalmazó sorok sormagasságának megváltoztatásának elkerülése érdekében feltétlenül szerepeltessen valami ilyesmit:
+A dokumentumban szereplő lábjegyzetek egy hivatkozást jelenítenek meg a tartalmon belül (a.footnote), és egy div-et a végén a hivatkozott szöveggel (div.footnotes). Ismét, nézd meg az alapértelmezett stílusokat referenciaként. Hogy elkerüld a sortávolság megváltozását azokon a sorokon, amelyek lábjegyzet-hivatkozási számot tartalmaznak, mindenképp illessz be valami ilyesmit:
 
 ```css
 sup,sub,a.footnote {
@@ -81,27 +79,27 @@ sup,sub,a.footnote {
 }
 ```
 
-Ha a visszatérő nyilat ugyanabban a sorban szeretné tartani, tegye a következőket:
+Ahhoz, hogy a visszatérő nyíl ugyanabban a sorban maradjon, illeszd be a következőt:
 
 ```css
 .footnotes p {display:inline}
 ```
 
-Az is jó ötlet, hogy minden képre általános szabályt írjon be, hogy az oldal szélességén belül maradjon. Valami ilyesmi:
+Az is jó ötlet, ha egy általános szabályt adsz meg minden képre, hogy azok az oldal szélességén belül maradjanak. Valami ilyesmi:
 
 ```css
 #wrapper img { max-width: 100% }
 ```
 
-Ha a témája további kitöltést vagy rögzített szélességet tartalmaz, módosítsa a maximális szélességet, hogy illeszkedjen.
+Ha a témádnak extra belső margója vagy fix szélessége van, módosítsd a max-width értéket ennek megfelelően.
 
 ## Nyomtatási stílusok [printstyles]
 
-Ügyeljen arra, hogy olyan nyomtatási stílusokat adjon meg, amelyek eltávolítják a háttérszíneket, a rögzített görgetést és a csak előnézeti felhasználói felületet. A Marked két módot kínál a nyomtatási és a PDF kimenet célzására.
+Mindenképp adj meg nyomtatási stílusokat, amelyek eltávolítanak minden háttérszínt, fix görgetést és csak az előnézetre vonatkozó felületi elemeket. A Marked két módot kínál a nyomtatás és a PDF-kimenet megcélzására.
 
 ### `@media print` [media-print]
 
-A szabványos CSS-nyomtatási szabályok érvényesek, ha Markedből nyomtat, vagy ha a PDF-exportálás nyomtatott médiát használ:
+A szabványos CSS nyomtatási szabályok érvényesek, amikor a Markedből nyomtatsz, vagy amikor a PDF-exportálás nyomtatási médiát használ:
 
 ```css
 @media print {
@@ -112,9 +110,9 @@ A szabványos CSS-nyomtatási szabályok érvényesek, ha Markedből nyomtat, va
 
 ### A `.mkprinting` osztály [the-mkprinting-class]
 
-Amikor a Marked előkészít egy dokumentumot **PDF-exportáláshoz** vagy **Nyomtatás/PDF-előnézethez** ({% kbd cmd P %}), hozzáadja a `mkprinting` osztályt a `<body>` címkéhez (az exportosztályok, például a `bandw`, `breakAfterTOC` és az Ön stílusának `mkstyle--*` osztálya mellett). A Marked beépített témái ezt az osztályt használják a legtöbb nyomtatásspecifikus szabályhoz, ahelyett, hogy egyedül a `@media print`-re hagyatkoznának.
+Amikor a Marked egy dokumentumot **PDF-exportáláshoz** vagy **Nyomtatási/PDF-előnézethez** ({% kbd cmd P %}) készít elő, hozzáadja a `mkprinting` osztályt a `<body>` taghez (az olyan exportálási osztályok mellett, mint a `bandw`, `breakAfterTOC`, valamint a stílusod `mkstyle--*` osztálya). A Marked beépített témái ezt az osztályt használják a legtöbb nyomtatásspecifikus szabályhoz, ahelyett hogy kizárólag a `@media print`-re támaszkodnának.
 
-A PDF-exportálás gyakran betölti a rejtett renderelő WebView-t **képernyő** adathordozóval (különösen az egyéni stílusok és a [Fountain](Fountain_for_Screenwriters.html) dokumentumok esetében), így előfordulhat, hogy a stíluslap `@media print` blokkjai **nem** vonatkoznak a PDF kimenetre. A `.mkprinting` előtaggal ellátott szabályok mindig érvényesek az exportálás során, mivel ezek közönséges osztályválasztók, nem médialekérdezések.
+A PDF-exportálás gyakran **screen** médiával tölti be a rejtett renderelő WebView-t (különösen egyéni stílusok és [Fountain](Fountain_for_Screenwriters.html) dokumentumok esetén), így a stíluslapodban lévő `@media print` blokkok **nem feltétlenül** vonatkoznak a PDF-kimenetre. A `.mkprinting` előtaggal ellátott szabályok mindig érvényesülnek exportáláskor, mivel ezek egyszerű osztályszelektorok, nem media query-k.
 
 ```css
 /* Hide preview UI during print/PDF */
@@ -136,7 +134,7 @@ A PDF-exportálás gyakran betölti a rejtett renderelő WebView-t **képernyő*
 }
 ```
 
-Azon stílusok esetében, amelyeknek működniük kell **mind** böngészőnyomtatásban és megjelölt PDF-exportálásban, duplikálja meg a kritikus szabályokat, vagy kombinálja a kijelölőket:
+Azokhoz a stílusokhoz, amelyeknek **mind** a böngészős nyomtatásban, **mind** a Marked PDF-exportálásban működniük kell, duplikáld a kritikus szabályokat, vagy kombináld a szelektorokat:
 
 ```css
 @media print {
@@ -148,68 +146,102 @@ Azon stílusok esetében, amelyeknek működniük kell **mind** böngészőnyomt
 }
 ```
 
-Egyedi nyomtatási CSS hibakereséskor nyissa meg a Nyomtatás/PDF előnézetet, vagy exportálja PDF-be, majd használja a [Safari Web Inspector] (#webkitinspector) alkalmazást a dokumentum ellenőrzéséhez --- a `<body>` `mkprinting` osztályú lesz, amíg a nyomtatási elrendezés aktív.
+**Egyéni stílus vs. Kiegészítő CSS.** Egy Egyéni stílus stíluslapon belül írd a `.mkprinting #wrapper …` kódot a fent bemutatott módon. A **Kiegészítő CSS** mezőben a Marked átírja a szelektorokat a beillesztés előtt --- ehelyett a body-val minősített formát használd:
 
-A nyomtatási hivatkozások elrejtését a fő témán kívül kezelik, így a felhasználók választhatják, hogy a hivatkozások kiemelése és aláhúzása legyen elrejtve a nyomtatásban. Mindaddig, amíg be van állítva egy alapstílus a szöveghez, nem kell aggódnia emiatt.
+```css
+body.mkprinting #wrapper p {
+  font-size: 10pt;
+  line-height: 1.4;
+}
+```
 
-Szóval, csináld. Alakítsa át blogtémáját, hozzon létre lenyűgöző nyomtatási stílust a PDF-dokumentumokhoz, vagy készítsen tökéletes előnézetet az írási stílushoz. Ha valami fantasztikusat készítesz, tudasd velem, és közzéteszem az egész Megjelölt közösség számára.
+Lásd a [Kiegészítő CSS beállításai](#additional-css-settings) részt, hogy megértsd, hogyan működik az átírás, és miért nem illeszkedik ott önmagában a `.mkprinting #wrapper …`.
 
-## További CSS-beállítások [additional-css-settings]
+Amikor egyéni nyomtatási CSS-t hibakeresel, nyisd meg a Nyomtatási/PDF-előnézetet, vagy exportálj PDF-be, majd használd a [Safari Web Inspectorát](#webkitinspector) a dokumentum vizsgálatához --- a `<body>` elemen a `mkprinting` osztály lesz jelen, amíg a nyomtatási elrendezés aktív.
 
-A {% prefspane Style %} részben további CSS-eket szerkeszthet. Ezek a stílusok minden betöltött témához hozzá lesznek fűzve, és használhatók az összes téma univerzális módosítására.
+A hivatkozások elrejtése nyomtatáskor a fő témán kívül van kezelve, így a felhasználók választhatják, hogy a hivatkozáskiemelések és aláhúzások rejtve legyenek-e a kinyomtatott dokumentumban. Amíg a szöveghez be van állítva egy alapstílus, ezzel nem kell foglalkoznod.
 
-A [nagy specifikusság] (#overridingspecificity), a `@media` nyomtatási és képernyős lekérdezések, valamint a `.mkprinting` PDF-exportálási választókkal szinte minden stílust vezérelhet egy kis CSS-ismerettel.
+Szóval, láss neki. Alakítsd át a blogtémádat, alkoss egy ütős nyomtatási stílust a PDF-dokumentumokhoz, vagy készítsd el a tökéletes előnézetet az általad írt tartalomtípushoz. Ha valami remeket alkotsz, [oszd meg a közösséggel](https://markedapp.com/styleshare/).
+
+## Kiegészítő CSS beállításai [additional-css-settings]
+
+A {% prefspane Style %} területen szerkesztheted a **Kiegészítő CSS**-t. Ezek a szabályok **hozzáфűződnek bármelyik betöltött témához**. Ezek egy szándékosan részleges átfedő réteget alkotnak, nem egy teljes témát. Ha egy teljes stíluslapot illesztesz be ebbe a mezőbe --- vagy ugyanazt a részleges lapot a [Stíluskezelőn](Custom_Styles.html) keresztül importálod, mintha az egy téma lenne ---, akkor minden, amit a lap nem fed le, stílus nélkül marad.
+
+### Szelektorok átírása [additional-css-selector-rewriting]
+
+A Marked a beillesztés előtt átírja a Kiegészítő CSS szelektorait (mint `body.mk-has-additional-css …`), hogy a szabályok az előnézetre korlátozódjanak:
+
+- Az a szelektorrész, amely már `body` vagy `#wrapper` kezdetű, megkapja a `body.mk-has-additional-css` előtagot, a body-osztályok pedig összevonásra, nem beágyazásra kerülnek.
+- Bármely más szelektorrész a `body.mk-has-additional-css #wrapper …` alá kerül korlátozásra.
+- A Marked által a `<body>`-en beállított kezdő body-osztályokat --- beleértve a `.mkprinting`, `.inverted`, `.poetry`, `.bandw`, `.breakAfterTOC` és `.mkstyle--*` osztályokat --- a rendszer úgy kezeli, mint a `body`-et, és a body-szelektorra vonja össze, ahelyett hogy a `#wrapper` alá ágyazná be őket.
+
+| A Kiegészítő CSS-be beírva | Eredmény |
+| :-- | :-- |
+| `#wrapper h2` | Illeszkedik (megfelelően korlátozva) |
+| `body.mkprinting #wrapper p` | Illeszkedik nyomtatás/PDF közben |
+| `.mkprinting #wrapper p` | **Nem** illeszkedik (beágyazott `#wrapper`-t igényelne) |
+| `:root { --x: 1; }` | **Nem** illeszkedik (egyéni tulajdonságokhoz inkább a `body` vagy `#wrapper` ajánlott) |
+
+Az ebben a mezőben lévő nyomtatási szabályokhoz inkább a `body.mkprinting #wrapper …` ajánlott. Ugyanaz a vizuális szándék egy Egyéni stílus fájlban megtarthatja a rövidebb `.mkprinting #wrapper …` formát.
+
+A Kiegészítő CSS-nek **nincs méretkorlátja, és nem történik CSS-érvényességi ellenőrzés sem**. A Marked tárolja és beilleszti, amit megadsz; az érvénytelen CSS egyszerűen nem fejt ki hatást az előnézetben.
+
+### HTML és egyéb exportálások [additional-css-exports]
+
+A Kiegészítő CSS érvényesül az élő előnézetben, a Nyomtatási/PDF-előnézetben, a PDF-exportálásban, valamint a **HTML-exportálásban** is, amikor a stílusok bele vannak foglalva --- az exportált `<body>` megkapja a `mk-has-additional-css` osztályt, hogy az átírt szelektorok illeszkedjenek. A DOCX, ODT és EPUB saját stílusozási útvonalakat használ, és nem alkalmazza a Kiegészítő CSS-t ugyanúgy.
+
+[Magas specifitás](#overridingspecificity) használatával, `@media` lekérdezésekkel nyomtatáshoz és képernyőhöz, valamint `body.mkprinting` szelektorokkal (ebben a mezőben) vagy `.mkprinting` szelektorokkal (Egyéni stílusokban), némi CSS-tudással szinte minden stílusbeli szempontot irányítás alatt tarthatsz.
 
 ## WebKit Inspector [webkitinspector]
 
-A Safari Web Inspector segítségével láthatja a legegyszerűbben, hogy pontosan mit hoz létre a HTML és CSS Marked, és élőben kísérletezhet az egyéni stílusokkal.
+A Safari Web Inspectora a legegyszerűbb módja annak, hogy pontosan lásd, milyen HTML-t és CSS-t generál a Marked, és hogy élőben kísérletezz az Egyéni stílusokkal.
 
 ### A Fejlesztés menü engedélyezése a Safariban [enabling-the-develop-menu-in-safari]
 
-1. Nyissa meg a Safarit, és válassza a {% appmenu Safari, Settings… %} lehetőséget.
-2. Válassza a **Speciális** lapot.
-3. Engedélyezze a **Funkciók megjelenítése webfejlesztőknek** (vagy **Régebbi macOS-verziók esetén a **Fejlesztés menü megjelenítése a menüsorban**) beállítást.
+1. Nyisd meg a Safarit, és válaszd a {% appmenu Safari, Settings… %} parancsot.
+2. Válaszd a **Speciális** fület.
+3. Engedélyezd a **Webfejlesztői funkciók megjelenítése** opciót (régebbi macOS-verziókon **Fejlesztés menü megjelenítése a menüsávban**).
 
-Ha engedélyezve van, egy **Fejlesztés** menü jelenik meg a Safari menüsorában.
+Az engedélyezés után egy **Fejlesztés** menü jelenik meg a Safari menüsávjában.
 
-![Safari Develop menü a megjelölt dokumentumokat megjelenítve][fejlesztési menü]
+![Safari Fejlesztés menü, amely a Marked dokumentumokat mutatja][develop-menu]
 
-### Megjelölt dokumentum vizsgálata [inspecting-a-marked-document]
+### Egy Marked-dokumentum vizsgálata [inspecting-a-marked-document]
 
-1. A Megjelölt alkalmazásban megnyílt előnézeti ablakban váltson át Safarira.
-2. A menüsorban válassza a **Fejlesztés → _\<az Ön Mac-nevének\>_ → Megjelölve → _\<dokumentum címe\>_** lehetőséget.
-3. A Safari megnyit egy Web Inspector ablakot a kiválasztott Megjelölt előnézethez csatolva.
+1. Nyisd meg egy előnézeti ablakot a Markedben, majd válts át a Safarira.
+2. A menüsávból válaszd a **Fejlesztés → _\<a Mac neved\>_ → Marked → _\<dokumentum címe\>_** parancsot.
+3. A Safari megnyit egy Web Inspector-ablakot, amely a kiválasztott Marked-előnézethez kapcsolódik.
 
-Innen a következőket teheti:
+Innen a következőket teheted:
 
-- Az **Elements** lapon ellenőrizze a `#wrapper` div-ben lévő DOM-ot, és nézze meg, hogy mely CSS-szabályok vannak alkalmazva.
-- Mutasson rá az elemekre a DOM-fában, hogy kiemelje őket a Megjelölt ablakban.
-- Használja a **Stílusok** oldalsávot a szabályok éles módosításához, majd másolja vissza a működő kódrészleteket egyéni stílusba vagy **További CSS-be**.
-    - Miután szerkesztette a CSS-t az Elemek lapon, a Módosítások lap kiválasztásával összefoglalót kaphat a módosításokról
+- Az **Elemek** fülön megvizsgálhatod a DOM-ot a `#wrapper` div-en belül, és láthatod, mely CSS-szabályok érvényesülnek.
+- Az elemek fölé húzva a DOM-fában kiemelheted őket a Marked ablakában.
+- A **Stílusok** oldalsávval élőben módosíthatod a szabályokat, majd a működő részleteket visszamásolhatod egy Egyéni stílusba vagy a **Kiegészítő CSS**-be.
+    - Miután az Elemek fülön szerkesztetted a CSS-t, a Módosítások fülön összefoglalót kaphatsz a szerkesztéseidről
 
-	![Változások][css-módosítások]
-- Használja a **Konzol** lapot a JavaScript futtatásához az élő előnézetben. A teljes [Marked JavaScript API](https://markedapp.com/help/jsapi/) elérhető ezen a konzolon.
-- Fedezzen fel más lapokat, például a **Hálózat** lehetőséget a dokumentum által betöltött erőforrások hibakeresése során.
+	![Módosítások][css-changes]
+- A **Konzol** fülön JavaScriptet futtathatsz az élő előnézeten. A teljes [Marked JavaScript API](https://markedapp.com/help/jsapi/) elérhető ebben a konzolban.
+- Fedezz fel más füleket is, például a **Hálózat** fület, amikor a dokumentumod által betöltött erőforrásokat vizsgálod.
 
-![Megjelölt előnézet ellenőrzése a Safari Web Inspector segítségével][ellenőrzés]
+![Egy Marked-előnézet vizsgálata a Safari Web Inspectorával][inspecting]
 
 ## Egyéni CSS megosztása [sharing-custom-css]
 
-Az {% appmenu Style, Share a Custom Style %} gombbal nyissa meg a megosztó alkalmazást a webböngészőben. Húzza a CSS-t az ejtőzónába (vagy kattintson a lemezről való kiválasztásához), és töltse fel a CSS-t az egyéni stílusához.
+Használd a {% appmenu Style, Share a Custom Style %} parancsot, hogy megnyisd a megosztó alkalmazást a webböngésződben. Húzd a CSS-fájlodat a leejtési területre (vagy kattints a lemezről történő kiválasztáshoz), és töltsd fel az Egyéni stílusodhoz tartozó CSS-t.
 
-A megosztott stílusokat a fejlesztőnek jóvá kell hagynia ahhoz, hogy megjelenjenek a galériában, így nem fog azonnali eredményeket látni.
+A megosztott stílusokat a fejlesztőnek jóvá kell hagynia, mielőtt megjelennének a galériában, ezért ne számíts azonnali eredményre.
 
 ## Egyéb tippek [other-tips]
 
-### A sajátosság felülbírálása [overridingspecificity]
+### A specifitás felülbírálása [overridingspecificity]
 
-A Megjelölt előnézetben az aktuális stílus fájlnevén alapuló törzsosztály kerül hozzáadásra. Ha az előnézet beállítása „Svájci”, akkor a `<body>` címkén lesz egy `mkstyle--swiss` nevű osztály. Ha egyéni CSS-je MyCustom.css, akkor a törzsosztály `mkstyle--mycustom` lesz. Használhatja ezt az alapstílusokban meghatározott szabályok előtt, hogy felülbírálja azokat. A szabály abszolút pontosságának eléréséhez használja a #wrapper azonosítót is a tároló div részéből:
+A Marked előnézeten belül egy, az aktuális stílus fájlnevén alapuló body-osztály kerül hozzáadásra. Ha az előnézet "Swiss" stílusra van állítva, akkor a `<body>` tagen lesz egy `mkstyle--swiss` nevű osztály. Ha az egyéni CSS-ed neve MyCustom.css, akkor a body-osztály `mkstyle--mycustom` lesz. Ezt felhasználhatod arra, hogy az alapstílusokban meghatározott szabályok elé helyezd, és így felülbíráld őket. Ahhoz, hogy egy szabályban abszolút specifitást érj el, használd a konténer div #wrapper azonosítóját is:
 
-	.mkstyle--egyéni #wrapper p+p { ... }
+	.mkstyle--mycustom #wrapper p+p { ... }
 
-### Tartalomjegyzék stílus [table-of-contents-styling]
+### A tartalomjegyzék stílusozása [table-of-contents-styling]
 
-Ha a `<!--toc-->` tokent használja a [tartalomjegyzék beszúrásához](Special_Syntax.html#tableofcontents), felülírhatja a tartalomjegyzék szintjelzőinek beállításait egyéni stílusban a „#wrapper” használatával a pontosság növelése érdekében:
+Ha a `<!--toc-->` tokent használod [tartalomjegyzék beszúrásához](Special_Syntax.html#tableofcontents), az Egyéni stílusban felülbírálhatod a tartalomjegyzék szintjelzőinek beállításait a "#wrapper" használatával a specifitás növeléséhez:
 
 ```css
 #wrapper #mkreplaced-toc li {
@@ -217,7 +249,7 @@ Ha a `<!--toc-->` tokent használja a [tartalomjegyzék beszúrásához](Special
 }
 ```
 
-Ez azt eredményezi, hogy a tartalomjegyzékben szereplő összes listaelem négyzet alakú felsorolásjelet használna a Beállításokban meghatározottak helyett, amikor az egyéni stílus aktív.
+Ez azt eredményezné, hogy a Tartalomjegyzék összes listaeleme négyzet alakú felsorolásjelet használ ahelyett, amit a Beállításokban megadtál, amikor az Egyéni stílusod aktív.
 
 [develop-menu]: images/develop-menu-600.jpg @2x width=600px height=273px "Safari Develop menu" class=center
 [inspecting]: images/inspecting-600.jpg @2x width=600px height=367px "Inspecting a Marked document in Safari" class=center
