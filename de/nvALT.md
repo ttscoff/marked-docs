@@ -13,7 +13,7 @@ Marked zeigt eine Live-Vorschau der Notiz, die Sie gerade bearbeiten, und aktual
 
 nvALT hat ein **Teilen**-Menü in der oberen rechten Ecke des Editors. Wenn die [Share-Erweiterung von Marked](Share_Extension.html) aktiviert ist, wählen Sie dort **Marked**, um die aktuelle Notiz direkt aus der Datei in Marked zu öffnen.
 
-So schalten Sie die Erweiterung ein: [Share-Erweiterung aktivieren](Share_Extension.html#enable-the-share-extension).
+Wie Sie die Erweiterung in den Systemeinstellungen einschalten und Marked zum Teilen-Menü hinzufügen, steht unter [Share-Erweiterung aktivieren](Share_Extension.html#enable-the-share-extension).
 
 nvALT speichert Notizen auch als Dateien auf der Festplatte. Siehe [Ordnerüberwachung](Folder_Watching.html), wenn Marked stattdessen der zuletzt gespeicherten Datei in einem Notizbuchordner folgen soll.
 

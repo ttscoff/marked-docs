@@ -8,6 +8,6 @@ Aktualisierungen erfolgen immer dann, wenn eine überwachte Datei gespeichert wi
 
 Notebook-Apps, die einzelne Dateien auf der Festplatte belassen (klassische Bibliotheken im **nvALT**-, **nvUltra**-, **Notational Velocity**-Stil, synchronisierte Git-Ordner, Dropbox-Scratch-Ordner usw.) lassen sich auf natürliche Weise mit der Ordnerüberwachung kombinieren – Sie schreiben in ein Fenster und lassen Marked daneben angeheftet, ohne die Vorschau manuell erneut zu öffnen.
 
-**nvUltra** bietet im Kontextmenü außerdem **[Preview File(s) in Marked](nvUltra.html)** an, wenn Sie bestimmte Notizen direkt in Marked öffnen möchten, und im Menü View **[Enable Marked Streaming Preview](nvUltra.html#streaming-preview)** für eine Live-Vorschau während der Eingabe. **nvALT** streamt automatisch, solange es geöffnet ist; siehe [nvALT](nvALT.html).
+**nvUltra** bietet im Kontextmenü außerdem **[Preview File(s) in Marked](nvUltra.html)** an, wenn Sie bestimmte Notizen direkt in Marked öffnen möchten, und im Menü View **[Enable Marked Streaming Preview](nvUltra.html#streaming-preview)** für eine Live-Vorschau während der Eingabe. **nvALT** streamt automatisch, solange es geöffnet ist. Siehe [nvALT](nvALT.html).
 
 Marked verwendet dasselbe Überwachungsverhalten auch unter anderen Menünamen, wenn Sie viele kleine Kapitel zu einem Leseerlebnis zusammenfassen. Siehe auch [Mehrteilige Dokumente](Multi-File_Documents.html) für Manuskripte, die bewusst mehrere Markdown-Quellen zusammenführen.
