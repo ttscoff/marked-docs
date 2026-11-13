@@ -283,6 +283,17 @@ Sections:
     - かぶせる
     - ショートカット
     wiki_keywords: [speed read, speed reading, rsvp mode]
+  - title: リーディングモード
+    file: Reading_Mode
+    description: リーディングモードは現在のブロックに焦点を当て、長いドキュメント内の位置を記憶し、共有・CriticMarkup・印刷用のハイライトを保存します。
+    keywords:
+    - リーディングモード
+    - フォーカス
+    - ハイライト
+    - 再開
+    - criticmarkup
+    - ショートカット
+    wiki_keywords: [リーディングモード, 読書ハイライト, 読書を再開]
   - title: 文書について質問する
     file: AI_Ask_About_Document
     description: 「Ask About Document」は、Apple Intelligence と、macOS の最新バージョンに組み込まれているオンデバイス言語モデルを使用して、Markdown プレビューと...
