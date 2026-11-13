@@ -75,6 +75,8 @@
 -_Fileincludes_測試檔案是否包含includes
   文件（使用任何[標記的包括
   語法](Multi-File_Documents.html)）。
+- _串流預覽來源_ 比對[串流預覽](Streaming_Preview.html)裡 `source` HTML 註解所寫的來源 App，例如 `<!--source:Bear.app-->`。這個值是自由格式。Marked 用 `Bear.app` 和 `Drafts.app` 啟用這些 App 自己的預覽行為，其他名稱也可以在這裡用規則為該 App 加入處理。冒號後面的空格可以省略。比較方式是**是**、**不是**、**包含**和**不包含**。只符合串流預覽視窗。
+- _串流預覽格式_ 比對串流預覽裡的 `format` HTML 註解，例如 `<!--format:fountain-->`。這個值是自由格式。`fountain` 會啟用 Fountain 處理，其他值可以由規則比對，而不改變處理器。比較方式和 _串流預覽來源_ 相同，並且只符合串流預覽視窗。
 -_元資料型別_測試檔案是否包含YAML，
   MultiMarkdown 或 Pandoc 元數據
 - _元資料：_欄位（例如_元資料：作者_，
