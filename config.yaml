@@ -594,6 +594,16 @@ Sections:
     wiki_keywords:
     - drafts
     - drafts streaming preview
+  - title: Finis
+    file: Finis
+    description: Drag a Finis project (.finis) onto Marked to preview the compiled book. Marked follows the project's order, headings, page breaks, and front matter.
+    keywords:
+    - finis
+    - project
+    - compile
+    - chapters
+    wiki_keywords:
+    - finis
   - title: Folder Watching
     file: Folder_Watching
     description: Drop a folder of plain-text notes onto Marked. Marked opens a preview window that always tracks the most recently edited eligible file inside that folder...

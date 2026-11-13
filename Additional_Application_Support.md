@@ -12,6 +12,7 @@ Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for
 | **Bike** `.bike` and `.biked` outlines | [Bike](Bike.html) |
 | **Curio** (streaming preview) | [Curio](Curio.html) |
 | **Drafts** (streaming preview + actions) | [Drafts](Drafts.html) |
+| **Finis** `.finis` projects | [Finis](Finis.html) |
 | **DEVONthink** (Script menu integration) | [DEVONthink](DEVONthink.html) |
 | **Folder watching** (nvALT, nvUltra, etc.) | [Folder Watching](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
