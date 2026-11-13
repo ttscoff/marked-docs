@@ -89,16 +89,26 @@ Adicionar metadados de compilação (título, autor) quando ausentes
 Abra arquivos .scriv no Scrivener quando abertos no Marked
 : quando um documento do Scrivener é aberto no Marked, abra-o automaticamente também no Scrivener.
 
-#### Palavra [folders]
+#### Word [word]
+
+[(Informações sobre o Microsoft Word)](Microsoft_Word.html)
 
 Converter controle de alterações <-> CriticMarkup
 : se ativado, o controle de alterações em documentos do Word será convertido em CriticMarkup quando importado, e o CriticMarkup será convertido em controle de alterações do Word ao exportar arquivos DOCX.
 
-#### Mapas Mentais/Esboços [scrivener]
+#### Tree Outliner [tree-outliner]
+
+[(Informações sobre o Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: O título do documento é o título 1. Os níveis do esboço continuam como títulos até este nível, e os nós mais profundos viram listas aninhadas. Notas viram parágrafos. Usado quando **Tree Outliner outlines** está desativado em **Embed as Mermaid mind maps**.
+
+#### Mapas Mentais/Esboços [MindMapsOutlines]
 
 Incorporar mapas mentais como sereia
 : cada caixa de seleção controla um formato incluído. Quando **ativado**, o arquivo incluído é convertido em um diagrama de mapa mental Mermaid (layout de árvore organizada). Quando **desativado**, Marcado usa a alternativa para esse formato.
 : **Mapas mentais** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Se estiver ativado: mapa mental da sereia. Se desativado: o iThoughts incorpora sua imagem de visualização; MindManager e FreeMind são convertidos em listas Markdown aninhadas.
 : **Arquivos OPML** (.opml). Se estiver ativado: mapa mental da sereia. Se desativado: lista Markdown aninhada.
 : **Contornos do OmniOutliner** (.ooutline). Se estiver ativado: mapa mental da sereia. Se desativado: lista Markdown aninhada (ou lista de verificação quando aplicável).
-: **Contornos da bicicleta**. Se estiver ativado: mapa mental da sereia. Se desativado: lista Markdown aninhada.
+: **Bike outlines**. Se estiver ativado: mapa mental Mermaid. Se desativado: lista Markdown aninhada. Consulte [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Se estiver ativado: mapa mental Mermaid. Se desativado: títulos e listas Markdown. Consulte [Tree Outliner](Tree_Outliner.html).

@@ -75,6 +75,8 @@ o predicado.
 - _Arquivo inclui_ testa se o arquivo contém itens incluídos
   arquivos (usando qualquer um dos [marcados incluem
   sintaxes](Multi-File_Documents.html)).
+- _Origem da visualização em streaming_ compara o app de origem nomeado por um comentário HTML `source` em uma [visualização em streaming](Streaming_Preview.html), como `<!--source:Bear.app-->`. O valor é livre. O Marked usa `Bear.app` e `Drafts.app` para o comportamento de visualização desses apps, e qualquer outro nome fica disponível aqui para uma regra acrescentar um tratamento para esse app. O espaço depois dos dois-pontos é opcional. Os comparadores são **é**, **não é**, **contém** e **não contém**. Isso só corresponde a uma janela de visualização em streaming.
+- _Formato da visualização em streaming_ compara o comentário HTML `format` de uma visualização em streaming, como `<!--format:fountain-->`. O valor é livre. `fountain` liga o tratamento de Fountain, e qualquer outro valor pode ser comparado por uma regra sem mudar o processador. Usa os mesmos comparadores de _Origem da visualização em streaming_ e só corresponde a uma janela de visualização em streaming.
 - _Tipo de metadados_ testa se o arquivo inclui YAML,
   Metadados MultiMarkdown ou Pandoc
 - _Metadados:_ campos (por exemplo _Metadados: Autor_,

@@ -557,6 +557,17 @@ Sections:
     - notas de urso
     - pacote de texto
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Arraste um esboço do Bike (.bike ou .biked) para o Marked para vê-lo como uma lista Markdown aninhada. O Bike 2 grava um pacote .biked quando o esboço contém imagens incorporadas, e o Marked abre esse pacote diretamente."
+    keywords:
+    - bike
+    - biked
+    - textbundle
+    - esboço
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curiosidade
     file: Curio
     description: Quando você clica duas vezes para editar uma figura, nota, lista ou outro item no Curio, seu Markdown flui para a visualização de streaming e é atualizado conforme você escreve.
@@ -636,6 +647,15 @@ Sections:
     - blog
     - wordpress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "O Marked abre arquivos do Microsoft Word (.docx) como Markdown e pode exportar esse Markdown de volta para DOCX."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Arraste um documento [MindNode][mn] para Marked (ou use o comando Open in Marked / preview do MindNode, dependendo da versão do MindNode). Marcado trata o arquivo como...
@@ -695,6 +715,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - o arquivo
+  - title: Traverse
+    file: Traverse
+    description: "O Traverse inclui o comando Stream to Marked. Ele aparece no menu de exportação quando o Marked 2 ou o Marked 3 está instalado."
+    keywords:
+    - traverse
+    - visualização
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Arraste um documento do Tree Outliner (.treeoutline) para o Marked para vê-lo como títulos e listas, ou como um diagrama Mermaid."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - esboço
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulisses
     file: Ulysses
     description: Após a primeira configuração, Cmd-6 seguido de Return geralmente é suficiente para atualizar a visualização marcada da planilha ativa (ou das planilhas que você selecionou).
@@ -951,6 +990,21 @@ Sections:
     - automação
     - marcado
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: Integração com IA
+    file: AI_Integration
+    description: Integrar o Marked a um agente de LLM. Baixe um arquivo de skill que ensina o agente a abrir arquivos e alterar preferências.
+    keywords:
+    - ia
+    - llm
+    - agente
+    - skill
+    - cursor
+    - automação
+    - esquema url
+    wiki_keywords:
+    - agente de llm
+    - arquivo de skill
+    - integração com ia
   - title: Visualização de streaming
     file: Streaming_Preview
     description: Ao abrir o menu Arquivo, menu Novo, Visualização de streaming, Marcado recebe atualizações ao vivo em uma área de transferência nomeada em vez de assistir a um arquivo no disco. O aplicativo de origem...
