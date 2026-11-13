@@ -87,11 +87,12 @@ Cuando incluye ciertos tipos de archivos con sintaxis de bloque `<<[path]` o IA 
 | **OPML** | .opml | Diagrama de mapa mental de sirena | Lista de rebajas anidadas |
 | **OmniOutliner** | .oesquema | Diagrama de mapa mental de sirena | Lista de rebajas anidadas |
 | **Bicicleta** | .bicicleta | Mapa mental de sirena (nombre de archivo como nodo raíz) | Lista de Markdown anidada (sin título de documento) |
+| **Tree Outliner** | .treeoutline | Mapa mental Mermaid (título del documento como raíz) | Títulos y listas ([Tree Outliner](Tree_Outliner.html)) |
 | **CSV/TSV** | .csv, .tsv | Tabla de rebajas ||
 | **RTF/RTFD** | .rtf, .rtfd | Markdown mediante conversión RTF (consulte [Soporte RTF y RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown mediante conversión de PDF cuando se abre como documento principal (consulte [Soporte de PDF](PDF_Support.html)) ||
 
-Cada formato de esquema/mapa mental tiene su propia casilla de verificación en *Mapas mentales/Contornos* (mapas mentales, archivos OPML, esquemas de bicicletas, esquemas de OmniOutliner). Al desactivar un formato se utiliza el comportamiento "desactivado" sólo para ese tipo. Consulte [Incorporar esquemas y mapas mentales](Embedding_Mind_Maps_and_Outlines.html) para obtener detalles sobre el formato y [Configuración: Aplicaciones][mapas mentales] para cambiar estas opciones. Para obtener detalles sobre la conversión a CSV, consulte [Creación de tablas utilizando archivos CSV][csv].
+Cada formato de esquema/mapa mental tiene su propia casilla de verificación en *Mapas mentales/Contornos* (mapas mentales, archivos OPML, esquemas de Bike, esquemas de OmniOutliner, Tree Outliner outlines). Al desactivar un formato se utiliza el comportamiento "desactivado" sólo para ese tipo. Consulte [Incorporar esquemas y mapas mentales](Embedding_Mind_Maps_and_Outlines.html) para obtener detalles sobre el formato y [Configuración: Aplicaciones][mapas mentales] para cambiar estas opciones. Para obtener detalles sobre la conversión a CSV, consulte [Creación de tablas utilizando archivos CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

@@ -75,6 +75,8 @@ el predicado.
 - _El archivo incluye_ prueba si el archivo contiene datos incluidos.
   archivos (usando cualquiera de [Marked's include
   sintaxis](Multi-File_Documents.html)).
+- _Origen de la vista previa en streaming_ compara la app de origen nombrada por un comentario HTML `source` en una [vista previa en streaming](Streaming_Preview.html), como `<!--source:Bear.app-->`. El valor es de forma libre. Marked usa `Bear.app` y `Drafts.app` para el comportamiento de vista previa de esas apps, y cualquier otro nombre está disponible aquí para que una regla añada un tratamiento para esa app. El espacio después de los dos puntos es opcional. Los comparadores son **es**, **no es**, **contiene** y **no contiene**. Solo coincide con una ventana de vista previa en streaming.
+- _Formato de la vista previa en streaming_ compara el comentario HTML `format` de una vista previa en streaming, como `<!--format:fountain-->`. El valor es de forma libre. `fountain` activa el tratamiento de Fountain, y cualquier otro valor puede compararlo una regla sin cambiar el procesador. Usa los mismos comparadores que _Origen de la vista previa en streaming_ y solo coincide con una ventana de vista previa en streaming.
 - _Tipo de metadatos_ prueba si el archivo incluye YAML,
   Metadatos de MultiMarkdown o Pandoc
 - _Metadatos:_ campos (por ejemplo _Metadatos: Autor_,

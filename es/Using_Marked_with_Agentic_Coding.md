@@ -53,3 +53,5 @@ Marked lo convertirá automáticamente en un diagrama interactivo con estilo, br
 - **Copilot y otros asistentes de codificación de IA + Marked**: ya sea que estés usando GitHub Copilot, Copilot Workspace, ChatGPT u otras herramientas de agente que escriben Markdown, guardar su salida en una carpeta supervisada te brinda una vista previa siempre actualizada y de alta calidad en Marked.
 
 Al combinar la visualización de carpetas con *Desplazarse para editar*, Marked convierte los planes y notas generados por IA en un centro de control rápido y legible para sus sesiones de codificación, especialmente cuando se apoya en flujos de trabajo agentes y asistencia continua de herramientas como Cursor, Claude y Copilot.
+
+Para que el agente abra esos archivos por sí mismo, instala el skill descrito en [Integración con IA](AI_Integration.html).
