@@ -95,6 +95,9 @@ Sections:
     - 剪貼簿預覽
     - 系統設定
     wiki_keywords:
+    - 共享延伸功能
+    - 共享選單 marked
+    - 傳送到 marked
   - title: 發佈到 Marked Share
     file: Marked_Share_Publish
     description: 連接 Marked Share，將文件發佈為 TextPack，並可選包含醒目標示。管理已發佈文件、複製連結並更新現有分享。
@@ -108,9 +111,6 @@ Sections:
     - 未公開
     - 醒目標示
     wiki_keywords: [marked share, 發佈到 share, 已發佈文件]
-    - 共享延伸功能
-    - 共享選單 marked
-    - 傳送到 marked
   - title: Marked Quick Look
     file: Quick_Look
     description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.

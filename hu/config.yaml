@@ -95,6 +95,9 @@ Sections:
     - vágólap előnézet
     - rendszerbeállítások
     wiki_keywords:
+    - megosztás bővítmény
+    - megosztás menü marked
+    - küldés markednek
   - title: Közzététel a Marked Share-en
     file: Marked_Share_Publish
     description: Csatlakozzon a Marked Share-hez, és tegyen közzé dokumentumokat TextPack formátumban, opcionális kiemelésekkel. Kezelje a közzétett dokumentumokat, másoljon linkeket, és frissítse a meglévő megosztásokat.
@@ -108,9 +111,6 @@ Sections:
     - nem listázott
     - kiemelések
     wiki_keywords: [marked share, közzététel share-en, közzétett dokumentumok]
-    - megosztás bővítmény
-    - megosztás menü marked
-    - küldés markednek
   - title: Marked Quick Look
     file: Quick_Look
     description: Marked Quick Look is a separate Mac App Store app that previews Markdown in Finder using Apex. Troubleshoot Quick Look plugin conflicts with QLMarkdown, Peek, Folder Quick Look, and other extensions.
