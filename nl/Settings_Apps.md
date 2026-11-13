@@ -87,10 +87,19 @@ Voeg compileermetagegevens (titel, auteur) toe als deze ontbreken
 Open .scriv-bestanden in Scrivener wanneer geopend in Marked
 : Wanneer een Scrivener document wordt geopend in Marked, wordt het automatisch ook geopend in Scrivener.
 
-#### Woord [word]
+#### Word [word]
+
+[(Informatie over Microsoft Word)](Microsoft_Word.html)
 
 Wijzigingen bijhouden omzetten <-> CriticMarkup
 : Indien ingeschakeld, wordt het bijhouden van wijzigingen in Word-documenten geconverteerd naar CriticMarkup bij het importeren, en wordt CriticMarkup geconverteerd naar het bijhouden van wijzigingen in Word bij het exporteren van DOCX bestanden.
+
+#### Tree Outliner [tree-outliner]
+
+[(Informatie over Tree Outliner)](Tree_Outliner.html)
+
+Headings through level
+: De documenttitel is kop 1. Overzichtsniveaus blijven koppen tot dit niveau, en diepere knopen worden geneste lijsten. Notities worden alinea's. Wordt gebruikt wanneer **Tree Outliner outlines** uit staat onder **Embed as Mermaid mind maps**.
 
 #### Mindmaps/overzichten [MindMapsOutlines]
 
@@ -99,4 +108,5 @@ Insluiten als zeemeermin-mindmaps
 : **Mindmaps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: iThoughts sluit de voorbeeldafbeelding in; MindManager en FreeMind converteren naar geneste Markdown lijsten.
 : **OPML bestanden** (.opml). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: geneste Markdown lijst.
 : **OmniOutliner-omtrekken** (.ooutline). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: geneste Markdown lijst (of checklist indien van toepassing).
-: **Fietscontouren**. Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: geneste Markdown lijst.
+: **Bike outlines**. Indien ingeschakeld: Mermaid-mindmap. Indien uitgeschakeld: geneste Markdown-lijst. Zie [Bike](Bike.html).
+: **Tree Outliner outlines** (.treeoutline). Indien ingeschakeld: Mermaid-mindmap. Indien uitgeschakeld: Markdown-koppen en -lijsten. Zie [Tree Outliner](Tree_Outliner.html).
