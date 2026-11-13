@@ -90,6 +90,19 @@ Sections:
     - clipboard preview
     - system settings
     wiki_keywords:
+  - title: Marked Share への公開
+    file: Marked_Share_Publish
+    description: Marked Share に接続し、オプションのハイライト付き TextPack としてドキュメントを公開します。公開済みドキュメントの管理、リンクのコピー、既存共有の更新ができます。
+    keywords:
+    - marked share
+    - 公開
+    - textpack
+    - リンク
+    - アカウント接続
+    - 公開済みドキュメント
+    - 非公開リンク
+    - ハイライト
+    wiki_keywords: [marked share, share への公開, 公開済みドキュメント]
     - share extension
     - share menu marked
     - send to marked
