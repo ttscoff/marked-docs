@@ -1,0 +1,168 @@
+# Help translation gap — de — Finis
+# Feature: Finis project preview (new page, supported-apps row, index entry)
+# Generated: 2026-11-13
+#
+# German help does not yet include Finis. Translate the ENGLISH TARGET
+# below. Do not machine-overwrite other polished German pages.
+# A machine draft is included at the end for review. It is not final.
+#
+# Keep in English: Finis, .finis, project.json, YAML, MultiMarkdown,
+# Setext, and every anchor (#opening-a-project, #what-marked-leaves-out,
+# #parts-and-chapters, #page-breaks, #headings, #front-matter, #images).
+# Keep the link target Finis.html. Use Sie. ⌘E stays ⌘E.
+#
+# Return: PR to ttscoff/marked-docs, or reply with the German page.
+
+=== LOCATION ===
+File: de/Finis.md (new)
+Also update: de/Additional_Application_Support.md (one table row after Drafts, before DEVONthink)
+Also update: de/config.yaml (one page entry after Drafts, before Ordnerüberwachung)
+
+=== CURRENT GERMAN (de/Additional_Application_Support.md, insert after Drafts) ===
+| **Drafts** (Streaming-Vorschau + Aktionen) | [Drafts](Drafts.html) |
+| **DEVONthink** (Integration des Skriptmenüs) | [DEVONthink](DEVONthink.html) |
+
+=== ENGLISH TARGET (table row) ===
+| **Finis** `.finis` projects | [Finis](Finis.html) |
+
+=== CURRENT GERMAN (de/config.yaml, insert after the Drafts entry) ===
+  - title: Drafts
+    file: Drafts
+    ...
+  - title: Ordnerüberwachung
+    file: Folder_Watching
+
+=== ENGLISH TARGET (config.yaml entry) ===
+  - title: Finis
+    file: Finis
+    description: Drag a Finis project (.finis) onto Marked to preview the compiled book. Marked follows the project's order, headings, page breaks, and front matter.
+    keywords:
+    - finis
+    - project
+    - compile
+    - chapters
+    wiki_keywords:
+    - finis
+
+=== ENGLISH TARGET (de/Finis.md) ===
+# <%= @title %>
+
+Drag a Finis project onto Marked to preview the compiled book. A Finis project is a `.finis` package. Each chapter is a Markdown file, and `.finis/project.json` stores the reading order and compile rules.
+
+## Opening a project [opening-a-project]
+
+Open the `.finis` package itself. Marked compiles the book and shows it in one preview. The window title is the project title, or the package name when the project has no title.
+
+Press **⌘E** to open the project in Finis.
+
+Saving `project.json` or a chapter that is part of the book refreshes the preview.
+
+## What Marked leaves out [what-marked-leaves-out]
+
+Marked follows the compile rules Finis uses for the book:
+
+- Documents and folders that are not included are omitted. Leaving a folder out also omits everything inside it.
+- Notes and guide documents are omitted.
+- Statuses on the project's exclude list are omitted.
+- Items in the Finis trash are omitted.
+
+Marked does not offer a panel for choosing chapters by hand, and it does not apply Finis page size, cover, or media settings. The preview is the compiled Markdown.
+
+## Parts and chapters [parts-and-chapters]
+
+When the project compiles folders as parts, each first-level folder is a part. Its heading is level 1, and each document inside it starts on a new page.
+
+When the project compiles folders as chapters, each first-level folder is a chapter. Documents inside it are scenes and stay on the same page.
+
+If the project does not set a folder mode, Marked uses parts when a first-level folder contains another folder that itself contains included documents. Otherwise it uses chapters. A book made only of documents, with no folders, has no part or chapter headings and no page breaks between those documents.
+
+## Page breaks [page-breaks]
+
+A document set to its own page starts and ends with a page break. Marked removes the first Markdown heading in that document so it is not repeated under the generated title. Setext headings are left as they are.
+
+Adjacent page breaks collapse into one.
+
+## Headings [headings]
+
+Folder headings use the folder name, or the heading text the project sets for that folder. The level starts at 1 and increases by one for each nested folder, stopping at level 6. If the project asks for a warning when a heading is deeper than level 6, the preview still uses level 6 and shows a one-line note.
+
+A document gets a generated heading only when the project asks for document titles, or when that document asks for a heading and the project does not turn document titles off. Marked strips a trailing `.md` only when it uses the file name as a heading. If the file already starts with the same heading, Marked does not add it again.
+
+Numbering applies only to headings Marked inserts. The style follows the project's numbering setting: none, arabic, roman, or words. Labels follow the project's language for English, Italian, French, German, Spanish, and Portuguese. Other languages use English labels and arabic numerals.
+
+## Front matter [front-matter]
+
+When the project includes front matter, Marked adds a MultiMarkdown block with the title, subtitle, author, and language that have values. If the first included document already starts with YAML or MultiMarkdown metadata, Marked leaves that block as it is and does not add another.
+
+## Images [images]
+
+Relative image and link paths are rewritten from the chapter's folder to the project package, so images stored in the project still appear in the joined preview. Web addresses, mail links, and links that start with `#` are left unchanged. A path that would leave the package is left unchanged.
+
+=== MACHINE DRAFT (review; do not treat as final) ===
+# <%= @title %>
+
+Ziehen Sie ein Finis-Projekt auf Marked, um das kompilierte Buch in der Vorschau zu sehen. Ein Finis-Projekt ist ein `.finis`-Paket. Jedes Kapitel ist eine Markdown-Datei, und `.finis/project.json` speichert die Lesereihenfolge und die Kompilierregeln.
+
+## Ein Projekt öffnen [opening-a-project]
+
+Öffnen Sie das `.finis`-Paket selbst. Marked kompiliert das Buch und zeigt es in einer Vorschau. Der Fenstertitel ist der Projekttitel oder, wenn das Projekt keinen Titel hat, der Paketname.
+
+Drücken Sie **⌘E**, um das Projekt in Finis zu öffnen.
+
+Wenn Sie `project.json` oder ein Kapitel speichern, das zum Buch gehört, wird die Vorschau aktualisiert.
+
+## Was Marked auslässt [what-marked-leaves-out]
+
+Marked folgt den Kompilierregeln, die Finis für das Buch verwendet:
+
+- Dokumente und Ordner, die nicht eingeschlossen sind, werden ausgelassen. Ein ausgelassener Ordner lässt auch alles darin aus.
+- Notizen und Leitfäden werden ausgelassen.
+- Statuswerte auf der Ausschlussliste des Projekts werden ausgelassen.
+- Einträge im Papierkorb von Finis werden ausgelassen.
+
+Marked bietet kein Fenster, in dem Sie Kapitel von Hand auswählen, und wendet keine Finis-Einstellungen für Seitengröße, Cover oder Medien an. Die Vorschau ist das kompilierte Markdown.
+
+## Teile und Kapitel [parts-and-chapters]
+
+Wenn das Projekt Ordner als Teile kompiliert, ist jeder Ordner der ersten Ebene ein Teil. Seine Überschrift hat Ebene 1, und jedes Dokument darin beginnt auf einer neuen Seite.
+
+Wenn das Projekt Ordner als Kapitel kompiliert, ist jeder Ordner der ersten Ebene ein Kapitel. Dokumente darin sind Szenen und bleiben auf derselben Seite.
+
+Wenn das Projekt keinen Ordnermodus festlegt, verwendet Marked Teile, sobald ein Ordner der ersten Ebene einen weiteren Ordner enthält, der selbst eingeschlossene Dokumente enthält. Andernfalls verwendet Marked Kapitel. Ein Buch, das nur aus Dokumenten besteht und keine Ordner hat, erhält keine Teil- oder Kapitelüberschriften und keine Seitenumbrüche zwischen diesen Dokumenten.
+
+## Seitenumbrüche [page-breaks]
+
+Ein Dokument, das eine eigene Seite erhalten soll, beginnt und endet mit einem Seitenumbruch. Marked entfernt die erste Markdown-Überschrift in diesem Dokument, damit sie nicht unter dem erzeugten Titel wiederholt wird. Setext-Überschriften bleiben unverändert.
+
+Aufeinanderfolgende Seitenumbrüche werden zu einem zusammengefasst.
+
+## Überschriften [headings]
+
+Ordnerüberschriften verwenden den Ordnernamen oder den Überschriftstext, den das Projekt für diesen Ordner festlegt. Die Ebene beginnt bei 1 und steigt mit jedem verschachtelten Ordner um eins, höchstens bis Ebene 6. Wenn das Projekt eine Warnung verlangt, sobald eine Überschrift tiefer als Ebene 6 ist, verwendet die Vorschau trotzdem Ebene 6 und zeigt einen einzeiligen Hinweis.
+
+Ein Dokument erhält eine erzeugte Überschrift nur, wenn das Projekt Dokumenttitel verlangt oder wenn dieses Dokument eine Überschrift verlangt und das Projekt Dokumenttitel nicht ausschaltet. Marked entfernt ein nachgestelltes `.md` nur, wenn es den Dateinamen als Überschrift verwendet. Beginnt die Datei bereits mit derselben Überschrift, fügt Marked sie nicht erneut hinzu.
+
+Die Nummerierung gilt nur für Überschriften, die Marked einfügt. Der Stil folgt der Nummerierung des Projekts: keine, arabisch, römisch oder Wörter. Die Bezeichnungen folgen der Projektsprache für Englisch, Italienisch, Französisch, Deutsch, Spanisch und Portugiesisch. Andere Sprachen verwenden englische Bezeichnungen und arabische Ziffern.
+
+## Vorspann [front-matter]
+
+Wenn das Projekt einen Vorspann einschließt, fügt Marked einen MultiMarkdown-Block mit Titel, Untertitel, Autor und Sprache hinzu, soweit dafür Werte vorhanden sind. Beginnt das erste eingeschlossene Dokument bereits mit YAML- oder MultiMarkdown-Metadaten, lässt Marked diesen Block unverändert und fügt keinen weiteren hinzu.
+
+## Bilder [images]
+
+Relative Bild- und Linkpfade werden vom Ordner des Kapitels zum Projektpaket umgeschrieben, sodass Bilder im Projekt auch in der zusammengefügten Vorschau erscheinen. Webadressen, E-Mail-Links und Links, die mit `#` beginnen, bleiben unverändert. Ein Pfad, der das Paket verlassen würde, bleibt unverändert.
+
+=== MACHINE DRAFT (table row) ===
+| **Finis** `.finis`-Projekte | [Finis](Finis.html) |
+
+=== MACHINE DRAFT (config.yaml entry) ===
+  - title: Finis
+    file: Finis
+    description: Ziehen Sie ein Finis-Projekt (.finis) auf Marked, um das kompilierte Buch in der Vorschau zu sehen. Marked folgt der Reihenfolge, den Überschriften, den Seitenumbrüchen und dem Vorspann des Projekts.
+    keywords:
+    - finis
+    - projekt
+    - kompilieren
+    - kapitel
+    wiki_keywords:
+    - finis

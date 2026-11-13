@@ -12,7 +12,6 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | **Bike** `.bike`- und `.biked`-Gliederungen | [Bike](Bike.html) |
 | **Curio** (Streaming-Vorschau) | [Curio](Curio.html) |
 | **Drafts** (Streaming-Vorschau + Aktionen) | [Drafts](Drafts.html) |
-| **Finis** `.finis`-Projekte | [Finis](Finis.html) |
 | **DEVONthink** (Integration des Skriptmenüs) | [DEVONthink](DEVONthink.html) |
 | **Ordnerüberwachung** (nvALT, nvUltra usw.) | [Ordnerüberwachung](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
