@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Le gestionnaire d'URL de Marked offre des possibilités supplémentaires de script et d'automatisation de flux de travail. Vous pouvez par exemple inclure une URL dans les notes d'une autre application, qui ouvrira un fichier dans Marked lorsqu'on cliquera dessus. Plusieurs actions sont possibles, comme indiqué ci-dessous.
+Le gestionnaire d'URL de Marked offre des possibilités supplémentaires de script et d'automatisation de flux de travail. Vous pouvez par exemple inclure une URL dans les notes d'une autre application, qui ouvrira un fichier dans Marked lorsqu'on cliquera dessus. Plusieurs actions sont possibles, comme indiqué ci-dessous. Pour confier les mêmes commandes à un agent LLM, voir [Intégration IA](AI_Integration.html).
 
 ## Le schéma d'URL [the-url-scheme]
 
@@ -17,15 +17,21 @@ Il est possible d'appeler le gestionnaire d'URL depuis la ligne de commande ou u
 
 ### Appel en arrière-plan [calling-in-the-background]
 
-Vous pouvez appeler la commande `open` avec l'indicateur `-g` pour exécuter le résultat en arrière-plan sans changer le focus. Pour exécuter la commande en arrière-plan et faire remonter la fenêtre au premier plan sans lui donner le focus :
+`open -g` demande à Launch Services de ne pas activer Marked. Marked passe tout de même au premier plan lorsqu'il ouvre un document, sauf si l'URL contient aussi `activate=0`.
 
-	open -g 'x-marked://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+La fenêtre d'aperçu s'affiche devant les autres fenêtres. Le focus du clavier reste dans l'app que vous utilisiez. Sans `activate`, ou avec `activate=1`, Marked devient l'app active, comme d'habitude.
 
 ## Paramètres facultatifs [optional-parameters]
 
 ### x-success [x-success]
 
 N'importe quelle commande peut inclure un paramètre de requête **x-success**. Définissez-le avec une URL à appeler après l'exécution de la commande. Par exemple : `x-marked://open/?file=filename.md&x-success=ithoughts:`. Vous pouvez également fournir un identifiant de bundle (comme `com.googlecode.iterm`) pour ouvrir une application qui ne dispose pas de schéma d'URL propre.
+
+### activate [activate]
+
+Facultatif avec `open`. Définissez `activate=0` pour afficher l'aperçu sans faire de Marked l'application active. Associez-le à `open -g`, comme dans l'exemple ci-dessus. Toute autre valeur, ou l'absence du paramètre, active Marked.
 
 ### raise [raise]
 
@@ -259,6 +265,8 @@ Ouvre le document spécifié dans Marked.
 **file** *(requis)* : le chemin POSIX complet du document à ouvrir, ou une liste de chemins séparés par des virgules
 
 **speedread** *(facultatif)* : définissez sur `1` pour démarrer automatiquement Lecture rapide après l'ouverture.
+
+**activate** *(facultatif)* : définissez sur `0` pour ouvrir l'aperçu sans faire de Marked l'app active. À utiliser avec `open -g`. Par défaut, Marked est activé.
 
 `open` accepte également un chemin dont les composants seront combinés en une seule URL
 

@@ -557,6 +557,17 @@ Sections:
     - bear notes
     - paquet de texte
     wiki_keywords: [bear app marked]
+  - title: Bike
+    file: Bike
+    description: "Faites glisser un plan Bike (.bike ou .biked) sur Marked pour l'afficher comme une liste Markdown imbriquée. Bike 2 enregistre un paquet .biked lorsque le plan contient des images intégrées, et Marked ouvre ce paquet directement."
+    keywords:
+    - bike
+    - biked
+    - textbundle
+    - plan
+    - mermaid
+    wiki_keywords:
+    - bike
   - title: Curio
     file: Curio
     description: Lorsque vous double-cliquez pour modifier une figure, une note, une liste ou un autre élément dans Curio, son Markdown est transmis à l'aperçu en streaming et se met à jour au fur et à mesure que vous écrivez.
@@ -636,6 +647,15 @@ Sections:
     - blogueur
     - WordPress
     wiki_keywords: [marsedit]
+  - title: Microsoft Word
+    file: Microsoft_Word
+    description: "Marked ouvre les fichiers Microsoft Word (.docx) en Markdown, et peut réexporter ce Markdown en DOCX."
+    keywords:
+    - word
+    - docx
+    - microsoft word
+    wiki_keywords:
+    - microsoft word
   - title: MindNode
     file: MindNode
     description: Faites glisser un document [MindNode][mn] sur Marked (ou utilisez la commande Ouvrir dans Marked/preview de MindNode, selon la version de MindNode). Marked traite le fichier comme...
@@ -695,6 +715,25 @@ Sections:
     - zettelkasten
     wiki_keywords:
     - the archive
+  - title: Traverse
+    file: Traverse
+    description: "Traverse comprend la commande Stream to Marked. Elle apparaît dans le menu d'export lorsque Marked 2 ou Marked 3 est installé."
+    keywords:
+    - traverse
+    - aperçu en continu
+    - fountain
+    wiki_keywords:
+    - traverse
+  - title: Tree Outliner
+    file: Tree_Outliner
+    description: "Faites glisser un document Tree Outliner (.treeoutline) sur Marked pour l'afficher comme des titres et des listes, ou comme un diagramme Mermaid."
+    keywords:
+    - tree outliner
+    - treeoutline
+    - plan
+    - mermaid
+    wiki_keywords:
+    - tree outliner
   - title: Ulysses
     file: Ulysses
     description: Après la première configuration, Cmd-6 suivi de Retour suffisent souvent pour actualiser l'aperçu Marked de la feuille active (ou des feuilles que vous avez sélectionnées).
@@ -951,6 +990,21 @@ Sections:
     - automation
     - mk
     wiki_keywords: [marked cli, mk, command line utility]
+  - title: Intégration IA
+    file: AI_Integration
+    description: Intégrer Marked à un agent LLM. Téléchargez un fichier skill qui apprend à l'agent à ouvrir des fichiers et à modifier des préférences.
+    keywords:
+    - ia
+    - llm
+    - agent
+    - skill
+    - cursor
+    - automatisation
+    - schéma url
+    wiki_keywords:
+    - agent llm
+    - fichier skill
+    - intégration ia
   - title: Aperçu en streaming
     file: Streaming_Preview
     description: En ouvrant le menu Fichier, Nouveau menu, Aperçu en streaming, Marked reçoit des mises à jour en direct sur une table de montage nommée au lieu de regarder un fichier sur le disque. L'application source...
