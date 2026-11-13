@@ -1,0 +1,21 @@
+# Machine translation draft for review
+# Locale: ja
+# Product names stay in English: Marked, Conductor, Fountain, Tree Outliner,
+# Mermaid, Markdown, Bear.app, Drafts.app.
+
+=== BEGIN Settings.strings ===
+"group.apps.treeOutliner" = "Tree Outliner";
+"setting.embedTreeOutlinerAsMermaid" = "Tree Outliner アウトライン";
+"setting.treeOutlinerHeadingLevel" = "見出しにする階層";
+"setting.treeOutlinerHeadingLevel.1" = "1";
+"setting.treeOutlinerHeadingLevel.2" = "2";
+"setting.treeOutlinerHeadingLevel.3" = "3";
+"setting.treeOutlinerHeadingLevel.4" = "4";
+"setting.treeOutlinerHeadingLevel.5" = "5";
+"setting.treeOutlinerHeadingLevel.6" = "6";
+"tooltip.embedTreeOutlinerAsMermaid" = "Tree Outliner（.treeoutline）ファイルを Mermaid のマインドマップとして埋め込みます。オフのときは Markdown の見出しとリストに変換します。";
+"tooltip.treeOutlinerHeadingLevel" = "文書タイトルは見出し 1 です。アウトラインはこの階層まで見出しになり、それより深いノードは入れ子のリストになります。ノートは段落になります。Tree Outliner の Mermaid マインドマップ埋め込みがオフのときに使います。";
+
+=== BEGIN SpecialWindows.strings ===
+"Streaming preview source" = "ストリーミングプレビューのソース";
+"Streaming preview format" = "ストリーミングプレビューの形式";

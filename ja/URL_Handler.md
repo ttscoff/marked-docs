@@ -2,7 +2,7 @@
 
 # <%= @title %>
 
-Marked の URL ハンドラーは、追加のスクリプト機能とワークフロー機能を提供します。別のアプリケーションのメモに URL を含めることができます。たとえば、クリックするとマークされたファイルが開きます。以下に示すように、いくつかのアクションを実行できます。
+Marked の URL ハンドラーは、追加のスクリプト機能とワークフロー機能を提供します。別のアプリケーションのメモに URL を含めることができます。たとえば、クリックするとマークされたファイルが開きます。以下に示すように、いくつかのアクションを実行できます。同じコマンドを LLM エージェントに渡すには、[AI 連携](AI_Integration.html)を参照してください。
 
 ## URL スキーム [the-url-scheme]
 
@@ -19,15 +19,21 @@ Marked の URL スキームは `x-marked` で、`x-marked://open?file=/Users/use
 
 ### バックグラウンドでの通話 [calling-in-the-background]
 
-`-g` フラグを指定して `open` コマンドを呼び出して、フォーカスを切り替えずにバックグラウンドで結果を実行できます。バックグラウンドでコマンドを実行し、フォーカスを奪わずにウィンドウを最上部に上げるには:
+`open -g` は Launch Services に Marked をアクティブにしないよう指示します。URL に `activate=0` も含まれていない限り、Marked は書類を開くときに前面へ出ます。
 
-	open -g 'x-marked://open?file=filename.md&raise=true'
+	open -g 'x-marked-3://open?file=filename.md&activate=0'
+
+プレビューウインドウは他のウインドウの前面に表示されます。キーボードフォーカスは、それまで使っていたアプリに残ります。`activate` を省略するか `activate=1` にすると、これまでどおり Marked がアクティブなアプリになります。
 
 ## オプションのパラメータ [optional-parameters]
 
 ### ×-成功 [x-success]
 
 どのコマンドでも **x-success** クエリ パラメーターを指定できます。コマンド実行後に呼び出されるURLを設定します。例: `x-marked://open/?file=filename.md&x-success=ithoughts:`。バンドル識別子 (`com.googlecode.iterm` など) を指定して、URL スキームを持たないアプリケーションを開くこともできます。
+
+### activate [activate]
+
+`open` では省略できます。`activate=0` にすると、Marked をアクティブなアプリにせずにプレビューを表示します。上の例のように `open -g` と組み合わせてください。それ以外の値、またはパラメータを省略すると、Marked がアクティブになります。
 
 ### レイズ [raise]
 
@@ -38,6 +44,8 @@ Marked の URL スキームは `x-marked` で、`x-marked://open?file=/Users/use
 ### 速読 [speedread]
 
 **speedread** パラメーターは、プレビュー ドキュメント (`open`、`paste`、`preview`、および `stream`) を開く URL ハンドラー コマンドで渡すことができます。 `speedread=1` を設定すると、ターゲットのプレビューの準備ができたらすぐに Speed Read が自動的に開始されます。
+
+**activate** *(オプション)*: `0` にすると、Marked をアクティブなアプリにせずにプレビューを開きます。`open -g` と一緒に使います。省略時は Marked がアクティブになります。
 
 例:
 

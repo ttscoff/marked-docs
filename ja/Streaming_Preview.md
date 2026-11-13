@@ -4,7 +4,7 @@
 
 {% appmenu File, New, Streaming Preview %} を開くと、Marked はディスク上のファイルを監視する代わりに、名前付きペーストボードを介してライブ更新を受け取ります。ソース アプリは Marked と統合する必要があります。
 
-[Curio](Curio.html)、[Drafts](Drafts.html)、および [The Archive](The_Archive.html) では、独自のトグルとメニュー コマンドが文書化されています。 nvUltra、nvALT、Bear などは同じチャネルを使用します。Marked でストリーミング プレビューを開き、エディターで統合を有効にして、入力を開始します。更新はほぼリアルタイムで届きます。
+[Curio](Curio.html)、[Drafts](Drafts.html)、および [The Archive](The_Archive.html) と [Traverse](Traverse.html) では、独自のトグルとメニュー コマンドが文書化されています。 nvUltra、nvALT、Bear などは同じチャネルを使用します。Marked でストリーミング プレビューを開き、エディターで統合を有効にして、入力を開始します。更新はほぼリアルタイムで届きます。
 
 ## 開発者 [developers]
 
@@ -18,37 +18,30 @@ NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
 [pb setString:rawString forType:(NSString*)kUTTypeUTF8PlainText];
 ```
 
-### 相対アセットのベース URL の宣言 [declaring-a-base-url-for-relative-assets]
+### 送信元アプリと形式を宣言する [declaring-the-origin-app-and-format]
 
-ストリーミング プレビューのベース URL を指定することもでき、画像やその他のアセット内の相対 URL がソース アプリ内と同様に機能できるようになります。ベース URL にファイル名が含まれている場合、その名前と拡張子はカスタム プロセッサで使用できるようになりますが、必須ではありません。ベース URL を含めるには、NSURL オブジェクトをクリップボードに入れるだけです。
+送るテキストの先頭で、HTML コメントにキーワード `source` または `format` を置きます。Marked はそのコメントを読み、プレビューから取り除くので、メモは GFM と MultiMarkdown のプロセッサと互換のままです。コロンの後の空白は省略できます（`source:Bear.app` と `source: Bear.app` は同じです）。キーワードの大文字と小文字は区別しません。
 
-```obj-c
-NSString *rawString = @"The text to be processed\\n\\n![](images/screenshots/mainwindow-feature-stats.jpg)";
-NSURL *baseURL = [NSURL fileURLWithPath:@"/Users/username/Documents/HelpDocs/Main Window.md"];
-NSPasteboard* pb = [NSPasteboard pasteboardWithName:@"mkStreamingPreview"];
-[pb clearContents];
-[pb writeObjects:@[rawString, baseURL]];
+どちらの値も自由な文字列です。一部には Marked の組み込みの動作があり、すべての値は [Custom Processor](Custom_Processor.html)（Conductor）の **ストリーミングプレビューのソース** と **ストリーミングプレビューの形式** として使えます。これらの条件は **等しい**、**等しくない**、**含む**、**含まない** を受け付けます。
+
+**`source: APP_NAME`** は送信元アプリを、アプリ名または bundle id で示します。Marked はこれで、そのアプリ向けの特別な処理を加えます。`source: Bear.app` と `source: Drafts.app` は、それらのアプリのプレビュー動作を有効にします。それ以外の名前も Conductor のルールで照合できるので、そのアプリ向けの処理を自分で実行できます。
+
+```html
+<!--source:Bear.app-->
 ```
 
-または、Swift では次のようになります。
+**`format: fountain`** は [Fountain](Fountain_for_Screenwriters.html) の処理を有効にし、ストリームを Markdown ではなく脚本としてプレビューします。それ以外の形式の値はプロセッサを変えません。Conductor のルールが照合するためのものです。たとえば **ストリーミングプレビューの形式** `等しい` `fountain` です。
 
-```swift
-let rawString = "The text to be processed\n\n![](images/screenshots/mainwindow-feature-stats.jpg)"
-let baseURL = URL(fileURLWithPath: "/Users/username/Documents/HelpDocs/Main Window.md")
-let pb = NSPasteboard(name: "mkStreamingPreview")
-pb.clearContents()
-pb.writeObjects([rawString, baseURL])
+```html
+<!--format:fountain-->
 ```
 
-Mac App Store バージョンの Marked が使用されており、サンドボックス経由でベース URL にアクセスできない場合は、URL が初めてプレビューに読み込まれるときに許可が要求されます。
-
-### ソース アプリケーションの宣言 [declaring-the-source-application]
-
-アプリは、`source` メタデータ行を含めることで、自身をプレビュー コンテンツのソースとして宣言することもできます。これは通常、GFM プロセッサと MultiMarkdown プロセッサの両方との互換性を可能にするために HTML コメント内で実行されます。アプリの名前またはバンドル ID を指定するだけです。
+1 つのコメントに両方のキーワードを置けます。
 
 ```html
 <!--
 source: Bear.app
+format: fountain
 -->
 ```
 
