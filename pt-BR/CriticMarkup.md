@@ -4,7 +4,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 [CriticMarkup](http://criticmarkup.com/) permite que os editores forneçam feedback nos documentos Markdown. Quando habilitado em {% prefspane  Proofing %}, a visualização marcada fornecerá três guias sempre que a sintaxe do CriticMarkup for detectada: a versão do Markup mostrando inserções, exclusões e comentários embutidos, a versão original antes das edições e a versão editada como apareceria se todas as edições fossem aceitas.
 

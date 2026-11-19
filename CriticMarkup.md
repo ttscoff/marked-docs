@@ -2,7 +2,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 [CriticMarkup](http://criticmarkup.com/) allows editors to provide feedback within Markdown documents. When enabled under the {% prefspane Proofing %}, the Marked preview provides three tabs (Markup, Original, Edited) when the document contains CriticMarkup additions, deletions, substitutions, or highlights. CriticMarkup comments alone render as inline comments without the tab bar.
 

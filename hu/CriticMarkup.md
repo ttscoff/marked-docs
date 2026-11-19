@@ -4,7 +4,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 A [CriticMarkup](http://criticmarkup.com/) lehetővé teszi a szerkesztők számára, hogy visszajelzést adjanak a Markdown dokumentumokon belül. Ha engedélyezve van a {% prefspane  Proofing %} alatt, a Megjelölt előnézet három lapot biztosít, amikor a CriticMarkup szintaxisa észlelhető: a Markup verzió, amely a beszúrásokat, törléseket és megjegyzéseket tartalmazza, a szerkesztések előtti eredeti verziót és a szerkesztett verziót úgy, ahogyan az összes módosítás elfogadása esetén megjelenne.
 

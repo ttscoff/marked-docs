@@ -2,7 +2,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 [CriticMarkup](http://criticmarkup.com/) ermöglicht es Redakteuren, Feedback zu Markdown-Dokumenten zu geben. Wenn die Marked-Vorschau unter {% prefspane  Proofing %} aktiviert ist, stellt sie drei Registerkarten bereit, wenn die CriticMarkup-Syntax erkannt wird: die Markup-Version mit Einfügungen, Löschungen und Kommentaren inline, die Originalversion vor Änderungen und die bearbeitete Version, wie sie aussehen würde, wenn alle Änderungen akzeptiert würden.
 

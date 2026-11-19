@@ -2,7 +2,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 Met [CriticMarkup](http://criticmarkup.com/) kunnen redacteuren feedback geven binnen Markdown documenten. Indien ingeschakeld onder {% prefspane  Proofing %}, zal het voorbeeld van Marked drie tabbladen bieden wanneer de syntaxis van CriticMarkup wordt gedetecteerd: de opmaakversie die invoegingen, verwijderingen en opmerkingen inline toont, de originele versie vóór bewerkingen, en de bewerkte versie zoals deze eruit zou zien als alle bewerkingen waren geaccepteerd.
 

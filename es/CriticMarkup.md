@@ -4,7 +4,7 @@
 
 ![][1]
 
-[1]: images/criticmarkup.jpg @2x width=826px height=399px class=center
+[1]: images/criticmarkup.jpg @2x width=683px height=384px class=center
 
 [CriticMarkup](http://criticmarkup.com/) permite a los editores proporcionar comentarios dentro de los documentos de Markdown. Cuando se habilita en {% prefspane  Proofing %}, la vista previa marcada proporcionará tres pestañas cada vez que se detecte la sintaxis de CriticMarkup: la versión de marcado que muestra inserciones, eliminaciones y comentarios en línea, la versión original antes de las ediciones y la versión editada tal como aparecería si se aceptaran todas las ediciones.
 
