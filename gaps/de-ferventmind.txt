@@ -67,8 +67,8 @@ Checkbox list today:
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
 - **OPML-Dateien**
 
-Enabled paragraph starts:
-**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner**
+Enabled paragraph today. Insert the FerventMind sentence after the FreeMind/OPML sentence and before the Bike sentence:
+**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 Off-state starts:
 - **iThoughts** – Das integrierte Vorschaubild (`preview.png`) aus der .itmz-Datei ist als Base64-Bild eingebettet.
@@ -81,9 +81,12 @@ Include syntax starts:
 
 FerventMind maps are zip archives containing `map.xml`, `preview.png`, and `assets/`. See [FerventMind](FerventMind.html). **FerventMind files** under **Embed as Mermaid mind maps:** turns an included map into a Mermaid diagram of the visible or full tree. Off embeds the map's `preview.png`. Folded topics follow **Display only visible topics**.
 
-Also add **FerventMind-Dateien** to the checkbox list, add FerventMind to the enabled-formats sentence, add this off-state bullet after iThoughts, and add `<<[path/to/map.fvmd]` under the include examples:
+Also add **FerventMind-Dateien** to the checkbox list, add FerventMind to the enabled-formats name list, add the sentence below in that same paragraph, add this off-state bullet after iThoughts, and add `<<[path/to/map.fvmd]` under the include examples:
 
 - **FerventMind** — The map's preview image (`preview.png`) is embedded.
+
+=== ENGLISH TARGET (enabled-formats sentence) ===
+FerventMind (`.fvmd`) uses the visible or full tree, matching **Display only visible topics**.
 
 === CURRENT GERMAN (de/Multi-File_Documents.md, insert a row after iThoughts X) ===
 | **iThoughts X** | .itmz | Mermaid-Mindmap-Diagramm (Tidy-Tree) | Vorschaubild aus der .itmz |
@@ -95,7 +98,8 @@ Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes 
 === ENGLISH TARGET (table row and sentence) ===
 | **FerventMind** | .fvmd | Mermaid mind map | Preview image |
 
-Mention FerventMind files in that checkbox sentence.
+=== ENGLISH TARGET (checkbox sentence) ===
+Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mind maps, FerventMind files, OPML files, Bike outlines, OmniOutliner outlines, Tree Outliner outlines).
 
 === ENGLISH TARGET (de/FerventMind.md) ===
 # <%= @title %>
@@ -165,7 +169,13 @@ FerventMind-Karten sind Zip-Archive mit `map.xml`, `preview.png` und `assets/`. 
 
 	<<[path/to/map.fvmd]
 
+=== MACHINE DRAFT (enabled-formats sentence) ===
+Insert after the FreeMind/OPML sentence:
+
+FerventMind (`.fvmd`) verwendet den sichtbaren oder vollständigen Baum, passend zu **Nur sichtbare Themen anzeigen**.
+
 === MACHINE DRAFT (multi-file row) ===
 | **FerventMind** | .fvmd | Mermaid-Mindmap | Vorschaubild |
 
-Erwähnen Sie FerventMind-Dateien in dem Satz mit den Kontrollkästchen unter *Mindmaps/Gliederungen*.
+=== MACHINE DRAFT (checkbox sentence) ===
+Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, FerventMind-Dateien, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen, Tree-Outliner-Gliederungen).
