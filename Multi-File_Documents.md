@@ -80,6 +80,7 @@ When you include certain file types with `<<[path]` or IA Writer block syntax, M
 | Format | Extension | When "Embed as Mermaid" is **on** | When **off** |
 |--------|------------|-----------------------------------|--------------|
 | **iThoughts X** | .itmz | Mermaid mindmap diagram (tidy-tree) | Preview image from the .itmz |
+| **FerventMind** | .fvmd | Mermaid mind map | Preview image |
 | **MindManager** | .mmap | Mermaid mindmap diagram | Nested Markdown list |
 | **FreeMind** | .mm | Mermaid mindmap diagram | Nested Markdown list |
 | **OPML** | .opml | Mermaid mindmap diagram | Nested Markdown list |
@@ -90,7 +91,7 @@ When you include certain file types with `<<[path]` or IA Writer block syntax, M
 | **RTF / RTFD** | .rtf, .rtfd | Markdown via RTF conversion (see [RTF and RTFD Support](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via PDF conversion when opened as the main document (see [PDF Support](PDF_Support.html)) ||
 
-Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mind maps, OPML files, Bike outlines, OmniOutliner outlines, Tree Outliner outlines). Toggling a format off uses the "off" behavior for that type only. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) for format details and [Settings: Apps][mindmaps] to change these options. For CSV conversion details, see [Creating Tables using CSV files][csv].
+Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mind maps, FerventMind files, OPML files, Bike outlines, OmniOutliner outlines, Tree Outliner outlines). Toggling a format off uses the "off" behavior for that type only. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) for format details and [Settings: Apps][mindmaps] to change these options. For CSV conversion details, see [Creating Tables using CSV files][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

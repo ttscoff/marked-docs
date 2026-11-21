@@ -14,6 +14,7 @@ Start with [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) for
 | **Drafts** (streaming preview + actions) | [Drafts](Drafts.html) |
 | **Finis** `.finis` projects | [Finis](Finis.html) |
 | **DEVONthink** (Script menu integration) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** `.fvmd` maps | [FerventMind](FerventMind.html) |
 | **Folder watching** (nvALT, nvUltra, etc.) | [Folder Watching](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
 | **Hookmark** URL resolution | [Hookmark](Hookmark.html) |
