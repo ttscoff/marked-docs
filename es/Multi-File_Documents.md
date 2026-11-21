@@ -82,6 +82,7 @@ Cuando incluye ciertos tipos de archivos con sintaxis de bloque `<<[path]` o IA 
 | Formato | Ampliación | Cuando "Incrustar como sirena" está **activado** | Cuando **apagado** |
 |--------|------------|-----------------------------------|--------------|
 | **iPensamientos X** | .itmz | Diagrama de mapa mental de sirena (árbol ordenado) | Imagen de vista previa del .itmz |
+| **FerventMind** | .fvmd | Mapa mental Mermaid | Imagen de vista previa |
 | **Gestor Mental** | .mmap | Diagrama de mapa mental de sirena | Lista de rebajas anidadas |
 | **Mente libre** | .mm | Diagrama de mapa mental de sirena | Lista de rebajas anidadas |
 | **OPML** | .opml | Diagrama de mapa mental de sirena | Lista de rebajas anidadas |
@@ -92,7 +93,7 @@ Cuando incluye ciertos tipos de archivos con sintaxis de bloque `<<[path]` o IA 
 | **RTF/RTFD** | .rtf, .rtfd | Markdown mediante conversión RTF (consulte [Soporte RTF y RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown mediante conversión de PDF cuando se abre como documento principal (consulte [Soporte de PDF](PDF_Support.html)) ||
 
-Cada formato de esquema/mapa mental tiene su propia casilla de verificación en *Mapas mentales/Contornos* (mapas mentales, archivos OPML, esquemas de Bike, esquemas de OmniOutliner, Tree Outliner outlines). Al desactivar un formato se utiliza el comportamiento "desactivado" sólo para ese tipo. Consulte [Incorporar esquemas y mapas mentales](Embedding_Mind_Maps_and_Outlines.html) para obtener detalles sobre el formato y [Configuración: Aplicaciones][mapas mentales] para cambiar estas opciones. Para obtener detalles sobre la conversión a CSV, consulte [Creación de tablas utilizando archivos CSV][csv].
+Cada formato de esquema/mapa mental tiene su propia casilla de verificación en *Mapas mentales/Contornos* (mapas mentales, FerventMind, archivos OPML, esquemas de Bike, esquemas de OmniOutliner, Tree Outliner outlines). Al desactivar un formato se utiliza el comportamiento "desactivado" sólo para ese tipo. Consulte [Incorporar esquemas y mapas mentales](Embedding_Mind_Maps_and_Outlines.html) para obtener detalles sobre el formato y [Configuración: Aplicaciones][mapas mentales] para cambiar estas opciones. Para obtener detalles sobre la conversión a CSV, consulte [Creación de tablas utilizando archivos CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

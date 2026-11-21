@@ -82,6 +82,7 @@ Quando includi determinati tipi di file con la sintassi del blocco `<<[path]` o 
 | Formato | Estensione | Quando "Incorpora come sirena" è **attiva** | Quando **spento** |
 |--------|------------|-------|--------------|
 | **iPensieri X** | .itmz | Diagramma della mappa mentale della sirena (albero ordinato) | Immagine di anteprima dal file .itmz |
+| **FerventMind** | .fvmd | Mappa mentale Mermaid | Immagine di anteprima |
 | **MindManager** | .mmap | Diagramma della mappa mentale della sirena | Elenco Markdown nidificato |
 | **MenteLibera** | .mm | Diagramma della mappa mentale della sirena | Elenco Markdown nidificato |
 | **OPML** | .opml | Diagramma della mappa mentale della sirena | Elenco Markdown nidificato |
@@ -92,7 +93,7 @@ Quando includi determinati tipi di file con la sintassi del blocco `<<[path]` o 
 | **RTF/RTFD** | .rtf, .rtfd | Ribasso tramite conversione RTF (vedi [Supporto RTF e RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown tramite conversione PDF quando aperto come documento principale (vedi [Supporto PDF](PDF_Support.html)) ||
 
-Ogni formato di contorno/mappa mentale ha la propria casella di controllo sotto *Mappe mentali/contorni* (mappe mentali, file OPML, strutture Bike, strutture OmniOutliner, Tree Outliner outlines). La disattivazione di un formato utilizza il comportamento "disattivato" solo per quel tipo. Vedi [Incorporamento di mappe mentali e contorni](Embedding_Mind_Maps_and_Outlines.html) per i dettagli sul formato e [Impostazioni: App][Mappe mentali] per modificare queste opzioni. Per i dettagli sulla conversione CSV, vedere [Creazione di tabelle utilizzando file CSV][csv].
+Ogni formato di contorno/mappa mentale ha la propria casella di controllo sotto *Mappe mentali/contorni* (mappe mentali, FerventMind, file OPML, strutture Bike, strutture OmniOutliner, Tree Outliner outlines). La disattivazione di un formato utilizza il comportamento "disattivato" solo per quel tipo. Vedi [Incorporamento di mappe mentali e contorni](Embedding_Mind_Maps_and_Outlines.html) per i dettagli sul formato e [Impostazioni: App][Mappe mentali] per modificare queste opzioni. Per i dettagli sulla conversione CSV, vedere [Creazione di tabelle utilizzando file CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

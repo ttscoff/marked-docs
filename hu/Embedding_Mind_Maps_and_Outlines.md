@@ -13,6 +13,11 @@ Gondolattérképek és körvonalak beágyazhatók a Markdown előnézetébe a [M
 
 Az iThoughts gondolattérkép-fájlok zip-archívumok, amelyek térképadatokat és opcionális előnézeti képet tartalmaznak.
 
+
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+A FerventMind-térképek zip-archívumok, bennük `map.xml`, `preview.png` és `assets/`. Lásd: [FerventMind](FerventMind.html). A **FerventMind files** jelölőnégyzet az **Embed as Mermaid mind maps:** csoportban a beillesztett térképet a látható vagy a teljes fa Mermaid-diagramjává alakítja. Kikapcsolva a térkép `preview.png` képe ágyazódik be. Az összehajtott témák a **Display only visible topics** beállítást követik.
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 A MindManager fájlok zip-archívumok, amelyek a következőt tartalmazzák: `Document.xml`. A kicsomagolt MindManager-csomagok (a `Document.xml`-t tartalmazó mappa) és a `Document.xml`-hez vezető közvetlen elérési út szintén támogatott.
@@ -37,11 +42,14 @@ Lásd: [Tree Outliner](Tree_Outliner.html). A **Tree Outliner outlines** jelöl�
 
 Ha **engedélyezve** (alapértelmezett), a megjelölt konvertálások gondolattérképeket és körvonalakat tartalmaztak [Hableány](https://mermaid.js.org/) diagramokká:
 
-**iThoughts, MindManager, FreeMind, OPML & Bike** – Mermaid gondolattérkép-diagramok formájában renderelt fa elrendezéssel. Az iThoughts és a MindManager esetében az alakinformációk (lekerekített, téglalap, hatszög stb.) megőrződnek, ahol rendelkezésre állnak. A FreeMind (`.mm`) és az OPML ugyanazt a gondolattérkép-formátumot használja. A kerékpáros (`.bike`) körvonalai a mellékelt fájlnevet (mínusz kiterjesztést) használják gondolattérkép gyökércsomópontként. A csomópontcímkék egyszerű szövegesek (a hivatkozások hivatkozásszöveggé válnak; a feladatok ☐ / ☑ előtagként jelennek meg). A Mermaid alapértelmezés szerint minden Markdown előnézetben szerepel.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** – Mermaid gondolattérkép-diagramok formájában renderelt fa elrendezéssel. Az iThoughts és a MindManager esetében az alakinformációk (lekerekített, téglalap, hatszög stb.) megőrződnek, ahol rendelkezésre állnak. A FreeMind (`.mm`) és az OPML ugyanazt a gondolattérkép-formátumot használja. A kerékpáros (`.bike`) körvonalai a mellékelt fájlnevet (mínusz kiterjesztést) használják gondolattérkép gyökércsomópontként. A csomópontcímkék egyszerű szövegesek (a hivatkozások hivatkozásszöveggé válnak; a feladatok ☐ / ☑ előtagként jelennek meg). A Mermaid alapértelmezés szerint minden Markdown előnézetben szerepel.
+
+A FerventMind (`.fvmd`) a látható vagy a teljes fát használja, a **Display only visible topics** szerint.
 
 Ha **letiltva**:
 
 - **iThoughts** — Az .itmz fájl beépített előnézeti képe (`preview.png`) base64 képként van beágyazva. A kép alternatív szövege a fájlnevet használja.
+- **FerventMind** — A térkép előnézeti képe (`preview.png`) ágyazódik be.
 - **MindManager** — A vázlat beágyazott Markdown listaként van beágyazva.
 - **FreeMind** — A vázlat beágyazott jelölőlistaként van beágyazva.
 - **OPML** — A körvonal beágyazott Markdown listaként van beágyazva (nincs gondolattérkép).
@@ -52,6 +60,7 @@ Ha **letiltva**:
 Használja ugyanazt a szintaxist, mint a többi fájl esetében:
 
 	<<[path/to/map.itmz]
+	<<[path/to/map.fvmd]
 	<<[útvonal/map.mmap]
 	<<[útvonal/térkép.mm]
 	<<[path/to/outline.opml]

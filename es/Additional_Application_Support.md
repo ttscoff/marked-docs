@@ -15,6 +15,7 @@ Comience con [Vista previa de Live Markdown en Mac](Live_Markdown_Preview_on_Mac
 | **Curio** (vista previa de transmisión) | [Curiosidad](Curio.html) |
 | **Borradores** (vista previa del streaming + acciones) | [Borradores](Drafts.html) |
 | **DEVONthink** (Integración del menú Script) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** mapas `.fvmd` | [FerventMind](FerventMind.html) |
 | **Visualización de carpetas** (nvALT, nvUltra, etc.) | [Visualización de carpetas](Folder_Watching.html) |
 | **Tierras Altas** | [Tierras Altas](Highland.html) |
 | **Marca de gancho** Resolución de URL | [Marca de gancho](Hookmark.html) |

@@ -15,6 +15,7 @@ Kezdje a [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) elemm
 | **Curio** (streaming előnézet) | [Curio](Curio.html) |
 | **Piszkozatok** (streaming előnézet + műveletek) | [Piszkozatok](Drafts.html) |
 | **DEVONthink** (Script menü integráció) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** `.fvmd` térképek | [FerventMind](FerventMind.html) |
 | **Mappafigyelés** (nvALT, nvUltra stb.) | [Mappafigyelés](Folder_Watching.html) |
 | **Felföld** | [Felföld](Highland.html) |
 | **Hookmark** URL felbontás | [Hookmark](Hookmark.html) |

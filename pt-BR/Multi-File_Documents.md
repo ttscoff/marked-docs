@@ -82,6 +82,7 @@ Quando você inclui certos tipos de arquivo com sintaxe de bloco `<<[path]` ou I
 | Formato | Extensão | Quando "Incorporar como sereia" está **ativado** | Quando **desligado** |
 |--------|------------|-----------------------------------|-------------|
 | **iPensamentos X** | .itmz | Diagrama de mapa mental de sereia (árvore arrumada) | Imagem de visualização do .itmz |
+| **FerventMind** | .fvmd | Mapa mental Mermaid | Imagem de visualização |
 | **MindManager** | .mmap | Diagrama de mapa mental de sereia | Lista Markdown aninhada |
 | **FreeMind** | .mm | Diagrama de mapa mental de sereia | Lista Markdown aninhada |
 | **OPML** | .opml | Diagrama de mapa mental de sereia | Lista Markdown aninhada |
@@ -92,7 +93,7 @@ Quando você inclui certos tipos de arquivo com sintaxe de bloco `<<[path]` ou I
 | **RTF/RTFD** | .rtf, .rtfd | Markdown via conversão RTF (consulte [Suporte RTF e RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via conversão de PDF quando aberto como documento principal (veja [Suporte PDF](PDF_Support.html)) ||
 
-Cada formato de esboço/mapa mental tem sua própria caixa de seleção em *Mapas Mentais/Esboços* (mapas mentais, arquivos OPML, esboços do Bike, esboços do OmniOutliner, Tree Outliner outlines). Desativar um formato usa o comportamento "desativado" somente para esse tipo. Consulte [Incorporando mapas mentais e contornos](Embedding_Mind_Maps_and_Outlines.html) para detalhes de formato e [Configurações: Aplicativos][mapas mentais] para alterar essas opções. Para obter detalhes de conversão CSV, consulte [Criando tabelas usando arquivos CSV][csv].
+Cada formato de esboço/mapa mental tem sua própria caixa de seleção em *Mapas Mentais/Esboços* (mapas mentais, FerventMind, arquivos OPML, esboços do Bike, esboços do OmniOutliner, Tree Outliner outlines). Desativar um formato usa o comportamento "desativado" somente para esse tipo. Consulte [Incorporando mapas mentais e contornos](Embedding_Mind_Maps_and_Outlines.html) para detalhes de formato e [Configurações: Aplicativos][mapas mentais] para alterar essas opções. Para obter detalhes de conversão CSV, consulte [Criando tabelas usando arquivos CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

@@ -11,6 +11,11 @@ Les cartes mentales et les plans peuvent être intégrés dans votre aperçu Mar
 
 Les fichiers de cartes mentales iThoughts sont des archives zip contenant des données cartographiques et une image d'aperçu facultative.
 
+
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+Les cartes FerventMind sont des archives zip contenant `map.xml`, `preview.png` et `assets/`. Voir [FerventMind](FerventMind.html). **FerventMind files**, sous **Embed as Mermaid mind maps :**, transforme une carte incluse en diagramme Mermaid de l'arbre visible ou complet. Désactivé, il intègre le `preview.png` de la carte. Les sujets repliés suivent **Display only visible topics**.
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 Les fichiers MindManager sont des archives zip contenant `Document.xml`. Les packages MindManager décompressés (un dossier contenant `Document.xml`) et les chemins directs vers `Document.xml` sont également pris en charge.
@@ -35,11 +40,14 @@ Voir [Tree Outliner](Tree_Outliner.html). La case **Tree Outliner outlines** ré
 
 Lorsqu'il est **activé** (valeur par défaut), Marked convertit les cartes mentales et les contours inclus en diagrammes [Mermaid](https://mermaid.js.org/) :
 
-**iThoughts, MindManager, FreeMind, OPML & Bike** : Rendus sous forme de diagrammes mindmap Mermaid avec la disposition en arbre bien rangé. Pour iThoughts et MindManager, les informations de forme (arrondi, rectangle, hexagone, etc.) sont conservées lorsqu'elles sont disponibles. FreeMind (`.mm`) et OPML utilisent le même format de carte mentale. Les contours Bike (`.bike`) utilisent le nom de fichier inclus (moins l'extension) comme nœud racine de la carte mentale. Les étiquettes de nœud sont en texte brut (les liens deviennent du texte de lien ; les tâches s'affichent sous la forme de préfixes ☐/☑). Mermaid est incluse par défaut dans chaque aperçu Markdown.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** : Rendus sous forme de diagrammes mindmap Mermaid avec la disposition en arbre bien rangé. Pour iThoughts et MindManager, les informations de forme (arrondi, rectangle, hexagone, etc.) sont conservées lorsqu'elles sont disponibles. FreeMind (`.mm`) et OPML utilisent le même format de carte mentale. Les contours Bike (`.bike`) utilisent le nom de fichier inclus (moins l'extension) comme nœud racine de la carte mentale. Les étiquettes de nœud sont en texte brut (les liens deviennent du texte de lien ; les tâches s'affichent sous la forme de préfixes ☐/☑). Mermaid est incluse par défaut dans chaque aperçu Markdown.
+
+FerventMind (`.fvmd`) utilise l'arbre visible ou complet, selon **Display only visible topics**.
 
 Lorsque **désactivé** :
 
 - **iThoughts** : L'image d'aperçu intégrée (`preview.png`) du fichier .itmz est intégrée en tant qu'image base64. Le texte alternatif de l'image utilise le nom du fichier.
+- **FerventMind** : l'image d'aperçu de la carte (`preview.png`) est intégrée.
 - **MindManager** : Le plan est intégré sous forme de liste Markdown imbriquée.
 - **FreeMind** : Le plan est intégré sous forme de liste Markdown imbriquée.
 - **OPML** : Le plan est intégré sous forme de liste Markdown imbriquée (pas de carte mentale).
@@ -50,6 +58,7 @@ Lorsque **désactivé** :
 Utilisez la même syntaxe que pour les autres fichiers inclus :
 
 	<<[path/to/map.itmz]
+	<<[path/to/map.fvmd]
 	<<[path/to/map.mmap]
 	<<[path/to/outline.mm]
 	<<[path/to/outline.opml]

@@ -80,6 +80,7 @@ Wanneer u bepaalde bestandstypen opneemt met `<<[path]` of IA Writer-bloksyntaxi
 | Formaat | Extensie | Wanneer "Insluiten als zeemeermin" **aan** staat | Wanneer **uit** |
 |--------|------------|--------------------------------|--------------|
 | **iGedachten X** | .itmz | Zeemeermin mindmapdiagram (opruimboom) | Voorbeeldafbeelding van de .itmz |
+| **FerventMind** | .fvmd | Mermaid-mindmap | Voorbeeldafbeelding |
 | **MindManager** | .mmap | Zeemeermin mindmapdiagram | Geneste Markdown lijst |
 | **Vrije geest** | .mm | Zeemeermin mindmapdiagram | Geneste Markdown lijst |
 | **OPML** | .opml | Zeemeermin mindmapdiagram | Geneste Markdown lijst |
@@ -90,7 +91,7 @@ Wanneer u bepaalde bestandstypen opneemt met `<<[path]` of IA Writer-bloksyntaxi
 | **RTF / RTFD** | .rtf, .rtfd | Markdown via RTF conversie (zie [RTF and RTFD Support](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via PDF conversie wanneer geopend als hoofddocument (zie [PDF Support](PDF_Support.html)) ||
 
-Elk overzichts-/mindmapformaat heeft zijn eigen selectievakje onder *Mind Maps/Outlines* (Mindmaps, OPML bestanden, Bike-overzichten, OmniOutliner-overzichten, Tree Outliner outlines). Als u een indeling uitschakelt, wordt alleen het 'uit'-gedrag voor dat type gebruikt. Zie [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) voor formaatdetails en [Settings: Apps][mindmaps] om deze opties te wijzigen. Zie [Creating Tables using CSV files][csv] voor details over CSV-conversie.
+Elk overzichts-/mindmapformaat heeft zijn eigen selectievakje onder *Mind Maps/Outlines* (Mindmaps, FerventMind, OPML bestanden, Bike-overzichten, OmniOutliner-overzichten, Tree Outliner outlines). Als u een indeling uitschakelt, wordt alleen het 'uit'-gedrag voor dat type gebruikt. Zie [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html) voor formaatdetails en [Settings: Apps][mindmaps] om deze opties te wijzigen. Zie [Creating Tables using CSV files][csv] voor details over CSV-conversie.
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

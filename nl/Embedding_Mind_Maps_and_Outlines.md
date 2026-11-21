@@ -11,6 +11,11 @@ Mindmaps en overzichten kunnen in uw Markdown preview worden ingesloten met behu
 
 iThoughts mindmapbestanden zijn zip-archieven met kaartgegevens en een optionele voorbeeldafbeelding.
 
+
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+FerventMind-kaarten zijn zip-archieven met `map.xml`, `preview.png` en `assets/`. Zie [FerventMind](FerventMind.html). **FerventMind files** onder **Embed as Mermaid mind maps:** maakt van een ingevoegde kaart een Mermaid-diagram van de zichtbare of volledige boom. Uit voegt de `preview.png` van de kaart in. Ingeklapte onderwerpen volgen **Display only visible topics**.
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 MindManager-bestanden zijn zip-archieven die `Document.xml` bevatten. Uitgepakte MindManager-pakketten (een map met `Document.xml`) en directe paden naar `Document.xml` worden ook ondersteund.
@@ -35,11 +40,14 @@ Zie [Tree Outliner](Tree_Outliner.html). Het selectievakje **Tree Outliner outli
 
 Indien **ingeschakeld** (standaard), converteert Marked de meegeleverde mindmaps en overzichten naar [Mermaid](https://mermaid.js.org/) diagrammen:
 
-**iThoughts, MindManager, FreeMind, OPML & Bike** — Weergegeven als Mermaid-mindmapdiagrammen met de overzichtelijke boomstructuur. Voor iThoughts en MindManager wordt vorminformatie (rond, rechthoekig, zeshoek, etc.) behouden waar beschikbaar. FreeMind (`.mm`) en OPML gebruiken hetzelfde mindmapformaat. Fietscontouren (`.bike`) gebruiken de meegeleverde bestandsnaam (minus extensie) als het hoofdknooppunt van de mindmap. Knooppuntlabels zijn platte tekst (koppelingen worden koppelingstekst; taken worden weergegeven als voorvoegsels ☐ / ☑). Zeemeermin is standaard opgenomen in elk Markdown voorbeeld.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** — Weergegeven als Mermaid-mindmapdiagrammen met de overzichtelijke boomstructuur. Voor iThoughts en MindManager wordt vorminformatie (rond, rechthoekig, zeshoek, etc.) behouden waar beschikbaar. FreeMind (`.mm`) en OPML gebruiken hetzelfde mindmapformaat. Fietscontouren (`.bike`) gebruiken de meegeleverde bestandsnaam (minus extensie) als het hoofdknooppunt van de mindmap. Knooppuntlabels zijn platte tekst (koppelingen worden koppelingstekst; taken worden weergegeven als voorvoegsels ☐ / ☑). Zeemeermin is standaard opgenomen in elk Markdown voorbeeld.
+
+FerventMind (`.fvmd`) gebruikt de zichtbare of volledige boom, volgens **Display only visible topics**.
 
 Wanneer **uitgeschakeld**:
 
 - **iThoughts** — De ingebouwde voorbeeldafbeelding (`preview.png`) van het .itmz-bestand is ingesloten als een base64-afbeelding. De alt-tekst van de afbeelding gebruikt de bestandsnaam.
+- **FerventMind**: de voorbeeldafbeelding van de kaart (`preview.png`) wordt ingevoegd.
 - **MindManager** — Het overzicht is ingesloten als een geneste Markdown lijst.
 - **FreeMind** — Het overzicht is ingesloten als een geneste Markdown lijst.
 - **OPML** — Het overzicht is ingesloten als een geneste Markdown lijst (geen mindmap).
@@ -50,6 +58,7 @@ Wanneer **uitgeschakeld**:
 Gebruik dezelfde syntaxis als voor andere bestandsindelingen:
 
 <<[pad/naar/kaart.itmz]
+<<[pad/naar/kaart.fvmd]
 	<<[pad/naar/kaart.mmap]
 	<<[pad/naar/kaart.mm]
 	<<[pad/naar/overzicht.opml]

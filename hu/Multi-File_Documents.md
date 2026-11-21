@@ -82,6 +82,7 @@ Ha bizonyos fájltípusokat `<<[path]` vagy IA Writer blokkszintaxissal vesz fel
 | Formátum | Kiterjesztés | Amikor a „Beágyazás sellőként” **be van kapcsolva** | Amikor **ki** |
 |--------|------------|----------------------------------------------------|
 | **iThoughts X** | .itmz | Mermaid gondolattérkép diagram (tidy-tree) | Előnézeti kép a .itmz | fájlból
+| **FerventMind** | .fvmd | Mermaid-gondolattérkép | Előnézeti kép |
 | **MindManager** | .mmap | Mermaid gondolattérkép diagram | Beágyazott leértékelési lista |
 | **FreeMind** | .mm | Mermaid gondolattérkép diagram | Beágyazott leértékelési lista |
 | **OPML** | .opml | Mermaid gondolattérkép diagram | Beágyazott leértékelési lista |
@@ -92,7 +93,7 @@ Ha bizonyos fájltípusokat `<<[path]` vagy IA Writer blokkszintaxissal vesz fel
 | **RTF / RTFD** | .rtf, .rtfd | Leértékelés RTF-konverzión keresztül (lásd [RTF- és RTFD-támogatás](RTF_Support.html)) ||
 | **PDF** | .pdf | Lejelölés PDF-konverzión keresztül, amikor fő dokumentumként van megnyitva (lásd [PDF támogatás](PDF_Support.html)) ||
 
-Minden körvonal-/elmetérkép-formátumnak saját jelölőnégyzete van a *Mind Maps/Outlines* alatt (elmetérképek, OPML-fájlok, Bike-vázlatok, OmniOutliner-vázlatok, Tree Outliner outlines). A formátum kikapcsolása csak az adott típusnál használja a „ki” viselkedést. A formátum részleteiért lásd: [Mindtérképek és körvonalak beágyazása](Embedding_Mind_Maps_and_Outlines.html), a beállítások módosításához pedig a [Beállítások: Alkalmazások][gondolattérképek]. A CSV-konverzió részleteiért lásd a [Táblázatok létrehozása CSV-fájlok használatával][csv] című részt.
+Minden körvonal-/elmetérkép-formátumnak saját jelölőnégyzete van a *Mind Maps/Outlines* alatt (elmetérképek, FerventMind, OPML-fájlok, Bike-vázlatok, OmniOutliner-vázlatok, Tree Outliner outlines). A formátum kikapcsolása csak az adott típusnál használja a „ki” viselkedést. A formátum részleteiért lásd: [Mindtérképek és körvonalak beágyazása](Embedding_Mind_Maps_and_Outlines.html), a beállítások módosításához pedig a [Beállítások: Alkalmazások][gondolattérképek]. A CSV-konverzió részleteiért lásd a [Táblázatok létrehozása CSV-fájlok használatával][csv] című részt.
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

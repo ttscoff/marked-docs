@@ -94,6 +94,17 @@ Open .scriv-bestanden in Scrivener wanneer geopend in Marked
 Wijzigingen bijhouden omzetten <-> CriticMarkup
 : Indien ingeschakeld, wordt het bijhouden van wijzigingen in Word-documenten geconverteerd naar CriticMarkup bij het importeren, en wordt CriticMarkup geconverteerd naar het bijhouden van wijzigingen in Word bij het exporteren van DOCX bestanden.
 
+
+#### FerventMind [ferventmind]
+
+[(Informatie over FerventMind)](FerventMind.html)
+
+Display only visible topics
+: Slaat onderwerpen in een ingeklapte tak over wanneer Marked het overzicht uit `map.xml` bouwt. Een `text.md` die de app al heeft bewaard, blijft zoals hij is opgeslagen.
+
+Headings through level
+: De kaarttitel is kop 1. Onderwerpen blijven koppen tot dit niveau, en diepere onderwerpen worden geneste lijsten. De standaard is 2.
+
 #### Tree Outliner [tree-outliner]
 
 [(Informatie over Tree Outliner)](Tree_Outliner.html)
@@ -106,6 +117,7 @@ Headings through level
 Insluiten als zeemeermin-mindmaps
 : Elk selectievakje bestuurt één inbegrepen formaat. Wanneer **aan** wordt het opgenomen bestand geconverteerd naar een Mermaid-mindmapdiagram (opgeruimde boomstructuur). Wanneer **uit**, gebruikt Marked het alternatief voor dat formaat.
 : **Mindmaps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: iThoughts sluit de voorbeeldafbeelding in; MindManager en FreeMind converteren naar geneste Markdown lijsten.
+: **FerventMind files** (.fvmd). Indien ingeschakeld: Mermaid-mindmap van de zichtbare of volledige boom, volgens **Display only visible topics**. Indien uitgeschakeld: de `preview.png` van de kaart. Zie [FerventMind](FerventMind.html).
 : **OPML bestanden** (.opml). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: geneste Markdown lijst.
 : **OmniOutliner-omtrekken** (.ooutline). Indien ingeschakeld: Mindmap voor zeemeermin. Indien uitgeschakeld: geneste Markdown lijst (of checklist indien van toepassing).
 : **Bike outlines**. Indien ingeschakeld: Mermaid-mindmap. Indien uitgeschakeld: geneste Markdown-lijst. Zie [Bike](Bike.html).

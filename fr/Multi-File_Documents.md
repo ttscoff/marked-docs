@@ -80,6 +80,7 @@ Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path
 | Format | Extension | Lorsque « Intégrer en tant que Mermaid » est **activé** | Quand **éteint** |
 |--------|------------|-------------------------|--------------|
 | **iThoughtsX** | .itmz | Diagramme de carte mentale Mermaid (arbre rangé) | Image d'aperçu du fichier .itmz |
+| **FerventMind** | .fvmd | Carte mentale Mermaid | Image d'aperçu |
 | **MindManager** | .mmap | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
 | **FreeMind** | .mm | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
 | **OPML** | .opml | Diagramme de carte mentale Mermaid | Liste Markdown imbriquée |
@@ -90,7 +91,7 @@ Lorsque vous incluez certains types de fichiers avec la syntaxe de bloc `<<[path
 | **RTF/RTFD** | .rtf, .rtfd | Markdown via la conversion RTF (voir [Support RTF et RTFD](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown via la conversion PDF lors de l'ouverture en tant que document principal (voir [Support PDF](PDF_Support.html)) ||
 
-Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, fichiers OPML, contours Bike, contours OmniOutliner, Tree Outliner outlines). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][mindmaps] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
+Chaque format de plan/carte mentale a sa propre case à cocher sous *Mind Maps/Outlines* (cartes mentales, FerventMind, fichiers OPML, contours Bike, contours OmniOutliner, Tree Outliner outlines). La désactivation d'un format utilise le comportement "off" pour ce type uniquement. Voir [Intégration de cartes mentales et de plans](Embedding_Mind_Maps_and_Outlines.html) pour les détails du format et [Paramètres : applications][mindmaps] pour modifier ces options. Pour plus de détails sur la conversion CSV, voir [Création de tables à l'aide de fichiers CSV][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 

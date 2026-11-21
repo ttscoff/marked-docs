@@ -13,6 +13,11 @@
 
 iThoughts マインド マップ ファイルは、マップ データとオプションのプレビュー イメージを含む zip アーカイブです。
 
+
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+FerventMind のマップは、`map.xml`、`preview.png`、`assets/` を含む zip アーカイブです。[FerventMind](FerventMind.html) を参照してください。**Embed as Mermaid mind maps:** の **FerventMind files** は、取り込んだマップを見えている木か全体の木の Mermaid 図にします。オフではマップの `preview.png` を埋め込みます。折りたたまれたトピックは **Display only visible topics** に従います。
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 MindManager ファイルは、`Document.xml` を含む zip アーカイブです。解凍された MindManager パッケージ (`Document.xml` を含むフォルダー) および `Document.xml` への直接パスもサポートされています。
@@ -37,11 +42,14 @@ OPML (Outline Processor Markup Language) は、アウトライナーやフィー
 
 **有効** (デフォルト) の場合、マークは含まれているマインド マップとアウトラインを [マーメイド](https://mermaid.js.org/) 図に変換します。
 
-**iThoughts、MindManager、FreeMind、OPML、Bike** — 整ったツリー レイアウトを使用してマーメイド マインドマップ図としてレンダリングされます。 iThoughts および MindManager の場合、形状情報 (円形、長方形、六角形など) が利用可能な場合には保存されます。 FreeMind (`.mm`) と OPML は同じマインド マップ形式を使用します。 Bike (`.bike`) のアウトラインでは、含まれているファイル名 (拡張子を除く) がマインド マップのルート ノードとして使用されます。ノード ラベルはプレーン テキストです (リンクはリンク テキストになり、タスクは ☐ / ☑ プレフィックスとして表示されます)。 Mermaid は、すべての Markdown プレビューにデフォルトで含まれています。
+**iThoughts、FerventMind、MindManager、FreeMind、OPML、Bike** — 整ったツリー レイアウトを使用してマーメイド マインドマップ図としてレンダリングされます。 iThoughts および MindManager の場合、形状情報 (円形、長方形、六角形など) が利用可能な場合には保存されます。 FreeMind (`.mm`) と OPML は同じマインド マップ形式を使用します。 Bike (`.bike`) のアウトラインでは、含まれているファイル名 (拡張子を除く) がマインド マップのルート ノードとして使用されます。ノード ラベルはプレーン テキストです (リンクはリンク テキストになり、タスクは ☐ / ☑ プレフィックスとして表示されます)。 Mermaid は、すべての Markdown プレビューにデフォルトで含まれています。
+
+FerventMind (`.fvmd`) は、**Display only visible topics** に合わせて、見えている木か全体の木を使います。
 
 **無効**の場合:
 
 - **iThoughts** — .itmz ファイルの組み込みプレビュー イメージ (`preview.png`) は、base64 イメージとして埋め込まれます。画像の代替テキストにはファイル名が使用されます。
+- **FerventMind**: マップのプレビュー画像 (`preview.png`) を埋め込みます。
 - **MindManager** — アウトラインはネストされた Markdown リストとして埋め込まれます。
 - **FreeMind** — アウトラインはネストされたマークダウン リストとして埋め込まれます。
 - **OPML** — アウトラインはネストされたマークダウン リストとして埋め込まれます (マインド マップはありません)。
@@ -52,6 +60,7 @@ OPML (Outline Processor Markup Language) は、アウトライナーやフィー
 他のファイルの場合と同じ構文を使用します。
 
 	<<[パス/map.itmz]
+	<<[パス/map.fvmd]
 	<<[パス/to/map.mmap]
 	<<[パス/to/map.mm]
 	<<[パス/to/outline.opml]

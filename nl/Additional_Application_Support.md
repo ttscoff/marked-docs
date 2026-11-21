@@ -13,6 +13,7 @@ Begin met [Live Markdown Preview on Mac](Live_Markdown_Preview_on_Mac.html) voor
 | **Curio** (streamingvoorbeeld) | [Curio](Curio.html) |
 | **Concepten** (streamingvoorbeeld + acties) | [Drafts](Drafts.html) |
 | **DEVONthink** (integratie van scriptmenu's) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** `.fvmd`-kaarten | [FerventMind](FerventMind.html) |
 | **Mappen bekijken** (nvALT, nvUltra, etc.) | [Folder Watching](Folder_Watching.html) |
 | **Hoogland** | [Highland](Highland.html) |
 | **Hookmark** URL-resolutie | [Hookmark](Hookmark.html) |

@@ -13,6 +13,7 @@ Commencez par [Aperçu Markdown en direct sur Mac](Live_Markdown_Preview_on_Mac.
 | **Curio** (aperçu en continu) | [Curio](Curio.html) |
 | **Drafts** (aperçu en continu + actions) | [Drafts](Drafts.html) |
 | **DEVONthink** (intégration au menu Scripts) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** cartes `.fvmd` | [FerventMind](FerventMind.html) |
 | **Surveillance de dossiers** (nvALT, nvUltra, etc.) | [Surveillance de dossiers](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
 | **Résolution des URL Hookmark** | [Hookmark](Hookmark.html) |

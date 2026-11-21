@@ -13,6 +13,11 @@ Le mappe mentali e i contorni possono essere incorporati nell'anteprima di Markd
 
 I file delle mappe mentali di iThoughts sono archivi zip contenenti dati della mappa e un'immagine di anteprima opzionale.
 
+
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+Le mappe di FerventMind sono archivi zip che contengono `map.xml`, `preview.png` e `assets/`. Vedi [FerventMind](FerventMind.html). **FerventMind files**, sotto **Embed as Mermaid mind maps:**, trasforma una mappa inclusa in un diagramma Mermaid dell'albero visibile o completo. Disattivo incorpora il `preview.png` della mappa. Gli argomenti chiusi seguono **Display only visible topics**.
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 I file MindManager sono archivi zip contenenti `Document.xml`. Sono supportati anche i pacchetti MindManager decompressi (una cartella contenente `Document.xml`) e percorsi diretti a `Document.xml`.
@@ -37,11 +42,14 @@ Vedi [Tree Outliner](Tree_Outliner.html). La casella **Tree Outliner outlines** 
 
 Quando **abilitato** (impostazione predefinita), le conversioni contrassegnate includevano mappe mentali e contorni nei diagrammi [Sirena](https://mermaid.js.org/):
 
-**iThoughts, MindManager, FreeMind, OPML e Bike** — Resi come diagrammi di mappe mentali a forma di sirena con il layout ad albero ordinato. Per iThoughts e MindManager, le informazioni sulla forma (arrotondato, rettangolo, esagono, ecc.) vengono conservate ove disponibili. FreeMind (`.mm`) e OPML utilizzano lo stesso formato di mappa mentale. I contorni della bici (`.bike`) utilizzano il nome file incluso (meno l'estensione) come nodo radice della mappa mentale. Le etichette dei nodi sono testo semplice (i collegamenti diventano testo del collegamento; le attività vengono visualizzate come prefissi ☐ / ☑). La sirena è inclusa per impostazione predefinita in ogni anteprima di Markdown.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML e Bike** — Resi come diagrammi di mappe mentali a forma di sirena con il layout ad albero ordinato. Per iThoughts e MindManager, le informazioni sulla forma (arrotondato, rettangolo, esagono, ecc.) vengono conservate ove disponibili. FreeMind (`.mm`) e OPML utilizzano lo stesso formato di mappa mentale. I contorni della bici (`.bike`) utilizzano il nome file incluso (meno l'estensione) come nodo radice della mappa mentale. Le etichette dei nodi sono testo semplice (i collegamenti diventano testo del collegamento; le attività vengono visualizzate come prefissi ☐ / ☑). La sirena è inclusa per impostazione predefinita in ogni anteprima di Markdown.
+
+FerventMind (`.fvmd`) usa l'albero visibile o completo, in base a **Display only visible topics**.
 
 Quando **disabilitato**:
 
 - **iThoughts**: l'immagine di anteprima incorporata (`preview.png`) dal file .itmz è incorporata come immagine base64. Il testo alternativo dell'immagine utilizza il nome del file.
+- **FerventMind**: viene incorporata l'immagine di anteprima della mappa (`preview.png`).
 - **MindManager**: la struttura è incorporata come elenco Markdown nidificato.
 - **FreeMind**: la struttura è incorporata come elenco Markdown nidificato.
 - **OPML**: la struttura è incorporata come elenco Markdown nidificato (nessuna mappa mentale).
@@ -52,6 +60,7 @@ Quando **disabilitato**:
 Utilizzare la stessa sintassi degli altri file include:
 
 	<<[percorso/verso/map.itmz]
+	<<[percorso/verso/map.fvmd]
 	<<[percorso/alla/mappa.mmap]
 	<<[percorso/alla/mappa.mm]
 	<<[percorso/al/profilo.opml]

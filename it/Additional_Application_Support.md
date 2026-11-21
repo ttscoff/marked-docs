@@ -15,6 +15,7 @@ Inizia con [Anteprima Live Markdown su Mac](Live_Markdown_Preview_on_Mac.html) p
 | **Curio** (anteprima in streaming) | [Curio](Curio.html) |
 | ** Drafts** (anteprima in streaming + azioni) | [Drafts](Drafts.html) |
 | **DEVONthink** (integrazione del menu Script) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** mappe `.fvmd` | [FerventMind](FerventMind.html) |
 | **Visualizzazione cartelle** (nvALT, nvUltra, ecc.) | [Visione cartella](Folder_Watching.html) |
 | ** Highland** | [Highland](Highland.html) |
 | ** Hookmark** Risoluzione URL | [Hookmark](Hookmark.html) |
