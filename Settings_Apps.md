@@ -101,6 +101,9 @@ Convert change tracking <-> CriticMarkup
 Display only visible topics
 : Skips topics inside a folded branch when Marked builds the outline from `map.xml`. It does not change a `text.md` the app already saved.
 
+Headings through level
+: The map title is heading 1. Topics continue as headings through this level, and deeper topics become nested lists. The default is 2.
+
 #### Tree Outliner [tree-outliner]
 
 [(Info on Tree Outliner)](Tree_Outliner.html)

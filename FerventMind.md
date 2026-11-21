@@ -4,7 +4,7 @@ FerventMind maps (`.fvmd`) open in Marked. Marked unzips the package. If `text.m
 
 ## Outline from the map [outline-from-the-map]
 
-Topic text becomes headings through level 6. Deeper topics become nested bullets. Notes become the section body. A finished task becomes a checked box, and a partial task shows its percent. Images are the files under `assets/`.
+Topic text becomes headings through the level set by **Headings through level** (2 by default). Deeper topics become nested bullets, so tasks at those levels keep a list checkbox. Notes become the section body. A finished task becomes a checked box, and a partial task shows its percent. Images are the files under `assets/`, without a filename caption.
 
 ## Display only visible topics [display-only-visible-topics]
 
