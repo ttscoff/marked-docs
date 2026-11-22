@@ -106,6 +106,7 @@ Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
 Als Mermaid-Mindmaps einbetten
 : Jedes Kontrollkästchen steuert ein eingebundenes Format. Ist es **ein**, wird die eingebundene Datei in ein Mermaid-Mindmap-Diagramm (Tidy-Tree-Layout) umgewandelt. Ist es **aus**, verwendet Marked die Alternative für dieses Format.
 : **Mindmaps** – iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ein: Mermaid-Mindmap. Aus: iThoughts bindet sein Vorschaubild ein; MindManager und FreeMind werden in verschachtelte Markdown-Listen umgewandelt.
+: **FerventMind-Dateien** (.fvmd). Ein: Mermaid-Mindmap. Aus: die `preview.png` der Mindmap. Siehe [FerventMind](FerventMind.html).
 : **OPML-Dateien** (.opml). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
 : **OmniOutliner-Gliederungen** (.ooutline). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste (oder Checkliste, wo zutreffend).
 : **Bike-Gliederungen**. Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste. Siehe [Bike](Bike.html).

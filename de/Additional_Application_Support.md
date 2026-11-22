@@ -13,6 +13,7 @@ Beginnen Sie mit [Live-Markdown-Vorschau auf dem Mac](Live_Markdown_Preview_on_M
 | **Curio** (Streaming-Vorschau) | [Curio](Curio.html) |
 | **Drafts** (Streaming-Vorschau + Aktionen) | [Drafts](Drafts.html) |
 | **DEVONthink** (Integration des Skriptmenüs) | [DEVONthink](DEVONthink.html) |
+| **FerventMind** (`.fvmd`-Mindmaps) | [FerventMind](FerventMind.html) |
 | **Ordnerüberwachung** (nvALT, nvUltra usw.) | [Ordnerüberwachung](Folder_Watching.html) |
 | **Highland** | [Highland](Highland.html) |
 | **Hookmark**-URL-Auflösung | [Hookmark](Hookmark.html) |

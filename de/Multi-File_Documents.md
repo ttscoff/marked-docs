@@ -80,6 +80,7 @@ Binden Sie bestimmte Dateitypen mit `<<[path]` oder der IA-Writer-Block-Syntax e
 | Format | Erweiterung | Wenn „Als Mermaid einbetten“ **ein** ist | Wenn **aus** |
 |--------|------------|-----------------------------------|--------------|
 | **iThoughts X** | .itmz | Mermaid-Mindmap-Diagramm (Tidy-Tree) | Vorschaubild aus der .itmz |
+| **FerventMind** | .fvmd | Mermaid-Mindmap-Diagramm | Vorschaubild |
 | **MindManager** | .mmap | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **FreeMind** | .mm | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
 | **OPML** | .opml | Mermaid-Mindmap-Diagramm | Verschachtelte Markdown-Liste |
@@ -90,7 +91,7 @@ Binden Sie bestimmte Dateitypen mit `<<[path]` oder der IA-Writer-Block-Syntax e
 | **RTF / RTFD** | .rtf, .rtfd | Markdown über RTF-Konvertierung (siehe [RTF- und RTFD-Unterstützung](RTF_Support.html)) ||
 | **PDF** | .pdf | Markdown über PDF-Konvertierung beim Öffnen als Hauptdokument (siehe [PDF-Unterstützung](PDF_Support.html)) ||
 
-Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen, Tree-Outliner-Gliederungen). Schalten Sie ein Format aus, gilt das „Aus“-Verhalten nur für diesen Typ. Formatdetails finden Sie unter [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html), und unter [Einstellungen: Apps][mindmaps] ändern Sie diese Optionen. Einzelheiten zur CSV-Konvertierung unter [Tabellen aus CSV-Dateien erstellen][csv].
+Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, FerventMind-Dateien, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen, Tree-Outliner-Gliederungen). Schalten Sie ein Format aus, gilt das „Aus“-Verhalten nur für diesen Typ. Formatdetails finden Sie unter [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html), und unter [Einstellungen: Apps][mindmaps] ändern Sie diese Optionen. Einzelheiten zur CSV-Konvertierung unter [Tabellen aus CSV-Dateien erstellen][csv].
 
 [mindmaps]: Settings_Apps.html#MindMapsOutlines
 
