@@ -1,30 +1,41 @@
 # Help translation gap — de — FerventMind
-# Feature: FerventMind preview, outline headings, visible topics, Mermaid include
-# Generated: 2026-11-21
+# Feature: FerventMind preview from text.md, Files And Export settings, Mermaid include
+# Updated: 2026-11-22
 #
 # German help does not yet mention FerventMind. Translate the ENGLISH TARGET
 # below. Do not machine-overwrite other polished German pages.
 # A machine draft is included at the end for review. It is not final.
 #
 # Keep in English: FerventMind, .fvmd, text.md, map.xml, preview.png, assets/,
-# Mermaid, Marked, and every anchor ([outline-from-the-map],
-# [display-only-visible-topics], [including-a-map], [open-in-editor],
-# [ferventmind-fvmd], [ferventmind]).
+# Mermaid, Marked, Copy As, and every anchor ([markdown-in-the-map],
+# [including-a-map], [open-in-editor], [ferventmind-fvmd], [ferventmind]).
+# Keep the FerventMind control names as shown in the screenshot:
+# Settings > Files And Export, Markdown, Headings, Visible topics only,
+# Notes, Task checkboxes, Definitions • MAP.
 # Keep link targets: FerventMind.html, Embedding_Mind_Maps_and_Outlines.html.
 # Use Sie. ⌘E stays {% kbd cmd E %}. {% prefspane Apps %} stays as written.
 #
-# The in-app Settings strings are still English:
-# "Display only visible topics", "Headings through level", "FerventMind files".
-# Tree Outliner help already says "Überschriften bis Ebene". Match that style
-# if you translate the new labels.
+# WITHDRAWN: do not add a FerventMind group to de/Settings_Apps.md.
+# Marked no longer has "Display only visible topics" or "Headings through level"
+# for FerventMind. Those choices are made in FerventMind.
+# Drop the anchor [display-only-visible-topics]. It is gone from the English page.
+#
+# Screenshot (already in this branch):
+# images/screenshots/ferventmind-files-and-export.jpg
+# images/screenshots/ferventmind-files-and-export@2x.jpg
+# Reference it as:
+# [fm-export]: images/screenshots/ferventmind-files-and-export.jpg @2x width=808px height=640px
+#
+# The remaining in-app Marked label is "FerventMind files"
+# (German draft: FerventMind-Dateien), under Als Mermaid-Mindmaps einbetten.
 #
 # Return: PR to ttscoff/marked-docs, or reply with the German text.
 
 === LOCATION ===
 File: de/FerventMind.md (new)
 Also update: de/Additional_Application_Support.md (one table row after DEVONthink)
-Also update: de/Settings_Apps.md (new group before Tree Outliner, and one checkbox line after Mindmaps)
-Also update: de/Embedding_Mind_Maps_and_Outlines.md (new section, checkbox, paragraph, off-state, include line)
+Also update: de/Settings_Apps.md (one checkbox line after Mindmaps; no new group)
+Also update: de/Embedding_Mind_Maps_and_Outlines.md (new section, checkbox, off-state, include line)
 Also update: de/Multi-File_Documents.md (one table row after iThoughts X, and the checkbox sentence)
 
 === CURRENT GERMAN (de/Additional_Application_Support.md, insert after DEVONthink) ===
@@ -34,28 +45,12 @@ Also update: de/Multi-File_Documents.md (one table row after iThoughts X, and th
 === ENGLISH TARGET (table row) ===
 | **FerventMind** `.fvmd` maps | [FerventMind](FerventMind.html) |
 
-=== CURRENT GERMAN (de/Settings_Apps.md, insert before Tree Outliner) ===
-#### Tree Outliner [tree-outliner]
-
-[(Info zu Tree Outliner)](Tree_Outliner.html)
-
-=== ENGLISH TARGET (settings group) ===
-#### FerventMind [ferventmind]
-
-[(Info on FerventMind)](FerventMind.html)
-
-Display only visible topics
-: Skips topics inside a folded branch when Marked builds the outline from `map.xml`. It does not change a `text.md` the app already saved.
-
-Headings through level
-: The map title is heading 1. Topics continue as headings through this level, and deeper topics become nested lists. The default is 2.
-
 === CURRENT GERMAN (de/Settings_Apps.md, insert after the Mindmaps checkbox line) ===
 : **Mindmaps** – iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ein: Mermaid-Mindmap. Aus: iThoughts bindet sein Vorschaubild ein; MindManager und FreeMind werden in verschachtelte Markdown-Listen umgewandelt.
 : **OPML-Dateien** (.opml). Ein: Mermaid-Mindmap. Aus: verschachtelte Markdown-Liste.
 
 === ENGLISH TARGET (checkbox line) ===
-: **FerventMind files** (.fvmd). If on: Mermaid mind map of the visible or full tree, matching **Display only visible topics**. If off: the map's `preview.png`. See [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). If on: Mermaid mind map. If off: the map's `preview.png`. See [FerventMind](FerventMind.html).
 
 === CURRENT GERMAN (de/Embedding_Mind_Maps_and_Outlines.md) ===
 iThoughts-Mindmap-Dateien sind Zip-Archive mit Kartendaten und einem optionalen Vorschaubild.
@@ -67,7 +62,7 @@ Checkbox list today:
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
 - **OPML-Dateien**
 
-Enabled paragraph today. Insert the FerventMind sentence after the FreeMind/OPML sentence and before the Bike sentence:
+Enabled paragraph today. Add FerventMind to the name list only. Do not add a sentence about visible or full trees:
 **iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 Off-state starts:
@@ -79,14 +74,11 @@ Include syntax starts:
 === ENGLISH TARGET (new section, after iThoughts, before MindManager) ===
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-FerventMind maps are zip archives containing `map.xml`, `preview.png`, and `assets/`. See [FerventMind](FerventMind.html). **FerventMind files** under **Embed as Mermaid mind maps:** turns an included map into a Mermaid diagram of the visible or full tree. Off embeds the map's `preview.png`. Folded topics follow **Display only visible topics**.
+FerventMind maps are zip archives containing `map.xml`, `text.md`, `preview.png`, and `assets/`. See [FerventMind](FerventMind.html). **FerventMind files** under **Embed as Mermaid mind maps:** turns an included map into a Mermaid diagram. Off embeds the map's `preview.png`.
 
-Also add **FerventMind-Dateien** to the checkbox list, add FerventMind to the enabled-formats name list, add the sentence below in that same paragraph, add this off-state bullet after iThoughts, and add `<<[path/to/map.fvmd]` under the include examples:
+Also add **FerventMind-Dateien** to the checkbox list, add FerventMind to the enabled-formats name list, add this off-state bullet after iThoughts, and add `<<[path/to/map.fvmd]` under the include examples:
 
 - **FerventMind** — The map's preview image (`preview.png`) is embedded.
-
-=== ENGLISH TARGET (enabled-formats sentence) ===
-FerventMind (`.fvmd`) uses the visible or full tree, matching **Display only visible topics**.
 
 === CURRENT GERMAN (de/Multi-File_Documents.md, insert a row after iThoughts X) ===
 | **iThoughts X** | .itmz | Mermaid-Mindmap-Diagramm (Tidy-Tree) | Vorschaubild aus der .itmz |
@@ -95,7 +87,7 @@ FerventMind (`.fvmd`) uses the visible or full tree, matching **Display only vis
 Sentence today:
 Jedes Gliederungs-/Mindmap-Format hat unter *Mindmaps/Gliederungen* ein eigenes Kontrollkästchen (Mindmaps, OPML-Dateien, Bike-Gliederungen, OmniOutliner-Gliederungen, Tree-Outliner-Gliederungen).
 
-=== ENGLISH TARGET (table row and sentence) ===
+=== ENGLISH TARGET (table row) ===
 | **FerventMind** | .fvmd | Mermaid mind map | Preview image |
 
 === ENGLISH TARGET (checkbox sentence) ===
@@ -104,75 +96,67 @@ Each outline/mind map format has its own checkbox under *Mind Maps/Outlines* (Mi
 === ENGLISH TARGET (de/FerventMind.md) ===
 # <%= @title %>
 
-FerventMind maps (`.fvmd`) open in Marked. Marked unzips the package. If `text.md` is inside, that file is the preview. If it is not, Marked builds an outline from `map.xml`.
+FerventMind maps (`.fvmd`) open in Marked. Marked unzips the package and previews the `text.md` FerventMind saved.
 
-## Outline from the map [outline-from-the-map]
+## Markdown in the map [markdown-in-the-map]
 
-Topic text becomes headings through the level set by **Headings through level** (2 by default). Deeper topics become nested bullets, so tasks at those levels keep a list checkbox. Notes become the section body. A finished task becomes a checked box, and a partial task shows its percent. Images are the files under `assets/`, without a filename caption.
+How that Markdown is written is set in FerventMind, under **Settings > Files And Export**, in the **Markdown** group. Marked shows the saved file as it is.
 
-## Display only visible topics [display-only-visible-topics]
+![FerventMind Files And Export][fm-export]
 
-**Display only visible topics**, in {% prefspane Apps %} under *FerventMind*, skips topics inside a folded branch when Marked builds that outline. It does not change a `text.md` the app already saved.
+**Headings** sets how many levels stay headings. **Visible topics only** skips topics inside a folded branch. **Notes** and **Task checkboxes** control whether notes and tasks are written into that Markdown. These choices apply to Markdown export, Copy As, and the Markdown copy stored in every map for apps such as Marked. A map can override them under **Definitions • MAP**.
+
+If an older map has no `text.md`, Marked builds an outline from `map.xml`: the title is heading 1, the next level is heading 2, and deeper topics become nested bullets. Notes become the section body. A finished task becomes a checked box, and a partial task shows its percent. Images are the files under `assets/`, without a filename caption.
 
 ## Including a map [including-a-map]
 
-Including a `.fvmd` uses **FerventMind files** under **Embed as Mermaid mind maps:** in {% prefspane Apps %}. On produces a Mermaid diagram of the visible or full tree, matching the checkbox above. Off embeds the map's `preview.png`. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html).
+Including a `.fvmd` uses **FerventMind files** under **Embed as Mermaid mind maps:** in {% prefspane Apps %}. On produces a Mermaid diagram from the map. Off embeds the map's `preview.png`. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html).
 
 ## Open in Editor [open-in-editor]
 
 **Open in Editor** ({% kbd cmd E %}) launches FerventMind.
 
+[fm-export]: images/screenshots/ferventmind-files-and-export.jpg @2x width=808px height=640px
+
 === MACHINE DRAFT (review; do not treat as final) ===
 # <%= @title %>
 
-FerventMind-Karten (`.fvmd`) lassen sich in Marked öffnen. Marked entpackt das Paket. Liegt darin eine `text.md`, ist diese Datei die Vorschau. Andernfalls erstellt Marked eine Gliederung aus `map.xml`.
+FerventMind-Karten (`.fvmd`) lassen sich in Marked öffnen. Marked entpackt das Paket und zeigt die `text.md`, die FerventMind gespeichert hat.
 
-## Gliederung aus der Karte [outline-from-the-map]
+## Markdown in der Karte [markdown-in-the-map]
 
-Der Thementext wird zu Überschriften bis zu der Ebene, die **Überschriften bis Ebene** festlegt (Standard 2). Tiefere Themen werden verschachtelte Aufzählungen, sodass Aufgaben auf diesen Ebenen ihr Listenkästchen behalten. Notizen werden zum Abschnittstext. Eine erledigte Aufgabe wird ein angehaktes Kästchen, eine angefangene Aufgabe zeigt ihren Prozentwert. Bilder sind die Dateien unter `assets/`, ohne eine Bildunterschrift mit dem Dateinamen.
+Wie dieses Markdown geschrieben wird, legen Sie in FerventMind fest, unter **Settings > Files And Export**, in der Gruppe **Markdown**. Marked zeigt die gespeicherte Datei so, wie sie ist.
 
-## Nur sichtbare Themen anzeigen [display-only-visible-topics]
+![FerventMind Files And Export][fm-export]
 
-**Nur sichtbare Themen anzeigen** unter *FerventMind* in {% prefspane Apps %} lässt Themen aus, die in einem eingeklappten Zweig liegen, wenn Marked diese Gliederung erstellt. Eine `text.md`, die das Programm bereits gespeichert hat, bleibt unverändert.
+**Headings** legt fest, wie viele Ebenen Überschriften bleiben. **Visible topics only** lässt Themen in einem eingeklappten Zweig aus. **Notes** und **Task checkboxes** bestimmen, ob Notizen und Aufgaben in dieses Markdown geschrieben werden. Diese Wahl gilt für den Markdown-Export, für Copy As und für die Markdown-Kopie, die in jeder Karte für Programme wie Marked gespeichert wird. Eine Karte kann sie unter **Definitions • MAP** überschreiben.
+
+Hat eine ältere Karte keine `text.md`, erstellt Marked eine Gliederung aus `map.xml`: Der Titel ist eine Überschrift der Ebene 1, die nächste Ebene ist eine Überschrift der Ebene 2, tiefere Themen werden verschachtelte Aufzählungen. Notizen werden zum Abschnittstext. Eine erledigte Aufgabe wird ein angehaktes Kästchen, eine angefangene Aufgabe zeigt ihren Prozentwert. Bilder sind die Dateien unter `assets/`, ohne eine Bildunterschrift mit dem Dateinamen.
 
 ## Eine Karte einbinden [including-a-map]
 
-Beim Einbinden einer `.fvmd` gilt **FerventMind-Dateien** unter **Als Mermaid-Mindmaps einbetten:** in {% prefspane Apps %}. Ist die Option ein, entsteht ein Mermaid-Diagramm des sichtbaren oder vollständigen Baums, passend zum Kontrollkästchen oben. Ist sie aus, wird die `preview.png` der Karte eingebettet. Siehe [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html).
+Beim Einbinden einer `.fvmd` gilt **FerventMind-Dateien** unter **Als Mermaid-Mindmaps einbetten:** in {% prefspane Apps %}. Ist die Option ein, entsteht ein Mermaid-Diagramm aus der Karte. Ist sie aus, wird die `preview.png` der Karte eingebettet. Siehe [Mindmaps und Gliederungen einbetten](Embedding_Mind_Maps_and_Outlines.html).
 
 ## Im Editor öffnen [open-in-editor]
 
 **Im Editor öffnen** ({% kbd cmd E %}) startet FerventMind.
 
+[fm-export]: images/screenshots/ferventmind-files-and-export.jpg @2x width=808px height=640px
+
 === MACHINE DRAFT (table row) ===
 | **FerventMind** `.fvmd`-Karten | [FerventMind](FerventMind.html) |
 
-=== MACHINE DRAFT (settings group) ===
-#### FerventMind [ferventmind]
-
-[(Info zu FerventMind)](FerventMind.html)
-
-Nur sichtbare Themen anzeigen
-: Lässt Themen aus, die in einem eingeklappten Zweig liegen, wenn Marked die Gliederung aus `map.xml` erstellt. Eine bereits gespeicherte `text.md` bleibt unverändert.
-
-Überschriften bis Ebene
-: Der Kartentitel ist eine Überschrift der Ebene 1. Themen bleiben bis zu dieser Ebene Überschriften, tiefere Themen werden verschachtelte Listen. Der Standard ist 2.
-
 === MACHINE DRAFT (checkbox line) ===
-: **FerventMind-Dateien** (.fvmd). Ein: Mermaid-Mindmap des sichtbaren oder vollständigen Baums, passend zu **Nur sichtbare Themen anzeigen**. Aus: die `preview.png` der Karte. Siehe [FerventMind](FerventMind.html).
+: **FerventMind-Dateien** (.fvmd). Ein: Mermaid-Mindmap. Aus: die `preview.png` der Karte. Siehe [FerventMind](FerventMind.html).
 
 === MACHINE DRAFT (embedding section) ===
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-FerventMind-Karten sind Zip-Archive mit `map.xml`, `preview.png` und `assets/`. Siehe [FerventMind](FerventMind.html). **FerventMind-Dateien** unter **Als Mermaid-Mindmaps einbetten:** macht aus einer eingebundenen Karte ein Mermaid-Diagramm des sichtbaren oder vollständigen Baums. Aus blendet die `preview.png` der Karte ein. Eingeklappte Themen folgen **Nur sichtbare Themen anzeigen**.
+FerventMind-Karten sind Zip-Archive mit `map.xml`, `text.md`, `preview.png` und `assets/`. Siehe [FerventMind](FerventMind.html). **FerventMind-Dateien** unter **Als Mermaid-Mindmaps einbetten:** macht aus einer eingebundenen Karte ein Mermaid-Diagramm. Aus blendet die `preview.png` der Karte ein.
 
 - **FerventMind** – Das Vorschaubild der Karte (`preview.png`) wird eingebettet.
 
 	<<[path/to/map.fvmd]
-
-=== MACHINE DRAFT (enabled-formats sentence) ===
-Insert after the FreeMind/OPML sentence:
-
-FerventMind (`.fvmd`) verwendet den sichtbaren oder vollständigen Baum, passend zu **Nur sichtbare Themen anzeigen**.
 
 === MACHINE DRAFT (multi-file row) ===
 | **FerventMind** | .fvmd | Mermaid-Mindmap | Vorschaubild |
