@@ -7,8 +7,9 @@
 # A machine draft is included at the end for review. It is not final.
 #
 # Keep in English: FerventMind, .fvmd, text.md, map.xml, preview.png, assets/,
-# Mermaid, Marked, Copy As, and every anchor ([markdown-in-the-map],
-# [including-a-map], [open-in-editor], [ferventmind-fvmd], [ferventmind]).
+# Mermaid, Marked, Copy As, View → Preview in Marked, and every anchor
+# ([markdown-in-the-map], [preview-in-marked], [including-a-map],
+# [open-in-editor], [ferventmind-fvmd], [ferventmind]).
 # Keep the FerventMind control names as shown in the screenshot:
 # Settings > Files And Export, Markdown, Headings, Visible topics only,
 # Notes, Task checkboxes, Definitions • MAP.
@@ -108,6 +109,10 @@ How that Markdown is written is set in FerventMind, under **Settings > Files And
 
 If an older map has no `text.md`, Marked builds an outline from `map.xml`: the title is heading 1, the next level is heading 2, and deeper topics become nested bullets. Notes become the section body. A finished task becomes a checked box, and a partial task shows its percent. Images are the files under `assets/`, without a filename caption.
 
+## Preview in Marked [preview-in-marked]
+
+In FerventMind, choose **View → Preview in Marked** to open a [streaming preview](Streaming_Preview.html). Marked updates while you work.
+
 ## Including a map [including-a-map]
 
 Including a `.fvmd` uses **FerventMind files** under **Embed as Mermaid mind maps:** in {% prefspane Apps %}. On produces a Mermaid diagram from the map. Off embeds the map's `preview.png`. See [Embedding Mind Maps and Outlines](Embedding_Mind_Maps_and_Outlines.html).
@@ -132,6 +137,10 @@ Wie dieses Markdown geschrieben wird, legen Sie in FerventMind fest, unter **Set
 **Headings** legt fest, wie viele Ebenen Überschriften bleiben. **Visible topics only** lässt Themen in einem eingeklappten Zweig aus. **Notes** und **Task checkboxes** bestimmen, ob Notizen und Aufgaben in dieses Markdown geschrieben werden. Diese Wahl gilt für den Markdown-Export, für Copy As und für die Markdown-Kopie, die in jeder Karte für Programme wie Marked gespeichert wird. Eine Karte kann sie unter **Definitions • MAP** überschreiben.
 
 Hat eine ältere Karte keine `text.md`, erstellt Marked eine Gliederung aus `map.xml`: Der Titel ist eine Überschrift der Ebene 1, die nächste Ebene ist eine Überschrift der Ebene 2, tiefere Themen werden verschachtelte Aufzählungen. Notizen werden zum Abschnittstext. Eine erledigte Aufgabe wird ein angehaktes Kästchen, eine angefangene Aufgabe zeigt ihren Prozentwert. Bilder sind die Dateien unter `assets/`, ohne eine Bildunterschrift mit dem Dateinamen.
+
+## Vorschau in Marked [preview-in-marked]
+
+Wählen Sie in FerventMind **View → Preview in Marked**, um eine [Streaming-Vorschau](Streaming_Preview.html) zu öffnen. Marked aktualisiert die Vorschau, während Sie an der Karte arbeiten.
 
 ## Eine Karte einbinden [including-a-map]
 
