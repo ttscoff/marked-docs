@@ -9,7 +9,7 @@ Mindmaps und Gliederungen können mit [Markeds Include-Syntax][include] oder der
 
 ### iThoughts X (.itmz) [ithoughts-x-itmz]
 
-iThoughts-Mindmap-Dateien sind ZIP-Archive, die Kartendaten und ein optionales Vorschaubild enthalten.
+iThoughts-Mindmap-Dateien sind ZIP-Archive, die Kartendaten und ein optionales Vorschaubild enthalten. MindBuilder speichert Karten im selben `.itmz`-Format, und Marked öffnet sie auf die gleiche Weise.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 

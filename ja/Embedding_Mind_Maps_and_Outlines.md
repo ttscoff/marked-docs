@@ -11,12 +11,11 @@
 
 ### iThoughts X (.itmz) [ithoughts-x-itmz]
 
-iThoughts マインド マップ ファイルは、マップ データとオプションのプレビュー イメージを含む zip アーカイブです。
-
+iThoughts マインド マップ ファイルは、マップ データとオプションのプレビュー イメージを含む zip アーカイブです。MindBuilder は同じ `.itmz` 形式でマップを保存し、Marked はそれを同じように開きます。
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-FerventMind のマップは、`map.xml`、`preview.png`、`assets/` を含む zip アーカイブです。[FerventMind](FerventMind.html) を参照してください。**Embed as Mermaid mind maps:** の **FerventMind files** は、取り込んだマップを見えている木か全体の木の Mermaid 図にします。オフではマップの `preview.png` を埋め込みます。折りたたまれたトピックは **Display only visible topics** に従います。
+FerventMind のマップは、`map.xml`、`text.md`、`preview.png`、`assets/` を含む zip アーカイブです。[FerventMind](FerventMind.html) を参照してください。**Embed as Mermaid mind maps:** の **FerventMind files** は、取り込んだマップを Mermaid 図にします。オフではマップの `preview.png` を埋め込みます。
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -43,8 +42,6 @@ OPML (Outline Processor Markup Language) は、アウトライナーやフィー
 **有効** (デフォルト) の場合、マークは含まれているマインド マップとアウトラインを [マーメイド](https://mermaid.js.org/) 図に変換します。
 
 **iThoughts、FerventMind、MindManager、FreeMind、OPML、Bike** — 整ったツリー レイアウトを使用してマーメイド マインドマップ図としてレンダリングされます。 iThoughts および MindManager の場合、形状情報 (円形、長方形、六角形など) が利用可能な場合には保存されます。 FreeMind (`.mm`) と OPML は同じマインド マップ形式を使用します。 Bike (`.bike`) のアウトラインでは、含まれているファイル名 (拡張子を除く) がマインド マップのルート ノードとして使用されます。ノード ラベルはプレーン テキストです (リンクはリンク テキストになり、タスクは ☐ / ☑ プレフィックスとして表示されます)。 Mermaid は、すべての Markdown プレビューにデフォルトで含まれています。
-
-FerventMind (`.fvmd`) は、**Display only visible topics** に合わせて、見えている木か全体の木を使います。
 
 **無効**の場合:
 

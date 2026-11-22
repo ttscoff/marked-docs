@@ -11,12 +11,11 @@ Le mappe mentali e i contorni possono essere incorporati nell'anteprima di Markd
 
 ### iPensieri X (.itmz) [ithoughts-x-itmz]
 
-I file delle mappe mentali di iThoughts sono archivi zip contenenti dati della mappa e un'immagine di anteprima opzionale.
-
+I file delle mappe mentali di iThoughts sono archivi zip contenenti dati della mappa e un'immagine di anteprima opzionale. MindBuilder salva le mappe in questo stesso formato `.itmz`, e Marked le apre allo stesso modo.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-Le mappe di FerventMind sono archivi zip che contengono `map.xml`, `preview.png` e `assets/`. Vedi [FerventMind](FerventMind.html). **FerventMind files**, sotto **Embed as Mermaid mind maps:**, trasforma una mappa inclusa in un diagramma Mermaid dell'albero visibile o completo. Disattivo incorpora il `preview.png` della mappa. Gli argomenti chiusi seguono **Display only visible topics**.
+Le mappe di FerventMind sono archivi zip che contengono `map.xml`, `text.md`, `preview.png` e `assets/`. Vedi [FerventMind](FerventMind.html). **FerventMind files**, sotto **Embed as Mermaid mind maps:**, trasforma una mappa inclusa in un diagramma Mermaid. Disattivo incorpora il `preview.png` della mappa.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -43,8 +42,6 @@ Vedi [Tree Outliner](Tree_Outliner.html). La casella **Tree Outliner outlines** 
 Quando **abilitato** (impostazione predefinita), le conversioni contrassegnate includevano mappe mentali e contorni nei diagrammi [Sirena](https://mermaid.js.org/):
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML e Bike** — Resi come diagrammi di mappe mentali a forma di sirena con il layout ad albero ordinato. Per iThoughts e MindManager, le informazioni sulla forma (arrotondato, rettangolo, esagono, ecc.) vengono conservate ove disponibili. FreeMind (`.mm`) e OPML utilizzano lo stesso formato di mappa mentale. I contorni della bici (`.bike`) utilizzano il nome file incluso (meno l'estensione) come nodo radice della mappa mentale. Le etichette dei nodi sono testo semplice (i collegamenti diventano testo del collegamento; le attività vengono visualizzate come prefissi ☐ / ☑). La sirena è inclusa per impostazione predefinita in ogni anteprima di Markdown.
-
-FerventMind (`.fvmd`) usa l'albero visibile o completo, in base a **Display only visible topics**.
 
 Quando **disabilitato**:
 

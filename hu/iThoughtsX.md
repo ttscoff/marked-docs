@@ -4,6 +4,8 @@
 
 A `.itmz` csomagként mentett [iThoughtsX][it] gondolattérképek előnézete közvetlenül megtekinthető a Marked (Megjelölt) menüben, miután a **Markdown Preview** engedélyezve van az iThoughtsX-ben.
 
+A MindBuilder ugyanebben a `.itmz` formátumban menti a térképeket. Egy MindBuilder-fájlt a Markedben ugyanúgy nyithat meg, mint egy iThoughts-dokumentumot.
+
 ## Markdown exportcsatorna engedélyezése [enable-markdown-export-channel]
 
 Az iThoughtsX beállításaiban a **Speciális** alatt állítsa be a **Markdown Preview** beállítást (a verziótól függően a "Markdown" vagy "Markdown Preview" szöveg lehet), majd válassza ki, hogy az exportált témák tartalmazzák-e a következőket:

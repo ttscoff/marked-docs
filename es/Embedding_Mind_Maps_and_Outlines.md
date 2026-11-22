@@ -11,12 +11,11 @@ Los mapas mentales y los esquemas se pueden incrustar en su vista previa de Mark
 
 ### iPensamientos X (.itmz) [ithoughts-x-itmz]
 
-Los archivos de mapas mentales de iThoughts son archivos zip que contienen datos de mapas y una imagen de vista previa opcional.
-
+Los archivos de mapas mentales de iThoughts son archivos zip que contienen datos de mapas y una imagen de vista previa opcional. MindBuilder guarda los mapas en este mismo formato `.itmz`, y Marked los abre del mismo modo.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-Los mapas de FerventMind son archivos zip que contienen `map.xml`, `preview.png` y `assets/`. Consulte [FerventMind](FerventMind.html). **FerventMind files**, bajo **Embed as Mermaid mind maps:**, convierte un mapa incluido en un diagrama Mermaid del árbol visible o completo. Desactivado incrusta el `preview.png` del mapa. Los temas plegados siguen **Display only visible topics**.
+Los mapas de FerventMind son archivos zip que contienen `map.xml`, `text.md`, `preview.png` y `assets/`. Consulte [FerventMind](FerventMind.html). **FerventMind files**, bajo **Embed as Mermaid mind maps:**, convierte un mapa incluido en un diagrama Mermaid. Desactivado incrusta el `preview.png` del mapa.
 
 ### Administrador mental (.mmap) [mindmanager-mmap]
 
@@ -43,8 +42,6 @@ Consulte [Tree Outliner](Tree_Outliner.html). La casilla **Tree Outliner outline
 Cuando está **habilitado** (el valor predeterminado), Marked convierte mapas mentales y esquemas incluidos en diagramas [Sirena](https://mermaid.js.org/):
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML y Bike**: renderizados como diagramas de mapas mentales de sirena con un diseño de árbol ordenado. Para iThoughts y MindManager, la información de forma (redondeada, rectangular, hexágono, etc.) se conserva cuando esté disponible. FreeMind (`.mm`) y OPML utilizan el mismo formato de mapa mental. Los esquemas de bicicletas (`.bike`) utilizan el nombre de archivo incluido (menos la extensión) como nodo raíz del mapa mental. Las etiquetas de los nodos son texto sin formato (los enlaces se convierten en texto de enlace; las tareas se muestran como prefijos ☐ / ☑). Mermaid se incluye de forma predeterminada en cada vista previa de Markdown.
-
-FerventMind (`.fvmd`) usa el árbol visible o completo, según **Display only visible topics**.
 
 Cuando **deshabilitado**:
 

@@ -2,6 +2,8 @@
 
 Les cartes mentales [iThoughtsX][it] enregistrées sous forme de packages `.itmz` peuvent être prévisualisées directement dans Marked une fois que **Markdown Preview** est activé dans iThoughtsX.
 
+MindBuilder enregistre les cartes dans le même format `.itmz`. Ouvrez un fichier MindBuilder dans Marked de la même façon qu'un document iThoughts.
+
 ## Activer le canal d'exportation Markdown [enable-markdown-export-channel]
 
 Dans les préférences d'iThoughtsX, sous **Avancé**, définissez **Aperçu Markdown** (le libellé peut indiquer « Markdown » ou « Aperçu Markdown » selon la version), puis choisissez si les sujets exportés incluent :

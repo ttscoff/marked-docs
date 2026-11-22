@@ -11,12 +11,11 @@ Gondolattérképek és körvonalak beágyazhatók a Markdown előnézetébe a [M
 
 ### iThoughts X (.itmz) [ithoughts-x-itmz]
 
-Az iThoughts gondolattérkép-fájlok zip-archívumok, amelyek térképadatokat és opcionális előnézeti képet tartalmaznak.
-
+Az iThoughts gondolattérkép-fájlok zip-archívumok, amelyek térképadatokat és opcionális előnézeti képet tartalmaznak. A MindBuilder ugyanebben a `.itmz` formátumban menti a térképeket, és a Marked ugyanúgy nyitja meg őket.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-A FerventMind-térképek zip-archívumok, bennük `map.xml`, `preview.png` és `assets/`. Lásd: [FerventMind](FerventMind.html). A **FerventMind files** jelölőnégyzet az **Embed as Mermaid mind maps:** csoportban a beillesztett térképet a látható vagy a teljes fa Mermaid-diagramjává alakítja. Kikapcsolva a térkép `preview.png` képe ágyazódik be. Az összehajtott témák a **Display only visible topics** beállítást követik.
+A FerventMind-térképek zip-archívumok, bennük `map.xml`, `text.md`, `preview.png` és `assets/`. Lásd: [FerventMind](FerventMind.html). A **FerventMind files** jelölőnégyzet az **Embed as Mermaid mind maps:** csoportban a beillesztett térképet Mermaid-diagrammá alakítja. Kikapcsolva a térkép `preview.png` képe ágyazódik be.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -43,8 +42,6 @@ Lásd: [Tree Outliner](Tree_Outliner.html). A **Tree Outliner outlines** jelöl�
 Ha **engedélyezve** (alapértelmezett), a megjelölt konvertálások gondolattérképeket és körvonalakat tartalmaztak [Hableány](https://mermaid.js.org/) diagramokká:
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** – Mermaid gondolattérkép-diagramok formájában renderelt fa elrendezéssel. Az iThoughts és a MindManager esetében az alakinformációk (lekerekített, téglalap, hatszög stb.) megőrződnek, ahol rendelkezésre állnak. A FreeMind (`.mm`) és az OPML ugyanazt a gondolattérkép-formátumot használja. A kerékpáros (`.bike`) körvonalai a mellékelt fájlnevet (mínusz kiterjesztést) használják gondolattérkép gyökércsomópontként. A csomópontcímkék egyszerű szövegesek (a hivatkozások hivatkozásszöveggé válnak; a feladatok ☐ / ☑ előtagként jelennek meg). A Mermaid alapértelmezés szerint minden Markdown előnézetben szerepel.
-
-A FerventMind (`.fvmd`) a látható vagy a teljes fát használja, a **Display only visible topics** szerint.
 
 Ha **letiltva**:
 

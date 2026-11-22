@@ -94,16 +94,6 @@ Open .scriv files in Scrivener when opened in Marked
 Convert change tracking <-> CriticMarkup
 : If enabled, change tracking in Word documents will be converted to CriticMarkup when imported, and CriticMarkup will be converted to Word change tracking when exporting DOCX files.
 
-#### FerventMind [ferventmind]
-
-[(Info on FerventMind)](FerventMind.html)
-
-Display only visible topics
-: Skips topics inside a folded branch when Marked builds the outline from `map.xml`. It does not change a `text.md` the app already saved.
-
-Headings through level
-: The map title is heading 1. Topics continue as headings through this level, and deeper topics become nested lists. The default is 2.
-
 #### Tree Outliner [tree-outliner]
 
 [(Info on Tree Outliner)](Tree_Outliner.html)
@@ -116,7 +106,7 @@ Headings through level
 Embed as Mermaid mind maps
 : Each checkbox controls one included format. When **on**, the included file is converted to a Mermaid mind map diagram (tidy-tree layout). When **off**, Marked uses the alternative for that format.
 : **Mind maps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). If on: Mermaid mind map. If off: iThoughts embeds its preview image; MindManager and FreeMind convert to nested Markdown lists.
-: **FerventMind files** (.fvmd). If on: Mermaid mind map of the visible or full tree, matching **Display only visible topics**. If off: the map's `preview.png`. See [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). If on: Mermaid mind map. If off: the map's `preview.png`. See [FerventMind](FerventMind.html).
 : **OPML files** (.opml). If on: Mermaid mind map. If off: nested Markdown list.
 : **OmniOutliner outlines** (.ooutline). If on: Mermaid mind map. If off: nested Markdown list (or checklist where applicable).
 : **Bike outlines**. If on: Mermaid mind map. If off: nested Markdown list. See [Bike](Bike.html).

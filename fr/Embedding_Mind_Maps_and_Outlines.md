@@ -9,12 +9,11 @@ Les cartes mentales et les plans peuvent être intégrés dans votre aperçu Mar
 
 ### iThoughtsX (.itmz) [ithoughts-x-itmz]
 
-Les fichiers de cartes mentales iThoughts sont des archives zip contenant des données cartographiques et une image d'aperçu facultative.
-
+Les fichiers de cartes mentales iThoughts sont des archives zip contenant des données cartographiques et une image d'aperçu facultative. MindBuilder enregistre les cartes dans ce même format `.itmz`, et Marked les ouvre de la même façon.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-Les cartes FerventMind sont des archives zip contenant `map.xml`, `preview.png` et `assets/`. Voir [FerventMind](FerventMind.html). **FerventMind files**, sous **Embed as Mermaid mind maps :**, transforme une carte incluse en diagramme Mermaid de l'arbre visible ou complet. Désactivé, il intègre le `preview.png` de la carte. Les sujets repliés suivent **Display only visible topics**.
+Les cartes FerventMind sont des archives zip contenant `map.xml`, `text.md`, `preview.png` et `assets/`. Voir [FerventMind](FerventMind.html). **FerventMind files**, sous **Embed as Mermaid mind maps :**, transforme une carte incluse en diagramme Mermaid. Désactivé, il intègre le `preview.png` de la carte.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -41,8 +40,6 @@ Voir [Tree Outliner](Tree_Outliner.html). La case **Tree Outliner outlines** ré
 Lorsqu'il est **activé** (valeur par défaut), Marked convertit les cartes mentales et les contours inclus en diagrammes [Mermaid](https://mermaid.js.org/) :
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** : Rendus sous forme de diagrammes mindmap Mermaid avec la disposition en arbre bien rangé. Pour iThoughts et MindManager, les informations de forme (arrondi, rectangle, hexagone, etc.) sont conservées lorsqu'elles sont disponibles. FreeMind (`.mm`) et OPML utilisent le même format de carte mentale. Les contours Bike (`.bike`) utilisent le nom de fichier inclus (moins l'extension) comme nœud racine de la carte mentale. Les étiquettes de nœud sont en texte brut (les liens deviennent du texte de lien ; les tâches s'affichent sous la forme de préfixes ☐/☑). Mermaid est incluse par défaut dans chaque aperçu Markdown.
-
-FerventMind (`.fvmd`) utilise l'arbre visible ou complet, selon **Display only visible topics**.
 
 Lorsque **désactivé** :
 

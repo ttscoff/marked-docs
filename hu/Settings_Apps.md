@@ -97,16 +97,6 @@ Változáskövetés átalakítása <-> CriticMarkup
 : Ha engedélyezve van, a Word dokumentumok változáskövetése importáláskor CriticMarkup formátumba, a DOCX fájlok exportálásakor pedig a CriticMarkup Word változáskövetéssé.
 
 
-#### FerventMind [ferventmind]
-
-[(Információ a FerventMindről)](FerventMind.html)
-
-Display only visible topics
-: Kihagyja az összehajtott ágban lévő témákat, amikor a Marked a `map.xml` alapján készíti a vázlatot. A térképben már mentett `text.md` fájlt nem módosítja.
-
-Headings through level
-: A térkép címe az 1. címsor. A témák eddig a szintig címsorok maradnak, a mélyebb témák beágyazott listák lesznek. Az alapértelmezés 2.
-
 #### Tree Outliner [tree-outliner]
 
 [(Tudnivalók a Tree Outlinerről)](Tree_Outliner.html)
@@ -119,7 +109,7 @@ Headings through level
 Beágyazás sellő gondolattérképként
 : Minden jelölőnégyzet egy mellékelt formátumot vezérel. Ha **be** van kapcsolva, a mellékelt fájl Hableány gondolattérkép-diagrammá alakul (tidy-fa-layout). Ha **ki**, a Marked az adott formátum alternatíváját használja.
 : **Mind maps** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki van kapcsolva: az iThoughts beágyazza előnézeti képét; A MindManager és a FreeMind beágyazott Markdown listákká konvertál.
-: **FerventMind files** (.fvmd). Ha be van kapcsolva: a látható vagy a teljes fa Mermaid-gondolattérképe, a **Display only visible topics** szerint. Ha ki van kapcsolva: a térkép `preview.png` képe. Lásd: [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). Ha be van kapcsolva: Mermaid-gondolattérkép. Ha ki van kapcsolva: a térkép `preview.png` képe. Lásd: [FerventMind](FerventMind.html).
 : **OPML fájlok** (.opml). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki: beágyazott Markdown lista.
 : **OmniOutliner körvonalai** (.ooutline). Ha be van kapcsolva: Mermaid gondolattérkép. Ha ki van kapcsolva: beágyazott Markdown lista (vagy ellenőrző lista, ahol van).
 : **Bike outlines**. Ha be van kapcsolva: Mermaid-gondolattérkép. Ha ki: beágyazott Markdown-lista. Lásd: [Bike](Bike.html).

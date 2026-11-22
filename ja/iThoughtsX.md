@@ -4,6 +4,8 @@
 
 iThoughtsX 内で **Markdown プレビュー** を有効にすると、`.itmz` パッケージとして保存された [iThoughtsX][it] マインド マップを Marked で直接プレビューできます。
 
+MindBuilder は同じ `.itmz` 形式でマップを保存します。MindBuilder のファイルは、iThoughts の書類と同じように Marked で開きます。
+
 ## Markdown エクスポート チャネルを有効にする [enable-markdown-export-channel]
 
 iThoughtsX 設定の **詳細** で、**Markdown プレビュー** を設定し (バージョンに応じて文言が「Markdown」または「Markdown Preview」と表示される場合があります)、エクスポートされるトピックに以下が含まれるかどうかを選択します。

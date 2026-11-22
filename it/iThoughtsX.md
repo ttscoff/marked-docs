@@ -4,6 +4,8 @@
 
 [iThoughtsX][it] le mappe mentali salvate come pacchetti `.itmz` possono essere visualizzate in anteprima direttamente in Marked una volta abilitata l'**Anteprima Markdown** all'interno di iThoughtsX.
 
+MindBuilder salva le mappe nello stesso formato `.itmz`. Un file di MindBuilder si apre in Marked come un documento di iThoughts.
+
 ## Abilita il canale di esportazione Markdown [enable-markdown-export-channel]
 
 Nelle preferenze di iThoughtsX, in **Avanzate**, imposta **Anteprima Markdown** (la dicitura può essere "Markdown" o "Anteprima Markdown" a seconda della versione), quindi scegli se gli argomenti esportati includono:

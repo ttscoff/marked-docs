@@ -9,11 +9,11 @@ Mind maps and outlines can be embedded in your Markdown preview using [Marked's 
 
 ### iThoughts X (.itmz) [ithoughts-x-itmz]
 
-iThoughts mind map files are zip archives containing map data and an optional preview image.
+iThoughts mind map files are zip archives containing map data and an optional preview image. MindBuilder saves maps in this same `.itmz` format, and Marked opens them the same way.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-FerventMind maps are zip archives containing `map.xml`, `preview.png`, and `assets/`. See [FerventMind](FerventMind.html). **FerventMind files** under **Embed as Mermaid mind maps:** turns an included map into a Mermaid diagram of the visible or full tree. Off embeds the map's `preview.png`. Folded topics follow **Display only visible topics**.
+FerventMind maps are zip archives containing `map.xml`, `text.md`, `preview.png`, and `assets/`. See [FerventMind](FerventMind.html). **FerventMind files** under **Embed as Mermaid mind maps:** turns an included map into a Mermaid diagram. Off embeds the map's `preview.png`.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -52,7 +52,7 @@ In {% prefspane Apps %}, under *Mind Maps and Outlines*, the group **Embed as Me
 
 When a format's checkbox is **enabled** (the default for supported formats), Marked converts included files of that type to [Mermaid](https://mermaid.js.org/) diagrams:
 
-**iThoughts, FerventMind, MindManager, FreeMind, OPML, Bike, OmniOutliner, and Tree Outliner** — Rendered as Mermaid mindmap diagrams with the tidy-tree layout. For iThoughts and MindManager, shape information (rounded, rectangle, hexagon, etc.) is preserved where available. FreeMind (`.mm`) and OPML use the same mind map format. FerventMind (`.fvmd`) uses the visible or full tree, matching **Display only visible topics**. Bike (`.bike`) outlines use the included filename (minus extension) as the mind map root node. Tree Outliner uses the document title as the root. Node labels are plain text (links become link text; tasks show as ☐ / ☑ prefixes). Mermaid is included by default in every Markdown preview.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML, Bike, OmniOutliner, and Tree Outliner** — Rendered as Mermaid mindmap diagrams with the tidy-tree layout. For iThoughts and MindManager, shape information (rounded, rectangle, hexagon, etc.) is preserved where available. FreeMind (`.mm`) and OPML use the same mind map format. Bike (`.bike`) outlines use the included filename (minus extension) as the mind map root node. Tree Outliner uses the document title as the root. Node labels are plain text (links become link text; tasks show as ☐ / ☑ prefixes). Mermaid is included by default in every Markdown preview.
 
 When a format's checkbox is **disabled**:
 

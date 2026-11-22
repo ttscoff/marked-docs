@@ -95,16 +95,6 @@ Convertir le suivi des modifications <-> CriticMarkup
 : Si cette option est activée, le suivi des modifications des documents Word sera converti en CriticMarkup lors de l'importation, et CriticMarkup sera converti en suivi des modifications Word lors de l'exportation de fichiers DOCX.
 
 
-#### FerventMind [ferventmind]
-
-[(Informations sur FerventMind)](FerventMind.html)
-
-Display only visible topics
-: Ignore les sujets situés dans une branche repliée lorsque Marked construit le plan à partir de `map.xml`. Il ne modifie pas un `text.md` déjà enregistré par l'application.
-
-Headings through level
-: Le titre de la carte est un titre de niveau 1. Les sujets restent des titres jusqu'à ce niveau, et les sujets plus profonds deviennent des listes imbriquées. La valeur par défaut est 2.
-
 #### Tree Outliner [tree-outliner]
 
 [(Informations sur Tree Outliner)](Tree_Outliner.html)
@@ -117,7 +107,7 @@ Headings through level
 Intégrer sous forme de cartes mentales Mermaid
 : Chaque case à cocher contrôle un format pris en charge. Lorsqu'elle est **activée**, le fichier concerné est converti en diagramme de carte mentale Mermaid (disposition en arbre ordonné). Lorsqu'elle est **désactivée**, Marked utilise l'alternative prévue pour ce format.
 : **Cartes mentales** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Si activé : carte mentale Mermaid. Si désactivé : iThoughts intègre son image d'aperçu ; MindManager et FreeMind sont convertis en listes Markdown imbriquées.
-: **FerventMind files** (.fvmd). Si activé : carte mentale Mermaid de l'arbre visible ou complet, selon **Display only visible topics**. Si désactivé : le `preview.png` de la carte. Voir [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). Si activé : carte mentale Mermaid. Si désactivé : le `preview.png` de la carte. Voir [FerventMind](FerventMind.html).
 : **Fichiers OPML** (.opml). Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée.
 : **Plans OmniOutliner** (.ooutline). Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée (ou liste de tâches le cas échéant).
 : **Plans Bike**. Si activé : carte mentale Mermaid. Si désactivé : liste Markdown imbriquée. Voir [Bike](Bike.html).

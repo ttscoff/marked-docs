@@ -1,19 +1,23 @@
 # <%= @title %>
 
-FerventMind のマップ (`.fvmd`) は Marked で開きます。Marked はパッケージを展開します。中に `text.md` があれば、そのファイルがプレビューです。なければ、Marked は `map.xml` からアウトラインを作ります。
+FerventMind のマップ (`.fvmd`) は Marked で開きます。Marked はパッケージを展開し、FerventMind が保存した `text.md` をプレビューします。
 
-## マップから作るアウトライン [outline-from-the-map]
+## マップの中の Markdown [markdown-in-the-map]
 
-トピックの文字は **Headings through level** で決めたレベルまで見出しになります (既定は 2)。それより深いトピックは入れ子の箇条書きになるので、その階層のタスクはリストのチェックボックスを保ちます。ノートは節の本文になります。完了したタスクはチェック済みの箱になり、途中のタスクはパーセントを示します。画像は `assets/` 以下のファイルで、ファイル名のキャプションは付きません。
+その Markdown の書き方は、FerventMind の **Settings > Files And Export** にある **Markdown** グループで決めます。Marked は保存されたファイルをそのまま表示します。
 
-## 見えているトピックだけを表示 [display-only-visible-topics]
+![FerventMind Files And Export][fm-export]
 
-{% prefspane Apps %} の *FerventMind* にある **Display only visible topics** は、Marked がそのアウトラインを作るとき、折りたたまれた枝の中のトピックを飛ばします。アプリがすでに保存した `text.md` は変えません。
+**Headings** は見出しのままにする階層の数です。**Visible topics only** は、折りたたまれた枝の中のトピックを省きます。**Notes** と **Task checkboxes** は、ノートとタスクをその Markdown に書くかどうかを決めます。これらの設定は、Markdown の書き出し、Copy As、そして Marked のようなアプリのために各マップへ保存される Markdown に使われます。マップごとに **Definitions • MAP** で上書きできます。
+
+古いマップに `text.md` がないときは、Marked が `map.xml` からアウトラインを作ります。タイトルは見出し 1、次の階層は見出し 2、それより深いトピックは入れ子の箇条書きになります。ノートは節の本文になります。完了したタスクはチェック済みの箱になり、途中のタスクはパーセントを示します。画像は `assets/` 以下のファイルで、ファイル名のキャプションは付きません。
 
 ## マップを取り込む [including-a-map]
 
-`.fvmd` の取り込みは、{% prefspane Apps %} の **Embed as Mermaid mind maps:** にある **FerventMind files** を使います。オンでは、上のチェックボックスに合わせて、見えている木か全体の木の Mermaid 図になります。オフではマップの `preview.png` を埋め込みます。[マインド マップとアウトラインの埋め込み](Embedding_Mind_Maps_and_Outlines.html) を参照してください。
+`.fvmd` の取り込みは、{% prefspane Apps %} の **Embed as Mermaid mind maps:** にある **FerventMind files** を使います。オンではマップから Mermaid 図を作ります。オフではマップの `preview.png` を埋め込みます。[マインド マップとアウトラインの埋め込み](Embedding_Mind_Maps_and_Outlines.html) を参照してください。
 
 ## エディタで開く [open-in-editor]
 
 **Open in Editor** ({% kbd cmd E %}) は FerventMind を起動します。
+
+[fm-export]: images/screenshots/ferventmind-files-and-export.jpg @2x width=808px height=640px

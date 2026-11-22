@@ -97,16 +97,6 @@ Converti il rilevamento delle modifiche <-> CriticMarkup
 : se abilitato, il rilevamento delle modifiche nei documenti Word verrà convertito in CriticMarkup al momento dell'importazione e CriticMarkup verrà convertito nel rilevamento delle modifiche di Word durante l'esportazione di file DOCX.
 
 
-#### FerventMind [ferventmind]
-
-[(Informazioni su FerventMind)](FerventMind.html)
-
-Display only visible topics
-: Salta gli argomenti dentro un ramo chiuso quando Marked costruisce la struttura a partire da `map.xml`. Non modifica un `text.md` già salvato dall'applicazione.
-
-Headings through level
-: Il titolo della mappa è il titolo di livello 1. Gli argomenti restano titoli fino a questo livello, e gli argomenti più profondi diventano elenchi annidati. Il valore predefinito è 2.
-
 #### Tree Outliner [tree-outliner]
 
 [(Informazioni su Tree Outliner)](Tree_Outliner.html)
@@ -119,7 +109,7 @@ Headings through level
 Incorpora come mappe mentali della Sirena
 : ciascuna casella di controllo controlla un formato incluso. Quando **attivo**, il file incluso viene convertito in un diagramma della mappa mentale della sirena (layout ad albero ordinato). Quando **disattivato**, Marked utilizza l'alternativa per quel formato.
 : **Mappe mentali** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Se attivo: mappa mentale della sirena. Se disattivato: iThoughts incorpora la sua immagine di anteprima; MindManager e FreeMind si convertono in elenchi Markdown nidificati.
-: **FerventMind files** (.fvmd). Se attivo: mappa mentale Mermaid dell'albero visibile o completo, in base a **Display only visible topics**. Se disattivo: il `preview.png` della mappa. Vedi [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). Se attivo: mappa mentale Mermaid. Se disattivo: il `preview.png` della mappa. Vedi [FerventMind](FerventMind.html).
 : **File OPML** (.opml). Se attivo: mappa mentale della sirena. Se disattivato: elenco Markdown nidificato.
 : **Contorni OmniOutliner** (.ooutline). Se attivo: mappa mentale della sirena. Se disattivato: elenco Markdown nidificato (o elenco di controllo, ove applicabile).
 : **Bike outlines**. Se attivo: mappa mentale Mermaid. Se disattivato: elenco Markdown nidificato. Vedi [Bike](Bike.html).

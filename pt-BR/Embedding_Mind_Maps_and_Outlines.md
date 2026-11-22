@@ -11,12 +11,11 @@ Mapas mentais e contornos podem ser incorporados em sua visualização do Markdo
 
 ### iPensamentos X (.itmz) [ithoughts-x-itmz]
 
-Os arquivos de mapas mentais do iThoughts são arquivos zip contendo dados do mapa e uma imagem de visualização opcional.
-
+Os arquivos de mapas mentais do iThoughts são arquivos zip contendo dados do mapa e uma imagem de visualização opcional. O MindBuilder salva mapas neste mesmo formato `.itmz`, e o Marked os abre do mesmo modo.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-Os mapas do FerventMind são arquivos zip com `map.xml`, `preview.png` e `assets/`. Consulte [FerventMind](FerventMind.html). **FerventMind files**, em **Embed as Mermaid mind maps:**, transforma um mapa incluído em um diagrama Mermaid da árvore visível ou completa. Desativado incorpora o `preview.png` do mapa. Os tópicos dobrados seguem **Display only visible topics**.
+Os mapas do FerventMind são arquivos zip com `map.xml`, `text.md`, `preview.png` e `assets/`. Consulte [FerventMind](FerventMind.html). **FerventMind files**, em **Embed as Mermaid mind maps:**, transforma um mapa incluído em um diagrama Mermaid. Desativado incorpora o `preview.png` do mapa.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -43,8 +42,6 @@ Consulte [Tree Outliner](Tree_Outliner.html). A caixa **Tree Outliner outlines**
 Quando **ativado** (o padrão), as conversões marcadas incluem mapas mentais e contornos para diagramas [Sereia](https://mermaid.js.org/):
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML e Bike** — Renderizados como diagramas de mapa mental Mermaid com layout de árvore organizada. Para iThoughts e MindManager, as informações de forma (arredondado, retângulo, hexágono, etc.) são preservadas quando disponíveis. FreeMind (`.mm`) e OPML usam o mesmo formato de mapa mental. Os contornos da bicicleta (`.bike`) usam o nome do arquivo incluído (menos a extensão) como o nó raiz do mapa mental. Os rótulos dos nós são texto simples (os links se tornam texto do link; as tarefas são mostradas como prefixos ☐ / ☑). Mermaid está incluída por padrão em todas as visualizações do Markdown.
-
-O FerventMind (`.fvmd`) usa a árvore visível ou completa, conforme **Display only visible topics**.
 
 Quando **desativado**:
 

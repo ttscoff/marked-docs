@@ -9,12 +9,11 @@ Mindmaps en overzichten kunnen in uw Markdown preview worden ingesloten met behu
 
 ### iThoughts X (.itmz) [ithoughts-x-itmz]
 
-iThoughts mindmapbestanden zijn zip-archieven met kaartgegevens en een optionele voorbeeldafbeelding.
-
+iThoughts mindmapbestanden zijn zip-archieven met kaartgegevens en een optionele voorbeeldafbeelding. MindBuilder bewaart kaarten in ditzelfde `.itmz`-formaat, en Marked opent ze op dezelfde manier.
 
 ### FerventMind (.fvmd) [ferventmind-fvmd]
 
-FerventMind-kaarten zijn zip-archieven met `map.xml`, `preview.png` en `assets/`. Zie [FerventMind](FerventMind.html). **FerventMind files** onder **Embed as Mermaid mind maps:** maakt van een ingevoegde kaart een Mermaid-diagram van de zichtbare of volledige boom. Uit voegt de `preview.png` van de kaart in. Ingeklapte onderwerpen volgen **Display only visible topics**.
+FerventMind-kaarten zijn zip-archieven met `map.xml`, `text.md`, `preview.png` en `assets/`. Zie [FerventMind](FerventMind.html). **FerventMind files** onder **Embed as Mermaid mind maps:** maakt van een ingevoegde kaart een Mermaid-diagram. Uit voegt de `preview.png` van de kaart in.
 
 ### MindManager (.mmap) [mindmanager-mmap]
 
@@ -41,8 +40,6 @@ Zie [Tree Outliner](Tree_Outliner.html). Het selectievakje **Tree Outliner outli
 Indien **ingeschakeld** (standaard), converteert Marked de meegeleverde mindmaps en overzichten naar [Mermaid](https://mermaid.js.org/) diagrammen:
 
 **iThoughts, FerventMind, MindManager, FreeMind, OPML & Bike** — Weergegeven als Mermaid-mindmapdiagrammen met de overzichtelijke boomstructuur. Voor iThoughts en MindManager wordt vorminformatie (rond, rechthoekig, zeshoek, etc.) behouden waar beschikbaar. FreeMind (`.mm`) en OPML gebruiken hetzelfde mindmapformaat. Fietscontouren (`.bike`) gebruiken de meegeleverde bestandsnaam (minus extensie) als het hoofdknooppunt van de mindmap. Knooppuntlabels zijn platte tekst (koppelingen worden koppelingstekst; taken worden weergegeven als voorvoegsels ☐ / ☑). Zeemeermin is standaard opgenomen in elk Markdown voorbeeld.
-
-FerventMind (`.fvmd`) gebruikt de zichtbare of volledige boom, volgens **Display only visible topics**.
 
 Wanneer **uitgeschakeld**:
 

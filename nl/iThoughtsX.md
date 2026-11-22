@@ -2,6 +2,8 @@
 
 [iThoughtsX][it] mindmaps opgeslagen als `.itmz` pakketten kunnen direct worden bekeken in Marked zodra **Markdown Preview** is ingeschakeld in iThoughtsX.
 
+MindBuilder bewaart kaarten in hetzelfde `.itmz`-formaat. Open een MindBuilder-bestand in Marked op dezelfde manier als een iThoughts-document.
+
 ## Schakel Markdown exportkanaal in [enable-markdown-export-channel]
 
 In de iThoughtsX-voorkeuren stelt u onder **Geavanceerd** **Markdown Preview** in (de tekst kan "Markdown" of "Markdown Preview" zijn, afhankelijk van de versie) en kies vervolgens of de geëxporteerde onderwerpen het volgende bevatten:

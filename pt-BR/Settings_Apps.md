@@ -97,16 +97,6 @@ Converter controle de alterações <-> CriticMarkup
 : se ativado, o controle de alterações em documentos do Word será convertido em CriticMarkup quando importado, e o CriticMarkup será convertido em controle de alterações do Word ao exportar arquivos DOCX.
 
 
-#### FerventMind [ferventmind]
-
-[(Informações sobre o FerventMind)](FerventMind.html)
-
-Display only visible topics
-: Ignora os tópicos dentro de um ramo dobrado quando o Marked monta o esboço a partir de `map.xml`. Não altera um `text.md` que o aplicativo já tenha salvo.
-
-Headings through level
-: O título do mapa é o título 1. Os tópicos continuam como títulos até este nível, e os tópicos mais profundos viram listas aninhadas. O padrão é 2.
-
 #### Tree Outliner [tree-outliner]
 
 [(Informações sobre o Tree Outliner)](Tree_Outliner.html)
@@ -119,7 +109,7 @@ Headings through level
 Incorporar mapas mentais como sereia
 : cada caixa de seleção controla um formato incluído. Quando **ativado**, o arquivo incluído é convertido em um diagrama de mapa mental Mermaid (layout de árvore organizada). Quando **desativado**, Marcado usa a alternativa para esse formato.
 : **Mapas mentais** — iThoughts X (.itmz), MindManager (.mmap), FreeMind (.mm). Se estiver ativado: mapa mental da sereia. Se desativado: o iThoughts incorpora sua imagem de visualização; MindManager e FreeMind são convertidos em listas Markdown aninhadas.
-: **FerventMind files** (.fvmd). Se estiver ativado: mapa mental Mermaid da árvore visível ou completa, conforme **Display only visible topics**. Se desativado: o `preview.png` do mapa. Consulte [FerventMind](FerventMind.html).
+: **FerventMind files** (.fvmd). Se estiver ativado: mapa mental Mermaid. Se desativado: o `preview.png` do mapa. Consulte [FerventMind](FerventMind.html).
 : **Arquivos OPML** (.opml). Se estiver ativado: mapa mental da sereia. Se desativado: lista Markdown aninhada.
 : **Contornos do OmniOutliner** (.ooutline). Se estiver ativado: mapa mental da sereia. Se desativado: lista Markdown aninhada (ou lista de verificação quando aplicável).
 : **Bike outlines**. Se estiver ativado: mapa mental Mermaid. Se desativado: lista Markdown aninhada. Consulte [Bike](Bike.html).

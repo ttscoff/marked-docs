@@ -97,16 +97,6 @@ Marked で開かれた .scriv ファイルを Scrivener で開く
 : 有効にすると、Word ドキュメントの変更追跡はインポート時に CriticMarkup に変換され、DOCX ファイルのエクスポート時に CriticMarkup が Word の変更追跡に変換されます。
 
 
-#### FerventMind [ferventmind]
-
-[(FerventMind について)](FerventMind.html)
-
-Display only visible topics
-: Marked が `map.xml` からアウトラインを作るとき、折りたたまれた枝の中のトピックを飛ばします。アプリがすでに保存した `text.md` は変えません。
-
-Headings through level
-: マップのタイトルが見出し 1 です。トピックはこのレベルまで見出しのまま続き、それより深いトピックは入れ子のリストになります。既定は 2 です。
-
 #### Tree Outliner [tree-outliner]
 
 [(Tree Outliner について)](Tree_Outliner.html)
@@ -119,7 +109,7 @@ Headings through level
 マーメイド マインド マップとして埋め込む
 : 各チェックボックスは、含まれる 1 つの形式を制御します。 **オン**の場合、含まれているファイルはマーメイド マインド マップ図 (整頓されたツリー レイアウト) に変換されます。 **オフ**の場合、Marked はその形式の代替を使用します。
 : **マインド マップ** — iThoughts X (.itmz)、MindManager (.mmap)、FreeMind (.mm)。オンの場合: マーメイド マインド マップ。オフの場合: iThoughts はプレビュー画像を埋め込みます。 MindManager と FreeMind は、ネストされた Markdown リストに変換されます。
-: **FerventMind files** (.fvmd)。オンの場合: **Display only visible topics** に合わせた、見えている木か全体の木の Mermaid マインドマップ。オフの場合: マップの `preview.png`。[FerventMind](FerventMind.html) を参照。
+: **FerventMind files** (.fvmd)。オンの場合: Mermaid マインドマップ。オフの場合: マップの `preview.png`。[FerventMind](FerventMind.html) を参照。
 : **OPML ファイル** (.opml)。オンの場合: マーメイド マインド マップ。オフの場合: ネストされたマークダウン リスト。
 : **OmniOutliner のアウトライン** (.ooutline)。オンの場合: マーメイド マインド マップ。オフの場合: ネストされたマークダウン リスト (または該当する場合はチェックリスト)。
 : **Bike outlines**。オンの場合: Mermaid マインドマップ。オフの場合: 入れ子の Markdown リスト。[Bike](Bike.html) を参照。
