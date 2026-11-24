@@ -44,3 +44,5 @@ So erstellen Sie einen eigenen Exportstil:
 5. Kopieren Sie aus dem entpackten Paket die `word/styles.xml` nach `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.xml` (derselbe Basisname wie die `.thmx`, falls Sie eine erstellt haben).
 
 Beim nächsten DOCX-Export aus Marked erscheint Ihr Stil im Stil-Menü des Speicherdialogs.
+
+**Mac App Store.** Beim ersten DOCX-Export fragt Marked nach Zugriff auf Ihren Ordner für eigene Word-Stile. Wählen Sie `~/Library/Application Support/Marked/Custom Word Styles/` (oder einen anderen Ordner mit Ihren Stilen). Marked merkt sich diese Freigabe. Später können Sie den Zugriff über **Choose Custom Word Styles Folder…** im Stil-Menü des Speicherdialogs erteilen oder ändern. Bis zur Freigabe erscheinen nur Stile aus Markeds Sandbox-Container. Direct- und Setapp-Builds benötigen diesen Schritt nicht.
