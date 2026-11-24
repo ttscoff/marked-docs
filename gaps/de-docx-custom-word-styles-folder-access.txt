@@ -1,0 +1,31 @@
+# Help translation gap — de — Working_With_DOCX.md
+# Feature: Mac App Store Custom Word Styles folder grant
+# Generated: 2026-11-24
+#
+# German Working_With_DOCX.md in this repo was updated with the translation
+# below. Keep this gap so marked-docs / other locales can apply the same
+# English target. Do not machine-overwrite the rest of the German page.
+#
+# Return: confirm de/Working_With_DOCX.md matches the GERMAN APPLIED block,
+# or PR the same insert to ttscoff/marked-docs.
+
+=== LOCATION ===
+File: de/Working_With_DOCX.md
+Section heading: Eigene Exportstile hinzufügen [adding-custom-export-styles]
+Insert: new paragraph after the closing sentence that begins
+"Beim nächsten DOCX-Export aus Marked erscheint Ihr Stil…"
+
+=== CURRENT GERMAN (keep this; insert the new paragraph after it) ===
+Beim nächsten DOCX-Export aus Marked erscheint Ihr Stil im Stil-Menü des Speicherdialogs.
+
+=== ENGLISH TARGET (translate to German and insert after the block above) ===
+**Mac App Store.** The first time you export a DOCX, Marked asks for access to your Custom Word Styles folder. Choose `~/Library/Application Support/Marked/Custom Word Styles/` (or another folder that holds your styles). Marked remembers that grant. You can grant or change the folder later from **Choose Custom Word Styles Folder…** in the Style menu of the Save dialog. Until you grant access, only styles inside Marked’s sandbox container appear. Direct and Setapp builds do not need this step.
+
+=== GERMAN APPLIED (already in HelpDocs/content/de/Working_With_DOCX.md) ===
+**Mac App Store.** Beim ersten DOCX-Export fragt Marked nach Zugriff auf Ihren Ordner für eigene Word-Stile. Wählen Sie `~/Library/Application Support/Marked/Custom Word Styles/` (oder einen anderen Ordner mit Ihren Stilen). Marked merkt sich diese Freigabe. Später können Sie den Zugriff über **Choose Custom Word Styles Folder…** im Stil-Menü des Speicherdialogs erteilen oder ändern. Bis zur Freigabe erscheinen nur Stile aus Markeds Sandbox-Container. Direct- und Setapp-Builds benötigen diesen Schritt nicht.
+
+=== NOTES ===
+- Keep the menu title byte-identical: **Choose Custom Word Styles Folder…** (UI string is English)
+- Keep the path byte-identical: `~/Library/Application Support/Marked/Custom Word Styles/`
+- Keep product names: Marked, Mac App Store, Direct, Setapp, DOCX
+- Keep bold on **Mac App Store.**

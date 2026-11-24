@@ -58,3 +58,5 @@ To create a custom export style:
 5. Inside the unzipped package, copy `word/styles.xml` to `~/Library/Application Support/Marked/Custom Word Styles/STYLENAME.xml` (same base name as the `.thmx`, if you created one).
 
 The next time you export a DOCX from Marked, your style appears in the Style menu of the Save dialog.
+
+**Mac App Store.** The first time you export a DOCX, Marked asks for access to your Custom Word Styles folder. Choose `~/Library/Application Support/Marked/Custom Word Styles/` (or another folder that holds your styles). Marked remembers that grant. You can grant or change the folder later from **Choose Custom Word Styles Folder…** in the Style menu of the Save dialog. Until you grant access, only styles inside Marked’s sandbox container appear. Direct and Setapp builds do not need this step.
