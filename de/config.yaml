@@ -631,6 +631,16 @@ Sections:
     - streaming-vorschau
     wiki_keywords:
     - drafts
+  - title: Finis
+    file: Finis
+    description: Ziehen Sie ein Finis-Projekt (.finis) auf Marked, um das kompilierte Buch in der Vorschau zu sehen. Marked übernimmt Reihenfolge, Überschriften, Seitenumbrüche und Titelei des Projekts.
+    keywords:
+    - finis
+    - projekt
+    - kompilieren
+    - kapitel
+    wiki_keywords:
+    - finis
   - title: Ordnerüberwachung
     file: Folder_Watching
     description: Ziehen Sie einen Ordner mit Textnotizen auf Marked. Marked öffnet ein Vorschaufenster, das stets der zuletzt bearbeiteten passenden Datei in diesem Ordner folgt ...
