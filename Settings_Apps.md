@@ -94,6 +94,9 @@ Open .scriv files in Scrivener when opened in Marked
 Convert change tracking <-> CriticMarkup
 : If enabled, change tracking in Word documents will be converted to CriticMarkup when imported, and CriticMarkup will be converted to Word change tracking when exporting DOCX files.
 
+Open Custom Word Styles Folder…
+: Opens the folder where Marked looks for custom DOCX export styles (`~/Library/Application Support/Marked/Custom Word Styles/` on Direct and Setapp builds). On the Mac App Store build, Marked may ask for access first, then remembers that folder. See [Working with DOCX](Working_With_DOCX.html#adding-custom-export-styles).
+
 #### Tree Outliner [tree-outliner]
 
 [(Info on Tree Outliner)](Tree_Outliner.html)

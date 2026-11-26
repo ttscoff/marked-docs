@@ -1,0 +1,45 @@
+# Help translation gap — de — Settings_Apps.md + Working_With_DOCX.md
+# Feature: Open Custom Word Styles Folder in Apps settings
+# Generated: 2026-11-24
+#
+# German pages in this repo were updated with the translations below.
+# Keep this gap for marked-docs / audit. Do not machine-overwrite the rest
+# of either German page.
+#
+# UI strings (de.lproj/Settings.strings):
+#   setting.openCustomWordStylesFolder = Ordner für eigene Word-Stile
+#   setting.openCustomWordStylesFolder.button = Ordner für eigene Word-Stile öffnen…
+#   tooltip.openCustomWordStylesFolder = Öffnet den Ordner, in dem Marked nach eigenen DOCX-Exportstilen sucht. In der Mac-App-Store-Version kann zuerst um Zugriff gebeten werden.
+
+=== LOCATION 1 ===
+File: de/Settings_Apps.md
+Section heading: Word [word]
+Insert after the "Änderungsverfolgung <-> CriticMarkup konvertieren" definition item.
+
+=== CURRENT GERMAN (keep; insert after) ===
+Änderungsverfolgung <-> CriticMarkup konvertieren
+: Ist dies aktiviert, wird die Änderungsverfolgung in Word-Dokumenten beim Import in CriticMarkup umgewandelt, und CriticMarkup wird beim Export von DOCX-Dateien in die Word-Änderungsverfolgung umgewandelt.
+
+=== ENGLISH TARGET ===
+Open Custom Word Styles Folder…
+: Opens the folder where Marked looks for custom DOCX export styles (`~/Library/Application Support/Marked/Custom Word Styles/` on Direct and Setapp builds). On the Mac App Store build, Marked may ask for access first, then remembers that folder. See [Working with DOCX](Working_With_DOCX.html#adding-custom-export-styles).
+
+=== GERMAN APPLIED ===
+Ordner für eigene Word-Stile öffnen…
+: Öffnet den Ordner, in dem Marked nach eigenen DOCX-Exportstilen sucht (`~/Library/Application Support/Marked/Custom Word Styles/` in Direct- und Setapp-Builds). In der Mac-App-Store-Version kann Marked zuerst um Zugriff bitten und merkt sich diesen Ordner dann. Siehe [Arbeiten mit DOCX](Working_With_DOCX.html#adding-custom-export-styles).
+
+=== LOCATION 2 ===
+File: de/Working_With_DOCX.md
+Section: Eigene Exportstile hinzufügen [adding-custom-export-styles]
+Replace the Mac App Store paragraph.
+
+=== ENGLISH TARGET ===
+**Mac App Store.** The first time you export a DOCX, Marked asks for access to your Custom Word Styles folder. Choose `~/Library/Application Support/Marked/Custom Word Styles/` (or another folder that holds your styles). Marked remembers that grant. You can open, grant, or change the folder later from **Open Custom Word Styles Folder…** in {% prefspane Apps %} under Word, or from **Choose Custom Word Styles Folder…** in the Style menu of the Save dialog. Until you grant access, only styles inside Marked’s sandbox container appear. Direct and Setapp builds do not need this step; **Open Custom Word Styles Folder…** still reveals the documented folder.
+
+=== GERMAN APPLIED ===
+**Mac App Store.** Beim ersten DOCX-Export fragt Marked nach Zugriff auf Ihren Ordner für eigene Word-Stile. Wählen Sie `~/Library/Application Support/Marked/Custom Word Styles/` (oder einen anderen Ordner mit Ihren Stilen). Marked merkt sich diese Freigabe. Später können Sie den Ordner über **Ordner für eigene Word-Stile öffnen…** unter {% prefspane Apps %} bei Word öffnen, freigeben oder ändern, oder über **Choose Custom Word Styles Folder…** im Stil-Menü des Speicherdialogs. Bis zur Freigabe erscheinen nur Stile aus Markeds Sandbox-Container. Direct- und Setapp-Builds benötigen diesen Schritt nicht; **Ordner für eigene Word-Stile öffnen…** zeigt weiterhin den dokumentierten Ordner.
+
+=== NOTES ===
+- Keep {% prefspane Apps %}
+- Keep path and **Choose Custom Word Styles Folder…** byte-identical where that is the English UI string in the Save dialog
+- Settings button title in German help may use the localized Settings.strings title
