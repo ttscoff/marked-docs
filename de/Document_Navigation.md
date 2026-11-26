@@ -99,6 +99,6 @@ Um eine Reihe von Dokumenten nacheinander durchzusehen, verwenden Sie {% appmenu
 - Die Befehle sind für nicht gesicherte Dokumente, Ordner und Zwischenablage-Vorschauen nicht verfügbar.
 - Builds aus dem Mac App Store fragen einmalig nach Zugriff auf den Ordner, damit sie die anderen Dateien darin sehen können.
 
-Dateien, durch die Sie blättern, werden im Menü „Verlauf“ festgehalten, sodass {% kbd cmd [ %} und {% kbd cmd ] %} (Zurück und Vor) Ihren Weg nachvollziehen.
+Dateien, durch die Sie blättern, werden im Menü „Verlauf“ festgehalten, sodass {% kbd cmd [ %} und {% kbd cmd ] %} (Zurück und Vorwärts) Ihren Weg nachvollziehen.
 
 Wenn Sie Dateien über den Finder, das Dock oder „Öffnen mit“ öffnen, kann die Einstellung **Aus dem Finder geöffnete Dateien** unter {% prefspane General %} das vorderste Dokument ersetzen, anstatt ein neues Fenster zu öffnen.
