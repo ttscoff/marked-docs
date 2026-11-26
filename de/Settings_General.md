@@ -26,6 +26,9 @@ Speicherintensive Funktionen bei großen Dokumenten deaktivieren
 Neue Dokumente geöffnet in
 : Wählen Sie **Fenster**, **Tabs** oder **Automatisch** (folgt der macOS-Systemeinstellung für Tabs). Bei Tabs navigieren Sie mit {% kbd cmd shift [/] %} und dem [Schnell-öffnen-Bedienfeld](Quick_Open.html).
 
+Aus dem Finder geöffnete Dateien
+: Legen Sie fest, was passiert, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. **Einstellung „Neue Dokumente geöffnet in“ folgen** (Standard) öffnet sie wie oben beschrieben in einem neuen Fenster oder Tab. **Vorderstes Dokument ersetzen** tauscht die Datei stattdessen in das vorderste Marked-Fenster ein, sodass sich beim Durchsehen vieler Dateien aus dem Finder keine Fenster oder Tabs ansammeln. Die ersetzende Datei erscheint weiterhin im Menü „Verlauf“, und Sie können mit {% kbd cmd [ %} zurückgehen. Das gleichzeitige Öffnen mehrerer Dateien, das Öffnen einer bereits geöffneten Datei und das Öffnen von Dateien innerhalb von Marked (z. B. mit [Schnell öffnen](Quick_Open.html)) verhalten sich wie gewohnt. Siehe auch [Durchblättern eines Ordners mit Dateien](Document_Navigation.html#browsing-a-folder-of-files).
+
 Aktualisiertes Dokument nach vorne bringen
 : Wird eine Vorschau aktualisiert, wird ihr Tab ausgewählt oder ihr Fenster nach vorne geholt – **aber nur innerhalb von Marked**. Ist eine andere Anwendung im Vordergrund (z. B. Ihr Texteditor), bleibt Marked im Hintergrund; der richtige Tab ist ausgewählt, sodass er bereitsteht, wenn Sie zu Marked zurückwechseln. Um die Vorschau über alle Anwendungen zu heben, ohne Marked zu aktivieren, verwenden Sie stattdessen **Fenster bei Aktualisierung öffnen**.
 
