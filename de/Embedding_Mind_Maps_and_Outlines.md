@@ -11,6 +11,10 @@ Mindmaps und Gliederungen können mit [Markeds Include-Syntax][include] oder der
 
 iThoughts-Mindmap-Dateien sind ZIP-Archive, die Kartendaten und ein optionales Vorschaubild enthalten. MindBuilder speichert Karten im selben `.itmz`-Format, und Marked öffnet sie auf die gleiche Weise.
 
+### FerventMind (.fvmd) [ferventmind-fvmd]
+
+FerventMind-Mindmaps sind ZIP-Archive mit `map.xml`, `text.md`, `preview.png` und `assets/`. Siehe [FerventMind](FerventMind.html). Ist **FerventMind-Dateien** unter **Als Mermaid-Mindmaps einbetten:** aktiviert, wird eine eingebundene Mindmap zum Mermaid-Diagramm. Ist die Option deaktiviert, bettet Marked die `preview.png` der Mindmap ein.
+
 ### MindManager (.mmap) [mindmanager-mmap]
 
 MindManager-Dateien sind ZIP-Archive mit `Document.xml`. Entpackte MindManager-Pakete (ein Ordner mit `Document.xml`) und direkte Pfade zu `Document.xml` werden ebenfalls unterstützt.
@@ -41,17 +45,19 @@ Unter {% prefspane Apps %} gibt es im Abschnitt *Mindmaps und Gliederungen* die 
 
 - **Bike-Gliederungen**
 - **Mindmaps (iThoughts)** (deckt auch FreeMind und MindManager ab)
+- **FerventMind-Dateien**
 - **OPML-Dateien**
 - **OmniOutliner-Gliederungen**
 - **Tree-Outliner-Gliederungen**
 
 Ist das Kontrollkästchen eines Formats **aktiviert** (Standard bei den unterstützten Formaten), wandelt Marked eingebundene Dateien dieses Typs in [Mermaid](https://mermaid.js.org/)-Diagramme um:
 
-**iThoughts, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
+**iThoughts, FerventMind, MindManager, FreeMind, OPML, Bike, OmniOutliner und Tree Outliner** – Gerendert als Mermaid-Mindmap-Diagramme mit dem Tidy-Tree-Layout. Bei iThoughts und MindManager bleiben Forminformationen (rund, rechteckig, sechseckig usw.) erhalten, sofern verfügbar. FreeMind (`.mm`) und OPML verwenden dasselbe Mindmap-Format. Bike-Gliederungen (`.bike`) verwenden den eingebundenen Dateinamen (ohne Erweiterung) als Mindmap-Stammknoten. Tree Outliner verwendet den Dokumenttitel als Stammknoten. Knotenbezeichnungen bestehen aus reinem Text (Links werden zu Linktext; Aufgaben werden als ☐ / ☑-Präfixe angezeigt). Mermaid ist standardmäßig in jeder Markdown-Vorschau enthalten.
 
 Ist das Kontrollkästchen eines Formats **deaktiviert**:
 
 - **iThoughts** – Das integrierte Vorschaubild (`preview.png`) aus der .itmz-Datei ist als Base64-Bild eingebettet. Der Alternativtext des Bildes verwendet den Dateinamen.
+- **FerventMind** – Das Vorschaubild der Mindmap (`preview.png`) ist eingebettet.
 - **MindManager** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **FreeMind** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet.
 - **OPML** – Die Gliederung ist als verschachtelte Markdown-Liste eingebettet (keine Mindmap).
@@ -64,6 +70,7 @@ Ist das Kontrollkästchen eines Formats **deaktiviert**:
 Verwenden Sie die gleiche Syntax wie für andere Datei-Includes:
 
 	<<[path/to/map.itmz]
+	<<[path/to/map.fvmd]
 	<<[path/to/map.mmap]
 	<<[path/to/map.mm]
 	<<[path/to/outline.opml]
