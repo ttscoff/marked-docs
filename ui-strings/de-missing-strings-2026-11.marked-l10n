@@ -53,7 +53,7 @@
 # EN: Files opened from Finder
 # DRAFT: Aus dem Finder geöffnete Dateien:
 
-"setting.externalOpenBehavior.default" = "Einstellung „Neue Dokumente geöffnet in“ folgen";
+"setting.externalOpenBehavior.default" = "Der Einstellung „Neue Dokumente geöffnet in“ folgen";
 # EN: Follow "New documents open in"
 # DRAFT: Einstellung „Neue Dokumente geöffnet in“ folgen
 
