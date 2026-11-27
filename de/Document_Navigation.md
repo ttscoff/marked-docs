@@ -1,6 +1,6 @@
 # <%= @title %>
 
-Auf dieser Seite wird beschrieben, wie Sie sich in langen Vorschauen bewegen: über das [Inhaltsverzeichnis](#table-of-contents), die [schnelle Suche](#fast-search), [Lesezeichen](#bookmarks-and-mini-map), die [Mini-Übersicht](#minimap) und das [Durchblättern eines Ordners mit Dateien](#browsing-a-folder-of-files). Informationen zu Tastaturkurzbefehlen für den Bildlauf, die überall gelten (z. B. {% kbd j %}/{% kbd k %}), finden Sie unter [Tastaturnavigation](Interface_Features.html#keyboardnavigation) auf der Seite [Oberflächenfunktionen](Interface_Features.html).
+Auf dieser Seite wird beschrieben, wie Sie sich in langen Vorschauen bewegen: über das [Inhaltsverzeichnis](#table-of-contents), die [schnelle Suche](#fast-search), [Lesezeichen](#bookmarks-and-mini-map), die [Mini-Übersicht](#minimap) und das [Durchblättern der Dateien eines Ordners](#browsing-a-folder-of-files). Informationen zu Tastaturkurzbefehlen für den Bildlauf, die überall gelten (z. B. {% kbd j %}/{% kbd k %}), finden Sie unter [Tastaturnavigation](Interface_Features.html#keyboardnavigation) auf der Seite [Oberflächenfunktionen](Interface_Features.html).
 
 ## Inhaltsverzeichnis [table-of-contents]
 
@@ -89,16 +89,16 @@ Drücken Sie {% kbd 0 %} oder Escape, um die Mini-Übersicht zu schließen.
 
 Eine Übersicht im Textmaßstab ohne die Mini-Übersicht finden Sie unter [Zoom-Übersicht](Zoom_Overview.html) ({% kbd z %}).
 
-## Durchblättern eines Ordners mit Dateien [browsing-a-folder-of-files]
+## Dateien eines Ordners durchblättern [browsing-a-folder-of-files]
 
 Um eine Reihe von Dokumenten nacheinander durchzusehen, verwenden Sie {% appmenu Verlauf, Nächste Datei im Ordner %} ({% kbd ctrl cmd ] %}) und {% appmenu Verlauf, Vorherige Datei im Ordner %} ({% kbd ctrl cmd [ %}). Marked tauscht die nächste bzw. vorherige Datei desselben Ordners in das aktuelle Fenster ein, in der Reihenfolge des Finders (`2-second.md` vor `10-tenth.md`). So können Sie Hunderte von Dateien durcharbeiten, ohne für jede ein neues Fenster oder einen neuen Tab zu öffnen.
 
-- Es werden nur Dateien der Markdown-Familie berücksichtigt (`.md`, `.markdown`, `.txt` usw.). Ein Dokument in einem anderen Format, etwa OPML oder Fountain, wechselt zwischen Dateien seiner eigenen Art und Markdown-Dateien.
+- Es werden nur Dateien der Markdown-Familie berücksichtigt (`.md`, `.markdown`, `.txt` usw.). Bei einem Dokument in einem anderen Format, etwa OPML oder Fountain, wechselt Marked zwischen Dateien desselben Formats und Markdown-Dateien.
 - Versteckte Dateien und Unterordner werden übersprungen; bei der ersten und letzten Datei endet die Navigation, statt wieder von vorn zu beginnen.
 - Ist die nächste Datei bereits in einem anderen Fenster geöffnet, holt Marked dieses Fenster nach vorn, anstatt sie doppelt zu öffnen.
 - Die Befehle sind für nicht gesicherte Dokumente, Ordner und Zwischenablage-Vorschauen nicht verfügbar.
 - Builds aus dem Mac App Store fragen einmalig nach Zugriff auf den Ordner, damit sie die anderen Dateien darin sehen können.
 
-Dateien, durch die Sie blättern, werden im Menü „Verlauf“ festgehalten, sodass {% kbd cmd [ %} und {% kbd cmd ] %} (Zurück und Vorwärts) Ihren Weg nachvollziehen.
+Jede Datei, zu der Sie blättern, erscheint im Menü „Verlauf“. Mit {% kbd cmd [ %} und {% kbd cmd ] %} (Zurück und Vorwärts) gehen Sie Ihren Weg zurück und wieder vor.
 
 Wenn Sie Dateien über den Finder, das Dock oder „Öffnen mit“ öffnen, kann die Einstellung **Aus dem Finder geöffnete Dateien** unter {% prefspane General %} das vorderste Dokument ersetzen, anstatt ein neues Fenster zu öffnen.
