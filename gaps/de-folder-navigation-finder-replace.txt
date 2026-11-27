@@ -1,0 +1,89 @@
+# Help translation gap — de — Document_Navigation.md, Settings_General.md, Keyboard_Shortcuts.md
+# Feature: Next/Previous File in Folder and "Files opened from Finder" setting
+# Generated: 2026-11-26
+#
+# German Document_Navigation.md, Settings_General.md and Keyboard_Shortcuts.md
+# in this repo were updated with the translations below. Keep this gap so
+# marked-docs / other locales can apply the same English targets. Do not
+# machine-overwrite the rest of these German pages.
+#
+# Return: confirm the three de/ files match the GERMAN APPLIED blocks,
+# or PR the same inserts to ttscoff/marked-docs.
+
+=== 1. Document_Navigation.md — intro sentence ===
+File: de/Document_Navigation.md
+Replace the first paragraph (after the title) so it also links to the new section.
+
+--- ENGLISH TARGET ---
+This page describes how to move around long previews: the [Table of Contents](#table-of-contents), [fast search](#fast-search), [bookmarks](#bookmarks-and-mini-map), the [Mini Map](#minimap), and [stepping through a folder of files](#browsing-a-folder-of-files). For scrolling shortcuts that apply everywhere (such as {% kbd j %}/{% kbd k %}), see [Keyboard Navigation](Interface_Features.html#keyboardnavigation) under [Interface Features](Interface_Features.html).
+
+--- GERMAN APPLIED ---
+Auf dieser Seite wird beschrieben, wie Sie sich in langen Vorschauen bewegen: über das [Inhaltsverzeichnis](#table-of-contents), die [schnelle Suche](#fast-search), [Lesezeichen](#bookmarks-and-mini-map), die [Mini-Übersicht](#minimap) und das [Durchblättern der Dateien eines Ordners](#browsing-a-folder-of-files). Informationen zu Tastaturkurzbefehlen für den Bildlauf, die überall gelten (z. B. {% kbd j %}/{% kbd k %}), finden Sie unter [Tastaturnavigation](Interface_Features.html#keyboardnavigation) auf der Seite [Oberflächenfunktionen](Interface_Features.html).
+
+=== 2. Document_Navigation.md — new section ===
+File: de/Document_Navigation.md
+Insert: new section at the end of the page, after "Zoom-Übersicht (verwandt)".
+
+--- ENGLISH TARGET (translate to German) ---
+## Browsing a folder of files [browsing-a-folder-of-files]
+
+To review a series of documents one after another, use {% appmenu History, Next File in Folder %} ({% kbd ctrl cmd ] %}) and {% appmenu History, Previous File in Folder %} ({% kbd ctrl cmd [ %}). Marked swaps the next or previous file in the same folder into the current window, in Finder-style order (`2-second.md` before `10-tenth.md`), so you can work through hundreds of files without opening a new window or tab for each one.
+
+- Only Markdown-family files are included (`.md`, `.markdown`, `.txt`, and so on). A document in another format, such as OPML or Fountain, steps among files of its own kind and Markdown files.
+- Hidden files and subfolders are skipped, and navigation stops at the first and last file instead of wrapping around.
+- If the next file is already open in another window, Marked brings that window forward instead of opening it twice.
+- The commands are unavailable for unsaved documents, folders, and clipboard previews.
+- Marked builds from the Mac App Store ask once for access to the folder so they can see the other files in it.
+
+Files you step through are recorded in the History menu, so {% kbd cmd [ %} and {% kbd cmd ] %} (Back and Forward) retrace your path.
+
+If you open files from Finder, the Dock, or Open With, the **Files opened from Finder** setting in {% prefspane General %} can replace the frontmost document instead of opening a new window.
+
+--- GERMAN APPLIED ---
+## Dateien eines Ordners durchblättern [browsing-a-folder-of-files]
+
+Um eine Reihe von Dokumenten nacheinander durchzusehen, verwenden Sie {% appmenu Verlauf, Nächste Datei im Ordner %} ({% kbd ctrl cmd ] %}) und {% appmenu Verlauf, Vorherige Datei im Ordner %} ({% kbd ctrl cmd [ %}). Marked tauscht die nächste bzw. vorherige Datei desselben Ordners in das aktuelle Fenster ein, in der Reihenfolge des Finders (`2-second.md` vor `10-tenth.md`). So können Sie Hunderte von Dateien durcharbeiten, ohne für jede ein neues Fenster oder einen neuen Tab zu öffnen.
+
+- Es werden nur Dateien der Markdown-Familie berücksichtigt (`.md`, `.markdown`, `.txt` usw.). Bei einem Dokument in einem anderen Format, etwa OPML oder Fountain, wechselt Marked zwischen Dateien desselben Formats und Markdown-Dateien.
+- Versteckte Dateien und Unterordner werden übersprungen; bei der ersten und letzten Datei endet die Navigation, statt wieder von vorn zu beginnen.
+- Ist die nächste Datei bereits in einem anderen Fenster geöffnet, holt Marked dieses Fenster nach vorn, anstatt sie doppelt zu öffnen.
+- Die Befehle sind für nicht gesicherte Dokumente, Ordner und Zwischenablage-Vorschauen nicht verfügbar.
+- Builds aus dem Mac App Store fragen einmalig nach Zugriff auf den Ordner, damit sie die anderen Dateien darin sehen können.
+
+Jede Datei, zu der Sie blättern, erscheint im Menü „Verlauf“. Mit {% kbd cmd [ %} und {% kbd cmd ] %} (Zurück und Vorwärts) gehen Sie Ihren Weg zurück und wieder vor.
+
+Wenn Sie Dateien über den Finder, das Dock oder „Öffnen mit“ öffnen, kann die Einstellung **Aus dem Finder geöffnete Dateien** unter {% prefspane General %} das vorderste Dokument ersetzen, anstatt ein neues Fenster zu öffnen.
+
+=== 3. Settings_General.md — new definition entry ===
+File: de/Settings_General.md
+Insert: before the entry "Aktualisiertes Dokument nach vorne bringen"
+(English: "Bring updated document to front"), i.e. after "Neue Dokumente öffnen in".
+
+--- ENGLISH TARGET (translate to German) ---
+Files opened from Finder
+: Choose what happens when you open a single Markdown file from Finder, the Dock, or Open With. **Follow "New documents open in"** (the default) opens it in a new window or tab, as above. **Replace the frontmost document** swaps the file into the frontmost Marked window instead, so reviewing many files from Finder does not pile up windows or tabs. The replacement still appears in the History menu, and you can step back with {% kbd cmd [ %}. Opening several files at once, opening a file that is already open, and opening files from within Marked (such as with [Quick Open](Quick_Open.html)) behave as usual. See also [Browsing a folder of files](Document_Navigation.html#browsing-a-folder-of-files).
+
+--- GERMAN APPLIED ---
+Aus dem Finder geöffnete Dateien
+: Legen Sie fest, was passiert, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. **Wie „Neue Dokumente öffnen in“** (Standard) öffnet sie wie oben beschrieben in einem neuen Fenster oder Tab. **Vorderstes Dokument ersetzen** tauscht die Datei stattdessen in das vorderste Marked-Fenster ein, sodass sich beim Durchsehen vieler Dateien aus dem Finder keine Fenster oder Tabs ansammeln. Die neu geöffnete Datei erscheint trotzdem im Menü „Verlauf“, und Sie können mit {% kbd cmd [ %} zurückgehen. Das gleichzeitige Öffnen mehrerer Dateien, das Öffnen einer bereits geöffneten Datei und das Öffnen von Dateien innerhalb von Marked (z. B. mit [Schnell öffnen](Quick_Open.html)) verhalten sich wie gewohnt. Siehe auch [Dateien eines Ordners durchblättern](Document_Navigation.html#browsing-a-folder-of-files).
+
+=== 4. Keyboard_Shortcuts.md — two table rows ===
+File: de/Keyboard_Shortcuts.md
+Section: Kurzbefehle [shortcuts]
+Insert: after the row for "Zuletzt geöffnete erneut öffnen" ({{shift}}{{cmd}}R).
+
+--- ENGLISH TARGET ---
+|         **{{ctrl}}{{cmd}}]** | Next File in Folder                |
+|         **{{ctrl}}{{cmd}}[** | Previous File in Folder            |
+
+--- GERMAN APPLIED ---
+| **{{ctrl}}{{cmd}}]** | Nächste Datei im Ordner |
+| **{{ctrl}}{{cmd}}[** | Vorherige Datei im Ordner |
+
+=== NOTES ===
+- Menu titles match the app's German UI strings (Marked/de.lproj/MainMenu*.strings): Verlauf > Nächste Datei im Ordner / Vorherige Datei im Ordner.
+- Setting labels match Marked/de.lproj/Settings.strings: "Aus dem Finder geöffnete Dateien:", "Wie „Neue Dokumente öffnen in“", "Vorderstes Dokument ersetzen".
+- Keep anchors byte-identical: [browsing-a-folder-of-files]
+- Keep Liquid tags byte-identical: {% appmenu ... %}, {% kbd ... %}, {% prefspane General %}
+- Keep file name examples byte-identical: `2-second.md`, `10-tenth.md`
+- Keep product and format names: Marked, Finder, Dock, Mac App Store, OPML, Fountain

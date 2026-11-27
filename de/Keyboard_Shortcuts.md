@@ -12,6 +12,8 @@
 | **{{shift}}{{cmd}}O** | Schnell öffnen |
 | **{{shift}}{{cmd}}P** | Schnellaktionen… |
 | **{{shift}}{{cmd}}R** | Zuletzt geöffnete erneut öffnen |
+| **{{ctrl}}{{cmd}}]** | Nächste Datei im Ordner |
+| **{{ctrl}}{{cmd}}[** | Vorherige Datei im Ordner |
 | **{{cmd}}W** | Schließen |
 | **{{cmd}}P** | Drucken… |
 | **{{cmd}}S** | HTML speichern |

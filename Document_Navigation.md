@@ -1,6 +1,6 @@
 # <%= @title %>
 
-This page describes how to move around long previews: the [Table of Contents](#table-of-contents), [fast search](#fast-search), [bookmarks](#bookmarks-and-mini-map), and the [Mini Map](#minimap). For scrolling shortcuts that apply everywhere (such as {% kbd j %}/{% kbd k %}), see [Keyboard Navigation](Interface_Features.html#keyboardnavigation) under [Interface Features](Interface_Features.html).
+This page describes how to move around long previews: the [Table of Contents](#table-of-contents), [fast search](#fast-search), [bookmarks](#bookmarks-and-mini-map), the [Mini Map](#minimap), and [stepping through a folder of files](#browsing-a-folder-of-files). For scrolling shortcuts that apply everywhere (such as {% kbd j %}/{% kbd k %}), see [Keyboard Navigation](Interface_Features.html#keyboardnavigation) under [Interface Features](Interface_Features.html).
 
 ## Table of Contents [table-of-contents]
 
@@ -88,3 +88,17 @@ Press {% kbd 0 %} or Escape to close the Mini Map.
 ### Zoom overview (related) [zoom-overview-related]
 
 For a text-scale overview without the Mini Map, see [Zoom Overview](Zoom_Overview.html) ({% kbd z %}).
+
+## Browsing a folder of files [browsing-a-folder-of-files]
+
+To review a series of documents one after another, use {% appmenu History, Next File in Folder %} ({% kbd ctrl cmd ] %}) and {% appmenu History, Previous File in Folder %} ({% kbd ctrl cmd [ %}). Marked swaps the next or previous file in the same folder into the current window, in Finder-style order (`2-second.md` before `10-tenth.md`), so you can work through hundreds of files without opening a new window or tab for each one.
+
+- Only Markdown-family files are included (`.md`, `.markdown`, `.txt`, and so on). A document in another format, such as OPML or Fountain, steps among files of its own kind and Markdown files.
+- Hidden files and subfolders are skipped, and navigation stops at the first and last file instead of wrapping around.
+- If the next file is already open in another window, Marked brings that window forward instead of opening it twice.
+- The commands are unavailable for unsaved documents, folders, and clipboard previews.
+- Marked builds from the Mac App Store ask once for access to the folder so they can see the other files in it.
+
+Files you step through are recorded in the History menu, so {% kbd cmd [ %} and {% kbd cmd ] %} (Back and Forward) retrace your path.
+
+If you open files from Finder, the Dock, or Open With, the **Files opened from Finder** setting in {% prefspane General %} can replace the frontmost document instead of opening a new window.

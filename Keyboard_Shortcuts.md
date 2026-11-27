@@ -12,6 +12,8 @@ A floating panel with a shortcut cheat sheet is available from the Help menu, or
 |        **{{shift}}{{cmd}}O** | Quick Open                         |
 |        **{{shift}}{{cmd}}P** | Quick Actions                      |
 |        **{{shift}}{{cmd}}R** | Re-open Last                       |
+|         **{{ctrl}}{{cmd}}]** | Next File in Folder                |
+|         **{{ctrl}}{{cmd}}[** | Previous File in Folder            |
 |                 **{{cmd}}W** | Close                              |
 |                 **{{cmd}}P** | Print/Save PDF                     |
 |                 **{{cmd}}S** | Save HTML                          |

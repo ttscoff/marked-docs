@@ -26,6 +26,9 @@ Disable memory-intensive features on large documents
 New documents open in
 : Choose **windows**, **tabs**, or **automatic** (follow the macOS system setting for tabbing). When using tabs, navigate with {% kbd cmd shift [/] %} and the [Quick Open panel](Quick_Open.html).
 
+Files opened from Finder
+: Choose what happens when you open a single Markdown file from Finder, the Dock, or Open With. **Follow "New documents open in"** (the default) opens it in a new window or tab, as above. **Replace the frontmost document** swaps the file into the frontmost Marked window instead, so reviewing many files from Finder does not pile up windows or tabs. The replacement still appears in the History menu, and you can step back with {% kbd cmd [ %}. Opening several files at once, opening a file that is already open, and opening files from within Marked (such as with [Quick Open](Quick_Open.html)) behave as usual. See also [Browsing a folder of files](Document_Navigation.html#browsing-a-folder-of-files).
+
 Bring updated document to front
 : When a preview is updated, select its tab or order its window to the front **within Marked only**. If another application is frontmost (e.g. your text editor), Marked stays in the background — the correct tab is selected so it is ready when you switch back to Marked. To pop the preview above all applications without activating Marked, use **Raise window on update** instead.
 
