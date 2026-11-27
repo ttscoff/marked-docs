@@ -15,6 +15,19 @@ Once Marked is watching a folder, it will automatically display the **most recen
 
 This works especially well with agentic tools like Cursor, Claude, and Copilot that continuously regenerate specs, to-do lists, or architecture notes while you iterate on a feature.
 
+## Reviewing large batches of AI-generated files [reviewing-ai-generated-files]
+
+When an AI agent produces a whole folder of files --- such as generated docs, code-review reports, test summaries, or multi-step plans --- you often want to read through them systematically rather than jumping to whichever file saved last. Turn on **Folder Review** by choosing **History > Review This Folder** in a watched folder window (or from any single file inside that folder).
+
+In review mode:
+
+- Marked opens the first unreviewed file in natural Finder order and stays on it even while agents continue writing other files in the folder.
+- Press **⌃⌘↩** (**History > Mark Reviewed and Next**) to check off the current file and advance to the next unreviewed one.
+- The window title and review sidebar track your progress (e.g., `42 / 118`), and you can filter the sidebar to show All, Unreviewed, or Reviewed files.
+- If an agent edits a file you already checked off, Marked flags it with a dash in the sidebar checkbox and counts it as unreviewed again so you never miss a regenerated output.
+
+See [Review a folder](Folder_Watching.html#review-a-folder) for full details.
+
 ## Scrolling to the first change [scrolling-to-the-first-change]
 
 When *Scroll to Edit* is enabled in Marked's preferences, the preview doesn't just reload --- it **scrolls directly to the first changed area** of the file when it updates.
