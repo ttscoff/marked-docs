@@ -27,7 +27,7 @@
 "setting.configureApex.group.emoji" = "Emoji";
 # EN: Emoji
 
-"tooltip.excludeCaptionsFromCounts" = "Blockzitate bei der Wortzählung ignorieren";
+"tooltip.excludeCaptionsFromCounts" = "Bildunterschriften bei der Wortzählung ignorieren";
 # EN: Ignore block quoted text in word count
 # DRAFT: Blockzitate bei der Wortzählung ignorieren
 
@@ -35,7 +35,7 @@
 # EN: Default preview font size (px)
 # DRAFT: Standard-Schriftgröße der Vorschau (px)
 
-"setting.previewBaseFontSize.tooltip" = "Leer verwendet die eigene Größe des Stils. Eine positive Zahl legt die Basisschriftgröße der Vorschau in CSS-Pixeln fest. Bilder behalten ihre Größe. Export und Druck verwenden diese Größe nicht.";
+"setting.previewBaseFontSize.tooltip" = "Leer: Der Stil bestimmt die Größe. Eine positive Zahl legt die Basisschriftgröße der Vorschau in CSS-Pixeln fest. Bilder behalten ihre Größe. Export und Druck verwenden diese Größe nicht.";
 # EN: Blank uses the style's own size. A positive number sets the preview root font size in CSS pixels. Images stay the same size. Export and print do not use this size.
 # DRAFT: Leer verwendet die eigene Größe des Stils. Eine positive Zahl legt die Basisschriftgröße der Vorschau in CSS-Pixeln fest. Bilder behalten ihre Größe. Export und Druck verwenden diese Größe nicht.
 
@@ -43,7 +43,7 @@
 # EN: Display header link icons
 # DRAFT: Link-Symbole an Überschriften anzeigen
 
-"tooltip.showHeaderLinkIcons" = "Zeigt beim Überfahren mit dem Mauszeiger ein Link-Symbol neben Überschriften an. Klicken Sie darauf, um einen Marked-Deep-Link zu dieser Überschrift zu kopieren.";
+"tooltip.showHeaderLinkIcons" = "Zeigt neben Überschriften ein Link-Symbol, wenn der Mauszeiger darauf zeigt. Ein Klick kopiert einen Marked-Link zu dieser Überschrift.";
 # EN: Show a link icon next to headings on hover. Click to copy a Marked deep link to that heading.
 # DRAFT: Zeigt beim Überfahren mit dem Mauszeiger ein Link-Symbol neben Überschriften an. Klicken Sie darauf, um einen Marked-Deep-Link zu dieser Überschrift zu kopieren.
 
@@ -53,7 +53,7 @@
 # EN: Files opened from Finder
 # DRAFT: Aus dem Finder geöffnete Dateien:
 
-"setting.externalOpenBehavior.default" = "Der Einstellung „Neue Dokumente geöffnet in“ folgen";
+"setting.externalOpenBehavior.default" = "Wie „Neue Dokumente öffnen in“";
 # EN: Follow "New documents open in"
 # DRAFT: Einstellung „Neue Dokumente geöffnet in“ folgen
 
@@ -64,6 +64,12 @@
 "tooltip.externalOpenBehavior" = "Ersetzt das vorderste Marked-Dokument, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. Das Öffnen mehrerer Dateien und andere Öffnungswege bleiben unverändert.";
 # EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
 # DRAFT: Ersetzt das vorderste Marked-Dokument, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. Das Öffnen mehrerer Dateien und andere Öffnungswege bleiben unverändert.
+
+# --- Review change to an existing string (2026-11-27) ---
+
+"setting.documentTabbingMode" = "Neue Dokumente öffnen in:";
+# EN: New documents open in
+# WAS: Neue Dokumente geöffnet in:
 === END Settings.strings ===
 
 === BEGIN PreviewContextMenu.strings ===
@@ -85,7 +91,7 @@
 # EN: Click to suspend overrides
 # DRAFT: Klicken, um Überschreibungen auszusetzen
 
-"tip.conductorOverrideManual" = "%lu eigene Regeln manuell aktiviert";
+"tip.conductorOverrideManual" = "Manuell aktivierte eigene Regeln: %lu";
 # EN: %lu custom rules manually enabled
 # DRAFT: %lu eigene Regeln manuell aktiviert
 
