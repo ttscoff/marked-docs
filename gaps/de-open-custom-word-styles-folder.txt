@@ -26,7 +26,7 @@ Open Custom Word Styles Folder…
 
 === GERMAN APPLIED ===
 Ordner für eigene Word-Stile öffnen…
-: Öffnet den Ordner, in dem Marked nach eigenen DOCX-Exportstilen sucht (`~/Library/Application Support/Marked/Custom Word Styles/` in Direct- und Setapp-Builds). In der Mac-App-Store-Version kann Marked zuerst um Zugriff bitten und merkt sich diesen Ordner dann. Siehe [Arbeiten mit DOCX](Working_With_DOCX.html#adding-custom-export-styles).
+: Öffnet den Ordner, in dem Marked nach eigenen DOCX-Exportstilen sucht (`~/Library/Application Support/Marked/Custom Word Styles/` in Direct- und Setapp-Builds). In der Mac-App-Store-Version fragt Marked eventuell zuerst nach Zugriff und merkt sich den Ordner dann. Siehe [Arbeiten mit DOCX](Working_With_DOCX.html#adding-custom-export-styles).
 
 === LOCATION 2 ===
 File: de/Working_With_DOCX.md
@@ -37,7 +37,7 @@ Replace the Mac App Store paragraph.
 **Mac App Store.** The first time you export a DOCX, Marked asks for access to your Custom Word Styles folder. Choose `~/Library/Application Support/Marked/Custom Word Styles/` (or another folder that holds your styles). Marked remembers that grant. You can open, grant, or change the folder later from **Open Custom Word Styles Folder…** in {% prefspane Apps %} under Word, or from **Choose Custom Word Styles Folder…** in the Style menu of the Save dialog. Until you grant access, only styles inside Marked’s sandbox container appear. Direct and Setapp builds do not need this step; **Open Custom Word Styles Folder…** still reveals the documented folder.
 
 === GERMAN APPLIED ===
-**Mac App Store.** Beim ersten DOCX-Export fragt Marked nach Zugriff auf Ihren Ordner für eigene Word-Stile. Wählen Sie `~/Library/Application Support/Marked/Custom Word Styles/` (oder einen anderen Ordner mit Ihren Stilen). Marked merkt sich diese Freigabe. Später können Sie den Ordner über **Ordner für eigene Word-Stile öffnen…** unter {% prefspane Apps %} bei Word öffnen, freigeben oder ändern, oder über **Choose Custom Word Styles Folder…** im Stil-Menü des Speicherdialogs. Bis zur Freigabe erscheinen nur Stile aus Markeds Sandbox-Container. Direct- und Setapp-Builds benötigen diesen Schritt nicht; **Ordner für eigene Word-Stile öffnen…** zeigt weiterhin den dokumentierten Ordner.
+**Mac App Store.** Beim ersten DOCX-Export fragt Marked nach Zugriff auf Ihren Ordner für eigene Word-Stile. Wählen Sie `~/Library/Application Support/Marked/Custom Word Styles/` (oder einen anderen Ordner mit Ihren Stilen). Marked merkt sich diese Freigabe. Später können Sie den Ordner öffnen, freigeben oder ändern: mit **Ordner für eigene Word-Stile öffnen…** im Abschnitt Word unter {% prefspane Apps %} oder mit **Choose Custom Word Styles Folder…** im Stil-Menü des Speicherdialogs. Bis zur Freigabe erscheinen nur Stile aus Markeds Sandbox-Container. Direct- und Setapp-Builds benötigen diesen Schritt nicht; **Ordner für eigene Word-Stile öffnen…** zeigt dort trotzdem den oben genannten Ordner im Finder.
 
 === NOTES ===
 - Keep {% prefspane Apps %}
