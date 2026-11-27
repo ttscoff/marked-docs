@@ -26,6 +26,9 @@ Speicherintensive Funktionen bei großen Dokumenten deaktivieren
 Neue Dokumente geöffnet in
 : Wählen Sie **Fenster**, **Tabs** oder **Automatisch** (folgt der macOS-Systemeinstellung für Tabs). Bei Tabs navigieren Sie mit {% kbd cmd shift [/] %} und dem [Schnell-öffnen-Bedienfeld](Quick_Open.html).
 
+⌘1–⌘9 zur Stilauswahl verwenden
+: Standardmäßig aktiviert, sodass {% kbd cmd 1 %} bis {% kbd cmd 9 %} Stile auswählen. Deaktivieren Sie die Option, um stattdessen mit {% kbd cmd 1 %} bis {% kbd cmd 8 %} zum jeweiligen Tab (und mit {% kbd cmd 9 %} zum letzten Tab) zu wechseln. Die Stil-Kurzbefehle beginnen dann bei {% kbd opt cmd 1 %}. Siehe [⌘1–⌘9 für Tabs verwenden](Style_Manager.html#cmd-number-tabs).
+
 Aktualisiertes Dokument nach vorne bringen
 : Wird eine Vorschau aktualisiert, wird ihr Tab ausgewählt oder ihr Fenster nach vorne geholt – **aber nur innerhalb von Marked**. Ist eine andere Anwendung im Vordergrund (z. B. Ihr Texteditor), bleibt Marked im Hintergrund; der richtige Tab ist ausgewählt, sodass er bereitsteht, wenn Sie zu Marked zurückwechseln. Um die Vorschau über alle Anwendungen zu heben, ohne Marked zu aktivieren, verwenden Sie stattdessen **Fenster bei Aktualisierung öffnen**.
 

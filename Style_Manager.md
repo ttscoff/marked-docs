@@ -80,10 +80,11 @@ position in the table. The order you set here drives:
 
 - The Style menu order in Marked's menus
 - Keyboard shortcut assignments (`⌘1`–`⌘9` for the first nine enabled styles,
-  `⌥⌘1`–`⌥⌘0` for the next ten, and so on)
+  `⌥⌘1`–`⌥⌘0` for the next ten, and `⌃⌘1`–`⌃⌘0` for the ten after that)
 
 Drag styles into the keyboard shortcut slots you want them to
-occupy.
+occupy. Styles beyond the last slot have no keyboard shortcut, so keep the
+styles you use most near the top of the list.
 
 ## Adding Styles [adding-styles]
 
@@ -129,7 +130,19 @@ especially if you're creating styles that adapt to system appearance.
 
 The Style Manager displays a legend below the table showing how keyboard
 shortcuts are assigned. The first nine enabled styles receive {% kbd cmd 1 %} through
-{% kbd cmd 9 %} ({% kbd cmd 0 %} is reserved), the next ten receive {% kbd opt cmd 1 %} through {% kbd opt cmd 0 %}, and so on. You can see the assigned keyboard shortcuts in the Style popup menu on any Preview.
+{% kbd cmd 9 %} ({% kbd cmd 0 %} is reserved), the next ten receive {% kbd opt cmd 1 %} through {% kbd opt cmd 0 %}, and the ten after that receive {% kbd ctrl cmd 1 %} through {% kbd ctrl cmd 0 %}. That gives 29 styles a keyboard shortcut. ({% kbd shift cmd 3 %}, {% kbd shift cmd 4 %}, and {% kbd shift cmd 5 %} are macOS screenshot shortcuts, so ⇧⌘ plus a number is not used.) You can see the assigned keyboard shortcuts in the Style popup menu on any Preview.
+
+### Using ⌘1–⌘9 for Tabs [cmd-number-tabs]
+
+If you keep documents open in tabs, you can give {% kbd cmd 1 %} through {% kbd cmd 9 %} to tab switching instead, the way Safari, Chrome, and Terminal work. In {% prefspane General %} Settings, uncheck **Use ⌘1–⌘9 to select styles**.
+
+With the option unchecked:
+
+- {% kbd cmd 1 %} through {% kbd cmd 8 %} switch to the first through eighth tab in the current window, and {% kbd cmd 9 %} jumps to the last tab.
+- Style shortcuts move up one group, so {% kbd opt cmd 1 %} selects the first style (what {% kbd cmd 1 %} used to do), {% kbd opt cmd 0 %} the tenth, and {% kbd ctrl cmd 1 %} through {% kbd ctrl cmd 0 %} the next ten. That gives 20 styles a keyboard shortcut.
+- The tab shortcuts are also listed under **Window → Select Tab**.
+
+The option has no effect when **New documents open in** is set to **Separate windows**, since there are no tabs to switch between.
 
 ## Filtering Disabled Styles [filtering-disabled-styles]
 
@@ -151,6 +164,7 @@ to undo modifications to built-in styles.
 
 - **Organize by frequency**: Drag your most-used styles to the top to give
   them the easiest keyboard shortcuts ({% kbd cmd 1 %}, {% kbd cmd 2 %}, etc.)
+  and make sure your top 20 styles are in the shortcut slots
 
 - **Disable instead of delete**: Rather than deleting styles you're not using,
   disable them. They'll stay out of your way but remain available if you need
