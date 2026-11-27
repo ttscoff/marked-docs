@@ -15,6 +15,19 @@ Sobald Marked einen Ordner überwacht, wird automatisch die **zuletzt geänderte
 
 Das funktioniert besonders gut mit agentenbasierten Werkzeugen wie Cursor, Claude und Copilot, die Spezifikationen, Aufgabenlisten oder Architekturnotizen während der Arbeit an einer Funktion fortlaufend neu erstellen.
 
+## Große Sammlungen KI-generierter Dateien durchsehen [reviewing-ai-generated-files]
+
+Wenn ein KI-Agent einen ganzen Ordner voller Dateien erzeugt – etwa generierte Dokumentation, Code-Review-Berichte, Testzusammenfassungen oder mehrstufige Pläne –, möchten Sie diese oft systematisch der Reihe nach lesen, statt immer zur zuletzt gespeicherten Datei zu springen. Schalten Sie den **Durchsichtsmodus** über **Verlauf > Diesen Ordner durchsehen** in einem überwachten Ordnerfenster ein (oder direkt aus einer einzelnen Datei in diesem Ordner).
+
+Im Durchsichtsmodus:
+
+- Marked öffnet die erste nicht durchgesehene Datei in natürlicher Finder-Reihenfolge und bleibt dabei, selbst wenn Agenten im Hintergrund weitere Dateien im Ordner schreiben.
+- Drücken Sie **⌃⌘↩** (**Verlauf > Als durchgesehen markieren und weiter**), um die aktuelle Datei abzuhaken und zur nächsten nicht durchgesehenen zu wechseln.
+- Fenstertitel und Durchsichts-Seitenleiste zeigen Ihren Fortschritt (z. B. `42 / 118`), und die Seitenleiste lässt sich nach Alle, Nicht durchgesehen oder Durchgesehen filtern.
+- Ändert ein Agent eine bereits abgehakte Datei, markiert Marked sie in der Seitenleiste mit einem Strich im Kästchen und zählt sie wieder als nicht durchgesehen, sodass Ihnen keine neu generierte Ausgabe entgeht.
+
+Weitere Details finden Sie unter [Einen Ordner durchsehen](Folder_Watching.html#review-a-folder).
+
 ## Scrollen zur ersten Änderung [scrolling-to-the-first-change]
 
 Wenn in den Einstellungen von Marked *Zum Bearbeiten scrollen* aktiviert ist, lädt die Vorschau nicht nur neu, sondern **scrollt direkt zum ersten geänderten Bereich** der Datei.

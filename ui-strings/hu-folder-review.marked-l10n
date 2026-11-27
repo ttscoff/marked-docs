@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: hu (Hungarian)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "Következő fájl a mappában";
+# EN: Next File in Folder
+# DRAFT: Következő fájl a mappában
+
+"MkSib-Prv-001.title" = "Előző fájl a mappában";
+# EN: Previous File in Folder
+# DRAFT: Előző fájl a mappában
+
+"MkRvw-Tgl-001.title" = "Mappa átnézése";
+# EN: Review This Folder
+# DRAFT: Mappa átnézése
+
+"MkRvw-Nxt-001.title" = "Megjelölés átnézettként és következő";
+# EN: Mark Reviewed and Next
+# DRAFT: Megjelölés átnézettként és következő
+
+"MkRvw-Unm-001.title" = "Megjelölés nem átnézettként";
+# EN: Mark Unreviewed
+# DRAFT: Megjelölés nem átnézettként
+
+"MkRvw-Sbr-001.title" = "Átnézési oldalsáv megjelenítése";
+# EN: Show Review Sidebar
+# DRAFT: Átnézési oldalsáv megjelenítése
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "Következő fájl a mappában";
+# EN: Next File in Folder
+# DRAFT: Következő fájl a mappában
+
+"MkSib-Prv-001.title" = "Előző fájl a mappában";
+# EN: Previous File in Folder
+# DRAFT: Előző fájl a mappában
+
+"MkRvw-Tgl-001.title" = "Mappa átnézése";
+# EN: Review This Folder
+# DRAFT: Mappa átnézése
+
+"MkRvw-Nxt-001.title" = "Megjelölés átnézettként és következő";
+# EN: Mark Reviewed and Next
+# DRAFT: Megjelölés átnézettként és következő
+
+"MkRvw-Unm-001.title" = "Megjelölés nem átnézettként";
+# EN: Mark Unreviewed
+# DRAFT: Megjelölés nem átnézettként
+
+"MkRvw-Sbr-001.title" = "Átnézési oldalsáv megjelenítése";
+# EN: Show Review Sidebar
+# DRAFT: Átnézési oldalsáv megjelenítése
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "Következő fájl a mappában";
+# EN: Next File in Folder
+# DRAFT: Következő fájl a mappában
+
+"MkSib-Prv-001.title" = "Előző fájl a mappában";
+# EN: Previous File in Folder
+# DRAFT: Előző fájl a mappában
+
+"MkRvw-Tgl-001.title" = "Mappa átnézése";
+# EN: Review This Folder
+# DRAFT: Mappa átnézése
+
+"MkRvw-Nxt-001.title" = "Megjelölés átnézettként és következő";
+# EN: Mark Reviewed and Next
+# DRAFT: Megjelölés átnézettként és következő
+
+"MkRvw-Unm-001.title" = "Megjelölés nem átnézettként";
+# EN: Mark Unreviewed
+# DRAFT: Megjelölés nem átnézettként
+
+"MkRvw-Sbr-001.title" = "Átnézési oldalsáv megjelenítése";
+# EN: Show Review Sidebar
+# DRAFT: Átnézési oldalsáv megjelenítése
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "Mind a(z) %lu fájl átnézve";
+# EN: All %lu files reviewed
+# DRAFT: Mind a(z) %lu fájl átnézve
+
+"%@ reviewed" = "%@ átnézve";
+# EN: %@ reviewed
+# DRAFT: %@ átnézve
+
+"All Files" = "Összes fájl";
+# EN: All Files
+# DRAFT: Összes fájl
+
+"Unreviewed" = "Nem átnézett";
+# EN: Unreviewed
+# DRAFT: Nem átnézett
+
+"Reviewed" = "Átnézett";
+# EN: Reviewed
+# DRAFT: Átnézett
+
+"Changed since it was marked reviewed" = "Módosult az átnézettként jelölés óta";
+# EN: Changed since it was marked reviewed
+# DRAFT: Módosult az átnézettként jelölés óta
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "Megjelölés átnézettként és következő";
+# EN: Mark Reviewed and Next
+# DRAFT: Megjelölés átnézettként és következő
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "A Finderből megnyitott fájlok";
+# EN: Files opened from Finder
+# DRAFT: A Finderből megnyitott fájlok
+
+"setting.externalOpenBehavior.default" = "A „Új dokumentumok nyílnak meg” beállítás követése";
+# EN: Follow "New documents open in"
+# DRAFT: A „Új dokumentumok nyílnak meg” beállítás követése
+
+"setting.externalOpenBehavior.replace" = "Az előtérben lévő dokumentum cseréje";
+# EN: Replace the frontmost document
+# DRAFT: Az előtérben lévő dokumentum cseréje
+
+"tooltip.externalOpenBehavior" = "Lecseréli az előtérben lévő Marked-dokumentumot, ha egyetlen Markdown-fájlt nyit meg a Finderből, a Dockról vagy a „Megnyitás ezzel” menüből. Több fájl megnyitása és más megnyitási módok nem változnak.";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: Lecseréli az előtérben lévő Marked-dokumentumot, ha egyetlen Markdown-fájlt nyit meg a Finderből, a Dockról vagy a „Megnyitás ezzel” menüből. Több fájl megnyitása és más megnyitási módok nem változnak.
+
+=== END Settings.strings ===

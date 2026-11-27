@@ -1,0 +1,61 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: Command-number Tab Selection and Style Shortcuts
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%ld) and shortcut glyphs unchanged.
+# Do not translate product names (Marked, macOS).
+#
+# CONTEXT
+# -------
+# General settings adds a checkbox to choose whether Command-1..9 select styles
+# (default) or switch tabs (Command-1..8 for tabs 1-8, Command-9 for the last tab).
+# Window > Select Tab lists the tab shortcuts. Style Manager legend drops Shift-Command
+# and updates to reflect whether Command-number selects styles or tabs.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.useCommandNumberForStyles" = "⌘1〜⌘9でスタイルを選択";
+# EN: Use ⌘1–⌘9 to select styles
+# DRAFT: ⌘1〜⌘9でスタイルを選択
+
+"tooltip.useCommandNumberForStyles" = "オンにすると、⌘1〜⌘9でスタイルを選択します。オフにすると、⌘1〜⌘8で各タブに切り替え、⌘9で最後のタブに移動します。スタイルのショートカットは⌥⌘1から始まります（⌥⌘1〜0、続いて⌃⌘1〜0）。「新しいドキュメントは次の場所で開きます」が「個別のウインドウ」の場合は無効です。";
+# EN: When checked, ⌘1 through ⌘9 select styles. Uncheck to use ⌘1 through ⌘8 to switch to that tab and ⌘9 to jump to the last tab; style shortcuts then start at ⌥⌘1 (⌥⌘1–0, then ⌃⌘1–0). Has no effect when "New documents open in" is set to Separate windows.
+# DRAFT: オンにすると、⌘1〜⌘9でスタイルを選択します。オフにすると、⌘1〜⌘8で各タブに切り替え、⌘9で最後のタブに移動します。スタイルのショートカットは⌥⌘1から始まります（⌥⌘1〜0、続いて⌃⌘1〜0）。「新しいドキュメントは次の場所で開きます」が「個別のウインドウ」の場合は無効です。
+
+=== END Settings.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)" = "ショートカットは順序に応じて更新されます（⌘1-9、⌥⌘1-0、⌃⌘1-0）";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: ショートカットは順序に応じて更新されます（⌘1-9、⌥⌘1-0、⌃⌘1-0）
+
+"Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)" = "ショートカットは順序に応じて更新されます（⌥⌘1-0、⌃⌘1-0）";
+# EN: Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: ショートカットは順序に応じて更新されます（⌥⌘1-0、⌃⌘1-0）
+
+"Select Tab" = "タブを選択";
+# EN: Select Tab
+# DRAFT: タブを選択
+
+"Tab %ld" = "タブ %ld";
+# EN: Tab %ld
+# DRAFT: タブ %ld
+
+"Last Tab" = "最後のタブ";
+# EN: Last Tab
+# DRAFT: 最後のタブ
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.selectTab" = "タブを選択（設定で⌘ 1–9をタブ切り替えにしている場合）";
+# EN: Select Tab (if ⌘ 1–9 is set to tabs in Settings)
+# DRAFT: タブを選択（設定で⌘ 1–9をタブ切り替えにしている場合）
+
+=== END KBShortcuts.strings ===

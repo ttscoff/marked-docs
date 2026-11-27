@@ -1,0 +1,61 @@
+# Marked Localization Update
+# Locale: hu (Hungarian)
+# Feature: Command-number Tab Selection and Style Shortcuts
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%ld) and shortcut glyphs unchanged.
+# Do not translate product names (Marked, macOS).
+#
+# CONTEXT
+# -------
+# General settings adds a checkbox to choose whether Command-1..9 select styles
+# (default) or switch tabs (Command-1..8 for tabs 1-8, Command-9 for the last tab).
+# Window > Select Tab lists the tab shortcuts. Style Manager legend drops Shift-Command
+# and updates to reflect whether Command-number selects styles or tabs.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.useCommandNumberForStyles" = "⌘1–⌘9 használata stílusok kiválasztásához";
+# EN: Use ⌘1–⌘9 to select styles
+# DRAFT: ⌘1–⌘9 használata stílusok kiválasztásához
+
+"tooltip.useCommandNumberForStyles" = "Ha be van jelölve, a ⌘1–⌘9 billentyűk stílusokat választanak ki. Kapcsolja ki, ha a ⌘1–⌘8 billentyűkkel az adott lapra, a ⌘9-cel pedig az utolsó lapra szeretne váltani; a stílusok billentyűparancsai ekkor ⌥⌘1-től indulnak (⌥⌘1–0, majd ⌃⌘1–0). Nincs hatása, ha az \"Új dokumentumok nyílnak meg\" beállítása \"Külön ablakok\".";
+# EN: When checked, ⌘1 through ⌘9 select styles. Uncheck to use ⌘1 through ⌘8 to switch to that tab and ⌘9 to jump to the last tab; style shortcuts then start at ⌥⌘1 (⌥⌘1–0, then ⌃⌘1–0). Has no effect when "New documents open in" is set to Separate windows.
+# DRAFT: Ha be van jelölve, a ⌘1–⌘9 billentyűk stílusokat választanak ki. Kapcsolja ki, ha a ⌘1–⌘8 billentyűkkel az adott lapra, a ⌘9-cel pedig az utolsó lapra szeretne váltani; a stílusok billentyűparancsai ekkor ⌥⌘1-től indulnak (⌥⌘1–0, majd ⌃⌘1–0). Nincs hatása, ha az "Új dokumentumok nyílnak meg" beállítása "Külön ablakok".
+
+=== END Settings.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)" = "A billentyűparancsok a sorrend szerint frissülnek (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: A billentyűparancsok a sorrend szerint frissülnek (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+
+"Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)" = "A billentyűparancsok a sorrend szerint frissülnek (⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: A billentyűparancsok a sorrend szerint frissülnek (⌥⌘1-0, ⌃⌘1-0)
+
+"Select Tab" = "Lap kiválasztása";
+# EN: Select Tab
+# DRAFT: Lap kiválasztása
+
+"Tab %ld" = "%ld. lap";
+# EN: Tab %ld
+# DRAFT: %ld. lap
+
+"Last Tab" = "Utolsó lap";
+# EN: Last Tab
+# DRAFT: Utolsó lap
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.selectTab" = "Lap kiválasztása (ha a ⌘ 1–9 a Beállításokban lapokra van állítva)";
+# EN: Select Tab (if ⌘ 1–9 is set to tabs in Settings)
+# DRAFT: Lap kiválasztása (ha a ⌘ 1–9 a Beállításokban lapokra van állítva)
+
+=== END KBShortcuts.strings ===

@@ -1,0 +1,61 @@
+# Marked Localization Update
+# Locale: pt-BR (Portuguese (Brazil))
+# Feature: Command-number Tab Selection and Style Shortcuts
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%ld) and shortcut glyphs unchanged.
+# Do not translate product names (Marked, macOS).
+#
+# CONTEXT
+# -------
+# General settings adds a checkbox to choose whether Command-1..9 select styles
+# (default) or switch tabs (Command-1..8 for tabs 1-8, Command-9 for the last tab).
+# Window > Select Tab lists the tab shortcuts. Style Manager legend drops Shift-Command
+# and updates to reflect whether Command-number selects styles or tabs.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.useCommandNumberForStyles" = "Usar ⌘1–⌘9 para selecionar estilos";
+# EN: Use ⌘1–⌘9 to select styles
+# DRAFT: Usar ⌘1–⌘9 para selecionar estilos
+
+"tooltip.useCommandNumberForStyles" = "Quando marcada, ⌘1 a ⌘9 selecionam estilos. Desmarque para usar ⌘1 a ⌘8 para alternar para a respectiva aba e ⌘9 para ir à última aba; os atalhos de estilo passam então a começar em ⌥⌘1 (⌥⌘1–0, depois ⌃⌘1–0). Não tem efeito quando \"Novos documentos são abertos em\" está definido como janelas separadas.";
+# EN: When checked, ⌘1 through ⌘9 select styles. Uncheck to use ⌘1 through ⌘8 to switch to that tab and ⌘9 to jump to the last tab; style shortcuts then start at ⌥⌘1 (⌥⌘1–0, then ⌃⌘1–0). Has no effect when "New documents open in" is set to Separate windows.
+# DRAFT: Quando marcada, ⌘1 a ⌘9 selecionam estilos. Desmarque para usar ⌘1 a ⌘8 para alternar para a respectiva aba e ⌘9 para ir à última aba; os atalhos de estilo passam então a começar em ⌥⌘1 (⌥⌘1–0, depois ⌃⌘1–0). Não tem efeito quando "Novos documentos são abertos em" está definido como janelas separadas.
+
+=== END Settings.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)" = "Os atalhos são atualizados conforme a ordem (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: Os atalhos são atualizados conforme a ordem (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+
+"Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)" = "Os atalhos são atualizados conforme a ordem (⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: Os atalhos são atualizados conforme a ordem (⌥⌘1-0, ⌃⌘1-0)
+
+"Select Tab" = "Selecionar aba";
+# EN: Select Tab
+# DRAFT: Selecionar aba
+
+"Tab %ld" = "Aba %ld";
+# EN: Tab %ld
+# DRAFT: Aba %ld
+
+"Last Tab" = "Última aba";
+# EN: Last Tab
+# DRAFT: Última aba
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.selectTab" = "Selecionar aba (se ⌘ 1–9 estiver definido para abas nos Ajustes)";
+# EN: Select Tab (if ⌘ 1–9 is set to tabs in Settings)
+# DRAFT: Selecionar aba (se ⌘ 1–9 estiver definido para abas nos Ajustes)
+
+=== END KBShortcuts.strings ===

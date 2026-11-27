@@ -53,9 +53,9 @@ Jede Zeile enthält einen **Aktionen**-Block mit Schaltflächen zum Verwalten de
 Zeilen lassen sich per Drag-and-drop umsortieren. Ziehen Sie eine Stilzeile einfach an eine neue Position in der Tabelle. Die hier festgelegte Reihenfolge steuert:
 
 - die Reihenfolge des Stil-Menüs in Markeds Menüs
-- die Tastaturkurzbefehl-Zuweisungen (`⌘1`–`⌘9` für die ersten neun aktivierten Stile, `⌥⌘1`–`⌥⌘0` für die nächsten zehn usw.)
+- die Tastaturkurzbefehl-Zuweisungen (`⌘1`–`⌘9` für die ersten neun aktivierten Stile, `⌥⌘1`–`⌥⌘0` für die nächsten zehn und `⌃⌘1`–`⌃⌘0` für die zehn danach)
 
-Ziehen Sie Stile also in die Kurzbefehl-Plätze, die sie belegen sollen.
+Ziehen Sie Stile also in die Kurzbefehl-Plätze, die sie belegen sollen. Stile nach dem letzten Platz erhalten keinen Tastaturkurzbefehl; legen Sie Ihre meistgenutzten Stile daher möglichst weit oben in der Liste ab.
 
 ## Stile hinzufügen [adding-styles]
 
@@ -85,7 +85,19 @@ Ein Kontrollkästchen über der Vorschau schaltet zwischen Hell- und Dunkelmodus
 
 ## Tastaturkurzbefehle [keyboard-shortcuts]
 
-Der Stil-Manager zeigt unter der Tabelle eine Legende, wie die Tastaturkurzbefehle vergeben werden. Die ersten neun aktivierten Stile erhalten {% kbd cmd 1 %} bis {% kbd cmd 9 %} ({% kbd cmd 0 %} ist reserviert), die nächsten zehn erhalten {% kbd opt cmd 1 %} bis {% kbd opt cmd 0 %} usw. Die zugewiesenen Tastaturkurzbefehle sehen Sie im Stil-Popup-Menü jeder Vorschau.
+Der Stil-Manager zeigt unter der Tabelle eine Legende, wie die Tastaturkurzbefehle vergeben werden. Die ersten neun aktivierten Stile erhalten {% kbd cmd 1 %} bis {% kbd cmd 9 %} ({% kbd cmd 0 %} ist reserviert), die nächsten zehn erhalten {% kbd opt cmd 1 %} bis {% kbd opt cmd 0 %} und die zehn danach {% kbd ctrl cmd 1 %} bis {% kbd ctrl cmd 0 %}. Damit erhalten 29 Stile einen Tastaturkurzbefehl. ({% kbd shift cmd 3 %}, {% kbd shift cmd 4 %} und {% kbd shift cmd 5 %} sind macOS-Bildschirmfoto-Kurzbefehle, daher wird ⇧⌘ plus Zahl nicht verwendet.) Die zugewiesenen Tastaturkurzbefehle sehen Sie im Stil-Popup-Menü jeder Vorschau.
+
+### ⌘1–⌘9 für Tabs verwenden [cmd-number-tabs]
+
+Wenn Sie Dokumente in Tabs geöffnet halten, können Sie {% kbd cmd 1 %} bis {% kbd cmd 9 %} stattdessen zum Wechseln zwischen Tabs nutzen – wie in Safari, Chrome und Terminal. Deaktivieren Sie dazu in den Einstellungen unter {% prefspane General %} die Option **⌘1–⌘9 zur Stilauswahl verwenden**.
+
+Ist die Option deaktiviert:
+
+- {% kbd cmd 1 %} bis {% kbd cmd 8 %} wechseln zum ersten bis achten Tab im aktuellen Fenster, und {% kbd cmd 9 %} springt zum letzten Tab.
+- Die Stil-Kurzbefehle rücken eine Gruppe auf: {% kbd opt cmd 1 %} wählt den ersten Stil (was zuvor {% kbd cmd 1 %} war), {% kbd opt cmd 0 %} den zehnten und {% kbd ctrl cmd 1 %} bis {% kbd ctrl cmd 0 %} die nächsten zehn. Damit erhalten 20 Stile einen Tastaturkurzbefehl.
+- Die Tab-Kurzbefehle finden sich außerdem unter **Fenster → Tab auswählen**.
+
+Ist **Neue Dokumente öffnen in** auf **Separate Fenster** eingestellt, hat die Option keine Wirkung, da es keine Tabs zum Wechseln gibt.
 
 ## Deaktivierte Stile filtern [filtering-disabled-styles]
 
@@ -97,7 +109,7 @@ Die Schaltfläche **Integrierte Stile wiederherstellen** am unteren Fensterrand 
 
 ## Tipps [tips]
 
-- **Nach Häufigkeit ordnen**: Ziehen Sie Ihre meistgenutzten Stile nach oben, damit sie die einfachsten Tastaturkurzbefehle erhalten ({% kbd cmd 1 %}, {% kbd cmd 2 %} usw.).
+- **Nach Häufigkeit ordnen**: Ziehen Sie Ihre meistgenutzten Stile nach oben, damit sie die einfachsten Tastaturkurzbefehle erhalten ({% kbd cmd 1 %}, {% kbd cmd 2 %} usw.) und Ihre wichtigsten 20 Stile in den Kurzbefehl-Plätzen liegen.
 
 - **Deaktivieren statt löschen**: Statt ungenutzte Stile zu löschen, deaktivieren Sie sie. Sie sind dann aus dem Weg, bleiben aber verfügbar, falls Sie sie später brauchen.
 

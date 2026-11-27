@@ -1,0 +1,61 @@
+# Marked Localization Update
+# Locale: it (Italian)
+# Feature: Command-number Tab Selection and Style Shortcuts
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%ld) and shortcut glyphs unchanged.
+# Do not translate product names (Marked, macOS).
+#
+# CONTEXT
+# -------
+# General settings adds a checkbox to choose whether Command-1..9 select styles
+# (default) or switch tabs (Command-1..8 for tabs 1-8, Command-9 for the last tab).
+# Window > Select Tab lists the tab shortcuts. Style Manager legend drops Shift-Command
+# and updates to reflect whether Command-number selects styles or tabs.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN Settings.strings ===
+"setting.useCommandNumberForStyles" = "Usa ⌘1–⌘9 per selezionare gli stili";
+# EN: Use ⌘1–⌘9 to select styles
+# DRAFT: Usa ⌘1–⌘9 per selezionare gli stili
+
+"tooltip.useCommandNumberForStyles" = "Se selezionata, ⌘1–⌘9 selezionano gli stili. Deseleziona per usare ⌘1–⌘8 per passare a quel pannello e ⌘9 per andare all'ultimo pannello; le scorciatoie degli stili inizieranno quindi da ⌥⌘1 (⌥⌘1–0, poi ⌃⌘1–0). Non ha effetto quando \"Nuovi documenti aperti in\" è impostato su finestre separate.";
+# EN: When checked, ⌘1 through ⌘9 select styles. Uncheck to use ⌘1 through ⌘8 to switch to that tab and ⌘9 to jump to the last tab; style shortcuts then start at ⌥⌘1 (⌥⌘1–0, then ⌃⌘1–0). Has no effect when "New documents open in" is set to Separate windows.
+# DRAFT: Se selezionata, ⌘1–⌘9 selezionano gli stili. Deseleziona per usare ⌘1–⌘8 per passare a quel pannello e ⌘9 per andare all'ultimo pannello; le scorciatoie degli stili inizieranno quindi da ⌥⌘1 (⌥⌘1–0, poi ⌃⌘1–0). Non ha effetto quando "Nuovi documenti aperti in" è impostato su finestre separate.
+
+=== END Settings.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)" = "Le scorciatoie si aggiornano in base all'ordine (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: Le scorciatoie si aggiornano in base all'ordine (⌘1-9, ⌥⌘1-0, ⌃⌘1-0)
+
+"Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)" = "Le scorciatoie si aggiornano in base all'ordine (⌥⌘1-0, ⌃⌘1-0)";
+# EN: Shortcuts update based on order (⌥⌘1-0, ⌃⌘1-0)
+# DRAFT: Le scorciatoie si aggiornano in base all'ordine (⌥⌘1-0, ⌃⌘1-0)
+
+"Select Tab" = "Seleziona pannello";
+# EN: Select Tab
+# DRAFT: Seleziona pannello
+
+"Tab %ld" = "Pannello %ld";
+# EN: Tab %ld
+# DRAFT: Pannello %ld
+
+"Last Tab" = "Ultimo pannello";
+# EN: Last Tab
+# DRAFT: Ultimo pannello
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.selectTab" = "Seleziona pannello (se ⌘ 1–9 è impostato sui pannelli in Impostazioni)";
+# EN: Select Tab (if ⌘ 1–9 is set to tabs in Settings)
+# DRAFT: Seleziona pannello (se ⌘ 1–9 è impostato sui pannelli in Impostazioni)
+
+=== END KBShortcuts.strings ===
