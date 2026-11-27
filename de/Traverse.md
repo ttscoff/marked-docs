@@ -2,7 +2,7 @@
 
 [Traverse][traverse] bringt den Befehl **Stream to Marked** mit. Er erscheint im Exportmenü, wenn Marked 2 oder Marked 3 installiert ist.
 
-[Erfahren Sie, wie Sie Traverse mit Marked verwenden][traverse-guide].
+[Anleitung: Traverse mit Marked verwenden][traverse-guide]
 
 ## Stream to Marked [stream-to-marked]
 

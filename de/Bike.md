@@ -23,7 +23,7 @@ Die Option **Bike-Glieder⁠ungen** unter {% prefspane Apps %} im Abschnitt *Min
 
 ## Gliederungen mit Bildern [outlines-with-images]
 
-Bike 2 speichert ein `.biked`-Paket, wenn die Gliederung eingebettete Bilder enthält. Das Paket ist ein TextBundle: `text.bike` und ein Ordner `assets`. Öffnen Sie die `.biked`-Datei selbst. Marked liest die enthaltene Gliederung und verwendet den Paketnamen als Fenstertitel.
+Bike 2 speichert ein `.biked`-Paket, wenn die Gliederung eingebettete Bilder enthält. Das Paket ist ein TextBundle: `text.bike` und ein Ordner `assets`. Öffnen Sie direkt die `.biked`-Datei, nicht die Dateien darin. Marked liest die enthaltene Gliederung und verwendet den Paketnamen als Fenstertitel.
 
 Schalten Sie **Bike-Glieder⁠ungen** aus, um das Paket als verschachtelte Liste mit den eingebetteten Bildern zu sehen. **Ein** macht aus der Gliederung ein Mermaid-Diagramm.
 
