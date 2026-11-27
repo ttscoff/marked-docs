@@ -94,6 +94,9 @@ Kompilierungsmetadaten (Titel, Autor) hinzufügen, wenn diese fehlen
 Änderungsverfolgung <-> CriticMarkup konvertieren
 : Ist dies aktiviert, wird die Änderungsverfolgung in Word-Dokumenten beim Import in CriticMarkup umgewandelt, und CriticMarkup wird beim Export von DOCX-Dateien in die Word-Änderungsverfolgung umgewandelt.
 
+Ordner für eigene Word-Stile öffnen…
+: Öffnet den Ordner, in dem Marked nach eigenen DOCX-Exportstilen sucht (`~/Library/Application Support/Marked/Custom Word Styles/` in Direct- und Setapp-Builds). In der Mac-App-Store-Version fragt Marked eventuell zuerst nach Zugriff und merkt sich den Ordner dann. Siehe [Arbeiten mit DOCX](Working_With_DOCX.html#adding-custom-export-styles).
+
 #### Tree Outliner [tree-outliner]
 
 [(Info zu Tree Outliner)](Tree_Outliner.html)
