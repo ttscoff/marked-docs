@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: de (German)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "Nächste Datei im Ordner";
+# EN: Next File in Folder
+# DRAFT: Nächste Datei im Ordner
+
+"MkSib-Prv-001.title" = "Vorherige Datei im Ordner";
+# EN: Previous File in Folder
+# DRAFT: Vorherige Datei im Ordner
+
+"MkRvw-Tgl-001.title" = "Diesen Ordner durchsehen";
+# EN: Review This Folder
+# DRAFT: Diesen Ordner durchsehen
+
+"MkRvw-Nxt-001.title" = "Als durchgesehen markieren und weiter";
+# EN: Mark Reviewed and Next
+# DRAFT: Als durchgesehen markieren und weiter
+
+"MkRvw-Unm-001.title" = "Als nicht durchgesehen markieren";
+# EN: Mark Unreviewed
+# DRAFT: Als nicht durchgesehen markieren
+
+"MkRvw-Sbr-001.title" = "Durchsichts-Seitenleiste anzeigen";
+# EN: Show Review Sidebar
+# DRAFT: Durchsichts-Seitenleiste anzeigen
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "Nächste Datei im Ordner";
+# EN: Next File in Folder
+# DRAFT: Nächste Datei im Ordner
+
+"MkSib-Prv-001.title" = "Vorherige Datei im Ordner";
+# EN: Previous File in Folder
+# DRAFT: Vorherige Datei im Ordner
+
+"MkRvw-Tgl-001.title" = "Diesen Ordner durchsehen";
+# EN: Review This Folder
+# DRAFT: Diesen Ordner durchsehen
+
+"MkRvw-Nxt-001.title" = "Als durchgesehen markieren und weiter";
+# EN: Mark Reviewed and Next
+# DRAFT: Als durchgesehen markieren und weiter
+
+"MkRvw-Unm-001.title" = "Als nicht durchgesehen markieren";
+# EN: Mark Unreviewed
+# DRAFT: Als nicht durchgesehen markieren
+
+"MkRvw-Sbr-001.title" = "Durchsichts-Seitenleiste anzeigen";
+# EN: Show Review Sidebar
+# DRAFT: Durchsichts-Seitenleiste anzeigen
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "Nächste Datei im Ordner";
+# EN: Next File in Folder
+# DRAFT: Nächste Datei im Ordner
+
+"MkSib-Prv-001.title" = "Vorherige Datei im Ordner";
+# EN: Previous File in Folder
+# DRAFT: Vorherige Datei im Ordner
+
+"MkRvw-Tgl-001.title" = "Diesen Ordner durchsehen";
+# EN: Review This Folder
+# DRAFT: Diesen Ordner durchsehen
+
+"MkRvw-Nxt-001.title" = "Als durchgesehen markieren und weiter";
+# EN: Mark Reviewed and Next
+# DRAFT: Als durchgesehen markieren und weiter
+
+"MkRvw-Unm-001.title" = "Als nicht durchgesehen markieren";
+# EN: Mark Unreviewed
+# DRAFT: Als nicht durchgesehen markieren
+
+"MkRvw-Sbr-001.title" = "Durchsichts-Seitenleiste anzeigen";
+# EN: Show Review Sidebar
+# DRAFT: Durchsichts-Seitenleiste anzeigen
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "Alle %lu Dateien durchgesehen";
+# EN: All %lu files reviewed
+# DRAFT: Alle %lu Dateien durchgesehen
+
+"%@ reviewed" = "%@ durchgesehen";
+# EN: %@ reviewed
+# DRAFT: %@ durchgesehen
+
+"All Files" = "Alle Dateien";
+# EN: All Files
+# DRAFT: Alle Dateien
+
+"Unreviewed" = "Nicht durchgesehen";
+# EN: Unreviewed
+# DRAFT: Nicht durchgesehen
+
+"Reviewed" = "Durchgesehen";
+# EN: Reviewed
+# DRAFT: Durchgesehen
+
+"Changed since it was marked reviewed" = "Seit der Markierung als durchgesehen geändert";
+# EN: Changed since it was marked reviewed
+# DRAFT: Seit der Markierung als durchgesehen geändert
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "Als durchgesehen markieren und weiter";
+# EN: Mark Reviewed and Next
+# DRAFT: Als durchgesehen markieren und weiter
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "Aus dem Finder geöffnete Dateien:";
+# EN: Files opened from Finder
+# DRAFT: Aus dem Finder geöffnete Dateien:
+
+"setting.externalOpenBehavior.default" = "Einstellung „Neue Dokumente geöffnet in“ folgen";
+# EN: Follow "New documents open in"
+# DRAFT: Einstellung „Neue Dokumente geöffnet in“ folgen
+
+"setting.externalOpenBehavior.replace" = "Vorderstes Dokument ersetzen";
+# EN: Replace the frontmost document
+# DRAFT: Vorderstes Dokument ersetzen
+
+"tooltip.externalOpenBehavior" = "Ersetzt das vorderste Marked-Dokument, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. Das Öffnen mehrerer Dateien und andere Öffnungswege bleiben unverändert.";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: Ersetzt das vorderste Marked-Dokument, wenn Sie eine einzelne Markdown-Datei über den Finder, das Dock oder „Öffnen mit“ öffnen. Das Öffnen mehrerer Dateien und andere Öffnungswege bleiben unverändert.
+
+=== END Settings.strings ===

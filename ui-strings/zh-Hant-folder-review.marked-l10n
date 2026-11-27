@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: zh-Hant (Traditional Chinese)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "資料夾中的下一個檔案";
+# EN: Next File in Folder
+# DRAFT: 資料夾中的下一個檔案
+
+"MkSib-Prv-001.title" = "資料夾中的上一個檔案";
+# EN: Previous File in Folder
+# DRAFT: 資料夾中的上一個檔案
+
+"MkRvw-Tgl-001.title" = "審閱此資料夾";
+# EN: Review This Folder
+# DRAFT: 審閱此資料夾
+
+"MkRvw-Nxt-001.title" = "標記為已審閱並前往下一個";
+# EN: Mark Reviewed and Next
+# DRAFT: 標記為已審閱並前往下一個
+
+"MkRvw-Unm-001.title" = "標記為未審閱";
+# EN: Mark Unreviewed
+# DRAFT: 標記為未審閱
+
+"MkRvw-Sbr-001.title" = "顯示審閱側邊欄";
+# EN: Show Review Sidebar
+# DRAFT: 顯示審閱側邊欄
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "資料夾中的下一個檔案";
+# EN: Next File in Folder
+# DRAFT: 資料夾中的下一個檔案
+
+"MkSib-Prv-001.title" = "資料夾中的上一個檔案";
+# EN: Previous File in Folder
+# DRAFT: 資料夾中的上一個檔案
+
+"MkRvw-Tgl-001.title" = "審閱此資料夾";
+# EN: Review This Folder
+# DRAFT: 審閱此資料夾
+
+"MkRvw-Nxt-001.title" = "標記為已審閱並前往下一個";
+# EN: Mark Reviewed and Next
+# DRAFT: 標記為已審閱並前往下一個
+
+"MkRvw-Unm-001.title" = "標記為未審閱";
+# EN: Mark Unreviewed
+# DRAFT: 標記為未審閱
+
+"MkRvw-Sbr-001.title" = "顯示審閱側邊欄";
+# EN: Show Review Sidebar
+# DRAFT: 顯示審閱側邊欄
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "資料夾中的下一個檔案";
+# EN: Next File in Folder
+# DRAFT: 資料夾中的下一個檔案
+
+"MkSib-Prv-001.title" = "資料夾中的上一個檔案";
+# EN: Previous File in Folder
+# DRAFT: 資料夾中的上一個檔案
+
+"MkRvw-Tgl-001.title" = "審閱此資料夾";
+# EN: Review This Folder
+# DRAFT: 審閱此資料夾
+
+"MkRvw-Nxt-001.title" = "標記為已審閱並前往下一個";
+# EN: Mark Reviewed and Next
+# DRAFT: 標記為已審閱並前往下一個
+
+"MkRvw-Unm-001.title" = "標記為未審閱";
+# EN: Mark Unreviewed
+# DRAFT: 標記為未審閱
+
+"MkRvw-Sbr-001.title" = "顯示審閱側邊欄";
+# EN: Show Review Sidebar
+# DRAFT: 顯示審閱側邊欄
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "全部 %lu 個檔案皆已審閱";
+# EN: All %lu files reviewed
+# DRAFT: 全部 %lu 個檔案皆已審閱
+
+"%@ reviewed" = "已審閱 %@";
+# EN: %@ reviewed
+# DRAFT: 已審閱 %@
+
+"All Files" = "所有檔案";
+# EN: All Files
+# DRAFT: 所有檔案
+
+"Unreviewed" = "未審閱";
+# EN: Unreviewed
+# DRAFT: 未審閱
+
+"Reviewed" = "已審閱";
+# EN: Reviewed
+# DRAFT: 已審閱
+
+"Changed since it was marked reviewed" = "自標記為已審閱以來已變更";
+# EN: Changed since it was marked reviewed
+# DRAFT: 自標記為已審閱以來已變更
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "標記為已審閱並前往下一個";
+# EN: Mark Reviewed and Next
+# DRAFT: 標記為已審閱並前往下一個
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "從 Finder 開啟的檔案:";
+# EN: Files opened from Finder
+# DRAFT: 從 Finder 開啟的檔案:
+
+"setting.externalOpenBehavior.default" = "依照「New documents open in」設定";
+# EN: Follow "New documents open in"
+# DRAFT: 依照「New documents open in」設定
+
+"setting.externalOpenBehavior.replace" = "取代最前面的文件";
+# EN: Replace the frontmost document
+# DRAFT: 取代最前面的文件
+
+"tooltip.externalOpenBehavior" = "當您從 Finder、Dock 或「打開方式」開啟單一 Markdown 檔案時，取代最前面的 Marked 文件。同時開啟多個檔案及其他開啟方式維持不變。";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: 當您從 Finder、Dock 或「打開方式」開啟單一 Markdown 檔案時，取代最前面的 Marked 文件。同時開啟多個檔案及其他開啟方式維持不變。
+
+=== END Settings.strings ===

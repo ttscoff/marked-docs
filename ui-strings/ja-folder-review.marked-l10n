@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: ja (Japanese)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "フォルダ内の次のファイル";
+# EN: Next File in Folder
+# DRAFT: フォルダ内の次のファイル
+
+"MkSib-Prv-001.title" = "フォルダ内の前のファイル";
+# EN: Previous File in Folder
+# DRAFT: フォルダ内の前のファイル
+
+"MkRvw-Tgl-001.title" = "このフォルダをレビュー";
+# EN: Review This Folder
+# DRAFT: このフォルダをレビュー
+
+"MkRvw-Nxt-001.title" = "レビュー済みにマークして次へ";
+# EN: Mark Reviewed and Next
+# DRAFT: レビュー済みにマークして次へ
+
+"MkRvw-Unm-001.title" = "未レビューにマーク";
+# EN: Mark Unreviewed
+# DRAFT: 未レビューにマーク
+
+"MkRvw-Sbr-001.title" = "レビューサイドバーを表示";
+# EN: Show Review Sidebar
+# DRAFT: レビューサイドバーを表示
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "フォルダ内の次のファイル";
+# EN: Next File in Folder
+# DRAFT: フォルダ内の次のファイル
+
+"MkSib-Prv-001.title" = "フォルダ内の前のファイル";
+# EN: Previous File in Folder
+# DRAFT: フォルダ内の前のファイル
+
+"MkRvw-Tgl-001.title" = "このフォルダをレビュー";
+# EN: Review This Folder
+# DRAFT: このフォルダをレビュー
+
+"MkRvw-Nxt-001.title" = "レビュー済みにマークして次へ";
+# EN: Mark Reviewed and Next
+# DRAFT: レビュー済みにマークして次へ
+
+"MkRvw-Unm-001.title" = "未レビューにマーク";
+# EN: Mark Unreviewed
+# DRAFT: 未レビューにマーク
+
+"MkRvw-Sbr-001.title" = "レビューサイドバーを表示";
+# EN: Show Review Sidebar
+# DRAFT: レビューサイドバーを表示
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "フォルダ内の次のファイル";
+# EN: Next File in Folder
+# DRAFT: フォルダ内の次のファイル
+
+"MkSib-Prv-001.title" = "フォルダ内の前のファイル";
+# EN: Previous File in Folder
+# DRAFT: フォルダ内の前のファイル
+
+"MkRvw-Tgl-001.title" = "このフォルダをレビュー";
+# EN: Review This Folder
+# DRAFT: このフォルダをレビュー
+
+"MkRvw-Nxt-001.title" = "レビュー済みにマークして次へ";
+# EN: Mark Reviewed and Next
+# DRAFT: レビュー済みにマークして次へ
+
+"MkRvw-Unm-001.title" = "未レビューにマーク";
+# EN: Mark Unreviewed
+# DRAFT: 未レビューにマーク
+
+"MkRvw-Sbr-001.title" = "レビューサイドバーを表示";
+# EN: Show Review Sidebar
+# DRAFT: レビューサイドバーを表示
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "全 %lu ファイルをレビュー済み";
+# EN: All %lu files reviewed
+# DRAFT: 全 %lu ファイルをレビュー済み
+
+"%@ reviewed" = "%@ レビュー済み";
+# EN: %@ reviewed
+# DRAFT: %@ レビュー済み
+
+"All Files" = "すべてのファイル";
+# EN: All Files
+# DRAFT: すべてのファイル
+
+"Unreviewed" = "未レビュー";
+# EN: Unreviewed
+# DRAFT: 未レビュー
+
+"Reviewed" = "レビュー済み";
+# EN: Reviewed
+# DRAFT: レビュー済み
+
+"Changed since it was marked reviewed" = "レビュー済みにマークしてから変更されました";
+# EN: Changed since it was marked reviewed
+# DRAFT: レビュー済みにマークしてから変更されました
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "レビュー済みにマークして次へ";
+# EN: Mark Reviewed and Next
+# DRAFT: レビュー済みにマークして次へ
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "Finder から開くファイル:";
+# EN: Files opened from Finder
+# DRAFT: Finder から開くファイル:
+
+"setting.externalOpenBehavior.default" = "「新しいドキュメントは次の場所で開きます」に従う";
+# EN: Follow "New documents open in"
+# DRAFT: 「新しいドキュメントは次の場所で開きます」に従う
+
+"setting.externalOpenBehavior.replace" = "最前面のドキュメントを置き換える";
+# EN: Replace the frontmost document
+# DRAFT: 最前面のドキュメントを置き換える
+
+"tooltip.externalOpenBehavior" = "Finder、Dock、または「このアプリケーションで開く」から Markdown ファイルを 1 つ開いたときに、最前面の Marked ドキュメントを置き換えます。複数のファイルを開く場合やその他の開き方は変わりません。";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: Finder、Dock、または「このアプリケーションで開く」から Markdown ファイルを 1 つ開いたときに、最前面の Marked ドキュメントを置き換えます。複数のファイルを開く場合やその他の開き方は変わりません。
+
+=== END Settings.strings ===

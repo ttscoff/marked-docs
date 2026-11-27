@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: nl (Dutch)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "Volgend bestand in map";
+# EN: Next File in Folder
+# DRAFT: Volgend bestand in map
+
+"MkSib-Prv-001.title" = "Vorig bestand in map";
+# EN: Previous File in Folder
+# DRAFT: Vorig bestand in map
+
+"MkRvw-Tgl-001.title" = "Deze map beoordelen";
+# EN: Review This Folder
+# DRAFT: Deze map beoordelen
+
+"MkRvw-Nxt-001.title" = "Markeren als beoordeeld en volgende";
+# EN: Mark Reviewed and Next
+# DRAFT: Markeren als beoordeeld en volgende
+
+"MkRvw-Unm-001.title" = "Markeren als niet beoordeeld";
+# EN: Mark Unreviewed
+# DRAFT: Markeren als niet beoordeeld
+
+"MkRvw-Sbr-001.title" = "Beoordelingszijbalk tonen";
+# EN: Show Review Sidebar
+# DRAFT: Beoordelingszijbalk tonen
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "Volgend bestand in map";
+# EN: Next File in Folder
+# DRAFT: Volgend bestand in map
+
+"MkSib-Prv-001.title" = "Vorig bestand in map";
+# EN: Previous File in Folder
+# DRAFT: Vorig bestand in map
+
+"MkRvw-Tgl-001.title" = "Deze map beoordelen";
+# EN: Review This Folder
+# DRAFT: Deze map beoordelen
+
+"MkRvw-Nxt-001.title" = "Markeren als beoordeeld en volgende";
+# EN: Mark Reviewed and Next
+# DRAFT: Markeren als beoordeeld en volgende
+
+"MkRvw-Unm-001.title" = "Markeren als niet beoordeeld";
+# EN: Mark Unreviewed
+# DRAFT: Markeren als niet beoordeeld
+
+"MkRvw-Sbr-001.title" = "Beoordelingszijbalk tonen";
+# EN: Show Review Sidebar
+# DRAFT: Beoordelingszijbalk tonen
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "Volgend bestand in map";
+# EN: Next File in Folder
+# DRAFT: Volgend bestand in map
+
+"MkSib-Prv-001.title" = "Vorig bestand in map";
+# EN: Previous File in Folder
+# DRAFT: Vorig bestand in map
+
+"MkRvw-Tgl-001.title" = "Deze map beoordelen";
+# EN: Review This Folder
+# DRAFT: Deze map beoordelen
+
+"MkRvw-Nxt-001.title" = "Markeren als beoordeeld en volgende";
+# EN: Mark Reviewed and Next
+# DRAFT: Markeren als beoordeeld en volgende
+
+"MkRvw-Unm-001.title" = "Markeren als niet beoordeeld";
+# EN: Mark Unreviewed
+# DRAFT: Markeren als niet beoordeeld
+
+"MkRvw-Sbr-001.title" = "Beoordelingszijbalk tonen";
+# EN: Show Review Sidebar
+# DRAFT: Beoordelingszijbalk tonen
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "Alle %lu bestanden beoordeeld";
+# EN: All %lu files reviewed
+# DRAFT: Alle %lu bestanden beoordeeld
+
+"%@ reviewed" = "%@ beoordeeld";
+# EN: %@ reviewed
+# DRAFT: %@ beoordeeld
+
+"All Files" = "Alle bestanden";
+# EN: All Files
+# DRAFT: Alle bestanden
+
+"Unreviewed" = "Niet beoordeeld";
+# EN: Unreviewed
+# DRAFT: Niet beoordeeld
+
+"Reviewed" = "Beoordeeld";
+# EN: Reviewed
+# DRAFT: Beoordeeld
+
+"Changed since it was marked reviewed" = "Gewijzigd sinds het als beoordeeld is gemarkeerd";
+# EN: Changed since it was marked reviewed
+# DRAFT: Gewijzigd sinds het als beoordeeld is gemarkeerd
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "Markeren als beoordeeld en volgende";
+# EN: Mark Reviewed and Next
+# DRAFT: Markeren als beoordeeld en volgende
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "Bestanden geopend vanuit de Finder:";
+# EN: Files opened from Finder
+# DRAFT: Bestanden geopend vanuit de Finder:
+
+"setting.externalOpenBehavior.default" = "“Nieuwe documenten openen in” volgen";
+# EN: Follow "New documents open in"
+# DRAFT: “Nieuwe documenten openen in” volgen
+
+"setting.externalOpenBehavior.replace" = "Voorste document vervangen";
+# EN: Replace the frontmost document
+# DRAFT: Voorste document vervangen
+
+"tooltip.externalOpenBehavior" = "Vervangt het voorste Marked-document wanneer u één Markdown-bestand opent vanuit de Finder, het Dock of via “Open met”. Het openen van meerdere bestanden en andere manieren van openen blijven ongewijzigd.";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: Vervangt het voorste Marked-document wanneer u één Markdown-bestand opent vanuit de Finder, het Dock of via “Open met”. Het openen van meerdere bestanden en andere manieren van openen blijven ongewijzigd.
+
+=== END Settings.strings ===

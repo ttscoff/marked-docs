@@ -1,0 +1,156 @@
+# Marked Localization Update
+# Locale: pt-BR (Brazilian Portuguese)
+# Feature: Folder Navigation, Finder Replace Mode, and Folder Review Queue
+# Generated: 2026-11-26
+#
+# HOW TO TRANSLATE
+# ----------------
+# Fill in or correct the string on each line: "key" = "your translation";
+# Keep keys unchanged. Preserve format specifiers (%lu, %@) unchanged.
+# Do not translate product names (Marked, Finder, Dock, Markdown).
+#
+# CONTEXT
+# -------
+# History menu adds Next/Previous File in Folder (for single-file windows)
+# and Folder Review mode (Review This Folder, Mark Reviewed and Next,
+# Mark Unreviewed, Show Review Sidebar) for reviewing batches of files
+# in a folder window. SpecialWindows strings appear in the review sidebar
+# filter bar and completion banner. Settings strings configure whether
+# opening a single file from Finder replaces the frontmost document.
+#
+# Return this file with translations filled in (same filename).
+# Merge with: python3 scripts/merge_localization_updates.py <this-file>
+
+=== BEGIN MainMenu.strings ===
+"MkSib-Nxt-001.title" = "Próximo arquivo na pasta";
+# EN: Next File in Folder
+# DRAFT: Próximo arquivo na pasta
+
+"MkSib-Prv-001.title" = "Arquivo anterior na pasta";
+# EN: Previous File in Folder
+# DRAFT: Arquivo anterior na pasta
+
+"MkRvw-Tgl-001.title" = "Revisar esta pasta";
+# EN: Review This Folder
+# DRAFT: Revisar esta pasta
+
+"MkRvw-Nxt-001.title" = "Marcar como revisado e próximo";
+# EN: Mark Reviewed and Next
+# DRAFT: Marcar como revisado e próximo
+
+"MkRvw-Unm-001.title" = "Marcar como não revisado";
+# EN: Mark Unreviewed
+# DRAFT: Marcar como não revisado
+
+"MkRvw-Sbr-001.title" = "Mostrar barra lateral de revisão";
+# EN: Show Review Sidebar
+# DRAFT: Mostrar barra lateral de revisão
+
+=== END MainMenu.strings ===
+
+=== BEGIN MainMenuMAS.strings ===
+"MkSib-Nxt-001.title" = "Próximo arquivo na pasta";
+# EN: Next File in Folder
+# DRAFT: Próximo arquivo na pasta
+
+"MkSib-Prv-001.title" = "Arquivo anterior na pasta";
+# EN: Previous File in Folder
+# DRAFT: Arquivo anterior na pasta
+
+"MkRvw-Tgl-001.title" = "Revisar esta pasta";
+# EN: Review This Folder
+# DRAFT: Revisar esta pasta
+
+"MkRvw-Nxt-001.title" = "Marcar como revisado e próximo";
+# EN: Mark Reviewed and Next
+# DRAFT: Marcar como revisado e próximo
+
+"MkRvw-Unm-001.title" = "Marcar como não revisado";
+# EN: Mark Unreviewed
+# DRAFT: Marcar como não revisado
+
+"MkRvw-Sbr-001.title" = "Mostrar barra lateral de revisão";
+# EN: Show Review Sidebar
+# DRAFT: Mostrar barra lateral de revisão
+
+=== END MainMenuMAS.strings ===
+
+=== BEGIN MainMenuSetapp.strings ===
+"MkSib-Nxt-001.title" = "Próximo arquivo na pasta";
+# EN: Next File in Folder
+# DRAFT: Próximo arquivo na pasta
+
+"MkSib-Prv-001.title" = "Arquivo anterior na pasta";
+# EN: Previous File in Folder
+# DRAFT: Arquivo anterior na pasta
+
+"MkRvw-Tgl-001.title" = "Revisar esta pasta";
+# EN: Review This Folder
+# DRAFT: Revisar esta pasta
+
+"MkRvw-Nxt-001.title" = "Marcar como revisado e próximo";
+# EN: Mark Reviewed and Next
+# DRAFT: Marcar como revisado e próximo
+
+"MkRvw-Unm-001.title" = "Marcar como não revisado";
+# EN: Mark Unreviewed
+# DRAFT: Marcar como não revisado
+
+"MkRvw-Sbr-001.title" = "Mostrar barra lateral de revisão";
+# EN: Show Review Sidebar
+# DRAFT: Mostrar barra lateral de revisão
+
+=== END MainMenuSetapp.strings ===
+
+=== BEGIN SpecialWindows.strings ===
+"All %lu files reviewed" = "Todos os %lu arquivos revisados";
+# EN: All %lu files reviewed
+# DRAFT: Todos os %lu arquivos revisados
+
+"%@ reviewed" = "%@ revisados";
+# EN: %@ reviewed
+# DRAFT: %@ revisados
+
+"All Files" = "Todos os arquivos";
+# EN: All Files
+# DRAFT: Todos os arquivos
+
+"Unreviewed" = "Não revisados";
+# EN: Unreviewed
+# DRAFT: Não revisados
+
+"Reviewed" = "Revisados";
+# EN: Reviewed
+# DRAFT: Revisados
+
+"Changed since it was marked reviewed" = "Alterado desde que foi marcado como revisado";
+# EN: Changed since it was marked reviewed
+# DRAFT: Alterado desde que foi marcado como revisado
+
+=== END SpecialWindows.strings ===
+
+=== BEGIN KBShortcuts.strings ===
+"kbs.action.markReviewedAndNext" = "Marcar como revisado e próximo";
+# EN: Mark Reviewed and Next
+# DRAFT: Marcar como revisado e próximo
+
+=== END KBShortcuts.strings ===
+
+=== BEGIN Settings.strings ===
+"setting.externalOpenBehavior" = "Arquivos abertos pelo Finder:";
+# EN: Files opened from Finder
+# DRAFT: Arquivos abertos pelo Finder:
+
+"setting.externalOpenBehavior.default" = "Seguir “Novos documentos são abertos em”";
+# EN: Follow "New documents open in"
+# DRAFT: Seguir “Novos documentos são abertos em”
+
+"setting.externalOpenBehavior.replace" = "Substituir o documento em primeiro plano";
+# EN: Replace the frontmost document
+# DRAFT: Substituir o documento em primeiro plano
+
+"tooltip.externalOpenBehavior" = "Substitui o documento do Marked em primeiro plano quando você abre um único arquivo Markdown pelo Finder, pelo Dock ou por “Abrir com”. Abrir vários arquivos e outras formas de abertura permanecem inalteradas.";
+# EN: Replace the frontmost Marked document when you open a single Markdown file from Finder, the Dock, or Open With. Multi-file opens and other openers are unchanged.
+# DRAFT: Substitui o documento do Marked em primeiro plano quando você abre um único arquivo Markdown pelo Finder, pelo Dock ou por “Abrir com”. Abrir vários arquivos e outras formas de abertura permanecem inalteradas.
+
+=== END Settings.strings ===
