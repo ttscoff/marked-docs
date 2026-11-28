@@ -16,6 +16,8 @@ Marked also exposes the same watcher behavior under other menu names when you co
 
 When you need to read a batch of files in order, such as a set of generated prompts or chapter drafts, turn on review mode for the folder. Choose **History > Review This Folder** in a folder window. If you're viewing a single file, the same command opens its folder in review mode.
 
+![Folder review sidebar and progress][folder-review]
+
 In review mode:
 
 - Marked opens the first file you haven't reviewed yet, in Finder-style name order (`file2.md` comes before `file10.md`).
@@ -26,3 +28,5 @@ In review mode:
 - Saving other files in the folder updates the count without switching away from the file you're reading.
 
 Marked remembers review progress for each folder, and a folder you were reviewing reopens in review mode. Review mode lists only files directly inside the folder, not files in subfolders. Choose **Review This Folder** again to turn review mode off; your progress is kept.
+
+[folder-review]: images/Folder_Review.jpg @2x width=512px height=415px class=center
